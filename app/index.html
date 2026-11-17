@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Curiosidades sob medida</title>
+  <meta name="description" content="Curiosidades verificadas que combinam com você.">
+  <meta name="theme-color" content="#1d5c63" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#12171c" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icones/icone.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icones/icone-180.png">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="data/versao.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#/feed">Curiosidades</a>
+    <button class="perfil-chip" id="chip-perfil" type="button" hidden></button>
+  </header>
+
+  <div class="aviso" id="aviso" role="status" hidden></div>
+
+  <main id="tela" tabindex="-1">
+    <p class="carregando">Carregando…</p>
+  </main>
+
+  <nav class="abas" id="abas" hidden>
+    <a href="#/feed" data-aba="feed"><span aria-hidden="true">✦</span>Curiosidades</a>
+    <a href="#/favoritos" data-aba="favoritos"><span aria-hidden="true">★</span>Favoritos</a>
+    <a href="#/perfil" data-aba="perfil"><span aria-hidden="true">☺</span>Meu perfil</a>
+  </nav>
+
+  <script>
+    // Aberto com dois cliques no index.html (file://): o navegador bloqueia os módulos e os dados.
+    if (location.protocol === "file:") {
+      document.getElementById("tela").innerHTML =
+        '<section class="bloco"><h1>Abra pelo servidor</h1>' +
+        '<p>Este app não funciona abrindo o <code>index.html</code> direto. ' +
+        'Na pasta do projeto, dê dois cliques em <strong>abrir_app.bat</strong> ' +
+        '(ou rode <code>python pipeline/servir_app.py</code>). O navegador abre sozinho em ' +
+        '<code>http://localhost:8765</code>.</p></section>';
+    }
+  </script>
+  <noscript><p class="carregando">Este app precisa de JavaScript.</p></noscript>
+</body>
+</html>

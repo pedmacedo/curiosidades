@@ -1,0 +1,4 @@
+requests>=2.31
+beautifulsoup4>=4.12
+# opcional: permite ao checar_citacoes.py ler fontes em PDF
+pypdf>=4.0

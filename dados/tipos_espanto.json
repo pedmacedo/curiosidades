@@ -1,0 +1,12 @@
+{
+  "tipos": [
+    {"id": "escala_absurda", "nome": "Escala absurda", "descricao": "Tamanhos, tempos ou números extremos"},
+    {"id": "contraintuitivo", "nome": "Contraintuitivo", "descricao": "Contraria o que a intuição diria"},
+    {"id": "origem_inesperada", "nome": "Origem inesperada", "descricao": "De onde vem uma palavra, um costume ou um objeto"},
+    {"id": "conexao_inesperada", "nome": "Conexão inesperada", "descricao": "Dois mundos que se ligam"},
+    {"id": "mito_desmentido", "nome": "Mito desmentido", "descricao": "Algo que muita gente acredita e não é verdade"},
+    {"id": "misterio_aberto", "nome": "Mistério aberto", "descricao": "Pergunta que a ciência ainda não respondeu"},
+    {"id": "engenhosidade", "nome": "Engenhosidade", "descricao": "Soluções brilhantes da natureza ou de humanos"},
+    {"id": "historia_humana", "nome": "História humana", "descricao": "Episódio real, com personagens"}
+  ]
+}

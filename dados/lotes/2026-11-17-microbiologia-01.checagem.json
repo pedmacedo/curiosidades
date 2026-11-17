@@ -1,0 +1,293 @@
+{
+ "arquivo": "dados\\lotes\\2026-11-17-microbiologia-01.jsonl",
+ "gerado_em": "2026-11-17",
+ "limiar": 0.9,
+ "resumo": {
+  "ok": 16,
+  "aproximado": 0,
+  "falhou": 0,
+  "com_aviso_numero": 0
+ },
+ "fatos": [
+  {
+   "id": "microbiologia-0001",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Deep_biosphere",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Deep_biosphere__438b3fbf28__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0002",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Prochlorococcus",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Prochlorococcus__5e53bff054__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0003",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bacteriophage",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Bacteriophage__a9f81144ed__extrato.txt"
+     ],
+     "similaridade": 1.0
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Marine_bacteriophage",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Marine_bacteriophage__1caab706de__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0004",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mimivirus",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Mimivirus__e748999df9__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0005",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sputnik_virophage",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Sputnik_virophage__8eb5eeb953__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Marine_bacteriophage",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Marine_bacteriophage__1caab706de__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0006",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Deinococcus_radiodurans",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Deinococcus_radiodurans__174ed73b7b__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0007",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lynn_Margulis",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Lynn_Margulis__de3a4a2922__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0008",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thiomargarita_magnifica",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Thiomargarita_magnifica__1effcca9ba__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0009",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Barry_Marshall",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Barry_Marshall__ecfc8425be__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0010",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cable_bacteria",
+     "status": "aproximado",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Cable_bacteria__1bebcfac8f__extrato.txt",
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Cable_bacteria__1bebcfac8f__html.txt"
+     ],
+     "similaridade": 0.981,
+     "trecho_na_fonte": "cable bacteria are filamentous bacteria that conduct electricity across distances over 1 cm in sediment and groundwater aquifers. [...] cable bacteria couple the reduction of oxygen or nitrate at the sediment surface to oxidation of sulfide [...] but the outer cell membrane is shared by all cells in a filament."
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4030233/",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\pmc_ncbi_nlm_nih_gov_articles_PMC4030233__9a99a4ca48__pagina.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0011",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aliivibrio_fischeri",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Aliivibrio_fischeri__1aa6d84a69__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0012",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Wolbachia",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Wolbachia__00d0b24a38__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0013",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Carl_Woese",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Carl_Woese__38f1fc6a0d__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0014",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Asgard_(archaea)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Asgard_archaea__7d554ab5f2__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0015",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bioprecipitation",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Bioprecipitation__8b6a3dad6d__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "microbiologia-0016",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://www.nature.com/articles/s41467-020-17330-1",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_nature_com_articles_s41467_020_17330_1__1ac4a5414b__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  }
+ ]
+}

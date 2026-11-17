@@ -1,0 +1,260 @@
+{
+ "arquivo": "dados\\lotes\\2026-11-17-palavras_viajantes-01.jsonl",
+ "gerado_em": "2026-11-17",
+ "limiar": 0.9,
+ "resumo": {
+  "ok": 15,
+  "aproximado": 0,
+  "falhou": 0,
+  "com_aviso_numero": 0
+ },
+ "fatos": [
+  {
+   "id": "palavras_viajantes-0001",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Orange_(word)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Orange_word__0e0d8de74e__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0002",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Etymology_of_tea",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Etymology_of_tea__89ca456290__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0003",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pineapple",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Pineapple__84ce08da52__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0004",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cashew",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Cashew__1444495d48__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0005",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mandarin_(bureaucrat)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Mandarin_bureaucrat__9d895a8837__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0006",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_Japanese_words_of_Portuguese_origin",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_List_of_Japanese_words_of_Portuguese_origin__e9f1795f5f__extrato.txt",
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_List_of_Japanese_words_of_Portuguese_origin__e9f1795f5f__html.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0007",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lapis_lazuli",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Lapis_lazuli__916f2321dc__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0008",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sugar",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Sugar__9adff22653__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0009",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Checkmate",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Checkmate__7f01b18527__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0010",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ketchup",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Ketchup__47745f9f27__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0011",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Marmalade",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Marmalade__acdb24436b__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0012",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ciao",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Ciao__546c2b26bb__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0013",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Algorithm",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Algorithm__071899ba83__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://pt.wikipedia.org/wiki/Algarismo",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\pt_wikipedia_org_wiki_Algarismo__e7df655fee__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0014",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Robot",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Robot__fcf4a92d7c__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "palavras_viajantes-0015",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Jaguar",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Jaguar__2fbbb112ee__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  }
+ ]
+}

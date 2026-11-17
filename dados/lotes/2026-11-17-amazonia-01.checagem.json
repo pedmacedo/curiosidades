@@ -1,0 +1,288 @@
+{
+ "arquivo": "dados\\lotes\\2026-11-17-amazonia-01.jsonl",
+ "gerado_em": "2026-11-17",
+ "limiar": 0.9,
+ "resumo": {
+  "ok": 14,
+  "aproximado": 0,
+  "falhou": 0,
+  "com_aviso_numero": 0
+ },
+ "fatos": [
+  {
+   "id": "amazonia-0001",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://www.nasa.gov/content/goddard/nasa-satellite-reveals-how-much-saharan-dust-feeds-amazon-s-plants",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_nasa_gov_content_goddard_nasa_satellite_reveals_how_much_saharan_dust_feeds___6f8ae290ba__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Saharan_dust",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Saharan_dust__97407591ee__extrato.txt"
+     ],
+     "similaridade": 1.0
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_rainforest",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Amazon_rainforest__b917468f8a__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0002",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_River",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Amazon_River__204389b47f__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0003",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_River",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Amazon_River__204389b47f__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0004",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Terra_preta",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Terra_preta__9449800dcb__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0005",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hamza_River",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Hamza_River__18e2654cfc__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0006",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fordl%C3%A2ndia",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Fordl_ndia__08186b89e3__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0007",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Henry_Wickham_(explorer)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Henry_Wickham_explorer__6f12a1aca7__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_rubber_cycle",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Amazon_rubber_cycle__7b662cb4e4__extrato.txt",
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Amazon_rubber_cycle__7b662cb4e4__html.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0008",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrophorus_voltai",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Electrophorus_voltai__2901694576__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0009",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_Reef",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Amazon_Reef__f2c7d5591c__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://www.frontiersin.org/articles/10.3389/fmars.2022.1088956/full",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_frontiersin_org_articles_10_3389_fmars_2022_1088956_full__42cbbf0d22__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0010",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Meeting_of_Waters",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Meeting_of_Waters__1a57333c66__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0011",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://pt.wikipedia.org/wiki/Rios_voadores",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\pt_wikipedia_org_wiki_Rios_voadores__43517c836d__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0012",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pororoca",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Pororoca__cf53283088__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0013",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Joseph_Paxton",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Joseph_Paxton__c56b7b3f38__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://www.imeche.org/news/news-article/fairy-stories-and-'magical-thinking'-obscure-origins-of-crystal-palace-and-eiffel-tower",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_imeche_org_news_news_article_fairy_stories_and_magical_thinking_obscure_orig__80a7226345__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "amazonia-0014",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Upano_Valley_sites",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Upano_Valley_sites__cd7aa4de58__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://www.nbcnews.com/science/science-news/lost-cities-oldest-ancient-complex-found-amazon-1000-years-rcna133608",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_nbcnews_com_science_science_news_lost_cities_oldest_ancient_complex_found_am__013784d561__pagina.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  }
+ ]
+}

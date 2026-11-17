@@ -1,0 +1,55 @@
+# Publica o app no GitHub Pages a cada push na branch main.
+# Roda os testes, gera app/data/ com o construir_dados_app.py (que também valida os fatos)
+# e publica só a pasta app/. Se algum teste ou a validação falhar, nada é publicado.
+name: Publicar o app
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacao.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Testes (Python e JavaScript)
+        run: |
+          python -m unittest discover -s testes
+          node --test testes/recomendador.test.mjs
+
+      - name: Gerar os dados do app
+        run: python pipeline/construir_dados_app.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app
+
+      - id: publicacao
+        uses: actions/deploy-pages@v4

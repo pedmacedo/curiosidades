@@ -1,0 +1,149 @@
+{
+ "lote": "2026-11-17-palavras_viajantes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "palavras_viajantes-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sugere que o português passou pelo italiano/francês; origem dravídica é provável, não certa.",
+    "correcao": "Reescrever o gancho; 'provavelmente'."
+   },
+   {
+    "id": "palavras_viajantes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mecanismo e ponte Macau-Portugal."
+   },
+   {
+    "id": "palavras_viajantes-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Qualquer fruta' generaliza; cronologia invertida; Hoyriri só 'believed to be'.",
+    "correcao": "Ajustar gancho e cronologia."
+   },
+   {
+    "id": "palavras_viajantes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Glosa 'noz que se produz sozinha' frágil (só fontes de horticultura).",
+    "correcao": "Remover ou atenuar a glosa."
+   },
+   {
+    "id": "palavras_viajantes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Mandarin (bureaucrat) e dicionários."
+   },
+   {
+    "id": "palavras_viajantes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mito e desmentido já circulam no Brasil."
+   },
+   {
+    "id": "palavras_viajantes-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Azul é o nome' → 'vem do nome'; semipreciosa; passagem pelo árabe e topônimo.",
+    "correcao": "Ajustar gancho e explicação."
+   },
+   {
+    "id": "palavras_viajantes-0008",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: lista de palavras óbvia, repete a estrutura de 0001/0007; afirmações sem apoio."
+   },
+   {
+    "id": "palavras_viajantes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; consenso_parcial correto."
+   },
+   {
+    "id": "palavras_viajantes-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Viajou intacto' contradito (ketchup/catchup/catsup); 'fermentado' e 'muito citada' sem apoio.",
+    "correcao": "Trocar a última frase; tirar 'fermentado' e 'muito citada'."
+   },
+   {
+    "id": "palavras_viajantes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; nota 3 pela semelhança óbvia com marmelada."
+   },
+   {
+    "id": "palavras_viajantes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; confirmado por fontes italianas."
+   },
+   {
+    "id": "palavras_viajantes-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'É o nome de uma pessoa' exagera; falta a etapa do grego arithmós; perde o gancho 'algarismo'.",
+    "correcao": "'Vem do nome'; arithmós; algarismo com fonte."
+   },
+   {
+    "id": "palavras_viajantes-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Robôs de R.U.R. eram seres vivos; Karel não cunhou a palavra (foi Josef).",
+    "correcao": "Corrigir com trechos da mesma fonte."
+   },
+   {
+    "id": "palavras_viajantes-0015",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "exagero: a glosa 'fera que domina a presa com um salto' é disputada e virou o gancho; 'raro caso' é falso."
+   }
+  ],
+  "2": [
+   {
+    "id": "palavras_viajantes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; rebracketing dá mecanismo."
+   },
+   {
+    "id": "palavras_viajantes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'hoje se acredita ser o abacaxi'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "palavras_viajantes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; glosa tupi com ressalva."
+   },
+   {
+    "id": "palavras_viajantes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; 'pedra do céu' sustentada (lazulum = céu)."
+   },
+   {
+    "id": "palavras_viajantes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; consenso_parcial e misterio_aberto adequados."
+   },
+   {
+    "id": "palavras_viajantes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; fonte de 'algarismo' é fraca (pt.wikipedia sem referências), mas a etimologia é consensual."
+   },
+   {
+    "id": "palavras_viajantes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; autoria de Josef Čapek e robôs orgânicos sustentados."
+   }
+  ]
+ }
+}

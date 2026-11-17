@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "app",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["pipeline/servir_app.py", "--sem-navegador", "--porta", "8770"],
+      "port": 8770,
+      "autoPort": false
+    }
+  ]
+}

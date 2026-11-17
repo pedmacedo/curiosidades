@@ -1,0 +1,144 @@
+{
+ "lote": "2026-11-17-amazonia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "amazonia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números da NASA 2015 conferem, mas foram contestados: Prospero 2020 estimou bem menos poeira; Barkley 2019 mostrou fumaça de queimadas africanas como fonte de fósforo.",
+    "correcao": "Confiança consenso_parcial; atribuir os números à estimativa de 2015; acrescentar a ressalva com fonte."
+   },
+   {
+    "id": "amazonia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; nota 3 porque circula em listas."
+   },
+   {
+    "id": "amazonia-0003",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: clássico de listas virais; ligação cheia-ponte sem apoio."
+   },
+   {
+    "id": "amazonia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; consenso_parcial adequado."
+   },
+   {
+    "id": "amazonia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; cautela adequada."
+   },
+   {
+    "id": "amazonia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere."
+   },
+   {
+    "id": "amazonia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Exagero: só ~2.700 das 70 mil sementes germinaram; licença obtida sob falso pretexto (não às escondidas); trecho colava duas legendas.",
+    "correcao": "Reescrever gancho e explicação; somar Henry Wickham (explorer)."
+   },
+   {
+    "id": "amazonia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Maior gerador de eletricidade da natureza' é falso (raios); a fonte diz bioeletricidade.",
+    "correcao": "Trocar por 'o mais forte gerador de bioeletricidade conhecido'."
+   },
+   {
+    "id": "amazonia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Impossível' é exagero; extensão e vitalidade do recife em debate.",
+    "correcao": "'onde se pensava não haver recifes', 'cerca de mil km', ressalva do debate, consenso_parcial."
+   },
+   {
+    "id": "amazonia-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "numero_divergente: 28/22 °C é número de turismo; medição de campo (Gualtieri 2018) mostra ~1 °C de diferença; além de muito conhecido."
+   },
+   {
+    "id": "amazonia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Frase dos 90%/10% vale para rios atmosféricos em geral; paráfrase muito próxima da fonte em português.",
+    "correcao": "Remover a frase global; reescrever com palavras próprias."
+   },
+   {
+    "id": "amazonia-0012",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: pororoca é conhecimento comum no Brasil; os 800 km são frágeis."
+   },
+   {
+    "id": "amazonia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A inspiração na folha é contestada (ridge-and-furrow já existia; Loudon); citação não atribuída a Paxton.",
+    "correcao": "Atribuir a inspiração a Paxton ('dizia'); citar a controvérsia; consenso_parcial."
+   },
+   {
+    "id": "amazonia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Antes de qualquer outra sociedade complexa' é exagero (Mayo-Chinchipe ~3000 a.C.).",
+    "correcao": "'cerca de mil anos antes dos outros exemplos conhecidos de cidades pré-colombianas na Amazônia'."
+   }
+  ],
+  "2": [
+   {
+    "id": "amazonia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: atribuição dos números a 'estudos com dados do CALIPSO'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "amazonia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; proporção 70 mil → 2.700 e a licença trazem novidade."
+   },
+   {
+    "id": "amazonia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; nota 3, é sobretudo um recorde."
+   },
+   {
+    "id": "amazonia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; debate declarado e consenso_parcial correto."
+   },
+   {
+    "id": "amazonia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mecanismo completo com fonte, texto próprio."
+   },
+   {
+    "id": "amazonia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajustes pontuais aplicados sem nova verificação: gancho reescrito ('Conta-se que...'), argumento atribuído a Vincent e data de 1849.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "amazonia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; comparação limitada a outros achados."
+   }
+  ]
+ }
+}

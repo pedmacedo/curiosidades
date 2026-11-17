@@ -1,0 +1,169 @@
+{
+ "lote": "2026-11-17-microbiologia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "microbiologia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Deep biosphere; atenção à proximidade com microbiologia-0016."
+   },
+   {
+    "id": "microbiologia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: os 13–48% vêm de medição no Pacífico equatorial (Vaulot 1995), não do mundo; frase final ecoa o equívoco 'X produz o oxigênio que respiramos'; 'ninguém conhecia' ignora registros anteriores.",
+    "correcao": "Tirar os 13–48% e a frase final; usar a abundância (~3×10²⁷ células); dizer 'só foi identificada em 1986'; tirar 'atmosfera' dos temas secundários."
+   },
+   {
+    "id": "microbiologia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; estimativa de 10^31 sustentada também por Mushegian 2020."
+   },
+   {
+    "id": "microbiologia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "exagero: não foi o primeiro vírus gigante (clorovírus, 1981); afirmação sem apoio sobre a 'ideia antiga' de vírus invisíveis.",
+    "correcao": "Trocar 'O primeiro vírus gigante conhecido' por 'O mimivírus'; tirar a frase sem apoio; usar genoma maior que o de 30 grupos de seres celulares e genes antes tidos como exclusivos de células."
+   },
+   {
+    "id": "microbiologia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Frase sobre 'vírus gigantes ficarem doentes' sem apoio; 'vírus pegam vírus' é impreciso.",
+    "correcao": "Trocar por 'Até vírus têm parasitas'; tirar a frase sem apoio; usar a redução de 70% nas partículas e de 3× na lise da ameba; somar Marine bacteriophage como 2ª fonte."
+   },
+   {
+    "id": "microbiologia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mecanismo e história compensam a fama de 'mais resistente'."
+   },
+   {
+    "id": "microbiologia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Omissão: a teoria tinha predecessores (Mereschkowski, Wallin...); as 15 recusas são relato da própria Margulis.",
+    "correcao": "Reconhecer predecessores; atribuir as recusas a ela ('segundo ela contou')."
+   },
+   {
+    "id": "microbiologia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Causalidade errada: a fonte atribui a solução da difusão a um vacúolo gigante, não aos compartimentos de DNA; 'comparável a um cílio' sem apoio.",
+    "correcao": "Explicar o vacúolo (65–80% do volume); pepins como segunda esquisitice; deixar claro no gancho que é uma única célula."
+   },
+   {
+    "id": "microbiologia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; nota baixada para 3 porque a autoexperiência de Marshall é anedota muito difundida."
+   },
+   {
+    "id": "microbiologia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Os 2 km/cm² foram pico em sedimento incubado em laboratório (Schauer 2014), não densidade natural típica.",
+    "correcao": "Dizer que foi em sedimento incubado em laboratório, com a fonte primária, ou remover a frase."
+   },
+   {
+    "id": "microbiologia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Aliivibrio fischeri."
+   },
+   {
+    "id": "microbiologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; sugestão opcional de precisar o acordo da Fiocruz de 2023."
+   },
+   {
+    "id": "microbiologia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Frase sobre micróbios não cultiváveis sem apoio; historia_humana fraco sem o episódio da resistência a Woese.",
+    "correcao": "Tirar a frase; incluir a oposição de Luria e Mayr e a aceitação só em meados dos anos 1980, com trecho."
+   },
+   {
+    "id": "microbiologia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere; consenso_parcial coerente com o 'parecem' do gancho."
+   },
+   {
+    "id": "microbiologia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; hipótese da bioprecipitação marcada como em estudo."
+   },
+   {
+    "id": "microbiologia-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "'conforme o método de cálculo' é impreciso: a faixa varia entre incubações com substratos diferentes.",
+    "correcao": "Trocar por 'dependendo do alimento oferecido em cada incubação'."
+   }
+  ],
+  "2": [
+   {
+    "id": "microbiologia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere após a correção."
+   },
+   {
+    "id": "microbiologia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere após a correção."
+   },
+   {
+    "id": "microbiologia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; proteção parcial da ameba apoiada também em Marine bacteriophage."
+   },
+   {
+    "id": "microbiologia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; nota 3 porque a origem das mitocôndrias é conteúdo escolar."
+   },
+   {
+    "id": "microbiologia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; nota 4 pela ampla cobertura na imprensa em 2022."
+   },
+   {
+    "id": "microbiologia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'rios' → 'lagos' no gancho.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "microbiologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere, inclusive o acordo da Fiocruz de 2023."
+   },
+   {
+    "id": "microbiologia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; episódio da resistência a Woese sustentado."
+   },
+   {
+    "id": "microbiologia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajustes pontuais aplicados sem nova verificação: tirar 'dormentes' e o qualificador da faixa.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

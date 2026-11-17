@@ -1,0 +1,14 @@
+# Texto completo das páginas baixadas pelo checar_citacoes.py: é refeito com --baixar e não
+# deve ser republicado (são textos de terceiros). Os fatos guardam só o trecho citado.
+dados/cache_fontes/
+
+# Gerados pelo pipeline/construir_dados_app.py (o GitHub Actions gera de novo ao publicar)
+app/data/*.json
+app/data/versao.js
+
+# Python
+__pycache__/
+*.pyc
+
+# Configurações locais do Claude Code
+.claude/settings.local.json
