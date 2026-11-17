@@ -3,7 +3,7 @@
 > Estado atual do projeto. Atualize ao fim de cada sessão de trabalho. A referência permanente é o `CLAUDE.md`.
 
 **Última atualização:** 2026-11-17
-**Fase atual:** 3 (app MVP): app pronto e testado no computador; **falta publicar e testar no celular do Pedro**.
+**Fase atual:** 3 (app MVP): app publicado em https://pedmacedo.github.io/curiosidades/; **falta o Pedro testar no celular**.
 
 ## Fases
 
@@ -75,7 +75,7 @@ Ajustes pedidos pelo Pedro depois do primeiro teste (2026-11-17):
 - Explicação com texto **justificado** (com hifenização em português, que funciona no celular).
 - Reação **"Já sabia" retirada**: o que importa é a reação ao conteúdo. O `CLAUDE.md` (§6.1 e §6.2) foi atualizado. Históricos antigos com "Já sabia" continuam sendo lidos.
 
-**Publicação (preparada, falta o primeiro envio):** o projeto virou um repositório git local (branch `main`). O `.github/workflows/publicar.yml` roda os testes, gera `app/data/` e publica a pasta `app/` no GitHub Pages a cada envio. O `.gitignore` deixa de fora `dados/cache_fontes/` (texto completo de páginas de terceiros, que não deve ser republicado e é refeito com `--baixar`) e os arquivos gerados em `app/data/`.
+**Publicação:** repositório https://github.com/pedmacedo/curiosidades (público), app em **https://pedmacedo.github.io/curiosidades/**. Primeiro envio em 2026-11-17. O remoto usa `https://pedmacedo@github.com/...` porque o Windows tem salvo o login de outra conta (macedoped). O `.github/workflows/publicar.yml` roda os testes, gera `app/data/` e publica a pasta `app/` no GitHub Pages a cada envio. O `.gitignore` deixa de fora `dados/cache_fontes/` (texto completo de páginas de terceiros, que não deve ser republicado e é refeito com `--baixar`) e os arquivos gerados em `app/data/`.
 
 Testado no navegador (tela de celular 375×812, claro e escuro): criar perfil, as duas etapas do questionário, explicação, salvar, "parece errado", os 39 fatos do feed sem repetir e sem 3 da mesma área seguidos, tela de fim, perfil, favoritos, refazer questionário e **funcionamento com o servidor desligado**.
 
@@ -118,7 +118,7 @@ Opcional: a variável de ambiente `CURIOSIDADES_CONTATO` acrescenta um contato a
 
 ## Próximos passos
 
-1. **Fase 3:** publicar o app num endereço com HTTPS (necessário para instalar e funcionar offline no celular) e o Pedro testar no celular, inclusive em modo avião.
+1. **Fase 3:** o Pedro instalar o app no celular a partir de https://pedmacedo.github.io/curiosidades/ e testar, inclusive em modo avião.
 2. **Fase 4:** produção de lotes, seguindo o fluxo acima, com a régua nova (pontas conhecidas).
 
 ## Estatísticas de conteúdo
