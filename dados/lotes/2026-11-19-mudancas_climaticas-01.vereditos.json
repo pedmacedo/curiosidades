@@ -1,0 +1,134 @@
+{
+ "lote": "2026-11-19-mudancas_climaticas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "mudancas_climaticas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Eunice Newton Foote (1856, três anos antes de Tyndall, ressalvas do aparelho)."
+   },
+   {
+    "id": "mudancas_climaticas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Keeling Curve, Charles David Keeling e NOAA (ciclo de ~6 ppm, 'routine', 422,8 ppm em 2024)."
+   },
+   {
+    "id": "mudancas_climaticas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números batem com Ice core (Dome C 95 m e 2.500 anos) e Loulergue et al. 2007."
+   },
+   {
+    "id": "mudancas_climaticas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Snowball Earth confirma tudo (Budyko, Kirschvink 1992, 350 vezes, 4 a 30 milhões de anos); consenso_parcial."
+   },
+   {
+    "id": "mudancas_climaticas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere com Milutin Milanković; mas 'as folhas impressas escaparam' sem a ressalva 'almost all'.",
+    "correcao": "'que destruiu a gráfica; as folhas impressas escaparam.' -> 'que destruiu a gráfica; quase todas as folhas já impressas escaparam no depósito.'"
+   },
+   {
+    "id": "mudancas_climaticas-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e números conferem; mas '3 anos ou menos' é exagero provável (Steffensen 2008: excesso de deutério, temperatura em décadas), e o início não foi sincronizado em todo o hemisfério Norte.",
+    "correcao": "1) Gancho: 'Na Groenlândia, a temperatura caiu até 10 °C, e a queda pode ter levado 3 anos ou menos.' -> 'Em poucas décadas, a Groenlândia ficou até 10 °C mais fria.' 2) 'O resfriamento atingiu o hemisfério Norte em poucas décadas' -> 'O resfriamento atingiu o Atlântico Norte em poucas décadas'."
+   },
+   {
+    "id": "mudancas_climaticas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com African humid period (Megachade, Caverna dos Nadadores, 14.600–5.000 anos)."
+   },
+   {
+    "id": "mudancas_climaticas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Estrutura de hipótese bem posta; mas o par 3.500→650 ppm não tem fonte primária, 'boa parte' exagera ('Other factors almost certainly played a role'), 'pouco antes' do PETM (7 milhões de anos) e florações, não cobertura contínua.",
+    "correcao": "1) Gancho: 'pode ter coberto o oceano Ártico por 800 mil anos' -> 'pode ter florescido no oceano Ártico por 800 mil anos'. 2) 'O episódio coincide com uma queda do CO2, de 3.500 ppm no começo do Eoceno para 650 ppm, e a hipótese é que a samambaia possa ter respondido por boa parte dessa queda,' -> 'O episódio coincide com uma queda forte do CO2 do ar, e a hipótese é que a samambaia tenha contribuído para ela, ao lado de outros fatores,'. 3) 'Pouco antes, a Terra tinha passado' -> 'Alguns milhões de anos antes, a Terra tinha passado'."
+   },
+   {
+    "id": "mudancas_climaticas-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere (UVM, Science 2023, 416 mil anos); mas a base era pública: secreto era o Projeto Iceworm.",
+    "correcao": "Gancho: 'uma base militar secreta dos EUA sob o gelo da Groenlândia' -> 'uma base militar dos EUA escavada no gelo da Groenlândia'."
+   },
+   {
+    "id": "mudancas_climaticas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Global cooling (menos de 10%, Newsweek 1975 e 2006, aerossóis). Nota 3."
+   },
+   {
+    "id": "mudancas_climaticas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Ocean acidification (8,15 para 8,05, 26%, PETM 10 vezes mais lento, ainda alcalino). Nota 3."
+   },
+   {
+    "id": "mudancas_climaticas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Faint young Sun paradox (70%, Sagan e Mullen 1972, CO2 em debate); consenso_parcial e misterio_aberto."
+   },
+   {
+    "id": "mudancas_climaticas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com River Thames frost fairs (24 invernos, 1683–84, ponte como represa, elefante em 1814, 1831)."
+   },
+   {
+    "id": "mudancas_climaticas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem no PDF de Koch et al. 2019 (7–10 ppm, 119 estimativas, 55,8 Mha, 47–67%); críticas cobertas pela atribuição e consenso_parcial. Nota 4."
+   },
+   {
+    "id": "mudancas_climaticas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com o SPM do AR6; mas as projeções para 2.000 anos são de baixa confiança, e o texto as apresenta como firmes.",
+    "correcao": "Depois de '...ficará elevado por milhares de anos, com alta confiança.', inserir 'Já os números exatos para os próximos 2.000 anos são classificados pelo próprio relatório como de baixa confiança, pela incerteza sobre o comportamento das camadas de gelo.' Opcional no gancho: 'Segundo o IPCC, mesmo que' -> 'Pelas estimativas do IPCC, mesmo que'."
+   }
+  ],
+  "2": [
+   {
+    "id": "mudancas_climaticas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Quase todas as folhas' aplicado; o resto confere."
+   },
+   {
+    "id": "mudancas_climaticas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Em poucas décadas' e 'Atlântico Norte' aplicados."
+   },
+   {
+    "id": "mudancas_climaticas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Florescido', sem o par de ppm, 'ao lado de outros fatores' e 'alguns milhões de anos antes' aplicados."
+   },
+   {
+    "id": "mudancas_climaticas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Base 'escavada no gelo', segredo só no Iceworm."
+   },
+   {
+    "id": "mudancas_climaticas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva de baixa confiança inserida, com trecho; 'Pelas estimativas do IPCC'."
+   }
+  ]
+ }
+}

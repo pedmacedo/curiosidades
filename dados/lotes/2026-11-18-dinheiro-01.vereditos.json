@@ -1,0 +1,112 @@
+{
+ "lote": "2026-11-18-dinheiro-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "dinheiro-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Não eram dinheiro do dia a dia (transações sociais raras); 'rarely moved', não 'nem saíam'; 'some economists'.",
+    "correcao": "Gancho: 'Em Yap, na Micronésia, discos de pedra de até 4 toneladas mudavam de dono sem sair do lugar. Uma pedra que afundou no mar continuou sendo negociada.'; canoa ou jangadas de bambu; transações raras (casamento, herança, acordos); 'raramente eram movidas'; 'Alguns economistas'."
+   },
+   {
+    "id": "dinheiro-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; 10^20 correto."
+   },
+   {
+    "id": "dinheiro-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; o mecanismo da moeda que não se gasta segura o fato."
+   },
+   {
+    "id": "dinheiro-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A explicação omite que o cruzeiro de 1942 valia mil réis e que 1970 e 1990 foram só trocas de nome; a conta não fecha.",
+    "correcao": "'Veio o cruzeiro, em 1942, valendo mil réis;', 'em 1970, só uma troca de nome;', 'em 1990, com o Plano Collor, de novo só no nome;'."
+   },
+   {
+    "id": "dinheiro-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Generaliza para todas as prisões (fonte: 'in many places'); 'ex-prisioneiro' não está na fonte.",
+    "correcao": "'Em muitas prisões dos EUA...'; tirar 'ex-prisioneiro de guerra'."
+   },
+   {
+    "id": "dinheiro-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Primeiro em espanhol, depois em inglês' sugere passagem do espanhol; o inglês adotou o daler baixo-alemão.",
+    "correcao": "'O inglês adotou a forma baixo-alemã daler por volta de 1550, e ela virou dollar por volta de 1600; hoje o nome batiza várias moedas do mundo.' + trecho."
+   },
+   {
+    "id": "dinheiro-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Maior' falsificador exagera 'most accomplished'; quem condenou foi a Justiça.",
+    "correcao": "Gancho: 'e levou à forca o falsificador mais habilidoso do reino.'"
+   },
+   {
+    "id": "dinheiro-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Muito cobre' sem apoio; a placa de 10 dalers não está datada no século XVII.",
+    "correcao": "Gancho: 'Na Suécia dos séculos XVII e XVIII, a maior moeda'; explicação: 'A prata andava escassa na Suécia.'"
+   },
+   {
+    "id": "dinheiro-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O custo atual (3,69 centavos em 2024) fica de fora; a aprovação da lei é incerta e a regra de arredondamento diverge entre fontes.",
+    "correcao": "Gancho com 3,69 centavos em 2024; custo acima do valor desde 2006; frase da lei reescrita + trechos."
+   }
+  ],
+  "2": [
+   {
+    "id": "dinheiro-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; números conferem."
+   },
+   {
+    "id": "dinheiro-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A conta agora fecha em 2,75×10^18."
+   },
+   {
+    "id": "dinheiro-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Em muitas prisões'; sem 'ex-prisioneiro'."
+   },
+   {
+    "id": "dinheiro-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Daler 1550 e dollar 1600 conferem."
+   },
+   {
+    "id": "dinheiro-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mais habilidoso' fiel à fonte; datas conferem."
+   },
+   {
+    "id": "dinheiro-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Séculos XVII e XVIII; prata escassa."
+   },
+   {
+    "id": "dinheiro-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "3,69 centavos em 2024; frase da lei removida (fonte contraditória)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "lote": "2026-11-19-historia_musica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "historia_musica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo bate com Hurrian songs (c. 1400 a.C., Nikkal, cinco decifrações rivais, 1974); misterio_aberto sustentado."
+   },
+   {
+    "id": "historia_musica-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a sílaba do hino é 'ut' (dó só no séc. XVII), e a redução do treino é atribuída ao método com a pauta, não só às sílabas.",
+    "correcao": "Gancho: 'Ré, mi, fá, sol e lá (e o antigo \"ut\", hoje dó) saíram de um hino a São João. Com elas e com a pauta, o monge Guido d'Arezzo, no século XI, encurtou o treino de um cantor de 10 anos para um ou dois.'"
+   },
+   {
+    "id": "historia_musica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Conteúdo confere e é mito listado; mas 'daí nasceu' cria causalidade, cita a Wikipedia no texto e tem frase quase traduzida.",
+    "correcao": "1) 'Daí nasceu a lenda de que a Igreja o teria banido, chegando a excomungar cantores.' -> 'Circula a lenda de que a Igreja o teria banido, chegando a excomungar cantores.' 2) 'Segundo o artigo da Wikipedia sobre o intervalo, essas histórias de punição são provavelmente fantasiosas.' -> 'Mas essas histórias de punição são, ao que tudo indica, fantasiosas.' 3) 'Mas não há citações conhecidas do termo na Idade Média, como se costuma afirmar.' -> 'Ao contrário do que se repete, ninguém encontrou o termo em textos medievais.'"
+   },
+   {
+    "id": "historia_musica-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; só a concordância 'pastiches, atribuídas'.",
+    "correcao": "'desses pastiches, atribuídas também a Tartini e Pugnani' -> 'desses pastiches, atribuídos também a Tartini e Pugnani'."
+   },
+   {
+    "id": "historia_musica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Haydn's head sustenta tudo (1809, Rosenbaum e Peter, frenologia, 1820, 1895, 1954, dois crânios)."
+   },
+   {
+    "id": "historia_musica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo bate com a fonte (1785, Cornetti, descoberta em 2015 em Praga); corrige o mito do envenenamento listado."
+   },
+   {
+    "id": "historia_musica-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'só se viram de longe' é contradito: em 1879 se cruzaram por acaso em Simaki.",
+    "correcao": "Trocar 'Os dois só se viram de longe: em Florença, ele via o cortejo dela passar todas as manhãs, e uma vez se avistaram na ópera, encontro talvez arranjado por ela.' por 'Quase nunca se viram: em Florença, ele via o cortejo dela passar todas as manhãs, e uma vez se avistaram de longe na ópera, encontro talvez arranjado por ela. Em 1879, na propriedade dela, os dois se cruzaram por acaso num bosque: ele tirou o chapéu, ninguém disse nada, e à noite ele escreveu pedindo desculpas pela quebra do combinado.' (com trecho)."
+   },
+   {
+    "id": "historia_musica-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; a última frase força a fonte ('would likely have been dwarfed', exemplo da tinta das tigelas).",
+    "correcao": "Trocar 'Na época, o chumbo vinha em quantidades bem maiores de outras fontes, como remédios e utensílios de cozinha.' por 'Na época, o chumbo estava por toda parte, de remédios a utensílios de cozinha e até à tinta que marcava as tigelas, e o pouco que viesse do vidro provavelmente era irrelevante perto disso.'"
+   },
+   {
+    "id": "historia_musica-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Explicação confere; mas a gravação de 1904 é posterior ao motu proprio de 1903, então 'pouco antes' está errado.",
+    "correcao": "Gancho: 'A voz de um castrato não é só lenda: Alessandro Moreschi, do coro da Capela Sistina, gravou discos em 1902 e 1904. Foi o único castrato a gravar solos, bem quando um papa mandou trocar essas vozes por meninos.'"
+   },
+   {
+    "id": "historia_musica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "British Library (Copeland e Long) e Computer music sustentam tudo; a afirmação sobre 1948 está atribuída."
+   },
+   {
+    "id": "historia_musica-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas o banquete de Hitler no Astoria em 9/8 circula como relato não comprovado.",
+    "correcao": "Trocar 'O concerto aconteceu em 9 de agosto de 1942, data que Hitler tinha escolhido para celebrar a queda da cidade com um banquete no Hotel Astoria.' por formulação de relato ('Segundo relatos, ... teria escolhido ...')."
+   },
+   {
+    "id": "historia_musica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Quatuor pour la fin du Temps (Stalag VIII-A, ~400 ouvintes, 5.000 exagerados por Messiaen)."
+   },
+   {
+    "id": "historia_musica-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Todos os números conferem com As Slow as Possible (2001–2640, 639 anos, sacos de areia). Datas de mudança de nota envelhecem."
+   },
+   {
+    "id": "historia_musica-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Ampex (Magnetophon, Mullin, Crosby, Model 200A em 1948)."
+   },
+   {
+    "id": "historia_musica-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Niccolò Paganini (1840, enterro recusado em parte pela fama diabólica, 1876, 1893, 1896). Explicação no limite do texto próprio."
+   }
+  ],
+  "2": [
+   {
+    "id": "historia_musica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Ut' e a redução do treino pelo método com a pauta conferem."
+   },
+   {
+    "id": "historia_musica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Causalidade, menção à Wikipedia e frase traduzida corrigidas; consenso_parcial."
+   },
+   {
+    "id": "historia_musica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Concordância corrigida; o resto confere."
+   },
+   {
+    "id": "historia_musica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "O encontro por acaso de 1879 em Simaki confere com o cache."
+   },
+   {
+    "id": "historia_musica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Chumbo de outras fontes, inclusive a tinta das tigelas, com 'provavelmente'."
+   },
+   {
+    "id": "historia_musica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sem o 'pouco antes' errado; cronologia confere."
+   },
+   {
+    "id": "historia_musica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Banquete de Hitler como relato, compatível com a ressalva da fonte."
+   }
+  ]
+ }
+}

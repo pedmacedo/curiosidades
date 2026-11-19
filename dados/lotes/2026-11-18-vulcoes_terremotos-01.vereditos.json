@@ -1,0 +1,101 @@
+{
+ "lote": "2026-11-18-vulcoes_terremotos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "vulcoes_terremotos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Parícutin."
+   },
+   {
+    "id": "vulcoes_terremotos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Onde ela escreveu Frankenstein' exagera: ela começou o livro ali.",
+    "correcao": "Gancho: 'onde ela escreveu Frankenstein.' → 'onde ela começou Frankenstein.'"
+   },
+   {
+    "id": "vulcoes_terremotos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; Revolução Francesa como possibilidade com ressalva."
+   },
+   {
+    "id": "vulcoes_terremotos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Lake Nyos disaster."
+   },
+   {
+    "id": "vulcoes_terremotos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com 1883 eruption of Krakatoa; mantém 'conhecido'."
+   },
+   {
+    "id": "vulcoes_terremotos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Geophysical effects; já saiu no noticiário, nota 3."
+   },
+   {
+    "id": "vulcoes_terremotos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O deslizamento fica sob a região de Wellington (Kāpiti), não sob a cidade; frase redundante; 'sem nenhum sinal' forte demais.",
+    "correcao": "Gancho 'sob a região de Wellington'; reescrever a frase do evento de 1999."
+   },
+   {
+    "id": "vulcoes_terremotos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Magnitude 7,3 x 7,5 na mesma fonte; os 150 mil eram mortos e feridos; faltava a ressalva de que a previsão foi considerada sorte.",
+    "correcao": "Novo gancho; magnitude com as duas; mortes <2.500; ressalva do 'fluke'; trechos literais."
+   },
+   {
+    "id": "vulcoes_terremotos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada afirmação tem apoio; o questionário e a ponte com o Brasil sustentam a nota."
+   },
+   {
+    "id": "vulcoes_terremotos-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Magnitude 3' → '3 ou mais'; o dado de 2015 era parcial (até agosto).",
+    "correcao": "Gancho '3 ou mais'; frase de 2015 com 'meados de agosto'."
+   }
+  ],
+  "2": [
+   {
+    "id": "vulcoes_terremotos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Começou Frankenstein' compatível com a fonte; bicicleta com hedge."
+   },
+   {
+    "id": "vulcoes_terremotos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Região de Wellington, frase limpa, 'sem sinal significativo' como na fonte.",
+    "correcao": "'aparecem sobretudo em zonas de subducção' → 'são mais bem documentados em certas zonas de subducção'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "vulcoes_terremotos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Magnitude, mortos e feridos e ressalva corrigidos.",
+    "correcao": "'considerada um golpe de sorte' → 'é vista por muitos como provável golpe de sorte'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "vulcoes_terremotos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'3 ou mais' e dado de 2015 datado."
+   }
+  ]
+ }
+}

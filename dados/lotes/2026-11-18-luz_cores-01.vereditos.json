@@ -1,0 +1,149 @@
+{
+ "lote": "2026-11-18-luz_cores-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "luz_cores-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a fonte só diz que talvez não soubessem do ouro; a prata provavelmente era proposital",
+    "correcao": "Gancho: 'O segredo são partículas de ouro e prata de uns 70 nanômetros, que os vidreiros talvez nem soubessem que estavam ali.' -> 'O segredo são partículas de ouro e prata de uns 70 nanômetros, e os vidreiros talvez nem soubessem que havia ouro na mistura.'"
+   },
+   {
+    "id": "luz_cores-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Rainbow e Indigo conferem; nota 3"
+   },
+   {
+    "id": "luz_cores-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o dado de 50% é de universitários americanos (Winer et al.)",
+    "correcao": "Gancho: 'pesquisas de 2002 indicaram que até metade dos universitários ainda acredita em algo assim' -> 'uma revisão de 2002 indicou que até metade dos universitários americanos ainda acredita em algo assim'. Explicação: 'até 50% dos universitários adultos acreditam' -> 'até 50% dos universitários adultos nos Estados Unidos acreditam'."
+   },
+   {
+    "id": "luz_cores-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Arago spot confere"
+   },
+   {
+    "id": "luz_cores-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Io não é a lua mais interna de Júpiter, e sim a mais interna das galileanas",
+    "correcao": "'os eclipses de Io, a lua mais interna de Júpiter, eram cronometrados' -> 'os eclipses de Io, a mais interna das quatro grandes luas de Júpiter descobertas por Galileu, eram cronometrados'"
+   },
+   {
+    "id": "luz_cores-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Lene Hau e Slow light conferem; não diz 'a primeira'"
+   },
+   {
+    "id": "luz_cores-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cherenkov confere; olho dos pacientes acrescenta"
+   },
+   {
+    "id": "luz_cores-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Triboluminescence e Nature 2008 conferem"
+   },
+   {
+    "id": "luz_cores-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o mecanismo apresentado é a 'partially correct theory'; a aceita é a transpiração térmica de Reynolds",
+    "correcao": "Trocar 'O lado preto esquenta mais, e as moléculas de gás que batem nele ricocheteiam mais rápido, empurrando-o.' por 'O lado preto esquenta mais que o claro, e o gás rarefeito, ao contornar as bordas das palhetas, flui do lado frio para o quente, um efeito chamado transpiração térmica, proposto por Osborne Reynolds. Isso aumenta a pressão do lado preto e empurra a palheta.' No trecho, trocar a frase da 'partial explanation' por 'The currently accepted theory was formulated by Osborne Reynolds, who theorized that thermal transpiration was the cause of the motion. [...] As gas moves from the cooler to the hotter side, the pressure on the hotter side increases.'"
+   },
+   {
+    "id": "luz_cores-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "gancho de livro didático esconde a virada de Ritter",
+    "correcao": "Gancho: 'Em 1800, Herschel pôs um termômetro além do vermelho do espectro e achou uma luz invisível que esquenta: o infravermelho. Um ano depois, Ritter buscou além do violeta um raio que esfriasse e achou o ultravioleta.'"
+   },
+   {
+    "id": "luz_cores-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Color photography confere; explicação de 1961 é a padrão"
+   },
+   {
+    "id": "luz_cores-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Nakamura e Nobel conferem"
+   },
+   {
+    "id": "luz_cores-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Color of water confere"
+   },
+   {
+    "id": "luz_cores-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Haidinger's brush confere"
+   },
+   {
+    "id": "luz_cores-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Cosmic latte e JHU conferem; nota 3; escala_absurda forçado"
+   },
+   {
+    "id": "luz_cores-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "causalidades invertidas: o ajuste dos dados explica a confiança de Ptolomeu; o nome francês não vem da acusação de plágio",
+    "correcao": "'mas ela falhava para ângulos maiores, em parte porque ele ajustou os dados para caberem na teoria.' -> 'mas ela falhava para ângulos maiores; Ptolomeu se convenceu de que estava certa em parte porque ajustou os dados para caberem na teoria.' E 'e foi acusado, por Fermat, Huygens e outros, de ter copiado Snell, acusação que hoje se considera injusta. Por isso, na França, ela costuma ser chamada de lei de Snell-Descartes.' -> 'e foi acusado por Isaac Vossius, e depois por Fermat e Huygens, de ter copiado Snell, acusação que hoje se considera injusta. Na França, ela costuma ser chamada de lei de Snell-Descartes.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "luz_cores-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'havia ouro na mistura'"
+   },
+   {
+    "id": "luz_cores-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "universitários americanos"
+   },
+   {
+    "id": "luz_cores-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Io, a mais interna das galileanas"
+   },
+   {
+    "id": "luz_cores-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "transpiração térmica de Reynolds; resfriamento corrigido",
+    "correcao": "'resfriada no escuro' -> 'a parte de fora da ampola for resfriada depressa'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "luz_cores-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "virada de Ritter no gancho"
+   },
+   {
+    "id": "luz_cores-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "causalidades corrigidas; Vossius"
+   }
+  ]
+ }
+}

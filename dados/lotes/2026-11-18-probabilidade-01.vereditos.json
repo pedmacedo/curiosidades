@@ -1,0 +1,170 @@
+{
+ "lote": "2026-11-18-probabilidade-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "probabilidade-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Sally Clark confere; falácia do promotor"
+   },
+   {
+    "id": "probabilidade-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "270 é a produção de Panthers, não de todos os tanques; final traduzido frase a frase",
+    "correcao": "1) Gancho: 'os Aliados estimaram quantos tanques a Alemanha fabricava olhando os números de série das peças de tanques capturados.' -> 'os Aliados estimaram quantos tanques Panther a Alemanha fabricava olhando os números de série de peças capturadas.' 2) Deixar claro que 270 e 276 são Panthers ('uma produção de 270 Panthers em fevereiro de 1944'). 3) Reescrever com palavras e estrutura próprias as duas últimas frases (precisão maior que a inteligência convencional; uso em outros equipamentos, sobretudo a V-2), por exemplo numa frase única sobre o legado do método."
+   },
+   {
+    "id": "probabilidade-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Monte Carlo e Ulam conferem"
+   },
+   {
+    "id": "probabilidade-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "gancho diz que o nome 'não tem nada de estudante', mas a fonte liga o pseudônimo a 'The Student's Science Notebook'; explicação é tradução frase a frase",
+    "correcao": "1) Gancho: 'O \"teste t de Student\", da estatística, deve o nome a um pseudônimo: o criador era um cervejeiro da Guinness, que proibia seus pesquisadores de assinar artigos com o nome verdadeiro.' 2) Reescrever a explicação com estrutura própria: começar pelo problema prático (poucas amostras de cevada e cerveja, enquanto Pearson trabalhava com centenas de observações), depois a solução, por fim a regra do sigilo e o pseudônimo; parafrasear de verdade as frases sobre a regra da Guinness e sobre Fisher. Nenhum número novo sem fonte. nota 3."
+   },
+   {
+    "id": "probabilidade-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'três ou mais' ambíguo (das 4 xícaras escolhidas); trechos traduzidos literalmente",
+    "correcao": "1) 'Acertar três ou mais por sorte é bem mais fácil: cerca de 24,3%.' -> 'Já acertar pelo menos três das quatro xícaras escolhidas por pura sorte acontece em cerca de 24,3% das vezes.' 2) Remover 'Depois, ele discutiu as vantagens de fazer mais tentativas e repetir os testes.' 3) Reescrever 'e mesmo assim sem medir o tamanho da habilidade', ex.: 'um acerto completo derrubaria o chute, mas não diria o quanto ela era boa nisso'. Se couber, explicar por que o limite de 5% faz só o acerto total contar (1,4% < 5% < 24,3%)."
+   },
+   {
+    "id": "probabilidade-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'gamblers' são apostadores, não trapaceiros; escala_absurda não cabe",
+    "correcao": "'E mágicos e trapaceiros treinados conseguem' -> 'E mágicos e apostadores com prática conseguem'. tipos_espanto: tirar 'escala_absurda' (deixar 'contraintuitivo', opcional 'mito_desmentido')."
+   },
+   {
+    "id": "probabilidade-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Shuffling confere; debate da medida incluído"
+   },
+   {
+    "id": "probabilidade-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "os 34% valem para a grade 3D, não para o espaço contínuo",
+    "correcao": "Gancho: 'Já um pássaro voando ao acaso em três dimensões tem só cerca de 34% de chance de voltar.' -> 'Já um pássaro que voe ao acaso por uma grade 3D infinita tem só cerca de 34% de chance de voltar.' (tirar 'totalmente ' da primeira frase se precisar). Explicação: 'Com três dimensões, porém, a chance de retorno cai para cerca de 34%' -> 'Numa grade equivalente em três dimensões, porém, a chance de retorno cai para cerca de 34%'."
+   },
+   {
+    "id": "probabilidade-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'quase duas semanas antes' sem dizer antes do quê; 'por pura matemática' sugere garantia individual",
+    "correcao": "Gancho: 'por pura matemática.' -> 'por um efeito matemático das redes.'; 'quase duas semanas antes.' -> 'quase duas semanas antes do que no resto do campus.' (ou 'antes do resto do campus.' se passar de 220)."
+   },
+   {
+    "id": "probabilidade-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Simpson's paradox confere; opcional 'tendiam a dar' em vez de 'reservavam'"
+   },
+   {
+    "id": "probabilidade-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Problem of points confere"
+   },
+   {
+    "id": "probabilidade-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Penney's game confere; conta checada"
+   },
+   {
+    "id": "probabilidade-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'num assoalho' sem apoio; a condição é x = 113n/213, não 'o esperado'",
+    "correcao": "Gancho: 'disse ter jogado uma agulha 3.408 vezes num assoalho e, contando' -> 'disse ter jogado uma agulha 3.408 vezes e, contando'. Explicação: 'e os cruzamentos baterem exatamente com o esperado' -> 'e o número de cruzamentos for exatamente 113/213 do número de lançamentos'."
+   },
+   {
+    "id": "probabilidade-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a RAND criou, a Free Press publicou; 'sempre as mesmas páginas' exagera",
+    "correcao": "Gancho: 'a RAND publicou um livro' -> 'a RAND lançou um livro'. Explicação: 'tendem a abrir sempre as mesmas páginas' -> 'tendem a abrir as mesmas páginas repetidamente'."
+   },
+   {
+    "id": "probabilidade-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "generaliza para 'formigas' um estudo de uma espécie (Temnothorax albipennis); espécie não nomeada; Buffon não queria calcular pi",
+    "correcao": "Gancho: 'Formigas exploradoras medem' -> 'Batedoras de uma formiga europeia medem'. Explicação: 'A espécie é uma formiga europeia de cerca de 3 mm' -> 'A espécie é a Temnothorax albipennis, uma formiga europeia de cerca de 3 mm' (precisa de trecho com o nome; o resumo pode trazer Leptothorax albipennis); 'o que interessa não é calcular pi, como Buffon fez, mas' -> 'o que interessa não é estimar pi, como no uso mais famoso do problema, mas'."
+   }
+  ],
+  "2": [
+   {
+    "id": "probabilidade-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Panthers; final reescrito; particípio solto corrigido",
+    "correcao": "'Deixando para trás os palpites dos espiões...' -> 'Bem mais preciso que a inteligência tradicional, que costumava superestimar a produção nazista, o método ganhou'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "probabilidade-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "gancho corrigido; explicação reestruturada de verdade"
+   },
+   {
+    "id": "probabilidade-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'três das quatro xícaras escolhidas'; porquê dos 5%"
+   },
+   {
+    "id": "probabilidade-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'apostadores com prática'; só contraintuitivo"
+   },
+   {
+    "id": "probabilidade-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "34% ligados à grade 3D"
+   },
+   {
+    "id": "probabilidade-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'efeito matemático das redes'; 'antes do que no resto do campus'"
+   },
+   {
+    "id": "probabilidade-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'tendiam a dar'"
+   },
+   {
+    "id": "probabilidade-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "sem assoalho; 113/213 dos lançamentos"
+   },
+   {
+    "id": "probabilidade-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'lançou'; 'repetidamente'"
+   },
+   {
+    "id": "probabilidade-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "espécie nomeada com fonte; sem generalizar"
+   }
+  ]
+ }
+}

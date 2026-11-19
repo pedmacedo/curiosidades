@@ -1,0 +1,154 @@
+{
+ "lote": "2026-11-18-sistema_imunologico-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "sistema_imunologico-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Metchnikoff confere; ironia com Pasteur"
+   },
+   {
+    "id": "sistema_imunologico-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "no navio houve só a primeira reação; a descoberta decisiva foi no laboratório em 1902",
+    "correcao": "Gancho: 'A anafilaxia foi descoberta num navio do príncipe de Mônaco.' -> 'A descoberta da anafilaxia começou num navio do príncipe de Mônaco.'"
+   },
+   {
+    "id": "sistema_imunologico-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Boston não 'adotou': a cidade se opôs; só Boylston aplicou",
+    "correcao": "Gancho: 'Em 1721, Boston adotou a inoculação contra a varíola graças a Onésimo' -> 'Em 1721, a inoculação contra a varíola foi testada em Boston graças a Onésimo'"
+   },
+   {
+    "id": "sistema_imunologico-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Thymus e Miller conferem"
+   },
+   {
+    "id": "sistema_imunologico-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "AIRE confere; opcional: 'podem sair' em vez de 'saem'"
+   },
+   {
+    "id": "sistema_imunologico-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "V(D)J confere; ~3×10^11 combinações"
+   },
+   {
+    "id": "sistema_imunologico-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'mecanismo ainda não é conhecido' datado; a outra fonte descreve a AID",
+    "correcao": "'O mecanismo exato da hipermutação ainda não é conhecido.' -> 'As mutações dependem de uma enzima chamada AID, embora detalhes do mecanismo ainda sejam estudados.' (trecho: 'activation-induced cytidine deaminase (AID) enzyme randomly mutates the variable regions')"
+   },
+   {
+    "id": "sistema_imunologico-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Heavy-chain antibody e Single-domain antibody conferem"
+   },
+   {
+    "id": "sistema_imunologico-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CRISPR confere; artigos de 2005 rejeitados"
+   },
+   {
+    "id": "sistema_imunologico-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "release do HHMI e Measles conferem"
+   },
+   {
+    "id": "sistema_imunologico-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o próprio artigo de Braille diz 'likely due to sympathetic ophthalmia'; Thurber tinha 7 anos, não 6",
+    "correcao": "1) 'A biografia dele costuma atribuir a cegueira a uma infecção que passou para os dois olhos, mas há quem a atribua à oftalmia simpática.' -> 'O ferimento infeccionou gravemente e, aos cinco anos, ele já não enxergava com nenhum dos olhos; a perda do olho que não se ferira é atribuída, provavelmente, à oftalmia simpática.' 2) 'que perdeu um olho aos seis anos' -> 'que perdeu um olho na infância, atingido por uma flecha'."
+   },
+   {
+    "id": "sistema_imunologico-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a frase da dengue contradiz a prática (OMS recomenda Dengvaxia só para quem já teve dengue)",
+    "correcao": "Trocar 'e pesa no desenho de vacinas: na dengue, depois de formada a resposta a um dos quatro sorotipos, é improvável que vacinar contra outro funcione, por isso a primeira dose precisa cobrir os quatro de forma equilibrada.' por 'e pesa no desenho de vacinas: o rendimento menor que o esperado do reforço bivalente contra a variante Ômicron, em quem já tinha tomado as vacinas originais de covid, foi atribuído a esse imprinting.' (trecho: 'The relative ineffectiveness of the bivalent booster against the SARS-CoV-2 Omicron variant in patients who had previously received COVID-19 vaccines has been attributed to immunological imprinting.')"
+   },
+   {
+    "id": "sistema_imunologico-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a fosfocolina 'como nos nematódeos' é proposta de um grupo (Reading, 2007), não fato; Treg: um estudo",
+    "correcao": "1) Gancho: 'Para o sistema imune da mãe, o feto lembra um transplante, pois carrega genes do pai. Para não ser rejeitada, a placenta usa vários truques, e um deles parece vir de um vírus antigo incorporado ao nosso DNA.' 2) 'Ela secreta neurocinina B com moléculas de fosfocolina, o mesmo recurso que nematódeos parasitas usam para escapar das defesas do hospedeiro.' -> 'Ela secreta neurocinina B ligada a fosfocolina, e pesquisadores britânicos propuseram que isso ajude a disfarçá-la, por analogia com o recurso que vermes nematódeos parasitas usam para escapar das defesas do hospedeiro.' 3) 'mulheres com perdas gestacionais repetidas têm menos delas' -> 'um estudo encontrou menos delas em mulheres com perdas gestacionais repetidas'. Manter consenso_parcial."
+   },
+   {
+    "id": "sistema_imunologico-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "numero_divergente: 1 em 1.000 europeus não bate (~10% de alelo, ~1% homozigotos)",
+    "correcao": "Remover 'Cerca de 1 em cada 1.000 pessoas de ascendência europeia herda essa mutação, que é mais rara em outras populações.'; opcional: 'A variante aparece sobretudo em pessoas de ascendência europeia e é bem mais rara em outras populações.' (se o trecho sustentar). Tirar o número do trecho."
+   },
+   {
+    "id": "sistema_imunologico-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Immune tolerance e Ray D. Owen conferem"
+   }
+  ],
+  "2": [
+   {
+    "id": "sistema_imunologico-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'a descoberta começou num navio'"
+   },
+   {
+    "id": "sistema_imunologico-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'foi testada em Boston'"
+   },
+   {
+    "id": "sistema_imunologico-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'podem sair do timo'"
+   },
+   {
+    "id": "sistema_imunologico-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "AID no lugar do 'mecanismo desconhecido'"
+   },
+   {
+    "id": "sistema_imunologico-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Braille pelo próprio artigo; Thurber sem idade"
+   },
+   {
+    "id": "sistema_imunologico-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ômicron no lugar da dengue"
+   },
+   {
+    "id": "sistema_imunologico-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "vírus antigo 'parece'; fosfocolina como proposta; 'um estudo'"
+   },
+   {
+    "id": "sistema_imunologico-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "sem o número divergente"
+   }
+  ]
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "lote": "2026-11-18-domesticacao-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "domesticacao-0001",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "exagero: a fonte fala em gato amansado, não domesticado; estudo genômico de 2025 (Science) aponta origem no Norte da África e gatos neolíticos selvagens."
+   },
+   {
+    "id": "domesticacao-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Agricultores americanos' ambíguo; a fonte fala em Mesoamérica.",
+    "correcao": "'uma gramínea selvagem da Mesoamérica' e 'pelos agricultores indígenas da Mesoamérica'."
+   },
+   {
+    "id": "domesticacao-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "escala_absurda não se aplica; 'só dominam porque' é causalidade forte demais.",
+    "correcao": "Tipos contraintuitivo+historia_humana; gancho 'Elas tomaram o mercado depois que...'; opcional: TR4 em 2019 na América Latina + trecho."
+   },
+   {
+    "id": "domesticacao-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; ressalvas certas; ligação com o arroz pouco conhecida."
+   },
+   {
+    "id": "domesticacao-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Orelhas caídas em uma filhote só, não em vários.",
+    "correcao": "Gancho: 'surgiram filhotes com manchas brancas no pelo e até uma de orelhas caídas, como cães, sem que ninguém escolhesse isso.'"
+   },
+   {
+    "id": "domesticacao-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Genética invertida (o amargo é que é recessivo); causalidade inventada (a domesticação precoce se deve a crescer de semente).",
+    "correcao": "'o amargor depende de um único gene e é recessivo, duas coisas que facilitam a seleção'; 'A amêndoa também foi uma das primeiras árvores frutíferas domesticadas, em parte porque pode ser plantada direto da semente, talvez antes mesmo de existir a enxertia.' + trecho."
+   },
+   {
+    "id": "domesticacao-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo com apoio; o mecanismo segura a nota 3."
+   },
+   {
+    "id": "domesticacao-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte diz 'provável' que só tenha se estabilizado com os holandeses e 'pouca evidência' sobre a Casa de Orange.",
+    "correcao": "Gancho: 'A cenoura laranja provavelmente só virou variedade estável com os holandeses, no século XVIII, mas a ideia de que homenageava a Casa de Orange tem pouca evidência. As antigas eram roxas ou amarelas.'; 'provavelmente só virou'."
+   },
+   {
+    "id": "domesticacao-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A domesticação dos cavalos Botai é contestada (Taylor e Barron-Ortiz, 2021).",
+    "correcao": "Gancho: 'cavalos de 5 mil anos, tidos como domésticos, sugeriu que...'; explicação 'tidos como alguns dos primeiros cavalos domesticados' + frase sobre a contestação + trecho."
+   },
+   {
+    "id": "domesticacao-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Liga a dependência à incapacidade de voar; a fonte atribui aos milênios de seleção; escala_absurda não se aplica.",
+    "correcao": "'E os milênios de seleção a deixaram inteiramente dependente dos humanos para se reproduzir.'; tipos só contraintuitivo."
+   }
+  ],
+  "2": [
+   {
+    "id": "domesticacao-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Centenas de grãos macios' sem apoio.",
+    "correcao": "'com muitos grãos expostos numa espiga que não se desmancha'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "domesticacao-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho e tipos corrigidos; TR4 confere."
+   },
+   {
+    "id": "domesticacao-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Uma única fêmea de orelhas caídas; datas conferem."
+   },
+   {
+    "id": "domesticacao-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Genética corrigida; causalidade segue a fonte."
+   },
+   {
+    "id": "domesticacao-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Há evidência de cenoura laranja em 512 d.C.; 'eram' generaliza.",
+    "correcao": "'As antigas costumavam ser roxas ou amarelas.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "domesticacao-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Contestação dos Botai incluída; hipótese clara."
+   },
+   {
+    "id": "domesticacao-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Dependência atribuída à seleção; tipo ajustado."
+   }
+  ]
+ }
+}

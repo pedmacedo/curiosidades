@@ -1,0 +1,114 @@
+{
+ "lote": "2026-11-18-brasil_republica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "brasil_republica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Favela confere; nota 3 (origem conhecida), planta urticante salva"
+   },
+   {
+    "id": "brasil_republica-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "a quarta expedição chegou a mais de 8.000 soldados; 3.000 era a coluna da artilharia",
+    "correcao": "'Assim, a quarta expedição, de 3.000 homens com metralhadoras e canhões pesados, encontrou um inimigo com alguns dos fuzis de repetição mais avançados da época.' -> 'Assim, a quarta expedição, que levou metralhadoras e canhões pesados e chegou a reunir mais de 8.000 soldados, encontrou um inimigo com alguns dos fuzis de repetição mais avançados da época.' (trecho: 'began with over 8,000 soldiers')"
+   },
+   {
+    "id": "brasil_republica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "o leitor pode achar que João Cândido morreu na cela (foi um dos sobreviventes); 'logo depois' esconde o pretexto das revoltas de dezembro",
+    "correcao": "(a) 'A vitória durou pouco: logo depois, centenas foram presos na ilha das Cobras.' -> 'A vitória durou pouco: semanas depois, aproveitando novas revoltas em dezembro, o governo prendeu centenas deles na ilha das Cobras.' (b) 'na manhã seguinte, só dois estavam vivos.' -> 'na manhã seguinte, só dois estavam vivos, e João Cândido era um deles.'"
+   },
+   {
+    "id": "brasil_republica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Flag of Brazil confere"
+   },
+   {
+    "id": "brasil_republica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Igreja Positivista confere; evitar exibir junto do 0004"
+   },
+   {
+    "id": "brasil_republica-0006",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "mito: a morte de Rodrigues Alves pela gripe espanhola é contestada (Schwarcz e Starling, 'A bailarina da morte', 2020: certidão registra anemia perniciosa)"
+   },
+   {
+    "id": "brasil_republica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Cacareco confere; nota 3, partido canadense salva"
+   },
+   {
+    "id": "brasil_republica-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "a fonte não diz que a expressão nasceu da piada; já circulava antes",
+    "correcao": "Gancho: '\"A cobra vai fumar\" nasceu de uma piada da Segunda Guerra:' -> '\"A cobra vai fumar\" ganhou fama com uma piada da Segunda Guerra:'. Explicação: '\"A cobra vai fumar\" passou a significar algo que nunca aconteceria.' -> 'Antes de a FEB entrar em combate, \"a cobra vai fumar\" era usada para falar de algo que nunca aconteceria, como \"quando as galinhas criarem dentes\".'"
+   },
+   {
+    "id": "brasil_republica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "expedição Roosevelt-Rondon confere"
+   },
+   {
+    "id": "brasil_republica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Shindo Renmei confere"
+   },
+   {
+    "id": "brasil_republica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Lampião e Coluna Prestes conferem; 'tentou'"
+   },
+   {
+    "id": "brasil_republica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Brasília confere; nota 3; opcional trazer a Vila Amaury ao gancho"
+   },
+   {
+    "id": "brasil_republica-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hangar do Zeppelin confere"
+   },
+   {
+    "id": "brasil_republica-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Soldados da borracha conferem; 'milhares'"
+   }
+  ],
+  "2": [
+   {
+    "id": "brasil_republica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "mais de 8.000 soldados"
+   },
+   {
+    "id": "brasil_republica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "revoltas de dezembro; João Cândido sobreviveu"
+   },
+   {
+    "id": "brasil_republica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'ganhou fama'; uso anterior à FEB"
+   }
+  ]
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "lote": "2026-11-18-especiarias-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "especiarias-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Edmond Albius e Vanilla conferem; personagem e mecanismo"
+   },
+   {
+    "id": "especiarias-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "12 mil t de demanda contra '1,2 milhão de kg' na frase final (fator 10); castóreo não vem de glândulas verdadeiras",
+    "correcao": "'Já o castóreo, secreção de glândulas do castor, chegou a ser usado em substitutos de baunilha, mas hoje a indústria consome só uns 100 kg por ano, contra mais de 1,2 milhão de kg de vanilina.' -> 'Já o castóreo, secreção das bolsas que o castor tem perto da base da cauda, chegou a ser usado em substitutos de baunilha, mas hoje a indústria consome só uns 100 kg dele por ano, uma gota perto das milhares de toneladas de vanilina.'"
+   },
+   {
+    "id": "especiarias-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "no Brasil 'açafrão' também é a cúrcuma",
+    "correcao": "Gancho: 'A planta do açafrão não é encontrada' -> 'O açafrão verdadeiro não é encontrado'. Explicação, depois da primeira frase: 'No Brasil, o nome também é dado à cúrcuma, o açafrão-da-terra, que é outra planta.'"
+   },
+   {
+    "id": "especiarias-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a 'Guerra do Açafrão' circula em divulgação com detalhes divergentes, sem fonte acadêmica; as execuções de Nuremberg são bem documentadas",
+    "correcao": "1) Gancho: 'Na Idade Média, Nuremberg chegou a executar quem vendia açafrão adulterado. E, segundo relatos tradicionais, o roubo de uma carga do tempero por nobres desencadeou uma \"Guerra do Açafrão\" de 14 semanas.' 2) 'o episódio desencadeou a chamada Guerra do Açafrão, que durou 14 semanas' -> 'o episódio teria desencadeado a chamada Guerra do Açafrão, que, segundo os relatos, durou 14 semanas'. 3) confianca: 'consenso_parcial'."
+   },
+   {
+    "id": "especiarias-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Black pepper sustenta Ramsés II e o mistério da rota"
+   },
+   {
+    "id": "especiarias-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sack of Rome e Black pepper sustentam; resgate de Alarico com 3 mil libras de pimenta"
+   },
+   {
+    "id": "especiarias-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'primeira menção' de Maimônides absoluta demais: só no contexto mediterrâneo",
+    "correcao": "'A primeira menção de que a especiaria crescia na região da Índia aparece numa obra de Maimônides, por volta de 1180.' -> 'Nos textos que circulavam no mundo mediterrâneo, a primeira menção de que a especiaria crescia na região da Índia aparece numa obra de Maimônides, por volta de 1180.'"
+   },
+   {
+    "id": "especiarias-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'limite diário recomendado' sugere quantidade a consumir; a fonte diz 'tolerable daily intake'",
+    "correcao": "Gancho: 'pode passar do limite diário recomendado para uma pessoa pequena' -> 'pode passar da ingestão diária tolerável para uma pessoa de pouco peso'"
+   },
+   {
+    "id": "especiarias-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sichuan pepper, sanshool e jambu conferem; boa ponte"
+   },
+   {
+    "id": "especiarias-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'até 90% da safra' é número de imprensa de 2005 sem contexto; data de 2012 não confirmada fora da Wikipedia",
+    "correcao": "1) Gancho: 'O remédio contra a gripe Tamiflu nasceu de uma molécula tirada do anis-estrelado. Em meados dos anos 2000, relatos diziam que a fabricante usava até 90% da safra mundial do tempero.' 2) 'e a Roche chegou a consumir até 90%...' -> 'e, segundo relatos muito citados, a Roche chegou a consumir até 90% da safra anual de anis-estrelado do mundo para fazer o medicamento'. 3) 'Em 2012, a Roche trocou o tempero por E. coli geneticamente modificada.' -> 'Por volta de 2012, a Roche teria deixado o tempero de lado e passado a usar E. coli geneticamente modificada.' 4) confianca: 'consenso_parcial'."
+   },
+   {
+    "id": "especiarias-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com Banda Islands; não duplica Run/Manhattan"
+   },
+   {
+    "id": "especiarias-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "números conferem com Cardamom; ponte com o café árabe"
+   },
+   {
+    "id": "especiarias-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Curcumin sustenta PAINS, US$150 milhões, 29 retratações"
+   },
+   {
+    "id": "especiarias-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o 'Por isso' liga a água fria às células separadas; a razão é a desnaturação da enzima pelo calor",
+    "correcao": "Gancho: 'Por isso a mostarda forte é feita com água fria, e não quente.' -> 'Como o calor desativa a enzima, a mostarda forte é feita com água fria, e não quente.' Opcional: 'Líquidos quentes e ácidos fortes, como o vinagre, desnaturam a enzima' -> 'Líquidos quentes desnaturam a enzima, e ácidos como o vinagre reduzem sua atividade' (Myrosinase: 'mild reduction in myrosinase activity')."
+   }
+  ],
+  "2": [
+   {
+    "id": "especiarias-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "bolsas do castor e 'uma gota perto das milhares de toneladas'"
+   },
+   {
+    "id": "especiarias-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'açafrão verdadeiro' e a distinção da cúrcuma com fonte"
+   },
+   {
+    "id": "especiarias-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "guerra 'segundo relatos'; consenso_parcial"
+   },
+   {
+    "id": "especiarias-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Maimônides no contexto mediterrâneo"
+   },
+   {
+    "id": "especiarias-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "ingestão diária tolerável; a conta da colher é da Wikipedia a partir dos teores do BfR",
+    "correcao": "'Pelas contas do instituto alemão...' -> 'Partindo dos teores medidos pelo instituto alemão de avaliação de riscos, uma colher de chá de cássia em pó teria'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "especiarias-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "90% 'segundo relatos'; 'por volta de 2012'; consenso_parcial"
+   },
+   {
+    "id": "especiarias-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "o calor desativa a enzima; vinagre reduz a atividade"
+   }
+  ]
+ }
+}

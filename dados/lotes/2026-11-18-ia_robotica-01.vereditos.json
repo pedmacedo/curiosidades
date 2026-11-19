@@ -1,0 +1,136 @@
+{
+ "lote": "2026-11-18-ia_robotica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "ia_robotica-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Crítico do uso em decisões humanas' sem apoio.",
+    "correcao": "'e criticou a visão que trata computadores como se fossem gente.'"
+   },
+   {
+    "id": "ia_robotica-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "84 anos de turnê é exagero; vitória sobre Franklin sem registro; houve descrições corretas antes de 1857.",
+    "correcao": "Gancho 'entre 1770 e 1854... enfrentou'; explicação 'enfrentou'; frase sobre o segredo reescrita."
+   },
+   {
+    "id": "ia_robotica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Observação de 1988 dada como lei atual; troca damas por jogos; faltam as críticas; frase final sem apoio.",
+    "correcao": "Novo gancho com 1988 e damas; frase final com Newell e Narayanan."
+   },
+   {
+    "id": "ia_robotica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com o cache."
+   },
+   {
+    "id": "ia_robotica-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O gancho esconde o otimismo de 'um verão'.",
+    "correcao": "Novo gancho com 'um verão bastaria'."
+   },
+   {
+    "id": "ia_robotica-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Gancho mistura 1958 (coletiva) e 1959 (Mark I); previsão era da Marinha; financiamento não só da Marinha; 'uma das versões'.",
+    "correcao": "Novo gancho; 'entre outros, do Escritório de Pesquisa Naval'; 'Uma das versões tinha três camadas'."
+   },
+   {
+    "id": "ia_robotica-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Quentes' sem fonte; 'regeu a orquestra' exagera; objetivo atribuído a Engelberger.",
+    "correcao": "Tirar 'quentes'; 'agitou a batuta do maestro'; Engelberger."
+   },
+   {
+    "id": "ia_robotica-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Involuntários eram os gestos do dono; pergunta era sobre a data.",
+    "correcao": "'lia gestos involuntários do dono'; 'em que dia do mês cairá a sexta seguinte?'."
+   },
+   {
+    "id": "ia_robotica-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Uso em mapas/videogames sem fonte; crédito da transformada de Hough discutível.",
+    "correcao": "Fonte do A*; gancho 'em videogames'; tirar Hough."
+   },
+   {
+    "id": "ia_robotica-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A anedota não tem data; 'anos 1950' inventado.",
+    "correcao": "Gancho 'da Guerra Fria'."
+   }
+  ],
+  "2": [
+   {
+    "id": "ia_robotica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "crítica de Weizenbaum agora sustentada pela fonte"
+   },
+   {
+    "id": "ia_robotica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "sem os 84 anos de turnê; Magasin pittoresque 1834 e Baltimore 1827 conferem"
+   },
+   {
+    "id": "ia_robotica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "atribuído a Moravec 1988, damas; críticas de Newell e Narayanan incluídas"
+   },
+   {
+    "id": "ia_robotica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "otimismo de um verão; proposta fala em avanço em um ou mais problemas",
+    "correcao": "gancho: 'em algum problema, como fazer máquinas usarem linguagem'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "ia_robotica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1958 x 1959 separados; previsão atribuída à Marinha; ONR entre outros",
+    "correcao": "gancho: 'Uma versão física, de 1959'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "ia_robotica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "sem 'quentes'; batuta; objetivo atribuído a Engelberger"
+   },
+   {
+    "id": "ia_robotica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "gestos involuntários do dono; pergunta sobre a data"
+   },
+   {
+    "id": "ia_robotica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A* com fonte própria; sem transformada de Hough"
+   },
+   {
+    "id": "ia_robotica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "anedota sem data, marcada como apócrifa"
+   }
+  ]
+ }
+}

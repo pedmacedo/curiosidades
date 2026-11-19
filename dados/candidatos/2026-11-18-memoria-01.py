@@ -1,0 +1,591 @@
+LOTE = "2026-11-18-memoria-01"
+AREA = "mente"
+TEMA = "memoria"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 H.M. aprende a desenhar no espelho sem lembrar de ter treinado
+    {
+        "temas_secundarios": ["neurociencia", "historia_medicina"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Depois de uma cirurgia em 1953, Henry Molaison nunca mais formou lembranças novas. Mesmo assim, aprendeu a desenhar olhando só num espelho, melhorando a cada dia sem lembrar de ter treinado.",
+        "explicacao": (
+            "Molaison tinha uma epilepsia incapacitante. Em 1953, o neurocirurgião William Scoville retirou partes "
+            "dos lobos temporais mediais dos dois lados do cérebro, incluindo os hipocampos, para tentar controlar "
+            "as crises. Na época, os médicos não sabiam do papel do hipocampo na memória. As crises diminuíram, mas "
+            "ele passou a esquecer o que vivia, as pessoas que via e o que fazia. A inteligência e a memória de curto "
+            "prazo continuavam normais. No começo dos anos 1960, a psicóloga Brenda Milner pediu que ele traçasse uma "
+            "estrela entre duas outras olhando apenas o reflexo do papel num espelho. Na primeira tentativa, ele saiu "
+            "da linha cerca de 30 vezes; no fim do primeiro dia, errava 5 ou 6; no terceiro dia, quase não errava. "
+            "E, a cada sessão, não se lembrava de já ter feito a tarefa. O caso ajudou a mostrar que a memória de "
+            "longo prazo não é uma coisa só: lembrar fatos e episódios depende de estruturas que ele perdeu, enquanto "
+            "aprender habilidades depende de outras, que estavam intactas. Estudado de 1957 até morrer, em 2008, ele "
+            "ficou conhecido apenas como \"H.M.\". Depois, o cérebro dele foi fatiado e reconstruído em 3D, e veio uma "
+            "surpresa: metade do tecido do hipocampo tinha sobrevivido à cirurgia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Henry_Molaison",
+            "H.M., was an American epileptic man who in 1953 received a bilateral medial temporal lobectomy to surgically resect parts of his brain [...] "
+            "in an attempt to cure his epilepsy. Although the surgery was partially successful in controlling his epilepsy, a severe side effect was that he became unable to form new memories. [...] "
+            "H.M. was extensively studied from late 1957 until his death in 2008. [...] "
+            "On September 1, 1953, Scoville removed Molaison's medial temporal lobes on both hemispheres including the hippocampi [...] "
+            "but in 1953 (when Molaison had the surgery) this was not known to doctors, surgeons, and scientists [...] "
+            "Molaison easily forgot events that he experienced, people whom he saw, and actions he undertook [...] "
+            "His case was first reported by Scoville and Brenda Milner in 1957, who referred to him by \"H.M.\" [...] "
+            "The digital 3D reconstruction of his brain was finished at the beginning of 2014. [...] "
+            "The researchers found, to their surprise, that half of H.M.'s hippocampal tissue had survived the 1953 surgery [...] "
+            "Molaison performed quite normally in tests of intellectual ability [...] "
+            "Molaison was able to remember information over short intervals of time. [...] "
+            "In a study conducted by Milner in the early 1960s, Molaison acquired the new skill of drawing a figure by looking at its reflection in a mirror (Corkin, 2002). "
+            "Specifically, H.M. was asked to trace a third star in the narrow space between two concentric stars while only looking at a reflection of his paper and pencil in a mirror. "
+            "Like most people performing this task for the first time, he did not do well and went outside the lines about 30 times. [...] "
+            "and by the tenth trial on the first day he only made about 5–6 errors. "
+            "Each time H.M. performed the task, he improved even though he had no memory of the previous attempts or of ever doing the task. "
+            "On the second day, he made significantly fewer errors for each trial on average, and on the third day he made almost no errors for each trial. [...] "
+            "whereas procedural memory and repetition priming do not rely on the medial temporal structures removed from Molaison, semantic and episodic memory do [...] "
+            "Long-term memories are not unitary and can be differentiated as being either declarative or non-declarative",
+            nome="Henry Molaison")],
+    },
+    # 2 Clive Wearing: memória de segundos, música intacta
+    {
+        "temas_secundarios": ["neurociencia", "musica_ciencia"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Desde 1985, o músico Clive Wearing esquece tudo em segundos e enche páginas do diário com \"agora estou realmente acordado\". Mesmo assim, ainda toca peças complexas ao piano e rege um coro.",
+        "explicacao": (
+            "Wearing, nascido em 1938, era um especialista em música antiga que trabalhava na BBC Radio 3 quando, em "
+            "27 de março de 1985, uma encefalite causada pelo vírus herpes simples atingiu seu sistema nervoso. O dano "
+            "ao hipocampo o deixou incapaz de formar lembranças duradouras: o que acontece fica na memória por algo "
+            "entre sete e trinta segundos. Ele vive como quem acabou de sair de um coma. Por isso o diário que os "
+            "cuidadores lhe deram se encheu de anotações dizendo que estava acordado \"pela primeira vez\", com as "
+            "entradas anteriores muitas vezes riscadas: ele não se lembrava de tê-las escrito, embora reconhecesse a "
+            "própria letra. Boa parte do passado também se foi. Ele sabe que tem filhos de um casamento anterior, mas "
+            "não lembra os nomes deles, e recebe a esposa, Deborah, com alegria a cada encontro, como se não a visse "
+            "havia anos, mesmo que ela tenha saído da sala por um instante. O que resiste é a memória de "
+            "procedimentos. Ele não reconhece peças musicais pelo nome, mas lê partituras à primeira vista, toca peças "
+            "complexas ao piano e ao órgão e rege um coro. Pela repetição, chega a aprender coisas novas: depois de "
+            "ver o mesmo vídeo em dias seguidos, antecipava trechos dele sem ter nenhuma lembrança de tê-lo visto."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Clive_Wearing",
+            "Clive Wearing (born 11 May 1938) is a British former musicologist, conductor, tenor and pianist who developed chronic anterograde and retrograde amnesia in 1985. [...] "
+            "On 27 March 1985, Wearing, then an acknowledged expert in early music at the height of his career with BBC Radio 3, contracted herpes simplex encephalitis, which attacked his central nervous system. [...] "
+            "Because of damage to the hippocampus (an area required to transfer memories from short-term to long-term memory), he is completely unable to form lasting new memories. "
+            "His memory for events lasts between seven and thirty seconds. [...] "
+            "as he constantly believes that he has only recently awoken from a comatose state. [...] "
+            "He knows, for example, that he has children from an earlier marriage, but he cannot remember their names. [...] "
+            "He greets her joyously every time they meet, believing either that he has not seen her in years or that they have never met before, even though she may have just left the room momentarily. [...] "
+            "In a diary provided by his carers, Wearing was encouraged to record his thoughts. [...] "
+            "8:31 AM: Now I am really, completely awake. (1st Time) [...] "
+            "Earlier entries were usually partially crossed out, since he forgot having made an entry within minutes and dismissed the writings. "
+            "He did not know how the entries were made or by whom, although he did recognise his own handwriting. [...] "
+            "by acquiring new procedural memories through repetition. For example, having watched a certain video recording multiple times on successive days, he never had any memory of ever seeing the video or knowing the content, but he was able to anticipate certain parts of the content without remembering how he learned them. "
+            "Despite having no memory of specific musical pieces when they are mentioned by name, and an extremely limited recall of his previous musical knowledge, Wearing remains capable of playing complex piano and organ pieces, sight-reading and conducting a choir. [...] "
+            "His love for his second wife, Deborah",
+            nome="Clive Wearing")],
+    },
+    # 3 Loftus e Palmer: "esmagaram" cria vidro quebrado
+    {
+        "temas_secundarios": ["leis_julgamentos", "experimentos_psicologia"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Num experimento de 1974, quem foi perguntado a que velocidade os carros \"se esmagaram\" lembrou, uma semana depois, de vidro quebrado no vídeo do acidente. Não havia vidro quebrado nenhum.",
+        "explicacao": (
+            "A psicóloga Elizabeth Loftus e John Palmer mostraram a 150 pessoas o filme de um acidente de trânsito e "
+            "depois aplicaram um questionário. Para um grupo de 50, a pergunta era a que velocidade os carros estavam "
+            "quando \"bateram\" um no outro. Para outro grupo de 50, quando \"se esmagaram\". O terceiro grupo, de "
+            "controle, não recebeu a pergunta. Uma semana depois, todos responderam se tinham visto vidro quebrado. "
+            "Uma parte estatisticamente significativa do grupo do \"esmagaram\" disse que sim, embora o vídeo não "
+            "mostrasse vidro algum. Bastou trocar uma palavra para que um detalhe falso entrasse na lembrança. Num "
+            "experimento com 45 estudantes, a palavra também mexeu na velocidade estimada: em média, 34 milhas por "
+            "hora para \"bateram\" e 41 para \"se esmagaram\". A conclusão de Loftus foi que perguntas feitas depois de "
+            "um acontecimento podem fazer a memória reconstruí-lo. O fenômeno, chamado efeito da desinformação, é "
+            "estudado desde meados dos anos 1970, e o estudo original abriu caminho para muitas replicações. Ele tem "
+            "consequências diretas para os depoimentos de testemunhas, que têm várias chances de absorver informação "
+            "errada: em conversas com outras testemunhas, nos interrogatórios da polícia e nas audiências."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Reconstructive_memory",
+                "Interference involving priming was established in her classic study with John Palmer in 1974. "
+                "Loftus and Palmer recruited 150 participants and showed each of them a film of a traffic accident. "
+                "After, they had the participants fill out a questionnaire concerning the video's details. The participants were split into three groups: "
+                "Group A contained 50 participants that were asked: \"About how fast were the cars going when they hit each other?\" "
+                "Group B contained 50 participants that were asked: \"About how fast were the cars going when they smashed each other?\" "
+                "Group C contained 50 participants and were not asked this question because they were meant to represent a control group "
+                "A week later, all of the participants were asked whether or not there had been any broken glass in the video. "
+                "A statistically significant number of participants in the group B answered that they remembered seeing broken glass in the video [...] "
+                "However, there was not any broken glass in the video. [...] "
+                "By changing one word in the questionnaire, their memories were re-encoded with new details.",
+                nome="Reconstructive memory"),
+            wiki("Elizabeth_Loftus",
+                "Loftus's first experiment in this area involved showing 45 students videos of car crashes and then asking the students to estimate the speed of the car. [...] "
+                "34 mph when the question was phrased as \"hit each other\" instead, and 41 mph when the question was phrased as \"smashed each other\". "
+                "Loftus concluded that \"these results are consistent with the view that the questions asked subsequent to an event can cause a reconstruction in one's memory of that event\".",
+                nome="Elizabeth Loftus"),
+            wiki("Misinformation_effect",
+                "The misinformation effect has been studied since the mid-1970s. Elizabeth Loftus is one of the most influential researchers in the field. [...] "
+                "as there are many chances for misinformation to be incorporated into witnesses' memories through conversations with other witnesses, police questioning, and court appearances. [...] "
+                "The original study paved the way for multiple replications of the effect",
+                nome="Misinformation effect"),
+        ],
+    },
+    # 4 implantar memórias falsas: ~30%, e a foto falsa convence menos
+    {
+        "temas_secundarios": ["experimentos_psicologia", "leis_julgamentos"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Em estudos que contaram a adultos um episódio falso da infância deles, quase um terço passou a \"lembrar\" do que nunca viveram. E uma foto adulterada do episódio convencia menos que uma simples descrição.",
+        "explicacao": (
+            "A técnica foi criada por Elizabeth Loftus e um aluno dela, Jim Coan, que a testou primeiro no próprio "
+            "irmão. Entre quatro histórias da infância, uma era inventada: o menino teria se perdido num shopping por "
+            "volta dos 5 anos. O irmão acrescentou sozinho vários detalhes à história falsa e, ao saber que uma delas "
+            "era inventada, não conseguiu dizer qual. Num estudo formal com 24 pessoas, cerca de 25% relataram lembrar "
+            "o episódio. Como cada pesquisa definia \"lembrança falsa\" de um jeito, um grupo de pesquisadores reuniu "
+            "depois as transcrições de oito estudos publicados, com 423 participantes, e as reclassificou com os "
+            "mesmos sete critérios. Resultado: 30,4% dos casos contaram como memórias falsas, e outros 23% aceitaram o "
+            "episódio em algum grau. A taxa chegava a 46,1% quando a sugestão trazia detalhes pessoais, a pessoa era "
+            "convidada a imaginar a cena e não havia foto. A fotografia adulterada, ao contrário do que se esperaria, "
+            "rendeu menos memórias falsas: 25,9%, contra 33,6% sem foto. Garry e Wade, que já tinham observado isso, "
+            "propuseram que a foto limita a imaginação durante o esforço de lembrar. Há uma ressalva: todas as fotos "
+            "usadas mostravam o mesmo tipo de episódio, um passeio de balão."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": "https://wrap.warwick.ac.uk/83729/1/WRAP-mega-analysis-memory-reports-Wade-2016.pdf",
+             "titulo": "A mega-analysis of memory reports from eight peer-reviewed false memory implantation studies (Scoboria et al., Memory; versão aceita, repositório da Universidade de Warwick)",
+             "idioma": "en",
+             "trecho": "developed a reliable coding system that we applied to reports from eight published implantation studies (N=423). "
+                "Independent raters coded transcripts using seven criteria [...] "
+                "Using this scheme, 30.4% of cases were classified as false memories and another 23% were classified as having accepted the event to some degree. "
+                "When the suggestion included self-relevant information, an imagination procedure, and was not accompanied by a photo depicting the event, the memory formation rate was 46.1%. [...] "
+                "Garry and Wade (2005) found higher rates of false memory formation when participants were presented with a description of the false event rather than a doctored photograph of the false event. "
+                "Garry and Wade concluded that such photos may serve to constrain imagination during efforts to recall the event, thus leading to lower memory formation. [...] "
+                "The false memory rate was 25.9% [...] when a photo depicted the event and 33.6% [...] when no such photo was presented [...] "
+                "One caveat worth noting is that only one event (hot air balloon ride) and the same or a similar photo has been used in all of the studies that have provided a doctored photo of the event."},
+            wiki("Lost_in_the_mall_technique",
+                "It was first developed by Elizabeth Loftus and her undergraduate student Jim Coan, as support for the thesis that it is possible to implant entirely false memories in people. [...] "
+                "Unknown to the participants, one of the narratives was false; it described Coan's brother getting lost in a shopping mall at around the age of 5 [...] "
+                "During the experiment, Coan's brother unwittingly invented several additional details of the false narrative. "
+                "At the conclusion of the experiment during a tape-recorded debriefing when told that one of the narratives was false, Coan's brother could not identify which one was false and expressed disbelief when told. [...] "
+                "in a formal study with 24 participants, about 25% of whom reported remembering the false event. [...] "
+                "four events",
+                nome="Lost in the mall technique"),
+        ],
+    },
+    # 5 memórias "em flash": a confiança fica, a precisão não
+    {
+        "temas_secundarios": ["emocoes", "vieses_cognitivos"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "Onde você estava quando soube de uma grande tragédia? Parece gravado em pedra, mas um estudo feito logo após os atentados de 2001 mostrou que essas lembranças se desgastam como as outras. Só a confiança nelas não cai.",
+        "explicacao": (
+            "Em 1977, Roger Brown e James Kulik batizaram essas lembranças de \"memórias em flash\" e propuseram que "
+            "um mecanismo biológico especial, disparado por eventos muito surpreendentes e importantes, criaria um "
+            "registro permanente das circunstâncias em que a pessoa recebeu a notícia. A ideia não resistiu bem aos "
+            "testes. Em 12 de setembro de 2001, pesquisadores da Universidade Duke pediram a 54 estudantes que "
+            "contassem como souberam dos atentados e também um acontecimento comum recente. Depois, cada um foi "
+            "testado de novo 7, 42 ou 224 dias mais tarde. A quantidade de detalhes consistentes caiu com o tempo nos "
+            "dois tipos de lembrança, sem diferença entre eles. Mas a vivacidade e a crença na exatidão caíram só "
+            "para a lembrança comum. Ou seja, as memórias em flash não são especiais na precisão, só na precisão que "
+            "a pessoa sente que elas têm. Um estudo sobre a explosão do ônibus espacial Challenger achou o mesmo "
+            "padrão: três anos depois, os participantes estavam muito confiantes e pouco precisos. Uma explicação é "
+            "que esses eventos são recontados e revividos muitas vezes, e os erros que entram nos primeiros relatos "
+            "acabam incorporados à lembrança."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Flashbulb_memory",
+            "The term flashbulb memory was coined by Roger Brown and James Kulik in 1977. "
+            "They formed the special-mechanism hypothesis, which argues for the existence of a special biological memory mechanism that, when triggered by an event exceeding critical levels of surprise and consequentiality, creates a permanent record of the details and circumstances surrounding the experience. [...] "
+            "In a study conducted on September 12, 2001, 54 Duke students were tested for their memory of hearing the terrorist attack and their recall of a recent everyday event. "
+            "Then, they were randomly assigned to be tested again either 7, 42 or 224 days after the event. "
+            "The results showed that the mean number of consistent/inconsistent details recalled did not differ for flashbulb memories and everyday memories, in both cases declining over time. "
+            "However, ratings of vividness, recollection and belief in the accuracy of memory declined only for everyday memories. "
+            "These findings further support the claims that \"flashbulb memories are not special in their accuracy but only in their perceived accuracy.\" [...] "
+            "Errors that are rehearsed through retelling and reliving can become a part of the memory. [...] "
+            "Errors that are introduced early on are more likely to remain. [...] "
+            "Another study examining participants' memories of the Challenger Space Shuttle explosion found that although participants were highly confident about their memories of the event, their memories were not very accurate three years after the event had occurred.",
+            nome="Flashbulb memory")],
+    },
+    # 6 Ronald Cotton e Jennifer Thompson
+    {
+        "temas_secundarios": ["leis_julgamentos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Durante um ataque em 1984, Jennifer Thompson estudou o rosto do agressor para conseguir identificá-lo depois. Apontou Ronald Cotton, condenado à prisão perpétua. Em 1995, o DNA provou que ele era inocente.",
+        "explicacao": (
+            "Em julho de 1984, um homem invadiu a casa de Thompson em Burlington, na Carolina do Norte, e a estuprou. "
+            "Durante o ataque, ela se concentrou no rosto dele, decidida a reconhecê-lo se sobrevivesse. Diante de "
+            "um conjunto de fotos, escolheu Cotton, e depôs contra ele duas vezes. Ele foi condenado por estupro e "
+            "invasão a prisão perpétua mais 54 anos. Em março de 1995, os advogados de Cotton pediram um novo exame do "
+            "material colhido de Thompson, e o DNA dele não estava lá. O exame do caso de outra mulher, atacada pelo "
+            "mesmo homem na mesma noite, apontou Bobby Poole, que cumpria pena na mesma prisão que Cotton e se gabava "
+            "aos outros presos de ter cometido os crimes pelos quais Cotton fora condenado. Poole confessou e foi "
+            "condenado a 70 anos. Thompson, tomada de remorso, virou crítica do testemunho ocular. Ela e Cotton se "
+            "reconciliaram, ficaram amigos próximos e passaram a dar palestras juntos, defendendo mudanças nos "
+            "procedimentos de reconhecimento de suspeitos. O caso ilustra um problema mais amplo: estudos mostram que "
+            "o erro de identificação é comum, mas os jurados dão muito peso ao depoimento de testemunhas, sobretudo "
+            "quando a testemunha está convicta do que viu."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ronald_Cotton",
+            "Although scientific studies have shown that mistaken identity is a common phenomenon, jurors give very strong credence to eyewitness testimony, particularly where the eyewitness is resolute in believing that their identification of the defendant was correct. [...] "
+            "In July 1984, a man broke into Jennifer Thompson's home in Burlington, North Carolina and raped her. "
+            "During the attack, she studied the attacker's face, determined to identify him if she survived the attack. "
+            "When presented with a photo lineup, she identified Cotton as her attacker. "
+            "Twice, she testified against him by saying she had identified him. "
+            "Cotton was found guilty of rape and burglary and sentenced to life plus 54 years in prison. "
+            "In March 1995, Cotton's lawyers had the DNA in Thompson's rape kit retested, which found that his DNA was not present, resulting in Cotton being exonerated and freed. "
+            "Authorities also tested the DNA in the rape kit of Mary Williams, who was raped by the same assailant as Thompson on the very same night, and the DNA was found to be that of Bobby Poole, another inmate in the prison where Cotton was incarcerated; "
+            "Poole had also boasted to his fellow inmates that he had committed the crimes for which Cotton was convicted. "
+            "Poole confessed to raping both Thompson and Williams and was sentenced to 70 years in prison. [...] "
+            "Thompson has since become a critic of eyewitness testimony because of its proven unreliability. "
+            "She was filled with remorse after learning that she had contributed to Cotton, an innocent man, being convicted and sent to prison. [...] "
+            "Cotton and Thompson reconciled and became close friends; they conduct speaking tours to promote reform of procedures for eyewitness testimony.",
+            nome="Mistaken identity (caso Ronald Cotton)")],
+    },
+    # 7 memória autobiográfica altamente superior e falsas memórias
+    {
+        "temas_secundarios": ["neurociencia", "vieses_cognitivos"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Há pessoas que lembram o que viveram em quase qualquer dia de décadas atrás. Mesmo assim, costumam ir mal em decorar informações e formam memórias falsas com a mesma facilidade que qualquer um.",
+        "explicacao": (
+            "A condição se chama memória autobiográfica altamente superior, ou hipertimesia, e foi identificada em "
+            "2006 por cientistas da Universidade da Califórnia em Irvine. O primeiro caso documentado foi o de Jill "
+            "Price: diante de uma data, ela \"vê\" na hora uma cena vívida daquele dia, sem esforço. Ela descreve isso "
+            "como algo \"sem parar, incontrolável e totalmente exaustivo\". Mas a capacidade é seletiva. Price teve "
+            "resultados fracos em testes padronizados de memória, desempenho apenas médio na escola e não se lembrava "
+            "de detalhes como a roupa dos entrevistadores horas antes. Pessoas com hipertimesia podem até ter memória "
+            "abaixo da média para informações arbitrárias. Em 2013, uma equipe de Irvine testou 20 pessoas com essa "
+            "memória e 38 com memória comum em tarefas recheadas de desinformação: associações de palavras, fotos de "
+            "um crime e uma conversa sobre imagens da queda do voo 93, no 11 de Setembro, que não existem. Os dois "
+            "grupos tiveram resultados parecidos. Para o autor principal, Lawrence Patihis, é um paradoxo: sem "
+            "desinformação, a memória dessas pessoas parece quase perfeita, mas ela se deforma como a de qualquer um "
+            "quando a desinformação entra no caminho."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Hyperthymesia",
+                "when presented with a date, they immediately \"see\" a vivid depiction of that day without conscious effort. [...] "
+                "In the case of Jill Price, anonymised as \"AJ\" in the 2006 study by Parker, Cahill and McGaugh [...] "
+                "yet she could not remember incidental details such as what her interviewers were wearing hours earlier. [...] "
+                "Jill Price, the first documented case [...] "
+                "Hyperthymestic individuals may even have below-average memory for arbitrary information. [...] "
+                "She described her recollection as \"non-stop, uncontrollable and totally exhausting\" and as \"a burden\". [...] "
+                "This was demonstrated by her having poor performance on standardised memory tests and average performance at school",
+                nome="Hyperthymesia"),
+            {"url": "https://www.sciencedaily.com/releases/2013/11/131119131438.htm",
+             "titulo": "People with highly superior powers of recall also vulnerable to false memories (ScienceDaily, a partir de material da Universidade da Califórnia em Irvine)",
+             "idioma": "en",
+             "trecho": "November 19, 2013 [...] "
+                "People who can accurately remember details of their daily lives going back decades are as susceptible as everyone else to forming fake memories, UC Irvine psychologists and neurobiologists have found. [...] "
+                "the researchers discovered that subjects with highly superior autobiographical memory logged scores similar to those of a control group of subjects with average memory. [...] "
+                "which was first identified in 2006 by scientists at UC Irvine's Center for the Neurobiology of Learning & Memory [...] "
+                "asked 20 people with superior memory and 38 people with average memory to do word association exercises, recall details of photographs depicting a crime, and discuss their recollections of video footage of the United Flight 93 crash on 9/11. "
+                "(Such footage does not exist.) [...] "
+                "\"It's a fascinating paradox. In the absence of misinformation, they have what appears to be almost perfect, detailed autobiographical memory, but they are vulnerable to distortions, as anyone else is.\" [...] "
+                "The lead researcher on the study, Patihis"},
+        ],
+    },
+    # 8 palácio da memória: campeões são treinados, não nascidos
+    {
+        "temas_secundarios": ["grecia_antiga", "aprendizagem_inteligencia"],
+        "tipos_espanto": ["engenhosidade", "origem_inesperada"],
+        "gancho": "Campeões de memória não têm cérebros anatomicamente diferentes: usam um truque da Antiguidade, o \"palácio da memória\". Num estudo, novatos treinaram seis semanas e chegaram perto do desempenho deles.",
+        "explicacao": (
+            "A técnica, chamada método de loci, consiste em associar cada item a um lugar de um percurso bem "
+            "conhecido, como os cômodos de casa, e depois refazer o caminho em pensamento. A tradição a liga ao poeta "
+            "grego Simônides de Ceos: segundo a história contada por Cícero, depois que o salão de um banquete "
+            "desabou, ele identificou as vítimas esmagadas lembrando onde cada uma estava sentada. Hoje, muitos "
+            "competidores de campeonatos de memória usam o método para decorar baralhos embaralhados e longas "
+            "sequências de números. Esses campeões negam ter memória fotográfica e, em média, passaram dez anos "
+            "praticando. Estudos de imagem não acharam diferenças anatômicas sistemáticas entre o cérebro deles e o "
+            "de pessoas comuns. Num estudo publicado em 2017 na revista Neuron, 17 campeões lembraram em média 70,8 "
+            "de 72 palavras vistas vinte minutos antes; pessoas comuns lembraram 39,9. Depois, novatos que treinaram "
+            "o método por seis semanas tiveram desempenho quase igual ao dos especialistas, e o ganho ainda era "
+            "visível quatro meses depois. O treino reorganizou conexões entre regiões do cérebro, que ficaram mais "
+            "parecidas com as dos melhores memorizadores do mundo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Method_of_loci",
+                "It involves mentally associating pieces of information with specific locations in a familiar environment, such as rooms in a house or landmarks along a well-known route. [...] "
+                "Recall is achieved by mentally retracing the path and using the imagined scenes to retrieve the associated information. [...] "
+                "The method of loci is traditionally associated with the Greek poet Simonides of Ceos, who is said to have used it to recall the seating arrangement at a banquet hall that collapsed, allowing him to identify the crushed victims by remembering where each person had been seated. "
+                "The story appears in Cicero's De Oratore [...] "
+                "The method of loci is employed by many participants in memory competitions, including events such as the World Memory Championship. "
+                "They use it to memorize items such as shuffled decks of cards, long strings of numbers, and lists of words.",
+                nome="Method of loci"),
+            wiki("Mnemonist",
+                "the performers in top memory competitions like the World Memory Championships and the Extreme Memory Tournament all deny any ability of a photographic memory; rather, these experts have averaged 10 years practicing their encoding strategies. [...] "
+                "neuroimaging studies performed on memory experts and compared to a control group have found no systematic anatomical differences in the brain between memory experts and a control group.",
+                nome="Mnemonist"),
+            {"url": "https://www.sciencenews.org/article/brain-training-turns-recall-rookies-memory-masters",
+             "titulo": "Brain training turns recall rookies into memory masters (Science News)",
+             "idioma": "en",
+             "trecho": "March 8, 2017 [...] "
+                "Just six weeks of training can turn average people into memory masters. "
+                "Boosting these prodigious mnemonic skills came with overhauls in brain activity, resulting in brains that behaved more like those of experts who win World Memory Championships competitions, scientists report March 8 in Neuron. [...] "
+                "In an initial matchup, a group of 17 memory experts, people who place high in World Memory Championships, throttled a group of people with average memories. "
+                "Twenty minutes after seeing a list of 72 words, the experts remembered an average of 70.8 words; the nonexperts caught, on average, only 39.9 words. [...] "
+                "A third of these people spent six weeks learning the method of loci [...] "
+                "After the training, the people who learned the method of loci performed nearly as well as the memory experts. [...] "
+                "Training in the method of loci seemed to reconfigure many of those connections, making some of the connections stronger and others weaker. "
+                "The overall effect of training was to make brains “look like those of the world’s best memorizers,” Dresler says. [...] "
+                "These new memory skills were still obvious four months after training ended"},
+        ],
+    },
+    # 9 Shereshevsky: o homem que não esquecia treinava
+    {
+        "temas_secundarios": ["personagens_esquecidos", "sentidos"],
+        "tipos_espanto": ["historia_humana", "mito_desmentido"],
+        "gancho": "Solomon Shereshevsky virou lenda da psicologia como o homem de memória sem limites. Mas o diário dele diz que não tinha memória perfeita, e um sobrinho conta que ele treinava horas por dia para os shows.",
+        "explicacao": (
+            "Shereshevsky, um jornalista soviético nascido em 1886, chamou atenção nos anos 1920: repreendido por não "
+            "tomar notas numa reunião, repetiu o discurso palavra por palavra. O neuropsicólogo Alexander Luria o "
+            "estudou ao longo de cerca de trinta anos e contou o caso no livro \"A mente de um mnemonista\", de 1968. "
+            "Luria diagnosticou nele uma sinestesia fortíssima, em que um sentido acionava todos os outros: um som "
+            "virava cor, um toque virava sabor, e os números eram personagens, como o 7, um homem de bigode. Só que "
+            "Luria não separou com clareza o que seria dom natural e o que eram técnicas de memorização, que o próprio "
+            "Shereshevsky descrevia. Segundo o diário autobiográfico dele, encontrado por Reed Johnson, ele não tinha "
+            "recordação perfeita. O sobrinho, Mikhail Reynberg, lembra que o tio podia ser esquecido e treinava horas "
+            "por dia para as apresentações noturnas, porque precisava se esforçar conscientemente para memorizar. Seus "
+            "palácios da memória eram a rua Górki, em Moscou, ou uma rua de aldeia da infância. As imagens em excesso "
+            "também atrapalhavam: ele tinha dificuldade para reconhecer rostos e para entender sentidos figurados, e "
+            "chegou a escrever coisas no papel e queimá-lo, numa tentativa desesperada de esquecê-las."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Solomon_Shereshevsky",
+            "Solomon Veniaminovich Shereshevsky (Russian: Соломон Вениаминович Шерешевский; 1886 – 1 May 1958) [...] "
+            "was a Soviet journalist and mnemonist active in the 1920s. He was the subject of Alexander Luria's case study The Mind of a Mnemonist (1968). [...] "
+            "most of them carried out by the neuropsychologist Alexander Luria over a thirty-year time span. "
+            "He met Luria after an anecdotal event in which he was scolded for not taking any notes while attending a work meeting in the mid-1920s. [...] "
+            "he could recall the speech  word for word. [...] "
+            "Luria diagnosed in Shereshevsky an extremely strong version of synaesthesia, fivefold synaesthesia, in which the stimulation of one of his senses produced a reaction in every other. "
+            "For example, if Shereshevsky heard a musical tone played he would immediately see a colour, touch would trigger a taste sensation [...] "
+            "7 a man with a moustache [...] "
+            "Luria did not clearly distinguish between whatever natural ability Shereshevsky might have had and mnemonic techniques like the method of loci and number shapes that Shereshevsky described. [...] "
+            "According to autobiographical diary of Shereshevsky, found by Reed Johnson, he \"did not, in fact, have perfect recall\". [...] "
+            "According to Mikhail Reynberg, Shereshevsky's nephew [...] "
+            "Reynberg recalls that Shereshevsky \"could be forgetful\", and that he \"trained hours a day for his evening performances\", because he needed \"consciously try to commit something to memory\". "
+            "Shereshevsky used method of loci, imagining Gorky Street in Moscow or \"a village street from his childhood\" as his memory palaces. [...] "
+            "He had trouble memorizing information whose intended meaning differed from its literal one, as well as trouble recognizing faces [...] "
+            "He went as far as writing things down on paper and burning it, so that he could see the words in cinders, in a desperate attempt to forget them.",
+            nome="Solomon Shereshevsky")],
+    },
+    # 10 os mergulhadores de Godden e Baddeley não se repetiram
+    {
+        "temas_secundarios": ["experimentos_psicologia", "oceanografia"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Um clássico dos livros de psicologia mostra mergulhadores lembrando melhor debaixo d'água o que aprenderam debaixo d'água. Quando alguém enfim refez o experimento, em 2021, o efeito não apareceu.",
+        "explicacao": (
+            "No estudo de 1975, Godden e Baddeley fizeram mergulhadores ouvirem listas de palavras em terra ou embaixo "
+            "d'água e, 4 minutos depois, testaram a lembrança num dos dois ambientes. Lembrar no mesmo lugar em que se "
+            "aprendeu deu resultado muito melhor, e o trabalho virou o exemplo clássico da memória dependente de "
+            "contexto. Mas nenhuma replicação tinha sido publicada; o próprio Baddeley, consultado, não conhecia "
+            "nenhuma. Um psicólogo da Universidade de Amsterdã refez o teste com dezesseis mergulhadores e não "
+            "encontrou vantagem em aprender e lembrar no mesmo ambiente. Pelo contrário: quem aprendeu embaixo d'água "
+            "lembrou mais em terra. Há diferenças importantes entre os dois experimentos. O original levou 4 dias, em "
+            "mar aberto e frio perto de Oban, na Escócia, a uma profundidade relatada de 7 metros. A replicação foi "
+            "feita em cerca de uma hora e meia, numa piscina coberta e aquecida de uns 180 centímetros, e ainda estava "
+            "sendo filmada para a TV, o que pode ter distraído os participantes. O autor conclui que são necessárias "
+            "mais replicações para saber se o estudo merece o lugar de destaque que tem. A memória dependente de "
+            "contexto em geral está bem estabelecida, mas o efeito costuma ser fraco."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [{"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8568063/fullTextXML",
+            "titulo": "The Godden and Baddeley (1975) experiment on context-dependent memory on land and underwater: a replication (Royal Society Open Science, via Europe PMC)",
+            "idioma": "en",
+            "trecho": "The Godden and Baddeley (1975) experiment on context-dependent memory on land and underwater: a replication [...] "
+                "University of Amsterdam [...] "
+                "November 3, 2021 [...] "
+                "Sixteen divers studied auditorily presented word lists on land or underwater and recalled these 4 min later on land or underwater (each diver participated in all four combinations). "
+                "Contrary to the original study, we did not find that recall in the same context where the words had been learned was better than recall in the other context. [...] "
+                "These authors had divers learn spoken words, either on land or underwater, and after 4 min tested them in either environment; all divers did all four combinations of environments. "
+                "In this classic study, they found a large effect of context: whether learning underwater or on land, recall of the materials was much better in the same environment. [...] "
+                "Environmental context-dependent memory measured with free recall is now well established, although in many circumstances the effect is rather weak [...] "
+                "has ever been published, although there is a study with novice divers [...] "
+                "we consulted one of the authors of the original study but he did not know of any replications, published or not (Alan Baddeley 2014, personal communication). [...] "
+                "For words learned underwater, recall on land is, in fact, better and this difference was statistically significant. [...] "
+                "A large procedural difference was that the Godden and Baddeley divers took 4 days to do all four conditions, whereas we had one experimental group do all four conditions in about 1.5 h [...] "
+                "Another difference was that our experiment was being filmed as part of a TV programme, and this may have distracted the participants. [...] "
+                "a large difference in general conditions is probably the use of a heated indoor pool, which was about 180 cm deep instead of the open water dive near Oban, where the divers did the underwater part of the experiment at a reported 7 m depth in cold water [...] "
+                "We can only conclude that more replications are necessary of the original experiment, possibly with more subjects, to establish whether the classic study by Godden [...] "
+                "does indeed deserve the privileged position it currently enjoys as a prime example of context-dependent memory."}],
+    },
+    # 11 Ebbinghaus, cobaia de si mesmo, replicado em 2015
+    {
+        "temas_secundarios": ["sono_ritmos", "experimentos_psicologia"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Em 1880, Hermann Ebbinghaus decorou listas de sílabas sem sentido, sendo a própria cobaia, e traçou a curva do esquecimento. Em 2015, um estudante passou 70 horas refazendo tudo, e a curva se repetiu.",
+        "explicacao": (
+            "Ebbinghaus queria achar a relação entre o quanto se retém e o tempo desde o aprendizado. Antes, testou a "
+            "si mesmo com tons, números e estrofes do poema Don Juan, de Byron, mas os versos evocavam significados "
+            "demais e atrapalhavam a medida. Por isso criou as sílabas sem sentido, como \"WID\" e \"ZOF\", mais "
+            "uniformes. Ele foi o único participante de todos os seus experimentos, e a curva vem de sete meses de "
+            "trabalho, muitas vezes com três sessões por dia. A medida era a \"economia\": quanto do esforço inicial "
+            "se poupa ao reaprender uma lista depois de um intervalo; se reaprender leva o mesmo tempo que aprender, "
+            "a economia é zero. Em 2015, dois pesquisadores da Universidade de Amsterdã refizeram o experimento. O "
+            "segundo autor, J. Dros, de 22 anos, foi o único participante: passou 70 horas aprendendo listas e "
+            "reaprendendo-as após intervalos de 20 minutos a 31 dias, num período de 75 dias. Os resultados ficaram "
+            "parecidos com os originais. E a curva não é totalmente lisa: há um salto para cima a partir do ponto de "
+            "24 horas. Ebbinghaus desconfiou tanto desse ponto que o refez. Mais tarde, outros pesquisadores "
+            "interpretaram o salto como efeito do sono, cujo papel positivo na memória já foi replicado muitas vezes."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4492928/fullTextXML",
+             "titulo": "Replication and Analysis of Ebbinghaus' Forgetting Curve (PLoS ONE, via Europe PMC)",
+             "idioma": "en",
+             "trecho": "We present a successful replication of Ebbinghaus’ classic forgetting curve from 1880 based on the method of savings. "
+                "One subject spent 70 hours learning lists and relearning them after 20 min, 1 hour, 9 hours, 1 day, 2 days, or 31 days. "
+                "The results are similar to Ebbinghaus' original data. [...] "
+                "We conclude that the Ebbinghaus forgetting curve has indeed been replicated and that it is not completely smooth but most probably shows a jump upwards starting at the 24 hour data point. [...] "
+                "This experiment was conducted as an employee (JM) and student (JD) of the University of Amsterdam. [...] "
+                "Ebbinghaus’ goal was to find the lawful relation between retention and time-since-learning. [...] "
+                "After having tested himself with tones, numbers, and poem stanzas, he decided that none of these served his purposes. [...] "
+                "the poem fragments he tried to learn (from Byron’s Don Juan) were deemed too variable in the meanings they evoked and therefore likely to cause measurement error [...] "
+                "He, therefore, introduced nonsense syllables, which had more uniform characteristics than existing words or other verbal material. [...] "
+                "he used only himself as a subject. [...] "
+                "Indeed, Ebbinghaus’ forgetting curve is based on seven months of experimenting, often up to three sessions per day. [...] "
+                "we had to accommodate our design to a 75 day period. [...] "
+                "The second author, J. Dros, (22 years, male) was the only subject in the experiment. [...] "
+                "If it takes just as long to relearn the list as it took to learn it originally, then savings is 0. [...] "
+                "He clearly did not trust this data point because in his text from 1885 [...] "
+                "he reports that he later had replicated this 24 hour data point. [...] "
+                ", however, interpreted the discrepancy as an effect of sleep [...] "
+                "yielded a positive effect of sleep on recall. This effect has since been replicated many times"},
+            wiki("Forgetting_curve",
+                "Ebbinghaus studied the memorisation of nonsense syllables, such as \"WID\" and \"ZOF\" (CVCs or Consonant–Vowel–Consonant) by repeatedly testing himself after various time periods and recording the results. [...] "
+                "In 2015, an attempt to replicate the forgetting curve with one study subject has shown the experimental results similar to Ebbinghaus's original data.",
+                nome="Forgetting curve"),
+        ],
+    },
+    # 12 efeito do teste: lembrar ensina mais que reler
+    {
+        "temas_secundarios": ["aprendizagem_inteligencia", "linguas_mundo"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Estudantes que continuaram se testando lembraram cerca de 80% de um vocabulário uma semana depois. Os que trocaram os testes por releitura lembraram 36%. E todos tinham previsto lembrar uns 50%.",
+        "explicacao": (
+            "O experimento foi publicado na Science em 2008 por Jeffrey Karpicke e Henry Roediger. Universitários "
+            "aprenderam 40 pares de palavras em suaíli e inglês, em ciclos de estudo e teste. Quando um par era "
+            "lembrado corretamente uma vez, o tratamento mudava conforme o grupo: em alguns, o par continuava nos "
+            "testes; em outro, continuava sendo estudado, mas saía dos testes; no último, saía de tudo. No fim do "
+            "treino, os desempenhos eram praticamente iguais, e todos previram lembrar cerca de metade dos pares. Uma "
+            "semana depois, quem seguiu sendo testado lembrou cerca de 80%. Quem parou de ser testado lembrou 36% ou "
+            "33%, mesmo no grupo que continuou estudando todos os pares. Ou seja, depois do primeiro acerto, estudar "
+            "de novo não produziu nenhum aprendizado mensurável, enquanto tentar lembrar fez enorme diferença. E as "
+            "previsões dos estudantes não tinham relação com o desempenho real. Em 2016, uma equipe da Universidade "
+            "da Califórnia em Los Angeles replicou o resultado. A ideia é antiga: em 1620, Francis Bacon já dizia que "
+            "ler um texto dez vezes tentando recitá-lo ensina mais do que lê-lo vinte vezes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://learninglab.psych.purdue.edu/downloads/2008/2008_Karpicke_Roediger_Science.pdf",
+             "titulo": "The Critical Importance of Retrieval for Learning (Karpicke e Roediger, Science, 2008; PDF do laboratório da Purdue University)",
+             "idioma": "en",
+             "trecho": "Jeffrey D. Karpicke1* and Henry L. Roediger III2 [...] "
+                "students in one condition learned foreign language vocabulary words in the standard paradigm of repeated study-test trials. "
+                "In three other conditions, once a student had correctly produced the vocabulary item, it was repeatedly studied but dropped from further testing, repeatedly tested but dropped from further study, or dropped from both study and test. "
+                "Repeated studying after learning had no effect on delayed recall, but repeated testing produced a large positive effect. "
+                "In addition, students’ predictions of their performance were uncorrelated with actual performance. [...] "
+                "we had college students learn a list of foreign language vocabulary word pairs [...] "
+                "how many of the 40 pairs they would recall on a final test in 1 week. [...] "
+                "Figure 1 shows that performance was virtually perfect by the end of learning [...] "
+                "On average, the students in all conditions predicted they would recall about 50% of the pairs in 1 week. [...] "
+                "In fact, repeated study after one successful recall did not produce any measurable learning a week later. "
+                "In the learning conditions that required repeated retrieval practice (ST and SNT), students correctly recalled about 80% of the pairs on the final test. "
+                "In the other conditions in which items were dropped from repeated testing (STN and SNTN), students recalled just 36% and 33% of the pairs. "
+                "It is worth emphasizing that, despite the fact that students repeatedly studied all of the word pairs in every study period in the STN condition, their long-term recall was much worse than students who were repeatedly tested on the entire list. [...] "
+                "15 FEBRUARY 2008 VOL 319 SCIENCE"},
+            {"url": "https://sites.lifesci.ucla.edu/psych-bjorklab/wp-content/uploads/sites/13/2016/11/soderstorm_kerr.pdf",
+             "titulo": "The Critical Importance of Retrieval—and Spacing—for Learning (Soderstrom, Kerr e Bjork, Psychological Science, 2016; PDF do laboratório da UCLA)",
+             "idioma": "en",
+             "trecho": "Psychological Science 2016 [...] "
+                "subjects studied Swahili-English vocabulary pairs [...] "
+                "Department of Psychology, University of California, Los Angeles [...] "
+                "In Experiment 1, we replicated Karpicke and Roediger’s (2008) influential results showing that once information can be recalled, repeated testing on that information enhances learning, whereas restudying that information does not."},
+            wiki("Testing_effect",
+                "Francis Bacon who discussed it as a learning strategy as early as 1620. [...] "
+                "\"Hence if you read a piece of text through twenty times, you will not learn it by heart so easily as if you read it ten times while attempting to recite it from time to time and consulting the text when your memory fails.\"",
+                nome="Testing effect"),
+        ],
+    },
+    # 13 amnésia infantil: apagadas ou só inacessíveis?
+    {
+        "temas_secundarios": ["desenvolvimento_humano", "neurociencia"],
+        "tipos_espanto": ["misterio_aberto", "contraintuitivo"],
+        "gancho": "Crianças pequenas lembram coisas de antes dos dois anos, mas os adultos não guardam quase nada dessa fase. Em camundongos, \"lembranças de infância\" esquecidas voltaram quando os neurônios certos foram religados.",
+        "explicacao": (
+            "A amnésia infantil é a incapacidade dos adultos de recuperar lembranças de episódios vividos antes dos "
+            "três ou quatro anos. Não é que os bebês não formem memórias: eles lembram sequências de ações, os objetos "
+            "usados e a ordem dos acontecimentos. Crianças acertam 51% dos eventos ocorridos antes dos dois anos, "
+            "período do qual os adultos não lembram quase nada. O esquecimento vem depois: por volta dos 11 anos, a "
+            "amnésia infantil delas já está no nível da de jovens adultos. O fenômeno também aparece em ratos e outras "
+            "espécies, então não se explica só pela linguagem ou por outra capacidade exclusivamente humana. Uma "
+            "hipótese envolve o hipocampo, que na primeira infância produz neurônios novos em ritmo alto. A "
+            "competição entre os neurônios novos e os antigos poderia desmanchar circuitos de memórias já formadas; "
+            "em camundongos, aumentar a produção de neurônios aumentou o esquecimento, e reduzi-la o diminuiu. A "
+            "grande pergunta é se as memórias da infância são apagadas ou só ficam inacessíveis. Num experimento, "
+            "pesquisadores reativaram com luz, por optogenética, os neurônios que guardavam um medo aprendido por "
+            "camundongos filhotes e já esquecido, e o medo voltou. Isso sugere uma falha de acesso, mas, em humanos, "
+            "a questão continua em aberto."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Childhood_amnesia",
+            "Childhood amnesia, also called infantile amnesia, is the inability of adults to retrieve episodic memories (memories of situations or events) before the age of three to four years. [...] "
+            "Infants can remember the actions of sequences, the objects used to produce them, and the order in which the actions unfold [...] "
+            "Children's recall is 51% accurate for events that happened before the age of two whereas adults remember nearly nothing before that age. [...] "
+            "This increased ability for children to remember their early years does not start to fade until children reach double digits. "
+            "By age 11, children exhibit young-adult levels of childhood amnesia. [...] "
+            "These findings have been replicated in a number of other species with different learning paradigms. [...] "
+            "Because infantile amnesia has been observed in animals, the occurrence cannot be explained just by cognition specific to humans [...] "
+            "Recent findings have shown that there are high levels of neurogenesis in the hippocampus in early childhood which taper out into adulthood [...] "
+            "It has been proposed that hippocampal neurogenesis degrades existing memories. "
+            "This may be due to increased competition between the new and existing neurons, followed by the replacement of synapses in preexisting memory circuits. "
+            "This theory has been supported in mouse models in which increasing neurogenesis levels also increased forgetting. "
+            "Additionally, decreasing neurogenesis after new memory formation resulted in decreased forgetting. "
+            "It is unknown whether \"lost\" infant memories are permanently erased (i.e., storage failure) or become progressively inaccessible with time (i.e., retrieval failure). [...] "
+            "By stimulating neurons used in 'forgotten' fear conditioning in infant mice, Guskjolen et al. found retrieval of the fear response was possible by optogenetic reactivation of the neuronal ensembles that encoded the memory drive. "
+            "This retrieval lasted for up to three months, suggesting the infantile amnesia was underlaid by a biological failure to access, rather than encode, said memories. [...] "
+            "Research in rat models found that younger rats forget a conditioned avoidance response to a shock-paired compartment faster than older rats do.",
+            nome="Childhood amnesia")],
+    },
+    # 14 ponta da língua... e ponta dos dedos
+    {
+        "temas_secundarios": ["linguas_mundo", "estruturas_linguisticas"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "Ter uma palavra \"na ponta da língua\" é tão universal que 45 de 51 línguas pesquisadas têm expressão parecida. Quem usa língua de sinais passa pelo mesmo, só que \"na ponta dos dedos\".",
+        "explicacao": (
+            "O fenômeno é não conseguir recuperar uma palavra, mas lembrar pedaços dela e sentir que ela está prestes "
+            "a vir. A primeira pesquisa empírica foi publicada em 1966 por Roger Brown e David McNeill, de Harvard. "
+            "Eles liam só a definição de palavras raras e pediam aos participantes que dissessem a palavra. Quem "
+            "ficava no estado de \"ponta da língua\" acertava, mais do que o acaso explicaria, a primeira letra, o "
+            "número de sílabas, a posição de algumas letras e palavras de som ou sentido parecidos. A sensação, "
+            "portanto, não é ilusão: a pessoa tem acesso parcial à palavra, o que indica que o acesso ao vocabulário "
+            "acontece em etapas. Num levantamento de 1999, B. L. Schwartz encontrou em 45 de 51 línguas expressões que "
+            "usam a língua, a boca ou a garganta como metáfora, como \"na ponta da língua\" ou \"faiscando na ponta da "
+            "língua\". Entre as exceções estavam a Língua de Sinais Americana, o amárico, o islandês, o kalenjin e o "
+            "suaíli; ainda assim, usuários de línguas de sinais relatam ter palavras \"na ponta dos dedos\". Bilíngues "
+            "passam por isso com mais frequência que monolíngues com palavras comuns (com nomes próprios, não), "
+            "sobretudo na língua menos dominante, talvez porque usam cada palavra menos vezes."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Tip_of_the_tongue",
+            "Tip of the tongue (also known as TOT, or lethologica) is the phenomenon of failing to retrieve a word or term from memory, combined with partial recall and the feeling that retrieval is imminent. [...] "
+            "The tip of the tongue phenomenon reveals that lexical access occurs in stages. [...] "
+            "The first empirical research on this phenomenon was undertaken by Harvard researchers Roger Brown and David McNeill and published in 1966 in the Journal of Verbal Learning and Verbal Behavior. [...] "
+            "In their study, Brown and McNeill read out definitions (and only the definitions) of rare words to the study participants, and asked them to name the object or concept being defined. [...] "
+            "Brown and McNeill found that participants could identify the first letter of the target word, the number of syllables of the target word, words of similar sound, words of similar meaning, syllabic pattern, and the serial position of some letters in the target word better than would be expected by chance. "
+            "Their findings demonstrated the legitimacy of the feeling of knowing experienced in a tip of the tongue state. [...] "
+            "In a study by B. L. Schwartz (1999), 45 of the 51 languages surveyed have an idiom referring to the tip of the tongue phenomenon that references the tongue, mouth, or throat as a metaphor. "
+            "The direct English translations of these idioms are \"on the tongue\", \"on the tip/point/head of the tongue\", \"on the top of the tongue\", \"on the front of the tongue\", \"sparkling at the end of the tongue\", and \"in the mouth and throat\". "
+            "Notably, the languages studied that did not have an equivalent idiom for the tip of the tongue were American Sign Language, Amharic, Icelandic, Kalenjin, and Kiswahili. "
+            "However, tip of the finger experiences are reported by signers. [...] "
+            "Bilinguals seem to report the same amount of TOTs as monolinguals for proper names but significantly more TOTs for other words. "
+            "Specifically, when adjusted for the degree of use of the dominant and less-dominant language, bilinguals have more TOTs with the less-dominant language. [...] "
+            "This could possibly be the result of bilinguals using the words less often than monolingual speakers.",
+            nome="Tip of the tongue")],
+    },
+]

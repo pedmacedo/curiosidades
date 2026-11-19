@@ -1,0 +1,574 @@
+LOTE = "2026-11-19-historia_portugues-01"
+AREA = "linguas"
+TEMA = "historia_portugues"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Afonso X: prosa em castelhano, poesia em galego-português
+    {
+        "temas_secundarios": ["europa_medieval", "literatura"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Afonso X, rei de Castela no século XIII, escrevia prosa em castelhano, mas poesia em galego-português, o ancestral do nosso idioma. Era a língua da poesia lírica em quase toda a Península Ibérica.",
+        "explicacao": (
+            "Entre o fim do século XII e meados do XIV, quem compunha poesia lírica nas terras que hoje são Espanha "
+            "e Portugal o fazia, quase sem exceção, em galego-português, a língua comum de onde vieram o português e "
+            "o galego modernos. Há registro de mais de 160 poetas, e sobrevivem quase 1.700 cantigas de amor, de "
+            "amigo e de escárnio. Afonso X de Castela, o Sábio (1221–1284), seguiu essa tradição. As obras em prosa "
+            "da sua corte, como as crônicas de história, saíram em castelhano, mas as 420 Cantigas de Santa Maria, "
+            "poemas com notação musical, foram escritas em galego-português. Pesaram dois motivos: a língua estava "
+            "na moda como idioma lírico em Castela, e o rei passou parte da infância na Galiza, onde provavelmente "
+            "aprendeu a falá-la. A tradição atribui todas as cantigas a ele, mas os estudiosos concluíram que a "
+            "maioria foi obra de poetas e músicos da corte, e só algumas seriam dele. Um neto de Afonso X, D. Dinis, "
+            "rei de Portugal, é o autor com mais textos preservados nos gêneros profanos desse repertório: 137."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Galician-Portuguese",
+                "The language was used for literary purposes from the final years of the 12th century to roughly the middle of the 14th century in what are now Spain and Portugal and was, almost without exception, the only language used for the composition of lyric poetry. "
+                "Over 160 poets are recorded [...] "
+                "All told, nearly 1,700 poems survive in these three genres [...] "
+                "The Castilian king Alfonso X composed his cantigas de Santa Maria and his cantigas de escárnio e maldizer in Galician–Portuguese, even though he used Castilian for prose. "
+                "King Dinis of Portugal, who also contributed (with 137 extant texts, more than any other author) to the secular poetic genres",
+                nome="Galician-Portuguese"),
+            wiki("Cantigas_de_Santa_Maria",
+                "are 420 poems with musical notation, written in the medieval Galician-Portuguese language during the reign of Alfonso X of Castile El Sabio (1221–1284). "
+                "Traditionally, they are all attributed to Alfonso, though scholars have since established that the musicians and poets of his court were responsible for most of them, with Alfonso being credited with a few as well. [...] "
+                "this was because of Galician-Portuguese being fashionable as a lyrical language in Castile at the time, as well as Alfonso X having passed part of his early years in Galicia and so probably being a fluent speaker since his childhood. [...] "
+                "While the other major works that came out of Alfonso's workshops, including histories and other prose texts, were in Castilian, the Cantigas are in Galician-Portuguese",
+                nome="Cantigas de Santa Maria"),
+            wiki("Denis_of_Portugal",
+                "Denis was the eldest son of Afonso III of Portugal and Beatrice of Castile, an illegitimate daughter of King Afonso X of Castile.",
+                nome="Denis of Portugal"),
+        ],
+    },
+    # 2 dias da semana numerados e Martinho de Dume
+    {
+        "temas_secundarios": ["calendarios", "religioes", "europa_medieval"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "Entre as línguas românicas, só o português e o mirandês numeram os dias da semana (segunda, terça...) em vez de usar nomes de astros e deuses. A mudança é atribuída a um bispo do século VI.",
+        "explicacao": (
+            "Os nomes antigos dos dias vinham dos astros da astrologia helenística: Sol, Lua, Marte, Mercúrio, "
+            "Júpiter, Vênus e Saturno. As outras línguas românicas mantiveram os nomes latinos, trocando só o sábado, "
+            "ligado ao shabat judaico, e o domingo, o \"dia do Senhor\". O português seguiu outro caminho, e a "
+            "explicação aponta para Martinho de Dume, também chamado de Braga. Nascido na Panônia, na Europa "
+            "Central, ele se fez monge na Terra Santa e, por volta de 550, chegou por mar à Galécia, então reino dos "
+            "suevos. Fundou mosteiros, o mais conhecido em Dume, perto de Braga, a capital sueva, e mais tarde virou "
+            "bispo metropolitano da cidade, com o apelido de \"Apóstolo dos Suevos\". Em suas instruções aos fiéis, "
+            "condenou o costume astrológico de dar aos dias nomes de deuses. Numerar os dias era um hábito mais comum "
+            "na Igreja do Oriente, e foi o que pegou: por influência dele, o português e o mirandês são as únicas "
+            "línguas românicas em que os dias vêm de números, e não de planetas. O galego, que na época era a mesma "
+            "língua, voltou em grande parte aos nomes antigos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Names_of_the_days_of_the_week",
+                "The days were named after the classical planets of Hellenistic astrology, in the order: Sun (Helios), Moon (Selene), Mars (Ares), Mercury (Hermes), Jupiter (Zeus), Venus (Aphrodite), and Saturn (Cronus). [...] "
+                "Except for in Portuguese and Mirandese, the Romance languages preserved the Latin names, except for the names of Sunday, which was replaced by [dies] Dominicus (Dominica), that is, \"the Lord's Day\", and of Saturday, which was named for the Jewish Sabbath. [...] "
+                "decided not to call days by pagan gods and to use ecclesiastic terminology to designate them. "
+                "While the custom of numbering the days of the week was mostly prevalent in the Eastern Church, Portuguese and Mirandese, due to Martin's influence, are the only Romance languages in which the names of the days come from numbers rather than planetary names.",
+                nome="Names of the days of the week"),
+            wiki("Martin_of_Braga",
+                "Born in Pannonia, in Central Europe, Martin made a pilgrimage to the Holy Land, where he became a monk. "
+                "Around 550, he travelled by sea to Hispania and settled in Gallaecia. [...] "
+                "he founded several monasteries, the best known of which was at Dumium (modern-day Dume), established close to the Suevic capital at Braga. [...] "
+                "He was subsequently raised to the status of metropolitan bishop of Braga [...] "
+                "being granted the cognomen of \"Apostle to the Suevi\". [...] "
+                "In his instructions, Martin objects to the astrological custom of naming the days of the week after gods (planets). "
+                "Due to his influence Portuguese and Galician (which, at the time, were one single language), alone among the Romance languages, assumed names for the days from numbers and Catholic liturgy, rather than from pagan deities. "
+                "Galician has largely returned to the earlier nomenclature.",
+                nome="Martin of Braga"),
+        ],
+    },
+    # 3 mesóclise: o futuro já foi duas palavras
+    {
+        "temas_secundarios": ["estruturas_linguisticas", "roma_antiga"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "Em \"dar-te-ei\", o pronome entra no meio do verbo porque o futuro do português nasceu de duas palavras: o infinitivo \"dar\" e uma forma do verbo haver. A mesóclise é a emenda que ficou à mostra.",
+        "explicacao": (
+            "Mesóclise é o encaixe de um pronome entre o radical do verbo e a terminação do tempo, como em "
+            "\"conquistar-se-á\" ou \"dá-lo-ei\". Cabem até dois pronomes ali dentro: \"dar-no-lo-á\" quer dizer "
+            "\"ele o dará a nós\". Fora do português padrão formal, o fenômeno é raro, e mesmo em português aparece "
+            "muito mais na escrita do que na fala. A explicação está na história do futuro. O futuro simples do "
+            "português surgiu da fusão do infinitivo do verbo com formas do auxiliar haver, que vem do latim "
+            "habere. \"Darei\", portanto, juntou \"dar\" a uma forma de \"haver\". Como a terminação do futuro já foi "
+            "uma palavra separada, o pronome ainda consegue se instalar entre as duas partes, no lugar onde antes "
+            "havia uma fronteira entre palavras. Um caso parecido aparece no turco coloquial: uma conjunção pode se "
+            "intrometer entre o verbo e um sufixo de possibilidade, o que devolve a esse sufixo a forma de um verbo "
+            "independente, \"bilmek\", \"saber\", do qual ele se originou."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Mesoclisis",
+                "A mesoclitic is a type of clitic that occurs between the stem of a verb and its affixes. "
+                "Mesoclisis is rare outside of formal standard Portuguese, where it is predominantly found. "
+                "In Portuguese, mesoclitic constructions are typically formed with the infinitive form of the verb, a clitic pronoun, and a lexicalized tense affix. "
+                "For example, in the sentence conquistar-se-á (\"it will be conquered\"), the reflexive pronoun \"se\" appears between the stem conquistar and the future tense affix á. [...] "
+                "Other examples include dá-lo-ei (\"I will give it\") [...] "
+                "These forms are typically found much more frequently in written Portuguese than in spoken varieties. "
+                "Additionally, it is possible to use two clitics within a verb, as in dar-no-lo-á (\"he/she/it will give it to us\") [...] "
+                "This phenomenon is possible due to the historical evolution of the Portuguese synthetic future tense, which comes from the fusion of the infinitive form of the verb and the finite forms of the auxiliary verb haver (from Latin habēre). "
+                "This origin explains why the clitic can appear between the verb stem and its tense marker, as the future tense was originally a separate word. "
+                "Colloquial Turkish exhibits an instance of a mesoclitic where the conjunction enclitic de (\"also, as well\") is inserted after the gerundive suffix -e connecting the verb stem to the potential suffix -(e)bilmek, effectively rendering it in its original auxiliary verb form bilmek (to know).",
+                nome="Clitic"),
+        ],
+    },
+    # 4 o til é um n encolhido
+    {
+        "temas_secundarios": ["sistemas_escrita", "europa_medieval"],
+        "tipos_espanto": ["origem_inesperada", "engenhosidade"],
+        "gancho": "O til de \"mão\" é um \"n\" encolhido. Escribas medievais punham um n miúdo sobre a vogal para indicar uma letra omitida. No português, o n do latim \"manum\" tinha caído de fato, e só sobrou o som nasal.",
+        "explicacao": (
+            "Os escribas da Idade Média abreviavam muito, para poupar trabalho, pergaminho e tinta. Quando um n ou "
+            "um m vinha depois de uma vogal, era comum omiti-lo e pôr um pequeno n sobre a vogal anterior, para "
+            "avisar que faltava uma letra. Essa marca é a origem do til. No galego-português medieval, ela ganhou "
+            "uso permanente, porque a língua passou por uma mudança drástica: o l e o n do latim vulgar que ficavam "
+            "entre vogais caíram. \"Dolorem\" virou \"door\" e depois \"dor\"; \"salire\" virou \"sair\". Quando o n "
+            "sumia, deixava a vogal vizinha nasalizada: \"lanam\" deu \"lãa\" e depois \"lã\", \"manum\" deu \"mão\" e "
+            "\"rationes\" deu \"razões\". O til passou a marcar esse n do latim que já não se pronunciava, e hoje "
+            "indica a nasalização da vogal. Às vezes até a nasal se perdeu depois: \"lunam\" passou por \"lũa\" antes "
+            "de virar \"lua\", e \"bonam\" passou por \"bõa\" antes de virar \"boa\". Essa transformação produziu uma "
+            "das diferenças de pronúncia mais marcantes entre o português e o espanhol."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Tilde",
+                "The tilde was originally one of a variety of marks written over an omitted letter or several letters as a scribal abbreviation [...] "
+                "This saved on the expense of the scribe's labor and the cost of vellum and ink. [...] "
+                "followed a vowel, it was often omitted, and a small [...] "
+                "was placed over the preceding vowel to indicate the missing letter; this is the origin of the use of tilde to indicate nasalization [...] "
+                "It is also as a small [...] that the tilde originated when written above other letters, marking a Latin [...] which had been elided in old Galician-Portuguese. "
+                "In modern Portuguese it indicates nasalization of the base vowel: mão \"hand\", from Lat. manu-; razões \"reasons\", from Lat. rationes.",
+                nome="Tilde"),
+            wiki("History_of_Portuguese",
+                "Elision—the consonants [l] and [n] of Vulgar Latin were deleted between vowels [...] "
+                "dolōrem [...] Galician-Portuguese door [...] Modern Portuguese dor [...] "
+                "salīre [...] Galician-Portuguese sair [...] "
+                "This change produced one of the most striking phonological differences between Portuguese and Spanish. [...] "
+                "lānam [...] Galician-Portuguese lãa [...] Modern Portuguese lã [...] "
+                "manum [...] Galician-Portuguese mão [...] "
+                "lūnam [...] Galician-Portuguese lũa [...] Modern Portuguese lua [...] "
+                "bonam [...] Galician-Portuguese bõa [...] Modern Portuguese boa",
+                nome="History of Portuguese"),
+        ],
+    },
+    # 5 o ç é um z espanhol; lh e nh vieram do occitano
+    {
+        "temas_secundarios": ["sistemas_escrita", "europa_medieval"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O ç nasceu na Espanha medieval como um z miúdo escrito embaixo do c, e \"cedilha\" quer dizer \"pequeno z\". Os espanhóis abandonaram a letra no século XVIII; o português ficou com ela.",
+        "explicacao": (
+            "Ao aplicar a escrita visigótica a sons novos do espanhol, como um som parecido com \"ts\", os escribas "
+            "passaram a escrever um c sobre um z. Com o tempo, o c voltou ao tamanho normal e o z encolheu até virar "
+            "um sinal embaixo dele, num processo que se acredita ter ocorrido por volta do século XI. Assim, a palavra "
+            "espanhola para \"lança\" passou a ser grafada \"lança\". O nome \"cedilha\" vem do espanhol: é o "
+            "diminutivo de \"ceda\", nome antigo da letra z. Antes de 1500, impressores espanhóis e portugueses já "
+            "tinham tipos com cedilha, que chegaram à França por Toulouse. No espanhol, a letra caiu no século XVIII, "
+            "trocada por z ou por c, mas o português, o francês e o catalão a mantiveram. Outras marcas da nossa "
+            "escrita também vieram de fora. O lh e o nh são de origem occitana. Quem os popularizou foi D. Dinis, "
+            "admirador da poesia dos trovadores e poeta ele mesmo; antes, os mesmos sons eram grafados de vários "
+            "jeitos, entre eles nn e ll, como no espanhol."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Cedilla",
+                "The word cedilla is the diminutive of the Old Spanish name for this letter, ceda (zeta). [...] "
+                "The Visigothic script is indeed thought to have abbreviated this grapheme around the 11th century in Spain. "
+                "Initially, the c was written above the z in its form ʒ; later, the c regained its full size while ʒ was reduced to a subscript sign. "
+                "Thus, the Spanish word lanʒa /lantsa/ (\"lance\") came to be written lança. [...] "
+                "As a result of the application of Visigothic script to new Spanish sounds [...] "
+                "Before 1500 – Spanish and Portuguese printers create typefaces for the cedilla; these enter France via Toulouse. [...] "
+                "In Spanish, the cedilla was abandoned in the 18th century (ç being replaced by z or simple c before e and i) [...] "
+                "Other related languages (Catalan, French, Portuguese) nevertheless retained it.",
+                nome="Cedilla"),
+            wiki("Spelling_reforms_of_Portuguese",
+                "King Denis, who was an admirer of the poetry of the troubadours and a poet himself, popularized the Occitan digraphs nh and lh for the palatal consonants /ɲ/ and /ʎ/, which until then had been spelled with several digraphs, including nn and ll, as in Spanish.",
+                nome="Spelling reforms of Portuguese"),
+            wiki("Portuguese_orthography",
+                "The digraphs ⟨lh⟩ and ⟨nh⟩, of Occitan origin, denote palatal consonants",
+                nome="Portuguese orthography"),
+        ],
+    },
+    # 6 o lusitano, língua de seis inscrições
+    {
+        "temas_secundarios": ["linguas_mundo", "roma_antiga", "decifracao"],
+        "tipos_espanto": ["misterio_aberto"],
+        "gancho": "Antes do latim, o centro de Portugal falava lusitano, língua conhecida por só seis inscrições longas. Até hoje não se sabe se era celta, aparentada ao latim ou de um ramo ainda mais antigo.",
+        "explicacao": (
+            "Os lusitanos viviam entre os rios Douro e Tejo, área que hoje corresponde ao centro de Portugal e ao "
+            "oeste da Espanha. A língua deles era indo-europeia, mas quase nada sobrou: seis inscrições de tamanho "
+            "razoável, datadas por volta do século I d.C., além de muitos nomes de lugares e de deuses. Como os "
+            "lusitanos não tinham escrita própria, as inscrições usam o alfabeto latino. Pouquíssimas palavras têm "
+            "sentido claro, e três delas são animais de sacrifício: \"porcom\" (porco), \"taurom\" (touro) e "
+            "\"oilam\" (ovelha). O p de \"porcom\" está no centro do debate. As línguas celtas perderam o p do "
+            "indo-europeu, e o lusitano o conserva, por isso a maioria dos filólogos o vê como indo-europeu, mas não "
+            "celta. Outros apontam nomes que parecem nitidamente celtas e o tratam como um dialeto celta que manteve "
+            "o p. Há ainda quem o aproxime do grupo itálico, o do latim. Para os especialistas, as inscrições "
+            "encontradas não bastam para encerrar a questão. Uma inscrição bilíngue, em lusitano e latim, traria o "
+            "nome antigo de Viseu: Vissaîegobor."
+        ),
+        "nivel": 2, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Lusitanian_language",
+                "is an extinct Indo-European Paleohispanic language. "
+                "There has been support for either a connection with the Celtic languages and sometimes with the Italic languages. "
+                "It is known from only six sizeable inscriptions, dated to roughly the first century AD, and numerous names of places (toponyms) and of gods (theonyms). "
+                "The language was spoken in the territory inhabited by Lusitanian tribes, between the Douro and Tagus rivers, territory that today falls in central Portugal and western Spain. [...] "
+                "The number of semantically clear words is minimal. "
+                "Three words for sacrificial animals are clearly identified (porcom 'pig, pork', taurom 'bull', oilam 'sheep, lamb'). [...] "
+                "Dagmar Wodtko argues that it is hard to identify Lusitanian personal or place-names that are actually not Celtic. "
+                "These arguments contradict the hypothesis that the p- in PORCOM alone excludes Lusitanian from the Celtic group of pre-Roman languages of Europe and that it can be classed as a Celtic dialect but one that preserved Indo-European *p [...] "
+                "The only inscriptions found in the old Lusitanian territories do not provide enough evidence for the debate about whether this was a Celtic, Italic, or a much older language which pre-dates any of the European language-groups. [...] "
+                "In general, philologists believe that Lusitanian was an Indo-European language but not Celtic. [...] "
+                "Common Celtic, on the contrary, retains Indo-European *d and loses *p. [...] "
+                "pointing to the morphs of the dative and locative endings that clearly separate Lusitanian from Celtic and approach it to Italic. [...] "
+                "A bilingual Lusitanian–Latin votive inscription is reported to attest the ancient name of Portuguese city of Viseu: Vissaîegobor. [...] "
+                "All the known inscriptions are written in the Latin alphabet, which was borrowed by bilingual Lusitanians to write Lusitanian since Lusitanian had no writing system of its own.",
+                nome="Lusitanian language"),
+        ],
+    },
+    # 7 Fernão de Oliveira, o gramático aventureiro
+    {
+        "temas_secundarios": ["personagens_esquecidos", "grandes_navegacoes"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "A primeira gramática do português, de 1536, foi escrita por um frade que virou piloto de navio, foi capturado por ingleses, frequentou a corte de Henrique VIII e acabou preso pela Inquisição.",
+        "explicacao": (
+            "Fernão de Oliveira nasceu em Aveiro em 1507, filho de um juiz, e estudou no convento dominicano de "
+            "Évora. Em 1536, em Lisboa, publicou a \"Grammatica da lingoagem portuguesa\", a primeira gramática da "
+            "língua. A vida dele foi agitada. Em 1545, embarcou como piloto num navio francês, e pouco depois a "
+            "tripulação foi presa por uma frota inglesa. Em Londres, ele frequentou a corte de Henrique VIII. De "
+            "volta a Portugal em 1547, foi preso pela Inquisição por suas opiniões religiosas, influenciadas pela "
+            "temporada inglesa, e só foi solto em 1551, pela intervenção do cardeal D. Henrique. Depois virou capelão "
+            "real, passou um ano prisioneiro durante uma expedição ao Norte da África, voltou à prisão entre 1555 e "
+            "1557 e escreveu sobre construção de naus e guerra no mar. Foi também um dos primeiros críticos da "
+            "escravidão e do tráfico de escravos. A gramática dele serve até hoje de testemunho aos linguistas: "
+            "segundo ela, no século XVI o português já tratava como sons distintos dois tipos de \"a\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Fernão_de_Oliveira",
+                "was a Portuguese grammarian, Dominican friar,  historian, cartographer, naval pilot and theorist on naval warfare and shipbuilding. "
+                "An adventurous humanist and renaissance man, he studied and published the first grammar of the Portuguese language, the Grammatica da lingoagem portuguesa, in 1536. "
+                "He was an early critic of slavery and the slave trade. [...] "
+                "Fernão de Oliveira was born in Aveiro in 1507, the son of a judge. "
+                "Starting in 1520, he studied at the Dominican Convent of Évora [...] "
+                "In 1536 he was in Lisbon, when he published his Grammar, the first for the Portuguese Language. [...] "
+                "In 1545 he enlisted as pilot on a French ship, under command of the Baron Saint Blancard. "
+                "Soon afterwards, they were arrested by an English fleet. "
+                "While in London he attended the court of Henry VIII of England. "
+                "Having returned to Portugal in 1547, he was arrested by the Portuguese Inquisition due to his religious opinions (his stay in Henry's court had influenced his views); he was freed in 1551, through the intervention of Cardinal Henrique. "
+                "In 1552, he became royal chaplain. "
+                "He joined in an expedition organized by king John III in North Africa, where he was made prisoner for a year. [...] "
+                "From 1555 to 1557, he was again imprisoned. [...] "
+                "Livro da Fabrica das Naos (Book of naus' shipbuilding) [...] "
+                "Arte da guerra do mar (The art of sea warfare), printed in Coimbra in 1555",
+                nome="Fernão de Oliveira"),
+            wiki("History_of_Portuguese",
+                "Around the 16th century, according to Fernão de Oliveira's Grammatica da lingoagem portuguesa, in Chapter VIII, /a/ and /ɐ/ would already be considered as different phonemes.",
+                nome="History of Portuguese"),
+        ],
+    },
+    # 8 o português como língua franca da Ásia e o kristang
+    {
+        "temas_secundarios": ["grandes_navegacoes", "imperios_coloniais", "linguas_mundo"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "No século XVI, o português virou língua franca na Ásia, usada até por europeus de outras nações para falar com autoridades locais. Em Malaca, que Portugal perdeu no século XVII, ainda se fala um crioulo dele.",
+        "explicacao": (
+            "Colonos, comerciantes e missionários levaram o português para a África, a Ásia e as Américas. Em meados "
+            "do século XVI, ele já servia de língua franca na Ásia e na África, não só na administração e no "
+            "comércio, mas também na conversa entre autoridades locais e europeus de todas as nacionalidades. No "
+            "Ceilão, atual Sri Lanka, vários reis falavam português fluentemente, e nobres adotavam nomes "
+            "portugueses. Pela ligação com os missionários católicos, em muitos lugares a língua era chamada de "
+            "\"cristão\". Os holandeses tomaram várias dessas posições e adotaram medidas duras para acabar com o "
+            "português no Ceilão e na Indonésia, mas ele continuou popular em partes da Ásia até o século XIX. Em "
+            "Malaca, conquistada pelos portugueses em 1511, nasceu dos casamentos entre portugueses e mulheres locais "
+            "o papia kristang, nome que vem de \"papear cristão\". Mesmo depois que Portugal perdeu a cidade e quase "
+            "todo o contato com ela, a comunidade manteve a língua, com liturgia em kristang até o século XX. Hoje "
+            "ela corre grave perigo: a UNESCO fala em cerca de 2.000 falantes, e linguistas estimam mil ou menos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("History_of_Portuguese",
+                "Colonisers, traders and missionaries spread the Portuguese language to many regions in Africa, Asia and The Americas. [...] "
+                "By the mid-16th century, Portuguese had become a lingua franca in Asia and Africa, used for not only colonial administration and trade but also communication between local officials and Europeans of all nationalities. "
+                "In Ceylon (modern Sri Lanka), several kings became fluent speakers of Portuguese, and nobles often took Portuguese names. "
+                "The spread of the language was helped by its association with the Catholic missionary efforts, which led to its being called Cristão (\"Christian\") in many places. [...] "
+                "The language continued to be popular in parts of Asia until the 19th century, despite the severe measures taken by the Dutch to abolish it in Ceylon and Indonesia.",
+                nome="History of Portuguese"),
+            wiki("Kristang_language",
+                "In Atlas of the World's Languages in Danger published by UNESCO, Kristang is classified as a \"severely endangered\" language, with only about 2,000 speakers. "
+                "Up to 2014, linguists concerned with Kristang have generally accepted a combined speaker population of about 1,000 individuals or less. [...] "
+                "Its endonym Papia Kristang is taken from Portuguese papear cristão ('Christian language'). [...] "
+                "The Kristang language originated after the conquest of Malacca (Malaysia) in 1511 by the Portuguese Empire. [...] "
+                "The community of Kristang speakers descends mainly from interracial relationships between Portuguese men and local women [...] "
+                "Even after Portugal lost Malacca and almost all contact in 1641, the Kristang community largely preserved its language. [...] "
+                "Liturgy and pastoral sessions were conducted in Kristang in Malacca, which contributed to the longevity of the language into a period as late as the 20th century.",
+                nome="Kristang language"),
+        ],
+    },
+    # 9 a fala, galego-português na Espanha
+    {
+        "temas_secundarios": ["linguas_mundo", "fronteiras_paises", "europa_medieval"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Em três vilarejos da Espanha, junto à fronteira com Portugal, cerca de 5.500 pessoas falam a \"fala\", língua do ramo galego-português. Como ela foi parar ali na Idade Média ainda é discutido.",
+        "explicacao": (
+            "A fala, ou xalimego, é falada em Valverde del Fresno, Eljas e San Martín de Trevejo, no vale de Jálama, "
+            "no noroeste da Estremadura espanhola. Costuma ser classificada no subgrupo galego-português, com alguns "
+            "traços do leonês. São cerca de 10.500 falantes na Espanha, 5.500 deles no próprio vale. Os moradores nem "
+            "usam um nome único: dizem \"lagarteiru\", \"manhegu\" ou \"valverdeiru\", conforme a vila. A origem é "
+            "incerta, porque não há documentos sobre o repovoamento da área no século XIII. Uma hipótese fala de "
+            "galegos enviados para proteger a fronteira contra os muçulmanos, como castigo imposto pelo rei de Leão. "
+            "Outra lembra que o vale encosta em Portugal e pode ter entrado nas trocas de terras do Tratado de "
+            "Alcañices, que endireitou a fronteira entre Castela e Portugal sem obrigar a população a se mudar. A "
+            "língua resiste: numa pesquisa de 1994, 100% dos pais de Eljas disseram usar a fala com os filhos, e em "
+            "2000 ela foi reconhecida como Bem de Interesse Cultural pela Junta da Estremadura."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Fala_language",
+                "is a Western Romance language commonly classified in the Galician–Portuguese subgroup, with some traits from Leonese, spoken in Spain by about 10,500 people, of whom 5,500 live in a valley of the northwestern part of Extremadura near the border with Portugal. "
+                "The speakers of Fala live in the towns of Valverde del Fresno (Valverdi du Fresnu), Eljas (As Ellas) and San Martín de Trevejo (Sa Martín de Trevellu). "
+                "These are within the valley of Jálama [...] "
+                "who call their linguistic varieties lagarteiru (in Eljas), manhegu / mañegu (in San Martín de Trevejo) and valverdeñu or valverdeiru (in Valverde del Fresno [...] "
+                "Although there is no documentation on the colonization and repopulation of this area in the 13th century, there are several hypotheses of Galician citizens moving to protect the frontier against Muslims as a punishment imposed by the Leonese king [...] "
+                "However, the valley is contiguous to the Portuguese border, making it a good candidate to be classified into the lands exchanged by Castille and Portugal, by the Treaty of Alcañices. [...] "
+                "The treaty was done to make it straighter [...] "
+                "The agreement among monarchs didn't force the populations to a re-settlement [...] "
+                "On 14 June 2000, Fala was recognized by the Ministry of Culture of the Junta de Extremadura as Bien de Interés Cultural. [...] "
+                "In 1994, a new study showed that 80% of respondents learned to speak Spanish in school. "
+                "The percentage of parents who claim to use Fala when speaking with their children was as follows: "
+                "100% in Eljas",
+                nome="Fala language"),
+        ],
+    },
+    # 10 o mirandês, segunda língua de Portugal
+    {
+        "temas_secundarios": ["linguas_mundo", "europa_medieval"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "Portugal reconhece oficialmente uma segunda língua desde 1999: o mirandês. Ele não é sotaque do português, e sim herdeiro do leonês, a língua do antigo reino vizinho, e guarda sons que quase todo o português perdeu.",
+        "explicacao": (
+            "O mirandês é falado numa pequena área do nordeste de Portugal, em torno de Miranda do Douro. Descende "
+            "do leonês antigo, a língua do Reino de Leão, e tem fonologia, morfologia e sintaxe próprias. Até 1884 "
+            "era só falado; naquele ano, José Leite de Vasconcelos propôs um sistema de escrita para ele. Pela Lei "
+            "7/99, de 29 de janeiro de 1999, a Assembleia da República reconheceu o mirandês ao lado do português "
+            "para assuntos locais, e a primeira ortografia oficial saiu no mesmo ano. A língua conserva traços "
+            "medievais. O português antigo tinha sete sons sibilantes, entre eles os de s, z, x e ch. Na maior parte "
+            "do país, eles se reduziram a quatro, mas o sistema de sete sobrevive em partes do Minho e de "
+            "Trás-os-Montes e no mirandês. A situação é frágil: uma pesquisa da Universidade de Vigo de 2020 estimou "
+            "cerca de 3.500 falantes, 1.500 deles regulares, com forte queda no uso entre os mais jovens."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Mirandese_language",
+                "is an Asturleonese language or variety that is sparsely spoken in a small area of northeastern Portugal [...] "
+                "The Assembly of the Republic granted Mirandese official recognition alongside Portuguese for local matters with Law 7/99 of 29 January 1999. [...] "
+                "Mirandese has a distinct phonology, morphology and syntax. [...] "
+                "Mirandese is a descendant of the Old Leonese language spoken in the Kingdom of León in medieval Iberia. [...] "
+                "Until 1884, Mirandese was a purely spoken language, but in that year, José Leite de Vasconcelos wrote the book Flores Mirandézas [...] in which he proposed a writing system for Mirandese. [...] "
+                "In 1999, Mirandese gained its first official orthography [...] "
+                "Today Mirandese retains speakers in most of the villages of the municipality of Miranda de l Douro [...] "
+                "A 2020 survey by the University of Vigo, carried out in Miranda de l Douro and Bumioso, estimated the number of speakers of the language to be around 3,500, with 1,500 of them being regular speakers. "
+                "The study observed strong decline in the usage of the language in younger people",
+                nome="Mirandese language"),
+            wiki("History_of_Portuguese",
+                "Old Portuguese had seven sibilants [...] "
+                "This produced a system of six fricatives and one affricate, which is still maintained in parts Minho region and northeast Portuguese province of Trás-os-Montes and in the adjacent Mirandese language; but in most places, these seven sounds have been reduced to four.",
+                nome="History of Portuguese"),
+        ],
+    },
+    # 11 o alfabeto vietnamita tem base portuguesa
+    {
+        "temas_secundarios": ["sistemas_escrita", "asia_antiga", "personagens_esquecidos"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "O vietnamita é escrito com um alfabeto criado no século XVII por missionários jesuítas, a começar por um português, e baseado sobretudo na ortografia portuguesa. Os franceses o aceitaram a contragosto.",
+        "explicacao": (
+            "A partir de 1620, com o trabalho de Francisco de Pina, jesuítas portugueses e italianos no Vietnã "
+            "começaram a anotar a língua local com letras latinas, como ajuda para aprendê-la. Pina, nascido na "
+            "Guarda em 1585, é considerado o primeiro europeu a falar vietnamita com fluência e compilou um primeiro "
+            "vocabulário em 1619. Morreu afogado em 1625, tentando socorrer pessoas de um barco naufragado. O "
+            "trabalho foi continuado por Alexandre de Rhodes, de Avignon, que publicou em Roma, em 1651, um "
+            "dicionário vietnamita–português–latim com o sistema de grafia dos jesuítas portugueses. Por 200 anos, "
+            "esse alfabeto ficou restrito à comunidade católica. Sob o domínio francês, espalhou-se pelas escolas "
+            "primárias, e desde os anos 1920 os vietnamitas usam sobretudo ele. Os franceses o aceitaram a "
+            "contragosto, por ser baseado na ortografia portuguesa, e não na francesa. A ligação serve aos dois "
+            "lados: pela grafia de Rhodes, os linguistas concluem que certas sibilantes do português só se fundiram "
+            "a partir do século XVII."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Vietnamese_alphabet",
+                "It was originally developed by the Portuguese missionary Francisco de Pina and other Jesuits in the early 17th century. [...] "
+                "The alphabet is largely derived from Portuguese with some influence from French [...] "
+                "As early as 1620, with the work of Francisco de Pina, Portuguese and Italian Jesuit missionaries in Vietnam began using Latin script to transcribe the Vietnamese language as an assistance for learning the language. "
+                "The work was continued by the Avignonese Alexandre de Rhodes. "
+                "Building on previous dictionaries by Gaspar do Amaral and António Barbosa, Rhodes compiled the Dictionarium Annamiticum Lusitanum et Latinum, a Vietnamese–Portuguese–Latin dictionary, which was later printed in Rome in 1651, using their spelling system. [...] "
+                "For 200 years, chữ Quốc ngữ was used within the Catholic community. [...] "
+                "Since the 1920s, the Vietnamese mostly use chữ Quốc ngữ [...] "
+                "The French had to reluctantly accept the use of chữ Quốc ngữ to write Vietnamese since this writing system, created by Portuguese missionaries, is based on Portuguese orthography, not French. [...] "
+                "The French colonial system then set up another educational system, teaching Vietnamese as a first language using chữ Quốc ngữ in primary school",
+                nome="Vietnamese alphabet"),
+            wiki("Francisco_de_Pina",
+                "Francisco de Pina was born in Guarda, Portugal, in 1585 [...] "
+                "Francisco de Pina drowned at sea in modern Cửa Đại on 15 December 1625 while trying to rescue guests on a wrecked boat. [...] "
+                "he is considered to be the first European able to speak fluent Vietnamese [...] "
+                "Francisco de Pina compiled a first vocabulary of the Vietnamese language in 1619",
+                nome="Francisco de Pina"),
+            wiki("History_of_Portuguese",
+                "This appears to have happened no earlier than the seventeenth century, on the evidence of the spelling system used by Alexandre de Rhodes to represent Middle Vietnamese",
+                nome="History of Portuguese"),
+        ],
+    },
+    # 12 a música das cantigas estava em capas de livros
+    {
+        "temas_secundarios": ["historia_musica", "literatura", "europa_medieval"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Das quase 1.700 cantigas profanas em galego-português, quase toda a música se perdeu. As poucas melodias que restam estavam em dois pergaminhos reaproveitados em outros livros, achados em 1913 e em 1990.",
+        "explicacao": (
+            "Os cancioneiros medievais guardaram os versos das cantigas de amor, de amigo e de escárnio, mas não as "
+            "melodias. Dos grandes manuscritos da época, só o das Cantigas de Santa Maria, religiosas, tem notação "
+            "musical. A primeira exceção apareceu em 1913: o livreiro e antiquário madrilenho Pedro Vindel achou, "
+            "entre suas coisas, um pergaminho que servia de capa a um exemplar do \"De Officiis\", de Cícero. Ele "
+            "trazia sete cantigas de amigo do jogral galego Martim Codax, com música para todas menos a sexta. São as "
+            "únicas cantigas de amigo cuja melodia se conhece. A segunda veio em 1990. Examinando documentos no "
+            "arquivo da Torre do Tombo, em Lisboa, o pesquisador americano Harvey Sharrer encontrou uma folha na "
+            "encadernação de um livro do século XVI, com sete cantigas de amor do rei D. Dinis e suas melodias. A "
+            "folha provavelmente pertencia a um cancioneiro do século XIV que se perdeu. As duas músicas chegaram "
+            "incompletas, e a de Sharrer ainda foi danificada por uma tentativa desastrosa de restauração feita por "
+            "autoridades portuguesas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Martin_Codax",
+                "was a Galician medieval joglar [...] "
+                "The parchment was originally discovered by the Madrid-based antiquarian bookseller and bibliophile Pedro Vindel among his possessions in 1913; it had been used as the cover of a copy of Cicero's De Officiis. [...] "
+                "In the Pergaminho Vindel, musical notation (although with lacunae) survives along with the texts, except for the sixth one. "
+                "They are the only cantigas d'amigo for which the music is known.",
+                nome="Martin Codax"),
+            wiki("Pergaminho_Sharrer",
+                "is a mediaeval parchment fragment containing seven songs by King Denis of Portugal, with lyrics in the Galician-Portuguese language and musical notation. "
+                "The fragment was discovered in 1990 by American scholar Harvey L. Sharrer, of the University of California, Santa Barbara. "
+                "Sharrer was analysing documents in the Torre do Tombo archive in Lisbon, when he found the folio in the binding of a 16th-century book. [...] "
+                "Several songbooks covering the period exist, but only the religious Cantigas de Santa Maria have musical notation. "
+                "The text and musical notation of the Sharrer Parchment are fragmentary, due to damage done to the folio during the centuries; but further damage was inflicted during a disastrous attempt at restoration by Portuguese authorities. "
+                "The parchment is written with Gothic letters and contains seven love songs (cantigas de amor). [...] "
+                "The folio probably belonged to a larger 14th century songbook that has been lost.",
+                nome="Pergaminho Sharrer"),
+            wiki("Galician-Portuguese",
+                "All told, nearly 1,700 poems survive in these three genres",
+                nome="Galician-Portuguese"),
+        ],
+    },
+    # 13 Gil Vicente, pai do teatro português, escrevia em espanhol
+    {
+        "temas_secundarios": ["teatro_danca", "literatura"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Gil Vicente, chamado de pai do teatro português, escreveu sua primeira obra conhecida em espanhol. Das pelo menos 44 peças dele, só 14 são em português; as demais são em espanhol ou misturam as duas línguas.",
+        "explicacao": (
+            "Gil Vicente trabalhou na corte dos reis D. Manuel I e D. João III, no início do século XVI, e é "
+            "lembrado como o \"pai do teatro português\". A estreia dele foi o \"Monólogo do vaqueiro\", escrito em "
+            "espanhol e encenado nos aposentos de Maria de Aragão, esposa de D. Manuel, para celebrar o nascimento do "
+            "príncipe que viria a ser D. João III; quem o recitou foi o próprio autor. Das pelo menos 44 peças que "
+            "escreveu, 10 são em espanhol, 14 em português e as restantes misturam os dois idiomas. Como trabalhou "
+            "tanto em espanhol quanto em português, ele divide com Juan del Encina o título de pai do teatro "
+            "espanhol. A maioria das peças era feita para a corte, e os próprios fidalgos e damas participavam das "
+            "montagens. A obra nas duas línguas ajudou a moldar a "
+            "dramaturgia moderna dos dois países. Também foi poeta lírico em português e em espanhol, com poemas no "
+            "Cancioneiro Geral de Garcia de Resende, publicado em 1516, cuja publicação os historiadores da língua "
+            "usam como marco do fim do português antigo."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Gil_Vicente",
+                "often referred to as the \"Father of Portuguese drama\" [...] "
+                "Vicente worked in Spanish as much as he worked in Portuguese and is thus, with Juan del Encina, considered joint-father of Spanish drama. "
+                "Vicente was attached to the courts of the Portuguese kings Manuel I and John III [...] "
+                "His first known work, O Monólogo do vaqueiro (\"Monologue of the Cowherd\"), was written in Spanish and acted in the rooms of Maria of Aragon, wife of King Manuel, to celebrate the birth of Prince John (later John III of Portugal). "
+                "The first performance, recited by the playwright himself [...] "
+                "of his plays were intended for performance at court, where he and the ladies and gentlemen of the court participated in their production. "
+                "He wrote no fewer than forty-four pieces, ten of which are in Spanish, fourteen in Portuguese, and the remainder in mingled Portuguese and Spanish. [...] "
+                "He was also a noted lyric poet in both Portuguese and Spanish, as represented by several poems in the Cancioneiro of Garcia de Resende. [...] "
+                "His writing in Portuguese and in Spanish shaped both modern Spanish and modern Portuguese drama.",
+                nome="Gil Vicente"),
+            wiki("History_of_Portuguese",
+                "The end of \"Old Portuguese\" was marked by the publication of the Cancioneiro Geral by Garcia de Resende, in 1516.",
+                nome="History of Portuguese"),
+        ],
+    },
+    # 14 a reforma de 1911 sem o Brasil
+    {
+        "temas_secundarios": ["brasil_republica", "sistemas_escrita"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Até 1911, o português não tinha ortografia oficial: cada autor escrevia como queria. Portugal fez sua reforma sem consultar o Brasil, que não a adotou, e as duas grafias nunca mais coincidiram totalmente.",
+        "explicacao": (
+            "O francês teve a ortografia fixada por uma academia no século XVII, e o espanhol, no XVIII. O "
+            "português chegou ao século XX sem regra oficial, com grandes diferenças de grafia de um autor para "
+            "outro. Desde o Renascimento, muitos escritores imitavam o latim e o grego e enchiam as palavras de "
+            "letras mudas e grafias etimológicas, como ph com som de f, th, rh e y no lugar de i. Em 1911, a recém "
+            "criada República Portuguesa, preocupada com a alfabetização, encarregou uma comissão de filólogos de "
+            "definir uma ortografia padrão, mais fonética, como as do espanhol e do italiano. O Brasil nunca foi "
+            "consultado e não adotou a reforma. Seguiram-se décadas de negociações lentas. Em 1931, os dois países "
+            "assinaram um acordo, e com base nele o Brasil fixou sua própria ortografia oficial, mas logo se viu que "
+            "as grafias divergiam, em parte porque a pronúncia dos dois lados do Atlântico já era diferente. Novas "
+            "tentativas de aproximação tiveram sucesso variável, e até hoje as duas normas não coincidem por "
+            "completo. Mesmo assim, a base de 1911 é essencialmente a que se usa nos dois países."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Spelling_reforms_of_Portuguese",
+                "During the Renaissance, appreciation for classical culture led many authors to imitate Latin and (Romanized) Ancient Greek, filling words with a profusion of silent letters and other etymological graphemes, such as ch (pronounced as c/qu), ph (pronounced as f), rh, th, y (pronounced as i) [...] "
+                "French, whose orthographies were set by language academies in the 17th century (French) and the 18th century (Spanish), Portuguese had no official spelling until the early 20th century; authors wrote as they pleased with substantial difference in spelling or other elements. [...] "
+                "In 1911, the newly formed Portuguese Republic, concerned with improving the literacy of its citizens, charged a commission of philologists with defining a standard orthography for Portuguese. [...] "
+                "rejected the etymological spellings current in the previous centuries, preferring a more phonetic orthography, like those of Spanish and Italian. [...] "
+                "The orthography set by the 1911 reform is essentially the one still in use today on both sides of the Atlantic, with only minor adjustments [...] "
+                "Brazil was never consulted about the orthographic reform of 1911, and so it did not adopt it. "
+                "In the decades that followed, negotiations were held between representatives of Brazil and Portugal, with the intent of agreeing on a uniform orthography for Portuguese, but progress was slow. "
+                "In 1931, Portugal and Brazil finally signed an orthographic agreement, on the basis of which Brazil established its own official orthography [...] "
+                "Soon after, however, it became apparent that there were differences between the spellings being used in the two countries. "
+                "Even though both were based on the same general principles, phonetic differences between European Portuguese and Brazilian Portuguese had led to divergent spellings in some cases. "
+                "Various attempts were made in the remainder of the 20th century to bring the two orthographies closer to each other, sometimes with modest success, other times without success. "
+                "To this day, they do not coincide completely.",
+                nome="Spelling reforms of Portuguese"),
+        ],
+    },
+    # 15 Notícia de Torto: comeram o porco diante dos filhos
+    {
+        "temas_secundarios": ["europa_medieval", "leis_julgamentos"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "Um dos textos mais antigos em português, de cerca de 1214, é uma lista de queixas de um nobre. Entre elas, a de que os agressores levaram o porco dele e o comeram diante dos filhos. E depois, outro porco.",
+        "explicacao": (
+            "A \"Notícia de Torto\" é um pergaminho escrito entre 1211 e 1216, provavelmente em 1214, e considerado o "
+            "segundo texto não literário mais antigo em português, depois da \"Notícia de Fiadores\", de 1175. Nele, "
+            "Lourenço Fernandes da Cunha faz um relatório minucioso dos agravos que sofreu dos filhos de Gonçalo "
+            "Ramires. A lista vai de terras cujos frutos nunca recebeu até humilhações domésticas: segundo o texto, "
+            "os agressores foram à propriedade dele, tomaram o porco diante dos filhos e o comeram. Noutra vez levaram outro porco, depois uma \"ansar\" diante da filha (o latim \"anser\" quer "
+            "dizer ganso), depois o pão e o vinho. O texto está em galego-português, mas é cheio de latinismos, e há "
+            "estudiosos que o veem como um híbrido de latim e português. Como quase todos os documentos da época "
+            "eram redigidos em latim, é provável que fosse um rascunho, destinado a ser traduzido para essa língua. "
+            "O pergaminho foi achado no mosteiro feminino de Vairão e hoje está no Arquivo Nacional da Torre do "
+            "Tombo, em Lisboa."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Notícia_de_Torto",
+                "é um manuscrito em pergaminho escrito entre 1211 e 1216 (provavelmente em 1214), considerado o segundo texto não literário mais antigo escrito em língua portuguesa, posterior à Notícia de Fiadores de 1175. [...] "
+                "Tal título, porém, é contestado por autores como Ramón Lorenzo, que o considera \"um híbrido latino-português\". [...] "
+                "foi encontrado no mosteiro feminino de Vairão e está hoje no Arquivo Nacional da Torre do Tombo, em Lisboa. "
+                "No texto, escrito em galaico-português mas crivado de latinismos, D. Lourenço Fernandes da Cunha fez um minucioso relatório dos agravos cometidos contra si pelos filhos de Gonçalo Ramires. "
+                "Dado que a maioria dos documentos da época eram redigidos em latim, é provável que o documento se tratasse de um rascunho, destinado a ser traduzido para esta língua. [...] "
+                "Venerun a uila e fila[run] li o porco ante seus filios e com [...] "
+                "Venerun alia uice er filarun otro ante illes [...] "
+                "Venerun in alia uice er filiarun una ansar ante [...] "
+                "sa filia er comerun s a. In alia uice ar filiarun li o pane ante [...] "
+                "suos filios. In alia uice ar ue[ne]run hic er filarun inde o uino",
+                nome="Notícia de Torto", idioma="pt"),
+            wiki("Anser_(bird)",
+                "The name comes from the Latin word anser meaning \"goose\"",
+                nome="Anser (bird)"),
+        ],
+    },
+]

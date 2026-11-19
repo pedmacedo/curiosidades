@@ -1,0 +1,136 @@
+{
+ "lote": "2026-11-18-minerais_rochas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "minerais_rochas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cave of the Crystals confere; opcional: 'fazia' em vez de 'faz' (caverna inundada desde 2015)"
+   },
+   {
+    "id": "minerais_rochas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "pronome ambíguo: 'ele' parece o físico vindo do espaço",
+    "correcao": "Gancho: 'ele estava em Florença e tinha vindo do espaço.' -> 'o cristal já estava em Florença e tinha vindo do espaço.'"
+   },
+   {
+    "id": "minerais_rochas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Mineral evolution sustenta; hipótese clara"
+   },
+   {
+    "id": "minerais_rochas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "comunicado da Carnegie confere; contas fecham"
+   },
+   {
+    "id": "minerais_rochas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Diamond e Mineral evolution conferem; nota 3"
+   },
+   {
+    "id": "minerais_rochas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Ruby e Emerald conferem; nota 3; opcional citar o laser no gancho"
+   },
+   {
+    "id": "minerais_rochas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Brewster batizou o efeito, não a pedra; repele 'depois do contato'",
+    "correcao": "'O nome atual foi dado por David Brewster em 1824.' -> 'O nome piroeletricidade, dado ao efeito, veio de David Brewster em 1824.' Gancho: 'atrai cinzas e logo depois as repele' -> 'atrai cinzas e, depois do contato, as repele'."
+   },
+   {
+    "id": "minerais_rochas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sunstone sustenta; hipótese clara, contestação incluída"
+   },
+   {
+    "id": "minerais_rochas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Jade confere; nota no limite"
+   },
+   {
+    "id": "minerais_rochas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Opal confere; cor estrutural por difração"
+   },
+   {
+    "id": "minerais_rochas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "frase mistura 'strong indications' com a invenção das lendas; Maria Antonieta usou o French Blue, não o Hope",
+    "correcao": "'Há fortes indícios de que as histórias de desgraça foram inventadas no início do século XX para dar mistério à pedra e aumentar seu apelo de venda, além de vender jornais.' -> 'As lendas sobre a origem amaldiçoada da pedra foram inventadas no início do século XX, para lhe dar mistério e aumentar seu apelo de venda, além de vender jornais; e a publicidade em torno da maldição costumava valorizar a joia.' E 'nunca usou o pingente em que ele estava' -> 'nunca usou o pingente do Tosão de Ouro, que levava o diamante azul do qual o Hope foi lapidado depois'."
+   },
+   {
+    "id": "minerais_rochas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "os geomantes 'faziam experimentos'; nenhuma colher de magnetita foi achada",
+    "correcao": "'no século II a.C. geomantes chineses fizeram com ela uma \"colher que aponta para o sul\", usada em adivinhação.' -> 'no século II a.C. geomantes chineses faziam experimentos com ela para criar uma \"colher que aponta para o sul\", usada em adivinhação (nenhuma dessas colheres foi encontrada até hoje pelos arqueólogos).'"
+   },
+   {
+    "id": "minerais_rochas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Bridgmanite confere; paradoxo do mineral mais comum descrito por último"
+   },
+   {
+    "id": "minerais_rochas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "cancelamento de 2022 desatualizado: projeto retomado em julho de 2024 após decisão do Tribunal Constitucional",
+    "correcao": "Apagar 'Em janeiro de 2022, depois de grandes protestos, a primeira-ministra sérvia anunciou o cancelamento do projeto.' e trocar a frase anterior por 'O projeto de mina virou alvo de forte debate na Sérvia, com grandes protestos: ambientalistas, moradores e parte dos cientistas temem o uso de muita água e de ácidos e a contaminação de terras férteis e rios.' Ou, com fonte nova checada (ex.: https://balkangreenenergynews.com/serbia-officially-revives-rio-tintos-lithium-mining-project-jadar), dizer que foi cancelado em 2022 e retomado em julho de 2024."
+   }
+  ],
+  "2": [
+   {
+    "id": "minerais_rochas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "passado aplicado (caverna inundada desde 2015)"
+   },
+   {
+    "id": "minerais_rochas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "pronome ambíguo resolvido"
+   },
+   {
+    "id": "minerais_rochas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Brewster batizou o efeito; 'depois do contato'"
+   },
+   {
+    "id": "minerais_rochas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "lendas inventadas no início do séc. XX; French Blue no Tosão de Ouro"
+   },
+   {
+    "id": "minerais_rochas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'faziam experimentos'; colher não achada em tumbas Han",
+    "correcao": "'Nenhuma dessas colheres...' -> 'Testes mostram que o método funciona, mas os arqueólogos ainda não acharam nenhuma dessas colheres de magnetita em tumbas da dinastia Han.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "minerais_rochas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "desfecho atualizado com Balkan Green Energy News (2024)"
+   }
+  ]
+ }
+}

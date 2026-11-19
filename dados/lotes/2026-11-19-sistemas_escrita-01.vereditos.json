@@ -1,0 +1,153 @@
+{
+ "lote": "2026-11-19-sistemas_escrita-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "sistemas_escrita-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo está em Sequoyah e Cherokee syllabary (86 símbolos, Ayokeh, 1825, 'conta-se' da queima)."
+   },
+   {
+    "id": "sistemas_escrita-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Canadian Aboriginal syllabics (rotação das vogais, Evans 1840 'provavelmente com especialistas indígenas')."
+   },
+   {
+    "id": "sistemas_escrita-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hangul e Hunminjeongeum (órgãos da fala, 1443/1446, Haerye redescoberto em 1940, Yeonsangun)."
+   },
+   {
+    "id": "sistemas_escrita-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos conferem; mas 'algarismos arábicos' sugere 1,2,3 (são os orientais), o latim chegou a substituir o thaana (1976–1978), e 'De fato' liga duas informações que a fonte só justapõe.",
+    "correcao": "Gancho: 'as nove primeiras letras vêm dos algarismos arábicos, e as nove seguintes, de algarismos indianos usados nas ilhas.' -> 'as nove primeiras letras vêm dos algarismos do mundo árabe (١ ٢ ٣...), e as nove seguintes, de algarismos indianos locais.' Explicação: 'saíram dos numerais arábicos;' -> 'saíram dos numerais arábicos orientais, os usados no mundo árabe;'; 'De fato, no início o thaana servia' -> 'No início, o thaana servia'; 'No século XX, quase foi trocado:' -> 'No século XX, chegou a ser deixado de lado na administração:'."
+   },
+   {
+    "id": "sistemas_escrita-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Chinese characters (5% e 58%, ossos oraculares, 信 com a ressalva)."
+   },
+   {
+    "id": "sistemas_escrita-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fonte sustenta para a escrita latina; mas o gancho generaliza (outras escritas já separavam palavras), atribui intenção ('para imitar') e o latim manteve o interponto em inscrições.",
+    "correcao": "Gancho: 'Os romanos chegaram a separar palavras com pontos, mas passaram a seguir os gregos, que escreviam tudo emendado. No latim, os espaços só surgiram em Bíblias irlandesas e anglo-saxãs dos séculos VII e VIII.' Explicação: 'é aceito em geral que os espaços apareceram primeiro em Bíblias' -> 'é aceito em geral que, na escrita latina, os espaços apareceram primeiro em Bíblias'."
+   },
+   {
+    "id": "sistemas_escrita-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Proto-Sinaitic script (1905, 1916, baytu, Wadi el-Hol); consenso_parcial adequado."
+   },
+   {
+    "id": "sistemas_escrita-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Greek alphabet; grafia 'ómicron' (pt-PT) e o bet/casa repete o 0007.",
+    "correcao": "1) 'virou ómicron' -> 'virou ômicron'. 2) 'ʔalp, \"boi\", nomeava a oclusiva glotal, e bet, \"casa\", o som de b.' -> 'ʔalp, \"boi\", nomeava a oclusiva glotal.'"
+   },
+   {
+    "id": "sistemas_escrita-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Cyrillic e Glagolitic ('homage rather than authorship', 862, Preslav, UE 2007)."
+   },
+   {
+    "id": "sistemas_escrita-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Nüshu (Jiangyong, 600–700 sinais, Yang Huanyi 2004 aos 98); não exagera como 'secreta'."
+   },
+   {
+    "id": "sistemas_escrita-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere com J; mas a ordem do exemplo está invertida ('iambic' entre 'jam' e 'jangle'). Nota 3.",
+    "correcao": "'e \"jam\" aparecia entre \"iambic\" e \"jangle\"' -> 'e \"iambic\" aparecia entre \"jam\" e \"jangle\"'."
+   },
+   {
+    "id": "sistemas_escrita-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Boustrophedon (como o boi vira, rongorongo girado, townships). Nota 3."
+   },
+   {
+    "id": "sistemas_escrita-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere (mais de três milênios, 79/80 d.C. em Uruk); mas 'quase todos de contabilidade' exagera 'most', e o gancho não destaca a duração. Nota 3.",
+    "correcao": "Gancho: 'A escrita cuneiforme, cujos primeiros registros eram em sua maioria contábeis, durou mais de três mil anos: a última tabuinha de data firme, um texto astronômico de Uruk, é de 79 ou 80 d.C., já na era romana.'"
+   },
+   {
+    "id": "sistemas_escrita-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo bate com Shavian alphabet (testamento de 1950, 48 letras, um traço, Androcles 1962). Nota 3."
+   },
+   {
+    "id": "sistemas_escrita-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas cria descendência que a fonte não afirma; 'só consoantes' exagera (abjad aumentado com vogais após a oclusiva glotal); tipo escala_absurda não se aplica.",
+    "correcao": "(1) 'A primeira passou ao fenício, ao hebraico antigo, ao aramaico, ao siríaco, ao grego e ao latino; a segunda sobrevive na escrita ge'ez, da qual foi adaptada a do amárico.' -> 'A primeira é a mesma usada depois pelos alfabetos fenício, hebraico antigo, aramaico, siríaco, grego e latino; a segunda aparece na escrita ge'ez, da qual foi adaptada a do amárico.' (2) 'Como outras escritas semíticas, só anotava consoantes' -> 'Como outras escritas semíticas, anotava basicamente as consoantes (com a exceção curiosa das vogais depois da oclusiva glotal)'. (3) tipos: ['origem_inesperada', 'conexao_inesperada']."
+   },
+   {
+    "id": "sistemas_escrita-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hiragana e Tosa Nikki conferem (onnade, narradora fictícia, 935)."
+   },
+   {
+    "id": "sistemas_escrita-0017",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Question mark (rabo de gato é mito, Godescalco c. 783, 'contested'); consenso_parcial. Nota 3."
+   }
+  ],
+  "2": [
+   {
+    "id": "sistemas_escrita-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Algarismos orientais e 'deixado de lado na administração' aplicados."
+   },
+   {
+    "id": "sistemas_escrita-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho restrito ao latim, sem atribuir intenção."
+   },
+   {
+    "id": "sistemas_escrita-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Ômicron' e sem repetir o bet."
+   },
+   {
+    "id": "sistemas_escrita-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Ordem do exemplo corrigida. Nota 3."
+   },
+   {
+    "id": "sistemas_escrita-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Em sua maioria contábeis' e a duração destacada. Nota 3."
+   },
+   {
+    "id": "sistemas_escrita-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem descendência inventada; abjad aumentado; tipos corrigidos."
+   }
+  ]
+ }
+}

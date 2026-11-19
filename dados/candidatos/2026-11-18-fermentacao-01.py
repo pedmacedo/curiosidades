@@ -1,0 +1,565 @@
+LOTE = "2026-11-18-fermentacao-01"
+AREA = "comida"
+TEMA = "fermentacao"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 "enzima" quer dizer "no levedo": Buchner e a fermentação sem células vivas
+    {
+        "temas_secundarios": ["microbiologia", "revolucao_cientifica", "palavras_viajantes"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "A palavra \"enzima\" vem do grego para \"no levedo\". Ela surgiu quando se achava que só células vivas de levedura faziam o açúcar fermentar, ideia que Eduard Buchner derrubou com suco de levedura moída.",
+        "explicacao": (
+            "Estudando como a levedura transforma açúcar em álcool, Louis Pasteur concluiu que a fermentação vinha "
+            "de uma força vital presente dentro das células, os chamados \"fermentos\", que só agiriam em seres vivos. "
+            "Em 1877, o fisiologista alemão Wilhelm Kühne usou pela primeira vez o termo \"enzima\", do grego para "
+            "\"levedado, no levedo\", para descrever esse processo. Vinte anos depois, Eduard Buchner fez o teste "
+            "decisivo: triturou levedura seca com quartzo e terra diatomácea num pilão, espremeu a massa numa prensa "
+            "e obteve um \"suco\" sem nenhuma célula viva, como confirmou ao microscópio. Quando acrescentava glicose, "
+            "frutose ou maltose a esse líquido, ele soltava gás carbônico, às vezes por dias. Ou seja, a fermentação "
+            "não precisava de levedura viva, um golpe na ideia da força vital. Buchner chamou a enzima responsável de "
+            "\"zimase\" e ganhou o Nobel de Química de 1907. Ele imaginava que a levedura soltava essas proteínas para "
+            "fora, mas depois se viu que a fermentação acontece dentro das células. Foi também seguindo o exemplo dele "
+            "que as enzimas passaram a ganhar o sufixo \"-ase\", como a lactase, que quebra a lactose."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Enzyme",
+                "A few decades later, when studying the fermentation of sugar to alcohol by yeast, Louis Pasteur concluded that this fermentation was caused by a vital force contained within the yeast cells called \"ferments\", which were thought to function only within living organisms. [...] "
+                "In 1877, German physiologist Wilhelm Kühne (1837–1900) first used the term enzyme, which comes from Ancient Greek [...] "
+                "'leavened, in yeast', to describe this process. [...] "
+                "Eduard Buchner submitted his first paper on the study of yeast extracts in 1897. In a series of experiments at the University of Berlin, he found that sugar was fermented by yeast extracts even when there were no living yeast cells in the mixture. "
+                "He named the enzyme that brought about the fermentation of sucrose \"zymase\". In 1907, he received the Nobel Prize in Chemistry for \"his discovery of cell-free fermentation\". "
+                "Following Buchner's example, enzymes are usually named according to the reaction they carry out: the suffix -ase is combined with the name of the substrate (e.g., lactase is the enzyme that cleaves lactose)",
+                nome="Enzyme"),
+            wiki("Eduard_Buchner",
+                "This dealt yet another blow to vitalism by showing that the presence of living yeast cells was not needed for fermentation. "
+                "The cell-free extract was produced by combining dry yeast cells, quartz and kieselguhr and then pulverizing the yeast cells with a pestle and mortar. [...] "
+                "the moist mixture would be put through a press and the resulting \"press juice\" had glucose, fructose, or maltose added and carbon dioxide was seen to evolve, sometimes for days. "
+                "Microscopic investigation revealed no living yeast cells in the extract. "
+                "Buchner hypothesized that yeast cells secrete proteins into their environment in order to ferment sugars, but it was later found that fermentation occurs inside the yeast cells.",
+                nome="Eduard Buchner"),
+        ],
+    },
+    # 2 o fungo do saquê e do shoyu, primo domesticado de um mofo tóxico
+    {
+        "temas_secundarios": ["fungos", "domesticacao", "asia_antiga"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "O fungo usado no saquê, no missô e no shoyu parece ser um mofo tóxico domesticado: ele tem os mesmos genes que fazem as aflatoxinas, toxinas de intoxicação alimentar grave, mas no fungo da cozinha eles não funcionam.",
+        "explicacao": (
+            "O Aspergillus oryzae, chamado de koji no Japão, é cultivado no Leste Asiático para transformar o amido do "
+            "arroz, da batata-doce e da cevada em açúcar, etapa necessária para fazer bebidas como o saquê e o shochu. "
+            "Ele também fermenta a soja do shoyu e do missô. Os parentes mais próximos dele, Aspergillus flavus e "
+            "Aspergillus parasiticus, liberam aflatoxinas, toxinas que causam intoxicações alimentares graves. Mas o "
+            "koji nunca foi flagrado produzindo essas substâncias. A análise do genoma levou alguns pesquisadores a "
+            "propor que os japoneses domesticaram uma linhagem de A. flavus que sofreu mutação e deixou de fazer a "
+            "toxina. Os dois fungos compartilham o mesmo bloco de genes da aflatoxina, só que no koji ele não "
+            "funciona: num estudo, mesmo em condições que favorecem a produção do veneno, esses genes ficaram "
+            "desligados. A origem ainda é debatida, e há quem aponte a China como o primeiro lugar a usá-lo. No "
+            "Japão, o fungo ganhou status de símbolo: o pesquisador Eiji Ichishima, da Universidade de Tohoku, "
+            "propôs, na revista da Brewing Society of Japan, associação ligada à produção de bebidas, chamá-lo de "
+            "\"fungo nacional\" (kokkin), e a proposta foi aprovada na reunião anual da entidade em 2006."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Aspergillus_oryzae",
+            "is a mold used in East Asia to saccharify rice, sweet potato, and barley in the making of alcoholic beverages such as sake and shōchū, and also to ferment soybeans for making soy sauce and miso. [...] "
+            "regarding the country that first employed A. oryzae in the production of fermented foods: one suggests it was China, while the other proposes it was Japan. "
+            "Genomic analysis has led some scholars to believe that the Japanese domesticated the Aspergillus flavus that had mutated and ceased to produce toxic aflatoxins, giving rise to A. oryzae. "
+            "While the two fungi share the same cluster of genes that encode for aflatoxin synthesis, this gene cluster is non-functional in A. oryzae. "
+            "Eiji Ichishima of Tohoku University called the kōji fungus a \"national fungus\" (kokkin) in the journal of the Brewing Society of Japan [...] "
+            "His proposal was approved at the society's annual meeting in 2006. [...] "
+            "Although A. oryzae is closely related A. flavus and A. parasiticus, which are known to secrete toxins called aflatoxins that cause severe food poisoning, the kōji mold has not been found to produce those toxins. [...] "
+            "A study has shown that even when A. oryzae is put under conditions favorable to express and secrete aflatoxin, the aflatoxin genes in A. oryzae were not expressed.",
+            nome="Aspergillus oryzae")],
+    },
+    # 3 o ácido cítrico vem de um mofo, não do limão
+    {
+        "temas_secundarios": ["quimica_cotidiano", "primeira_guerra", "fungos"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "O ácido cítrico da indústria quase nunca sai do limão: é feito por um mofo, o Aspergillus niger, alimentado com açúcar. O método ganhou força quando a Primeira Guerra atrapalhou a exportação de cítricos italianos.",
+        "explicacao": (
+            "O ácido cítrico foi isolado em 1784 pelo químico Carl Wilhelm Scheele, que o cristalizou a partir de "
+            "suco de limão. Limões e limas são mesmo ricos nele: pode chegar a 8% do peso seco da fruta. A produção "
+            "industrial começou em 1890 apoiada nos pomares italianos, tratando o suco com cal para separar o "
+            "citrato de cálcio, depois convertido de volta em ácido. Em 1893, Carl Wehmer descobriu que um mofo do "
+            "gênero Penicillium fabricava ácido cítrico a partir de açúcar, mas a via microbiana só ganhou peso "
+            "quando a Primeira Guerra Mundial interrompeu as exportações de cítricos da Itália. Em 1917, o químico "
+            "americano James Currie viu que certas linhagens do mofo Aspergillus niger eram ótimas produtoras, e dois "
+            "anos depois a Pfizer passou a produzir em escala industrial com essa técnica. O método continua sendo "
+            "o principal: o fungo é alimentado com soluções açucaradas baratas, como melaço ou amido de milho "
+            "hidrolisado. Extrair o ácido de frutas ou sintetizá-lo seria possível, mas na prática quase toda a "
+            "produção vem da fermentação por mofos e, às vezes, por leveduras. Em 2018, o mundo fabricou mais de 2 "
+            "milhões de toneladas, usadas como acidulante, aromatizante e conservante."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Citric_acid",
+            "More than two million tons of citric acid are manufactured every year. It is used widely as acidifier, flavoring, preservative, and chelating agent. [...] "
+            "Lemons and limes have particularly high concentrations of the acid; it can constitute as much as 8% of the dry weight of these fruits [...] "
+            "Citric acid was first isolated in 1784 by the chemist Carl Wilhelm Scheele, who crystallized it from lemon juice. "
+            "Industrial-scale citric acid production first began in 1890 based on the Italian citrus fruit industry, where the juice was treated with hydrated lime (calcium hydroxide) to precipitate calcium citrate, which was isolated and converted back to the acid using diluted sulfuric acid. "
+            "In 1893, C. Wehmer discovered Penicillium mold could produce citric acid from sugar. "
+            "However, microbial production of citric acid did not become industrially important until World War I disrupted Italian Citrus exports. "
+            "In 1917, American food chemist James Currie discovered that certain strains of the mold Aspergillus niger could be efficient citric acid producers, and the pharmaceutical company Pfizer began industrial-level production using this technique two years later [...] "
+            "In this production technique, which is still the major industrial route to citric acid used today, cultures of Aspergillus niger are fed on a sucrose or glucose-containing medium to produce citric acid. "
+            "The source of sugar is corn steep liquor, molasses, hydrolyzed corn starch, or other inexpensive, carbohydrate solution. [...] "
+            "Although industrial-scale production of citric acid by chemical synthesis or extraction from citrus fruits are both feasible, fermentation by molds (and sometimes yeasts) is almost exclusively the only method actually practiced. "
+            "Global production was in excess of 2,000,000 tons in 2018.",
+            nome="Citric acid")],
+    },
+    # 4 o coalho que vem de micróbios: quimosina de bezerro sem bezerro
+    {
+        "temas_secundarios": ["genetica", "microbiologia", "invencoes"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "A enzima que coalha o leite no queijo vinha do estômago de bezerros. Desde 1990, micróbios geneticamente modificados fabricam a mesma enzima, e em 2017 essa versão já tinha 90% do mercado mundial de coalho.",
+        "explicacao": (
+            "O coalho é um conjunto de enzimas do estômago de ruminantes. A peça principal é a quimosina, que faz as "
+            "proteínas do leite, as caseínas, se juntarem numa rede que prende gordura e minerais: é o começo do "
+            "queijo. O coalho tradicional sai do quarto compartimento do estômago, o abomaso, de bezerros novos que "
+            "ainda mamam, um subproduto da produção de vitela. Como não há estômagos para todo o queijo do mundo, "
+            "queijeiros buscam alternativas pelo menos desde a época romana, como enzimas de cardo e de alcachofra. "
+            "Com a engenharia genética, ficou possível pôr o gene do coalho animal em bactérias, fungos ou leveduras, "
+            "que passam a produzir quimosina durante a fermentação. Depois, o micróbio é morto e a enzima é "
+            "separada, de modo que o produto final não contém o organismo modificado nem o DNA dele. A molécula é "
+            "idêntica à do animal. Criada pela Pfizer, essa \"quimosina produzida por fermentação\" foi a primeira "
+            "enzima feita artificialmente a ser autorizada pela FDA, a agência americana, em 1990. Em 1999, cerca de "
+            "60% dos queijos duros dos EUA já usavam essa enzima; em 2017, ela tinha 90% do mercado mundial de coalho."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Rennet",
+            "Rennet () is a complex set of enzymes produced in the stomachs of ruminant mammals. Its key component is chymosin, a protease enzyme that curdles the casein proteins in milk. [...] "
+            "casein protein network traps other components of milk, such as fats and minerals, to create cheese. [...] "
+            "Calf rennet is extracted from the inner mucosa of the fourth stomach chamber (the abomasum) of young, nursing calves as part of livestock butchering. These stomachs are a byproduct of veal production. [...] "
+            "Because of the limited availability of mammalian stomachs for rennet production, cheese makers have sought other ways to coagulate milk since at least Roman times. [...] "
+            "Some traditional cheese production in the Mediterranean uses enzymes from thistle or Cynara (artichokes and cardoons). [...] "
+            "With genetic engineering it became possible to isolate rennet genes from animals and introduce them into certain bacteria, fungi, or yeasts to make them produce recombinant chymosin during fermentation. "
+            "The genetically modified microorganism is killed after fermentation and chymosin isolated from the fermentation broth, so that the fermentation-produced chymosin (FPC) used by cheese producers does not contain a GMO or any GMO DNA. "
+            "FPC is identical to chymosin made by an animal, but is produced in a more efficient way. FPC products have been on the market since 1990 [...] "
+            "Originally created by biotechnology company Pfizer, FPC was the first artificially-produced enzyme to be registered and allowed by the US Food and Drug Administration in 1990. "
+            "By 1999, about 60% of US hard cheeses were made with FPC, and by 2006 FPC made up to 80% of the global market share for rennet. By 2017, FPC had 90% of the global market share for rennet.",
+            nome="Rennet")],
+    },
+    # 5 os buracos do queijo suíço e o pó de feno
+    {
+        "temas_secundarios": ["microbiologia", "ciencia_cozinha"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Os buracos do queijo suíço dependem de pó de feno: partículas microscópicas que caíam no leite na ordenha viram ponto de partida para as bolhas de gás. Com a ordenha mecânica, mais limpa, os buracos encolheram.",
+        "explicacao": (
+            "O Emmental precisa de três bactérias para ficar pronto, e por muito tempo se achou que os \"olhos\" do "
+            "queijo eram obra só da atividade delas na massa. Faltava explicar por que os buracos ficaram menores e "
+            "mais raros nos últimos anos. Em 2015, pesquisadores do instituto suíço Agroscope e dos Laboratórios "
+            "Federais Suíços de Ciência e Tecnologia de Materiais acompanharam a maturação de queijos por 130 dias "
+            "com tomografia computadorizada e mostraram que, controlando a quantidade de partículas de feno no "
+            "leite, controlavam também o número de buracos. As bactérias crescem em volta desses grãos de pó e "
+            "liberam gases, que formam as cavidades. Antes, o leite ficava exposto ao ambiente do estábulo; hoje, as "
+            "ordenhadeiras o filtram direto para tanques fechados, e quase não entra feno. Os pesquisadores sugeriram "
+            "que quem quer buracos acrescente partículas de feno, além de leite, coalho e bactérias. Curiosamente, "
+            "buracos grandes já foram vistos como defeito, até que produtores de Emmental do século XIX passaram a "
+            "estimulá-los, com ótimo resultado comercial. Na Alemanha e na França, há quem ponha pó de flores de feno "
+            "no leite para recuperar os buracos, mas esse aditivo é proibido nos queijos suíços."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.swissinfo.ch/eng/sci-tech/hay-particles-responsible-for-holes-in-swiss-cheese/41457054",
+             "titulo": "Hay particles responsible for holes in Swiss cheese (swissinfo.ch, 28 maio 2015)",
+             "idioma": "en",
+             "trecho": "This content was published on May 28, 2015 [...] "
+                       "Scientists from the Agroscope Institute for Food Sciences and the Swiss Federal Laboratories for Materials Science and Technology found that controlling the number of hay particles in milk used to make cheese also allowed them to control the number of holes that appeared. "
+                       "The researchers observed the cheese’s ripening process over a 130-day period, using a new method based on computed tomography – more commonly known as a CT scan – to study where and how holes formed. "
+                       "In recent years, there have been fewer holes in Swiss cheeses such as Emmentaler, leading producers and researchers to wonder why. "
+                       "The discovery announced on Thursday solves that mystery: today, milk is no longer exposed to the elements before being turned into cheese because it is directly filtered through modern milking machines into large tanks. "
+                       "Because it is not exposed to the barn’s open environment, fewer hay particles are able to get into the milk and lead to the development of holes. [...] "
+                       "But now, in addition to milk, rennet and bacteria, they recommend that cheese producers who want holes to appear in their product add hay particles during the cheese making process."},
+            wiki("Swiss-type_cheeses",
+                "These were generally regarded as a fault if they were large, until 19th-century makers of Emmental began to encourage them, which proved to be highly effective from the marketing point of view. [...] "
+                "The presence of holes in cheeses such as Gruyère and Emmental was long thought to be due to bacterial activity in the mass of the cheese. "
+                "In the 21st century it was discovered that it was due to microscopic hay dust that got into the milk during milking. "
+                "Bacteria formed around the dust particles and produced gases which caused the characteristic holes. [...] "
+                "Holes can be restored to their former size and prevalence by adding hay flower powder to the milk; this is done in Germany and France, but such additives are forbidden in Swiss cheeses.",
+                nome="Swiss-type cheeses"),
+            wiki("Emmental_cheese",
+                "Three types of bacteria are needed to prepare Emmental: Streptococcus thermophilus, Lactobacillus helveticus, and Propionibacterium freudenreichii.",
+                nome="Emmental cheese"),
+        ],
+    },
+    # 6 Limburger, chulé e o mosquito da malária
+    {
+        "temas_secundarios": ["microbioma", "insetos", "doencas_infecciosas"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "O queijo Limburger cheira a chulé por um bom motivo: é maturado com uma bactéria que também vive na nossa pele e ajuda a causar o odor dos pés. E o mosquito da malária é atraído igualmente pelos dois cheiros.",
+        "explicacao": (
+            "A bactéria Brevibacterium linens está espalhada pela pele humana. Nos pés, ela se alimenta de pele "
+            "morta, comum na sola e entre os dedos, e transforma o aminoácido metionina em metanotiol, um gás com "
+            "cheiro sulfuroso. Por isso é tida como uma das principais causas do chulé, embora não a única: outra "
+            "bactéria da pele, a Staphylococcus epidermidis, produz ácido isovalérico, que também cheira mal e "
+            "aparece em vários queijos fortes. A mesma B. linens é usada de propósito na maturação de queijos de "
+            "casca lavada, como Munster, Époisses e o Limburger, que vem da região de Herve, no antigo Ducado de "
+            "Limburgo, e é produzido desde o século XV. O parentesco de cheiros chamou a atenção do pesquisador Bart "
+            "Knols, que publicou na revista médica The Lancet, em 9 de novembro de 1996, que a fêmea do mosquito "
+            "Anopheles gambiae, transmissor da malária, é atraída igualmente pelo cheiro do Limburger e pelo de pés "
+            "humanos. O trabalho ganhou o Ig Nobel de Biologia de 2006. A ideia de usar cheiros para atrair mosquitos seguiu adiante: Fredros Okumu, do "
+            "Instituto de Saúde Ifakara, na Tanzânia, criou uma mistura de oito substâncias quatro vezes mais eficaz "
+            "que as secreções humanas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Foot_odor",
+                "Brevibacteria are considered a major cause of foot odor because they ingest dead skin on the feet and, in the process, convert the amino acid methionine into methanethiol, a colorless gas with a distinctive sulfuric aroma. "
+                "The dead skin that fuels this process is especially common on the sole and between the toes. "
+                "Brevibacteria also give such cheeses as Limburger, Bel Paese, Port Salut, Pálpusztai and Munster their characteristic pungency. "
+                "Isovaleric acid (3-methyl butanoic acid), another source of foot odor, is produced by Staphylococcus epidermidis, a bacterial species normally resident on human skin and present in several strong-smelling varieties of cheese. [...] "
+                "Bart Knols of Wageningen Agricultural University in the Netherlands received a 2006 \"Ig Nobel Prize\" for demonstrating that the female Anopheles gambiae mosquito, known for transmitting malaria, is \"attracted equally to the smell of Limburger cheese and to the smell of human feet\". "
+                "Fredros Okumu, of the Ifakara Health Institute in Tanzania, received grants in 2009 and 2011 to develop mosquito attractants and traps to combat malaria. He used a blend of eight chemicals four times more effective than actual human secretions.",
+                nome="Foot odor"),
+            wiki("Brevibacterium_linens",
+                "Brevibacterium linens is ubiquitously present on the human skin, where it causes foot odor. [...] "
+                "The same bacterium is employed to ferment several washed-rind and smear-ripened cheeses, such as Munster, Limburger, Tilsit cheese, Port-Salut, Raclette, Livarot, Pont l'Eveque, Époisses, Maroilles",
+                nome="Brevibacterium linens"),
+            wiki("Limburger",
+                "Limburger, commonly known as Limburg (in southern Dutch contexts Rommedoe, and in Belgium Herve cheese), is a cheese that originated in the Herve area of the historical Duchy of Limburg [...] "
+                "Herve has been produced since the 15th century. [...] "
+                "A study showing that the malaria mosquito (Anopheles gambiae) is attracted equally to the smell of Limburger and to the smell of human feet earned the Ig Nobel Prize in 2006 in the area of biology. "
+                "The results of the study were published in the medical journal The Lancet on 9 November 1996.",
+                nome="Limburger"),
+        ],
+    },
+    # 7 Mimolette: o queijo com ácaros de propósito
+    {
+        "temas_secundarios": ["insetos", "europa_medieval", "economia_curiosa"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "A casca cinzenta do queijo francês Mimolette se forma com ácaros vivos, postos de propósito para dar sabor. Em 2013, os EUA retiveram cerca de uma tonelada dele por ter ácaros acima do limite permitido.",
+        "explicacao": (
+            "O Mimolette é uma bola alaranjada de uns 2 kg, tradicional da região de Lille. A origem é política: Luís "
+            "XIV, dentro da política mercantilista do ministro Colbert, queria um queijo francês que substituísse o "
+            "Edam holandês, então muito popular. Para diferenciá-lo, o queijo foi tingido primeiro com suco de "
+            "cenoura e depois com urucum, o que lhe dá a cor laranja. A casca é o detalhe mais estranho: ácaros de "
+            "queijo são colocados sobre a superfície e, com sua atividade, ajudam a dar sabor e a textura da casca, "
+            "que fica cinzenta. Um estudo de 2010 com microscópio eletrônico identificou a espécie usada no Mimolette "
+            "como Acarus siro, também conhecida como ácaro-da-farinha. No queijo alemão Milbenkäse, o trabalho é de "
+            "outra espécie, a Tyrophagus casei. Em 2013, a FDA, agência americana de alimentos, reteve cerca de uma "
+            "tonelada de Mimolette e suspendeu as importações, alegando que o queijo passava do limite de seis ácaros "
+            "por polegada cúbica e que os ácaros poderiam causar reação alérgica se consumidos em grande quantidade. "
+            "A restrição caiu em 2014."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Mimolette",
+                "Mimolette (French pronunciation: [mimɔlɛt] ) is a cheese traditionally produced around the city of Lille, France. [...] "
+                "Mimolette has a spherical shape and is similar in appearance to a cantaloupe melon. It normally weighs about 2 kg [...] "
+                "The grey-colored rind of aged Mimolette occurs from cheese mites that are added to the surface of the cheese, which serve to enhance its flavor. [...] "
+                "It was originally made by the request of Louis XIV, who – in the context of Jean-Baptiste Colbert's mercantilistic policies – was looking for a native French product to replace the then very popular Edam. "
+                "To make it distinct from Edam, it was first colored using carrot juice and later seasoned with annatto to give it a distinct orange color. [...] "
+                "In 2013, the Food and Drug Administration detained about a ton of the cheese, putting further imports to the United States on hold. "
+                "This was because the cheese mites could cause an allergic reaction if consumed in large quantities. "
+                "The FDA stated that the cheese was above the standard of six mites per cubic inch. The restriction was lifted in 2014.",
+                nome="Mimolette"),
+            wiki("Cheese_mite",
+                "The action of the living mites on the surface of these cheeses contributes to the flavor and gives them a distinctive appearance. "
+                "A 2010 scanning electron microscope study found that Milbenkäse cheese was produced using Tyrophagus casei mites, while Mimolette cheese used Acarus siro mites (also known as flour mites). "
+                "Mimolette cheese, in particular, has live cheese mites in its rind, which is thought to contribute to the cheese's distinct rind texture.",
+                nome="Cheese mite"),
+        ],
+    },
+    # 8 hákarl: fermentar um tubarão tóxico
+    {
+        "temas_secundarios": ["vida_marinha", "alimentos_perigosos", "conservacao"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "A carne do tubarão-da-groenlândia é tóxica: cães de trenó que a comem às vezes nem conseguem ficar de pé. Na Islândia, ela vira comida depois de fermentar por semanas e secar por meses: é o hákarl.",
+        "explicacao": (
+            "Como outros tubarões e raias, o tubarão-da-groenlândia acumula nos tecidos muita ureia e um composto "
+            "chamado óxido de trimetilamina (TMAO). Os dois ajudam o animal a flutuar e a manter o equilíbrio de "
+            "água no corpo, e o TMAO ainda protege as proteínas contra os efeitos da ureia e da pressão do mar "
+            "profundo. Para quem come a carne crua, porém, é um problema: o organismo transforma o TMAO em "
+            "trimetilamina, que pode agir como toxina. O mesmo acontece com um parente, o tubarão-dorminhoco-do-"
+            "pacífico, mas não com a maioria dos tubarões. Os islandeses contornam isso com fermentação e paciência. "
+            "Tradicionalmente, a carne era enterrada em covas de cascalho perto do mar por pelo menos algumas "
+            "semanas; hoje, fermenta em recipientes furados. Nessa fermentação, a ureia vira amônia e o TMAO vira "
+            "trimetilamina, que escorrem como líquido. Depois, a carne é pendurada em tiras para secar por vários "
+            "meses. A ureia da carne venenosa também inspirou uma lenda inuíte: o primeiro desses "
+            "tubarões teria nascido de um pano usado por uma velha para secar o cabelo lavado com urina, costume "
+            "antigo contra piolhos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Greenland_shark",
+            "Like other Elasmobranchii, Greenland sharks have high concentrations of the two nitrogenous compounds urea and trimethylamine N-oxide (TMAO) in their tissues, which increase their buoyancy and function as osmoprotectants. "
+            "TMAO also counteracts the protein-destabilizing tendencies of urea and deep-water pressure. [...] "
+            "The flesh of the Greenland shark is toxic because of the presence of high concentrations of urea and trimethylamine oxide (TMAO). "
+            "If the meat is eaten without pretreatment, the ingested TMAO is metabolized into trimethylamine, which may be a uremic toxin. "
+            "Occasionally, sled dogs that eat the flesh are unable to stand because of this effect. "
+            "Similar toxic effects occur with the related Pacific sleeper shark, but not in most other shark species. "
+            "Greenland shark meat is produced and eaten in Iceland, where today it is known as a delicacy called hákarl. "
+            "To make the shark safe for human consumption, it is first fermented and then dried in a process that can take several months. "
+            "The shark was traditionally fermented by burying the meat in gravel pits near the ocean for at least several weeks. "
+            "Now, shark cuts are typically fermented in containers that are perforated to allow liquid to drain. "
+            "The fermentation process converts urea into ammonia and TMAO into TMA, which then drains as liquid from the meat. "
+            "The meat is then excavated and hung in strips to dry for several more months. [...] "
+            "The Greenland shark's poisonous flesh has a high urea content, which gave rise to the Inuit legend of Skalugsuak, the first Greenland shark. "
+            "The legend says that an old woman washed her hair in urine (a common practice to kill head lice) and dried it with a cloth. "
+            "The cloth blew into the ocean to become Skalugsuak.",
+            nome="Greenland shark")],
+    },
+    # 9 o chá preto não é fermentado
+    {
+        "temas_secundarios": ["cafe_cha_cacau", "quimica_cotidiano", "asia_antiga"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "Na indústria do chá, a etapa que escurece o chá preto é chamada de \"fermentação\", mas nenhum micróbio age ali: é oxidação feita por uma enzima da própria folha. Fermentado de verdade é o pu-erh.",
+        "explicacao": (
+            "Chá verde, oolong e chá preto saem da mesma planta, a Camellia sinensis. O que os separa é quanto as "
+            "folhas oxidam depois de colhidas. Para o chá preto, elas são enroladas ou picadas e deixadas oxidar sob "
+            "temperatura e umidade controladas. O trabalho é da polifenol oxidase, uma enzima da folha, e não de "
+            "leveduras ou bactérias. Mesmo assim, o setor costuma chamar essa etapa de \"fermentação\", um nome "
+            "errado. Oxidação completa dá o chá preto; pouca oxidação, o verde; e o meio-termo, os vários oolongs. "
+            "Em chinês, aliás, o chá preto se chama hong cha, \"chá vermelho\", pela cor das folhas oxidadas. Existe, "
+            "sim, chá fermentado por micróbios: os chás pós-fermentados, como o pu-erh. Neles, as folhas ficam "
+            "empilhadas e passam por uma fermentação microbiana controlada, parecida com uma compostagem. No "
+            "passado, isso também acontecia por acaso: tijolos de chá verde, transportados e armazenados por muito "
+            "tempo, ficavam expostos a micróbios e envelheciam até virar chá pós-fermentado. Para completar a "
+            "confusão, em chinês esses chás são chamados de \"chá escuro\" ou \"chá preto\", o que não tem nada a ver "
+            "com o chá preto dos ingleses."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Black_tea",
+                "All five types are made from leaves of the shrub (or small tree) Camellia sinensis [...] "
+                "the beverage's name there is hong cha (Chinese: 红茶, \"red tea\") due to the colour of the oxidized leaves when processed appropriately. [...] "
+                "The withered tea leaves are heavily rolled [...] "
+                "cut and tear the leaves to very fine particles. "
+                "Next, the leaves are oxidized under controlled temperature and humidity. "
+                "(This process is also called \"fermentation\", which is a misnomer since no actual fermentation takes place. Polyphenol oxidase is the enzyme active in the process.) "
+                "The level of oxidation determines the type (or \"color\") of the tea; with fully oxidised becoming black tea, low oxidised becoming green tea, and partially oxidised making up the various levels of oolong tea.",
+                nome="Black tea"),
+            wiki("Tea_processing",
+                "This process is sometimes referred to erroneously as fermentation in the tea industry. [...] "
+                "if they are left in piles (渥堆) for too long before processing, the leaves will begin to undergo microbial fermentation to produce post-fermented tea. "
+                "This technique is somewhat similar to composting, albeit tightly controlled [...] "
+                "The long transport and storage times of the day unwittingly allowed the tea bricks to undergo prolonged exposure to the elements and to various microflora, which resulted in the aging, oxidation, and fermentation of green brick teas. [...] "
+                "Teas that are allowed to undergo a second oxidation after the fixation of the tea leaves, such as Pu-erh, Liu'an, and Liubao, are collectively referred to as secondary or post-fermentation teas in English. "
+                "In Chinese they are categorized as Dark tea or black tea. This is not to be confused with the English term Black tea, known in Chinese as red tea.",
+                nome="Tea processing"),
+        ],
+    },
+    # 10 vespas guardam a levedura do pão durante o inverno
+    {
+        "temas_secundarios": ["insetos", "microbiologia", "ecologia"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "A levedura do pão e do vinho não viaja pelo ar e quase não existe em uvas verdes. Uma das formas de ela atravessar o inverno é no intestino de rainhas de vespas, que a guardam até a primavera e a passam às filhas.",
+        "explicacao": (
+            "A Saccharomyces cerevisiae, a levedura do pão, da cerveja e do vinho, vive sobretudo em frutas maduras, "
+            "como as uvas. Antes de amadurecerem, as uvas quase não têm leveduras. Ela também aparece o ano todo na "
+            "casca de carvalhos. Como não se espalha pelo ar, depende de algum bicho que a carregue. Uma das "
+            "formas desse transporte são as vespas sociais cujas rainhas passam o inverno como adultas, caso do "
+            "vespão-europeu (Vespa crabro) e das vespas do gênero Polistes: elas conseguem manter células da "
+            "levedura no corpo do outono à primavera e depois as transmitem à sua prole. A relação vai além do "
+            "transporte. O intestino da vespa Polistes dominula abriga linhagens de S. cerevisiae e até híbridos "
+            "dela com uma espécie selvagem aparentada, a Saccharomyces paradoxus. Um estudo de 2016 mostrou que esse "
+            "intestino oferece condições que estimulam as leveduras a formar esporos e a germinar, favorecendo o "
+            "cruzamento entre linhagens diferentes e até com a espécie vizinha. Ou seja, o intestino da vespa "
+            "funciona como uma espécie de ponto de encontro onde a levedura das nossas bebidas e pães se recombina."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Saccharomyces_cerevisiae",
+            "In nature, yeast cells are found primarily on ripe fruits such as grapes (before maturation, grapes are almost free of yeasts). "
+            "S. cerevisiae can also be found year-round in the bark of oak trees. "
+            "Since S. cerevisiae is not airborne, it requires a vector to move. "
+            "Queens of social wasps overwintering as adults (Vespa crabro and Polistes spp.) can harbor yeast cells from autumn to spring and transmit them to their progeny. "
+            "The intestine of Polistes dominula, a social wasp, hosts S. cerevisiae strains as well as S. cerevisiae × S. paradoxus hybrids. "
+            "Stefanini et al. (2016) showed that the intestine of Polistes dominula favors the mating of S. cerevisiae strains, both among themselves and with S. paradoxus cells by providing environmental conditions prompting cell sporulation and spores germinati",
+            nome="Saccharomyces cerevisiae")],
+    },
+    # 11 efeito Crabtree: a levedura fermenta mesmo com oxigênio
+    {
+        "temas_secundarios": ["microbiologia", "evolucao", "plantas"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Com bastante açúcar, a levedura do pão produz álcool mesmo tendo oxigênio de sobra, ao contrário da maioria das leveduras. Acredita-se que isso surgiu como arma: o álcool, antisséptico, atrapalha os concorrentes.",
+        "explicacao": (
+            "Com oxigênio disponível, a maioria das leveduras, como as do gênero Kluyveromyces, respira o açúcar pelo "
+            "ciclo de Krebs e o converte em mais células. A Saccharomyces cerevisiae faz outra coisa: quando há muita "
+            "glicose no meio, ela fermenta e produz etanol mesmo em plena presença de oxigênio. Esse comportamento "
+            "leva o nome do bioquímico inglês Herbert Grace Crabtree. Em medições com a levedura, abaixo de 150 mg de "
+            "glicose por litro não surgia álcool; acima disso, a produção de etanol aumentava até cerca de 1.000 mg "
+            "por litro. Acredita-se que o efeito tenha surgido como mecanismo de "
+            "competição, já que o etanol é antisséptico, por volta da época em que as primeiras frutas começaram a "
+            "cair das árvores. O porquê bioquímico ainda é discutido: primeiro se pensou num limite da capacidade de "
+            "respirar; evidências mais recentes apontam para um limite na taxa com que a célula consegue dissipar "
+            "energia. Há uma ponte inesperada com a medicina: foi o estudo de células de tumores que levou à "
+            "descoberta do efeito. Elas têm um metabolismo parecido, o efeito Warburg, em que preferem a glicólise à "
+            "respiração completa."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Crabtree_effect",
+            "The Crabtree effect, named after the English biochemist Herbert Grace Crabtree, describes the phenomenon whereby the yeast, Saccharomyces cerevisiae, produces ethanol (alcohol) in aerobic conditions at high external glucose concentrations rather than producing biomass via the tricarboxylic acid (TCA) cycle, the usual process occurring aerobically in most yeasts e.g. Kluyveromyces spp. [...] "
+            "The phenomenon is believed to have evolved as a competition mechanism (due to the antiseptic nature of ethanol) around the time when the first fruits on Earth fell from the trees. [...] "
+            "Ethanol formation in Crabtree-positive yeasts under strictly aerobic conditions was firstly thought to be caused by the inability of these organisms to increase the rate of respiration above a certain value. [...] "
+            "More recent evidences demonstrated that the occurrence of alcoholic fermentation might not be primarily due to a limited respiratory capacity, but could be caused by a limit in the cellular Gibbs energy dissipation rate. "
+            "For S. cerevisiae in aerobic conditions, glucose concentrations below 150 mg/L did not result in ethanol production. "
+            "Above this value, ethanol was formed with rates increasing up to a glucose concentration of 1000 mg/L. [...] "
+            "It was the study of tumor cells that led to the discovery of the Crabtree effect. "
+            "Tumor cells have a similar metabolism, the Warburg effect, in which they favor glycolysis over the oxidative phosphorylation pathway.",
+            nome="Crabtree effect")],
+    },
+    # 12 fermento natural: 100 bactérias por levedura, sem disputa por comida
+    {
+        "temas_secundarios": ["microbiologia", "ecologia", "ciencia_cozinha"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "No fermento natural do pão, há cerca de 100 bactérias para cada levedura. E elas não brigam por comida: a bactéria típica come maltose, que uma levedura comum dessa parceria não digere, e lhe devolve glicose.",
+        "explicacao": (
+            "O pão de fermentação natural cresce graças a uma mistura de leveduras e bactérias lácticas, na proporção "
+            "aproximada de 1 para 100. Uma das bactérias mais importantes é a Fructilactobacillus sanfranciscensis. "
+            "Ela produz principalmente ácido láctico e ácido acético, que dão ao pão o gosto azedinho, e também "
+            "etanol e gás carbônico. Entre as leveduras que costumam acompanhá-la está a Kazachstania humilis, que "
+            "não consegue aproveitar a maltose da massa. A bactéria, ao contrário, precisa justamente da maltose. "
+            "Assim, as duas dividem o cardápio: a bactéria fica com a maltose, e a levedura usa os outros açúcares, "
+            "inclusive a glicose que a própria bactéria libera. O nome da bactéria engana: ela foi batizada em "
+            "homenagem a São Francisco, nos EUA, onde foi encontrada no pão azedo local e isolada pela primeira "
+            "vez em 1971. Mas é dominante nos fermentos naturais tradicionais (do tipo I) do mundo todo, é usada em pães há milhares de anos "
+            "e entra em 3 milhões de toneladas de produtos de fermentação natural por ano. O genoma dela também "
+            "chama a atenção: é considerado o menor entre os lactobacilos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Fructilactobacillus_sanfranciscensis",
+            "Fructilactobacillus sanfranciscensis is a heterofermentative species of lactic acid bacteria which, through the production mainly of lactic and acetic acids, helps give sourdough bread its characteristic taste. "
+            "It is named after San Francisco, where sourdough was found to contain the variety, though it is dominant in Type I sourdoughs globally. "
+            "In fact, F. sanfranciscensis has been used in sourdough breads for thousands of years, and is used in 3 million tons of sourdough goods yearly. [...] "
+            "Fructilactobacillus sanfranciscensis was first known to be isolated in 1971 by Kline and Sugihara. [...] "
+            "they can convert hexose sugars into not just lactic acid, but also ethanol, CO2, and/or acetic acid. [...] "
+            "Sourdough starters are leavened by a mixture of yeast and lactobacilli in a ratio of about 1:100. "
+            "Common yeast species found in combination with F. sanfranciscensis are Kazachstania humilis, Saccharomyces cerevisiae, and Wickerhamomyces anomalus. "
+            "This yeast cannot metabolize the maltose found in the dough, while the Fructilactobacillus requires maltose. "
+            "They therefore act without conflict for substrate, with lactobacilli utilizing maltose and the yeast utilizing the other sugars, including the glucose produced by the F. sanfranciscensis. [...] "
+            "The genomes of Fructilactobacillus sanfranciscensis strains are often quite small—in fact, they are suggested to be the smallest of all the lactobacilli.",
+            nome="Fructilactobacillus sanfranciscensis")],
+    },
+    # 13 o queijo de kefir das múmias do Tarim
+    {
+        "temas_secundarios": ["asia_antiga", "genetica", "pre_historia"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Múmias de cerca de 3.600 anos no oeste da China foram enterradas com queijo de kefir na cabeça e no pescoço. O DNA dos micróbios desse queijo, o mais antigo já encontrado, mostrou como as bactérias do kefir evoluíram.",
+        "explicacao": (
+            "Há cerca de duas décadas, arqueólogos acharam uma substância branca espalhada na cabeça e no pescoço de "
+            "várias múmias do cemitério de Xiaohe, na Bacia do Tarim, no noroeste da China. As múmias são da Idade do "
+            "Bronze, com 3.300 a 3.600 anos. Suspeitava-se de algum laticínio fermentado, mas não se sabia qual. Em "
+            "estudo publicado em setembro de 2024 na revista Cell, a equipe de Qiaomei Fu, da Academia Chinesa de "
+            "Ciências, extraiu DNA de amostras de três túmulos. Havia DNA de vaca e de cabra, e os leites eram "
+            "usados em lotes separados, não misturados. O principal: apareceram micróbios típicos dos grãos de kefir "
+            "atuais, como a bactéria Lactobacillus kefiranofaciens e a levedura Pichia kudriavzevii, confirmando que "
+            "aquilo era queijo de kefir. Segundo Fu, é a amostra de queijo mais antiga já descoberta. Hoje, essa "
+            "bactéria tem dois grandes grupos, um de origem russa e outro tibetano. A antiga se parece mais com o "
+            "tibetano, o que contesta a ideia de que o kefir surgiu apenas no Cáucaso Norte. A comparação também "
+            "indicou que, ao longo dos milênios, a bactéria trocou genes com linhagens aparentadas e ficou mais "
+            "estável e eficiente em fermentar leite."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.eurekalert.org/news-releases/1058618",
+             "titulo": "World’s oldest cheese reveals origins of kefir (Cell Press via EurekAlert!, 25 set. 2024)",
+             "idioma": "en",
+             "trecho": "25-Sep-2024 [...] "
+                       "For the first time, scientists successfully extracted and analyzed DNA from ancient cheese samples found alongside the Tarim Basin mummies in China, dating back approximately 3,600 years. "
+                       "The research, published September 25 in the Cell Press journal Cell, suggests a new origin for kefir cheese and sheds light on the evolution of probiotic bacteria. "
+                       "“This is the oldest known cheese sample ever discovered in the world,” says Qiaomei Fu, the paper’s corresponding author at the Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences. [...] "
+                       "About two decades ago, a team of archeologists discovered mysterious white substances smeared on the heads and necks of several mummies found in the Xiaohe cemetery in Northwestern China’s Tarim Basin. "
+                       "These mummies dated back to about 3,300 to 3,600 years ago, from the Bronze Age. "
+                       "At the time, scientists thought these substances might be a type of fermented dairy product, but they couldn’t identify exactly what kind. [...] "
+                       "The researchers successfully extracted mitochondrial DNA from samples found in three different tombs at the cemetery. "
+                       "They identified cow and goat DNA in the cheese samples. "
+                       "Interestingly, the ancient Xiaohe people used different types of animal milk in separated batches [...] "
+                       "Most importantly, Fu and her colleagues managed to recover the DNA of microorganisms from the dairy samples and confirmed that the white substances were in fact kefir cheese. "
+                       "They discovered that the samples contained bacterial and fungal species, including Lactobacillus kefiranofaciens and Pichia kudriavzevii, both commonly found in present-day kefir grains. [...] "
+                       "Today, there are two major groups of the Lactobacillus bacteria—one originating Russia and another from Tibet. [...] "
+                       "The team found that the Lactobacillus kefiranofaciens in the samples was more closely related to the Tibetan group, challenging a long-held belief that kefir originated solely in the North Caucasus mountain region of modern-day Russia. [...] "
+                       "The study also revealed how Lactobacillus kefiranofaciens exchanged genetic material with related strains, improving its genetic stability and milk fermentation capabilities over time."},
+            wiki("Cheese",
+                "The earliest ever discovered preserved cheese was found on mummies in Xiaohe Cemetery in the Taklamakan Desert in Xinjiang, China, dating back as early as 1615 BCE.",
+                nome="Cheese"),
+        ],
+    },
+    # 14 o mofo clonado do camembert está perdendo a capacidade de fazer esporos
+    {
+        "temas_secundarios": ["fungos", "domesticacao", "genetica"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Há cerca de cem anos, o camembert passou a ser feito com uma só linhagem de mofo branco, multiplicada por clonagem. Ela acumulou mutações, quase não faz mais esporos, e a indústria tem dificuldade de obter o suficiente.",
+        "explicacao": (
+            "A casca branca e aveludada do camembert e do brie é formada pelo fungo Penicillium camemberti, que "
+            "também dá a esses queijos o sabor e a textura amanteigada. Antes, os queijeiros usavam várias linhagens "
+            "de um fungo aparentado, o Penicillium biforme, e cada uma dava ao queijo aroma, cor e sabor próprios. "
+            "Por volta de 1900, uma linhagem albina foi selecionada a partir do P. biforme e virou o padrão. O "
+            "camembert ficou totalmente uniforme, e a variedade de antes sumiu. Como essa linhagem não se reproduz "
+            "sexualmente com outros fungos, os produtores a multiplicaram por clonagem durante décadas. Com o tempo, "
+            "surgiram mutações no genoma, e ela perdeu a capacidade de produzir esporos assexuados, justamente o que "
+            "se usa para inocular o leite. Em 2024, o CNRS, o centro nacional de pesquisa científica da França, "
+            "alertou que o camembert estava \"à beira da extinção\" e que a indústria tem dificuldade de conseguir "
+            "esporos suficientes. Brie, gorgonzola e roquefort enfrentam riscos parecidos. Uma saída proposta é voltar "
+            "a usar outras linhagens de P. biforme, ao custo de queijos com aparência e aroma um pouco diferentes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.smithsonianmag.com/smart-news/why-some-french-cheeses-are-at-risk-of-disappearing-180983907/",
+             "titulo": "These French Cheeses Are at Risk of Extinction (Smithsonian Magazine, 7 mar. 2024)",
+             "idioma": "en",
+             "trecho": "Camembert, in particular, is “on the verge of extinction,” per CNRS. [...] "
+                       "Cheesemakers historically used several strains of a fungus called Penicillium biforme for Camembert. "
+                       "Since each strain was slightly different, each resulting cheese also had its own unique aroma, color and flavor. "
+                       "About 100 years ago, cheesemakers began exclusively using a specific albino strain called Penicillium camemberti. [...] "
+                       "Camembert, in turn, became totally uniform—and all the variation in aroma, color and flavor disappeared. "
+                       "P. camemberti cannot reproduce sexually with other fungi, which means cheesemakers have had to clone it. "
+                       "Over time, however, this process caused mutations to develop in the strain’s genome. "
+                       "As a result, the strain lost its ability to produce asexual spores. "
+                       "This has made it difficult for the cheese industry to find enough P. camemberti spores to inoculate their Camembert. [...] "
+                       "Other cheeses—including brie, gorgonzola and roquefort—face similar dangers. [...] "
+                       "“Cheese producers could simply inoculate cow’s milk with other P. biforme molds,” writes Vox. "
+                       "“P. biforme is closely related to the albino strain, though it might give the cheeses a slightly different look and aroma.”"},
+            wiki("Penicillium_camemberti",
+                "It is used in the production of soft-ripened cheeses, including Camembert, Brie, Langres, Coulommiers, and Cambozola, on which colonies of P. camemberti form a hard, white crust. "
+                "It is responsible for giving these cheeses their distinctive flavors. [...] "
+                "P. camemberti is responsible for the soft, buttery texture of Brie and Camembert [...] "
+                "The fungus originated through artificial selection of P. biforme around 1900 [...] "
+                "In 2024, the French National Centre for Scientific Research warned that the spore-producing ability of albino strains of P. camemberti has declined due to prolonged vegetative reproduction.",
+                nome="Penicillium camemberti"),
+        ],
+    },
+    # 15 Metchnikoff, o Nobel que apostou no iogurte
+    {
+        "temas_secundarios": ["historia_medicina", "microbioma", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "Élie Metchnikoff, Nobel de Medicina em 1908, atribuía a longevidade de camponeses búlgaros ao iogurte e tomava leite azedo todo dia. Em 1920, um estudo mostrou que a bactéria do iogurte não sobrevivia no intestino.",
+        "explicacao": (
+            "Metchnikoff ficou famoso por descobrir os fagócitos, células de defesa que engolem invasores, trabalho "
+            "que lhe valeu o Nobel de Fisiologia ou Medicina de 1908, dividido com Paul Ehrlich. Mas ele também "
+            "tinha uma teoria sobre o envelhecimento: bactérias do intestino que decompõem proteínas soltariam "
+            "substâncias tóxicas, como fenóis e amônia, e essa \"autointoxicação\" causaria as mudanças da velhice. O "
+            "ácido láctico poderia prolongar a vida. Ele notou que populações rurais do sudeste da Europa e das "
+            "estepes russas tomavam todo dia leite fermentado por bactérias lácticas e viviam relativamente mais. "
+            "Atribuiu a longevidade dos camponeses búlgaros ao iogurte, que continha o chamado bacilo búlgaro, "
+            "identificado em 1905 pelo médico búlgaro Stamen Grigorov. Para pôr a ideia em prática, tomou leite "
+            "azedo diariamente pelo resto da vida e a defendeu em livros de 1903 e 1907. A tese foi questionada "
+            "depois que um estudo de 1920 mostrou que essa bactéria não sobrevivia no intestino humano. Ainda assim, "
+            "a ideia é tida como ponto de partida da pesquisa sobre probióticos, e Metchnikoff também é lembrado "
+            "por cunhar, em 1903, a palavra \"gerontologia\"."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("%C3%89lie_Metchnikoff",
+                "He and Paul Ehrlich were jointly awarded the 1908 Nobel Prize in Physiology or Medicine \"in recognition of their work on immunity\". [...] "
+                "Mechnikov is also credited with coining the term gerontology in 1903 for the emerging study of aging and longevity. [...] "
+                "who suggested to him the term \"phagocyte\" for a cell which can surround and kill pathogens. [...] "
+                "His discovery of these phagocytes ultimately won him the Nobel Prize in 1908. [...] "
+                "Metchnikoff developed a theory that aging is caused by toxic bacteria in the gut and that lactic acid could prolong life. "
+                "He attributed the longevity of Bulgarian peasants to their yogurt consumption that contained what was called the Bulgarian bacteria (now called Lactobacillus delbrueckii subsp. bulgaricus). "
+                "To validate his theory, he drank sour milk every day throughout his life. "
+                "His scientific reasonings on the subject were written in his books The Nature of Man: Studies in Optimistic Philosophy (1903) and more expressively in The Prolongation of Life: Optimistic Studies (1907).",
+                nome="Élie Metchnikoff"),
+            wiki("Lactobacillus_delbrueckii_subsp._bulgaricus",
+                "Lactobacillus delbrueckii subsp. bulgaricus was first identified in 1905 by Stamen Grigorov, who named it Bacillus bulgaricus. [...] "
+                "Proteolytic bacteria such as clostridia, which are part of the normal intestinal flora, produce toxic substances including phenols, ammonia and indols by digestion of proteins. "
+                "These compounds are responsible for what Metchnikoff called intestinal auto-intoxication, which, according to him, was the cause of the physical changes associated with old age. [...] "
+                "Metchnikoff's research also noted that rural populations in Southeastern Europe and the Russian steppes daily consume milk fermented with lactic acid bacteria and live relatively longer than other populations. [...] "
+                "His results were questioned after a 1920 study showed that the bacterium could not survive in the human intestines, but the idea nevertheless started the research into actually useful probiotics.",
+                nome="Lactobacillus delbrueckii subsp. bulgaricus"),
+        ],
+    },
+]

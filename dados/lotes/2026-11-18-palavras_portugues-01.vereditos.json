@@ -1,0 +1,110 @@
+{
+ "lote": "2026-11-18-palavras_portugues-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "palavras_portugues-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a fonte; gravação de 1937 confirmada no catálogo da UCSB."
+   },
+   {
+    "id": "palavras_portugues-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "550–450 a.C. é a época do livro de Esdras, não a data em que foi escrito.",
+    "correcao": "'na época do livro bíblico de Esdras (por volta de 550 a 450 a.C.), receber o sal'"
+   },
+   {
+    "id": "palavras_portugues-0003",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "fonte_fraca: a virada (registros antigos sobre armação para animais) sai de parágrafo sem referência e contraria Du Cange e os Kahane; sem ela, sobra trivia muito repetida."
+   },
+   {
+    "id": "palavras_portugues-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; nota 3 porque já circula em listas."
+   },
+   {
+    "id": "palavras_portugues-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte fala em candidato forte, com a ressalva dos termos culturais; a frase das palavras atribuídas ao basco é só sobre o espanhol.",
+    "correcao": "Gancho: 'Tirando termos culturais, é o candidato mais forte a empréstimo basco no espanhol e no português.'; explicação: 'muitas palavras do espanhol, mas a maioria'."
+   },
+   {
+    "id": "palavras_portugues-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte diz 'pensa-se' sobre a influência de saúde/saudar; duas primeiras frases copiadas da fonte; falta o parentesco com 'soledad'.",
+    "correcao": "'provavelmente ganhou a forma atual...' + 'É prima do espanhol soledad'; reescrever as duas primeiras frases; 'Acredita-se que foi a influência'; acrescentar soledad e o trecho da seção Etimologia."
+   },
+   {
+    "id": "palavras_portugues-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "1823 errado (a fonte se contradiz com 1825; buscas dão 1826); há várias versões, não duas.",
+    "correcao": "'O nome surgiu nos anos 1820, ... e a origem exata ainda é disputada.'; 'Na década de 1820, Stanislas Baudry abriu em Nantes'."
+   },
+   {
+    "id": "palavras_portugues-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A anedota de Camilo está num parágrafo sem referência e não foi achada na obra dele.",
+    "correcao": "Gancho: 'Quando os reis passaram a exigir alteza e depois majestade, a mercê foi descendo a escala social até virar tratamento comum.'; explicação: 'No século XIX, o vosmecê já tinha se espalhado tanto que deixara de soar como deferência.'"
+   },
+   {
+    "id": "palavras_portugues-0009",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: lista de africanismos sem mecanismo; fonte de baixa qualidade; samba só 'related'."
+   },
+   {
+    "id": "palavras_portugues-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; o nome descreve a física do estouro."
+   },
+   {
+    "id": "palavras_portugues-0011",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: item clássico de listas; etimologia imprecisa (árabe hispânico law šá lláh)."
+   }
+  ],
+  "2": [
+   {
+    "id": "palavras_portugues-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Data de Esdras corrigida; mito desmentido registrado na lista de equívocos."
+   },
+   {
+    "id": "palavras_portugues-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho e explicação com a ressalva da fonte."
+   },
+   {
+    "id": "palavras_portugues-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Provavelmente' e 'acredita-se' refletem o 'pensa-se'; soledad entrou; texto próprio."
+   },
+   {
+    "id": "palavras_portugues-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Anos 1820 cobrem a divergência; origem disputada tem apoio."
+   },
+   {
+    "id": "palavras_portugues-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Anedota sem referência removida; inflação dos títulos confere."
+   }
+  ]
+ }
+}

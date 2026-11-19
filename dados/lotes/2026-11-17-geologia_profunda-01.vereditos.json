@@ -1,0 +1,139 @@
+{
+ "lote": "2026-11-17-geologia_profunda-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "geologia_profunda-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "12,2 km truncado; gancho mistura dois furos (12.262 m em 1989; 180 Â°C no 4Âº furo em 1992); meta era 15 mil m; trivia conhecida.",
+    "correcao": "Novo gancho; 'A meta era chegar a 15 mil metros'; 'essa tentativa, num novo ramo do poÃ§o, parou em 1992'; 'Uma Ãºltima tentativa foi interrompida em 1994'."
+   },
+   {
+    "id": "geologia_profunda-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'manto fora de alcance' sem apoio; 'algo inÃ©dito' era a plataforma, nÃ£o a profundidade; falta o posicionamento dinÃ¢mico.",
+    "correcao": "Novo gancho com posicionamento dinÃ¢mico; reescrever a frase do navio com o trecho 'inventing what is now known as dynamic positioning'."
+   },
+   {
+    "id": "geologia_profunda-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Murchison 1929, Pâ€² 1936, 5.430 Â°C, pressÃ£o, 104 anos pelas datas)."
+   },
+   {
+    "id": "geologia_profunda-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Ringwoodita se forma entre 525 e 660 km; 'a prova' Ã© exagero ('evidence'); estimativa de oceanos nÃ£o vem do diamante.",
+    "correcao": "Novo gancho; 525â€“660 km dentro da zona de transiÃ§Ã£o; 'uma evidÃªncia de quantidades significativas de Ã¡gua'."
+   },
+   {
+    "id": "geologia_profunda-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere; o que intriga (ESA) Ã© o enfraquecimento, nÃ£o a causa.",
+    "correcao": "'A causa exata intriga os geofÃ­sicos.' â†’ 'Esse enfraquecimento progressivo ainda intriga os geofÃ­sicos.'"
+   },
+   {
+    "id": "geologia_profunda-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'foi medido' Ã© exagero: Ã© estimativa e a divisÃ£o Ã© 'highly uncertain'.",
+    "correcao": "Gancho 'segundo estimativas feitas captando neutrinos'; explicaÃ§Ã£o com 'em linha com estimativas anteriores, mas a divisÃ£o exata ainda Ã© bem incerta'."
+   },
+   {
+    "id": "geologia_profunda-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "NÃºmeros e Theia conferem, mas a origem por placas subduzidas Ã© 'the current leading hypothesis' e o texto a pÃµe no mesmo nÃ­vel de Theia.",
+    "correcao": "'Uma explicaÃ§Ã£o liga...' â†’ 'A hipÃ³tese hoje mais aceita liga...'"
+   },
+   {
+    "id": "geologia_profunda-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: 'menos do que a idade dos dinossauros' sem apoio; resto confere.",
+    "correcao": "Gancho: 'uma fraÃ§Ã£o da idade da Terra'; opcional cortar as listras magnÃ©ticas (sobrepÃµe 0010)."
+   },
+   {
+    "id": "geologia_profunda-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (seven square kilometers, 1 cm/ano, 10 mil anos, new land)."
+   },
+   {
+    "id": "geologia_profunda-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "NÃºmeros conferem, mas 780 mil anos marca a inversÃ£o, nÃ£o o perÃ­odo reverso; tema razoavelmente conhecido.",
+    "correcao": "'AtÃ© 780 mil anos atrÃ¡s'; 'a agulha passa a apontar para o sul'."
+   },
+   {
+    "id": "geologia_profunda-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'material mais antigo da Terra' impreciso (meteoritos); grafite em um Ãºnico zircÃ£o.",
+    "correcao": "'mais antigo formado na Terra'; 'dentro de um desses zircÃµes'."
+   }
+  ],
+  "2": [
+   {
+    "id": "geologia_profunda-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "CorreÃ§Ãµes aplicadas; tema conhecido, nota mÃ­nima."
+   },
+   {
+    "id": "geologia_profunda-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho e explicaÃ§Ã£o agora com posicionamento dinÃ¢mico e 'untethered platform'."
+   },
+   {
+    "id": "geologia_profunda-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "525â€“660 km, 'evidence', 'Estima-se' e consenso_parcial conferem."
+   },
+   {
+    "id": "geologia_profunda-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Troca feita; nÃºmeros conferem."
+   },
+   {
+    "id": "geologia_profunda-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Estimativas' e 'highly uncertain' incluÃ­dos; nÃºmeros conferem."
+   },
+   {
+    "id": "geologia_profunda-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "HipÃ³tese das placas como principal; Theia marcada como hipÃ³tese."
+   },
+   {
+    "id": "geologia_profunda-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "ComparaÃ§Ã£o com dinossauros e listras retiradas; nÃºmeros conferem."
+   },
+   {
+    "id": "geologia_profunda-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'AtÃ© 780 mil anos atrÃ¡s' corrigido; tema razoavelmente conhecido."
+   },
+   {
+    "id": "geologia_profunda-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ajuste pontual aplicado sem nova verificaÃ§Ã£o: o grafite estÃ¡ num zircÃ£o de 4,1 bilhÃµes de anos ('outro zircÃ£o do local, um pouco mais novo').",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

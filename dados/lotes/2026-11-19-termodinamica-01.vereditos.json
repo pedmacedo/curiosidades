@@ -1,0 +1,164 @@
+{
+ "lote": "2026-11-19-termodinamica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "termodinamica-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "História confere (Mpemba 1963, 2016, 2024); mas o gancho pressupõe que o efeito existe ('quando e por que').",
+    "correcao": "Gancho: 'mas os físicos ainda discutem quando e por que ele acontece.' -> 'mas os físicos ainda discutem se, quando e por que ele acontece.'"
+   },
+   {
+    "id": "termodinamica-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas a fervura saiu da definição em 1948 (ponto triplo), não em 2019; 'buscava precisão' sem apoio. Nota 3.",
+    "correcao": "1) 'O que ele buscava era precisão: mostrou que' -> 'No mesmo trabalho, mostrou que'. 2) Trocar 'Hoje a água nem entra na definição: desde 2019, ela se apoia na constante de Boltzmann, sem depender de nenhuma propriedade da água. Assim, a fervura da água pura sob uma atmosfera virou um valor medido, cerca de 99,974 °C na escala de calibração ITS-90.' por 'A fervura deixou de definir a escala já em 1948, quando a referência passou a ser o ponto triplo da água; desde 2019, a definição usa a constante de Boltzmann e nem depende mais da água. Com isso, a fervura da água pura sob uma atmosfera virou um valor medido: cerca de 99,974 °C na escala de calibração ITS-90.'"
+   },
+   {
+    "id": "termodinamica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio; só o anacronismo 'nascido nos EUA' (1753, Massachusetts colonial).",
+    "correcao": "'Benjamin Thompson, nascido nos EUA e feito conde' -> 'Benjamin Thompson, nascido na colônia britânica de Massachusetts e feito conde'."
+   },
+   {
+    "id": "termodinamica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Sadi Carnot (600 exemplares, cólera aos 36, Clapeyron 1834, Thomson). Nota 3."
+   },
+   {
+    "id": "termodinamica-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Joule; falta o porquê da cachoeira (elo com a tese).",
+    "correcao": "Trocar 'de medir a diferença de temperatura entre o alto e o pé da cascata de Sallanches. A tentativa se mostrou impraticável.' por 'de medir a diferença de temperatura entre o alto e o pé da cascata de Sallanches: se trabalho vira calor, a água que despenca deveria chegar um pouco mais quente lá embaixo. A tentativa se mostrou impraticável.'"
+   },
+   {
+    "id": "termodinamica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio em Maxwell's demon e Landauer's principle (1867, Szilárd, Landauer 1961, Bennett, 2012); consenso_parcial."
+   },
+   {
+    "id": "termodinamica-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Física confere; mas 'abaixo de zero kelvin' sugere abaixo do zero absoluto, o que a fonte nega; concordância truncada.",
+    "correcao": "Gancho: 'Há sistemas com temperatura abaixo de zero kelvin, e eles não são frios' -> 'Há sistemas com temperatura negativa na escala kelvin, e eles não são frios'. 'Em contato com elas, cedem calor, nunca recebem.' -> 'Em contato com elas, eles cedem calor, nunca recebem.'"
+   },
+   {
+    "id": "termodinamica-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (NRAO 2017); mas o mecanismo é expansão adiabática, não efeito Joule-Thomson.",
+    "correcao": "'e um gás que se expande assim esfria, como mostra o efeito Joule-Thomson' -> 'e um gás que se expande assim, sem receber calor de fora, esfria (é a chamada expansão adiabática)'."
+   },
+   {
+    "id": "termodinamica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Leidenfrost effect (152 s a 202 °C, Fairbairn, 1756, MythBusters)."
+   },
+   {
+    "id": "termodinamica-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Episódio e números conferem; mas 'O segredo era o suor' contradiz Blagden, que achou o suor 'by no means sufficient to account for the whole of the cooling'.",
+    "correcao": "Gancho: 'O segredo era o suor.' -> 'O suor era parte do segredo.' Fim da explicação: acrescentar 'Ele próprio achava, porém, que o suor ajudava muito, mas não explicava todo o resfriamento.' (com trecho)."
+   },
+   {
+    "id": "termodinamica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio em Helium (único elemento líquido no zero absoluto, Keesom 1926, ~25 bar)."
+   },
+   {
+    "id": "termodinamica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Números conferem com a National Geographic e a Wikipedia (gelo XVIII, 1 a 4 milhões de vezes, Urano e Netuno como possibilidade)."
+   },
+   {
+    "id": "termodinamica-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Guinness, Nature e QGP confirmam (5–5,5 trilhões K, 38%, líquido mais perfeito do RHIC)."
+   },
+   {
+    "id": "termodinamica-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Clausius confere; a anedota de von Neumann é frágil (Tribus, 1971; versões variam); confiança alta não se sustenta.",
+    "correcao": "1) confianca -> consenso_parcial. 2) Gancho: 'segundo um relato,' -> 'numa história não confirmada,'. 3) Última frase -> 'A história, porém, não é confirmada: ela muda conforme quem a conta, existe outra versão com palavras diferentes, e a fonte observa que, no começo, Shannon parecia não ter muita noção da semelhança com a termodinâmica.' 4) 'Segundo um dos relatos, von Neumann o aconselhou' -> 'Segundo um dos relatos que circulam, von Neumann o aconselhou'."
+   },
+   {
+    "id": "termodinamica-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere com Age of the Earth; só 'engenheiro' John Perry sem apoio.",
+    "correcao": "'Em 1895, o engenheiro John Perry já contestava' -> 'Em 1895, John Perry já contestava'."
+   }
+  ],
+  "2": [
+   {
+    "id": "termodinamica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Se, quando e por que' aplicado."
+   },
+   {
+    "id": "termodinamica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "1948 (ponto triplo) e 2019 (Boltzmann) com trecho."
+   },
+   {
+    "id": "termodinamica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Colônia britânica de Massachusetts' aplicado."
+   },
+   {
+    "id": "termodinamica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Porquê da cachoeira e carta de 1845 (ChemTeam). Ajuste pontual aplicado sem nova verificação: 'A tentativa em Sallanches'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "termodinamica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Temperatura negativa na escala kelvin'. Ajuste pontual aplicado sem nova verificação: concordância ('com um corpo comum').",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "termodinamica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Expansão adiabática com trecho."
+   },
+   {
+    "id": "termodinamica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'O suor era parte do segredo' e a ressalva de Blagden com trecho."
+   },
+   {
+    "id": "termodinamica-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "História não confirmada; consenso_parcial."
+   },
+   {
+    "id": "termodinamica-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem o 'engenheiro'."
+   }
+  ]
+ }
+}

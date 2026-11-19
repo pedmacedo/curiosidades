@@ -1,0 +1,126 @@
+{
+ "lote": "2026-11-17-teoria_numeros-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "teoria_numeros-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'número mais famoso da matemática recreativa' exagero; Putney é bairro de Londres; gancho esconde a resposta.",
+    "correcao": "Novo gancho autoexplicativo; 'um bairro de Londres'; 'o mais famoso dos números de táxi'."
+   },
+   {
+    "id": "teoria_numeros-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "US$ 2 milhões foi na caçada (GPUs na nuvem), não em compra; 'anteriores em PCs' vale só para os 16 recordes da GIMPS.",
+    "correcao": "Gancho 'numa caçada com milhares de placas de vídeo'; 'os 16 recordes anteriores achados pela GIMPS'."
+   },
+   {
+    "id": "teoria_numeros-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; hipótese bem marcada."
+   },
+   {
+    "id": "teoria_numeros-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com '0' (Kish, cunhas, 1/60/3.600, Índia, Brahmagupta, maias)."
+   },
+   {
+    "id": "teoria_numeros-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'dados inventados costumam fugir do padrão' sem apoio (fonte: fabricados seguem no 1º dígito, não nos seguintes); método 'not foolproof'.",
+    "correcao": "Reescrever a frase da fraude com os trechos sobre dígitos seguintes e 'not foolproof'."
+   },
+   {
+    "id": "teoria_numeros-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'centenas de páginas' sem apoio e exagerado.",
+    "correcao": "Gancho: 'levou 358 anos e quase naufragou por causa de uma falha'."
+   },
+   {
+    "id": "teoria_numeros-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Aposto sobre Erdős ('húngaro', 'mais produtivos') sem apoio; 'a maioria dos matemáticos que estudaram o problema'.",
+    "correcao": "'O matemático Paul Erdős resumiu:'; 'a maioria dos matemáticos que estudaram o problema acredita'."
+   },
+   {
+    "id": "teoria_numeros-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fonte fala em 39 dígitos (não casas decimais) e 'precisão de um átomo'.",
+    "correcao": "Gancho: '39 dígitos de pi' e 'com precisão de um átomo'."
+   },
+   {
+    "id": "teoria_numeros-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Euclides, Euler, Agostinho, perfeitos ímpares em aberto)."
+   },
+   {
+    "id": "teoria_numeros-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: trivia difundida, sobrepõe a 0004; e a divisão da hora em minutos é medieval (Al-Biruni), não suméria."
+   },
+   {
+    "id": "teoria_numeros-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere (4×10^18, carta de 1742); sugestão: reescrever a abertura, quase tradução literal."
+   }
+  ],
+  "2": [
+   {
+    "id": "teoria_numeros-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas; contas e Frénicle conferem."
+   },
+   {
+    "id": "teoria_numeros-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Ajuste pontual aplicado sem nova verificação: 'os recordes anteriores achados pela GIMPS' (os 16 incluem o de Durant).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "teoria_numeros-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ajuste pontual aplicado sem nova verificação: 'Num experimento, números inventados por voluntários seguiram o padrão no primeiro algarismo, mas não nos seguintes.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "teoria_numeros-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'quase naufragou por causa de uma falha' confere."
+   },
+   {
+    "id": "teoria_numeros-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ajuste pontual aplicado sem nova verificação: 'O matemático Lothar Collatz' (sem 'alemão').",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "teoria_numeros-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'39 dígitos' e 'precisão de um átomo' conferem."
+   },
+   {
+    "id": "teoria_numeros-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Abertura reescrita; números e exemplos conferem."
+   }
+  ]
+ }
+}

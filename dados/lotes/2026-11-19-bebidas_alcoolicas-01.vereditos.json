@@ -1,0 +1,141 @@
+{
+ "lote": "2026-11-19-bebidas_alcoolicas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "bebidas_alcoolicas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Fontes sustentam tudo (Jiahu c. 7000 a.C., PNAS 2004, Haifa 13 mil anos). Nota 3: 'bebida mais antiga' circula."
+   },
+   {
+    "id": "bebidas_alcoolicas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Resumo de Carrigan et al. (PNAS 2014) confirma a ADH4 há ~10 milhões de anos; macaco bêbado como hipótese; consenso_parcial."
+   },
+   {
+    "id": "bebidas_alcoolicas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Alcohol (chemistry) confirma a etimologia e a história da destilação. Nota 3: etimologia já circula."
+   },
+   {
+    "id": "bebidas_alcoolicas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Corrige equívoco listado (Dom Pérignon); Merret 1662 e garrafas inglesas conferem. Nota 3."
+   },
+   {
+    "id": "bebidas_alcoolicas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'injeta um veneno' não tem apoio na literatura (picadas deformam e abrem caminho a fungos), e 'suas videiras' sugere todas.",
+    "correcao": "1) Gancho: 'Suas videiras são enxertadas em raízes dos EUA' -> 'Quase todas as suas videiras são enxertadas em raízes norte-americanas'. 2) Explicação: 'ele injeta um veneno que corrói a raiz e, quando a seiva perde pressão, vai embora, de modo que quem arrancava uma planta morrendo não o encontrava' -> 'suas picadas deformam as raízes e abrem caminho para fungos que as estrangulam; quando a planta definha e a seiva perde pressão, o inseto a abandona, de modo que quem arrancava uma planta morrendo não o encontrava'."
+   },
+   {
+    "id": "bebidas_alcoolicas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Baudoinia confirma tudo (whiskey fungus, parte dos anjos, 1872 em Cognac, cinco espécies), com as ressalvas."
+   },
+   {
+    "id": "bebidas_alcoolicas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere (Lanfray 1905, referendo 1908, Magnan, tujona); mas a proibição no Brasil em 1906 não tem fonte primária, e 'fizeram o mesmo' sugere que seguiram a Suíça.",
+    "correcao": "Trocar 'Outros países fizeram o mesmo: o Brasil e a Bélgica proibiram a venda em 1906, e os Estados Unidos, em 1912.' por 'Outros países também baniram a bebida naquela época, como a Bélgica, em 1906, e os Estados Unidos, em 1912.'"
+   },
+   {
+    "id": "bebidas_alcoolicas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Disulfiram (1937, Jacobsen e Hald, Batalhão da Morte, 1948, ALDH2*2 em ~540 milhões)."
+   },
+   {
+    "id": "bebidas_alcoolicas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Carmona wine urn e Speyer wine bottle confirmam (2019, cinco litros, análise de 2024, 325–350 d.C.)."
+   },
+   {
+    "id": "bebidas_alcoolicas-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Mecanismo confere; mas 'só do teor de álcool' exagera (açúcar, temperatura e taça também influem).",
+    "correcao": "Gancho: 'dependem só do teor de álcool' -> 'dependem sobretudo do teor de álcool'."
+   },
+   {
+    "id": "bebidas_alcoolicas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e química conferem; mas as células eram de tritão (MeSH: Salamandridae), não humanas, e a fonte diz 'suppressing/attenuates', não 'bloqueia'.",
+    "correcao": "1) Gancho: 'O vinho com \"gosto de rolha\" cheira a mofo, mas a molécula culpada, o TCA, faz algo mais estranho: em células olfativas de laboratório, doses ínfimas dela calam os canais que transmitem o cheiro, abafando aromas.' 2) Explicação: 'feito com células receptoras olfativas isoladas, mostrou' -> 'feito com células receptoras olfativas isoladas de tritão (um anfíbio parente das salamandras), mostrou'. Manter consenso_parcial."
+   },
+   {
+    "id": "bebidas_alcoolicas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas o teste original era o de queimar ou não, e a pólvora foi 'another early method'.",
+    "correcao": "Gancho: 'O \"proof\" dos rótulos de uísque vem de testes de fogo para cobrar imposto. Num deles, molhava-se pólvora na bebida: se ainda queimasse, estava \"acima da prova\". O limite desse teste equivalia a uns 57% de álcool.'"
+   },
+   {
+    "id": "bebidas_alcoolicas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Resumo de 'The color of odors' (2001) e Wine tasting sustentam tudo (54 provadores, Brochet). Nota 3: circula em listas."
+   },
+   {
+    "id": "bebidas_alcoolicas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Conferido no texto integral da PNAS 2015 (Åland, 168 garrafas, >140 g/L, ~300 g/L para a Rússia)."
+   },
+   {
+    "id": "bebidas_alcoolicas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A ligação da cachaça com a reconstrução de Lisboa vem só de parágrafo sem referência (pt.wikipedia) e não tem apoio acadêmico; 'legalizada' simplifica (comércio local seguiu vedado até 1695).",
+    "correcao": "1) Gancho: 'Portugal proibiu várias vezes a cachaça no Brasil colonial para proteger a bagaceira e o vinho do reino. Disso ficaram uma revolta no Rio e apelidos para enganar a fiscalização; hoje ela tem mais de 2 mil nomes.' 2) Remover a frase sobre 1756 e Lisboa. 3) 'Em 13 de setembro de 1661 a bebida foi legalizada' -> 'Em 13 de setembro de 1661 a produção foi liberada'. 4) Retirar do trecho da pt.wikipedia a frase sobre Lisboa."
+   }
+  ],
+  "2": [
+   {
+    "id": "bebidas_alcoolicas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Quase todas' e o mecanismo das deformações e fungos aplicados."
+   },
+   {
+    "id": "bebidas_alcoolicas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem o Brasil e sem sugerir que seguiram a Suíça."
+   },
+   {
+    "id": "bebidas_alcoolicas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Sobretudo do teor de álcool' aplicado."
+   },
+   {
+    "id": "bebidas_alcoolicas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Células de anfíbio (MeSH Salamandridae), não nariz humano; consenso_parcial."
+   },
+   {
+    "id": "bebidas_alcoolicas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Queimar ou não primeiro; a pólvora como um dos testes."
+   },
+   {
+    "id": "bebidas_alcoolicas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Sem Lisboa; 'a produção foi liberada'; datas conferem."
+   }
+  ]
+ }
+}

@@ -1,0 +1,338 @@
+LOTE = "2026-11-18-vulcoes_terremotos-01"
+AREA = "terra"
+TEMA = "vulcoes_terremotos"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 o vulcão que nasceu num milharal
+    {
+        "temas_secundarios": ["paisagens_extremas", "geologia_profunda"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Em fevereiro de 1943, um vulcão nasceu no milharal de um agricultor mexicano. Em 24 horas o cone já tinha 50 metros; quando a erupção acabou, em 1952, tinha 424 metros e duas cidades estavam soterradas.",
+        "explicacao": (
+            "Era a tarde de 20 de fevereiro, e Dionisio Pulido e a família limpavam a terra para o plantio da "
+            "primavera, perto do povoado de Parícutin, no estado de Michoacán. De repente o chão ali perto se "
+            "estufou e abriu uma fenda de 2 a 2,5 metros de largura. Eles ouviram chiados e viram uma fumaça com "
+            "cheiro de ovo podre, sinal de gás sulfídrico. Em poucas horas, a fenda virou uma pequena cratera. "
+            "Havia avisos: durante semanas, os moradores tinham ouvido ruídos parecidos com trovões com o céu "
+            "limpo, compatíveis com terremotos profundos causados pelo movimento do magma, e um estudo posterior "
+            "contou 21 tremores acima de magnitude 3,2 nas cinco semanas anteriores. O vulcão ficou ativo por nove "
+            "anos, tempo incomum para esse tipo, e foi a primeira vez que a ciência moderna pôde documentar o "
+            "ciclo de vida inteiro de uma erupção assim: pesquisadores desenharam, mapearam e coletaram milhares "
+            "de amostras e fotos. No fim, mais de 233 quilômetros quadrados foram danificados, três pessoas "
+            "morreram e centenas tiveram de se mudar para sempre."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Par%C3%ADcutin",
+            "The volcano surged suddenly from the cornfield of local farmer Dionisio Pulido in 1943, attracting both popular and scientific attention. "
+            "Parícutin presented the first occasion for modern science to document the full life cycle of an eruption of this type. "
+            "During the volcano's nine years of activity, scientists sketched and mapped it and took thousands of samples and photographs. "
+            "By 1952, the eruption had left a 424-meter-high (1,391 ft) cone and significantly damaged an area of more than 233 square kilometers (90 mi2) with the ejection of stone, volcanic ash and lava. "
+            "Three people were killed, two towns were completely evacuated and buried by lava, and three others were heavily affected. "
+            "Hundreds of people had to permanently relocate [...] "
+            "Parícutin erupted from 1943 to 1952, unusually long for this type of volcano, and with several eruptive phases. "
+            "For weeks prior, residents of the area reported hearing noises similar to thunder but without clouds in the sky. "
+            "This sound is consistent with deep earthquakes caused by the movement of magma. "
+            "A later study indicated that the eruption was preceded by 21 earthquakes over 3.2 in magnitude starting five weeks before the eruption. [...] "
+            "The eruption began on 20 February 1943, at about 4:00 pm local time. "
+            "The center of the activity was a cornfield owned by Dionisio Pulido, near the town of Parícutin. "
+            "During that day, he and his family had been working their land, clearing it to prepare for spring planting. "
+            "Suddenly the ground nearby swelled upward and formed a fissure between 2 and 2.5 meters across. "
+            "They reported that they heard hissing sounds, and saw smoke which smelled like rotten eggs, indicating the presence of hydrogen sulfide. "
+            "Within hours, the fissure would develop into a small crater. [...] "
+            "within 24 hours there was a scoria cone fifty meters high [...] "
+            "is a cinder cone volcano located in the Mexican state of Michoacán",
+            nome="Parícutin")],
+    },
+    # 2 Tambora, Frankenstein e a bicicleta
+    {
+        "temas_secundarios": ["literatura", "clima_tempo", "transportes"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Uma erupção na Indonésia em 1815 esfriou o planeta, e o verão chuvoso de 1816 trancou Mary Shelley numa casa na Suíça, onde ela escreveu Frankenstein. A fome de cavalos talvez tenha inspirado a bicicleta.",
+        "explicacao": (
+            "O vulcão foi o Tambora, na ilha de Sumbawa, em abril de 1815: a maior erupção em pelo menos 1.300 "
+            "anos, que lançou ao menos 37 quilômetros cúbicos de material. A causa principal do chamado \"ano sem "
+            "verão\" é, em geral, atribuída ao inverno vulcânico que ela provocou, e as temperaturas médias do "
+            "planeta caíram de 0,4 a 0,7 °C. Os efeitos foram mais fortes na Nova Inglaterra, no Canadá atlântico "
+            "e na Europa Ocidental, com colheitas perdidas e falta de comida. Naquele verão, a chuva incessante "
+            "obrigou Mary Shelley, Percy Shelley, Lord Byron, John Polidori e amigos a passar boa parte das férias "
+            "dentro da Villa Diodati, na Suíça. Inspirado por histórias alemãs de fantasmas, Byron propôs um "
+            "concurso de quem escrevia a história mais assustadora. Daí saíram Frankenstein, de Mary Shelley, e um "
+            "fragmento de Byron que Polidori usou para escrever O Vampiro, precursor de Drácula. E há uma hipótese "
+            "sobre outra herança: a falta de aveia para alimentar cavalos pode ter levado o inventor alemão Karl "
+            "Drais a buscar um transporte sem cavalo, o que deu na draisiana, precursora da bicicleta."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Year_Without_a_Summer",
+            "The year 1816 is known as the Year Without a Summer because of severe climate abnormalities that caused average global temperatures to decrease by 0.4–0.7 °C [...] "
+            "The climatic aberrations of 1816 had their greatest effect on New England (US), Atlantic Canada, and Western Europe. "
+            "The main cause of the Year Without a Summer is generally held to be a volcanic winter created by the April 1815 eruption of Mount Tambora on Sumbawa. "
+            "The eruption had a volcanic explosivity index (VEI) ranking of 7, and ejected at least 37 km3 (8.9 cu mi) of dense-rock equivalent material [...] "
+            "This eruption was the largest in at least 1,300 years [...] "
+            "and major food shortages across the Northern Hemisphere. [...] "
+            "\"incessant rainfall\" during the \"wet, ungenial summer\" forced Mary Shelley, Percy Bysshe Shelley, Lord Byron, John William Polidori, and their friends to stay indoors at Villa Diodati for much of their Swiss holiday. "
+            "Inspired by a collection of German ghost stories that they had read, Lord Byron proposed a contest to see who could write the scariest story, leading Shelley to write Frankenstein and Lord Byron to write \"A Fragment\", which Polidori later used as inspiration for The Vampyre – a precursor to Dracula. [...] "
+            "The lack of oats to feed horses may have inspired the German inventor Karl Drais to research new ways of horseless transportation, which led to the invention of the draisine and velocipede, a precursor of the bicycle.",
+            nome="Year Without a Summer")],
+    },
+    # 3 Laki e o flúor
+    {
+        "temas_secundarios": ["elementos_quimicos", "revolucoes_politicas", "clima_tempo"],
+        "tipos_espanto": ["escala_absurda", "conexao_inesperada"],
+        "gancho": "Em 1783, uma fissura vulcânica na Islândia soltou cerca de 8 milhões de toneladas de flúor. O gás contaminou o pasto, e metade do gado e 80% das ovelhas do país morreram com os ossos e dentes deformados.",
+        "explicacao": (
+            "A erupção do Laki durou oito meses, de junho de 1783 a fevereiro de 1784, e lançou, além do flúor, cerca de 120 milhões de toneladas de "
+            "dióxido de enxofre. Os animais morreram de fluorose dentária e óssea por comer grama contaminada, e "
+            "a produção de leite caiu à metade. A destruição da maior parte das colheitas levou a uma fome que "
+            "matou cerca de 20% da população da Islândia, uns 8 mil mortos a mais, embora haja quem fale em um "
+            "quarto. Os islandeses chamam esse período de Móðuharðindin, as \"dificuldades da névoa\". O enxofre, "
+            "num momento de clima incomum, espalhou uma névoa espessa pelo oeste da Europa, que causou milhares de "
+            "mortes até o inverno de 1784. Nos Estados Unidos, Benjamin Franklin registrou numa palestra de 1784 "
+            "que, nos meses de verão de 1783, uma névoa constante cobriu a região. Na França, uma colheita perdida em "
+            "1785, secas e invernos e verões ruins aumentaram a pobreza e a fome, o que pode ter contribuído para a "
+            "Revolução Francesa, em 1789. O Laki, porém, foi só um dos fatores numa década de clima perturbado."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Laki",
+            "The system erupted violently over an eight-month period between June 1783 and February 1784 from the Laki fissure and the adjoining volcano Grímsvötn. [...] "
+            "The outpouring of gases, including an estimated 8 million tonnes of fluorine and an estimated 120 million tonnes of sulfur dioxide, gave rise to what has since become known as the \"Laki haze\" across Europe. [...] "
+            "The consequences for Iceland, known as the Móðuharðindin [...] (mist hardships), were disastrous. "
+            "An estimated 20% of the population died in the famine after the fissure eruptions ensued, with about 8,000 excess deaths. "
+            "About 80% of sheep (190,500 head), 50% of cattle (11,500 head), and 50% of horses (28,000 head) died because of dental and skeletal fluorosis from the 8 million tons of fluorine that were released. "
+            "Milk yields halved. The livestock deaths were primarily caused by eating contaminated grass [...] "
+            "the destruction of the vast majority of all crops. "
+            "This led to a famine, which then killed at least a fifth of the island's human population, although some have claimed a quarter. [...] "
+            "This outpouring of sulfur dioxide during unusual weather conditions caused a thick haze to spread across western Europe, resulting in many thousands of deaths throughout the remainder of 1783 and the winter of 1784. [...] "
+            "Benjamin Franklin recorded his observations in America in a 1784 lecture: [...] "
+            "During several of the summer months of the year 1783, when the effect of the sun's rays to heat the earth in these northern regions should have been greater, there existed a constant fo [...] "
+            "In France, the sequence of extreme weather events included a failed harvest in 1785 that caused poverty for rural workers, as well as droughts and bad winters and summers. "
+            "These events contributed significantly to an increase in poverty and famine that may have contributed to the French Revolution in 1789. "
+            "Laki was only one factor in a decade of climatic disruption",
+            nome="Laki")],
+    },
+    # 4 o lago que sufocou 1.746 pessoas
+    {
+        "temas_secundarios": ["agua_doce_gelo", "estados_materia", "atmosfera"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Em 1986, um lago de Camarões soltou de uma vez uma nuvem de gás carbônico que, mais pesada que o ar, desceu sobre as aldeias e sufocou 1.746 pessoas num raio de 25 km. Hoje canos desgaseificam o lago.",
+        "explicacao": (
+            "O lago Nyos, no noroeste de Camarões, acumulava gás carbônico dissolvido no fundo. Em 21 de agosto "
+            "de 1986, essa reserva escapou numa \"erupção límnica\": entre 100 mil e 300 mil toneladas de gás "
+            "subiram a quase 100 km/h e depois, mais pesadas que o ar, desceram sobre as aldeias vizinhas, matando "
+            "também 3.500 animais. Não se sabe o que disparou a liberação. A maioria dos geólogos suspeita de um "
+            "deslizamento de terra, mas há quem pense numa pequena erupção vulcânica no fundo do lago. Junto com a "
+            "do lago Monoun, dois anos antes, é uma das duas únicas erupções límnicas registradas na história "
+            "moderna. A solução foi engenhosa: colunas de desgaseificação instaladas em balsas no meio do lago. "
+            "Um cano traz para cima a água saturada do fundo, primeiro com uma bomba. Depois, o próprio gás que se "
+            "solta dentro do cano empurra a coluna de água efervescente, e o processo passa a se sustentar "
+            "sozinho, liberando o gás aos poucos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lake_Nyos_disaster",
+            "On 21 August 1986, a limnic eruption at Lake Nyos in northwestern Cameroon killed 1,746 people and 3,500 livestock. "
+            "The eruption triggered the sudden release of about 100,000–300,000 tons of carbon dioxide (CO2). "
+            "The gas cloud initially rose at nearly 100 km/h (62 mph; 28 m/s) and then, being heavier than air, descended onto nearby villages, suffocating people and livestock within 25 km (16 miles) of the lake. "
+            "A degassing system has since been installed at the lake, with the aim of reducing the concentration of CO2 in the waters and therefore the risk of further eruptions. "
+            "Along with the Lake Monoun disaster two years earlier, it is one of only two recorded limnic eruptions in modern human history. [...] "
+            "What triggered the catastrophic outgassing is not known. "
+            "Most geologists suspect a landslide, but some believe that a small volcanic eruption may have occurred on the bed of the lake. [...] "
+            "Several researchers proposed the installation of degassing columns from rafts in the middle of the lake. "
+            "The principle is to slowly vent the CO2 by lifting heavily saturated water from the bottom of the lake through a pipe, initially by using a pump, but only until the release of gas inside the pipe naturally lifts the column of effervescing water, making the process self-sustaining.",
+            nome="Lake Nyos disaster")],
+    },
+    # 5 o som mais alto da história
+    {
+        "temas_secundarios": ["acustica", "atmosfera"],
+        "tipos_espanto": ["escala_absurda"],
+        "gancho": "A explosão do Krakatoa, em 1883, foi ouvida a 4.800 km, numa ilha perto de Maurício, onde pensaram ser tiros de canhão de um navio. A onda de pressão deu a volta ao mundo e foi registrada sete vezes.",
+        "explicacao": (
+            "A terceira explosão do vulcão, na manhã de 27 de agosto de 1883, continua sendo o som mais alto "
+            "conhecido da história. Foi ouvida a 3.110 quilômetros, em Perth, na Austrália, e a 4.800 quilômetros, "
+            "na ilha de Rodrigues, no oceano Índico, onde foi confundida com tiros de canhão de um navio próximo. "
+            "Calcula-se que, a 160 quilômetros do vulcão, o estrondo chegou a 180 decibéis. Nessa mesma distância, "
+            "em Batávia, a atual Jacarta, a onda de ar estourou janelas, rachou paredes e fez o medidor de pressão "
+            "de um gasômetro sair da escala. A onda de pressão foi registrada por barógrafos do mundo todo. Vários "
+            "deles a captaram sete vezes ao longo de cinco dias: quatro vezes indo do vulcão até o ponto oposto do "
+            "planeta e três vezes voltando. A erupção e os tsunamis que ela causou mataram pelo menos 36.417 "
+            "pessoas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("1883_eruption_of_Krakatoa",
+            "On 27 August, the island had its most significant eruption [...] "
+            "that occurred at 10:02 a.m., remains the loudest-known sound in history. [...] "
+            "was so powerful that it was heard 3,110 km (1,930 mi) away in Perth, Western Australia, and the Indian Ocean island of Rodrigues, near Mauritius, 4,800 km (3,000 mi) away, where the blast was thought to have been cannon fire from a nearby ship. "
+            "The third explosion was the loudest sound that has ever been measured. "
+            "The loudness of the blast heard 160 km (100 mi) from the volcano has been calculated to have been 180 dBSPL [...] "
+            "caused a spike of more than 8.5 kilopascals (2.5 inHg) in the pressure gauge attached to a gasometer in the Batavia (correspondent to modern day Jakarta) gasworks 160 km (100 mi) away, sending it off the scale. "
+            "At Batavia, the air waves burst windows and cracked walls. "
+            "The pressure wave was recorded on barographs worldwide. "
+            "Several barographs recorded the wave seven times over five days: four times with the wave travelling away from the volcano to its antipodal point and three times travelling back to the volcano. [...] "
+            "At least 36,417 deaths are attributed to the eruption and the tsunamis it",
+            nome="1883 eruption of Krakatoa")],
+    },
+    # 6 o terremoto que encurtou o dia
+    {
+        "temas_secundarios": ["geologia_profunda", "medidas_padroes", "sistema_solar"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "O terremoto de 2011 no Japão deslocou parte do país 2,4 metros em direção à América do Norte e redistribuiu tanta massa que a Terra passou a girar mais rápido: o dia ficou 1,8 milionésimo de segundo mais curto.",
+        "explicacao": (
+            "O terremoto de Tohoku, em 11 de março de 2011, foi seguido de um tsunami devastador. Além da "
+            "destruição, ele mudou medidas do próprio planeta. A ilha de Honshu, a principal do Japão, foi "
+            "empurrada 2,4 metros para o leste, e trechos do nordeste do país ficaram mais largos do que antes. O "
+            "eixo da Terra se deslocou, segundo estimativas, entre 10 e 25 centímetros. Essa redistribuição de massa "
+            "na superfície alterou o comprimento do dia, a inclinação da Terra e a oscilação de Chandler, um leve "
+            "bamboleio do eixo. A rotação ficou mais rápida, e cálculos do Laboratório de Propulsão a Jato da NASA "
+            "indicaram que os dias ficaram 1,8 microssegundo mais curtos. É o mesmo princípio da patinadora que "
+            "encolhe os braços para girar mais depressa: massa mais perto do eixo, giro mais rápido. O tremor "
+            "também gerou ondas de infrassom detectadas por satélite."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("2011_T%C5%8Dhoku_earthquake_and_tsunami",
+            "On 11 March 2011, at 14:46:24 local time (UTC+9), a Mw 9.0–9.1 undersea megathrust earthquake occurred in the Pacific Ocean [...] "
+            "The earthquake moved Honshu 2.4 meters (7 ft 10 in) east, shifted the Earth on its axis by estimates of between 10 and 25 cm (4 and 10 in), increased Earth's rotational speed by 1.8 μs per day, and generated infrasound waves detected [...] "
+            "Portions of northeastern Japan shifted by as much as 2.4 meters (7 ft 10 in) closer to North America, making some sections of Japan's landmass wider than before. [...] "
+            "This deviation led to a number of small planetary changes, including the length of a day, the tilt of the Earth, and the Chandler wobble. "
+            "The speed of the Earth's rotation increased, shortening the day by 1.8 microseconds due to the redistribution of Earth's mass. "
+            "The axial shift was caused by the redistribution of mass on the Earth's surface [...] "
+            "at NASA's Jet Propulsion Laboratory determined that the Earth's rotation was changed by the earthquake to the point where the days are now 1.8 microseconds shorter.",
+            nome="2011 Tōhoku earthquake and tsunami")],
+    },
+    # 7 o terremoto que dura um ano
+    {
+        "temas_secundarios": ["geologia_profunda", "medidas_padroes"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Mais ou menos a cada cinco anos, sob a capital da Nova Zelândia, acontece um terremoto que dura cerca de um ano. Ninguém sente, mas ele libera tanta energia quanto um tremor de magnitude 7.",
+        "explicacao": (
+            "São os terremotos lentos, ou silenciosos: eventos parecidos com terremotos que liberam energia ao "
+            "longo de horas a meses, e não nos segundos ou minutos de um tremor comum. O de Wellington foi medido "
+            "pela primeira vez em 2003 e voltou em 2008 e em 2013. Em Cascadia, no noroeste "
+            "da América do Norte, o primeiro indício veio do GPS: em 1999, estações em British Columbia registraram que a placa norte-americana "
+            "escorregou 2 centímetros para sudoeste ao longo de umas semanas, numa área de 50 por 300 "
+            "quilômetros, em cerca de 35 dias, sem nenhum sinal sísmico de tremor comum. Analisando melhor os "
+            "dados, os pesquisadores viram que esses deslizamentos se repetem a cada 13 a 16 meses. Depois, "
+            "acharam neles um sinal sísmico fraco, um tremor de baixa frequência. Ou seja, eles não são "
+            "\"silenciosos\" como se dizia, só baixos perto de um terremoto normal. Os terremotos lentos aparecem "
+            "sobretudo em zonas de subducção, como as do Japão, do Chile e da costa de Cascadia, e podem dar "
+            "pistas sobre como se comportam os terremotos rápidos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Slow_earthquake",
+            "A slow earthquake, also known as a silent earthquake, is a discontinuous, earthquake-like event that releases energy over a period of hours to months, rather than the seconds to minutes characteristic of a typi [...] "
+            "That is, they are quiet compared to a regular earthquake, but not \"silent\" as described in the past. [...] "
+            "They are best documented from intermediate crustal levels of certain subduction zones (especially those that dip shallowly – SW Japan, Cascadia, Chile) [...] "
+            "The locations of slow earthquakes can provide new insights into the behavior of normal or fast earthquakes. [...] "
+            "The first indicator of low frequency earthquakes in Cascadia was discovered in 1999 when an aseismic event took place at the subduction interface wherein the overriding North American plate slipped 2 centimeters south-west over a several-week period as recorded by Global Positioning System (GPS) sites in British Columbia. "
+            "This apparent slow slip event occurred over a 50-by-300-kilometer area and took approximately 35 days. [...] "
+            "After further analysis of the GPS record, these reverse slip events were found to repeat at 13- to 16-month intervals [...] "
+            "Soon after, geophysicists were able to extract the seismic signatures from these slow slip events and found that they were akin to tremor [...] "
+            "Every five years a year-long quake of this type occurs beneath the New Zealand capital, Wellington. "
+            "It was first measured in 2003, and has reappeared in 2008 and 2013. "
+            "It lasts for around a year each time, releasing as much energy as a magnitude 7 quake.",
+            nome="Slow earthquake")],
+    },
+    # 8 a única evacuação bem-sucedida
+    {
+        "temas_secundarios": ["guerra_fria", "comportamento_animal"],
+        "tipos_espanto": ["historia_humana", "misterio_aberto"],
+        "gancho": "Em 1975, a China evacuou a cidade de Haicheng horas antes de um terremoto de magnitude 7,5: é a única evacuação bem-sucedida antes de um tremor na história. No ano seguinte, sem aviso, Tangshan perdeu 240 mil.",
+        "explicacao": (
+            "Depois de uma série de grandes terremotos entre 1966 e 1969, a China passou a vigiar sinais de "
+            "tremores futuros. Na província de Liaoning, tremores no fim de 1974 levaram as autoridades a emitir "
+            "alertas, e relatos de comportamento estranho de animais e de mudanças no nível da água dos poços "
+            "aumentaram no início de 1975. A previsão foi refinada para um terremoto de magnitude 5,5 a 6 no "
+            "primeiro semestre. Então, a partir de 1º de fevereiro, veio uma sequência intensa de abalos "
+            "precursores, e foi sobretudo com base neles que a cidade foi esvaziada. O tremor principal chegou "
+            "em 4 de fevereiro, às 19h36, com magnitude 7,5. Estima-se que a evacuação tenha evitado até 150 mil "
+            "mortes, embora muitos tenham morrido nos dias seguintes por incêndios e frio. O sucesso não se "
+            "repetiu: nenhum dos sinais vistos em Haicheng apareceu antes do terremoto de Tangshan, em 1976, que "
+            "matou mais de 240 mil pessoas. Até hoje, prever terremotos com precisão continua fora de alcance."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("1975_Haicheng_earthquake",
+            "On February 4, 1975, at 19:36 CST, an earthquake of Ms 7.5 and intensity (MMI) IX hit the city of Haicheng, Liaoning, China. "
+            "The successful early evacuation ordered by Chinese officials, based mainly on the pronounced foreshock sequence leading up to the earthquake, makes it a notable instance of earthquake prediction. "
+            "The evacuation remains the only successful evacuation of a potentially affected population before an earthquake in history. "
+            "The evacuation of the city prevented up to 150,000 deaths according to estimates, however, many died from fire and hypothermia in the subsequent days. "
+            "None of the precursors observed in this earthquake were observed in the 1976 Tangshan earthquake, which killed over 240,000 [...] "
+            "After the occurrence of a number of large earthquakes from 1966 to 1969, a meeting was held nationally to discuss where the lar [...] "
+            "These quakes prompted the Revolutionary Committee of the Liaoning Province to issue alerts of a possible large earthquake in the near future. "
+            "Reports of odd animal behavior and changes in ground water levels increased in the area into 1975. "
+            "The prediction was further updated to be a magnitude 5.5–6 earthquake in the first half of 1975, likely due to the series of quakes at the end of 1974 as well as the observations of animals and groundwater. "
+            "The foreshocks of the Haicheng earthquake then began on February 1, 1975",
+            nome="1975 Haicheng earthquake")],
+    },
+    # 9 Lisboa 1755: o questionário de Pombal e o tsunami no Brasil
+    {
+        "temas_secundarios": ["brasil_colonial", "grandes_obras", "revolucao_cientifica"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Depois do terremoto de Lisboa, em 1755, o Marquês de Pombal mandou um questionário a todas as paróquias do país. As respostas, ainda guardadas, permitem reconstituir o tremor e fizeram dele um pioneiro da sismologia.",
+        "explicacao": (
+            "O terremoto atingiu Lisboa na manhã de 1º de novembro de 1755, Dia de Todos os Santos, e foi seguido "
+            "de tsunami e incêndio. Pombal, o primeiro-ministro, mandou perguntar aos padres de cada paróquia a "
+            "que horas o tremor começou e quanto durou, se o abalo parecia mais forte numa direção, se os prédios "
+            "caíam mais para um lado, quantas pessoas morreram e se o mar subiu ou baixou primeiro. As respostas "
+            "estão no arquivo nacional da Torre do Tombo e ainda servem aos cientistas. Por ter sido a primeira "
+            "tentativa de investigar objetivamente um terremoto em larga escala, Pombal é visto como precursor da "
+            "sismologia moderna, e o tremor foi o primeiro estudado cientificamente numa área extensa. A "
+            "reconstrução também inovou: os prédios pombalinos estão entre as primeiras construções da Europa "
+            "protegidas contra sismos, e maquetes de madeira foram testadas simulando terremotos com tropas "
+            "marchando em volta. E as ondas chegaram longe: em 2015, constatou-se que o tsunami atingiu a costa "
+            "do Brasil, então colônia portuguesa, onde cartas da época descrevem estragos causados por ondas "
+            "gigantes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("1755_Lisbon_earthquake",
+            "As the first earthquake studied scientifically for its effects over a large area, it led to the birth of modern seismology and earthquake engineering. [...] "
+            "The earthquake struck on the morning of 1 November 1755, All Saints' Day. [...] "
+            "The prime minister also ordered the collection of factual data, sending a query to all parishes of the country regarding the earthquake and its effects. "
+            "Questions included: [...] "
+            "At what time did the earthquake begin and how long did it last? "
+            "Did you perceive the shock to be greater from one direction than another, say from north to south? "
+            "Did buildings seem to fall more to one side than the other? "
+            "How many people died, including names of distinguished persons? "
+            "Did the sea rise or fall first, and how many hands did it rise above the normal? [...] "
+            "The priests' answers are still archived in the Torre do Tombo national archive, enabling modern scientists to reconstruct the event. "
+            "Because Pombal was the first to attempt a large-scale objective investigation of an earthquake, he is regarded as a forerunner of modern seismology. [...] "
+            "The Pombaline buildings are among the earliest seismically protected constructions in Europe. "
+            "Small wooden models were built for testing, and earthquakes were simulated by marching troops around them. [...] "
+            "In 2015, it was determined that the tsunami waves reached the coast of Brazil, then a colony of Portugal. "
+            "Letters sent by Brazilian authorities at the time of the earthquake describe damage and destruction caused by gigantic waves.",
+            nome="1755 Lisbon earthquake")],
+    },
+    # 10 Oklahoma, mais terremotos que a Califórnia
+    {
+        "temas_secundarios": ["energia", "falhas_engenharia"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Oklahoma, nos EUA, tinha uns dois terremotos de magnitude 3 por ano. Em 2014, teve mais que o dobro da Califórnia. A causa: a água residual da extração de petróleo injetada fundo no subsolo.",
+        "explicacao": (
+            "Entre 1978 e 2008, a média em Oklahoma era de cerca de dois terremotos de magnitude 3 ou mais por "
+            "ano. Em 2009, o número saltou para 20, com o início de vários enxames de tremores. Em 2014, "
+            "foram centenas, mais do que nos 30 anos anteriores somados, e o estado registrou mais que o dobro de "
+            "terremotos da Califórnia, tornando-se de longe o mais sísmico dos Estados Unidos continentais, sem "
+            "contar o Alasca e o Havaí. Em 2015, chegou a mais de seis vezes o número da Califórnia. Os estudos "
+            "científicos atribuem esse aumento ao descarte da água que sai junto com o petróleo na extração, "
+            "injetada sob alta pressão em camadas mais profundas do subsolo. A pressão acumulada sobre as falhas "
+            "geológicas faz com que elas escorreguem. Um mapa de risco sísmico concluiu que a principal causa de "
+            "um terremoto de 2011 em Oklahoma, o maior registrado até então, foi justamente essa pressão "
+            "acumulada pela injeção de água residual."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Oklahoma_earthquake_swarms_(2009%E2%80%93present)",
+            "Beginning in 2009, the frequency of earthquakes in the U.S. state of Oklahoma rapidly increased from an average of fewer than two 3.0+ magnitude earthquakes per year since 1978 to hundreds each year in the 2014–17 period. [...] "
+            "Scientific studies attribute the rise in earthquakes to the disposal of wastewater produced during oil extraction that has been injected more deeply into the ground. [...] "
+            "concluded that the primary cause of the earthquake in Oklahoma in 2011 was pressure on fault lines from cumulative effects of injecting oil drilling wastewater under high pressure into the underground. "
+            "Although the 2011 earthquake was the largest on record until that time [...] "
+            "Between 1978 and 2008, the average long-term rate of earthquakes was approximately two earthquakes of magnitude 3.0 or greater per year. "
+            "However, in 2009, this number jumped to 20 with the beginning of several swarms of earthquakes in Oklahoma. [...] "
+            "By the end of 2014, 567 earthquakes of at least magnitude 3.0 were recorded in Oklahoma, more than the number of 3.0+ magnitude earthquakes from the previous 30 [...] "
+            "In 2014, there were over twice as many earthquakes recorded in Oklahoma as in California, making Oklahoma the most seismically active state in the contiguous United States by a substantial margin. [...] "
+            "for the year of 2015 surpassed the yearly total for 2014 of 585 such earthquakes with over six times as many MW 3.0+ earthquakes as California.",
+            nome="Oklahoma earthquake swarms (2009–present)")],
+    },
+]

@@ -1,0 +1,148 @@
+{
+ "lote": "2026-11-18-arquitetura-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "arquitetura-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com Pantheon; mecanismo do concreto mais leve no alto"
+   },
+   {
+    "id": "arquitetura-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a fonte trata a autocura como proposta ('suggests'), testada em réplicas; gancho afirma como fato",
+    "correcao": "Gancho: 'O concreto romano pode ter consertado as próprias rachaduras: pedrinhas brancas de cal, antes vistas como sinal de mistura malfeita, reagem com a água que entra nas fendas e as fecham com cristais novos.' Manter consenso_parcial."
+   },
+   {
+    "id": "arquitetura-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com Leaning Tower of Pisa e o estudo de 2018"
+   },
+   {
+    "id": "arquitetura-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "gancho dá o risco de queda como certo, mas o NIST concluiu que os ventos diagonais não eram a ameaça que se pensava",
+    "correcao": "Gancho: 'Em 1978, cálculos indicaram que um arranha-céu recém-inaugurado em Nova York podia cair com ventos na diagonal. O reforço foi feito às escondidas, à noite, com os escritórios abertos, e só veio a público em 1995.' Opcional na explicação: '...concluiu depois que os ventos diagonais não eram a ameaça que se pensava, e o reforço talvez nem fosse necessário' (foi a fonte, não o NIST, que disse que talvez fosse desnecessário)."
+   },
+   {
+    "id": "arquitetura-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com Sydney Opera House"
+   },
+   {
+    "id": "arquitetura-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'refeito idêntico' contradito pela fonte (evoluiu; ganhou ornamentos); houve adiamentos; frase quase traduzida",
+    "correcao": "1) Gancho: 'é desmontado e refeito idêntico, no terreno ao lado, a cada 20 anos' -> 'é desmontado e refeito com o mesmo desenho, no terreno ao lado, a cada 20 anos'. 2) 'A ideia é que os edifícios fiquem para sempre novos e, ao mesmo tempo, para sempre antigos e originais.' -> 'O objetivo é que os prédios sejam sempre recém-construídos e, ainda assim, conservem a antiguidade do original.' 3) Depois de 'em 692.', acrescentar: 'Houve adiamentos ao longo dos séculos, sobretudo em tempos de guerra, e alguns detalhes, como ornamentos de cobre dourado, foram sendo incorporados.'"
+   },
+   {
+    "id": "arquitetura-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com Great Mosque of Djenné"
+   },
+   {
+    "id": "arquitetura-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "confere com 'Solar glare problem'; mecanismo físico claro"
+   },
+   {
+    "id": "arquitetura-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "recorde é entre prédios comerciais (Prefeitura de Filadélfia é mais alta); só a parte Wachusett tinha esqueleto todo de aço",
+    "correcao": "1) Gancho: 'O Monadnock, em Chicago, é o prédio comercial mais alto já feito com paredes de tijolo que sustentam o peso: 16 andares e paredes de 1,8 m na base. A ampliação, que já usava aço, saiu 15% mais barata e 15% mais leve.' 2) 'Projetada pela firma Holabird & Roche, ela usa estrutura de aço e só uma casca fina de tijolo e terracota' -> 'Projetada pela firma Holabird & Roche, ela tem uma parte ainda em alvenaria com armação de ferro e outra, o Wachusett, com esqueleto todo de aço, e por fora usa só uma casca fina de tijolo e terracota'."
+   },
+   {
+    "id": "arquitetura-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o anagrama é de 1675, não 1671",
+    "correcao": "'Em 1671, o inglês Robert Hooke anunciou ter achado a forma ideal de um arco e a escondeu num anagrama em latim, revelado só em 1705 pelo executor do seu testamento' -> 'Em 1671, o inglês Robert Hooke anunciou ter achado a forma ideal de um arco; em 1675, publicou a solução cifrada num anagrama em latim, revelado só em 1705 pelo executor do seu testamento'."
+   },
+   {
+    "id": "arquitetura-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'quase não tem linhas retas' exagera; 10,3 cm é a curvatura total em ~70 m, não uma taxa",
+    "correcao": "Gancho: 'O Partenon quase não tem linhas retas:' -> 'O Partenon foge sutilmente das linhas retas:'. Explicação: 'sobe no centro 10,3 centímetros a cada 70 metros' -> 'sobe no centro 10,3 centímetros ao longo de seus cerca de 70 metros (uma razão de 1 para 700)'. Opcional: 'as paredes internas' -> 'as paredes da cela, a sala interna do templo'."
+   },
+   {
+    "id": "arquitetura-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "ScienceDaily (Georgia Tech, 2007) e Wikipedia sustentam; atribuição ao estudo adequada"
+   },
+   {
+    "id": "arquitetura-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "inaugurada em 1943 + '14 anos' gera cronologia inconsistente (primeira missa em 1959)",
+    "correcao": "Gancho: 'ficou 14 anos proibida ao culto' -> 'passou mais de uma década proibida ao culto'."
+   },
+   {
+    "id": "arquitetura-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "tudo confere com Beauvais Cathedral; nota no limite"
+   },
+   {
+    "id": "arquitetura-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Winchester: lenda desmontada com terremoto de 1906; nota 3"
+   }
+  ],
+  "2": [
+   {
+    "id": "arquitetura-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'pode ter consertado'; hipótese do estudo"
+   },
+   {
+    "id": "arquitetura-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'cálculos indicaram'; NIST só sobre os ventos"
+   },
+   {
+    "id": "arquitetura-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'mesmo desenho', adiamentos e ornamentos incluídos"
+   },
+   {
+    "id": "arquitetura-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "recorde entre prédios comerciais; Katahdin x Wachusett"
+   },
+   {
+    "id": "arquitetura-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1671 anúncio, 1675 anagrama, 1705 revelação"
+   },
+   {
+    "id": "arquitetura-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'foge sutilmente'; 10,3 cm em ~70 m (1/700)"
+   },
+   {
+    "id": "arquitetura-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'mais de uma década' resolve a cronologia"
+   }
+  ]
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "lote": "2026-11-19-grecia_antiga-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "grecia_antiga-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Sortition e Kleroterion (501 jurados, eleições oligárquicas, 370 a.C., fraudes evitadas)."
+   },
+   {
+    "id": "grecia_antiga-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'às vezes bastava' afirma o que a fonte só sugere ('Perhaps').",
+    "correcao": "Trocar 'Às vezes bastava alguém parecer proeminente demais.' por 'Talvez, às vezes, bastasse alguém parecer proeminente demais.'"
+   },
+   {
+    "id": "grecia_antiga-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; Salamina foi a virada (não decidiu a guerra); Temístocles comandava a frota ateniense, não toda a aliada; morte c. 459.",
+    "correcao": "1) Gancho: 'em navios e venceu os persas em Salamina.' -> 'em navios, que venceram os persas em Salamina.' 2) 'onde a vitória grega decidiu a guerra.' -> 'onde a vitória grega foi a virada da guerra.' 3) 'Morreu ali em 459 a.C.' -> 'Morreu ali por volta de 459 a.C.'"
+   },
+   {
+    "id": "grecia_antiga-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Trial of Socrates (280 x 221 com 'provavelmente', Pritaneu, 100 e 3.000 dracmas)."
+   },
+   {
+    "id": "grecia_antiga-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Sacred Band of Thebes (150 casais, 378/371/338 a.C., 254 esqueletos, ressalvas de Leitao); consenso_parcial."
+   },
+   {
+    "id": "grecia_antiga-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Eclipse of Thales (585 a.C., Heródoto ~150 anos depois, ceticismo dos estudiosos); consenso_parcial correto."
+   },
+   {
+    "id": "grecia_antiga-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Silphium (moedas, peso em ouro, Nero, primeira extinção registrada, Ferula drudeana); consenso_parcial."
+   },
+   {
+    "id": "grecia_antiga-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem, mas em 1906 a maior parte do texto ainda era visível (Heiberg publicou em 1915); a tecnologia revelou o que continuava ilegível.",
+    "correcao": "Gancho: 'Séculos depois, o texto apagado foi recuperado com luz ultravioleta, infravermelha e raios X.' -> 'Séculos depois, o que ainda estava ilegível foi revelado com luz ultravioleta, infravermelha e raios X.'. Explicação: 'confirmou que sob as orações havia obras dele tidas como perdidas e fotografou as páginas.' -> 'confirmou que sob as orações havia obras dele tidas como perdidas, fotografou as páginas e publicou a maior parte do texto, que ainda era visível.'"
+   },
+   {
+    "id": "grecia_antiga-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Etimologia sólida, mas espetos como dinheiro são debatidos (fonte: 'most likely'; Sherratt contesta).",
+    "correcao": "confianca -> consenso_parcial. Gancho: 'os gregos usavam como dinheiro espetos' -> 'os gregos teriam usado como dinheiro espetos'. Explicação: 'A arqueologia apoia a ideia.' -> 'Achados arqueológicos são compatíveis com essa ideia, ainda debatida.'; 'o mais provável é que funcionassem como dinheiro simbólico' -> 'provavelmente funcionavam como dinheiro simbólico'."
+   },
+   {
+    "id": "grecia_antiga-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Gold-digging ant (Peissel, marmota, Deosai, 2011); hipótese apresentada como tal e contestada."
+   },
+   {
+    "id": "grecia_antiga-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Pythia, ScienceDaily 2001 e Live Science 2006 (falhas, etileno x metano, Etiope); hipotese correta."
+   },
+   {
+    "id": "grecia_antiga-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Library of Alexandria (Galeno, 15 talentos, cópias devolvidas); consenso_parcial adequado."
+   },
+   {
+    "id": "grecia_antiga-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas Heródoto fala em sete hilotas para cada um dos 5 mil soldados em Plateia, não por espartano em geral.",
+    "correcao": "Trocar 'Heródoto chegou a falar em sete hilotas para cada espartano em 479 a.C., conta que os historiadores consideram exagerada.' por 'Heródoto chegou a falar em sete hilotas para cada um dos 5 mil soldados espartanos na batalha de Plateia, em 479 a.C., conta que os historiadores consideram exagerada.'"
+   },
+   {
+    "id": "grecia_antiga-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Battle of Thermopylae (~7.000, 700 téspios, Efialtes 'pesadelo', monumento de 1997). Nota 3."
+   },
+   {
+    "id": "grecia_antiga-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Scythian archers (300 escravos públicos, Onze, 1.200, Loades sobre arcos); consenso_parcial."
+   }
+  ],
+  "2": [
+   {
+    "id": "grecia_antiga-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Talvez, às vezes, bastasse' aplicado; o resto confere com Ostracism."
+   },
+   {
+    "id": "grecia_antiga-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Navios venceram, 'virada da guerra' e 'por volta de 459' aplicados."
+   },
+   {
+    "id": "grecia_antiga-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas. Ajuste pontual aplicado sem nova verificação: Heiberg publicou o texto em 1915, não em 1906.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "grecia_antiga-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "consenso_parcial, 'teriam usado' e 'ainda debatida' aplicados."
+   },
+   {
+    "id": "grecia_antiga-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sete hilotas por soldado em Plateia aplicado, como no verbete Helots."
+   }
+  ]
+ }
+}

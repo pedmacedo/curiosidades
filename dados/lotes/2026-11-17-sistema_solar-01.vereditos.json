@@ -1,0 +1,131 @@
+{
+ "lote": "2026-11-17-sistema_solar-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "sistema_solar-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "NÃºmeros conferem, mas a idade dos anÃ©is Ã© debatida (anel B massivo pode diluir a poeira; Hyodo et al. 2024); texto sem contraponto.",
+    "correcao": "Gancho com 'podem ser'/'talvez'; inserir o contraponto do anel B com trecho."
+   },
+   {
+    "id": "sistema_solar-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Contraste com a Terra errado (fonte: radioatividade, nÃ£o calor da formaÃ§Ã£o); 'horÃ¡rios dos eclipses' sem apoio.",
+    "correcao": "Trocar o contraste; 'foi observando Io que se fez a primeira mediÃ§Ã£o da velocidade da luz'; trecho 'Unlike Earth and the Moon...'."
+   },
+   {
+    "id": "sistema_solar-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'o corpo mais refletor' taxativo; fonte registra oceano global pela libraÃ§Ã£o.",
+    "correcao": "'um dos corpos mais refletores'; acrescentar o oceano global com trecho."
+   },
+   {
+    "id": "sistema_solar-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'23 graus' sem apoio; falta mecanismo (hipÃ³tese do impacto); 'cerca de 42 anos'.",
+    "correcao": "'cerca de 42 anos'; 'levemente inclinado'; inserir hipÃ³tese da colisÃ£o com trecho."
+   },
+   {
+    "id": "sistema_solar-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (102 K, radar de Goldstone e VLA, MESSENGER, 10^14â€“10^15 kg)."
+   },
+   {
+    "id": "sistema_solar-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'HÃ¡ cerca de um sÃ©culo' impreciso; faltam o contraponto (tamanho visÃ­vel = nuvens) e o estudo de 2024 sobre a mancha antiga.",
+    "correcao": "'Por volta de 1900'; estudo de 2024; contraponto das nuvens; trechos literais."
+   },
+   {
+    "id": "sistema_solar-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Phobos (11 km, 6.000 km, oesteâ†’leste duas vezes por dia, 30â€“50 milhÃµes de anos)."
+   },
+   {
+    "id": "sistema_solar-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; nota rebaixada porque espelhos e 3,8 cm/ano circulam como trivia."
+   },
+   {
+    "id": "sistema_solar-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Exagero: rios, lagos e mares 'provavelmente de metano e etano'; sÃ³ Ligeia Mare Ã© quase metano puro.",
+    "correcao": "'metano e etano' no gancho e na explicaÃ§Ã£o; trecho com '(probably of liquid methane and ethane)'."
+   },
+   {
+    "id": "sistema_solar-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'achado no mesmo dia' impreciso: achado logo depois da meia-noite, em menos de uma hora de busca.",
+    "correcao": "Gancho 'o achou em menos de uma hora'; acrescentar 'menos de 1 grau da posiÃ§Ã£o prevista' com trecho."
+   },
+   {
+    "id": "sistema_solar-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Mecanismo da Wikipedia 'Sunset' sem referÃªncia e contraditÃ³rio (Mie nÃ£o explica o azul); NASA (PIA19400) dÃ¡ o mecanismo correto.",
+    "correcao": "Reescrever o mecanismo pela NASA e acrescentar a fonte science.nasa.gov/photojournal/sunset-in-mars-gale-crater."
+   }
+  ],
+  "2": [
+   {
+    "id": "sistema_solar-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com 'podem ser'/'talvez' e contraponto do anel B incluÃ­do."
+   },
+   {
+    "id": "sistema_solar-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Contraste corrigido (radioatividade); velocidade da luz sustentada."
+   },
+   {
+    "id": "sistema_solar-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'um dos mais refletores'; oceano global pela libraÃ§Ã£o."
+   },
+   {
+    "id": "sistema_solar-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Sem os 23 graus; 'cerca de 42 anos'; hipÃ³tese da colisÃ£o sustentada. Tema relativamente conhecido."
+   },
+   {
+    "id": "sistema_solar-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Por volta de 1900'; estudo de 2024 e contraponto das nuvens incluÃ­dos."
+   },
+   {
+    "id": "sistema_solar-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'metano e etano' conforme a fonte."
+   },
+   {
+    "id": "sistema_solar-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'em menos de uma hora' e 'menos de 1 grau' sustentados."
+   },
+   {
+    "id": "sistema_solar-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mecanismo reescrito pela NASA (PIA19400), trecho conferido."
+   }
+  ]
+ }
+}

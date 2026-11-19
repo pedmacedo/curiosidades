@@ -1,0 +1,147 @@
+{
+ "lote": "2026-11-19-plantas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "plantas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo bate com Van Helmont (74 kg, 57 g, 1648, 'gás') e Photosynthesis ('partially accurate')."
+   },
+   {
+    "id": "plantas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (RuBisCO, Photorespiration); só a frase 'Outra é o erro' fica solta.",
+    "correcao": "Trocar 'Ela também é relativamente lenta: cada molécula fixa algo como 3 a 10 moléculas de CO2 por segundo. Outra é o erro.' por 'Ela tem duas limitações. Uma é a lentidão: cada molécula fixa algo como 3 a 10 moléculas de CO2 por segundo. A outra é o erro.'"
+   },
+   {
+    "id": "plantas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Scialdone et al. 2013 (eLife) sustenta tudo; ceticismo sobre a divisão literal justifica consenso_parcial."
+   },
+   {
+    "id": "plantas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Venus flytrap e Current Biology 2023 confirmam (2 toques em 20 s, 5 potenciais, mutante DYSC)."
+   },
+   {
+    "id": "plantas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Corrige equívoco listado; Gerard 1597 e Science 2016 conferem. Nota 3: já circulou."
+   },
+   {
+    "id": "plantas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Thermogenic plant, Nelumbo e Symplocarpus (30–35 °C, derrete o chão congelado), com ressalvas."
+   },
+   {
+    "id": "plantas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Victoria amazonica; só o coautor é Jorge Arias (Prance e Arias 1975, Acta Amazonica), não 'Arius'.",
+    "correcao": "Trocar 'O processo foi descrito em detalhe pelo botânico Ghillean Prance e por Jorge Arius.' por 'O processo foi descrito em detalhe pelos pesquisadores Ghillean Prance e Jorge Arias.'"
+   },
+   {
+    "id": "plantas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Rafflesia e o resumo de MBE 2014 ('may be the first plant group... no recognizable plastid genome'); consenso_parcial."
+   },
+   {
+    "id": "plantas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Nepenthes rajah (41 cm, 3,5 L, tupaia, rato noturno de 2011), com ressalvas."
+   },
+   {
+    "id": "plantas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Mautam e Melocanna baccifera (48–50 anos, 2007–2008, MNF, 1966, 1986)."
+   },
+   {
+    "id": "plantas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas o gancho sugere que a própria planta reviveu: as plantas foram regeneradas em laboratório a partir de tecido dos frutos.",
+    "correcao": "Gancho: 'Tecido de frutos congelados havia cerca de 32 mil anos na Sibéria deu origem, em laboratório, a plantas que cresceram e floresceram. O material veio de despensas de esquilos soterradas no permafrost.'"
+   },
+   {
+    "id": "plantas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Wollemia; mas 'geneticamente indistinguíveis' vale para testes antigos: estudo recente (RBG Sydney/UNSW) achou três linhagens e variação muito baixa.",
+    "correcao": "Gancho: 'geneticamente indistinguíveis' -> 'quase idênticos geneticamente'. Explicação: 'e os testes genéticos não distinguem um exemplar do outro, sinal de que' -> 'e os testes genéticos mostram uma variação baixíssima entre os exemplares, sinal de que' (com fonte do estudo recente)."
+   },
+   {
+    "id": "plantas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Science Advances 2020 confirma (36 h de UTI, nó de cistina, convergência com aranhas e caracóis-cone)."
+   },
+   {
+    "id": "plantas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Resumo da Science 2006 e Wikipedia confirmam (cipó-chumbo acha o tomateiro pelo cheiro, tema 'much debated')."
+   },
+   {
+    "id": "plantas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere (açacu, 70 m/s, giro para trás, pounce pots); mas a fonte diz 'can grow to 60 m', não 'passar de'.",
+    "correcao": "'Pode passar de 60 metros de altura' -> 'Pode chegar a 60 metros de altura'."
+   },
+   {
+    "id": "plantas-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (Wright et al. 2013, três vezes); mas a última frase apresenta como medido o que é interpretação dos autores e é quase tradução literal.",
+    "correcao": "Trocar 'Usando uma droga que fortalece a memória da recompensa, a planta faz as abelhas voltarem às suas flores e melhora seu sucesso reprodutivo.' por 'Na interpretação dos autores, ao reforçar a lembrança da recompensa, a planta tornaria as abelhas mais fiéis às suas flores e, com isso, aumentaria suas chances de reprodução.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "plantas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Duas limitações' aplicado; números conferem."
+   },
+   {
+    "id": "plantas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Jorge Arias corrigido no texto; o resto confere."
+   },
+   {
+    "id": "plantas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com plantas regeneradas a partir de tecido do fruto; números conferem."
+   },
+   {
+    "id": "plantas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Quase idênticos' e variação baixíssima, com a nota do Jardim Botânico de Sydney."
+   },
+   {
+    "id": "plantas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Pode chegar a 60 metros' aplicado."
+   },
+   {
+    "id": "plantas-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Última frase como interpretação dos autores."
+   }
+  ]
+ }
+}

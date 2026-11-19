@@ -1,0 +1,127 @@
+{
+ "lote": "2026-11-19-paradoxos_logica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "paradoxos_logica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Hilbert e Incompleteness theorems (Königsberg 1930, 'na véspera', 'never met face to face')."
+   },
+   {
+    "id": "paradoxos_logica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Frege e Russell's paradox (carta de 1902, volume 2 no prelo, um único objeto no universo, Zermelo)."
+   },
+   {
+    "id": "paradoxos_logica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Gödel's Loophole (1947, Trenton, Einstein e Morgenstern, detalhes atribuídos a Morgenstern)."
+   },
+   {
+    "id": "paradoxos_logica-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Gödel metric; mas 'fizeram Einstein duvidar da própria teoria' é contestável (a resposta publicada de 1949 é contida); a frase das caminhadas repete o 0003.",
+    "correcao": "1) Trocar 'Conta-se que ele deu o trabalho a Einstein como presente pelos 70 anos do amigo, e que os universos giratórios fizeram Einstein duvidar da própria teoria.' por 'Conta-se que ele deu o trabalho a Einstein como presente pelos 70 anos do amigo. Einstein respondeu, por escrito, que valeria a pena avaliar se soluções assim não deveriam ser descartadas por razões físicas.' Trecho: 'Such cosmological solutions of the gravitation-equations (with not vanishing A-constant) have been found by Mr. Gödel. It will be interesting to weigh whether these are not to be excluded on physical grounds.' 2) Cortar a frase sobre as caminhadas com Einstein (repete o 0003)."
+   },
+   {
+    "id": "paradoxos_logica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Curry's paradox e a SEP (1942, Alemanha e China, sem negação, lógicas paraconsistentes)."
+   },
+   {
+    "id": "paradoxos_logica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Newcomb's paradox e PhilPapers 2020 (39,03% x 31,19%)."
+   },
+   {
+    "id": "paradoxos_logica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Unexpected hanging e Kritchman e Raz 2010 (nova prova do 2º teorema)."
+   },
+   {
+    "id": "paradoxos_logica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Busy beaver e Quanta (47.176.870, 2024, coletivo amador, Coq, Antihydra)."
+   },
+   {
+    "id": "paradoxos_logica-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo confere com Goodstein's theorem; mas o gancho não se explica sozinho para o leigo.",
+    "correcao": "1) Gancho: 'Uma regra simples de trocar bases e subtrair 1 gera sequências que crescem de forma absurda e, mesmo assim, sempre voltam a zero. E a aritmética usual dos números naturais não consegue provar isso.' 2) Depois de 'só então desce, de 1 em 1, até zero', acrescentar 'Ela só chega a zero quando a base atinge 3 × 2 elevado a 402.653.211, menos 1.' 3) Na primeira menção a 'aritmética de Peano', acrescentar '(o sistema usual de axiomas dos números naturais)'."
+   },
+   {
+    "id": "paradoxos_logica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com a SEP e a Wikipedia (página 83 do volume II, 'occasionally useful', 50 libras de cada autor). Nota 3."
+   },
+   {
+    "id": "paradoxos_logica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com What the Tortoise Said to Achilles (1895, Mind, regressão do modus ponens). Nota 3."
+   },
+   {
+    "id": "paradoxos_logica-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere; mas o sentido religioso é reconstrução de Rendel Harris, e o gancho o afirma como certo.",
+    "correcao": "Gancho: 'E, no original, era uma bronca religiosa sobre o túmulo de Zeus.' -> 'E, no poema original, seria uma bronca religiosa sobre o túmulo de Zeus.'"
+   },
+   {
+    "id": "paradoxos_logica-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem (1941, Scott 1970, 2014, colapso modal, 2016); mas 'não falou a ninguém' exagera 'is not known to have told anyone'.",
+    "correcao": "'mas ele não falou dela a ninguém até 1970, quando achou que ia morrer' -> 'mas não se sabe de ninguém a quem ele tenha contado antes de 1970, quando achou que ia morrer'."
+   },
+   {
+    "id": "paradoxos_logica-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Raven paradox (Hempel, evidência mínima, Good 1960, os dois mundos). Nota 3."
+   },
+   {
+    "id": "paradoxos_logica-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Guilherme de Soissons, Miró Quesada 1976 a pedido de Newton da Costa, Curitiba 1929, 2024)."
+   }
+  ],
+  "2": [
+   {
+    "id": "paradoxos_logica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Resposta escrita de Einstein com trecho; caminhadas retiradas."
+   },
+   {
+    "id": "paradoxos_logica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho autoexplicativo, número na explicação e aposto sobre Peano."
+   },
+   {
+    "id": "paradoxos_logica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Seria uma bronca religiosa', com a cautela da reconstrução de Rendel Harris."
+   },
+   {
+    "id": "paradoxos_logica-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Não se sabe de ninguém a quem tenha contado' fiel à fonte."
+   }
+  ]
+ }
+}

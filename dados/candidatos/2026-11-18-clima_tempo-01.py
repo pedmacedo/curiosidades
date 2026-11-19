@@ -1,0 +1,626 @@
+LOTE = "2026-11-18-clima_tempo-01"
+AREA = "terra"
+TEMA = "clima_tempo"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Richardson e a previsão feita à mão
+    {
+        "temas_secundarios": ["historia_computacao", "primeira_guerra"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Na Primeira Guerra, servindo numa ambulância na França, um matemático calculou à mão, só com equações, o tempo de seis horas depois de uma manhã de 1910. Errou feio, mas o método é o que se usa hoje.",
+        "explicacao": (
+            "Naquela época, prever o tempo era sobretudo procurar nos registros um padrão parecido com o do dia e "
+            "extrapolar. O inglês Lewis Fry Richardson, quacre e pacifista, propôs outro caminho: resolver as "
+            "equações diferenciais da atmosfera. Como teste, partiu dos dados das 7 da manhã de 20 de maio de 1910 "
+            "e calculou, do zero, como estaria o tempo seis horas depois. Fez tudo à mão, enquanto servia na "
+            "unidade de ambulâncias dos quacres na França. O resultado foi um fracasso: previu uma subida de 145 "
+            "hectopascais na pressão, que na realidade ficou praticamente parada. Décadas depois, o meteorologista "
+            "Peter Lynch mostrou que faltou suavizar os dados para eliminar saltos de pressão sem sentido físico; "
+            "com esse ajuste, a previsão fica essencialmente correta. Em 1922, no livro Weather Prediction by "
+            "Numerical Process, Richardson imaginou um enorme teatro cheio de calculistas humanos, cada um cuidando "
+            "de um pedaço do mapa do globo, regidos por um maestro que acendia luzes coloridas para quem estivesse "
+            "adiantado ou atrasado. Faltavam máquinas rápidas. Em 1950, quando soube da primeira previsão feita "
+            "pelo ENIAC, que levou quase 24 horas para calcular o tempo de 24 horas, chamou aquilo de \"enorme "
+            "avanço científico\"."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Lewis_Fry_Richardson",
+            "was an English mathematician, physicist, meteorologist, psychologist, and pacifist who pioneered modern mathematical techniques of weather forecasting [...] "
+            "Richardson's interest in meteorology led him to propose a scheme for weather forecasting by solution of differential equations, the method used nowadays, though when he published Weather Prediction by Numerical Process in 1922, suitable fast computing was unavailable. [...] "
+            "A myriad computers [people who compute] are at work upon the weather of the part of the map where each sits, but each computer attends only to one equation or part of an equation. [...] "
+            "In this respect he is like the conductor of an orchestra in which the instruments are slide-rules and calculating machines. But instead of waving a baton he turns a beam of rosy light upon any region that is running ahead of the rest, and a beam of blue light upon those who are behindhand. [...] "
+            "In 1950, when Richardson received news of the first weather forecast by the first modern computer, ENIAC, he called it an \"enormous scientific advance\". The first calculations for a 24-hour forecast took ENIAC nearly 24 hours to produce. [...] "
+            "his retroactive attempt to forecast the weather during a single day—20 May 1910—by direct computation. At the time, meteorologists made forecasts principally by looking for similar weather patterns from records and extrapolating. "
+            "Richardson attempted to use a mathematical model of the principal features of the atmosphere, and use data taken at a specific time (7 AM) to calculate the weather six hours later ab initio. "
+            "As meteorologist Peter Lynch makes clear, Richardson's forecast failed dramatically, predicting a huge 145 hectopascals (4.3 inHg) rise in pressure over six hours when the pressure actually was more or less static. "
+            "But detailed analysis by Lynch has shown that the cause was a failure to apply smoothing techniques to the data, which rule out unphysical surges in pressure. "
+            "When these are applied, Richardson's forecast is essentially accurate—a remarkable achievement considering the calculations were done by hand while Richardson was serving with the Quaker ambulance unit in France.",
+            nome="Lewis Fry Richardson")],
+    },
+    # 2 o efeito borboleta nasceu de um arredondamento
+    {
+        "temas_secundarios": ["padroes_fractais", "historia_computacao"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "O \"efeito borboleta\" nasceu de um atalho: em 1961, Edward Lorenz redigitou num modelo do tempo o número 0,506 no lugar de 0,506127. Dois meses simulados depois, o tempo previsto era outro.",
+        "explicacao": (
+            "Lorenz, meteorologista do MIT, queria repetir parte de uma simulação e, para ganhar tempo, recomeçou do "
+            "meio, digitando valores que o computador tinha impresso antes. Foi tomar um café e, cerca de uma hora "
+            "depois, a máquina já tinha simulado uns dois meses de tempo, com números nada parecidos com os da "
+            "primeira rodada. Ele suspeitou de uma válvula com defeito, mas viu que a culpa era do arredondamento: "
+            "a diferença minúscula dobrava de tamanho a cada quatro dias, mais ou menos, até apagar qualquer "
+            "semelhança no segundo mês. Em 1963, publicou um estudo teórico do efeito que virou um artigo de referência, e hoje "
+            "Lorenz é tido como fundador da teoria do caos moderna, que estuda sistemas muito sensíveis às "
+            "condições iniciais. "
+            "Na primeira versão da imagem, o bicho era uma gaivota: um colega comentou que, se a teoria estivesse "
+            "certa, um bater de asas de gaivota bastaria para mudar o tempo para sempre. A borboleta veio depois. "
+            "Em 1972, como Lorenz não mandou o título de uma palestra, o colega Philip Merilees inventou um: \"O "
+            "bater de asas de uma borboleta no Brasil provoca um tornado no Texas?\". A ideia não é que a "
+            "borboleta fabrique o tornado, e sim que ela faz parte das condições iniciais."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Butterfly_effect",
+                "In 1961, Lorenz was running a numerical computer model to redo a weather prediction from the middle of the previous run as a shortcut. "
+                "He entered the initial condition 0.506 from the printout instead of entering the full precision 0.506127 value. The result was a completely different weather scenario. [...] "
+                "I went down the hall for a cup of coffee and returned after about an hour, during which time the computer had simulated about two months of weather. The numbers being printed were nothing like the old ones. "
+                "I immediately suspected a weak vacuum tube or some other computer trouble [...] "
+                "In fact, the differences more or less steadily doubled in size every four days or so, until all resemblance with the original output disappeared somewhere in the second month. [...] "
+                "the numbers that I had typed in were not the exact original numbers, but were the rounded-off values that had appeared in the original printout. [...] "
+                "In 1963, Lorenz published a theoretical study of this effect in a highly cited, seminal paper called Deterministic Nonperiodic Flow [...] "
+                "One meteorologist remarked that if the theory were correct, one flap of a sea gull's wings would be enough to alter the course of the weather forever. [...] "
+                "Following proposals from colleagues, in later speeches and papers, Lorenz used the more poetic butterfly. "
+                "According to Lorenz, when he failed to provide a title for a talk he was to present at the 139th meeting of the American Association for the Advancement of Science in 1972, Philip Merilees concocted Does the flap of a butterfly's wings in Brazil set off a tornado in Texas? as a title. [...] "
+                "The butterfly does not power or directly create the tornado, but the term is intended to imply that the flap of the butterfly's wings can cause the tornado: in the sense that the flap of the wings is a part of the initial conditions",
+                nome="Butterfly effect"),
+            wiki("Edward_Norton_Lorenz",
+                "was an American mathematician and meteorologist who established the theoretical basis of weather and climate predictability [...] "
+                "He founded modern chaos theory, a branch of mathematics focusing on the behavior of dynamical systems that are highly sensitive to initial conditions. [...] "
+                "Lorenz spent the entirety of his scientific career at the Massachusetts Institute of Technology.",
+                nome="Edward Norton Lorenz"),
+        ],
+    },
+    # 3 o Dia D e a funcionária do correio irlandês
+    {
+        "temas_secundarios": ["segunda_guerra", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "O Dia D foi adiado de 5 para 6 de junho de 1944 por causa de uma tempestade cujo primeiro sinal veio de uma agência de correio da Irlanda, país neutro. A jovem que fez a leitura só soube do seu papel em 1956.",
+        "explicacao": (
+            "A invasão da Normandia dependia de marés, horário e Lua, e essas condições só se combinavam em poucos "
+            "dias por mês. Eisenhower tinha escolhido, de forma provisória, o dia 5 de junho. Na agência de correio "
+            "de Blacksod, no extremo oeste da Irlanda, funcionava uma estação meteorológica que, por um acordo de "
+            "1939, mandava leituras diárias ao serviço meteorológico britânico. No dia 3 de junho, quando completava "
+            "21 anos, a funcionária Maureen Flavin registrou uma leve queda da pressão: era o primeiro indício de uma "
+            "tempestade que tornaria perigosa a travessia do Canal da Mancha. O escritório do meteorologista-chefe "
+            "de Eisenhower, James Stagg, ligou direto para a agência para pedir que ela conferisse os números. Com "
+            "esses dados, a equipe de Stagg previu tempo ruim no dia 5 e uma melhora suficiente no dia 6, e "
+            "Eisenhower adiou o ataque em 24 horas. As próximas datas com marés adequadas seriam só de 18 a 20 de "
+            "junho, e uma grande tempestade atingiu a costa da Normandia de 19 a 22 de junho. Do outro lado, "
+            "contando com duas semanas de tempo ruim, muitos comandantes alemães deixaram seus postos, e Rommel "
+            "foi à Alemanha, para o aniversário da esposa e para pedir mais tanques a Hitler. Maureen e o marido só descobriram a importância das "
+            "leituras em 1956, quando a estação foi automatizada."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("James_Stagg",
+                "who notably persuaded General Dwight D. Eisenhower to change the date of the Allied invasion of Europe from 5 to 6 June 1944. [...] "
+                "Planners of the Normandy landings in June 1944 focused first upon a specific overlap of the tides, the time of day, and the phase of the moon; these conditions would be satisfactory on only a few days in each month. [...] "
+                "Eisenhower tentatively selected 5 June as the date for the assault. [...] "
+                "Despite Ireland's official neutrality during World War Two, information gathered by the Irish Meteorological Service was shared with the Allies. [...] "
+                "Using Sweeney's observational data, he and his meteorological team predicted stormy conditions on 5 June but forecasted enough of an improvement on 6 June for the invasion to proceed. "
+                "The next available dates with the required tidal conditions (but without the desirable full moon) would not be until two weeks later, from 18 to 20 June. [...] "
+                "A major storm battered the Normandy coast from 19 to 22 June, which would have made beach landings impossible. [...] "
+                "As the Luftwaffe meteorological centre in Paris predicted two weeks of stormy weather, many Wehrmacht commanders left their posts to attend war games in Rennes, and men in many units were given leave. "
+                "German Commander Field Marshal Erwin Rommel returned to Germany both for his wife's birthday and to meet with Hitler in an attempt to obtain more Panzers.",
+                nome="James Stagg"),
+            wiki("Maureen_Flavin_Sweeney",
+                "Under an August 1939 agreement, the station was one of a number in Ireland that provided daily weather readings to the British Met Office via telegraph. [...] "
+                "On 3 June 1944, her 21st birthday, Flavin Sweeney got up at 1 am Double British Summer Time, to make the hourly reading. "
+                "The station instruments showed a slight drop in air pressure, a 7-mile-per-hour (11 km/h) wind from the south-west and a slight drizzle. "
+                "The drop in pressure was the first indication of an incoming severe storm that could make hazardous conditions for any crossing of the English Channel. [...] "
+                "At around 11 am Stagg had his office call the Blacksod post office direct to confirm their readings, bypassing the usual liaison office at Dublin. "
+                "As a result of the weather reports Eisenhower agreed to a postponement of the invasion by 24 hours, from 5 to 6 June [...] "
+                "They continued to operate the weather station at Blacksod until it was automated in 1956. "
+                "It was at this point that the pair was first made aware of the important role their weather reports had on the planning of Operation Overlord.",
+                nome="Maureen Flavin Sweeney"),
+        ],
+    },
+    # 4 FitzRoy, o capitão de Darwin que inventou a "previsão do tempo"
+    {
+        "temas_secundarios": ["evolucao", "navegacao_antiga"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "O capitão do navio que levou Darwin ao redor do mundo criou o termo \"weather forecast\" e as previsões diárias que o jornal The Times passou a publicar em 1861. Gastou a própria fortuna em despesas públicas.",
+        "explicacao": (
+            "Robert FitzRoy comandou o HMS Beagle na viagem de Charles Darwin. Em 1854, foi nomeado chefe de um "
+            "pequeno departamento, com três funcionários, para reunir dados do tempo no mar: era o precursor do "
+            "atual Met Office, o serviço meteorológico britânico. Depois que uma tempestade afundou o navio Royal "
+            "Charter em 1859, ele passou a montar cartas para fazer previsões, palavra que ele mesmo inventou para o "
+            "caso. Quinze estações em terra lhe mandavam boletins diários pelo telégrafo, e as previsões começaram a "
+            "sair no jornal The Times em 1861. Ele também espalhou barômetros pelos portos e içava cones de alerta "
+            "quando vinha um vendaval, mandando os barcos ficarem no cais. Os donos das frotas pesqueiras não "
+            "gostavam, e o sistema chegou a ser suspenso por pouco tempo depois da morte dele. Nos últimos anos, "
+            "FitzRoy enfrentou problemas no serviço, dívidas, saúde fraca e depressão. Antes disso, se sentira "
+            "culpado pelo papel na teoria de Darwin e, num debate em Oxford em 1860, ergueu uma Bíblia pedindo à "
+            "plateia que acreditasse em Deus, não no homem. Morreu por suicídio em 1865, depois de gastar a fortuna "
+            "pessoal em despesas públicas. O governo acabou cobrindo parte delas, e o próprio Darwin contribuiu "
+            "para o fundo criado para a viúva e a filha."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Robert_FitzRoy",
+            "fame as the captain of HMS Beagle during FitzRoy's famous survey expedition to Tierra del Fuego and the Southern Cone, which took Charles Darwin round the world. [...] "
+            "In 1854, on the recommendation of the President of the Royal Society, FitzRoy was appointed as chief of a new department to deal with the collection of weather data at sea. "
+            "His title was Meteorological Statist to the Board of Trade, and he had a staff of three. This was the forerunner of the modern Meteorological Office. [...] "
+            "He directed the design and distribution of a type of barometer which, on his recommendation, was fixed at every port to be available to crews for consultation before setting out to sea. [...] "
+            "A storm in 1859 that caused the loss of the Royal Charter inspired FitzRoy to develop charts to allow predictions to be made in which he coined the term \"weather forecast\". "
+            "Fifteen land stations were established to use the new telegraph to transmit to him daily reports of weather at set times. "
+            "The first daily weather forecasts were published in The Times in 1861. [...] "
+            "In 1860, FitzRoy introduced a system of hoisting storm warning cones at the principal ports when a gale was expected. He ordered fleets to stay in port under these conditions. [...] "
+            "Many fishing fleet owners objected to the posting of gale warnings, which required that fleets not leave the ports. "
+            "Under this pressure, FitzRoy's system was abandoned for a short time after his death. [...] "
+            "When The Origin of Species was published FitzRoy was dismayed and apparently felt guilty for his part in the theory's development. [...] "
+            "\"lifting an immense Bible first with both and afterwards with one hand over his head, solemnly implored the audience to believe God rather than man\". [...] "
+            "In his later years, internal and external troubles at the Meteorological Office, financial concerns as well as failing health, and his struggle with depression took their toll. "
+            "On 30 April 1865, Vice-Admiral FitzRoy died by suicide by cutting his throat with a razor. [...] "
+            "He died after exhausting his entire fortune (some £6,000, equivalent to £651,789 in 2025) on public expenditure. "
+            "When this came to light, in order to prevent Fitzroy's widow and daughter living in destitution, his friend and colleague Bartholomew Sulivan began an Admiral FitzRoy Testimonial Fund, which succeeded in getting the government to pay £3,000 of this sum (Charles Darwin contributed £100).",
+            nome="Robert FitzRoy")],
+    },
+    # 5 Le Verrier: do planeta Netuno à previsão de tempestades
+    {
+        "temas_secundarios": ["historia_astronomia", "telecomunicacoes"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "O astrônomo que achou Netuno com contas também ajudou a criar a previsão de tempestades: depois que uma tempestade arrasou uma frota na Crimeia, em 1854, ele mostrou que dava para ter avisado pelo telégrafo.",
+        "explicacao": (
+            "Urbain Le Verrier ficou famoso por prever, só com matemática, a existência e a posição de Netuno, "
+            "achado em 1846 a menos de 1 grau do ponto que ele indicou. Em 1854, já era diretor do Observatório de "
+            "Paris. Em 14 de novembro daquele ano, durante a Guerra da Crimeia, uma tempestade violenta atingiu "
+            "a frota franco-britânica perto de Balaclava, no mar Negro: pelo menos 37 navios naufragaram ou ficaram "
+            "muito danificados, e boa parte dos suprimentos de inverno se perdeu, o que depois levou soldados a "
+            "morrer de frio e doenças. O ministro da Guerra francês pediu a Le Verrier que investigasse se o "
+            "desastre poderia ter sido evitado com o telégrafo. Ele pediu a astrônomos e meteorologistas de toda a "
+            "Europa os dados do tempo de 12 a 16 de novembro, recebeu 250 respostas e conseguiu reconstituir o "
+            "caminho da tempestade, que tinha atravessado o continente antes de chegar à Crimeia. A conclusão: "
+            "teria sido possível avisar a frota. Le Verrier recebeu a tarefa de montar um sistema de alerta de "
+            "tempestades, que depois deu origem a um serviço meteorológico internacional. Outros países também "
+            "criaram serviços meteorológicos depois do episódio."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Great_Storm_of_1854",
+                "The Great Storm of 1854 occurred in and around the Black Sea on 14 November 1854. It caused severe damage and was a major disruption to armed forces in the region—naval forces especially—engaged in the Crimean War. [...] "
+                "at least 37 ships were either severely damaged or wrecked. Most of the winter supplies were lost, including food, fuel, and winter uniforms. As a result, many men died from hypothermia and disease. [...] "
+                "It was also discovered that the storm had been tracked across Europe prior to its arrival off Crimea, but no warning was sent. "
+                "As a result of this latter occurrence, several countries quickly launched independent meteorological services. "
+                "In France, Urbain Le Verrier, director of the Observatoire de Paris, was commanded to set up a storm warning system; this later developed into an international meteorological service.",
+                nome="Great Storm of 1854"),
+            {"url": "https://www.inventingeurope.eu/story/from-balaclava-to-isobars",
+             "titulo": "From Balaclava to isobars (Inventing Europe)",
+             "idioma": "en",
+             "trecho": (
+                "On November 14, 1854, a terrible storm hit the Crimean peninsula and had devastating effects on a French-British fleet that was lying off the coast, close to the port town Balaclava. [...] "
+                "Noting this, the French minister of war asked the director of the Paris Astronomic Observatory, Urbain le Verrier, to investigate if the catastrophe at Balaclava could have been prevented using the telegraph. "
+                "He contacted astronomers and meteorologists all over Europe requesting information concerning the weather they had observed between November 12 and 16. "
+                "Le Verrier received 250 answers and was able to trace the path of the storm, finding that it would indeed have been possible to have warned the fleet."
+             )},
+            wiki("Urbain_Le_Verrier",
+                "is best known for predicting the existence and position of Neptune using only mathematics. [...] "
+                "Galle found Neptune the same night he received Le Verrier's letter, within 1° of the predicted position. [...] "
+                "the planet was found with the Berlin Fraunhofer refractor that same evening, 23 September 1846 [...] "
+                "eventually becoming director of the institution, from 1854 to 1870",
+                nome="Urbain Le Verrier"),
+        ],
+    },
+    # 6 o relâmpago do Catatumbo
+    {
+        "temas_secundarios": ["paisagens_extremas", "navegacao_antiga"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "Sobre o lago Maracaibo, na Venezuela, há tempestades com raios em 140 a 160 noites por ano, por cerca de nove horas seguidas. Os clarões eram tão constantes que navegadores os usavam como farol.",
+        "explicacao": (
+            "O fenômeno se chama relâmpago do Catatumbo, por acontecer sobretudo na área pantanosa onde o rio "
+            "Catatumbo deságua no lago. Nas noites ativas, os raios caem de 16 a 40 vezes por minuto, quase todos "
+            "dentro das nuvens, e a região tem a maior densidade de raios do mundo: segundo dados de satélite da "
+            "NASA, cerca de 250 por quilômetro quadrado por ano. A explicação mais aceita é geográfica. Os ventos "
+            "atravessam o lago e as planícies úmidas e batem nas montanhas dos Andes, da serra de Perijá e da "
+            "cordilheira de Mérida, que cercam a planície por três lados; o calor e a umidade acumulados, "
+            "desestabilizados pelas montanhas, viram tempestade. Já houve outras hipóteses, como o metano dos "
+            "pântanos e dos depósitos de petróleo, mas o comportamento dos raios ao longo do ano contradiz essa "
+            "ideia, e pesquisadores seguem investigando o que faz o fenômeno variar de um ano para outro. Fontes coloniais chamavam o fenômeno de \"farol de "
+            "Maracaibo\", e em 1841 o geógrafo Agustín Codazzi escreveu que ele guiava os navegadores como um "
+            "farol. Ele não é eterno: entre janeiro e março de 2010, sumiu, aparentemente por causa de uma seca."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Catatumbo_lightning",
+            "is an atmospheric phenomenon that occurs over and around Lake Maracaibo in Venezuela, typically over a bog area formed where the Catatumbo River flows into the lake. [...] "
+            "and occurs for 140 to 160 nights a year, nine hours per day, and with lightning flashes from 16 to 40 times per minute. "
+            "The phenomenon sees the highest density of lightning in the world, at 250 per km2 per year. [...] "
+            "For example, it ceased from January to March 2010, apparently due to drought [...] "
+            "The storms are thought to be the result of winds blowing across the lake and the surrounding swampy plains. "
+            "These air masses meet the high mountain ridges of the Andes, the Perijá Mountains (3,750 m (12,000 ft)), and Mérida Cordillera, enclosing the plain from three sides. "
+            "The heat and moisture collected across the plains create electrical charges and, as the air masses are destabilized by the mountain ridges, result in thunderstorm activity. "
+            "The phenomenon is characterized by almost continuous lightning, mostly within the clouds. [...] "
+            "Between 1997 and 2000, a series of four studies proposed that the methane produced by the swamps and the massive oil deposits in the area were a major cause of the phenomenon. [...] "
+            "Other studies have indicated that this model is contradicted by the observed behavior of the lightning [...] "
+            "A team from the Universidad del Zulia has investigated the impact of different atmospheric variables on Catatumbo lightning's daily, seasonal and year-to-year variability [...] "
+            "Using satellite data, NASA counts that there are around 250 instances of lightning per km2 per year. [...] "
+            "There are several references by colonial Portuguese and Spanish sources that name this phenomenon as \"Lanterns of Saint Anthony\" or the \"Lighthouse of Maracaibo\" [...] "
+            "Italian geographer Agustin Codazzi described it in 1841 as \"like a continuous lightning, and its position such that, located almost on the meridian of the mouth of the lake, it directs the navigators as a lighthouse.\"",
+            nome="Catatumbo lightning")],
+    },
+    # 7 tempestades que fabricam antimatéria
+    {
+        "temas_secundarios": ["fisica_particulas", "eletromagnetismo"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Tempestades disparam clarões de raios gama, e uma delas, observada por um telescópio espacial em 2009, parece ter produzido cerca de 100 trilhões de pósitrons, partículas de antimatéria.",
+        "explicacao": (
+            "Esses clarões se chamam flashes de raios gama terrestres. Foram descobertos em 1994 por um instrumento "
+            "da NASA feito para estudar explosões de raios gama vindas do espaço profundo, e por isso a descoberta "
+            "foi um acaso. Cada flash dura de 0,2 a 3,5 milissegundos e pode chegar a 20 milhões de "
+            "elétron-volts. A explicação mais aceita, ainda com detalhes incertos, é que os campos elétricos "
+            "intensos das nuvens de tempestade aceleram elétrons até perto da velocidade da luz, numa avalanche; "
+            "ao se chocarem com os núcleos dos átomos do ar, eles soltam a energia como raios gama. A maioria dos "
+            "flashes acontece a poucos milissegundos de um raio. Com o telescópio Fermi, os cientistas estimaram "
+            "uns 500 por dia no mundo, quase todos sem ser detectados. A surpresa maior veio em 2009: o Fermi "
+            "captou, saindo de uma tempestade, o sinal de aniquilação de pósitrons, os \"antielétrons\". Uns "
+            "poucos já seriam esperados, mas o raio parecia ter gerado cerca de 100 trilhões deles, algo nunca "
+            "visto antes e divulgado em 2011. Esses fenômenos desafiam as teorias atuais sobre os raios, e a "
+            "relação exata com eles continua em estudo."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Terrestrial_gamma-ray_flash",
+            "A terrestrial gamma-ray flash (TGF), also known as dark lightning, is a burst of gamma rays produced in Earth's atmosphere. "
+            "TGFs have been recorded to last 0.2 to 3.5 milliseconds, and have energies of up to 20 million electronvolts. "
+            "It is speculated that TGFs are caused by intense electric fields produced above or inside thunderstorms. [...] "
+            "Terrestrial gamma-ray flashes were first discovered in 1994 by BATSE, or Burst and Transient Source Experiment, on the Compton Gamma Ray Observatory, a NASA spacecraft. [...] "
+            "due to it having been constructed to study gamma ray bursts from outer space [...] "
+            "scientists using NASA's Fermi Gamma-ray Space Telescope, which was designed to monitor gamma rays, estimated that about 500 TGFs occur daily worldwide, but most go undetected. [...] "
+            "Though the details of the mechanism are uncertain, there is a consensus forming about the physical requirements. "
+            "It is presumed that TGF photons are emitted by electrons traveling at speeds very close to the speed of light that collide with the nuclei of atoms in the air and release their energy in the form of gamma rays [...] "
+            "Large populations of energetic electrons can form by avalanche growth driven by electric fields [...] "
+            "as most TGFs have been shown to occur within a few milliseconds of a lightning event. [...] "
+            "Terrestrial gamma-ray flashes pose a challenge to current theories of lightning, especially with the discovery of the clear signatures of antimatter produced in lightning. [...] "
+            "These terrestrial gamma-ray flashes (TGFs) were observed by accident [...] "
+            "The role of TGFs and their relationship to lightning remains a subject of ongoing scientific study. "
+            "In 2009, the Fermi Gamma-ray Space Telescope in Earth orbit observed intense burst of gamma rays corresponding to positron annihilations coming out of a storm formation. "
+            "Scientists would not have been surprised to see a few positrons accompanying any intense gamma ray burst, but the lightning flash detected by Fermi appeared to have produced about 100 trillion positrons. "
+            "This was reported by news media in January 2011, and had never been previously observed.",
+            nome="Terrestrial gamma-ray flash")],
+    },
+    # 8 sprites: clarões vermelhos acima das tempestades
+    {
+        "temas_secundarios": ["eletromagnetismo", "atmosfera"],
+        "tipos_espanto": ["misterio_aberto", "historia_humana"],
+        "gancho": "Bem acima das tempestades, a 50–90 km de altura, surgem clarões vermelhos gigantes, os sprites. Havia relatos desde 1886, mas a primeira imagem só veio em 1989, por acaso, e a causa de fundo ainda é um mistério.",
+        "explicacao": (
+            "Os sprites são descargas elétricas enormes na mesosfera, muito acima das nuvens de tempestade. "
+            "Aparecem como flashes vermelho-alaranjados, com tentáculos azulados embaixo, e um dos tipos, apelidado "
+            "de água-viva, chega a 50 por 50 quilômetros. Apesar de às vezes serem chamados de raios da alta "
+            "atmosfera, não são raios: são plasma frio, sem o canal quentíssimo de um raio comum, e lembram mais a "
+            "descarga de uma lâmpada fluorescente. Costumam ser disparados por raios positivos entre a nuvem e o "
+            "chão. O físico C. T. R. Wilson, ganhador do Nobel, tinha sugerido em 1925, por teoria, que podia "
+            "haver descargas na alta atmosfera. Mas a confirmação veio sem querer, em 1989, quando cientistas da "
+            "Universidade de Minnesota, testando uma câmera de vídeo para pouca luz, captaram a primeira imagem. "
+            "Câmeras de alta velocidade mostraram depois que os sprites são aglomerados de bolas de ionização que "
+            "nascem por volta de 80 km de altura e descem a até 10% da velocidade da luz. Já foram filmados "
+            "milhares de vezes, do chão, de aviões e do espaço. Mesmo assim, segundo a NASA, a causa de fundo "
+            "continua desconhecida, além da ligação geral com os raios positivos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Sprite_(lightning)",
+            "Sprites or red sprites are large-scale electric discharges that occur in the mesosphere, high above thunderstorm clouds, or cumulonimbus [...] "
+            "They are usually triggered by the discharges of positive lightning between an underlying thundercloud and the ground. [...] "
+            "Sprites appear as luminous red-orange flashes. They often occur in clusters above the troposphere at an altitude range of 50–90 km (31–56 mi). "
+            "Sporadic visual reports of sprites go back at least to 1886. They were first photographed on July 4, 1989, by scientists from the University of Minnesota "
+            "and have subsequently been captured in video recordings thousands of times. "
+            "Sprites are sometimes inaccurately called upper-atmospheric lightning. "
+            "However, they are cold plasma phenomena that lack the hot channel temperatures of tropospheric lightning, so they are more akin to fluorescent tube discharges than to lightning discharges. [...] "
+            "Nobel laureate C. T. R. Wilson had suggested in 1925, on theoretical grounds, that electrical breakdown could occur in the upper atmosphere [...] "
+            "when scientists from the University of Minnesota, using a low-light video camera, accidentally captured the first image of what would subsequently become known as a sprite. [...] "
+            "images of sprites have been made from the ground, from aircraft, and from space [...] "
+            "the \"root cause\" of sprite lightning remains unknown, \"apart from a general association with positive cloud-to-ground lightning\". [...] "
+            "Jellyfish sprite – very large, up to 50 by 50 km (31 by 31 mi) [...] "
+            "Sprites are colored reddish-orange in their upper regions, with bluish hanging tendrils below [...] "
+            "sprites are clusters of small, decameter scale, (10–100 m or 33–328 ft) balls of ionization that are launched at an altitude of about 80 km (50 mi) and then move downward at speeds of up to ten percent the speed of light",
+            nome="Sprite (lightning)")],
+    },
+    # 9 Luke Howard, o farmacêutico que deu nome às nuvens
+    {
+        "temas_secundarios": ["literatura", "pintura"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "Os nomes cúmulo, estrato e cirro foram propostos em 1802 por um farmacêutico inglês amador. Goethe ficou tão encantado que escreveu poemas em agradecimento a ele.",
+        "explicacao": (
+            "Luke Howard era químico e farmacêutico de profissão e meteorologista por paixão. Numa palestra de 1802, "
+            "publicada no ano seguinte, ele aplicou às nuvens a lógica da classificação de Lineu para os seres "
+            "vivos, com nomes em latim: três tipos principais, cumulus, stratus e cirrus, e combinações para as "
+            "formas de transição, como cirrostratus e cirrocumulus. O truque resolvia um problema difícil, o de "
+            "dar nome a algo que muda de forma o tempo todo. Ele não estava sozinho: no mesmo ano, o biólogo "
+            "francês Lamarck propôs termos descritivos em francês, sem que os dois tivessem contato. O sistema de "
+            "Howard se espalhou depressa, e o de Lamarck, publicado sem figuras num periódico obscuro e criticado "
+            "em público por Napoleão, nunca ficou conhecido nem na França. Traduzido para o alemão em 1815, o "
+            "ensaio de Howard chegou a Goethe, que escreveu poemas em gratidão e tentou encomendar estudos de "
+            "nuvens ao pintor Caspar David Friedrich. Diz-se também que ele influenciou os estudos de céu do "
+            "pintor John Constable. Howard ainda foi o primeiro a notar a ilha de calor urbana: Londres era mais quente à "
+            "noite que o campo em volta."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Luke_Howard_(meteorologist)",
+            "was a British manufacturing chemist and an amateur meteorologist with broad interests in science. "
+            "His lasting contribution to science is a nomenclature system for clouds, which he proposed in an 1802 presentation to the Askesian Society. [...] "
+            "Luke Howard became a pharmacist by profession. [...] "
+            "but wrote to Goethe that his passion was for meteorology. [...] "
+            "In his late twenties, Luke Howard wrote the Essay on the Modification of Clouds, which was published in 1803. "
+            "Howard's system was similar to the recently popularized Linnaean classification system developed by taxonomist Carl von Linne. "
+            "Howard named the three principal categories of clouds – cumulus, stratus, and cirrus, as well as a series of intermediate and compound modifications, such as cirrostratus and cirrocumulus, in order to accommodate the transitions occurring between the forms. [...] "
+            "By applying these principles to phenomena as short-lived as clouds, Howard arrived at an elegant solution to the problem of naming transitional forms in nature. [...] "
+            "biologist Jean-Baptiste Lamarck (1744–1829) proposed a list of descriptive terms in French the same year that Howard presented his essay [...] "
+            "The two were not known to have any contact [...] "
+            "Despite being presented in the same year, Howard's system gained popularity quickly and became far more widespread than Lamarck's. "
+            "Howard's system's success has been said to be due to Howard's use of universal Latin [...] "
+            "Lamarck's essay proposing his system contained no pictures and was published in an obscure academic journal. "
+            "Additionally, Napoleon publicly denounced Lamarck's meteorological work, and Lamarck's system was never well known within his own country. [...] "
+            "In it, Howard was first to note the urban heat island effect, showing that temperatures in London, compared to those simultaneously measured in the surrounding countryside, were 3.7 °F (2.1 °C) warmer at night [...] "
+            "His original essay, On the Modification of Clouds, was translated into German and French in 1815. This allowed German writer and scholar Goethe to access the text. "
+            "Goethe was entranced by Howard's system, and he later wrote a series of poems in gratitude to him [...] "
+            "Goethe also attempted to commission German painter Caspar David Friedrich for cloud studies based on Howard's system [...] "
+            "Howard's work is also rumored to have inspired Shelley's poem \"The Cloud\" and informed John Constable's paintings and studies of skies",
+            nome="Luke Howard")],
+    },
+    # 10 Wragge, que batizava ciclones com nomes de políticos
+    {
+        "temas_secundarios": ["nomes_lugares", "personagens_esquecidos"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O hábito de dar nomes de pessoas a ciclones costuma ser creditado a um meteorologista da Austrália que, nas tempestades mais desagradáveis, usava nomes de políticos que tinham barrado seus planos ou negado verba.",
+        "explicacao": (
+            "Clement Wragge chegou a Queensland e, em 1887, virou o meteorologista do governo da colônia. Em poucas "
+            "semanas caiu tanta chuva que ganhou o apelido de \"Inclement\" Wragge, trocadilho com \"inclemente\". "
+            "O crédito pelo primeiro uso de nomes próprios para sistemas do tempo costuma ir para ele, que batizou "
+            "ciclones e anticiclones entre 1887 e 1907. Usou letras gregas, figuras mitológicas e nomes femininos "
+            "de ilhas do Pacífico, que, segundo ele, alguns pais passaram a dar às filhas. Para as tempestades mais "
+            "feias, usava muitas vezes nomes de políticos que tinham frustrado suas ambições ou cortado sua verba. "
+            "Um histórico sobre o tema liga os nomes de políticos ao momento em que o novo governo nacional da "
+            "Austrália deixou de criar um serviço meteorológico federal com ele na direção. Wragge também era dado a experimentos: na seca de 1902, "
+            "mandou disparar canhões especiais contra as nuvens de Charleville para tentar provocar chuva, sem "
+            "sucesso. Depois que ele se aposentou, o costume caiu em desuso. Anos mais tarde, a história dele "
+            "inspirou George Stewart a escrever o romance Storm, de 1941, sobre uma tempestade chamada Maria. O "
+            "livro foi muito lido por meteorologistas militares americanos na Segunda Guerra, quando eles "
+            "começaram a batizar os tufões do Pacífico com nomes das esposas e namoradas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.slq.qld.gov.au/blog/inclement-wragge-pioneer-weather-forecaster",
+             "titulo": "'Inclement' Wragge: pioneer weather forecaster (State Library of Queensland)",
+             "idioma": "en",
+             "trecho": (
+                "acquired the nickname 'Inclement' Wragge because of his rain forecasts. [...] "
+                "One of Wragge's chief claims to fame is that he is the first person to introduce the systematic naming of storms and cyclones, choosing feminine names, particularly those of South Sea Islanders for which he had an abiding admiration, for tropical storms and for unpleasant southern storms often using the names of politicians who thwarted his ambitions or denied him funding. [...] "
+                "and when he was in the suburban trains, going to his residence from the city, people accosted him with the pleasing information that they had increases in the family, and had named their daughters 'Eline', 'Luita', 'Leala', &c. [...] "
+                "Wragge was still railing against unsympathetic politicians and giving their names to the most unpleasant weather [...] "
+                "On one ocassion Wragge arranged for six Stiger Vortex guns to be fired into the clouds above Charleville in the hope of breaking the drought."
+             )},
+            wiki("History_of_tropical_cyclone_naming",
+                "Credit for the first usage of personal names for weather is generally given to the Queensland Government Meteorologist Clement Wragge, who named tropical cyclones and anticyclones between 1887 and 1907. "
+                "Wragge used names drawn from the letters of the Greek alphabet, Greek and Roman mythology and female names to describe weather systems over Australia, New Zealand and the Antarctic. "
+                "After the new Australian government had failed to create a federal weather bureau and appoint him director, Wragge started naming cyclones after political figures. "
+                "This naming system subsequently fell into disuse for several years after Wragge retired [...] "
+                "After reading about Clement Wragge, George Stewart was inspired to write a novel, Storm, about a storm affecting California which was named Maria. "
+                "The book was widely read after it was published in 1941 by Random House, especially by United States Army Air Corps and United States Navy (USN) meteorologists during World War II. [...] "
+                "During the latter stages of World War II, forecasters with the United States Armed Forces (USAF) began informally naming tropical cyclones over the Pacific Ocean after their wives and sweethearts.",
+                nome="History of tropical cyclone naming"),
+            wiki("Clement_Wragge",
+                "on 1 January 1887 he was appointed Government Meteorologist for Queensland. "
+                "Within three weeks of his arrival in Brisbane, 18.305 inches (464.9 mm) of rain fell, earning him the nickname \"Inclement\" Wragge. [...] "
+                "In an effort to break the drought of 1902 he purchased a number of Steiger Vortex Cannons, which were supposedly able to bring rain from the clouds. "
+                "Test firings at Charleville on 26 September were unsuccessful.",
+                nome="Clement Wragge"),
+        ],
+    },
+    # 11 o ciclone que ajudou a criar Bangladesh
+    {
+        "temas_secundarios": ["guerra_fria", "fronteiras_paises"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "O ciclone mais mortal já registrado, que matou pelo menos 300 mil pessoas em 1970, também mudou um mapa: a revolta com a resposta do governo do Paquistão ajudou a abrir caminho para a independência de Bangladesh.",
+        "explicacao": (
+            "O ciclone de Bhola atingiu, em 12 de novembro de 1970, o então Paquistão Oriental, hoje Bangladesh, e o "
+            "estado indiano de Bengala Ocidental. A maior parte das mortes, entre 300 mil e talvez 500 mil, veio "
+            "da maré de tempestade, a elevação do mar empurrada pelo vento, que inundou as ilhas baixas do delta do "
+            "Ganges. No distrito mais atingido, Tazumuddin, morreram mais de 45% dos 167 mil habitantes. O "
+            "governo do Paquistão, chefiado pela junta militar do general Yahya Khan, foi criticado pela demora no "
+            "socorro, tanto por líderes políticos do lado oriental quanto pela imprensa internacional. O líder da "
+            "Liga Awami, Sheikh Mujibur Rahman, chamou a reação da junta de \"negligência criminosa\". A eleição "
+            "geral, marcada para 7 de dezembro, menos de um mês depois, foi mantida, com adiamento só em alguns "
+            "distritos. A resposta precária e "
+            "discriminatória do governo, sediado no Paquistão Ocidental, espalhou a desilusão no lado oriental. A "
+            "Liga Awami, de oposição, venceu de lavada na província, e pouco depois veio a Guerra de Libertação de "
+            "Bangladesh."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("1970_Bhola_cyclone",
+            "was the deadliest tropical cyclone on record, as well as one of the deadliest humanitarian disasters ever recorded. "
+            "It struck East Pakistan (present-day Bangladesh) and India's West Bengal on 12 November 1970. "
+            "At least 300,000 people died in the storm, possibly as many as 500,000, primarily as a result of the storm surge that flooded much of the low-lying islands of the Ganges Delta. [...] "
+            "In the most severely affected upazila Tazumuddin, over 45% of the population of 167,000 were killed by the storm. "
+            "The Pakistani government, led by junta leader General Yahya Khan, was criticized for its delayed handling of relief operations following the storm, both by local political leaders in East Pakistan and by the international media. "
+            "The poor and discriminatory response from the West Pakistan government led to the increasingly widespread disillusionment from the East Pakistani people, allowing the opposition Awami League to gain a landslide victory in the province during the election that took place a month later as well as the Bangladesh Liberation War seven months later. [...] "
+            "He also said that the 1970 general election slated for 7 December would take place on time [...] "
+            "The elections for nine national assembly and eighteen provincial assembly seats had to be postponed until January 18 as a result of the storm. [...] "
+            "condemned the military junta's response as \"criminal negligence\".",
+            nome="1970 Bhola cyclone")],
+    },
+    # 12 o furacão Catarina
+    {
+        "temas_secundarios": ["biomas_brasileiros", "oceanografia"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Achava-se que no Atlântico Sul não se formavam ciclones tropicais. Em março de 2004, um furacão atingiu Santa Catarina, o único já registrado nesse oceano, e meteorologistas do governo de início negaram que fosse um.",
+        "explicacao": (
+            "No Atlântico Sul, ventos que mudam muito com a altura atrapalham a formação de ciclones tropicais, a "
+            "água é mais fria que no Atlântico Norte e a faixa de nuvens do equador fica perto demais da linha "
+            "para que a rotação da Terra ajude. Por isso se pensava que ali não nasciam ciclones tropicais. Em "
+            "2004, um ciclone extratropical encontrou condições incomuns, foi ganhando características tropicais e "
+            "virou o primeiro furacão registrado no Atlântico Sul. O nome Catarina veio, em parte, de uma manchete "
+            "de jornal, \"Furacão Catarina\". Em 28 de março, com ventos sustentados estimados em 160 km/h, tocou "
+            "a costa entre Passo de Torres e Balneário Gaivota. Os meteorologistas do governo de início negaram "
+            "que fosse furacão, embora a tempestade tivesse um olho aberto bem visível, e os americanos o "
+            "classificaram como furacão logo ao ver as imagens de satélite. Depois de algum debate, os brasileiros "
+            "concluíram que ele foi um furacão na fase final. Mesmo sem preparo para algo assim, as autoridades "
+            "avisaram a população, que se protegeu ou foi retirada. Ainda assim, 1.500 casas foram destruídas, "
+            "cerca de 40 mil foram danificadas e três pessoas morreram."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Hurricane_Catarina",
+                "was the only recorded hurricane-strength South Atlantic tropical cyclone. [...] "
+                "The combination of the two led to a slow transition from an extratropical cyclone to a subtropical cyclone by 24 March. [...] "
+                "it would peak with 1-minute sustained winds of 160 km/h (100 mph) on 28 March. "
+                "The center of the storm made landfall between the cities of Passo de Torres and Balneário Gaivota, Santa Catarina soon after. [...] "
+                "Although the storm was an unprecedented event, Brazilian officials took the appropriate actions and warned the public about the approaching storm. "
+                "Residents heeded the warnings and prepared for the storm by either evacuating or by riding it out in their homes. "
+                "Catarina ended up destroying 1,500 homes and damaging around 40,000 others. [...] "
+                "Three fatalities were caused by the storm and 185 more were injured. [...] "
+                "making the cyclone the first hurricane-strength tropical cyclone ever recorded in the Southern Atlantic Ocean. "
+                "Around this time, a Brazilian newspaper had a headline \"Furacão Catarina\" [...] "
+                "Partially because of this headline, the storm was unofficially named Catarina. [...] "
+                "although government forecasters initially denied that the storm, which clearly had an open eye and various other tropical morphologies, was a hurricane at all. "
+                "After some debate, Brazilian meteorologists concluded that Catarina was a hurricane during the storm's final phase [...] "
+                "North American forecasters considered this storm a hurricane immediately upon reviewing the satellite-derived evidence.",
+                nome="Hurricane Catarina"),
+            wiki("South_Atlantic_tropical_cyclone",
+                "Hurricane Catarina in 2004 is the only recorded South Atlantic hurricane in history. [...] "
+                "It was initially thought that tropical cyclones did not develop within the South Atlantic. "
+                "Very strong vertical wind shear in the troposphere is considered a deterrent. "
+                "The Intertropical Convergence Zone drops one to two degrees south of the equator, not far enough from the equator for the Coriolis force to significantly aid development. "
+                "Water temperatures in the tropics of the southern Atlantic are cooler than those in the tropical north Atlantic.",
+                nome="South Atlantic tropical cyclone"),
+        ],
+    },
+    # 13 o raio globular
+    {
+        "temas_secundarios": ["estados_materia", "minerais_rochas"],
+        "tipos_espanto": ["misterio_aberto", "engenhosidade"],
+        "gancho": "O raio globular, uma bola luminosa relatada durante tempestades, ainda não tem explicação. Em 2012, cientistas chineses filmaram um por acaso, e a luz dele indicava silício, ferro e cálcio, elementos do solo.",
+        "explicacao": (
+            "Há séculos aparecem relatos de esferas brilhantes, do tamanho de uma ervilha até alguns metros, que "
+            "duram bem mais que o clarão de um raio comum. As descrições variam muito: bolas que flutuam, que "
+            "atravessam objetos, que somem em silêncio ou explodem. Por isso, os dados científicos ainda são "
+            "escassos. Em julho de 2012, pesquisadores da Universidade Normal do Noroeste, na China, estudavam raios "
+            "comuns no planalto do Tibete quando, a 900 metros, registraram por acaso 1,64 segundo de vídeo de "
+            "uma bola de luz surgida logo depois que um raio atingiu o chão, junto com o espectro dela. A bola "
+            "tinha uns 5 metros de diâmetro e percorreu cerca de 15 metros. O espectro, publicado em 2014, mostrou "
+            "silício, cálcio, ferro, nitrogênio e oxigênio, enquanto o raio que a originou emitia sobretudo "
+            "nitrogênio. Isso combina com uma das hipóteses propostas: o raio vaporizaria o solo, liberando "
+            "silício que, ao se recombinar com o oxigênio do ar, brilharia. Em laboratório, dois cientistas da "
+            "Universidade Federal de Pernambuco teriam produzido de forma repetida pequenas bolas duradouras "
+            "vaporizando silício com eletricidade. Mas ainda não se sabe se esses efeitos de laboratório têm "
+            "relação com o fenômeno natural."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Ball_lightning",
+            "Ball lightning is a rare and unexplained phenomenon described as luminescent spherical objects that vary from pea-sized to several meters (yards) in diameter. "
+            "Though usually associated with thunderstorms, the observed phenomenon is reported to last considerably longer than the split-second flash of a lightning bolt [...] "
+            "Descriptions of ball lightning appear in a variety of accounts over the centuries [...] "
+            "Nevertheless, scientific data on ball lightning remain scarce. "
+            "Although laboratory experiments have produced effects that are visually similar to reports of ball lightning, how these relate to the phenomenon remains unclear. [...] "
+            "Descriptions of ball lightning vary widely. [...] "
+            "Some accounts describe it as moving through solid masses of wood or metal without effect [...] "
+            "such as suddenly vanishing, gradually dissipating, being absorbed into an object, \"popping\", exploding loudly [...] "
+            "In January 2014, scientists from Northwest Normal University in Lanzhou, China, published the results of recordings made in July 2012 of the optical spectrum of what was thought to be natural ball lightning made by chance during the study of ordinary cloud–ground lightning on the Tibetan Plateau. "
+            "At a distance of 900 m (3,000 ft), a total of 1.64 seconds of digital video of the ball lightning and its spectrum was made, from the formation of the ball lightning after the ordinary lightning struck the ground [...] "
+            "The researchers detected emission lines of neutral atomic silicon, calcium, iron, nitrogen, and oxygen—in contrast with mainly ionized nitrogen emission lines in the spectrum of the parent lightning. [...] "
+            "It had a diameter of 5 m (16 ft) and covered a distance of about 15 m (49 ft) within those 1.64 s. [...] "
+            "Two Brazilian scientists, Antonio Pavão and Gerson Paiva of the Federal University of Pernambuco have reportedly consistently made small long-lasting balls using this method. [...] "
+            "This hypothesis suggests that ball lightning consists of vaporized silicon burning through oxidation. "
+            "Lightning striking Earth's soil could vaporize the silica contained within it [...] "
+            "glowing due to the heat of silicon recombining with oxygen.",
+            nome="Ball lightning")],
+    },
+    # 14 Operação Popeye: chuva como arma
+    {
+        "temas_secundarios": ["guerra_fria", "espionagem"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Na Guerra do Vietnã, a Força Aérea dos EUA semeou nuvens em segredo por cinco anos para prolongar as monções sobre a trilha Ho Chi Minh e afundar as estradas na lama. O lema: \"faça lama, não guerra\".",
+        "explicacao": (
+            "A Operação Popeye durou de 1967 a 1972. Aviões que decolavam da Tailândia espalhavam iodeto de prata e "
+            "iodeto de chumbo nas nuvens sobre Laos, Camboja e Vietnã, numa técnica desenvolvida na Califórnia e "
+            "testada num programa de estudo de furacões. O objetivo era aumentar a chuva em áreas escolhidas da "
+            "rota de suprimentos norte-vietnamita: amolecer o leito das estradas, provocar deslizamentos, levar "
+            "embora as travessias de rios e manter o solo encharcado além do normal. A meta era esticar a "
+            "estação chuvosa em 30 a 45 dias. Oficialmente, as tripulações faziam reconhecimento meteorológico, e "
+            "dentro do esquadrão o codinome era \"Motorpool\". Segundo as alegações, o programa foi patrocinado "
+            "por Henry Kissinger e pela CIA sem autorização do secretário de Defesa, Melvin Laird, que tinha negado "
+            "categoricamente ao Congresso a existência de um programa de manipulação do tempo como arma. O caso "
+            "veio a público por uma coluna do jornalista Jack "
+            "Anderson em 1971, pelos Papéis do Pentágono e por uma reportagem do New York Times em julho de 1972. "
+            "A guerra meteorológica acabou proibida pela Convenção ENMOD, assinada em Genebra em 1977, que veta o "
+            "uso militar de técnicas de modificação ambiental com efeitos amplos, duradouros ou graves."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Operation_Popeye",
+                "was a military cloud-seeding project carried out by the U.S. Air Force during the Vietnam War in 1967–1972. "
+                "The highly classified program attempted to extend the monsoon season over specific areas of the Ho Chi Minh Trail, to disrupt North Vietnamese military supplies by softening road surfaces and causing landslides. "
+                "The chemical weather modification program was conducted from Thailand over Cambodia, Laos, and Vietnam and allegedly sponsored by Secretary of State Henry Kissinger and the CIA without the authorization of then Secretary of Defense Melvin Laird, who had categorically denied to Congress that a program for modification of the weather for use as a tactical weapon even existed. [...] "
+                "outlines use of lead iodide and silver iodide deployed by aircraft in a program that was developed in California at Naval Air Weapons Station China Lake and tested in Okinawa, Guam, the Philippines, Texas, and Florida in a hurricane study program called Project Stormfury. [...] "
+                "Softening road surfaces Causing landslides along roadways Washing out river crossings Maintaining saturated soil conditions beyond the normal time span. "
+                "The goal of the operation was to extend days of rainfall by about 30 to 45 days each monsoon season. [...] "
+                "The 54th Weather Reconnaissance Squadron carried out the operation using the slogan \"make mud, not war.\" [...] "
+                "The aircraft were officially on weather reconnaissance missions [...] "
+                "Inside the squadron, the rainmaking operations were code-named \"Motorpool\". [...] "
+                "Reporter Jack Anderson published a story in March 1971 concerning Operation Popeye [...] "
+                "The name Operation Popeye (Pop Eye) entered the public space through a brief mention in the Pentagon Papers and a 3 July 1972, article in the New York Times.",
+                nome="Operation Popeye"),
+            wiki("Environmental_Modification_Convention",
+                "is an international treaty prohibiting the military or other hostile use of environmental modification techniques having widespread, long-lasting or severe effects. "
+                "It opened for signature on 18 May 1977 in Geneva and entered into force on 5 October 1978. "
+                "The Convention bans weather warfare, which is the use of weather modification techniques for the purposes of inducing damage or destruction.",
+                nome="Environmental Modification Convention"),
+        ],
+    },
+    # 15 o vento que esquentou uma cidade 27 °C em dois minutos
+    {
+        "temas_secundarios": ["termodinamica", "paisagens_extremas"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Em 22 de janeiro de 1943, em Spearfish, nos EUA, a temperatura subiu de −20 °C para 7 °C em dois minutos. Mais tarde, no mesmo dia, despencou 32 °C em 27 minutos. O responsável foi um vento de montanha.",
+        "explicacao": (
+            "O vento era um chinook, o nome que se dá nas Grandes Planícies da América do Norte ao vento föhn: ar "
+            "seco e relativamente quente que desce pela encosta de uma cordilheira. A explicação clássica dos "
+            "livros é contraintuitiva. Ao subir a montanha, o ar se expande e esfria, e a umidade condensa e cai "
+            "como chuva ou neve; a condensação libera calor, que compensa parte do resfriamento, e esse ganho fica "
+            "no ar quando a água vai embora. Ao descer do outro lado, o ar é comprimido e esquenta, e chega mais "
+            "quente do que estava na mesma altitude do lado de onde veio. Como há föhns sem chuva nenhuma, outros "
+            "mecanismos também entram em jogo. Um chinook pode fazer quase sumir, em um dia, uma camada de neve de 30 "
+            "centímetros, que em parte derrete e em parte passa direto a vapor; o povo blackfoot o chama de "
+            "\"comedor de neve\". O recorde de Spearfish, na Dakota do Sul, é o da subida e da descida mais rápidas "
+            "de temperatura. O de maior variação em 24 horas é de Loma, em Montana: em 15 de janeiro de 1972, a "
+            "temperatura subiu de −48 °C para 9 °C, uma diferença de 57 °C."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Chinook_wind",
+                "The interior Chinooks are occasional warm, dry föhn winds blowing down the eastern sides of interior mountain ranges. [...] "
+                "In North American western interior, the same name is used for föhn winds, generally, where the Canadian Prairies and Great Plains lie immediately east of various interior mountain ranges. [...] "
+                "In the interior of North America, the Blackfoot people call these winds the \"snow eater\" [...] "
+                "A strong föhn wind can make snow one foot (30 cm) deep almost vanish in one day. The snow partly sublimates and partly melts and evaporates in the dry wind. [...] "
+                "Loma, Montana has the world record for the most extreme temperature change in a 24-hour period. "
+                "On January 15, 1972, the temperature increased from −54 to 49 °F (−48 to 9 °C), a 103 °F (57 °C) change in temperature. "
+                "Spearfish, South Dakota holds the world record for the fastest increase and decrease in temperature. "
+                "On January 22, 1943, the temperature increased from −4 to 45 °F (−20 to 7 °C), a 49 °F (27 °C) change in temperature, in just 2 minutes. "
+                "Later that same day, the temperature decreased from 54 to −4 °F (12 to −20 °C), a 58 °F (32 °C) change in temperature. This occurred in 27 minutes.",
+                nome="Chinook wind"),
+            wiki("Foehn_wind",
+                "is a type of dry, relatively warm downslope wind in the lee of a mountain range. [...] "
+                "As a consequence of the different adiabatic lapse rates of moist and dry air, the air on the leeward slopes becomes warmer than equivalent elevations on the windward slopes. [...] "
+                "When winds blow over elevated terrain, air forced upwards expands and cools due to the decrease in pressure with height. "
+                "Since colder air can hold less water vapor, moisture condenses to form clouds and precipitates as rain or snow on the mountain's upwind slopes. "
+                "The change of state from vapor to liquid water releases latent heat energy which heats the air, partially countering the cooling that occurs as the air rises. "
+                "The subsequent removal of moisture as precipitation renders this heat gain by the air irreversible, leading to the warm, dry, Foehn conditions as the air descends in the mountain's lee. "
+                "This mechanism has become a popular textbook example of atmospheric thermodynamics. "
+                "However, the common occurrence of 'dry' Foehn events, where there is no precipitation, implies there must be other mechanisms. [...] "
+                "These higher source regions provide Foehn air that becomes warmer and drier on the leeside after it is compressed with descent due to the increase in pressure towards the surface.",
+                nome="Foehn wind"),
+        ],
+    },
+]

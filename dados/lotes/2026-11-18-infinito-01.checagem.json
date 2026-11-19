@@ -1,0 +1,220 @@
+{
+ "arquivo": "dados\\lotes\\2026-11-18-infinito-01.jsonl",
+ "gerado_em": "2026-11-18",
+ "limiar": 0.9,
+ "resumo": {
+  "ok": 10,
+  "aproximado": 0,
+  "falhou": 0,
+  "com_aviso_numero": 9
+ },
+ "fatos": [
+  {
+   "id": "infinito-0001",
+   "status": "ok",
+   "aviso_numero": [
+    "52"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Georg_Cantor",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Georg_Cantor__9401e378cb__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "infinito-0002",
+   "status": "ok",
+   "aviso_numero": [
+    "23"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Continuum_hypothesis",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Continuum_hypothesis__de82fcf861__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Georg_Cantor",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Georg_Cantor__9401e378cb__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "infinito-0003",
+   "status": "ok",
+   "aviso_numero": [
+    "1",
+    "4",
+    "9",
+    "16",
+    "2",
+    "3"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo%27s_paradox",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Galileo_s_paradox__9a68359ca2__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "infinito-0004",
+   "status": "ok",
+   "aviso_numero": [
+    "1"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gabriel%27s_horn",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Gabriel_s_horn__dd74426520__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "infinito-0005",
+   "status": "ok",
+   "aviso_numero": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "22,92"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Harmonic_series_mathematics__69c949ae5e__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "infinito-0006",
+   "status": "ok",
+   "aviso_numero": [
+    "1",
+    "2",
+    "3"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Harmonic_series_mathematics__69c949ae5e__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "infinito-0007",
+   "status": "ok",
+   "aviso_numero": [
+    "6",
+    "10"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_1_2_3_4__82b0042a92__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "infinito-0008",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Banach_Tarski_paradox__d07a1aeb93__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "infinito-0009",
+   "status": "ok",
+   "aviso_numero": [
+    "2"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Computable_number",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Computable_number__7b312cbb3c__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Georg_Cantor",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Georg_Cantor__9401e378cb__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "infinito-0010",
+   "status": "ok",
+   "aviso_numero": [
+    "0",
+    "9",
+    "0,123456789101112"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Normal_number",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Normal_number__57bcfdfb0c__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  }
+ ]
+}

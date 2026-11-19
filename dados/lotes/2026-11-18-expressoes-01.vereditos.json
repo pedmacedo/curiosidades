@@ -1,0 +1,151 @@
+{
+ "lote": "2026-11-18-expressoes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "expressoes-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "um único estudo com 7 animais, nenhum crocodilo, mecanismo só proposto: não sustenta confiança alta",
+    "correcao": "1) confianca: 'alta' -> 'consenso_parcial'. 2) Explicação: 'Cinco dos sete animais \"lacrimejaram\" enquanto comiam.' -> 'Dos sete animais filmados, cinco \"lacrimejaram\" enquanto comiam, numa amostra pequena e sem nenhum crocodilo de fato.' (precisa de trecho que mostre que eram jacarés/caimãs, não crocodilos). 3) Opcional: segunda fonte, comunicado da Universidade da Flórida https://archive.news.ufl.edu/articles/2007/10/researchers-no-faking-it-crocodile-tears-are-real.html ('four captive caimans and three alligators')."
+   },
+   {
+    "id": "expressoes-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "não era o sumo sacerdote quem soltava o bode ('a priest was generally picked for the task'); nota no limite",
+    "correcao": "1) Gancho: 'o sumo sacerdote passava para ele os pecados do povo e o soltava no deserto.' -> 'o sumo sacerdote passava para ele os pecados do povo, e o animal era levado para o deserto.' 2) Opcional: depois de 'que o animal levaria simbolicamente para o deserto', acrescentar 'mais tarde, no período do Segundo Templo, o bode passou a ser empurrado de um penhasco, talvez para que os pecados não \"voltassem\"' (fonte: 'the procedure changed to explicitly throw the scapegoat off a cliff ... most likely to prevent the sins from \"returning\"')."
+   },
+   {
+    "id": "expressoes-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'como um alerta' exagera o 'may have referred'; o texto de 1552 fala do amor que se acalma, a comparação com a lua é do Oxford",
+    "correcao": "Gancho inteiro: '\"Lua de mel\" talvez tenha nascido com um toque irônico: o amor dos recém-casados seria como a lua cheia, que mal se completa e já começa a minguar. Um texto inglês de 1552 já falava desse amor que logo se acalma.'"
+   },
+   {
+    "id": "expressoes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "duas frases da explicação são paráfrases quase literais da fonte",
+    "correcao": "1) 'Só que essa versão é considerada lenda, com pouca comprovação de que as imagens tenham sido usadas desse jeito, como acontece com muitas histórias mineiras ligadas a esse tipo de peça.' -> 'O problema é que quase não há prova documental desse uso, e a história costuma ser posta entre as lendas que cercam as imagens sacras mineiras.' 2) 'As imagens provavelmente eram ocas pelos mesmos motivos que na Europa, onde, desde a Idade Média, as esculturas de madeira eram escavadas para rachar menos e ficar mais leves.' -> 'O oco devia ter uma razão técnica, herdada da Europa: desde a Idade Média, os escultores retiravam o miolo das peças de madeira, o que as deixava mais leves e menos sujeitas a rachar.' 3) 'serviam de esconderijo para ouro e pó de diamante, longe dos olhos do fisco' -> 'guardariam ouro e pó de diamante escondidos do fisco'."
+   },
+   {
+    "id": "expressoes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "tudo confere; Joelmir, imagens perdidas e a placa de 2001 sustentam nota 3"
+   },
+   {
+    "id": "expressoes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Jogo do Bicho e Gentil Cardoso sustentam; Trivela confirma o episódio de 1964"
+   },
+   {
+    "id": "expressoes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "correção de equívoco listado; detalhes de Rousseau e Maria Teresa sustentam nota 3"
+   },
+   {
+    "id": "expressoes-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'nunca na mesma frase' afirma mais que a fonte; 'foi por essas adaptações que a frase pegou' é causalidade forte demais ('in part due to')",
+    "correcao": "Gancho: 'mas nunca na mesma frase.' -> 'mas a frase famosa não aparece.'. Explicação: 'e foi por essas adaptações que a frase pegou.' -> 'e as adaptações ajudaram a popularizar a frase.'"
+   },
+   {
+    "id": "expressoes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "OK sustenta tudo; 'deve ter' e consenso_parcial adequados"
+   },
+   {
+    "id": "expressoes-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'começou como remédio' confunde primeiro registro com origem; autoria e data do Liber Medicinalis são discutidas; Caruso 'suggests'",
+    "correcao": "Gancho: 'O registro mais antigo de \"abracadabra\" é uma receita médica: um livro de medicina romano, atribuído ao século 2, mandava quem tinha malária usar um amuleto com a palavra escrita em triângulo.' Explicação: 'O primeiro registro conhecido está no \"Liber Medicinalis\", de Sereno Samônico, médico do imperador romano Caracala. No capítulo 52, ele recomenda' -> 'O primeiro registro conhecido está no \"Liber Medicinalis\", tradicionalmente atribuído a Sereno Samônico, erudito da corte do imperador romano Caracala (a autoria é discutida). Ali, o autor recomenda'. 'O linguista Steve Caruso afirma que a origem aramaica, muito repetida, é um engano que se popularizou' -> 'O linguista Steve Caruso diz que a palavra não pode ser aramaica e sugere que esse engano, muito repetido, se popularizou'."
+   },
+   {
+    "id": "expressoes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ciberdúvidas (Orlando Neves) e Livy sustentam; três versões, consenso_parcial adequado"
+   },
+   {
+    "id": "expressoes-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'jovem arquiteto' é deslize: Brunelleschi tinha uns 41 anos na disputa da cúpula",
+    "correcao": "Explicação: 'O jovem arquiteto tinha projetado uma cúpula enorme e pesada' -> 'O arquiteto tinha projetado uma cúpula enorme e pesada'. Opcional no gancho: 'para ganhar uma obra' -> 'para ganhar a obra da cúpula da catedral de Florença'."
+   },
+   {
+    "id": "expressoes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "tudo confere com Church of Santa Engrácia; expressão portuguesa, nota 3"
+   },
+   {
+    "id": "expressoes-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "gancho de livro escolar; a reviravolta (a lei usada nos tribunais) está escondida; frase sobre Chalhoub quase copiada da fonte",
+    "correcao": "1) Gancho: 'A \"lei para inglês ver\" de 1831 não impediu que mais de 700 mil africanos fossem trazidos ilegalmente ao Brasil, mas, como os declarava livres, virou arma de escravizados e abolicionistas nos tribunais.' 2) Reescrever com palavras próprias a última frase, ex.: 'Historiadores mais recentes veem uma reviravolta: como todo africano desembarcado depois de 1831 era legalmente livre, a lei ignorada deixou uma bomba-relógio no sistema escravista, e Sidney Chalhoub mostra como escravizados e abolicionistas passaram a usá-la nos processos de liberdade.' 3) Opcional: Luiz Gama e as 'ações de liberdade', com o trecho da seção 'As \"Ações de Liberdade\"' do mesmo artigo ('advogados e rábulas abolicionistas, como o célebre Luiz Gama, começaram a usar a Lei de 1831 como principal argumento nas \"ações de liberdade\"')."
+   }
+  ],
+  "2": [
+   {
+    "id": "expressoes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "consenso_parcial; 4 caimãs e 3 aligátores com o comunicado da UF"
+   },
+   {
+    "id": "expressoes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "o animal era levado por um sacerdote; nota no limite"
+   },
+   {
+    "id": "expressoes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "gancho com 'talvez' e sem 'alerta'"
+   },
+   {
+    "id": "expressoes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "frases reescritas com texto próprio"
+   },
+   {
+    "id": "expressoes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'a frase famosa não aparece' e 'ajudaram a popularizar' aplicados"
+   },
+   {
+    "id": "expressoes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "registro mais antigo, não origem; autoria discutida com respaldo"
+   },
+   {
+    "id": "expressoes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'O arquiteto'; cúpula de Florença no gancho"
+   },
+   {
+    "id": "expressoes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "gancho com a reviravolta e Chalhoub conferem; frase de Luiz Gama quase copiada",
+    "correcao": "reescrever a frase de Luiz Gama com palavras próprias e mais curta",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

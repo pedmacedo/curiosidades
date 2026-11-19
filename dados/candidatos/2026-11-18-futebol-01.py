@@ -1,0 +1,577 @@
+LOTE = "2026-11-18-futebol-01"
+AREA = "esportes_jogos"
+TEMA = "futebol"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 a final de 1930 com duas bolas
+    {
+        "temas_secundarios": ["historia_esportes"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Na primeira final de Copa do Mundo, em 1930, Uruguai e Argentina brigaram por qual bola usar. A FIFA decidiu: um tempo com a bola de cada um. A Argentina venceu o primeiro tempo; o Uruguai, o jogo.",
+        "explicacao": (
+            "A primeira Copa do Mundo foi disputada no Uruguai, com os donos da casa e outras 12 seleções "
+            "convidadas pela FIFA. A final, em 30 de julho de 1930, no Estádio Centenário, em Montevidéu, opôs os "
+            "uruguaios aos argentinos. Os portões abriram às oito da manhã, seis horas antes do início, e ao "
+            "meio-dia o estádio já estava cheio. Antes da partida, as duas seleções se desentenderam sobre quem "
+            "forneceria a bola. A FIFA interveio com um meio-termo: a Argentina levaria a bola do primeiro tempo, "
+            "e o Uruguai, a do segundo. Com a bola argentina, Pablo Dorado abriu o placar para o Uruguai, mas "
+            "Carlos Peucelle empatou e Guillermo Stábile, artilheiro do torneio, pôs a Argentina na frente: 2 a 1 "
+            "no intervalo. Com a bola uruguaia, a história mudou. Pedro Cea empatou aos 57 minutos, Santos Iriarte "
+            "virou aos 68 e Héctor Castro, a um minuto do fim, fechou em 4 a 2 o primeiro título mundial da "
+            "história. O árbitro da decisão foi o belga John Langenus."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("1930_FIFA_World_Cup_final",
+            "The final match of the 1930 FIFA World Cup, the inaugural edition of FIFA's competition for national football teams, was played at the Estadio Centenario in Montevideo, Uruguay, on 30 July 1930, and was contested by Uruguay and Argentina. "
+            "The tournament comprised hosts Uruguay and 12 other teams that were invited by FIFA to compete. [...] "
+            "opening at eight in the morning six hours before kick-off, and at noon the ground was full, and was refereed by John Langenus from Belgium. "
+            "Before the match, a disagreement overshadowed the build-up to the match as which team would provide the match ball. "
+            "FIFA intervened with a compromise, that Argentina would provide the ball for the first half, and Uruguay for the second. "
+            "Uruguay opened the scoring in the 12th minute with Pablo Dorado opening the scoring. "
+            "Carlos Peucelle equalised in the 20th minute, beating goalkeeper Enrique Ballestrero with a powerful shot. "
+            "The tournament top scorer Guillermo Stábile gave Argentina a 2–1 lead going into the break. "
+            "In the 57th minute, Uruguay leveled the score via a goal from Pedro Cea. [...] "
+            "and took the lead back for good with a Santos Iriarte goal in the 68th minute. "
+            "With a minute remaining, Héctor Castro put Uruguay up 4–2, sealing victory in the inaugural World Cup.",
+            nome="1930 FIFA World Cup final")],
+    },
+    # 2 a Guerra do Futebol não foi por causa do futebol
+    {
+        "temas_secundarios": ["fronteiras_paises", "psicologia_social"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "A \"Guerra do Futebol\", entre El Salvador e Honduras em 1969, estourou após jogos tumultuados das eliminatórias da Copa, mas as raízes eram terra e migração. Foi o último conflito com caças a pistão se enfrentando.",
+        "explicacao": (
+            "O apelido sugere uma guerra causada por uma partida, mas o problema era bem mais fundo. El Salvador "
+            "tinha 3,5 milhões de habitantes, contra 2,6 milhões de Honduras, num território mais de cinco vezes "
+            "menor, e a terra estava muito concentrada. Por isso, muitos salvadorenhos migraram para o vizinho: "
+            "em 1969 eram mais de 300 mil, mais de 10% da população hondurenha. Uma reforma agrária de Honduras, "
+            "aprovada em 1962 e aplicada por completo a partir de 1967, tomou terras ocupadas por imigrantes e as "
+            "repassou a hondurenhos natos, e milhares de trabalhadores salvadorenhos foram expulsos. Foi nesse clima "
+            "que as seleções se enfrentaram, em junho de 1969, pelas eliminatórias da Copa de 1970. Houve pedras e "
+            "rojões contra o hotel salvadorenho em Tegucigalpa, tumultos com mortes em San Salvador e um pano sujo "
+            "hasteado no lugar da bandeira hondurenha. Na véspera do jogo de desempate, na Cidade do México, El "
+            "Salvador rompeu relações com Honduras. Em 14 de julho, aviões salvadorenhos, entre eles P-51 Mustang "
+            "e aviões civis adaptados como bombardeiros, atacaram aeroportos hondurenhos. O cessar-fogo veio em 18 "
+            "de julho, e o lançamento da Apollo 11, dois dias depois do início, dominou o noticiário. As tensões "
+            "que a guerra deixou estão entre as causas da guerra civil salvadorenha, uma década depois."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Football_War",
+            "The Football War (Spanish: guerra del fútbol), also known as the Soccer War or the 100 Hour War, was a brief military conflict fought between El Salvador and Honduras in 1969. "
+            "Existing tensions between the two countries coincided with rioting during a 1970 FIFA World Cup qualifier, hence its nickname. "
+            "The war began on 14 July 1969 when the Salvadoran military launched an attack against Honduras. "
+            "The Organization of American States (OAS) negotiated a cease-fire on the night of 18 July. [...] "
+            "was a major factor in starting the Salvadoran Civil War a decade later. [...] "
+            "Although the nickname \"Football War\" implies that the conflict was due to a football match, the causes of the war went much deeper. "
+            "The roots were issues over land reform in Honduras and immigration and demographic problems in El Salvador. [...] "
+            "El Salvador's land distribution was also highly disproportionate with 5% of farms occupying 70% of the overall land. [...] "
+            "Honduras has more than five times the area of neighboring El Salvador, but in 1969 the population of El Salvador (3.5 million) was 34.6% larger than that of Honduras (2.6 million). [...] "
+            "By 1969, more than 300,000 Salvadorans were living in Honduras, making up more than 10% of Honduras's population. [...] "
+            "In 1962, Honduras successfully enacted a new land reform law. "
+            "Fully enforced by 1967, this law gave the central government and municipalities much of the land occupied illegally by Salvadoran immigrants and redistributed it to native-born Hondurans. [...] "
+            "Thousands of Salvadoran laborers were expelled from Honduras [...] "
+            "In June 1969, both countries met in a two-leg 1970 FIFA World Cup qualifier. [...] "
+            "Honduran fans harassed the Salvadoran team the night before the match by throwing rocks and firecrackers at their hotel windows. [...] "
+            "Salvadoran fans, seeking vengeance, rioted outside the Honduran team's hotel, leading to several deaths. "
+            "At the start of the match, a dirty rag was flown instead of the Honduran flag. [...] "
+            "the night before the play-off match in Mexico City, which El Salvador would win 3–2 after extra time, El Salvador dissolved all diplomatic ties with Honduras [...] "
+            "The war began on 14 July 1969 at around 6 PM, when the FAS attacked Honduran airfields using P-51 Mustangs, as well as C-47 Skytrains and civilian aircraft hastily converted into bombers. [...] "
+            "The Football War was the last conflict in which piston-engined fighters fought each other. [...] "
+            "The launch of the Apollo 11 mission, two days into the war on 16 July, took center stage in the news",
+            nome="Football War")],
+    },
+    # 3 o pênalti foi inventado por um goleiro
+    {
+        "temas_secundarios": ["historia_esportes", "personagens_esquecidos"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O pênalti foi ideia de um goleiro, o irlandês William McCrum, em 1890. A proposta foi ridicularizada como \"pena de morte\", porque admitia que cavalheiros pudessem cometer faltas de propósito.",
+        "explicacao": (
+            "McCrum era filho de um milionário do linho do condado de Armagh, na Irlanda do Norte de hoje, e "
+            "jogou por muitos anos como goleiro do Milford, o time da sua vila. O clube não era nenhuma potência: "
+            "na primeira temporada da liga irlandesa, em 1890–1891, terminou em último, com zero ponto em 14 jogos e "
+            "62 gols sofridos. Como membro da federação irlandesa, McCrum propôs punir quem derrubasse ou "
+            "segurasse um adversário de propósito, ou pusesse a mão na bola deliberadamente, a menos de 12 jardas "
+            "do próprio gol. A cobrança seria feita a 12 jardas da linha, com todos os outros jogadores, exceto o "
+            "goleiro, atrás da bola e a pelo menos seis jardas dela. A ideia virou motivo de deboche entre "
+            "jogadores e jornalistas: aceitá-la era reconhecer que jogadores podiam agir de forma antidesportiva "
+            "de propósito, o que contrariava o ideal vitoriano do cavalheiro amador. A opinião pode ter mudado "
+            "depois de um jogo da Copa da Inglaterra, em fevereiro de 1891, entre Stoke City e Notts County: uma "
+            "mão proposital sobre a linha do gol foi punida só com tiro livre indireto, que não resultou em gol. "
+            "Em 2 de junho de 1891, um ano depois de proposta e com algumas mudanças, a regra entrou nas Regras do "
+            "Jogo, numa reunião num hotel de Glasgow."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("William_McCrum",
+            "William McCrum (7 February 1865 – 21 December 1932) was a wealthy Irish linen manufacturer and sportsman from Ulster, most famous for being the inventor in 1890 of the penalty kick in football. [...] "
+            "Born on 7 February 1865 in Ballynahone Beg townland, outside Milford, County Armagh, William was the son of the linen millionaire Robert Garmany McCrum [...] "
+            "He played for many years as goalkeeper for Milford Football Club, including in the first season of the Irish Football League (1890–1891). "
+            "Milford finished bottom of the league with 0 points from 14 games, having conceded 62 goals and scored only 10. [...] "
+            "It was in his role as member of the Irish Football Association that McCrum proposed the idea of the penalty kick [...] "
+            "If any player shall intentionally trip or hold an opposing player, or deliberately handle the ball within twelve yards from his own goal line, the referee shall, on appeal, award the opposing side a penalty kick, to be taken from any point 12 yards from the goal line, under the following conditions: "
+            "All players, with the exception of the player taking the penalty kick and the goalkeeper, shall stand behind the ball and at least six yards from it [...] "
+            "The proposal initially generated much derision and indignation amongst footballers and the press as the \"Irishman's motion\" or the \"death penalty\" as it was known, conceded that players might deliberately act unsportingly. "
+            "This went against the Victorian idea of the amateur gentleman sportsman. "
+            "Public opinion may have changed after an FA Cup quarter final between Stoke City and Notts County on 14 February 1891 where an indirect free kick after a deliberate handball on the goal line did not result in a goal. "
+            "The penalty kick rule was approved as number 13 in the Laws of the Game, a year after it was proposed, on 2 June 1891, at the Alexandra Hotel, Bath St., in Glasgow \"after considerable discussion\" and with changes",
+            nome="William McCrum")],
+    },
+    # 4 os cartões nasceram num semáforo
+    {
+        "temas_secundarios": ["historia_esportes", "invencoes"],
+        "tipos_espanto": ["origem_inesperada", "engenhosidade"],
+        "gancho": "Os cartões amarelo e vermelho nasceram num semáforo de Londres: parado no sinal após uma confusão na Copa de 1966, o árbitro Ken Aston viu ali um código que dispensava idioma. A estreia foi na Copa de 1970.",
+        "explicacao": (
+            "Na Copa de 1966, na Inglaterra, Aston chefiava os árbitros do torneio. Depois de Inglaterra x "
+            "Argentina, ele soube que o zagueiro inglês Jack Charlton tinha sido advertido pelo árbitro alemão "
+            "Rudolf Kreitlein sem perceber: Charlton leu a notícia no jornal e ligou para a organização para "
+            "confirmar. Voltando de carro do estádio de Wembley naquela noite, Aston parou num semáforo da "
+            "Kensington High Street e se deu conta de que a lógica do sinal, amarelo para \"pare se for seguro\" e "
+            "vermelho para \"pare\", passaria por cima das barreiras de língua e deixaria claro para jogadores e "
+            "torcedores quem tinha sido advertido ou expulso. Em casa, contou o dilema à mulher, Hilda, que sumiu "
+            "num cômodo e voltou minutos depois com dois cartões de cartolina, cortados para caber no bolso da "
+            "camisa dele. O sistema estreou na Copa de 1970 e depois foi adotado, com adaptações, no rúgbi, no "
+            "polo aquático e em outros esportes. Não foi a única ideia prática de Aston: em 1947, num jogo em meio "
+            "à neblina de Londres, ele não conseguia enxergar as bandeirinhas dos assistentes, feitas nas cores "
+            "bege e chocolate do time da casa. Comprou capas de chuva vermelha e amarela num brechó militar e fez "
+            "delas bandeiras bem visíveis."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ken_Aston",
+            "was an English teacher, soldier, and football referee, who was responsible for many important developments in football refereeing - including the yellow and red penalty card system. [...] "
+            "The following year (1947), he introduced brightly coloured linesman's flags, one yellow and one red, in place of those provided by the home team, in the home team's colours, which had traditionally been used. "
+            "He explained that he was doing a game in the midst of a foggy London day. "
+            "He said that the colours of the home team were beige and chocolate, colours he was unable to see in the fog. "
+            "He explained that he went to war surplus store on the way home, purchased a pair of red and yellow rain slickers and made a set of brightly coloured flags [...] "
+            "He was in charge of all referees for the 1966, 1970, and 1974 World Cups. [...] "
+            "Following an incident in the England vs Argentina match in the 1966 World Cup, it came to Aston's knowledge that Jack Charlton had been booked by the German referee, Rudolf Kreitlein. "
+            "Charlton called the press office, where Aston was ensconced (as Head of World Cup Referees), in order to confirm the information that he had read within the newspaper that Kreitlein had booked him. "
+            "Aston, driving from Wembley Stadium to Lancaster Gate that same evening, had Charlton's confusion in mind during the journey. "
+            "On the trip, as he stopped at a traffic light junction at Kensington High Street, Aston realised that a colour-coding scheme based on the same amber/yellow ('stop if safe to do so') - red (Stop) principle as used on traffic lights would traverse language barriers and clarify to players and spectators that they had been cautioned or sent off. "
+            "Aston later explained that upon arriving at his home, he explained the dilemma to his wife, Hilda. "
+            "She disappeared into the other room, only to return a few minutes later with two \"cards\" made of construction paper. "
+            "She had cut them to fit into his shirt pocket. "
+            "Thus was devised the system whereby referees show a yellow card for a caution and a red card for an expulsion, which was first used in the 1970 World Cup. "
+            "These cards have also been adopted – with appropriate differences depending on the rules – in rugby, water polo, and other sports.",
+            nome="Ken Aston")],
+    },
+    # 5 Barbados x Granada: o gol contra proposital
+    {
+        "temas_secundarios": ["teoria_jogos", "historia_esportes"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Em 1994, Barbados fez um gol contra de propósito para empatar com Granada e levar o jogo à prorrogação. Nos minutos finais, Granada tentava marcar em qualquer um dos dois gols, e Barbados defendia ambos.",
+        "explicacao": (
+            "O jogo valia vaga na fase final da Copa do Caribe, e os organizadores testavam uma variante do gol de "
+            "ouro: na prorrogação, o primeiro gol encerrava a partida e valia por dois. Barbados só se "
+            "classificaria se vencesse Granada por dois gols de diferença. Vencia por 2 a 0 até que, aos 83 "
+            "minutos, os granadinos descontaram. Barbados tentou o terceiro gol, sem sucesso, e mudou de "
+            "estratégia: aos 87, um zagueiro e o goleiro trocaram passes até que o zagueiro mandou a bola para a "
+            "própria rede. Com o 2 a 2, a prorrogação daria a Barbados a chance de abrir os dois gols de vantagem "
+            "com um único gol de ouro. Os jogadores de Granada perceberam a manobra e notaram que um gol em "
+            "qualquer das metas os classificaria: tanto uma vitória por 3 a 2 quanto uma derrota por 3 a 2 "
+            "serviriam. Nos três minutos restantes, Barbados defendeu os dois gols, levou o jogo à prorrogação e "
+            "venceu com o gol de ouro, que fechou o placar em 4 a 2. O técnico de Granada disse que o autor "
+            "daquela regra merecia um hospício. A FIFA não puniu Barbados, que tinha apenas jogado da melhor "
+            "forma possível dentro das regras, e a regra do gol de ouro duplo foi abandonada depois do torneio."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Barbados_4%E2%80%932_Grenada",
+            "On January 27, 1994, the national football teams of Barbados and Grenada played against each other as part of the qualification round for the 1994 Caribbean Cup. "
+            "Barbados won 4–2 in extra time. In the last minutes of regular time, both teams attempted to score own goals. [...] "
+            "the first goal scored in extra-time not only won the match, but was also worth two goals. "
+            "Barbados needed to win the match by a margin of at least two goals to qualify for the final over Grenada. "
+            "Barbados led the game 2–0 until Grenada scored in the 83rd minute, bringing the score to 2–1. [...] "
+            "This resulted in an unusual situation where Grenada tried to score in both goals for the last three minutes of regular time. "
+            "Either outcome (3–2 on points, or 2–3 via goal difference) would have advanced them to the finals, while Barbados had to defend both goals. [...] "
+            "Barbados attempted to score for the next few minutes, but as time ran out they switched to a different strategy: tying the game so they could attempt to achieve the two-goal margin with the golden goal in extra-time. "
+            "In the 87th minute, they stopped attacking, with Barbados defender Terry Sealey and goalkeeper Horace Stoute passing the ball between each other before Sealey intentionally scored an own goal to tie the game at 2–2. [...] "
+            "For the next three minutes, Barbadian players successfully defended both sides. [...] "
+            "Trevor Thorne scored the winning goal for Barbados to advance to the next round with a score of 4–2. [...] "
+            "The person who came up with these rules must be a candidate for a madhouse. [...] "
+            "the Caribbean Cup organisers scrapped the rule after the tournament. "
+            "Although the Barbadians' own-goal was highly unconventional, FIFA decided not to penalise the team because they were playing optimally under the circumstances.",
+            nome="Barbados 4–2 Grenada")],
+    },
+    # 6 149 a 0 em Madagascar
+    {
+        "temas_secundarios": ["historia_esportes", "psicologia_social"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "O maior placar da história do futebol, reconhecido pelo Guinness, é 149 a 0, em Madagascar, em 2002. Todos os gols foram contra: o time derrotado protestava contra a arbitragem marcando na própria rede.",
+        "explicacao": (
+            "O SO l'Emyrne, campeão de Madagascar em 2001, disputava o título de 2002 com o rival AS Adema, dois "
+            "dos melhores times do país, com vários jogadores da seleção. Na reta final, o SOE vencia o DSA "
+            "Antananarivo por 2 a 1 quando o árbitro deu um pênalti polêmico no fim para o adversário. O empate "
+            "em 2 a 2 garantiu o título ao Adema com uma rodada de antecedência. O último jogo, justamente contra "
+            "o Adema, em 31 de outubro de 2002, na cidade de Toamasina, já não valia nada para o SOE, que culpava "
+            "a arbitragem por ter perdido o campeonato. O Adema deu a saída, mas, assim que o SOE ficou com a "
+            "bola, não a devolveu mais: seus jogadores se revezaram chutando contra o próprio gol, em média um gol "
+            "a cada 36 segundos, enquanto adversários e árbitro assistiam sem entender. Segundo a imprensa local, "
+            "torcedores foram às bilheterias pedir o dinheiro de volta. O técnico do SOE foi suspenso por três "
+            "anos, e quatro jogadores, entre eles o goleiro, então capitão da seleção, ficaram fora da temporada "
+            "de 2003. O árbitro não foi punido. O recorde anterior era um 36 a 0 do Arbroath sobre o Bon Accord, "
+            "pela Copa da Escócia, em 1885."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("AS_Adema_149%E2%80%930_SO_l%27Emyrne",
+            "was an association football match that took place in Toamasina, Madagascar on 31 October 2002. "
+            "It holds the world record for the highest scoreline in football history, as recognised by The Guinness Book of Records. "
+            "Stade Olympique de l'Emyrne (SOE) intentionally lost to rivals AS Adema in a self-orchestrated protest over unfavourable refereeing decisions in a previous match that cost them the national championship. "
+            "Prior to that day, the previous highest scoreline was 36–0 to Arbroath F.C. over Bon Accord F.C. in the Scottish Cup in 1885. [...] "
+            "Rivals SOE and Adema had met in the finals of the 2001 Malagasy national league, with SOE winning 1-0. [...] "
+            "SOE were leading 2-1 when the referee awarded a late controversial penalty to DSA, which they converted. "
+            "The game ended as a 2-2 draw. "
+            "As a result, Adema clinched the championship with a match still remaining in the tournament. [...] "
+            "SOE and Adema were two of the best teams in Madagascar, with many of their players on the national team. [...] "
+            "SOE no longer could win the tournament, and blamed refereeing bias for costing them their shot at the title. "
+            "Adema took the opening kickoff, but once SOE gained possession, Adema would not regain it for the rest of the match. "
+            "Instead, SOE's players took turns kicking the ball into their own net a total of 149 times, averaging approximately 36 seconds per own goal scored, while the opposition and referee looked on bemusedly. "
+            "According to local news, spectators approached the ticket booths requesting refunds. [...] "
+            "the Malagasy Football Federation (FMF) suspended SOE coach Ratsimandresy Ratsarazaka for three years [...] "
+            "Four of the SOE team's players, captain Manitranirina Andrianiaina, goalkeeper Mamisoa Razafindrakoto (then-captain of the Madagascar national football team), Dominique Rakotonandrasana, and Nicolas Rakotoarimanana, were suspended for the entire 2003 season. [...] "
+            "The referee was not punished as the situation was deemed to be out of his control.",
+            nome="AS Adema 149–0 SO l'Emyrne")],
+    },
+    # 7 o impedimento estrito de 1863 e a mudança de 1925
+    {
+        "temas_secundarios": ["historia_esportes"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Nas regras do futebol de 1863, qualquer jogador à frente da bola estava impedido, como no rúgbi. Quando o impedimento passou a contar dois defensores, em 1925, os gols da liga inglesa saltaram de 4.700 para 6.373.",
+        "explicacao": (
+            "A Football Association, criada em 1863, herdou das escolas inglesas, como a de Rugby, um impedimento "
+            "\"estrito\": quando alguém chutava a bola, qualquer companheiro mais perto do gol adversário ficava "
+            "fora de jogo e não podia tocá-la. Na prática, passar para quem estava à frente era proibido. A única "
+            "exceção era o chute de trás da linha de fundo, o equivalente do tiro de meta, porque sem ela o time "
+            "atacante inteiro estaria impedido. Na primeira revisão das regras, em 1866, a lei ficou mais branda: "
+            "o jogador só estava impedido se houvesse menos de três adversários entre ele e o gol. Na discussão, "
+            "muitos acharam melhor abolir o impedimento de vez, já que os clubes de Sheffield jogavam sem ele. A "
+            "Escócia passou três décadas pedindo a troca de três para dois defensores, com propostas rejeitadas em "
+            "1894, 1902, 1913 e 1914, até que, em 1925, depois de um jogo de teste no estádio de Highbury, a mudança "
+            "foi aprovada, apesar da oposição maciça dos árbitros. O efeito foi imediato: o jogo se espichou, os "
+            "passes curtos deram lugar às bolas longas, surgiu a formação W-M e os gols dispararam. Nos mesmos "
+            "1.848 jogos da liga inglesa, o total subiu de 4.700, na temporada 1924–25, para 6.373 na seguinte."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Offside_(association_football)",
+            "Many other school and university laws from this period were similar to Rugby School's in that they were \"strict\"—i.e. any player ahead of the ball was in an off-side position. [...] "
+            "When a player has kicked the ball any one of the same side who is nearer to the opponent's goal line is out of play and may not touch the ball himself nor in any way whatever prevent any other player from doing so until the ball has been played; but no player is out of play when the ball is kicked from behind the goal line. "
+            "The law adopted by the FA was \"strict\"—i.e., it penalised any player in front of the ball. "
+            "There was one exception for the \"kick from behind the goal line\" (the 1863 laws' equivalent of a goal kick). "
+            "This exception was necessary because every player on the attacking side would have otherwise been \"out of play\" from such a kick. [...] "
+            "At the first revision of the FA laws, in February 1866, an important qualifier was added to soften the \"strict\" offside law [...] "
+            "unless there are at least three of his opponents between him and their own goal [...] "
+            "many thinking with Mr Morley that it would be better to do away with the off side [law] altogether, especially as the Sheffield clubs had none. [...] "
+            "The Scottish FA urged the change from a three-player to a two-player offside rule as early as 1893. "
+            "Such a change was first proposed at a meeting of IFAB in 1894, where it was rejected. "
+            "It was proposed again by the SFA in 1902, upon the urging of Celtic FC, and again rejected. "
+            "A further proposal from the SFA also failed in 1913, after the Football Association objected. "
+            "The SFA advanced the same proposal in 1914, when it was again rejected [...] "
+            "On 30 March 1925, the FA arranged a trial match at Highbury where two proposed changes to the offside rules were tested. [...] "
+            "referees were overwhelmingly opposed to the change. "
+            "The two-player rule was nevertheless approved by the FA by a large majority. [...] "
+            "It led to an immediate change in the style of play, with the game becoming more stretched, \"short passing giv[ing] way to longer balls\", and the development of the W-M formation. "
+            "It also led to an increase in goalscoring: 4,700 goals were scored in 1,848 Football League games in 1924–25. "
+            "This number rose to 6,373 goals (from the same number of games) in 1925–26.",
+            nome="Offside (association football)")],
+    },
+    # 8 as aventuras da taça Jules Rimet
+    {
+        "temas_secundarios": ["segunda_guerra", "crimes_arte"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "A taça Jules Rimet passou a Segunda Guerra numa caixa de sapatos, debaixo da cama de um dirigente italiano. Em 1966, roubada em Londres, foi achada por um cachorro. Em 1983, sumiu no Rio para sempre.",
+        "explicacao": (
+            "Campeã de 1938, a Itália guardava a taça durante a guerra. Ottorino Barassi, vice-presidente da FIFA e "
+            "presidente da federação italiana, tirou-a às escondidas de um banco em Roma e a escondeu numa caixa "
+            "de sapatos sob a cama, para que os nazistas não a levassem. Em 20 de março de 1966, quatro meses antes "
+            "da Copa na Inglaterra, ela foi furtada de uma exposição de selos raros em Westminster: o ladrão deixou "
+            "para trás selos avaliados em 3 milhões de libras. Veio um pedido de resgate de 15 mil libras, e o "
+            "homem que o enviou foi preso e condenado, mas ninguém mais foi achado. Sete dias depois do furto, um "
+            "collie de quatro anos chamado Pickles, passeando com o dono no sul de Londres, encontrou a taça "
+            "embrulhada em jornal. Quando a Inglaterra foi campeã, o cão foi convidado para o banquete. A "
+            "federação inglesa ainda mandou fazer uma réplica secreta, sem permissão da FIFA, que passou anos "
+            "debaixo da cama de quem a fez. A original foi entregue em definitivo ao Brasil, tricampeão em 1970, e "
+            "ficou numa vitrine de vidro à prova de balas na sede da CBF, no Rio. Em 19 de dezembro de 1983, "
+            "ladrões arrombaram o fundo de madeira do móvel e a levaram. Quatro homens foram condenados, mas a "
+            "taça nunca foi recuperada; muitos acreditam que foi derretida."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("FIFA_World_Cup_Trophy",
+                "During World War II, the trophy was held by 1938 champion Italy. "
+                "Ottorino Barassi, the Italian vice-president of FIFA and president of FIGC, secretly transported the trophy from a bank in Rome and hid it in a shoe-box under his bed to prevent the Nazis from taking it. [...] "
+                "As a security measure, the (English) Football Association secretly manufactured a replica of the trophy for use in exhibitions rather than the original. [...] "
+                "Since FIFA had explicitly denied the FA permission to create a replica, the replica also had to disappear from public view and was for many years kept under its creator's bed. [...] "
+                "It was put on display at the Brazilian Football Confederation headquarters in Rio de Janeiro, in a cabinet with a front of bullet-proof glass. "
+                "On 19 December 1983, the trophy was stolen again. "
+                "The wooden rear of the cabinet was forced open with a crowbar and the cup was taken. "
+                "Four men were tried and convicted in absentia for the crime. "
+                "The trophy has never been recovered, and it is widely believed to have been melted down into gold bars and sold.",
+                nome="FIFA World Cup Trophy"),
+            wiki("Pickles_(dog)",
+                "known for his role in finding the stolen Jules Rimet Trophy in March 1966, four months before the 1966 FIFA World Cup was scheduled to begin in England. [...] "
+                "The World Cup trophy was stolen on the afternoon of Sunday 20 March 1966. "
+                "It had been on public display in a glass cabinet during the \"Sport with Stamps\" Stanley Gibbons Stampex rare stamp exhibition at Methodist Central Hall in Westminster. "
+                "The thief evaded the round-the-clock security, and ignored rare stamps with a value of £3 million to steal the silver-gilt trophy [...] "
+                "it contained a £15,000 ransom demand [...] "
+                "Betchley was eventually convicted for demanding money with menace, and sentenced to two years' imprisonment. "
+                "If indeed there were other persons involved in the theft, no one else has ever been found. [...] "
+                "The rest of the trophy was found on Sunday 27 March, just seven days after it was stolen, wrapped in newspaper [...] "
+                "south London, by the four-year-old Pickles, while taking a walk with his owner, David Corbett [...] "
+                "When England won the trophy, Pickles was invited to the celebration banquet as a reward. [...] "
+                "The original cup was awarded permanently to Brazil after the 1970 FIFA World Cup",
+                nome="Pickles (dog)"),
+        ],
+    },
+    # 9 a espiral do chute de Roberto Carlos
+    {
+        "temas_secundarios": ["ciencia_esporte"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "O gol de falta de Roberto Carlos contra a França, em 1997, não foi sorte, segundo físicos franceses: chutada de longe e com muito giro, a bola é freada pelo ar até o giro dominar a trajetória, que vira uma espiral.",
+        "explicacao": (
+            "O chute, de 35 metros, no Torneio da França de 1997, um ano antes de os franceses ganharem a Copa, "
+            "garantiu o empate do Brasil. A bola fez uma curva enorme e só virou para o gol no último instante: o "
+            "goleiro Fabien Barthez nem se mexeu, enquanto um gandula a dez metros do gol se abaixou para se "
+            "proteger. Muitos consideram aquele o gol de falta mais habilidoso já feito; outros acharam que foi "
+            "pura sorte. Pesquisadores da École Polytechnique, em Palaiseau, investigaram a questão atirando, com "
+            "um estilingue, pequenas bolas de plástico dentro da água e variando velocidade e rotação. Eles "
+            "confirmaram o já conhecido efeito Magnus, que faz uma bola girando curvar, mas acharam algo a mais em "
+            "chutes longos: o atrito com o ar desacelera a bola o bastante para que a rotação passe a mandar na "
+            "trajetória, o que permite a guinada final. O resultado é uma espiral, e não o arco de círculo das "
+            "faltas de 20 a 25 metros batidas por Beckham ou Platini. Segundo os autores, a distância incomum do "
+            "chute não foi coincidência, mas condição necessária para a espiral aparecer. O estudo saiu em 2010 na "
+            "revista New Journal of Physics."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [{"url": "https://www.eurekalert.org/news-releases/685497",
+            "titulo": "Carlos '97 free kick no fluke, say French physicists (IOP Publishing, EurekAlert!)",
+            "idioma": "en",
+            "trecho": (
+                "Roberto Carlos' free kick goal against France in 1997's Tournoi de France is thought by many to have been the most skilful free kick goal - from 35m with a powerful curling banana trajectory - ever scored; but by others to have been an incredible fluke. "
+                "Taken in 1997, a year before the French won the World Cup, Brazilian Carlos's goal held France to a frustrating draw but, now, a group of French physicists [...] "
+                "have computed the trajectory and shown that Carlos' goal was no fluke. "
+                "The research published today, Thursday 2 September, in New Journal of Physics [...] "
+                "explains why French goalkeeper Fabien Barthez made no move for the ball (but why a ball-boy ten metres from the goal did duck to safety) as the ball made a last moment sweep left and landed in the back of the net. "
+                "Using tiny plastic (polypropylene and polyacetal) balls and a slingshot, the French research team from the École Polytechnique in Palaiseau varied the velocity and spin of balls travelling through water to trace different trajectories. "
+                "While their research quickly confirmed the long-known Magnus effect, which gives a spinning ball a curved trajectory, their research revealed fresh insight for spinning balls that are shot over a distance equivalent to Roberto Carlos' free kick. "
+                "The friction exerted on a ball by its surrounding atmosphere slows it down enough for the spin to take on a greater role in directing the ball's trajectory, thereby allowing the last moment change in direction [...] "
+                "The researchers refer to their discovery as the 'spinning ball spiral', comparing the spiraling effects of Roberto Carlos's kick with the shorter-distance (20-25m) 'circular' free kicks shot by the likes of Beckham and Platini. [...] "
+                "People often noticed that Carlos' free kick had been shot from a remarkably long distance; we show in our paper that this is not a coincidence, but a necessary condition for generating a spiral trajectory. [...] "
+                "2-Sep-2010"
+            )}],
+    },
+    # 10 a Jabulani: mais lisa, mais imprevisível
+    {
+        "temas_secundarios": ["ciencia_esporte", "falhas_engenharia"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "A Jabulani, bola da Copa de 2010, era mais lisa que as anteriores, e isso a deixava mais imprevisível: segundo um engenheiro da NASA, ela \"dançava\" no ar justamente na velocidade típica das cobranças de falta.",
+        "explicacao": (
+            "A bola tinha só oito gomos, contra 14 da bola da Copa de 2006, colados termicamente e moldados em "
+            "forma esférica, com uma textura de sulcos criada pela Adidas para melhorar a aerodinâmica, num "
+            "projeto feito com pesquisadores da Universidade de Loughborough, no Reino Unido. Em campo, porém, ela "
+            "foi muito criticada. O técnico da Argentina, Diego Maradona, previu que não haveria lançamentos longos "
+            "porque a bola não voava reto, e o goleiro brasileiro Júlio César a comparou a uma bola \"de "
+            "supermercado\". No Centro de Pesquisa Ames, da NASA, o engenheiro aeroespacial Rabi Mehta descreveu o "
+            "comportamento como um efeito knuckleball, nome de um arremesso do beisebol. Quando uma bola com "
+            "costuras é chutada quase sem giro, as costuras perturbam de forma desigual o ar junto à superfície, e "
+            "a trajetória fica errática. Nas bolas mais antigas, isso acontecia perto de 48 km/h. Como a "
+            "Jabulani era mais lisa, Mehta previu que o efeito surgiria a 72–80 km/h, velocidade comum das faltas "
+            "perto do gol. A bola saiu de produção depois de dois anos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Adidas_Jabulani",
+            "It was the official match ball for the 2010 FIFA World Cup. [...] "
+            "The NASA Ames Research Center studied its performance and compared it to the +Teamgeist Berlin (used in the 2006 World Cup) and found it had a noticeable \"knuckleball\" effect. [...] "
+            "Its design was much maligned by players at the World Cup, and production ceased after two years. [...] "
+            "The ball was constructed consisting of eight (down from 14 in the 2006 World Cup) thermally bonded, three-dimensional panels. "
+            "These then were spherically moulded from ethylene-vinyl acetate (EVA) and thermoplastic polyurethanes (TPU). "
+            "The surface of the ball was textured with grooves, a technology developed by Adidas called \"Grip 'n' Groove\" that was intended to improve the ball's aerodynamics. "
+            "The design had received considerable academic input, being developed in partnership with researchers from Loughborough University, United Kingdom. [...] "
+            "entine coach Diego Maradona said, \"We won't see any long passes in this World Cup because the ball doesn't fly straight.\" [...] "
+            "Brazil goalkeeper Júlio César compared it to a \"supermarket\" ball that favoured strikers and worked against goalkeepers. [...] "
+            "In discussing the mechanics of the balls Rabi Mehta, an aerospace engineer at NASA Ames, described the unpredictable behaviour as \"a knuckle-ball effect\". "
+            "He explained that when a seamed ball is struck with little spin it experiences asymmetrical air flow effects as a result of the air close to the surface being affected by those seams. "
+            "This causes unpredictable movement akin to the knuckleball pitch in baseball. [...] "
+            "Where older designs of footballs have a knuckling effect at speeds closer to 30 miles per hour (48 km/h), Mehta predicted that the Jabulani would experience the knuckling effect at the higher speed of 45–50 mph (72–80 km/h) due to its smoother surface. "
+            "Free-kicks in the goal area tend to be kicked at this speed, making the knuckling effect of the Jabulani relevant to the game.",
+            nome="Adidas Jabulani")],
+    },
+    # 11 goleiros pulam demais nos pênaltis (viés de ação)
+    {
+        "temas_secundarios": ["vieses_cognitivos", "decisoes_economia", "teoria_jogos"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "Num estudo com 286 pênaltis, os goleiros pularam para um lado em 93,7% das vezes, embora quem ficou no meio tenha defendido mais. A explicação proposta: tomar gol parado dói mais do que tomar gol pulando.",
+        "explicacao": (
+            "O trabalho é de Michael Bar-Eli e colegas de universidades israelenses e saiu no Journal of Economic "
+            "Psychology. Eles analisaram cobranças em ligas e campeonatos de ponta pelo mundo. Os goleiros ficaram "
+            "no centro em só 6,3% dos casos, embora 28,7% dos chutes tenham ido no meio. Na amostra, ficar parado "
+            "rendeu defesas em 33,3% das cobranças, contra 14,2% de quem pulou para a esquerda e 12,6% de quem "
+            "pulou para a direita. Os autores propõem um viés de ação, apoiado na teoria da norma de Kahneman e "
+            "Miller: como o normal é pular, um gol sofrido depois de ficar parado provoca sensação pior do que um "
+            "gol sofrido depois de pular. Uma pesquisa com 32 goleiros profissionais de ponta reforçou que pular é "
+            "a norma. A conclusão tem críticos. Eles lembram que, com a marca a 12 jardas do gol e um chute forte, "
+            "o goleiro não tem tempo de esperar a bola, e a melhor chance é adivinhar o canto e começar a se mexer "
+            "antes de o batedor tocar nela. Há ainda quem responda com a cavadinha no meio, a \"Panenka\", que "
+            "explora exatamente esse hábito dos goleiros."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            {"url": "https://mpra.ub.uni-muenchen.de/4477/1/MPRA_paper_4477.pdf",
+             "titulo": "Action bias among elite soccer goalkeepers: The case of penalty kicks (MPRA Paper 4477)",
+             "idioma": "en",
+             "trecho": (
+                 "Bar-Eli, Michael and Azar, Ofer H. and Ritov, Ilana and Keidar-Levin, Yael and Schein, Galit "
+                 "Ben-Gurion University of the Negev, Beersheba , Israel, Hebrew University of Jerusalem, Jerusalem, Israel [...] "
+                 "This is an early version of an article that is forthcoming in the Journal of Economic Psychology. [...] "
+                 "An analysis of 286 penalty kicks in top leagues and championships worldwide shows that given the probability distribution of kick di rection, the optimal strategy for goalkeepers is to stay in the goal's center. "
+                 "Goalkeepers, however, almost always jump right or left. [...] "
+                 "because the norm is to jump, norm theory (Kahneman and Miller, 1986) implies that a go al scored yields worse feelin gs for the goalkeeper following inaction (staying in the center) than following action (jumping), leading to a bias for action. [...] "
+                 "The claim that jumping is the norm is supported by a second study, a survey conducted with 32 top professional goalkeepers. [...] "
+                 "in 93.7 % of the kicks the goalkeep ers chose to jump to their right or left. [...] "
+                 "Total 49.3% 6.3% 44.4% 100.0% [...] "
+                 "they should choose to stay in the center in about 28.7% of the kicks (t he percentage of kicks towards the center). [...] "
+                 "Overall 14.2% 33.3% 12.6% 14.7%"
+             )},
+            wiki("Action_bias",
+                "Researchers surmise that goalkeepers take the risk of guessing because \"action\" is preferred by their teammates, and success will bring social recognition and other rewards. "
+                "However, this analysis ignores game theory and the dynamics of the sport. "
+                "Because the penalty spot is only 12 yards away, the goalposts are 24 feet apart, the crossbar is 8 feet high, and the ball will be struck with great force, the goalkeeper cannot stand still and wait for the ball to be struck, because they will not have time to reach it. [...] "
+                "To have a chance to make a save, the optimum strategy is to guess the target location and begin moving before the opponent's foot touches the ball. [...] "
+                "Some penalty takers counter this strategy by rolling or chipping the ball down the middle, which is called a Panenka penalty",
+                nome="Action bias"),
+        ],
+    },
+    # 12 o barulho da torcida e o apito
+    {
+        "temas_secundarios": ["psicologia_social", "experimentos_psicologia"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Árbitros que viram lances em vídeo com o som da torcida marcaram 15,5% menos faltas contra o time da casa do que colegas que viram em silêncio. Nos jogos sem público da pandemia, esse favorecimento encolheu.",
+        "explicacao": (
+            "O experimento, de Alan Nevill e colegas, saiu em 2002 na revista Psychology of Sport and Exercise. "
+            "Quarenta árbitros qualificados de um clube de arbitragem da Inglaterra julgaram 47 lances gravados num "
+            "jogo da Premier League entre Liverpool, em casa, e Leicester City, da temporada 1998/1999. Uma parte "
+            "assistiu com o barulho da torcida, e a outra, sem som. Com o ruído, os árbitros ficaram mais "
+            "indecisos e marcaram, em média, 12,5 faltas contra o time da casa, contra 14,8 do grupo que viu em "
+            "silêncio. Os autores concluíram que o barulho levou os árbitros a favorecer os donos da casa. A "
+            "pandemia de covid-19 criou um teste em escala real: estádios vazios no mundo todo. Uma revisão "
+            "sistemática de 26 estudos concluiu que esses jogos tiveram impacto considerável na vantagem de jogar "
+            "em casa, efeito atribuído a um viés menor da arbitragem e à falta de apoio emocional das "
+            "arquibancadas. Num dos estudos, a vantagem dos mandantes caiu quase pela metade, e as decisões de "
+            "faltas, cartões e pênaltis ficaram muito mais equilibradas sem torcida. Os resultados não foram "
+            "iguais em todas as ligas, e a revisão aponta inconsistências entre os estudos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            {"url": "https://wlv.openrepository.com/server/api/core/bitstreams/a2367243-670b-4aa5-b592-2360331c910a/content",
+             "titulo": "The influence of crowd noise and experience upon refereeing decisions in football (Nevill, Balmer e Williams, 2002)",
+             "idioma": "en",
+             "trecho": (
+                 "Psychology of Sport and Exercise 3 (2002) 261–272 [...] "
+                 "The influence of crowd noise and experience upon refereeing decisions in football "
+                 "A.M. Nevill [...] "
+                 "Forty qualified referees from the North Staffordshire Referees Club in England volunteered to take part in the present study [...] "
+                 "The referees were asked to assess the legality of 47 challenges/incidents recorded during an English Premier League match between Liverpool (home) and Leicester City (away) from the 1998/1999 season. [...] "
+                 "Those viewing the challenges with background crowd noise were more uncertain in their decision making and awarded significantly fewer fouls (15.5%) against the home team, compared with those watching in silence. "
+                 "Conclusions. The noise of the crowd influenced referees' decisions to favour the home team. [...] "
+                 "against the home team ( M=12.5) than the silent group ( M=14.8)."
+             )},
+            {"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8724651/fullTextXML",
+             "titulo": "The cauldron has cooled down: a systematic literature review on home advantage in football during the COVID-19 pandemic (Europe PMC)",
+             "idioma": "en",
+             "trecho": (
+                 "home advantage in football during the COVID-19 pandemic from a socio-economic and psychological perspective [...] "
+                 "Our findings—based on 26 primary studies—indicate that ghost games have a considerable impact on the phenomenon of home advantage. "
+                 "Deeper analysis further indicates that this effect is based on a reduced “referee bias” and a lack of “emotional support from the ranks”. [...] "
+                 "there are some inconsistencies across studies regarding the reported effects of the ghost games on the home advantage, which can be tracked down to different methodological approaches, inconsistencies across leagues and small or particular samples [...] "
+                 "this advantage is almost halved when matches are played behind closed doors. "
+                 "Similar effects are found for the behavior of referees: decisions of fouls, yellow cards, red cards and penalties that tend to favor home teams in normal matches, are much more balanced without the crowd pressing on referees."
+             )},
+        ],
+    },
+    # 13 o futebol feminino proibido no Brasil
+    {
+        "temas_secundarios": ["brasil_republica", "historia_esportes"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "De 1941 a 1979, as mulheres eram proibidas por lei de jogar futebol no Brasil. Uma norma de 1965 vetou também futsal, futebol de praia, rúgbi, polo aquático, halterofilismo, beisebol e lutas.",
+        "explicacao": (
+            "A base da proibição foi o Decreto-Lei 3.199, assinado por Getúlio Vargas em 14 de abril de 1941, que "
+            "organizou o esporte no país e criou o Conselho Nacional de Desportos. O artigo 54 dizia que às "
+            "mulheres não seriam permitidos esportes \"incompatíveis com as condições de sua natureza\" e deixava "
+            "ao conselho a tarefa de baixar as instruções. O pano de fundo incluía ideias eugenistas e o medo de "
+            "que esportes \"masculinos\" masculinizassem o corpo feminino. Segundo uma coluna do Brasil de Fato, "
+            "alegava-se até que cotoveladas no útero ou nos seios poderiam deixar a jogadora infértil ou sem "
+            "poder amamentar. Em 1965, a deliberação nº 7 do conselho listou com todas as letras as modalidades "
+            "vetadas. A lei não foi seguida à risca: jogos aconteceram nos anos 1950 com autorização judicial, e "
+            "na década seguinte houve partidas esporádicas. A mesma coluna relata que muitas mulheres foram presas "
+            "jogando futebol. A proibição caiu em 1979, mas a modalidade só foi regulamentada em 1983, e as "
+            "primeiras competições ainda proibiam cobrar ingresso e trocar camisas no fim do jogo. Três anos "
+            "depois, em 1986, a seleção feminina fez sua primeira partida oficial."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Futebol_feminino_no_Brasil",
+                "Era ilegal para as mulheres jogar futebol no Brasil de 1941 a 1979, por imposição do Decreto-Lei Federal do Brasil 3199 de 1941, publicado pelo então presidente Getúlio Vargas. [...] "
+                "Durante a década de 1950, houve algumas partidas realizadas com liberação especial por mandados judiciais, e na década seguinte partidas esporádicas apesar da proibição legal. [...] "
+                "Durante o início do século XX, em um contexto de crescimento de ideias eugenistas no Brasil e ao redor do mundo, as mulheres foram desencorajadas a praticar esportes \"masculinos\", como o futebol [...] "
+                "om a masculinização do corpo feminino e como isso seria prejudicial para a sociedade. [...] "
+                "Esta lei não foi rigorosamente mantida, pois algumas mulheres continuaram a jogar. [...] "
+                "Três anos depois, em julho de 1986, a seleção feminina do Brasil realizava seu primeiro jogo oficial",
+                nome="Futebol feminino no Brasil", idioma="pt"),
+            {"url": "https://www.brasildefato.com.br/colunista/luiz/2021/04/14/os-80-anos-do-decreto-que-proibia-mulheres-nos-esportes/",
+             "titulo": "Os 80 anos do decreto que proibia mulheres nos esportes (Brasil de Fato, coluna Papo Esportivo)",
+             "idioma": "pt",
+             "trecho": (
+                 "No dia 14 de abril de 1941, o então Presidente da República Getúlio Vargas assinava o Decreto-Lei número 3.199. "
+                 "Ele estabelecia as bases de organização dos desportos em todo o Brasil e criava o Conselho Nacional de Desportos [...] "
+                 "estava no artigo número 54: [...] "
+                 "“Às mulheres não se permitirá a prática de desportos incompatíveis com as condições de sua natureza, devendo, para este efeito, o Conselho Nacional de Desportos baixar as necessárias instruções às entidades desportivas do país.” [...] "
+                 "Muitas mulheres foram presas nesses tempos ao serem flagradas jogando futebol. [...] "
+                 "Alegava-se que a mulher que praticasse o velho e rude esporte bretão poderia levar cotoveladas no útero ou nos seios, fatos que poderiam deixá-la infértil ou sem poder amamentar. "
+                 "Mas as coisas pioraram de vez no dia 2 de agosto de 1965 com a publicação da \"deliberação número 7\" [...] "
+                 "Não é permitida a prática de lutas de qualquer natureza, futebol, futebol de salão, futebol de praia, polo-aquático, pólo, rugby, halterofilismo e baseball. [...] "
+                 "As coisas só melhoraram em 1979 [...] "
+                 "Mesmo assim, as mulheres teriam que esperar mais quatro anos para que o futebol feminino fosse finalmente regularizado no país. "
+                 "Mesmo assim, o regulamento das primeiras competições da modalidade proibia a cobrança de ingressos e a tradicional troca de camisas ao final das partidas. "
+                 "De 1941 até 1983"
+             )},
+        ],
+    },
+    # 14 o goleiro que não existia
+    {
+        "temas_secundarios": ["historia_esportes"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Nas primeiras regras do futebol, de 1863, não havia goleiro: qualquer jogador podia agarrar a bola. Quando o posto surgiu, em 1871, o goleiro chegou a poder usar as mãos em todo o seu campo, até 1912.",
+        "explicacao": (
+            "As regras da Football Association de 1863 não davam papel especial a ninguém: qualquer jogador podia "
+            "agarrar a bola ou dar um tapa nela. Em 1870, o uso das mãos foi proibido para todos. No ano "
+            "seguinte, as regras criaram o goleiro, autorizado a tocar a bola com as mãos \"para a proteção do seu "
+            "gol\". Em Sheffield, a palavra \"goal-keeper\" já aparecia em 1867, mas só designava quem estivesse, "
+            "naquele momento, mais perto do próprio gol, sem nenhum privilégio de pegar a bola. Depois de 1871 "
+            "vieram vários ajustes. Em 1873, o goleiro foi proibido de carregar a bola; em 1883, de dar mais de "
+            "dois passos com ela; em 1887, de usar as mãos no campo adversário. Em 1901 passou a poder usar as "
+            "mãos para qualquer fim, e não só para defender o gol. Só em 1912 o privilégio ficou restrito à "
+            "grande área. As mudanças continuaram até tempos recentes: desde 1992, o goleiro não pode pegar com "
+            "as mãos uma bola recuada de propósito com o pé por um companheiro, e desde 1997 não pode segurá-la "
+            "por mais de seis segundos."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Goalkeeper_(association_football)",
+            "\"goal-keeper\" appeared in the Sheffield Rules of 1867, but the term did not refer to a designated player, but rather to \"that player on the defending side who for the time being is nearest to his own goal\". "
+            "The goalkeeper, thus defined, did not enjoy any special handling privileges. "
+            "The FA's first Laws of the Game of 1863 did not make any special provision for a goalkeeper, with any player being allowed to catch or knock on the ball. "
+            "Handling the ball was completely forbidden (for all players) in 1870. "
+            "The next year, 1871, the laws were amended to introduce the goalkeeper and specify that the keeper was allowed to handle the ball \"for the protection of his goal\". [...] "
+            "1873: the keeper may not \"carry\" the ball. "
+            "1883: the keeper may not carry the ball for more than two steps. "
+            "1887: the keeper may not handle the ball in the opposition's half. "
+            "1901: the keeper may handle the ball for any purpose (not only in defense of the goal). [...] "
+            "1912: the keeper may handle the ball only in the penalty area. [...] "
+            "1992: the keeper may not handle the ball after it has been deliberately kicked to him/her by a team-mate. "
+            "1997: the keeper may not handle the ball for more than six seconds.",
+            nome="Goalkeeper (association football)")],
+    },
+]

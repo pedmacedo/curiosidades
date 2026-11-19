@@ -1,0 +1,142 @@
+{
+ "lote": "2026-11-18-percepcao_ilusoes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "percepcao_ilusoes-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'olhavam direto' generaliza: 12 dos 20 que não viram o gorila olharam para ele",
+    "correcao": "'Segundo Drew, o problema não era para onde iam os olhos: eles olhavam direto para o gorila, mas, como não procuravam um gorila, não o enxergavam.' -> 'O problema não era para onde iam os olhos: a maioria dos que não viram o gorila olhou direto para ele, mas, como não procurava um gorila, não o enxergou.' Fonte nova se possível: Drew, Võ e Wolfe 2013 (PMC3964612, via Europe PMC), trecho 'the majority of those who missed the gorilla looked directly at the location of the gorilla'. Sem ela, 'muitos olharam direto para ele' (NPR)."
+   },
+   {
+    "id": "percepcao_ilusoes-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "'a maioria dos pacientes' generaliza 'the majority of studies'",
+    "correcao": "'A maioria dos pacientes, porém, perdeu só metade do campo visual, e a visão que resta poderia ajudar.' -> 'A maioria dos estudos, porém, é feita com pacientes que perderam só metade do campo visual, e a visão que resta poderia ajudar.'"
+   },
+   {
+    "id": "percepcao_ilusoes-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a idade do avô diverge entre fontes (87, 89, 90)",
+    "correcao": "'O avô, de 87 anos, estava quase cego' -> 'O avô, já muito idoso, estava quase cego'"
+   },
+   {
+    "id": "percepcao_ilusoes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a diferença cultural na Müller-Lyer está desacreditada (a própria Wikipedia: todos os humanos percebem; métodos ruins; Scientific American 2025, Amir e Firestone); amostras 'de origem europeia'",
+    "correcao": "Reenquadrar como mito_desmentido (tipos ['mito_desmentido','contraintuitivo'], consenso_parcial). Gancho sugerido: 'Nos anos 1960, um estudo famoso concluiu que os San do Kalahari quase não caíam numa ilusão de óptica clássica, e explicou isso pela falta de cantos retos ao redor. Hoje a ideia está desacreditada.' Explicação: 'europeus' -> 'amostras de origem europeia'; manter o histórico (Rivers, 1,4% a 20,3%, mundo carpinteirado, Jahoda, Zâmbia 1978); acrescentar, com trecho literal da Wikipedia (Susceptibility) e, se baixar, da Scientific American (https://www.scientificamerican.com/article/does-culture-change-visual-perception-debunking-the-carpentered-world/), que a ilusão é percebida por todos, inclusive quem foi cego, funciona com linhas curvas e animais caem nela, e que os estudos originais tinham problemas de método. Tirar a frase final 'Vale lembrar que todos os povos testados caem na ilusão em algum grau'."
+   },
+   {
+    "id": "percepcao_ilusoes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Moon illusion confere; nota 3"
+   },
+   {
+    "id": "percepcao_ilusoes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "efeito Thatcher confere"
+   },
+   {
+    "id": "percepcao_ilusoes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "mão de borracha e debate Lush x Ehrsson conferem; consenso_parcial"
+   },
+   {
+    "id": "percepcao_ilusoes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "coelho cutâneo confere"
+   },
+   {
+    "id": "percepcao_ilusoes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "phi colorido confere; interpretação em disputa"
+   },
+   {
+    "id": "percepcao_ilusoes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "ilusão tamanho-peso confere"
+   },
+   {
+    "id": "percepcao_ilusoes-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "a fonte diz 'produced', não 'vendido'",
+    "correcao": "Gancho: 'vendido de 1971 a 1990' -> 'fabricado de 1971 a 1990'"
+   },
+   {
+    "id": "percepcao_ilusoes-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a cenoura diante da TV é frase sem referência; Rushton (Nature 1967) deve abrir",
+    "correcao": "1) Gancho: 'Em 1967, um cientista fez uma roda girando parecer parada só cantarolando: o zumbido vibra os olhos nas órbitas e cria um efeito estroboscópico dentro do próprio olho.' 2) 'A cenoura faz o mesmo com a TV quando a mastigação vibra os olhos num múltiplo da taxa de quadros.' -> 'Há relatos de algo parecido com quem mastiga algo crocante, como cenoura, diante da TV: a imagem parece tremular, porque a mastigação vibraria os olhos num múltiplo da taxa de quadros.'"
+   },
+   {
+    "id": "percepcao_ilusoes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Troxler's fading confere"
+   },
+   {
+    "id": "percepcao_ilusoes-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'pensiveness' é ar pensativo; 'muda bastante' exagera",
+    "correcao": "'a melancolia diante da sopa' -> 'o ar pensativo diante da sopa'; 'o contexto muda bastante a leitura de um rosto' -> 'o contexto influencia de forma significativa a leitura de um rosto'"
+   }
+  ],
+  "2": [
+   {
+    "id": "percepcao_ilusoes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'muitos olharam direto'"
+   },
+   {
+    "id": "percepcao_ilusoes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'a maioria dos estudos'"
+   },
+   {
+    "id": "percepcao_ilusoes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "avô 'já muito idoso'"
+   },
+   {
+    "id": "percepcao_ilusoes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "reescrito como desmentido com Scientific American 2025"
+   },
+   {
+    "id": "percepcao_ilusoes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'fabricado'"
+   },
+   {
+    "id": "percepcao_ilusoes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Rushton no gancho; cenoura como relato"
+   },
+   {
+    "id": "percepcao_ilusoes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'ar pensativo'; 'de forma significativa'"
+   }
+  ]
+ }
+}

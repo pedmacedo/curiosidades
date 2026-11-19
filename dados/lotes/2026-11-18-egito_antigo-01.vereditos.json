@@ -1,0 +1,122 @@
+{
+ "lote": "2026-11-18-egito_antigo-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "egito_antigo-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com Diary of Merer; ressalva sobre o destino das pedras mantida"
+   },
+   {
+    "id": "egito_antigo-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "confere; origem meteorítica é consenso; nota 4 por ser história que viralizou em 2016"
+   },
+   {
+    "id": "egito_antigo-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'sobretudo entre os pré-rafaelitas' distorce a fonte: popular entre artistas da Europa Ocidental; uma das favoritas dos pré-rafaelitas (grupo de 1848)",
+    "correcao": "Trocar 'A cor fez sucesso de meados do século XVIII ao XIX, sobretudo entre os pré-rafaelitas.' por 'A cor fez sucesso de meados do século XVIII ao XIX entre artistas da Europa Ocidental e foi uma das favoritas dos pré-rafaelitas.'"
+   },
+   {
+    "id": "egito_antigo-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'criados nos próprios templos' absoluto demais (estudo de DNA de 2019, Wasef et al., PLOS ONE: íbis capturadas na natureza); número de Saqqara é estimativa",
+    "correcao": "1) 'Os bichos eram criados nos próprios templos e vendidos...' -> 'Muitos bichos eram criados nos terrenos dos templos e vendidos já mumificados a peregrinos e moradores.' 2) 'sugerem que eles eram criados só para isso' -> 'sugerem que muitos eram criados só para isso'. 3) 'Saqqara guarda quase 500 mil delas e teria produzido' -> 'Estima-se que Saqqara guarde quase 500 mil delas e tenha produzido'. Opcional com fonte checada: estudo de DNA de 2019 sugere que muitas íbis eram capturadas na natureza."
+   },
+   {
+    "id": "egito_antigo-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com a seção Strikes de Deir el-Medina; ressalva 'pode ter sido' mantida"
+   },
+   {
+    "id": "egito_antigo-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "confere; passaporte tratado como lenda por Wilkinson e AFP"
+   },
+   {
+    "id": "egito_antigo-0007",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: desmentido que abre a lista de equívocos de história da Wikipedia e muito divulgado; leve exagero em 'enterrados com honras'"
+   },
+   {
+    "id": "egito_antigo-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com Egyptian blue; nota 4 por aparecer com frequência no noticiário"
+   },
+   {
+    "id": "egito_antigo-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "confere; mito conhecido, mas 8 em 58 e a origem midiática trazem algo novo; nota no limite"
+   },
+   {
+    "id": "egito_antigo-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a fonte registra exceções mágicas nos casos 8 e 9 e no verso; a razão do 'manual de guerra' é o caráter prático e os tipos de trauma",
+    "correcao": "Gancho: 'descreve 48 casos de ferimentos sem recorrer à magia' -> 'descreve 48 casos de ferimentos quase sem recorrer à magia'. Explicação: 'Por isso se pensa que era um manual para feridas de guerra.' -> 'Pelo caráter prático e pelos tipos de trauma descritos, acredita-se que fosse um manual para feridas de guerra.'"
+   },
+   {
+    "id": "egito_antigo-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com a seção Egypt de Hour"
+   },
+   {
+    "id": "egito_antigo-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'last known inscription'; Teodósio ordenou o fechamento, mas Filas seguiu ativo até Justiniano",
+    "correcao": "Gancho: 'A última inscrição em hieróglifos é de 394 d.C.' -> 'A última inscrição conhecida em hieróglifos é de 394 d.C.'. Explicação: 'Em 391, o imperador romano Teodósio I fechou os templos não cristãos, e o uso monumental da escrita acabou;' -> 'Em 391, o imperador romano Teodósio I ordenou o fechamento dos templos não cristãos, e o uso monumental da escrita cessou logo depois;'"
+   },
+   {
+    "id": "egito_antigo-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a fonte diz que os escribas 'probably spoke' proto-cananeu",
+    "correcao": "Explicação: 'vem cheio de marcas da língua materna deles, um ancestral das línguas' -> 'vem cheio de marcas da língua materna deles, provavelmente um ancestral das línguas'"
+   }
+  ],
+  "2": [
+   {
+    "id": "egito_antigo-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Europa Ocidental e pré-rafaelitas como na fonte"
+   },
+   {
+    "id": "egito_antigo-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'muitos' e 'estima-se' aplicados; números conferem"
+   },
+   {
+    "id": "egito_antigo-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'quase sem magia' e a razão do manual de guerra corrigidas"
+   },
+   {
+    "id": "egito_antigo-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'última conhecida' e 'ordenou o fechamento' aplicados"
+   },
+   {
+    "id": "egito_antigo-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'provavelmente' aplicado"
+   }
+  ]
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "lote": "2026-11-17-grandes_navegacoes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "grandes_navegacoes-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Frase final cria causalidade ('é por isso que existe a Linha de Data') que a fonte não afirma.",
+    "correcao": "Trocar por 'Hoje esse descompasso é corrigido na Linha Internacional de Data: quem a cruza viajando para o oeste adianta o calendário em um dia.' e acrescentar o trecho 'Forward by 24 hours upon crossing the International Date Line'."
+   },
+   {
+    "id": "grandes_navegacoes-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "208 de 230 de Magalhães contradiz a mesma página (19 mortos de escorbuto); o espanto real é que a cura era conhecida desde o século XVI e foi ignorada até 1795.",
+    "correcao": "Gancho sobre a cura conhecida e ignorada; tirar Magalhães; 'a maioria por escorbuto'; contar 1579, Lancaster 1601, Woodall 1614, Lind 1747 (que não promoveu o limão), ração em 1795; tipo contraintuitivo; trechos literais da página Scurvy."
+   },
+   {
+    "id": "grandes_navegacoes-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Frase contraditória 'segundo a tradição... embora seja lenda'.",
+    "correcao": "'Já a primeira viagem reuniu 317 navios e quase 28 mil tripulantes. Pela lenda, os maiores tinham quase o dobro do comprimento de qualquer navio de madeira já registrado.' + trecho da primeira viagem."
+   },
+   {
+    "id": "grandes_navegacoes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Desmentido já bem divulgado; frase final fora do trecho e sem o número que dá escala ao erro.",
+    "correcao": "Incluir 5 mil km estimados contra cerca de 20 mil km reais e que a expedição se salvou ao achar as Américas; acrescentar trechos; completar a elisão 'scholars espoused Earth's sphericity'."
+   },
+   {
+    "id": "grandes_navegacoes-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'A troca parecia boa para a Holanda' reintroduz a troca e julga sem fonte; disputa da ilha fora do trecho.",
+    "correcao": "'Com isso, os holandeses mantiveram o monopólio da noz-moscada e do macis, que só acabou nas Guerras Napoleônicas. Já a ilhota que os ingleses deixaram para trás virou a cidade de Nova York.' + trechos (monopólio; 1616 e cerco de 1.540 dias opcional)."
+   },
+   {
+    "id": "grandes_navegacoes-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Gancho junta as duas manobras: a volta partia das ilhas do Atlântico (não da África) para o oeste; só a ida para a Índia passava perto do Brasil.",
+    "correcao": "Gancho: 'Para voltar das ilhas do Atlântico, os navegadores portugueses primeiro se afastavam muito para o oeste. Rumo à Índia, o desvio os levava para perto do Brasil. Era a \"volta do mar\", um truque com os ventos.'"
+   },
+   {
+    "id": "grandes_navegacoes-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Frase sobre tomates selvagens levados da América Central para a do Sul inverte o sentido aceito; o surpreendente são as datas tardias.",
+    "correcao": "Tirar a frase dos tomates selvagens; gancho: 'O tomate só chegou à Itália depois das viagens de Colombo: o primeiro livro de receitas italiano com molho de tomate é de 1692, e massa com molho só aparece em 1790.'"
+   },
+   {
+    "id": "grandes_navegacoes-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz que evidências arqueológicas e genéticas mostram origem americana (análises de 2008 e 2024); apresentar como debate aberto está desatualizado.",
+    "correcao": "Gancho: 'As evidências mais recentes apontam para as Américas.'; explicação com o debate no passado e as análises de 2008 e 2024 (~9.000 anos), alguns ainda discutem detalhes; acrescentar trechos; tipos historia_humana+origem_inesperada; confianca consenso_parcial."
+   },
+   {
+    "id": "grandes_navegacoes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com a fonte; nota no limite; 'engenhosidade' fraco, melhor só historia_humana."
+   }
+  ],
+  "2": [
+   {
+    "id": "grandes_navegacoes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Frase da Linha de Data sem causalidade; datas e números conferem."
+   },
+   {
+    "id": "grandes_navegacoes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz que a iniciativa veio dos almirantes, não dos médicos.",
+    "correcao": "Gancho: 'mas a Marinha britânica só adotou a cura em 1795.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "grandes_navegacoes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase contraditória removida; 317 navios e 28 mil tripulantes conferem."
+   },
+   {
+    "id": "grandes_navegacoes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Erro de Colombo com números (5 mil contra 20 mil km) no trecho."
+   },
+   {
+    "id": "grandes_navegacoes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Status quo, monopólio, 1616 e 1.540 dias conferem."
+   },
+   {
+    "id": "grandes_navegacoes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Dizem os historiadores' não está na fonte.",
+    "correcao": "Tirar 'dizem os historiadores'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "grandes_navegacoes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Frase dos tomates selvagens removida; datas conferem."
+   },
+   {
+    "id": "grandes_navegacoes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Debate no passado, análises de 2008 e 2024 e ressalva do Smithsonian; consenso_parcial adequado."
+   }
+  ]
+ }
+}

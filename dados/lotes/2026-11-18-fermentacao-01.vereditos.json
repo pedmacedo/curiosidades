@@ -1,0 +1,127 @@
+{
+ "lote": "2026-11-18-fermentacao-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "fermentacao-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Enzyme e Buchner conferem"
+   },
+   {
+    "id": "fermentacao-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Aspergillus oryzae confere; consenso_parcial"
+   },
+   {
+    "id": "fermentacao-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Citric acid confere"
+   },
+   {
+    "id": "fermentacao-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Rennet confere"
+   },
+   {
+    "id": "fermentacao-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "swissinfo/Agroscope e Swiss-type cheeses conferem"
+   },
+   {
+    "id": "fermentacao-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Foot odor, B. linens e Limburger conferem"
+   },
+   {
+    "id": "fermentacao-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o limite de seis ácaros vem só da Wikipedia (imprensa diz polegada quadrada; FDA diz que não havia limite oficial)",
+    "correcao": "Explicação: 'alegando que o queijo passava do limite de seis ácaros por polegada cúbica e que os ácaros poderiam causar reação alérgica se consumidos em grande quantidade' -> 'alegando que o queijo tinha ácaros demais e que eles poderiam causar reação alérgica se consumidos em grande quantidade'; 'e suspendeu as importações' -> 'e travou novas importações'. Gancho: 'por ter ácaros acima do limite permitido' -> 'por ter ácaros demais'."
+   },
+   {
+    "id": "fermentacao-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Greenland shark confere"
+   },
+   {
+    "id": "fermentacao-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Black tea e Tea processing conferem; nota 3"
+   },
+   {
+    "id": "fermentacao-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "S. cerevisiae (Ecology) confere"
+   },
+   {
+    "id": "fermentacao-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "1.000 mg/L é a glicose até onde a taxa sobe, não o etanol produzido",
+    "correcao": "'acima disso, a produção de etanol aumentava até cerca de 1.000 mg por litro.' -> 'acima disso, a velocidade de produção de etanol crescia junto com a glicose, até a glicose chegar a cerca de 1.000 mg por litro.'"
+   },
+   {
+    "id": "fermentacao-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o menor genoma é 'suggested'",
+    "correcao": "'é considerado o menor entre os lactobacilos.' -> 'há indícios de que seja o menor entre os lactobacilos.'"
+   },
+   {
+    "id": "fermentacao-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "queijo das múmias do Tarim confere"
+   },
+   {
+    "id": "fermentacao-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a capacidade de esporular 'declined', não se perdeu; falta a ressalva 'probably not any time soon'",
+    "correcao": "Gancho: 'quase não faz mais esporos' -> 'produz cada vez menos esporos'. Explicação: 'e ela perdeu a capacidade de produzir esporos assexuados, justamente o que se usa para inocular o leite.' -> 'e a capacidade dela de produzir esporos assexuados, justamente o que se usa para inocular o leite, caiu muito.' Depois de 'estava \"à beira da extinção\"', inserir ', embora o desaparecimento provavelmente não seja para breve,'."
+   },
+   {
+    "id": "fermentacao-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Metchnikoff e o iogurte conferem; nota 3"
+   }
+  ],
+  "2": [
+   {
+    "id": "fermentacao-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "sem o limite de seis ácaros"
+   },
+   {
+    "id": "fermentacao-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1.000 mg/L de glicose"
+   },
+   {
+    "id": "fermentacao-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'há indícios'"
+   },
+   {
+    "id": "fermentacao-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "menos esporos; risco não imediato"
+   }
+  ]
+ }
+}

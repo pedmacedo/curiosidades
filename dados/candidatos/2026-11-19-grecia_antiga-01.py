@@ -1,0 +1,598 @@
+LOTE = "2026-11-19-grecia_antiga-01"
+AREA = "historia_antiga"
+TEMA = "grecia_antiga"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 o kleroterion: a máquina de sortear cargos
+    {
+        "temas_secundarios": ["probabilidade", "leis_julgamentos"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Na democracia ateniense, a maioria dos cargos públicos não era eleita, mas sorteada. Para dificultar fraudes, Atenas usava uma máquina de pedra com fendas e um tubo que soltava dados brancos e pretos.",
+        "explicacao": (
+            "Para os atenienses, o método democrático era o sorteio, não a eleição. Autores como Aristóteles, "
+            "Platão e Heródoto destacam o papel da escolha por sorte, e as eleições eram vistas como coisa de "
+            "oligarquia. Por sorteio saíam a maior parte dos magistrados e os jurados dos tribunais, em geral 501 "
+            "por julgamento. A exceção eram cargos militares, como o de estratego, que eram eleitos. A partir de "
+            "370 a.C., o sorteio passou a ser feito com o kleroterion, uma laje de pedra com fileiras de fendas. "
+            "As plaquetas de identificação dos voluntários, os pinakia, eram encaixadas nas fendas, cada tribo "
+            "numa coluna. O magistrado então punha num tubo lateral uma mistura de dados brancos e pretos, com o "
+            "número de brancos proporcional ao de jurados necessários, e os liberava um a um. Se saía um dado "
+            "branco, a fileira inteira, com um cidadão de cada tribo, estava escolhida; se saía um preto, a "
+            "fileira era descartada e o processo seguia para a próxima. O mecanismo que soltava os dados não "
+            "sobreviveu. Fragmentos dessas máquinas foram achados por arqueólogos na Ágora de Atenas na década de "
+            "1930, datados do século II a.C."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Sortition",
+                "In ancient Athenian democracy, sortition was the traditional and primary method for appointing political officials, and its use was regarded as a principal characteristic of democracy. [...] "
+                "It was utilized to pick most of the magistrates for their governing committees, and for their juries (typically of 501 men). [...] "
+                "Most Greek writers who mention democracy (including Aristotle, Plato, Herodotus, and Pericles) emphasize the role of selection by lot, or state outright that being allotted is more democratic than elections (which were seen as oligarchic). [...] "
+                "Sortition was used for most positions, except for military positions such as strategos that were elected.",
+                nome="Sortition"),
+            wiki("Kleroterion",
+                "was a randomization device used by the Athenian polis during the period of democracy to select citizens to the boule, to most state offices, to the nomothetai, and to court juries. "
+                "The kleroterion was a slab of stone incised with rows of slots and with an attached tube. "
+                "Citizens' tokens—pinakia—were placed randomly in the slots so that every member of each of the tribes of Athens had their tokens placed in the same column. [...] "
+                "released individually by a mechanism that has not survived to posterity [...] "
+                "When a die was released, a complete row of tokens (so, one citizen from each of the tribes of Athens) was either selected if the die was coloured one colour, or discarded if it was the alternate color. [...] "
+                "from 370 BC onwards, they employed the kleroterion. [...] "
+                "The number of white dice was proportional to the number of jurors needed. "
+                "The archon allowed the dice to fall through a tube on the side of the kleroterion and drew them one by one. "
+                "If the die was white, the top row was selected as jurors. "
+                "If the die was black, the archon moved on to the next row down from the top and repeated the process until all juror positions were filled for the day. [...] "
+                "Archaeologists first discovered kleroteria in the 1930s in the Athenian Agora, dating them to the second century BC.",
+                nome="Kleroterion"),
+        ],
+    },
+    # 2 os 190 cacos pré-escritos contra Temístocles
+    {
+        "temas_secundarios": ["leis_julgamentos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Num poço perto da Acrópole, arqueólogos acharam 190 cacos de cerâmica com o nome de Temístocles, prontos para votar pelo exílio dele. Pela caligrafia, só 14 pessoas os escreveram.",
+        "explicacao": (
+            "O ostracismo permitia aos atenienses expulsar um cidadão da cidade por dez anos. Todo ano, a "
+            "assembleia era consultada sobre se queria fazer um; se a maioria concordasse, a votação acontecia "
+            "dois meses depois. Cada eleitor indicava um nome, riscado num caco de cerâmica, o ostrakon, material "
+            "abundante e praticamente de graça, ao contrário do papiro. Como muitos eram analfabetos, havia "
+            "escribas para escrever por eles. Segundo Plutarco, a votação só valia com pelo menos 6.000 votos, e o "
+            "mais votado tinha dez dias para sair, sem perder os bens. Os 190 cacos do poço, escritos por "
+            "catorze mãos, eram claramente para distribuir aos eleitores. Uma leitura é que um grupo organizado "
+            "tentou influenciar a votação e depois escondeu as provas no poço; outra é que eram mercadoria, "
+            "vendida por comerciantes a quem não sabia escrever ou queria poupar tempo. Temístocles acabou mesmo "
+            "ostracizado, antes de 471 a.C. Às vezes bastava alguém parecer proeminente demais. Numa anedota, um "
+            "eleitor analfabeto pediu a Aristides, o \"Justo\", sem reconhecê-lo, que escrevesse \"Aristides\" "
+            "no caco. O motivo: estava cansado de ouvi-lo ser chamado de justo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ostracism",
+            "Ostracism (Greek: ὀστρακισμός, ostrakismos) was an Athenian democratic procedure in which any citizen could be expelled from the city-state of Athens for ten years. [...] "
+            "Broken pottery, abundant and virtually free, served as a kind of scrap paper (in contrast to papyrus, which was imported from Egypt as a high-quality writing surface, and too costly to be disposable). "
+            "Each year Athenians were asked in the assembly whether they wished to hold an ostracism. [...] "
+            "A majority of citizens must agree to start the procedure of ostracism. If they did, an ostracism would be held two months later. [...] "
+            "citizens gave the names of those they wished to be ostracized to a scribe, as many of them were illiterate, and they were scratched on pottery shards. [...] "
+            "According to Plutarch, the ostracism was considered valid if the total number of votes cast was at least 6,000 [...] "
+            "The person newly ostracized had ten days to leave the city. [...] "
+            "The banished man's property was not confiscated and there was no loss of status. [...] "
+            "An example of the practicalities of ostracism comes from the cache of 190 ostraka discovered dumped in a well next to the acropolis. "
+            "From the handwriting, they appear to have been written by fourteen individuals and bear the name of Themistocles, ostracised before 471 BC, and were evidently meant for distribution to voters. "
+            "This was not necessarily evidence of electoral fraud (being no worse than modern voting instruction cards), but their being dumped in the well may suggest that their creators wished to hide them. "
+            "If so, these ostraka provide an example of organized groups attempting to influence the outcome of ostracisms. [...] "
+            "There is another interpretation, however, according to which these ostraka were prepared beforehand by enterprising businessmen who offered them for sale to citizens who could not easily inscribe the desired names for themselves or who simply wished to save time. [...] "
+            "In one anecdote about Aristides, known as \"the Just\", who was ostracised in 482, an illiterate citizen, not recognising him, asked him to write the name Aristides on his ostrakon. "
+            "When Aristides asked why, the man replied it was because he was sick of hearing him being called \"the Just\". "
+            "Perhaps merely the sense that someone had become too arrogant or prominent was enough to get someone's name onto an ostrakon.",
+            nome="Ostracism")],
+    },
+    # 3 Temístocles: da prata de Láurio a governador persa
+    {
+        "temas_secundarios": ["asia_antiga", "navegacao_antiga"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Temístocles convenceu Atenas a gastar uma veia de prata recém-achada em navios e venceu os persas em Salamina. Anos depois, expulso de Atenas, terminou a vida como governador a serviço do rei persa.",
+        "explicacao": (
+            "Em 483 a.C., uma enorme veia nova de prata apareceu nas minas de Láurio, que pertenciam ao Estado "
+            "ateniense. Temístocles propôs gastar a riqueza numa frota de 200 trirremes; seu rival Aristides "
+            "preferia dividi-la entre os cidadãos. Para convencer a assembleia, Temístocles nem falou da Pérsia, "
+            "ameaça que parecia distante, e apontou para a guerra contra a vizinha Egina. O ostracismo de 482 a.C. "
+            "virou um duelo entre os dois, e o exilado foi Aristides. Os navios foram cruciais: em 480 a.C., "
+            "Temístocles comandou a frota ateniense em Salamina, e um ardil dele atraiu a frota persa para o "
+            "estreito, onde a vitória grega decidiu a guerra. A glória durou pouco. Visto como arrogante, ele foi "
+            "ostracizado em 472 ou 471 a.C., os espartanos o envolveram numa suposta trama de traição e ele fugiu "
+            "para a Ásia Menor. Lá entrou para o serviço do rei persa Artaxerxes I, que o fez governador de "
+            "Magnésia, com a renda de três cidades: uma \"para o pão\", outra para os acompanhamentos e outra "
+            "\"para o vinho\". Morreu ali em 459 a.C. Ele provavelmente foi o primeiro governante a cunhar moedas "
+            "com o próprio retrato, embora haja dúvida se a figura não seria Zeus."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Themistocles",
+                "In 483 BC, a massive new seam of silver was found in the Athenian mines of Laurion. "
+                "Themistocles proposed that the silver should be used to build a new fleet of 200 triremes, while Aristides suggested it should instead be distributed among the Athenian citizens. "
+                "Themistocles avoided mentioning Persia, deeming that it was too distant a threat for the Athenians to act on, and instead focused their attention on Aegina. [...] "
+                "the ostracism of 482 BC became a direct contest between Themistocles and Aristides. In what has been characterized as the first referendum, Aristides was ostracised, and Themistocles's policies were endorsed. [...] "
+                "he commanded the Athenian navy at the battles of Artemisium and Salamis in 480 BC. "
+                "Due to his subterfuge, the Allies successfully lured the Persian fleet into the Straits of Salamis, and the decisive Greek victory there was the turning point of the war. [...] "
+                "his perceived arrogance began to alienate him from the Athenians. In 472 or 471 BC, he was ostracised, and went into exile in Argos. "
+                "The Spartans now saw an opportunity to destroy Themistocles, and implicated him in the alleged treasonous plot of 478 BC of their own general Pausanias. [...] "
+                "he traveled to Asia Minor, where he entered the service of the Persian king Artaxerxes I (reigned 465–424 BC). "
+                "He was made governor of Magnesia, and lived there for the rest of his life. "
+                "Themistocles died in 459 BC, probably of natural causes. [...] "
+                "assigned the revenues of three cities: Magnesia (about 50 talents per year—\"for bread\"); Myus (\"for opson\"); and Lampsacus (\"for wine\"). [...] "
+                "Themistocles was probably the first ruler ever to issue coinage with his personal portrait [...] "
+                "Still, there is some doubt that his coins may have represented Zeus rather than himself.",
+                nome="Themistocles"),
+            wiki("Laurium",
+                "The mines, which were the property of the state, were usually farmed out for a certain fixed sum and a percentage on the working",
+                nome="Laurium"),
+        ],
+    },
+    # 4 Sócrates propõe a própria pena: refeições grátis
+    {
+        "temas_secundarios": ["leis_julgamentos", "olimpiadas"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "Condenado por impiedade, Sócrates teve de propor a própria pena. Brincou que merecia refeições grátis pagas pela cidade, honra dada a campeões olímpicos. Os jurados votaram a morte.",
+        "explicacao": (
+            "O julgamento aconteceu em 399 a.C., numa Atenas assustada depois da guerra e das pestes. Sócrates "
+            "respondia a duas acusações: impiedade e corrupção da juventude. Os jurados eram cidadãos voluntários "
+            "sorteados, e o júri tinha provavelmente 501 homens. Na Apologia, Platão diz que, se apenas 30 votos "
+            "tivessem mudado, Sócrates teria sido absolvido, o que, num júri de 501, indica uma condenação por "
+            "280 a 221. Pelo costume, depois do veredito acusação e defesa propunham penas. Surpreso com a margem "
+            "estreita, Sócrates sugeriu, em tom de piada, ser \"punido\" com refeições grátis no Pritaneu, o "
+            "fogo sagrado da cidade, privilégio de benfeitores de Atenas e de campeões olímpicos. Depois ofereceu "
+            "uma multa de 100 dracmas, um quinto do que tinha. Por fim, amigos como Platão e Críton propuseram "
+            "3.000 dracmas e se ofereceram para garantir o pagamento. A acusação pediu a morte, e essa pena foi "
+            "aprovada por uma maioria maior do que a da própria condenação. Amigos e discípulos insistiram para "
+            "que ele fugisse, e a cidade esperava isso, mas Sócrates, aos 70 anos, recusou-se a desrespeitar a "
+            "lei e bebeu a cicuta."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Trial_of_Socrates",
+            "held to determine the philosopher's guilt of two charges against the city of Athens: asebeia (impiety) and corruption of the youth. [...] "
+            "Athenian juries were drawn by lottery, from a group of hundreds of male-citizen volunteers [...] "
+            "a jury of 501 men was probably the legal norm. "
+            "In the  Apology of Socrates (36a–b), about Socrates's defence at trial, Plato said that if just 30 of the votes had been cast differently, Socrates would have been acquitted (36a) [...] "
+            "Assuming a jury of 501, this would imply that he was convicted by a majority of 280 against 221. "
+            "The citizens were in a state of fear because of the past war and plagues [...] "
+            "he and the prosecutor suggested sentences for crimes against the city-state of Athens. "
+            "Expressing surprise at the few votes required for an acquittal, Socrates joked that he be punished with free meals at the Prytaneum (the city's sacred hearth), an honour usually held for a benefactor of Athens, and the victorious athletes of an Olympiad. "
+            "After that failed suggestion, Socrates then offered to pay a fine of 100 drachmae – one-fifth of his property [...] "
+            "Finally, a fine of 3,000 drachmae was agreed, proposed by Plato, Crito, Critobulus, and Apollodorus, who guaranteed payment. "
+            "Nonetheless, the prosecutor at the trial proposed the death penalty for the impious philosopher. [...] "
+            "In the end, the sentence of death was passed by a greater majority than the majority by which he had been convicted. "
+            "Friends, followers, and students encouraged Socrates to flee Athens, which the citizens expected that he would do. "
+            "However, Socrates refused to flout the law [...] "
+            "the 70-year-old Socrates executed his own death sentence and drank the hemlock [...] "
+            "In the time of the trial of Socrates, the year 399 BC",
+            nome="Trial of Socrates")],
+    },
+    # 5 o Batalhão Sagrado de Tebas
+    {
+        "temas_secundarios": ["costumes_rituais"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "A tropa de elite de Tebas, o Batalhão Sagrado, era formada por 150 casais de homens. Ajudou a derrotar Esparta e foi aniquilada em 338 a.C. pelo exército de Filipe II e do jovem Alexandre, o Grande.",
+        "explicacao": (
+            "Plutarco, a principal fonte sobre a unidade, conta que ela foi criada pelo comandante Gorgidas em "
+            "378 a.C., com 300 homens escolhidos apenas pela capacidade, sem importar a classe social. Cada par "
+            "reunia um amante mais velho, o erastes, e um amado mais jovem, o eromenos. O batalhão teve papel "
+            "crucial na Batalha de Leuctra, em 371 a.C., quando Tebas derrotou Esparta. Até ser vencido, era tido "
+            "como invencível em toda a Grécia. O fim veio em Queroneia: segundo Plutarco, os 300 caíram onde "
+            "estavam, e Filipe II, ao ver os corpos amontoados, chorou e disse que morresse quem suspeitasse que "
+            "aqueles homens tinham feito ou sofrido algo indigno. No local havia um enorme leão de pedra sobre a "
+            "tumba coletiva dos tebanos. Escavações no fim do século XIX acharam ali 254 esqueletos em sete "
+            "fileiras, como numa falange, e alguns pares tinham os braços enlaçados pelos cotovelos. Em geral, "
+            "os estudiosos aceitam que são os mortos do batalhão, mas há quem conteste. E um historiador chegou a "
+            "pôr em dúvida a existência de uma tropa de amantes, porque Xenofonte não a menciona."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Sacred_Band_of_Thebes",
+            "was an elite heavy infantry of select soldiers consisting of 150 pairs of male couples, 300 men total, organised by age that formed the elite force of the Theban army in the 4th century BC. "
+            "It was first organised under commander Gorgidas in 378 BC and later Pelopidas, and played a crucial role in the Battle of Leuctra. "
+            "It was annihilated by Philip II of Macedon and young Alexander the Great in the Battle of Chaeronea in 338 BC. [...] "
+            "were responsible for the defeat of the Spartans at the decisive Battle of Leuctra (371 BC). "
+            "Plutarch (46–120 AD), a native of the village of Chaeronea, is the source of the most substantial surviving account of the Sacred Band. [...] "
+            "According to Plutarch, the 300 hand-picked men were chosen by Gorgidas purely for ability and merit, regardless of social class. "
+            "It was composed of 150 male couples, each pair consisting of an older erastes (ἐραστής, 'lover') and a younger eromenos (ἐρώμενος, 'beloved'). [...] "
+            "Plutarch records that all 300 fell where they stood beside their last commander, Theagenes. "
+            "Their defeat at the battle was a significant victory for Philip, since until then, the Sacred Band was regarded as invincible throughout all of Ancient Greece. "
+            "Plutarch records that Philip II, on encountering the corpses \"heaped one upon another\", understanding who they were, wept and exclaimed,  "
+            "Perish any man who suspects that these men either did or suffered anything unseemly. [...] "
+            "the Thebans had erected a gigantic statue of a lion near the village of Chaeronea, surmounting the polyandrion (πολυάνδριον, common tomb) of the Thebans killed in battle against Philip. [...] "
+            "In the late 19th century, excavations in the area revealed that the monument stood at the edge of a quadrangular enclosure. "
+            "The skeletons of 254 men laid out in seven rows were found buried within it. [...] "
+            "The skeletons within the enclosure of the lion monument are generally accepted to be the remains of the Sacred Band, as the number given by Plutarch was probably an approximation. "
+            "However, historians such as Nicholas Geoffrey Lemprière Hammond, Karl Julius Beloch, and Vincenzo Costanzi do not believe that the lion monument marks the location of the Sacred Band dead. [...] "
+            "Recently, however, the existence of such a band of heroic lovers has come into question. "
+            "Citing Xenophon's surprising failure to mention it in his work the Hellenica [...] "
+            "The digging of the polyandrion of Chaeronea showed 254 skeletons lying in seven rows, mimicking the arrangement of a phalanx. "
+            "Some pairs of corpses had their arms linked together at the elbows, suggesting their nature as lovers.",
+            nome="Sacred Band of Thebes")],
+    },
+    # 6 o eclipse de Tales que parou uma batalha
+    {
+        "temas_secundarios": ["historia_astronomia", "asia_antiga"],
+        "tipos_espanto": ["misterio_aberto", "historia_humana"],
+        "gancho": "Segundo Heródoto, uma batalha entre lídios e medos parou quando o dia virou noite, e os dois lados fizeram as pazes. O eclipse teria sido previsto por Tales de Mileto, mas ninguém sabe como.",
+        "explicacao": (
+            "A guerra entre o reino da Lídia e os medos, na Anatólia, atual Turquia, já durava cinco anos sem "
+            "vencedor quando, no meio de uma batalha, o dia de repente virou noite. Heródoto, que escreveu cerca "
+            "de 150 anos depois, conta que os soldados pararam de lutar e negociaram a paz: a filha do rei lídio "
+            "se casou com o filho do rei medo, e o rio Hális virou a fronteira. Ele acrescenta que Tales tinha "
+            "previsto o fenômeno, acertando o ano. Pelos cálculos modernos, o único eclipse solar que se encaixa "
+            "no lugar e na época é o de 28 de maio de 585 a.C. Isaac Asimov chamou a batalha de o evento "
+            "histórico mais antigo com data conhecida com precisão de dia. A previsão, porém, é um enigma. Na "
+            "época ainda não se sabia que os eclipses acontecem quando a Lua passa entre a Terra e o Sol, e não "
+            "havia nenhum ciclo conhecido capaz de prever um eclipse num lugar específico; nem os babilônios "
+            "conseguiam isso. Por isso, os estudiosos modernos desconfiam da história. Há quem proponha outras "
+            "datas e até um eclipse da Lua ao entardecer. Se Tales acertou, pode ter sido sorte."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Eclipse_of_Thales",
+            "The eclipse of Thales was a solar eclipse, which was, according to the ancient Greek historian Herodotus (writing about 150 years later), accurately predicted by the Greek philosopher Thales of Miletus. [...] "
+            "interrupted a battle in a long-standing war between the Medes and the Lydians in Anatolia (present-day Turkey). "
+            "The only solar eclipse matching the presumed place, era, and conditions of visibility necessary to explain the historical event is the eclipse of 28 May 585 BC. "
+            "How exactly Thales could have predicted a solar eclipse remains uncertain, however, and modern scholars are sceptical of the story's veracity. "
+            "Some have argued for different dates, or for other interpretations of Herodotus's account. [...] "
+            "war broke out between the Lydians and the Medes, and continued for five years, with various success. [...] "
+            "another combat took place in the sixth year, in the course of which, just as the battle was growing warm, day was on a sudden changed into night. "
+            "This event had been foretold by Thales, the Milesian, who forewarned the Ionians of it, fixing for it the very year in which it actually took place. "
+            "The Medes and Lydians, when they observed the change, ceased fighting, and were alike anxious to have terms of peace agreed on. "
+            "As part of the terms of the peace agreement, Alyattes's daughter Aryenis was married to Cyaxares's son Astyages, and the Halys River (present-day Kızılırmak River) was declared to be the border of the two warring kingdoms. [...] "
+            "American writer Isaac Asimov described this battle as the earliest historical event whose date is known with precision to the day [...] "
+            "At the time of Thales' purported prediction, it was not yet known that eclipses were caused by the Moon coming between the Earth and the Sun [...] "
+            "However, Babylonians were far from being able to predict the local conditions of solar eclipses at that point, which makes this hypothesis highly unlikely. "
+            "At the time, there was no known cycle that could be reliably used to predict an eclipse for a given location and, therefore, any accurate prediction would have been down to luck. [...] "
+            "An alternative theory is that the solar eclipse story is a misinterpretation of Herodotus's text, and that the battle might have instead been disrupted by a lunar eclipse just before moonrise, at dusk.",
+            nome="Eclipse of Thales")],
+    },
+    # 7 o sílfio de Cirene
+    {
+        "temas_secundarios": ["plantas", "especiarias"],
+        "tipos_espanto": ["misterio_aberto", "conexao_inesperada"],
+        "gancho": "Cirene, colônia grega na atual Líbia, vivia do sílfio, planta tão valiosa que estampava suas moedas. Ela teria se extinguido na época romana, e até hoje não se sabe ao certo que planta era.",
+        "explicacao": (
+            "O sílfio servia de tempero, perfume, afrodisíaco e remédio, e o que valia dinheiro era a sua resina. "
+            "O comércio dele pesava tanto na economia de Cirene que a maioria das moedas da cidade trazia a imagem "
+            "da planta, e poetas romanos diziam que ela valia o seu peso em ouro. Júlio César chegou a registrar "
+            "1.500 libras de sílfio no tesouro de Roma. Segundo Plínio, o Velho, o último caule conhecido achado "
+            "na região foi dado ao imperador Nero, como curiosidade. Esse sumiço já foi apontado como a primeira "
+            "extinção de uma espécie registrada na história. A planta crescia numa faixa estreita, de uns 201 por "
+            "56 quilômetros, no leste da Líbia de hoje. A explicação tradicional é o excesso de pastoreio somado à "
+            "colheita predatória, mas pesquisas recentes atribuem o declínio sobretudo à desertificação da região. "
+            "Como não sobrou nenhuma amostra, não há análise genética possível, e a identidade segue em debate. "
+            "A aposta mais comum é um parente da férula-gigante, do gênero Ferula. Uma espécie rara da Turquia, "
+            "a Ferula drudeana, é forte candidata por várias semelhanças, inclusive uma resina aromática, embora "
+            "não tenha nenhuma ligação conhecida com a Líbia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Silphium",
+            "is an unidentified plant that was used in classical antiquity as a seasoning, perfume, aphrodisiac, and medicine. "
+            "It was an essential item of trade from the ancient North African city of Cyrene, and was so critical to the Cyrenian economy that most of their coins bore an image of the plant. "
+            "The valuable product was the plant's resin [...] "
+            "The exact identity of silphium is unclear. It was claimed to have become extinct in Roman times, but is commonly believed to have been a relative of giant fennel in the genus Ferula. [...] "
+            "The plant was sung about by Roman poets and singers, who considered it equivalent to its weight in gold. [...] "
+            "Julius Caesar directly registered silphium as \"1500 pounds of laser\" in the Roman treasury. [...] "
+            "The identity of silphium is highly debated. Without a surviving sample, no genetic analysis can be made. [...] "
+            "Ferula drudeana, an endemic species found in Turkey, is considered a strong candidate for silphium based on several unusual shared features [...] "
+            "production of an aromatic, spice-like gum resin with properties similar to those reported for silphium. "
+            "However, F. drudeana belongs to a lineage from the southern Caspian Sea region with no known connection to eastern Libya. [...] "
+            "The disappearance of silphium has been suggested to be the first extinction of a plant or animal species in recorded history. [...] "
+            "Silphium had a remarkably narrow native range, about 125 by 35 miles (201 by 56 km), in the southern steppe of Cyrenaica (present-day eastern Libya). "
+            "Overgrazing combined with overharvesting have long been cited as the primary factors that led to its extinction. "
+            "Recent research has challenged this notion, though, arguing instead that desertification in ancient Cyrenaica was the primary driver of silphium's decline. [...] "
+            "Pliny reported that the last known stalk of silphium found in Cyrenaica was given to Emperor Nero \"as a curiosity\".",
+            nome="Silphium")],
+    },
+    # 8 o Palimpsesto de Arquimedes
+    {
+        "temas_secundarios": ["historia_matematica", "decifracao"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Em 1229, um escriba raspou um livro com obras de Arquimedes para reaproveitar o pergaminho num livro de orações. Séculos depois, o texto apagado foi recuperado com luz ultravioleta, infravermelha e raios X.",
+        "explicacao": (
+            "Arquimedes viveu no século III a.C. e escrevia suas provas em forma de cartas. Por volta de 950, em "
+            "Constantinopla, um escriba anônimo copiou uma coletânea dessas obras. O códice foi parar perto de "
+            "Jerusalém, onde, em 1229, foi desmontado, raspado, lavado e reaproveitado num livro litúrgico "
+            "cristão. Em 1906, Johan Heiberg, a maior autoridade em Arquimedes, confirmou que sob as orações "
+            "havia obras dele tidas como perdidas e fotografou as páginas. Em 1922, o manuscrito sumiu "
+            "de uma biblioteca da Igreja Ortodoxa em Istambul e acabou com um empresário que vivia em Paris. "
+            "Nesse período, um falsificador pintou retratos religiosos em folha de ouro sobre quatro páginas, para "
+            "valorizar o livro. Em 1998, ele foi a leilão em Nova York e um comprador americano anônimo pagou 2 "
+            "milhões de dólares, emprestando-o depois ao Museu de Arte Walters, em Baltimore. Entre 1999 e 2008, "
+            "imagens em várias faixas de luz e fluorescência de raios X, feitas num acelerador de Stanford, "
+            "revelaram até o texto escondido sob as pinturas. Entre as obras está o Método, em que Arquimedes "
+            "trata figuras planas como feitas de infinitas linhas e as equilibra numa alavanca para calcular "
+            "áreas e volumes, como no método dos indivisíveis, surgido muito mais tarde."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Archimedes_Palimpsest",
+            "It contains two works of Archimedes that were thought to have been lost (the Ostomachion and the Method of Mechanical Theorems) [...] "
+            "In 1922, the manuscript went missing in the midst of the evacuation of the Greek Orthodox library in Istanbul [...] "
+            "at some point forged pictures were painted on top of some of the text to increase resale value. [...] "
+            "in 1998, the businessman's daughter risked a public auction in New York [...] "
+            "The texts under the forged pictures, as well as previously unreadable texts, were revealed by analyzing images produced by ultraviolet, infrared, visible and raking light, and X-ray at Stanford University. [...] "
+            "Archimedes lived in the 3rd century BC and wrote his proofs as letters in Doric Greek addressed to contemporaries [...] "
+            "A copy of Isidorus' edition of Archimedes was made around AD 950 by an anonymous scribe, again in the Byzantine Empire [...] "
+            "This medieval Byzantine manuscript then traveled from Constantinople to Jerusalem, likely sometime after the Crusader sack of Byzantine Constantinople in 1204. "
+            "There, in 1229, the Archimedes codex was unbound, scraped and washed, along with at least six other partial parchment manuscripts [...] "
+            "rebound and reused for a Christian liturgical text [...] "
+            "Johan Heiberg, the world's authority on Archimedes, realized that the work was by Archimedes. "
+            "When Heiberg studied the palimpsest in Constantinople in 1906, he confirmed that the palimpsest included works by Archimedes thought to have been lost. "
+            "Heiberg was permitted by the Greek Orthodox Church to take careful photographs of the palimpsest's pages [...] "
+            "the palimpsest was acquired by Marie Louis Sirieix, a \"businessman and traveler to the Orient who lived in Paris.\" [...] "
+            "a forger added copies of medieval evangelical portraits in gold leaf onto four pages in the book in order to increase its sales value, further damaging the text. "
+            "These forged gold leaf portraits nearly obliterated the text underneath them, and x-ray fluorescence imaging at the Stanford Linear Accelerator Center would later be required to reveal it. [...] "
+            "the palimpsest was bought for $2 million by an anonymous American buyer. [...] "
+            "The anonymous new owner loaned the book to the Walters Art Museum in Baltimore, where the palimpsest was the subject of an extensive imaging study from 1999 to 2008 [...] "
+            "He viewed plane figures as made out of infinitely many lines as in the later method of indivisibles, and balanced each line, or slice, of one figure against a corresponding slice of the second figure on a lever.",
+            nome="Archimedes Palimpsest")],
+    },
+    # 9 dracma = punhado de espetos
+    {
+        "temas_secundarios": ["dinheiro", "palavras_viajantes"],
+        "tipos_espanto": ["origem_inesperada"],
+        "gancho": "\"Dracma\" vem de \"punhado\". Antes das moedas, os gregos usavam como dinheiro espetos de metal, os óbolos, e seis deles, o que cabia numa mão fechada, formavam uma dracma.",
+        "explicacao": (
+            "O nome dracma deriva de um verbo grego que significa \"agarrar\", e óbolo vem de obelos, que "
+            "quer dizer \"espeto\" ou \"prego\". Segundo Plutarco, os óbolos eram no início espetos de cobre ou "
+            "bronze trocados por peso, e seis deles faziam uma dracma porque era o que a mão conseguia segurar. A "
+            "arqueologia apoia a ideia. No santuário de Hera em Argos, apareceu um tesouro com mais de 150 "
+            "espetos em forma de haste, e outros achados de Argos são de bem antes de 800 a.C. Análises "
+            "metalúrgicas sugerem que esses espetos não eram matéria-prima para fabricar objetos: o mais provável "
+            "é que funcionassem como dinheiro simbólico, trocado em punhados de seis. A ligação entre dracma e "
+            "punhado foi registrada por Heráclides do Ponto, filósofo do século IV a.C., a quem os sacerdotes do "
+            "santuário contaram que o rei Fídon de Argos havia dedicado espetos ali. Quando vieram as moedas de "
+            "prata, os nomes ficaram, e em Atenas seis óbolos continuaram valendo uma dracma. O óbolo também "
+            "acompanhava os mortos: era posto na boca do defunto para pagar Caronte pela travessia do rio "
+            "Aqueronte ou do Estige."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Obol_(coin)",
+                "lit. 'nail; metal spit' [...] "
+                "According to Plutarch they were originally spits of copper or bronze traded by weight, while six obols make a drachma or a handful, since that was as many as the hand could grasp. [...] "
+                "Excavations at Argos discovered several dozen of these early obols, dated well before 800 BC [...] "
+                "they were exchanged in handfuls (drachmae) of six spits; they were not used for manufacturing artifacts as metallurgical analyses suggest, but they were most likely used as token-money. "
+                "In Classical Athens, obols were traded as silver coins. Six obols made up the drachma. [...] "
+                "The deceased were buried with an obol placed in the mouth of the corpse, so that—once a deceased's shade reached Hades—they would be able to pay Charon for passage across the river Acheron or Styx.",
+                nome="Obol (coin)"),
+            wiki("Ancient_drachma",
+                "The name drachma is derived from the verb δράσσομαι (drássomai, \"(I) grasp\"). [...] "
+                "Initially a drachma was a fistful (a \"grasp\") of six oboloí or obeloí (metal sticks, literally \"spits\") [...] "
+                "A hoard of over 150 rod-shaped obeloi was uncovered at Heraion of Argos in Peloponnese. [...] "
+                "The notion that drachma derived from the word for fistful was recorded by Herakleides of Pontos (387–312 BC) who was informed by the priests of Heraion that Pheidon, king of Argos, dedicated rod-shaped obeloi to Heraion.",
+                nome="Ancient drachma"),
+        ],
+    },
+    # 10 as formigas garimpeiras de Heródoto
+    {
+        "temas_secundarios": ["insetos", "minerais_rochas"],
+        "tipos_espanto": ["misterio_aberto", "conexao_inesperada"],
+        "gancho": "Heródoto descreveu formigas do tamanho de raposas que desenterravam ouro. Um etnólogo francês sugeriu que eram marmotas do Himalaia, cujas tocas trazem pó de ouro à superfície.",
+        "explicacao": (
+            "No livro III das Histórias, Heródoto conta que numa província indiana, no extremo leste do Império "
+            "Persa, havia um deserto de areia rica em pó de ouro. Ali viviam \"formigas\" peludas, do tamanho "
+            "de raposas, que traziam o ouro à tona ao cavar seus túneis, e os moradores recolhiam esse pó. Ele não "
+            "disse ter visto os bichos: repetia o que outros viajantes lhe contaram. A história foi aceita na "
+            "Antiguidade, e no século I Plínio, o Velho, ainda citava o ouro indiano tirado de formigas. O "
+            "etnólogo francês Michel Peissel propôs uma explicação. No planalto de Deosai, no Paquistão, de solo "
+            "rico em pó de ouro, o povo minaro lhe contou que há gerações recolhe o ouro que as marmotas do "
+            "Himalaia trazem à superfície ao cavar suas tocas. Para Peissel, Heródoto, que provavelmente não sabia "
+            "persa e dependia de tradutores, pode ter confundido a palavra persa para \"marmota\" com a de "
+            "\"formiga da montanha\". É uma hipótese, não uma prova. Mas bichos que trazem ouro do subsolo existem: "
+            "um estudo australiano de 2011 mostrou que cupins, ao cavar, levam traços de ouro para a superfície."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "hipotese",
+        "fontes": [wiki("Gold-digging_ant",
+            "In Histories (Book 3, sections 102 to 105) Herodotus reports that a species of fox-sized, furry \"ants\" lives in one of the far eastern, Indian provinces of the Persian Empire. "
+            "This region, he reports, is a sandy desert, and the sand there contains a wealth of fine gold dust. "
+            "These giant ants, according to Herodotus, would often unearth the gold dust when digging their mounds and tunnels, and the people living in this province would then collect the precious dust. "
+            "Herodotus's account was well-known and endorsed in antiquity. "
+            "For example, in the first century A.D. the Roman natural historian Pliny the Elder writes that he will omit \"the Indian gold obtained from ants [...] "
+            "French ethnologist Michel Peissel says that the Himalayan marmot on the Deosai Plateau in Gilgit–Baltistan province of Pakistan, may have been what Herodotus called giant \"ants\". "
+            "Much like the province that Herodotus describes, the ground of the Deosai Plateau is rich in gold dust. "
+            "Peissel interviewed the Minaro tribal people who live in the Deosai Plateau, and they have confirmed that they have, for generations, collected the gold dust that the marmots bring to the surface when digging burrows. [...] "
+            "Peissel says that Herodotus may have confused the old Persian word for \"marmot\" with that for \"mountain ant\" because he probably did not know any Persian and thus relied on local translators when travelling in the Persian Empire. "
+            "Herodotus did not claim to have seen the gold-digging \"ant\" creatures; he stated that he was simply reporting what other travellers told him. [...] "
+            "A 2011 study by Australian scientists found that termites have been found to excrete trace deposits of gold. "
+            "According to the CSIRO, the termites burrow beneath eroded subterranean material which typically masks human attempts to find gold, and ingest and bring the new deposits to the surface.",
+            nome="Gold-digging ant")],
+    },
+    # 11 o oráculo de Delfos e as falhas geológicas
+    {
+        "temas_secundarios": ["vulcoes_terremotos", "religioes"],
+        "tipos_espanto": ["misterio_aberto", "conexao_inesperada"],
+        "gancho": "Plutarco ligava o transe da sacerdotisa de Delfos a emanações de aroma doce. Geólogos acharam duas falhas cruzando sob o templo e gases na água local, mas ainda se discute se um gás explicaria o transe.",
+        "explicacao": (
+            "Plutarco, que foi sacerdote em Delfos por vários anos, associava o poder da Pítia a vapores ligados "
+            "à água que corria sob o templo e contava que às vezes a sala se enchia de um perfume doce. Por "
+            "falta de provas, arqueólogos modernos deixaram essas descrições de lado. A partir dos anos 1980, num "
+            "levantamento das falhas ativas da Grécia, o geólogo Jelle de Boer e colegas acharam duas falhas que se "
+            "cruzam logo abaixo de onde provavelmente ficava a câmara do oráculo, perto do rifte do golfo de "
+            "Corinto, uma das regiões geologicamente mais ativas da Terra. Num estudo publicado em 2001, ele e "
+            "colegas relataram etano, metano e etileno na água de fontes perto do templo. A proposta foi que o "
+            "etileno, gás de cheiro adocicado que já serviu de anestésico, explicaria o transe. A ideia foi "
+            "contestada: em 2006, uma equipe liderada por Giuseppe Etiope, do Instituto Nacional de Geofísica e "
+            "Vulcanologia da Itália, argumentou que a natureza não produz etileno em concentração suficiente. "
+            "Sugeriu, em vez dele, metano com um pouco de gás carbônico, que deixaria a sala pobre em oxigênio. "
+            "De Boer rebateu que isso não explicaria o cheiro doce. A causa do transe continua em aberto."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "hipotese",
+        "fontes": [
+            wiki("Pythia",
+                "these refer to an observation made by Plutarch, who presided as high priest at Delphi for several years, who stated that the oracular powers of the sibyl appeared to be associated with vapors from the Kerna spring waters that flowed under the temple. [...] "
+                "During the 1980s, the interdisciplinary team of geologist Jelle Zeilinga de Boer, archaeologist John R. Hale, forensic chemist Jeffrey P. Chanton, and toxicologist Henry R. Spiller investigated the site at Delphi using this photograph and other sources as evidence, as part of a United Nations survey of all active faults in Greece. [...] "
+                "The rift of the Gulf of Corinth is one of the most geologically active sites on Earth [...] "
+                "The two faults cross one another, and they intersect right below where the adyton was probably located. [...] "
+                "Plutarch reports that the temple was filled with a sweet smell when the \"deity\" was present",
+                nome="Pythia"),
+            {"url": "https://www.sciencedaily.com/releases/2001/08/010807075959.htm",
+             "titulo": "Ancient Greek Oracle's Trance Linked To Narcotic Gas Emissions (ScienceDaily, 2001)",
+             "idioma": "en",
+             "trecho": "De Boer and colleagues found ethane, methane, and ethylene in spring water near the Oracle. "
+                       "The euphoric effects of ethylene, which had been used as anesthesia in the last century, jibe very well with Plutarch's description of the gas the Pythia inhaled."},
+            {"url": "https://www.livescience.com/4277-theory-oracle-delphi-high.html",
+             "titulo": "New Theory on What Got the Oracle of Delphi High (Live Science, 2006)",
+             "idioma": "en",
+             "trecho": "Published 31 October 2006 [...] "
+                       "said study leader Giuseppe Etiope of the National Institute of Geophysics and Volcanology in Rome. "
+                       "Etiope’s research refutes the widely-reported 2001 findings of geologist Jelle Z. de Boer [...] "
+                       "A lack of evidence led modern archaeologists to dismiss Plutarch’s observations [...] "
+                       "“We excluded ethylene as a candidate because it is impossible to have in nature ethylene concentrations so high to induce odour and neurotoxic effects,” Etiope told LiveScience. [...] "
+                       "the only plausible explanation is that in the past there was a bigger methane emission (with a small amount of carbon dioxide),” he said. [...] "
+                       "If the Pythias were drugged by a combination of carbon dioxide and methane, that still does not explain the sweet smell Plutarch described, countered de Boer."},
+        ],
+    },
+    # 12 Ptolomeu III fica com os originais de Atenas
+    {
+        "temas_secundarios": ["egito_antigo", "literatura"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Segundo Galeno, Ptolomeu III pediu emprestados a Atenas os originais de Ésquilo, Sófocles e Eurípides e deixou 15 talentos de garantia. Devolveu cópias de luxo, ficou com os originais e perdeu a fortuna.",
+        "explicacao": (
+            "Os reis Ptolomeus, que governavam o Egito a partir de Alexandria, queriam reunir na sua biblioteca "
+            "textos sobre qualquer assunto e de qualquer autor. Enviavam agentes com muito dinheiro e preferiam "
+            "cópias antigas, que, por terem passado por menos cópias, deviam estar mais perto do original. As "
+            "compras incluíam viagens às feiras de livros de Rodes e de Atenas. Conta-se que Ptolomeu II fixou "
+            "como meta 500 mil rolos. Segundo o médico grego Galeno, um decreto desse rei mandava levar à "
+            "biblioteca qualquer livro achado nos navios que chegavam ao porto: escribas oficiais faziam uma "
+            "cópia, a biblioteca ficava com o original e o dono recebia a cópia. Galeno conta ainda que Ptolomeu "
+            "III pediu aos atenienses os manuscritos originais das peças dos três grandes trágicos. Atenas exigiu "
+            "uma garantia enorme, 15 talentos de metal precioso, cerca de 450 quilos. O rei mandou fazer cópias "
+            "caras, no melhor papiro, enviou-as a Atenas, guardou os originais e disse que os atenienses podiam "
+            "ficar com os talentos. A história também pode ser lida como sinal do poder de Alexandria sobre "
+            "Atenas na época."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Library_of_Alexandria",
+            "They dispatched royal agents with large amounts of money and ordered them to purchase and collect as many texts as they possibly could, about any subject and by any author. "
+            "Older copies of texts were favored over newer ones, since it was assumed that older copies had undergone less copying and that they were, therefore, more likely to resemble what the original author had written more closely. "
+            "This program involved trips to the book fairs of Rhodes and Athens. "
+            "According to the Greek medical writer Galen, under the decree of Ptolemy II, any books found on ships that came into port were taken to the library, where they were copied by official scribes. "
+            "The original texts were kept in the library and the copies delivered to the owners. [...] "
+            "According to Galen, around this time, Ptolemy III requested permission from the Athenians to borrow the original manuscripts of Aeschylus, Sophocles, and Euripides, for which the Athenians demanded the enormous amount of fifteen talents (1,000 lb; 450 kg) of a precious metal as guarantee that he would return them. "
+            "Ptolemy III had expensive copies of the plays made on the highest quality papyrus and sent the Athenians the copies, keeping the original manuscripts for the library and telling the Athenians they could keep the talents. "
+            "This story may also be construed to show the power of Alexandria over Athens during the Ptolemaic dynasty. [...] "
+            "the Ptolemaic dynasty controlled Egypt with Alexandria as its capital. [...] "
+            "King Ptolemy II Philadelphus (309–246 BC) is said to have set 500,000 scrolls as an objective for the library.",
+            nome="Library of Alexandria")],
+    },
+    # 13 a krypteia: a guerra anual de Esparta contra os hilotas
+    {
+        "temas_secundarios": ["costumes_rituais", "leis_julgamentos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Segundo Aristóteles, os magistrados de Esparta, ao assumir o cargo, declaravam guerra aos hilotas, a população servil. Assim, jovens espartanos podiam matá-los sem cometer impureza religiosa.",
+        "explicacao": (
+            "Os hilotas, presos à terra, eram a maioria da população e sustentavam com seu trabalho os cidadãos "
+            "espartanos, que viviam preocupados com revoltas. Heródoto chegou a falar em sete hilotas para cada "
+            "espartano em 479 a.C., conta que os historiadores consideram exagerada. Segundo Aristóteles, citado "
+            "por Plutarco, os éforos declaravam guerra aos hilotas assim que tomavam posse, para que pudessem ser "
+            "mortos sem quebra de preceito religioso. A tarefa cabia à krypteia. Os jovens escolhidos iam para o "
+            "campo armados de punhais, escondiam-se de dia e, à noite, saíam pelas estradas matando os hilotas que "
+            "encontrassem. Tucídides relata um episódio da Guerra do Peloponeso: Esparta convidou os hilotas que "
+            "se julgavam mais valorosos na guerra a reivindicar a liberdade, como teste, porque os que se "
+            "apresentassem seriam os mais propensos a se rebelar. Uns 2.000 foram escolhidos, puseram coroas e "
+            "percorreram os templos comemorando. Pouco depois, todos sumiram, e ninguém soube como cada um morreu. "
+            "As fontes divergem, porém. Platão descreve a krypteia apenas como um treino de resistência, sem "
+            "falar em mortes, e os historiadores modernos costumam combinar as duas versões."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Krypteia",
+                "The chosen kryptai were then sent out into the countryside armed with daggers [...] "
+                "in the daytime, they hid themselves in out-of-the-way places, and there lay close, but, in the night, issued out into the highways, and killed all the Helots they could light upon [...] "
+                "The Helots were invited by a proclamation to pick out those of their number who claimed to have most distinguished themselves against the enemy, in order that they might receive their freedom; the object being to test them, as it was thought that the first to claim their freedom would be the most high-spirited and the most apt to rebel. "
+                "As many as two thousand were selected accordingly, who crowned themselves and went round the temples, rejoicing in their new freedom. "
+                "The Spartans, however, soon afterwards did away with them, and no one ever knew how each of them perished. [...] "
+                "And Aristotle, in particular, adds, that the ephori, so soon as they were entered into their office, used to declare war against them, that they might be massacred without a breach of religion. [...] "
+                "Aristotle's account, which is taken from Plutarch, depicts kryptai hunting helots, while Plato's account does not mention the killing of helots and views the Crypteia as a mode of endurance training. "
+                "Hodkinson claims that the differing accounts have led modern scholars to adopt a \"composite\" understanding of the Crypteia.",
+                nome="Krypteia"),
+            wiki("Helots",
+                "Tied to the land, they primarily worked in agriculture as a majority and economically supported the Spartan citizens. [...] "
+                "according to Herodotus, there were seven helots for each of the 5,000 Spartan soldiers at the time of the Battle of Plataea in 479 BC. "
+                "Thus the need to keep the helot population in check and to prevent rebellion were major concerns of the Spartans. [...] "
+                "Historians have confirmed that Herodotus' accounts of both Helot and Spartan soldiers is exaggerated [...] "
+                "According to Aristotle, the ephors annually declared war on the Helots, thereby allowing Spartans to kill them without fear of religious pollution.",
+                nome="Helots"),
+        ],
+    },
+    # 14 Termópilas: os 300 não estavam sozinhos
+    {
+        "temas_secundarios": ["asia_antiga", "palavras_viajantes"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Em Termópilas, os 300 espartanos não lutaram sozinhos. Uns 7 mil gregos defenderam o desfiladeiro, e no último dia 700 homens de Téspias, todos os hoplitas da cidade, ficaram até o fim.",
+        "explicacao": (
+            "Em 480 a.C., um exército grego de cerca de 7.000 homens, com uns 300 espartanos e liderado pelo rei "
+            "espartano Leônidas, bloqueou a passagem de Termópilas contra a invasão persa de Xerxes. Os autores "
+            "antigos falavam em milhões de persas; os estudiosos de hoje estimam entre 120 mil e 300 mil. Durante "
+            "dois dias de combate, os gregos seguraram a única estrada. Então Efialtes, um morador da região em "
+            "busca de recompensa, mostrou aos persas uma trilha que contornava as linhas gregas. O nome dele passou "
+            "a significar \"pesadelo\" em grego. Vendo que seria cercado, Leônidas dispensou a maior parte do "
+            "exército e ficou para cobrir a retirada. Com os 300 espartanos permaneceram 700 téspios, liderados "
+            "por Demófilo, que se recusaram a partir, além de 400 tebanos e, provavelmente, os hilotas que "
+            "acompanhavam os espartanos. Os téspios eram todos os hoplitas que a cidade conseguia reunir, e tudo "
+            "indica que ficaram por sacrifício voluntário. A maioria dos tebanos se rendeu; os outros lutaram até "
+            "a morte. Em 1997, o governo grego inaugurou um monumento aos 700 de Téspias, ao lado do monumento "
+            "aos espartanos."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Battle_of_Thermopylae",
+            "After the second day, a local resident named Ephialtes revealed to the Persians the existence of a path leading behind the Greek lines. "
+            "Subsequently, Leonidas, aware that his force was being outflanked by the Persians, dismissed the bulk of the Greek army and remained to guard their retreat along with 300 Spartans and 700 Thespians. "
+            "It has been reported that others also remained, including up to 900 helots and 400 Thebans. "
+            "With the exception of the Thebans, most of whom reportedly surrendered, the Greeks fought the Persians to the death. [...] "
+            "Around the start of the invasion, a Greek force of approximately 7,000 men – including an estimated 300 Spartans – led by Leonidas marched north to block the pass of Thermopylae. "
+            "Ancient authors vastly inflated the size of the Persian army, with estimates in the millions, but modern scholars estimate it at between 120,000 and 300,000 soldiers. [...] "
+            "During two full days of battle, the Greeks blocked the only road by which the massive Persian army could traverse the narrow pass. [...] "
+            "Ephialtes was motivated by the desire for a reward. "
+            "For this act, the name \"Ephialtes\" received a lasting stigma; it came to mean \"nightmare\" in the Greek language and to symbolise the archetypal traitor in Greek culture. [...] "
+            "The contingent of 700 Thespians, led by their general Demophilus, refused to leave and committed themselves to the fight. "
+            "Also present were the 400 Thebans and probably the helots who had accompanied the Spartans. [...] "
+            "It seems that the Thespians volunteered to remain as a simple act of self-sacrifice, all the more amazing since their contingent represented every single hoplite the city could muster. [...] "
+            "In 1997 a second monument was officially unveiled by the Greek government, dedicated to the 700 Thespians who fought with the Spartans. [...] "
+            "The monument to the Thespians is placed beside the one to the Spartans. [...] "
+            "The Battle of Thermopylae () was fought in 480 BC at Thermopylae between the Achaemenid Persian Empire under Xerxes and an alliance of Greek city-states led by Sparta under Leonidas I.",
+            nome="Battle of Thermopylae")],
+    },
+    # 15 a polícia de escravos citas de Atenas
+    {
+        "temas_secundarios": ["leis_julgamentos", "asia_antiga"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "No século V a.C., Atenas tinha uma espécie de polícia formada por escravos públicos estrangeiros: os arqueiros citas, uns 300 homens vindos das estepes da Eurásia. Talvez nem usassem arco.",
+        "explicacao": (
+            "Os citas eram um povo nômade das estepes da Eurásia, conhecido pela habilidade com o arco. Segundo "
+            "os relatos, Atenas mantinha uma força de 300 citas que eram escravos públicos, propriedade da própria "
+            "cidade. Eles agiam em nome dos Onze, magistrados eleitos responsáveis por prisões, execuções e parte "
+            "da ordem pública, e mantinham a ordem na assembleia e no conselho, embora tivessem pouca autoridade "
+            "própria. Os estudiosos concordam que alguma força policial cita existiu no século V a.C., mas não se "
+            "sabe quando foi criada nem quanto durou; diz-se que em algum momento ela chegou a 1.200 homens. "
+            "Também não se sabe por que a cidade empregava estrangeiros: uma possibilidade é que escravos longe de "
+            "casa fossem mais leais do que locais. O arco é outro mistério. O especialista em arquearia Mike "
+            "Loades observa que as pinturas em vasos não mostram arcos citas realistas e que todos os textos "
+            "antigos descrevem esses policiais espancando pessoas, nunca atirando flechas. Achados arqueológicos "
+            "indicam que usavam chicotes com cabo de madeira. Numa comédia de Aristófanes, um desses arqueiros "
+            "aparece como personagem e fala um grego estropiado, com sotaque."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Scythian_archers",
+            "The Scythian archers were a hypothesized police force of 5th- and early 4th-century BC Athens that is recorded in some Greek artworks and literature. "
+            "The force is said to have consisted of 300 armed Scythians (a nomadic Iranic people living in the Eurasian Steppe) who were public slaves in Athens. "
+            "They acted on behalf of a group of eleven elected Athenian magistrates \"who were responsible for arrests and executions and for some aspects of public order\" in the city. "
+            "Despite being called \"archers\", the Scythian police probably did not use bows and arrows. "
+            "One of Aristophanes's comedies has a Scythian archer as a character, and he speaks broken Greek with an accent. [...] "
+            "(the Scythian people were skilled archers) [...] "
+            "They were said to have been used to maintain order in the Assembly and the council, though they had little authority themselves. [...] "
+            "Scholars agree that a Scythian police force of some sort existed in Athens in the 5th century, although no one knows when it was first established or how long it lasted. [...] "
+            "The police force, the number of which is said to have swelled to 1,200 at some point, may have been involved in wartime conflicts as well. [...] "
+            "Scholars are unsure why Athenians would employ \"barbarians\", although it's possible that foreign slaves far from home would compose a more faithful police force than locals would. [...] "
+            "Archery expert Mike Loades argued that the Athenian vase paintings do not depict realistic Scythian composite bows, quivers, and clothing [...] "
+            "Loades points out that all ancient literary references to the \"Scythian archers\" describe them as beating up people, and never as them using bows. "
+            "Archaeological evidence also points at the Scythian police having used horse-whips with wooden handles on duty",
+            nome="Scythian archers")],
+    },
+]

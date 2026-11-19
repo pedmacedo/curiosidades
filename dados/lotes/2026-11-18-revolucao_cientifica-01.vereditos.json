@@ -1,0 +1,151 @@
+{
+ "lote": "2026-11-18-revolucao_cientifica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "revolucao_cientifica-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o milhão de palavras inclui cópias de outros manuscritos ('wrote and transcribed'); a pedra filosofal 'may have been' um objetivo",
+    "correcao": "Gancho: 'Isaac Newton escreveu cerca de um milhão de palavras sobre alquimia e buscava a pedra filosofal.' -> 'Isaac Newton escreveu ou copiou cerca de um milhão de palavras sobre alquimia e provavelmente buscava a pedra filosofal.' (inclua no trecho 'Many of Newton's writings on alchemy are copies of other manuscripts')"
+   },
+   {
+    "id": "revolucao_cientifica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com De Historia Piscium e Principia; nota 4 por ser anedota sem mecanismo"
+   },
+   {
+    "id": "revolucao_cientifica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "confere com a controvérsia do cálculo; ressalvas sobre Leibniz mantidas"
+   },
+   {
+    "id": "revolucao_cientifica-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "exagero: 'parou suas pesquisas' contrariado pela 3ª lei em 1618 e Harmonices Mundi em 1619",
+    "correcao": "Gancho: 'O astrônomo parou suas pesquisas para defendê-la, e ela foi absolvida' -> 'O astrônomo assumiu pessoalmente a defesa, e ela foi absolvida'"
+   },
+   {
+    "id": "revolucao_cientifica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "confere com And yet it moves; nota 3 porque o desmentido já circula, segura pela reviravolta do quadro"
+   },
+   {
+    "id": "revolucao_cientifica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "confere com De revolutionibus; virada boa e pouco conhecida"
+   },
+   {
+    "id": "revolucao_cientifica-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'foi muito lido' exagera: tiragem de 400 não esgotou; lido pela elite técnica",
+    "correcao": "Gancho: 'viu o contrário: foi muito lido, mas os leitores ignoravam a parte do Sol no centro' -> 'viu o contrário: quase todos os grandes astrônomos da época o leram, mas ignoravam a parte do Sol no centro'. Se passar de 220, encurte a primeira frase (ex.: 'O livro de Copérnico ficou conhecido como \"o livro que ninguém leu\".')."
+   },
+   {
+    "id": "revolucao_cientifica-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'por 1.400 anos' omite Ibn al-Nafis (séc. XIII), que negava os furos; mito_desmentido não cabe (erro científico antigo)",
+    "correcao": "(a) Depois de 'uma sucessão de anatomistas afirmou achá-las também.', acrescentar: 'Houve exceções: no século XIII, o médico árabe Ibn al-Nafis já negava a existência dessas passagens, mas a ideia não pegou na Europa.' com a fonte https://en.wikipedia.org/wiki/Ibn_al-Nafis e o trecho 'nor an invisible one which could have permitted the transmission of blood, as was alleged by Galen'. Se não sustentar 'não pegou na Europa', use só a primeira oração. (b) tipos_espanto: trocar 'mito_desmentido' por 'contraintuitivo'."
+   },
+   {
+    "id": "revolucao_cientifica-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: no De Motu Cordis (cap. IX) as contas são por meia hora e comparam com o sangue contido no corpo; 498 libras/dia é reconstrução moderna (outras fontes dão 540); exagero em 'provou com uma conta' (houve experimentos de ligadura)",
+    "correcao": "(1) Gancho sugerido: 'William Harvey derrubou Galeno com uma conta: mesmo usando estimativas baixas de propósito, o coração bombeava em meia hora mais sangue do que o corpo inteiro contém. O sangue só podia estar circulando.' (2) Explicação: remover '10 libras e 6 onças', 'as 48 meias horas do dia' e '498 libras'; reescrever: com cerca de mil batidas a cada meia hora, o volume bombeado já passava de todo o sangue do corpo, então nenhum fígado poderia fabricá-lo e consumi-lo nesse ritmo. Só números presentes nos trechos (ex.: 1,5 onça, 1/8 por batida, mil batidas). (3) Acrescentar que Harvey confirmou a circulação com experimentos de ligadura nas veias e artérias, inclusive no braço humano. (4) Fonte nova: https://sourcebooks.web.fordham.edu/mod/harvey-blood.asp com o trecho 'a larger quantity in every case than is contained in the whole body'."
+   },
+   {
+    "id": "revolucao_cientifica-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "erro de física: a diferença vem da rotação (centrífuga, a maior parte) somada ao achatamento; 'Newton concluiu daí' sugere que a ideia nasceu da medição (a fonte diz 'later commented')",
+    "correcao": "(1) Gancho: 'Newton concluiu daí que a Terra não é uma esfera: é mais larga no equador.' -> 'Newton viu ali um sinal de que a Terra não é uma esfera, mas mais larga no equador.' (2) Explicação: 'por causa do achatamento da Terra' -> 'por dois efeitos que se somam: a rotação, que reduz a gravidade aparente no equador, e o achatamento, que deixa o equador mais longe do centro (Huygens e Newton tinham, cada um, parte da razão)'. Fonte nova: https://en.wikipedia.org/wiki/Gravity_of_Earth com o trecho 'the outward centrifugal force produced by Earth's rotation is larger than at polar latitudes'."
+   },
+   {
+    "id": "revolucao_cientifica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "tudo confere com Blaise Pascal; tubo de controle vigiado pelo frade"
+   },
+   {
+    "id": "revolucao_cientifica-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'quase todas se realizaram' é frase editorial da Wikipedia sem contagem; outras análises (Res Obscura, Nautilus) mostram realização parcial; 'Segundo a Wikipédia' não cabe no texto; tipo contraintuitivo fraco",
+    "correcao": "1) Gancho: 'Quase todas já se realizaram.' -> 'Muitas delas já se realizaram, ao menos em parte.' 2) Explicação: 'Segundo a Wikipédia, todas as 24 ideias, com poucas exceções, se tornaram realidade.' -> 'Hoje, boa parte delas se tornou realidade, ao menos em parte, embora a conta dependa de como se interpreta cada item.' 3) Trocar o tipo 'contraintuitivo' por 'conexao_inesperada'."
+   },
+   {
+    "id": "revolucao_cientifica-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'o primeiro livro com ilustrações ao microscópio' é contestável: Stelluti publicou abelhas ao microscópio em 1625 e no Persio de 1630",
+    "correcao": "Explicação: 'e o primeiro livro com ilustrações de insetos e plantas vistos ao microscópio' -> 'e um dos primeiros livros com ilustrações de insetos e plantas vistos ao microscópio'"
+   },
+   {
+    "id": "revolucao_cientifica-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com Jean-Baptiste Denis; ressalvas 'segundo os relatos' e 'suspeita' mantidas"
+   }
+  ],
+  "2": [
+   {
+    "id": "revolucao_cientifica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'escreveu ou copiou' e 'provavelmente' aplicados"
+   },
+   {
+    "id": "revolucao_cientifica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'assumiu pessoalmente a defesa' aplicado"
+   },
+   {
+    "id": "revolucao_cientifica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'quase todos os grandes astrônomos o leram' aplicado"
+   },
+   {
+    "id": "revolucao_cientifica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ibn al-Nafis incluído; contraintuitivo",
+    "correcao": "'só foi encontrado em 1924' -> 'só foi redescoberto em 1924'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "revolucao_cientifica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "conta refeita pelo cap. IX do De Motu Cordis; ligaduras incluídas; números conferidos"
+   },
+   {
+    "id": "revolucao_cientifica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Newton viu ali um sinal'; rotação e achatamento com Gravity of Earth"
+   },
+   {
+    "id": "revolucao_cientifica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'ao menos em parte'; sem citar a Wikipédia; conexao_inesperada"
+   },
+   {
+    "id": "revolucao_cientifica-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'um dos primeiros livros' contorna Stelluti"
+   }
+  ]
+ }
+}

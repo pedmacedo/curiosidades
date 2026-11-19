@@ -1,0 +1,155 @@
+{
+ "lote": "2026-11-18-olimpiadas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "olimpiadas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Kanakuri confere"
+   },
+   {
+    "id": "olimpiadas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "luta de 1912 confere"
+   },
+   {
+    "id": "olimpiadas-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "foi um dedo do pé (Pausânias) ou tornozelo (Filóstrato), não o pé",
+    "correcao": "Gancho: 'com o pé deslocado' -> 'com um dedo do pé deslocado'"
+   },
+   {
+    "id": "olimpiadas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Zanes confere"
+   },
+   {
+    "id": "olimpiadas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "era quadriga (tethrippon), não biga; 'alguns' historiadores",
+    "correcao": "Gancho: 'sem conduzir a biga' -> 'sem conduzir a quadriga'. Explicação: 'Historiadores de hoje desconfiam de um motivo mais prático' -> 'Alguns historiadores de hoje desconfiam de um motivo mais prático'."
+   },
+   {
+    "id": "olimpiadas-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o adiamento foi de dois anos (65 para 67), não um; 'ganhou tudo' generaliza",
+    "correcao": "Gancho: 'subornou os organizadores para adiar a Olimpíada em um ano e poder competir. Ganhou tudo, até uma corrida' -> 'subornou os organizadores para adiar a Olimpíada e poder competir. Venceu todas as provas que disputou, até uma corrida'"
+   },
+   {
+    "id": "olimpiadas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "havia revezamentos com tochas em Atenas (lampadedromias); o que não existia era levar o fogo de Olímpia",
+    "correcao": "Gancho: 'mas não tem precedente antigo:' -> 'mas não existia nos Jogos antigos:'"
+   },
+   {
+    "id": "olimpiadas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "hipismo de 1956 em Estocolmo confere"
+   },
+   {
+    "id": "olimpiadas-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o capacete é do século VI a.C. (Tesouro nº 904), não VIII",
+    "correcao": "'um capacete coríntio do século VIII a.C., achado em Olímpia' -> 'um capacete coríntio da Grécia antiga, achado em Olímpia'"
+   },
+   {
+    "id": "olimpiadas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "medalhas da amizade conferem"
+   },
+   {
+    "id": "olimpiadas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "junta a pesquisa de Welch (anos 1970-80) e o obituário de 2018",
+    "correcao": "'A façanha só veio à tona depois que Paula Welch, professora da Universidade da Flórida, pesquisou a vida dela, e o jornal The New York Times publicou seu obituário, atrasado, em 2018.' -> 'A façanha só veio à tona décadas depois, quando Paula Welch, professora da Universidade da Flórida, pesquisou a vida dela; em 2018, o jornal The New York Times publicou seu obituário, atrasado.'"
+   },
+   {
+    "id": "olimpiadas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Blood in the Water confere; ressalva da água vermelha"
+   },
+   {
+    "id": "olimpiadas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "final de 1972 confere; opcional: árbitro brasileiro Righetto"
+   },
+   {
+    "id": "olimpiadas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'terceiro homem no pódio' pode ser lido como terceiro colocado; Norman foi prata",
+    "correcao": "Gancho: 'Na foto do protesto de 1968, o terceiro homem no pódio, o australiano Peter Norman, usava um broche de apoio.' -> 'Na foto do protesto de 1968, o australiano Peter Norman, prata na prova, usava um broche de apoio.'"
+   },
+   {
+    "id": "olimpiadas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'engenhosidade' não cabe (persistência)",
+    "correcao": "tipos_espanto: ['historia_humana']"
+   }
+  ],
+  "2": [
+   {
+    "id": "olimpiadas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "dedo do pé"
+   },
+   {
+    "id": "olimpiadas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "quadriga; alguns historiadores"
+   },
+   {
+    "id": "olimpiadas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "sem o 'um ano'; venceu o que disputou"
+   },
+   {
+    "id": "olimpiadas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'não existia nos Jogos antigos'"
+   },
+   {
+    "id": "olimpiadas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "capacete sem século"
+   },
+   {
+    "id": "olimpiadas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Welch e o obituário separados"
+   },
+   {
+    "id": "olimpiadas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Norman, prata"
+   },
+   {
+    "id": "olimpiadas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "só historia_humana"
+   }
+  ]
+ }
+}

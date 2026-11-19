@@ -1,0 +1,121 @@
+{
+ "lote": "2026-11-19-microbioma-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "microbioma-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Sender, Fuchs e Milo (PLoS Biology 2016): estimativa dos anos 1970, 1 L x densidade, 0,4 L, 1,3 ± 25%, hemácias 84%, 0,2 kg."
+   },
+   {
+    "id": "microbioma-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (~200 HMOs, 11,3–17,7 g/L, B. infantis 43 kb, iscas). Nota 4."
+   },
+   {
+    "id": "microbioma-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com as páginas de M. smithii e arqueias (reação do metano, ~50% dos humanos, sem patógenos arqueanos até 2007)."
+   },
+   {
+    "id": "microbioma-0004",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: tipologia de 2011 hoje contestada, sem mecanismo; contradição interna ('sem relação com país' x Burkina Faso)."
+   },
+   {
+    "id": "microbioma-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Clemente et al. 2015, mas o recorde vale para a data do estudo.",
+    "correcao": "Gancho: 'o microbioma mais diverso já registrado num grupo humano' -> 'o microbioma mais diverso registrado até então num grupo humano'. Explicação: 'a maior diversidade de bactérias e de funções genéticas já descrita em um grupo humano' -> 'a maior diversidade de bactérias e de funções genéticas descrita até então em um grupo humano'."
+   },
+   {
+    "id": "microbioma-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Hulcr et al. 2012; mas 'a maioria só aparecia em uma pessoa' vale para os 2188 raros, e a fonte diz 'difícil' prever, não impossível.",
+    "correcao": "Gancho: 'e a maioria só aparecia em uma pessoa.' -> 'e quase todos eram raros, achados em poucas pessoas.'. Explicação: 'mas não quais bactérias uma pessoa específica teria.' -> 'mas era difícil prever quais bactérias uma pessoa específica teria.'"
+   },
+   {
+    "id": "microbioma-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Fellows Yates et al. (PNAS 2021) e Dental calculus, inclusive a contestação; consenso_parcial adequado."
+   },
+   {
+    "id": "microbioma-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo confere (de Goffau 2019, Perez-Muñoz 2017); o tipo 'engenhosidade' não descreve o fato.",
+    "correcao": "tipos_espanto: ['contraintuitivo', 'mito_desmentido']."
+   },
+   {
+    "id": "microbioma-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hehemann et al. 2010; mas Zobellia veio de algas vermelhas, não da nori, e os genes têm 48–69% de similaridade: o doador foi uma bactéria aparentada.",
+    "correcao": "Gancho: 'Os genes para isso vieram de uma bactéria marinha que vive nessas algas' -> 'Os genes para isso vieram de bactérias marinhas que vivem em algas vermelhas'. Explicação: 'Os genes parecem ter passado de uma bactéria para a outra por transferência horizontal:' -> 'Os genes parecem ter passado de uma bactéria marinha aparentada da Zobellia para a intestinal, por transferência horizontal:'."
+   },
+   {
+    "id": "microbioma-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "exagero: regra geral com confiança alta a partir de 10 bebês; Chu et al. (Nature Medicine 2017) achou efeito pequeno do tipo de parto e reorganização guiada pelo local do corpo. Já bem divulgado."
+   },
+   {
+    "id": "microbioma-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Resumo de Bäckhed et al. (PNAS 2004) confirma 60% de gordura em 14 dias comendo menos, Fiaf e o teste com nocautes."
+   },
+   {
+    "id": "microbioma-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Resumo de Smits et al. (Science 2017) confirma 350 amostras e o ciclo anual; Hadza people confere o resto."
+   },
+   {
+    "id": "microbioma-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Resumo de Moeller et al. (Science 2016) sustenta a coespeciação de algumas linhagens em 15 milhões de anos."
+   },
+   {
+    "id": "microbioma-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Resumo de Fierer et al. (PNAS 2010) confirma teclas e mouses, até 2 semanas, e a ressalva de trabalho adicional."
+   }
+  ],
+  "2": [
+   {
+    "id": "microbioma-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Até então' aplicado no gancho e na explicação; o resto confere com Clemente et al. 2015."
+   },
+   {
+    "id": "microbioma-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Quase todos raros' e 'era difícil prever' conferem com Hulcr et al. 2012."
+   },
+   {
+    "id": "microbioma-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tipos_espanto corrigido; conteúdo confere (de Goffau 2019, Perez-Muñoz 2017)."
+   },
+   {
+    "id": "microbioma-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Algas vermelhas e o doador aparentado da Zobellia conferem com Hehemann et al. 2010."
+   }
+  ]
+ }
+}

@@ -1,0 +1,658 @@
+LOTE = "2026-11-19-sistemas_escrita-01"
+AREA = "linguas"
+TEMA = "sistemas_escrita"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Sequoyah, o cherokee que inventou uma escrita sem saber ler
+    {
+        "temas_secundarios": ["personagens_esquecidos", "linguas_mundo"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Sequoyah, um cherokee que não sabia ler, criou uma escrita para a sua língua por volta de 1821. A primeira aluna foi a filha de seis anos, e os dois chegaram a ser levados a julgamento por isso.",
+        "explicacao": (
+            "Sequoyah nunca foi à escola nem aprendeu inglês. Ourives e ferreiro, via nos papéis dos brancos "
+            "\"folhas que falam\", enquanto a maioria dos cherokees achava que a escrita era feitiçaria ou "
+            "fingimento. Por volta de 1809, ele tentou primeiro um símbolo para cada palavra e desistiu: seriam "
+            "desenhos demais para memorizar. Conta-se que a mulher dele queimou esse primeiro trabalho, achando que "
+            "era bruxaria. A saída foi um sinal para cada sílaba. Em 1821 havia 86 símbolos, depois reduzidos a 85; "
+            "alguns lembram letras latinas, gregas ou cirílicas, mas não têm os mesmos sons. A filha, Ayokeh, foi a "
+            "primeira a aprender. O chefe da cidade levou pai e filha a julgamento; separados, os dois se "
+            "comunicaram por cartas, e a cidade acabou convencida e pediu aulas. Como cada sinal vale uma sílaba, "
+            "quem decorava os 85 já conseguia ler: o político e linguista Albert Gallatin avaliou que um aluno "
+            "cherokee fazia em poucas semanas o que no inglês podia levar dois anos. A nação cherokee adotou a "
+            "escrita oficialmente em 1825. É um dos raros casos registrados em que um membro de um povo sem escrita "
+            "criou sozinho um sistema original e eficaz."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Sequoyah",
+                "In 1821, Sequoyah completed his Cherokee syllabary, enabling reading and writing in the Cherokee language. "
+                "One of the first North American Indigenous groups to gain a written language, the Cherokee Nation officially adopted the syllabary in 1825 [...] "
+                "Sequoyah's creation of the Cherokee syllabary is among the few times in recorded history that an individual member of a pre-literate group created an original, effective writing system. [...] "
+                "According to Davis, Sequoyah never went to school and never learned English. [...] "
+                "He became a noted silversmith [...] "
+                "He began to draw, then he took up blacksmithing [...] "
+                "He was impressed by their writing, and referred to their correspondence as \"talking leaves\". [...] "
+                "A majority of the Cherokee assumed that writing was either sorcery, witchcraft, a special gift, or a pretense [...] "
+                "Around 1809, Sequoyah began creating a system of writing for the Cherokee language. "
+                "Initially, he pursued a pictograph or logographic system, where every word in the language had a character or symbol. [...] "
+                "His wife is said to have burned his initial work, regarding it to be witchcraft [...] "
+                "Ultimately, he realized that the pictograph approach was impractical because it would require too many pictures to be remembered. [...] "
+                "Sequoyah's third approach was to develop a symbol for each syllable in the language. [...] "
+                "By 1821, he had created a set of 86 symbols (later streamlined to 85) [...] "
+                "Sequoyah's six-year-old daughter, Ayokeh (also spelled Ayoka), was the first person to learn it. "
+                "News spread that they had created a new way to communicate, and they were charged and brought to trial by the town chief. "
+                "Sequoyah and Ayokeh were separated but still communicated by sending letters to one another. "
+                "In time, the warriors overseeing the trial, along with the entire town, came to believe that Sequoyah had truly created a new form of communication—and they eagerly asked him to teach it to them.",
+                nome="Sequoyah"),
+            wiki("Cherokee_syllabary",
+                "His creation of the syllabary is particularly noteworthy as he was illiterate until its creation. [...] "
+                "The letters resemble characters from other scripts, such as Latin, Greek, Cyrillic, and Glagolitic, but are not used to represent the same sounds. [...] "
+                "when Albert Gallatin, a politician and trained linguist, saw a copy of Sequoyah's syllabary [...] "
+                "He recognized that even though the Cherokee student must learn 85 characters instead of 26 for English, the Cherokee could read immediately after learning all the symbols. "
+                "The Cherokee student could accomplish in a few weeks what students of English writing might require two years to achieve.",
+                nome="Cherokee syllabary"),
+        ],
+    },
+    # 2 a escrita cree em que a vogal é a direção do símbolo
+    {
+        "temas_secundarios": ["povos_indigenas", "linguas_mundo"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "Na escrita silábica dos cree, no Canadá, a vogal não tem letra própria: o que muda é a direção do símbolo. O mesmo desenho, girado ou espelhado, indica sílabas com a, e, i ou u.",
+        "explicacao": (
+            "O sistema foi criado pelo missionário inglês James Evans, provavelmente com especialistas indígenas, "
+            "num processo que culminou em 1840. Evans se inspirou no sucesso do silabário cherokee de Sequoyah e "
+            "conhecia o devanágari, da Índia, em que cada letra é uma sílaba modificada conforme a vogal, além da "
+            "taquigrafia Pitman. O cree falado na região tinha só oito consoantes e quatro vogais, longas ou curtas, "
+            "e era cheio de palavras compridas, que ficavam enormes no alfabeto latino. Na solução de Evans, a "
+            "forma do sinal dá a consoante e a orientação dá a vogal: as sílabas com a e com u são imagens "
+            "espelhadas uma da outra, e as com e e com i saem delas girando o sinal um quarto de volta ou meia "
+            "volta, conforme o desenho. A Companhia da Baía de Hudson, que achava melhor desencorajar a "
+            "alfabetização indígena, recusou-se a importar uma prensa para ele, e Evans construiu a própria prensa "
+            "e os próprios tipos. Os cree adotaram a escrita depressa e passaram a deixar recados em casca de "
+            "árvore, escritos com gravetos queimados, nas trilhas de caça. No fim do século XIX, tinham o que pode "
+            "ter sido uma das maiores taxas de alfabetização do mundo. Adaptada, a escrita também serve ao "
+            "inuktitut e é cooficial no território de Nunavut."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Canadian_Aboriginal_syllabics",
+            "For instance, by the late 19th century the Cree had achieved what may have been one of the highest rates of literacy in the world. "
+            "Despite the name, the script is an abugida, where glyphs represent consonant–vowel pairs, determined by the rotation of the glyphs. [...] "
+            "they are used to write Inuktitut and are co-official with the Latin script in the territory of Nunavut. [...] "
+            "Cree syllabics were created in a process that culminated in 1840 by James Evans, a missionary, probably in collaboration with Indigenous language experts. [...] "
+            "Evans had been inspired by the success of Sequoyah's Cherokee syllabary after encountering problems with Latin-based alphabets, and drew on his knowledge of Devanagari and Pitman shorthand. [...] "
+            "In 1828, Evans, a missionary from Kingston upon Hull, England [...] "
+            "this made them quite long when written with the Latin script. [...] "
+            "Here he began learning the local Swampy Cree dialect. Like the closely related Ojibwe, it was full of long polysyllabic words. [...] "
+            "in Devanagari, each letter stands for a syllable, and is modified to represent the vowel of that syllable. "
+            "Such a system, now called an abugida, would have readily lent itself to writing a language such as Swampy Cree, which had a simple syllable structure of only eight consonants and four long or short vowels. [...] "
+            "Cree people began to use it to write messages on tree bark using burnt sticks, leaving messages out on hunting trails far from the mission. [...] "
+            "The Hudson's Bay Company, which had a monopoly on foreign commerce in western Canada, refused to import a press for him, believing that native literacy was something to be discouraged. "
+            "Evans, with immense difficulty, constructed his own press and type and began publishing in syllabics. [...] "
+            "In all cases, back-vowel syllables are related through left-right reflection: that is, they are mirror images of each other. "
+            "How they relate to front-vowel syllables depends on the graphic form of the consonants. "
+            "These follow two patterns. Symmetrical, vowel, p-, t-, sp-, are rotated 90 degrees (a quarter turn) counter-clockwise, while those that are asymmetrical top-to-bottom, c-, k-, m-, n-, s-, y-, are rotated 180 degrees (a half turn).",
+            nome="Canadian Aboriginal syllabics")],
+    },
+    # 3 o hangul desenha a boca, e o manual sumiu até 1940
+    {
+        "temas_secundarios": ["asia_antiga", "anatomia"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "As consoantes básicas do alfabeto coreano desenham a boca de quem fala: ㄱ é a raiz da língua fechando o palato; ㅁ, a boca. O livro de 1446 que explicava isso ficou perdido e só reapareceu em 1940.",
+        "explicacao": (
+            "O hangul foi criado pelo rei Sejong, da dinastia Joseon, e apresentado à corte entre o fim de 1443 e "
+            "o início de 1444. Até então, o coreano era escrito com caracteres chineses, que se adaptavam mal à "
+            "língua e, por serem difíceis, contribuíam para o analfabetismo. O comentário oficial publicado em "
+            "1446, o Hunminjeongeum Haerye, explica de onde vêm as formas: as cinco consoantes básicas imitam os "
+            "órgãos da fala ao produzir cada som. ㄱ é a raiz da língua bloqueando o palato; ㄴ, a língua tocando o "
+            "palato; ㅁ, a boca; ㅅ, um dente incisivo; ㅇ, a garganta. Quase todas as outras consoantes saem "
+            "dessas, em geral com traços a mais para sons aparentados mais \"fortes\", como de ㄱ (k) para ㅋ (k "
+            "aspirado). Esse comentário caiu no esquecimento, possivelmente já no início do século XVI, e só foi "
+            "redescoberto em 1940. Uma segunda cópia apareceu em 2008, mas quem a achou se recusa a mostrá-la. O "
+            "próprio hangul teve vida difícil: a elite o desprezou por séculos, e o rei Yeonsangun perseguiu o "
+            "uso da escrita em 1504, ao saber que críticas a ele tinham sido escritas nela. A aceitação social só "
+            "veio no fim do século XIX."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Hangul",
+                "As Hanja was poorly suited for representing the Korean language, and because its difficulty contributed to high illiteracy, Joseon king Sejong the Great (r. 1418–1450) moved to create Hangul. [...] "
+                "While Hangul saw gradual adoption among both the elite and commoners, it was looked down upon by the elite for centuries. "
+                "It only began to receive societal acceptance in the late 19th century. [...] "
+                "Hangul was first introduced, likely in a mostly complete form, to Sejong's court in the 12th month of 1443 of the Korean calendar (around December 30, 1443 to January 28, 1444 in the Gregorian calendar). [...] "
+                "King Yeonsangun (r. 1495–1506) persecuted the use of Hangul during the Second Literati Purge of 1504 (갑자사화; 甲子士禍), after learning that criticisms of him had been written in the script. [...] "
+                "The Hunminjeongeum Haerye provides explanations of how the shapes of Hangul letters were derived. "
+                "The shapes of 5 basic consonants are based on those of human speech organs during the production of the letter's sound: "
+                " ㄱ depicts the root of the tongue blocking the upper palate ㄴ depicts the tongue touching the upper palate ㅁ depicts the mouth ㅅ depicts the incisor ㅇ depicts the throat "
+                "From these five, most of the other consonant shapes are derived. "
+                "In most cases, lines are added to the letters to represent related sounds that are considered more \"severe\" or \"harsh\". For example, ㄱ (/k/) → ㅋ (/kʰ/).",
+                nome="Hangul"),
+            wiki("Hunminjeongeum",
+                "While the Hunminjeongeum remained in the historical record, the Haerye was eventually lost and forgotten, possibly by the early 16th century. "
+                "It was only rediscovered in 1940. [...] "
+                "A second copy, the Sangju copy, was discovered in 2008. "
+                "However, its discoverer has refused to show it to others [...] "
+                "The base Hunminjeongeum claims to have been published in the 9th month of 1446 (Korean calendar).",
+                nome="Hunminjeongeum"),
+        ],
+    },
+    # 4 o thaana, das Maldivas, tem letras feitas de algarismos
+    {
+        "temas_secundarios": ["teoria_numeros", "criptografia"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "Nas Maldivas, a escrita local, o thaana, tem consoantes que nasceram de algarismos: as nove primeiras letras vêm dos algarismos arábicos, e as nove seguintes, de algarismos indianos usados nas ilhas.",
+        "explicacao": (
+            "O thaana escreve a língua das Maldivas da direita para a esquerda, como o árabe. Ele aparece em "
+            "inscrições do começo do século XV, numa forma antiga escrita sem espaço entre as palavras, e a versão "
+            "moderna foi inventada antes de 1705. As letras h, ṣ, n, r, b, ḷ, k, ʔ e v saíram dos numerais arábicos; "
+            "m, f, d, t, l, g, ṇ, s e ḍ, dos numerais indianos locais. As vogais são sinais derivados dos diacríticos "
+            "do árabe, e cada letra precisa carregar uma vogal ou um sinal de \"sem vogal\". A ordem do alfabeto "
+            "não segue a de outras escritas indianas nem a do árabe e não tem lógica aparente. Uma interpretação é "
+            "que ela foi embaralhada para manter a escrita longe da maioria dos ilhéus. De fato, no início o "
+            "thaana servia para encantamentos mágicos e citações do Alcorão, e só aos poucos passou ao uso diário. "
+            "No século XX, quase foi trocado: como os aparelhos de telex que o governo levou à administração só "
+            "escreviam em letras latinas, em 1976 foi adotada uma transliteração latina oficial. O thaana voltou "
+            "pouco depois de 1978, quando um novo presidente assumiu, mas a grafia latina continua muito usada."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Thaana",
+            "is the writing system of the Maldivian language spoken in the Maldives. [...] "
+            "with consonants derived from indigenous and Arabic numerals, and vowels derived from the vowel diacritics of the Arabic abjad. [...] "
+            "The Thaana script first appeared in Maldivian inscriptions towards the beginning of the fifteenth century [...] "
+            "This early form was written in scripta continua, without spaces between words. [...] "
+            "The modern thaana script was invented sometime before 1705, possibly as early as the 16th century. [...] "
+            "The first nine letters (h ṣ n r b ḷ k ʔ v) are derived from the Arabic numerals, whereas the next nine (m f d t l g ṇ s ḍ) were the local Indic numerals. [...] "
+            "The order of the Thaana alphabet (ha, shaviyani, noonu, raa, baa, etc.) does not follow the order of other Indic scripts or of the Arabic script. "
+            "There is no apparent logic to the order; this has been interpreted as suggesting that the script was scrambled to keep it secret from average islanders. "
+            "The script was originally used to write magical (fanḍita) incantations and Quranic quotations, written from right to left. [...] "
+            "Thaana was gradually adopted for everyday use. "
+            "Towards the mid-1970s, during President Ibrahim Nasir's administration, teleprinters were introduced by the Maldivian government into the local administration. "
+            "The new telex equipment was viewed as a great progress, but Thaana was deemed to be an obstacle because messages on the machines could only be written in the Latin script. "
+            "Following this, in 1976, the Maldivian government approved and implemented an official Latin transliteration. [...] "
+            "The Thaana script was reinstated by President Maumoon Abdul Gayoom shortly after he took power in 1978, although the Latin transcription of 1976 continues to be widely used. [...] "
+            "Thaana, like Arabic, is written right to left. It indicates vowels with diacritic marks derived from Arabic. "
+            "Each letter must carry either a vowel or a sukun (which indicates \"no vowel\").",
+            nome="Thaana")],
+    },
+    # 5 caracteres chineses não são, na maioria, desenhos de ideias
+    {
+        "temas_secundarios": ["asia_antiga", "linguas_mundo"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "A maioria dos caracteres chineses não é desenho de ideias. Dos cerca de 3.500 mais usados, uns 58% juntam uma parte que indica o sentido e outra que indica o som; só uns 5% representam apenas o significado.",
+        "explicacao": (
+            "Os caracteres mais antigos conhecidos são inscrições em ossos usados em adivinhações pela casa real "
+            "Shang, no século XIII a.C., e as formas eram pictográficas ou ideográficas. Mas a escrita mudou. Na "
+            "escrita clerical, já madura no início da dinastia Han, as formas ficaram abstratas e esconderam a "
+            "origem em desenhos. Além disso, o tipo de caractere que acabou dominando é o composto fono-semântico, "
+            "com pelo menos um componente ligado ao sentido e outro ligado à pronúncia. Entre os 3.500 caracteres "
+            "frequentes do chinês padrão, estima-se que esses compostos sejam 58%, e os sinais puramente ligados "
+            "ao sentido, os mais raros, uns 5%. Até exemplos clássicos de \"ideias combinadas\" foram revistos. O "
+            "antigo dicionário Shuowen Jiezi explicava 信, \"confiança\", como \"pessoa\" mais \"fala\", mas "
+            "análises modernas o tratam como composto fono-semântico, embora se discuta qual das partes dá o som. "
+            "Muitos casos assim teriam ficado obscuros com as mudanças de pronúncia ao longo dos séculos. O "
+            "resultado é que, apesar da origem em imagens, os caracteres não representam ideias diretamente: para "
+            "entendê-los, é preciso conhecer a língua que está sendo escrita."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Chinese_characters",
+            "The first attested characters are oracle bone inscriptions made during the 13th century BCE in what is now Anyang, Henan, as part of divinations conducted by the Shang dynasty royal house. "
+            "Character forms were originally ideographic or pictographic in style, but evolved as writing spread across China. [...] "
+            "Clerical script, which had matured by the early Han dynasty (202 BCE – 220 CE), abstracted the forms of characters—obscuring their pictographic origi [...] "
+            "Despite their origins in picture-writing, Chinese characters are no longer ideographs capable of representing ideas directly; their comprehension relies on the reader's knowledge of the particular language being written. [...] "
+            "Of the 3500 characters that are frequently used in Standard Chinese, pure semantographs are estimated to be the rarest, accounting for about 5% of the lexicon [...] "
+            "The remaining 58% are phono-semantic compounds. [...] "
+            "Many traditional examples of compound ideographs are now believed to have actually originated as phono-semantic compounds, made obscure by subsequent changes in pronunciation. "
+            "For example, the Shuowen Jiezi describes 信 ('trust') as an ideographic compound of 人 ('person') and 言 ('speech'), but modern analyses instead identify it as a phono-semantic compound—though with disagreement as to which component is phonetic. [...] "
+            "Phono-semantic compounds (形声; 形聲; xíngshēng) are composed of at least one semantic component and one phonetic component.",
+            nome="Chinese characters")],
+    },
+    # 6 os romanos tiraram os separadores de palavras
+    {
+        "temas_secundarios": ["roma_antiga", "europa_medieval"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Os romanos chegaram a separar palavras com pontos, mas abandonaram o costume para imitar os gregos, que escreviam tudo emendado. Os espaços surgiram em Bíblias irlandesas e anglo-saxãs dos séculos VII e VIII.",
+        "explicacao": (
+            "O estilo sem separação se chama scriptio continua, \"escrita contínua\". De início, os textos latinos "
+            "costumavam marcar a divisão das palavras com pontos, mas depois os romanos passaram a seguir a "
+            "prática grega. Numa cultura de leitura em voz alta, isso funcionava: o leitor costumava ser um "
+            "intérprete treinado, que já sabia o texto e suas pausas de memória, e o rolo servia mais como roteiro. "
+            "A ambiguidade, porém, era real. Em latim, COLLECTAMEXILIOPUBEM pode ser lido como \"um povo reunido de "
+            "Troia\" ou como \"um povo reunido para o exílio\". Com a troca da leitura dramatizada pela leitura "
+            "silenciosa e rápida, separar as palavras passou a ajudar. Os paleógrafos discordam da cronologia, mas "
+            "é aceito em geral que os espaços apareceram primeiro em Bíblias e evangelhos irlandeses e "
+            "anglo-saxões dos séculos VII e VIII. A prática se espalhou, e nos séculos XIII e XIV todos os textos "
+            "europeus já separavam as palavras. Algumas escritas seguem sem espaços até hoje, como o tailandês e as "
+            "que usam caracteres chineses, no chinês e no japonês."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Scriptio_continua",
+            "Scriptio continua (Latin for 'continuous script'), also known as scriptura continua or scripta continua, is a style of writing without spaces or other marks between the words or sentences. [...] "
+            "Initially, Latin texts commonly marked word divisions by points, but later on the Romans came to follow the Greek practice of scriptio continua. [...] "
+            "Typically, the reader of the text was a trained performer, who would have already memorised the content and breaks of the script. "
+            "During the reading performances, the scroll acted as a cue sheet and therefore did not require in-depth reading. [...] "
+            "However, the lack of spacing also led to some ambiguity because a minor discrepancy in word parsing could give the text a different meaning. "
+            "For example, a phrase written in scriptio continua as collectamexiliopubem may be interpreted as collectam ex Ilio pubem, meaning 'a people gathered from Troy', or collectam exilio pubem, 'a people gathered for exile'. [...] "
+            "Over time, the current system of rapid silent reading for information replaced the older, slower, and more dramatic performance-based reading, and word dividers and punctuation became more beneficial to text. "
+            "Though paleographers disagree about the chronological decline of scriptio continua throughout the world, it is generally accepted that the addition of spaces first appeared in Irish and Anglo-Saxon Bibles and Gospels from the seventh and eighth centuries. "
+            "Subsequently, an increasing number of European texts adopted conventional spacing, and within the thirteenth and fourteenth centuries, all European texts were written with word separation. [...] "
+            "Scriptio continua is still in use in Thai script, other Southeast Asian abugidas (Burmese, Lao, Khmer, Javanese, Balinese, Sundanese script), and in languages that use Chinese characters (Chinese and Japanese).",
+            nome="Scriptio continua")],
+    },
+    # 7 o alfabeto nasceu de hieróglifos reaproveitados
+    {
+        "temas_secundarios": ["egito_antigo", "primeiras_civilizacoes"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O nosso alfabeto descende de uma escrita da Idade do Bronze em que falantes de língua semítica reaproveitaram hieróglifos egípcios: o desenho de uma casa passou a valer b, primeiro som de \"baytu\", casa.",
+        "explicacao": (
+            "É a escrita protossinaítica, conhecida por umas 30 a 40 inscrições de Serabit el-Khadim, no Sinai, e "
+            "por duas de Wadi el-Hol, no Egito. Ela é a ancestral comum do fenício, que levou a muitos alfabetos "
+            "modernos, como o grego e, depois, o latino. Pela teoria mais aceita, cananeus ou hicsos, que falavam "
+            "uma língua cananeia, reaproveitaram os hieróglifos para criar outra escrita. Serabit el-Khadim era "
+            "uma rica mina de turquesa. Ali, por volta de 1905, Flinders Petrie reconheceu hieróglifos nas "
+            "inscrições, mas viu que elas não funcionavam como a escrita egípcia e supôs que os próprios mineiros "
+            "tivessem criado a escrita. Em 1916, Alan Gardiner ligou os sinais às letras semíticas posteriores e "
+            "conseguiu ler uma palavra repetida, \"para a Senhora\", ou seja, a deusa Hathor, que tinha um grande "
+            "templo no local. A data ainda é debatida: perto de 1850 a.C. ou de 1550 a.C., e a escolha decide se o "
+            "alfabeto nasceu no Egito ou em Canaã. As inscrições de Wadi el-Hol, achadas em 1999 junto a uma "
+            "estrada antiga no coração do Egito letrado e datadas de entre 1900 e 1800 a.C., sugerem a origem "
+            "egípcia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Proto-Sinaitic_script",
+            "The Proto-Sinaitic script is a Middle Bronze Age writing system known from a small corpus of about 30–40 inscriptions and fragments from Serabit el-Khadim in the Sinai Peninsula, as well as two inscriptions from Wadi el-Hol in Middle Egypt. "
+            "Together with about 20 known Proto-Canaanite inscriptions, it is also known as Early Alphabetic, i.e. the earliest trace of alphabetic writing and the common ancestor of the Paleo-Hebrew alphabet, the Ancient South Arabian script and the Phoenician alphabet, which led to many modern alphabets including the Greek alphabet and, subsequently, the Latin alphabet. "
+            "According to common theory, Canaanites or Hyksos who spoke a Canaanite language repurposed Egyptian hieroglyphs to construct a different script. [...] "
+            "The principal debate is between an early date, around 1850 BC, and a late date, around 1550 BC. "
+            "The choice of one or the other date decides whether it is proto-Sinaitic or proto-Canaanite, and by extension locates the invention of the alphabet in Egypt or Canaan respectively. "
+            "However, the discovery of the two Wadi el-Hol inscriptions near the Nile River suggests that the script originated in Egypt. [...] "
+            "the discovery in 1999 of the two Wadi el-Hol inscriptions, found in Middle Egypt by John and Deborah Darnell. [...] "
+            "In the winter of 1905, Flinders Petrie and his wife Hilda were conducting a series of archaeological excavations in the Sinai Peninsula. "
+            "During a dig at Serabit el-Khadim, an extremely lucrative turquoise mine [...] "
+            "Petrie discovered a series of inscriptions at the site's massive invocative temple to Hathor [...] "
+            "Petrie immediately recognized hieroglyphic characters in the inscriptions, but upon closer inspection realized the script was not the combination of logograms and syllabics as in Egyptian script proper. "
+            "He thus assumed that the inscriptions showed a script that the turquoise miners had devised themselves [...] "
+            "Ten years later, in 1916, Alan Gardiner [...] "
+            "arguing that the glyphs appeared to be early versions of the signs used for later Semitic languages such as Phoenician [...] "
+            "as his model allowed an often recurring word to be reconstructed as lbʿlt, meaning \"to Ba'alat\" or more accurately, \"to (the) Lady\" – that is, the \"lady\" Hathor. [...] "
+            "For example, the hieroglyph for pr \"house\" (a rectangle partially open along one side, \"O1\" in Gardiner's sign list) was adopted to write Semitic /b/, after the first consonant of baytu, the Semitic word for \"house\". [...] "
+            "carved on the stone sides of an ancient high-desert military and trade road linking Thebes and Abydos, in the heart of literate Egypt. "
+            "They have been dated to somewhere between 1900 and 1800 BC.",
+            nome="Proto-Sinaitic script")],
+    },
+    # 8 os gregos inventaram as vogais com letras fenícias
+    {
+        "temas_secundarios": ["grecia_antiga", "comercio_rotas"],
+        "tipos_espanto": ["origem_inesperada", "engenhosidade"],
+        "gancho": "O alfabeto fenício, que os gregos adaptaram, só tinha consoantes. Para escrever vogais, os gregos deram novo uso a cinco delas: o A era uma consoante, e seu nome fenício queria dizer \"boi\".",
+        "explicacao": (
+            "Os gregos adotaram o alfabeto dos fenícios, que chamavam de \"letras fenícias\", e o consenso é que "
+            "isso ocorreu no fim do século IX ou no início do VIII a.C., por volta de 800 a.C. O fenício, como as "
+            "outras escritas semíticas da época, só tinha letras para consoantes. O grego tomou as 22 letras e "
+            "mudou a função de cinco: as semivogais yod e waw viraram iota e upsilon; a letra da oclusiva glotal, "
+            "uma breve trava na garganta, virou alfa; a de uma consoante faríngea virou ómicron; e a do h virou "
+            "épsilon. Assim, o grego se tornou a escrita alfabética mais antiga que se conhece a anotar de forma "
+            "sistemática vogais e consoantes, o primeiro alfabeto no sentido estrito. Os nomes das letras vieram "
+            "junto. Em fenício, o nome de cada letra era uma palavra que começava com o som representado: ʔalp, "
+            "\"boi\", nomeava a oclusiva glotal, e bet, \"casa\", o som de b. Com pequenas adaptações à fonologia "
+            "grega, alp, bet e gaml viraram alfa, beta e gama. Por volta do fim do século IV a.C., uma versão de "
+            "24 letras, de alfa a ômega, tinha virado o padrão e é a que se usa até hoje para escrever grego."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Greek_alphabet",
+            "It was derived from the earlier Phoenician alphabet, and is the earliest known alphabetic script to systematically write vowels as well as consonants. [...] "
+            "by the end of the 4th century BC, the Ionic-based Euclidean alphabet, with 24 letters, ordered from alpha to omega, had become standard throughout the Greek-speaking world and is the version that is still used for Greek writing today. [...] "
+            "the Greek alphabet is commonly held to have originated some time in the late 9th or early 8th century BC, conventionally around 800 BC. [...] "
+            "The Greeks adopted the alphabet from the earlier Phoenician alphabet, one of the closely related scripts used for the West Semitic languages, calling it Φοινικήια γράμματα 'Phoenician letters'. "
+            "However, the Phoenician alphabet was limited to consonants. "
+            "When it was adopted for writing Greek, certain consonants were adapted in order to express vowels. "
+            "The use of both vowels and consonants makes Greek the first alphabet in the narrow sense, as distinguished from the abjads used in Semitic languages, which have letters only for consonants. "
+            "Greek initially took over all of the 22 letters of Phoenician. "
+            "Five were reassigned to denote vowel sounds: the glide consonants /j/ (yod) and /w/ (waw) were used for [i] (Ι, iota) and [u] (Υ, upsilon); the glottal stop consonant /ʔ/ (ʔalp) was used for [a] (Α, alpha); the pharyngeal /ʕ/ (ʕen) was turned into [o] (Ο, omicron); and the letter for /h/ (he) was turned into [e] (Ε, epsilon). [...] "
+            "In Phoenician, each letter name was a word that began with the sound represented by that letter; thus ʔalp, the word for \"ox\", was used as the name for the glottal stop /ʔ/, bet, or \"house\", for the /b/ sound, and so on. "
+            "When the letters were adopted by the Greeks, most of the Phoenician names were maintained or modified slightly to fit Greek phonology; thus, alp, bet, gaml became alpha, beta, gamma.",
+            nome="Greek alphabet")],
+    },
+    # 9 são Cirilo não criou o cirílico
+    {
+        "temas_secundarios": ["europa_medieval", "religioes"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O alfabeto cirílico, do russo, provavelmente não foi criado por são Cirilo. Ele criou outra escrita, o glagolítico; o cirílico veio depois, feito por seguidores dele, e leva o nome do santo como homenagem.",
+        "explicacao": (
+            "Em 862, o imperador bizantino mandou os irmãos Cirilo e Metódio, de Tessalônica, à Grande Morávia, a "
+            "pedido do príncipe Rastislav, que queria reduzir a dependência de padres francos. Para traduzir os "
+            "textos da liturgia grega para o eslavo eclesiástico antigo, Cirilo criou o glagolítico, o alfabeto "
+            "eslavo mais antigo que se conhece. Depois da morte dos dois irmãos, os discípulos foram expulsos da "
+            "Morávia e se mudaram para o Primeiro Império Búlgaro. Lá, na Escola Literária de Preslav, os "
+            "estudiosos, mais apegados aos modelos gregos, logo trocaram o glagolítico por uma adaptação das "
+            "letras gregas unciais, completada com letras do glagolítico para os sons que o grego não tinha. Assim "
+            "nasceu o cirílico, no reinado do czar Simeão I. Segundo o linguista Paul Cubberley, isso ocorreu nos "
+            "anos 890. Como a escrita foi concebida pelos seguidores, e não pelos irmãos, o nome é uma homenagem, "
+            "e não uma indicação de autoria. O glagolítico não sumiu de imediato: continuou em uso na Croácia, ao "
+            "lado do latino e do cirílico, e mais a leste passou a servir sobretudo como escrita cifrada. Desde a "
+            "entrada da Bulgária, em 2007, o cirílico é a terceira escrita oficial da União Europeia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Glagolitic_script",
+                "is the oldest-known Slavic alphabet. "
+                "It is generally agreed that it was created in the 9th century for the purpose of translating Greek liturgical texts into Old Church Slavonic by Cyril, a Christian monk from Thessalonica. [...] "
+                "After the deaths of Cyril and Methodius, their disciples were expelled from Moravia, and they moved to the First Bulgarian Empire instead. [...] "
+                "Glagolitic remained in use alongside the Cyrillic and Latin script in the Kingdom of Croatia and Dalmatia [...] "
+                "in later periods, its use in its eastern range was mainly for cryptographic purposes. [...] "
+                "The two brothers from Thessaloniki, who were later canonized as Saints Cyril and Methodius, were sent to Great Moravia in 862 by the Byzantine emperor at the request of Prince Rastislav, who wanted to weaken the dependence of his country on East Frankish priests.",
+                nome="Glagolitic script"),
+            wiki("Cyrillic_script",
+                "With the accession of Bulgaria to the European Union in 2007, Cyrillic became the third official script of the European Union, following the Latin and Greek alphabets. "
+                "The Early Cyrillic alphabet was developed during the 9th century AD at the Preslav Literary School in the First Bulgarian Empire during the reign of Tsar Simeon I the Great, probably by the disciples of the two Byzantine brothers Cyril and Methodius, who had previously created the Glagolitic script. [...] "
+                "The script is named in honor of Saint Cyril. [...] "
+                "Since the script was conceived and popularised by the followers of Cyril and Methodius in Bulgaria, rather than by Cyril and Methodius themselves, its name denotes homage rath [...] "
+                "Unlike the Churchmen in Ohrid, Preslav scholars were much more dependent upon Greek models and quickly abandoned the Glagolitic scripts in favor of an adaptation of the Greek uncial to the needs of Slavic, which is now known as the Cyrillic alphabet. [...] "
+                "The Cyrillic script is derived from the Greek uncial script letters, augmented by ligatures and consonants from the older Glagolitic alphabet for sounds not found in Greek. [...] "
+                "Paul Cubberley posits that although Cyril may have codified and expanded Glagolitic, it was his students in the First Bulgarian Empire under Tsar Simeon the Great that developed Cyrillic from the Greek letters in the 890s",
+                nome="Cyrillic script"),
+        ],
+    },
+    # 10 o nüshu, a escrita só de mulheres
+    {
+        "temas_secundarios": ["costumes_rituais", "asia_antiga"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Num condado rural da China, mulheres usaram por séculos uma escrita só delas, o nüshu, para trocar cartas e canções com amigas juradas. A última pessoa que a dominava, Yang Huanyi, morreu em 2004.",
+        "explicacao": (
+            "O nüshu, \"escrita de mulheres\", era usado por mulheres da etnia yao no condado de Jiangyong, na "
+            "província de Hunan, numa época em que as mulheres em geral não aprendiam a escrita chinesa comum. "
+            "Ele deriva dos caracteres chineses, mas funciona de outro jeito: cada um dos seus 600 a 700 sinais, "
+            "aproximadamente, representa uma sílaba. É cerca de metade do necessário para todas as sílabas da "
+            "língua local, porque as diferenças de tom costumam ser ignoradas. Era comum que três ou quatro moças "
+            "sem parentesco jurassem amizade cantando e escrevendo cartas umas às outras em nüshu. Muitas obras "
+            "eram \"cartas do terceiro dia\", livrinhos encapados em pano com canções, entregues à noiva no "
+            "terceiro dia após o casamento. Datar a escrita é difícil, em parte porque o costume local era queimar "
+            "ou enterrar os textos junto com as donas. Os japoneses reprimiram o nüshu durante a invasão dos anos "
+            "1930 e 1940, por medo de mensagens secretas, e a Revolução Cultural o censurou como coisa oculta. "
+            "Yang Huanyi morreu em 20 de setembro de 2004, aos 98 anos, e He Yanxin, a última herdeira natural, em "
+            "2025. Hoje a escrita é preservada por um museu, aberto em 2002, e por \"transmissores\" designados "
+            "desde 2003."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Nüshu",
+            "'women's script') is a syllabic script derived from Chinese characters that was used by ethnic Yao women for several centuries in Jiangyong, a county within the southern Chinese province of Hunan. [...] "
+            "Nüshu is phonetic, with each of its approximately 600–700 characters representing a syllable. [...] "
+            "Typically a group of three or four young, non-related women would pledge friendship by singing songs and writing letters in Nüshu to each other. "
+            "At the time, women were typically not taught to read and write the mainstream Chinese script. [...] "
+            "To preserve the script as an intangible cultural heritage, Chinese authorities established a Nüshu museum in 2002 and designated \"Nüshu transmitters\" starting in 2003. [...] "
+            "This is about half the number required to represent all the syllables in the language, as tonal distinctions are frequently ignored [...] "
+            "The difficulty in dating Nüshu is due to local customs of burning or burying Nüshu texts with their owners [...] "
+            "The script was suppressed by the Japanese during their invasion of China in the 1930s and 1940s, because they feared that the Chinese could use it to send secret messages. "
+            "Nüshu was further censored during the Cultural Revolution (1966–1976), where it was seen as occult. [...] "
+            "Yang Huanyi, an inhabitant of Jiangyong and the last person proficient in this writing system, died on 20 September 2004, at the age of 98. "
+            " He Yanxin, the last natural inheritor of Nüshu, died on 23 October 2025, at the age of 86. [...] "
+            "A large number of the Nüshu works were 'third day missives' (三朝书; 三朝書; sānzhāoshū). "
+            "They were cloth-bound booklets created by laotong, jiebai and mothers—and given to their jiebai counterparts or daughters upon marriage. "
+            "They wrote down songs in Nüshu, which were delivered on the third day after the young woman's marriage.",
+            nome="Nüshu")],
+    },
+    # 11 o J era só um I enfeitado
+    {
+        "temas_secundarios": ["historia_portugues", "europa_medieval"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "O J começou como um I enfeitado, usado no fim de palavras e de numerais romanos, como em xxiij. Só no século XVI virou letra separada, e dicionários ingleses misturaram palavras com I e J até por volta de 1820.",
+        "explicacao": (
+            "O J era uma variante com floreio da letra I, comum no fim das palavras e dos numerais romanos quando "
+            "vinha depois de outro I: vinte e três podia aparecer como XXIIJ ou xxiij. As duas formas representavam "
+            "os mesmos sons, tanto o de vogal quanto o de semivogal, como no \"y\" do inglês \"yet\". Com o tempo, "
+            "as línguas românicas desenvolveram sons novos, que passaram a ser escritos com I e J. Antonio de "
+            "Nebrija já tratou i e j como sons diferentes na sua gramática do castelhano, de 1492, mas a fonte de "
+            "impressão usada ainda tinha um único desenho para as maiúsculas. O italiano Gian Giorgio Trissino foi "
+            "o primeiro a distinguir explicitamente I e J, em maiúsculas e minúsculas, como sons separados, numa "
+            "carta de 1524 sobre letras novas para o italiano. Pierre de la Ramée levou a distinção ao francês e "
+            "ao latim, e o inglês a adotou no século XVII. Mesmo assim, por muito tempo os dicionários ordenaram as "
+            "duas formas como variantes de uma letra só, e \"jam\" aparecia entre \"iambic\" e \"jangle\". O "
+            "costume era comum nos dicionários franceses antes de 1762 e nos ingleses antes de 1820."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("J",
+            "The letter J used to be used as the swash glyph of the letter I. "
+            "It was often used at the end of words and Roman numerals when following another I, as in XXIIJ or xxiij instead of XXIII or xxiii for the Roman numeral twenty-three. "
+            "Both these letters (or variants of the same letter) equally represented /i/, /iː/, and /j/; however, Romance languages developed new sounds (from former /j/ and /ɡ/) that came to be represented as 'I' and 'J' [...] "
+            "the initial sound in the English language word \"yet\" [...] "
+            "Antonio de Nebrija (1444–1522) distinguished ⟨i⟩ and ⟨j⟩ as representing separate sounds in his Gramática de la lengua castellana published in 1492. "
+            "In the font in which that grammar and Nebrija's Spanish-Latin dictionary (ca. 1495) were published, the lowercase letters ⟨i⟩ and ⟨j⟩ were clearly distinguished, but one and the same glyph was used for the uppercase letters. "
+            "Gian Giorgio Trissino (1478–1550) was the first to explicitly distinguish I and J in both uppercase and lowercase as representing separate sounds, in his Ɛpistola del Trissino de le lettere nuωvamente aggiunte ne la lingua italiana (\"Trissino's epistle about the letters recently added in the Italian language\") of 1524. "
+            "Pierre de la Ramée (also known as Petrus Ramus or Peter Ramus, 1515–1572) introduced the distinction into French and Latin. "
+            "In the 17th century, it was adopted in English. "
+            "However, even when the letters ⟨i⟩ and ⟨j⟩ were distinguished in print, they used to be often sorted in dictionaries as variants of one and the same letter (for example, jam, iambic, jangle); that practice was common in French dictionaries before 1762 and in English dictionaries before 1820.",
+            nome="J")],
+    },
+    # 12 bustrofédon: escrever como o boi ara
+    {
+        "temas_secundarios": ["grecia_antiga", "decifracao"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Em muitas inscrições gregas antigas, o texto ia e voltava como o boi que ara a terra: uma linha da esquerda para a direita, a seguinte da direita para a esquerda, com as letras espelhadas.",
+        "explicacao": (
+            "O estilo se chama bustrofédon, do grego \"como o boi vira\", ao arar. As linhas alternam de direção e, "
+            "nas linhas de volta, as próprias letras aparecem invertidas, como num espelho. Os textos gregos mais "
+            "antigos no alfabeto, em vez do Linear B, eram uma fileira contínua de maiúsculas da direita para a "
+            "esquerda; depois evoluíram para esse vaivém. Foi um jeito comum de escrever em pedra na Grécia antiga "
+            "e perdeu força ao longo do período helenístico. Muitas escritas antigas, como a etrusca e a sabeia, "
+            "também eram escritas assim com frequência. Na Ilha de Páscoa, as tábuas de madeira do rongorongo, "
+            "escrita ainda não decifrada, usam uma variante: em vez de espelhada, cada linha está girada 180 graus. "
+            "O leitor começa no canto inferior esquerdo, lê uma linha da esquerda para a direita e gira a tábua para "
+            "ler a seguinte, também da esquerda para a direita; enquanto isso, as linhas vizinhas ficam de cabeça "
+            "para baixo. O princípio sobrevive até em agrimensura: nos Estados Unidos, as 36 seções de cada "
+            "township, uma grade de 6 por 6, são numeradas em vaivém, da seção 1, no nordeste, até a 36, no sudeste."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Boustrophedon",
+                "Boustrophedon (, BOOS-trə-FEE-dən) is a style of writing in which alternate lines of writing are reversed, with letters also written in reverse, mirror-style. [...] "
+                "a composite of βοῦς boûs, \"ox\"; στροφή strophḗ, \"turn\"; and the adverbial suffix -δόν -dón, \"like, in the manner of\"—that is, \"like the ox turns [while plowing]\". [...] "
+                "It was a common way of writing on stone in ancient Greece, becoming less and less popular throughout the Hellenistic period. "
+                "Many ancient scripts, such as Etruscan, Safaitic, and Sabaean, were frequently or even typically written boustrophedon. [...] "
+                "The wooden boards and other incised artefacts of Rapa Nui bear a boustrophedonic script called Rongorongo, which remains undeciphered. "
+                "In Rongorongo, the text in alternate lines was rotated 180 degrees rather than mirrored; this is termed reverse boustrophedon. "
+                "The reader begins at the bottom left-hand corner of a tablet, reads a line from left to right, then rotates the tablet 180 degrees to continue on the next line from left to right again. "
+                "When reading one line, the lines above and below it appear upside down. [...] "
+                "In both countries, survey townships are divided into a 6-by-6 grid of 36 sections. "
+                "In the U.S. Public Land Survey System, Section 1 of a township is in the northeast corner, and the numbering proceeds boustrophedonically until Section 36 is reached in the southeast corner.",
+                nome="Boustrophedon"),
+            wiki("Scriptio_continua",
+                "The earliest texts in Classical Greek that used the Greek alphabet, as opposed to Linear B, were formatted in a constant string of capital letters from right to left. "
+                "Later, that evolved to boustrophedon, which included lines written in alternating directions.",
+                nome="Scriptio continua"),
+        ],
+    },
+    # 13 três mil anos de cuneiforme, da contabilidade à astronomia
+    {
+        "temas_secundarios": ["primeiras_civilizacoes", "historia_astronomia"],
+        "tipos_espanto": ["escala_absurda", "origem_inesperada"],
+        "gancho": "A escrita cuneiforme, cujos primeiros registros são quase todos de contabilidade, durou mais de três mil anos. A última tabuinha de data firme é um texto astronômico de 79 ou 80 d.C.",
+        "explicacao": (
+            "A escrita aparece pela primeira vez em Uruk, na Mesopotâmia, no fim do IV milênio a.C. Pela teoria "
+            "mais conhecida, ela nasceu de um sistema de fichas de barro usado para registrar quantidades de gado "
+            "e mercadorias. As fichas eram impressas na superfície de envelopes redondos de argila e guardadas "
+            "dentro deles, e com o tempo deram lugar a tábuas planas marcadas com estilete. Há, porém, quem conteste "
+            "que as fichas tenham sido a origem da escrita. Os primeiros registros, ainda protocuneiformes, "
+            "eram na maioria contábeis e feitos com desenhos, ainda sem o traço em forma de cunha que dá nome à "
+            "escrita. O sistema passou por várias fases do século XXXI a.C. até o século II d.C. No fim, ainda havia "
+            "quem entendesse sumério e acádio no século I a.C. ou depois: há tabuinhas de contexto escolar com "
+            "cuneiforme numa face e a transliteração em letras gregas na outra. A última tabuinha que se pode datar "
+            "com firmeza vem de Uruk, a mesma cidade onde a escrita começou, e é de 79 ou 80 d.C. A escrita "
+            "alfabética acabou por substituí-la na era romana, e o cuneiforme teve de ser decifrado como uma escrita "
+            "totalmente desconhecida no século XIX."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Cuneiform",
+            "Writing began after pottery was invented, during the Neolithic when clay tokens were used to record specific amounts of livestock or commodities. "
+            "These tokens were initially impressed on the surface of round clay envelopes (clay bullae) and then stored in them. "
+            "The tokens were then progressively replaced by flat tablets, on which signs were recorded with a stylus. "
+            "Writing is first recorded in Uruk, at the end of the 4th [...] "
+            "The cuneiform writing system was in use for more than three millennia, through several stages of development, from the 31st century BC down to the second century AD. "
+            "The latest firmly dateable tablet, from Uruk, dates to 79/80 AD. "
+            "Ultimately, it was completely replaced by alphabetic writing, in the general sense, in the course of the Roman era, and there are no cuneiform systems in current use. "
+            "It had to be deciphered as a completely unknown writing system in 19th-century Assyriology. [...] "
+            "A contrarian view has arisen on the tokens being the precursor of writing. [...] "
+            "Originally, pictographs were either drawn on clay tablets in vertical columns with a sharpened reed stylus or incised in stone. "
+            "This early style lacked the characteristic wedge shape of the strokes. "
+            "Most Proto-Cuneiform records from this period were of an accounting nature. [...] "
+            "show that both Sumerian (largely in the Emesal dialect) and Akkadian were understood in the 1st century BC or later. "
+            "There are 17 tablets many heavily damaged with unknown findspots but from a school context. "
+            "Most of the tablets bear Sumerian and/or Akkadian language cuneiform on one face and a Greek transliteration on the other. [...] "
+            "The last known cuneiform inscription, an astronomical text, was written in 79/80 AD.",
+            nome="Cuneiform")],
+    },
+    # 14 o alfabeto que Bernard Shaw deixou em testamento
+    {
+        "temas_secundarios": ["linguas_construidas", "literatura"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "O dramaturgo Bernard Shaw criticava tanto a ortografia do inglês que deixou em testamento a criação de um alfabeto novo. O resultado tem 48 letras, nenhuma maiúscula, e cada uma se faz com um só traço.",
+        "explicacao": (
+            "Shaw reclamava que a grafia do inglês vive se afastando do princípio alfabético. Ele mesmo escreveu "
+            "obras durante anos em taquigrafia Pitman, mas sabia que ela não servia para impressão nem para a "
+            "máquina de escrever. No testamento de junho de 1950, previu verba para criar um Alfabeto Shaw, com "
+            "critérios definidos: pelo menos 40 letras, uma letra para cada som e formas diferentes das latinas, "
+            "para que as grafias novas não parecessem erros de ortografia. Depois da morte dele, em novembro de "
+            "1950, e de uma disputa judicial, um concurso mundial teve quatro vencedores, e o letrista Ronald "
+            "Kingsley Read, que havia trocado muitas cartas com Shaw sobre o assunto, juntou as propostas. O "
+            "alfabeto shaviano tem truques próprios: as letras altas são, em geral, consoantes surdas, e a mesma "
+            "letra girada 180 graus passa a descer abaixo da linha e vira a consoante sonora correspondente. No "
+            "lugar das maiúsculas, um ponto antes da palavra marca nomes próprios. Com a contestação do testamento, "
+            "o fundo só conseguiu bancar um livro: a peça \"Androcles e o Leão\", em edição de 1962 com as duas "
+            "grafias, enviada às grandes bibliotecas dos países de língua inglesa."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Shavian_alphabet",
+            "It was posthumously funded by and named after the playwright George Bernard Shaw and designed by Ronald Kingsley Read, a professional signwriter and letterer. "
+            "Shaw set three main criteria for the new alphabet: "
+            "at least 40 letters (it ended up with 48, including ligatures); "
+            "as phonetic as possible (that is, letters should have a 1:1 correspondence to phonemes); "
+            "distinct from the Latin alphabet (to avoid the impression that the new spellings were simply misspellings). [...] "
+            "Tall letters are voiceless consonants, excepting Yea 𐑘 and Hung 𐑙. "
+            "A tall letter rotated 180°, with the tall part now extending below the baseline, becomes a deep letter, representing the corresponding voiced consonants (except Haha 𐑣). [...] "
+            "There are no separate uppercase or lowercase letters as in the Latin script; instead of using capitalization to mark proper nouns, a \"namer-dot\" (·) is placed before a name. [...] "
+            "Each character in the Shavian alphabet requires only a single stroke to be written on paper. [...] "
+            "George Bernard Shaw, the writer, critic and playwright, was a vocal critic of English spelling because it often deviates from the alphabetic principle. [...] "
+            "although Shaw himself for years wrote his literary works in Pitman shorthand. "
+            "However, he found its limitations frustrating as well and realized that it was not a suitable replacement for traditional orthography, making the production of printed material difficult and impossible to type. [...] "
+            "All of his interest in spelling and alphabet reform was made clear in Shaw's will of June 1950, in which provision was made for (Isaac) James Pitman, with a grant in aid from the Public Trustee, to establish a Shaw Alphabet. "
+            "Following Shaw's death in November 1950, and after some legal dispute, the Trustee announced a worldwide competition to design such an alphabet [...] "
+            "A contest for the design of the new alphabet was won by four people, including Ronald Kingsley Read who had corresponded extensively with Shaw for several years regarding such an alphabet. "
+            "Read was then appointed to amalgamate the four designs to produce the new alphabet. "
+            "Due to the contestation of Shaw's will, the trust charged with developing the new alphabet could afford to publish only one book: a version of Shaw's play Androcles and the Lion, in a bi-alphabetic edition with both conventional and Shavian spellings (1962 Penguin Books, London). "
+            "Copies were sent to major libraries in English-speaking countries.",
+            nome="Shavian alphabet")],
+    },
+    # 15 a ordem do abc já aparece em Ugarit, escrita em cunhas
+    {
+        "temas_secundarios": ["primeiras_civilizacoes", "comercio_rotas"],
+        "tipos_espanto": ["escala_absurda", "conexao_inesperada"],
+        "gancho": "A prova direta mais antiga da ordem \"abc\" vem de listas de letras da Idade do Bronze achadas em Ugarit, na Síria. Curiosamente, foram escritas num alfabeto de cunhas apertadas no barro, como o cuneiforme.",
+        "explicacao": (
+            "O alfabeto de Ugarit surgiu por volta de 1400 ou 1300 a.C. para escrever o ugarítico, uma língua "
+            "semítica hoje extinta. Como outras escritas semíticas, só anotava consoantes, mas usava as mesmas "
+            "ferramentas do cuneiforme: um estilete em forma de cunha pressionado em tabuinhas de argila. Tinha 30 "
+            "letras, e suas inscrições são a prova mais antiga de uso administrativo sistemático e em grande escala "
+            "de uma escrita alfabética. A cidade ficava no centro geográfico do mundo letrado da época, entre o "
+            "Egito, a Anatólia, Chipre, Creta e a Mesopotâmia, em contato com várias escritas diferentes. Ali se "
+            "acharam abecedários, listas das letras em sequência, que são a evidência direta mais antiga tanto da "
+            "ordem \"abc\" quanto de uma segunda ordem, \"hlḥm\". A primeira passou ao fenício, ao hebraico antigo, "
+            "ao aramaico, ao siríaco, ao grego e ao latino; a segunda sobrevive na escrita ge'ez, da qual foi "
+            "adaptada a do amárico. Muitos, se não a maioria, dos alfabetos usados hoje seguem uma dessas duas "
+            "tradições. A escrita foi descoberta em 1928, no sítio de Ras Shamra, e tinha caído em desuso por volta "
+            "de 1190 a.C., no colapso da Idade do Bronze."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ugaritic_alphabet",
+            "The Ugaritic alphabet is a consonantal alphabet (abjad) that was written using the same tools as those used to write cuneiform (i.e. pressing a wedge-shaped stylus into a clay tablet). [...] "
+            "It emerged c. 1400 or 1300 BCE to write Ugaritic, an extinct Northwest Semitic language, and fell out of use amid the Late Bronze Age collapse c. 1190 BCE. "
+            "The inscriptions found provide the earliest evidence in history of systematic and large-scale administrative use of an alphabetical writing system. "
+            "The discovery of abecedaries in the Ugaritic alphabet also provide the earliest direct evidence of not just the \"abc\" alphabetical order but also the \"hlḥm\" order. "
+            "Examples of scripts that have also used these are the Phoenician, Paleo-Hebrew, Aramaic square script, Syriac, Greek and Latin alphabets for the \"abc\" order as well as the Geʽez script from which Amharic was adapted for the \"hlḥm\". "
+            "Many if not most alphabets in use today order their letters in one of these two traditions. "
+            "The Ugaritic alphabet has 30 letters. [...] "
+            "The script was first discovered in 1928 at the site of ancient Ugarit (modern Ras Shamra, Syria). [...] "
+            "the city of Ugarit, although not a great imperial centre, was located at the geographic centre of the literate world, among Egypt, Anatolia, Cyprus, Crete, and Mesopotamia. "
+            "For this reason, the city came into contact with multiple different writing systems",
+            nome="Ugaritic alphabet")],
+    },
+    # 16 hiragana, a "escrita de mulheres", e o poeta que se fez narradora
+    {
+        "temas_secundarios": ["literatura", "asia_antiga"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "No Japão antigo, o hiragana era chamado de \"escrita de mulheres\". Para narrar em japonês uma viagem feita em 935, sem caracteres chineses, o poeta Ki no Tsurayuki escreveu como se fosse uma mulher.",
+        "explicacao": (
+            "O hiragana nasceu de formas cursivas simplificadas dos man'yōgana, caracteres chineses usados só pelo "
+            "som: あ (a), por exemplo, vem de 安. Os homens usavam a forma regular dos caracteres, chamada \"escrita "
+            "de homens\", e as mulheres, que em geral não tinham acesso à mesma educação, a cursiva. Por isso o "
+            "hiragana se popularizou primeiro entre as damas da corte, em cartas e literatura, e ganhou o nome de "
+            "onnade, \"escrita de mulheres\". O Conto de Genji e outros romances antigos de autoras usam muito ou "
+            "só o hiragana. Na mesma época, \"diário\" (nikki) queria dizer registro oficial seco, escrito por "
+            "homens em sino-japonês. O Tosa Nikki, que conta uma viagem de 55 dias, em 935, de volta a Quioto, foi "
+            "escrito de forma anônima por Tsurayuki, ex-governador da província de Tosa, e é o primeiro exemplo "
+            "notável do diário como literatura. Os homens cultos escreviam em kana e em caracteres chineses, mas as "
+            "mulheres costumavam aprender só o kana. Com uma narradora fictícia, Tsurayuki pôde deixar de lado os "
+            "caracteres e os poemas chineses e se concentrar na estética da língua japonesa e da sua poesia. Até "
+            "hoje o hiragana é visto como tendo um ar feminino."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Hiragana",
+                "Historically, hiragana developed from cursive forms of kanji via man'yōgana, with each sign originating as a simplified cursive rendering of a whole kanji—for example, あ (a) from 安 (an). [...] "
+                "Hiragana developed from man'yōgana, Chinese characters used for their pronunciations [...] "
+                "Historically, in Japan, the regular script (kaisho) form of the characters was used by men and called otokode (男手), \"men's writing\", while the cursive script (sōsho) form of the kanji was used by women. "
+                "Hence hiragana first gained popularity among women, who were generally not allowed access to the same levels of education as men, thus hiragana was first widely used among court women in the writing of personal communications and literature. "
+                "From this comes the alternative name of onnade (女手) \"women's writing\". "
+                "For example, The Tale of Genji and other early novels by female authors used hiragana extensively or exclusively. "
+                "Even today, hiragana is felt to have a feminine quality.",
+                nome="Hiragana"),
+            wiki("Tosa_Nikki",
+                "is a poetic diary written anonymously by the tenth-century Japanese poet Ki no Tsurayuki. "
+                "The text details a 55-day journey in 935 returning to Kyoto from Tosa province, where Tsurayuki had been the provincial governor. [...] "
+                "The Tosa Nikki is the first notable example of the Japanese diary as literature. "
+                "Until its time, the word \"diary\" (nikki) denoted dry official records of government or family affairs, written by men in Sino-Japanese. "
+                "By contrast, the Tosa Diary is written in the Japanese language, using phonetic kana characters. "
+                "Literate men of the period wrote in both kana and kanji, but women typically were not taught the latter, being restricted to kana literature. "
+                "By framing the diary in the point of view of a fictitious female narrator, Tsurayuki could avoid employing Chinese characters or citing Chinese poems, focusing instead on the aesthetics of the Japanese language and its poetry.",
+                nome="Tosa Nikki"),
+        ],
+    },
+    # 17 o ponto de interrogação não é cauda de gato
+    {
+        "temas_secundarios": ["egito_antigo", "europa_medieval"],
+        "tipos_espanto": ["mito_desmentido", "origem_inesperada"],
+        "gancho": "A ideia de que o ponto de interrogação imita a cauda de um gato egípcio não se sustenta: os hieróglifos não tinham pontuação. Um ancestral provável é um sinal medieval descrito como um \"raio\" sobre um ponto.",
+        "explicacao": (
+            "A história do sinal é contestada. Uma teoria popular diz que a forma se inspira na curva do rabo de um "
+            "gato e costuma atribuí-la aos antigos egípcios, só que a escrita hieroglífica não usava sinais de "
+            "pontuação. Outra explicação, atribuída ao holandês Bilderdijk, diz que o sinal seria a primeira e a "
+            "última letra da palavra latina \"quaestio\", pergunta, uma sobre a outra: Qo. Os manuscritos mostram "
+            "outra trilha. Por volta de 783, no Evangeliário de Godescalco, aparece uma marca descrita como um "
+            "rabisco que sobe na diagonal sobre um ponto, ou como um raio caindo da direita para a esquerda: é o "
+            "punctus interrogativus, cuja criação também já foi atribuída a Alcuíno de York, conselheiro de "
+            "Carlos Magno. Para alguns paleógrafos, ele talvez indicasse entonação, como as primeiras notações "
+            "musicais. A partir do século X, esse papel parece ter sido esquecido, e o sinal aparecia no fim de "
+            "frases que nem eram perguntas. Só no início do século XIII, quando as universidades de Paris e de "
+            "outras cidades fizeram crescer a produção de livros, o \"raio\" foi reservado às perguntas, já com uma "
+            "curva parecida com a de hoje. O espanhol ainda exige, desde 1754, um sinal invertido no começo da "
+            "pergunta."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "consenso_parcial",
+        "fontes": [wiki("Question_mark",
+            "The history of the question mark is contested. "
+            "One popular theory posits that the shape of the symbol is inspired by the crook in a cat's tail, often attributed to the ancient Egyptians. "
+            "However, Egyptian hieroglyphics did not use punctuation marks. "
+            "The question mark (or \"note of interrogation\") is \"said by Bilderdijk to have been formed from the first and last letters of the Latin word Quæstio, question, placed one over the other; thus, Qo.\" [...] "
+            "From around 783, in Godescalc Evangelistary, a mark described as \"a squiggle rising diagonally from left to right above a point\" or \"a lightning flash, striking from right to left\" is attested. "
+            "This mark is later called a punctus interrogativus. "
+            "According to some paleographers, it may have indicated intonation, perhaps associated with early musical notation like neumes. [...] "
+            "The creation of the punctus interrogativus has also been attributed to Alcuin of York, an advisor to Charlemagne. "
+            "From the 10th century, the pitch-defining element (if it ever existed) seems to have been gradually forgotten, so that the \"lightning flash\" sign (with the stroke sometimes slightly curved) is often seen indifferently at the end of clauses, whether they embody a question or not. "
+            "In the early 13th century, when the growth of communities of scholars (universities) in Paris and other major cities led to an expansion and streamlining of the book-production trade, punctuation was rationalized by assigning the \"lightning flash\" specifically to interrogatives; by this time, the stroke was more sharply curved and can easily be recognized as the modern question mark [...] "
+            "In Spanish, since the second edition of the Ortografía of the Real Academia Española in 1754, interrogatives require both opening ¿ and closing ? question marks.",
+            nome="Question mark")],
+    },
+]

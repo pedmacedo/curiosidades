@@ -1,0 +1,149 @@
+{
+ "lote": "2026-11-19-invencoes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "invencoes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com PTFE (cilindro 'vazio', Manhattan, Colette Grégoire e Tefal 1954)."
+   },
+   {
+    "id": "invencoes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere (8/10/1958, três horas, 26 aparelhos, Larsson sobreviveu ao inventor e ao cirurgião); 'primeiro implantado' se sustenta."
+   },
+   {
+    "id": "invencoes-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Oito semanas' é inconsistente (~10 semanas); o processo de 1855 foi movido por Moulton, não por Hancock contra Goodyear; 'toddlers', não bebês.",
+    "correcao": "Gancho: 'patenteou o processo oito semanas antes dele e ganhou na Justiça.' -> 'patenteou o processo pouco antes dele e a manteve na Justiça.' Explicação: 'registrou em novembro de 1843 uma patente para vulcanizar borracha com enxofre, oito semanas antes de Goodyear nos Estados Unidos' -> 'registrou em 21 de novembro de 1843 uma patente para vulcanizar borracha com enxofre, antes de Goodyear nos Estados Unidos'; 'Na disputa judicial, químicos testemunharam' -> 'Num processo de 1855, movido por um concorrente britânico que acusava Hancock de ter copiado Goodyear, químicos testemunharam'; 'dois filhos dele morreram ainda bebês' -> 'dois filhos dele morreram ainda pequenos'."
+   },
+   {
+    "id": "invencoes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas a FDA só ganhou esse nome em 1930 (Wiley chefiava o Bureau of Chemistry), e 'acabou com a carreira' exagera 'proved the undoing'.",
+    "correcao": "'Harvey Wiley, chefe da divisão de química da FDA, a agência americana de alimentos,' -> 'Harvey Wiley, chefe do Bureau de Química do governo americano, o órgão que daria origem à FDA,'; 'O episódio acabou com a carreira de Wiley.' -> 'O episódio é apontado como o começo da queda de Wiley.'"
+   },
+   {
+    "id": "invencoes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Eraser (pão, Nairne 1770 com 'segundo os relatos', Priestley, 'rubber' entre 1770 e 1778)."
+   },
+   {
+    "id": "invencoes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Barcode e Woodland (Morse na areia, borrão de tinta, 1973, Wrigley's 1974); 'primeiro' delimitado ao UPC."
+   },
+   {
+    "id": "invencoes-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere; mas a patente original é de 1947 (Goodrich), e 'o primeiro a reconhecer' é frágil. Nota 3.",
+    "correcao": "'Os cianoacrilatos surgiram em 1942, numa busca por materiais para fins militares durante a guerra.' -> 'Em 1942, numa busca por materiais para fins militares durante a guerra, a equipe de Coover topou com uma fórmula de cianoacrilato.'; 'Coover também foi o primeiro a reconhecer e patentear o uso como adesivo de tecidos do corpo, depois que' -> 'Coover também patenteou o uso como adesivo de tecidos do corpo, depois que'."
+   },
+   {
+    "id": "invencoes-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas a W. R. Grace foi fundada em 1854 (anacronismo), o credor tem versões, e o motivo da máquina de costura é relato.",
+    "correcao": "Gancho: 'Antes, tinha deixado de patentear sua máquina de costura por medo de tirar o emprego das costureiras.' -> 'Antes, segundo se conta, deixou de patentear sua máquina de costura por medo de tirar o emprego das costureiras.' Explicação: 'Vendeu a patente à W. R. Grace and Company por 400 dólares, pagou a dívida e ficou com 385. A empresa lucrou milhões com o produto.' -> 'Vendeu a patente por 400 dólares, pagou a dívida e ficou com 385. Quem comprou lucrou milhões com o produto.'; 'segundo sua biografia, o credor era' -> 'segundo outra versão, o credor era'; 'Não a patenteou porque temia desempregar' -> 'Segundo os relatos, não a patenteou porque temia desempregar'. confianca -> consenso_parcial."
+   },
+   {
+    "id": "invencoes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Pantelegraph, Fax e Bain (Paris–Lyon 1865, 11 anos antes do telefone, pêndulo de 8 kg, Rossini)."
+   },
+   {
+    "id": "invencoes-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: frasco que não se despedaçou é clássico de listas, a anedota tem versões divergentes, e não há linha direta até o para-brisa (Wood 1905, PVB)."
+   },
+   {
+    "id": "invencoes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio em Stephanie Kwolek e Kevlar (solução turva, Smullen, 1971, Shubin)."
+   },
+   {
+    "id": "invencoes-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Explicação confere; mas 'o inventor' sugere invenção absoluta (houve projetos anteriores: Anderson 1923, Oishei 1958, Amos 1961).",
+    "correcao": "Gancho: 'O limpador de para-brisa intermitente que virou padrão nos carros foi modelado no piscar do olho. Seu criador, Robert Kearns, processou a Ford e a Chrysler, foi muitas vezes o próprio advogado e venceu as duas.'"
+   },
+   {
+    "id": "invencoes-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Explicação confere; mas a fonte diz 'One of the first forms of correction fluid'.",
+    "correcao": "Gancho: 'Um dos primeiros corretivos líquidos foi criado por uma secretária que pintava vitrines e cobriu erros de datilografia com tinta. Ela foi demitida depois de assinar uma carta com o nome da própria empresa de corretivo.'"
+   },
+   {
+    "id": "invencoes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo tem apoio (Loud 1888 como precursor, tinta de jornal, bolinhas de gude atribuídas, Birome). Nota 3."
+   },
+   {
+    "id": "invencoes-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; 'o primeiro aço inox de verdade' em 1913 contradiz a patente da Krupp de 1912 citada na própria explicação.",
+    "correcao": "'Segundo relatos, o primeiro aço inox de verdade saiu de um forno elétrico em agosto de 1913.' -> 'Segundo relatos, a primeira corrida do aço inox de Brearley saiu de um forno elétrico em agosto de 1913.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "invencoes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Pouco antes', 21/11/1843, processo de Moulton em 1855 e 'ainda pequenos' conferem."
+   },
+   {
+    "id": "invencoes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Bureau de Química e 'começo da queda' aplicados."
+   },
+   {
+    "id": "invencoes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "1942 como fórmula achada pela equipe e sem 'o primeiro'. Nota 3."
+   },
+   {
+    "id": "invencoes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Sem a W. R. Grace, motivos como relato, consenso_parcial. Ajuste pontual aplicado sem nova verificação: a dívida era com um amigo (a primeira versão).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "invencoes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com 'que virou padrão' e 'seu criador'; números conferem."
+   },
+   {
+    "id": "invencoes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Um dos primeiros corretivos' aplicado."
+   },
+   {
+    "id": "invencoes-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'A primeira corrida do aço de Brearley' não contradiz mais a Krupp."
+   }
+  ]
+ }
+}

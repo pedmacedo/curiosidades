@@ -186,6 +186,8 @@ Um fato com veredito `ajustar` é corrigido uma vez e volta ao verificador. Se n
 
 ### 5.4 Revisão humana por amostragem
 
+> **Decisão do Pedro (2026-11-18):** a amostragem periódica foi **dispensada** a partir da Fase 4. O Pedro concordou com quase 100% do conteúdo e considera o pipeline (checagem por código + verificador em duas rodadas) suficiente. As regras abaixo ficam como referência, caso ele peça uma revisão. Os reportes "⚠ Parece errado" do app continuam sendo o canal de correção.
+
 - A cada ~150 fatos aprovados, rodar `python pipeline/sortear_amostra.py --n 30` para gerar `dados/revisao/<lote>.md`, com gancho, explicação, fontes e caixas `[ ] ok [ ] errado [ ] chato`.
 - O Pedro marca. Com **0–1** problema, o bloco segue. Com **2 ou mais**, pausar, diagnosticar qual etapa falhou e ajustar o processo antes de continuar.
 - Depois de 3 amostras seguidas limpas, a amostra pode cair para 20.
@@ -245,7 +247,7 @@ Mobile-first, leitura confortável (fonte grande, bom contraste, tema claro e es
 | 1. Taxonomia | `taxonomia.json` (~15 áreas, ~150 temas, vizinhos) e `tipos_espanto.json` | **O Pedro aprovou** |
 | 2. Piloto de conteúdo | 3 temas de áreas bem diferentes (~30 fatos) pelo pipeline completo | O Pedro revisou **todos** os ~30, as taxas de descarte estão registradas e o processo foi ajustado |
 | 3. App MVP | Questionário, feed, reações e recomendador, com os fatos do piloto e fatos de amostra | O app funciona no celular do Pedro, inclusive offline |
-| 4. Produção | Lotes até ~1.500 fatos, ~10 por tema | Todos os temas cobertos, amostragens aprovadas e `validar.py` limpo |
+| 4. Produção | Lotes até ~1.500 fatos, ~10 por tema | Todos os temas cobertos e `validar.py` limpo (amostragem dispensada pelo Pedro em 2026-11-18) |
 | 5. Polimento | Perfis da família, favoritos, exportar/importar, calibragem do recomendador | O Pedro e a família usando no dia a dia |
 
 **Mostre resultados cedo.** Ao fim de cada fase, apresente ao Pedro o que foi feito e o que mudou antes de seguir.

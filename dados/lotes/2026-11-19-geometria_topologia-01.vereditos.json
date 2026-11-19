@@ -1,0 +1,134 @@
+{
+ "lote": "2026-11-19-geometria_topologia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "geometria_topologia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Todas as afirmações conferem (Poincaré 1904, preprints 2002/2003, recusas da Fields e do US$1 milhão, único Problema do Milênio resolvido)."
+   },
+   {
+    "id": "geometria_topologia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Sphere eversion: Smale 1958, Bott 'obviously wrong', grau da aplicação de Gauss, Shapiro e Morin (cego), 'Outside In'. Contraintuitivo e pouco conhecido."
+   },
+   {
+    "id": "geometria_topologia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hairy ball theorem, inclusive a ressalva do vento (ponto sem vento horizontal em cada camada), Poincaré 1885, Brouwer 1912, toro."
+   },
+   {
+    "id": "geometria_topologia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Borsuk–Ulam: antípodas, caso n=1 e n=2 com a condição de continuidade, Borsuk 1933 e Ulam. Vizinho do 0003, mas não duplicado."
+   },
+   {
+    "id": "geometria_topologia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo confere; só a redação cita a própria fonte ('segundo a Wikipedia') e omite que parte da prova de Rao foi conferida por Hales.",
+    "correcao": "Trocar 'Em 2017, Michaël Rao anunciou uma prova de que não existem outros, ainda sujeita à revisão por pares, segundo a Wikipedia.' por 'Em 2017, Michaël Rao anunciou uma prova, feita com auxílio de computador, de que não existem outros; parte dela foi conferida de forma independente, mas a revisão por pares completa ainda não havia sido concluída.'"
+   },
+   {
+    "id": "geometria_topologia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e números conferem, mas o chapéu não é 'a solução da versão mais exigente' (precisa do espelho; o espectro é a versão quiral), e a prova veio em 2023.",
+    "correcao": "No gancho, trocar 'Foi a solução da versão mais exigente do \"problema do einstein\".' por 'A prova veio em 2023 e resolveu o \"problema do einstein\".'"
+   },
+   {
+    "id": "geometria_topologia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fonte sustenta com 'consistent with'; gancho afirma mais forte. 'O tema ganhou peso em 2011' sem apoio.",
+    "correcao": "1) Gancho: 'têm propriedades dos padrões que nunca se repetem' -> 'têm propriedades compatíveis com os padrões que nunca se repetem' (se passar de 220, tirar 'no Irã,'). 2) Explicação: trocar a frase de 2011 por 'Em 2011, o Nobel de Química premiou a descoberta dos quasicristais, e os ladrilhamentos de Penrose foram lembrados por terem ajudado a entendê-la.'"
+   },
+   {
+    "id": "geometria_topologia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Todas as afirmações batem com János Bolyai e Non-Euclidean geometry; números por extenso na fonte. Boa história humana."
+   },
+   {
+    "id": "geometria_topologia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem, mas 'na 5ª dimensão' soa como ficção e o pico em 5 depende do raio 1 (a fonte avisa).",
+    "correcao": "1) Gancho: 'na 5ª dimensão' -> 'em 5 dimensões'. 2) Explicação: depois de 'chega ao máximo na 5 e depois diminui;' inserir 'a dimensão do pico muda conforme o raio escolhido, mas, para qualquer raio,' e ajustar para 'com n indo ao infinito, o volume tende a zero.'"
+   },
+   {
+    "id": "geometria_topologia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Maryna Viazovska e Sphere packing; o 4 em aberto é dedução correta da lista 1–3, 8 e 24."
+   },
+   {
+    "id": "geometria_topologia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números e afirmações conferem com Kepler conjecture (74,05%, Raleigh e Harriot, 1611, Gauss 1831, revisores 99%, Flyspeck 2014). Não duplica o 0010."
+   },
+   {
+    "id": "geometria_topologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Mathematics of paper folding (Gallivan, 2001/2002, 12 dobras, fórmula). O mito já circula, mas a mecânica da perda salva; nota 3."
+   },
+   {
+    "id": "geometria_topologia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Doubling the cube e paper folding (Plutarco, Wantzel 1837, Messer 1986). Liga Grécia antiga ao origami."
+   },
+   {
+    "id": "geometria_topologia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Reuleaux triangle (98,8%, Watts 1914, tampa de bueiro, Wankel 'somewhat flatter'). Sem exagero."
+   },
+   {
+    "id": "geometria_topologia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Theorema Egregium (Gauss 1827, pizza, mapas). Menor: 'segura a forma tempo suficiente para ser comida sem sujeira' é quase literal; sugerido 'e a ponta não desaba antes da próxima mordida'."
+   }
+  ],
+  "2": [
+   {
+    "id": "geometria_topologia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada; Rao/Hales conferem com Pentagonal tiling."
+   },
+   {
+    "id": "geometria_topologia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho corrigido ('A prova veio em 2023...'), confere com 'strictest version... solved in 2023'."
+   },
+   {
+    "id": "geometria_topologia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'compatíveis com' e a frase do Nobel de 2011 corrigidas; consenso_parcial adequado."
+   },
+   {
+    "id": "geometria_topologia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'em 5 dimensões' e a ressalva do raio aplicadas, fiéis à fonte."
+   },
+   {
+    "id": "geometria_topologia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Aprovado na rodada 1; ajuste pontual aplicado sem nova verificação: frase quase literal da pizza reescrita.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

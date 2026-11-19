@@ -1,0 +1,613 @@
+LOTE = "2026-11-18-probabilidade-01"
+AREA = "matematica"
+TEMA = "probabilidade"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Sally Clark e o "1 em 73 milhões"
+    {
+        "temas_secundarios": ["leis_julgamentos", "vieses_cognitivos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1999, uma advogada inglesa foi condenada pela morte dos dois filhos bebês, em parte por uma conta: um pediatra disse que duas mortes súbitas na mesma família tinham chance de 1 em 73 milhões. A conta estava errada.",
+        "explicacao": (
+            "Sally Clark perdeu o primeiro filho em 1996, com poucas semanas de vida, e o segundo em 1998. A defesa "
+            "sustentou que os dois tinham morrido da síndrome da morte súbita infantil. O pediatra Roy Meadow "
+            "afirmou no tribunal que, numa família rica e sem fumantes como a dela, a chance de uma morte assim era "
+            "de 1 em 8.543; multiplicou esse valor por ele mesmo e chegou a 1 em 73 milhões, que comparou a acertar "
+            "um azarão no Grand National, a grande corrida de cavalos britânica, quatro anos seguidos. A conta tinha "
+            "dois problemas sérios. Ela trata as duas mortes como independentes, mas fatores genéticos ou ambientais "
+            "desconhecidos podem deixar uma segunda morte na mesma família bem mais provável; o matemático Ray Hill "
+            "estimou que, depois de um primeiro caso, o risco de outro fica de 5 a 10 vezes maior. Além disso, mesmo "
+            "uma chance minúscula de duas mortes naturais não mede a chance de inocência: seria preciso compará-la "
+            "com a de um duplo assassinato de bebês, que provavelmente é ainda mais raro. O erro tem nome, falácia do "
+            "promotor. Em 2001, a Real Sociedade de Estatística protestou publicamente contra o mau uso da "
+            "estatística nos tribunais. Clark só teve a condenação anulada em 2003, quando veio à tona que o "
+            "patologista da acusação escondera exames sugerindo causa natural para a morte do segundo bebê. Ela "
+            "desenvolveu graves problemas psiquiátricos e morreu em 2007."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Sally_Clark",
+            "Sally Clark (née Lockyer, 15 August 1964 – 15 March 2007) was an English solicitor who, in November 1999, became the victim of a miscarriage of justice when she was found guilty of the murder of her two infant sons. "
+            "Clark's first son died in December 1996 within a few weeks of his birth, and her second son died in similar circumstances in January 1998. [...] "
+            "The defence argued that the children had died of sudden infant death syndrome (SIDS). "
+            "The prosecution case relied on flawed statistical evidence presented by paediatrician Roy Meadow [...] "
+            "He likened the probability to the chances of backing an 80–1 outsider in the Grand National four years running, and winning each time. [...] "
+            "He claimed that, for an affluent non-smoking family like the Clarks, the probability of a single cot death was 1 in 8,543, so the probability of two in the same family was around \"1 in 73 million\" (8543 × 8543). [...] "
+            "In October 2001, the Royal Statistical Society (RSS) issued a public statement expressing its concern at the \"misuse of statistics in the courts\". [...] "
+            "Meadow's calculation was based on the assumption that two SIDS deaths in the same family are independent. "
+            "The RSS argued that \"there are very strong reasons for supposing that the assumption is false. There may well be unknown genetic or environmental factors that predispose families to SIDS, so that a second case within the family becomes much more likely than would be a case in another, apparently similar, family.\" [...] "
+            "concluded, using extensive SIDS statistics for England, that \"after a first cot death the chances of a second become greatly increased\" by a dependency factor of between 5 and 10. "
+            "The ruling was also subject to a statistical error known as the \"prosecutor's fallacy\". [...] "
+            "even if the \"1 in 73 million\" figure were valid, this should not have been interpreted as the probability of Clark's innocence. [...] "
+            "Although double SIDS is very rare, double infant murder is likely to be rarer still [...] "
+            "overturned in a second appeal in January 2003, after it emerged that Alan Williams, the prosecution forensic pathologist who examined both babies, had failed to disclose microbiological reports that suggested her younger son had died of natural causes. [...] "
+            "Clark's experience caused her to develop severe psychiatric problems and she died in her home in March 2007 from alcohol poisoning.",
+            nome="Sally Clark")],
+    },
+    # 2 o problema dos tanques alemães
+    {
+        "temas_secundarios": ["segunda_guerra", "espionagem"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "Na Segunda Guerra, os Aliados estimaram quantos tanques a Alemanha fabricava olhando os números de série das peças de tanques capturados. Para fevereiro de 1944, calcularam 270; os registros alemães diziam 276.",
+        "explicacao": (
+            "Os alemães numeravam em sequência peças como chassis, motores, caixas de câmbio e rodas. Quando "
+            "objetos levam números de 1 até um total desconhecido, os números de uma amostra capturada permitem "
+            "estimar esse total. Uma fórmula simples usa o maior número observado e o tamanho da amostra: soma-se "
+            "ao maior número o resultado de dividi-lo pela quantidade de exemplares vistos, e subtrai-se 1. Com "
+            "quatro tanques de números 19, 40, 42 e 60, a estimativa dá 74. Pouco antes do Dia D, havia boatos de "
+            "que os alemães tinham muitos tanques Panther, e os Aliados quiseram checar. Na análise das rodas, "
+            "também numeradas em sequência, as 64 rodas de dois tanques permitiram estimar quantos moldes estavam "
+            "em uso; com a ajuda de fabricantes britânicos de rodas, isso virou uma estimativa de produção mensal: "
+            "270 tanques em fevereiro de 1944, bem mais do que se suspeitava. Depois da guerra, os registros alemães "
+            "mostraram 276. A abordagem estatística foi muito mais precisa que a espionagem tradicional, que tendia "
+            "a superestimar a produção nazista, e deu nome a esse tipo de análise: o \"problema dos tanques "
+            "alemães\". O mesmo truque funcionou com outros equipamentos, com mais sucesso no caso do foguete V-2, "
+            "e muito depois serviu para estimar quantos computadores Commodore 64 foram fabricados."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("German_tank_problem",
+            "The problem is named after its historical application by Allied forces in World War II to estimate the monthly rate of German tank production from very limited data. "
+            "The statistical method exploited the manufacturing practice of assigning and attaching ascending serial-number sequences to tank components (chassis, gearbox, engine, wheels), with some of the tanks eventually captured in battle by Allied forces. "
+            "This contrasted with conventional intelligence, which often overestimated Nazi output; this statistical approach yielded a highly accurate estimate. [...] "
+            "suppose that four tanks are captured and that they have the serial numbers: 19, 40, 42 and 60. [...] "
+            "predicts the total number of tanks produced will be: N≈74 [...] "
+            "Let N equal the total number of tanks predicted to have been produced, m equal the highest serial number observed and k equal the number of tanks captured. "
+            "The frequentist prediction is calculated as: N≈m+mk−1=74 [...] "
+            "Shortly before D-Day, rumors indicated that large numbers of Panzer V tanks were being used. [...] "
+            "Similar analyses were done on wheels, which were observed to be sequentially numbered [...] "
+            "The analysis of tank wheels yielded an estimate for the number of wheel molds that were in use. "
+            "A discussion with British road wheel makers then estimated the number of wheels that could be produced from this many molds, which yielded the number of tanks that were being produced each month. "
+            "Analysis of wheels from two tanks (32 road wheels each, 64 road wheels total) yielded an estimate of 270 tanks produced in February 1944, substantially more than had previously been suspected. "
+            "German records after the war showed production for the month of February 1944 was 276. "
+            "The statistical approach proved to be far more accurate than conventional intelligence methods, and the phrase \"German tank problem\" became accepted as a descriptor for this type of statistical analysis. [...] "
+            "Similar serial-number analysis was used for other military equipment during World War II, most successfully for the V-2 rocket. [...] "
+            "The formula has been used in non-military contexts, for example to estimate the number of Commodore 64 computers built",
+            nome="German tank problem")],
+    },
+    # 3 Ulam, a paciência e o método de Monte Carlo
+    {
+        "temas_secundarios": ["historia_computacao", "jogos_azar"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O método de Monte Carlo, que resolve problemas de física com sorteios, nasceu de um jogo de paciência: em 1946, se recuperando de uma doença, Stanisław Ulam tentou calcular a chance de vencer uma partida.",
+        "explicacao": (
+            "Ulam contou que tentou achar, só com combinatória, a probabilidade de uma paciência do tipo Canfield, "
+            "com 52 cartas, dar certo. Depois de muito tempo de cálculo, pensou que seria mais prático dispor as "
+            "cartas umas cem vezes e simplesmente contar quantas partidas davam certo. Os computadores rápidos "
+            "estavam chegando, e ele logo ligou a ideia a um problema de Los Alamos: os físicos tinham os dados "
+            "sobre como os nêutrons se chocam com os núcleos atômicos, mas não conseguiam calcular, pelos métodos "
+            "matemáticos tradicionais, como eles se espalham no núcleo de uma arma nuclear. A saída era trocar as "
+            "equações por uma sucessão de experimentos aleatórios. Ulam levou a ideia a John von Neumann. Como o "
+            "trabalho era secreto, precisava de um codinome, e o colega Nicholas Metropolis sugeriu \"Monte Carlo\", "
+            "o cassino de Mônaco onde um tio de Ulam jogava com dinheiro emprestado de parentes. Na primavera de "
+            "1948, a equipe programou o ENIAC para fazer os primeiros cálculos de Monte Carlo totalmente "
+            "automáticos, e o método foi central no projeto da bomba de hidrogênio. A ideia tinha precursores: "
+            "Enrico Fermi já tinha feito experimentos parecidos nos anos 1930, sem publicá-los, e o problema da "
+            "agulha de Buffon, do século XVIII, foi uma variante antiga."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Monte_Carlo_method",
+            "An early variant of the Monte Carlo method was devised to solve the Buffon's needle problem [...] "
+            "In the 1930s, Enrico Fermi first experimented with the Monte Carlo method while studying neutron diffusion, but he did not publish this work. "
+            "In the late 1940s, Stanisław Ulam invented the modern version of the Markov Chain Monte Carlo method while he was working on nuclear weapons projects at the Los Alamos National Laboratory. "
+            "In 1946, nuclear weapons physicists at Los Alamos were investigating neutron diffusion in the core of a nuclear weapon. "
+            "Despite having most of the necessary data, such as the average distance a neutron would travel in a substance before it collided with an atomic nucleus [...] "
+            "the Los Alamos physicists were unable to solve the problem using conventional, deterministic mathematical methods. "
+            "Ulam proposed using random experiments. [...] "
+            "The first thoughts and attempts I made to practice [the Monte Carlo Method] were suggested by a question which occurred to me in 1946 as I was convalescing from an illness and playing solitaires. "
+            "The question was what are the chances that a Canfield solitaire laid out with 52 cards will come out successfully? "
+            "After spending a lot of time trying to estimate them by pure combinatorial calculations, I wondered whether a more practical method than \"abstract thinking\" might not be to lay it out say one hundred times and simply observe and count the number of successful plays. "
+            "This was already possible to envisage with the beginning of the new era of fast computers, and I immediately thought of problems of neutron diffusion [...] "
+            "how to change processes described by certain differential equations into an equivalent form interpretable as a succession of random operations. "
+            "Later [in 1946], I described the idea to John von Neumann, and we began to plan actual calculations. "
+            "Being secret, the work of von Neumann and Ulam required a code name. "
+            "A colleague of von Neumann and Ulam, Nicholas Metropolis, suggested using the name Monte Carlo, which refers to the Monte Carlo Casino in Monaco where Ulam's uncle would borrow money from relatives to gamble. "
+            "Monte Carlo methods were central to the simulations required for further postwar development of nuclear weapons, including the design of the H-bomb [...] "
+            "Von Neumann, Nicholas Metropolis and others programmed the ENIAC computer to perform the first fully automated Monte Carlo calculations, of a fission weapon core, in the spring of 1948.",
+            nome="Monte Carlo method"),
+            wiki("Buffon%27s_needle_problem",
+                "In probability theory, Buffon's needle problem is a question first posed in the 18th century by Georges-Louis Leclerc, Comte de Buffon",
+                nome="Buffon's needle problem")],
+    },
+    # 4 Gosset, a Guinness e o "Student"
+    {
+        "temas_secundarios": ["bebidas_alcoolicas", "historia_matematica"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O \"teste t de Student\", da estatística, não tem nada de estudante: foi criado por um cervejeiro da Guinness, que proibia seus pesquisadores de publicar com o nome verdadeiro. Ele assinava só \"Student\".",
+        "explicacao": (
+            "William Sealy Gosset passou a carreira inteira, 38 anos, na cervejaria Arthur Guinness & Son, em "
+            "Dublin. Como chefe dos experimentos da casa, enfrentava um problema prático: os testes com cevada e "
+            "com a produção usavam poucas amostras, enquanto estatísticos como Karl Pearson costumavam trabalhar com "
+            "centenas de observações e não viam urgência em métodos para amostras pequenas. Em 1906 e 1907, a "
+            "Guinness o mandou passar dois períodos letivos no laboratório de Pearson, em Londres. Gosset criou a "
+            "distribuição hoje chamada t de Student (que de início ele chamava de z) e foi pioneiro no "
+            "planejamento de experimentos com amostras pequenas. O pseudônimo tem explicação: depois que um "
+            "pesquisador da empresa publicou algo que a direção temia ser útil para a concorrência, ficou decidido "
+            "que os textos dos pesquisadores não poderiam citar cerveja, a Guinness nem o nome verdadeiro do autor. "
+            "O \"Student\" talvez venha de um caderno que ele usou nessa época, \"The Student's Science Notebook\". "
+            "Assim saiu a maioria dos seus 21 artigos, na revista de Pearson. Quem percebeu o valor do trabalho foi "
+            "Ronald Fisher, com quem trocou mais de 150 cartas. Numa delas, em 1924, Gosset mandou suas tabelas "
+            "dizendo que Fisher era o único homem que provavelmente as usaria. Em 1937 ele virou o cervejeiro-chefe "
+            "de toda a Guinness, e morreu um mês depois."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("William_Sealy_Gosset",
+            "William Sealy Gosset (13 June 1876 – 16 October 1937) was an English statistician, chemist and brewer who worked for Guinness. "
+            "In statistics, he pioneered small-sample experimental design. "
+            "Gosset published under the pen name Student and developed Student's t-distribution – originally called Student's \"z\" – and \"Student's test of statistical significance\". [...] "
+            "he joined the brewery of Arthur Guinness & Son in Dublin, Ireland; he spent the rest of his 38-year career at Guinness. [...] "
+            "In 1906–1907, Guinness sent him to Karl Pearson's laboratory at University College London for two terms. [...] "
+            "The papers addressed the brewer's concern with small samples; biometricians like Pearson, on the other hand, typically had hundreds of observations and saw no urgency in developing small-sample methods. "
+            "In his job as Head Experimental Brewer at Guinness, Gosset developed new statistical methods – both in the brewery and on the farm [...] "
+            "such as his small-sample, stratified, and repeated balanced experiments on barley for proving the best yielding varieties. [...] "
+            "After a Guinness researcher published a paper containing information that Guinness management feared might be useful to the company's competitors, it was decided that future publications by Guinness researchers must not mention beer, Guinness, or the author's true name. "
+            "Gosset may have taken his pen name \"Student\" from a notebook he kept in 1906 and 1907, \"The Student's Science Notebook\". [...] "
+            "Gosset published most of his 21 academic papers, including The probable error of a mean, in Pearson's journal Biometrika under the pseudonym Student. "
+            "It was, however, not Pearson but Ronald A. Fisher who appreciated the understudied importance of Gosset's small-sample work. [...] "
+            "From 1912 to 1934 Gosset and Fisher would exchange more than 150 letters. "
+            "In 1924, Gosset wrote in a letter to Fisher, \"I am sending you a copy of Student's Tables as you are the only man that's ever likely to use them!\" [...] "
+            "In September 1937, Gosset was promoted to Head Brewer of all Guinness. He died one month later",
+            nome="William Sealy Gosset")],
+    },
+    # 5 a senhora que provava chá
+    {
+        "temas_secundarios": ["cafe_cha_cacau", "historia_matematica"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "A ideia de \"hipótese nula\", base dos testes estatísticos, foi apresentada por Ronald Fisher com um teste de chá: uma cientista dizia saber, pelo gosto, se o leite tinha ido para a xícara antes ou depois do chá.",
+        "explicacao": (
+            "A cientista era Muriel Bristol, especialista em algas. Quem sugeriu o teste foi William Roach, que "
+            "depois se casaria com ela: oito xícaras, quatro com o leite posto primeiro e quatro com o chá posto "
+            "primeiro, servidas em ordem aleatória. Ela conhecia as regras e precisava apontar as quatro de um dos "
+            "tipos. Fisher contou o episódio, com liberdade, no livro The Design of Experiments, de 1935, e o usou "
+            "para expor a hipótese nula: a suposição de que a pessoa não distingue nada e está chutando. Ele "
+            "insistia que essa hipótese nunca é provada, só pode ser derrubada pelo experimento. Há 70 jeitos de "
+            "escolher quatro xícaras entre oito, e só um acerta todas; então, chutando, a chance de acertar tudo é "
+            "de 1 em 70, cerca de 1,4%. Acertar três ou mais por sorte é bem mais fácil: cerca de 24,3%. Por isso, "
+            "Fisher só aceitaria descartar a hipótese do chute se ela acertasse as oito, e mesmo assim sem medir o "
+            "tamanho da habilidade. Depois, ele discutiu as vantagens de fazer mais tentativas e repetir os testes. "
+            "Segundo o estatístico David Salsburg, um colega de Fisher relatou que, no teste real, ela acertou "
+            "todas as xícaras."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lady_tasting_tea",
+            "the lady tasting tea is a randomized experiment devised by Ronald Fisher and reported in his book The Design of Experiments (1935). "
+            "The experiment is the original exposition of Fisher's notion of a null hypothesis, which is \"never proved or established, but is possibly disproved, in the course of experimentation\". "
+            "The example is loosely based on an event in Fisher's life. "
+            "The woman in question, phycologist Muriel Bristol, claimed to be able to tell whether the tea or the milk was added first to a cup. "
+            "Her future husband, William Roach, suggested that Fisher give her eight cups, four of each variety, in random order. [...] "
+            "The method employed in the experiment is fully disclosed to the subject. "
+            "The null hypothesis is that the subject has no ability to distinguish the teas. [...] "
+            "possible combinations. [...] "
+            "4 successes has 1 chance out of 70 (≈ 1.4% < 5%) of occurring, whereas at least 3 of 4 successes has a probability of (16+1)/70 (≈ 24.3% > 5%). "
+            "Thus, if and only if the lady properly categorized all 8 cups was Fisher willing to reject the null hypothesis – effectively acknowledging the lady's ability at a 1.4% significance level (but without quantifying her ability). "
+            "Fisher later discussed the benefits of more trials and repeated tests. "
+            "David Salsburg reports that a colleague of Fisher, H. Fairfield Smith, revealed that in the actual experiment the lady succeeded in identifying all eight cups correctly. "
+            "The chance of someone who just guesses of getting all correct, assuming she guesses that any four had the tea put in first and the other four the milk, would be only 1 in 70 (the combinations of 8 taken 4 at a time).",
+            nome="Lady tasting tea")],
+    },
+    # 6 a moeda tende a cair do lado em que começou
+    {
+        "temas_secundarios": ["jogos_azar", "experimentos_psicologia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Uma moeda jogada para o alto e apanhada tende a cair com a face que estava para cima no início. Um estudo com 350.757 lançamentos achou o mesmo lado em 50,8% das vezes, como previa um modelo físico.",
+        "explicacao": (
+            "A previsão é de 2007, de um modelo da física do lançamento feito à mão, criado pelo matemático e "
+            "ex-mágico Persi Diaconis e dois colegas: a chance de terminar com a face inicial para cima seria de "
+            "cerca de 51%. Uma tentativa de conferir em Berkeley, em 2009, com 40 mil lançamentos, deu resultado "
+            "ambíguo. Em 2023, um estudo da Universidade de Amsterdã juntou 350.757 lançamentos e achou o mesmo lado "
+            "em 50,8% deles, um apoio forte à previsão. O efeito variou bastante de uma pessoa para outra e diminuiu "
+            "conforme cada uma lançava mais moedas, o que combina com a ideia de que a prática deixa o lançamento "
+            "menos \"bambo\". O cara ou coroa continua justo de outro jeito: se a face inicial for definida ao "
+            "acaso, cara e coroa saem na mesma proporção, e os dados confirmaram isso. O trabalho levou o Ig Nobel "
+            "de 2024. Diaconis também mostrou que uma máquina que lança a moeda sempre nas mesmas condições produz "
+            "resultados muito previsíveis. E mágicos e trapaceiros treinados conseguem aumentar bastante o viés com "
+            "lançamentos que parecem normais a quem olha."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://arxiv.org/abs/2310.04153",
+             "titulo": "Fair coins tend to land on the same side they started: Evidence from 350,757 flips (arXiv)",
+             "idioma": "en",
+             "trecho": "coin flips to test the counterintuitive prediction from a physics model of human coin tossing developed by Diaconis, Holmes, and Montgomery (DHM; 2007). [...] "
+                "DHM estimated the probability of a same-side outcome to be about 51 [...] "
+                "Our data lend strong support to this precise prediction: the coins landed on the same side more often than not [...] "
+                "Furthermore, the data revealed considerable between-people variation in the degree of this same-side bias. "
+                "Our data also confirmed the generic prediction that when people flip an ordinary coin -- with the initial side-up randomly determined -- it is equally likely to land heads or tails [...] "
+                "Additional analyses revealed that the within-people same-side bias decreased as more coins were flipped, an effect that is consistent with the possibility that practice makes people flip coins in a less wobbly fashion."},
+            wiki("Coin_flipping",
+                "The outcome of coin flipping has been studied by the mathematician and former magician Persi Diaconis and his collaborators. "
+                "They have demonstrated that a mechanical coin flipper which imparts the same initial conditions for every toss has a highly predictable outcome [...] "
+                "their theoretical analysis of the physics of coin tosses predicts a slight bias for a caught coin to be caught the same way up as it was thrown, with a probability of around 0.51, though a 2009 attempt to verify this experimentally at Berkeley with 40,000 tosses gave ambiguous results. "
+                "A much larger 2023 University of Amsterdam study (which won a 2024 Ig Nobel Prize) performed 350,757 tosses, finding an average same-side bias of 50.8%, but which varied from person to person. [...] "
+                "Stage magicians and gamblers, with practice, are able to greatly increase the same-side-up bias, while still making throws which are visually indistinguishable from normal throws.",
+                nome="Coin flipping"),
+        ],
+    },
+    # 7 sete embaralhadas
+    {
+        "temas_secundarios": ["jogos_azar", "jogos_tabuleiro"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Para um baralho ficar bem misturado, são precisas cerca de sete embaralhadas do tipo em que as duas metades se intercalam, concluiu um estudo de 1992. Com quatro, bons jogadores de bridge ainda tiram proveito da ordem.",
+        "explicacao": (
+            "As ordens possíveis de um baralho de 52 cartas são 52!, o produto 52 × 51 × 50 × ... × 2 × 1, um "
+            "número gigantesco, de dezenas de algarismos. Por isso, dois baralhos bem embaralhados quase certamente nunca estarão na "
+            "mesma ordem. O difícil é chegar ao \"bem embaralhado\". No embaralhamento mais comum entre jogadores, o "
+            "riffle, o maço é dividido em duas metades, uma em cada mão, e as cartas caem intercaladas. Em 1992, o "
+            "matemático Dave Bayer e o matemático e mágico Persi Diaconis analisaram um modelo desse processo que, "
+            "testado, descreve bem o jeito como as pessoas embaralham. A conclusão: o baralho só começa a ficar "
+            "aleatório depois de cinco boas embaralhadas e fica aleatório de fato depois de sete. Com menos, sobram "
+            "vestígios da ordem anterior, e em clubes bons jogadores de bridge exploram isso depois de quatro "
+            "embaralhadas. O número exato depende da régua usada para medir a aleatoriedade: outro trabalho, com uma "
+            "medida diferente, concluiu que seis bastam, e o próprio Diaconis disse que quatro servem para jogos em "
+            "que o naipe não importa, como o vinte-e-um. Já para certos jogos nem sete bastam, e ainda não se sabe "
+            "qual é a melhor medida para cada jogo."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Shuffling",
+            "A common shuffling technique is called the riffle, or dovetail shuffle or leafing the cards, in which half of the deck is held in each hand with the thumbs inward, then cards are released by the thumbs so that they fall to the table interleaved. [...] "
+            "The Gilbert–Shannon–Reeds model provides a mathematical model of the random outcomes of riffling that has been shown experimentally to be a good fit to human shuffling and that forms the basis for a recommendation that card decks be riffled seven times in order to randomize them thoroughly. [...] "
+            "There are 52 factorial (expressed in shorthand as 52!) possible orderings of the cards in a 52-card deck. "
+            "In other words, there are 52 × 51 × 50 × 49 × ··· × 4 × 3 × 2 × 1 possible combinations of card sequences. [...] "
+            "80,658,175,170,943,878,571,660,636,856,403,766,975,289,505,440,883,277,824,000,000,000,000. "
+            "The magnitude of this number means that it is exceedingly improbable that two randomly selected, truly randomized decks will be the same. [...] "
+            "There are some games, however, for which even seven riffle shuffles are insufficient. [...] "
+            "But in club play, good bridge players take advantage of non-randomness after four shuffles [...] "
+            "Most famous is (Bayer & Diaconis 1992), co-authored with mathematician Dave Bayer, which analyzed the Gilbert–Shannon–Reeds model of random riffle shuffling and concluded that the deck did not start to become random until five good riffle shuffles, and was truly random after seven [...] "
+            "Recently, the work of Trefethen et al. has questioned some of Diaconis' results, concluding that six shuffles are enough. "
+            "The difference hinges on how each measured the randomness of the deck. [...] "
+            "the question of what measure is best for specific card games is still open. "
+            "Diaconis released a response indicating that you only need four shuffles for un-suited games such as blackjack.",
+            nome="Shuffling")],
+    },
+    # 8 o bêbado volta para casa, o pássaro não
+    {
+        "temas_secundarios": ["geometria_topologia", "infinito"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "Quem anda totalmente ao acaso pelas esquinas de uma cidade infinita quase certamente volta ao ponto de partida um dia. Já um pássaro voando ao acaso em três dimensões tem só cerca de 34% de chance de voltar.",
+        "explicacao": (
+            "O modelo é o passeio aleatório. Imagine uma cidade sem fim, de quarteirões quadrados: em cada "
+            "cruzamento, a pessoa sorteia um dos quatro caminhos, inclusive o de onde veio. Em 1921, o matemático "
+            "George Pólya provou que, nesse plano, ela quase certamente acaba voltando ao início. Com três "
+            "dimensões, porém, a chance de retorno cai para cerca de 34%, e continua caindo conforme se acrescentam "
+            "dimensões. O matemático Shizuo Kakutani resumia o resultado com uma frase que ficou famosa: um homem "
+            "bêbado encontra o caminho de casa, mas um pássaro bêbado pode se perder para sempre. Pólya também "
+            "perguntou se duas pessoas que saem do mesmo ponto, cada uma andando ao acaso, voltam a se encontrar. "
+            "A diferença entre as posições delas também é um passeio aleatório, então a resposta é a mesma: no plano, "
+            "quase certamente sim; com três dimensões ou mais, a chance diminui. O nome \"random walk\" foi criado "
+            "por Karl Pearson em 1905, e o modelo descreve muita coisa: o trajeto de uma molécula num líquido ou "
+            "num gás, a busca de um animal por comida e o sobe e desce do preço de uma ação."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Random_walk",
+            "Other examples include the path traced by a molecule as it travels in a liquid or a gas (see Brownian motion), the search path of a foraging animal, or the price of a fluctuating stock and the financial status of a gambler. [...] "
+            "The term random walk was first introduced by Karl Pearson in 1905. [...] "
+            "In certain text, random walk is sometimes known as a drunkard's walk. [...] "
+            "To visualize the two-dimensional case, one can imagine a person walking randomly around a city. "
+            "The city is effectively infinite and arranged in a square grid of sidewalks. "
+            "At every intersection, the person randomly chooses one of the four possible routes (including the one originally travelled from). [...] "
+            "In 1921 George Pólya proved that the person almost surely would in a 2-dimensional random walk, but for 3 dimensions or higher, the probability of returning to the origin decreases as the number of dimensions increases. "
+            "In 3 dimensions, the probability decreases to roughly 34%. "
+            "The mathematician Shizuo Kakutani was known to refer to this result with the following quote: \"A drunk man will find his way home, but a drunk bird may get lost forever\". [...] "
+            "Another variation of this question which was also asked by Pólya is: \"if two people leave the same starting point, then will they ever meet again?\" "
+            "It can be shown that the difference between their locations (two independent random walks) is also a simple random walk, so they almost surely meet again in a 2-dimensional walk, but for 3 dimensions and higher the probability decreases with the number of the dimensions.",
+            nome="Random walk")],
+    },
+    # 9 o paradoxo da amizade e a gripe em Harvard
+    {
+        "temas_secundarios": ["psicologia_social", "doencas_infecciosas"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Em geral, seus amigos têm mais amigos do que você, por pura matemática. Pesquisadores usaram esse viés para perceber um surto de gripe em Harvard quase duas semanas antes.",
+        "explicacao": (
+            "O fenômeno foi descrito pelo sociólogo Scott Feld em 1991 e é um viés de amostragem: quem tem muitos "
+            "amigos está na roda de muita gente, e quem tem poucos aparece em poucas rodas. Ao olhar para os "
+            "próprios amigos, cada um tende a encontrar pessoas mais conectadas do que a média. Curiosamente, a "
+            "maioria das pessoas acredita ter mais amigos que os amigos delas. A mesma lógica vale para outras "
+            "redes: os coautores de um cientista tendem a ter mais publicações e citações, e os seguidores de "
+            "alguém no Twitter tendem a ter mais seguidores. No fim de 2009, Nicholas Christakis e James Fowler "
+            "aproveitaram a ideia num surto de gripe na Universidade Harvard. Sabe-se que quem está no centro de uma "
+            "rede social tende a se infectar mais cedo, mas mapear a rede inteira para achar essas pessoas é muito "
+            "difícil. A alternativa foi acompanhar 744 estudantes: um grupo sorteado ao acaso e um grupo de amigos "
+            "deles. Pelos diagnósticos clínicos, a epidemia avançou no grupo dos amigos 13,9 dias antes do que no "
+            "grupo sorteado. Os autores sugerem que esses \"sensores\" poderiam dar mais tempo para reagir a "
+            "epidemias, com uma vantagem que depende do surto e da rede."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Friendship_paradox",
+                "The friendship paradox is the phenomenon first observed by the sociologist Scott L. Feld in 1991 that typically, an individual's friends have more friends than that individual. "
+                "It can be explained as a form of sampling bias in which people with more friends are more likely to be in one's own friend group. "
+                "In other words, one is less likely to be friends with someone who has very few friends. "
+                "In contradiction to this, most people believe that they have more friends than their friends have. [...] "
+                "A study in 2010 by Christakis and Fowler showed that flu outbreaks can be detected almost two weeks before traditional surveillance measures would do so by using the friendship paradox in monitoring the infection in a social network. [...] "
+                "For example, one's co-authors are on average likely to be more prominent, with more publications, more citations and more collaborators, or one's followers on Twitter have more followers.",
+                nome="Friendship paradox"),
+            {"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2939797/fullTextXML",
+             "titulo": "Social Network Sensors for Early Detection of Contagious Outbreaks (PLoS ONE, via Europe PMC)",
+             "idioma": "en",
+             "trecho": "It is known that individuals near the center of a social network are likely to be infected sooner during the course of an outbreak, on average, than those at the periphery. "
+                "Unfortunately, mapping a whole network to identify central individuals who might be monitored for infection is typically very difficult. "
+                "We propose an alternative strategy that does not require ascertainment of global network structure, namely, simply monitoring the friends of randomly selected individuals. "
+                "Such individuals are known to be more central. "
+                "To evaluate whether such a friend group could indeed provide early detection, we studied a flu outbreak at Harvard College in late 2009. "
+                "We followed 744 students who were either members of a group of randomly chosen individuals or a group of their friends. "
+                "Based on clinical diagnoses, the progression of the epidemic in the friend group occurred 13.9 days (95% C.I. 9.9–16.6) in advance of the randomly chosen group (i.e., the population as a whole). [...] "
+                "This sensor method could provide significant additional time to react to epidemics in small or large populations under surveillance. "
+                "The amount of lead time will depend on features of the outbreak and the network at hand."},
+        ],
+    },
+    # 10 o paradoxo de Simpson nas pedras nos rins
+    {
+        "temas_secundarios": ["historia_medicina", "vieses_cognitivos"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "Num estudo real, um tratamento de pedras nos rins se saiu melhor que outro nas pedras pequenas e também nas grandes, mas pior no total. Não é erro de conta: é o paradoxo de Simpson.",
+        "explicacao": (
+            "O tratamento A, com cirurgia aberta, teve taxa de sucesso maior que o B, com procedimentos fechados, "
+            "tanto nos pacientes com pedras pequenas quanto nos com pedras grandes. Somando todos, porém, o B parecia "
+            "melhor. A explicação está em dois fatos juntos. Os grupos tinham tamanhos muito diferentes: os médicos "
+            "reservavam o tratamento melhor, o A, para os casos difíceis, de pedras grandes, e davam o B aos casos "
+            "de pedras pequenas. E o tamanho da pedra pesava mais no resultado do que a escolha do tratamento. Assim, "
+            "o B acumulou casos fáceis e \"venceu\" na soma. O tamanho das pedras é o que os estatísticos chamam de "
+            "variável de confusão. O paradoxo, em que uma tendência presente em vários grupos some ou se inverte "
+            "quando eles são reunidos, foi descrito por Edward Simpson em 1951, embora Karl Pearson e Udny Yule já "
+            "tivessem apontado efeitos parecidos. Um caso célebre são as admissões na pós-graduação da Universidade "
+            "da Califórnia em Berkeley, no outono de 1973: no total, homens eram aceitos em proporção maior, mas as "
+            "mulheres tendiam a se candidatar aos departamentos mais concorridos, e os dados ajustados mostraram um "
+            "viés pequeno a favor delas. A lição é que números agregados, lidos como causa e efeito, podem enganar."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Simpson%27s_paradox",
+            "Simpson's paradox is a phenomenon in probability and statistics in which a trend appears in several groups of data but disappears or reverses when the groups are combined. "
+            "This result is often encountered in social science and medical science statistics, and is particularly problematic when frequency data are unduly given causal interpretations. [...] "
+            "Edward H. Simpson first described this phenomenon in a technical paper in 1951; the statisticians Karl Pearson (in 1899) and Udny Yule (in 1903) had mentioned similar effects earlier. [...] "
+            "The admission figures for the fall of 1973 showed that men applying were more likely than women to be admitted [...] "
+            "women tended to apply to more competitive departments with lower rates of admission [...] "
+            "The pooled and corrected data showed a \"small but statistically significant bias in favor of women\". [...] "
+            "Another example comes from a real-life medical study comparing the success rates of two treatments for kidney stones. [...] "
+            "Treatment A includes open surgical procedures and Treatment B includes closed surgical procedures. [...] "
+            "The paradoxical conclusion is that treatment A is more effective when used on small stones, and also when used on large stones, yet treatment B appears to be more effective when considering both sizes at the same time. "
+            "In this example, the \"lurking\" variable (or confounding variable) causing the paradox is the size of the stones [...] "
+            "The sizes of the groups, which are combined when the lurking variable is ignored, are very different. "
+            "Doctors tend to give cases with large stones the better treatment A, and the cases with small stones the inferior treatment B. [...] "
+            "The lurking variable, stone size, has a large effect on the ratios; i.e., the success rate is more strongly influenced by the severity of the case than by the choice of treatment. [...] "
+            "the less effective treatment B appeared to be more effective because it was applied more frequently to the small stones cases, which were easier to treat",
+            nome="Simpson's paradox")],
+    },
+    # 11 o problema dos pontos: Pascal e Fermat
+    {
+        "temas_secundarios": ["historia_matematica", "jogos_azar"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "Como dividir o prêmio de um jogo de azar interrompido no meio? A dúvida desafiou matemáticos por mais de um século, até Pascal e Fermat a resolverem por carta, por volta de 1654, lançando bases da probabilidade.",
+        "explicacao": (
+            "Dois jogadores apostam o mesmo valor, e leva tudo quem vencer primeiro um certo número de rodadas. Se "
+            "a partida para antes, quanto cabe a cada um? Em 1494, Luca Pacioli propôs dividir conforme as rodadas "
+            "já vencidas, o que dá absurdos: se o jogo para depois de uma só rodada, quem a venceu fica com tudo. "
+            "Em meados do século XVI, Niccolò Tartaglia tentou outra regra, também falha, e duvidou que existisse "
+            "uma divisão capaz de convencer os dois lados: qualquer uma, escreveu, daria motivo para processo. Por "
+            "volta de 1654, o Chevalier de Méré apresentou o problema a Blaise Pascal, que passou a discuti-lo em "
+            "cartas com Pierre de Fermat. A virada foi olhar para o futuro, e não para o passado: importa quantas "
+            "rodadas faltam para cada um, e não quantas já ganhou. Quem lidera por 7 a 5 num jogo até 10 tem a mesma "
+            "chance de quem lidera por 17 a 15 num jogo até 20. Fermat listou todas as continuações possíveis, "
+            "igualmente prováveis, e contou quantas dariam a vitória a cada jogador. Pascal achou um cálculo bem "
+            "mais eficiente e, nesse caminho, fez o primeiro raciocínio explícito sobre o que hoje se chama valor "
+            "esperado. Os conceitos que os dois criaram nessa troca ainda são fundamentais na teoria da probabilidade."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Problem_of_points",
+            "One of the famous problems that motivated the beginnings of modern probability theory in the 17th century, it led Blaise Pascal to the first explicit reasoning about what today is known as an expected value. "
+            "The problem concerns a game of chance with two players who have equal chances of winning each round. "
+            "The players contribute equally to a prize pot, and agree in advance that the first player to have won a certain number of rounds will collect the entire prize. "
+            "Now suppose that the game is interrupted by external circumstances before either player has achieved victory. "
+            "How does one then divide the pot fairly? [...] "
+            "Luca Pacioli considered such a problem in his 1494 textbook [...] "
+            "His method was to divide the stakes in proportion to the number of rounds won by each player [...] "
+            "In the mid-16th century Niccolò Tartaglia noticed that Pacioli's method leads to counterintuitive results if the game is interrupted when only one round has been played. "
+            "In that case, Pacioli's rule would award the entire pot to the winner of that single round [...] "
+            "This solution is still not without problems [...] "
+            "Tartaglia himself was unsure whether the problem was solvable at all in a way that would convince both players of its fairness: \"in whatever way the division is made there will be cause for litigation\". [...] "
+            "The problem arose again around 1654 when the Chevalier de Méré, Antoine Gombaud posed it to Blaise Pascal. "
+            "Pascal discussed the problem in his ongoing correspondence with Pierre de Fermat. "
+            "Through this discussion, Pascal and Fermat not only provided a convincing, self-consistent solution to this problem, but also developed concepts that are still fundamental to probability theory. [...] "
+            "It is intuitively clear that a player with a 7–5 lead in a game to 10 has the same chance of eventually winning as a player with a 17–15 lead in a game to 20 [...] "
+            "In other words, what is important is not the number of rounds each player has won so far, but the number of rounds each player still needs to win in order to achieve overall victory. [...] "
+            "one easily convinces oneself that each of the [...] "
+            "possibilities is equally likely. [...] "
+            "possible continuations and counting how many of them would lead to each player winning. [...] "
+            "Second, he showed how to calculate the correct division more efficiently than Fermat's tabular method",
+            nome="Problem of points")],
+    },
+    # 12 o jogo de Penney
+    {
+        "temas_secundarios": ["teoria_jogos", "jogos_azar"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Num jogo de cara ou coroa, cada jogador escolhe uma sequência de três resultados e vence quem a vir sair primeiro. Seja qual for a escolha do primeiro, o segundo sempre tem uma resposta com mais chance de sair antes.",
+        "explicacao": (
+            "É o jogo de Penney, inventado por Walter Penney e publicado em 1969 numa revista de matemática "
+            "recreativa. O jogador A mostra sua sequência, e o B, já sabendo qual é, escolhe outra do mesmo "
+            "tamanho. Depois, uma moeda honesta é lançada até que uma das duas apareça em lances seguidos. Com "
+            "sequências de três ou mais lances, quem escolhe em segundo leva vantagem, porque o jogo não é "
+            "transitivo: não existe uma sequência imbatível, e para cada uma há outra com mais probabilidade de "
+            "aparecer antes. Para três lances, há uma receita fácil: B pega o oposto do lance do meio de A e "
+            "acrescenta, depois dele, os dois primeiros lances de A. Se A escolher cara-coroa-coroa, B responde "
+            "cara-cara-coroa e fica com chance de 2 para 1. A receita funciona porque a sequência de B termina "
+            "exatamente com o começo da de A: quando A não vence logo de cara, muitas vezes o início da sequência "
+            "dele, ao aparecer, completa a de B. Existe uma variação com cartas vermelhas e pretas, o jogo de "
+            "Humble-Nishiyama, que tem várias rodadas por baralho, e nela a vantagem de quem escolhe em segundo "
+            "fica bem maior."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Penney%27s_game",
+            "Penney's game, also known as Penney Ante, named after its inventor Walter Penney, is a binary (head/tail) sequence generating game between two players. "
+            "Player A selects a sequence of heads and tails (of length 3 or larger), and shows this sequence to player B. "
+            "Player B then selects another sequence of heads and tails of the same length. "
+            "Subsequently, a fair coin is tossed until either player A's or player B's sequence appears as a consecutive subsequence of the coin toss outcomes. "
+            "The player whose sequence appears first wins. "
+            "Provided sequences of at least length three are used, the second player (B) has an edge over the starting player (A). "
+            "This is because the game is nontransitive such that for any given sequence of length three or longer one can find another sequence that has higher probability of occurring first. [...] "
+            "An easy way to remember the sequence is for the second player to start with the opposite of the middle choice of the first player, then follow it with the first player's first two choices. [...] "
+            "An intuitive explanation for this result is that in any case that the sequence is not immediately the first player's choice, the chances for the first player getting their sequence-beginning, the opening two choices, are usually the chance that the second player will be getting their full sequence. [...] "
+            "The Humble-Nishiyama Randomness Game follows the same format using Red and Black cards, instead of Heads and Tails. [...] "
+            "As this card-based version is quite similar to multiple repetitions of the original coin game, the second player's advantage is greatly amplified. [...] "
+            "Note that HHT is a 2:1 favorite over HTH and HTT [...] "
+            "Walter Penney, Journal of Recreational Mathematics, October 1969, p. 241.",
+            nome="Penney's game")],
+    },
+    # 13 a agulha de Buffon e o experimento bom demais de Lazzarini
+    {
+        "temas_secundarios": ["historia_matematica", "vieses_cognitivos"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Em 1901, um matemático italiano disse ter jogado uma agulha 3.408 vezes num assoalho e, contando os cruzamentos, chegado a pi com seis casas decimais certas. Bom demais: os números sugerem um resultado arranjado.",
+        "explicacao": (
+            "O método vem de uma pergunta do conde de Buffon, no século XVIII: num assoalho de tábuas paralelas de "
+            "mesma largura, qual a chance de uma agulha jogada ao acaso cruzar a junção entre duas tábuas? Se a "
+            "agulha não for mais longa que a largura das tábuas, a resposta envolve pi, e então dá para estimar pi "
+            "jogando muitas agulhas e contando quantas cruzam. Mario Lazzarini relatou 3.408 lançamentos e obteve "
+            "355/113, uma aproximação de pi já bem conhecida, correta até a sexta casa decimal, muito mais precisa "
+            "do que um experimento desse tamanho costuma dar. A suspeita vem da aritmética. Com agulhas de 5/6 da "
+            "largura da tábua, como as dele, a fração 355/113 só aparece se o número de lançamentos for múltiplo de "
+            "213 e os cruzamentos baterem exatamente com o esperado; e 3.408 é 213 vezes 16. Bastava ir jogando em "
+            "blocos de 213 e parar quando a conta fechasse. Uma análise dos resultados parciais que ele publicou "
+            "torna bem possível que o experimento nem tenha sido feito de verdade, de tão perfeita que é a "
+            "concordância do começo ao fim. Há uma leitura mais branda: o jornalista de ciência holandês Hans van "
+            "Maanen argumenta que o artigo, numa revista para professores, não era para ser levado a sério, porque "
+            "o aparelho descrito não funcionaria."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Buffon%27s_needle_problem",
+            "In probability theory, Buffon's needle problem is a question first posed in the 18th century by Georges-Louis Leclerc, Comte de Buffon: "
+            "Suppose we have a floor made of parallel strips of wood, each the same width, and we drop a needle onto the floor. "
+            "What is the probability that the needle will lie across a line between two strips? [...] "
+            "The solution for the sought probability p, in the case where the needle length l is not greater than the width t of the strips, is [...] "
+            "This can be used to design a Monte Carlo method for approximating the number π [...] "
+            "Thus, if we conduct an experiment to estimate P, we will also have an estimate for π. [...] "
+            "In 1901, Italian mathematician Mario Lazzarini performed Buffon's needle experiment. "
+            "Tossing a needle 3,408 times, he obtained the well-known approximation ⁠355/113⁠ for π, accurate to six decimal places. [...] "
+            "yielding a more accurate \"prediction\" of π than would be expected from the number of trials [...] "
+            "Lazzarini chose needles whose length was ⁠5/6⁠ of the width of the strips of wood. [...] "
+            "To do this, one should pick n as a multiple of 213 [...] "
+            "one then drops n needles, and hopes for exactly [...] "
+            "If not, one can just do 213 more trials and hope for a total of 226 successes; if not, just repeat as necessary. "
+            "Lazzarini performed 3,408 = 213 × 16 trials, making it seem likely that this is the strategy he used to obtain his \"estimate\". [...] "
+            "A statistical analysis of intermediate results he reported for fewer tosses leads to a very low probability of achieving such close agreement to the expected value all through the experiment. "
+            "This makes it very possible that the \"experiment\" itself was never physically performed [...] "
+            "Dutch science journalist Hans van Maanen argues, however, that Lazzarini's article was never meant to be taken too seriously as it would have been pretty obvious for the readers of the magazine (aimed at school teachers) that the apparatus that Lazzarini said to have built cannot possibly work as described.",
+            nome="Buffon's needle problem")],
+    },
+    # 14 o livro de um milhão de algarismos aleatórios
+    {
+        "temas_secundarios": ["historia_computacao", "guerra_fria"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Em 1955, a RAND publicou um livro com um milhão de algarismos aleatórios, gerados por uma \"roleta eletrônica\". Na reedição de 2001, vendida na Amazon, ganhou centenas de resenhas cômicas, como se fosse literatura.",
+        "explicacao": (
+            "Simulações do tipo Monte Carlo, que se popularizaram nas décadas de 1940 e 1950, consomem números "
+            "aleatórios em quantidade, e fabricá-los sem viés é difícil: até dados e papeizinhos sorteados têm "
+            "alguma previsibilidade. As tabelas antigas tinham defeitos. A de Ronald Fisher e Frank Yates, por "
+            "exemplo, tinha seis demais, e os dois trocaram 50 algarismos por outros sorteados. A RAND, centro de "
+            "pesquisa ligado aos militares americanos na Guerra Fria, começou seu milhão em 1947 com uma máquina de "
+            "válvulas montada pela Douglas Aircraft: pulsos de frequência aleatória, em média 100 mil por segundo, "
+            "eram amostrados uma vez por segundo, dando um número por segundo. Num certo momento, a máquina passou a "
+            "produzir uma proporção estranha de pares e ímpares; deixaram-na esfriar, religaram, e o viés sumiu. "
+            "Outros desvios foram corrigidos embaralhando os algarismos com aritmética modular. A introdução do "
+            "livro ensinava a abrir numa página ao acaso e escolher às cegas um grupo de cinco algarismos, e "
+            "avisava que as pessoas tendem a abrir sempre as mesmas páginas e a escolher perto do centro. Os editores "
+            "revisaram só uma página a cada vinte. Em 2020, um engenheiro da RAND achou pequenos erros de "
+            "compilação, que não comprometem a aleatoriedade."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("A_Million_Random_Digits_with_100,000_Normal_Deviates",
+            "A Million Random Digits with 100,000 Normal Deviates is a 1955 compilation of random numbers created by the RAND Corporation and published by the Free Press. "
+            "Demand for large volumes of random digits had increased in the 1940s and 1950s, as Monte Carlo simulations (which require many random values) gained popularity in physics and applied mathematics. "
+            "The RAND Corporation is a think tank and research center that was associated with the United States military during the Cold War. [...] "
+            "In 2020, a RAND software engineer discovered minor mistakes made in the compilation process, although the underlying randomness was not compromised. [...] "
+            "Physical methods such as throwing dice or drawing slips from a container have a small level of predictability. [...] "
+            "Two other British statisticians, Ronald Fisher and Frank Yates, created a table of 15,000 digits; when these were found to have a statistical excess of sixes, they randomly replaced 50 of these with other randomly selected digits. [...] "
+            "RAND began a program to generate a million random digits for its research and computing in 1947. [...] "
+            "To generate the digits, RAND used what it described as an \"electronic roulette wheel\", a vacuum tube computer assembled by the Douglas Aircraft Company [...] "
+            "The machine used a random frequency pulse, averaging 100,000 pulses per second, gated by a consistent pulse once per second. "
+            "Circuitry passed these pulses through a five-digit binary counter, resulting in one number per second. [...] "
+            "At one point in the generation process, the machine began to create an anomalous ratio of odd to even digits; after the machine was allowed to cool and restarted, this bias disappeared. [...] "
+            "This entailed additional scrambling pairs of digits through modular arithmetic. [...] "
+            "The editors noted that \"it did not seem necessary to proofread every page of the final manuscript\", but wrote that they proofread every twentieth page. [...] "
+            "These instructions recommended users to flip the book open to a random page and blindly select a random set of five digits. "
+            "Noting the tendency for readers to open similar pages repeatedly and to select numbers closer to the center of the page, the editors recommended placing a mark at the spot to avoid accidental reuse. [...] "
+            "Due to continued popularity, the book was republished as a paperback in 2001, featuring a new foreword. "
+            "After RAND listed this edition for online purchase on Amazon, it received hundreds of spurious and comedic reviews describing it as if it were a literary work.",
+            nome="A Million Random Digits with 100,000 Normal Deviates")],
+    },
+    # 15 formigas que medem ninhos com a agulha de Buffon
+    {
+        "temas_secundarios": ["insetos", "comportamento_animal"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "Formigas exploradoras medem um possível ninho com a lógica de um problema de probabilidade do século XVIII: andam ao acaso deixando uma trilha, voltam e contam quantas vezes cruzam o próprio rastro.",
+        "explicacao": (
+            "A espécie é uma formiga europeia de cerca de 3 mm que faz ninhos em fendas de rochas, em colônias com "
+            "até 500 operárias e uma rainha. Quando o ninho é destruído, a colônia manda batedoras procurar um lugar "
+            "grande o bastante para todas. Num estudo publicado em 2000, Mallon e Franks, da Universidade de Bath, "
+            "mostraram que as batedoras avaliam o tamanho dos locais e que, para isso, usam a frequência com que "
+            "os próprios caminhos se cruzam. Na primeira visita, a formiga anda por um tempo fixo, menos de dois "
+            "minutos, num trajeto irregular, deixando uma trilha de feromônio. Depois sai, volta e anda ao acaso de "
+            "novo, contando quantas vezes cruza a trilha anterior: quanto mais cruzamentos, menor a área. É a ideia "
+            "da agulha de Buffon, em que agulhas jogadas sobre tábuas paralelas cruzam as linhas com uma "
+            "probabilidade que depende da largura delas. Para a formiga, as linhas são a própria trilha, e o que "
+            "interessa não é calcular pi, como Buffon fez, mas a distância entre as linhas, que indica a área. Um "
+            "estudo seguinte mostrou que a regra é precisa: num local com metade do tamanho necessário, os "
+            "cruzamentos ficam 1,96 vez mais frequentes."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:10819145%20AND%20SRC:MED&resultType=core&format=json",
+             "titulo": "Ants estimate area using Buffon's needle (Proceedings of the Royal Society B, 2000; resumo via Europe PMC)",
+             "idioma": "en",
+             "trecho": "We show for the first time, to our knowledge, that ants can measure the size of potential nest sites. "
+                "Nest size assessment is by individual scouts. [...] "
+                "they deploy individual-specific trails within the potential new nest on their first visit. [...] "
+                "Experiments indicated that individual scouts use the intersection frequency between their own paths to assess nest areas. "
+                "These results are consistent with ants using a 'Buffon's needle algorithm' to assess nest areas. [...] "
+                "University of Bath"},
+            {"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8631174/fullTextXML",
+             "titulo": "Embodied Heuristics (Frontiers in Psychology, 2021, via Europe PMC)",
+             "idioma": "en",
+             "trecho": "a small ant approximately 3mm long that lives in colonies with up to 500 workers and a single queen. "
+                "When their old nest is destroyed, the ant colony sends out scouts to locate a new site that is sufficiently large to house the entire colony. "
+                "The ants prefer nest sites consisting of narrow cracks in rocks with flat areas. [...] "
+                "To determine the size of the area, the scout ant first moves for a fixed period (less than two minutes) on an irregular path that covers the area fairly evenly. "
+                "While doing so, it leaves behind a trail of pheromones. "
+                "After that the ant exits the area, and then returns and repeats the procedure of walking around randomly. "
+                "In this second round, the ant counts how often it crosses its own pheromone trail and uses the count to estimate the area of the site: the larger the number of crossings, the smaller the area. "
+                "This heuristic is amazingly accurate: For a site that is half the size of the area needed, the frequency of crossing is 1.96 times greater [...] "
+                "Mugford et al., 2001 [...] "
+                "Buffon used the solution to calculate the number π. "
+                "In the ant’s heuristic, the lines are the ant’s pheromone trail and the needles lying across lines are the ant’s crossings of its own trail. "
+                "The ant is not interested in π, but in the length [...] "
+                "between lines, which indicates the area. [...] "
+                "Mallon E. B., Franks N. R. (2000). Ants estimate area using Buffon’s needle."},
+            wiki("Temnothorax_albipennis",
+                "Temnothorax albipennis, the rock ant is a species of small ant in the subfamily Myrmicinae. It occurs in Europe and builds simple nests in rock crevices.",
+                nome="Temnothorax albipennis"),
+        ],
+    },
+]

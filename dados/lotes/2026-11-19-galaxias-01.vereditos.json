@@ -1,0 +1,143 @@
+{
+ "lote": "2026-11-19-galaxias-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "galaxias-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (NASA, Carnegie: 1923, 31,4 dias, 'VAR!'); mas '2 milhões de anos-luz' soa exato (valor aceito ~2,5 milhões).",
+    "correcao": "'Medições melhores põem Andrômeda hoje a 2 milhões de anos-luz.' -> 'Medições melhores põem Andrômeda hoje a mais de 2 milhões de anos-luz.'"
+   },
+   {
+    "id": "galaxias-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas a duplicação de 1952 veio de observações com o telescópio de 200 polegadas, não direto das de guerra.",
+    "correcao": "Substituir a frase de 1952 por 'Anos depois, já com o novo telescópio de 200 polegadas de Palomar, ele procurou em Andrômeda estrelas variáveis que deveriam aparecer se ela estivesse à distância aceita, de 750 mil anos-luz, e não as encontrou. Concluiu que a galáxia estava mais longe e anunciou isso em 1952, na reunião da União Astronômica Internacional em Roma: na prática, o tamanho do universo conhecido dobrava.' Trecho: 'At the accepted distance of 750,000 light-years, these stars should have appeared in photographs taken with the 200-inch telescope'."
+   },
+   {
+    "id": "galaxias-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem (Sawala et al. 2025); mas não é mito desmentido: estudo de 2026 (Wu et al., PKU) voltou a ~90% de fusão. É debate aberto.",
+    "correcao": "1) tipos_espanto: ['misterio_aberto', 'contraintuitivo']. 2) Gancho: 'A famosa colisão entre a Via Láctea e Andrômeda virou dúvida: um estudo de 2025 deu quase 50% de chance de não haver fusão em 10 bilhões de anos; outro, de 2026, voltou a cerca de 90% de chance de fusão.' 3) 'metade dos cenários termina em fusão e a outra metade não' -> 'cerca de metade dos cenários não termina em fusão nos próximos 10 bilhões de anos'; depois de 'ainda está completamente em aberto', acrescentar o estudo de Hao Wu e colegas (2026). 4) Fonte: https://kiaa.pku.edu.cn/info/1031/11252.htm. 5) Manter consenso_parcial."
+   },
+   {
+    "id": "galaxias-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Density wave theory (Lin e Shu 1964, engarrafamento, estrelas OB, anéis de Saturno); consenso_parcial."
+   },
+   {
+    "id": "galaxias-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas o verde é falsa cor do Hubble (ela viu algo azulado no SDSS), e a proposta do jato (2010) combina com o quasar, não o substitui.",
+    "correcao": "1) Gancho: 'achou uma mancha verde estranha no céu' -> 'achou uma mancha estranha no céu, ao lado de uma galáxia'. 2) 'Há outras explicações em estudo, como a de um jato de partículas do buraco negro central.' -> 'Outra proposta, de 2010, é que parte da luz venha também da interação de um jato de partículas do buraco negro central com o gás em volta da galáxia.'"
+   },
+   {
+    "id": "galaxias-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Cambridge e Wikipedia (8–10 bilhões de anos, oito aglomerados globulares, etimologia); consenso_parcial."
+   },
+   {
+    "id": "galaxias-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a ESA (três passagens, picos de 5,7, 1,9 e 1 bilhão de anos, ressalva sobre o Sol); hipotese com misterio_aberto."
+   },
+   {
+    "id": "galaxias-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas era a mais rápida 'de sequência principal', não de todas (S2 passa mais rápido perto de Sgr A*).",
+    "correcao": "'Em novembro de 2019, ela era a estrela mais rápida já detectada' -> 'Em novembro de 2019, ela era a estrela de sequência principal (a fase de vida em que está o Sol) mais rápida já detectada'."
+   },
+   {
+    "id": "galaxias-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Hubble Deep Field e National Geographic (342 exposições, 10 dias, ~3.000 galáxias, aposta de Williams)."
+   },
+   {
+    "id": "galaxias-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; misterio_aberto não se sustenta, e falta a ressalva de que a região é menos massiva e Shapley responde por boa parte do movimento.",
+    "correcao": "1) tipos_espanto: ['escala_absurda', 'conexao_inesperada']. 2) Trocar a última frase por 'A história não para aí: estudos posteriores mostraram que a região é menos massiva do que se pensava e que boa parte do nosso movimento vem de uma concentração maior e mais distante, a de Shapley, rumo à qual o próprio Grande Atrator parece se mover.' (com trecho)."
+   },
+   {
+    "id": "galaxias-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com NGC 1052-DF2 (ultradifusa, 42 x 64 milhões de anos-luz, 22,1 Mpc, DF4); consenso_parcial."
+   },
+   {
+    "id": "galaxias-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Hoag's Object (1950, 600 milhões de anos-luz, 121 mil anos-luz, galáxia vista pelo vão, origem misteriosa)."
+   },
+   {
+    "id": "galaxias-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Quasar e 3C 273 (ocultações em Parkes, Schmidt 1963, 15,8%, 2,4 bilhões de anos-luz)."
+   },
+   {
+    "id": "galaxias-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem com o CfA 2010, mas o texto ficou congelado: simulações de 2022 reforçaram a origem em Sagitário A* (a própria fonte Galactic Center diz isso).",
+    "correcao": "1) Gancho: 'Ninguém sabe ao certo o que as criou.' -> 'A principal suspeita é o buraco negro central, mas a origem ainda é debatida.' 2) Depois de 'Outra é um surto de formação de estrelas, já que em outras galáxias esses surtos produzem enormes fluxos de gás.', acrescentar 'Desde então, simulações de computador, como as de 2022, reforçaram a hipótese de que as bolhas foram infladas por uma fase ativa do buraco negro central, Sagitário A*, embora o tema ainda seja estudado.' 3) Trecho: 'By 2022, detailed computer simulations further confirmed that the bubbles were caused by the Sagittarius A* black hole.' 4) confianca -> consenso_parcial."
+   }
+  ],
+  "2": [
+   {
+    "id": "galaxias-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de 2 milhões de anos-luz' aplicado."
+   },
+   {
+    "id": "galaxias-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A etapa do telescópio de 200 polegadas e os 750 mil anos-luz, com trecho."
+   },
+   {
+    "id": "galaxias-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Debate aberto com a fonte da KIAA (2026). Ajuste pontual aplicado sem nova verificação: estudo liderado por Hao Wu e Huawei Zhang.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "galaxias-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem 'mancha verde'; jato como explicação complementar."
+   },
+   {
+    "id": "galaxias-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'De sequência principal' aplicado."
+   },
+   {
+    "id": "galaxias-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tipos corrigidos e a ressalva de Shapley com trecho."
+   },
+   {
+    "id": "galaxias-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Simulações de 2022 e consenso_parcial aplicados."
+   }
+  ]
+ }
+}

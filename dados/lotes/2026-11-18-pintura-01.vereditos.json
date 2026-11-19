@@ -1,0 +1,77 @@
+{
+ "lote": "2026-11-18-pintura-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "pintura-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; o corte de 1715 dá substância a um nome enganoso que circula em listas."
+   },
+   {
+    "id": "pintura-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Equívoco listado; Vasari, Condivi e os andaimes conferem."
+   },
+   {
+    "id": "pintura-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Seção da inscrição sustenta tudo; hipótese apresentada como hipótese."
+   },
+   {
+    "id": "pintura-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Três explicações sustentadas; incerteza clara no gancho."
+   },
+   {
+    "id": "pintura-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Técnica, parede e cronologia conferem; mecanismo claro."
+   },
+   {
+    "id": "pintura-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com 'Failing sight'; a fonte apoia a causalidade catarata→estilo."
+   },
+   {
+    "id": "pintura-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; Apollinaire e Picasso salvam um roubo conhecido."
+   },
+   {
+    "id": "pintura-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Omite a crítica de Jones-Smith e Mathur (Nature, 2006): um desenho tosco passou no teste.",
+    "correcao": "Gancho: 'já foi usada para flagrar Pollocks falsos, mas o método é contestado.'; acrescentar a crítica de 2006 e a fonte da Science News."
+   },
+   {
+    "id": "pintura-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Não há prova de que Vermeer e Leeuwenhoek se conhecessem; a cidade o nomeou curador dos bens.",
+    "correcao": "Gancho: 'Leeuwenhoek, pioneiro das lentes, administrou os bens da família após sua morte, mas o inventário não lista nenhuma lente.'; explicação sem 'era próximo'."
+   }
+  ],
+  "2": [
+   {
+    "id": "pintura-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Crítica de 2006 e teste com imitações incluídos; consenso_parcial adequado."
+   },
+   {
+    "id": "pintura-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem 'próximos'; Leeuwenhoek como administrador dos bens confere."
+   }
+  ]
+ }
+}

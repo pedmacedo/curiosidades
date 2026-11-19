@@ -1,0 +1,134 @@
+{
+ "lote": "2026-11-19-literatura-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "literatura-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com World Book Day e Cervantes (1922, 1930, 1995, 11 dias, 23 é o enterro). Nota 3: circula em listas."
+   },
+   {
+    "id": "literatura-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Avellaneda 1614, capítulo 59, Don Alvaro Tarfe)."
+   },
+   {
+    "id": "literatura-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Bem sustentado (Diyab e Galland 1709, órfãos sem fonte árabe, manuscritos retraduzidos, autobiografia de 1763)."
+   },
+   {
+    "id": "literatura-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Dante Alighieri (1302, 2008, parede falsa, túmulo vazio em Santa Croce)."
+   },
+   {
+    "id": "literatura-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas em 1961 dois terços dos papéis foram à Bodleiana; só o resto foi a julgamento em Israel.",
+    "correcao": "Gancho: 'O destino do acervo só se decidiu na Justiça de Israel, em 2016.' -> 'Parte dela só teve destino decidido pela Justiça de Israel em 2016.' Explicação: depois da frase da mala de 1939, inserir 'Em 1961, a pedido dos herdeiros de Kafka, cerca de dois terços dos papéis foram para a Biblioteca Bodleiana, em Oxford; o resto ficou com Brod.' (com trecho de Max Brod)."
+   },
+   {
+    "id": "literatura-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Thallium poisoning e Hektoen (Marsha Maitland, O Cavalo Amarelo, bebê do Catar; ano omitido)."
+   },
+   {
+    "id": "literatura-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas 'o sábio árabe de O Homem que Calculava' sugere personagem (o protagonista é Beremiz Samir).",
+    "correcao": "Gancho: 'Malba Tahan, o sábio árabe de \"O Homem que Calculava\", nunca existiu.' -> 'Malba Tahan, o suposto autor árabe de \"O Homem que Calculava\", nunca existiu.'"
+   },
+   {
+    "id": "literatura-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Carolina Maria de Jesus (1914, Canindé, Audálio Dantas 1958, 1960). Nota 3: conhecida no Brasil."
+   },
+   {
+    "id": "literatura-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Dilermando de Assis (1909, 1916, duas absolvições)."
+   },
+   {
+    "id": "literatura-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Ern Malley (uma tarde de 1943, livros abertos ao acaso, 1944, multa de £5, fama desde os anos 1970)."
+   },
+   {
+    "id": "literatura-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com A Void e fr.wikipedia (sem 'e', pai e mãe, Motte, O Sumiço 2015)."
+   },
+   {
+    "id": "literatura-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio; mas o gancho aposta no nome desconhecido (fraco); a parte forte é o chinês aprendido escondido e ensinado à imperatriz.",
+    "correcao": "1) Gancho: 'A autora do \"Genji\", um dos primeiros romances do mundo (Japão, c. 1000), aprendeu chinês ouvindo as aulas do irmão. Na corte, fingia não saber a língua, mas a ensinava em segredo à imperatriz.' 2) Antes de 'Na época, as damas da corte eram conhecidas...', inserir 'Nem o nome verdadeiro dela é conhecido.' 3) tipos: tirar misterio_aberto (['historia_humana', 'contraintuitivo'])."
+   },
+   {
+    "id": "literatura-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Biografia confere; mas a cena da roupa é anedota de segunda mão (Budge), e o gancho a afirma como fato.",
+    "correcao": "1) Gancho: 'Segundo colegas, começou a tirar a roupa de emoção.' -> 'Conta-se que começou a tirar a roupa de emoção.' 2) 'Segundo relatos de colegas da sala de leitura, no dia em que entendeu o que estava lendo, ele começou a tirar peças de roupa e a correr pela sala gritando de alegria.' -> 'Segundo uma anedota atribuída a colegas da sala de leitura, impossível de confirmar, no dia em que entendeu o que estava lendo ele começou a tirar peças de roupa e a correr pela sala gritando de alegria.'"
+   },
+   {
+    "id": "literatura-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (torrada em 1907, biscotte, madeleine; Gide e a carta de 1914)."
+   },
+   {
+    "id": "literatura-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere com Brothers Poem; mas Robinson não é dito professor, e a coleção foi 'oferecida', não vendida, pela Christie's.",
+    "correcao": "'a coleção de um professor americano vendida pela casa Christie's' -> 'a coleção do americano David Moore Robinson, posta à venda pela casa Christie's em 2011'."
+   }
+  ],
+  "2": [
+   {
+    "id": "literatura-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Dois terços na Bodleiana em 1961, com trecho; 'parte dela' no gancho."
+   },
+   {
+    "id": "literatura-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'O suposto autor árabe' aplicado (gancho também encurtado)."
+   },
+   {
+    "id": "literatura-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho do chinês escondido, nome desconhecido e tipos aplicados."
+   },
+   {
+    "id": "literatura-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A cena da roupa como anedota não confirmada."
+   },
+   {
+    "id": "literatura-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Robinson e a coleção posta à venda em 2011."
+   }
+  ]
+ }
+}

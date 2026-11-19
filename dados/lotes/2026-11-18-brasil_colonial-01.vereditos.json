@@ -1,0 +1,134 @@
+{
+ "lote": "2026-11-18-brasil_colonial-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "brasil_colonial-0001",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "mito: a tese de que '-eiro' não forma gentílicos é contestada (mineiro, campineiro; artigo da Univ. de Antioquia a chama de infundada); sem ela, sobra curiosidade de lista já muito conhecida."
+   },
+   {
+    "id": "brasil_colonial-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Data da CITES errada: registro de estoques veio da CoP19 (2022) e CoP20 (2025); em 2024 só houve propostas em comitês.",
+    "correcao": "Trocar por 'Em 2025, ... a CITES, orientou fornecedores e usuários a melhorar a rastreabilidade da madeira e dos instrumentos feitos com ela.' e usar o trecho literal 'Future trade and conservation of the product was discussed at the November 2025 CITES conference, when suppliers and users were directed to improve traceability of the wood and musical instruments made from it.'"
+   },
+   {
+    "id": "brasil_colonial-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Todas as afirmações com apoio; muda a imagem de São Paulo colonial."
+   },
+   {
+    "id": "brasil_colonial-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Um rabino vindo da Europa' sem apoio: a fonte só diz 'sent to Recife in 1642'.",
+    "correcao": "'e um rabino, Isaac Aboab da Fonseca, enviado ao Recife em 1642' + trecho 'It had a cantor, Josue Velosino, and a rabbi, Isaac Aboab da Fonseca, sent to Recife in 1642.'"
+   },
+   {
+    "id": "brasil_colonial-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Influência de Shakespeare' inverte o sentido; tupinambo é norte-americano, só o nome é francês; o mito do bom selvagem é atribuído a Thevet e Léry, não ao ensaio.",
+    "correcao": "Gancho: 'Relatos sobre os tupinambás inspiraram o ensaio \"Dos canibais\", de Montaigne, visto como influência sobre A Tempestade, de Shakespeare. Na França, um tubérculo talvez leve o nome deles: topinambour.'; 'Esses relatos também influenciaram a criação do mito do \"bom selvagem\", no Iluminismo.'"
+   },
+   {
+    "id": "brasil_colonial-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Montgolfier já fez experimentos em 1782; 'uma das primeiras demonstrações' exagera (lanternas chinesas); a fuga para a Espanha é fato, não invenção; mito_desmentido não está no gancho.",
+    "correcao": "Gancho: 'Joseph Montgolfier só faria um teste parecido em 1782: uma caixa de tafetá que bateu no teto.' + trechos de 1782; 'Isso o coloca entre os primeiros estudiosos a entender o princípio do balão de ar quente e a construir um protótipo que funcionava.' + trecho; 'Ele de fato fugiu para a Espanha, onde morreu de febre em Toledo, em 1724.'; tipos historia_humana+engenhosidade."
+   },
+   {
+    "id": "brasil_colonial-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; o contraste com o México e a repressão ativa surpreendem."
+   },
+   {
+    "id": "brasil_colonial-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Bandeiras são as expedições, bandeirantes as pessoas; 'sobretudo nos primeiros tempos' sem fonte; a fonte credita a Raposo Tavares a ampliação além de Tordesilhas.",
+    "correcao": "'As bandeiras eram expedições que partiam de São Paulo para o interior em busca de ouro, pedras preciosas e indígenas para escravizar.' e 'Algumas, como as de Raposo Tavares, ajudaram a levar o domínio português'."
+   },
+   {
+    "id": "brasil_colonial-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Bornéu também é fonte antiga de diamantes (GIA); 'só na Índia' e 'primeiros fora de lá' exageram; 'cercou' mais forte que 'impose full control'.",
+    "correcao": "Gancho: 'Por mais de 2 mil anos, a Índia foi a grande fonte de diamantes do mundo. No século XVIII, o Brasil tomou esse lugar com as jazidas de Minas Gerais, e a Coroa portuguesa pôs a região sob controle total.'; 'a maior parte dos diamantes vinha de depósitos de rio no sul da Índia'; tirar 'foi aqui que se acharam os primeiros diamantes de fora da Índia'."
+   },
+   {
+    "id": "brasil_colonial-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Na fonte, 'According to legend' cobre o relato inteiro (recusa e missão), não só a sedução.",
+    "correcao": "'Conta a tradição que, no começo do século XVIII, os portugueses queriam entrar nesse mercado' e 'Na volta, diz a lenda, ele trouxe as sementes escondidas'."
+   },
+   {
+    "id": "brasil_colonial-0011",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: a vinda da corte e o Rio como sede do império são matéria escolar; números de 10 mil e 15 mil não conciliados."
+   },
+   {
+    "id": "brasil_colonial-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com a fonte; composição multiétnica e 'mocambo' mudam a imagem habitual."
+   }
+  ],
+  "2": [
+   {
+    "id": "brasil_colonial-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Data da CITES corrigida (2025); demais afirmações conferem."
+   },
+   {
+    "id": "brasil_colonial-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Rabino com a data de 1642; 23 refugiados conferem."
+   },
+   {
+    "id": "brasil_colonial-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Ele' ficou ambíguo depois da frase do bom selvagem.",
+    "correcao": "'o ensaio de Montaigne é visto desde 1781'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "brasil_colonial-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1782 e a caixa de tafetá conferem; tipos ajustados."
+   },
+   {
+    "id": "brasil_colonial-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "A fonte não diz que ele comandou os ataques às missões.",
+    "correcao": "'já tinha participado de ataques'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "brasil_colonial-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Índia como grande fonte, não a única; datas conferem."
+   },
+   {
+    "id": "brasil_colonial-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "A lenda cobre o relato inteiro; datas conferem."
+   }
+  ]
+ }
+}

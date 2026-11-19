@@ -1,0 +1,150 @@
+{
+ "lote": "2026-11-18-economia_curiosa-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "economia_curiosa-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tulip mania sustenta; consenso_parcial certo"
+   },
+   {
+    "id": "economia_curiosa-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a bolha foi inflada em 1719 e estourou no fim de 1720; não foi 'criada em 1720'",
+    "correcao": "Gancho: 'A bolha que ele criou em 1720 deu origem à palavra \"milionário\".' -> 'A bolha que ele inflou, e que estourou em 1720, deu origem à palavra \"milionário\".'"
+   },
+   {
+    "id": "economia_curiosa-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Great Hanoi Rat Massacre e Perverse incentive sustentam"
+   },
+   {
+    "id": "economia_curiosa-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'caiu de forma drástica' exagera: no artigo original o efeito é moderado e concentrado nas famílias pobres que não eram as mais pobres",
+    "correcao": "'Em Hunan, onde a base é o arroz, a procura das famílias que receberam o desconto caiu de forma drástica.' -> 'Em Hunan, onde a base é o arroz, as famílias que receberam o desconto passaram a comprar menos arroz, efeito mais nítido entre as pobres que não eram as mais pobres de todas.' Fonte nova: Jensen e Miller (2008), PMC2964162, trecho do resumo (ex.: 'strong evidence of Giffen behavior for rice in Hunan'). Gancho: 'famílias muito pobres' -> 'famílias pobres'."
+   },
+   {
+    "id": "economia_curiosa-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "a contagem começa em 1888, ainda no Império",
+    "correcao": "Gancho: 'Logo após a Proclamação da República, o Brasil viveu uma bolha em que as empresas listadas saltaram de pouco mais de 90 para cerca de 450 em três anos.' -> 'Na virada do Império para a República, o Brasil viveu uma bolha em que as empresas listadas saltaram de pouco mais de 90 para cerca de 450 entre 1888 e 1891.'"
+   },
+   {
+    "id": "economia_curiosa-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Panic of 1907 sustenta a cena da biblioteca"
+   },
+   {
+    "id": "economia_curiosa-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'o truque mais esperto' apaga o 'often'; etimologia invertida segundo o Duden; 'moeda falsa' vs 'bad coins'",
+    "correcao": "(a) 'O truque mais esperto era não estragar a própria moeda, e sim fabricar' -> 'Muitas vezes, o truque era não estragar a própria moeda, e sim fabricar'; (b) 'Daí o nome alemão \"Kipper und Wipper\": as balanças (\"Wippen\") que pendiam (\"kippen\") diante da moeda boa.' -> 'Daí o nome alemão \"Kipper und Wipper\", tirado do vocabulário das balanças de pesar moedas, que pendiam diante da moeda boa.'; (c) 'para quem importasse moeda falsa' -> 'para quem importasse moeda ruim ou exportasse a boa'."
+   },
+   {
+    "id": "economia_curiosa-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tudo confere com MONIAC"
+   },
+   {
+    "id": "economia_curiosa-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Wörgl e Demurrage sustentam; consenso_parcial certo"
+   },
+   {
+    "id": "economia_curiosa-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "causalidade: a fonte não diz que a compra dos Hunt fez o preço subir; o patrimônio reduzido era o da Bache",
+    "correcao": "Gancho: 'acumularam tanta prata que a onça saltou de menos de US$ 10 para mais de US$ 50 em poucos meses.' -> 'acumularam uma montanha de prata, boa parte comprada com contratos alavancados, enquanto a onça saltava de menos de US$ 10 para mais de US$ 50 em poucos meses.' (se passar de 220, tirar 'em poucos meses'). Explicação: 'e a SEC suspendeu a negociação das ações da própria Bache, cujo rombo de 122 milhões de dólares nas contas da família teria reduzido muito o patrimônio.' -> 'e a SEC suspendeu a negociação das ações da própria Bache: o saldo devedor sem garantia das contas dos Hunt na corretora, de cerca de 122 milhões de dólares, teria reduzido muito o patrimônio da Bache.'"
+   },
+   {
+    "id": "economia_curiosa-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ponzi: a conta dos 160 milhões de cupons contra 27 mil confere"
+   },
+   {
+    "id": "economia_curiosa-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Kreuger: tudo com apoio; mecanismo do monopólio em troca de empréstimo"
+   },
+   {
+    "id": "economia_curiosa-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "a fonte só compara extensões; não diz que as linhas fazem parte da malha atual",
+    "correcao": "Gancho inteiro: 'A bolha das ferrovias britânicas dos anos 1840 arruinou famílias, mas deixou trilhos de verdade: os projetos de 1844 a 1846 renderam cerca de 10 mil km, extensão equivalente a mais da metade da malha atual.' Explicação: 'enquanto a rede ferroviária britânica de hoje tem perto de 18 mil km' -> 'para comparar, a rede ferroviária britânica inteira de hoje tem perto de 18 mil km'."
+   },
+   {
+    "id": "economia_curiosa-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Single Coin Plan é de 1951, antes do pedido de 1953; 'a grande maioria' das máquinas, não todas; contrato só até 1921 e sobre o xarope",
+    "correcao": "(a) 'Um contrato com os engarrafadores favorecia manter o preço.' -> 'Até 1921, um contrato que fixava o preço do xarope vendido aos engarrafadores favorecia manter o preço final.' (b) 'e as já instaladas só funcionavam com a moeda de 5 centavos' -> 'e a grande maioria das já instaladas só aceitava a moeda de 5 centavos'. (c) 'A equipe de preços bolou então o' -> 'Antes disso, em 1951, a equipe de preços da empresa já tinha bolado o'. Manter o condicional ('entregaria')."
+   },
+   {
+    "id": "economia_curiosa-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Guano Islands Act e Guano conferem; opcional: Midway"
+   }
+  ],
+  "2": [
+   {
+    "id": "economia_curiosa-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'inflou, e que estourou em 1720'"
+   },
+   {
+    "id": "economia_curiosa-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'passaram a comprar menos arroz' sem exagero"
+   },
+   {
+    "id": "economia_curiosa-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'virada do Império para a República', 1888-1891"
+   },
+   {
+    "id": "economia_curiosa-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'muitas vezes', etimologia genérica, moeda ruim"
+   },
+   {
+    "id": "economia_curiosa-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "sem causalidade; patrimônio reduzido é o da Bache"
+   },
+   {
+    "id": "economia_curiosa-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "só compara extensões; pontuação corrigida",
+    "correcao": "tirar 'cerca de' de 10.010 km e trocar vírgula por ponto",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "economia_curiosa-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "contrato até 1921; 'provavelmente a grande maioria'; cronologia 1951/1953"
+   }
+  ]
+ }
+}

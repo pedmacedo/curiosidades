@@ -1,0 +1,134 @@
+{
+ "lote": "2026-11-19-calendarios-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "calendarios-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Gregorian calendar (Lilio, 97 bissextos, 10 dias, Clavius, 4→15/10/1582). Nota 3."
+   },
+   {
+    "id": "calendarios-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Calendar Act 1750 sustenta, inclusive 'very likely a myth' (Chesterfield e Hogarth). Nota 3."
+   },
+   {
+    "id": "calendarios-0003",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o ano fiscal britânico é pouco relevante ao leitor brasileiro, Washington é trivia conhecida, sobrepõe-se ao 0002, e a causalidade é simplificada (o Calendar Act não teve efeito direto; o caminho até 6 de abril é mais tortuoso)."
+   },
+   {
+    "id": "calendarios-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Swedish calendar (1699, Bender 1711, 30 de fevereiro de 1712, 1753)."
+   },
+   {
+    "id": "calendarios-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Soviet calendar (Larin 1929, cinco cores, 80/20, 1931, 1940)."
+   },
+   {
+    "id": "calendarios-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com International Date Line e Time in Samoa (4 de julho de 1892 repetido, 30/12/2011 apagado)."
+   },
+   {
+    "id": "calendarios-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Date of Easter (lua cheia eclesiástica, Beda, 5,7 milhões de anos com a ressalva)."
+   },
+   {
+    "id": "calendarios-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas o fim está desatualizado: em outubro de 2026 a CGPM fixou o limite em uma hora a partir de 20/5/2027.",
+    "correcao": "1) Trocar a última frase por: 'Em 2022, a Conferência Geral de Pesos e Medidas decidiu ampliar a diferença tolerada entre o tempo atômico e o da rotação. Em outubro de 2026, fixou o novo limite em uma hora, a partir de 20 de maio de 2027, o que na prática aposenta o segundo intercalar por vários séculos.' 2) Trecho: 'On 15 October 2026, the General Conference on Weights and Measures (CGPM) voted to increase the maximum permitted difference between UT1 and UTC (DUT1) from 0.9 seconds to 3600 seconds (one hour), effective 20 May 2027, permitting the opportunity to defer leap second decisions for several centuries.'"
+   },
+   {
+    "id": "calendarios-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas '6h no horário internacional' sugere UTC, e a fonte fala do horário padrão do país (EAT).",
+    "correcao": "'ao amanhecer, às 6h no horário internacional, e o da noite ao anoitecer, às seis da tarde' -> 'ao amanhecer, às 6h no horário padrão do país (o mesmo relógio de 24 horas que usamos), e o da noite ao anoitecer, às 18h'; 'basta subtrair seis horas do horário oficial' -> 'basta subtrair seis horas do horário padrão'."
+   },
+   {
+    "id": "calendarios-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com 2012 phenomenon (Palenque 4772, Cobá na leitura de Schele, 'numa leitura')."
+   },
+   {
+    "id": "calendarios-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas Scaliger escolheu o ano inicial em 1583; a contagem de dias veio com Ideler (1825) e Herschel (1849).",
+    "correcao": "Gancho: 'A data foi escolhida em 1583 por ser o último ano em que três ciclos do calendário começaram juntos.' -> 'O ano foi escolhido em 1583 por ser o último em que três ciclos do calendário começaram juntos.' Explicação: antes de 'Na contagem dos astrônomos, o dia 0 começa...', inserir 'A contagem de dias em si veio depois: foi o astrônomo John Herschel quem a adaptou para a astronomia, em 1849.' Trecho: 'John F. W. Herschel then developed them for astronomical use in his 1849 Outlines of Astronomy'."
+   },
+   {
+    "id": "calendarios-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Franksgiving (1939, Gallup 62%, 23 x 22 estados, 1941)."
+   },
+   {
+    "id": "calendarios-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A página da Microsoft sustenta tudo (Lotus 1-2-3, compatibilidade, WEEKDAY antes de 1/3/1900)."
+   },
+   {
+    "id": "calendarios-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas 'a mais usada no dia a dia' não tem apoio ('two most important conditions'). Nota 3.",
+    "correcao": "'A mais usada no dia a dia: se a lua nova calculada cair' -> 'Uma das duas mais importantes: se a lua nova calculada cair'."
+   },
+   {
+    "id": "calendarios-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Decretos e datas conferem; mas 'só viram feriado quando um município inclui' exagera (o estado do RJ tem feriado na terça de Carnaval, contestado no STF). Nota 3.",
+    "correcao": "Trocar 'Elas só viram feriado de fato quando um município as inclui entre os seus dias de guarda, que a lei limita a quatro, contando a Sexta-feira da Paixão.' por 'Elas podem virar feriado por lei municipal, e há estados que também tentam, como o Rio de Janeiro com a terça de Carnaval, decisão contestada no STF. Já os feriados religiosos municipais são limitados por lei a quatro, contando a Sexta-feira da Paixão.' Trecho: 'Esse é caso dos feriados de terça-feira de carnaval, de São Jorge e da Consciência Negra, no Rio de Janeiro'."
+   }
+  ],
+  "2": [
+   {
+    "id": "calendarios-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Decisão de outubro de 2026 com trecho."
+   },
+   {
+    "id": "calendarios-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Horário padrão do país (EAT)."
+   },
+   {
+    "id": "calendarios-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ano escolhido em 1583; contagem de dias com Herschel (1849)."
+   },
+   {
+    "id": "calendarios-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Uma das duas mais importantes'. Nota 3."
+   },
+   {
+    "id": "calendarios-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Municípios, estados e o limite de quatro feriados religiosos, com trecho. Nota 3."
+   }
+  ]
+ }
+}

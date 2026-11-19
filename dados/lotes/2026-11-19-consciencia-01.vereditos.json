@@ -1,0 +1,162 @@
+{
+ "lote": "2026-11-19-consciencia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "consciencia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Libet; mas 'atividade que prepara um gesto' assume a interpretação contestada por Schurger.",
+    "correcao": "Gancho: 'a atividade cerebral que prepara um gesto simples começou centenas de milissegundos antes' -> 'um sinal cerebral ligado a um gesto simples surgiu centenas de milissegundos antes'."
+   },
+   {
+    "id": "consciencia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas Pinto 2017 mostrou presença e localização do objeto, não identificação.",
+    "correcao": "'eles conseguiam indicar objetos em qualquer parte do campo visual com qualquer uma das mãos ou falando' -> 'eles conseguiam dizer se havia um objeto e onde ele estava, em qualquer parte do campo visual, respondendo com qualquer uma das mãos ou falando'."
+   },
+   {
+    "id": "consciencia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Nature 2023, Koch e IIT confirmam (aposta de 1998, 23/6/2023, colaboração adversarial)."
+   },
+   {
+    "id": "consciencia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Aaronson e Tononi conferem; 'uma das mais citadas' não tem apoio.",
+    "correcao": "Gancho: 'uma das mais citadas sobre a consciência' -> 'uma das mais debatidas sobre a consciência'."
+   },
+   {
+    "id": "consciencia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Owen 2006 e o estudo do NEJM 2024 (25% de 241) conferem."
+   },
+   {
+    "id": "consciencia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Bauby (1995, 20 dias, alfabeto por frequência, 7/3/1997, morte dois dias depois)."
+   },
+   {
+    "id": "consciencia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere (mecanismo 'not fully understood', Meyer–Overton, xenônio 1951, Annals of Botany 2017 com dioneias e ervilhas)."
+   },
+   {
+    "id": "consciencia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (Babinski 1914, 10–18%, água gelada); mas 'não se explica por perda de sensação' é categórico ('does not seem').",
+    "correcao": "'e não se explica por perda de sensação: o dano estaria nos processos' -> 'e não parece decorrer diretamente da perda de sensação: o dano estaria nos processos'."
+   },
+   {
+    "id": "consciencia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: o par 45%/55% é leitura errada; Berrios e Luque 1995 dão 69% niilistas e 55 com imortalidade, sobrepostos.",
+    "correcao": "Remover a frase 'Numa análise de cem pacientes, 45% negavam a própria existência; os demais tinham delírios de imortalidade.' e a frase correspondente do trecho (ou usar o resumo de Berrios e Luque 1995 com '69% ... mais da metade')."
+   },
+   {
+    "id": "consciencia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas o espanto de Galton com os cientistas foi contestado (Brewer e Schommer-Aikins 2006), e 'tudo começou em 2005' contradiz 1880.",
+    "correcao": "1) Gancho: 'Imagine uma maçã vermelha. Algumas pessoas não veem nada: não conseguem formar imagens na mente, e muita gente se espanta ao descobrir que isso não é universal. A condição só ganhou nome, afantasia, em 2015.' 2) 'Tudo começou em 2005' -> 'A pesquisa moderna começou em 2005'. 3) Acrescentar a ressalva de 2006 com fonte (philpapers BRESAN-2); sem fonte, tirar a frase sobre os cientistas."
+   },
+   {
+    "id": "consciencia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Konkoly et al. 2021 (29 acertos, quatro equipes, 18,4%, 60,1% sem resposta) e Hearne 1975."
+   },
+   {
+    "id": "consciencia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Dados conferem; mas o gancho data a virada em 2023 (ela foi no fim dos anos 1990; em 2023 houve uma entrevista). Nota 3.",
+    "correcao": "Gancho: 'Em 2023, o autor disse não aceitar mais o próprio argumento.' -> 'Anos depois, o próprio autor abandonou o argumento.' Explicação: 'Jackson passou a se declarar fisicalista e, em 2023, afirmou que não aceita mais o argumento.' -> 'Jackson acabou se declarando fisicalista e, numa entrevista de 2023, disse que não aceita mais o argumento.'"
+   },
+   {
+    "id": "consciencia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fonte apoia tudo; só a distância varia entre relatos (20 ou 23 km).",
+    "correcao": "Gancho: 'dirigiu 20 km de madrugada' -> 'dirigiu uns 20 km de madrugada'."
+   },
+   {
+    "id": "consciencia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Alien hand syndrome confirma tudo (Goldstein 1908, conflito intermanual, Dr. Fantástico 'parece ter')."
+   },
+   {
+    "id": "consciencia-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a questão segue debatida (Schwenkler 2012, Brogaard; pintinhos em 2024).",
+    "correcao": "1) confianca -> consenso_parcial. 2) Gancho: 'Jovens operados entre 2007 e 2010 deram a resposta: não de imediato.' -> 'Jovens operados entre 2007 e 2010 sugerem que não, ao menos de imediato.' 3) 'Ou seja, não havia transferência inata do tato para a visão.' -> 'Os pesquisadores concluíram que a resposta a Molyneux é, em resumo, não.' 4) 'A ponte entre os sentidos, ao que parece, é aprendida.' -> 'A ponte entre os sentidos, ao que parece, se aprende rápido, embora haja quem conteste a interpretação do estudo.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "consciencia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sem assumir a interpretação contestada."
+   },
+   {
+    "id": "consciencia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Presença e localização do objeto, como no release da UvA."
+   },
+   {
+    "id": "consciencia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Uma das mais debatidas'."
+   },
+   {
+    "id": "consciencia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Não parece decorrer diretamente'."
+   },
+   {
+    "id": "consciencia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem a estatística mal lida; o resto confere."
+   },
+   {
+    "id": "consciencia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho novo, pesquisa moderna desde 2005, sem a impressão contestada de Galton."
+   },
+   {
+    "id": "consciencia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "A virada de Jackson sem datar em 2023. Nota 3."
+   },
+   {
+    "id": "consciencia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Uns 20 km'."
+   },
+   {
+    "id": "consciencia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Consenso_parcial e a ressalva da contestação."
+   }
+  ]
+ }
+}

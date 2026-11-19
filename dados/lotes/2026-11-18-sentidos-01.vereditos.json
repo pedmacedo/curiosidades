@@ -1,0 +1,139 @@
+{
+ "lote": "2026-11-18-sentidos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "sentidos-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Escocesa' não está nas fontes.",
+    "correcao": "Gancho: 'Uma escocesa' → 'Uma mulher'."
+   },
+   {
+    "id": "sentidos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A ausência de emissões não indica sempre perda auditiva.",
+    "correcao": "'sua ausência indica perda auditiva' → 'sua ausência pode indicar perda auditiva na cóclea'."
+   },
+   {
+    "id": "sentidos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com TRPV1 e Capsaicin; mecanismo, Nobel e evolução."
+   },
+   {
+    "id": "sentidos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Duração do efeito diverge (30 min x 1-2 h); a FDA negou em 1974, não nos anos 1980.",
+    "correcao": "Duração com as duas estimativas; FDA em 1974 com trecho de Miraculin; tirar a frase dos anos 1980."
+   },
+   {
+    "id": "sentidos-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O estudo de Thaler é de 2011, não 2014; falta a ressalva de que a contribuição de V1 é incerta; frase quase traduzida.",
+    "correcao": "Tirar o ano; reescrever a frase final com a ressalva."
+   },
+   {
+    "id": "sentidos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Há 20 anos' → 'mais de 20'; 180 ms é onde o efeito começa a enfraquecer.",
+    "correcao": "Gancho 'há mais de 20 anos'; frase dos 180 ms reescrita."
+   },
+   {
+    "id": "sentidos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'A briga segue' sugere debate vivo sem fonte.",
+    "correcao": "Gancho: 'e a questão segue sem resposta.'"
+   },
+   {
+    "id": "sentidos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Exagero sobre a cura espontânea (pode sumir em dias ou meses); 'muita gente evita' sem fonte.",
+    "correcao": "Novo gancho; frase final reescrita com resolução espontânea e escolha da manobra."
+   },
+   {
+    "id": "sentidos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Umami; a graça é o leite materno."
+   },
+   {
+    "id": "sentidos-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Não viam diferença nenhuma' exagera 'non-functional tetrachromats'.",
+    "correcao": "'que não viam diferença nenhuma' → 'que, apesar disso, não enxergavam cores a mais'."
+   },
+   {
+    "id": "sentidos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Chronostasis; antedatação é a explicação padrão."
+   },
+   {
+    "id": "sentidos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Tinsley et al. 2016; P limítrofe exposto; consenso_parcial adequado."
+   }
+  ],
+  "2": [
+   {
+    "id": "sentidos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Escocesa' saiu; tudo com apoio no artigo e na página de Barran."
+   },
+   {
+    "id": "sentidos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Pode indicar perda auditiva na cóclea' compatível com a fonte; números conferem."
+   },
+   {
+    "id": "sentidos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Duração com as duas estimativas; FDA em 1974."
+   },
+   {
+    "id": "sentidos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ano saiu, ressalva incluída, texto parafraseado."
+   },
+   {
+    "id": "sentidos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de 20 anos' e 180 ms corretos."
+   },
+   {
+    "id": "sentidos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sem 'a briga segue'; Gerkin & Castro (eLife 2015) confirmam que a questão segue aberta."
+   },
+   {
+    "id": "sentidos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Cura espontânea correta; 'tende a resistir' como na fonte.",
+    "correcao": "Gancho: 'mas que provoca tontura forte.' → 'mas que costuma provocar tontura forte.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "sentidos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Não enxergavam cores a mais' corresponde a non-functional tetrachromats."
+   }
+  ]
+ }
+}

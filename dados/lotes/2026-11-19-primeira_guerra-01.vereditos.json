@@ -1,0 +1,155 @@
+{
+ "lote": "2026-11-19-primeira_guerra-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "primeira_guerra-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Números conferem (120 km, 42,3 km, 182 s, Coriolis); mas foram vários canhões, não um.",
+    "correcao": "Gancho: 'Em 1918, um canhão alemão bombardeou Paris a 120 km de distância.' -> 'Em 1918, canhões alemães bombardearam Paris a 120 km de distância.' Explicação: 'Era o Canhão de Paris, usado de março a agosto de 1918.' -> 'Eram os Canhões de Paris, usados de março a agosto de 1918.'"
+   },
+   {
+    "id": "primeira_guerra-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Quase tudo confere; mas os 10 mil eram baixas da história oficial alemã lidas por engano, e 'quase dois anos' não tem apoio (janeiro de 1916).",
+    "correcao": "'Por quase dois anos, companhias de túneis' -> 'A partir de janeiro de 1916, companhias de túneis'. Trocar a frase dos 10 mil por 'As 10 mil baixas muitas vezes atribuídas às minas vêm, na verdade, da história oficial alemã, lida por engano por autores britânicos; o historiador Simon Jones estima que as minas mataram no máximo 500 alemães, e 7.344 foram feitos prisioneiros.'"
+   },
+   {
+    "id": "primeira_guerra-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a colheita inclui a Segunda Guerra, e 'o exército recolhe' só vale para a Bélgica.",
+    "correcao": "Gancho: 'Só o serviço francês recolhe cerca de 900 toneladas por ano' -> 'Só o serviço francês recolhe cerca de 900 toneladas de munições por ano'. Explicação: 'Os agricultores deixam o material na beira dos campos, e o exército recolhe; na Bélgica, ele é destruído num centro em Poelkapelle.' -> 'Os agricultores deixam o material na beira dos campos, e as autoridades recolhem; na Bélgica, o exército o destrói num centro em Poelkapelle.'; depois de 'O nome dado a isso é \"colheita de ferro\".' acrescentar 'Ela inclui também restos da Segunda Guerra.'"
+   },
+   {
+    "id": "primeira_guerra-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas citar 'a Wikipédia em português registra 464' é inadequado e o número é incerto.",
+    "correcao": "'Em Dacar, a gripe atingiu quase todos e paralisou a divisão: fontes falam em mais de cem mortos, e a Wikipédia em português registra 464.' -> 'Em Dacar, a gripe atingiu quase todos e paralisou a divisão, matando mais de cem marinheiros.'"
+   },
+   {
+    "id": "primeira_guerra-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Artigo 263 de Versalhes (Avalon/Yale) e Wikipedia conferem; boa conexão para o leitor brasileiro."
+   },
+   {
+    "id": "primeira_guerra-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (5h e 11h, 2.738 mortos no último dia, Gunther às 10h59, 'costuma ser apontado')."
+   },
+   {
+    "id": "primeira_guerra-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com World War I reparations (Plano Young, Londres 1953, parcela final de US$ 94 milhões em 3/10/2010); 'dívidas ligadas'."
+   },
+   {
+    "id": "primeira_guerra-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos centrais conferem; mas o contrafactual 'perdido em poucos meses' vem de uma só fonte e as estimativas variam; 'acesso legal' -> controle legal.",
+    "correcao": "Gancho: 'Sem ela, avalia-se, o país teria perdido em poucos meses.' -> 'Sem ela, segundo muitos historiadores, o país teria ficado sem munição muito antes do fim da guerra.' Explicação: 'e o processo foi considerado tão essencial que se tem como praticamente certo que, sem ele, a Alemanha teria sido derrotada em questão de meses' -> 'e o processo foi tão essencial que muitos avaliam que, sem ele, a Alemanha teria sido derrotada em poucos meses'; 'Mesmo que os alemães tivessem acesso legal a ele' -> 'Mesmo que empresas alemãs tivessem controle legal sobre essas jazidas'."
+   },
+   {
+    "id": "primeira_guerra-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Weizmann e Aesculus hippocastanum (Clostridium, cordite, castanhas, três meses); evita a lenda da Declaração Balfour."
+   },
+   {
+    "id": "primeira_guerra-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Dazzle camouflage (Wilkinson, 1917, eficácia incerta, Wadsworth com mais de 2.000 navios)."
+   },
+   {
+    "id": "primeira_guerra-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere com Spanish flu; mas na Espanha 'also known as the French flu'. Nota 3: nome que não vem da origem é conhecido; segura a 'gripe brasileira' no Senegal.",
+    "correcao": "'Na Espanha, ela era a \"gripe francesa\".' -> 'Na Espanha, também foi chamada de \"gripe francesa\".'"
+   },
+   {
+    "id": "primeira_guerra-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Lawrence Bragg e Artillery sound ranging (Nobel aos 25, Tucker e o fio de platina)."
+   },
+   {
+    "id": "primeira_guerra-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem com Halifax Explosion (1.782 mortos, 2,9 kt, árvore de Boston desde 1971). Nota 3."
+   },
+   {
+    "id": "primeira_guerra-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas 'comprado no México' foi a meia-verdade a Page (ao público, 'roubado já decifrado no México'), e só o que passava por mãos britânicas ia à Sala 40.",
+    "correcao": "'Tudo passava pela Sala 40, a central de decifração do Almirantado britânico.' -> 'O que passava por mãos britânicas ia parar na Sala 40, a central de decifração do Almirantado britânico.'; 'A versão pública foi a de que o texto tinha sido \"comprado no México\".' -> 'A história de fachada foi a de que o texto tinha sido obtido por agentes no México.'"
+   },
+   {
+    "id": "primeira_guerra-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; 'confunde muita gente' sem apoio, e L. B. Robertson 'was instrumental', não convenceu sozinho.",
+    "correcao": "'Há um detalhe que confunde muita gente: outro Robertson, o canadense Lawrence Bruce, foi quem convenceu o corpo médico britânico a adotar transfusões' -> 'Um detalhe curioso: outro Robertson, o canadense Lawrence Bruce, teve papel decisivo para convencer o corpo médico britânico a adotar transfusões'."
+   }
+  ],
+  "2": [
+   {
+    "id": "primeira_guerra-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'Canhões alemães' aplicado; números conferem."
+   },
+   {
+    "id": "primeira_guerra-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Janeiro de 1916 e a origem dos 10 mil corrigidos."
+   },
+   {
+    "id": "primeira_guerra-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Munições, autoridades e Segunda Guerra aplicados."
+   },
+   {
+    "id": "primeira_guerra-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de cem marinheiros', sem citar a Wikipédia."
+   },
+   {
+    "id": "primeira_guerra-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Contrafactual atribuído a muitos historiadores; controle legal."
+   },
+   {
+    "id": "primeira_guerra-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Também foi chamada de gripe francesa'. Nota 3."
+   },
+   {
+    "id": "primeira_guerra-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sala 40 e história de fachada corrigidas."
+   },
+   {
+    "id": "primeira_guerra-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Papel decisivo' aplicado."
+   }
+  ]
+ }
+}

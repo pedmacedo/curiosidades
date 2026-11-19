@@ -1,0 +1,88 @@
+{
+ "lote": "2026-11-18-historia_esportes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "historia_esportes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; evita o mito das crianças reais em Windsor."
+   },
+   {
+    "id": "historia_esportes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; versões em conflito bem postas."
+   },
+   {
+    "id": "historia_esportes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com a seção Creation."
+   },
+   {
+    "id": "historia_esportes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Poucos quilômetros', 'cidade vizinha' e a definição de volley sem apoio; a fonte tem gancho melhor (aluno de Naismith, badminton, homens de meia-idade).",
+    "correcao": "Gancho e explicação com Morgan ex-aluno de Naismith, mintonette do badminton, clientes de meia-idade e Alfred Halstead em 1896 + trechos."
+   },
+   {
+    "id": "historia_esportes-0005",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: curiosidade clássica de lista, sem mecanismo; o pódio de 1904 teve um time misto."
+   },
+   {
+    "id": "historia_esportes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; ouro de Coubertin com pseudônimo."
+   },
+   {
+    "id": "historia_esportes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; classificação oficial não revisada até 2026."
+   },
+   {
+    "id": "historia_esportes-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A objeção do relógio é contestada na mesma fonte (Wells, 1386), que aponta como mais plausível a teoria das apostas em base 60; mito_desmentido não se sustenta.",
+    "correcao": "Novo gancho com a teoria das apostas; explicação com Wells 1386 e o sistema carolíngio + trechos; tipos misterio_aberto+conexao_inesperada."
+   },
+   {
+    "id": "historia_esportes-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "4,1 kg contradito na própria fonte (peso incerto, 1,4 a 2,7 kg); 'nunca tinham visto' vai além.",
+    "correcao": "Gancho com látex + seiva de trepadeira e 1528; explicação com peso incerto e Castilla elastica/Ipomoea alba + trechos; tipos engenhosidade+conexao_inesperada."
+   }
+  ],
+  "2": [
+   {
+    "id": "historia_esportes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Aluno de Naismith, badminton, homens de meia-idade e Halstead conferem."
+   },
+   {
+    "id": "historia_esportes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "O 'saltos de 10' não está no trecho.",
+    "correcao": "Tirar 'com saltos de 10'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "historia_esportes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1528 foi a apresentação na Espanha; 'teoria mais comum'.",
+    "correcao": "'Quando as viram quicar na Espanha, em 1528,'; 'Pela interpretação mais aceita'.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

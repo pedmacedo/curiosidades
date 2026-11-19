@@ -1,0 +1,143 @@
+{
+ "lote": "2026-11-19-povos_indigenas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "povos_indigenas-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere (OVS, 1958, klingon, 45%/42%); os ~600 falantes contradizem o ISA (942/1012 em 2010).",
+    "correcao": "Trocar 'falada por cerca de 600 pessoas às margens do rio Nhamundá' por 'falada pelo povo de mesmo nome às margens do rio Nhamundá'. Opcional no gancho: 'embora \"toto\" seja homem' -> 'embora a frase comece por \"toto\", homem'."
+   },
+   {
+    "id": "povos_indigenas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Tucano people; gancho mais forte que 'is likely to be host'; regra é tradicional; frase sobre não saber quantas línguas falam pode soar desrespeitosa.",
+    "correcao": "Gancho: 'um homem não pode se casar com uma mulher que fale a mesma língua que ele. Por isso, em cada casa convivem várias línguas' -> 'a regra tradicional proíbe o homem de se casar com uma mulher que fale a mesma língua que ele. Por isso, numa mesma casa costumam conviver várias línguas'. Explicação: 'É tão natural que muitos nem sabem dizer de pronto quantas línguas falam: precisam ser estimulados a listá-las.' -> 'Falar várias línguas é tão corriqueiro que nem chama atenção: muitas vezes a pessoa só chega ao número exato quando alguém pede que as liste uma a uma.'"
+   },
+   {
+    "id": "povos_indigenas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Munduruku people (números até cinco, cálculos maiores, mapeamento logarítmico com atenuação); consenso_parcial."
+   },
+   {
+    "id": "povos_indigenas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada afirmação tem apoio em Pirahã language; gancho atribui a Everett e o debate segue aberto."
+   },
+   {
+    "id": "povos_indigenas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Curare e Tubocurarine (Macuxi, Waterton 1825, Bernard 1857, Montreal 1942)."
+   },
+   {
+    "id": "povos_indigenas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Cassava, Tipiti e Tucupi (domesticação, cianeto 20 x 1000 mg/kg, Staden 1557, 800 milhões). Nota 3: bem conhecido no Norte."
+   },
+   {
+    "id": "povos_indigenas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Man of the Hole (1995, 1996, 8.000 ha, 2009, morte em 2022, buracos de finalidade desconhecida). Respeitoso."
+   },
+   {
+    "id": "povos_indigenas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo confere, mas os 124 são contagem de uma ONG (Survival), não 'evidências sólidas'; a FUNAI trabalha com números próprios; previsão de metade em 10 anos é contestada; escala_absurda não se encaixa.",
+    "correcao": "1) Gancho: 'O Brasil abriga a maioria dos povos isolados do planeta: 124 dos 196 grupos com evidências sólidas, segundo um relatório de 2025.' -> 'Pela contagem de uma ONG em 2025, o Brasil abriga 124 dos 196 povos isolados do planeta.' 2) 'e achou evidências sólidas de 196 povos isolados em dez países, 124 deles no Brasil.' -> 'e diz ter achado evidências de 196 povos isolados em dez países, 124 deles no Brasil (a FUNAI trabalha com números próprios e mais cautelosos).' 3) 'O mesmo relatório prevê que quase metade' -> 'O mesmo relatório estima que quase metade' (ou, com fonte Mongabay, 'numa previsão contestada por outros especialistas'). 4) tipos_espanto: escala_absurda -> contraintuitivo."
+   },
+   {
+    "id": "povos_indigenas-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere com ISA e Wikipedia; mas em 2015 voltou só o primeiro lote (Penn State); cinco instituições aceitaram devolver.",
+    "correcao": "1) Gancho: 'e só em 2015, após anos de cobrança, 2.693 amostras voltaram para ser enterradas.' -> 'e só em 2015 as primeiras 2.693 amostras voltaram para ser enterradas.' 2) 'a Universidade Estadual da Pensilvânia devolveu 2.693 amostras de sangue processado e DNA purificado.' -> 'a Universidade Estadual da Pensilvânia devolveu todas as que guardava: 2.693 amostras de sangue processado e DNA purificado. Foi o primeiro lote, porque ao todo cinco instituições americanas aceitaram devolver o material.'"
+   },
+   {
+    "id": "povos_indigenas-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere com Nheengatu language; 'quatro línguas oficiais' provavelmente desatualizado (yanomami acrescentado em 2017).",
+    "correcao": "Trocar 'virou língua oficial, ao lado do português, em São Gabriel da Cachoeira, no Amazonas, que hoje tem quatro línguas oficiais.' por 'virou língua cooficial, ao lado do português, em São Gabriel da Cachoeira, no Amazonas.' Não citar número de línguas oficiais."
+   },
+   {
+    "id": "povos_indigenas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Essencial confere; mas 'único povo do Nordeste' segue o recorte etnológico sem Maranhão (Guajajara mantêm a língua); 'agreste' contradiz 'Sertão'; 'trabalha na cidade' -> fora de Águas Belas; misterio_aberto não se aplica.",
+    "correcao": "1) Gancho: qualificar o 'único do Nordeste' (fora do Maranhão / no recorte dos estudiosos), com apoio de fonte. 2) Explicação idem. 3) 'no agreste pernambucano' -> 'no sertão pernambucano'. 4) 'Quem trabalha na cidade pede licença para ir.' -> 'Quem trabalha fora de Águas Belas pede licença para ir.' 5) tipos_espanto: misterio_aberto -> historia_humana."
+   },
+   {
+    "id": "povos_indigenas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Tupã (pt); mas reproduz a visão jesuíta de que não havia religião; 'protestou'/'nem todos concordavam' sugerem contestação que a fonte não diz; 'não havia palavra melhor' é opinião de Nóbrega.",
+    "correcao": "1) Gancho: 'protestou:' -> 'registrou:'. 2) 'os jesuítas procuravam entre os indígenas algo parecido com a religião europeia e não acharam.' -> 'os jesuítas esperavam encontrar entre os indígenas formas religiosas parecidas com as europeias e, decepcionados, diziam que eles não adoravam deus algum.' 3) 'Como não havia palavra melhor, a solução foi' -> 'Como, para ele, não havia palavra mais conveniente, a solução foi'. 4) 'Nem todos concordavam.' -> 'Os cronistas da época divergiam.' 5) Antes de 'O certo é que...', incluir 'Na cosmologia guarani, Tupã é uma divindade importante, mas não o deus supremo.'"
+   },
+   {
+    "id": "povos_indigenas-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas o IBGE cita outros fatores além da autoidentificação, e falta o mecanismo do 1º lugar de SP.",
+    "correcao": "Trocar 'e o IBGE atribui o aumento sobretudo à maior disposição das pessoas de se identificar com suas origens.' por 'e o IBGE atribui o aumento, em boa parte, à maior disposição das pessoas de se identificar com suas origens, além de migrações recentes (como a de indígenas venezuelanos) e de melhorias na coleta dos dados.' Depois de 'não o tamanho da população.', acrescentar 'Grandes cidades atraem migrantes indígenas de muitos povos diferentes, o que eleva a contagem.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "povos_indigenas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Os ~600 falantes saíram; o resto segue apoiado (OVS, 1958, klingon)."
+   },
+   {
+    "id": "povos_indigenas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'Regra tradicional', 'costumam conviver' e a frase respeitosa sobre contar as línguas aplicadas."
+   },
+   {
+    "id": "povos_indigenas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números atribuídos à ONG, 'estima', tipos corrigidos e a contagem própria da FUNAI (67 em 2007) com fonte."
+   },
+   {
+    "id": "povos_indigenas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'As primeiras 2.693 amostras' e as cinco instituições conferem com o ISA."
+   },
+   {
+    "id": "povos_indigenas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Língua cooficial' sem número de línguas; tudo confere com Nheengatu language."
+   },
+   {
+    "id": "povos_indigenas-0011",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "exagero: 'único povo do Nordeste' segue o recorte etnológico sem o Maranhão (onde os Guajajara mantêm a língua); atribuir ao ISA não resolve, e a ressalva não tem fonte."
+   },
+   {
+    "id": "povos_indigenas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As cinco correções aplicadas; visão jesuíta atribuída; quinto lugar na teogonia mbyá-guarani com fonte."
+   },
+   {
+    "id": "povos_indigenas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Fatores do aumento e polos de atração com fonte; números conferem. Nota 3."
+   }
+  ]
+ }
+}

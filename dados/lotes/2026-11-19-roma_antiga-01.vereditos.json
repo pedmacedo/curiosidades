@@ -1,0 +1,127 @@
+{
+ "lote": "2026-11-19-roma_antiga-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "roma_antiga-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Herculaneum papyri (1.800 rolos, 1756, Farritor e 'púrpura' em 2023, PHerc. 1667 em 2026)."
+   },
+   {
+    "id": "roma_antiga-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Monte Testaccio (53 milhões de ânforas, 35 m, sabão com a cal)."
+   },
+   {
+    "id": "roma_antiga-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Julian calendar e Ano bissexto (445 dias, abuso dos pontífices, bis sextum)."
+   },
+   {
+    "id": "roma_antiga-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Didius Julianus (193, 25 mil sestércios, 66 dias); Dio, Herodiano e a História Augusta concordam no leilão."
+   },
+   {
+    "id": "roma_antiga-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Diocletian, Diocletian's Palace e Saint Domnius (repolhos, metade de Split, catedral com relíquias de um mártir dele)."
+   },
+   {
+    "id": "roma_antiga-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Plutarco (Crasso 2.3-4: casas em chamas, 500 escravos, 300 e 7.100 talentos); a ressalva sobre a brigada é correta."
+   },
+   {
+    "id": "roma_antiga-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas o nome 'Floresta de Teutoburgo' foi usado por Clüver já em 1616 e só se firmou no século XIX.",
+    "correcao": "Gancho: 'ganhou o nome no século XIX por uma teoria sobre onde Roma perdeu três legiões' -> 'foi batizada assim por causa de uma teoria sobre onde Roma perdeu três legiões'. Explicação: 'No século XIX, uma teoria venceu o debate, e uma serra chamada Osning, perto de Bielefeld, foi rebatizada de Floresta de Teutoburgo.' -> 'Uma teoria venceu o debate, e uma serra chamada Osning, perto de Bielefeld, acabou rebatizada de Floresta de Teutoburgo, nome que se firmou no século XIX.'"
+   },
+   {
+    "id": "roma_antiga-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada afirmação tem apoio em Vindolanda tablets (1973, cerveja, Brittunculi, Claudia Severa)."
+   },
+   {
+    "id": "roma_antiga-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas 'todas têm problemas' não está na fonte, a arma aparece sem ter sido citada, falta a leitura ligada a moedas, e 'engenhosidade' não combina.",
+    "correcao": "'Todas têm problemas.' -> 'Várias delas esbarram em objeções.'; 'brinquedo, objeto de adivinhação' -> 'brinquedo, cabeça de arma, objeto de adivinhação'; 'Algumas apareceram em tesouros de moedas, sinal de que os donos as consideravam valiosas.' -> 'Algumas apareceram em tesouros de moedas, o que sugere que os donos as consideravam valiosas, ou que o uso delas tinha a ver com moedas.'; tipos: trocar 'engenhosidade' por 'contraintuitivo'."
+   },
+   {
+    "id": "roma_antiga-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Lex Oppia (215 e 195 a.C., Catão, matronas bloqueando as ruas, segundo Lívio)."
+   },
+   {
+    "id": "roma_antiga-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere (carta de Plínio, 1508, grafite de 2018); mas os jarros de vinho só 'sugerem' a vindima passada.",
+    "correcao": "'grandes jarros cheios de vinho, sinal de que a uva já tinha sido colhida' -> 'grandes jarros cheios de vinho, o que sugere que a vindima já tinha passado'."
+   },
+   {
+    "id": "roma_antiga-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere (Tondo Severiano, damnatio memoriae); três exageros: 'apagados das inscrições' (só da maioria), o besuntar não é específico das imagens de Geta, e o motivo do dono é hipótese.",
+    "correcao": "(1) 'e o nome e o título dele foram apagados das inscrições' -> 'e o nome e o título dele foram apagados da maioria das inscrições'; (2) trocar a frase das imagens besuntadas por 'Fontes antigas registram que imagens de condenados podiam ser besuntadas de lama, vísceras, tinta e até excremento, e o tondo é uma das raras obras sobreviventes que mostram a desfiguração física de um condenado.'; (3) 'Para o dono, raspar o rosto era um jeito' -> 'Para o dono, raspar o rosto seria um jeito'."
+   },
+   {
+    "id": "roma_antiga-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio em Alea iacta est (Plutarco: em grego; Menandro; Suetônio e Apiano); gancho bem calibrado."
+   },
+   {
+    "id": "roma_antiga-0014",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o desmentido da cesariana de César está quase literal na List of common misconceptions e é muito repetido; o detalhe do OED não basta."
+   },
+   {
+    "id": "roma_antiga-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com o artigo do PNAS 2025 (queda no séc. I a.C., Pax Romana, Peste Antonina, 2,5 a 3 pontos de QI por modelo); consenso_parcial adequado."
+   }
+  ],
+  "2": [
+   {
+    "id": "roma_antiga-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Nome que se firmou no século XIX; o resto confere."
+   },
+   {
+    "id": "roma_antiga-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Objeções, cabeça de arma, as duas leituras dos tesouros e o tipo corrigido."
+   },
+   {
+    "id": "roma_antiga-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'O que sugere que a vindima já tinha passado' aplicado."
+   },
+   {
+    "id": "roma_antiga-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Maioria das inscrições, besuntar como prática geral e motivo como hipótese."
+   }
+  ]
+ }
+}

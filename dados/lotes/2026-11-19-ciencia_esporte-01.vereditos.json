@@ -1,0 +1,122 @@
+{
+ "lote": "2026-11-19-ciencia_esporte-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "ciencia_esporte-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Ice (Bowden e Hughes 1939, −4 °C, pesquisa de 2014); corrige equívoco listado."
+   },
+   {
+    "id": "ciencia_esporte-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com UNSW/The Conversation 2022 (Uppsala 2012, estudo japonês de 2020); debate segue aberto."
+   },
+   {
+    "id": "ciencia_esporte-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Javelin throw (1986, 104,80 m, centro de gravidade 4 cm à frente, ~10% a menos)."
+   },
+   {
+    "id": "ciencia_esporte-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Ski jumping e Jan Boklöv (~10%, regra do IMC de 2004, críticas)."
+   },
+   {
+    "id": "ciencia_esporte-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Golf ball (1848, bolas gastas iam mais longe, Taylor 1905). Nota 3: covinhas são exemplo clássico."
+   },
+   {
+    "id": "ciencia_esporte-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (94%, 98%, 23 de 25, 24%); 'dois anos depois' é impreciso (votado em 2009, valeu em 2010); muleta 'segundo a fonte'.",
+    "correcao": "Gancho: 'Dois anos depois, maiôs de corpo inteiro foram proibidos.' -> 'Em 2010, maiôs de corpo inteiro foram proibidos.' Explicação: 'Segundo a fonte, reduzia em 24%' -> 'Ele reduzia em 24%'."
+   },
+   {
+    "id": "ciencia_esporte-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; o estudo diz 'is likely an artifact' ('concluiu' é forte); o ano da regra de desclassificação é contraditório na fonte.",
+    "correcao": "Gancho: 'concluiu que o sensor' -> 'indicou que o sensor'. Explicação: 'e desde 2009 o atleta pode ser desclassificado na hora' -> 'e hoje a primeira largada falsa já pode desclassificar o atleta'."
+   },
+   {
+    "id": "ciencia_esporte-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Dados históricos conferem, mas a reviravolta contradiz Houdijk et al. 2000 ('A hinge under the ball of the foot enhances the effectiveness of plantar flexion'): a panturrilha segue sendo o motor; muda o ponto de rotação.",
+    "correcao": "1) Gancho: 'O patim de lâmina articulada, patenteado já em 1894 e desprezado pelos melhores patinadores holandeses nos anos 1980, provocou uma enxurrada de recordes na patinação de velocidade a partir da temporada 1996–1997.' 2) Última frase: 'Em 2000, um estudo do cientista do esporte holandês Han Houdijk e colegas apontou que o segredo está no ponto de rotação: no patim comum, o pé gira em torno da ponta da lâmina, o que desperdiça força; com a dobradiça sob a base dos dedos, a extensão do tornozelo no fim da passada passa a empurrar o gelo com muito mais eficácia.' 3) Fonte: resumo de Houdijk et al. 2000 (DOI 10.1097/00005768-200003000-00013). 4) tipos: ['engenhosidade', 'historia_humana']."
+   },
+   {
+    "id": "ciencia_esporte-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Fonte sustenta; mas o desmentido do ácido lático é conhecido demais (equívoco listado); o pouco conhecido é que só as contrações excêntricas causam a dor; falta ressalva da segunda sessão.",
+    "correcao": "1) Gancho: 'A dor muscular do dia seguinte vem das contrações em que o músculo faz força enquanto se alonga; as de encurtamento não a causam. E o ácido lático, o suspeito de sempre, volta ao normal em até uma hora.' 2) Depois de 'exercícios durante esse período não pioraram a lesão nem atrasaram a recuperação nos estudos', acrescentar ', embora uma segunda sessão excêntrica na mesma semana tenha reduzido a força do músculo logo em seguida'."
+   },
+   {
+    "id": "ciencia_esporte-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo tem apoio em Fosbury flop, Dick Fosbury e Debbie Brill (espuma, 1964, 34 de 36). Nota 3."
+   },
+   {
+    "id": "ciencia_esporte-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Curveball, Shapiro et al. 2010 e Fastball; hipótese perceptiva como tal; consenso_parcial."
+   },
+   {
+    "id": "ciencia_esporte-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Backstroke e Berkoff (35 m, 1988, limite de 15 m entre 1989 e 1991, Suzuki). Nota 3."
+   },
+   {
+    "id": "ciencia_esporte-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Hoogkamer et al. 2018 (18 atletas, 4%, resiliência) e Super shoes; financiamento da Nike dito. Nota 3."
+   },
+   {
+    "id": "ciencia_esporte-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Peloton e Drafting (até 95%, líder também ganha na NASCAR, aves em V). Nota 3."
+   }
+  ],
+  "2": [
+   {
+    "id": "ciencia_esporte-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Em 2010' e 'Ele reduzia em 24%' aplicados; números e datas conferem."
+   },
+   {
+    "id": "ciencia_esporte-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Indicou' e a regra atual aplicados; números conferem."
+   },
+   {
+    "id": "ciencia_esporte-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Reviravolta segue Houdijk et al. 2000. Ajuste pontual aplicado sem nova verificação: tirada a década sem apoio ('nos anos 1980').",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "ciencia_esporte-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho com as contrações excêntricas e a ressalva da segunda sessão aplicados."
+   }
+  ]
+ }
+}

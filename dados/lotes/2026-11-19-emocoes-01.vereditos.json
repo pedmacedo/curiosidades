@@ -1,0 +1,115 @@
+{
+ "lote": "2026-11-19-emocoes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "emocoes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com S.M. (Wikipedia) e Feinstein et al. 2013 (35% CO2, gêmeas AM e BG, 3 de 12 controles)."
+   },
+   {
+    "id": "emocoes-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere (Hofer 1688, mal du Suisse, mortes, osso nostálgico); mas 'planícies estrangeiras' não está na fonte, e a proibição das canções vem de relatos ('Rousseau claims').",
+    "correcao": "1) 'que, lutando nas planícies estrangeiras, definhavam de saudade das montanhas' -> 'que, servindo longe de casa, definhavam de saudade das paisagens da terra natal'. 2) Gancho: 'Certas canções da terra natal eram proibidas a eles.' -> 'Certas canções da terra natal teriam sido proibidas a eles.' 3) 'As canções suíças chamadas Ranz des vaches, ou Kuhreihen, eram proibidas aos mercenários' -> 'Segundo relatos da época, as canções suíças chamadas Ranz des vaches, ou Kuhreihen, eram proibidas aos mercenários'."
+   },
+   {
+    "id": "emocoes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com o Darwin Correspondence Project (1868, 'single-blind', 18 mil respostas). Nota 3."
+   },
+   {
+    "id": "emocoes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a Wikipedia (RRR de 2016 em 17 laboratórios, Noah et al., meta-análise de 2019) e Many Smiles (3.878 participantes, 19 países); consenso_parcial."
+   },
+   {
+    "id": "emocoes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a Wikipedia e o comunicado da Humboldt (Ishiyama e Brecht 2016); 'postulated' justifica consenso_parcial."
+   },
+   {
+    "id": "emocoes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada afirmação tem apoio em Bateson et al. 2011 (60 s, cinco odores, aminas em outro grupo); sem replicação independente direta, consenso_parcial correto."
+   },
+   {
+    "id": "emocoes-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem (CNRS, Science 2014), mas sem replicação independente e a leitura como 'ansiedade' em invertebrados é debatida.",
+    "correcao": "confianca: alta -> consenso_parcial."
+   },
+   {
+    "id": "emocoes-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo confere (Crivelli et al., PNAS 2016; contestação de Kret e Straffon cabe na ressalva); só concordância no gancho.",
+    "correcao": "Gancho: 'já a retratavam como ameaça' -> 'já o retratavam como ameaça'."
+   },
+   {
+    "id": "emocoes-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e estudos conferem; mas a falta de reação emocional sozinha não basta para o delírio (segundo fator, segundo a mesma fonte).",
+    "correcao": "Depois de 'A pessoa reconhece o rosto, sente que algo não está certo e conclui que é um impostor.', inserir 'Só a falta da reação emocional, porém, não basta: o mesmo padrão já foi visto em pessoas sem delírio, e por isso se propõe um segundo fator, uma falha no raciocínio que transforma a estranheza em crença.' Trecho: 'Most likely, more than a mere impairment of the automatic emotional arousal response is necessary to form the Capgras delusion, as the same pattern has been reported in patients showing no signs of delusions.'"
+   },
+   {
+    "id": "emocoes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Dixon (Emotion Review 2012): categoria só no séc. XIX, paixões e afetos, Whewell, Brown e Bell. Nota 3: gancho seco."
+   },
+   {
+    "id": "emocoes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Ghadri et al. 2016 (485 com gatilho emocional, 4,1% alegres, 95% mulheres); Sato 1990."
+   },
+   {
+    "id": "emocoes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Provine (2000): 1.200 risadas, 10–20% depois de piadas, quem fala ri ~50% mais; sem refutação séria."
+   },
+   {
+    "id": "emocoes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Brickman 1978 e Lindqvist et al. (3.362 jogadores, satisfação por mais de uma década) conferem; ressalvas preservadas; consenso_parcial."
+   }
+  ],
+  "2": [
+   {
+    "id": "emocoes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Servindo longe de casa', 'teriam sido proibidas' e 'segundo relatos' aplicados."
+   },
+   {
+    "id": "emocoes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confiança para consenso_parcial; dados conferem."
+   },
+   {
+    "id": "emocoes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Concordância corrigida; conteúdo confere."
+   },
+   {
+    "id": "emocoes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Segundo fator inserido, com apoio na fonte."
+   }
+  ]
+ }
+}

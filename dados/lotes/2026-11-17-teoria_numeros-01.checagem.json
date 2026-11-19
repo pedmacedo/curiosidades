@@ -1,0 +1,226 @@
+{
+ "arquivo": "dados\\lotes\\2026-11-17-teoria_numeros-01.jsonl",
+ "gerado_em": "2026-11-17",
+ "limiar": 0.9,
+ "resumo": {
+  "ok": 11,
+  "aproximado": 0,
+  "falhou": 0,
+  "com_aviso_numero": 8
+ },
+ "fatos": [
+  {
+   "id": "teoria_numeros-0001",
+   "status": "ok",
+   "aviso_numero": [
+    "13",
+    "123",
+    "93",
+    "103"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Taxicab_number",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Taxicab_number__4fe3ec67ab__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1729_(number)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_1729_number__6cdf75b6c1__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0002",
+   "status": "ok",
+   "aviso_numero": [
+    "41",
+    "136.279.841"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Largest_known_prime_number",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Largest_known_prime_number__53328c0d33__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0003",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Periodical_cicadas",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Periodical_cicadas__8768d1caab__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0004",
+   "status": "ok",
+   "aviso_numero": [
+    "3.600"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/0",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_0__3374f0d575__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0005",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Benford's_law",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Benford_s_law__54e040a18c__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0006",
+   "status": "ok",
+   "aviso_numero": [
+    "2"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fermat's_Last_Theorem",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Fermat_s_Last_Theorem__ebeb179f58__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0007",
+   "status": "ok",
+   "aviso_numero": [
+    "2"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Collatz_conjecture",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Collatz_conjecture__b49b1bb519__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0008",
+   "status": "ok",
+   "aviso_numero": [
+    "39"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pi",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Pi__ac8183ef22__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0009",
+   "status": "ok",
+   "aviso_numero": [
+    "28",
+    "3",
+    "4",
+    "7",
+    "14"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Perfect_number",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Perfect_number__6a987c97fe__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0010",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sexagesimal",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Sexagesimal__872dbc0e8e__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "teoria_numeros-0011",
+   "status": "ok",
+   "aviso_numero": [
+    "10",
+    "3",
+    "100",
+    "47",
+    "53",
+    "18"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Goldbach's_conjecture",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Goldbach_s_conjecture__3e7699dab8__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  }
+ ]
+}

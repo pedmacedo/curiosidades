@@ -1,0 +1,110 @@
+{
+ "lote": "2026-11-17-mecanica_quantica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "mecanica_quantica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (fusão estelar, flash, limite de 1 nm)."
+   },
+   {
+    "id": "mecanica_quantica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Datas e nomes conferem; sugestão opcional: observação pode ser só a absorção de uma partícula."
+   },
+   {
+    "id": "mecanica_quantica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Recorde de 2.000 átomos veio de grades de difração, não de fenda dupla; ano do C60 duvidoso (1999 vs 2002).",
+    "correcao": "Gancho 'como no famoso experimento da fenda dupla'; grades de difração na explicação; tirar o ano do C60; trecho de 2013/2019."
+   },
+   {
+    "id": "mecanica_quantica-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Canal China-Áustria usou o satélite como relay confiável, sem entrelaçamento; data de lançamento contraditória; Bell não é 'a prova do entrelaçamento'.",
+    "correcao": "Reescrever a criptografia sem pares entrelaçados; 'agosto de 2016'; Bell como teste de física local; 'protegida por chaves quânticas'."
+   },
+   {
+    "id": "mecanica_quantica-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O 'ato de desespero' foi o recurso aos métodos de Boltzmann, não a quantização.",
+    "correcao": "Reescrever conforme a fonte e acrescentar o trecho de Boltzmann; gancho 'com o que ele mesmo chamou de ato de desespero'."
+   },
+   {
+    "id": "mecanica_quantica-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere, mas duas frases quase traduzem a fonte; falta o 'como' (par radical) e a evidência das ondas de rádio (Mouritsen); nota 5 alta (tema já divulgado).",
+    "correcao": "Reescrever com o mecanismo do par radical e o experimento das cabanas blindadas, com trechos; nota 4."
+   },
+   {
+    "id": "mecanica_quantica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Laser; frase relativamente conhecida, nota 3."
+   },
+   {
+    "id": "mecanica_quantica-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "História confere; o ano 1995 não está no trecho.",
+    "correcao": "Estender o trecho com 'On 5 June 1995, the first gaseous condensate was produced by'."
+   },
+   {
+    "id": "mecanica_quantica-0009",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: dado solto sem mecanismo; a foto circula como 'The Most Intelligent Photo Ever Taken'; explicação quase traduzida."
+   },
+   {
+    "id": "mecanica_quantica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Casimir effect (1948, 10 nm = 1 atm, Lamoreaux 5%, stiction)."
+   }
+  ],
+  "2": [
+   {
+    "id": "mecanica_quantica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Acréscimo (absorção de partícula) confere; datas e nomes conferem."
+   },
+   {
+    "id": "mecanica_quantica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Grades de difração citadas; ano do C60 retirado."
+   },
+   {
+    "id": "mecanica_quantica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Criptografia sem pares entrelaçados; agosto de 2016; Bell como teste de localidade."
+   },
+   {
+    "id": "mecanica_quantica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Ato de desespero' agora se refere ao recurso a Boltzmann."
+   },
+   {
+    "id": "mecanica_quantica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Par radical e experimento de Mouritsen explicados; consenso_parcial adequado."
+   },
+   {
+    "id": "mecanica_quantica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Trecho com 1995 incluído; história confere."
+   }
+  ]
+ }
+}

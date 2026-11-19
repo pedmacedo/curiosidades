@@ -1,0 +1,130 @@
+{
+ "lote": "2026-11-18-estrelas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "estrelas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Sun; mecanismo muda a imagem do Sol."
+   },
+   {
+    "id": "estrelas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quem demora é a energia, não o mesmo fóton; trivia relativamente conhecida.",
+    "correcao": "Gancho e explicação falando da energia, reemitida como novo fóton."
+   },
+   {
+    "id": "estrelas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Todas as afirmações aparecem no artigo; história humana pouco conhecida."
+   },
+   {
+    "id": "estrelas-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "misterio_aberto errado; data de 28/11 ambígua; 'depois de alguns anos' impreciso.",
+    "correcao": "Só historia_humana; tirar a data e 'depois de alguns anos'."
+   },
+   {
+    "id": "estrelas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo bate com Carrington Event; o episódio dos telegrafistas é pouco conhecido."
+   },
+   {
+    "id": "estrelas-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Nome vem da palavra grega, não do deus; Hillebrand isolou antes sem identificar; -ium, não -io.",
+    "correcao": "Gancho 'isolado e identificado'; 'helios, Sol em grego'; '-ium do nome em inglês'."
+   },
+   {
+    "id": "estrelas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Principal fonte' sem ressalva; a fonte e a literatura mantêm o debate (colapsares).",
+    "correcao": "Frase final com 'confirmou que fabricam' e o debate."
+   },
+   {
+    "id": "estrelas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "misterio_aberto errado; déficit entre 1/3 e 1/2; 'quase 40 anos' exagera; 'parte do Nobel'; tirar a frase do MSW.",
+    "correcao": "Tipos, gancho, explicação e frase final conforme a correção."
+   },
+   {
+    "id": "estrelas-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Poeira dita como certa (há estudo que atribui a manchas); companheira não confirmada (1,5 sigma).",
+    "correcao": "Gancho com 'tudo indica' e 'provável companheira'; explicação com a alternativa das manchas e 'possível detecção direta, ainda não confirmada'."
+   },
+   {
+    "id": "estrelas-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte dá kelvin; 'graus' seria lido como Celsius; explicação muito colada à ordem da fonte.",
+    "correcao": "Gancho em kelvin."
+   },
+   {
+    "id": "estrelas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Todos os números conferem; consenso_parcial adequado."
+   }
+  ],
+  "2": [
+   {
+    "id": "estrelas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Fala da energia, não do mesmo fóton."
+   },
+   {
+    "id": "estrelas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tipo, data e 'depois de alguns anos' corrigidos."
+   },
+   {
+    "id": "estrelas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "helios, Hillebrand e -ium corretos.",
+    "correcao": "'Pouco antes' → 'Antes disso'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "estrelas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva do debate incluída."
+   },
+   {
+    "id": "estrelas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Déficit, anos e Nobel corretos; MSW saiu.",
+    "correcao": "'isso rendeu' → 'a história rendeu'; 'cada reação solta' → 'essa fusão solta'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "estrelas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Explicação resolvida; gancho ainda exagerava.",
+    "correcao": "Gancho: 'A explicação mais aceita é poeira...'; 'surgiu indício de uma companheira'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "estrelas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Kelvin e explicação reescrita."
+   }
+  ]
+ }
+}

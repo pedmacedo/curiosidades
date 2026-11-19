@@ -1,0 +1,591 @@
+LOTE = "2026-11-18-vida_marinha-01"
+AREA = "biologia"
+TEMA = "vida_marinha"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 polvos e lulas editam o próprio RNA
+    {
+        "temas_secundarios": ["genetica", "evolucao"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Polvos e lulas reescrevem as próprias instruções genéticas: editam o RNA, a cópia de trabalho dos genes, bem mais do que outros seres vivos. O preço parece ser um DNA que evolui mais devagar.",
+        "explicacao": (
+            "Na maioria dos animais, a mensagem copiada de um gene para o RNA segue fiel ao DNA. Em vertebrados "
+            "como nós, a edição de RNA é rara e costuma mexer em poucas letras de cada molécula. Os polvos e os "
+            "outros cefalópodes coleoides fogem à regra: diferentemente de cefalópodes mais primitivos e de outros "
+            "moluscos, eles alteram a sequência do RNA recém-copiado em escala maior que qualquer outro organismo. "
+            "Nas lulas, essa edição pode ser extensa. Grande parte das alterações acontece no sistema nervoso, em "
+            "genes ligados à excitabilidade e à forma dos neurônios. Quem faz o serviço são sobretudo enzimas da "
+            "família ADAR, que precisam de grandes estruturas de RNA dobrado em fita dupla. Há um custo. Os "
+            "inúmeros pontos de edição ficam conservados no genoma desses animais, com a mutação freada nesses "
+            "locais. Assim, a flexibilidade maior na leitura dos genes teria saído ao preço de uma evolução mais "
+            "lenta do próprio genoma."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Octopus",
+                "Octopuses, like other coleoid cephalopods but unlike more basal cephalopods or other molluscs, are capable of greater RNA editing, "
+                "changing the nucleic acid sequence of the primary transcript of RNA molecules, than any other organisms. "
+                "Much editing is done in the nervous system, particularly for excitability and neuronal morphology. "
+                "Coleoids rely mostly on ADAR enzymes for RNA editing, which requires large, double-stranded RNA structures. "
+                "The many editing sites are conserved in the coleoid genome and the mutation rates for the sites are hampered. "
+                "Hence, greater transcriptome plasticity has come at the cost of slower genome evolution.",
+                nome="Octopus"),
+            wiki("RNA_editing",
+                "In vertebrates, editing is rare and usually consists of a small number of changes to the sequence of the affected molecules. "
+                "In other organisms, such as squids, extensive editing (pan-editing) can occur",
+                nome="RNA editing"),
+        ],
+    },
+    # 2 Osedax, o verme que come ossos de baleia
+    {
+        "temas_secundarios": ["ecologia", "paleontologia"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "Há vermes que vivem de ossos de baleias mortas no fundo do mar. Sem boca nem intestino, eles dissolvem o osso com ácido e deixam bactérias digerirem por eles. Os machos, microscópicos, vivem dentro das fêmeas.",
+        "explicacao": (
+            "O gênero Osedax, nome latino para \"devorador de ossos\", foi descoberto em fevereiro de 2002 por "
+            "cientistas do Instituto de Pesquisa do Aquário da Baía de Monterey, na Califórnia, que usavam um robô "
+            "submarino. Os vermes estavam nos ossos de uma baleia-cinzenta em decomposição, a 2.893 metros de "
+            "profundidade. Eles se fixam no osso e liberam ácido por tecidos em forma de raiz, que corroem as "
+            "camadas externas e dão acesso às gorduras de dentro. Como não têm boca, intestino nem ânus, dependem "
+            "de bactérias simbióticas abrigadas nessas raízes, que produzem enzimas capazes de quebrar o colágeno "
+            "do osso. A diferença entre os sexos é extrema: as fêmeas são mais de 20 mil vezes maiores que os "
+            "machos, que são microscópicos, vivem numa parte do tronco delas e produzem esperma com as próprias "
+            "reservas de vitelo. No início, alguns cientistas acharam que eles só comiam ossos de baleia. Depois, "
+            "foram encontrados em ossos de peixes, dentes de tubarão, esqueletos de aves e répteis, ossos de vaca "
+            "colocados de propósito e até restos humanos. As marcas fósseis mais antigas atribuídas a eles estão "
+            "num osso de plesiossauro inglês, provavelmente de cerca de 100 milhões de anos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Osedax",
+            "Osedax is Latin for 'bone devourer', derived from the worms' unique ecological niche of bone-boring. "
+            "Osedax settle on a bone, then secrete an acid through specialized root tissues to dissolve the bone's external layers in order to access the lipids within. [...] "
+            "Scientists from the Monterey Bay Aquarium Research Institute using the submarine ROV Tiburon first discovered the genus in Monterey Bay, California, in February 2002. "
+            "The worms were found living on the bones of a decaying gray whale in the Monterey Canyon, at a depth of 2,893 m [...] "
+            "Like other siboglinids, Osedax lacks a mouth, gut, or anus, and instead depends on colonies of endosymbiont microbes housed inside a trophosome for nutrition. [...] "
+            "These microbes, of the order Oceanospirillales, produce enzymes which hydrolyze collagen from bones, yielding nutrition to the worms. "
+            "Osedax exhibit very drastic sexual dimorphism, with females being >20,000 times larger than males. "
+            "Males are paedomorphic and microscopic, inhabiting a section of the females' trunk where they produce sperm from yolk reserves. [...] "
+            "When initially discovered, some scientists proposed that Osedax was a whale-bone specialist, a notion later disproven by the discovery of Osedax on a variety of skeletal substrates including bone fragments, teleost bones, shark teeth, reptile and bird skeletons, pinniped bones, experimentally placed cow bones, and even human remains. [...] "
+            "The oldest trace fossils on bones characteristic of Osedax are from a plesiosaur humerus from the Cambridge Greensand, England, likely reworked from late Albian (c. 100 million years old) sediments",
+            nome="Osedax")],
+    },
+    # 3 peixes-pescadores que abriram mão do sistema imune
+    {
+        "temas_secundarios": ["sistema_imunologico", "evolucao"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Em peixes-pescadores das profundezas, o macho minúsculo se funde à fêmea e passa a dividir o sangue dela. Para essa união não ser rejeitada como um transplante, várias espécies perderam peças do sistema imune.",
+        "explicacao": (
+            "No mar profundo, machos e fêmeas raramente se encontram. Em vários peixes-pescadores dessa zona, a "
+            "saída foi o chamado parasitismo sexual: o macho, muito menor, se prende à fêmea, os tecidos dos dois "
+            "se fundem e eles passam a ter uma circulação sanguínea comum. Ele vira, na prática, um produtor de "
+            "esperma que depende dela para se nutrir. Os primeiros cientistas que capturaram esses peixes só "
+            "achavam fêmeas, algumas com o que pareciam parasitas grudados no corpo: eram os machos. O primeiro "
+            "casal unido foi descoberto em 1920 por um biólogo pesqueiro islandês. O enigma era o sistema imune, "
+            "que normalmente ataca tecido estranho, como na rejeição de órgãos transplantados. Em 2020, uma equipe "
+            "do Instituto Max Planck de Imunobiologia, na Alemanha, e da Universidade de Washington, nos EUA, "
+            "analisou genomas desses peixes. As espécies com fusão permanente têm poucos genes das moléculas MHC, "
+            "que alertam as defesas quando uma célula está infectada, e a função das células T matadoras está muito "
+            "reduzida ou perdida. Algumas espécies não têm nem anticorpos. Segundo o líder do estudo, essa "
+            "combinação seria uma imunodeficiência fatal para humanos. Os peixes compensariam com defesas inatas "
+            "reforçadas, cujos detalhes ainda não foram descobertos."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.mpg.de/15212439/immune-functions-traded-in-for-reproductive-success",
+             "titulo": "Immune functions traded in for reproductive success (Max-Planck-Gesellschaft)",
+             "idioma": "en",
+             "trecho": (
+                "Tiny males attach themselves to gigantic females so tightly that the tissues of the two animals eventually fuse. "
+                "The male esssentially turns into a sperm-producing parasite. [...] "
+                "Tiny dwarfed males become permanently attached to relatively gigantic females, fuse their tissues and then establish a common blood circulation. "
+                "In this way, the male becomes entirely dependent on the female for nutrient supply [...] "
+                "where females and males otherwise rarely meet. [...] "
+                "Just witness the difficulties surrounding organ transplantation in humans [...] "
+                "ever since the first attached couple was discovered by an Icelandic fisheries biologist in 1920. [...] "
+                "Interestingly, the researchers found that anglerfishes that utilize permanent attachment are largely depauperate in genes that encode these MHC molecules, "
+                "as if they had done away with immune recognition in favor of tissue fusion. [...] "
+                "the function of killer T cells, which normally actively eliminate infected cells or attack foreign tissues during the organ rejection process, was also severely blunted if not lost entirely. [...] "
+                "further research indicated that antibodies, which are the second powerful weapon in the arsenal of immune defence are also missing in some of the anglerfish species. [...] "
+                "would result in fatal immunodeficiency [...] "
+                "Director at the MPI of Immunobiology and Epigenetics and lead scientist of the project. [...] "
+                "the researchers concluded that the animals use much improved innate facilities to defend themselves against infections [...] "
+                "Although the details of the improved innate immune facilities in anglerfishes remain to be discovered [...] "
+                "Science, aaz9445, July 30th, 2020"
+             )},
+            wiki("Anglerfish",
+                "When scientists first started capturing ceratioid anglerfish, they noticed that all of the specimens were female, "
+                "and on some of these they had what appeared to be parasites attached to them, which turned out to be highly dimorphic male ceratioids.",
+                nome="Anglerfish"),
+        ],
+    },
+    # 4 o caracol blindado com ferro
+    {
+        "temas_secundarios": ["minerais_rochas", "biomimetica", "geologia_profunda"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Um caracol das fontes hidrotermais do Oceano Índico tem a concha e o pé blindados com sulfetos de ferro, como a pirita. É o único animal vivo conhecido que usa esse material no esqueleto.",
+        "explicacao": (
+            "O caracol-de-pé-escamoso (Chrysomallon squamiferum) foi descoberto em 2001, vivendo na base de "
+            "chaminés hidrotermais do tipo fumarola negra, entre cerca de 2.400 e 2.900 metros de profundidade. A "
+            "concha tem três camadas: por fora, uns 30 micrômetros de sulfetos de ferro, com greigita; no meio, uma "
+            "camada orgânica; por dentro, aragonita, o carbonato de cálcio comum em conchas. A camada do meio parece "
+            "absorver a energia de um ataque de esmagamento, como o das garras de um caranguejo, e deixa a concha "
+            "bem mais resistente. Por isso, o material interessa a pesquisadores de proteção para uso civil e "
+            "militar. As laterais do pé são cobertas por centenas de escleritos, pequenas escamas sobrepostas como "
+            "telhas, também com pirita e greigita. Para que servem ainda não se sabe: talvez proteção, talvez uma "
+            "forma de descartar resíduos tóxicos de enxofre das bactérias que vivem numa glândula do esôfago e "
+            "parecem alimentar o caracol. Num detalhe curioso, os escleritos brancos de uma população sem ferro "
+            "neles se mostraram mais resistentes num teste de flexão. Em 2019, a espécie foi a primeira declarada "
+            "ameaçada na Lista Vermelha da IUCN por causa do risco da mineração em mar profundo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Scaly-foot_gastropod",
+            "is a species of deep-sea hydrothermal-vent snail [...] "
+            "This vent-endemic gastropod is known only from deep-sea hydrothermal vents in the Indian Ocean, where it has been found at depths of about 2,400–2,900 m [...] "
+            "In 2019, it was declared endangered on the IUCN Red List, the first species to be listed as such due to risks from deep-sea mining of its vent habitat. [...] "
+            "The snail's oesophageal gland houses symbiotic gammaproteobacteria from which the snail appears to obtain its nourishment. [...] "
+            "it is the only known extant animal that incorporates iron sulfide into its skeleton [...] "
+            "The species was discovered in 2001, living on the bases of black smokers in the Kairei hydrothermal vent field [...] "
+            "the sides of the snail's foot are extremely unusual, being armoured with hundreds of iron-mineralised sclerites; these are composed of iron sulfides including greigite and pyrite. [...] "
+            "The sclerites are imbricated (overlapped in a manner reminiscent of roof tiles). "
+            "The purpose of sclerites has been speculated to be protection or detoxification. [...] "
+            "the sclerites may result from deposition of toxic sulfide waste from the endosymbionts, and therefore represent a novel solution for detoxification. "
+            "But the true function of sclerites is, as yet, unknown. [...] "
+            "The non-iron-sulfide-mineralized sclerite from the Solitaire morphotype showed greater mechanical strength of the whole structure in the three-point bending stress test [...] "
+            "The Solitaire population of snails has white sclerites instead of black; this is due to a lack of iron in the sclerites. [...] "
+            "The outer layer is about 30 μm thick, black, and is made of iron sulfides, containing greigite Fe3S4. [...] "
+            "The middle layer (about 150 μm) is equivalent to the organic periostracum which is also found in other gastropods. [...] "
+            "The innermost layer is made of aragonite (about 250 μm thick), a form of calcium carbonate that is commonly found both in the shells of molluscs and in various corals. [...] "
+            "The middle organic layer appears to absorb mechanical strain and energy generated by a squeezing attack (for example by the claws of a crab), making the shell much tougher. [...] "
+            "Features of this composite material are in focus of researchers for possible use in civilian and military protective applications.",
+            nome="Scaly-foot gastropod")],
+    },
+    # 5 Freud e o mistério das enguias
+    {
+        "temas_secundarios": ["personagens_esquecidos", "oceanografia"],
+        "tipos_espanto": ["misterio_aberto", "historia_humana"],
+        "gancho": "Ainda estudante, Freud dissecou centenas de enguias procurando os órgãos sexuais dos machos, sem sucesso. Até hoje ninguém viu a enguia-europeia acasalar na natureza nem fechou seu ciclo de vida em cativeiro.",
+        "explicacao": (
+            "A vida da enguia-europeia foi um mistério por milhares de anos. Aristóteles, autor do estudo mais "
+            "antigo que se conhece sobre ela, imaginou que nascia de \"minhocas\" formadas na lama, sem reprodução "
+            "sexual. Em 1777, o italiano Carlo Mondini localizou os ovários de uma enguia. Em 1876, Sigmund Freud, "
+            "então um jovem universitário na Áustria, recebeu de seus professores a tarefa de achar os órgãos "
+            "sexuais masculinos. Depois de dissecar centenas de animais, admitiu o fracasso no seu primeiro grande "
+            "trabalho publicado e, frustrado, foi cuidar de outros assuntos. As gônadas masculinas só foram vistas "
+            "20 anos mais tarde, num exemplar da costa da Sicília. As larvas, transparentes e em forma de folha, "
+            "eram tidas como outra espécie. A partir de 1904, o dinamarquês Johannes Schmidt achou larvas cada vez "
+            "menores conforme avançava Atlântico adentro e, em 1922, pescou as menores já vistas no Mar dos "
+            "Sargaços, desde então apontado como o local mais provável de desova. Mesmo assim, ele nunca viu a "
+            "desova nem achou adultos prontos para ela. Em cativeiro, com hormônios, um grupo dinamarquês obteve "
+            "larvas em 2006; em 2022 elas já sobreviviam uns 140 dias, mas o ciclo completo ainda não foi fechado."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Eel_life_history",
+                "The European eel (Anguilla anguilla) is the species most familiar to Western scientists, beginning with Aristotle, who wrote the earliest known inquiry into the natural history of eels. "
+                "He speculated that they were born of \"earth worms\", which he believed were formed of mud, growing from the \"guts of wet soil\" rather than through sexual reproduction. [...] "
+                "In 1777, the Italian Carlo Mondini located an eel's ovaries and demonstrated that eels are a kind of fish. "
+                "In 1876, while he was still a young university student in Austria, Sigmund Freud was assigned the task of searching for the male sex organs of the eels by members of the faculty supervising his studies. "
+                "Having dissected hundreds of eels, he had to concede failure in his first major published research paper, and turned to other issues in frustration. "
+                "20 years later the male gonads of the eel were first observed in a specimen off the coast of Sicily. "
+                "Larval eels — transparent, leaflike two-inch (five-cm) creatures of the open ocean — were not generally recognized as eels until 1893; instead, they were thought to be a separate species [...] "
+                "The Danish professor Johannes Schmidt, beginning in 1904, led a series of expeditions [...] "
+                "He also observed that the farther out to sea in the Atlantic Ocean he went, the smaller the leptocephali were. "
+                "In a 1922 expedition, he sailed as far as the Sargasso Sea, south of Bermuda, where he caught the smallest eel-larvae that had ever been seen. "
+                "Although Schmidt did not directly observe eel spawning, or even find ready-to-spawn adult eels",
+                nome="Eel life history"),
+            wiki("European_eel",
+                "Their life history was a mystery for thousands of years, and mating in the wild has not yet been observed. [...] "
+                "Through a combination of fresh and salt water, as well as hormones, they were able to breed it in captivity in 2006 [...] "
+                "by 2022 they were surviving up to around 140 days, well into the leptocephalus stage (the stage just before glass eel), but the full life cycle has still not been completed in captivity. [...] "
+                "In the early 1900s, Danish researcher Johannes Schmidt identified the Sargasso Sea as the most likely spawning grounds for European eels.",
+                nome="European eel"),
+        ],
+    },
+    # 6 as "músicas da moda" das jubartes
+    {
+        "temas_secundarios": ["musica_ciencia", "comportamento_animal"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "Baleias-jubarte têm \"músicas da moda\". No Pacífico Sul, uma canção nova vinda de uma população vizinha pode substituir a antiga em poucos anos e seguir viagem, de grupo em grupo, por milhares de quilômetros.",
+        "explicacao": (
+            "Os machos de jubarte cantam na época de reprodução, no inverno, canções complexas que duram de 4 a 33 "
+            "minutos e se organizam em unidades, frases e temas. Num mesmo lugar, a maioria dos machos canta a "
+            "mesma canção, aprendida socialmente, que muda devagar de ano para ano. No Pacífico Sul, porém, "
+            "acontecem \"revoluções\": uma canção inteiramente nova, trazida de uma população vizinha, toma o lugar "
+            "da anterior de forma rápida e completa. A primeira foi descrita num artigo de Michael Noad e colegas "
+            "publicado em 2000: as jubartes do leste da Austrália adotaram a canção cantada antes no oeste do país "
+            "em apenas dois anos, prazo curto demais para ser uma evolução gradual. Depois se viu que essas canções "
+            "viajam sempre para leste. Um tipo registrado no leste da Austrália em 2003 passou por várias populações "
+            "geneticamente distintas e chegou à Polinésia Francesa em 2005; da Austrália Ocidental até lá são quase "
+            "10 mil quilômetros. Um estudo publicado em 2022 mostrou que a onda vai além: temas cantados na "
+            "Polinésia Francesa entre 2016 e 2018 apareceram no Equador em 2018, cerca de 8 mil quilômetros adiante. "
+            "Para comparar, uma troca parecida de canto entre pardais, no Canadá, levou duas décadas."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9428538/fullTextXML",
+             "titulo": "Humpback whale song revolutions continue to spread from the central into the eastern South Pacific (Royal Society Open Science, 2022, via Europe PMC)",
+             "idioma": "en",
+             "trecho": (
+                "Male humpback whales [...] sing a repetitive, stereotyped, socially learnt and culturally transmitted song display that slowly evolves each year. "
+                "Most males within a population sing the same, slow-evolving song type; but in the South Pacific, song ‘revolutions’ have led to rapid and complete replacement of one song type by another introduced from a neighbouring population. [...] "
+                "first observed a cultural revolution of humpback whale song spreading from one population to another in Australia. "
+                "The eastern Australian population of whales adopted the song previously sung in western Australia in a time span of merely 2 years—a time frame far too brief to be considered progressive evolution [...] "
+                "Subsequent work has shown that humpback whale song revolutions continue to spread in a unidirectional pattern eastward from eastern Australia across to French Polynesia [...] "
+                "One song type described in eastern Australia in 2003 was tracked across multiple genetically distinct breeding populations and arrived in French Polynesia in 2005 [...] "
+                "The distance from western Australia to French Polynesia spans just under 10 000 km [...] "
+                "Three themes from song type 1 (blue) were documented in both French Polynesia in 2016, 2017 and 2018 as well as in Ecuador in 2018, confirming the hypothesis of delayed eastward transmission of song. [...] "
+                "but a further 8000 km distance to Ecuador. [...] "
+                "the time span over which song was replaced (two decades as opposed to merely two years in humpbacks) was different by an order of magnitude [...] "
+                "Received 2022 Feb 7; Accepted 2022 Jul 22 [...] "
+                "Noad MJ, Cato DH, Bryden MM, Jenner MNM, Jenner KCS. 2000.  Cultural revolution in whale songs."
+             )},
+            wiki("Humpback_whale",
+                "Male humpback whales produce complex songs during the winter breeding season. [...] "
+                "Males may sing for between 4 and 33 minutes, depending on the region. [...] "
+                "Songs are divided into \"subunits\", \"units\", \"subphrases\", \"phrases\", and \"themes\".",
+                nome="Humpback whale"),
+        ],
+    },
+    # 7 o peixe que mora dentro do pepino-do-mar
+    {
+        "temas_secundarios": ["ecologia"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Um peixe-pérola passa o dia dentro de um pepino-do-mar, onde entra pelo ânus do hospedeiro, em geral de ré, com a cauda primeiro. E o ânus do próprio peixe fica logo atrás da cabeça, virado para fora.",
+        "explicacao": (
+            "Os peixes-pérola, da família Carapidae, são finos, alongados, sem escamas e translúcidos. Os adultos "
+            "da maioria das espécies vivem dentro de invertebrados, como mariscos, estrelas-do-mar, ascídias e "
+            "pepinos-do-mar. A espécie Carapus acus, do Mediterrâneo e do Atlântico oriental, mora na árvore "
+            "respiratória ou na cavidade do corpo de pepinos-do-mar e sai à noite para comer pequenos crustáceos, "
+            "vermes e filhotes de peixe. Ela nada perto do fundo à procura de um hospedeiro e, quando acha, encosta "
+            "a cabeça ao lado do ânus dele, de onde sai uma corrente de água. Então curva a cauda flexível, enfia a "
+            "ponta no orifício e vai entrando de costas. Menos vezes, mergulha de cabeça, com um golpe de cauda, e "
+            "se vira lá dentro. Nos dois casos, fica com a cabeça perto da saída ou para fora dela. Como o "
+            "intestino do peixe faz uma volta e o ânus fica logo atrás da cabeça, ele defeca na água sem sujar o "
+            "hospedeiro. Mais de um peixe pode dividir o mesmo pepino, e o acasalamento lá dentro é possível. Em "
+            "geral a convivência não prejudica o hospedeiro, mas algumas espécies da família são parasitas e "
+            "comem as gônadas e outros órgãos do pepino-do-mar."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Carapus_acus",
+                "It lives as a commensal in association with a sea cucumber, spending the day inside its host and emerging at night to feed. [...] "
+                "The gut loops back and the anus is located just behind the head, in front of the pectoral fins. [...] "
+                "Carapus acus usually lives inside the respiratory tree or the body cavity of sea cucumbers. [...] "
+                "The fish swims close to the seabed searching for a suitable host. "
+                "When it finds one, it positions its head beside the sea cucumber's anus, from which a current of water is being expelled. "
+                "Either it then bends its flexible tail around, inserts it in the sea cucumber's anus and works its way backwards inside, with the tail entering first, "
+                "or less commonly, it thrusts its head into the orifice and enters with a sharp flick of its tail, turning round when inside the host. "
+                "In either case, it positions itself with its head close to or protruding from the sea cucumber's anus. "
+                "Because the fish's anus is located just behind its head, it is able to defecate into the open water without fouling its host. [...] "
+                "Sometimes more than one fish can occupy the same host, and mating inside the host is possible. [...] "
+                "feeding on small crustaceans, worms, and fish fry, before returning to their hosts.",
+                nome="Carapus acus"),
+            wiki("Pearlfish",
+                "They are slender, elongated fish with no scales, translucent bodies [...] "
+                "They typically live inside clams, sea cucumbers, starfish, or sea squirts, and are simply commensal, not harming their hosts. "
+                "However, some species are known to be parasitic towards sea cucumbers, eating their gonads and other internal organs.",
+                nome="Pearlfish"),
+        ],
+    },
+    # 8 a lesma-do-mar que solta a cabeça e refaz o corpo
+    {
+        "temas_secundarios": ["animais_extremos", "plantas"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Duas espécies de lesma-do-mar conseguem soltar a própria cabeça do corpo. Nas mais jovens, a cabeça sozinha volta a comer em horas e, em cerca de três semanas, regenera um corpo inteiro, com coração.",
+        "explicacao": (
+            "A descoberta, publicada em 2021 na revista Current Biology, veio por acaso. Sayaka Mitoh, doutoranda "
+            "da Universidade Feminina de Nara, no Japão, criava lesmas-do-mar sacoglossas desde o ovo quando viu "
+            "uma delas andando sem o corpo. A Elysia marginata e a Elysia atroviridis conseguem se separar da "
+            "cabeça na altura do pescoço, num processo que leva várias horas. A cabeça se move sozinha logo depois, "
+            "a ferida fecha em poucos dias e o coração começa a se regenerar em uma semana. Nas lesmas mais velhas, "
+            "porém, a cabeça não come e morre em uns 10 dias. O corpo abandonado nunca forma uma cabeça nova, mas "
+            "segue se mexendo e reagindo ao toque por dias ou até meses. Como isso funciona ainda não se sabe: as "
+            "pesquisadoras suspeitam de células parecidas com células-tronco no pescoço. O motivo também é "
+            "incerto, e uma hipótese é livrar-se de parasitas internos. Há outro detalhe: essas lesmas guardam nas "
+            "próprias células os cloroplastos das algas que comem, um hábito chamado cleptoplastia, e as autoras "
+            "sugerem que a fotossíntese desses cloroplastos roubados ajude a cabeça a sobreviver até refazer o "
+            "corpo. Ainda assim, o ganho real dessa fotossíntese é discutido: em algumas espécies analisadas, "
+            "parece pequeno."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.eurekalert.org/news-releases/504815",
+             "titulo": "These sea slugs sever their own heads and regenerate brand-new bodies (Cell Press, via EurekAlert!)",
+             "idioma": "en",
+             "trecho": (
+                "scientists reporting in the journal Current Biology on March 8 have now discovered two species of sacoglossan sea slug that can do even better, "
+                "shedding and then regenerating a whole new body complete with the heart and other internal organs. "
+                "The researchers also suggest that the slugs may use the photosynthetic ability of chloroplasts they incorporate from the algae in their diet to survive long enough for regeneration. [...] "
+                "said Sayaka Mitoh of Nara Women's University in Japan. [...] "
+                "The discovery was a matter of pure serendipity. Mitoh is a PhD candidate in the lab of Yoichi Yusa. "
+                "The Yusa lab raises sea slugs from eggs to study their life history traits. "
+                "One day, Mitoh saw something unexpected: a sacoglossan individual moving around without its body. [...] "
+                "The researchers report that the head, separated from the heart and body, moved on its own immediately after the separation. "
+                "Within days, the wound at the back of the head closed. "
+                "The heads of relatively young slugs started to feed on algae within hours. "
+                "They started regeneration of the heart within a week. "
+                "Within about three weeks, regeneration was complete. "
+                "The heads of older individuals didn't feed and died in about 10 days. "
+                "In either case, the cast-off bodies didn't regenerate a new head. "
+                "But the headless bodies did move and react to being touched for several days or even months. [...] "
+                "they suspect there must be stem-like cells at the cut end of the neck that are capable of regenerating the body. "
+                "It's also unclear why they would do this. One possibility is that it helps to remove internal parasites that inhibit their reproduction. [...] "
+                "The sea slugs in question already were unique in that they incorporate chloroplasts from algae they eat into their own bodies, a habit known as kleptoplasty."
+             )},
+            wiki("Elysia_marginata",
+                "Unlike other sea slugs, which can only shed minor body parts, Elysia marginata and Elysia atroviridis can autotomize their heads completely from the rest of their body. "
+                "E. marginata separates its head from the transverse groove over the course of several hours. [...] "
+                "scientists only recently discovered this phenomenon in 2021",
+                nome="Elysia marginata"),
+            wiki("Kleptoplasty",
+                "though the actual benefit from photosynthesis on the survival of some of the species that have been analyzed seems to be marginal at best.",
+                nome="Kleptoplasty"),
+        ],
+    },
+    # 9 a lula-vampira que come "neve marinha"
+    {
+        "temas_secundarios": ["oceanografia", "luz_cores"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "A \"lula-vampira-do-inferno\" não é lula nem polvo, e não bebe sangue: vive onde a água quase não tem oxigênio e come detritos que afundam das camadas de cima, enrolados em muco.",
+        "explicacao": (
+            "O Vampyroteuthis infernalis, nome que quer dizer algo como \"lula-vampira do inferno\", ganhou o "
+            "apelido pela cor escura e pela membrana entre os braços, que lembra uma capa, e não por seus hábitos. "
+            "Dois filamentos longos e retráteis o distinguem tanto dos polvos quanto das lulas, embora seus "
+            "parentes mais próximos sejam os polvos. Ele é o único sobrevivente conhecido de toda a sua ordem. Vive "
+            "entre 600 e 900 metros de profundidade ou mais, na zona de mínimo de oxigênio, onde a maioria dos "
+            "animais complexos não consegue manter o metabolismo aeróbico, e é o único cefalópode capaz de passar "
+            "a vida inteira ali, com saturação de oxigênio de só 3%. Para isso, tem a menor taxa metabólica por "
+            "massa entre os cefalópodes de profundidade e um sangue azul cuja hemocianina transporta oxigênio com "
+            "mais eficiência que a de seus parentes. Com os filamentos, ele recolhe detritos, como restos de "
+            "zooplâncton gelatinoso, pequenos crustáceos e fezes de animais que vivem acima, e os junta com muco "
+            "em bolinhas de comida. Quando muito agitado, solta das pontas dos braços uma nuvem pegajosa de muco "
+            "luminoso, cheia de pontinhos de luz azul, que pode durar quase 10 minutos e, ao que se supõe, ofusca "
+            "os predadores."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Vampire_squid",
+            "It has two long retractile filaments, located between the first two pairs of arms on its dorsal side, which distinguish it from both octopuses and squids, though its closest relatives are octopuses. "
+            "As a phylogenetic relict, it is the only known surviving member of the order Vampyromorphida. [...] "
+            "The name Vampyroteuthis was reportedly inspired by its dark colour and cloaklike webbing, rather than its habits — it feeds on detritus, not blood. [...] "
+            "thought to reside at aphotic (lightless) depths from 600 to 900 metres [...] or more. "
+            "Within this region of the world's oceans is a discrete habitat known as the oxygen minimum zone (OMZ). "
+            "Within an OMZ, the saturation of oxygen is too low to support aerobic metabolism in most complex organisms. "
+            "The vampire squid is the only cephalopod able to live its entire life cycle in the minimum zone, at oxygen saturations as low as 3%. [...] "
+            "Of all deep-sea cephalopods, their mass-specific metabolic rate is the lowest. "
+            "Their blue blood's hemocyanin binds and transports oxygen more efficiently than in other cephalopods [...] "
+            "If highly agitated, it may eject a sticky cloud of bioluminescent mucus containing innumerable orbs of blue light from its arm tips. "
+            "This luminous barrage, which may last nearly 10 minutes, would presumably serve to dazzle would-be predators [...] "
+            "They combine waste with mucus secreted from the suckers to form balls of food. "
+            "As sedentary generalist feeders, they feed on detritus, including the remains of gelatinous zooplankton (such as salps, larvaceans, and medusae jellies) and complete crustaceans, such as copepods, ostracods, amphipods, and isopods, as well as faecal pellets of other aquatic organisms that live above.",
+            nome="Vampire squid")],
+    },
+    # 10 o cheiro de peixe e o limite de profundidade
+    {
+        "temas_secundarios": ["quimica_cotidiano", "oceanografia", "ciencia_cozinha"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "O cheiro de peixe estragado vem de uma molécula que ajuda peixes a aguentar a pressão do fundo do mar. Quanto mais fundo vivem, mais dela precisam, e isso pode limitar até onde um peixe consegue descer.",
+        "explicacao": (
+            "A molécula é o óxido de trimetilamina, ou TMAO. Peixes e crustáceos marinhos a acumulam nos tecidos em "
+            "concentração maior que a dos animais terrestres, e ela age como estabilizadora de proteínas, "
+            "contrabalançando o efeito da pressão da água, que tende a desnaturá-las. A concentração de TMAO aumenta "
+            "com a profundidade em que o animal vive e é alta no peixe Pseudoliparis swirei, registrado na Fossa "
+            "das Marianas a 8.076 metros. Isso traz um problema. Se a necessidade de TMAO continuar subindo em "
+            "linha reta com a profundidade, abaixo de uns 8.000 a 8.500 metros os peixes ósseos ficariam com os "
+            "fluidos do corpo mais concentrados que a água do mar em volta. Por isso, o limite teórico para "
+            "peixes estaria nessa faixa, embora alguns invertebrados, como certas lulas, vermes, pepinos-do-mar e "
+            "anfípodes, vivam a mais de 10 mil metros. A ligação com a cozinha vem depois da morte: o TMAO se "
+            "decompõe em trimetilamina, principal responsável pelo odor característico de frutos do mar se "
+            "estragando pela ação de micróbios."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Trimethylamine_N-oxide",
+                "TMAO is found in higher concentration than in land animals in the tissues of marine crustaceans and marine fish, where it prevents water pressure from denaturing proteins and ultimately prevents the death of the animal. "
+                "The concentration of TMAO increases with the depth at which the animal lives; TMAO is found in high concentrations in the deepest-living described fish species, Pseudoliparis swirei, which was found in the Mariana Trench, at a recorded depth of 8,076 m [...] "
+                "It acts as a protein stabilizer that serves predominantly to counteract the protein-destabilizing effects of pressure. [...] "
+                "TMAO decomposes to trimethylamine (TMA), which is the main odorant that is characteristic of degrading seafood from microbial breakdown.",
+                nome="Trimethylamine N-oxide"),
+            wiki("Hadal_zone",
+                "Due to the extreme pressure, the theoretical maximum depth for vertebral fish may be about 8,000–8,500 m [...] below which teleosts would be hyperosmotic, "
+                "assuming trimethylamine N-oxide requirements follow the observed approximate linear relationship with depth. "
+                "Some invertebrates do occur deeper, such as bigfin squid, certain polynoid worms, myriotrochid sea cucumbers, turrid snails and pardaliscid amphipods in excess of 10,000 m",
+                nome="Hadal zone"),
+        ],
+    },
+    # 11 opah, o peixe de sangue quente
+    {
+        "temas_secundarios": ["termodinamica", "biomimetica"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "O opah, um peixe do tamanho de um pneu grande, é o primeiro conhecido que mantém o corpo todo mais quente que a água. O segredo está nas brânquias, onde o sangue aquecido aquece o que volta frio.",
+        "explicacao": (
+            "A descoberta foi publicada em 2015 na revista Science por uma equipe do serviço de pesca dos EUA "
+            "(NOAA Fisheries) liderada pelo biólogo Nicholas Wegner. O opah vive centenas de metros abaixo da "
+            "superfície, em águas frias e escuras, onde os peixes costumam ser lentos e caçar de emboscada. Ele "
+            "nada batendo as grandes nadadeiras peitorais vermelhas como asas, e esses músculos geram a maior "
+            "parte do calor. Só que as brânquias são o principal ponto de perda de calor de um peixe, porque ali o "
+            "sangue do corpo inteiro passa colado à água. No opah, os vasos que levam sangue quente às brânquias se "
+            "enrolam nos que trazem de volta o sangue frio e recém-oxigenado, um arranjo que os engenheiros chamam "
+            "de troca de calor em contracorrente. Uma camada de gordura isola os órgãos. Em mergulhos, a "
+            "temperatura média dos músculos ficou cerca de 5 °C acima da água. Atuns e alguns tubarões aquecem "
+            "partes do corpo, como os músculos, mas seus órgãos internos, inclusive o coração, esfriam nas "
+            "profundezas. Ainda assim, o opah não mantém a temperatura constante como aves e mamíferos: ela varia "
+            "com a da água. O calor o torna um predador ágil, que persegue lulas e migra longas distâncias."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.fisheries.noaa.gov/feature-story/warm-blood-makes-opah-agile-predator",
+             "titulo": "Warm Blood Makes Opah an Agile Predator (NOAA Fisheries)",
+             "idioma": "en",
+             "trecho": (
+                "May 12, 2015 [...] "
+                "New research by NOAA Fisheries has revealed the opah, or moonfish, as the first fully warm-blooded fish that circulates heated blood throughout its body much like mammals and birds [...] "
+                "The silvery fish, roughly the size of a large automobile tire, is known from oceans around the world and dwells hundreds of feet beneath the surface in chilly, dimly lit waters. "
+                "It swims by rapidly flapping its large, red pectoral fins like wings through the water. "
+                "Fish that typically inhabit such cold depths tend to be slow and sluggish, conserving energy by ambushing prey instead of chasing it. [...] "
+                "scientists report today in the journal Science. [...] "
+                "said fisheries biologist Nicholas Wegner of NOAA Fisheries [...] lead author of the new paper. [...] "
+                "it turns out to be a very active predator that chases down agile prey like squid and can migrate long distances. [...] "
+                "Blood vessels that carry warm blood into the fish [...] gills wind around those carrying cold blood back to the body core after absorbing oxygen from water. "
+                "The design is known in engineering as [...] "
+                "The fish had an average muscle temperature about 5 degrees C above the surrounding water while swimming about 150 to 1,000 feet below the surface, the researchers found. [...] "
+                "A few other fish such as tuna and some sharks warm certain parts of their bodies such as muscles, boosting their swimming performance. "
+                "But internal organs including their hearts cool off quickly and begin to slow down when they dive into cold depths [...] "
+                "Fatty tissue surrounds the gills, heart and muscle tissue where the opah generates much of its internal heat, insulating them from the frigid water."
+             )},
+            wiki("Opah",
+                "The gills are the main point of heat loss in fishes as this is where blood from the entire body must continuously be brought in close contact with the surrounding water. [...] "
+                "This mechanism is called a counter-current heat exchanger. [...] "
+                "Unlike birds and mammals, the opah is not a homeotherm despite being an endotherm: while its body temperature is raised above the surrounding water temperature, it still varies with the external temperature and is not held constant. [...] "
+                "The large muscles powering the pectoral fins generate most of the heat in the opah.",
+                nome="Opah"),
+        ],
+    },
+    # 12 como a lula-gigante foi fotografada e filmada
+    {
+        "temas_secundarios": ["cinema_fotografia", "luz_cores"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "A lula-gigante só foi fotografada viva no seu ambiente em 2004. Para achá-la, cientistas japoneses seguiram a pista dos cachalotes, que a caçam. Depois, uma luz imitando uma água-viva a atraiu para a câmera.",
+        "explicacao": (
+            "Na virada do século XXI, a lula-gigante ainda era um dos poucos grandes animais vivos nunca "
+            "fotografados com vida, nem na natureza nem em cativeiro. O biólogo marinho Richard Ellis a chamou de "
+            "\"a imagem mais esquiva da história natural\". As primeiras fotos foram feitas em 30 de setembro de "
+            "2004 por Tsunemi Kubodera, do Museu Nacional de Ciência do Japão, e Kyoichi Mori, de uma associação "
+            "de observação de baleias, depois de quase dois anos de tentativas. Eles foram a uma área de caça de "
+            "cachalotes ao sul de Tóquio. Segundo Kubodera, a equipe sabia que essas baleias comiam a lula e quando "
+            "e a que profundidade mergulhavam, e as usou como guia. Uma câmera presa a uma linha com isca a 900 "
+            "metros fez mais de 500 fotos de uma lula que se prendeu nela e só se soltou depois de quatro horas, "
+            "deixando para trás um tentáculo de 5,5 metros. As fotos mostraram um ataque agressivo, o que pode "
+            "derrubar a ideia de um animal que só fica à deriva. Em julho de 2012, uma equipe de TV gravou o que "
+            "foi descrito como o primeiro vídeo de uma lula-gigante viva no seu ambiente. Para atraí-la, usou uma "
+            "luz que imitava uma água-viva Atolla em pânico, cujo pisca-pisca chamaria predadores maiores contra "
+            "quem a ataca."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Giant_squid",
+                "By the turn of the 21st century, the giant squid remained one of the few extant megafauna to have never been photographed alive, either in the wild or in captivity. "
+                "Marine biologist and author Richard Ellis described it as \"the most elusive image in natural history\". [...] "
+                "The first photographs of a live giant squid in its natural habitat were taken on 30 September 2004, by Tsunemi Kubodera (National Science Museum of Japan) and Kyoichi Mori (Ogasawara Whale Watching Association). "
+                "Their teams had worked together for nearly two years to accomplish this. [...] "
+                "The images were created on their third trip to a known sperm whale hunting ground 970 km (600 mi) south of Tokyo, where they had dropped a 900 m (3,000 ft) line baited with squid and shrimp. "
+                "The line also held a camera and a flash. [...] "
+                "The camera took over 500 photos before the squid managed to break free after four hours. "
+                "The squid's 5.5 m (18 ft) tentacle remained attached to the lure. [...] "
+                "According to Kubodera, \"we knew that they fed on the squid, and we knew when and how deep they dived, so we used them to lead us to the squid\". [...] "
+                "This may disprove the theory that the giant squid is a drifter which eats whatever floats by [...] "
+                "In July 2012, a crew from television networks NHK and Discovery Channel captured what was described as \"the first-ever footage of a live giant squid in its natural habitat\". [...] "
+                "It was drawn into viewing range by both artificial bioluminescence created to mimic panicking Atolla jellyfish",
+                nome="Giant squid"),
+            wiki("Vampire_squid",
+                "called the \"burglar alarm effect\" (making the vampire squid's would-be predator more visible to secondary predators, similar to the Atolla jellyfish's light display)",
+                nome="Vampire squid"),
+        ],
+    },
+    # 13 o peixe que passou no teste do espelho (com debate)
+    {
+        "temas_secundarios": ["comportamento_animal", "consciencia"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Um peixinho de recife, o bodião-limpador, foi o primeiro peixe a passar no teste do espelho: com uma marca parecida com um parasita, ele tentava tirá-la depois de se ver. O que isso prova ainda é debatido.",
+        "explicacao": (
+            "O teste do espelho foi criado em 1970 pelo psicólogo americano Gordon Gallup Jr. para investigar se um "
+            "animal se reconhece visualmente: faz-se uma marca numa parte do corpo que ele normalmente não enxerga "
+            "e depois se oferece um espelho, para ver se ele tenta mexer nela. O bodião-limpador-de-listra-azul (Labroides dimidiatus) é um "
+            "peixe de uns 10 centímetros que vive de tirar parasitas e tecido morto da pele de peixes maiores, em "
+            "estações de limpeza nos recifes. Num estudo de 2019, os pesquisadores injetaram sob a pele desses "
+            "peixes uma marca de gel marrom, inofensiva, parecida com um parasita. Diante do espelho, os peixes "
+            "tentavam tirá-la raspando o corpo, o que não faziam sem a marca nem com uma marca transparente. Os "
+            "autores notaram ainda que eles se olhavam no espelho antes e depois de se raspar. Gallup contestou: "
+            "para um peixe cujo ofício é achar parasitas no corpo dos outros, a reação poderia ser só a de quem vê "
+            "um parasita num outro peixe a ser limpo. Em 2022, a equipe repetiu o teste com mais animais e marcas "
+            "diferentes e disse ter mais confiança no resultado, embora os peixes só tentassem tirar marcas que "
+            "pareciam parasitas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Mirror_test",
+                "is a behavioral technique developed in 1970 by American psychologist Gordon Gallup Jr. to determine whether an animal possesses the ability of visual self-recognition. "
+                "In this test, an animal is anesthetized and then marked (e.g. paint or sticker) on an area of the body the animal normally cannot see (e.g. forehead). "
+                "When the animal recovers from the anesthetic, it is given access to a mirror. [...] "
+                "Bluestreak cleaner wrasse (Labroides dimidiatus): According to a study done in 2019, cleaner wrasses were the first fish observed to pass the mirror test. [...] "
+                "When put through the mirror test, using a benign brown gel injected into the skin of the fish, and resembling a parasite, the cleaner wrasse showed all the behaviors of passing through the phases of the test. [...] "
+                "However, Gordon Gallup believes the cleaner wrasses' behavior can be attributed to something other than recognizing itself in a mirror. "
+                "Gallup has argued that a cleaner wrasse's job in life is to be aware of ectoparasites on the bodies of other fish, so it would be hyper aware of the fake parasite that it noticed in the mirror, "
+                "perhaps seeing it as a parasite that it needed to clean off of a different fish. "
+                "The authors of the study retort that because the fish checked itself in the mirror before and after the scraping [...] "
+                "Importantly, the cleaner wrasses performed scraping behavior with the colored mark, and they did not perform the same scraping behavior without the colored mark in the presence of the mirror, nor when they were with the mirror and had a transparent mark. "
+                "Following various objections, the researchers published a follow-up study in 2022, where they did the mirror test on a larger sample of wrasses and experimented with several marking techniques. "
+                "The new results \"increase[d] [the researchers'] confidence that cleaner fish indeed pass the mark test\", although wrasses attempted to scrape off the mark only when it resembled a parasite.",
+                nome="Mirror test"),
+            wiki("Bluestreak_cleaner_wrasse",
+                "Like other cleaner wrasses, it eats parasites and dead tissue off larger fishes' skin [...] "
+                "This is a young wrasse, averaging 10 cm (3.9 in) long [...] "
+                "Cleaner wrasses are usually found at cleaning stations",
+                nome="Bluestreak cleaner wrasse"),
+        ],
+    },
+    # 14 o torpedo herdou o nome da raia-elétrica
+    {
+        "temas_secundarios": ["palavras_viajantes", "eletromagnetismo", "historia_medicina"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O torpedo dos navios de guerra herdou o nome de um peixe: a raia-elétrica, chamada de torpedo a partir do latim para \"letargia\". Bem antes, um médico romano já registrava o uso dela contra a dor de cabeça.",
+        "explicacao": (
+            "As raias-elétricas dão choques com órgãos formados por colunas de 500 a mais de mil placas de músculo "
+            "modificado, derivado dos músculos dos arcos das brânquias. Conforme a espécie, a descarga vai de 8 "
+            "volts a 220 volts, no caso da raia-torpedo do Atlântico. Os gregos antigos usavam esses peixes para "
+            "amortecer a dor de partos e de operações, e no diálogo Mênon, de Platão, o personagem do título acusa "
+            "Sócrates de \"entorpecer\" as pessoas com suas perguntas desconcertantes, como faz o peixe. Em 46 d.C., "
+            "o médico romano Escribônio Largo registrou o uso do torpedo para tratar dores de cabeça e gota. Nos "
+            "anos 1770, os órgãos elétricos da raia foram tema de artigos na Royal Society, que parecem ter "
+            "influenciado Luigi Galvani e Alessandro Volta, fundadores da eletrofisiologia e da eletroquímica. Em "
+            "1773, Henry Cavendish construiu uma raia artificial com garrafas de Leyden e conseguiu imitar o "
+            "comportamento dela. No uso naval, o inventor americano David Bushnell teria sido o primeiro a usar o "
+            "termo, para batizar um submarino que projetou. Isso provavelmente inspirou Robert Fulton a chamar "
+            "assim suas minas fixas e, depois, Robert Whitehead a dar o nome ao primeiro torpedo autopropelido."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Torpedo",
+                "The word torpedo was first used as a name for electric rays (in the order Torpediniformes), which in turn comes from the Latin word torpēdō (\"lethargy\" or \"sluggishness\"). "
+                "In naval usage, the American inventor David Bushnell was reported to have first used the term as the name of a submarine of his own design, the \"American Turtle or Torpedo.\" "
+                "This usage likely inspired Robert Fulton's use of the term to describe his stationary mines, and later Robert Whitehead's naming of the first self-propelled torpedo.",
+                nome="Torpedo"),
+            wiki("Electric_ray",
+                "Each column consists of 500 to more than 1,000 plaques of modified striated muscle, adapted from the branchial (gill arch) muscles. [...] "
+                "an electric ray may electrocute larger prey with a voltage of between 8 volts in some narcinids to 220 volts in Torpedo nobiliana, the Atlantic torpedo. [...] "
+                "The ancient Greeks used electric rays to numb the pain of childbirth and operations. "
+                "In his dialogue Meno, Plato has the character Meno accuse Socrates of \"stunning\" people with his puzzling questions, in a manner similar to the way the torpedo fish stuns with electricity. "
+                "Scribonius Largus, a Roman physician, recorded the use of torpedo fish for treatment of headaches and gout in his Compositiones Medicae of 46 AD. "
+                "In the 1770s the electric organs of the torpedo ray were the subject of Royal Society papers by John Walsh, and John Hunter. "
+                "These appear to have influenced the thinking of Luigi Galvani and Alessandro Volta – the founders of electrophysiology and electrochemistry. "
+                "Henry Cavendish proposed that electric rays use electricity; he built an artificial ray consisting of fish shaped Leyden jars to successfully mimic their behaviour in 1773.",
+                nome="Electric ray"),
+        ],
+    },
+]

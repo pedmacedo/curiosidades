@@ -1,0 +1,163 @@
+{
+ "lote": "2026-11-19-transportes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "transportes-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "12.500 m é a altitude do primeiro alarme, não de quando acabou o combustível (segundo motor parou a ~10.700 m); a fonte não diz que Pearson desconhecia o autódromo.",
+    "correcao": "Gancho: 'ficou sem combustível a 12.500 m' -> 'ficou sem combustível em pleno voo, a mais de 10 mil metros de altitude'. Explicação: 'Nenhum dos dois sabia que parte dela tinha virado autódromo' -> 'Nem Quintal nem o controle de tráfego aéreo sabiam que parte dela tinha virado autódromo'."
+   },
+   {
+    "id": "transportes-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Mito_desmentido legítimo; mas a frase final omite que o efeito giroscópico também contribui e trata a velocidade como fator, não como faixa.",
+    "correcao": "Trocar 'Hoje se entende que geometria, distribuição de massa e velocidade se combinam, em graus variados, para produzir o equilíbrio.' por 'Hoje se entende que geometria, distribuição de massa e o próprio efeito giroscópico contribuem, em graus variados, sem que nenhum deles baste sozinho, e que a autoestabilidade só aparece dentro de uma faixa de velocidades.' Opcional no gancho: 'pode seguir de pé sozinha, na velocidade certa'."
+   },
+   {
+    "id": "transportes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (McLean, Ideal-X 1956, 58 contêineres, US$ 5,86 x 16 centavos, licença à ISO). 'Contêiner moderno' correto."
+   },
+   {
+    "id": "transportes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem, mas o gancho é absoluto: o cone ajuda a seguir a curva; em curvas fechadas os frisos guiam.",
+    "correcao": "Gancho: 'O trem faz a curva porque as rodas são cones:' -> 'O que ajuda o trem a fazer a curva é que as rodas são cones:'. Explicação: 'É esse formato que mantém o trem nos trilhos.' -> 'É esse formato que mantém o trem centrado nos trilhos, deixando os frisos como reserva.'"
+   },
+   {
+    "id": "transportes-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Dados conferem; 'Kusenko pagou a aposta' não está na fonte, e falta que Muller venceu com experimentos e dados.",
+    "correcao": "Trocar 'Kusenko pagou a aposta, mas disse que cedeu por um detalhe técnico e que não via prova de que o Blackbird tivesse superado o vento.' por 'Muller venceu com experimentos em modelo, os dados originais da corrida e as equações. Kusenko reconheceu a derrota, mas disse que cedeu por um detalhe técnico e que continuava sem ver prova de que o Blackbird tivesse superado o vento.'"
+   },
+   {
+    "id": "transportes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com o artigo do New J. Phys. (pista circular sem gargalo, primeira evidência experimental) e Traffic wave."
+   },
+   {
+    "id": "transportes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Braess's paradox e Cheonggyecheon, inclusive a ressalva da reorganização do tráfego."
+   },
+   {
+    "id": "transportes-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Apoio bom (janelas ADF), mas 'pouco mais de um ano' não bate com as datas, e o gancho omite que os recortes das antenas também eram quadrados.",
+    "correcao": "Gancho: trocar 'Mas a fadiga do metal partiu de recortes no teto feitos para antenas; o formato das janelas dos passageiros não foi apontado como causa.' por 'Mas a fadiga do metal partiu de recortes quadrados no teto, para antenas; as janelas dos passageiros não foram apontadas como causa.' Explicação: 'Em pouco mais de um ano de serviço, três se perderam em pleno voo.' -> 'Pouco depois da estreia, três se perderam em pleno voo.'"
+   },
+   {
+    "id": "transportes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com John Peake Knight e Traffic light (9/12/1868, explosão em 2/1/1869). Nota no limite."
+   },
+   {
+    "id": "transportes-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere, mas 'a barreira dos 100 km/h' sem qualificação sugere qualquer veículo (locomotivas antes de 1899).",
+    "correcao": "Gancho: 'A barreira dos 100 km/h foi rompida por um carro elétrico, em 1899.' -> 'O primeiro automóvel a passar dos 100 km/h foi um elétrico, em 1899.' (conferir que a fonte sustenta 'primeiro automóvel')."
+   },
+   {
+    "id": "transportes-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Mito_desmentido legítimo; mas a explicação por Newton não é 'melhor': a fonte diz 'correct but incomplete'.",
+    "correcao": "Trocar 'Uma explicação simplificada melhor parte das leis de Newton:' por 'Outra explicação simplificada, correta mas incompleta, parte das leis de Newton:'. Depois de '...o ar, em reação, empurra a asa para cima.', acrescentar 'A explicação completa junta as duas coisas: o desvio do ar para baixo e as diferenças de pressão e de velocidade em volta da asa.'"
+   },
+   {
+    "id": "transportes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Santos-Dumont Demoiselle (56 kg, bambu, alavanca no bolso do casaco, desenhos liberados, Popular Mechanics 1910)."
+   },
+   {
+    "id": "transportes-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos e números conferem; mas 'um brasileiro retomou a ideia' sugere que Coester partiu das ferrovias atmosféricas, o que nenhuma fonte diz.",
+    "correcao": "Gancho: 'Um brasileiro retomou a ideia:' -> 'O mesmo princípio voltou pelas mãos de um brasileiro:'. Explicação: 'e retomou o princípio com materiais modernos.' -> 'e criou um sistema que usa o mesmo princípio, agora viável graças a materiais modernos.'"
+   },
+   {
+    "id": "transportes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Dunlop e Thomson (1845, 1888, patente invalidada). Interesse moderado."
+   },
+   {
+    "id": "transportes-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Conferem os números; 'quase sempre um menino' exagera o 'usually'; o limite de 1896 é contraditório na fonte (12 ou 14 mph), manter a ressalva.",
+    "correcao": "Trocar 'na prática quase sempre um menino' por 'na prática geralmente um menino'. Trocar 'livres dessas regras e com limite de 14 milhas por hora.' por 'livres dessas regras e com limite de até 14 milhas por hora, que as autoridades locais podiam reduzir.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "transportes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas ('a mais de 10 km', Quintal e o controle). Ajuste pontual aplicado sem nova verificação: sobre Red Lake soaram os alarmes; os motores pararam depois, já desviando para Winnipeg.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "transportes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase final agora acompanha a fonte (efeito giroscópico contribui; faixa de velocidades)."
+   },
+   {
+    "id": "transportes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'O que ajuda o trem na curva' e 'frisos como reserva' conferem."
+   },
+   {
+    "id": "transportes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Muller venceu com experimentos e dados; Kusenko cedeu 'on a technicality'. Confere."
+   },
+   {
+    "id": "transportes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Recortes quadrados do ADF e 'pouco depois da estreia' conferem."
+   },
+   {
+    "id": "transportes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada ('primeiro automóvel'), sustentada pelo trecho dos recordes de automóveis elétricos."
+   },
+   {
+    "id": "transportes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Correta mas incompleta' e a frase que junta as duas explicações conferem com Lift (force)."
+   },
+   {
+    "id": "transportes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho e explicação não sugerem mais que Coester partiu das ferrovias atmosféricas; datas conferem."
+   },
+   {
+    "id": "transportes-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Geralmente um menino' e 'até 14 mph, que as autoridades locais podiam reduzir' conferem."
+   }
+  ]
+ }
+}

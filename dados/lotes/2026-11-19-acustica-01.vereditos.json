@@ -1,0 +1,128 @@
+{
+ "lote": "2026-11-19-acustica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "acustica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Phonautograph (1857, 1860, First Sounds 2008, feito para ser lido e não ouvido). Nota 4."
+   },
+   {
+    "id": "acustica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Acoustic shadow, Four Days' Battle e Speed of sound (Pepys, Evelyn, Deal e Dover, Iuka, refração)."
+   },
+   {
+    "id": "acustica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Exagero: Russell diz 'apparently without change' e que a altura diminuiu; sobre Bidone a fonte diz que passou despercebido por britânicos e holandeses.",
+    "correcao": "1) Gancho: 'por um canal sem mudar de forma nem perder velocidade.' -> 'por um canal, aparentemente sem mudar de forma nem perder velocidade.' 2) Explicação: 'Russell a seguiu a cavalo e só a perdeu depois de uma ou duas milhas, nas curvas do canal.' -> 'Russell a seguiu a cavalo, a uns oito ou nove milhas por hora. A altura foi diminuindo aos poucos, e ele a perdeu depois de uma ou duas milhas, nas curvas do canal.' 3) 'mas quase ninguém notou' -> 'mas o trabalho passou despercebido pelos pesquisadores britânicos e holandeses'."
+   },
+   {
+    "id": "acustica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Christian Doppler, Buys Ballot e Doppler effect (1842, estrelas binárias errado, trem de 1845)."
+   },
+   {
+    "id": "acustica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Chladni e Sophie Germain (1787, Hooke 1680, Napoleão 1808, prêmio de 1816)."
+   },
+   {
+    "id": "acustica-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fator Q mede oscilações, não tempo: a luz não fica 'presa muito mais tempo' em segundos; 10^4 é o melhor da acústica em geral. 'A mesma onda' exagera.",
+    "correcao": "1) Explicação: trocar 'a luz dá voltas quase sem perdas e fica presa muito mais tempo do que o som numa galeria, o que serve para' por 'a luz dá voltas quase sem perdas, guiada pela reflexão interna total, e perde muito menos energia a cada oscilação do que o som nos melhores ressonadores acústicos, o que serve para'. 2) Gancho: 'Hoje a mesma onda prende luz em esferinhas de vidro.' -> 'Hoje o mesmo tipo de onda prende luz em esferinhas de vidro.'"
+   },
+   {
+    "id": "acustica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com SOFAR channel e Speed of sound (eixo ~1.200 m, ilha Heard, Ascension 9.200 km, bombas SOFAR, SOSUS; baleias com 'talvez')."
+   },
+   {
+    "id": "acustica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Bloop (1997, 5.000 km, Fox 2001/2002, A53a 2008, NOAA 2012). Conhecido de listas; nota 3."
+   },
+   {
+    "id": "acustica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Conferido no texto integral de Maurice et al. (Nature 2022): 240 Hz, 246–257 m/s, Ingenuity 84 Hz, ~10 m/s de diferença. Nota 4."
+   },
+   {
+    "id": "acustica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Brown note (MythBusters 2005, testes de 160 dB em 2–3 Hz); 'supõem' cobre a origem disputada. Nota no limite."
+   },
+   {
+    "id": "acustica-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Só mostra o lado a favor; concerto de 2003 sem revisão por pares; o estudo controlado 'Haunt' (French et al., Cortex 2009, 79 participantes) ligou as sensações à sugestionabilidade. Título certo: 'The Ghost in the Machine'.",
+    "correcao": "1) Título -> 'The Ghost in the Machine'. 2) Acrescentar fonte do estudo de 2009 (PubMed/Europe PMC) e trocar a última frase por: 'O experimento de 2003 não passou por revisão de pares, e um teste controlado de 2009, com 79 voluntários numa sala com infrassom, ligou as sensações estranhas mais à sugestionabilidade das pessoas do que ao som. A relação segue sem confirmação.' 3) Manter hipotese e misterio_aberto."
+   },
+   {
+    "id": "acustica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Helioseismology (5 minutos, anos 1960/70, neutrinos, Nobel 2015). Boa ponte."
+   },
+   {
+    "id": "acustica-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Second sound (Landau 1941, 2,1768 K, ~20 m/s, grafite 2019 a ~120 K)."
+   },
+   {
+    "id": "acustica-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas são ~35 locais, não desertos; a sujeira que silencia vem de 'It is believed by some'.",
+    "correcao": "1) Gancho: 'Em cerca de 35 desertos do mundo' -> 'Em cerca de 35 lugares desérticos do mundo'. 2) 'e um pouco de sujeira nos grãos basta para silenciá-la' -> 'e, segundo uma das explicações, um pouco de sujeira nos grãos basta para silenciá-la'. 3) Opcional: 'em menor escala' -> 'com um som mais agudo'."
+   },
+   {
+    "id": "acustica-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Wave (audience) e o resumo da Nature (Farkas, Helbing e Vicsek 2002, meios excitáveis)."
+   }
+  ],
+  "2": [
+   {
+    "id": "acustica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Aparentemente', a altura que diminuiu e Bidone despercebido conferem com Soliton."
+   },
+   {
+    "id": "acustica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'O mesmo tipo de onda' e a perda por oscilação (fator Q) conferem com Whispering-gallery wave."
+   },
+   {
+    "id": "acustica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Título e contraponto do estudo Haunt (2009) aplicados e conferem. Ajuste pontual aplicado sem nova verificação: retirada a afirmação sem apoio sobre o experimento de 2003 e descritas as quatro condições do estudo de 2009.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "acustica-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Lugares desérticos', 'segundo uma das explicações' e 'som mais agudo' conferem com Singing sand."
+   }
+  ]
+ }
+}

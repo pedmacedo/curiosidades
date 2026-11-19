@@ -1,0 +1,114 @@
+{
+ "lote": "2026-11-18-revolucao_industrial-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "revolucao_industrial-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Peppered moth confere; nota 3 (clássico do ensino médio)"
+   },
+   {
+    "id": "revolucao_industrial-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Luddite confere; 12 mil soldados atribuídos"
+   },
+   {
+    "id": "revolucao_industrial-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Railway time confere"
+   },
+   {
+    "id": "revolucao_industrial-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Horsepower confere; royalties do carvão"
+   },
+   {
+    "id": "revolucao_industrial-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Science History Institute e Jacquard conferem"
+   },
+   {
+    "id": "revolucao_industrial-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Knocker-up confere"
+   },
+   {
+    "id": "revolucao_industrial-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Jevons paradox confere; consenso_parcial"
+   },
+   {
+    "id": "revolucao_industrial-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Rainhill trials confere"
+   },
+   {
+    "id": "revolucao_industrial-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "The Iron Bridge confere"
+   },
+   {
+    "id": "revolucao_industrial-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Spinning jenny confere; nota 3"
+   },
+   {
+    "id": "revolucao_industrial-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'de memória' é a parte contestada (Conrad 1986: ajuda e máquina comprada por Brown)",
+    "correcao": "1) Gancho: 'partiu para os EUA e lá reconstruiu as máquinas de memória.' -> 'e partiu para os EUA, onde reconstruiu as máquinas com o que guardou na cabeça.' 2) 'e reconstruiu de memória as máquinas movidas a água.' -> 'e reconstruiu as máquinas movidas a água com base no que tinha memorizado. Historiadores discutem o quanto foi memória pura, já que ele contou com ajuda e com a máquina comprada por Brown.' 3) Fonte nova RIHS com 'Disputes the idea that Slater worked \"strictly from memory\" and without significant assistance'. 4) consenso_parcial."
+   },
+   {
+    "id": "revolucao_industrial-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "navios com comida doada por particulares, não pelo governo americano; tropeço de português",
+    "correcao": "1) 'O governo americano mandou navios com comida para Lancashire' -> 'Dos Estados Unidos chegaram navios com comida doada para Lancashire'. 2) 'passaram de os mais prósperos aos mais pobres' -> 'passaram de mais bem pagos a mais pobres'."
+   },
+   {
+    "id": "revolucao_industrial-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "gancho generaliza a doença; data da proibição diverge entre as fontes",
+    "correcao": "1) Gancho: 'destruía a mandíbula de quem os fabricava' -> 'podia destruir a mandíbula de quem os fabricava'. 2) 'O fósforo branco só foi proibido de vez nos fósforos britânicos depois de 31 de dezembro de 1910, seguindo a Convenção de Berna, de 1906.' -> 'O fósforo branco só foi banido dos fósforos britânicos por uma lei de 1908, que aplicava a Convenção de Berna, de 1906.' (precisa de trecho da lei de 1908)"
+   },
+   {
+    "id": "revolucao_industrial-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Friedrich Engels confere; opcional 'bairros operários'"
+   }
+  ],
+  "2": [
+   {
+    "id": "revolucao_industrial-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'de memória' com ressalva e fonte RIHS; consenso_parcial"
+   },
+   {
+    "id": "revolucao_industrial-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "navios dos EUA, neutro; português corrigido"
+   },
+   {
+    "id": "revolucao_industrial-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'podia destruir'; lei de 1908"
+   }
+  ]
+ }
+}

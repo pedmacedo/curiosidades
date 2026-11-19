@@ -1,0 +1,130 @@
+{
+ "lote": "2026-11-18-vida_marinha-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "vida_marinha-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a 'troca' é interpretação de um estudo (2017), contestada (Nat Commun 2019: edição em boa parte não adaptativa)",
+    "correcao": "1) confianca: consenso_parcial. 2) 'Há um custo.' -> 'Pode haver um custo, segundo o estudo que mapeou esses pontos, embora outros pesquisadores duvidem que a maior parte dessa edição seja vantajosa.' (a parte da dúvida precisa de fonte; ex.: o artigo de 2019 'The preponderance of nonsynonymous A-to-I RNA editing in coleoids is nonadaptive' via Europe PMC; sem fonte, diga só 'segundo o estudo que mapeou esses pontos')"
+   },
+   {
+    "id": "vida_marinha-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "machos vivem no tubo da fêmea, não dentro dela; O. priapus é exceção",
+    "correcao": "1) Gancho: 'Os machos, microscópicos, vivem dentro das fêmeas.' -> 'Os machos, em geral microscópicos, vivem no tubo da fêmea.' 2) Depois de '...e produzem esperma com as próprias reservas de vitelo.': 'A exceção conhecida é Osedax priapus, cujos machos vivem livres e são bem maiores.'"
+   },
+   {
+    "id": "vida_marinha-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "causalidade invertida: Boehm propõe que a mudança imune veio primeiro",
+    "correcao": "1) Gancho: 'Para essa união não ser rejeitada como um transplante, várias espécies perderam peças do sistema imune.' -> 'Isso só não vira rejeição de transplante porque várias dessas espécies perderam peças do sistema imune.' 2) No fim: 'Os autores suspeitam que as mudanças no sistema imune vieram primeiro e só depois foram aproveitadas para a fusão.' (trecho: 'unknown evolutionary forces first drive changes in the immune system, which are then exploited for the evolution of sexual parasitism')"
+   },
+   {
+    "id": "vida_marinha-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "caracol-de-pé-escamoso confere"
+   },
+   {
+    "id": "vida_marinha-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "enguias e Freud conferem"
+   },
+   {
+    "id": "vida_marinha-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "canto das jubartes confere"
+   },
+   {
+    "id": "vida_marinha-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "peixe-pérola confere"
+   },
+   {
+    "id": "vida_marinha-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Yoichi Yusa é homem: 'os pesquisadores', 'os autores'",
+    "correcao": "'as pesquisadoras suspeitam' -> 'os pesquisadores suspeitam'; 'e as autoras sugerem' -> 'e os autores sugerem'"
+   },
+   {
+    "id": "vida_marinha-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "lula-vampira confere"
+   },
+   {
+    "id": "vida_marinha-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "TMAO e zona hadal conferem"
+   },
+   {
+    "id": "vida_marinha-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "NOAA e Opah conferem"
+   },
+   {
+    "id": "vida_marinha-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o gancho junta 2004 e 2012 como se fosse a mesma lula; a isca também era uma lula",
+    "correcao": "1) Gancho: 'Depois, uma luz imitando uma água-viva a atraiu para a câmera.' -> 'Em 2012, uma luz imitando uma água-viva atraiu outra para ser filmada.' 2) 'Para atraí-la, usou uma luz que imitava uma água-viva Atolla em pânico, cujo pisca-pisca chamaria predadores maiores contra quem a ataca.' -> 'Para atraí-la, usou uma lula como isca e uma luz que imitava uma água-viva Atolla em pânico, cujo pisca-pisca chamaria predadores maiores contra quem a ataca.' 3) Opcional: reescrever a primeira frase, quase traduzida."
+   },
+   {
+    "id": "vida_marinha-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mirror test confere; consenso_parcial"
+   },
+   {
+    "id": "vida_marinha-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Torpedo e Electric ray conferem"
+   }
+  ],
+  "2": [
+   {
+    "id": "vida_marinha-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "custo como possibilidade; dúvida com Nat Commun 2019"
+   },
+   {
+    "id": "vida_marinha-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "machos no tubo; exceção O. priapus"
+   },
+   {
+    "id": "vida_marinha-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "causalidade corrigida; nome de Boehm e do instituto",
+    "correcao": "nomear Thomas Boehm; 'Imunobiologia e Epigenética'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "vida_marinha-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "os pesquisadores/os autores"
+   },
+   {
+    "id": "vida_marinha-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "2004 e 2012 separados; isca"
+   }
+  ]
+ }
+}

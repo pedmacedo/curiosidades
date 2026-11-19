@@ -1,0 +1,158 @@
+{
+ "lote": "2026-11-17-anatomia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "anatomia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere (quadrado/articular, 1Âº arco farÃ­ngeo, Reichert 1837, antes de 1859, audiÃ§Ã£o mais sensÃ­vel). Conecta evoluÃ§Ã£o e corpo."
+   },
+   {
+    "id": "anatomia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "NÃºmeros e Owen conferem, mas sÃ³ o nervo esquerdo contorna a aorta; o direito passa sob a subclÃ¡via.",
+    "correcao": "Gancho: 'O nervo esquerdo que comanda a laringe...'"
+   },
+   {
+    "id": "anatomia-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "NÃºmeros conferem, mas vÃªm de modelo de uma Ãºnica revisÃ£o; nutriÃ§Ã£o Ã© suspeita ('could lie'), nÃ£o aposta.",
+    "correcao": "confianca consenso_parcial; 'aposta na nutriÃ§Ã£o' â†’ 'suspeita da nutriÃ§Ã£o'."
+   },
+   {
+    "id": "anatomia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Flinders e Wikipedia; consenso_parcial adequado."
+   },
+   {
+    "id": "anatomia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Fonte diz que a interface ar/lÃ¡grima (nÃ£o a 'lisura') Ã© o principal componente da refraÃ§Ã£o; limÃ­trofe para almanaque, acrescentar transplante sem rejeiÃ§Ã£o.",
+    "correcao": "Reescrever a frase da refraÃ§Ã£o e acrescentar a baixa rejeiÃ§Ã£o em transplantes com trecho."
+   },
+   {
+    "id": "anatomia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; boa ponte com fÃ­sica nuclear."
+   },
+   {
+    "id": "anatomia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "NÃºmeros conferem, mas omite a revisÃ£o de 2017 (â‰¥29 surgimentos, â‰¤12 perdas); mito_desmentido forte para hipÃ³tese.",
+    "correcao": "tipo contraintuitivo no lugar de mito_desmentido; acrescentar revisÃ£o de 2017; 'aceita como plausÃ­vel' â†’ 'ganhou apoio'."
+   },
+   {
+    "id": "anatomia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "NÃºmeros conferem com KI (1% aos 20, 0,5% aos 75) e ScienceDaily (pico atÃ© 1963, DNA estÃ¡vel); 'colcha de retalhos' = 'patchwork'."
+   },
+   {
+    "id": "anatomia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Wikipedia ressalva ('some reports and textbooks', 'generally') e cita superalimentaÃ§Ã£o de adultos que aumentou o nÃºmero de adipÃ³citos da parte inferior; gancho e confianÃ§a absolutos demais.",
+    "correcao": "Gancho: 'tende a se definir'; explicaÃ§Ã£o: 'em geral tem cÃ©lulas maiores'; inserir a exceÃ§Ã£o da superalimentaÃ§Ã£o (Adipocyte, Cell turnover) com trecho; confianca consenso_parcial."
+   },
+   {
+    "id": "anatomia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Heetderks: 80% da populaÃ§Ã£o, nÃ£o todos; frase do desvio de septo generaliza (fonte: desvio fixo E obstruÃ§Ã£o intermitente).",
+    "correcao": "Gancho 'Na maioria das pessoas...'; reescrever a frase do desvio de septo como na fonte."
+   },
+   {
+    "id": "anatomia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Mapas originais de Blaschko nÃ£o cobriam cabeÃ§a, rosto e pescoÃ§o; 'corpo humano inteiro' estÃ¡ errado.",
+    "correcao": "Trocar 'esquema do corpo humano inteiro' por 'esquema do corpo humano' + cabeÃ§a, rosto e pescoÃ§o mapeados depois por outros dermatologistas."
+   },
+   {
+    "id": "anatomia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Novidade contestada por anatomistas (Iwanaga et al.: 'No convincing evidence...'); NKI nÃ£o diz 'nenhum livro descrevia'.",
+    "correcao": "Gancho com 'anunciaram' + contestaÃ§Ã£o; acrescentar a contestaÃ§Ã£o na explicaÃ§Ã£o com fonte e trecho literal."
+   },
+   {
+    "id": "anatomia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Wikipedia (Chin); texto nÃ£o declara resposta como certa."
+   },
+   {
+    "id": "anatomia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz que a hipÃ³tese 'has been questioned' (Caspar et al. 2021); explicaÃ§Ã£o omite; confianÃ§a deve ser hipotese.",
+    "correcao": "confianca hipotese; acrescentar o questionamento com o trecho 'The cooperative eye hypothesis has been questioned...'."
+   }
+  ],
+  "2": [
+   {
+    "id": "anatomia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CorreÃ§Ã£o aplicada (nervo esquerdo); nÃºmeros e Owen conferem."
+   },
+   {
+    "id": "anatomia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CorreÃ§Ã£o aplicada ('suspeita', consenso_parcial); nÃºmeros conferem com o Imperial."
+   },
+   {
+    "id": "anatomia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Frase da refraÃ§Ã£o corrigida; ajuste pontual aplicado sem nova verificaÃ§Ã£o: acrescentada a baixa rejeiÃ§Ã£o em transplantes, com trecho.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "anatomia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CorreÃ§Ã£o aplicada (contraintuitivo, revisÃ£o de 2017, 'ainda Ã© uma hipÃ³tese')."
+   },
+   {
+    "id": "anatomia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CorreÃ§Ã£o aplicada ('tende a', 'em geral', superalimentaÃ§Ã£o, consenso_parcial)."
+   },
+   {
+    "id": "anatomia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CorreÃ§Ã£o aplicada ('na maioria das pessoas', desvio de septo como na fonte)."
+   },
+   {
+    "id": "anatomia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CorreÃ§Ã£o aplicada (cabeÃ§a, rosto e pescoÃ§o mapeados depois)."
+   },
+   {
+    "id": "anatomia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "ContestaÃ§Ã£o incluÃ­da; ajuste pontual aplicado sem nova verificaÃ§Ã£o: 'segundo os pesquisadores, atÃ© entÃ£o sÃ³ se conheciam'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "anatomia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CorreÃ§Ã£o aplicada (hipotese, questionamento incluÃ­do)."
+   }
+  ]
+ }
+}

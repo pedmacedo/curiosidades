@@ -1,0 +1,621 @@
+LOTE = "2026-11-18-buracos_negros-01"
+AREA = "espaco"
+TEMA = "buracos_negros"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Michell e as "estrelas escuras" de 1783
+    {
+        "temas_secundarios": ["historia_astronomia", "revolucao_cientifica"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Em 1783, um clérigo inglês imaginou estrelas tão pesadas que nem a luz escaparia delas. E sugeriu como achá-las: pelo movimento de uma estrela visível girando em volta de algo que não se vê.",
+        "explicacao": (
+            "John Michell, clérigo e filósofo natural, expôs a ideia num artigo lido na Royal Society em 27 de "
+            "novembro de 1783. Ele seguia a teoria de Newton de que a luz é feita de partículas minúsculas. Nesse "
+            "caso, a gravidade de uma estrela frearia as partículas que saem dela, e uma estrela com atração "
+            "forte o bastante teria velocidade de escape maior que a da luz. Pelas contas dele, isso valeria para "
+            "um astro com a densidade do Sol e um diâmetro mais de 500 vezes maior. Esse corpo seria invisível, "
+            "mas, se outro astro luminoso girasse em torno dele, o movimento denunciaria sua presença. Poucos "
+            "anos depois, Pierre-Simon Laplace propôs essencialmente a mesma coisa, num livro de 1796. A ideia de "
+            "Michell causou pouca impressão na época; segundo a American Physical Society, ele morreu na "
+            "obscuridade e a sua \"estrela escura\" ficou esquecida até seus textos ressurgirem nos anos 1970. O "
+            "método que ele imaginou é o mesmo que revelou, em 2022, o Gaia BH1: uma estrela parecida com o Sol "
+            "que se move de um jeito que nenhuma explicação, a não ser um buraco negro, consegue justificar. A "
+            "cerca de 1.560 anos-luz, é hoje o sistema mais próximo em que os astrônomos confiam haver um buraco "
+            "negro."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("John_Michell",
+                "was an English natural philosopher and clergyman who provided pioneering insights [...] "
+                "In a paper for the Philosophical Transactions of the Royal Society of London, read on 27 November 1783, Michell was the first to propose the existence of celestial bodies similar to black holes. "
+                "Having accepted Newton's corpuscular theory of light, which posited that light consists of minuscule particles, he reasoned that such particles, when emanated by a star, would be slowed down by its gravitational pull [...] "
+                "This insight led in turn to the recognition that a star's gravitational pull might be so strong that the escape velocity would exceed the speed of light. "
+                "Michell calculated that this would be the case with a star more than 500 times the size of the Sun. "
+                "Since light would not be able to escape such a star, it would be invisible. [...] "
+                "If there should really exist in nature any bodies, whose density is not less than that of the sun, and whose diameters are more than 500 times the diameter of the sun, since their light could not arrive at us [...] "
+                "yet, if any other luminous bodies should happen to revolve about them we might still perhaps from the motions of these revolving bodies infer the existence of the central ones [...] "
+                "the French mathematician Pierre-Simon Laplace suggested essentially the same idea in his 1796 book [...] "
+                "the idea \"made little impression\" on his contemporaries. \"He died in quiet obscurity\", states the American Physical Society, \"and his notion of a 'dark star' was forgotten until his writings re-surfaced in the 1970s.\"",
+                nome="John Michell"),
+            wiki("Gaia_BH1",
+                "is a binary system consisting of a G-type main-sequence star and a stellar-mass black hole, located about 1,560 light-years (478 pc) away from the Solar System in the constellation of Ophiuchus. "
+                "As of 2026, it is the nearest known system that astronomers are reasonably confident contains a black hole [...] "
+                "The star is similar to the Sun [...] "
+                "Gaia BH1 was discovered in 2022 via astrometric observations with Gaia, and also observed via radial velocity. "
+                "The discovery team found no astrophysical scenario that could explain the observed motion of the G-type star, other than a black hole.",
+                nome="Gaia BH1"),
+        ],
+    },
+    # 2 o nome "buraco negro" e a prisão de Calcutá
+    {
+        "temas_secundarios": ["palavras_viajantes", "imperios_coloniais"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O nome \"buraco negro\" pode ter vindo de uma prisão: o físico Robert Dicke teria comparado esses objetos ao \"Buraco Negro de Calcutá\", cela famosa de onde quem entrava não saía vivo.",
+        "explicacao": (
+            "Muita gente credita o nome ao físico John Wheeler, e há um motivo. Segundo relatos, em dezembro de "
+            "1967, alguém na plateia de uma palestra dele sugeriu a expressão. Wheeler a adotou por ser curta e "
+            "ter \"valor publicitário\", e, como ele era uma das figuras de maior peso da área, o termo pegou "
+            "depressa. Só que ele já circulava. A escritora de ciência Marcia Bartusiak rastreia a expressão até "
+            "Robert H. Dicke, que no começo dos anos 1960 teria comparado o fenômeno ao Buraco Negro de Calcutá, "
+            "uma prisão que ficou notória porque as pessoas entravam e nunca saíam com vida. A comparação faz "
+            "sentido: um buraco negro é uma região do espaço-tempo da qual nenhum objeto nem sinal consegue "
+            "escapar. Em 1963, as revistas Life e Science News já usavam o termo impresso. Em 18 de janeiro de "
+            "1964, a jornalista científica Ann Ewing publicou o artigo \"'Black Holes' in Space\", sobre uma "
+            "reunião da Associação Americana para o Avanço da Ciência em Cleveland, Ohio. Wheeler, portanto, foi "
+            "quem tornou o nome famoso, não necessariamente quem o inventou."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Black_hole",
+            "In December 1967, someone in the audience reportedly suggested the phrase black hole at a lecture by John Wheeler; "
+            "Wheeler adopted the term for its brevity and \"advertising value\", and Wheeler's stature in the field ensured it quickly caught on, leading some to credit Wheeler with coining the phrase. "
+            "However, the term was used by others around that time. "
+            "Science writer Marcia Bartusiak traces the term black hole to physicist Robert H. Dicke, who in the early 1960s reportedly compared the phenomenon to the Black Hole of Calcutta, notorious as a prison where people entered but never left alive. "
+            "The term was used in print by Life and Science News magazines in 1963, and by science journalist Ann Ewing in her article \"'Black Holes' in Space\", dated 18 January 1964, which was a report on a meeting of the American Association for the Advancement of Science held in Cleveland, Ohio. [...] "
+            "A black hole is generally defined as a region of spacetime from which no information-carrying signals or objects can escape.",
+            nome="Black hole")],
+    },
+    # 3 Chandrasekhar no navio e a "bufonaria estelar" de Eddington
+    {
+        "temas_secundarios": ["estrelas", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "Num navio da Índia para a Inglaterra, em 1930, um recém-formado calculou que estrelas mortas têm um peso máximo. O renomado Arthur Eddington zombou dele em público e chamou a teoria de \"bufonaria estelar\".",
+        "explicacao": (
+            "Subrahmanyan Chandrasekhar tinha acabado de se formar em Madras e ia estudar em Cambridge com uma "
+            "bolsa. Durante a viagem de barco, sem saber que Edmund Stoner e Wilhelm Anderson investigavam algo "
+            "parecido, percebeu que, por efeitos da relatividade, uma anã branca não pode passar de certa massa. "
+            "Publicou o modelo em 1930. Hoje esse teto se chama limite de Chandrasekhar, cerca de 1,44 massa "
+            "solar: acima dele, o que resta da estrela colapsa numa estrela de nêutrons ou num buraco negro. "
+            "Eddington não aceitava um limite assim. Em 11 de janeiro de 1935, numa reunião da Royal Astronomical "
+            "Society, ele marcou uma palestra logo depois da de Chandrasekhar e criticou a teoria diretamente, "
+            "dizendo que lhe faltava sentido físico. O jovem saiu de lá deprimido. Segundo o próprio "
+            "Chandrasekhar, Eddington também fez piada da teoria numa assembleia em Paris, e em 1936, em Harvard, "
+            "a chamou de \"bufonaria estelar\". Niels Bohr e Léon Rosenfeld responderam que não conseguiam ver "
+            "sentido nos argumentos de Eddington. A história deu razão ao mais novo: o limite virou peça de apoio "
+            "à existência dos buracos negros, e Chandrasekhar ganhou o Nobel de Física de 1983. Mesmo assim, ele "
+            "continuou dizendo que admirava Eddington e o considerava um amigo."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Chandrasekhar–Eddington_dispute",
+                "During the dispute, Chandrasekhar was at the beginning of his career and Eddington was a renowned physicist of the time. [...] "
+                "openly criticizing and mocking Chandrasekhar's models. "
+                "Chandrasekhar's theories ended up being successful in astronomy; he received the Nobel Prize in Physics in 1983 for his stellar models. "
+                "Chandrasekhar's limit became a supporting piece of theoretical evidence for the existence of black holes. [...] "
+                "Subrahmanyan Chandrasekhar had recently graduated from Presidency College, Madras, India, and was accepted for a scholarship at University of Cambridge. "
+                "During his boat trip to England, without knowing of Stoner and Anderson's work, he theorized a more sophisticated stellar model based on Fowler's work, in which he also noticed that due to relativistic constraints a white dwarf could not surpass a certain mass. "
+                "He published his model in 1930. [...] "
+                "During the meeting, on 11 January, Chandrasekhar presented a full solution to his stellar equation. "
+                "Eddington followed up with a presentation on similar topic, titled \"Relativistic Degeneracy\", in which he directly criticized Chandrasekhar's theory, saying it lacked physical meaning. [...] "
+                "Chandrasekhar left the conference depressed. [...] "
+                "Chandrasekhar would later comment in an interview that Eddington made fun of his theory during the conference. [...] "
+                "Bohr and Rosenfeld responded that they were \"absolutely unable to see any meaning in Eddington's statements.\" [...] "
+                "The same year, during a meeting at Harvard University, Eddington described Chandrasekhar's theory as \"stellar buffoonery\". [...] "
+                "In 1936, Rudolf Peierls published a paper",
+                nome="Chandrasekhar–Eddington dispute"),
+            wiki("Subrahmanyan_Chandrasekhar",
+                "presented a full solution to his stellar equation at the Royal Astronomical Society meeting in 1935. "
+                "Eddington booked a talk right after Chandrasekhar, where he openly criticized Chandrasekhar's theory. [...] "
+                "Eddington died in 1944, and despite their disagreements, Chandrasekhar continued to state that he admired Eddington and considered him a friend. [...] "
+                "The limit gives the maximum mass of a white dwarf star, ~1.44 solar masses, or equivalently, the minimum mass that must be exceeded for a star to collapse into a neutron star or black hole (following a supernova). "
+                "The limit was first calculated by Chandrasekhar in 1930 during his maiden voyage from India to Cambridge, England for his graduate studies.",
+                nome="Subrahmanyan Chandrasekhar"),
+        ],
+    },
+    # 4 a aposta de Hawking contra Cygnus X-1
+    {
+        "temas_secundarios": ["historia_astronomia", "jogos_azar"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Stephen Hawking apostou que Cygnus X-1 não era um buraco negro, torcendo para perder. Era um \"seguro\": se ganhasse, o consolo seria uma revista; se perdesse, pagaria ao colega um ano de Penthouse.",
+        "explicacao": (
+            "Cygnus X-1 é uma fonte de raios X na constelação do Cisne, descoberta em 1964 num voo de foguete. "
+            "Foi a primeira fonte do tipo a ser amplamente aceita como buraco negro. Hawking explicou a lógica da "
+            "aposta com o físico Kip Thorne no livro \"Uma breve história do tempo\": ele tinha trabalhado muito "
+            "com buracos negros, e todo esse esforço seria desperdiçado se eles não existissem. Nesse caso, ao "
+            "menos ganharia quatro anos da revista Private Eye. Se o buraco negro existisse, Thorne levaria um ano "
+            "da Penthouse. Hawking contava que, quando apostaram, em 1975, estavam 80% certos de que Cygnus X-1 "
+            "era um buraco negro, e que em 1988 a certeza estava em uns 95%. O documento escrito, com a letra de "
+            "Thorne, traz porém assinaturas de testemunhas datadas de dezembro de 1974. Com o acúmulo de observações, "
+            "Hawking deu o braço a torcer em 1990. Segundo Thorne, Hawking entrou no escritório dele enquanto ele "
+            "estava na Rússia, achou a aposta emoldurada e assinou a derrota. Hawking escreveu que pagou a "
+            "assinatura da Penthouse, \"para indignação\" da esposa de Thorne."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Cygnus_X-1",
+                "Cygnus X-1 (abbreviated Cyg X-1) is a galactic X-ray source in the constellation Cygnus and was the first such source widely accepted to be a black hole. "
+                "It was discovered in 1964 during a rocket flight [...] "
+                "Cygnus X-1 was the subject of a friendly scientific wager between physicists Stephen Hawking and Kip Thorne in 1975, with Hawking—betting that it was not a black hole—hoping to lose. "
+                "Hawking conceded the bet in 1990 after observational data had strengthened the case that there was indeed a black hole in the system. [...] "
+                "In his own book Black Holes and Time Warps, Thorne reports that Hawking conceded the bet by breaking into Thorne's office while he was in Russia, finding the framed bet, and signing it. [...] "
+                "When we made the bet in 1975, we were 80% certain that Cygnus X-1 was a black hole. By now [1988], I would say that we are about 95% certain",
+                nome="Cygnus X-1"),
+            wiki("Thorne–Hawking–Preskill_bet",
+                "This was a form of insurance policy for me. I have done a lot of work on black holes, and it would all be wasted if it turned out that black holes do not exist. "
+                "But in that case, I would have the consolation of winning my bet, which would win me four years of the magazine Private Eye. "
+                "If black holes do exist, Kip will get one year of Penthouse. "
+                "When we made the bet in 1975, we were 80% certain that Cygnus X-1 was a black hole. "
+                "By now, I would say that we are about 95% certain, but the bet has yet to be settled. [...] "
+                "I paid the specified penalty, which was a one year subscription to Penthouse, to the outrage of Kip's liberated wife.\" "
+                "While Hawking described the bet as having been made in 1975, the written bet itself—in Thorne's handwriting, with his and Hawking's signatures—bears witness signatures under the legend \"Witnessed this tenth day of December 1974\".",
+                nome="Thorne–Hawking–Preskill bet"),
+        ],
+    },
+    # 5 o paradoxo da informação e a enciclopédia de beisebol
+    {
+        "temas_secundarios": ["mecanica_quantica", "termodinamica"],
+        "tipos_espanto": ["misterio_aberto", "historia_humana"],
+        "gancho": "Se um buraco negro evapora, para onde vai a informação de tudo o que caiu nele? A pergunta ainda não tem resposta completa e rendeu uma aposta que Hawking pagou com uma enciclopédia de beisebol.",
+        "explicacao": (
+            "Nos anos 1970, Stephen Hawking calculou que um buraco negro isolado emite radiação, e que a forma "
+            "dessa radiação dependeria só da massa, da carga elétrica e da rotação dele, não do que o formou. Se "
+            "o buraco negro evaporar por completo, estados iniciais muito diferentes terminariam iguais, e os "
+            "detalhes do que caiu ali se perderiam para sempre. Isso fere um princípio central da física "
+            "quântica, a unitariedade: conhecendo o estado de um sistema num instante, dá para determinar o seu "
+            "passado e o seu futuro. Em 1997, Hawking e Kip Thorne apostaram com John Preskill que a informação "
+            "se perdia mesmo. O prêmio era uma enciclopédia à escolha do vencedor, \"da qual a informação pode ser "
+            "recuperada à vontade\". Em 2004, Hawking mudou de ideia, cedeu e deu a Preskill uma enciclopédia de "
+            "beisebol. Mais tarde brincou que talvez devesse ter entregado só as cinzas. Thorne não se convenceu "
+            "e se recusou a pagar a sua parte. Hoje a maioria dos físicos acredita que a informação é preservada, "
+            "mas eles divergem sobre como exatamente o cálculo original de Hawking deve ser corrigido, e o "
+            "paradoxo continua sendo um campo ativo de pesquisa em gravitação quântica."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Black_hole_information_paradox",
+                "The black hole information paradox is an unsolved problem in physics and a paradox that appears when the predictions of quantum mechanics and general relativity are combined. [...] "
+                "In the 1970s, Stephen Hawking applied the semiclassical approach of quantum field theory in curved spacetime to such systems and found that an isolated black hole would emit a form of radiation [...] "
+                "He also argued that the detailed form of the radiation would be independent of the initial state of the black hole, and depend only on its mass, electric charge and angular momentum. [...] "
+                "this suggests that many initial physical states could evolve into the same final state. "
+                "Therefore, information about the details of the initial state would be permanently lost. "
+                "However, this loss violates a core precept of quantum physics known as unitarity. [...] "
+                "This means the wave function at any instant of time can be used to determine the wave function either in the past or the future. [...] "
+                "It is now generally believed that information is preserved in black-hole evaporation. [...] "
+                "But views differ as to precisely how Hawking's original semiclassical calculation should be corrected. [...] "
+                "The information paradox remains an active field of research in quantum gravity.",
+                nome="Black hole information paradox"),
+            wiki("Thorne–Hawking–Preskill_bet",
+                "The Thorne–Hawking–Preskill bet was a public bet on the outcome of the black hole information paradox made in 1997 by physics theorists Kip Thorne and Stephen Hawking on the one side, and John Preskill on the other [...] "
+                "The winning side of the bet would receive an encyclopedia of their choice, \"from which information can be retrieved at will\". "
+                "In 2004, Hawking announced that he was conceding the bet, and that he now believed that black hole horizons should fluctuate and leak information, in doing so providing Preskill with a copy of Total Baseball, The Ultimate Baseball Encyclopedia. "
+                "Comparing the useless information obtainable from a black hole to \"burning an encyclopedia\", Hawking later joked, \"I gave John an encyclopedia of baseball, but maybe I should just have given him the ashes.\" "
+                "Thorne, however, remained unconvinced of Hawking's proof and declined to contribute to the award.",
+                nome="Thorne–Hawking–Preskill bet"),
+        ],
+    },
+    # 6 S2, a estrela que roça o buraco negro da Via Láctea
+    {
+        "temas_secundarios": ["galaxias", "relatividade"],
+        "tipos_espanto": ["escala_absurda", "engenhosidade"],
+        "gancho": "No centro da Via Láctea, uma estrela passa a quase 3% da velocidade da luz em volta de algo invisível com 4 milhões de vezes a massa do Sol. Medir órbitas assim rendeu o Nobel de Física de 2020.",
+        "explicacao": (
+            "A estrela se chama S2 e completa uma volta a cada 16 anos, numa órbita bem alongada. Em maio de "
+            "2018, no ponto mais próximo, ficou a menos de 20 bilhões de km do objeto central, cerca de 120 vezes "
+            "a distância da Terra ao Sol, a mais de 25 milhões de km/h. Esse objeto, Sagitário A*, está a 26 mil "
+            "anos-luz, escondido atrás de nuvens grossas de poeira. Desde o começo dos anos 1990, os grupos de "
+            "Reinhard Genzel e de Andrea Ghez mapeiam as estrelas mais próximas do centro da galáxia com os "
+            "maiores telescópios do mundo, e desenvolveram técnicas para enxergar através da poeira e corrigir as "
+            "distorções causadas pela atmosfera da Terra. As medições dos dois grupos concordam: cerca de 4 "
+            "milhões de massas solares concentradas numa região não maior que o Sistema Solar. Segundo o comitê "
+            "do Nobel, um buraco negro supermassivo é a única explicação conhecida hoje. Na passagem de 2018, a "
+            "equipe de Genzel ainda viu a luz de S2 esticada para comprimentos de onda maiores pela gravidade do "
+            "buraco negro, exatamente como prevê a relatividade geral de Einstein. Em 2020, Genzel e Ghez "
+            "dividiram metade do Nobel de Física; a outra metade foi para Roger Penrose, que mostrou que a "
+            "relatividade geral leva à formação de buracos negros."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.eso.org/public/news/eso1825/",
+             "titulo": "First Successful Test of Einstein's General Relativity Near Supermassive Black Hole (ESO)",
+             "idioma": "en",
+             "trecho": "Obscured by thick clouds of absorbing dust, the closest supermassive black hole to the Earth lies 26 000 light-years away at the centre of the Milky Way. "
+                       "This gravitational monster, which has a mass four million times that of the Sun, is surrounded by a small group of stars orbiting around it at high speed. [...] "
+                       "follow one of these stars, called S2, as it passed very close to the black hole during May 2018. "
+                       "At the closest point this star was at a distance of less than 20 billion kilometres from the black hole and moving at a speed in excess of 25 million kilometres per hour — almost three percent of the speed of light [...] "
+                       "Light from the star is stretched to longer wavelengths by the very strong gravitational field of the black hole. "
+                       "And the change in the wavelength of light from S2 agrees precisely with that predicted by Einstein's theory of general relativity. [...] "
+                       "S2 orbits the black hole every 16 years in a highly eccentric orbit that brings it within twenty billion kilometres — 120 times the distance from Earth to the Sun"},
+            {"url": "https://www.nobelprize.org/prizes/physics/2020/press-release/",
+             "titulo": "Press release: The Nobel Prize in Physics 2020 (NobelPrize.org)",
+             "idioma": "en",
+             "trecho": "The Royal Swedish Academy of Sciences has decided to award the Nobel Prize in Physics 2020 [...] "
+                       "with one half to Roger Penrose [...] "
+                       "Roger Penrose showed that the general theory of relativity leads to the formation of black holes. "
+                       "Reinhard Genzel and Andrea Ghez discovered that an invisible and extremely heavy object governs the orbits of stars at the centre of our galaxy. "
+                       "A supermassive black hole is the only currently known explanation. [...] "
+                       "Reinhard Genzel and Andrea Ghez each lead a group of astronomers that, since the early 1990s, has focused on a region called Sagittarius A* at the centre of our galaxy. [...] "
+                       "The measurements of these two groups agree, with both finding an extremely heavy, invisible object that pulls on the jumble of stars, causing them to rush around at dizzying speeds. "
+                       "Around four million solar masses are packed together in a region no larger than our solar system. "
+                       "Using the world's largest telescopes, Genzel and Ghez developed methods to see through the huge clouds of interstellar gas and dust to the centre of the Milky Way. "
+                       "Stretching the limits of technology, they refined new techniques to compensate for distortions caused by the Earth's atmosphere"},
+        ],
+    },
+    # 7 o telescópio do tamanho da Terra e os discos rígidos de avião
+    {
+        "temas_secundarios": ["telecomunicacoes", "historia_computacao"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Para fotografar um buraco negro, astrônomos juntaram radiotelescópios do mundo todo num telescópio virtual do tamanho da Terra. Os dados não foram pela internet: viajaram de avião, em discos rígidos.",
+        "explicacao": (
+            "O projeto se chama Event Horizon Telescope, e a técnica, interferometria de linha de base muito "
+            "longa. Antenas separadas por centenas ou milhares de quilômetros observam o mesmo alvo, e cada uma "
+            "grava os sinais em discos rígidos junto com as marcações de um relógio atômico extremamente preciso. "
+            "Depois, os discos seguem em aviões de carga comerciais até dois centros, o Observatório Haystack do "
+            "MIT e o Instituto Max Planck de Radioastronomia, onde um sistema com cerca de 800 processadores "
+            "sincroniza e combina tudo. O conjunto funciona como um único telescópio com abertura efetiva do "
+            "diâmetro do planeta, o que dá nitidez suficiente para ver estruturas do tamanho do horizonte de um "
+            "buraco negro supermassivo. A primeira imagem, do buraco negro no centro da galáxia Messier 87, saiu "
+            "em 10 de abril de 2019. A do buraco negro da Via Láctea, Sagitário A*, exigiu mais paciência: os "
+            "dados tinham sido colhidos em abril de 2017, mas não há voos de ida e volta ao Polo Sul durante o "
+            "inverno austral, de abril a outubro. Os discos do telescópio de lá só chegaram em dezembro de 2017, "
+            "e a imagem foi divulgada em 12 de maio de 2022."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Event_Horizon_Telescope",
+            "The EHT project combines data from several very-long-baseline interferometry (VLBI) stations around Earth, which form a combined array with an angular resolution sufficient to observe objects the size of a supermassive black hole's event horizon. [...] "
+            "The first image of a black hole, at the center of galaxy Messier 87, was published by the EHT Collaboration on April 10, 2019 [...] "
+            "On 12 May 2022, astronomers unveiled the first image of the supermassive black hole at the center of the Milky Way, Sagittarius A*. [...] "
+            "many independent radio antennas separated by hundreds or thousands of kilometres can act as a phased array, a virtual telescope which can be pointed electronically, with an effective aperture which is the diameter of the entire planet [...] "
+            "The first image of the Milky Way's supermassive black hole, Sagittarius A*, was expected to be produced from data taken in April 2017, but because there are no flights in or out of the South Pole during austral winter (April to October), the full data set could not be processed until December 2017, when the shipment of data from the South Pole Telescope arrived. "
+            "Data collected on hard drives are transported by commercial freight airplanes (a so-called sneakernet) from the various telescopes to the MIT Haystack Observatory and the Max Planck Institute for Radio Astronomy, where the data are cross-correlated and analyzed on a grid computer made from about 800 CPUs [...] "
+            "Each antenna, spread out over vast distances, has an extremely precise atomic clock. "
+            "Analogue signals collected by the antenna are converted to digital signals and stored on hard drives together with the time signals provided by the atomic clock. "
+            "The hard drives are then shipped to a central location to be synchronized.",
+            nome="Event Horizon Telescope")],
+    },
+    # 8 buracos negros gigantes são "suaves"
+    {
+        "temas_secundarios": ["galaxias", "relatividade"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Quanto maior o buraco negro, mais \"gentil\" ele é. A densidade média de um supermassivo pode ser menor que a da água, e um astronauta poderia cruzar a borda de um deles sem sentir nada de especial.",
+        "explicacao": (
+            "O raio do horizonte de eventos, a fronteira de onde nada volta, cresce na mesma proporção que a "
+            "massa. Já o volume cresce com o cubo do raio. Por isso, a densidade média de um buraco negro, a "
+            "massa dividida pelo volume dentro do horizonte, cai com o quadrado da massa, e num supermassivo pode "
+            "ficar abaixo da densidade da água. Um buraco negro sem rotação de 1 bilhão de massas solares teria um "
+            "horizonte com raio de cerca de 19 unidades astronômicas, comparável à órbita de Urano. Algo parecido "
+            "acontece com as forças de maré, a diferença de gravidade entre os pés e a cabeça que estica quem "
+            "cai, efeito apelidado de \"espaguetificação\". Num buraco negro estelar, a curvatura no horizonte é "
+            "tão grande que um astronauta seria espaguetificado antes de chegar lá. Num de 10 milhões de massas "
+            "solares, a força de maré no horizonte seria mais ou menos a que uma pessoa sente na superfície da "
+            "Terra, e o ponto em que ela mata fica do lado de dentro. Assim, o astronauta poderia atravessar o "
+            "horizonte sem notar forças de maré significativas. Depois disso, porém, a queda até o centro se "
+            "torna inevitável."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("Supermassive_black_hole",
+                "First, the tidal forces near the event horizon are significantly weaker for supermassive black holes. "
+                "The tidal force on a body at a black hole's event horizon is inversely proportional to the square of the black hole's mass: "
+                "a person at the event horizon of a 10 million M☉ black hole experiences about the same tidal force between their head and feet as a person on the surface of the Earth. [...] "
+                "It is somewhat counterintuitive that the density of an SMBH (defined as the mass of the black hole divided by the volume within its Schwarzschild radius) can be less than the density of water. "
+                "This is because the Schwarzschild radius (rs) is directly proportional to its mass. "
+                "Since the volume of a spherical object (such as the event horizon of a non-rotating black hole) is directly proportional to the cube of the radius, the density of a black hole is inversely proportional to the square of the mass, and thus higher mass black holes have a lower average density. "
+                "The Schwarzschild radius of the event horizon of a nonrotating and uncharged supermassive black hole of around 1 billion M☉ is comparable to the semi-major axis of the orbit of Uranus, or about 19 AU.",
+                nome="Supermassive black hole"),
+            wiki("Spaghettification",
+                "In astrophysics, spaghettification, or noodle effect is the vertical stretching and horizontal compression of objects into long thin shapes in a very strong, non-homogeneous gravitational field. [...] "
+                "If a person were to fall into a black hole feet first, the gravity at their feet would be much stronger than at their head, causing them to be vertically stretched. [...] "
+                "For a supermassive black hole, such as those found at a galaxy's center, this point lies within the event horizon. "
+                "As a result, an astronaut may cross the event horizon without noticing any significant tidal forces. "
+                "Once inside the event horizon, however, falling toward the center becomes inevitable. "
+                "Stellar black holes have much higher spacetime curvature at their event horizon, so the tidal forces would cause the astronaut to undergo spaghettification before the event horizon.",
+                nome="Spaghettification"),
+        ],
+    },
+    # 9 radiação Hawking: buracos negros estelares são mais frios que o espaço
+    {
+        "temas_secundarios": ["termodinamica", "mecanica_quantica", "cosmologia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Pela teoria de Hawking, buracos negros não são totalmente negros: emitem um brilho fraquíssimo e evaporam. Mas os de origem estelar são mais frios que o próprio espaço e, por isso, hoje não conseguem evaporar.",
+        "explicacao": (
+            "Num artigo de 1974, Stephen Hawking mostrou que, em teoria, um buraco negro irradia partículas como "
+            "um corpo aquecido, e com isso perde energia e massa. A temperatura dessa radiação é inversamente "
+            "proporcional à massa: quanto maior o buraco negro, mais frio ele é. Para o menor buraco negro "
+            "estelar previsto, com cerca de 3 massas solares, ela ficaria em torno de 10⁻⁷ kelvin, um décimo de "
+            "milionésimo de grau acima do zero absoluto. Só que todo o universo é banhado pela radiação cósmica "
+            "de fundo, a 2,7 kelvin, e nenhum buraco negro estelar consegue evaporar mais frio que o ambiente. "
+            "Mesmo sem esse obstáculo, o processo seria lentíssimo: um buraco negro de uma massa solar levaria "
+            "mais de 10⁶⁷ anos para sumir, muito mais que a idade atual do universo, de 1,4 × 10¹⁰ anos. Há "
+            "ainda uma inversão curiosa: ao contrário da maioria dos objetos, um buraco negro esquenta à medida "
+            "que perde massa, e esse aquecimento acelera exponencialmente. A radiação de Hawking nunca foi "
+            "observada. A previsão é que ela seja extremamente fraca, muitas ordens de grandeza abaixo do que os "
+            "melhores telescópios atuais conseguem detectar."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Hawking_radiation",
+            "Hawking radiation is predicted to be extremely faint and is many orders of magnitude below the current best telescopes' detecting ability. "
+            "Hawking radiation would reduce the mass and rotational energy of black holes and consequently cause black hole evaporation. [...] "
+            "The radiation temperature, called Hawking temperature, is inversely proportional to the black hole's mass [...] "
+            "In his 1974 paper Hawking showed that in theory, a black hole radiates particles as if it were a blackbody. "
+            "Particles escaping effectively drain energy from the black hole. [...] "
+            "takes more than 1067 years to evaporate—much longer than the current age of the universe at 1.4×1010 years. [...] "
+            "Larger mass black holes have lower Hawking radiation temperatures. "
+            "For the smallest predicted stellar black hole, about 3 solar masses, this temperature is 10−7 K. "
+            "Since the universe contains the cosmic microwave background radiation at 2.7 K, no stellar black holes can evaporate: they are colder than outer space. [...] "
+            "Unlike most objects, a black hole's temperature increases as it radiates away mass. "
+            "The rate of temperature increase is exponential",
+            nome="Hawking radiation")],
+    },
+    # 10 estrela de nêutrons: a Terra numa bola de 305 m e a luz que mostra o lado de trás
+    {
+        "temas_secundarios": ["estrelas", "relatividade", "estados_materia"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Na densidade de uma estrela de nêutrons, a Terra inteira caberia numa bola de 305 metros. E a gravidade é tanta que entorta a luz da própria estrela: dá para ver parte do lado de trás dela.",
+        "explicacao": (
+            "Uma estrela de nêutrons é o núcleo que sobra quando uma estrela várias vezes mais massiva que o Sol "
+            "esgota o combustível e explode como supernova. Uma típica tem cerca de 1,4 massa solar num raio de "
+            "uns 12 km. A matéria fica tão comprimida que a massa da Terra, nessa densidade, caberia numa esfera "
+            "de 305 m de diâmetro, mais ou menos o tamanho do radiotelescópio de Arecibo. Na superfície, a "
+            "gravidade é cerca de 200 bilhões de vezes a da Terra, e a velocidade de escape passa da metade da "
+            "velocidade da luz. Esse campo age como uma lente gravitacional: curva a radiação que a estrela "
+            "emite, e partes do lado de trás, que normalmente ficariam escondidas, se tornam visíveis. Se a "
+            "estrela fosse compacta o suficiente, a luz poderia até ficar presa em órbita, e a superfície "
+            "inteira seria visível de um único ponto. A gravidade também deixa a crosta, extremamente dura, muito "
+            "lisa. Um estudo de 2020 sugeriu que as \"montanhas\" de uma estrela de nêutrons talvez tenham só "
+            "frações de milímetro de altura, centenas de vezes menos do que se previa."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Neutron_star",
+                "One measure of such immense gravity is the fact that neutron stars have an escape velocity of over half the speed of light. [...] "
+                "The entire mass of the Earth at neutron star density would fit into a sphere 305 m in diameter, about the size of the Arecibo Telescope. [...] "
+                "This crust is extremely hard and very smooth (with maximum surface irregularities on the order of millimeters or less), due to the extreme gravitational field. [...] "
+                "The gravitational field at a neutron star's surface is about 2×1011 times stronger than on Earth [...] "
+                "Such a strong gravitational field acts as a gravitational lens and bends the radiation emitted by the neutron star such that parts of the normally invisible rear surface become visible. "
+                "If the radius of the neutron star is 3GM/c2 or less, then the photons may be trapped in an orbit, thus making the whole surface of that neutron star visible from a single vantage point [...] "
+                "A 2020 study by University of Southampton PhD student Fabian Gittins suggested that surface irregularities (\"mountains\") may only be fractions of a millimeter tall (about 0.000003% of the neutron star's diameter), hundreds of times smaller than previously predicted",
+                nome="Neutron star"),
+            {"url": "https://www.nasa.gov/vision/universe/watchtheskies/swift_nsu_0205.html",
+             "titulo": "Cosmic Explosion Among the Brightest in Recorded History (NASA)",
+             "idioma": "en",
+             "trecho": "A neutron star is the core remains of a star once several times more massive than our Sun. "
+                       "When such stars deplete their nuclear fuel, they explode -- an event called a supernova."},
+            wiki("Nuclear_pasta",
+                "For a typical neutron star of 1.4 solar masses (M☉) and 12 km radius",
+                nome="Nuclear pasta"),
+        ],
+    },
+    # 11 a pasta nuclear: nhoque, espaguete e lasanha
+    {
+        "temas_secundarios": ["estados_materia", "fisica_particulas", "historia_pratos"],
+        "tipos_espanto": ["misterio_aberto", "contraintuitivo"],
+        "gancho": "Na crosta das estrelas de nêutrons pode existir a \"pasta nuclear\", com fases apelidadas de nhoque, espaguete e lasanha. Se ela existir, simulações sugerem que seria o material mais forte do universo.",
+        "explicacao": (
+            "Entre a superfície e o miolo de uma estrela de nêutrons, numa densidade de cerca de 10¹⁴ gramas por "
+            "centímetro cúbico, a atração nuclear e a repulsão elétrica entre os prótons têm forças comparáveis. "
+            "A disputa entre elas organizaria nêutrons e prótons em estruturas complexas, cuja geometria lembra "
+            "tipos de massa. No alto dessa região, a pressão juntaria os núcleos em aglomerados quase esféricos, "
+            "a fase nhoque. Mais fundo, eles seriam esmagados em bastões longos, a fase espaguete, que depois se "
+            "fundiriam em folhas, a fase lasanha. Seguem fases com buracos, apelidadas de antiespaguete e queijo "
+            "suíço, até os núcleos desaparecerem na fronteira com o interior líquido de nêutrons. Numa estrela de "
+            "nêutrons típica, essa camada pode ter cerca de 100 m de espessura. Em 2018, M. E. Caplan e colegas "
+            "deformaram amostras de pasta nuclear em grandes simulações de dinâmica molecular e concluíram que "
+            "ela pode ser o material mais resistente conhecido. Tudo isso, porém, é teoria: a pasta nuclear nunca "
+            "foi observada numa estrela de nêutrons."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "hipotese",
+        "fontes": [
+            wiki("Nuclear_pasta",
+                "nuclear pasta is a theoretical type of degenerate matter that is postulated to exist within the crusts of neutron stars. "
+                "If it exists, nuclear pasta would be the strongest material in the universe. "
+                "Between the surface of a neutron star and the quark–gluon plasma at the core, at matter densities of 1014 g/cm3, nuclear attraction and Coulomb repulsion forces are of comparable magnitude. "
+                "The competition between the forces leads to the formation of a variety of complex structures assembled from neutrons and protons. "
+                "Astrophysicists call these types of structures nuclear pasta because the geometry of the structures resembles various types of pasta. [...] "
+                "While nuclear pasta has not been observed in a neutron star, its phases are theorized to exist in the inner crust of neutron stars [...] "
+                "Towards the top of this transition region, the pressure is great enough that conventional nuclei will be condensed into much more massive semi-spherical collections. [...] "
+                "This semispherical phase is known as the gnocchi phase. [...] "
+                "they are crushed into long rods, which, depending on their length, can contain many thousands of nucleons. "
+                "These rods are known as the spaghetti phase. "
+                "Further compression causes the spaghetti phase rods to fuse and form sheets of nuclear matter called the lasagna phase. [...] "
+                "Progressing deeper into the inner crust, the holes in the nuclear pasta change from being cylindrical, called by some the bucatini phase or antispaghetti phase, into scattered spherical holes, which can be called the Swiss cheese phase. "
+                "The nuclei disappear at the crust–core interface, transitioning into the liquid neutron core of the star. [...] "
+                "the nuclear pasta layer in the crust can be about 100 m thick",
+                nome="Nuclear pasta"),
+            {"url": "https://arxiv.org/abs/1807.02557",
+             "titulo": "The Elasticity of Nuclear Pasta (Caplan, Schneider e Horowitz, Phys. Rev. Lett., 2018)",
+             "idioma": "en",
+             "trecho": "Submitted on 6 Jul 2018 [...] "
+                       "We present large scale classical molecular dynamics simulations where we deform nuclear pasta. [...] "
+                       "Our results show that nuclear pasta may be the strongest known material"},
+        ],
+    },
+    # 12 o magnetar que mexeu na atmosfera da Terra em 2004
+    {
+        "temas_secundarios": ["eletromagnetismo", "atmosfera"],
+        "tipos_espanto": ["escala_absurda"],
+        "gancho": "Em 2004, o clarão de uma estrela do outro lado da galáxia foi tão forte que ricocheteou na Lua e iluminou a alta atmosfera da Terra. Em pouco mais de um décimo de segundo, soltou mais energia que o Sol em 150 mil anos.",
+        "explicacao": (
+            "O clarão veio de SGR 1806-20, um magnetar, tipo de estrela de nêutrons com campo magnético "
+            "colossal. Satélites e radiotelescópios o registraram em 27 de dezembro de 2004. Foi um \"clarão "
+            "gigante\" na superfície da estrela, ligado a um terremoto estelar, e o evento mais brilhante já visto "
+            "vindo de fora do Sistema Solar até então. O brilho aparente superou o da Lua cheia, quase todo em "
+            "raios gama, invisíveis aos nossos olhos. Esses raios gama atingiram a ionosfera, aumentaram a "
+            "ionização e a expandiram por um breve período. Segundo um dos pesquisadores, se algo assim tivesse "
+            "acontecido a menos de 10 anos-luz, teria danificado seriamente a nossa atmosfera. O campo magnético "
+            "de um magnetar chega a cerca de mil trilhões de gauss, contra uns 0,5 gauss na Terra. Para dar uma "
+            "ideia, a NASA diz que ele apagaria as informações de um cartão de crédito a meio caminho da Lua. A "
+            "1.000 km de distância, seria letal: distorceria as nuvens de elétrons dos átomos do corpo, e a "
+            "química que sustenta a vida se tornaria impossível."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.nasa.gov/vision/universe/watchtheskies/swift_nsu_0205.html",
+             "titulo": "Cosmic Explosion Among the Brightest in Recorded History (NASA)",
+             "idioma": "en",
+             "trecho": "Scientists have detected a flash of light from across the Galaxy so powerful that it bounced off the Moon and lit up the Earth's upper atmosphere. "
+                       "The flash was brighter than anything ever detected from beyond our Solar System and lasted over a tenth of a second. "
+                       "NASA and European satellites and many radio telescopes detected the flash and its aftermath on December 27, 2004. [...] "
+                       "The scientists said the light came from a \"giant flare\" on the surface of an exotic neutron star, called a magnetar. "
+                       "The apparent magnitude was brighter than a full moon and all historical star explosions. "
+                       "The light was brightest in the gamma-ray energy range, far more energetic than visible light or X-rays and invisible to our eyes. [...] "
+                       "The magnetic field around a magnetar is about 1,000 trillion gauss, strong enough to strip information from a credit card at a distance halfway to the moon. "
+                       "(Ordinary neutron stars measure a mere trillion gauss; the Earth's magnetic field is about 0.5 gauss.) [...] "
+                       "The total energy produced was more than the Sun emits in 150,000 years. [...] "
+                       "\"Had this happened within 10 light years of us, it would have severely damaged our atmosphere."},
+            wiki("SGR_1806−20",
+                "SGR 1806−20 is a magnetar, a type of neutron star with a very powerful magnetic field [...] "
+                "on the far side of the Milky Way in the constellation of Sagittarius. [...] "
+                "years after a starquake occurred on the surface of SGR 1806-20, the radiation from the resultant explosion reached Earth on December 27, 2004 (GRB 041227). [...] "
+                "It was the brightest event known to have been sighted on this planet from an origin outside the Solar System until GRB 080319B. [...] "
+                "The gamma rays struck Earth's ionosphere and created more ionization, which briefly expanded the ionosphere.",
+                nome="SGR 1806−20"),
+            wiki("Magnetar",
+                "The magnetic field of a magnetar would be lethal even at a distance of 1,000 km due to the strong magnetic field distorting the electron clouds of the subject's constituent atoms, rendering the chemistry of sustaining life impossible.",
+                nome="Magnetar"),
+        ],
+    },
+    # 13 os primeiros exoplanetas giravam em volta de um pulsar
+    {
+        "temas_secundarios": ["exoplanetas", "historia_astronomia", "mitologia"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Os primeiros planetas confirmados fora do Sistema Solar não giram em torno de uma estrela como o Sol, mas de um pulsar: uma estrela de nêutrons que dá cerca de 160 voltas por segundo.",
+        "explicacao": (
+            "O astrônomo polonês Aleksander Wolszczan descobriu o pulsar PSR B1257+12 em 9 de fevereiro de 1990, "
+            "com o radiotelescópio de Arecibo. Ele percebeu anomalias no período dos pulsos e foi investigar a "
+            "causa. Em 1992, publicou com Dale Frail o artigo que ficou famoso como a primeira descoberta "
+            "confirmada de planetas fora do Sistema Solar: dois deles, e um terceiro encontrado em 1994. O menor "
+            "tem pouco menos que o dobro da massa da Lua. O pulsar fica a 2.300 anos-luz, tem cerca de 1,4 massa "
+            "solar espremida num raio de uns 10 km e gira 160,8 vezes por segundo. Mundos assim recebem pouca luz "
+            "visível, mas muita radiação ionizante e um vento estelar de alta energia, o que os torna ambientes "
+            "hostis à vida como a conhecemos. A descoberta estimulou a procura por planetas em volta de outros "
+            "pulsares, mas eles se mostraram raros: só um punhado foi confirmado. Em 2015, numa escolha com "
+            "votação pública da União Astronômica Internacional, o pulsar ganhou o nome Lich, um morto-vivo da "
+            "ficção. Dois planetas viraram Draugr, morto-vivo da mitologia nórdica, e Poltergeist, \"fantasma "
+            "barulhento\" em alemão. O terceiro, Phobetor, é um personagem de Ovídio que aparece nos sonhos em "
+            "forma de fera."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("PSR_B1257+12",
+                "is a millisecond pulsar, 2,300 light-years (710 parsecs) from the Sun, in the constellation Virgo, rotating at 160.8 times per second. "
+                "It is also named Lich, after a powerful, fictional undead creature. [...] "
+                "They were both the first extrasolar planets to be discovered and the first pulsar planets to be discovered—B and C in 1992 and A in 1994. "
+                "A is the lowest-mass planet yet discovered by any observational technique, having somewhat less than twice the mass of Earth's moon. [...] "
+                "The process involved public nomination and voting for the new names. "
+                "In December 2015, the IAU announced the winning names [...] "
+                "Draugr refers to undead creatures in Norse mythology. "
+                "Poltergeist is a name for supernatural beings that create physical disturbances, from the German for \"noisy ghost\". "
+                "Phobetor is, in Ovid's Metamorphoses, one of the thousand sons of Somnus (Sleep) who appears in dreams in the form of beasts. [...] "
+                "PSR B1257+12 was discovered by the Polish astronomer Aleksander Wolszczan on 9 February 1990 using the Arecibo radio telescope. "
+                "It is a millisecond pulsar, a kind of neutron star [...] "
+                "and was found to have anomalies in the pulsation period, which led to investigations as to the cause of the irregular pulses. "
+                "In 1992, Wolszczan and Dale Frail published a famous paper on the first confirmed discovery of planets outside the Solar System. [...] "
+                "The pulsar is estimated to have a mass of 1.4 M☉, which is typical for most neutron stars and pulsars. "
+                "The radius is estimated to be around 10 kilometres [...] "
+                "The discovery stimulated a search for planets orbiting other pulsars, but it turned out such planets are rare; only a handful of other pulsar planets have been confirmed.",
+                nome="PSR B1257+12"),
+            wiki("Neutron_star",
+                "Pulsar planets receive little visible light, but massive amounts of ionizing radiation and high-energy stellar wind, which makes them rather hostile environments to life as presently understood.",
+                nome="Neutron star"),
+        ],
+    },
+    # 14 o si bemol do buraco negro de Perseu
+    {
+        "temas_secundarios": ["acustica", "musica_ciencia", "galaxias"],
+        "tipos_espanto": ["escala_absurda", "conexao_inesperada"],
+        "gancho": "Um buraco negro no aglomerado de galáxias de Perseu produz ondas sonoras de verdade: um si bemol 57 oitavas abaixo do dó central do piano. Cada oscilação leva 9,6 milhões de anos.",
+        "explicacao": (
+            "Em 2003, uma equipe liderada por Andrew Fabian, da Universidade de Cambridge, analisou 53 horas de "
+            "observações do telescópio de raios X Chandra, da NASA. O aglomerado de Perseu, a 250 milhões de "
+            "anos-luz, está mergulhado numa nuvem imensa de gás a milhões de graus, e nela apareceram ondulações: "
+            "ondas sonoras que viajaram centenas de milhares de anos-luz a partir do buraco negro central. Elas "
+            "surgem quando o núcleo ativo da galáxia NGC 1275 infla bolhas de plasma que empurram o gás em volta. "
+            "Ninguém conseguiria ouvir esse som. A frequência fica mais de um milhão de bilhões de vezes abaixo do "
+            "limite da audição humana, e um piano comum tem só umas sete oitavas. Segundo a NASA, era a nota mais "
+            "grave já detectada vinda de um objeto do universo. E não é só uma curiosidade acústica. Abrir as "
+            "cavidades no gás exige tanta energia quanto 100 milhões de supernovas, e boa parte dela é levada "
+            "pelas ondas. Isso pode ser o mecanismo que mantém o gás do aglomerado quente e ajudaria a explicar "
+            "por que ele não esfria nem afunda para formar trilhões de estrelas, como as contas previam."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://chandra.harvard.edu/press/03_releases/press_090903.html",
+             "titulo": "Chandra \"Hears\" A Black Hole For The First Time (NASA/Chandra, 2003)",
+             "idioma": "en",
+             "trecho": "The \"note\" is the deepest ever detected from an object in the universe. [...] "
+                       "The black hole resides in the Perseus cluster, located 250 million light years from Earth. [...] "
+                       "These ripples are evidence for sound waves that have traveled hundreds of thousands of light years away from the cluster's central black hole. [...] "
+                       "In musical terms, the pitch of the sound generated by the black hole translates into the note of B flat. "
+                       "But, a human would have no chance of hearing this cosmic performance, because the note is 57 octaves lower than middle-C (by comparison a typical piano contains only about seven octaves). "
+                       "At a frequency over a million, billion times deeper than the limits of human hearing, this is the deepest note ever detected from an object in the universe. [...] "
+                       "The pressure in this cool central gas should then fall, causing gas further out to sink in towards the galaxy, forming trillions of stars along the way. [...] "
+                       "A tremendous amount of energy is needed to generate the cavities, as much as the combined energy from 100 million supernovae. "
+                       "Much of this energy is carried by the sound waves and should dissipate in the cluster gas, keeping the gas warm and possibly preventing a cooling flow."},
+            wiki("Perseus_Cluster",
+                "containing thousands of galaxies immersed in a vast cloud of multimillion-degree gas. [...] "
+                "In 2003, a team of astronomers led by Andrew Fabian at Cambridge University discovered one of the deepest notes ever detected, after 53 hours of Chandra observations. "
+                "No human will actually hear the note, because its time period between oscillations is 9.6 million years, which is 57 octaves below the keys in the middle of a piano. "
+                "The sound waves appear to be generated by the inflation of bubbles of relativistic plasma by the central active galactic nucleus in NGC 1275.",
+                nome="Perseus Cluster"),
+        ],
+    },
+    # 15 pulsares como um detector de ondas gravitacionais do tamanho da galáxia
+    {
+        "temas_secundarios": ["relatividade", "medidas_padroes", "galaxias"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "Astrônomos transformaram dezenas de pulsares espalhados pela Via Láctea num detector do tamanho da galáxia. Em 2023, ele deu indícios de ondas gravitacionais tão lentas que uma oscilação pode levar anos.",
+        "explicacao": (
+            "Pulsares de milissegundo são estrelas de nêutrons cujos pulsos, ao longo de décadas, marcam o tempo "
+            "com estabilidade comparável à de relógios atômicos. A ideia, proposta por Mikhail Sazhin e Steven "
+            "Detweiler no fim dos anos 1970, é tratar cada pulsar como a ponta de um braço imaginário que vai até "
+            "o Sistema Solar. Quando passa uma onda gravitacional de comprimento enorme, ela deforma o espaço e "
+            "faz os pulsos chegarem algumas dezenas de nanossegundos adiantados ou atrasados. Para separar isso "
+            "de outros ruídos, as equipes observam de 20 a 50 pulsares, cada um mais ou menos uma vez por semana, "
+            "durante anos. Procuram um padrão de correlação entre pares de pulsares que depende só do ângulo "
+            "entre eles no céu, a curva de Hellings-Downs. Em junho de 2023, o NANOGrav, com 15 anos de dados de "
+            "68 pulsares, e colaborações da Europa, da Índia e do radiotelescópio de Parkes anunciaram indícios de "
+            "um fundo de ondas gravitacionais; um grupo chinês relatou resultado parecido. A origem ainda não foi "
+            "identificada, mas os principais candidatos são pares de buracos negros supermassivos em órbita no "
+            "centro de galáxias que se fundem, com dezenas de milhões de massas solares girando em períodos de "
+            "meses a poucos anos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Pulsar_timing_array",
+            "A pulsar timing array (PTA) is a set of galactic pulsars that is monitored and analyzed to search for correlated signatures in the pulse arrival times on Earth. "
+            "As such, they are galactic-sized detectors. [...] "
+            "The proposal to use pulsars as gravitational wave (GW) detectors was originally made by Mikhail Sazhin and Steven Detweiler in the late 1970s. "
+            "The idea is to treat the Solar System barycenter and a galactic pulsar as opposite ends of an imaginary arm in space. [...] "
+            "The effect of a passing long-wavelength GW would be to perturb the galactic spacetime and cause a small change in the observed time of arrival of the pulses. [...] "
+            "In the literature, this spatial correlation curve is called the Hellings-Downs curve [...] "
+            "Millisecond pulsars have a stability comparable to atomic-clock-based time standards when averaged over decades. [...] "
+            "the most likely astrophysical sources of such GWs are supermassive black hole binaries in the centres of merging galaxies, where tens of millions of solar masses are in orbit with a period between months and a few years. "
+            "GWs cause the time of arrival of the pulses to vary by a few tens of nanoseconds over their wavelength (so, for a frequency of 3 × 10−8 Hz, one cycle per year, one would find that pulses arrive 20 ns early in July and 20 ns late in January). [...] "
+            "the experiments use collections of 20 to 50 pulsars to account for dispersion effects in the atmosphere and in the space between the observer and the pulsar. "
+            "It is necessary to monitor each pulsar roughly once a week [...] "
+            "a quadrupolar and higher multipolar spatial correlation between arrival times of pulses emitted by different millisecond pulsar pairings that depends only on the pairing's angular separation in the sky [...] "
+            "In June 2023, NANOGrav, EPTA, PPTA, and InPTA announced that they found evidence for a gravitational wave background. "
+            "NANOGrav's 15-year data on 68 pulsars provided a measurement of the distinctive Hellings-Downs curve, a tell-tale quadrupolar signature of gravitational waves. [...] "
+            "Also in June 2023, the Chinese Pulsar Timing Array (CPTA) reported similar findings [...] "
+            "The sources of the gravitational-wave background can not be identified without further observations and analyses, although binaries of supermassive black holes are leading candidates. [...] "
+            "The Parkes Pulsar Timing Array (PPTA) at the Parkes radio-telescope [...] "
+            "The European Pulsar Timing Array (EPTA) [...] "
+            "The Indian Pulsar Timing Array (InPTA)",
+            nome="Pulsar timing array")],
+    },
+]

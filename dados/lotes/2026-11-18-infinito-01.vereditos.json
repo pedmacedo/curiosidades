@@ -1,0 +1,110 @@
+{
+ "lote": "2026-11-18-infinito-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "infinito-0001",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "mito: as frases atribuídas a Kronecker ('charlatão', 'corruptor da juventude') são contestadas (Edwards 1995; Schoenflies só fala em 'impressão'); ligação Kronecker–depressão ignora a ressalva da fonte."
+   },
+   {
+    "id": "infinito-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Continuum hypothesis."
+   },
+   {
+    "id": "infinito-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Explicação traduz a fonte frase a frase.",
+    "correcao": "Explicação reescrita."
+   },
+   {
+    "id": "infinito-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Gancho afirma o paradoxo como fato; frases traduzidas; historia_humana fraco.",
+    "correcao": "Novo gancho; frases reescritas; tipos contraintuitivo e escala_absurda."
+   },
+   {
+    "id": "infinito-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere; contraintuitivo com mecanismo."
+   },
+   {
+    "id": "infinito-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Bate com Stacking blocks; tem mecanismo."
+   },
+   {
+    "id": "infinito-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Espalhou sem a ressalva' é interpretação; Casimir em modelo simplificado; frase traduzida.",
+    "correcao": "Crítica da Smithsonian; 'cálculo simplificado'; frase reescrita."
+   },
+   {
+    "id": "infinito-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Frase do ouro sem fonte; 'depende' exagera; escala_absurda não se aplica; frase traduzida.",
+    "correcao": "Tirar a frase final; 'usa'; reescrever o paradoxo verídico; gancho 'apenas cinco'; só contraintuitivo."
+   },
+   {
+    "id": "infinito-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo bate; liga matemática e computação."
+   },
+   {
+    "id": "infinito-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Normalidade basta mas não é necessária; frases traduzidas.",
+    "correcao": "'estaria garantida se'; reescrever a frase sobre raiz de 2, pi, e."
+   }
+  ],
+  "2": [
+   {
+    "id": "infinito-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Texto próprio; tudo com apoio."
+   },
+   {
+    "id": "infinito-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Paradoxo como aparente; tipos corrigidos.",
+    "correcao": "'Daí vem o chamado paradoxo do pintor'; 'pintar sua superfície'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "infinito-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Três problemas resolvidos."
+   },
+   {
+    "id": "infinito-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Ouro saiu; axioma como ferramenta; cinco pedaços são resultado posterior.",
+    "correcao": "Tirar 1924 do gancho; pôr na explicação.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "infinito-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Normalidade como condição suficiente; texto reescrito.",
+    "correcao": "Gancho 'de qualquer tamanho' no lugar da data de nascimento.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

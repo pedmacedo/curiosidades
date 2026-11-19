@@ -1,0 +1,305 @@
+LOTE = "2026-11-18-ia_robotica-01"
+AREA = "tecnologia"
+TEMA = "ia_robotica"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 ELIZA e a secretária
+    {
+        "temas_secundarios": ["psicologia_social", "historia_computacao"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Nos anos 1960, um programa simples que imitava um terapeuta, o ELIZA, convenceu tanta gente que a secretária do próprio criador teria pedido que ele saísse da sala para ela conversar a sós com a máquina.",
+        "explicacao": (
+            "O ELIZA foi desenvolvido entre 1964 e 1967 no MIT por Joseph Weizenbaum, para explorar a comunicação "
+            "entre pessoas e máquinas. Ele não entendia nada: apenas reconhecia padrões no que a pessoa digitava e "
+            "devolvia frases montadas com regras. O roteiro mais famoso, DOCTOR, imitava um psicoterapeuta da linha "
+            "de Carl Rogers, que costuma devolver ao paciente as próprias palavras dele. Mesmo assim, Weizenbaum e "
+            "outros relataram usuários que se apegaram ao programa e às vezes esqueciam que falavam com um "
+            "computador. O criador ficou surpreso e escreveu que não tinha percebido que exposições curtíssimas a um "
+            "programa relativamente simples podiam induzir um pensamento delirante poderoso em pessoas bem normais. "
+            "A tendência de atribuir sentimentos humanos a uma máquina ganhou o nome de efeito ELIZA. A reação do "
+            "público incomodou tanto Weizenbaum que ele escreveu um livro sobre os limites dos computadores e "
+            "virou um crítico do uso deles em decisões humanas. Vale lembrar o contexto: em 1966, a computação "
+            "interativa, por teletipo, era novidade, e faltavam 11 anos para o computador pessoal se popularizar."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("ELIZA",
+            "ELIZA is an early natural language processing computer program developed from 1964 to 1967 at MIT by Joseph Weizenbaum. "
+            "Created to explore communication between humans and machines, ELIZA simulated conversation by using a pattern matching [...] "
+            "The most famous script, DOCTOR, simulated a psychotherapist of the Rogerian school (in which the therapist often reflects back the patient's words to the patient) [...] "
+            "Weizenbaum and several others have anecdotes of users becoming emotionally attached to the program, occasionally forgetting that they were conversing with a computer. "
+            "Weizenbaum's own secretary reportedly asked Weizenbaum to leave the room so that she and ELIZA could have a real conversation. "
+            "Weizenbaum was surprised by this, later writing: \"I had not realized ... that extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people.\" "
+            "In 1966, interactive computing (via a teletype) was new. "
+            "It was 11 years before the personal computer became familiar to the general public [...] "
+            "attributed human-like feelings to the computer program, a phenomenon that came to be called the ELIZA effect. [...] "
+            "Lay responses to ELIZA were disturbing to Weizenbaum and motivated him to write his book Computer Power and Human Reason: From Judgment to Calculation, in which he explains the limits of computers",
+            nome="ELIZA")],
+    },
+    # 2 o Turco que jogava xadrez
+    {
+        "temas_secundarios": ["jogos_tabuleiro", "invencoes"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Por 84 anos, um autômato vestido de turco jogou xadrez em turnês pela Europa e pelos EUA e venceu até Napoleão e Benjamin Franklin. Dentro da caixa, escondido, havia um mestre de xadrez humano.",
+        "explicacao": (
+            "O Turco foi apresentado em 1770, construído por Wolfgang von Kempelen para impressionar a imperatriz "
+            "Maria Teresa. Parecia jogar sozinho, e bem, mas as peças eram movidas por alavancas e ímãs por um "
+            "enxadrista escondido na parte de baixo do móvel. Ele ganhou a maioria das partidas, inclusive contra "
+            "estadistas como Napoleão Bonaparte e Benjamin Franklin. Em 1804, foi comprado por Johann Nepomuk "
+            "Mälzel, que seguiu exibindo a máquina, e nessa fase vários mestres de xadrez se revezaram dentro dela. "
+            "Nos Estados Unidos, o escritor Edgar Allan Poe a viu em Richmond e publicou em 1836 um ensaio tentando "
+            "explicar o truque. Muita gente desconfiava de fraude, mas ninguém descreveu o mecanismo corretamente "
+            "enquanto a máquina existia. Ela fez exibições ocasionais até 1854, quando foi destruída num incêndio. "
+            "Só em 1857 um artigo do filho do último dono deu a primeira explicação completa de como funcionava."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Mechanical_Turk",
+            "was a chess-playing machine first displayed in 1770, which appeared to be able to play a strong game of chess autonomously, but whose pieces were in reality moved via levers and magnets by a chess master hidden in its lower cavity. "
+            "The machine was toured and exhibited for 84 years as an automaton, and continued giving occasional exhibitions until 1854, when it was destroyed in a fire. "
+            "In 1857, an article published by the owner's son provided the first full explanation of the mechanism, which had been widely suspected to be a hoax but never accurately described while the machine still [...] "
+            "Constructed by Wolfgang von Kempelen to impress Empress Maria Theresa, the Turk won most games, including those against statesmen such as Napoleon Bonaparte and Benjamin Franklin. "
+            "It was purchased in 1804 by Johann Nepomuk Mälzel, who continued to exhibit it. "
+            "Chess masters who operated it over this later period included [...] "
+            "In Richmond, Virginia, the Turk was observed by Edgar Allan Poe, writing for the Southern Literary Messenger. "
+            "Poe's \"Maelzel's chess-player\", published in April 1836",
+            nome="Mechanical Turk")],
+    },
+    # 3 o paradoxo de Moravec
+    {
+        "temas_secundarios": ["evolucao", "neurociencia"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Para um computador, é mais fácil vencer em testes de inteligência e jogos de tabuleiro do que ter a percepção e a coordenação de um bebê de um ano. É o paradoxo de Moravec.",
+        "explicacao": (
+            "A observação foi escrita assim por Hans Moravec em 1988 e defendida nos anos 1980 por ele, Rodney "
+            "Brooks, Marvin Minsky e outros pesquisadores de robótica e inteligência artificial. Uma explicação "
+            "possível vem da evolução. Habilidades que parecem fáceis para nós, como reconhecer rostos ou andar, "
+            "levaram milhões de anos para se desenvolver, e o cérebro faz esse trabalho enorme sem que a gente "
+            "perceba. Já o raciocínio abstrato, como a matemática, é uma aquisição recente da espécie, ainda pouco "
+            "lapidada, e por isso parece difícil para nós e é relativamente fácil de imitar numa máquina. Minsky "
+            "resumiu que, em geral, temos menos consciência daquilo que a mente faz melhor. O psicólogo Steven "
+            "Pinker escreveu em 1994 que a principal lição de 35 anos de pesquisa em IA é que os problemas difíceis "
+            "são fáceis e os fáceis são difíceis. Isso ajuda a entender por que robôs que dobram roupa ou sobem "
+            "escadas com destreza demoraram tanto, enquanto computadores vencem campeões de xadrez há décadas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Moravec%27s_paradox",
+            "Moravec's paradox is the observation that, as Hans Moravec wrote in 1988, \"it is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers, and difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility\". "
+            "This counterintuitive pattern may happen because skills that appear effortless to humans, such as recognizing faces or walking, required millions of years of evolution to develop, while abstract reasoning abilities like mathematics are evolutionarily recent. "
+            "This observation was articulated in the 1980s by Moravec, Rodney Brooks, Marvin Minsky, and o [...] "
+            "\"In general, we're least aware of what our minds do best\", he wrote [...] "
+            "Steven Pinker wrote in 1994 that \"the main lesson of thirty-five years of AI research is that the hard problems are easy and the easy problems are hard\".",
+            nome="Moravec's paradox")],
+    },
+    # 4 o lance 37 e o lance 78
+    {
+        "temas_secundarios": ["jogos_tabuleiro", "asia_antiga"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 2016, o programa AlphaGo venceu o campeão Lee Sedol no go por 4 a 1. A única vitória humana veio de um lance que um mestre chamou de \"divino\". Três anos depois, Lee se aposentou: disse que a IA não pode ser derrotada.",
+        "explicacao": (
+            "A partida de cinco jogos foi em Seul, entre 9 e 15 de março de 2016, contra o programa da DeepMind. "
+            "No segundo jogo, o 37º lance do AlphaGo foi chamado de \"criativo\" e \"único\" pelo mestre Michael "
+            "Redmond: era uma jogada que a maioria dos profissionais nem consideraria, e Lee demorou muito a "
+            "responder. O AlphaGo venceu todos os jogos menos o quarto. Nele, o 78º lance de Lee, uma jogada em "
+            "cunha no centro do tabuleiro, aumentou a complexidade da partida e foi descrito pelo mestre Gu Li como "
+            "um \"lance divino\", que ele não tinha previsto de jeito nenhum. O AlphaGo respondeu mal no lance "
+            "seguinte, quando ainda calculava 70% de chance de vencer, e acabou perdendo. Lee chamou a vitória de "
+            "\"inestimável\". Em 19 de novembro de 2019, anunciou que deixava o go profissional, argumentando que "
+            "nunca mais poderia ser o melhor jogador por causa do domínio crescente das IAs, \"uma entidade que não "
+            "pode ser derrotada\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("AlphaGo_versus_Lee_Sedol",
+            "was a five-game Go match between top Go player Lee Sedol and AlphaGo, a computer Go program developed by DeepMind, played in Seoul, South Korea between the 9th and 15th of March 2016. "
+            "AlphaGo won all but the fourth game; all games were won by resignation. [...] "
+            "Michael Redmond (9p) noted that AlphaGo's 19th stone (move 37) was \"creative\" and \"unique\". "
+            "It was a move that most professional players would not have considered. "
+            "Lee took an unusually long time to respond. [...] "
+            "The move developed a white wedge at the centre, and increased the game's complexity. "
+            "Gu Li (9p) described it as a \"divine move\" and stated that the move had been completely unforeseen by him. "
+            "Move 78 broke new ground as a radical change to playing convention. "
+            "AlphaGo responded poorly on move 79, at which time it estimated it had a 70% chance to win the game. [...] "
+            "Lee called his game four victory a \"priceless win that I (would) not exchange for anything.\" "
+            "Three years later, on 19 November 2019, Lee announced his retirement from professional play, arguing that he could never be the top overall player of Go due to the increasing dominance of AI. "
+            "Lee referred to them as being \"an entity that cannot be defeated\".",
+            nome="AlphaGo versus Lee Sedol")],
+    },
+    # 5 Dartmouth: a IA em um verão
+    {
+        "temas_secundarios": ["historia_computacao", "vieses_cognitivos"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "O termo \"inteligência artificial\" nasceu numa proposta de 1955 para um estudo de verão: dez cientistas, dois meses, e a aposta de que dava para avançar muito em ensinar máquinas a usar linguagem e a se aperfeiçoar.",
+        "explicacao": (
+            "A proposta foi assinada por John McCarthy, Marvin Minsky, Nathaniel Rochester e Claude Shannon, e é "
+            "considerada a introdução do termo \"inteligência artificial\". Ela pedia \"um estudo de 2 meses e 10 "
+            "homens\" no verão de 1956, no Dartmouth College, em New Hampshire. A premissa era que todo aspecto do "
+            "aprendizado ou da inteligência poderia, em princípio, ser descrito com tanta precisão que uma máquina "
+            "conseguiria simulá-lo. A lista de objetivos incluía fazer máquinas usarem linguagem, formarem "
+            "abstrações e conceitos, resolverem tipos de problema então reservados aos humanos e se aperfeiçoarem. "
+            "E vinha com otimismo: os autores achavam que um avanço significativo era possível em um ou mais desses "
+            "problemas se um grupo bem escolhido trabalhasse junto durante um verão. O encontro de 1956 é tido como "
+            "o evento fundador da IA como área de pesquisa. Os problemas da lista, porém, ocupariam as décadas "
+            "seguintes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Dartmouth_workshop",
+            "The Dartmouth Summer Research Project on Artificial Intelligence was a 1956 summer workshop widely considered to be the founding event of artificial intelligence as a field. [...] "
+            "On September 2, 1955, the project was formally proposed by McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon. "
+            "The proposal is credited with introducing the term 'artificial intelligence'. [...] "
+            "We propose that a 2-month, 10-man study of artificial intelligence be carried out during the summer of 1956 at Dartmouth College in Hanover, New Hampshire. "
+            "The study is to proceed on the basis of the conjecture that every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it. "
+            "An attempt will be made to find how to make machines use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves. "
+            "We think that a significant advance can be made in one or more of these problems if a carefully selected group of scientists work on it together for a summer.",
+            nome="Dartmouth workshop")],
+    },
+    # 6 o perceptron e o "embrião"
+    {
+        "temas_secundarios": ["neurociencia", "historia_computacao"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "Em 1958, o New York Times chamou uma máquina de aprender, o perceptron, de \"embrião\" de um computador que iria andar, falar, ver, se reproduzir e ter consciência. Ele tinha 400 fotocélulas e motores elétricos.",
+        "explicacao": (
+            "O perceptron foi descrito por Frank Rosenblatt num artigo de 1958 e é um ancestral direto das redes "
+            "neurais atuais. Ele montou uma versão física, o Mark I Perceptron, um computador analógico feito sob "
+            "medida com dinheiro da Marinha americana, testado em 1959. Tinha três camadas: uma \"retina\" de 400 "
+            "fotocélulas numa grade de 20 por 20, uma camada oculta de 512 unidades e uma camada de resposta. Os "
+            "\"pesos\" que a máquina ajustava ao aprender eram potenciômetros, e quem os girava durante o "
+            "treinamento eram motores elétricos. Numa entrevista coletiva organizada pela Marinha em 1958, "
+            "Rosenblatt fez afirmações que geraram polêmica entre os pesquisadores, e o jornal publicou que a "
+            "Marinha esperava que a máquina viesse a andar, falar, ver, escrever, se reproduzir e ter consciência "
+            "da própria existência. O Mark I está hoje no Museu Nacional de História Americana, do Smithsonian."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Perceptron",
+            "Rosenblatt described the details of the perceptron in a 1958 paper. [...] "
+            "to build a custom-made analog computer, the Mark I Perceptron. "
+            "Rosenblatt's team assembled and tested it at the Cornell Aeronautical Laboratory (CAL) in Buffalo, NY, USA between June 1959 and December 14, 1959. [...] "
+            "The machine is currently in Smithsonian National Museum of American History. "
+            "The Mark I Perceptron had three layers. [...] "
+            "An array of 400 photocells arranged in a 20x20 grid, named \"sensory units\" (S-units), or \"input retina\". [...] "
+            "A hidden layer of 512 perceptrons [...] "
+            "with adjustable weights encoded in potentiometers, and weight updates during learning were performed by electric motors. [...] "
+            "In a 1958 press conference organized by the US Navy, Rosenblatt made statements about the perceptron that caused a heated controversy among the fledgling AI community; based on Rosenblatt's statements, The New York Times reported the perceptron to be \"the embryo of an electronic computer that [the Navy] expects will be able to walk, talk, see, write, reproduce itself and be cons [...] "
+            "the United States Office of Naval Research",
+            nome="Perceptron")],
+    },
+    # 7 o Unimate e a cerveja na TV
+    {
+        "temas_secundarios": ["revolucao_industrial", "transportes"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "O primeiro robô industrial começou a trabalhar em 1961, numa fábrica da General Motors, pegando peças fundidas quentes. Pesava quase duas toneladas e chegou a ir à TV servir cerveja e embocar bola de golfe.",
+        "explicacao": (
+            "O Unimate foi inventado por George Devol, que pediu a patente em 1954 e a recebeu em 1961, ano em que "
+            "o robô entrou numa linha de montagem da General Motors em Nova Jersey. Na verdade, era uma família de "
+            "robôs. O objetivo era criar trabalhadores mecânicos para substituir pessoas nas fábricas. O primeiro "
+            "pesava 4.000 libras, cerca de 1,8 tonelada, e tinha a tarefa de transportar peças fundidas da linha de "
+            "montagem e soldá-las nas carrocerias dos carros. Era um trabalho perigoso para os operários, que podiam "
+            "se intoxicar com os vapores ou se ferir. A máquina ficou famosa ao aparecer no programa de televisão de "
+            "Johnny Carson, o Tonight Show, onde embocou uma bola de golfe, serviu uma cerveja, regeu a orquestra "
+            "com a batuta e agitou um acordeão."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Unimate",
+            "Unimate was the first industrial robot, which worked on a General Motors assembly line at the Inland Fisher Guide Plant in Ewing Township, New Jersey, in 1961. "
+            "There were in fact a family of robots. [...] "
+            "It was invented by George Devol in the 1950s using his original patent filed on December 10, 1954 and granted on June 13, 1961 [...] "
+            "ultimate goal was to create mechanical workers to replace humans in factories. "
+            "The machine weighed 4000 pounds and undertook the job of transporting die castings from an assembly line and welding these parts on auto bodies, a dangerous task for workers, who might be poisoned by toxic fumes or lose [...] "
+            "The Unimate appeared on The Tonight Show hosted by Johnny Carson on [...] "
+            "which it knocked a golf ball into a cup, poured a beer, waved the orchestra conductor's baton and grasped an accordion and waved it around.",
+            nome="Unimate")],
+    },
+    # 8 o cavalo Hans e as IAs que trapaceiam
+    {
+        "temas_secundarios": ["comportamento_animal", "experimentos_psicologia", "domesticacao"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Um cavalo alemão parecia fazer contas batendo o casco, mas só lia sem querer as reações do dono. Quando uma IA acerta pelo motivo errado, como ler um texto na foto em vez de ver a imagem, é o efeito Hans Esperto.",
+        "explicacao": (
+            "Hans, o Esperto, se apresentou na Alemanha no começo do século XX e parecia fazer aritmética e outras "
+            "tarefas intelectuais. Seu dono, Wilhelm von Osten, fazia perguntas como \"se o oitavo dia do mês cai "
+            "numa terça, que dia será a sexta seguinte?\", e o cavalo batia o casco 11 vezes. Em 1907, o psicólogo "
+            "Oskar Pfungst investigou o caso: isolou o cavalo da plateia, usou outros perguntadores e testou com "
+            "antolhos se o animal via quem perguntava. Descobriu que Hans não fazia conta nenhuma. Ele observava a "
+            "linguagem corporal involuntária de quem perguntava, que, sem perceber, dava a pista de quando parar. "
+            "Esse tipo de falha virou o \"efeito Hans Esperto\", importante em estudos de cognição animal e no "
+            "cuidado com as expectativas do pesquisador. O nome chegou à inteligência artificial: designa um "
+            "algoritmo que parece acertar sem ter os dados certos ou usando um raciocínio errado. Isso acontece, por "
+            "exemplo, quando um classificador de imagens \"lê\" um texto escrito na foto em vez de analisar o que a "
+            "imagem mostra."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Clever_Hans",
+            "was a horse that appeared to perform arithmetic and other intellectual tasks during exhibitions in Germany in the early 20th century. "
+            "In 1907, psychologist Oskar Pfungst demonstrated that the horse was not actually performing these mental tasks, but was watching the reactions of his trainer. [...] "
+            "Isolating horse and questioner from spectators, so no cues could come from them Using questioners other than the horse's master By means of blinders, varying whether the horse could see the quest [...] "
+            "language of the human trainer, who was entirely unaware that he was providing such cues. "
+            "In honour of Pfungst's study, this type of artifact in research methodology has since been referred to as the Clever Hans effect and has continued to be important to the observer-expectancy effect and later studies in animal cognition. [...] "
+            "Von Osten would ask Hans, \"If the eighth day of the month comes on a Tuesday, what is the date of the following Friday?\" "
+            "Hans would answer by tapping his hoof eleven times. [...] "
+            "In the field of artificial intelligence, the Clever Hans effect describes a phenomenon where an algorithm seems to make correct predictions without having the relevant data and/or by using incorrect reasoning. "
+            "This effect can appear, when a deep neural networks's predictions are dominated by unknown features, which were not intended for the task, e.g. when an image classifier \"reads\" text on a photo instead of analysing the image motif.",
+            nome="Clever Hans")],
+    },
+    # 9 Shakey, o robô que tremia
+    {
+        "temas_secundarios": ["algoritmos", "historia_computacao"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O algoritmo A*, usado até hoje para achar caminhos em mapas e videogames, nasceu de um robô dos anos 1960 que planejava as próprias ações. Ele se chamava Shakey porque tremia muito ao andar.",
+        "explicacao": (
+            "Shakey foi desenvolvido mais ou menos entre 1966 e 1972 no Centro de Inteligência Artificial do "
+            "Stanford Research Institute, hoje SRI International. Foi o primeiro robô móvel de uso geral capaz de "
+            "raciocinar sobre as próprias ações: em vez de receber instruções para cada passo, recebia uma tarefa "
+            "maior e decidia sozinho como cumpri-la. O nome veio de uma conversa da equipe. Depois de um mês "
+            "tentando achar um bom nome, de nomes gregos a qualquer outra coisa, alguém disse que ele tremia demais "
+            "ao se mover, e ficou Shakey, algo como \"Tremelique\". Entre os resultados mais importantes do projeto "
+            "estão o algoritmo de busca A*, a transformada de Hough, usada para achar retas em imagens, e o método "
+            "do grafo de visibilidade. Em 1970, a revista Life chamou Shakey de \"a primeira pessoa eletrônica\". Em "
+            "2004, ele entrou no Hall da Fama dos Robôs da Universidade Carnegie Mellon, ao lado do ASIMO e do C-3PO."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Shakey_the_robot",
+            "Shakey the Robot was the first general-purpose mobile robot able to reason about its own actions. "
+            "While other robots would have to be instructed on each individual step of completing a larger task, Sh [...] "
+            "was developed at the Artificial Intelligence Center of Stanford Research Institute (now called SRI International). [...] "
+            "Some of the most notable results of the project include the A* search algorithm, the Hough transform, and the visibility graph method. [...] "
+            "Shakey was developed from approximately 1966 through 1972 [...] "
+            "We worked for a month trying to find a good name for it, ranging from Greek names to whatnot, and then one of us said, 'Hey, it shakes like hell and moves around, let’s just call it Shakey.' [...] "
+            "In 1970, Life referred to Shakey as the \"first electronic person\" [...] "
+            "Shakey was inducted into Carnegie Mellon University's Robot Hall of Fame in 2004 alongside such notables as ASIMO and C-3PO.",
+            nome="Shakey the robot")],
+    },
+    # 10 "a vodca é boa, mas a carne está podre"
+    {
+        "temas_secundarios": ["linguas_mundo", "guerra_fria"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Conta-se que um tradutor automático dos anos 1950 transformou \"o espírito está disposto, mas a carne é fraca\" em \"a vodca é boa, mas a carne está podre\". A história é apócrifa, mas o problema era real.",
+        "explicacao": (
+            "A tradução automática foi uma das primeiras grandes apostas da inteligência artificial. Em 1954, a "
+            "demonstração pública da máquina Georgetown-IBM, que traduzia frases do russo para o inglês, ganhou "
+            "destaque em jornais respeitados, e a imprensa exagerou a importância do feito. Os pesquisadores tinham "
+            "subestimado uma dificuldade profunda: o mesmo termo pode ter vários sentidos, e, para traduzir uma "
+            "frase, a máquina precisaria ter alguma ideia do que ela trata. Sem isso, errava. A anedota do "
+            "espírito e da vodca, de uma frase traduzida do inglês para o russo e de volta, é o exemplo clássico, "
+            "embora apócrifo. Mais tarde, pesquisadores chamariam isso de problema do conhecimento de senso comum. "
+            "O fracasso da tradução automática, em 1966, aparece na lista de episódios que levaram aos \"invernos "
+            "da IA\", períodos em que o dinheiro e o interesse pela área despencaram, como os de 1974 a 1980 e de "
+            "1987 a 2000."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("AI_winter",
+            "wo major \"winters\", which lasted approximately from 1974–1980 and 1987–2000, and several smaller episodes, including the following: "
+            "1966: failure of machine translation [...] "
+            "The culmination came with the public demonstration of the Georgetown–IBM machine, which garnered widespread attention in respected newspapers in 1954. "
+            "Just like all AI booms that have been followed by desperate AI winters, the media tended to exaggerate the significance of these developments. [...] "
+            "Researchers had underestimated the profound difficulty of word-sense disambiguation. "
+            "In order to translate a sentence, a machine needed to have some idea what the sentence was about, otherwise it made mistakes. "
+            "An apocryphal example is \"the spirit is willing but the flesh is weak\". "
+            "Translated back and forth with Russian, it became \"the vodka is good but the meat is rotten.\" "
+            "Later researchers would call this the commonsense knowledge",
+            nome="AI winter")],
+    },
+]

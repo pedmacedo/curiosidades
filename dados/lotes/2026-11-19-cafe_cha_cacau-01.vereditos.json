@@ -1,0 +1,163 @@
+{
+ "lote": "2026-11-19-cafe_cha_cacau-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "cafe_cha_cacau-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere (Mayo-Chinchipe, 5.300 anos, consenso_parcial); mas '5,34% de álcool' é precisão falsa para bebida pré-histórica.",
+    "correcao": "'usada numa bebida fermentada com 5,34% de álcool.' -> 'usada numa bebida fermentada levemente alcoólica.'"
+   },
+   {
+    "id": "cafe_cha_cacau-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo literalmente em History of chocolate (1545: 30 grãos = coelho; falsificação com caroço de abacate)."
+   },
+   {
+    "id": "cafe_cha_cacau-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cocoa butter e Chocolate confirmam (seis formas, forma V, fat bloom)."
+   },
+   {
+    "id": "cafe_cha_cacau-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Military chocolate sustenta tudo (1937, 'um pouco melhor que batata cozida', 49 °C, três bilhões)."
+   },
+   {
+    "id": "cafe_cha_cacau-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "History Today (Pattenden 2022) confere (100 anos de debate, 1577, 1636, 1664, 1692); gargalhada ressalvada."
+   },
+   {
+    "id": "cafe_cha_cacau-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a datação vem de um só estudo (2024: 350 a 610 mil anos).",
+    "correcao": "'Esse cruzamento aconteceu na natureza, numa data estimada entre 1,08 milhão e 543 mil anos atrás, ligada a mudanças ambientais no leste da África' -> 'Esse cruzamento aconteceu na natureza há algumas centenas de milhares de anos (as estimativas variam entre estudos), possivelmente ligado a mudanças ambientais no leste da África'."
+   },
+   {
+    "id": "cafe_cha_cacau-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Release da Buffalo (2014) e Caffeine sustentam (N-metiltransferases, evolução convergente, 'likely')."
+   },
+   {
+    "id": "cafe_cha_cacau-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas o fungo veio da África (não foi para lá depois); 'existe por causa' exagera; só Berkeley é dito micologista inglês.",
+    "correcao": "Gancho: 'O chá do Ceilão existe por causa de um fungo.' -> 'O chá do Ceilão deve sua ascensão a um fungo.'; 'os produtores trocaram o café pelo chá' -> 'muitos produtores trocaram o café pelo chá'. Explicação: 'descrita em 1869 por dois micologistas ingleses' -> 'descrita em 1869 pelo micologista inglês Michael Berkeley e seu colaborador Christopher Broome'; 'A ferrugem afetou o café da Ásia por mais de vinte anos e depois se espalhou pela África.' -> 'Originário do leste da África, o fungo afetou o café da Ásia por mais de vinte anos e, nos anos 1920, já estava espalhado por boa parte da África e da Ásia.'"
+   },
+   {
+    "id": "cafe_cha_cacau-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas 'quase todas morreram' vai além ('most... in the northwestern provinces'), o destino das mudas é debatido, e Fortune esteve na China em temporadas.",
+    "correcao": "Gancho: 'Quase todas morreram' -> 'A maioria das que foram plantadas no noroeste da Índia morreu' (se passar de 220, 'disfarçado de chinês'). Explicação: 'Robert Fortune trabalhou na China entre 1843 e 1861' -> 'Robert Fortune passou vários anos na China, em temporadas entre 1843 e 1861'. confianca -> consenso_parcial."
+   },
+   {
+    "id": "cafe_cha_cacau-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere (1671, Nairon, sufis do Iêmen); mas 'inventado só no século XX' é inseguro (tradição francesa anterior).",
+    "correcao": "Gancho: 'E o nome Kaldi parece ter sido inventado só no século XX.' -> 'E, nesse primeiro relato, o pastor nem tinha nome.' Explicação: 'O nome Kaldi parece ter sido criado no século XX e foi difundido pelo americano William H. Ukers, autor de um livro de 1922 sobre o café.' -> 'O nome Kaldi parece ser um acréscimo bem posterior, popularizado no século XX pelo americano William H. Ukers, autor de um livro de 1922 sobre o café.'"
+   },
+   {
+    "id": "cafe_cha_cacau-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Lloyd's e Coffeehouse; mas 'abolição do tráfico, em 1807' é a britânica. Nota 3.",
+    "correcao": "'até a abolição do tráfico, em 1807' -> 'até o Reino Unido abolir o tráfico, em 1807'."
+   },
+   {
+    "id": "cafe_cha_cacau-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fonte confere, com a ressalva; mas os médicos morreram antes do gêmeo do café (não dos dois); mito_desmentido não cabe.",
+    "correcao": "Gancho: 'Conta-se que Gustavo III, da Suécia, quis provar que o café fazia mal com gêmeos condenados: um tomaria café todo dia, o outro chá. O rei e os médicos morreram antes do bebedor de café. A Suécia proibiu o café 5 vezes.' tipos: ['historia_humana']. 'é questionada pelos historiadores' -> 'é posta em dúvida'."
+   },
+   {
+    "id": "cafe_cha_cacau-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas os grãos perderam 'most', não toda a cafeína, e a história da água do mar é possivelmente apócrifa.",
+    "correcao": "Gancho: 'Conta-se que o primeiro descafeinado comercial nasceu de uma carga de café molhada por acidente com água do mar, que perdeu a maior parte da cafeína. A patente de 1906 usava benzeno, hoje sabidamente cancerígeno.' Explicação: 'depois de Roselius notar' -> 'depois de, segundo o relato tradicional, Roselius notar'. confianca -> consenso_parcial."
+   },
+   {
+    "id": "cafe_cha_cacau-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Tea brick e Tea Horse Road; só generaliza o peso ('sometimes').",
+    "correcao": "'Carregadores levavam nas costas de 60 a 90 kg de chá' -> 'Carregadores às vezes levavam nas costas mais de 60 a 90 kg de chá'."
+   },
+   {
+    "id": "cafe_cha_cacau-0015",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: a lenda do guaraná e o guaraná 'mais forte que café' são bem conhecidos no Brasil; o mecanismo é genérico; dado de refrigerantes datado."
+   }
+  ],
+  "2": [
+   {
+    "id": "cafe_cha_cacau-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Levemente alcoólica' no lugar da precisão falsa."
+   },
+   {
+    "id": "cafe_cha_cacau-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Datação como 'algumas centenas de milhares de anos', com a ressalva."
+   },
+   {
+    "id": "cafe_cha_cacau-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Origem africana, 'deve sua ascensão', Berkeley e Broome."
+   },
+   {
+    "id": "cafe_cha_cacau-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas. Ajuste pontual aplicado sem nova verificação: 'a façanha mais conhecida dele'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "cafe_cha_cacau-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "O pastor sem nome no primeiro relato; Kaldi como acréscimo posterior."
+   },
+   {
+    "id": "cafe_cha_cacau-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Até o Reino Unido abolir o tráfico' aplicado. Nota 3."
+   },
+   {
+    "id": "cafe_cha_cacau-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com 'Conta-se', tipos e 'posta em dúvida' aplicados."
+   },
+   {
+    "id": "cafe_cha_cacau-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Conta-se', 'maior parte da cafeína', relato tradicional e consenso_parcial."
+   },
+   {
+    "id": "cafe_cha_cacau-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Às vezes mais de 60 a 90 kg' aplicado."
+   }
+  ]
+ }
+}

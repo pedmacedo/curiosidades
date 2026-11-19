@@ -1,0 +1,142 @@
+{
+ "lote": "2026-11-18-primeiras_civilizacoes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "primeiras_civilizacoes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Code of Ur-Nammu confere"
+   },
+   {
+    "id": "primeiras_civilizacoes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "muškēnum -> miskīn -> mesquinho confere; consenso_parcial"
+   },
+   {
+    "id": "primeiras_civilizacoes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "George Smith confere; 'teria'"
+   },
+   {
+    "id": "primeiras_civilizacoes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "biblioteca de Assurbanípal confere; 'provavelmente'"
+   },
+   {
+    "id": "primeiras_civilizacoes-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o museu de Ennigaldi é dedução de Woolley com fontes de 'primeiros fatos'; 'público' e 'três línguas' sem apoio",
+    "correcao": "1) Gancho: 'Sua filha montou o museu público mais antigo que se conhece, com etiquetas de barro em três línguas.' -> 'A coleção de antiguidades da filha dele é tida como o museu mais antigo que se conhece.' 2) 'Concluiu que eram peças de museu porque vinham com \"etiquetas\": cilindros de barro escritos em três línguas, uma delas o sumério.' -> 'Concluiu que eram peças de museu por causa de um cilindro de barro inscrito, que ele interpretou como uma \"etiqueta de museu\". A leitura é de Woolley e não há registro escrito da própria Ennigaldi sobre a coleção.' 3) confianca: consenso_parcial."
+   },
+   {
+    "id": "primeiras_civilizacoes-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o 'três quartos' vale para os sítios da cultura de Uruk, e as tigelas são sobretudo do 4º milênio (declinaram por volta de 3100 a.C.)",
+    "correcao": "1) Gancho: 'Uruk, provavelmente a maior cidade do mundo por volta de 3100 a.C., deu nome a uma cultura cujo objeto mais típico é uma tigela tosca, feita em massa e descartada aos montes: uns três quartos de toda a sua cerâmica.' 2) 'Mas o que os arqueólogos mais acham ali é bem mais humilde: as tigelas de borda chanfrada.' -> 'Mas o que os arqueólogos mais acham nos sítios da cultura de Uruk, sobretudo do 4º milênio a.C., é bem mais humilde: as tigelas de borda chanfrada.'"
+   },
+   {
+    "id": "primeiras_civilizacoes-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o marido estava 'envolvido' no processo, não era contra ele; 'muito procurados', não 'de luxo'",
+    "correcao": "1) Gancho: 'fazia tecidos de luxo em Assur' -> 'fazia tecidos muito procurados em Assur'. 2) 'Também tratou com as autoridades de um processo contra Innaya por vendas suspeitas de lápis-lazúli.' -> 'Também tratou com as autoridades de um processo em que Innaya estava envolvido, sobre vendas suspeitas de lápis-lazúli.'"
+   },
+   {
+    "id": "primeiras_civilizacoes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hittite language e Kültepe conferem"
+   },
+   {
+    "id": "primeiras_civilizacoes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Indus script confere"
+   },
+   {
+    "id": "primeiras_civilizacoes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Possehl (Penn Museum) e Meluhha conferem"
+   },
+   {
+    "id": "primeiras_civilizacoes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Indus Valley e Mohenjo-daro conferem"
+   },
+   {
+    "id": "primeiras_civilizacoes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "partilha de Mohenjo-daro confere"
+   },
+   {
+    "id": "primeiras_civilizacoes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "massacre ariano desmentido; clima como explicação mais apontada"
+   },
+   {
+    "id": "primeiras_civilizacoes-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Beroso é babilônio: falta texto babilônico 'da época'; mito_desmentido não cabe",
+    "correcao": "Gancho: 'e nenhum texto babilônico os menciona' -> 'e nenhum texto babilônico da época os menciona'. tipos_espanto: só ['misterio_aberto']."
+   },
+   {
+    "id": "primeiras_civilizacoes-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Çatalhöyük confere"
+   },
+   {
+    "id": "primeiras_civilizacoes-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'a única rainha' é 'thought to be'; falta o porquê (seção antediluviana inserida para diminuir Kish)",
+    "correcao": "Gancho: 'e a única rainha citada nela aparece como \"a taberneira\"' -> 'e a provável única rainha citada nela aparece como \"a taberneira\"'. Recomendado: acrescentar que a seção antediluviana não existe nas versões mais antigas e talvez tenha sido inserida para diminuir a primazia de Kish (trecho: 'By inserting a section of primordial kings who ruled before a flood, which is only known from some Old Babylonian versions, the importance of Kish could be downplayed.')."
+   }
+  ],
+  "2": [
+   {
+    "id": "primeiras_civilizacoes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "museu como leitura de Woolley; contradição interna resolvida",
+    "correcao": "frase final: 'Toda essa reconstrução, inclusive o uso didático da coleção, se apoia na leitura de Woolley.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "primeiras_civilizacoes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "três quartos da cultura de Uruk; 4º milênio"
+   },
+   {
+    "id": "primeiras_civilizacoes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'muito procurados'; 'envolvido'"
+   },
+   {
+    "id": "primeiras_civilizacoes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'da época'; só misterio_aberto"
+   },
+   {
+    "id": "primeiras_civilizacoes-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'provável única rainha'; porquê do dilúvio"
+   }
+  ]
+ }
+}

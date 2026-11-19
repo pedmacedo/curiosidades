@@ -1,0 +1,154 @@
+{
+ "lote": "2026-11-18-insetos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "insetos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Bombardier beetle confere"
+   },
+   {
+    "id": "insetos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Science News e Wikipedia sustentam; atribuição a Dacke"
+   },
+   {
+    "id": "insetos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "release de Cambridge e Wikipedia conferem"
+   },
+   {
+    "id": "insetos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'as abelhas aguentam' sugere que todas sobrevivem; 'Some bees do die'",
+    "correcao": "Gancho: 'A vespa morre; as abelhas aguentam.' -> 'A vespa morre; as abelhas toleram até 50 °C.'"
+   },
+   {
+    "id": "insetos-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "adultas comem a seiva das folhas; Pseudonocardia vive na cutícula, não em glândulas (Currie et al. 2006)",
+    "correcao": "(1) Gancho: 'As formigas-cortadeiras não comem as folhas que carregam: usam-nas para cultivar um fungo.' -> 'As formigas-cortadeiras não carregam folhas para comê-las: usam-nas para cultivar um fungo.' (2) 'que vivem em glândulas do corpo delas e secretam antibióticos' -> 'que vivem no corpo delas e secretam antibióticos'."
+   },
+   {
+    "id": "insetos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "supercolônia global é contestada (Gordon et al., Stanford; Moffett 2012); confiança alta demais",
+    "correcao": "1) Gancho: 'Espalhadas pelo mundo por acidente, as formigas-argentinas formam supercolônias enormes, e estudos indicam que as de continentes diferentes, apesar da distância, se comportam como uma só.' 2) 'Estudos genéticos, químicos e de comportamento concluíram depois que as supercolônias de continentes diferentes formam, na verdade, uma só.' -> 'Estudos genéticos, químicos e de comportamento indicaram depois que supercolônias de continentes diferentes se comportam como uma só, uma interpretação que ainda gera debate entre os pesquisadores.' (precisa de trecho para o debate; sem fonte, diga só 'indicaram'). 3) confianca: 'consenso_parcial'."
+   },
+   {
+    "id": "insetos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Dermatobia confere em en e pt"
+   },
+   {
+    "id": "insetos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "média de duas mariposas é de Mastophora; falta explicar que a primeira ignora o feromônio da segunda",
+    "correcao": "1) 'A segunda é repelida pelo feromônio da primeira.' -> 'A primeira ignora o feromônio da segunda, mas a segunda é repelida pelo da primeira.' 2) 'Uma fêmea pega em média duas mariposas por noite' -> 'Uma fêmea do gênero Mastophora, o das Américas, pega em média duas mariposas por noite'."
+   },
+   {
+    "id": "insetos-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "'todas da América do Norte temperada' é falso: há Photuris na Mata Atlântica",
+    "correcao": "1) 'Há pelo menos 64 espécies de Photuris, todas da América do Norte temperada.' -> 'O estudo usou vaga-lumes adultos da região de Ithaca, no estado de Nova York.' (trecho: 'The study employed adult fireflies ... from the Ithaca, N.Y., area'). 2) Encurtar o trecho da Wikipedia Photuris sem a frase das 64 espécies."
+   },
+   {
+    "id": "insetos-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "leitura errada: quem só chega ao Texas são as que deixam o México, não 'a primeira geração nova'",
+    "correcao": "'A primeira geração nova só chega ao Texas e a Oklahoma; a segunda, a terceira e a quarta reocupam o resto.' -> 'As que deixam o México só chegam ao Texas e a Oklahoma; são as gerações seguintes, nascidas pelo caminho, que reocupam o resto dos Estados Unidos e o Canadá.'"
+   },
+   {
+    "id": "insetos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Horseshoe crab e LAL conferem"
+   },
+   {
+    "id": "insetos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "gancho funde o desvio de até uma hora com o ataque por trás, que é só 'às vezes'",
+    "correcao": "Gancho: 'escolhe desvios que a tiram da vista da presa e pode levar até uma hora para atacá-la por trás.' -> 'faz desvios de até uma hora, mesmo perdendo a presa de vista, para atacá-la pelo melhor ângulo.'"
+   },
+   {
+    "id": "insetos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Diving bell spider confere; brânquia física"
+   },
+   {
+    "id": "insetos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cochineal confere; segunda exportação depois da prata"
+   },
+   {
+    "id": "insetos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "correção de equívoco listado; Termite confere"
+   }
+  ],
+  "2": [
+   {
+    "id": "insetos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'toleram até 50 °C'; pronome corrigido",
+    "correcao": "'poucas delas' -> 'poucas vespas'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "insetos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "seiva e 'vivem no corpo'; frase ilógica corrigida",
+    "correcao": "'Fora os humanos' -> 'Além das formigas'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "insetos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'estudos indicam', debate com Stanford, consenso_parcial; ordem das frases corrigida",
+    "correcao": "reordenar a comparação com a sociedade humana antes do debate de Stanford; nota 4",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "insetos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "feromônios e Mastophora corrigidos"
+   },
+   {
+    "id": "insetos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "frase das 64 espécies trocada pelo estudo de Ithaca"
+   },
+   {
+    "id": "insetos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "as que deixam o México só chegam ao Texas"
+   },
+   {
+    "id": "insetos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "desvios de até uma hora; ataque por trás só 'às vezes'"
+   }
+  ]
+ }
+}

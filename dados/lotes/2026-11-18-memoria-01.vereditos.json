@@ -1,0 +1,170 @@
+{
+ "lote": "2026-11-18-memoria-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "memoria-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'nunca mais formou lembranças novas' exagera: desenhou a planta da casa nova, absorveu fragmentos; frase quase traduzida",
+    "correcao": "1) Gancho: 'Henry Molaison nunca mais formou lembranças novas' -> 'Henry Molaison quase não conseguia mais formar lembranças novas'. 2) Depois de 'A inteligência e a memória de curto prazo continuavam normais.', acrescentar: 'Ainda assim, guardou fragmentos: anos depois, conseguia desenhar a planta da casa para onde se mudou após a cirurgia.' 3) Opcional: reescrever 'esquecer o que vivia, as pessoas que via e o que fazia' (tradução quase literal)."
+   },
+   {
+    "id": "memoria-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "tempo verbal: a fonte registra o diário até 2007 e fala em capacidade, não atividade atual",
+    "correcao": "Gancho: 'esquece tudo em segundos e enche páginas do diário' -> 'esquece tudo em segundos e encheu páginas do diário'; 'Mesmo assim, ainda toca peças complexas ao piano e rege um coro.' -> 'Mesmo assim, continuou capaz de tocar peças complexas ao piano e de reger um coro.' Explicação: 'toca peças complexas ao piano e ao órgão e rege um coro' -> 'continuou capaz de tocar peças complexas ao piano e ao órgão e de reger um coro'."
+   },
+   {
+    "id": "memoria-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "foi uma minoria maior que nos outros grupos; replicações eram do efeito geral; o achado do vidro nunca foi replicado em escala com métodos modernos (Zwaan)",
+    "correcao": "1) Gancho: 'Num experimento de 1974, quem foi perguntado a que velocidade os carros \"se esmagaram\" passou a \"lembrar\" com mais frequência de vidro quebrado no vídeo do acidente. Não havia vidro nenhum.' 2) 'Uma parte estatisticamente significativa do grupo do \"esmagaram\" disse que sim, embora o vídeo não mostrasse vidro algum.' -> 'O grupo do \"esmagaram\" disse que sim com frequência significativamente maior que os outros dois, embora o vídeo não mostrasse vidro algum.' 3) 'e o estudo original abriu caminho para muitas replicações' -> 'e o efeito foi reproduzido em muitos estudos posteriores'. 4) confianca: 'consenso_parcial'. 5) 'Bastou trocar uma palavra para que um detalhe falso entrasse na lembrança.' -> 'Trocar uma única palavra bastou para que mais gente incorporasse um detalhe falso à lembrança.'"
+   },
+   {
+    "id": "memoria-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a diferença da foto é pequena e frágil (IC encosta no zero); a taxa de ~1/3 é contestada (Brewin e Andrews; replicação de 2023: 35% classificados, 14% lembrando de fato); confiança alta errada",
+    "correcao": "1) confianca: 'consenso_parcial'. 2) Tirar a foto do gancho, ex.: 'Em estudos que contaram a adultos um episódio falso da infância deles, parte passou a \"lembrar\" do que nunca viveu. Uma análise de 8 estudos chegou a quase um terço; críticos acham que bem menos.' (≤220). 3) 'A fotografia adulterada, ao contrário do que se esperaria, rendeu menos memórias falsas: 25,9%, contra 33,6% sem foto.' -> 'A fotografia adulterada, ao contrário do que se esperaria, pareceu render menos memórias falsas (25,9%, contra 33,6% sem foto), embora os autores peçam cautela com essa diferença pequena.' 4) Frase sobre o debate com fonte nova checada (ex.: https://www.scientificamerican.com/article/people-likely-arent-as-susceptible-to-false-memories-as-researchers-thought/, trecho sobre a replicação de 2023 com 35% e 14%). Sem fonte confirmada, não afirme números do debate. 5) Encurtar a parte do irmão de Coan se passar de 250 palavras."
+   },
+   {
+    "id": "memoria-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'A ideia não resistiu bem aos testes' exagera: a hipótese do mecanismo especial ainda tem defensores",
+    "correcao": "'A ideia não resistiu bem aos testes.' -> 'A ideia ainda tem defensores, mas foi muito contestada.'"
+   },
+   {
+    "id": "memoria-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "caso Cotton/Thompson confere com Mistaken identity"
+   },
+   {
+    "id": "memoria-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'costumam ir mal em decorar' exagera o 'may'",
+    "correcao": "Gancho: 'Mesmo assim, costumam ir mal em decorar informações e formam memórias falsas' -> 'Mesmo assim, podem ir mal em decorar informações e formam memórias falsas'"
+   },
+   {
+    "id": "memoria-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Method of loci, Mnemonist e Science News (Dresler 2017) conferem"
+   },
+   {
+    "id": "memoria-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'o diário dele diz' é provavelmente conclusão do jornalista Reed Johnson, não do diário",
+    "correcao": "1) Gancho: 'Mas o diário dele diz que não tinha memória perfeita, e um sobrinho conta que ele treinava horas por dia para os shows.' -> 'Mas um sobrinho conta que ele podia ser esquecido e treinava horas por dia para os shows.' 2) 'Segundo o diário autobiográfico dele, encontrado por Reed Johnson, ele não tinha recordação perfeita.' -> 'O jornalista Reed Johnson, que encontrou um diário autobiográfico de Shereshevsky, concluiu que ele não tinha memória perfeita.'"
+   },
+   {
+    "id": "memoria-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "2021 é a publicação, não o ano do experimento",
+    "correcao": "Gancho: 'Quando alguém enfim refez o experimento, em 2021, o efeito não apareceu.' -> 'Quando alguém enfim refez o experimento (estudo publicado em 2021), o efeito não apareceu.'"
+   },
+   {
+    "id": "memoria-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "o experimento foi em 2011-2012 (artigo de 2015); exceção aos 31 dias omitida; salto em 24 h é 'most probably'",
+    "correcao": "1) Gancho: 'Em 2015, um estudante passou 70 horas refazendo tudo, e a curva se repetiu.' -> 'Em 2011, um estudante holandês passou 70 horas refazendo o experimento e chegou a uma curva muito parecida.' 2) 'Em 2015, dois pesquisadores da Universidade de Amsterdã refizeram o experimento.' -> 'Num estudo publicado em 2015, dois pesquisadores da Universidade de Amsterdã relataram como refizeram o experimento entre 2011 e 2012.' 3) 'Os resultados ficaram parecidos com os originais.' -> 'Os resultados ficaram parecidos com os originais, exceto no intervalo de 31 dias, em que ele esqueceu bem mais que Ebbinghaus.' 4) 'E a curva não é totalmente lisa: há um salto para cima a partir do ponto de 24 horas.' -> 'E a curva provavelmente não é totalmente lisa: os autores viram indícios de um salto para cima a partir do ponto de 24 horas.' 5) 'muitas vezes com três sessões por dia' -> 'muitas vezes com até três sessões por dia'."
+   },
+   {
+    "id": "memoria-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a replicação da UCLA contesta a inutilidade da releitura (efeito do espaçamento; no Exp. 2 reestudar também ajudou)",
+    "correcao": "1) 'Ou seja, depois do primeiro acerto, estudar de novo...' -> 'Ou seja, nesse experimento, depois do primeiro acerto, estudar de novo não produziu nenhum aprendizado mensurável, enquanto tentar lembrar fez enorme diferença.' 2) 'Em 2016, uma equipe da Universidade da Califórnia em Los Angeles replicou o resultado.' -> 'Em 2016, uma equipe da Universidade da Califórnia em Los Angeles replicou o resultado, mas achou uma ressalva: a inutilidade da releitura vinha em parte do espaçamento entre as repetições, criado pelo jeito como os grupos foram montados. Quando cada participante passou por todas as condições, reestudar também melhorou a retenção, embora testar continuasse sendo decisivo.' Se apertar o limite, encurtar a frase de Bacon."
+   },
+   {
+    "id": "memoria-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'51%' sem fonte primária rastreável (cópias dizem 50%)",
+    "correcao": "1) 'Crianças acertam 51% dos eventos ocorridos antes dos dois anos, período do qual os adultos não lembram quase nada.' -> 'Crianças de dois ou três anos conseguem lembrar coisas que aconteceram quando tinham um ou dois anos, período do qual os adultos não lembram quase nada.' (trecho: 'Children around the age of two to three have been found to remember things that occurred when they were only one to two years old'). 2) Gancho: 'quando os neurônios certos foram religados' -> 'quando os neurônios certos foram reativados com luz'."
+   },
+   {
+    "id": "memoria-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tip of the tongue sustenta; 'ponta dos dedos' dá a ponte; nota no limite"
+   }
+  ],
+  "2": [
+   {
+    "id": "memoria-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'quase não conseguia'; planta da casa com trecho"
+   },
+   {
+    "id": "memoria-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tempo verbal corrigido"
+   },
+   {
+    "id": "memoria-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'com mais frequência'; replicações do efeito; consenso_parcial"
+   },
+   {
+    "id": "memoria-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "foto fora do gancho; debate com Andrews e Brewin (Scientific American 2025); consenso_parcial"
+   },
+   {
+    "id": "memoria-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'vêm sendo debatidas desde então' com trecho"
+   },
+   {
+    "id": "memoria-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'podem ir mal em decorar'"
+   },
+   {
+    "id": "memoria-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "sobrinho no gancho; conclusão atribuída a Reed Johnson"
+   },
+   {
+    "id": "memoria-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'estudo publicado em 2021'"
+   },
+   {
+    "id": "memoria-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "2011-2012; exceção dos 31 dias; salto 'provavelmente'"
+   },
+   {
+    "id": "memoria-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'nesse experimento' e ressalva da UCLA com trecho"
+   },
+   {
+    "id": "memoria-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "sem os 51%; 'reativados com luz'"
+   }
+  ]
+ }
+}

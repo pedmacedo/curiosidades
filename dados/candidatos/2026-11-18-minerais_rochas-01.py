@@ -1,0 +1,557 @@
+LOTE = "2026-11-18-minerais_rochas-01"
+AREA = "terra"
+TEMA = "minerais_rochas"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 a caverna dos cristais gigantes de Naica
+    {
+        "temas_secundarios": ["geologia_profunda", "corpo_extremo"],
+        "tipos_espanto": ["escala_absurda", "engenhosidade"],
+        "gancho": "Numa mina do México há uma caverna com cristais de gipsita de até 11,4 metros e cerca de 12 toneladas. Lá dentro faz até 58 °C, com o ar quase saturado de umidade: sem proteção, uma pessoa aguenta uns dez minutos.",
+        "explicacao": (
+            "A Caverna dos Cristais fica a 300 metros de profundidade, ligada à mina de Naica, no estado de "
+            "Chihuahua, e foi encontrada em abril de 2000 por mineiros que abriam um túnel novo. Uns 3 a 5 km "
+            "abaixo dela existe uma câmara de magma, que aquecia a água subterrânea carregada de enxofre. Quando a "
+            "temperatura da caverna caiu abaixo de 56 °C, os cristais de anidrita se dissolveram e deram lugar à "
+            "gipsita, que foi crescendo com extrema lentidão por pelo menos 500 mil anos. Uma equipe mediu esse "
+            "crescimento usando a água atual do lugar e obteve a taxa mais lenta já medida diretamente para um "
+            "cristal: nesse ritmo, os maiores teriam levado perto de 1 milhão de anos para chegar ao tamanho de "
+            "hoje. O maior deles tem 11,4 metros. Com o ar a até 58 °C e 90% a 99% de umidade, o suor não consegue "
+            "resfriar o corpo. Para trabalhar lá, uma equipe coordenada por um cristalógrafo da Universidade de "
+            "Bolonha criou macacões com tubos de refrigeração ligados a uma mochila com água gelada e gelo, que "
+            "davam cerca de meia hora de autonomia. Quando a mineração parou, a caverna foi inundada de novo, em "
+            "outubro de 2015, e os cristais voltaram a ficar mergulhados na água rica em minerais em que crescem."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Cave_of_the_Crystals",
+            "is a cave connected to the Naica Mine at a depth of 300 metres (980 ft), in Naica, Chihuahua, Mexico. [...] "
+            "The chamber contains giant selenite crystals (gypsum, CaSO4 · 2 H2O), some of the largest natural crystals ever found. "
+            "The largest is 11.4 metres (37 ft), with a volume of about 5 cubic metres (180 ft3), and an estimated mass of 12 tonnes. "
+            "When not flooded, the cave is extremely hot, with air temperatures reaching up to 58 °C (136 °F) with 90 to 99 percent humidity. [...] "
+            "this prevents cooling via sweating. [...] "
+            "Without proper protection, people can only endure approximately ten minutes of exposure at a time. [...] "
+            "As of October 2015, the mine had reflooded and the cavern filled once more with the water rich in minerals required for the crystals to grow. [...] "
+            "Naica lies on a fault above an underground magma chamber which is approximately 3–5 kilometres (2–3 mi) below the cave. "
+            "The magma heated the ground water which was saturated with sulfide ions [...] "
+            "When the overall temperature of the cave started to drop below 56 °C (133 °F), the hydrothermal and sedimentary anhydrite crystals dissolved, and gypsum (CaSO4·2H2O) crystals formed. "
+            "The hydrated sulfate gypsum crystallized at an extremely slow rate over the course of at least 500,000 years, forming the enormous crystals found today. [...] "
+            "Giant Crystal Cave was discovered in April 2000 by miners excavating a new tunnel [...] "
+            "A scientific team coordinated by Paolo Forti, specialist of cave minerals and crystallographer at the University of Bologna (Italy), explored the cave in detail in 2006. [...] "
+            "Special caving overalls were fitted with a mattress of refrigerating tubes placed all over the body and connected to a backpack weighing about 20 kilograms (44 lb) containing a reservoir filled with cold water and ice. "
+            "The cooling provided by melting ice was sufficient to provide about half an hour of autonomy. [...] "
+            "A team led by A. E. S. Van Driessche directly measured the growth rates of these giant gypsum crystals using present-day water of the Naica. "
+            "They obtained a growth rate of (1.4±0.2)×10−5 nm/s, which is the slowest directly measured normal growth rate for any crystal growth process. "
+            "At this rate, the largest crystals would have taken approximately 1 million years to reach their current size. [...] "
+            "once mining operations ceased, the caves were allowed to re-flood in October 2015.",
+            nome="Cave of the Crystals")],
+    },
+    # 2 o quasicristal natural que veio do espaço
+    {
+        "temas_secundarios": ["asteroides_cometas", "geometria_topologia", "estados_materia"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Cristais com simetria de ordem cinco eram proibidos pela cristalografia clássica. Quando um físico pediu às coleções de minerais do mundo que procurassem um na natureza, ele estava em Florença e tinha vindo do espaço.",
+        "explicacao": (
+            "Pela teoria clássica da cristalografia, um cristal só pode ter simetrias de rotação de ordem dois, três, "
+            "quatro ou seis. Os quasicristais desafiam isso: têm estrutura ordenada, mas que não se repete "
+            "periodicamente, e seus padrões de difração mostram simetrias proibidas, como a de ordem cinco. O "
+            "primeiro sintético, uma liga de alumínio e manganês, foi descrito em 1984 por Dan Shechtman e colegas, "
+            "o que lhe valeu o Nobel de Química de 2011. Faltava saber se a natureza também os fazia. Em 2001, o "
+            "físico Paul Steinhardt levantou a hipótese e convidou as coleções mineralógicas do mundo a procurar "
+            "cristais mal catalogados. Em 2007, Luca Bindi respondeu: na coleção da Universidade de Florença havia "
+            "uma amostra vinda de Khatyrka, na Rússia. A confirmação veio no fim de 2009, e o mineral, uma liga de "
+            "alumínio, cobre e ferro, foi batizado de icosaedrita e aprovado em 2010, depois de uma busca "
+            "sistemática de dez anos. As evidências indicam que a amostra é extraterrestre, trazida por um "
+            "asteroide do tipo condrito carbonáceo com cerca de 4,5 bilhões de anos. Depois, quasicristais também "
+            "apareceram em materiais formados em condições extremas, como os produzidos por explosões nucleares e "
+            "os fulguritos, rochas criadas pela queda de raios."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("Quasicrystal",
+                "A quasiperiodic crystal, or quasicrystal, is a structure that is ordered but not periodic. [...] "
+                "While crystals, according to the classical crystallographic restriction theorem, can possess only two-, three-, four-, and six-fold rotational symmetries, "
+                "the Bragg diffraction pattern of quasicrystals shows sharp peaks with other symmetry orders—for instance, five-fold. [...] "
+                "In 2001, Steinhardt hypothesized that quasicrystals could exist in nature and developed a method of recognition, inviting all the mineralogical collections of the world to identify any badly cataloged crystals. "
+                "In 2007 Steinhardt received a reply by Luca Bindi, who found a quasicrystalline specimen from Khatyrka in the University of Florence Mineralogical Collection. "
+                "The crystal samples were sent to Princeton University for other tests, and in late 2009, Steinhardt confirmed its quasicrystalline character. "
+                "This quasicrystal, with a composition of Al63Cu24Fe13, was named icosahedrite and it was approved by the International Mineralogical Association in 2010. [...] "
+                "Quasicrystals have been identified not only in synthetic alloys and meteorites, but also in materials formed under extreme conditions, including those produced by nuclear explosions and, more recently, in fulgurites, rocks formed by lightning strikes.",
+                nome="Quasicrystal"),
+            wiki("Icosahedrite",
+                "Icosahedrite is the first known naturally occurring quasicrystal phase. [...] "
+                "Its discovery followed a 10-year-long systematic search by an international team of scientists led by Luca Bindi and Paul J. Steinhardt to find the first natural quasicrystal. [...] "
+                "Evidence shows that the sample is actually extraterrestrial in origin, delivered to the Earth by a CV3 carbonaceous chondrite asteroid that dates back 4.5 Gya. [...] "
+                "The first synthetic quasicrystal, a combination of aluminium and manganese, was reported in 1984 by Israeli materials scientist Dan Shechtman and colleagues at the U.S. National Institute of Standards and Technology, "
+                "a finding for which Shechtman won the 2011 Nobel Prize for Chemistry.",
+                nome="Icosahedrite"),
+        ],
+    },
+    # 3 a vida criou dois terços dos minerais
+    {
+        "temas_secundarios": ["evolucao", "microbiologia", "astrobiologia"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "Mais de dois terços das espécies de minerais da Terra só existem por causa da vida, segundo a hipótese da \"evolução mineral\". O maior salto veio com o oxigênio liberado pela fotossíntese, há cerca de 2,4 bilhões de anos.",
+        "explicacao": (
+            "A ideia foi apresentada num artigo de 2008 do mineralogista Robert Hazen e colegas, que já previam "
+            "polêmica com a palavra \"evolução\": aqui ela significa uma sequência irreversível rumo a conjuntos de "
+            "minerais cada vez mais variados, sem mutação nem herança. Antes do Sistema Solar, havia uns 12 "
+            "minerais, formados em estrelas. O nascimento do Sol e a formação de asteroides e planetas elevaram a "
+            "conta a uns 250. O retrabalho da crosta e do manto, com fusão parcial e tectônica de placas, levou a "
+            "uns 1.500. O restante, mais de dois terços, resulta de mudanças químicas mediadas por seres vivos. A "
+            "maior contribuição foi o Grande Evento de Oxigenação, há cerca de 2,4 bilhões de anos, quando "
+            "organismos fotossintetizantes inundaram a atmosfera de oxigênio. Elementos que podem existir em "
+            "vários estados de oxidação ganharam novas combinações: só a oxidação da uraninita gerou mais de 200 "
+            "espécies novas de minerais de uranila. Ao todo, cerca de 2.500 minerais novos surgiram nessa etapa. Por "
+            "isso, minerais como a calcita, muitas argilas e gemas como a turquesa e a malaquita poderiam ser "
+            "vistos como sinais de vida. Em novembro de 2018, havia 5.413 espécies minerais reconhecidas "
+            "oficialmente."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "consenso_parcial",
+        "fontes": [wiki("Mineral_evolution",
+            "Mineral evolution is a recent hypothesis that provides historical context to mineralogy. [...] "
+            "On Earth, there were three eras of mineral evolution. "
+            "The birth of the Sun and formation of asteroids and planets increased the number of minerals to about 250. "
+            "Repeated reworking of the crust and mantle through processes such as partial melting and plate tectonics increased the total to about 1500. "
+            "The remaining minerals, more than two-thirds of the total, were the result of chemical changes mediated by living organisms, with the largest increase occurring after the Great Oxygenation Event. [...] "
+            "In the 2008 paper that introduced the term \"mineral evolution\", Robert Hazen and co-authors recognized that an application of the word \"evolution\" to minerals was likely to be controversial [...] "
+            "They used the term in the sense of an irreversible sequence of events leading to increasingly complex and diverse assemblages of minerals. "
+            "Unlike biological evolution, it does not involve mutation, competition or passing of information to progeny. [...] "
+            "Most dramatic was the Great Oxygenation Event, about 2.4 billion years ago, in which photosynthetic organisms flooded the atmosphere with oxygen. [...] "
+            "Before the formation of the Solar System, there were about 12 minerals. [...] "
+            "as of November 2018 there were 5413 officially recognized mineral species. [...] "
+            "The largest contribution was from the enormous increase in the oxygen content of the atmosphere, starting with the Great Oxygenation Event. [...] "
+            "Minerals such as calcite, metal oxides and many clay minerals could be considered biosignatures, along with gems such as turquoise, azurite and malachite. [...] "
+            "Before the GOE, elements that can be in multiple oxidation states were restricted to the lowest state, and that limited the variety of minerals they could form. [...] "
+            "By contrast, oxidization of uraninite resulted in over 200 new species of uranyl minerals such as soddyite and weeksite [...] "
+            "In total, about 2500 new minerals formed.",
+            nome="Mineral evolution")],
+    },
+    # 4 os 208 minerais criados por humanos
+    {
+        "temas_secundarios": ["elementos_quimicos", "revolucao_industrial"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "Pelo menos 208 minerais surgiram por causa da ação humana. Um se formou num velho armário de museu em Bruxelas; outro, quando gases quentes de uma mina de carvão em chamas reagiram com fezes de falcão.",
+        "explicacao": (
+            "O catálogo foi feito por uma equipe liderada por Robert Hazen, da Carnegie Science, e publicado na "
+            "revista American Mineralogist. Os 208 minerais formados principal ou exclusivamente pela atividade "
+            "humana equivalem a quase 4% dos cerca de 5.200 reconhecidos então pela Associação Mineralógica "
+            "Internacional. A maioria nasceu da mineração: em pilhas de minério, na alteração da escória, nas "
+            "paredes de túneis, na água e nas madeiras das minas e em incêndios subterrâneos. Seis apareceram em "
+            "paredes de fundições, e três numa tubulação geotérmica. Há casos curiosos. A calclacita, descrita em "
+            "1959, surgiu num antigo armário de carvalho onde o Museu Real de História Natural de Bruxelas guardava "
+            "amostras de minerais. A tinnunculita veio da reação de gases quentes com o excremento do "
+            "falcão-peneireiro numa mina de carvão em chamas em Kopeisk, na Rússia, e depois foi achada também em "
+            "ocorrência natural. Desde 1998, a associação não aceita substâncias \"feitas pelo homem\", mas os "
+            "casos antigos continuam no catálogo. Segundo Hazen, esses minerais surgiram sobretudo a partir de "
+            "meados do século XVIII. Ele comparou: 250 anos diante de 2 bilhões são como um piscar de olhos, de um "
+            "terço de segundo, diante de um mês."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [{"url": "https://carnegiescience.edu/node/2265",
+                    "titulo": "Catalog of 208 human-caused minerals bolsters argument for 'Anthropocene Epoch' (Carnegie Science)",
+                    "idioma": "en",
+                    "trecho": (
+                        "In the paper, published by American Mineralogist, a team led by Carnegie's Robert Hazen identifies for the first time a group of 208 mineral species that originated either principally or exclusively due to human activities. "
+                        "That’s almost 4% of the roughly 5,200 minerals officially recognized by the International Mineralogical Association (IMA). "
+                        "Most of the recognized minerals attributed to human activities originated through mining — in ore dumps, through the weathering of slag, formed in tunnel walls, mine water or timbers, or through mine fires. "
+                        "Six were found on the walls of smelters; three formed in a geothermal piping system. [...] "
+                        "“Within that collection are 208 produced directly or indirectly by human activities, mostly since the mid-1700s, and we believe that others continue to be formed at that same relatively blazing pace. "
+                        "To imagine 250 years relative to 2 billion years, that’s the difference between the blink of an eye (one third of a second) and one month.” [...] "
+                        "Calclacite, described by a Belgium-based scientist in 1959, and which originated in an old oak storage cabinet for mineral specimens at the Royal Museum of Natural History, Brussels, is an officially recognized mineral that wouldn’t qualify today; "
+                        "in 1998 the IMA decided to disallow any substance “made by Man.” [...] "
+                        "Though unlikely to pass scrutiny today, says Grew, previously recognized minerals such as these, rather than being invalidated, have been allowed to remain in the IMA catalog. [...] "
+                        "Another notable carbon-bearing mineral is tinnunculite, determined to be a product of hot gases reacting with the excrement of the Eurasian kestrel (Falco tinnunculus) at a burning coal mine in Kopeisk, Chelyabinsk, Russia. "
+                        "It was subsequently discovered also on Russia’s Mt. Rasvumchorr — an entirely natural occurrence.")}],
+    },
+    # 5 o diamante não é a forma estável do carbono
+    {
+        "temas_secundarios": ["estados_materia", "elementos_quimicos", "estrelas"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Na superfície da Terra, o diamante não é a forma estável do carbono: o grafite é. Ele só não vira grafite porque a conversão é lentíssima, numa escala de milhões a bilhões de anos.",
+        "explicacao": (
+            "Diamante e grafite são carbono puro, mas com arranjos diferentes. No diamante, cada átomo se liga a "
+            "quatro vizinhos formando tetraedros rígidos; no grafite, os átomos ficam em planos que deslizam uns "
+            "sobre os outros, por isso ele é tão mais mole. Em temperatura e pressão ambientes, a forma estável é "
+            "o grafite. O diamante é metaestável: para se reorganizar, os átomos teriam de vencer uma barreira de "
+            "energia considerável, e a conversão é desprezível, levando de milhões a bilhões de anos. Acima de uns "
+            "4.500 K, porém, ela fica rápida. O diamante só é estável sob alta pressão e temperatura: embaixo dos "
+            "continentes, a partir de uns 150 km de profundidade, e a maioria dos diamantes naturais se formou entre "
+            "150 e 250 km. A viagem até a superfície é veloz: as evidências geológicas apoiam um modelo em que o "
+            "magma kimberlítico sobe a 4 a 20 metros por segundo, abrindo caminho pela rocha por fraturamento "
+            "hidráulico. Há ainda um detalhe cósmico: pela hipótese da evolução mineral, como cristaliza a uns "
+            "4.400 °C, o diamante foi provavelmente o primeiro mineral a se formar, na atmosfera de estrelas "
+            "gigantes vermelhas e nos restos de supernovas. O slogan \"um diamante é para sempre\" resumiu a "
+            "campanha publicitária feita para a De Beers no século XX."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Diamond",
+                "Another solid form of carbon known as graphite is the chemically stable form of carbon at room temperature and pressure, but diamond is metastable and converts to it at a negligible rate under those conditions. [...] "
+                "In diamond, they are sp3 and the atoms form tetrahedra, with each bound to four nearest neighbors. [...] "
+                "In graphite, the bonds between nearest neighbors are even stronger, but the bonds between parallel adjacent planes are weak, so the planes easily slip past each other. "
+                "Thus, graphite is much softer than diamond. [...] "
+                "At standard temperature and pressure, 20 °C (293 K) and 1 standard atmosphere (0.10 MPa), the stable phase of carbon is graphite, but diamond is metastable, "
+                "with a significant kinetic energy barrier that the atoms must overcome to reach the lower energy state, and its rate of conversion to graphite is negligible, with a timescale of millions to billions of years. "
+                "However, at temperatures above about 4500 K, diamond rapidly converts to graphite. [...] "
+                "Most were formed at depths between 150 and 250 kilometres (93 and 155 mi) in the Earth's mantle [...] "
+                "Geological evidence supports a model in which kimberlite magma rises at 4–20 meters per second, creating an upward path by hydraulic fracturing of the rock. [...] "
+                "The campaign was perhaps best captured by the slogan \"a diamond is forever\". [...] "
+                "Diamond is thermodynamically stable at high pressures and temperatures [...] "
+                "underneath continents it becomes stable at temperatures of 950 degrees Celsius and pressures of 4.5 gigapascals, corresponding to depths of 150 kilometers or greater.",
+                nome="Diamond"),
+            wiki("Mineral_evolution",
+                "In the expanding atmospheres of red giants and the ejecta from supernovae, microscopic minerals formed at temperatures above 1,500 °C (2,730 °F). [...] "
+                "Because it has a high crystallization temperature (about 4,400 °C (7,950 °F)), diamond was probably the first mineral to form.",
+                nome="Mineral evolution"),
+        ],
+    },
+    # 6 rubi, safira e esmeralda: questão de cromo
+    {
+        "temas_secundarios": ["luz_cores", "elementos_quimicos", "invencoes"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "Rubi e safira são o mesmo mineral, o coríndon. O vermelho do rubi vem de átomos de cromo no lugar de parte do alumínio, e o cromo, em outro mineral, também ajuda a deixar a esmeralda verde.",
+        "explicacao": (
+            "O coríndon puro é óxido de alumínio e, sem defeitos, é perfeitamente incolor e transparente. As "
+            "variedades com qualidade de gema que não são vermelhas são chamadas de safiras, e o rubi às vezes é "
+            "chamado de \"safira vermelha\". A cor aparece quando um íon de cromo ocupa o lugar de um de alumínio. "
+            "Por ser maior, ele distorce o arranjo dos oxigênios à sua volta e altera os níveis de energia dos "
+            "próprios elétrons, e o cristal passa a absorver ultravioleta, violeta e amarelo-esverdeado. Com cerca "
+            "de um em cada cem íons de alumínio trocado por cromo, a pedra fica vermelha. A luz absorvida ainda provoca uma "
+            "fluorescência vermelha, de 694 nanômetros, que reforça a cor e o brilho. A esmeralda é outra "
+            "história mineral: é uma variedade do berilo, e seu verde vem de traços de cromo, às vezes de vanádio, "
+            "com participação do ferro. A fluorescência do rubi entrou para a história da tecnologia: em 1960, "
+            "Theodore Maiman usou um rubi sintético para fazer funcionar o primeiro laser, de luz vermelha em 694 "
+            "nanômetros. E nem todo \"rubi\" famoso é rubi: o Rubi do Príncipe Negro, na Coroa Imperial britânica, "
+            "é na verdade um espinélio."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Ruby",
+                "Ruby is a pinkish-red to blood-red-colored gemstone, a variety of the mineral corundum, consisting of aluminium oxide (α-Al2O3). [...] "
+                "Other varieties of gem-quality corundum are called sapphires, and rubies are also sometimes referred to as \"red sapphires\". [...] "
+                "The color of a ruby is due to the presence of chromium. "
+                "Some gemstones that are popularly or historically called rubies, such as the Black Prince's Ruby in the British Imperial State Crown, are actually spinels. [...] "
+                "in pure corundum this leaves all of the aluminium ions with a very stable configuration of no unpaired electrons or unfilled energy levels, and the crystal is perfectly colorless, and transparent except for flaws. [...] "
+                "However, the Cr3+ ions are larger and have electron orbitals in different directions than aluminium. "
+                "The octahedral arrangement of the O2− ions is distorted, and the energy levels of the different orbitals of those Cr3+ ions are slightly altered because of the directions to the O2− ions. "
+                "Those energy differences correspond to absorption in the ultraviolet, violet, and yellow-green regions of the spectrum. [...] "
+                "If one percent of the aluminium ions are replaced by chromium in ruby, the yellow-green absorption results in a red color for the gem. "
+                "Additionally, absorption at any of the above wavelengths stimulates fluorescent emission of 694-nanometer-wavelength red light, which adds to its red color and perceived luster. [...] "
+                "The first working laser was made by Theodore H. Maiman in 1960. "
+                "Maiman used a solid-state light-pumped synthetic ruby to produce red laser light at a wavelength of 694 nanometers (nm).",
+                nome="Ruby"),
+            wiki("Emerald",
+                "Emerald is a gemstone and a variety of the mineral beryl (Be3Al2(SiO3)6) colored green by trace amounts of chromium or sometimes vanadium. [...] "
+                "Chromium, vanadium, and iron are the trace elements that cause emerald’s color.",
+                nome="Emerald"),
+        ],
+    },
+    # 7 a turmalina que atrai e repele cinzas
+    {
+        "temas_secundarios": ["eletromagnetismo", "revolucao_cientifica"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Aquecida, a turmalina atrai cinzas e logo depois as repele. Registrado em 1707, esse truque foi ligado à eletricidade por Lineu e, estudado pelos irmãos Curie, ajudou a revelar mecanismos da piezoeletricidade.",
+        "explicacao": (
+            "O fenômeno se chama piroeletricidade. Alguns cristais assimétricos são naturalmente polarizados "
+            "eletricamente. Quando a temperatura muda, os átomos se deslocam um pouco dentro da estrutura, a "
+            "polarização se altera e surge uma voltagem temporária entre faces opostas do cristal. O primeiro "
+            "registro é de 1707: Johann Georg Schmidt anotou que a turmalina quente atraía as cinzas de carvões em "
+            "brasa, como um ímã atrai o ferro, e as repelia depois do contato. A pedra vinha em grande quantidade do "
+            "Ceilão, trazida pela Companhia Holandesa das Índias Orientais, e chegou a ser chamada "
+            "de \"ímã do Ceilão\". O próprio nome vem do cingalês \"toramalli\". Em 1747, Lineu relacionou o efeito "
+            "à eletricidade e chamou a turmalina de \"pedra elétrica\", o que só foi provado em 1756 por Aepinus. O "
+            "nome atual foi dado por David Brewster em 1824. Nos anos 1880, Pierre e Jacques Curie estudaram a "
+            "piroeletricidade, e esse trabalho os levou a descobrir mecanismos da piezoeletricidade. Há um mito no "
+            "caminho: costuma-se atribuir a Teofrasto, por volta de 314 a.C., o primeiro registro do efeito, mas o "
+            "texto dele sobre a pedra lendária \"lyngurium\" não fala de nenhuma propriedade piroelétrica."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Pyroelectricity",
+                "Pyroelectricity (from Greek: pyr (πυρ), \"fire\" and electricity) is a property of certain crystals which are naturally electrically polarized and as a result contain large electric fields. "
+                "Pyroelectricity can be described as the ability of certain materials to generate a temporary voltage when they are heated or cooled. "
+                "The change in temperature modifies the positions of the atoms slightly within the crystal structure, so that the polarization of the material changes. "
+                "This polarization change gives rise to a voltage across the crystal. [...] "
+                "Pyroelectric charge in minerals develops on the opposite faces of asymmetric crystals. [...] "
+                "The first record of the pyroelectric effect was made in 1707 by Johann Georg Schmidt, who noted that the \"[hot] tourmaline could attract the ashes from the warm or burning coals, as the magnet does iron, but also repelling them again [after the contact]\". [...] "
+                "In 1747 Linnaeus first related the phenomenon to electricity (he called tourmaline Lapidem Electricum, \"the electric stone\"), although this was not proven until 1756 by Franz Ulrich Theodor Aepinus. [...] "
+                "In 1824 Sir David Brewster gave the effect the name it has today. [...] "
+                "Pierre Curie and his brother, Jacques Curie, studied pyroelectricity in the 1880s, leading to their discovery of some of the mechanisms behind piezoelectricity. "
+                "It is mistakenly attributed to Theophrastus (c. 314 BC) the first record of pyroelectricity. [...] "
+                "Lyngurium is described in the work of Theophrastus as being similar to amber, without specifying any pyroelectric properties.",
+                nome="Pyroelectricity"),
+            wiki("Tourmaline",
+                "Tourmaline comes from the Sinhalese toramalli, a general name for carnelian. "
+                "Brightly colored Ceylonese gem tourmalines were brought to Europe in great quantities by the Dutch East India Company, to satisfy a demand for curiosities and gems. "
+                "Tourmaline was sometimes called the \"Ceylonese Magnet\" because it could attract and then repel hot ashes due to its pyroelectric properties.",
+                nome="Tourmaline"),
+        ],
+    },
+    # 8 a pedra-do-sol dos vikings
+    {
+        "temas_secundarios": ["navegacao_antiga", "luz_cores", "europa_medieval"],
+        "tipos_espanto": ["misterio_aberto", "engenhosidade"],
+        "gancho": "Textos islandeses medievais falam de uma \"pedra do sol\" capaz de mostrar onde estava o Sol num céu encoberto. Uma hipótese, ainda sem prova, é que fosse um cristal que revela a polarização da luz, usado para navegar.",
+        "explicacao": (
+            "A pedra do sol aparece em fontes escritas na Islândia dos séculos XIII e XIV. Uma delas, a história "
+            "de Rauðúlfs þáttr, conta que alguém a ergueu contra um céu nublado e com neve e viu de onde saía a "
+            "luz, revelando a posição do Sol. Inventários de igrejas e de um mosteiro, na Islândia e na Alemanha, "
+            "listam pedras do sol como objetos reais. O arqueólogo dinamarquês Thorkild Ramskou propôs que fossem "
+            "cordierita ou espato-da-islândia, minerais que polarizam a luz e permitem achar a direção do Sol com o "
+            "céu parcialmente coberto ou com o Sol logo abaixo do horizonte, um recurso que as abelhas também usam. "
+            "Ele foi além e sugeriu que o cristal ajudava na navegação em mar aberto na Era Viking. Pesquisas de "
+            "2011 propuseram dois métodos de uso, e um deles, testado no crepúsculo, apontou o Sol com erro de cerca "
+            "de 5 graus. Mas em 2014 um jornalista científico e mineralogistas do Serviço Geológico Britânico "
+            "tentaram repetir o feito na Escócia e na costa da Turquia, sem sucesso. Um pedaço de espato-da-islândia "
+            "achado num navio da era elisabetana afundado perto de Alderney em 1592, ao lado de um instrumento "
+            "de navegação, reforça a possibilidade, mas o uso dele continua incerto. E os textos medievais que "
+            "falam da pedra são, em boa parte, alegóricos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "hipotese",
+        "fontes": [wiki("Sunstone_(medieval)",
+            "The sunstone (Icelandic: sólarsteinn) is a type of mineral attested in several 13th–14th-century written sources in Iceland, one of which describes its use to locate the Sun in a completely overcast sky. "
+            "Sunstones are also mentioned in the inventories of several churches and one monastery in 14th–15th-century Iceland and Germany. "
+            "A hypothesis exists that the sunstone had polarizing attributes and was used as a navigational instrument by seafarers in the Viking Age. [...] "
+            "One medieval source in Iceland, Rauðúlfs þáttr, mentions the sunstone as a mineral by means of which the sun could be located in an overcast and snowy sky by holding it up and noting where it emitted, reflected or transmitted light [...] "
+            "Two of the original medieval texts on the sunstone are allegorical. [...] "
+            "the church and monastic inventories, however, show that something called sunstones did exist as physical objects in Iceland. [...] "
+            "Danish archaeologist Thorkild Ramskou posited that the \"sunstone\" could have been one of the minerals (cordierite or Iceland spar) that polarize light and by which the azimuth of the sun can be determined in a partly overcast sky or when the sun is just below the horizon. "
+            "The principle is used by some insects. [...] "
+            "Bees, for example, are known to be able to detect the polarization of the sunlight. [...] "
+            "Ramskou further conjectured that Iceland spar could have aided navigation in the open sea in the Viking period. [...] "
+            "Research in 2011 proposes two techniques for using Iceland spar to estimate the direction of polarization of sky light and, by proxy, the direction towards the obscured sun. [...] "
+            "This method was tested to estimate the direction towards the sun to within ±5∘ in twilight conditions. [...] "
+            "Attempts to replicate this work in both Scotland and off the coast of Turkey by science journalist Matt Kaplan and mineralogists at the British Geological Survey in 2014 failed. [...] "
+            "The recovery of a piece of Iceland spar from an Elizabethan ship that sank near Alderney in 1592 suggests the possibility that this navigational technology may have persisted after the invention of the magnetic compass. "
+            "Although the stone was found near a navigational instrument, its use remains uncertain.",
+            nome="Sunstone (medieval)")],
+    },
+    # 9 jade: duas pedras e um remédio para os rins
+    {
+        "temas_secundarios": ["palavras_viajantes", "asia_antiga", "americas_pre_colombianas"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "\"Jade\" não é uma pedra, são duas, de grupos minerais diferentes: a nefrita e a jadeíta. E a palavra vem do espanhol \"piedra de ijada\", pedra da ilharga, pela fama de curar males dos rins.",
+        "explicacao": (
+            "Por trás do mesmo nome há duas rochas distintas. A nefrita é um silicato de cálcio e magnésio do grupo "
+            "dos anfibólios; a jadeíta, um silicato de sódio e alumínio do grupo dos piroxênios. As duas são "
+            "agregados de minerais, ou seja, rochas, e não espécies minerais únicas. O nome jadeíta foi criado em "
+            "1863 por Damour; na China, ela é chamada de \"fei cui\", nome tradicional bem mais "
+            "antigo. A origem da palavra \"jade\" é medicinal. Ela vem, via francês, do espanhol \"piedra de "
+            "ijada\", registrado pela primeira vez em 1565: a pedra da ilharga, a região dos flancos, pela fama de "
+            "curar doenças dos rins e da região lombar. Até \"nefrita\" tem a mesma raiz: vem de \"lapis "
+            "nephriticus\", tradução latina da expressão espanhola. Em 1975, a Associação Mineralógica "
+            "Internacional deixou de usar nefrita como nome de espécie mineral, trocando-o por tremolita; o termo "
+            "segue correto para a rocha. O jade tem uma longa história em vários continentes: no Neolítico chinês, "
+            "a cultura Liangzhu, de 3400 a 2250 a.C., já usava nefrita em objetos rituais, e na Mesoamérica olmecas "
+            "e maias o valorizavam por sua raridade."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Jade",
+            "Jade is an umbrella term for two different types of decorative rocks used for jewelry or ornaments. "
+            "Jade is often referred to by either of two different silicate mineral names: nephrite (a silicate of calcium and magnesium in the amphibole group of minerals), "
+            "or jadeite (a silicate of sodium and aluminum in the pyroxene group of minerals). [...] "
+            "Both the amphibole jade (nephrite) and pyroxene jade are mineral aggregates (rocks) rather than mineral species. "
+            "Nephrite was deprecated by the International Mineralogical Association as a mineral species name in 1975 (replaced by tremolite). "
+            "The name \"nephrite\" is mineralogically correct for referring to the rock. [...] "
+            "In China, the name jadeite has been replaced with fei cui, the traditional Chinese name for this gem that was in use long before Damour created the name in 1863. [...] "
+            "The use of jade in Mesoamerica for symbolic and ideological ritual was influenced by its rarity and value among pre-Columbian Mesoamerican cultures, such as the Olmecs, the Maya [...] "
+            "The English word jade is derived (via French l'ejade and Latin ilia 'flanks, kidney area') from the Spanish term piedra de ijada (first recorded in 1565) or 'flank stone', from its reputed efficacy in curing ailments of the loins and kidneys. "
+            "Nephrite is derived from lapis nephriticus, a Latin translation of the Spanish piedra de ijada. [...] "
+            "During Neolithic times, the key known sources of nephrite jade in China for utilitarian and ceremonial jade items were the now-depleted deposits in the Ningshao area in the Yangtze River Delta (Liangzhu culture 3400–2250 BC)",
+            nome="Jade")],
+    },
+    # 10 as cores da opala são difração
+    {
+        "temas_secundarios": ["luz_cores", "biomimetica", "paleontologia"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "As cores que mudam numa opala não vêm de pigmento: vêm de esferas de sílica de 150 a 300 nanômetros, empilhadas em ordem, que desviam a luz como uma rede de difração.",
+        "explicacao": (
+            "A opala é sílica hidratada sem estrutura cristalina, com água que vai de 3% a 21% da massa, em geral "
+            "entre 6% e 10%. Por isso é classificada como mineraloide, e não como mineral. Na opala preciosa, a que "
+            "mostra o jogo de cores, há uma ordem escondida: ela é formada por esferas de sílica de 150 a 300 "
+            "nanômetros de diâmetro, arrumadas num empilhamento compacto. Em meados dos anos 1960, J. V. Sanders "
+            "mostrou que são essas esferas ordenadas que produzem as cores, por interferência e difração da luz. "
+            "Quando a distância entre os planos de esferas é de cerca de metade do comprimento de onda de uma cor "
+            "visível, essa cor é difratada. A cor que se vê depende do espaçamento entre os planos e do ângulo "
+            "deles em relação à luz, por isso muda quando a pedra é girada. Quanto mais regulares o tamanho e o "
+            "empilhamento das esferas, melhor a opala. Ela se deposita em temperatura relativamente baixa e pode "
+            "preencher fissuras de quase qualquer rocha. Na Austrália, uma das principais fontes, há até ossos de "
+            "dinossauros opalizados. No Brasil, há depósitos em Pedro II, no Piauí. E, em 2008, a Nasa anunciou a "
+            "descoberta de depósitos de opala em Marte."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Opal",
+            "Opal is a hydrated amorphous form of silica (SiO2·nH2O); its water content may range from 3% to 21% by mass, but is usually between 6% and 10%. "
+            "Due to the amorphous (chemical) physical structure, it is classified as a mineraloid, unlike crystalline forms of silica, which are considered minerals. "
+            "It is deposited at a relatively low temperature and may occur in the fissures of almost any kind of rock [...] "
+            "Precious opal displays play-of-color (iridescence); common opal does not. [...] "
+            "At microscopic scales, precious opal is composed of silica spheres some 150–300 nm (5.9×10−6–1.18×10−5 in) in diameter in a hexagonal or cubic close-packed lattice. "
+            "It was shown by J. V. Sanders in the mid-1960s that these ordered silica spheres produce the internal colors by causing the interference and diffraction of light passing through the microstructure of the opal. "
+            "The regularity of the sizes and the packing of these spheres is a prime determinant of the quality of precious opal. "
+            "Where the distance between the regularly packed planes of spheres is around half the wavelength of a component of visible light, the light of that wavelength may be subject to diffraction from the grating created by the stacked planes. "
+            "The colors that are observed are determined by the spacing between the planes and the orientation of planes with respect to the incident light. [...] "
+            "The primary sources of opal are Australia and Ethiopia [...] "
+            "Australia also has opalized fossil remains, including dinosaur bones in New South Wales and South Australia [...] "
+            "Brazil (in Pedro II, Piauí) [...] "
+            "In late 2008, NASA announced the discovery of opal deposits on Mars.",
+            nome="Opal")],
+    },
+    # 11 o diamante Hope: brilho vermelho, maldição inventada e correio
+    {
+        "temas_secundarios": ["crimes_arte", "luz_cores", "economia_curiosa"],
+        "tipos_espanto": ["historia_humana", "mito_desmentido"],
+        "gancho": "O diamante Hope brilha vermelho no escuro depois de exposto a ultravioleta, o que talvez tenha ajudado a fama de \"amaldiçoado\". Em 1958, foi doado ao Smithsonian e enviado por carta registrada, em papel pardo.",
+        "explicacao": (
+            "O Hope tem 45,52 quilates e uma cor azul-acinzentada causada por traços de boro em sua estrutura "
+            "cristalina. Em 2010, medições encontraram de zero a oito partes por milhão de boro. Depois de exposto "
+            "a ultravioleta de onda curta, ele emite uma fosforescência vermelha intensa, que continua por algum "
+            "tempo com a luz apagada. Esse brilho vem da mistura de boro e nitrogênio e ajuda os cientistas a "
+            "distinguir diamantes azuis naturais dos artificiais. A fama de maldito, porém, tem outra origem. Há "
+            "fortes indícios de que as histórias de desgraça foram inventadas no início do século XX para dar "
+            "mistério à pedra e aumentar seu apelo de venda, além de vender jornais. A lenda de que teria sido "
+            "arrancado do olho de uma estátua da deusa Sita provavelmente é criação de autores ocidentais. E o "
+            "registro histórico sugere que Maria Antonieta, citada como vítima, nunca usou o pingente em que ele "
+            "estava. O último dono particular, o joalheiro Harry Winston, não acreditava em nada disso. Em 10 de "
+            "novembro de 1958, mandou a pedra ao Smithsonian pelo correio dos Estados Unidos, numa caixa embrulhada "
+            "em papel pardo, como carta registrada com seguro de 1 milhão de dólares. Pagou 145,29 dólares, dos "
+            "quais só 2,44 eram de postagem. Ao chegar, virou o espécime nº 217868."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Hope_Diamond",
+            "It is a dark greyish-blue color under ordinary light due to trace amounts of boron within its crystal structure, and it exhibits a red phosphorescence under exposure to ultraviolet light. [...] "
+            "The Hope Diamond's last private owner was the American jeweler Harry Winston [...] "
+            "In 1974, the diamond was determined to weigh 45.52 carats [...] "
+            "These beheadings are commonly cited as a result of the diamond's \"curse,\" but the historical record suggests that Marie Antoinette had never worn the Golden Fleece pendant because it had been reserved for the exclusive use of the King. [...] "
+            "The stone exhibits an unusually intense, brilliant red phosphorescence after exposure to short-wave ultraviolet light. "
+            "This 'glow-in-the-dark' effect persists for some time after the light source has been switched off, and this strange quality may have helped fuel its reputation of being \"cursed.\" "
+            "The red glow is a phenomenon of blue diamonds that helps scientists \"fingerprint\" them, allowing them to distinguish real ones from artificial ones. "
+            "The red glow occurs because of a mixture of boron and nitrogen in the stone. [...] "
+            "In 2010, the diamond was removed from its setting to measure its chemical composition. [...] "
+            "the boron concentration varies from zero to eight parts per million. [...] "
+            "On November 10, 1958, Winston acquiesced, sending it through U.S. Mail in a box wrapped in brown paper as simple registered mail insured for $1 million at a cost of $145.29, of which $2.44 was for postage and the balance insurance. "
+            "Upon its arrival it became Specimen #217868. "
+            "Winston had never believed in any of the tales about the curse [...] "
+            "there are strong indications that such fabrications enhance the stone's mystery and appeal, since increased publicity usually raised the gem's value and newsworthiness. "
+            "According to many specious accounts in the late nineteenth and early twentieth century, the original form of the Hope Diamond was stolen from an eye of a sculpted statue of the Hindu goddess Sita. "
+            "However, much like the \"curse of Tutankhamun\", this general type of \"legend\" was most likely the independent creation of Western authors during the Victorian era, "
+            "and the specific legends about the Hope Diamond's \"cursed origin\" were invented in the early 20th century to add mystique to the stone and increase its sales appeal as well as increase newspaper sales.",
+            nome="Hope Diamond")],
+    },
+    # 12 a pedra-ímã magnetizada por raios
+    {
+        "temas_secundarios": ["eletromagnetismo", "atmosfera", "navegacao_antiga"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "As primeiras bússolas usavam pedra-ímã, uma magnetita que já sai magnetizada da natureza. O campo da Terra é fraco demais para isso: a principal explicação é que essas pedras foram magnetizadas por raios.",
+        "explicacao": (
+            "A pedra-ímã é um dos pouquíssimos minerais encontrados já magnetizados. Pedaços dela, pendurados para "
+            "girar livremente, foram as primeiras bússolas, e o nome em inglês, \"lodestone\", quer dizer algo como "
+            "\"pedra-guia\". Como ela se forma foi por muito tempo uma questão em aberto. Só uma pequena parte da "
+            "magnetita da Terra vira pedra-ímã. A magnetita comum é atraída por ímãs, mas não se magnetiza "
+            "sozinha: tem pouca resistência à magnetização. As pedras-ímã examinadas ao microscópio têm inclusões "
+            "de maghemita e impurezas de titânio, alumínio e manganês, e essa estrutura irregular lhes dá "
+            "resistência suficiente para continuar magnetizadas. Falta explicar quem as magnetiza: o campo "
+            "magnético da Terra, de 0,5 gauss, é fraco demais. A teoria principal é que o responsável é o forte "
+            "campo magnético em volta dos raios, capaz de alinhar os domínios magnéticos da magnetita. Isso "
+            "combina com o fato de elas serem achadas sobretudo perto da superfície, e não em grande profundidade. "
+            "A pedra fascina há milênios: os gregos atribuíam a Tales de Mileto, no século VI a.C., a descoberta de "
+            "sua atração pelo ferro, e no século II a.C. geomantes chineses fizeram com ela uma \"colher que aponta "
+            "para o sul\", usada em adivinhação."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Lodestone",
+            "Lodestones are naturally magnetized pieces of the mineral magnetite. [...] "
+            "Pieces of lodestone, suspended so they could turn, were the first magnetic compasses, and their importance to early navigation is indicated by the name lodestone, which in Middle English means \"course stone\" or \"leading stone\" [...] "
+            "Lodestone is one of only a very few minerals that is found naturally magnetized. [...] "
+            "The process by which lodestone is created has long been an open question in geology. "
+            "Only a small amount of the magnetite on the Earth is found magnetized as lodestone. "
+            "Ordinary magnetite is attracted to a magnetic field as iron and steel are, but does not tend to become magnetized itself; it has too low a magnetic coercivity, or resistance to magnetization or demagnetization. "
+            "Microscopic examination of lodestones has found them to be made of magnetite (Fe3O4) with inclusions of maghemite (cubic Fe2O3), often with impurity metal ions of titanium, aluminium, and manganese. "
+            "This inhomogeneous crystalline structure gives this variety of magnetite sufficient coercivity to remain magnetized and thus be a permanent magnet. "
+            "The other question is how lodestones get magnetized. "
+            "The Earth's magnetic field at 0.5 gauss is too weak to magnetize a lodestone by itself. "
+            "The leading theory is that lodestones are magnetized by the strong magnetic fields surrounding lightning bolts. "
+            "Magnetite is a ferrimagnetic material, so a lightning strike can align its magnetic domains and create a lodestone. "
+            "This is supported by the observation that they are mostly found near the surface of the Earth, rather than buried at great depth. [...] "
+            "One of the earliest known references to lodestone's magnetic properties was made by 6th century BC Greek philosopher Thales of Miletus, whom the ancient Greeks credited with discovering lodestone's attraction to iron and other lodestones. [...] "
+            "In the 2nd century BC, Chinese geomancers were experimenting with the magnetic properties of lodestone to make a \"south-pointing spoon\" for divination.",
+            nome="Lodestone")],
+    },
+    # 13 bridgmanita: o mineral mais abundante só ganhou nome em 2014
+    {
+        "temas_secundarios": ["geologia_profunda", "asteroides_cometas", "estados_materia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "O mineral provavelmente mais abundante da Terra só ganhou nome em 2014. Ele forma boa parte do manto profundo, mas não é estável na superfície: a amostra natural que permitiu descrevê-lo veio de um meteorito.",
+        "explicacao": (
+            "Trata-se da bridgmanita, um silicato de magnésio e ferro com a estrutura da perovskita. Ela não é "
+            "estável na superfície e existe sobretudo no manto inferior, entre uns 670 e 2.700 km de profundidade. "
+            "Forma-se a cerca de 660 km, sob uma pressão de uns 24 gigapascals, quando outro mineral, a "
+            "ringwoodita, se decompõe. Em algumas composições típicas do manto, chega a uns 80% dos minerais "
+            "presentes. A existência dela no manto foi sugerida em 1962, e o composto foi sintetizado em "
+            "laboratório antes de 1975. No fim dos anos 1970, já se propunha que uma descontinuidade nas ondas "
+            "sísmicas a uns 660 km marcava a passagem para esse mineral. A forma natural, porém, foi descoberta "
+            "no meteorito Tenham, que sofreu um choque violento. Em 2014, a Associação Mineralógica Internacional aprovou o nome, em "
+            "homenagem a Percy Bridgman, Nobel de Física de 1946 por suas pesquisas com altas pressões. A prima "
+            "rica em cálcio, a davemaoita, foi achada em 2021 como inclusão num diamante natural: a resistência do "
+            "diamante mantém boa parte da pressão do manto dentro dele e preserva a forma de alta pressão."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Bridgmanite",
+            "Silicate perovskite is either (Mg,Fe)SiO3 (the magnesium end-member is called bridgmanite) or CaSiO3 (calcium silicate, known as davemaoite) when arranged in a perovskite structure. "
+            "Silicate perovskites are not stable at Earth's surface, and mainly exist in the lower part of Earth's mantle, between about 670 and 2,700 km (420 and 1,680 mi) depth. [...] "
+            "The existence of silicate perovskite in the mantle was first suggested in 1962, and both MgSiO3 and CaSiO3 had been synthesized experimentally before 1975. "
+            "By the late 1970s, it had been proposed that the seismic discontinuity at about 660 km in the mantle represented a change from spinel structure minerals with an olivine composition to silicate perovskite with ferropericlase. "
+            "Natural silicate perovskite was discovered in the heavily shocked Tenham meteorite. "
+            "In 2014, the Commission on New Minerals, Nomenclature and Classification (CNMNC) of the International Mineralogical Association (IMA) approved the name bridgmanite for perovskite-structured (Mg,Fe)SiO3, "
+            "in honor of physicist Percy Bridgman, who was awarded the Nobel Prize in Physics in 1946 for his high-pressure research. "
+            "In 2021 perovskite-structured CaSiO3 was found as an inclusion in a natural diamond. "
+            "The name davemaoite has been adopted for this mineral. [...] "
+            "Bridgmanite is a high-pressure polymorph of enstatite, but in the Earth predominantly forms, along with ferropericlase, from the decomposition of ringwoodite (a high-pressure form of olivine) at approximately 660 km depth, or a pressure of about 24 GPa. [...] "
+            "In pyrolitic and harzburgitic lithologies, bridgmanite constitutes around 80% of the mineral assemblage [...] "
+            "Magnesium silicate perovskite is probably the most abundant mineral phase in the Earth. [...] "
+            "With the great mechanical strength of the diamonds a large part of this pressure is retained inside the lattice, enabling inclusions such as the calcium silicate to be preserved in high-pressure form.",
+            nome="Bridgmanite")],
+    },
+    # 14 jadarita, a quase kryptonita
+    {
+        "temas_secundarios": ["cinema_fotografia", "energia", "elementos_quimicos"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "Um mineral descoberto em 2004 na Sérvia tem quase a mesma fórmula química que o filme \"Superman: O Retorno\", de 2006, inventou para a kryptonita. Só faltam o flúor e o brilho verde.",
+        "explicacao": (
+            "A jadarita apareceu em dezembro de 2004, em testemunhos de sondagem do vale do Jadar, na Sérvia, "
+            "que lhe deu o nome. Geólogos da mineradora Rio Tinto acharam pequenos nódulos arredondados que não "
+            "batiam com nenhum mineral conhecido, e cientistas do Museu de História Natural de Londres e do "
+            "Conselho Nacional de Pesquisa do Canadá confirmaram que era uma espécie nova. É um mineral branco e "
+            "terroso, um silicato hidróxido de sódio, lítio e boro. No filme, a kryptonita é descrita como "
+            "silicato hidróxido de sódio, lítio e boro com flúor. A coincidência chamou a atenção da imprensa em "
+            "2007, pouco depois da descoberta. A jadarita, ao contrário da pedra fictícia, não tem flúor nem "
+            "o brilho verde. O que ela tem de valioso na vida real são o lítio, usado em baterias, e o boro. Em 2017, a Rio "
+            "Tinto anunciou que a região do Jadar guardava uma das maiores jazidas de lítio do mundo. O projeto de "
+            "mina virou alvo de forte debate na Sérvia: ambientalistas, moradores e parte dos cientistas temiam o "
+            "uso de muita água e de ácidos e a contaminação de terras férteis e rios. Em janeiro de 2022, depois de "
+            "grandes protestos, a primeira-ministra sérvia anunciou o cancelamento do projeto."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Jadarite",
+            "Jadarite is a white, earthy monoclinic silicate mineral, sodium lithium boron silicate hydroxide with the chemical formula LiNaSiB3O7(OH). [...] "
+            "Jadarite was discovered in December 2004, in drill core from the Jadar Valley [...] in Serbia, from which it is named. [...] "
+            "Exploration geologists from Rio Tinto Exploration discovered the mineral as small rounded nodules in drill core, and were unable to match it with previously known minerals. "
+            "Jadarite was confirmed as a new mineral after scientists at the Natural History Museum in London and the National Research Council of Canada conducted tests on it. [...] "
+            "The mineral discovery may be commercially important because the mineral contains lithium and boron, both relatively rare industrially important elements. "
+            "Lithium is used for lithium batteries [...] "
+            "In May 2017, Rio Tinto announced that the Jadar area has one of the largest lithium deposits in the world [...] "
+            "Environmentalists, local population and some scientists and professors are against it, citing usage of large quantities of water and various acids and other chemicals in the production process, "
+            "which will contaminate 2,000 ha (4,900 acres) of fertile, arable land, salinize the underground waters and pollute the rivers of Jadar and Drina. [...] "
+            "However, on 20 January 2022 Serbian prime minister Ana Brnabić announced the cancellation of the project, after mass protests organised by ecological organisations in Serbia. [...] "
+            "Jadarite's chemical formula is similar but not identical to the formula (\"sodium lithium boron silicate hydroxide with fluorine\") invented for the fictional substance kryptonite in the 2006 film Superman Returns. "
+            "This coincidence attracted mass-media attention in 2007, shortly after jadarite's discovery. "
+            "The new mineral, unlike the fictional material in the movie, does not contain fluorine and does not have a green glow.",
+            nome="Jadarite")],
+    },
+]

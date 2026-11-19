@@ -1,0 +1,141 @@
+{
+ "lote": "2026-11-19-revolucoes_politicas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "revolucoes_politicas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Boston Tea Party e Tea Act (chá legal mais barato, 3 pence, 340/342 caixas, ~86% com ressalva)."
+   },
+   {
+    "id": "revolucoes_politicas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Datas conferem, mas as últimas palavras são contestadas (Burstein, HNN: só 'Thomas Jefferson' saiu claro). Trivia rodada; nota 3.",
+    "correcao": "Gancho: 'Últimas palavras de Adams: \"Jefferson sobrevive\".' -> 'Adams teria dito no fim: \"Jefferson sobrevive\".'. Explicação: 'Entre suas últimas palavras, lembrou o amigo e rival: \"Thomas Jefferson sobrevive\".' -> 'Segundo o relato da família, entre suas últimas palavras estava o nome do amigo e rival, numa frase registrada como \"Thomas Jefferson sobrevive\".' Opcional: fonte https://www.historynewsnetwork.org/article/jefferson-still-survives."
+   },
+   {
+    "id": "revolucoes_politicas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Storming of the Bastille (7 presos, pólvora, Sade, demolição, chave em Mount Vernon). Nota 3: os sete presos circulam em listas."
+   },
+   {
+    "id": "revolucoes_politicas-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem, mas omite a meia folga do quíntidi: no total eram 54 dias livres, contra 52 ou 53 domingos.",
+    "correcao": "Gancho: 'Os trabalhadores reclamaram: a folga virou um dia em dez.' -> 'Os trabalhadores reclamaram da folga a cada dez dias, mesmo ganhando, no total, um pouco mais de descanso no ano.' (≤220). Explicação: depois de 'e não a cada sete,' acrescentar 'embora ganhassem também meia folga no quíntidi, o quinto dia, o que somava 54 dias livres por ano, contra os 52 ou 53 domingos de antes;'. Trecho: 'although they also got a half-day off on the fifth day (thus 36 full days and 36 half days in a year, for a total of 54 free days, compared to the usual 52 or 53 Sundays)'."
+   },
+   {
+    "id": "revolucoes_politicas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Todos os números conferem com Decimal time e French Republican calendar (144 min, 0,864 s, 1794–1795, Toulouse)."
+   },
+   {
+    "id": "revolucoes_politicas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Méchain e History of the metre (prisão pelos instrumentos, 0,197 mm, pêndulo rejeitado)."
+   },
+   {
+    "id": "revolucoes_politicas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Lavoisier (6,3%, 17/16 onças por extenso, acusação de molhar o tabaco, Coffinhal como lenda)."
+   },
+   {
+    "id": "revolucoes_politicas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Guillotin e Djandoubi (contra a pena de morte, Antoine Louis, 1792, 1977, 1981); mito_desmentido bem empregado."
+   },
+   {
+    "id": "revolucoes_politicas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Haiti indemnity controversy (150 milhões, 1838, NYT 2022 com 1947 atribuído, 40% por extenso)."
+   },
+   {
+    "id": "revolucoes_politicas-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Número de desertores divergente: Wikipedia ~500, estudo de referência (Pachoński e Wilson, resenha NYRB 1986) ~100; os 400–500 que ficaram incluem prisioneiros.",
+    "correcao": "Gancho: 'Centenas mudaram de lado, e o novo país lhes deu cidadania.' -> 'Parte deles mudou de lado, e o novo país deu cidadania aos poloneses.'. Explicação: 'e uns 500 acabaram passando para o lado dos rebeldes.' -> 'e uma parte deles acabou passando para o lado dos rebeldes (quantos, os historiadores divergem).'"
+   },
+   {
+    "id": "revolucoes_politicas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (8/3/1917, Nikolaeva 1921, ONU 1977, 1857 mito); só a citação de Trótski diz 'we did not imagine'.",
+    "correcao": "Trocar 'Trótski escreveu depois que ninguém imaginava que aquele Dia da Mulher fosse inaugurar a revolução' por 'Trótski escreveu depois que os revolucionários não imaginavam que aquele Dia da Mulher fosse inaugurar a revolução'."
+   },
+   {
+    "id": "revolucoes_politicas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Horários e números conferem; tomada quase sem resistência; filme baseado na encenação de 1920; Nikandrov atribuído a Gorodnitsky."
+   },
+   {
+    "id": "revolucoes_politicas-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos conferem, mas o levante já estava planejado (o acidente o precipitou), e o fim do governo imperial foi a abdicação de 12/2/1912.",
+    "correcao": "1) Gancho: 'começou por acidente' -> 'foi precipitada por um acidente'. 2) Explicação: 'Terminavam ali mais de 2.000 anos de governo imperial.' -> 'Em 12 de fevereiro de 1912, o trono Qing abdicou em nome do imperador Puyi, encerrando mais de 2.000 anos de governo imperial.' 3) Acrescentar ao trecho de Wuchang_uprising: 'On 12 February 1912, Empress Dowager Longyu, on behalf of Puyi, the Xuantong Emperor, announced the abdication of the Qing throne, marking the end of the dynasty.'"
+   },
+   {
+    "id": "revolucoes_politicas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas só os primeiros cravos vieram do restaurante (floristas e o mercado de flores doaram mais).",
+    "correcao": "Gancho: 'E os cravos eram de um restaurante que festejava um ano de vida.' -> 'E os primeiros cravos vieram de um restaurante que festejava um ano de vida.'"
+   },
+   {
+    "id": "revolucoes_politicas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem por extenso (2 milhões, 675 km, 8 milhões); Yakovlev, Honecker, Lituânia. Pouco conhecido no Brasil."
+   }
+  ],
+  "2": [
+   {
+    "id": "revolucoes_politicas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Adams teria dito' e 'segundo relatos' aplicados; datas conferem. Nota 3 (coincidência conhecida)."
+   },
+   {
+    "id": "revolucoes_politicas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Meia folga do quíntidi e 54 dias livres aplicados, com trecho no cache."
+   },
+   {
+    "id": "revolucoes_politicas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'Parte deles' e a divergência dos historiadores aplicadas; números restantes conferem."
+   },
+   {
+    "id": "revolucoes_politicas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Os revolucionários não imaginavam' confere com 'we did not imagine'."
+   },
+   {
+    "id": "revolucoes_politicas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Precipitada por um acidente' e a abdicação de 12/2/1912 aplicadas, com trecho."
+   },
+   {
+    "id": "revolucoes_politicas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Os primeiros cravos' aplicado; o resto confere."
+   }
+  ]
+ }
+}

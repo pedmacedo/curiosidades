@@ -1,0 +1,135 @@
+{
+ "lote": "2026-11-19-leis_julgamentos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "leis_julgamentos-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Animal trial; mas 'sofreu as mesmas mutilações' fica sem referente no gancho.",
+    "correcao": "Gancho: 'um porco que matou uma criança sofreu as mesmas mutilações' -> 'um porco que matou e mutilou uma criança sofreu as mesmas mutilações'; e 'E ratos acusados por um tribunal da Igreja ganharam defensor.' -> 'E ratos processados pela Igreja ganharam defensor.'"
+   },
+   {
+    "id": "leis_julgamentos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas quem anulou foi Teodoro II, não 'o papa seguinte' (Romano reinou entre eles); escala_absurda não se aplica.",
+    "correcao": "Explicação: 'Em dezembro, o papa seguinte anulou o sínodo' -> 'Em dezembro, o papa Teodoro II anulou o sínodo'. tipos_espanto: ['historia_humana', 'contraintuitivo']."
+   },
+   {
+    "id": "leis_julgamentos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio em Trial by ordeal (Leeson, Eadmer, Peter Brown, 1215); consenso_parcial adequado."
+   },
+   {
+    "id": "leis_julgamentos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Benefit of clergy (Salmo 51, 1351, 1488, Ben Jonson 1598, Boston 1770, 1827)."
+   },
+   {
+    "id": "leis_julgamentos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Deodand (século XI, 1846, ferrovias, £1.000 anulado). Ótima ponte."
+   },
+   {
+    "id": "leis_julgamentos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Poena cullei; só o tipo escala_absurda não se aplica.",
+    "correcao": "tipos_espanto: ['historia_humana']."
+   },
+   {
+    "id": "leis_julgamentos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Fatos conferem; o gancho esconde que no romance de Poe o próprio Parker é o sacrificado ('They draw straws and Parker is sacrificed').",
+    "correcao": "Gancho: 'Num romance de 1838, Edgar Allan Poe fez náufragos famintos sortearem qual deles viraria comida, e o sorteado se chamava Richard Parker. Em 1884, náufragos reais mataram e comeram um grumete: Richard Parker.' Opcional na explicação: 'No livro, é o próprio Parker quem sugere o sorteio, e ele acaba sorteado.' (com trecho)."
+   },
+   {
+    "id": "leis_julgamentos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Carlill v Carbolic Smoke Ball Co (£100, £1000, 1892, £200, Asquith, morte em 1942 aos 96)."
+   },
+   {
+    "id": "leis_julgamentos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Ernesto Miranda (1963, 1966, nova condenação sem a confissão, cartões a US$ 1,50, morte em 1976)."
+   },
+   {
+    "id": "leis_julgamentos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Todos os números conferem com Liebeck v. McDonald's; pouco conhecido no Brasil."
+   },
+   {
+    "id": "leis_julgamentos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Witchcraft Act 1735 e Helen Duncan (lei cética, 1944, nove meses, Churchill, revogação em 1951)."
+   },
+   {
+    "id": "leis_julgamentos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos conferem; mas a selfie é conhecida e 'animal não tem direito autoral' é o esperado; o espanto é a ponte com a IA.",
+    "correcao": "Gancho: 'Em 2011, macacos fizeram selfies com a câmera de um fotógrafo. A briga sobre o dono das fotos chegou à Justiça dos EUA e hoje é citada pelo governo americano ao exigir autor humano em obras feitas com IA.' tipos_espanto: ['conexao_inesperada', 'historia_humana']."
+   },
+   {
+    "id": "leis_julgamentos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Bushel's Case (1670, júri sem comida, Vaughan, jury nullification)."
+   },
+   {
+    "id": "leis_julgamentos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Scopes Trial (encenado para Dayton, 200 repórteres, rádio, US$ 100)."
+   },
+   {
+    "id": "leis_julgamentos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Agência Senado e Wikipédia pt sustentam tudo (Francisco 1876, lei de 1835, 1861, 1890). Bom mito desmentido brasileiro."
+   }
+  ],
+  "2": [
+   {
+    "id": "leis_julgamentos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Matou e mutilou' e 'processados pela Igreja' aplicados; confere com Animal trial."
+   },
+   {
+    "id": "leis_julgamentos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Teodoro II e os tipos corrigidos; números conferem."
+   },
+   {
+    "id": "leis_julgamentos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tipo corrigido; o resto confere com Poena cullei."
+   },
+   {
+    "id": "leis_julgamentos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Novo gancho confere com o cache de Pym. Ajuste pontual aplicado sem nova verificação: Parker propõe que um deles sirva de comida (não 'o sorteio').",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "leis_julgamentos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com a ponte da IA e tipos corrigidos; confere com a orientação de 2023."
+   }
+  ]
+ }
+}

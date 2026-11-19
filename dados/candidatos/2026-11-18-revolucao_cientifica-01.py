@@ -1,0 +1,525 @@
+LOTE = "2026-11-18-revolucao_cientifica-01"
+AREA = "historia_moderna"
+TEMA = "revolucao_cientifica"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Newton, o alquimista que calculou o fim do mundo
+    {
+        "temas_secundarios": ["elementos_quimicos", "religioes"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Isaac Newton escreveu cerca de um milhão de palavras sobre alquimia e buscava a pedra filosofal. Em outro manuscrito, fez contas com a Bíblia e concluiu que o mundo não acabaria antes de 2060.",
+        "explicacao": (
+            "Mais da metade de tudo o que Newton escreveu trata de teologia e alquimia, e a maior parte nunca foi "
+            "impressa. Esse lado ficou escondido por muito tempo: depois da morte dele, os herdeiros julgaram os "
+            "papéis \"impróprios para publicação\", e eles só voltaram à tona em 1936, quando a Sotheby's leiloou "
+            "329 lotes de manuscritos, mais de um terço deles com conteúdo alquímico. O economista John Maynard "
+            "Keynes comprou boa parte e, depois de estudá-los, descreveu Newton como \"o último dos magos\". Os "
+            "textos sugerem que um dos alvos de Newton era a pedra filosofal, a substância que transformaria metais "
+            "comuns em ouro. Ele também teria visto na \"árvore de Diana\", uma demonstração em que a prata cresce "
+            "em ramos dentro de uma solução, um sinal de que os metais tinham \"uma espécie de vida\". Num "
+            "manuscrito de 1704, tentando extrair informação científica da Bíblia, estimou que o fim viria no "
+            "mínimo em 2060. Mas avisou que não fazia a conta para marcar a data: queria frear as \"conjecturas "
+            "apressadas\" de quem vivia anunciando o fim e, a cada previsão fracassada, desacreditava as profecias."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Isaac_Newton's_occult_studies",
+                "Newton's writings suggest that one of the main goals of his alchemy may have been the discovery of the philosopher's stone (a material believed to turn base metals into gold) [...] "
+                "Newton reportedly believed that Diana's Tree, an alchemical demonstration producing a dendritic \"growth\" of silver from solution, was evidence that metals \"possessed a sort of life.\" [...] "
+                "In 1936, a collection of Isaac Newton's unpublished works was auctioned by Sotheby's [...] "
+                "this material consisted of 329 lots of Newton's manuscripts, over a third of which were filled with content that appeared to be alchemical in nature. "
+                "At the time of Newton's death this material was considered \"unfit to publish\" by Newton's estate [...] "
+                "many of these documents, along with Newton's death mask, were purchased by economist John Maynard Keynes [...] "
+                "Keynes would describe Newton as the \"last of the magicians\" [...] "
+                "In a manuscript from 1704, Newton describes his attempts to extract scientific information from the Bible and estimates that the world would end no earlier than 2060. "
+                "In predicting this, he said, \"This I mention not to assert when the time of the end shall be, but to put a stop to the rash conjectures of fanciful men who are frequently predicting the time of the end, and by doing so bring the sacred prophecies into discredit as often as their predictions fail.\" [...] "
+                "Newton wrote and transcribed about a million words on the subject of alchemy",
+                nome="Isaac Newton's occult studies"),
+            wiki("Isaac_Newton",
+                "Over half of what Newton wrote concerned theology and alchemy, and most has never been printed.",
+                nome="Isaac Newton"),
+        ],
+    },
+    # 2 os Principia e o livro dos peixes
+    {
+        "temas_secundarios": ["vida_marinha", "dinheiro"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "A Royal Society ia pagar a impressão dos Principia de Newton, mas tinha torrado o caixa num livro ilustrado sobre peixes que encalhou. Halley bancou a obra e recebeu o salário em exemplares do livro dos peixes.",
+        "explicacao": (
+            "Em janeiro de 1684, Edmond Halley, Christopher Wren e Robert Hooke discutiam o movimento dos planetas, "
+            "e Hooke dizia ter deduzido a lei do inverso do quadrado, sem nunca mostrar a demonstração. No mesmo "
+            "ano, Halley foi a Cambridge e perguntou a Newton. Para sua surpresa, Newton respondeu que já tinha "
+            "feito aquelas contas havia tempo, mas não achava os papéis. Em novembro, mandou um manuscrito de 9 "
+            "páginas, e Halley ficou tão entusiasmado que voltou para pedir mais. Dali nasceram os Principia. O "
+            "problema era o dinheiro. A Royal Society tinha prometido financiar a publicação, mas estava apertada "
+            "por causa de De Historia Piscium, de Francis Willughby e John Ray, lançado em 1686. Era o primeiro "
+            "livro ilustrado sobre peixes publicado na Inglaterra, e as gravuras custaram caríssimo; o livro vendeu "
+            "mal. Coube a Halley, então funcionário da sociedade, pagar a edição por conta e risco próprios, e os "
+            "Principia saíram em julho de 1687. Depois disso, a sociedade avisou que não tinha como lhe pagar o "
+            "salário anual prometido de 50 libras. Halley recebeu, no lugar do dinheiro, exemplares encalhados do "
+            "livro dos peixes."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("De_Historia_Piscium",
+                "De Historia Piscium (Latin for 'Of the History of Fish') is a scientific book written by Francis Willughby and John Ray and published by the Royal Society in 1686. "
+                "The book was the first illustrated work on ichthyology to be published in England. [...] "
+                "One of the main features of the book was its extensive illustrations, financed by subscriptions to the Society, but still a huge cost. [...] "
+                "It was unpopular and sold poorly, causing severe strain on the finances of the society. "
+                "This resulted in the society being unable to meet its promise to finance the publication of Newton's Philosophiae Naturalis Principia Mathematica [...] "
+                "leaving this to Edmond Halley, who was then the clerk of the society. "
+                "After Halley had personally financed the publication of Principia, he was informed that the society could no longer afford to provide him the promised annual salary of £50. "
+                "Instead, Halley was paid with left-over copies of De Historia Piscium.",
+                nome="De Historia Piscium"),
+            wiki("Philosophiæ_Naturalis_Principia_Mathematica",
+                "In January 1684, Edmond Halley, Christopher Wren and Robert Hooke had a conversation in which Hooke claimed to not only have derived the inverse-square law but also all the laws of planetary motion. "
+                "Wren was unconvinced, Hooke did not produce the claimed derivation [...] "
+                "Newton surprised Halley by saying that he had already made the derivations some time ago; but that he could not find the papers. [...] "
+                "in November 1684 Newton sent Halley an amplified version of whatever previous work Newton had done on the subject. "
+                "This took the form of a 9-page manuscript [...] "
+                "so excited Halley by their mathematical and physical originality and far-reaching implications for astronomical theory, that he immediately went to visit Newton again, in November 1684, to ask Newton to let the Royal Society have more of such work. [...] "
+                "The complete work, published by Halley at his own financial risk, appeared in July 1687.",
+                nome="Philosophiæ Naturalis Principia Mathematica"),
+        ],
+    },
+    # 3 Newton escreveu o próprio veredito
+    {
+        "temas_secundarios": ["historia_matematica", "leis_julgamentos"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "Na briga sobre quem inventou o cálculo, a Royal Society montou uma comissão para julgar entre Newton e Leibniz. O presidente da sociedade era Newton, e o relatório que lhe deu razão foi escrito por ele mesmo.",
+        "explicacao": (
+            "Newton começou a desenvolver seu método, que chamava de fluxões, em 1666, aos 23 anos, mas o "
+            "trabalho ficou décadas sem ser publicado. Leibniz começou a sua versão em 1674 e a publicou antes, "
+            "em 1684. Os defensores de Newton passaram a acusar Leibniz de ter plagiado ideias inéditas do inglês, "
+            "e a disputa chegou ao auge em 1712. Depois de receber uma carta de Leibniz, a Royal Society, presidida "
+            "por Newton, criou uma comissão para dar o veredito, que jamais pediu a Leibniz a versão dele. O "
+            "relatório, favorável a Newton, saiu no começo de 1713 com o nome de Commercium Epistolicum, e quem o "
+            "redigiu foi o próprio Newton. Leibniz só o viu no outono de 1714. Ninguém saiu limpo da história: "
+            "Leibniz também publicou ataques anônimos contra Newton, e há indícios de que alterou e antedatou "
+            "anotações. A controvérsia amargurou os últimos anos de vida de Leibniz, entre 1710 e 1716. O "
+            "consenso atual é que os dois criaram o cálculo de forma independente."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Leibniz–Newton_calculus_controversy",
+            "The question was a major intellectual controversy, beginning in 1699 and reaching its peak in 1712. "
+            "Leibniz had published his work on calculus first [...] "
+            "but Newton's supporters accused Leibniz of plagiarizing Newton's unpublished ideas. "
+            "The modern consensus is that the two men independently developed their ideas. [...] "
+            "Newton began working on a form of calculus, which he called \"The Method of Fluxions and Infinite Series,\" in 1666 at the age of 23. [...] "
+            "it was not published until decades later [...] "
+            "Gottfried Leibniz began developing his own variant of calculus in 1674 and published his first paper on the subject, \"Nova Methodus pro Maximis et Minimis,\" in 1684. [...] "
+            "The last years of Leibniz's life (1710–1716) were embittered by a long controversy with John Keill, Newton, and others [...] "
+            "remains questionable based on discoveries made during the inquest and afterward that Leibniz both back-dated and altered the fundamentals of his \"original\" notes [...] "
+            "He also published anonymous slanders of Newton regarding their controversy [...] "
+            "The Royal Society, of which Isaac Newton was president at the time, set up a committee to pronounce on the priority dispute in response to a letter it had received from Leibniz. "
+            "That committee never asked Leibniz to give his version of events. "
+            "The report of the committee, finding in favor of Newton, was written and published early in 1713 as the \"Commercium Epistolicum\" (mentioned above) by Newton himself. "
+            "Leibniz, however, did not see it until the autumn of 1714.",
+            nome="Leibniz–Newton calculus controversy")],
+    },
+    # 4 Kepler, advogado da mãe acusada de bruxaria
+    {
+        "temas_secundarios": ["leis_julgamentos", "historia_astronomia", "literatura"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "A mãe de Johannes Kepler, aos 73 anos, passou catorze meses acorrentada, acusada de bruxaria. O astrônomo parou suas pesquisas para defendê-la, e ela foi absolvida sem confessar, mesmo ameaçada de tortura.",
+        "explicacao": (
+            "Katharina Kepler era uma viúva de Leonberg, no ducado de Württemberg, que conhecia ervas e se "
+            "sustentava sozinha. Em 1615, depois de uma briga de negócios, a mulher de um vidraceiro a acusou de "
+            "ter lhe dado uma bebida amarga que a deixara doente. O magistrado local, que no seu mandato acusou quinze "
+            "mulheres de feitiçaria e mandou queimar oito, abriu o processo. Johannes Kepler assumiu a defesa, "
+            "orientado por juristas e teólogos de Tübingen. Ele acreditava que o boato tinha sido alimentado por "
+            "um texto seu, o Somnium, em que a mãe do narrador vende sacos de ervas e invoca demônios; uma cópia do "
+            "manuscrito teria chegado a Tübingen por volta de 1611. Em 1620, Katharina foi presa. Para forçá-la a "
+            "confessar, mostraram-lhe os instrumentos de tortura, e ela respondeu que podiam fazer o que quisessem, "
+            "pois não tinha nada a confessar. Foi solta em 1621, depois de 405 dias de prisão preventiva, e morreu "
+            "uns seis meses depois. O processo custou a Kepler mais de 900 florins, mais de dois anos de salário. "
+            "O Somnium, publicado só depois da morte dele, é hoje citado como uma das primeiras obras de ficção "
+            "científica."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Katharina_Kepler",
+                "was a German herbalist from Leonberg, Württemberg, who was the mother of the famous astronomer Johannes Kepler. "
+                "She was accused of witchcraft in 1615 and again in 1620, but was defended by her son and released. [...] "
+                "As a single widow, she was financially independent and could support herself and her children. [...] "
+                "In 1615, Ursula Reinbold, the wife of a glazier, accused Katharina after a business dispute with her of having given her a bitter drink that had made her ill [...] "
+                "accused fifteen women of sorcery and executed eight of them by burning. [...] "
+                "Johannes Kepler defended his mother himself, he had sought advice with the assistance from lawyers and theologians of his university of Tübingen. [...] "
+                "Two strong men guarded the 73-year-old woman day and night. "
+                "The accused and her relatives had to pay the costs. She was in chains for fourteen months. [...] "
+                "When she was finally shown the instruments of torture in order to force her to confess, she remained steadfast: "
+                "\"She said that they could do whatever they wanted with her, and even if they pulled out every vein from her body, she would still have nothing to confess [...] "
+                "This ultimately led to an acquittal. A week after her torture she was released in 1621 after 405 days of pretrial detention. "
+                "The trial cost Johannes Kepler over 900 guilders (more than two years' salary) [...] "
+                "Katharina Kepler died about six months later.",
+                nome="Katharina Kepler"),
+            wiki("Somnium_(novel)",
+                "It was first published in 1634 by Kepler's son, Ludwig Kepler, several years after the death of his father. [...] "
+                "Carl Sagan and Isaac Asimov have referred to it as one of the earliest works of science fiction. [...] "
+                "Duracotus's mother, Fiolxhilde, makes a living selling bags of herbs and cloth with strange markings on them. [...] "
+                "She tells him about the daemons she can summon. [...] "
+                "Kepler believed that a copy of the manuscript-in-progress found its way to Tübingen around 1611 which fueled the rumour. [...] "
+                "He had to pause his scientific work for those years while he was busy defending his mother.",
+                nome="Somnium (novel)"),
+        ],
+    },
+    # 5 "Eppur si muove" provavelmente nunca foi dito
+    {
+        "temas_secundarios": ["historia_astronomia", "religioes"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Galileu provavelmente nunca disse \"Eppur si muove\" (\"e, no entanto, ela se move\"). A frase não aparece na primeira biografia dele nem nos autos do processo, e só foi impressa mais de um século depois.",
+        "explicacao": (
+            "Pela lenda, Galileu teria murmurado a frase em 1633, logo depois de a Inquisição romana obrigá-lo a "
+            "renegar a ideia de que a Terra gira em torno do Sol. Mas a biografia mais antiga de Galileu, escrita "
+            "por seu discípulo Vincenzo Viviani em 1655 e 1656, não fala nisso, e os registros do julgamento "
+            "também não. Alguns autores lembram que dizer algo assim diante da Inquisição teria sido uma "
+            "imprudência. A cena só apareceu impressa em inglês em 1757, no livro The Italian Library, de Giuseppe "
+            "Baretti: assim que foi solto, Galileu teria olhado para o céu e para o chão, batido o pé e soltado a "
+            "frase. Em 1911 houve uma reviravolta. Um colecionador belga comprou um quadro, datado de 1643 ou 1645, "
+            "em que as palavras aparecem pintadas, sinal de que a história já circularia logo após a morte de "
+            "Galileu. Só que o quadro, hoje em paradeiro desconhecido, é quase idêntico a outro pintado em 1837, "
+            "e muitos especialistas, pelo estilo, duvidam que ele seja anterior ao século XIX. Por isso, a frase é "
+            "considerada provavelmente apócrifa."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("And_yet_it_moves",
+            "According to popular legend, Galileo muttered this in 1633 after the Roman Inquisition forced him to recant his claims, though this is likely apocryphal. [...] "
+            "The earliest biography of Galileo, written by his disciple Vincenzo Viviani in 1655–1656, does not mention this phrase, and records of his trial do not cite it. "
+            "Some authors say it would have been imprudent for Galileo to have said such a thing before the Inquisition. "
+            "The event was first reported in English print in 1757 by Giuseppe Baretti in his book The Italian Library: "
+            "The moment he was set at liberty, he looked up to the sky and down to the ground, and, stamping with his foot, in a contemplative mood, said, Eppur si muove [...] "
+            "In 1911, the words E pur si muove were found on a painting which had just been acquired by an art collector, Jules van Belle, of Roeselare, Belgium. "
+            "This painting is dated 1643 or 1645 (the last digit is partially obscured), within a year or two of Galileo's death. [...] "
+            "However, this painting, whose whereabouts is currently unknown, was discovered to be nearly identical to one painted in 1837 by Eugene van Maldeghem, and, basing their opinions on the style, many art experts doubt that the van Belle painting was painted by Murillo, or even that it was painted before the nineteenth century.",
+            nome="And yet it moves")],
+    },
+    # 6 o prefácio falso de Copérnico
+    {
+        "temas_secundarios": ["historia_astronomia", "religioes"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "O livro em que Copérnico pôs o Sol no centro abria com um prefácio dizendo que a teoria era só um recurso de cálculo, não a verdade. O texto não era dele: foi inserido sem assinatura por quem cuidou da impressão.",
+        "explicacao": (
+            "De revolutionibus orbium coelestium foi impresso em Nuremberg e publicado pouco antes da morte de "
+            "Copérnico, em 1543. Quem supervisionava a impressão era seu aluno Rheticus, mas ele partiu para "
+            "assumir um cargo de professor em Leipzig, e a tarefa passou ao pregador luterano Andreas Osiander. "
+            "Para amortecer a polêmica, Osiander acrescentou uma carta sem assinatura, \"Ao leitor, sobre as "
+            "hipóteses desta obra\", colocada antes do prefácio verdadeiro, em que Copérnico dedicava o livro ao "
+            "papa Paulo III. A carta dizia que o sistema era matemática para ajudar nas contas e terminava "
+            "pedindo que ninguém esperasse certeza alguma da astronomia, visão bem diferente da que Copérnico "
+            "defendia para a própria teoria. O segredo não durou entre os especialistas. Um astrônomo de "
+            "Nuremberg, morto em 1547, deixou anotada em seu exemplar a autoria de Osiander, e Johannes Kepler, "
+            "que conheceu essa anotação, demonstrou metodicamente quem escrevera o texto. Muitos viram ali uma "
+            "traição a Copérnico, mas há quem defenda Osiander: ele não seria inimigo da ciência e teria omitido "
+            "o nome por ser um reformador protestante muito malvisto pelos católicos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("De_revolutionibus_orbium_coelestium",
+            "It was published just before Copernicus' death, in 1543. [...] "
+            "The book, first printed in 1543 CE in Nuremberg [...] "
+            "Rheticus left Nürnberg to take up his post as professor in Leipzig. Andreas Osiander had taken over the task of supervising the printing and publication. "
+            "In an effort to reduce the controversial impact of the book Osiander added his own unsigned letter Ad lectorem de hypothesibus huius operis (To the reader concerning the hypotheses of this work) printed in front of Copernicus' preface which was a dedicatory letter to Pope Paul III [...] "
+            "Osiander's letter stated that Copernicus' system was mathematics intended to aid computation and not an attempt to declare literal truth: [...] "
+            "Let no one expect anything certain from astronomy, which cannot furnish it [...] "
+            "the Ad lectorem \"expresses views on the aim and nature of scientific theories at variance with Copernicus' claims for his own theory\". "
+            "Many view Osiander's letter as a betrayal of science and Copernicus [...] "
+            "he has been defended by historian Bruce Wrightsman, who points out he was not an enemy of science. [...] "
+            "Osiander did not sign the letter because he \"was such a notorious [Protestant] reformer whose name was well-known and infamous among Catholics\" [...] "
+            "Petreius had sent a copy to Hieronymus Schreiber, an astronomer from Nürnberg [...] "
+            "Schreiber, who died in 1547, left in his copy of the book a note about Osiander's authorship. "
+            "Via Michael Mästlin, this copy came to Johannes Kepler, who discovered what Osiander had done and methodically demonstrated that Osiander had indeed added the foreword. "
+            "The most knowledgeable astronomers of the time had realized that the foreword was Osiander's doing.",
+            nome="De revolutionibus orbium coelestium")],
+    },
+    # 7 o "livro que ninguém leu" foi lido, mas pulavam o Sol no centro
+    {
+        "temas_secundarios": ["historia_astronomia", "literatura"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "O livro de Copérnico ganhou a fama de \"livro que ninguém leu\". Um historiador caçou por 35 anos os exemplares antigos e viu o contrário: foi muito lido, mas os leitores ignoravam a parte do Sol no centro.",
+        "explicacao": (
+            "O escritor Arthur Koestler chamou De revolutionibus, de Nicolau Copérnico, de \"o livro que ninguém "
+            "leu\" e de campeão de encalhe de todos os tempos. O astrônomo e historiador da ciência Owen Gingerich "
+            "resolveu tirar a prova do jeito mais trabalhoso: passou 35 anos examinando todos os exemplares "
+            "sobreviventes das duas primeiras edições. O censo reuniu 276 cópias da primeira edição, mais do que "
+            "as 228 que restam do Primeiro Fólio de Shakespeare, e 325 da segunda. As anotações nas margens "
+            "contaram a história. Quase todos os grandes matemáticos e astrônomos da época tinham o livro e o "
+            "liam. Mas praticamente todos deixavam de lado a cosmologia do começo, justamente a parte que punha o "
+            "Sol no centro, e se interessavam pelos capítulos posteriores, com os novos modelos de Copérnico para "
+            "o movimento dos planetas, livres do chamado equante. Ou seja, para os leitores, o livro era sobretudo "
+            "uma ferramenta de cálculo. Graças a esse trabalho, contado em The Book Nobody Read, de 2004, De "
+            "revolutionibus é hoje mais estudado e catalogado do que qualquer outra primeira edição histórica, com "
+            "exceção da Bíblia original de Gutenberg."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("De_revolutionibus_orbium_coelestium",
+            "is the seminal work on the heliocentric theory of the astronomer Nicolaus Copernicus [...] "
+            "Arthur Koestler described De revolutionibus as \"The Book That Nobody Read\" saying the book \"was and is an all-time worst seller\", despite being reprinted four times. "
+            "Owen Gingerich, an eminent astronomer and historian of science who has written on both Nicolaus Copernicus and Johannes Kepler, disproved this after a 35-year project to examine every surviving copy of the first two editions. "
+            "Gingerich showed that nearly all the leading mathematicians and astronomers of the time owned and read the book; "
+            "however, his analysis of the marginalia shows that almost all of them ignored the cosmology at the beginning of the book and were only interested in Copernicus' new equant-free models of planetary motion in the later chapters. [...] "
+            "Gingerich's efforts and conclusions are recounted in The Book Nobody Read, published in 2004 by Walker & Co. "
+            "His census included 276 copies of the first edition (by comparison, there are 228 extant copies of Shakespeare's First Folio) and 325 copies of the second. [...] "
+            "De revolutionibus has been researched and catalogued better than any other first-edition historic text except for the original Gutenberg Bible.",
+            nome="De revolutionibus orbium coelestium")],
+    },
+    # 8 Vesalius, os macacos de Galeno e o corpo que "mudou"
+    {
+        "temas_secundarios": ["historia_medicina", "anatomia", "vieses_cognitivos"],
+        "tipos_espanto": ["historia_humana", "mito_desmentido"],
+        "gancho": "Por 1.400 anos, anatomistas disseram ver no coração furos descritos por Galeno que não existem. Quando Vesalius mostrou que Galeno só dissecara animais, um ex-professor dele alegou que o corpo humano tinha mudado.",
+        "explicacao": (
+            "Galeno ensinava que o sangue passava de um ventrículo do coração para o outro por aberturas na parede "
+            "entre eles, e dizia tê-las encontrado. Sua autoridade era tamanha que, por 1.400 anos, uma sucessão de "
+            "anatomistas afirmou achá-las também. Parte do problema estava no ensino: o professor lia Galeno "
+            "enquanto um barbeiro-cirurgião dissecava um animal, e ninguém tentava conferir o texto, tido como "
+            "inquestionável. Andreas Vesalius, professor em Pádua entre 1537 e 1542, fazia ele mesmo as "
+            "dissecações e usava como material de aula os corpos de criminosos executados, cedidos por um juiz. "
+            "Admitiu que não encontrava os furos. Em Bolonha, percebeu que toda a pesquisa de Galeno se limitara "
+            "a animais, porque a tradição romana não permitia dissecar corpos humanos: Galeno usara macacos-berberes, "
+            "que julgava os mais parecidos com o homem. Vesalius mostrou, por exemplo, que a mandíbula humana é um "
+            "osso só, e não dois, e que não temos uma rede de vasos na base do cérebro que existe em ovelhas. Parte "
+            "dos colegas preferiu salvar Galeno: Jacobus Sylvius, de quem Vesalius fora aluno em Paris, publicou "
+            "que o corpo humano é que teria mudado desde a época dele."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Andreas_Vesalius",
+            "He was a professor at the University of Padua (1537–1542) [...] "
+            "There he studied the theories of Galen under the auspices of Johann Winter von Andernach, Jacques Dubois (Jacobus Sylvius) and Jean Fernel. [...] "
+            "Previously these topics had been taught primarily from reading classical texts, mainly Galen, followed by an animal dissection by a barber–surgeon whose work was directed by the lecturer. "
+            "No attempt was made to confirm Galen's claims, which were considered unassailable. "
+            "Vesalius, in contrast, performed dissection as the primary teaching tool, handling the actual work himself [...] "
+            "In Bologna, Vesalius discovered that all of Galen's research was restricted to animals, since the tradition of Rome did not allow dissection of the human body. "
+            "Galen had dissected Barbary macaques instead, which he considered structurally closest to man. [...] "
+            "In 1539, a judge at the Padua criminal court had been interested by Vesalius' work and had agreed to regularly supply him the cadavers of executed criminals. [...] "
+            "In order for this theory to be correct, some kind of opening was needed to interconnect the ventricles, and Galen claimed to have found them. "
+            "So paramount was Galen's authority that for 1400 years a succession of anatomists had claimed to find these holes, until Vesalius admitted he could not find them. [...] "
+            "his discoveries that the lower jaw (mandible) was composed of only one bone, not two (which Galen had assumed based on animal dissection) and that humans lack the rete mirabile, a network of blood vessels at the base of the brain that is found in sheep and other ungulates. [...] "
+            "one of his main detractors and one-time professors, Jacobus Sylvius, published an article that claimed that the human body itself had changed since Galen had studied it.",
+            nome="Andreas Vesalius")],
+    },
+    # 9 a conta de Harvey
+    {
+        "temas_secundarios": ["historia_medicina", "anatomia"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "William Harvey provou a circulação do sangue com uma conta: se o fígado fabricasse o sangue sem parar, como ensinava Galeno, teria de produzir 498 libras por dia, mais do que o peso do corpo inteiro.",
+        "explicacao": (
+            "Em 1628, o médico inglês publicou De Motu Cordis, o tratado sobre a circulação do sangue. O auge do "
+            "livro é o oitavo capítulo, sobre a quantidade de sangue que passa pelo coração. A visão aceita, de Galeno, "
+            "era que o fígado produzia o sangue das veias. Harvey estimou a capacidade do coração, quanto sangue "
+            "sai a cada batida e quantas vezes ele bate em meia hora, escolhendo de propósito números baixos, para "
+            "deixar à vista o tamanho do absurdo. Supôs que o coração comportava 1,5 onça, que só uma pequena "
+            "fração disso era expelida por batida e que ele batia mil vezes a cada meia hora. Ainda assim, dava 10 "
+            "libras e 6 onças de sangue em meia hora. Multiplicado pelas 48 meias horas do dia, eram 498 libras: "
+            "nenhum fígado daria conta, e o sangue só podia estar circulando. Harvey sabia da ousadia e escreveu "
+            "temer ter a humanidade inteira como inimiga, tamanha a força do costume e do respeito à Antiguidade. "
+            "Depois do livro, sua clínica de fato encolheu. Ao contrário do que muitos pensam, porém, ele não "
+            "previu os vasos capilares: achava que o sangue atravessava os \"poros\" da carne."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("William_Harvey",
+            "In 1628 he published in Frankfurt his completed treatise on the circulation of the blood, the De Motu Cordis. "
+            "As a result of negative comments by other physicians Harvey \"fell mightily in his practice\" [...] "
+            "However, the apex of Harvey's work is probably the eighth chapter, in which he deals with the actual quantity of blood passing through the heart from the veins to the arteries. "
+            "Coming into conflict with Galen's accepted view of the liver as the origin of venous blood, Harvey estimated the capacity of the heart, how much blood is expelled through each pump of the heart, and the number of times the heart beats in a half an hour. "
+            "All of these estimates were purposefully low, so that people could see the vast amount of blood Galen's theory required the liver to produce. "
+            "He estimated that the capacity of the heart was 1.5 imperial fluid ounces (43 ml) [...] "
+            "The next estimate he used was that the heart beats 1,000 times every half an hour, which gave 10 pounds 6 ounces of blood in a half an hour, "
+            "and when this number was multiplied by 48 half hours in a day he realised that the liver would have to produce 498 pounds of blood in a day, more than the weight of the whole body. [...] "
+            "I not only fear injury to myself from the envy of a few, but I tremble lest I have mankind at large for my enemies, so much doth want and custom, that become as another nature, and doctrine once sown and that hath struck deep root, and respect for antiquity, influence all men [...] "
+            "Contrary to a popular misconception, Harvey did not predict the existence of capillaries. "
+            "His observations convinced him that direct connection between veins and arteries are unnecessary; he wrote \"blood permeates the pores\" in the flesh",
+            nome="William Harvey")],
+    },
+    # 10 o pêndulo de Caiena e a Terra achatada
+    {
+        "temas_secundarios": ["geologia_profunda", "medidas_padroes", "relatividade"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "No século XVII, na Guiana Francesa, um astrônomo viu que um pêndulo tinha de ser 2,256 mm mais curto que em Paris para bater o segundo. Newton concluiu daí que a Terra não é uma esfera: é mais larga no equador.",
+        "explicacao": (
+            "Jean Richer foi mandado pela Academia de Ciências da França a Caiena, onde trabalhou entre 1671 e "
+            "1673. Lá mediu o chamado pêndulo de segundos, aquele em que cada meia oscilação dura um segundo, e "
+            "descobriu que ele precisava ser 1,25 linha (2,256 milímetros) mais curto que em Paris. O ritmo de um "
+            "pêndulo depende da gravidade, então a diferença indicava que ela era um pouco mais fraca ali. Richer "
+            "foi a primeira pessoa a observar uma variação da força gravitacional na superfície da Terra, o que "
+            "talvez tenha inaugurado a gravimetria. Newton tirou a conclusão: se a gravidade diminui com o "
+            "quadrado da distância, Caiena, perto do equador, devia estar mais longe do centro da Terra do que "
+            "Paris. Logo, o planeta não seria esférico, como se supunha, mas estufado no equador. Christiaan "
+            "Huygens preferiu outra explicação, a força centrífuga da rotação, que reduz a gravidade aparente no "
+            "equador. Hoje se sabe que a gravidade varia cerca de 0,5% entre o equador e os polos, por causa do "
+            "achatamento da Terra, e relógios de pêndulo de precisão tinham de ser recalibrados quando mudavam de "
+            "latitude. Na mesma viagem, as medições de Marte feitas por Richer, somadas às de Cassini em Paris, "
+            "deram a primeira estimativa da distância entre a Terra e Marte baseada em dados."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Jean_Richer",
+                "Between 1671 and 1673 he performed experiments and carried out celestial observations in Cayenne, French Guiana, at the request of the French Academy. "
+                "His observations and measurements of Mars during its perihelic opposition, coupled with those made simultaneously in Paris by Cassini, led to the earliest data-based estimate of the distance between Earth and Mars [...] "
+                "While there he also measured the length of a seconds pendulum, that is a pendulum with a half-swing of one second, and found it to be 1.25 lignes (2.256 millimeters) shorter than at Paris. [...] "
+                "Richer was the first person to observe a change in gravitational force over the surface of the Earth, perhaps beginning the science of gravimetry. "
+                "Isaac Newton later commented that if, as he had proposed, the force of gravity decreases with the inverse square of the distance between objects, the obvious conclusion to be drawn from Richer's work is that near-equatorial Cayenne is further from the centre of the Earth than Paris [...] "
+                "Thus the Earth could not be spherical, as had earlier been presumed, but rather bulges at and near the equator (equatorial bulge). [...] "
+                "While Newton interpreted it as due to oblateness of Earth, Christiaan Huygens interpreted it instead as due to the centrifugal force which reduces the apparent gravity at the equator.",
+                nome="Jean Richer"),
+            wiki("Pendulum_clock",
+                "Since the pendulum rate will increase with an increase in gravity [...] "
+                "The local gravity also varies by about 0.5% with latitude between the equator and the poles, with gravity increasing at higher latitudes due to the oblate shape of the Earth. "
+                "Thus precision regulator clocks used for celestial navigation in the early 20th century had to be recalibrated when moved to a different latitude.",
+                nome="Pendulum clock"),
+        ],
+    },
+    # 11 Pascal, o cunhado e o monte
+    {
+        "temas_secundarios": ["atmosfera", "estados_materia"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "Para provar que o ar tem peso, Pascal convenceu o cunhado a subir um monte com tubos de mercúrio. No topo, a coluna caiu de 26 para 23 polegadas. E um frade ficou embaixo, vigiando outro tubo para ver se ele mudava.",
+        "explicacao": (
+            "Na época, muitos estudiosos, Descartes entre eles, acreditavam que o vácuo não existe: alguma "
+            "matéria invisível preencheria todo o espaço. Pascal tinha repetido o experimento de Evangelista "
+            "Torricelli, com um tubo cheio de mercúrio virado de boca para baixo numa vasilha, e se perguntava o "
+            "que segurava a coluna. Se fosse o peso do ar, raciocinou, a pressão no alto de uma montanha seria "
+            "menor. Ele morava perto do Puy de Dôme, de 1.460 metros, mas a saúde frágil não o deixava subir. Em "
+            "19 de setembro de 1648, depois de meses de insistência, o cunhado, Florin Périer, fez a expedição. "
+            "No jardim de um convento, o ponto mais baixo de Clermont, o mercúrio parou em pouco mais de 26 "
+            "polegadas. Périer deixou ali um tubo marcado, aos cuidados de um frade que devia observar qualquer "
+            "mudança ao longo do dia, e levou outro ao cume. Lá em cima, a coluna marcou só 23 polegadas e 2 "
+            "linhas, e ele repetiu a medida cinco vezes, em pontos diferentes do topo. Pascal refez a prova em "
+            "Paris, subindo com um barômetro numa torre de igreja de uns 50 metros, e o mercúrio desceu duas "
+            "linhas. Hoje a unidade de pressão do Sistema Internacional leva o nome dele."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Blaise_Pascal",
+                "The SI unit for pressure is named for Pascal. [...] "
+                "Having replicated an experiment that involved placing a tube filled with mercury upside down in a bowl of mercury, Pascal questioned what force kept some mercury in the tube and what filled the space above the mercury in the tube. "
+                "At the time, most scientists, including Descartes, believed in a plenum, i.e. some invisible matter filled all of space, rather than a vacuum [...] "
+                "Pascal reasoned that if true, air pressure on a high mountain must be less than at a lower altitude. "
+                "He lived near the Puy de Dôme mountain, 4,790 feet (1,460 m) tall, but his health was poor, so he could not climb it. "
+                "On 19 September 1648, after many months of Pascal's friendly but insistent prodding, Florin Périer, husband of Pascal's elder sister Gilberte, was finally able to carry out the fact-finding mission vital to Pascal's theory. [...] "
+                "at eight o'clock we met in the gardens of the Minim Fathers, which has the lowest elevation in town. [...] "
+                "I found the quick silver stood at 26\" [...] "
+                "I attached one of the tubes to the vessel and marked the height of the quicksilver and...asked Father Chastin, one of the Minim Brothers...to watch if any changes should occur through the day [...] "
+                "I walked to the top of Puy-de-Dôme, about 500 fathoms higher than the monastery, where upon experiment...found that the quicksilver reached a height of only 23\" and 2 lines...I repeated the experiment five times with care...each at different points on the summit [...] "
+                "Pascal replicated the experiment in Paris by carrying a barometer up to the top of the bell tower at the church of Saint-Jacques-de-la-Boucherie, a height of about 50 metres. "
+                "The mercury dropped two lines.",
+                nome="Blaise Pascal"),
+            wiki("Puy_de_Dôme",
+                "In 1648, Florin Périer, at the urging of his brother-in-law Blaise Pascal, confirmed Evangelista Torricelli's theory that barometric observations were caused by the weight of air by measuring the height of a column of mercury at three elevations on Puy de Dôme.",
+                nome="Puy de Dôme"),
+        ],
+    },
+    # 12 a lista de desejos de Boyle
+    {
+        "temas_secundarios": ["invencoes", "elementos_quimicos"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Robert Boyle, um dos fundadores da química moderna, anotou no século XVII 24 invenções que sonhava ver, como a arte de voar, prolongar a vida e achar a longitude no mar. Quase todas já se realizaram.",
+        "explicacao": (
+            "Boyle, nascido na Irlanda em 1627, é muito lembrado pela lei que relaciona pressão e volume dos gases "
+            "e é visto como o primeiro químico moderno. Fez parte do \"Colégio Invisível\", um grupo de estudiosos "
+            "da \"nova filosofia\" que, em 1663, se tornou a Royal Society. Na sua lista de desejos estavam "
+            "\"o prolongamento da vida\", \"a arte de voar\", \"luz perpétua\", armaduras leves e extremamente "
+            "duras, um navio que navegasse com qualquer vento e outro que não afundasse, um modo prático e seguro "
+            "de achar a longitude e remédios potentes para alterar ou exaltar a imaginação, a vigília e a "
+            "memória, aliviar a dor e garantir um sono inocente e sonhos inofensivos. Segundo a Wikipédia, todas "
+            "as 24 ideias, com poucas exceções, se tornaram realidade. O mesmo Boyle que ajudou a fundar a ciência "
+            "experimental era também alquimista: acreditava que metais podiam ser transmutados, fez experimentos "
+            "com essa esperança e ajudou a revogar, pela Lei das Minas Reais de 1688, uma lei de 1403 que proibia "
+            "\"multiplicar\" ouro e prata."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "consenso_parcial",
+        "fontes": [wiki("Robert_Boyle",
+            "Robert Boyle (; 25 January 1627 – 31 December 1691) was an Anglo-Irish chemist, alchemist, physicist, theologian, and inventor. "
+            "Boyle is largely regarded today as the first modern chemist, and therefore one of the founders of modern chemistry, and one of the pioneers of modern experimental scientific method. "
+            "He is best known for Boyle's law, which describes the inversely proportional relationship between the absolute pressure and volume of a gas [...] "
+            "Boyle was born at Lismore Castle in County Waterford, in the far south of Ireland [...] "
+            "known as the \"Invisible College\", who devoted themselves to the cultivation of the \"new philosophy\". [...] "
+            "In 1663 the Invisible College became The Royal Society of London for Improving Natural Knowledge [...] "
+            "He made a \"wish list\" of 24 possible inventions which included \"the prolongation of life\", the \"art of flying\", \"perpetual light\", \"making armour light and extremely hard\", \"a ship to sail with all winds, and a ship not to be sunk\", \"practicable and certain way of finding longitudes\", \"potent drugs to alter or exalt imagination, waking, memory and other functions and appease pain, procure innocent sleep, harmless dreams, etc.\". "
+            "All but a few of the 24 have come true. [...] "
+            "Robert Boyle was an alchemist; and believing the transmutation of metals to be a possibility, he carried out experiments in the hope of achieving it; "
+            "and he was instrumental in obtaining the repeal, by the Royal Mines Act 1688 (1 Will. & Mar. c. 30), of the statute of Henry IV against multiplying gold and silver, the Gold and Silver Act 1403",
+            nome="Robert Boyle")],
+    },
+    # 13 Micrographia: o piolho gigante e a "célula"
+    {
+        "temas_secundarios": ["microbiologia", "insetos", "palavras_portugues"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O primeiro best-seller científico trazia um piolho gravado numa folha dobrável quatro vezes maior que o livro. Era a Micrographia, de Robert Hooke, que também batizou a \"célula\", lembrando as celas de um mosteiro.",
+        "explicacao": (
+            "Publicada em janeiro de 1665, a Micrographia foi a primeira grande publicação da Royal Society e o "
+            "primeiro livro com ilustrações de insetos e plantas vistos ao microscópio. As gravuras em cobre eram "
+            "o grande atrativo: as pranchas de insetos se desdobravam para além do tamanho do volume, que já era "
+            "um fólio grande, e a do piolho chegava a quatro vezes o tamanho do livro. O sucesso fez da obra o "
+            "primeiro best-seller científico e despertou um enorme interesse do público pela microscopia; o "
+            "diarista Samuel Pepys a chamou de \"o livro mais engenhoso que já li na vida\". Foi ali que Hooke, ao "
+            "descrever tecidos de plantas, cunhou o termo biológico \"célula\": as paredes que separavam os "
+            "compartimentos o fizeram lembrar das celas de um mosteiro. Hooke também apontou as lentes para "
+            "objetos feitos pelo homem, como o fio de uma navalha afiada e a ponta de uma agulha, que pareciam "
+            "rombudos, talvez para contrastar a imperfeição humana com a perfeição da natureza. E o livro ia além "
+            "do muito pequeno: falava de corpos celestes distantes, da teoria ondulatória da luz e da origem "
+            "orgânica dos fósseis."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Micrographia",
+            "It was the first book to include illustrations of insects and plants as seen through microscopes. "
+            "Published in January 1665, the first major publication of the Royal Society, it became the first scientific best-seller, inspiring a wide public interest in the new science of microscopy. "
+            "The book originated the biological term \"cell\". [...] "
+            "Hooke most famously describes a fly's eye and a plant cell (where he coined that term because plant cells, which are walled, reminded him of the cells of a monastery). "
+            "Known for its spectacular copperplate of the miniature world, particularly its fold-out plates of insects, the text itself reinforces the tremendous power of the new microscope. "
+            "The plates of insects fold out to be larger than the large folio itself, the engraving of the louse in particular folding out to four times the size of the book. "
+            "Although the book is best known for demonstrating the power of the microscope, Micrographia also describes distant planetary bodies, the wave theory of light, the organic origin of fossils [...] "
+            "among these objects were the jagged edge of a honed razor and the point of a needle, seeming blunt under the microscope. "
+            "His goal may well have been to contrast the flawed products of mankind with the perfection of nature [...] "
+            "Samuel Pepys called it \"the most ingenious book that ever I read in my life\".",
+            nome="Micrographia")],
+    },
+    # 14 sangue de cordeiro e o frasco de arsênico
+    {
+        "temas_secundarios": ["historia_medicina", "sistema_imunologico", "leis_julgamentos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1667, um médico francês injetou sangue de cordeiro num rapaz de 15 anos, na primeira transfusão em humano bem documentada. Depois, a morte de outro paciente o levou ao tribunal, onde surgiu arsênico.",
+        "explicacao": (
+            "Ingleses e franceses disputavam quem faria a primeira transfusão de sangue bem-sucedida em humanos; "
+            "na Royal Society, os testes tinham começado de cão para cão. Jean-Baptiste Denys, médico pessoal de "
+            "Luís XIV, via na transfusão a prova definitiva da circulação do sangue. Depois de experimentos com "
+            "cães e entre espécies, escolheu o cordeiro, símbolo do sangue de Cristo e, para ele, a forma mais "
+            "pura. Em 15 de junho de 1667, transfundiu cerca de doze onças de sangue de cordeiro num rapaz de 15 "
+            "anos que tinha febre havia dois meses e já fora sangrado 20 vezes com sanguessugas. Segundo os "
+            "relatos, no dia seguinte ele estava alerta. O sucesso provavelmente se deveu à pequena quantidade de "
+            "sangue, insuficiente para uma grande reação alérgica. Depois, Denys passou a tratar Antoine Mauroy, "
+            "um homem com doença mental conhecido em Paris, que foi capturado na rua e amarrado a uma cadeira "
+            "diante de nobres. Na terceira sessão, Mauroy teve convulsões e morreu no dia seguinte. No processo, "
+            "a polícia achou arsênico com a viúva, suspeita de envenenar o marido, e Denys foi inocentado. Mas o "
+            "juiz proibiu transfusões em humanos sem aprovação da Faculdade de Medicina de Paris, o que encerrou "
+            "as pesquisas dele."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Jean-Baptiste_Denis",
+            "was a French physician notable for having performed the first fully documented human blood transfusion, a xenotransfusion. "
+            "He studied in Montpellier and was the personal physician to King Louis XIV. [...] "
+            "The French and English were the main contestants in the battle to perform the first successful human blood transfusion. "
+            "Members of the British Royal Society began by injecting doses of fluids into the veins of animals, proceeding with dog-to-dog transfusion. [...] "
+            "he shared with his students his belief that transfusion was the 'new and completely convincing proof' of the truth of circulation [...] "
+            "They also focused on interspecies transfusion [...] "
+            "utilizing as a prime example the lamb, the symbol of the blood of Christ, hence the purest form. [...] "
+            "Denys administered the first full documented xenotransfusion on June 15, 1667. "
+            "With the assistance of Paul Emmerez he transfused about twelve ounces of lamb blood into the veins of a 15-year-old boy who had suffered from uncontrollable fevers for two months and had been consequently bled with leeches 20 times by a barber-surgeon, to no effect. "
+            "After Denys' intervention, allegedly, by the next morning, the boy was alert [...] "
+            "Realistically, both instances of success were most likely due to the small amount of blood that was actually transfused into these people, which did not trigger any major allergic reaction. [...] "
+            "Antoine Mauroy, a mentally-ill man who was well known around Paris. "
+            "Some time in November Montmor's guard abducted Mauroy from the streets and had him tied to a chair, where Denys performed a blood transfusion in front of an audience of noblemen. [...] "
+            "The third and last transfusion performed on Mauroy happened under major pressure of the wife [...] "
+            "Mauroy's body, at a certain point, shook in a 'violent fit' to which the men decided to end the transfusion. Mauroy died the next day. [...] "
+            "Following a police investigation, vials with arsenic powder were found in Perrine Mauroy's possession. [...] "
+            "It was therefore suspected that Perrine Mauroy had been administering arsenic powder to her husband's broth. "
+            "Judge Defita cleared Denys of all accusations [...] "
+            "the judge ordered that \"no transfusion should be made upon any human body but by the approbation of the physicians of the Parisian Faculty (of Medicine)\", forcing Denys to end his studies in blood transfusions.",
+            nome="Jean-Baptiste Denys")],
+    },
+]

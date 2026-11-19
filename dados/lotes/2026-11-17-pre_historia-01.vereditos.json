@@ -1,0 +1,124 @@
+{
+ "lote": "2026-11-17-pre_historia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "pre_historia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'cerca de 17 mil anos' usa o limite inferior (17–22 mil); uma frase é tradução literal.",
+    "correcao": "'mais de 17 mil anos'; reescrever a frase de 1955."
+   },
+   {
+    "id": "pre_historia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; hipótese das tatuagens bem marcada."
+   },
+   {
+    "id": "pre_historia-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'milênios antes de Stonehenge' sem apoio; pilares por volta de 9000 a.C. (11 mil anos); estimativa de 12–24 pessoas vale só para estruturas PPNB e há debate; frase literal.",
+    "correcao": "Novo gancho; debate de mão de obra (Schmidt: centenas); reescrever frase dos caçadores-coletores."
+   },
+   {
+    "id": "pre_historia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "1–4% é estimativa de 2010 (revisões ~2%); divisão é África subsaariana; seleção é hipótese compatível; frase literal; ~2% já divulgado.",
+    "correcao": "Novo gancho com ~2% e o dobro nos primeiros eurasiáticos; revisões de 2017 e Reich no trecho; 'compatível com a ideia'."
+   },
+   {
+    "id": "pre_historia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Eram três flautas (duas de cisne, uma de marfim); 'mais antigos conhecidos' sem ressalva (Divje Babe disputada); frase final sem apoio; trechos literais.",
+    "correcao": "'de que se tem certeza'; 'flautas de osso de ave e de marfim'; reescrever; apagar frase final."
+   },
+   {
+    "id": "pre_historia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'espécie' (fonte: espécie ou subespécie); EPAS1 'likely came from'; nome formal ausente só até 2025 (Harbin/Homo longi).",
+    "correcao": "Novo gancho com 'grupo humano' e 'provavelmente'; 'durante anos, não houve um nome científico formal'; Homo longi; trecho do EPAS1."
+   },
+   {
+    "id": "pre_historia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O DNA de 2018 foi de esqueletos de Lagoa Santa (Lapa do Santo), não da própria Luzia.",
+    "correcao": "'o DNA de esqueletos da mesma região, Lagoa Santa, mostrou que aquele povo era geneticamente ameríndio'; trecho 'Lagoa Santa remains from a site nearby...'."
+   },
+   {
+    "id": "pre_historia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Guidon, datas, Dillehay, Adovasio, macacos-prego)."
+   },
+   {
+    "id": "pre_historia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; elefantes-anões (Stegodon florensis) na mesma ilha."
+   },
+   {
+    "id": "pre_historia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "exagero: 'quase o dobro' (razão 1,3–1,8).",
+    "correcao": "Gancho: 'bem antes dos 13 mil a 16 mil anos que se costumava dar'."
+   }
+  ],
+  "2": [
+   {
+    "id": "pre_historia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; datas e números conferem."
+   },
+   {
+    "id": "pre_historia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho e debate sobre a mão de obra conferem com a fonte."
+   },
+   {
+    "id": "pre_historia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho afirmava a seleção como fato; a fonte diz 'consistent with the hypothesis'.",
+    "correcao": "Gancho: 'a seleção natural pode ter apagado parte dessa herança.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "pre_historia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Fonte diz 'likely' e não fala dos que chegaram à Europa.",
+    "correcao": "Explicação: 'o que sugere que a música já fazia parte da vida dos primeiros humanos modernos da região.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "pre_historia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A fonte fala de uma variante do EPAS1, não do gene.",
+    "correcao": "Gancho: 'herdaram dele uma versão de um gene que ajuda'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "pre_historia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "DNA agora atribuído a esqueletos de Lagoa Santa; números conferem."
+   },
+   {
+    "id": "pre_historia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho corrigido; números conferem."
+   }
+  ]
+ }
+}

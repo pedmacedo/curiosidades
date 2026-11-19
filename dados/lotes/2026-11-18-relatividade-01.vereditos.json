@@ -1,0 +1,131 @@
+{
+ "lote": "2026-11-18-relatividade-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "relatividade-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Gravidade mais fraca, tempo mais rápido' é impreciso (é o potencial); exemplo muito divulgado, nota 3.",
+    "correcao": "Reescrever a frase da relatividade geral com a distância do centro da Terra."
+   },
+   {
+    "id": "relatividade-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Relativistic quantum chemistry."
+   },
+   {
+    "id": "relatividade-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Gancho diz mais que a fonte; 'química clássica' impreciso.",
+    "correcao": "Gancho 'o chumbo agiria como o estanho'; 'sem os efeitos relativísticos'."
+   },
+   {
+    "id": "relatividade-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Primazia de Rossi–Hall é contestada (Ives–Stilwell 1938).",
+    "correcao": "'num dos primeiros testes diretos'."
+   },
+   {
+    "id": "relatividade-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Repetido com mais precisão em 2010' sem apoio.",
+    "correcao": "'repetido várias vezes, com métodos cada vez mais precisos'."
+   },
+   {
+    "id": "relatividade-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'A primeira confirmação' é discutível (Mercúrio em 1915).",
+    "correcao": "'A célebre confirmação ... em 1919'."
+   },
+   {
+    "id": "relatividade-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "mito_desmentido não se aplica a uma hipótese refutada.",
+    "correcao": "Tipos: historia_humana, contraintuitivo."
+   },
+   {
+    "id": "relatividade-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Medição foi em 1960; 22,5 m é a distância fonte-absorvedor; relação invertida no gancho.",
+    "correcao": "Novo gancho com 1960; explicação com 'Em 1960'."
+   },
+   {
+    "id": "relatividade-0009",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: trivia muito difundida; e a justificativa do Nobel não endossou os 'pacotes' de luz."
+   },
+   {
+    "id": "relatividade-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O número 'milésimo de próton em 1.120 km' é incoerente; atraso do anúncio mal explicado.",
+    "correcao": "Gancho e explicação sem o número do próton; anúncio após análise."
+   }
+  ],
+  "2": [
+   {
+    "id": "relatividade-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Distância do centro da Terra, como na fonte."
+   },
+   {
+    "id": "relatividade-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Gancho segue a fonte; 'química clássica' saiu."
+   },
+   {
+    "id": "relatividade-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Um dos primeiros testes diretos'."
+   },
+   {
+    "id": "relatividade-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Métodos cada vez mais precisos' com apoio."
+   },
+   {
+    "id": "relatividade-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Célebre confirmação' com apoio em Kennefick.",
+    "correcao": "'agradeceu' → 'deu o crédito'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "relatividade-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tipos corrigidos."
+   },
+   {
+    "id": "relatividade-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1960, distância e direção corretos.",
+    "correcao": "'entre o telhado e o porão'; troca de lugar de fonte e absorvedor.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "relatividade-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Número incoerente saiu; atraso bem explicado.",
+    "correcao": "'mais próxima além do Sol'; 'pio de um pássaro'.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

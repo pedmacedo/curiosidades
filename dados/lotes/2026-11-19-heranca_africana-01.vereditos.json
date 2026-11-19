@@ -1,0 +1,157 @@
+{
+ "lote": "2026-11-19-heranca_africana-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "heranca_africana-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com UNESCO e Valongo Wharf (até 900 mil, 1843, 1911, 2011, 2017). Respeitoso."
+   },
+   {
+    "id": "heranca_africana-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos e números conferem; mas a explicação copia ou quase copia frases da pt.wikipedia.",
+    "correcao": "(1) '\"Pretos novos\" era o nome dado aos africanos que acabavam de chegar ao Rio pelo Cais do Valongo e eram postos à venda no mercado de escravizados.' -> 'Chamavam-se \"pretos novos\" os africanos recém-desembarcados no Cais do Valongo, levados em seguida ao mercado para serem vendidos.' (2) 'Quase todos desembarcavam muito debilitados, e uma parte significativa não resistia às condições da travessia do Atlântico ou do próprio mercado.' -> 'A travessia do Atlântico e o confinamento no mercado deixavam quase todos muito fracos, e muitos morriam ali mesmo.' (3) 'Na prática, a atividade só mudou de endereço.' -> 'O comércio, porém, apenas se mudou para outro lugar.' (4) 'encontraram fragmentos de ossos humanos misturados a cerâmica, vidro e ferro' -> 'deram com pedaços de ossos humanos em meio a cacos de cerâmica, vidro e objetos de ferro'."
+   },
+   {
+    "id": "heranca_africana-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'quanto se morria aqui' reduz a diferença à mortalidade (era decréscimo natural: mais mortes que nascimentos).",
+    "correcao": "Gancho: 'A diferença estava em quanto se morria aqui.' -> 'Aqui, morriam mais cativos do que nasciam.'"
+   },
+   {
+    "id": "heranca_africana-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos conferem; mas o cumprimento é dos agudás mais velhos, há frase quase copiada, e o estilo era inspirado na casa colonial, não nos sobrados.",
+    "correcao": "(1) Gancho: 'No Benim, descendentes de africanos libertos que voltaram do Brasil festejam o Senhor do Bonfim, e os mais velhos se cumprimentam com \"Bom dia, como passou?\". Em Gana, viraram os \"tabom\", de \"tá bom\".' (2) 'Têm sobrenomes como Souza, Silva e Almeida, dançam a burrinha, uma forma arcaica do bumba-meu-boi, fazem desfiles de Carnaval e se reúnem em torno de uma feijoada.' -> 'Carregam sobrenomes portugueses, como Souza, Silva e Almeida, saem em cortejos de Carnaval, comem feijoada quando se reúnem e mantêm viva a burrinha, uma versão antiga do bumba-meu-boi.' (3) 'Na Ilha de Lagos, o estilo dos sobrados coloniais brasileiros trazido pelos retornados dominava a arquitetura no fim do século XIX.' -> 'Na Ilha de Lagos, o estilo arquitetônico trazido pelos retornados, inspirado na casa colonial brasileira, tornou-se dominante no fim do século XIX.'"
+   },
+   {
+    "id": "heranca_africana-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Francisco Félix de Sousa (Ghezo, chachá, 'já, já' com ressalva, Uidá); tom neutro."
+   },
+   {
+    "id": "heranca_africana-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Luís Gama (vendido aos 10 anos, Lei Feijó, mais de 500 libertos, OAB-SP 2015). Respeitoso."
+   },
+   {
+    "id": "heranca_africana-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas 'primeira petição escrita por uma mulher no Brasil' só na pt.wikipedia; a en.wikipedia diz 'first earliest known slave petition'. Linguagem: 'escravizada'.",
+    "correcao": "1) 'A carta foi redescoberta em 1979 e é considerada a primeira petição escrita por uma mulher na história do Brasil, além de um marco das origens da literatura afro-brasileira.' -> 'A carta foi redescoberta em 1979 e é tida como a mais antiga petição conhecida escrita por uma pessoa escravizada no Brasil, além de um marco das origens da literatura afro-brasileira.' Trecho en.wikipedia: 'is considered to have written the first earliest known slave petition in Brazil'. 2) 'foi levada como escrava para a casa do capitão' -> 'foi levada, escravizada, para a casa do capitão'."
+   },
+   {
+    "id": "heranca_africana-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mas 'em reação' reforça causalidade ('Partly'), e 'esporte nacional oficial' com Vargas choca com 1972. Nota 3.",
+    "correcao": "1) 'Em reação, Mestre Bimba (1899-1974) criou' -> 'Em parte como reação, Mestre Bimba (1899-1974) criou'. 2) 'a partir de 1937, a capoeira foi legalizada e promovida pelo Estado e virou esporte nacional oficial.' -> 'a partir de 1937, a capoeira foi legalizada e passou a ser promovida pelo Estado como parte da cultura nacional.'"
+   },
+   {
+    "id": "heranca_africana-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Tia Ciata (1854, Praça Onze, choro na sala e samba no quintal, Venceslau Brás com 'conta-se')."
+   },
+   {
+    "id": "heranca_africana-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Pelo Telefone; falta dizer o que a letra fala do chefe de polícia; 'origem_inesperada' descreve melhor. Nota 3.",
+    "correcao": "1) tipos: trocar 'contraintuitivo' por 'origem_inesperada'. 2) 'A letra também tem história: segundo Donga, o trecho sobre o chefe da polícia era uma paródia criada por jornalistas do jornal A Noite.' -> 'A letra também tem história: segundo Donga, o trecho em que o chefe da polícia avisa, pelo telefone, que há uma roleta na Carioca era uma paródia criada por jornalistas do jornal A Noite.'"
+   },
+   {
+    "id": "heranca_africana-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Cafundó language; mas misterio_aberto força a mão (é divergência acadêmica), e o dado de 1978 é usado como atual.",
+    "correcao": "tipos_espanto: ['conexao_inesperada', 'contraintuitivo']. 'A comunidade de falantes é minúscula: em 1978, eram 40 pessoas, que vivem numa área rural a 150 km da cidade de São Paulo.' -> 'A comunidade de falantes era minúscula: em 1978, eram 40 pessoas, numa área rural a 150 km da cidade de São Paulo.'"
+   },
+   {
+    "id": "heranca_africana-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Origem iorubá, ritual e alforria conferem; mas 'mais de 500 vendedoras' está desatualizado (ABAM: ~3,5 mil em 2017), e o IPHAN registrou o ofício das baianas, não o acarajé. Nota 3.",
+    "correcao": "Trocar 'Hoje, Salvador tem mais de 500 vendedoras, e o IPHAN reconheceu o acarajé, junto com o papel das baianas no preparo e na venda, como patrimônio imaterial do Brasil.' por 'Hoje, o IPHAN reconhece o ofício das baianas de acarajé, ou seja, o preparo e a venda do bolinho, como patrimônio imaterial do Brasil.'"
+   },
+   {
+    "id": "heranca_africana-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Fonte confirma o histórico; mas o tombamento foi aprovado em 1984 e homologado em 1986, e 'governo brasileiro' é ambíguo (prefeitura em 1982). Nota 3.",
+    "correcao": "Gancho: 'Em 1986, um terreiro de Salvador virou' -> 'Nos anos 1980, um terreiro de Salvador virou'. Explicação: 'e em agosto de 1986 veio o tombamento federal de todo o terreno' -> 'e em 1986 se concluiu o tombamento federal de todo o terreno'; 'Foi a primeira vez que o governo brasileiro reconheceu' -> 'Foi a primeira vez que o governo federal reconheceu'."
+   },
+   {
+    "id": "heranca_africana-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Black Awareness Day (Oliveira Silveira 1971, Grupo Palmares, PF, MNU 1978, Lei 14.759/2023); 'teriam' na confusão com a VAR-Palmares."
+   }
+  ],
+  "2": [
+   {
+    "id": "heranca_africana-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Texto próprio, sem frases copiadas; fatos conferem."
+   },
+   {
+    "id": "heranca_africana-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Aqui, morriam mais cativos do que nasciam' corresponde ao decréscimo natural."
+   },
+   {
+    "id": "heranca_africana-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Os mais velhos, texto próprio e casa colonial aplicados."
+   },
+   {
+    "id": "heranca_africana-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Petição de pessoa escravizada e 'levada, escravizada' aplicados. Ajuste pontual aplicado sem nova verificação: trecho em inglês movido para a fonte en.wikipedia (as duas fontes ok).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "heranca_africana-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Em parte como reação' e a cultura nacional aplicados. Nota 3."
+   },
+   {
+    "id": "heranca_africana-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tipo e a frase sobre a roleta aplicados. Nota 3."
+   },
+   {
+    "id": "heranca_africana-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tipos e o dado de 1978 no passado aplicados."
+   },
+   {
+    "id": "heranca_africana-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Sem o número desatualizado; o IPHAN reconhece o ofício das baianas. Nota 3."
+   },
+   {
+    "id": "heranca_africana-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Nos anos 1980', 1986 e 'governo federal' aplicados. Nota 3."
+   }
+  ]
+ }
+}

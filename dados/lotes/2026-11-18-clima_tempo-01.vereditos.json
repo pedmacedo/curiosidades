@@ -1,0 +1,134 @@
+{
+ "lote": "2026-11-18-clima_tempo-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "clima_tempo-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Richardson confere"
+   },
+   {
+    "id": "clima_tempo-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Butterfly effect e Lorenz conferem"
+   },
+   {
+    "id": "clima_tempo-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Stagg e Maureen Flavin conferem"
+   },
+   {
+    "id": "clima_tempo-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "FitzRoy confere"
+   },
+   {
+    "id": "clima_tempo-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "tempestade de 1854 e Le Verrier conferem"
+   },
+   {
+    "id": "clima_tempo-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'140 a 160 noites, nove horas' e '16 a 40 por minuto' são números sem método que contradizem a NASA (297 dias/ano)",
+    "correcao": "1) Gancho: 'Sobre o lago Maracaibo, na Venezuela, cai a maior densidade de raios do planeta, em tempestades noturnas quase contínuas. Os clarões eram tão constantes que navegadores os usavam como farol.' 2) 'Nas noites ativas, os raios caem de 16 a 40 vezes por minuto, quase todos dentro das nuvens' -> 'Nas noites ativas, os raios são quase contínuos, a maioria dentro das nuvens'. Manter os 250/km²/ano. 3) Não usar '140 a 160 noites' nem 'nove horas'."
+   },
+   {
+    "id": "clima_tempo-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "'quase todos' exagera 'most'",
+    "correcao": "'quase todos sem ser detectados' -> 'a maioria sem ser detectada'"
+   },
+   {
+    "id": "clima_tempo-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o mecanismo geral dos sprites é conhecido (seção Mechanism); misterio_aberto não se sustenta",
+    "correcao": "1) Gancho: 'Bem acima das tempestades, a 50–90 km de altura, surgem clarões vermelhos gigantes, os sprites. Havia relatos desde 1886, mas a primeira imagem só veio em 1989, e por acaso.' 2) tipos_espanto: ['contraintuitivo','historia_humana']. 3) Última frase -> 'O mecanismo geral é conhecido: um raio positivo forte deixa o topo da nuvem com muita carga negativa e cria, por alguns milissegundos, um campo elétrico intenso acima da tempestade; no ar rarefeito da mesosfera, a ruptura elétrica exige bem menos tensão, forma-se uma avalanche de elétrons, e o nitrogênio excitado dá a cor vermelha. Detalhes, como por que nem toda tempestade produz sprites, ainda são estudados.' 4) Trecho da seção Mechanism e 'NASA also notes that not all storms exhibit sprite lightning.'"
+   },
+   {
+    "id": "clima_tempo-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "farmacêutico de profissão, meteorologista amador",
+    "correcao": "Gancho: 'por um farmacêutico inglês amador' -> 'por um farmacêutico inglês que estudava o tempo por hobby'"
+   },
+   {
+    "id": "clima_tempo-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Wragge confere"
+   },
+   {
+    "id": "clima_tempo-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "ciclone de Bhola confere"
+   },
+   {
+    "id": "clima_tempo-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "furacão Catarina confere"
+   },
+   {
+    "id": "clima_tempo-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "raio globular confere; consenso_parcial"
+   },
+   {
+    "id": "clima_tempo-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'cinco anos' não está na fonte (1967 a 1972, seis estações)",
+    "correcao": "Gancho: 'semeou nuvens em segredo por cinco anos para prolongar' -> 'semeou nuvens em segredo de 1967 a 1972 para prolongar'"
+   },
+   {
+    "id": "clima_tempo-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Chinook e Foehn conferem"
+   }
+  ],
+  "2": [
+   {
+    "id": "clima_tempo-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "sem os números sem método"
+   },
+   {
+    "id": "clima_tempo-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'a maioria'"
+   },
+   {
+    "id": "clima_tempo-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "mecanismo dos sprites; sem misterio_aberto"
+   },
+   {
+    "id": "clima_tempo-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "farmacêutico de profissão"
+   },
+   {
+    "id": "clima_tempo-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1967 a 1972"
+   }
+  ]
+ }
+}

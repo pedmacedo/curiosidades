@@ -1,0 +1,128 @@
+{
+ "lote": "2026-11-18-futebol-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "futebol-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "confere com a final de 1930; nota 3 por ser trivia de Copa repetida"
+   },
+   {
+    "id": "futebol-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Football War sustenta; mito de que a partida causou a guerra desfeito"
+   },
+   {
+    "id": "futebol-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "William McCrum confere; ironia do goleiro de time lanterna"
+   },
+   {
+    "id": "futebol-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ken Aston confere; código que dispensa idioma"
+   },
+   {
+    "id": "futebol-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Barbados 4-2 Grenada documentado; incentivo perverso claro"
+   },
+   {
+    "id": "futebol-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "AS Adema 149-0 confere; nota 3 (recorde repetido), protesto sustenta"
+   },
+   {
+    "id": "futebol-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Offside confere; 4.700 -> 6.373 gols"
+   },
+   {
+    "id": "futebol-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "caixa de sapatos é a versão mais contada, não fato documentado (estava num cofre de banco); 'sumiu para sempre' é afirmação sobre o futuro",
+    "correcao": "Gancho: 'A taça Jules Rimet passou a Segunda Guerra numa caixa de sapatos, debaixo da cama de um dirigente italiano.' -> 'Na Segunda Guerra, segundo a versão mais contada, a taça Jules Rimet foi escondida numa caixa de sapatos, debaixo da cama de um dirigente italiano.' (encurtar o resto se passar de 220); 'Em 1983, sumiu no Rio para sempre.' -> 'Em 1983, sumiu no Rio e nunca mais foi achada.' Explicação: 'tirou-a às escondidas de um banco em Roma e a escondeu numa caixa de sapatos sob a cama' -> 'tirou-a às escondidas de um banco em Roma e, segundo o relato mais difundido, a escondeu numa caixa de sapatos sob a cama'; 'muitos acreditam que foi derretida.' -> 'muitos acreditam que foi derretida, embora haja quem duvide, já que ela teria pouco ouro para virar barras.' (se a fonte sustentar; senão, só 'embora haja quem acredite que ainda exista')."
+   },
+   {
+    "id": "futebol-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'garantiu o empate do Brasil' sugere gol de empate; foi o gol do Brasil (França empatou depois)",
+    "correcao": "'garantiu o empate do Brasil.' -> 'foi o gol do Brasil num jogo que terminou empatado.'"
+   },
+   {
+    "id": "futebol-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'dançava' entre aspas atribuído ao engenheiro da NASA, que falou em 'knuckle-ball effect'",
+    "correcao": "Gancho: 'ela \"dançava\" no ar justamente na velocidade típica das cobranças de falta' -> 'ela oscilava de forma errática justamente na velocidade típica das cobranças de falta'"
+   },
+   {
+    "id": "futebol-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'quem ficou no meio defendeu mais' vem de só 18 cobranças",
+    "correcao": "'Na amostra, ficar parado rendeu defesas em 33,3% das cobranças,' -> 'Na amostra, ficar parado rendeu defesas em 33,3% das cobranças (6 de apenas 18 casos),'. Se passar de 250 palavras, cortar 'Uma pesquisa com 32 goleiros profissionais de ponta reforçou que pular é a norma.'"
+   },
+   {
+    "id": "futebol-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Nevill 2002 e a revisão de 26 estudos conferem"
+   },
+   {
+    "id": "futebol-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "pt.wikipedia e Brasil de Fato sustentam; afirmações frágeis atribuídas"
+   },
+   {
+    "id": "futebol-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "regra dos seis segundos desatualizada: desde 2025 são oito",
+    "correcao": "'e desde 1997 não pode segurá-la por mais de seis segundos.' -> 'e de 1997 a 2025 não podia segurá-la por mais de seis segundos (hoje o limite é de oito).' Incluir no trecho '2025: the keeper may not handle the ball for more than eight seconds.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "futebol-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'versão mais contada'; 'nunca mais foi achada'"
+   },
+   {
+    "id": "futebol-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "gol do Brasil num jogo empatado"
+   },
+   {
+    "id": "futebol-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'oscilava de forma errática'"
+   },
+   {
+    "id": "futebol-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'6 de apenas 18 casos'"
+   },
+   {
+    "id": "futebol-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "regra de 2025 dos oito segundos"
+   }
+  ]
+ }
+}

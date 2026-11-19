@@ -1,0 +1,116 @@
+{
+ "lote": "2026-11-18-animais_extremos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "animais_extremos-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Perdem quase toda a água' não está na fonte; gancho esconde o contraste vácuo x UV, que é a novidade.",
+    "correcao": "Trocar gancho para o contraste vácuo/UV; explicação com o estado tun; acrescentar trecho."
+   },
+   {
+    "id": "animais_extremos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Gancho dá 392 anos sem a margem de ±120; idade contestada.",
+    "correcao": "Gancho com a margem de 120 anos."
+   },
+   {
+    "id": "animais_extremos-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Falta a ressalva de que a reversão nunca foi observada na natureza e o mecanismo (transdiferenciação).",
+    "correcao": "Inserir transdiferenciação e a ressalva, com trechos."
+   },
+   {
+    "id": "animais_extremos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números valem para Odontodactylus scyllarus, não para todos; 'ferve a água' é impreciso (cavitação).",
+    "correcao": "Gancho com a espécie e bolhas de vapor."
+   },
+   {
+    "id": "animais_extremos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com a seção Cold tolerance; mecanismo claro."
+   },
+   {
+    "id": "animais_extremos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Voo sem escalas mais longo de uma ave' é contestável (andorinhões); o recorde claro é distância migratória sem escalas e viagem sem comer.",
+    "correcao": "Gancho: '...sem pousar nem comer: pelo menos 13.560 km em 11 dias, recorde de distância num voo migratório sem escalas.'; explicação: 'é a jornada mais longa conhecida de qualquer animal sem parar para comer'."
+   },
+   {
+    "id": "animais_extremos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Como fazem as plantas' sem fonte; a respiração para salvo tentativas esporádicas.",
+    "correcao": "Gancho: 'passa a queimar frutose em vez de glicose.'; 'e a respiração para, salvo tentativas esporádicas.'"
+   },
+   {
+    "id": "animais_extremos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; versão condicional correta do 'mais quente que o Sol'."
+   },
+   {
+    "id": "animais_extremos-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A olho nu contradiz a fonte (lupa); 'musgos e solos' sem fonte; a própria fonte traz troca genética em Adineta vaga.",
+    "correcao": "Gancho 'parece viver'; habitat e lupa corrigidos; frase sobre Adineta vaga + trecho; confianca consenso_parcial."
+   }
+  ],
+  "2": [
+   {
+    "id": "animais_extremos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Estado tun e contraste vácuo x UV como na fonte; números conferem."
+   },
+   {
+    "id": "animais_extremos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Margem de ±120 e consenso_parcial adequados; números conferem.",
+    "correcao": "Trocar 'Só se reproduz por volta dos 150.' por 'Só começa a se reproduzir por volta dos 150.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "animais_extremos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Transdiferenciação e ressalva de nunca observado na natureza incluídas."
+   },
+   {
+    "id": "animais_extremos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números restritos a O. scyllarus; cavitação e golpe duplo como na fonte."
+   },
+   {
+    "id": "animais_extremos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho agora diz recorde de distância em voo migratório sem escalas, como a fonte; frase contraditória saiu."
+   },
+   {
+    "id": "animais_extremos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Comparação com plantas saiu; respiração 'salvo tentativas esporádicas' como na fonte."
+   },
+   {
+    "id": "animais_extremos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'Parece viver', estudo de Adineta vaga, habitat e visibilidade como na fonte; confiança consenso_parcial.",
+    "correcao": "Trocar 'de 0,15 a 0,7 milímetro' por 'em geral de 0,15 a 0,7 milímetro'.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

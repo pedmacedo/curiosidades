@@ -1,0 +1,625 @@
+LOTE = "2026-11-19-galaxias-01"
+AREA = "espaco"
+TEMA = "galaxias"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+NASA_V1 = "https://science.nasa.gov/missions/hubble/hubble-views-the-star-that-changed-the-universe/"
+CARNEGIE_VAR = "https://carnegiescience.edu/about/history/archives/plate-archives/m31var"
+DSB_BAADE = "https://encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/baade-wilhelm-heinrich-walter"
+ASTRONOMY_BAADE = "https://www.astronomy.com/today-in-the-history-of-astronomy/march-24-1893-the-birth-of-walter-baade/"
+NATURE_M31 = "https://www.nature.com/articles/s41550-025-02563-1"
+CAM_SAUSAGE = "https://www.cam.ac.uk/research/news/the-gaia-sausage-the-major-collision-that-changed-the-milky-way"
+ESA_SGR = "https://www.esa.int/Science_Exploration/Space_Science/Gaia/Galactic_crash_may_have_triggered_Solar_System_formation"
+ARXIV_HVS = "https://arxiv.org/abs/1907.11725"
+NATGEO_HDF = "https://www.nationalgeographic.com/science/article/when-hubble-stared-at-nothing-for-100-hours"
+CFA_FERMI = "https://www.cfa.harvard.edu/news/astronomers-find-giant-previously-unseen-structure-our-galaxy"
+
+
+CANDIDATOS = [
+    # 1 o "VAR!" de Hubble: Andrômeda é outra galáxia
+    {
+        "temas_secundarios": ["historia_astronomia", "estrelas"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Em 1923, Edwin Hubble marcou uma estrela de Andrômeda com \"N\", de nova. Depois riscou a letra e escreveu \"VAR!\": era uma estrela variável, e ela provou que Andrômeda é outra galáxia, muito além da nossa.",
+        "explicacao": (
+            "No começo do século XX, a maioria dos astrônomos via a Via Láctea como um único \"universo-ilha\", "
+            "sem nada observável além dela. Andrômeda era só uma das manchas difusas chamadas de \"nebulosas "
+            "espirais\", e em 1920 Harlow Shapley e Heber Curtis chegaram a debater em público se elas faziam parte "
+            "da nossa galáxia. Na noite de 5 para 6 de outubro de 1923, Hubble fez uma exposição de 45 minutos de "
+            "Andrômeda com o telescópio Hooker, de 100 polegadas, no Monte Wilson, e marcou com N três supostas "
+            "novas, estrelas que explodem. Comparando a chapa de vidro com exposições anteriores, notou que uma "
+            "delas apagava e reacendia depressa demais para ser nova. Era uma cefeida, tipo de estrela já usado "
+            "como marco de distância: o período de 31,4 dias revelava o brilho real dela e, daí, a distância, de "
+            "cerca de 1 milhão de anos-luz, mais de três vezes o diâmetro que Shapley atribuía à Via Láctea. Hubble "
+            "mandou a curva de luz a Shapley, que, segundo o relato, disse a um colega: \"Aqui está a carta que "
+            "destruiu o meu universo\". Medições melhores põem Andrômeda hoje a 2 milhões de anos-luz."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": NASA_V1, "titulo": "Hubble Views the Star That Changed the Universe (NASA)", "idioma": "en",
+             "trecho": (
+                 "But in the early 1900s, most astronomers considered the Milky Way a single \"island universe\" of stars, with nothing observable beyond its boundaries. "
+                 "Andromeda was cataloged as just one of many faint, fuzzy patches of light astronomers called \"spiral nebulae.\" [...] "
+                 "This special type of star had already been proven to be a reliable distance marker within our galaxy. [...] "
+                 "In fact, astronomers Shapley and Heber Curtis held a public debate in 1920 over the nature of these nebulae. [...] "
+                 "The astronomer spent several months in 1923 scanning Andromeda with the 100-inch Hooker telescope, the most powerful telescope of that era, at Mount Wilson Observatory in California. [...] "
+                 "On the night of Oct. 5, 1923, Hubble began an observing run that lasted until the early hours of Oct. 6. "
+                 "Under poor viewing conditions, the astronomer made a 45-minute exposure that yielded three suspected novae, a class of exploding star. "
+                 "He wrote the letter \"N,\" for nova, next to each of the three objects. "
+                 "Later, however, Hubble made a startling discovery when he compared the Oct. 5-6 plate with previous exposures of the novae. "
+                 "One of the so-called novae dimmed and brightened over a much shorter time period than seen in a typical nova. "
+                 "Hubble obtained enough observations of V1 to plot its light curve, determining a period of 31.4 days, indicating the object was a Cepheid variable. "
+                 "The period yielded the star's intrinsic brightness, which Hubble then used to calculate its distance. "
+                 "The star turned out to be 1 million light-years from Earth, more than three times Shapley's calculated diameter of the Milky Way. "
+                 "Taking out his marking pen, Hubble crossed out the \"N\" next to the newfound Cepheid variable and wrote \"VAR,\" for variable, followed by an exclamation point. [...] "
+                 "Then Hubble sent a letter along with a light curve of V1 to Shapley telling him of his discovery. "
+                 "After reading the letter, Shapley was convinced the evidence was genuine. "
+                 "He reportedly told a colleague, \"Here is the letter that destroyed my universe.\" [...] "
+                 "Improved measurements now place Andromeda at 2 million light-years away."
+             )},
+            {"url": CARNEGIE_VAR, "titulo": "The VAR! plate (Carnegie Science)", "idioma": "en",
+             "trecho": (
+                 "This plate, with identification number H335H (\"Hooker plate 335 by Hubble\"), is famous for having led to his discovery of the first Cepheid variable star in M31, which established beyond any doubt that M31 was a separate galaxy from our own. [...] "
+                 "The first Cepheid variable discovered has its letter N crossed out and is marked \"VAR!\", showing that Hubble originally thought it was a nova, but eventually discovered that it varied in brightness like a Cepheid."
+             )},
+        ],
+    },
+    # 2 Baade, o "inimigo estrangeiro" e o blecaute de Los Angeles
+    {
+        "temas_secundarios": ["segunda_guerra", "historia_astronomia"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Na Segunda Guerra, o alemão Walter Baade, tido como \"inimigo estrangeiro\" nos EUA, ganhou céus mais escuros com o blecaute de Los Angeles. Viu estrelas no centro de Andrômeda e acabou dobrando o tamanho do universo.",
+        "explicacao": (
+            "Baade, nascido na Alemanha, trabalhava no Observatório do Monte Wilson, perto de Los Angeles, desde "
+            "1931. Quando os Estados Unidos entraram na guerra, foi classificado como \"inimigo estrangeiro\". "
+            "Segundo um relato, isso veio com um toque de recolher que o impediria de observar à noite, até que um "
+            "colega conseguiu uma exceção para ele. A situação acabou jogando a favor: com muitos astrônomos "
+            "ocupados em trabalhos de guerra e as luzes da cidade reduzidas para proteger a navegação na costa, ele "
+            "teve mais acesso aos telescópios e céus mais escuros. Assim fotografou estrelas nas regiões internas "
+            "de Andrômeda, que até então ninguém tinha conseguido distinguir, num feito que se julgava impossível "
+            "com o telescópio de 100 polegadas. As estrelas mais brilhantes do núcleo eram vermelhas, e não azuis "
+            "como nos braços espirais, e Baade concluiu que havia duas populações de estrelas. Essas observações "
+            "também o levaram a descobrir que existem dois tipos de cefeidas, as estrelas usadas para medir "
+            "distâncias. Na reunião da União Astronômica Internacional de 1952, em Roma, ele anunciou que Andrômeda "
+            "estava mais longe do que se pensava, o que, na prática, dobrava o tamanho do universo conhecido."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": DSB_BAADE, "titulo": "Baade, Wilhelm Heinrich Walter (Complete Dictionary of Scientific Biography, via Encyclopedia.com)", "idioma": "en",
+             "trecho": (
+                 "When the United States entered World War II, Baade was classified as an enemy alien, but this favored rather than hampered his astronomical career: "
+                 "with many astronomers engaged in war work, and the lights of Los Angeles dimmed to protect coastal shipping, Baade had increased access to the telescopes and the added advantage of darker skies. "
+                 "Under these favorable circumstances he was able to photograph stars in the hitherto unresolved inner portions of the Andromeda galaxy, M31, and in both of its satellite galaxies, M32 and NGC205 (1944). "
+                 "This achievement was both technically difficult—thought, indeed to be unattainable with the 100-inch telescope he used—and theoretically significant, because the brightest stars in the nucleus of M31 turned out to be red—not blue, as in the surrounding spiral arms. "
+                 "Baade realized he was dealing with two different stellar populations [...] "
+                 "Baade reasoned correctly that the galaxy was more distant than had previously been thought. "
+                 "Announced in 1952 at the Rome meeting of the International Astronomical Union, this conclusion cleared up several inconsistencies, but also essentially doubled the size of the universe."
+             )},
+            {"url": ASTRONOMY_BAADE, "titulo": "March 24, 1893: The birth of Walter Baade (Astronomy)", "idioma": "en",
+             "trecho": (
+                 "Baade joined the staff of the Mount Wilson Observatory in 1931. "
+                 "His German background earned him \"enemy alien\" status during World War II – and a curfew that would keep Baade from nighttime observations. "
+                 "But when a colleague was able to wrangle an exemption for him, the wartime blackout made for extraordinarily dark skies and groundbreaking discoveries."
+             )},
+            wiki("Walter_Baade",
+                "was a German astronomer who worked in the United States from 1931 to 1959. [...] "
+                "During World War II, while working at Mount Wilson Observatory, Baade took advantage of wartime blackout conditions (which reduced light pollution), to resolve stars in the center of the Andromeda Galaxy for the first time. "
+                "These observations led him to define distinct \"populations\" for stars (Population I and Population II). "
+                "The same observations led him to discover that there are two types of Cepheid variable stars.",
+                nome="Walter Baade"),
+        ],
+    },
+    # 3 a colisão com Andrômeda não é certa
+    {
+        "temas_secundarios": ["cosmologia", "probabilidade"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "É comum ouvir que a Via Láctea vai se fundir com Andrômeda em uns 5 bilhões de anos. Um estudo de 2025 refez as contas com dados melhores: a chance de não haver fusão nos próximos 10 bilhões de anos é de quase 50%.",
+        "explicacao": (
+            "Andrômeda vem na nossa direção a cerca de 110 km/s, o que se sabe pelo desvio para o azul da sua luz. "
+            "O difícil é medir o movimento lateral dela no céu, e é dele que depende se haverá um choque ou só uma "
+            "passagem ao largo. Em 2012, os dados indicavam que a colisão era muito provável. A equipe de Till "
+            "Sawala usou observações mais precisas dos telescópios espaciais Gaia e Hubble, considerou 22 variáveis "
+            "e rodou 100 mil simulações. Descobriu que as duas galáxias de maior massa do Grupo Local depois das "
+            "duas grandes mudam bastante o resultado: a M33, do Triângulo, aumenta a chance de fusão, enquanto a "
+            "Grande Nuvem de Magalhães, cuja órbita é perpendicular à rota entre a Via Láctea e Andrômeda, a "
+            "reduz. Com as incertezas atuais de posições, movimentos e massas, metade dos cenários termina em fusão "
+            "e a outra metade não, e a chance de um choque frontal nos próximos 4 a 5 bilhões de anos fica em só 2%. "
+            "Para os autores, o destino da nossa galáxia \"ainda está completamente em aberto\". E, mesmo que a "
+            "fusão aconteça, é improvável que duas estrelas colidam, porque a distância entre elas é imensa."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            {"url": NATURE_M31, "titulo": "No certainty of a Milky Way–Andromeda collision (Nature Astronomy, 2025)", "idioma": "en",
+             "trecho": (
+                 "Published: 02 June 2025 [...] "
+                 "It is commonly believed that our own Milky Way is on a collision course with the neighbouring Andromeda galaxy. "
+                 "As a result of their merger, predicted in around 5 billion years, the two large spiral galaxies that define the present Local Group would form a new elliptical galaxy. "
+                 "Here we consider the latest and most accurate observations by the Gaia and Hubble space telescopes, along with recent consensus mass estimates, to derive possible future scenarios and identify the main sources of uncertainty in the evolution of the Local Group over the next 10 billion years. "
+                 "We found that the next most massive Local Group member galaxies—namely, M33 and the Large Magellanic Cloud—distinctly and radically affect the Milky Way–Andromeda orbit. "
+                 "Although including M33 increases the merger probability, the orbit of the Large Magellanic Cloud runs perpendicular to the Milky Way–Andromeda orbit and makes their merger less probable. "
+                 "In the full system, we found that uncertainties in the present positions, motions and masses of all galaxies leave room for drastically different outcomes and a probability of close to 50% that there will be no Milky Way–Andromeda merger during the next 10 billion years. "
+                 "Based on the best available data, the fate of our Galaxy is still completely open."
+             )},
+            wiki("Andromeda%E2%80%93Milky_Way_collision",
+                "The stars involved are sufficiently spaced that it is improbable that any of them would individually collide, though some stars may be ejected. [...] "
+                "The Andromeda Galaxy is approaching the Milky Way at about 110 kilometres per second (68.4 mi/s) as indicated by blueshift. "
+                "However, the lateral speed (measured as proper motion) is very difficult to measure with sufficient precision to draw reasonable conclusions. "
+                "By 2012, it appeared to be that a collision with the two galaxies was highly likely. [...] "
+                "In 2025, Till Sawala and colleagues found that, with data gathered from the Gaia spacecraft and Hubble telescope which was not available in 2012, the chance for a collision is much lower. "
+                "Astronomers considered 22 different variables which could affect the potential collision between the Milky Way and Andromeda galaxies and ran 100,000 simulations based on these variables known as Monte Carlo Simulations. [...] "
+                "there is only a 2% chance of a head-on collision in the next 4 to 5 billion years. [...] "
+                "the chance of even two stars colliding is negligible because of the huge distances between the stars.",
+                nome="Andromeda–Milky Way collision"),
+        ],
+    },
+    # 4 braços espirais como engarrafamento
+    {
+        "temas_secundarios": ["fisica_particulas", "sistema_solar"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Os braços de uma galáxia espiral não seriam feitos sempre das mesmas estrelas. Pela teoria das ondas de densidade, eles funcionam como um engarrafamento: as estrelas entram, se apertam um tempo e saem.",
+        "explicacao": (
+            "Se os braços fossem estruturas fixas de matéria, haveria um problema. As estrelas perto do centro "
+            "giram mais depressa que as da borda, e os braços se enrolariam cada vez mais, até sumirem no resto da "
+            "galáxia depois de poucas voltas. É o chamado problema do enrolamento. Em 1964, C. C. Lin e Frank Shu "
+            "propuseram que os braços são regiões de maior densidade que giram num ritmo próprio, diferente do das "
+            "estrelas. A comparação é com um congestionamento numa estrada: os carros atravessam o trecho lento, que "
+            "se move mais devagar do que eles. Na galáxia, estrelas, gás e poeira passam pelas ondas, são "
+            "comprimidos e seguem em frente, e a própria atração gravitacional entre as estrelas mantém o desenho "
+            "espiral. A teoria ajuda a explicar por que os braços concentram estrelas jovens: quando nuvens de gás "
+            "são comprimidas, algumas colapsam e formam estrelas. As mais quentes e maciças vivem pouco e morrem "
+            "antes de sair da onda, enquanto as menores e mais vermelhas escapam e se espalham pelo disco. A mesma "
+            "física foi aplicada depois aos anéis de Saturno, que têm ondas espirais criadas pelas luas do planeta."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Density_wave_theory",
+                "Density wave theory or the Lin–Shu density wave theory is a theory proposed by C.C. Lin and Frank Shu in the mid-1960s to explain the spiral arm structure of spiral galaxies. [...] "
+                "In this hypothesis, the spiral pattern rotates with a particular angular frequency (pattern speed), whereas the stars in the galactic disk orbit at varying speeds, which depend on their distance to the galaxy center. [...] "
+                "Originally, astronomers had the idea that the arms of a spiral galaxy were material. "
+                "However, if this were the case, then the arms would become more and more tightly wound, since the matter nearer to the center of the galaxy rotates faster than the matter at the edge of the galaxy. "
+                "The arms would become indistinguishable from the rest of the galaxy after only a few orbits. "
+                "This is called the winding problem. "
+                "Lin & Shu proposed in 1964 that the arms were not material in nature, but instead made up of areas of greater density, similar to a traffic jam on a highway. "
+                "The cars move through the traffic jam: the density of cars increases in the middle of it. "
+                "The traffic jam itself, however, moves more slowly. "
+                "In the galaxy, stars, gas, dust, and other components move through the density waves, are compressed, and then move out of them. "
+                "More specifically, the density wave theory argues that the \"gravitational attraction between stars at different radii\" prevents the so-called winding problem, and actually maintains the spiral pattern. [...] "
+                "When clouds of gas and dust enter into a density wave and are compressed, the rate of star formation increases as some clouds meet the Jeans criterion, and collapse to form new stars. [...] "
+                "The hot OB stars that are created ionize the gas of the interstellar medium, and form H II regions. "
+                "These stars have relatively short lifetimes, however, and expire before fully leaving the density wave. "
+                "The smaller, redder stars do leave the wave, and become distributed throughout the galactic disk. [...] "
+                "Peter Goldreich, Frank Shu, and others applied density wave theory to the rings of Saturn. "
+                "Saturn's rings (particularly the A Ring) contain a great many spiral density waves and spiral bending waves excited by Lindblad resonances and vertical resonances (respectively) with Saturn's moons.",
+                nome="Density wave theory"),
+            wiki("Galaxy",
+                "The spiral arms are thought to be areas of high-density matter, or \"density waves\".",
+                nome="Galaxy"),
+        ],
+    },
+    # 5 o objeto de Hanny
+    {
+        "temas_secundarios": ["buracos_negros", "luz_cores"],
+        "tipos_espanto": ["historia_humana", "misterio_aberto"],
+        "gancho": "Em 2007, uma professora holandesa que classificava galáxias como voluntária achou uma mancha verde estranha no céu. Parece ser um \"eco\": gás iluminado por um quasar que talvez já tenha se apagado.",
+        "explicacao": (
+            "Hanny van Arkel participava do Galaxy Zoo, projeto de ciência cidadã em que voluntários pela internet "
+            "ajudam a classificar imagens de galáxias. A mancha, batizada de Hanny's Voorwerp (\"o objeto de "
+            "Hanny\", em holandês), fica ao lado da galáxia espiral IC 2497, a cerca de 650 milhões de anos-luz, e "
+            "tem o tamanho de uma pequena galáxia. O verde das imagens do Hubble é uma cor convencional, usada para "
+            "mostrar o brilho do oxigênio. Uma hipótese é que a nuvem seja o resto de uma pequena galáxia, "
+            "iluminado pela radiação de um quasar que brilhou no centro de IC 2497 cerca de 100 mil anos antes do "
+            "momento em que a vemos. O quasar não aparece nas imagens e pode ter se desligado nos últimos 200 mil "
+            "anos. Como a luz leva dezenas de milhares de anos para ir da galáxia até a nuvem, a nuvem ainda "
+            "mostraria um \"eco\" de um passado que a galáxia já não exibe. Há outras explicações em estudo, como "
+            "a de um jato de partículas do buraco negro central. Depois, voluntários do mesmo projeto fizeram uma "
+            "busca ampla e encontraram 19 galáxias com nuvens parecidas, apelidadas de Voorwerpjes, \"objetinhos\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Hanny%27s_Voorwerp",
+                "Hanny's Voorwerp (Dutch for Hanny's object) is an instance of an astronomical phenomenon called a quasar ionization echo. "
+                "It was discovered in 2007 by Dutch schoolteacher Hanny van Arkel while she was participating as a volunteer in the Galaxy Zoo project, part of the Zooniverse group of citizen science websites. "
+                "Photographically, it appears as a bright blob close to spiral galaxy IC 2497 in the constellation Leo Minor. [...] "
+                "Hanny's Voorwerp (HsV) is about the size of a small galaxy and has a central hole over 16,000 light years across. "
+                "In an image taken with the Hubble Space Telescope, HsV is colored green, a standard false color that is used to represent the presence of several luminous emission lines of glowing oxygen. "
+                "HsV has been shown to be at the same distance from Earth as the adjacent galaxy IC 2497, which is about 650 million light-years away. [...] "
+                "One hypothesis suggests that HsV consists of remnants of a small galaxy showing the impact of radiation from a bright quasar event that occurred in the center of IC 2497 about 100,000 years before how it is observed today. "
+                "The quasar event is thought to have stimulated the bright emission that characterizes HsV. "
+                "The quasar might have switched off in the last 200,000 years and is not visible in the available images. [...] "
+                "In this case, its effects on HsV would be still visible because of the distance of several tens of thousands of light years between HsV and the quasar in the nearby galaxy: "
+                "HsV would show a \"light echo\" or \"ghost image\" of events that are older than those currently seen in the galaxy. [...] "
+                "They hypothesized that the light comes from two sources: (1) a supermassive black hole at the center of IC 2497, and (2) light produced by an interaction of an energetic jet from the black hole and the gas surrounding IC 2497. [...] "
+                "participants in the Galaxy Zoo (GZ) project carried out a wide search for such clouds using data from the Sloan Digital Sky Survey (SDSS). "
+                "This search yielded a list of 19 galaxies with AGN-photoionized clouds detected to beyond 10 kiloparsecs from the nuclei. "
+                "These were nicknamed 'Voorwerpjes' from the Dutch for 'small objects'.",
+                nome="Hanny's Voorwerp"),
+        ],
+    },
+    # 6 a galáxia que a Via Láctea engoliu (Gaia-Enceladus)
+    {
+        "temas_secundarios": ["mitologia", "historia_astronomia"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Há uns 8 a 10 bilhões de anos, a Via Láctea teria engolido uma galáxia anã num choque frontal. Os restos dela ainda estão aqui: estrelas em órbitas esticadas \"como agulhas\", achadas com o satélite Gaia.",
+        "explicacao": (
+            "A galáxia destruída ganhou dois apelidos. \"Salsicha de Gaia\" vem da forma de salsicha que as "
+            "estrelas dela desenham num gráfico de velocidades feito com dados do satélite europeu Gaia. Já "
+            "Gaia-Enceladus lembra o gigante da mitologia grega enterrado sob o monte Etna, que causava terremotos: "
+            "a galáxia também foi \"enterrada\" na Via Láctea e a sacudiu. Segundo os astrônomos, ela chegou numa "
+            "órbita muito excêntrica e se despedaçou rapidamente, e por isso suas estrelas passam muito perto do "
+            "centro da galáxia. Somando gás, estrelas e matéria escura, ela tinha mais de 10 bilhões de vezes a "
+            "massa do Sol, e trouxe pelo menos oito aglomerados globulares, bolas densas de estrelas que galáxias "
+            "pequenas não costumam ter. O impacto provavelmente inchou ou até rompeu o disco da Via Láctea, que "
+            "teve de formar um disco novo. Os destroços se espalharam pelas partes internas e ajudaram a formar o "
+            "bojo central e o halo de estrelas que envolve a galáxia. Foi a última grande fusão da Via Láctea. "
+            "Fusões menores continuam: a galáxia anã de Sagitário está sendo absorvida agora mesmo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            {"url": CAM_SAUSAGE, "titulo": "The Gaia Sausage: the major collision that changed the Milky Way (University of Cambridge)", "idioma": "en",
+             "trecho": (
+                 "The astronomers propose that around eight to 10 billion years ago, an unknown dwarf galaxy smashed into our own Milky Way. "
+                 "The dwarf did not survive the impact. "
+                 "It quickly fell apart, and the wreckage is now all around us. "
+                 "\"The collision ripped the dwarf to shreds, leaving its stars moving on very radial orbits, like needles,\" said Vasily Belokurov [...] "
+                 "\"These stars' paths take them very close to the centre of our galaxy. "
+                 "This is a tell-tale sign that the dwarf galaxy came in on a really eccentric orbit and its fate was sealed.\" [...] "
+                 "These Sausage stars are what's left of the last major merger of the Milky Way.\" "
+                 "There are ongoing mergers taking place right now, such as between the puny Sagittarius dwarf galaxy and the Milky Way. "
+                 "However, the Sausage galaxy was much more massive. "
+                 "Its total mass in gas, stars and dark matter was more than 10 billion times the mass of our sun. [...] "
+                 "The Sausage's piercing trajectory meant that the Milky Way's disk was probably puffed up or even fractured following the impact, and the Milky Way had to re-grow a new disk. "
+                 "At the same time, the Sausage debris was scattered all around the inner parts of the Milky Way, creating the 'bulge' at the galaxy's centre and the surrounding 'stellar halo'. [...] "
+                 "The new research also identified at least eight large, spherical clumps of stars called globular clusters that were brought into the Milky Way by the Sausage galaxy. "
+                 "Small galaxies do not normally have globular clusters of their own"
+             )},
+            wiki("Gaia_Enceladus",
+                "The \"Gaia Sausage\" is so-called because of the characteristic sausage shape of the population in a chart of velocity space [...] using data from the Gaia Mission. [...] "
+                "The name \"Enceladus\" refers to the mythological giant Enceladus, who was buried under Mount Etna and caused earthquakes. "
+                "Similarly, this former galaxy was buried in the Milky Way, and caused the puffing up of the thick disc.",
+                nome="Gaia Enceladus"),
+        ],
+    },
+    # 7 Sagitário e o nascimento do Sol
+    {
+        "temas_secundarios": ["estrelas", "sistema_solar"],
+        "tipos_espanto": ["conexao_inesperada", "misterio_aberto"],
+        "gancho": "A galáxia anã de Sagitário já atravessou o disco da Via Láctea pelo menos três vezes. Um estudo sugere que as passagens dispararam surtos de nascimento de estrelas, e o Sol pode ter surgido num deles.",
+        "explicacao": (
+            "Sagitário é uma pequena galáxia satélite, cerca de 10 mil vezes menos massiva que a nossa, descoberta "
+            "só em 1994, embora seja uma das vizinhas mais próximas. Ela fica do outro lado do centro galáctico em "
+            "relação à Terra, e por isso parece muito fraca. Sua órbita vai se apertando, e a cada travessia do "
+            "disco ela perde parte do gás e da poeira. Pelos modelos, as passagens ocorreram há cerca de 5 ou 6 "
+            "bilhões, 2 bilhões e 1 bilhão de anos. Uma equipe liderada por Tomás Ruiz-Lara, do Instituto de "
+            "Astrofísica de Canárias, analisou dados do satélite Gaia sobre estrelas num raio de uns 6.500 "
+            "anos-luz em volta do Sol e achou três picos de formação de estrelas, há 5,7, 1,9 e 1 bilhão de anos, "
+            "coincidindo com as passagens. A ideia é que cada choque agite o gás da Via Láctea como ondas na água, "
+            "concentrando material em algumas regiões até que ele forme estrelas. Um dos surtos coincide, grosso "
+            "modo, com a formação do Sol, há uns 4,7 bilhões de anos. Os autores ressalvam que não sabem se a nuvem "
+            "que deu origem ao Sol colapsou por causa de Sagitário, mas dizem que é um cenário possível."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "hipotese",
+        "fontes": [
+            {"url": ESA_SGR, "titulo": "Galactic crash may have triggered Solar System formation (ESA)", "idioma": "en",
+             "trecho": (
+                 "Astronomers have known that Sagittarius repeatedly smashes through the Milky Way's disc, as its orbit around the galaxy's core tightens as a result of gravitational forces. [...] "
+                 "Some even claim that the 10 000 times more massive Milky Way's trademark spiral structure might be a result of the at least three known crashes with Sagittarius over the past six billion years. [...] "
+                 "The ripples caused by the collisions seem to have triggered major star formation episodes, one of which roughly coincided with the time of the formation of the Sun some 4.7 billion years ago. "
+                 "\"It is known from existing models that Sagittarius fell into the Milky Way three times – first about five or six billion years ago, then about two billion years ago, and finally one billion years ago,\" says Tomás Ruiz-Lara, a researcher in Astrophysics at the Instituto de Astrofísica de Canarias (IAC) in Tenerife, Spain, and lead author of the new study published in Nature Astronomy. "
+                 "\"When we looked into the Gaia data about the Milky Way, we found three periods of increased star formation that peaked 5.7 billion years ago, 1.9 billion years ago and 1 billion years ago, corresponding with the time when Sagittarius is believed to have passed through the disc of the Milky Way.\" [...] "
+                 "The researchers looked at luminosities, distances and colours of stars within a sphere of about 6500 light years around the Sun [...] "
+                 "causing all the previously still gas and dust inside the larger galaxy to slosh around like ripples on the water.\" "
+                 "In some areas of the Milky Way, these ripples would lead to higher concentrations of dust and gas, while emptying others. "
+                 "The high density of material in those areas would then trigger the formation of new stars. [...] "
+                 "\"We don't know if the particular cloud of gas and dust that turned into the Sun collapsed because of the effects of Sagittarius or not. "
+                 "But it is a possible scenario because the age of the Sun is consistent with a star formed as a result of the Sagittarius effect.\" "
+                 "Every collision stripped Sagittarius of some of its gas and dust, leaving the galaxy smaller after each passage."
+             )},
+            wiki("Sagittarius_Dwarf_Spheroidal_Galaxy",
+                "Officially discovered in 1994, by Rodrigo Ibata, Mike Irwin, and Gerry Gilmore, Sgr dSph was immediately recognized as being the nearest known neighbor to the Milky Way at the time. [...] "
+                "Although it is one of the closest companion galaxies to the Milky Way, the main parent cluster is on the opposite side of the Galactic Center from Earth, and consequently is very faint, although covering a large area of the sky.",
+                nome="Sagittarius Dwarf Spheroidal Galaxy"),
+        ],
+    },
+    # 8 a estrela arremessada pelo buraco negro central
+    {
+        "temas_secundarios": ["buracos_negros", "estrelas"],
+        "tipos_espanto": ["escala_absurda", "engenhosidade"],
+        "gancho": "Uma estrela a uns 29 mil anos-luz da Terra corre a 1.755 km/s e está sendo expulsa da Via Láctea. Refazendo a rota dela, astrônomos viram que foi arremessada pelo buraco negro do centro da galáxia.",
+        "explicacao": (
+            "A estrela, chamada S5-HVS1, foi achada por acaso num levantamento de velocidades de estrelas do céu do "
+            "sul, o S5, e a descoberta é creditada a Sergey Koposov, da Universidade Carnegie Mellon. Ela tem cerca "
+            "de 2,35 vezes a massa do Sol e fica na constelação do Grou. Sua velocidade é de quase 0,6% da "
+            "velocidade da luz. Quando os pesquisadores calcularam a órbita de trás para a frente, ela apontou sem "
+            "ambiguidade para o centro galáctico: a estrela teria sido lançada de perto de Sagitário A*, o buraco "
+            "negro supermassivo de lá, a cerca de 1.800 km/s, e viajado 4,8 milhões de anos até onde está hoje. A "
+            "explicação proposta é o mecanismo de Hills: a estrela fazia parte de um par, e a gravidade do buraco "
+            "negro desfez o sistema e a atirou para longe. Se foi isso, é o primeiro exemplo conhecido desse "
+            "mecanismo. Em novembro de 2019, ela era a estrela mais rápida já detectada, e sua velocidade de "
+            "lançamento é quase o dobro da de outras estrelas hipervelozes ligadas ao centro da galáxia, o que "
+            "levanta dúvidas sobre se todas foram lançadas do mesmo jeito."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": ARXIV_HVS, "titulo": "The Great Escape: Discovery of a nearby 1700 km/s star ejected from the Milky Way by Sgr A* (Koposov et al., MNRAS)", "idioma": "en",
+             "trecho": (
+                 "We present the serendipitous discovery of the fastest Main Sequence hyper-velocity star (HVS) by the Southern Stellar Stream Spectroscopic Survey (S5). "
+                 "The star S5-HVS1 is a $\\sim 2.35$ M$_\\odot$ A-type star [...] "
+                 "The current 3-D velocity of the star in the Galactic frame is $1755\\pm50$ km/s. "
+                 "When integrated backwards in time, the orbit of the star points unambiguously to the Galactic Centre, implying that S5-HVS1 was kicked away from Sgr A* with a velocity of $\\sim 1800$ km/s and travelled for $4.8$ Myr to its current location. [...] "
+                 "With the S5-HVS1 ejection velocity being almost twice the velocity of other hyper-velocity stars previously associated with the Galactic Centre, we question whether they have been generated by the same mechanism"
+             )},
+            wiki("S5-HVS1",
+                "S5-HVS1 is an A-type main-sequence star notable as the fastest one detected as of November 2019, and has been determined to be traveling with a peculiar velocity of 1,755 km/s (3,930,000 mph), almost 0.6% of the speed of light. "
+                "The star is in the southern constellation Grus, and about 29,000 light-years from Earth. "
+                "According to astronomers, S5-HVS1 was ejected from the Milky Way galaxy after interacting with Sagittarius A*, the supermassive black hole at the center of the galaxy. "
+                "It is possible that it was originally part of a binary system that was tidally disrupted by the supermassive black hole, causing it to be ejected. "
+                "If this is the case, that it was flung out of the galaxy by the central black hole, it is then the first known example of a star that has undergone the Hills mechanism. "
+                "The star's discovery has been credited to Sergey Koposov, assistant professor of physics at Carnegie Mellon University, as part of the Southern Stellar Stream Spectroscopic Survey (S5).",
+                nome="S5-HVS1"),
+        ],
+    },
+    # 9 o Campo Profundo do Hubble: olhar para o "nada"
+    {
+        "temas_secundarios": ["historia_astronomia", "exploracao_espacial"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Em 1995, o diretor do instituto do Hubble apontou o telescópio por 10 dias para um pedaço \"vazio\" do céu. Colegas acharam desperdício. A imagem revelou cerca de 3 mil galáxias, algumas entre as mais distantes já vistas.",
+        "explicacao": (
+            "O pedaço escolhido, na Ursa Maior, tem 1/24.000.000 da área do céu: é como uma bola de tênis vista a "
+            "100 metros. Robert Williams, então diretor do Instituto de Ciência do Telescópio Espacial, tinha à sua "
+            "disposição uma parte do tempo do Hubble. Segundo ele, o comitê que distribui o tempo do telescópio "
+            "nunca aprovaria um projeto tão longo e arriscado. Os colegas diziam que era uma péssima ideia, que as "
+            "galáxias distantes seriam fracas demais para aparecer e que mais um fracasso seria um desastre de "
+            "imagem para um telescópio que tinha acabado de ter a visão consertada por astronautas. Williams disse "
+            "que, se fosse tão ruim assim, pediria demissão. Entre 18 e 28 de dezembro de 1995, o Hubble fez 342 "
+            "exposições da região. Quase todos os cerca de 3 mil objetos da imagem são galáxias, muitas jovens, "
+            "algumas a cerca de 12 bilhões de anos-luz. Elas eram bem mais irregulares e perturbadas que as de "
+            "hoje, porque colisões eram mais comuns no universo jovem. Um dos céticos, o astrônomo Robert Kirshner, "
+            "admitiu depois: \"Bob estava certo, eu estava errado\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Hubble_Deep_Field",
+                "The Hubble Deep Field (HDF) is an image of a small region in the constellation Ursa Major, constructed from a series of observations by the Hubble Space Telescope. "
+                "It covers an area about 2.6 arcminutes on a side, about one 24-millionth of the whole sky, which is equivalent in angular size to a tennis ball at a distance of 100 metres. "
+                "The image was assembled from 342 separate exposures taken with the Space Telescope's Wide Field and Planetary Camera 2 over ten consecutive days between December 18 and 28, 1995. "
+                "The field is so small that only a few foreground stars in the Milky Way lie within it; thus, almost all of the 3,000 objects in the image are galaxies, some of which are among the youngest and most distant known. [...] "
+                "The HDF, however, contained many galaxies with redshifts as high as six, corresponding to distances of about 12 billion light-years. [...] "
+                "The HDF galaxies contained a considerably larger proportion of disturbed and irregular galaxies than the local universe; galaxy collisions and mergers were more common in the young universe as it was much smaller than today.",
+                nome="Hubble Deep Field"),
+            {"url": NATGEO_HDF, "titulo": "When Hubble Stared at Nothing for 100 Hours (National Geographic)", "idioma": "en",
+             "trecho": (
+                 "It was a terrible idea, his colleagues told him, and a waste of valuable telescope time. [...] "
+                 "no way would the distant galaxies Williams hoped to see be bright enough for Hubble to detect. "
+                 "Plus, another Hubble failure would be a public relations nightmare. [...] "
+                 "Not much earlier, astronauts had dragged Hubble into the cargo bay of the space shuttle Endeavour and corrected a disastrous flaw in the prized telescope's vision. [...] "
+                 "As director of the Space Telescope Science Institute, he had a certain amount of Hubble's time at his personal disposal. "
+                 "\"The telescope allocation committee would never have approved such a long, risky project,\" he explains. [...] "
+                 "\"If it's that bad, I'll resign. [...] "
+                 "He was among the scientists who initially thought the deep field was a bad idea. "
+                 "\"Bob was right, I was wrong."
+             )},
+        ],
+    },
+    # 10 o Grande Atrator e Laniakea
+    {
+        "temas_secundarios": ["cosmologia", "navegacao_antiga"],
+        "tipos_espanto": ["escala_absurda", "misterio_aberto"],
+        "gancho": "A Via Láctea e as galáxias vizinhas são puxadas rumo a uma concentração de matéria chamada Grande Atrator. Ela fica justo atrás do disco da nossa galáxia, onde poeira e estrelas atrapalham a visão.",
+        "explicacao": (
+            "Além de se afastarem com a expansão do universo, as galáxias têm movimentos próprios, causados pela "
+            "gravidade de regiões com mais ou menos matéria. Nos anos 1980, sete astrônomos apelidados de \"Sete "
+            "Samurais\" estudaram cerca de 400 galáxias elípticas, compararam as distâncias com as velocidades e "
+            "acharam um fluxo coerente de galáxias rumo a uma concentração até então desconhecida, a uns 150 a 250 "
+            "milhões de anos-luz, na direção do aglomerado de Norma. O problema é que ela fica na Zona de Evitação, "
+            "a faixa do céu escondida pelo plano da Via Láctea, e por isso é estudada com raios X, rádio e "
+            "infravermelho, que atravessam melhor a poeira. Em 2014, astrônomos definiram nosso \"bairro\" cósmico "
+            "pelos fluxos das galáxias, como uma bacia de atração com o Grande Atrator no centro: Laniakea, cerca "
+            "de 100 mil galáxias. O nome, sugerido por um professor de língua havaiana, quer dizer \"céu imenso\" e "
+            "homenageia os navegadores polinésios, que se guiavam pelo céu no Pacífico. A história não para aí: o "
+            "próprio Grande Atrator parece se mover rumo a uma concentração maior e mais distante, a de Shapley."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Great_Attractor",
+                "The Great Attractor is a region of enhanced gravitational attraction in the local universe. "
+                "It lies in the general direction of the Norma Cluster and the Hydra–Centaurus Supercluster, approximately 150–250 million light-years from the Milky Way. "
+                "Its presence was inferred from the peculiar motions of galaxies, which deviate from the motion expected solely from the expansion of the universe. [...] "
+                "The region is difficult to observe at visible wavelengths because it lies behind the galactic plane of the Milky Way, within the Zone of Avoidance. "
+                "Dust, gas, and foreground stars obscure many background galaxies in this part of the sky. "
+                "Astronomers therefore study the area using X-ray, radio, infrared, and neutral-hydrogen observations, which penetrate the obscuring material more effectively than visible light. "
+                "The Great Attractor was incorporated into the definition of the Laniakea Supercluster in 2014. [...] "
+                "These departures are known as peculiar velocities and result mainly from gravitational interactions with nearby concentrations and deficits of matter. [...] "
+                "The Great Attractor was identified during the 1980s by a collaboration informally known as the Seven Samurai: David Burstein, Roger Davies, Alan Dressler, Sandra Faber, Donald Lynden-Bell, Roberto Terlevich, and Gary Wegner. "
+                "The group studied approximately 400 elliptical galaxies using the Dn–sigma relation [...] "
+                "By comparing distance estimates with observed redshifts, the researchers constructed maps of the galaxies' peculiar velocities. "
+                "The resulting pattern showed a coherent stream of galaxies toward a previously unrecognized concentrat [...] "
+                "The Great Attractor is itself moving generally toward Shapley rather than acting as the ultimate endpoint of all nearby flows.",
+                nome="Great Attractor"),
+            wiki("Laniakea_Supercluster",
+                "The Laniakea Supercluster or Laniakea for short (; Hawaiian lit. 'immense heaven') is the large-scale structure centered around the Great Attractor that is home to the Milky Way and approximately 100,000 other nearby galaxies. "
+                "It was originally defined in September 2014 as a galaxy supercluster [...] "
+                "published a new way of defining superclusters according to the relative velocities of galaxies as basins of attraction. [...] "
+                "The name was suggested by Nawaʻa Napoleon, an associate professor of Hawaiian language at Kapiʻolani Community College. "
+                "The name honors Polynesian navigators, who used knowledge of the sky to navigate the Pacific Ocean. [...] "
+                "influences the motions of the Local Group of galaxies, where the Milky Way galaxy resides, and all others throughout the supercluster.",
+                nome="Laniakea Supercluster"),
+        ],
+    },
+    # 11 a galáxia sem matéria escura
+    {
+        "temas_secundarios": ["cosmologia", "fisica_particulas"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Astrônomos acharam uma galáxia que parece ter pouquíssima ou nenhuma matéria escura. Paradoxalmente, isso pode ajudar a provar que a matéria escura existe.",
+        "explicacao": (
+            "A galáxia NGC 1052-DF2 é do tipo ultradifuso: grande, espalhada e muito tênue. Foi a primeira "
+            "proposta de uma galáxia praticamente sem matéria escura, a massa invisível que se considerava "
+            "necessária para formar galáxias. Uma das alternativas à matéria escura é que o efeito atribuído a ela "
+            "seja, na verdade, um comportamento ainda desconhecido da gravidade da matéria comum. Se fosse assim, "
+            "esse efeito teria de aparecer em qualquer galáxia, inclusive nesta. Uma galáxia sem ele sugere que a "
+            "matéria escura é algo separado, que pode estar presente ou faltar. A descoberta foi contestada: em "
+            "2019, uma equipe do Instituto de Astrofísica de Canárias calculou que ela estaria a 42 milhões de "
+            "anos-luz, e não a 64 milhões, o que abriria espaço para matéria escura, como em qualquer outra "
+            "galáxia. Medições posteriores com o Hubble, porém, confirmaram a distância maior, e em junho de 2021 "
+            "novas observações reforçaram que ela tem pouca matéria escura. Depois surgiram uma segunda galáxia "
+            "parecida no mesmo grupo, a NGC 1052-DF4, e uma terceira, a FCC 224, em 2025. Ainda são necessários "
+            "mais estudos para confirmar o que isso significa."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("NGC_1052-DF2",
+                "NGC 1052-DF2 is an ultra diffuse galaxy (UDG) identified in a wide-field imaging survey of the NGC 1052 group by the Dragonfly Telephoto Array. "
+                "It has been proposed that the galaxy contains little or no dark matter, the first such discovery. "
+                "On 20 March 2019, a follow-up study announcing the discovery of a second UDG lacking dark matter, NGC 1052-DF4, was published. [...] "
+                "On 3 June 2019, however, a separate team used a full observing dataset on the same object to review this claim. "
+                "Using five independent methods to estimate distances of heavenly bodies, a team of researchers from the Instituto de Astrofísica de Canarias (IAC) found the distance of NGC 1052-DF2 to be 42 million light years (13 MPc), not some 64 million light years (19 MPc) from the Earth. [...] "
+                "This implied a significant part of NGC 1052-DF2 could be made up of dark matter, like any other galaxy. "
+                "However, follow-up observations using Hubble Space Telescope Advanced Camera for Surveys imaging measured the tip of the red-giant branch distance to NGC 1052-DF2, which IAC researchers detected at 13 Mpc, to be 22.1±1.2 Mpc, consistent with earlier surface brightness fluctuation measurements. [...] "
+                "The apparent lack of dark matter in NGC 1052-DF2 may help prove that dark matter is real: "
+                "If what appears to be dark matter is really just a currently unknown effect of the gravity of ordinary matter then this apparent dark matter should also appear in this galaxy. "
+                "Further study will be needed before this and any other possible implications can be confirmed. "
+                "If confirmed, the absence of dark matter may also have implications for theories of galaxy formation, as dark matter has been thought to be needed for galaxy formation. [...] "
+                "In June 2021 further observations by Hubble have confirmed NGC 1052-DF2 as deficient in dark matter. [...] "
+                "Astronomers discovered a second galaxy with no dark matter, NGC 1052-DF4, which is another ultra diffuse galaxy - quite large, spread-out, and faint to observe. [...] "
+                "A third galaxy without dark matter was identified in 2025, FCC 224.",
+                nome="NGC 1052-DF2"),
+        ],
+    },
+    # 12 o anel perfeito do Objeto de Hoag
+    {
+        "temas_secundarios": ["geometria_topologia", "luz_cores"],
+        "tipos_espanto": ["misterio_aberto", "contraintuitivo"],
+        "gancho": "O Objeto de Hoag é um anel quase perfeito de estrelas azuis em volta de um núcleo amarelo, e não se sabe como se formou. E, pelo vão entre os dois, aparece outra galáxia em anel, bem mais distante.",
+        "explicacao": (
+            "Arthur Hoag o descobriu em 1950 e ficou na dúvida entre uma nebulosa planetária e uma galáxia "
+            "peculiar. Ele chegou a propor que o anel fosse um efeito de lente gravitacional, a luz de algo mais "
+            "distante entortada pela gravidade. A ideia caiu porque o núcleo e o anel têm o mesmo desvio para o "
+            "vermelho e porque telescópios melhores mostraram que o anel é cheio de nós, o que uma lente não "
+            "produziria. A galáxia fica a cerca de 600 milhões de anos-luz, e o anel tem por volta de 121 mil "
+            "anos-luz de diâmetro externo. As galáxias em anel \"clássicas\" surgem quando uma galáxia pequena "
+            "atravessa uma maior, em forma de disco, e cria uma onda que se espalha como um anel. No Objeto de "
+            "Hoag, porém, não há sinal da segunda galáxia que teria servido de \"projétil\", nem dos fragmentos que "
+            "um choque deixaria, embora talvez já tenham sumido se a colisão ocorreu há mais de 3 bilhões de anos. "
+            "Outra proposta, a de uma instabilidade numa galáxia com barra, também é contestada. Algumas galáxias "
+            "têm anéis parecidos, mas nenhuma com a mesma simetria. E a galáxia em anel vista pelo vão é outra "
+            "raridade, já que galáxias em anel são incomuns."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Hoag%27s_Object",
+                "Hoag's Object is an unusual ring galaxy in the constellation of Serpens Caput. "
+                "It is named after Arthur Hoag, who discovered it in 1950 and identified it as either a planetary nebula or a peculiar galaxy. [...] "
+                "A nearly perfect ring of young hot blue stars circles the older yellow nucleus of this ring galaxy c. 600 million light-years away in the constellation Serpens. [...] "
+                "and an outer 45″ diameter of 121±4 kly (39.9±1.7 kpc). [...] "
+                "Though ring galaxies are rare, another more distant ring galaxy can be seen through Hoag's Object, between the nucleus and the outer ring of the galaxy [...] "
+                "A few other galaxies share the primary characteristics of Hoag's Object, including a bright detached ring of stars [...] "
+                "While none match Hoag's Object in symmetry, these galaxies are sometimes called Hoag-type galaxies. [...] "
+                "In the initial announcement of his discovery, Hoag proposed the hypothesis that the visible ring was a product of gravitational lensing. "
+                "This idea was later discarded because the nucleus and the ring have the same redshift, and because more advanced telescopes revealed the ring's knotty structure, which would not be visible if the galaxy were a product of gravitational lensing. "
+                "Many of the galaxy's details remain mysterious, foremost of which is how it formed. "
+                "So-called \"classic\" ring galaxies are generally formed by the collision of a small galaxy with a larger disk-shaped galaxy, producing a density wave in the disk that leads to a characteristic ring-like appearance. [...] "
+                "However, there is no sign of any second galaxy that would have acted as the \"bullet\" [...] "
+                "Observations with one of the most sensitive telescopes have also failed to uncover any faint galaxy fragments that should be observable in a collision scenario. "
+                "However, a team of scientists that analyzes the galaxy admits that \"if the carnage happened more than 3 billion years ago, there might not be any detritus left to see.\" "
+                "Noah Brosch suggested that Hoag's Object might be a product of an extreme \"bar instability\" that occurred a few billion years ago in a barred spiral galaxy. "
+                "Schweizer et al. claim this is an unlikely hypothesis",
+                nome="Hoag's Object"),
+        ],
+    },
+    # 13 a Lua ajudou a achar o primeiro quasar
+    {
+        "temas_secundarios": ["buracos_negros", "telecomunicacoes"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "O primeiro quasar foi achado com a ajuda da Lua: medições feitas quando ela passou na frente de uma fonte de rádio deram sua posição. Lá havia uma \"estrela\" que, na verdade, estava a bilhões de anos-luz.",
+        "explicacao": (
+            "Nos anos 1950, levantamentos de rádio acharam fontes pequenas sem nenhum objeto visível que "
+            "correspondesse a elas. Em 1960, centenas já estavam no Terceiro Catálogo de Cambridge, e os "
+            "astrônomos procuravam suas contrapartes no céu. Uma delas, a 3C 273, passaria cinco vezes por trás da "
+            "Lua. Cyril Hazard e John Bolton aproveitaram uma dessas ocultações para medi-la com o radiotelescópio "
+            "de Parkes, na Austrália, e assim Maarten Schmidt pôde achar o objeto visível e obter seu espectro com "
+            "o telescópio Hale, de 200 polegadas. As linhas estranhas eram linhas comuns de hidrogênio, desviadas "
+            "15,8% para o vermelho. Se o desvio viesse do movimento do \"astro\", ele se afastaria a uns 47 mil "
+            "km/s, muito além de qualquer estrela. Se viesse da expansão do universo, o objeto estaria muito longe "
+            "e seria brilhante como nada conhecido. Schmidt e Bev Oke publicaram os resultados em 1963, mas a ideia "
+            "demorou a ser aceita, porque ninguém sabia o que geraria tanta energia. Hoje se sabe que um quasar é "
+            "o núcleo de uma galáxia alimentado por um buraco negro supermassivo. O 3C 273 brilha uns 4 trilhões "
+            "de vezes mais que o Sol em luz visível e ofusca em mais de 16 vezes a galáxia que o abriga."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Quasar",
+                "because they were first identified during the 1950s as sources of radio-wave emission of unknown physical origin [...] "
+                "They were first noted as radio sources with no corresponding visible object. [...] "
+                "By 1960, hundreds of these objects had been recorded and published in the Third Cambridge Catalogue while astronomers scanned the skies for their optical counterparts. [...] "
+                "Another radio source, 3C 273, was predicted to undergo five occultations by the Moon. "
+                "Measurements taken by Cyril Hazard and John Bolton during one of the occultations using the Parkes Radio Telescope allowed Maarten Schmidt to find a visible counterpart to the radio source and obtain an optical spectrum using the 200-inch (5.1 m) Hale Telescope on Mount Palomar. "
+                "This spectrum revealed the same strange emission lines. "
+                "Schmidt was able to demonstrate that these were likely to be the ordinary spectral lines of hydrogen redshifted by 15.8% [...] "
+                "If this was due to the physical motion of the \"star\", then 3C 273 was receding at an enormous velocity, around 47,000 km/s, far beyond the speed of any known star [...] "
+                "If the measured redshift was due to relative velocity caused by inflation, then this would support an interpretation of very distant objects with extraordinarily high luminosity and power output, far beyond any object observed to date. [...] "
+                "Schmidt's explanation for the high redshift was not widely accepted at the time. "
+                "A major concern was the enormous amount of energy these objects would have to be radiating if they were distant. "
+                "In the 1960s, no commonly accepted mechanism could account for this. [...] "
+                "The emission from an AGN is powered by accretion onto a supermassive black hole [...] "
+                "High-resolution images of quasars, particularly from the Hubble Space Telescope, have shown that quasars occur in the centers of ga",
+                nome="Quasar"),
+            wiki("3C_273",
+                "3C 273 is a quasar located at the center of a giant elliptical galaxy in the constellation of Virgo. "
+                "It was the first quasar ever to be identified and is the visually brightest quasar in the sky as seen from the Earth, with an apparent visual magnitude of 12.9, outshining by more than 16 times the entire galaxy that hosts it. "
+                "The derived distance to this object is 749 megaparsecs (2.4 billion light-years). [...] "
+                "the quasar is over 4 trillion times more luminous than the Sun at visible wavelengths. [...] "
+                "After accurate positions were obtained using lunar occultation by Cyril Hazard at the Parkes Radio Telescope, the radio source was quickly associated with an optical counterpart, an unresolved stellar object. "
+                "In 1963, Maarten Schmidt and Bev Oke published a pair of papers in Nature reporting that 3C 273 has a substantial redshift of 0.158, placing it several billion light-years away.",
+                nome="3C 273"),
+        ],
+    },
+    # 14 as bolhas de Fermi
+    {
+        "temas_secundarios": ["buracos_negros", "luz_cores"],
+        "tipos_espanto": ["misterio_aberto", "escala_absurda"],
+        "gancho": "Revirando dados públicos de um telescópio de raios gama, astrônomos acharam em 2010 duas bolhas gigantes saindo do centro da Via Láctea, uma para cada lado, de 25 mil anos-luz cada. Ninguém sabe ao certo o que as criou.",
+        "explicacao": (
+            "A estrutura toda se estende por 50 mil anos-luz e cobre mais de 100 graus do céu, mais da metade dele, "
+            "da constelação de Virgem à do Grou. Quem a revelou foi Doug Finkbeiner, do Centro de Astrofísica "
+            "Harvard-Smithsonian, com os pós-graduandos Meng Su e Tracy Slatyer, processando dados públicos do "
+            "Large Area Telescope do satélite Fermi, da NASA. As bolhas tinham escapado a estudos anteriores por "
+            "causa de uma \"névoa\" de raios gama espalhada pelo céu inteiro, e a equipe só as encontrou depois de "
+            "subtrair estimativas dessa névoa. Olhando para trás, havia indícios delas em dados de satélites mais "
+            "antigos, como o ROSAT e o WMAP. As bordas bem definidas sugerem uma liberação de energia grande e "
+            "relativamente rápida, e as bolhas podem ter milhões de anos. Uma possibilidade é um jato de partículas "
+            "do buraco negro do centro da galáxia: hoje não há sinal de jato, mas pode ter havido no passado. Outra "
+            "é um surto de formação de estrelas, já que em outras galáxias esses surtos produzem enormes fluxos de "
+            "gás. A descoberta foi comparada, em escala, à de um novo continente na Terra."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": CFA_FERMI, "titulo": "Astronomers Find Giant, Previously Unseen Structure in our Galaxy (Harvard-Smithsonian CfA)", "idioma": "en",
+             "trecho": (
+                 "NASA's Fermi Gamma-ray Space Telescope has unveiled a previously unseen structure centered in the Milky Way -- a finding likened in terms of scale to the discovery of a new continent on Earth. "
+                 "The feature, which spans 50,000 light-years, may be the remnant of an eruption from a supersized black hole at the center of our galaxy. "
+                 "\"What we see are two gamma-ray-emitting bubbles that extend 25,000 light-years north and south of the galactic center,\" said Doug Finkbeiner, an astronomer at the Harvard-Smithsonian Center for Astrophysics (CfA) in Cambridge, Mass., who first recognized the feature. "
+                 "\"We don't fully understand their nature or origin.\" "
+                 "At more than 100 degrees across, the structure spans more than half of the sky, from the constellation Virgo to the constellation Grus. "
+                 "It may be millions of years old. [...] "
+                 "Finkbeiner and Harvard graduate students Meng Su and Tracy Slatyer revealed the bubbles by processing publicly available data from the satellite's Large Area Telescope (LAT). [...] "
+                 "The structures eluded previous astronomers studying gamma rays due in part to the so-called diffuse emission -- a fog of gamma rays that appears all over the sky. [...] "
+                 "By using various estimates of the gamma-ray fog, including the Fermi team's, Finkbeiner and his colleagues were able to subtract it from the LAT data and unveil the giant bubbles. [...] "
+                 "Taken together, the structure's shape and emissions suggest that it was formed as a result of a large and relatively rapid energy release -- the source of which remains a mystery, Finkbeiner noted. "
+                 "One possibility includes a particle jet from the supermassive black hole at the galactic center. [...] "
+                 "While there is no evidence that the Milky Way's black hole sports such a jet today, it may have in the past. "
+                 "The bubbles also may have formed as a result of gas outflows from a burst of star formation [...] "
+                 "\"In other galaxies, we see that starbursts can drive enormous gas outflows,\" said David Spergel [...] "
+                 "Finkbeiner noted that, in retrospect, hints of the bubbles appear in earlier spacecraft data, including the Germany-led Roentgen X-ray Satellite (ROSAT) and NASA's Wilkinson Microwave Anisotropy Probe (WMAP)."
+             )},
+            wiki("Galactic_Center",
+                "In November 2010, it was announced that two large elliptical lobe structures of energetic plasma, termed bubbles, which emit gamma- and X-rays, were detected astride the Milky Way galaxy's core. [...] "
+                "The origin of the bubbles is being researched.",
+                nome="Galactic Center"),
+        ],
+    },
+]

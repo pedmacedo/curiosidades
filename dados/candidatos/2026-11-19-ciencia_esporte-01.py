@@ -1,0 +1,588 @@
+LOTE = "2026-11-19-ciencia_esporte-01"
+AREA = "esportes_jogos"
+TEMA = "ciencia_esporte"
+W = "https://en.wikipedia.org/wiki/"
+EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+def epmc(pmcid, titulo, trecho):
+    return {"url": EPMC + pmcid + "/fullTextXML", "titulo": titulo + " (Europe PMC)", "idioma": "en", "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 o gelo escorregadio e a teoria da pressão que não fecha
+    {
+        "temas_secundarios": ["estados_materia", "agua_doce_gelo"],
+        "tipos_espanto": ["mito_desmentido", "misterio_aberto"],
+        "gancho": "A explicação clássica para o patim deslizar, a pressão da lâmina derretendo o gelo, não fecha a conta: por ela, patinar abaixo de −4 °C seria impossível. Por que o gelo escorrega ainda é estudado.",
+        "explicacao": (
+            "A ideia do derretimento por pressão vem do século XIX: a lâmina, apertando o gelo, formaria uma "
+            "película de água que lubrificaria o deslizamento. Em 1939, Frank Bowden e T. P. Hughes mostraram que, "
+            "se fosse só isso, os patinadores sentiriam muito mais atrito do que sentem. E há o problema da "
+            "temperatura: o gelo ideal para a patinação artística fica por volta de −5,5 °C, e o do hóquei, de "
+            "−9 °C, abaixo do limite que essa teoria permitiria. Bowden e Hughes propuseram então que o calor do "
+            "próprio atrito derrete uma camada fina, o que não explica por que o gelo escorrega mesmo para quem "
+            "está parado sobre ele. Outra proposta diz que as moléculas da superfície se ligam mal às de baixo e "
+            "formam uma camada quase líquida, que lubrifica independentemente da pressão. Experimentos com "
+            "microscopia de força atômica, porém, contestam o peso dessa camada. Um estudo de 2014 sugere que o "
+            "aquecimento por atrito é o processo mais importante na maioria das situações comuns, mas o mecanismo "
+            "que controla o atrito do gelo continua sendo pesquisado."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Ice",
+                "This subject was first scientifically investigated in the 19th century. "
+                "The preferred explanation at the time was \"pressure melting\" – i.e. the blade of an ice skate, upon exerting pressure on the ice, would melt a thin layer, providing sufficient lubrication for the blade to glide across the ice. "
+                "Yet, research in 1939 by Frank P. Bowden and T. P. Hughes found that skaters would experience a lot more friction than they actually do if it were the only explanation. "
+                "Further, the optimum temperature for figure skating is −5.5 °C (22 °F; 268 K) and −9 °C (16 °F; 264 K) for ice hockey; yet, according to pressure melting theory, skating below −4 °C (25 °F; 269 K) would be outright impossible. "
+                "Instead, Bowden and Hughes argued that heating and melting of the ice layer is caused by friction. "
+                "However, this theory does not sufficiently explain why ice is slippery when standing still even at below-zero temperatures. "
+                "Subsequent research suggested that ice molecules at the interface cannot properly bond with the molecules of the mass of ice beneath (and thus are free to move like molecules of liquid water). "
+                "These molecules remain in a semi-liquid state, providing lubrication regardless of pressure against the ice exerted by any object. "
+                "However, the significance of this hypothesis is disputed by experiments showing a high coefficient of friction for ice using atomic force microscopy. "
+                "Thus, the mechanism controlling the frictional properties of ice is still an active area of scientific study. [...] "
+                "Research in 2014 suggests that frictional heating is the most important process under most typical conditions.",
+                nome="Ice"),
+            wiki("Ice_skating",
+                "It had long been believed that ice is slippery because the pressure of an object in contact with it causes a thin layer to melt. "
+                "The hypothesis was that the blade of an ice skate, exerting pressure on the ice, melts a thin layer, providing lubrication between the ice and the blade. "
+                "This explanation, called \"pressure melting\", originated in the 19th century.",
+                nome="Ice skating"),
+        ],
+    },
+    # 2 a pedra de curling que curva para o lado "errado"
+    {
+        "temas_secundarios": ["estados_materia", "termodinamica"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Um copo emborcado que desliza girando no sentido horário curva para a esquerda. A pedra de curling, girando igual, curva para a direita, e os físicos ainda não chegaram a um acordo sobre o porquê.",
+        "explicacao": (
+            "No copo, a explicação é conhecida: ao deslizar, ele se inclina um pouco para a frente, a borda "
+            "dianteira aperta mais a mesa e freia mais, e o copo desvia para o lado desse atrito maior. Por muito "
+            "tempo se supôs que a pedra fazia o contrário por um motivo parecido: a pressão maior na frente "
+            "derreteria um pouco o gelo, e o atrito mais forte ficaria atrás. Em 2012, uma equipe da Universidade "
+            "de Uppsala, na Suécia, fez as contas e viu que isso não basta. A pedra gira devagar, só umas duas "
+            "voltas até parar, pouco demais para desviar um metro ou mais, e o desvio pode chegar a um metro e "
+            "meio. Pior: girar mais não aumenta a curva, e girar demais a elimina. Com um microscópio eletrônico, "
+            "os suecos acharam riscos minúsculos deixados pela borda da frente, que serviriam de guia para a "
+            "borda de trás. Riscando o gelo de propósito, eles conseguiram até fazer uma pedra andar em "
+            "zigue-zague. A proposta gerou controvérsia. Em 2020, uma equipe japonesa testou as teorias numa "
+            "pista de curling, com rastreamento de movimento e microscópio a laser, e nenhuma saiu vencedora."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [{
+            "url": "https://www.unsw.edu.au/newsroom/news/2022/02/the-slippery-science-of-olympic-curling--we-still-dont-know-how-",
+            "titulo": "The slippery science of Olympic curling: we still don't know how it works (UNSW Sydney / The Conversation)",
+            "idioma": "en",
+            "trecho": (
+                "The game of curling is centuries old, but exactly what makes the stones curl as they slide over the ice is still a mystery. [...] "
+                "Even a small amount of rotation can deflect the path of the curling stone by as much as a metre and a half. [...] "
+                "you will be able to make the glass trace a curving path across the table, deflecting to the left when you spin it clockwise or to the right when you spin it anticlockwise. [...] "
+                "When the spinning glass slides across the table, it leans forward slightly in the direction of travel, pushing the front lip of the glass down a little harder on the table than the trailing lip. "
+                "The extra pressure generates extra friction at the front compared to the back. "
+                "The resulting imbalance of friction forces causes the glass to deflect in the direction of stronger friction – to the left in the case of a clockwise-rotating glass. [...] "
+                "But curling stones behave in exactly the opposite way: a clockwise rotation causes the stone to deflect to the right, not the left. "
+                "For a long time, scientists assumed this was because of an effect called asymmetrical friction. [...] "
+                "The extra pressure at the front of the stone partially melts the ice at the leading edge, creating a thin film of water that reduces the friction at the front of stone compared with the back. [...] "
+                "In 2012, a team at Uppsala University in Sweden made detailed calculations of the friction forces acting on a sliding stone. "
+                "The problem they found is that curling stones rotate quite slowly, only completing a couple of turns before coming to a stop. "
+                "This spin is far too small to cause a sideways deflection of a metre or more. "
+                "Even odder, more rotation does not lead to more curl – in fact, spin a stone too hard and it won’t curl at all. [...] "
+                "The researchers used an electron microscope to look more closely at the ice under a curling stone. "
+                "They discovered that the front edge of the stone leaves behind miniscule scratches on the ice in the direction of rotation. "
+                "These scratches act as a guide for the back edge of the stone, causing the stone to deflect in the direction of rotation. [...] "
+                "In one experiment, a stone was made to travel along a zigzag path by laying down scratches in alternating directions. "
+                "Their findings ignited a minor controversy in the admittedly niche world of curling physics. [...] "
+                "In 2020, a Japanese team attempted to clear things up by systematically testing each theory in a curling hall using sophisticated motion-tracking equipment, a laser scanning microscope [...] "
+                "However, no clear winner emerged."
+            ),
+        }],
+    },
+    # 3 o dardo redesenhado para voar menos
+    {
+        "temas_secundarios": ["atmosfera", "invencoes"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "O recorde do dardo chegou a 104,80 m, e lançamentos acima de 100 m já ameaçavam a segurança dentro do estádio. Em 1986, o dardo foi redesenhado para voar menos: o centro de gravidade avançou 4 cm.",
+        "explicacao": (
+            "Por muito tempo, os dardos foram de madeira maciça com ponta de aço. Nos anos 1950 surgiu o modelo "
+            "oco e aerodinâmico do americano Bud Held, que voava mais longe, mas também caía de chapado com mais "
+            "frequência, o que gerava discussões e protestos sobre a validade dos lançamentos. O recorde mundial "
+            "chegou aos 104,80 m de Uwe Hohn, e em 1º de abril de 1986 a federação internacional de atletismo "
+            "mudou o dardo masculino. Além de levar o centro de gravidade 4 cm para a frente, o modelo novo tem "
+            "menos área antes desse ponto e mais área depois, como as penas de uma flecha. O dardo tende a se "
+            "alinhar com o vento relativo, e na descida esse vento parece vir do chão: ele vira a ponta para "
+            "baixo. Assim, gera menos sustentação e perde cerca de 10% de distância, mas crava no chão com muito "
+            "mais regularidade. Os recordes foram zerados. Em 2017, o melhor lançamento com o dardo novo ainda "
+            "era o de Jan Železný, de 1996, com 98,48 m. O dardo feminino passou pela mesma mudança em 1999."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Javelin_throw",
+            "For a long time, javelins were made of solid wood, typically birch, with a steel tip. "
+            "The hollow, highly aerodynamic Held javelin, invented by American thrower Bud Held and developed and manufactured by his brother Dick, was introduced in the 1950s [...] "
+            "These new javelins flew further, but were also less likely to land neatly point first [...] "
+            "became official for men starting in April 1986 and for women in April 1999, and the world records (then 104.80 m by Uwe Hohn, and 80.00 m by Petra Felke) were reset. "
+            "The current (as of 2017) men's world record is held by Jan Železný at 98.48 m (1996) [...] "
+            "On 1 April 1986, the men's javelin (800 grams (1.76 lb)) was redesigned by the governing body (the IAAF Technical Committee). "
+            "They decided to change the rules for javelin design because of the increasingly frequent flat landings and the resulting discussions and protests when these attempts were declared valid or invalid by competition judges. "
+            "The world record had also crept up to a potentially dangerous level, 104.80 m (343.8 ft) by Uwe Hohn. "
+            "With throws exceeding 100 metres, it was becoming difficult to safely stage the competition within the confines of a stadium infield. "
+            "The javelin was redesigned so that the centre of gravity was moved 4 cm (1.6 in) forward. "
+            "In addition, the surface area in front of centre of gravity was reduced, while the surface area behind the centre of gravity was increased. "
+            "This had an effect similar to that produced by the feathers on an arrow. "
+            "The javelin turns into the relative wind. "
+            "This relative wind appears to originate from the ground as the javelin descends, thus the javelin turns to face the ground. "
+            "As the javelin turns into the wind less lift is generated, reducing the flight distance by around 10% but also causing the javelin to stick in the ground more consistently. "
+            "In 1999, the women's javelin (600 grams (1.32 lb)) was similarly redesigned.",
+            nome="Javelin throw")],
+    },
+    # 4 o salto em V e a regra do peso
+    {
+        "temas_secundarios": ["atmosfera", "corpo_extremo"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Abrir os esquis em V fez os saltadores de esqui irem cerca de 10% mais longe. Mas também tornou vantajoso ser muito leve, e a federação passou a punir os magros demais com esquis mais curtos.",
+        "explicacao": (
+            "Até meados dos anos 1960, os saltadores desciam a rampa com os dois braços apontados para a frente, e "
+            "durante décadas o voo foi feito com os esquis paralelos. Nos anos 1980, o sueco Jan Boklöv abriu "
+            "caminho para o estilo em V, hoje usado por praticamente todos. Com ele, os saltadores passam a "
+            "distância de referência da rampa em cerca de 10% a mais do que com a técnica anterior. A mudança "
+            "deu mais importância ao tempo no ar em relação ao impulso da decolagem, e ter pouquíssimo peso "
+            "virou vantagem. Vieram casos de anorexia, e em meados dos anos 1990 já se falava de treinadores "
+            "pressionando atletas a emagrecer. Em 2004, a Federação Internacional de Esqui criou uma regra: quem "
+            "tem índice de massa corporal abaixo de 20 (hoje, 21) é obrigado a usar esquis mais curtos, que "
+            "geram menos sustentação. A regra é creditada por acabar com os casos mais graves, mas sua eficácia "
+            "é muitas vezes questionada, porque o esqui encurtado pode ser compensado com ainda menos peso e com "
+            "fixações modernas. Dezenas de saltadores e treinadores, atuais e antigos, já criticaram o problema "
+            "em público."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Ski_jumping",
+                "The jumping technique has evolved over the years, from jumps with the skis parallel and both arms extended forward, to the \"V-style\", which is widely used today. [...] "
+                "Ski jumpers below the minimum safe body mass index are penalised with a shorter maximum ski length, reducing the aerodynamic lift they can achieve. "
+                "These rules have been credited with stopping the most severe cases of underweight athletes, but some competitors still lose weight to maximise the distance they can achieve. [...] "
+                "By using the V-style, firstly pioneered by Swedish ski jumper Jan Boklöv in the mid-1980s, modern skiers are able to exceed the distance of the take-off hill by about 10% compared to the previous technique with parallel skis. [...] "
+                "Until the mid-1960s, the ski jumper came down the in-run of the hill with both arms pointing forwards. [...] "
+                "After the V-style was established, the period of flying became more relevant in relation to the take-off. "
+                "It became advantageous for ski jumpers to have a very low body weight. "
+                "The problem was first publicized by Stephan Zünd, who suffered from anorexia nervosa. [...] "
+                "In late 1996 Dieter Thoma talked in an interview about trainers putting athletes under pressure to gain a low body weight. "
+                "In 2004 the FIS announced a new rule which requires the length of an athletes skis to be shortened when an athlete has a BMI under 20 (today under 21). [...] "
+                "The rule's efficacy is often doubted, because the cut ski can be compensated with a low body weight and modern ski bindings. "
+                "Current and former ski jumpers, who have talked critically about the topic, include",
+                nome="Ski jumping"),
+            wiki("Jan_Bokl%C3%B6v",
+                "He is best known for popularising the now-ubiquitous V-style in the late 1980s and early 1990s.",
+                nome="Jan Boklöv"),
+        ],
+    },
+    # 5 as covinhas da bola de golfe
+    {
+        "temas_secundarios": ["atmosfera", "invencoes"],
+        "tipos_espanto": ["origem_inesperada", "engenhosidade"],
+        "gancho": "As covinhas da bola de golfe nasceram de uma observação: bolas velhas, marcadas pelo uso, iam mais longe que as novas e lisas. A rugosidade muda o ar junto à bola e diminui o arrasto.",
+        "explicacao": (
+            "A partir de 1848, as bolas passaram a ser feitas de guta-percha, a seiva seca de uma árvore da "
+            "Malásia, moldada a quente. Por acaso, descobriu-se que os cortes deixados pelo uso davam a elas um "
+            "voo mais regular que o de uma bola perfeitamente lisa, e os fabricantes passaram a marcar a "
+            "superfície de propósito, com faca ou com martelo e cinzel. Em 1905, o engenheiro inglês William "
+            "Taylor, que percebera que os jogadores tentavam deixar as bolas irregulares porque as usadas iam mais "
+            "longe, patenteou um padrão de covinhas depois de testes sistemáticos. A física explica a vantagem. "
+            "As covinhas tornam turbulenta a fina camada de ar que envolve a frente da bola, e essa camada "
+            "turbulenta continua grudada à superfície por mais tempo. Com isso, a esteira de baixa pressão atrás "
+            "da bola fica mais estreita, e o arrasto cai. Além disso, quando a bola gira para trás, as covinhas "
+            "aumentam a sustentação criada pelo efeito Magnus. Hoje as bolas costumam ter de 300 a 500 covinhas, "
+            "e as regras exigem que o desenho seja simétrico."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Golf_ball",
+            "In 1848, the Rev. Dr. Robert Adams Paterson (sometimes spelled Patterson) invented the gutta-percha ball (or guttie, gutty). "
+            "The guttie was made from dried sap of the Malaysian sapodilla tree. "
+            "The sap had a rubber-like feel and could be made spherical by heating and shaping it in a mold. [...] "
+            "Accidentally, it was discovered that nicks in the guttie from normal use actually provided a ball with a more consistent ball flight than a guttie with a perfectly smooth surface. "
+            "Thus, makers began intentionally making indentations into the surface of new balls using either a knife or hammer and chisel [...] "
+            "Dimpled balls fly farther than non-dimpled balls due to the combination of these two effects. "
+            "First, the dimples on the surface of a golf ball cause the boundary layer on the upstream side of the ball to transition from laminar to turbulent. "
+            "The turbulent boundary layer is able to remain attached to the surface of the ball much longer than a laminar boundary with fewer eddies and so creates a narrower low-pressure wake and hence less pressure drag. [...] "
+            "Second, backspin generates lift by deforming the airflow around the ball, in a similar manner to an airplane wing. "
+            "This is called the Magnus effect. "
+            "The dimples on a golf ball deform the air around the ball quickly causing a turbulent airflow that results in more Magnus lift than a smooth ball would experience. [...] "
+            "Dimples first became a feature of golf balls when English engineer and manufacturer William Taylor, co-founder of the Taylor-Hobson company, registered a patent for a dimple design in 1905. "
+            "William Taylor had realized that golf players were trying to make irregularities on their balls, noticing that used balls were going further than new ones. "
+            "Hence he decided to make systematic tests to determine what surface formation would give the best flight. [...] "
+            "Most modern golf balls have about 300–500 dimples [...] "
+            "Officially sanctioned balls are designed to be as symmetrical as possible.",
+            nome="Golf ball")],
+    },
+    # 6 o maiô LZR Racer
+    {
+        "temas_secundarios": ["olimpiadas", "invencoes"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Na Olimpíada de Pequim, em 2008, 94% das provas de natação foram vencidas com o mesmo maiô, o LZR Racer, que comprimia o corpo e prendia ar. Dois anos depois, maiôs de corpo inteiro foram proibidos.",
+        "explicacao": (
+            "O LZR Racer foi lançado pela Speedo em fevereiro de 2008. Feito de elastano, náilon e poliuretano, "
+            "foi desenvolvido com o Instituto Australiano do Esporte e com apoio de túneis de vento da NASA. "
+            "Segundo a fonte, reduzia em 24% o arrasto do atrito com a água em relação ao maiô anterior da marca, "
+            "e estudos iniciais sugeriram tempos 1,9% a 2,2% menores. Ao apertar o corpo e prender ar, o traje "
+            "também dava flutuação, e houve quem usasse dois maiôs ou mais, um sobre o outro, para ampliar o "
+            "efeito. Em Pequim, 98% das medalhas da natação e 23 dos 25 recordes mundiais quebrados saíram com "
+            "ele. Nadadores japoneses, presos a contratos com outras marcas, ficaram em desvantagem até a "
+            "federação do país liberar a escolha do traje. Logo surgiu a expressão \"doping tecnológico\". Em "
+            "março de 2009, a FINA limitou o comprimento e a espessura dos maiôs e, em julho, numa virada brusca, "
+            "votou quase por unanimidade proibir todos os de corpo inteiro. Desde janeiro de 2010, só vale tecido, "
+            "e os maiôs vão no máximo da cintura ao joelho, para os homens, e do ombro ao joelho, para as mulheres."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("LZR_Racer",
+            "The LZR Racer (pronounced as \"Laser Racer\") is a line of competition swimsuits manufactured by Speedo using a high-technology swimwear fabric composed of woven elastane-nylon and polyurethane. "
+            "The swimsuits are available in a full-body length; they compress the body and trap air for buoyancy. "
+            "The LZR Pro and LZR Elite were launched on 13 February 2008 [...] "
+            "The LZR Pro and LZR Elite were developed by Mectex, an Italian company, in association with the Australian Institute of Sport, with the help of Speedo's sponsored athletes. "
+            "NASA's wind tunnel testing facilities and fluid flow analysis software supported the design. [...] "
+            "The design result, called the LZR Racer, reduced skin friction drag by 24% compared to the previous Speedo swimsuit. [...] "
+            "early case studies suggested that the LZR Elite was effective in reducing the racing times of competitive swimmers by 1.9 to 2.2 percent. [...] "
+            "The LZR Racer's impact extended to the Beijing Olympics, where 94% of all swimming races were won in the suit. "
+            "98% of all swimming medals won and 23 of the 25 world records broken at the Beijing Olympics were won by swimmers wearing the suit. [...] "
+            "A problem arose for the Japanese Olympic swimmers, who had exclusive contracts with swimsuit makers Mizuno, Asics, and Descente, preventing them from wearing the Speedo brand suits in the Olympics. "
+            "The Japanese Swimming Federation subsequently decided to allow its athletes to choose their own suits freely. [...] "
+            "The combined effects of the LZR both compressing the body and trapping air for buoyancy led to many competitors who used the LZR wearing two or more suits for an increased effect. "
+            "This led to some claiming that the LZR was in effect \"technological doping\". "
+            "At its meeting in Dubai in March 2009, FINA stipulated that swimsuits should not cover the neck, must not extend past the shoulders and ankles, and also limit the suits' thickness and buoyancy. [...] "
+            "In an abrupt reversal of opinion, the FINA Congress, which was held in Rome on 24 July 2009, during the 2009 World Aquatics Championships, voted almost unanimously to revert its previous policy and ban all body-length swimsuits. "
+            "Men's swimsuits may maximally cover the area from the waist to the knee, and women's counterparts from the shoulder to the knee. "
+            "They also ruled that the fabric used must be a \"textile\", that is, consisting natural or synthetic yarns woven together. [...] "
+            "The new regulations took effect on 1 January 2010.",
+            nome="LZR Racer")],
+    },
+    # 7 a largada falsa de 0,1 s e o sensor que favorecia as mulheres
+    {
+        "temas_secundarios": ["limites_humanos", "neurociencia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "No atletismo de elite, reagir ao tiro de largada em menos de 0,1 s conta como largada falsa. Um estudo dos Jogos de 2008 concluiu que o sensor, calibrado igual para todos, deixava mulheres saírem antes sem punição.",
+        "explicacao": (
+            "A regra se baseia em testes segundo os quais o cérebro humano não consegue ouvir e processar o som da "
+            "largada em menos de 0,1 segundo, embora um estudo encomendado pela federação, em 2009, tenha indicado "
+            "que velocistas de ponta às vezes reagem em 0,08 segundo. Sensores nos blocos de partida medem a "
+            "força dos pés: se ela passa de um limiar antes de 100 milissegundos após o tiro, é largada falsa, e "
+            "desde 2009 o atleta pode ser desclassificado na hora. Pesquisadores da Universidade de Michigan "
+            "analisaram as reações de 224 velocistas homens e 201 mulheres nos Jogos de Pequim. Com 99,9% de "
+            "confiança, concluíram, ninguém reage em 100 ms, mas os homens chegam a 109 ms e as mulheres, a 121 "
+            "ms. Essa diferença, porém, seria um artefato: com menos força muscular, elas demoram mais a atingir o "
+            "mesmo limiar, e uma mulher poderia largar até 21 ms antes sem punição. Pelas contas dos autores, um "
+            "limiar 22% menor para elas igualaria os tempos. Um estudo posterior, com os Jogos de 2004 a 2016, viu os tempos "
+            "mínimos de reação caírem, e a diferença entre os sexos sumir em 2012. A explicação mais provável, "
+            "segundo os autores, é a redução dos limiares, e não um treino melhor."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("False_start",
+                "In track and field sprints, the sport's governing body, World Athletics, has a rule that if the athlete moves within 0.1 seconds after the gun has fired the athlete has false-started. "
+                "This figure is based on tests that show the human brain cannot hear and process the information from the start sound in under 0.10 seconds, even though a IAAF-commissioned study indicated in 2009 that top sprinters are able to sometimes react in 0.08 seconds. [...] "
+                "Since 2009, the offending athletes risk immediate disqualification.",
+                nome="False start"),
+            epmc("PMC3198384",
+                "Lipps, Galecki e Ashton-Miller (2011). On the Implications of a Sex Difference in the Reaction Times of Sprinters at the Beijing Olympics. PLoS ONE",
+                "Currently, a false start is awarded if an athlete increases the force on their starting block above a given threshold before 100 ms has elapsed after the starting gun. [...] "
+                "At the 99.9% confidence level, neither men nor women can react in 100 ms, but they can react in as little as 109 ms and 121 ms, respectively. "
+                "However, that sex difference in reaction time is likely an artifact caused by using the same force threshold in women as men, and it permits a woman to false start by up to 21 ms without penalty. "
+                "We estimate that female sprinters would have similar reaction times to male sprinters if the force threshold used at Beijing was lowered by 22% in order to account for their lesser muscle strength. [...] "
+                "Department of Biomedical Engineering, University of Michigan [...] "
+                "Data were collected for 224 male sprinters (439 total male races) and 201 female sprinters (387 total female races)"),
+            epmc("PMC6021049",
+                "On the apparent decrease in Olympic sprinter reaction times (2018). PLoS ONE",
+                "The results for the 100 m and 110 m hurdle events show that minimum reaction times have systematically decreased between 2004 and 2016 for both sexes, with women showing a marked decrease since 2008 that eliminated the sex difference in 2012. "
+                "Because overall race times have not systematically decreased between 2004 and 2016, the most likely explanation for the apparent decrease in reaction times is a reduction in the proprietary force thresholds used to calculate the reaction times based on force sensors in starting blocks"),
+        ],
+    },
+    # 8 o patim articulado que funcionava pelo motivo errado
+    {
+        "temas_secundarios": ["anatomia", "invencoes"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "O patim de lâmina articulada provocou uma enxurrada de recordes na patinação de velocidade a partir da temporada 1996–1997. Só depois se descobriu que ele funcionava, mas não pelo motivo para o qual tinha sido criado.",
+        "explicacao": (
+            "No patim tradicional, a lâmina é fixa na bota. No chamado clap skate, ela se prende só na frente, por "
+            "uma dobradiça, e assim o patinador pode estender o tornozelo no fim da passada sem tirar a lâmina do "
+            "gelo. A ideia é antiga: um patim articulado foi patenteado em 1894. O pesquisador holandês Gerrit Jan "
+            "van Ingen Schenau, da Universidade Livre de Amsterdã, a reinventou a partir de 1979, apostando que a "
+            "panturrilha poderia participar por mais tempo do movimento. Os grandes patinadores holandeses da época "
+            "não se impressionaram. Na temporada 1994–1995, 11 jovens patinadores da Holanda do Sul usaram o "
+            "patim e melhoraram seus tempos, em média, 6,25%, contra 2,5% dos colegas com patins comuns. Em "
+            "1996–1997, a seleção feminina holandesa o adotou com enorme sucesso, a campeã mundial alemã Gunda "
+            "Niemann disse que ele deveria ser proibido, e o resto do mundo foi atrás. Caíram muitos recordes, "
+            "inclusive nos Jogos de Inverno de Nagano, em 1998. Em 2000, o cientista do esporte holandês Han "
+            "Houdijk mostrou que o ganho não vinha da panturrilha esticando o tornozelo, e sim da mudança do ponto "
+            "de rotação, da ponta do patim para a dobradiça, o que facilita transmitir força ao gelo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Clap_skate",
+            "Unlike in traditional skates where the blade is rigidly fixed to the boot, clap skates have the blade attached to the boot by a hinge at the front. "
+            "This allows the blade to remain in contact with the ice longer, as the ankle can now be extended toward the end of the stroke [...] "
+            "Clap skates were developed at the Faculty of Human Movement Sciences of the Vrije Universiteit of Amsterdam, led by Gerrit Jan van Ingen Schenau [...] "
+            "In the 1996/1997 season, the Dutch women's team started using the skates with great success. "
+            "The rest of the skating world soon followed suit, causing a torrent of world records to be broken in the following seasons, including the 1998 Winter Olympics in Nagano, Japan. [...] "
+            "The idea of a hinging skate was described and patented in 1894 by Karl Hannes [...] "
+            "It was re-invented by Gerrit Jan van Ingen Schenau, who started work on a hinged speed skate in 1979 [...] "
+            "on the premise that a skater would benefit from the extended movement with the skate on the ice, allowing the calf muscles to longer partake in the skate movement. [...] "
+            "The then current Dutch speed skating top professionals Ids Postma, Bart Veldkamp and Rintje Ritsma were unimpressed by the skate. "
+            "For the 1994–1995 season, 11 skaters from the South Holland 14–18 age category started using the clap skate competitively. "
+            "Those 11 showed an average improvement of 6.25% on their times, compared to 2.5% of the other skaters using regular speed skates. [...] "
+            "leaving Gunda Niemann, the defending world champion, in second place. "
+            "Niemann remarked that the skate was illegal, and should be outlawed. [...] "
+            "Research completed in 2000 by Dutch sport scientist Han Houdijk showed that the speed gain from using the clap skate does not originate in using the calf muscle to stretch the ankle, as was assumed in the creation of the clap skate, but in the fact that the point of rotation is moved from the tip of the skate to the hinge, facilitating the transfer of power to the ice.",
+            nome="Clap skate")],
+    },
+    # 9 a dor do dia seguinte não é ácido lático
+    {
+        "temas_secundarios": ["anatomia", "corpo_extremo"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "A dor muscular do dia seguinte não vem do ácido lático: ele volta ao normal em até uma hora. A causa mais aceita são microlesões nas fibras, provocadas quando o músculo faz força enquanto se alonga.",
+        "explicacao": (
+            "Essa dor tardia aparece depois de exercícios puxados ou fora do costume e costuma ser mais forte "
+            "entre 24 e 72 horas depois. Uma teoria antiga culpava o ácido lático, que continuaria sendo produzido "
+            "após o treino e agiria como um resíduo tóxico. Ela foi amplamente rejeitada por dois motivos. "
+            "Contrações em que o músculo se encurta também produzem ácido lático, mas não causam essa dor. E vários "
+            "estudos mostram que o ácido lático volta aos níveis normais em até uma hora, muito antes de a dor "
+            "começar. A explicação mais aceita aponta lesões microscópicas nas fibras, provocadas por contrações "
+            "excêntricas, aquelas em que o músculo se alonga enquanto faz força. Exercícios estáticos causam bem "
+            "menos dor, e os de encurtamento, nenhuma. A ideia de rupturas dentro do músculo já tinha sido "
+            "proposta em 1902 por Theodore Hough. A dor também não é, necessariamente, um sinal para parar: "
+            "exercícios durante esse período não pioraram a lesão nem atrasaram a recuperação nos estudos. E há "
+            "um consolo: depois de uma sessão dolorida, o músculo se adapta rápido e passa a sofrer menos com o "
+            "mesmo esforço, uma proteção que dura pelo menos várias semanas."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "consenso_parcial",
+        "fontes": [wiki("Delayed_onset_muscle_soreness",
+            "Delayed onset muscle soreness (DOMS) is the pain and stiffness felt in muscles after unaccustomed or strenuous exercise. "
+            "The soreness is felt most strongly 24 to 72 hours after the exercise. "
+            "It is thought to be caused by eccentric (lengthening) exercise, which causes small-scale damage (microtrauma) to the muscle fibers. "
+            "After such exercise, the muscle adapts rapidly to prevent muscle damage, and thereby soreness, if the exercise is repeated. [...] "
+            "Muscle soreness is caused by eccentric exercise, that is, exercise consisting of eccentric (lengthening) contractions of the muscle. "
+            "Isometric (static) exercise causes much less soreness, and concentric (shortening) exercise causes none. [...] "
+            "DOMS was first described in 1902 by Theodore Hough, who concluded that this kind of soreness is \"fundamentally the result of ruptures within the muscle\". [...] "
+            "An earlier theory posited that DOMS is connected to the build-up of lactic acid in the blood, which was thought to continue being produced following exercise. "
+            "This build-up of lactic acid was thought to be a toxic metabolic waste product that caused the perception of pain at a delayed stage. "
+            "This theory has been largely rejected, as concentric contractions which also produce lactic acid have been unable to cause DOMS. "
+            "Additionally, lactic acid is known from multiple studies to return to normal levels within one hour of exercise, and therefore cannot cause the pain that occurs much later. [...] "
+            "Furthermore, eccentric exercise during DOMS was found to not exacerbate muscle damage, nor did it have an adverse effect on recovery, indicating that soreness is not necessarily a warning sign to reduce the usage of the affected muscle. [...] "
+            "Generally, though, the protective effect lasts for at least several weeks.",
+            nome="Delayed onset muscle soreness")],
+    },
+    # 10 o salto de costas e o colchão de espuma
+    {
+        "temas_secundarios": ["olimpiadas", "invencoes"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "O salto de costas, hoje usado por quase todos no salto em altura, foi desenvolvido quase ao mesmo tempo por Dick Fosbury, nos EUA, e pela canadense Debbie Brill. Os dois dependiam de uma novidade: o colchão de espuma.",
+        "explicacao": (
+            "Saltar de costas já era conhecido, mas, enquanto o pouso era em areia, serragem ou lascas de madeira, "
+            "o atleta precisava cair de pé ou apoiado nas mãos, como nas técnicas da tesoura e do rolo. No fim dos "
+            "anos 1950, as universidades americanas passaram a usar blocos de espuma, bem mais macios e quase um "
+            "metro mais altos, e no começo dos anos 1960 as escolas seguiram. Isso permitiu cair de costas com "
+            "segurança. Fosbury desenvolveu o estilo no ensino médio, e em 1964 um jornal escreveu que ele parecia "
+            "\"um peixe se debatendo num barco\"; outro o chamou de \"o saltador em altura mais preguiçoso do "
+            "mundo\". No Canadá, Brill criou um estilo parecido ainda criança, num fosso com espuma que o pai fez "
+            "na fazenda da família, e seus colegas de clube o achavam único até saberem de Fosbury. O ouro dele "
+            "na Olimpíada de 1968, no México, mostrou o potencial da técnica. Arqueando o corpo sobre o sarrafo, o "
+            "saltador mantém boa parte dele abaixo da barra, e o centro de massa pode, em teoria, passar por baixo "
+            "dela. Dos 36 medalhistas olímpicos da prova entre 1972 e 2000, 34 usaram o salto de costas."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Fosbury_flop",
+                "Though the backwards flop technique had been known for years before Fosbury, landing surfaces had been sandpits or low piles of matting and high jumpers had to land on their feet or at least land carefully to prevent injury. [...] "
+                "While in flight, the athlete can progressively arch shoulders, back, and legs in a rolling motion, keeping as much of the body as possible below the bar. "
+                "It is theoretically possible for the center of mass to pass under the bar.",
+                nome="Fosbury flop"),
+            wiki("Dick_Fosbury",
+                "He won a gold medal at the 1968 Summer Olympics, revolutionizing the high jump event with a \"back-first\" technique now known as the Fosbury flop. [...] "
+                "Debbie Brill was developing her similar \"Brill Bend\" around the same time. [...] "
+                "Sawdust, sand, or woodchip surfaces had been usable previously because jumpers using the scissors technique were able to clear the bar while upright and then land on their feet, and those using the Western Roll or Straddle made a three-point landing on their hands and lead leg. "
+                "In the late 1950s, U.S. colleges began to use bundles of soft foam rubber, usually held together by a mesh net. "
+                "These bundles were not only much softer, but raised the landing height about three feet (0.91 m) off the ground. "
+                "By the early 1960s, U.S. high schools were following the lead of the colleges in acquiring foam rubber landing pits. "
+                "With the softer, elevated landing surface, Fosbury was able to land safely. [...] "
+                "The technique gained the name the \"Fosbury Flop\" when in 1964 the Medford Mail-Tribune ran a photo captioned \"Fosbury Flops Over Bar,\" while in an accompanying article a reporter wrote that he looked like \"a fish flopping in a boat.\" "
+                "Others were even less kind, with one newspaper captioning Fosbury's photograph, \"World's Laziest High Jumper\". [...] "
+                "Of the 36 Olympic medalists in the event from 1972 through 2000, 34 used \"the Flop\", making it the most popular technique in high jumping.",
+                nome="Dick Fosbury"),
+            wiki("Debbie_Brill",
+                "Her reverse jumping style—which is now almost exclusively the technique of elite high jumpers—was called the Brill Bend and was developed by her when she was a child, around the same time as Dick Fosbury was developing the similar Fosbury Flop in the US. [...] "
+                "She developed her style of jumping as a preteen on the family farm when her father made a landing pit containing foam rubber. [...] "
+                "Her clubmates thought it was unique until they learned that an older American athlete, Dick Fosbury, was becoming known for using the same technique.",
+                nome="Debbie Brill"),
+        ],
+    },
+    # 11 a "quebra" da bola curva pode ser ilusão
+    {
+        "temas_secundarios": ["percepcao_ilusoes", "sentidos"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "No beisebol, a bola com efeito faz uma curva suave, mas os rebatedores dizem que ela \"quebra\" de repente perto da base. Uma hipótese de 2010: a visão periférica distorce o movimento de objetos que giram.",
+        "explicacao": (
+            "Já se discutiu se a bola curva existia mesmo ou era ilusão de ótica. Em 1949, o engenheiro aeronáutico "
+            "Ralph Lightfoot, da Sikorsky, usou túnel de vento para provar que ela curva de fato: o giro "
+            "desequilibra as forças sobre a bola, que segue um caminho suave e parabólico. O enigma passou a ser "
+            "outro: por que os rebatedores relatam uma mudança quase descontínua de posição perto da base? Em 2010, "
+            "pesquisadores propuseram uma resposta a partir de um experimento de laboratório. Um disco que desce "
+            "com uma textura girando por dentro é visto descendo na vertical quando olhado de frente. Visto pelo "
+            "canto do olho, o giro interno parece parar, e o disco parece descer em diagonal, tanto mais inclinado "
+            "quanto mais periférica a visão. O centro do olho e a periferia processam o movimento de jeitos "
+            "diferentes. A trajetória da bola começa no centro da visão do rebatedor e, ao se aproximar, passa "
+            "para a periferia, onde o giro altera a percepção do deslocamento. Os autores aplicaram a ideia também "
+            "à bola rápida que parece subir. Lançada com giro para trás, ela cai menos do que o esperado, mas "
+            "nenhum humano consegue arremessá-la rápido o bastante, e com giro suficiente, para que suba de fato."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Curveball",
+                "There was once a debate on whether a curveball actually curves or is an optical illusion. "
+                "In 1949, Ralph B. Lightfoot, an aeronautical engineer at Sikorsky Aircraft, used wind tunnel tests to prove that a curveball curves. [...] "
+                "However, optical illusion caused by the ball's spinning may play an important part in what makes curveballs difficult to hit. "
+                "The curveball's trajectory is smooth, but the batter perceives a sudden, dramatic change in the ball's direction. "
+                "When an object that is spinning and moving through space is viewed directly, the overall motion is interpreted correctly by the brain. "
+                "However, as it enters the peripheral vision, the internal spinning motion distorts how the overall motion is perceived. "
+                "A curveball's trajectory begins in the centre of the batter's vision, but overlaps with peripheral vision as it approaches the plate, which may explain the suddenness of the break perceived by the batter. "
+                "A peer-reviewed article on this hypothesis was published in 2010.",
+                nome="Curveball"),
+            epmc("PMC2954145",
+                "Shapiro et al. (2010). Transitions between central and peripheral vision create spatial/temporal distortions: a hypothesis concerning the perceived break of the curveball. PLoS ONE",
+                "The stimulus consists of a descending disk (global motion) with an internal moving grating (local motion). "
+                "When observers view the disk centrally, they perceive both global and local motion (i.e., observers see the disk's vertical descent and the internal spinning). "
+                "When observers view the disk peripherally, the internal portion appears stationary, and the disk appears to descend at an angle. "
+                "The angle of perceived descent increases as the observer views the stimulus from further in the periphery. [...] "
+                "we present a hypothesis and analysis of the perception of the curveball and rising fastball in the sport of baseball. "
+                "The curveball is a physically measurable phenomenon: the imbalance of forces created by the ball's spin causes the ball to deviate from a straight line and to follow a smooth parabolic path. "
+                "However, the curveball is also a perceptual puzzle because batters often report that the flight of the ball undergoes a dramatic and nearly discontinuous shift in position as the ball nears home plate. "
+                "We suggest that the perception of a discontinuous shift in position results from differences between foveal and peripheral processing."),
+            wiki("Fastball",
+                "Fastballs are usually thrown with a backspin so that the Magnus effect creates an upward force on the ball. "
+                "This causes it to fall less rapidly than expected, and sometimes causes an optical illusion often called a rising fastball. "
+                "Although it is impossible for a human to throw a baseball fast enough and with enough backspin for the ball to actually rise, to the batter the pitch seems to rise due to the unexpected lack of natural drop on the pitch.",
+                nome="Fastball"),
+        ],
+    },
+    # 12 debaixo d'água é mais rápido: Berkoff e a regra dos 15 m
+    {
+        "temas_secundarios": ["olimpiadas", "biomimetica"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Nadadores experientes costumam ir mais rápido debaixo d'água do que na superfície. Um costista que chegava a nadar 35 m submerso bateu recordes até 1988, quando as regras passaram a limitar esse trecho: hoje, 15 m.",
+        "explicacao": (
+            "Na superfície a resistência é maior, e por isso, depois da largada e de cada virada, os nadadores "
+            "costumam ficar submersos até o limite permitido, quase sempre com a pernada de golfinho, que empurra "
+            "mais que a pernada alternada. O americano David Berkoff levou isso ao extremo no nado de costas. Na "
+            "Universidade Harvard, passou a fazer largadas e viradas submersas de até 35 metros, com o corpo "
+            "horizontal, os braços esticados e travados acima da cabeça e uma pernada ondulante. A manobra ganhou "
+            "o apelido de \"Berkoff Blastoff\", e em 1988 ele bateu três vezes o recorde mundial dos 100 m costas, "
+            "sendo o primeiro a nadar a prova em menos de 55 segundos. Ele não estava sozinho: na Olimpíada de "
+            "1984, o japonês Daichi Suzuki já tinha nadado 25 metros submerso, e em Seul, em 1988, ficou com o "
+            "ouro nos 100 m costas, à frente de Berkoff. O longo trecho submerso incomodava os árbitros, e depois "
+            "dos Jogos de 1988 a FINA o limitou a 10 metros. Entre 1989 e 1991, o limite passou a 15 metros, no "
+            "costas, no livre e no borboleta. A pernada de golfinho submersa, porém, se espalhou pelas piscinas."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Backstroke",
+                "Due to increased resistance at the surface, experienced swimmers usually swim faster underwater than at the surface. "
+                "Therefore, most experienced swimmers in backstroke competitions stay under water up to the limit set by FINA (15 meters after the start and after every turn). "
+                "Most swimmers use a butterfly kick underwater, as this provides more forward movement than the flutter kick.",
+                nome="Backstroke"),
+            wiki("David_Berkoff",
+                "He is best known for breaking the world record for the 100-meter backstroke three times, beginning at the 1988 Olympic trial preliminaries, becoming the first swimmer to go under 55 seconds for the event. [...] "
+                "Known later as the \"Berkoff Blastoff\", early in his Harvard career, Berkoff began swimming his backstroke start and turns underwater for a distance as long as 35 meters using a powerful push-off from the side of the pool remaining horizontal and as aerodynamic as possible, with a powerful wavelike dolphin kick and outstretched locked arms for the starts and turns. [...] "
+                "The lengthy underwater start and turn would become controversial with officials, but lead Berkoff to faster times until the rules changed in 1988. [...] "
+                "but could not match the time in the men's 100-meter backstroke event final where he swam a 55.18, placing him second in the event, and capturing the silver medal. [...] "
+                "After the 1988 Olympics, a limit of 10 meters was initially set for a few years by FINA officials for the distance a backstroker could swim underwater at their starts and turns, but the use of the underwater dolphin kick at starts and turns with outstretched locked arms would be adopted by a great number of competitive backstroke swimmers as well as butterfly and freestyle swimmers. [...] "
+                "In 1991, and remaining as of 2022, the distance limit increased to 15 meters at the start and after the turns for backstrokers, butterfly and freestyle swimmers. "
+                "The limit for backstrokers of 15 meters for backstroke swimmers was set as early as 1989.",
+                nome="David Berkoff"),
+            wiki("Daichi_Suzuki",
+                "However, it was Suzuki who finally developed the skill, allowing him to swim 25 meters underwater at the 1984 Summer Olympics held in Los Angeles. "
+                "Four years later, he won the gold medal in the 100-meter backstroke at the 1988 Seoul Olympics where Berkoff also competed.",
+                nome="Daichi Suzuki"),
+        ],
+    },
+    # 13 o "supertênis" e a espuma que devolve energia
+    {
+        "temas_secundarios": ["limites_humanos", "estados_materia"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "Num estudo financiado pela Nike, um protótipo de tênis com espuma nova e placa rígida reduziu em 4%, em média, o gasto de energia de 18 corredores de elite, e todos gastaram menos. A espuma era a melhor explicação.",
+        "explicacao": (
+            "No estudo, publicado em 2018 por pesquisadores da Universidade do Colorado, os 18 atletas correram com "
+            "três calçados: o protótipo e dois tênis de maratona já consagrados, com a massa igualada. Medindo o "
+            "oxigênio consumido e o gás carbônico produzido, a equipe viu que o protótipo baixou o custo de "
+            "energia da corrida em cerca de 4%, nas três velocidades testadas, de 14 a 18 km/h. Toda espuma "
+            "dissipa parte da energia como calor, e a fração que ela devolve se chama resiliência. A areia da "
+            "praia, por exemplo, é macia mas pouco resiliente, e por isso correr nela cansa mais. Nos testes "
+            "mecânicos, o protótipo devolveu 7,46 joules por passo, contra 3,38 e 3,56 joules dos outros dois. "
+            "Placas de carbono sozinhas, segundo trabalhos citados pelos autores, economizam cerca de 1%. O estudo "
+            "foi pago por um contrato da Nike, e dois coautores eram funcionários da empresa. Os tênis desse tipo "
+            "chegaram às lojas em 2017 e coincidiram com uma série de recordes: no fim de 2023, 15 dos 20 melhores "
+            "tempos da maratona eram de 2018 em diante. A World Athletics passou a limitar a altura da sola a 40 mm."
+        ),
+        "nivel": 2, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            epmc("PMC5856879",
+                "Hoogkamer et al. (2018). A Comparison of the Energetic Cost of Running in Marathon Racing Shoes. Sports Medicine",
+                "Recently, prototype running shoes were developed that combine a new highly compliant and resilient midsole material with a stiff embedded plate. [...] "
+                "18 high-caliber athletes ran six 5-min trials (three shoes [...] "
+                "We measured submaximal oxygen uptake and carbon dioxide production during minutes 3 [...] "
+                "Compared with the established racing shoes, the new shoes reduced the energetic cost of running in all 18 subjects tested. [...] "
+                "The observed percent changes were independent of running velocity (14 [...] "
+                "The prototype shoes lowered the energetic cost of running by 4% on average. [...] "
+                "Inevitably, all foams are viscoelastic; i.e., they dissipate some energy as heat [...] "
+                "The percent of the stored mechanical energy that is returned is called resilience. "
+                "Some materials/surfaces are compliant, but have low resilience (e.g., a sandy beach) and thus increase the energetic cost of running [...] "
+                "Such plates can reduce the energetic cost of running by ~ 1% [...] "
+                "For now, the elastic properties of the NP shoes provide the best explanation for the metabolic energy savings. "
+                "Our mechanical testing quantified that the NP shoes returned 7.46 J of mechanical energy per step versus 3.38 and 3.56 J for the NS and AB shoes, respectively [...] "
+                "This study was supported by a contract from Nike, Inc. with the University of Colorado, Boulder. [...] "
+                "Emily M. Farina and Geng Luo are employees of Nike, Inc."),
+            wiki("Super_shoes",
+                "These so-called \"super shoes\" began retailing in 2017. [...] "
+                "The introduction of super shoes coincided with a series of record-breaking times in long-distance running events. "
+                "As of late 2023, 15 of the 20 top times for the marathon were set since 2018. [...] "
+                "World Athletics set guidelines limiting soles of shoes used in competitions to 40 mm (1.6 in) in stack height.",
+                nome="Super shoes"),
+        ],
+    },
+    # 14 o vácuo do pelotão ajuda até quem vai na frente
+    {
+        "temas_secundarios": ["atmosfera", "teoria_jogos"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "No meio de um pelotão de ciclistas, a resistência do ar pode cair até 95%. E o vácuo não ajuda só quem vem atrás: em corridas de carros, o da frente também ganha com o que o segue de perto.",
+        "explicacao": (
+            "Quem pedala atrás de outros fica numa zona de pressão menor e gasta menos energia, enquanto quem vai "
+            "na ponta enfrenta o vento inteiro e se cansa mais. Por isso o pelotão vive em rotação: os da frente "
+            "recuam para se recuperar e outros assumem o posto. Essa economia molda a tática das provas. Num "
+            "modelo de computador de uma corrida simulada, os ciclistas mais fracos se deram melhor evitando a "
+            "frente, enquanto para os mais fortes cooperar valeu a pena. O vácuo tem uma face menos óbvia. Nas "
+            "pistas ovais mais rápidas da NASCAR, dois ou mais carros enfileirados andam mais rápido do que um "
+            "sozinho. O de trás aproveita a esteira de baixa pressão deixada pelo primeiro. Ao se aproximar, "
+            "empurra ar de alta pressão para a frente, e menos ar rápido bate no aerofólio traseiro do líder. "
+            "Resultado: menos arrasto para os dois. A natureza usa truque parecido. Gansos voam em V porque o "
+            "redemoinho que se forma na ponta da asa da ave da frente cria uma corrente de ar para cima, que dá "
+            "sustentação às de trás, e as aves se posicionam perto da distância ideal prevista pela teoria."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Peloton",
+                "Riders in a group save energy by riding behind or close to other riders (drafting, or slipstreaming). "
+                "The reduction in drag is dramatic; riding in the middle of a well-developed group, drag can be reduced by as much as 95%. [...] "
+                "Riders at the front are fully exposed to wind resistance, hence they experience higher fatigue loads than riders in drafting positions. "
+                "After a period of time in front, leading riders maneuver farther back in the peloton to a drafting position to recover. [...] "
+                "Results of the model shows that weaker riders are better off defecting, while cooperation is a good strategy for stronger riders.",
+                nome="Peloton"),
+            wiki("Drafting_(aerodynamics)",
+                "drafting can significantly reduce the paceline's average energy expenditure and can even slightly reduce the energy expenditure of the lead vehicle. [...] "
+                "On the faster speedways and superspeedways used by NASCAR and ARCA, two or more vehicles can race faster when lined up front-to-rear than a single car can race alone. "
+                "The low-pressure wake behind a group's leading car reduces the aerodynamic resistance on the front of the trailing car, allowing the second car to pull closer. "
+                "As the second car nears the first, it pushes high-pressure air forward so less fast-moving air hits the lead car's spoiler. "
+                "The result is less drag for both cars, allowing faster speeds. [...] "
+                "Flocks of geese and some other birds fly in a V formation because the wingtip vortices generated by the front bird will create up-wash circulations. "
+                "The birds flying behind will receive lift force from these up-wash vortices. [...] "
+                "Studies show that birds in a V formation place themselves roughly at the optimum distance predicted by simple aerodynamic theory.",
+                nome="Drafting (aerodynamics)"),
+        ],
+    },
+]

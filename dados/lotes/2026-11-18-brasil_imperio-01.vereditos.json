@@ -1,0 +1,149 @@
+{
+ "lote": "2026-11-18-brasil_imperio-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "brasil_imperio-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Pedro não marchou até Lisboa: ficou sitiado no Porto por mais de um ano; outra expedição tomou Lisboa",
+    "correcao": "Explicação: 'montou um pequeno exército e marchou até Lisboa, que se rendeu.' -> 'montou um pequeno exército, desembarcou no Porto e, depois de mais de um ano de cerco e guerra, viu suas tropas tomarem Lisboa.'"
+   },
+   {
+    "id": "brasil_imperio-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Desde 1822' contradiz a fonte do 0001 (música de 1824; composição em 1822 sem comprovação)",
+    "correcao": "Explicação: 'Desde 1822, o hino usado no país era o que o próprio Pedro I compusera para celebrar a Independência' -> 'Até então, o hino usado no país era o que o próprio Pedro I compusera para celebrar a Independência'"
+   },
+   {
+    "id": "brasil_imperio-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Leopoldina abortou em 2 de dezembro, dias antes de morrer; a 12ª semana era quando adoeceu",
+    "correcao": "Explicação: 'morreu no Rio em 11 de dezembro de 1826, na 12ª semana de gravidez, depois de convulsões, febre alta e delírios.' -> 'morreu no Rio em 11 de dezembro de 1826, com convulsões, febre alta e delírios, dias depois de perder o bebê: estava na 12ª semana de gravidez quando adoeceu.'"
+   },
+   {
+    "id": "brasil_imperio-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "tudo com apoio literal; mula conhecida, paralelo com Deodoro salva; nota 3"
+   },
+   {
+    "id": "brasil_imperio-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "confere; nota 3 porque circula em sites brasileiros"
+   },
+   {
+    "id": "brasil_imperio-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de 150 anos mais tarde' errado: Kossoy pesquisou em 1972-1977, ~140 anos depois",
+    "correcao": "Explicação: 'Mais de 150 anos mais tarde, o pesquisador Boris Kossoy examinou seus manuscritos' -> 'Bem mais tarde, o pesquisador Boris Kossoy examinou seus manuscritos'. nota_surpresa: 4."
+   },
+   {
+    "id": "brasil_imperio-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "tudo confere com Pedro II of Brazil; opcional: 'se aglomeraram ao longo do trajeto'"
+   },
+   {
+    "id": "brasil_imperio-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "100 mil muçulmanos africanos em 1910 é implausível e sem autor; o nome do abadá no Carnaval veio pela capoeira",
+    "correcao": "1) 'Leis mais duras vieram em seguida, mas ainda em 1910 haveria cerca de 100 mil muçulmanos africanos no Brasil.' -> 'Leis mais duras vieram em seguida, junto com esforços para forçar conversões ao catolicismo e apagar a memória do islã.' 2) Gancho: 'o abadá, deu nome à camisa do Carnaval' -> 'o abadá, é a palavra que hoje batiza a camisa do Carnaval'. 3) 'e, desde o Carnaval de 1993, a fantasia dos blocos de Carnaval' -> 'e, desde o Carnaval de 1993, quando um designer a escolheu em homenagem a um mestre capoeirista, a fantasia dos blocos'."
+   },
+   {
+    "id": "brasil_imperio-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "a fonte não diz que aprendeu a ler a bordo; 'navios que os venderiam' torto",
+    "correcao": "1) 'e aprendeu a ler e escrever a bordo de um veleiro.' -> 'aprendeu a ler e escrever e trabalhou até os 20 anos no veleiro do comandante.' 2) Gancho: 'até os navios que os venderiam para o Sul' -> 'até os navios que os levariam para ser vendidos no Sul'."
+   },
+   {
+    "id": "brasil_imperio-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "origem da expressão afirmada como certa; duplica expressoes-0014 (só um entra)",
+    "correcao": "O orquestrador decidiu manter expressoes-0014; este será descartado como duplicado na rodada 2."
+   },
+   {
+    "id": "brasil_imperio-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "tudo confere com Anita Garibaldi; nota 3 por ser história razoavelmente conhecida no Brasil"
+   },
+   {
+    "id": "brasil_imperio-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'primeiro cemitério não católico' é falso (Cemitério dos Ingleses, Gamboa, 1811); 'primeiras igrejas' falso (presbiteriana de Simonton, 1862); 20 mil sem ressalva ('It is not known how many')",
+    "correcao": "Explicação: (a) 'e criaram o Cemitério do Campo, o primeiro cemitério não católico e não indígena do Brasil.' -> 'e criaram o próprio cemitério, o Cemitério do Campo, em Santa Bárbara d'Oeste.' (b) 'lampiões de querosene e as primeiras igrejas batista, presbiteriana e metodista.' -> 'lampiões de querosene, além de igrejas batista, presbiteriana e metodista.' (c) 'Estima-se que até 20 mil confederados tenham imigrado.' -> 'O número exato é desconhecido; as estimativas chegam a 20 mil imigrantes.' Gancho: 'Fundaram a cidade de Americana, em São Paulo.' -> 'Deram origem à cidade de Americana, em São Paulo.'"
+   },
+   {
+    "id": "brasil_imperio-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "pt e en sustentam cada afirmação; personagens, engenharia e desfecho inesperado"
+   },
+   {
+    "id": "brasil_imperio-0014",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: olho-de-boi como segundo selo do mundo é trivia escolar no Brasil, sem mecanismo"
+   }
+  ],
+  "2": [
+   {
+    "id": "brasil_imperio-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "cerco do Porto e expedição a Lisboa corrigidos"
+   },
+   {
+    "id": "brasil_imperio-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Até então' resolve a contradição com 1824"
+   },
+   {
+    "id": "brasil_imperio-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "aborto dias antes da morte, como na fonte"
+   },
+   {
+    "id": "brasil_imperio-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Bem mais tarde' no lugar dos 150 anos"
+   },
+   {
+    "id": "brasil_imperio-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "sem os 100 mil de 1910; abadá via capoeira"
+   },
+   {
+    "id": "brasil_imperio-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "leitura e gancho corrigidos"
+   },
+   {
+    "id": "brasil_imperio-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "duplicado: mesmo fato que expressoes-0014 (lei para inglês ver), mantido no lote de Expressões"
+   },
+   {
+    "id": "brasil_imperio-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "cemitério, igrejas, estimativa e 'deram origem' corrigidos"
+   }
+  ]
+ }
+}

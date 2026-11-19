@@ -1,0 +1,112 @@
+{
+ "lote": "2026-11-17-historia_computacao-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "historia_computacao-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Gancho afirma o trocadilho como certo; fonte diz 'probably making a pun'.",
+    "correcao": "'e os operadores provavelmente fizeram um trocadilho.'"
+   },
+   {
+    "id": "historia_computacao-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com ENIAC; história já divulgada, nota 3."
+   },
+   {
+    "id": "historia_computacao-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Colossus (Lorenz, Flowers, Bombe, segredo até meados dos anos 1970)."
+   },
+   {
+    "id": "historia_computacao-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Core rope memory; 'à mão' confirmado por Ken Shirriff e Science News, não pela Wikipedia."
+   },
+   {
+    "id": "historia_computacao-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; em 2001 foi a câmera que foi desligada (imprecisão tolerável)."
+   },
+   {
+    "id": "historia_computacao-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Navio era romano (não 'naufrágio grego'); naufrágio achado em 1900, mecanismo resgatado em 1901; data de construção varia; tema conhecido.",
+    "correcao": "Gancho 'perto de uma ilha grega'; 1900/1901; 'provavelmente no século II a.C.'; trechos do Kontos e do navio romano."
+   },
+   {
+    "id": "historia_computacao-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Jacquard aproveitou Bouchon (1725) e outros; patenteou um mecanismo, não um tear; queda de 8 para 6 anos não foi só Hollerith.",
+    "correcao": "Novo gancho; 'patenteou um mecanismo para teares'; Bouchon; 'somando as máquinas dele a várias outras mudanças'; trechos."
+   },
+   {
+    "id": "historia_computacao-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Explicação copia a fonte quase literalmente; 'não funcionou' exagera (não houve demonstração).",
+    "correcao": "Novo gancho; 'surgiu como projeto de conclusão'; reescrever a frase do fotógrafo."
+   },
+   {
+    "id": "historia_computacao-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Mouse da Telefunken veio de um trackball da própria Telefunken (não do de Benjamin); invenção paralela e independente; mito_desmentido não se sustenta.",
+    "correcao": "'mais de dois meses'; invenção paralela; trackball de controle aéreo da Telefunken; tipo contraintuitivo; trechos."
+   },
+   {
+    "id": "historia_computacao-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: origem do spam no Monty Python é trivia clássica de lista; sem mecanismo de como chegou à internet."
+   }
+  ],
+  "2": [
+   {
+    "id": "historia_computacao-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'provavelmente fizeram um trocadilho' conforme a fonte."
+   },
+   {
+    "id": "historia_computacao-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'tecido por operárias' confere com a fonte."
+   },
+   {
+    "id": "historia_computacao-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Navio romano, 1900/1901, 'provavelmente' aplicados; tema conhecido."
+   },
+   {
+    "id": "historia_computacao-0007",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "exagero: linhagem direta Jacquard → censo → IBM; Hollerith atribuía a ideia aos bilhetes de trem perfurados (D. W. Jones). Exigiria reescrita e fonte nova."
+   },
+   {
+    "id": "historia_computacao-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ajuste pontual aplicado sem nova verificação: 'considerado o primeiro computador brasileiro' (a fonte registra o Zezinho, do ITA, só didático).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "historia_computacao-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Ajuste pontual aplicado sem nova verificação: Bill English entrou na equipe em 1964 (a fonte não data o protótipo em 1964).",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

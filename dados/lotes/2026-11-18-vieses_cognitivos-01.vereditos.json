@@ -1,0 +1,105 @@
+{
+ "lote": "2026-11-18-vieses_cognitivos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "vieses_cognitivos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; a reviravolta estatística é pouco conhecida."
+   },
+   {
+    "id": "vieses_cognitivos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Todos ficaram muito abaixo' exagera; a fonte dá as medianas.",
+    "correcao": "'as estimativas medianas dos dois grupos ficaram muito abaixo.'"
+   },
+   {
+    "id": "vieses_cognitivos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; as duas explicações apresentadas como hipóteses."
+   },
+   {
+    "id": "vieses_cognitivos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Ele mencionou o nome, não 'ouviu falar'.",
+    "correcao": "'depois de mencionar uma vez o nome do grupo militante alemão Baader-Meinhof, passou a encontrá-lo por toda parte'."
+   },
+   {
+    "id": "vieses_cognitivos-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Sem registro primário; marcar como relato clássico.",
+    "correcao": "'Segundo o relato que se tornou clássico, em 1913, no Cassino de Monte Carlo, ...'"
+   },
+   {
+    "id": "vieses_cognitivos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte não diz 'economistas'; falta a ressalva de que o efeito é pequeno e restrito a poucos jogadores.",
+    "correcao": "'dois pesquisadores'; 'os pesquisadores Joshua Miller e Adam Sanjurjo'; 'Outros estudos recentes não acharam nada. E, onde aparece, o efeito é pequeno e se limita a poucos jogadores. A discussão continua.' + trecho."
+   },
+   {
+    "id": "vieses_cognitivos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A frase do experimento de 1969 não diz o resultado.",
+    "correcao": "Descrever o resultado de Jecker e Landy + trecho 'All three groups were then asked how much they liked the researcher. The second group liked him the least, the first group the most'."
+   },
+   {
+    "id": "vieses_cognitivos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Foram estudantes num teste de Ariely, não assinantes; a fonte tem seção de debate e uma réplica grande falhou (Trendl et al., 2018).",
+    "correcao": "Gancho: 'Num teste com estudantes, ninguém quis a assinatura só impressa da Economist, que custava o mesmo que impressa mais digital. Sem essa opção inútil no menu, a maioria passou a escolher a mais barata.'; confianca consenso_parcial; frase sobre os limites + trecho."
+   },
+   {
+    "id": "vieses_cognitivos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; réplica conceitual confirmou (Sarstedt et al., 2016)."
+   }
+  ],
+  "2": [
+   {
+    "id": "vieses_cognitivos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Medianas; números conferem."
+   },
+   {
+    "id": "vieses_cognitivos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Mencionar' aplicado; datas conferem."
+   },
+   {
+    "id": "vieses_cognitivos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Relato clássico com a data; números conferem."
+   },
+   {
+    "id": "vieses_cognitivos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Pesquisadores; ressalva do efeito pequeno."
+   },
+   {
+    "id": "vieses_cognitivos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Resultado de 1969 incluído."
+   },
+   {
+    "id": "vieses_cognitivos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Estudantes; consenso_parcial; limites do efeito."
+   }
+  ]
+ }
+}

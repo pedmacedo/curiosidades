@@ -1,0 +1,141 @@
+{
+ "lote": "2026-11-18-grandes_obras-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "grandes_obras-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tunnel of Eupalinos confere"
+   },
+   {
+    "id": "grandes_obras-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Thames Tunnel e Tunnelling shield conferem; teredo com ressalva"
+   },
+   {
+    "id": "grandes_obras-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'1 m' é arredondamento (0,8 m na literatura); a fonte não diz que os amortecedores ficam nas torres nem que são para o vento",
+    "correcao": "Gancho: 'o vão central teve de ficar 1 metro mais longo do que o projetado' -> 'o vão central teve de ficar quase 1 metro mais longo do que o projetado'. Explicação: 'de modo que o vão central precisou crescer 1 metro' -> 'de modo que o vão central precisou crescer quase 1 metro'; 'Para enfrentar o vento, as torres têm amortecedores ajustados para operar na frequência de ressonância da ponte.' -> 'A ponte também tem amortecedores de massa ajustados para operar na frequência de ressonância da própria estrutura, o que reduz as vibrações.'"
+   },
+   {
+    "id": "grandes_obras-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o errado é a ressonância forçada clássica, não 'ressonância' em qualquer sentido",
+    "correcao": "Gancho: 'aparece em livros de física como exemplo de ressonância. A explicação está errada:' -> 'aparece em livros de física como exemplo de ressonância forçada. Essa explicação está errada:'"
+   },
+   {
+    "id": "grandes_obras-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hoover Dam confere; mito dos operários desmentido"
+   },
+   {
+    "id": "grandes_obras-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o lago estava sendo esvaziado, não enchido, na noite do desastre (corpo do artigo contradiz a introdução)",
+    "correcao": "'Em 9 de outubro de 1963, durante o enchimento do lago, a encosta desabou no reservatório.' -> 'Em 9 de outubro de 1963, poucos dias depois de a operadora começar a baixar o nível do lago para conter o risco, a encosta desabou no reservatório.' (trecho: 'On 26 September 1963, ENEL decided to slowly empty the basin to 240 m')"
+   },
+   {
+    "id": "grandes_obras-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Raising of Chicago confere"
+   },
+   {
+    "id": "grandes_obras-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "51 km é o sistema atual (ampliado em 1903-07); o rio já fora invertido em 1871 por uma estação",
+    "correcao": "Gancho: 'Em 1900, Chicago fez seu rio correr ao contrário:' -> 'Em 1900, Chicago fez seu rio correr ao contrário de vez:'. Explicação: 'O plano foi cortar essa divisa com um canal de 51 km.' -> 'O plano foi cortar essa divisa com um canal, que depois foi ampliado e hoje forma um sistema de 51 km.'"
+   },
+   {
+    "id": "grandes_obras-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Guaíra Falls confere; Drummond e a passarela"
+   },
+   {
+    "id": "grandes_obras-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Falkirk Wheel confere; nota 3"
+   },
+   {
+    "id": "grandes_obras-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "a fonte diz 'much of the chief engineer duties'; Washington seguiu como engenheiro-chefe",
+    "correcao": "Gancho: 'Quem tocou a construção por uma década foi a nora, Emily Roebling.' -> 'Por uma década, a nora, Emily, fez boa parte do trabalho de engenheiro-chefe.'"
+   },
+   {
+    "id": "grandes_obras-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Induced seismicity confere; Zipingpu como 'possible example'"
+   },
+   {
+    "id": "grandes_obras-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Madeira-Mamoré confere; nota 3"
+   },
+   {
+    "id": "grandes_obras-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: a fonte se contradiz (45 km x 33.113 m em 427 poços); UNESCO dá 33.113 m",
+    "correcao": "1) Gancho: 'Ele percorre 45 km debaixo da terra, movido só pela gravidade.' -> 'A água corre por mais de 33 km de galerias subterrâneas, só pela gravidade.' 2) 'tem 45 km, e seu poço principal passa de 360 metros de profundidade' -> 'soma mais de 33 km de galerias e 427 poços'. 3) No trecho, tirar 'Its main well depth is more than 360 meters (1,180 ft) and its length is 45 kilometers (28 mi).' e acrescentar 'This property contains 427 water wells with total length of 33,113 m (20.575 miles).'"
+   },
+   {
+    "id": "grandes_obras-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Channel Tunnel confere; tecnologia pronta em 1883, medo militar"
+   }
+  ],
+  "2": [
+   {
+    "id": "grandes_obras-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'quase 1 metro'; amortecedores sem detalhe sem fonte"
+   },
+   {
+    "id": "grandes_obras-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'ressonância forçada'"
+   },
+   {
+    "id": "grandes_obras-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "lago sendo baixado, não enchido"
+   },
+   {
+    "id": "grandes_obras-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'de vez'; sistema ampliado de 51 km"
+   },
+   {
+    "id": "grandes_obras-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'boa parte do trabalho de engenheiro-chefe'"
+   },
+   {
+    "id": "grandes_obras-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "33 km e 427 poços; 'consta como'"
+   }
+  ]
+ }
+}

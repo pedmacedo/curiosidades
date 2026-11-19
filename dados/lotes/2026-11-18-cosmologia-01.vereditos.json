@@ -1,0 +1,147 @@
+{
+ "lote": "2026-11-18-cosmologia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "cosmologia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Lemaître confere"
+   },
+   {
+    "id": "cosmologia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "etimologia do Big Bang confere; nota 3"
+   },
+   {
+    "id": "cosmologia-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o primeiro a identificar moléculas interestelares foi Swings e Rosenfeld (CH, 1937)",
+    "correcao": "'Em 1940, foi o primeiro a identificar moléculas no meio interestelar, entre elas o radical cianogênio (CN).' -> 'Em 1940, identificou o radical cianogênio (CN) no meio interestelar, uma das primeiras moléculas encontradas no espaço.'"
+   },
+   {
+    "id": "cosmologia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Penzias e Wilson conferem"
+   },
+   {
+    "id": "cosmologia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "o trabalho era de Alpher e do orientador; 'Delter' precisa da chave do delta",
+    "correcao": "Gancho: 'O aluno que fez o trabalho não achou graça.' -> 'O doutorando que era o autor principal não achou graça.' Explicação: 'a mudar de nome para Delter.' -> 'a mudar de nome para Delter (trocadilho com delta, a quarta letra grega).'"
+   },
+   {
+    "id": "cosmologia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "expansão acelerada confere"
+   },
+   {
+    "id": "cosmologia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "catástrofe do vácuo confere"
+   },
+   {
+    "id": "cosmologia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "falta o outro lado: TRGB deu 69,8 e há quem duvide que a tensão seja real",
+    "correcao": "Depois de 'Observações do telescópio James Webb, com resolução maior, confirmaram em 2023 as medidas de cefeidas do Hubble.' acrescentar: 'Mas nem todos concordam: um método baseado em estrelas gigantes vermelhas deu um valor intermediário, de 69,8, e parte dos astrônomos ainda discute se a tensão é real ou fruto de erros nas medidas locais.' (o 69,8 precisa de trecho da fonte)"
+   },
+   {
+    "id": "cosmologia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'erra no lítio' afirma erro da teoria; pode ser destruição nas estrelas ou incerteza das medidas",
+    "correcao": "Gancho: 'Mas erra no lítio:' -> 'Mas não fecha no lítio:'. Explicação: 'A discrepância ganhou nome próprio: problema do lítio cosmológico.' -> 'Ainda não se sabe se o erro está na teoria, nas medidas ou nas próprias estrelas, e a discrepância ganhou nome próprio: problema do lítio cosmológico.'"
+   },
+   {
+    "id": "cosmologia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Observable universe confere"
+   },
+   {
+    "id": "cosmologia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "fim da cosmologia confere; consenso_parcial"
+   },
+   {
+    "id": "cosmologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "BICEP2 confere"
+   },
+   {
+    "id": "cosmologia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Poe e Olbers conferem"
+   },
+   {
+    "id": "cosmologia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "1884 é a data das palestras; a análise está em apêndices de livro de 1904",
+    "correcao": "1) Gancho: 'Mas Lord Kelvin já falava em \"corpos escuros\" em 1884, e Poincaré usou a expressão \"matéria escura\" em 1906.' -> 'Mas, décadas antes, Lord Kelvin já especulava que muitas estrelas seriam \"corpos escuros\", e Poincaré usou a expressão \"matéria escura\" em 1906.' 2) 'Em palestras de 1884 em Baltimore, Lord Kelvin estimou' -> 'Nos apêndices de um livro baseado em palestras que deu em Baltimore em 1884, Lord Kelvin estimou'. 3) Opcional: 'Ele concluiu que haveria menos matéria escura do que visível, o que depois se mostrou falso.'"
+   },
+   {
+    "id": "cosmologia-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "2025 não foi a primeira descoberta (Macquart et al. 2020 e outros); é o censo mais completo",
+    "correcao": "1) Gancho: 'Em 2025, astrônomos a acharam usando flashes de rádio como lanterna: ela está espalhada como névoa entre as galáxias.' -> 'Flashes de rádio vindos de outras galáxias serviram de lanterna para achá-la: em 2025, o censo mais completo mostrou que ela está espalhada como névoa entre as galáxias.' 2) Antes de 'Uma equipe do Caltech...': 'Estudos anteriores já davam pistas de onde ela estaria, mas sem um censo completo.'; 'A solução veio das rajadas rápidas de rádio' -> 'O censo mais completo veio das rajadas rápidas de rádio'."
+   },
+   {
+    "id": "cosmologia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "DESI 2025 confere; hipótese"
+   }
+  ],
+  "2": [
+   {
+    "id": "cosmologia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "CN 'uma das primeiras'"
+   },
+   {
+    "id": "cosmologia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "doutorando autor principal; delta"
+   },
+   {
+    "id": "cosmologia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "TRGB 69,8 incluído"
+   },
+   {
+    "id": "cosmologia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'não fecha'; três classes de solução"
+   },
+   {
+    "id": "cosmologia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Kelvin sem 1884 como data da frase; Poincaré"
+   },
+   {
+    "id": "cosmologia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "censo de 2025, não primeira descoberta"
+   }
+  ]
+ }
+}

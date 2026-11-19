@@ -1,0 +1,561 @@
+LOTE = "2026-11-18-expressoes-01"
+AREA = "linguas"
+TEMA = "expressoes"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+LISTA_PT = "Lista_de_express%C3%B5es_idiom%C3%A1ticas_de_origem_hist%C3%B3rica_ou_mitol%C3%B3gica"
+CIBER_PATAVINA = "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/as-expressoes-nao-perceber-patavina-e-nao-saber-patavina/29779"
+
+
+CANDIDATOS = [
+    # 1 lágrimas de crocodilo: a lenda tem fundo real
+    {
+        "temas_secundarios": ["comportamento_animal", "literatura"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "\"Lágrimas de crocodilo\" vem de uma lenda antiga, mas a lenda tem fundo real: num teste de 2006, 5 de 7 jacarés observados enquanto comiam \"choraram\" durante a refeição.",
+        "explicacao": (
+            "A crença de que o crocodilo chora pelas vítimas enquanto as devora já circulava na Antiguidade: uma "
+            "coleção de provérbios atribuída a Plutarco compara o animal a quem causa a morte de alguém e depois a "
+            "lamenta em público. A história passou pelos bestiários medievais, ganhou o inglês no século 14 com os "
+            "relatos de viagem de Sir John Mandeville e foi usada várias vezes por Shakespeare. Em 2006, o "
+            "neurologista Malcolm Shaner, com a ajuda de Kent Vliet, pesquisador da Universidade da Flórida, resolveu "
+            "pôr a lenda à prova num parque zoológico da Flórida. A dupla usou jacarés, parentes próximos dos "
+            "crocodilos, porque ali eles se alimentavam em terra firme. Cinco dos sete animais \"lacrimejaram\" "
+            "enquanto comiam. A explicação sugerida é mecânica, e não emocional: o ar quente empurrado pelos seios "
+            "da face durante a refeição estimularia as glândulas lacrimais. No dia a dia, as lágrimas desses répteis "
+            "servem para limpar e lubrificar os olhos, sobretudo depois de muito tempo fora da água. A expressão "
+            "batizou até uma condição médica, a síndrome de Bogorad, ou \"síndrome das lágrimas de crocodilo\": "
+            "depois de uma paralisia facial, a regeneração defeituosa do nervo faz a pessoa chorar ao comer."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Crocodile_tears",
+            "The expression comes from an ancient anecdote that crocodiles weep for the victims they are eating. "
+            "A collection of proverbs attributed to Plutarch suggests that the phrase \"crocodile tears\" was well known in antiquity: "
+            "comparing the crocodile's behaviour to people who desire or cause the death of someone, but then publicly lament for them. [...] "
+            "The story is repeated in bestiaries such as De bestiis et aliis rebus. "
+            "This tale was first spread widely in English in the stories of the travels of Sir John Mandeville in the 14th century. [...] "
+            "Shakespeare regularly refers to the concept. [...] "
+            "The fluid from their tear ducts functions to clean and lubricate the eye, and is most prominent and visible when crocodiles have been on dry land for a while. [...] "
+            "In 2006, neurologist Malcolm Shaner, assisted by Kent Vliet, a researcher at the University of Florida, decided to test the story that crocodiles, "
+            "or their close relatives alligators and caimans, were likely to \"weep\" while feeding. "
+            "Studying animals in Florida's St. Augustine Alligator Farm Zoological Park, Vliet recorded seven caimans feeding. "
+            "He chose to use caimans rather than crocodiles because at the sanctuary they could be observed feeding on dry land. "
+            "Five of the seven animals were seen \"weeping\", leading to the conclusion that the story describes a real phenomenon. "
+            "The researchers suggest that the \"weeping\" may be caused by the hissing of warm air during feeding, which is forced through the sinuses, "
+            "stimulating the animals' tear glands into emptying fluid into the eye. [...] "
+            "The phrase gives its name to Bogorad's syndrome, colloquially \"crocodile tears syndrome\", an uncommon consequence of recovery from Bell's palsy "
+            "where faulty regeneration of the facial nerve causes sufferers to shed tears while eating.",
+            nome="Crocodile tears")],
+    },
+    # 2 o bode expiatório era um bode de verdade
+    {
+        "temas_secundarios": ["religioes", "costumes_rituais"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O \"bode expiatório\" era um bode de verdade: num ritual do Templo de Jerusalém, o sumo sacerdote passava para ele os pecados do povo e o soltava no deserto.",
+        "explicacao": (
+            "O ritual está descrito no Levítico e fazia parte do Yom Kippur, o Dia do Perdão. Dois bodes eram "
+            "escolhidos por sorteio: um era sacrificado; o outro recebia uma faixa de lã vermelha na cabeça, e o "
+            "sumo sacerdote confessava sobre ele os pecados do povo de Israel, que o animal levaria simbolicamente "
+            "para o deserto. O costume durou até a destruição do Segundo Templo, no ano 70, quando deixou de ser "
+            "possível realizá-lo como mandava a tradição. Alguns estudiosos acham que rituais desse tipo remontam a "
+            "Ebla, por volta de 2400 a.C. O nome em inglês, \"scapegoat\", nasceu de uma palavra hebraica enigmática "
+            "do texto bíblico, \"azazel\". Há quatro leituras principais para ela: \"remoção completa\", o nome de "
+            "um lugar escarpado para onde o bode era mandado, o nome de um anjo caído ou divindade pagã, ou a junção "
+            "de \"bode\" com \"ir embora\". As traduções grega e latina seguiram a última, com expressões como "
+            "\"bode emissário\". Em 1530, William Tyndale passou o latim para o inglês como \"(e)scape goat\", o "
+            "\"bode que escapa\", e a Bíblia do rei Jaime, de 1611, manteve a escolha. No português, \"ser o bode "
+            "expiatório\" ficou com o sentido de pagar pela culpa dos outros."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Scapegoat",
+                "A scapegoat is one of a pair of goats used in the Yom Kippur Temple service during the era of the Temple in Jerusalem. "
+                "The scapegoat had a band of red wool placed on it, and was then released into the wilderness, taking with it all the sins and impurities of the people as an act of symbolic atonement. "
+                "The other goat was sacrificed. The ritual is described in the Book of Leviticus of the Torah [...] "
+                "With the destruction of the Second Temple in 70 AD, the scapegoat ritual became impossible to perform according to its original procedure [...] "
+                "Some scholars have argued that the scapegoat ritual can be traced back to Ebla around 2400 BC [...] "
+                "There are four major ways to take the word. [...] "
+                "\"for entire removal\", the purpose of the goat. [...] "
+                "The second way is to take it as a combination of \"goat\" and \"go away\", leading to \"scapegoat.\" "
+                "Early English Christian Bible versions follow the translation of the Septuagint and Latin Vulgate, which interpret azazel as \"the goat that departs\" "
+                "(Greek tragos apopompaios, \"goat sent out\", Latin caper emissarius, \"emissary goat\"). "
+                "William Tyndale rendered the Latin as \"(e)scape goat\" in his 1530 English translation of the Bible. "
+                "This translation was followed by subsequent versions up through the King James Version of the Bible in 1611 [...] "
+                "that the goat was sent to the most rugged or strongest of mountains. "
+                "A fourth line of thought is that Azazel is the name of a fallen angel, an angelic force, or a pagan deity. [...] "
+                "Two goats were chosen by lot: one to be \"for YHWH\", which was offered as a blood sacrifice, and the other to be the scapegoat to be sent away into the wilderness. [...] "
+                "the High Priest confessed the sins of the Israelites to God placing them figuratively on the head of the other goat, the scapegoat, who would symbolically \"take them away\".",
+                nome="Scapegoat"),
+            wiki(LISTA_PT,
+                "ser o bode expiatório - pagar pela culpa dos outros. "
+                "Origem: Conforme a tradição hebraica da época do Templo de Jerusalém, o bode expiatório era um animal separado do rebanho e deixado só no deserto",
+                nome="Lista de expressões idiomáticas de origem histórica ou mitológica", idioma="pt"),
+        ],
+    },
+    # 3 lua de mel: o amor que mingua
+    {
+        "temas_secundarios": ["costumes_rituais", "palavras_viajantes"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "\"Lua de mel\" talvez tenha nascido como um alerta: o amor dos recém-casados seria como a lua cheia, que mal se completa e já começa a minguar. Um texto inglês de 1552 já descrevia assim.",
+        "explicacao": (
+            "A palavra inglesa \"honeymoon\" aparece desde 1546 para o período logo depois do casamento, e em muitas "
+            "línguas o nome é uma tradução ao pé da letra, como o francês \"lune de miel\". Hoje o sentido é doce, "
+            "mas a origem pode ter sido irônica. Segundo o dicionário Oxford, a comparação original nem tinha a ver "
+            "com um mês: o afeto dos noivos era comparado à lua, que mal fica cheia e já começa a diminuir. Em 1552, "
+            "Richard Huloet explicou que o povo chamava de \"hony mone\" o tempo em que os recém-casados se amam "
+            "exageradamente, até esse amor dar sinais de se acalmar. Uma teoria do século 19 dizia que o nome vinha "
+            "do costume dos teutões de beber hidromel, bebida feita com mel, durante trinta dias depois de cada "
+            "casamento, mas ela foi contestada. A viagem dos noivos é bem mais recente que a expressão. Começou no "
+            "início do século 19, na Grã-Bretanha, como uma \"viagem nupcial\" de casais da classe alta para visitar "
+            "parentes que não tinham ido à festa, e o primeiro registro da palavra nesse sentido é de 1791. O persa "
+            "tem uma expressão parecida, que quer dizer \"mês de mel\" ou \"lua de mel\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Honeymoon",
+            "The custom in Western culture and some westernized countries' cultures of a newlywed couple going on vacation together originated in early-19th-century Britain. "
+            "Upper-class couples would take a \"bridal tour\", sometimes accompanied by friends or family, to visit relatives who had not been able to attend the wedding. [...] "
+            "The honeymoon was originally the period following marriage, \"characterized by love and happiness,\" as attested since 1546. [...] "
+            "originally having no reference to the period of a month, but comparing the mutual affection of newly married persons to the changing moon which is no sooner full than it begins to wane [...] "
+            "Today, honeymoon has a positive meaning, but originally it may have referred to the inevitable waning of love, like a phase of the moon. In 1552, Richard Huloet wrote: [...] "
+            "Hony mone, a term proverbially applied to such as be newly married, which will not fall out at the first, but th'one loveth the other at the beginning exceedingly, "
+            "the likelihood of their exceadinge love appearing to aswage, ye which time the vulgar people call the hony mone. "
+            "In many modern languages, the word for a honeymoon is a calque (e.g., French: lune de miel) or near-calque. "
+            "Persian has a similar word, mah-e-asal, which translates to 'month of honey' or 'moon of honey'. "
+            "A 19th-century theory claimed that the word alludes to \"the custom of the higher order of the Teutones to drink Mead, or Metheglin, a beverage made with honey, for thirty days after every wedding\", "
+            "but the theory has been challenged. "
+            "The first recorded use of the word honeymoon to refer to the vacation after the wedding appeared in 1791",
+            nome="Honeymoon")],
+    },
+    # 4 santo do pau oco: a lenda do ouro escondido
+    {
+        "temas_secundarios": ["brasil_colonial", "cultura_popular"],
+        "tipos_espanto": ["mito_desmentido", "origem_inesperada"],
+        "gancho": "A história de que o \"santo do pau oco\" escondia ouro contrabandeado em Minas é tida como lenda. Esculturas de madeira eram escavadas por dentro desde a Idade Média, para rachar menos.",
+        "explicacao": (
+            "A expressão, usada no Brasil e em Portugal para falar de gente dissimulada, costuma vir acompanhada de "
+            "uma explicação de época colonial. Pela versão popular, nas regiões de mineração, imagens ocas de santos "
+            "serviam de esconderijo para ouro e pó de diamante, longe dos olhos do fisco, num contrabando que "
+            "envolveria governadores, escravizados e padres. Só que essa versão é considerada lenda, com pouca "
+            "comprovação de que as imagens tenham sido usadas desse jeito, como acontece com muitas histórias "
+            "mineiras ligadas a esse tipo de peça. As imagens provavelmente eram ocas pelos mesmos motivos que na "
+            "Europa, onde, desde a Idade Média, as esculturas de madeira eram escavadas para rachar menos e ficar "
+            "mais leves. Existe ainda outra explicação para a origem da expressão. Antenor Nascentes, no livro "
+            "\"Tesouro da Fraseologia Brasileira\", cita o professor Meneses de Oliva, do Museu Histórico Nacional, "
+            "para quem tudo começou em Salvador, com a descoberta de imagens ocas de santos que chegavam de Lisboa "
+            "recheadas de dinheiro falso. Nessa versão, o santo do pau oco teria sido mesmo um esconderijo, mas de "
+            "moeda falsa, e não do ouro das minas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Santo_do_pau_oco",
+            "Santo do pau oco é uma expressão popular utilizada no Brasil (e também noutras regiões da Lusofonia, nomeadamente, em Portugal) para designar pessoas dissimuladas, "
+            "cuja origem mítica é derivada de aspectos históricos. "
+            "Segundo o imaginário popular, o santo do pau oco era, nas regiões mineradoras brasileiras e durante o período colonial, "
+            "um símbolo do contrabando do ouro em pedra ou pó de diamantes, ou seja, as imagens devocionais eram utilizadas como esconderijo aos olhos do fisco. "
+            "Governadores, escravos e clérigos estavam envolvidos nesse tipo de contrabando. "
+            "Essa versão é tida como lenda, assim como muitas histórias em Minas derivadas desse tipo de imagem, com pouca comprovação dessa utilização. "
+            "Provavelmente, esse tipo de imagem era feito pelos mesmos motivos que na Europa, onde, desde a Idade Média, "
+            "as esculturas em madeira eram escavadas para que as peças rachassem menos e ficassem mais leves. "
+            "Segundo o professor Meneses de Oliva, do Museu Histórico Nacional, citado por Antenor Nascentes em seu livro Tesouro da Fraseologia Brasileira, "
+            "a expressão se origina da descoberta, na cidade de Salvador, de imagens ocas de santos, que vinham de Lisboa recheadas de dinheiro falso.",
+            nome="Santo do pau oco", idioma="pt")],
+    },
+    # 5 gol de placa: a placa existiu
+    {
+        "temas_secundarios": ["futebol", "historia_esportes"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "\"Gol de placa\" começou com uma placa de verdade: em 1961, um gol de Pelé no Maracanã impressionou tanto o jornalista Joelmir Beting que ele mandou fazer uma placa de bronze para o estádio.",
+        "explicacao": (
+            "O jogo foi em 5 de março de 1961, Fluminense 1 x 3 Santos, pelo Torneio Rio-São Paulo. Pelé, então com "
+            "20 anos, recebeu um passe na intermediária, arrancou deixando para trás três marcadores e tocou no "
+            "canto, longe do goleiro Castilho. O estádio aplaudiu de pé por quase dois minutos, inclusive torcedores "
+            "com bandeiras do Fluminense. Joelmir Beting, que trabalhava no jornal O Esporte, encomendou uma placa de "
+            "bronze para o saguão, dizendo que ali Pelé marcara \"o tento mais bonito da história do Maracanã\". Ela "
+            "foi descerrada uma semana depois, e foi o primeiro gol no Brasil a ganhar esse tipo de homenagem. Desde "
+            "então, todo gol de rara beleza é \"de placa\", e o Dicionário Aurélio registra o termo como conceito "
+            "criado a partir daquele lance. Curiosamente, ninguém pode rever o gol original: as imagens se perderam, "
+            "e o filme \"Pelé Eterno\" teve de reconstituir a jogada no Maracanã, com outro jogador no papel do Rei. "
+            "Em 2001, quarenta anos depois, Pelé retribuiu a homenagem e deu ao jornalista uma placa de "
+            "agradecimento: \"Gratidão eterna do autor do gol de placa ao autor da placa do gol\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Gol_de_placa",
+            "Gol de placa foi um gol marcado pelo Pelé no Maracanã, na partida Fluminense 1 x 3 Santos, em jogo válido pelo Torneio Rio-São Paulo de 1961. [...] "
+            "O gol foi tão bonito, que foi o primeiro gol no Brasil a ser homenageado com uma placa. "
+            "Na linguagem do futebol brasileiro, tornou-se uma expressão usada para designar gols que, por sua rara beleza e dificuldade, também merecem uma placa. "
+            "O Dicionário Aurélio assim define o termo: \"Conceito criado a partir de um gol espetacular de Pelé (Edson Arantes do Nascimento), que lhe rendeu uma placa honorária\". [...] "
+            "O gol foi marcado no dia 5 de março de 1961, quando Pelé tinha 20 anos. "
+            "Aos 40 minutos do primeiro tempo, Pelé recuou e recebeu um passe de Dalmo na intermediária. [...] "
+            "O Rei arrancou, superando na caminhada Pinheiro, Clóvis e Altair. "
+            "Diante da chegada de Jair Marinho, colocou a bola, com categoria, no canto direito, longe do alcance do goleiro Castilho. [...] "
+            "arrancou aplausos de todos os torcedores que, de pé, esquecendo-se de suas paixões clubísticas e embora empunhando bandeiras tricolores, "
+            "proporcionaram uma cena jamais vista no Maracanã. Foram quase dois minutos de palmas, contados a relógio [...] "
+            "As imagens gravadas da jogada do gol foram perdidas. "
+            "Assim, para passá-la no filme “Pelé Eterno”, o cineasta Aníbal Massaini Júnior teve de reproduzir a jogada no Maracanã. O então jovem Toró, fez no papel do Rei. [...] "
+            "O jornalista Joelmir Beting, que na época trabalhava no jornal O Esporte, ficou tão impressionado com o gol, que mandou fazer uma placa de bronze para colocar no saguão do estádio, "
+            "com os dizeres: \"Neste estádio, Pelé marcou no dia 5 de março de 1961 o tento mais bonito da história do Maracanã\". "
+            "A placa foi descerrada uma semana depois no estádio [...] "
+            "Desde então, todos os gols marcados com rara beleza são intitulados \"gols de placa\". "
+            "Em 2001, quarenta anos após o jogo, Pelé retribuiu a homenagem da mesma forma: deu ao jornalista uma carinhosa placa de agradecimento. "
+            "Na placa, há os dizeres: Gratidão eterna ao Joelmir Beting. Gratidão eterna do autor do gol de placa ao autor da placa do gol",
+            nome="Gol de placa", idioma="pt")],
+    },
+    # 6 deu zebra: o bicho que não existe no jogo
+    {
+        "temas_secundarios": ["futebol", "jogos_azar", "cultura_popular"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "\"Deu zebra\" vem do jogo do bicho, que não tem zebra entre seus 25 animais. Em 1964, o técnico de um time fraco disse que vencer o Vasco seria como tirar zebra. E o time venceu.",
+        "explicacao": (
+            "O jogo do bicho nasceu em 1892 como propaganda do zoológico do Rio de Janeiro, no bairro de Vila "
+            "Isabel. O barão João Batista Viana Drummond, que tinha a concessão do zoológico, desafiava os "
+            "visitantes a adivinhar qual animal estava escondido atrás de uma cortina e pagava prêmios a quem "
+            "acertasse. Em poucos anos, a brincadeira virou uma loteria popularíssima, com números associados a 25 "
+            "bichos, e a zebra não é um deles. Em 1964, antes de uma partida entre a Portuguesa, do Rio, e o Vasco da "
+            "Gama, perguntaram a Gentil Cardoso, técnico da Portuguesa, um time bem mais fraco, se dava para vencer. "
+            "Ele respondeu que ganhar do Vasco seria como tirar a zebra no jogo do bicho, ou seja, uma "
+            "impossibilidade. A Portuguesa ganhou por 2 a 1, e desde então \"zebra\" é, no Brasil, o resultado que "
+            "ninguém esperava. Gentil Cardoso teve pouca fama como jogador, mas fez longa carreira como técnico: "
+            "ganhou o Campeonato Carioca pelo Fluminense e pelo Vasco, dirigiu a seleção brasileira no Sul-Americano "
+            "de 1959 e ficou conhecido justamente pelas frases folclóricas, das quais \"vai dar zebra\" é a mais "
+            "famosa."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Jogo_do_Bicho",
+                "to whom Emperor Dom Pedro II awarded a title and the concession to the Rio de Janeiro Zoological Garden in the Vila Isabel neighborhood in the late 19th century. "
+                "In 1892, as a publicity measure, Drummond encouraged visitors to guess the identity of an animal concealed behind a curtain, and paid prizes off to winners. "
+                "In a few years the guessing game became a tremendously popular numbers game, with different numbers assigned to 25 animals. [...] "
+                "Another legacy of Jogo do Bicho is the use of zebra meaning upset. "
+                "In 1964, before a football match between Portuguesa (RJ) and Vasco da Gama, the manager of Portuguesa, a much weaker team, was asked if he could defeat Vasco. "
+                "Gentil Cardoso, the manager, commented that beating Vasco would be like drawing a zebra in Jogo do Bicho. "
+                "As there is no zebra in the game, his sentence expressed an impossibility. "
+                "However, Portuguesa did win that game (by 2-1), and since then the term zebra is used in Brazil for upsets.",
+                nome="Jogo do Bicho"),
+            wiki("Gentil_Cardoso",
+                "As a player, Gentil Cardoso had little renown [...] "
+                "He won the Campeonato Carioca twice (in 1946 with Fluminense and 1952 with Vasco da Gama), "
+                "in addition to being the coach of the Brazil national team in the 1959 South American Championship [...] "
+                "As a coach he was marked by folkloric phases, the most folkloric being \"It's going to be a zebra\" (Portuguese: \"Vai dar zebra\"), referring to unusual results in football.",
+                nome="Gentil Cardoso"),
+        ],
+    },
+    # 7 Maria Antonieta e os brioches
+    {
+        "temas_secundarios": ["revolucoes_politicas", "literatura"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Não há prova de que Maria Antonieta tenha dito \"que comam brioches\". A frase aparece nas \"Confissões\" de Rousseau, escritas em 1765, quando ela tinha 9 anos e nunca tinha ido à França.",
+        "explicacao": (
+            "Rousseau conta que, procurando pão para acompanhar um vinho que tinha roubado, lembrou-se da saída de "
+            "\"uma grande princesa\" que, ao ouvir que os camponeses não tinham pão, respondeu que comessem "
+            "brioches, um pão enriquecido com manteiga e ovos, visto como luxo. Ele não diz quem era a princesa e "
+            "pode ter inventado o episódio, já que as \"Confissões\" não são consideradas inteiramente fiéis aos "
+            "fatos. A ligação com Maria Antonieta só apareceu décadas depois da morte da rainha: foi o escritor "
+            "Alphonse Karr quem lhe atribuiu a frase, em 1843. Os antimonarquistas da Revolução Francesa nunca "
+            "citaram a anedota. Há outros indícios contra a lenda. A biógrafa Antonia Fraser lembra que, segundo as "
+            "memórias de Luís XVIII, a família real acreditava que a frase vinha de Maria Teresa, mulher de Luís "
+            "XIV, cem anos antes. E cartas que a própria Maria Antonieta mandou à família durante a falta de pão de "
+            "1775 mostram uma atitude em grande parte oposta ao espírito da frase. Mesmo assim, a anedota ganhou "
+            "enorme peso simbólico depois, nas mãos de quem queria denunciar a aristocracia do Antigo Regime. Hoje "
+            "ela é vista como um clichê jornalístico."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Let_them_eat_cake",
+            "The French phrase mentions brioche, a bread enriched with butter and eggs, considered a luxury food. [...] "
+            "Although the phrase is conventionally attributed to Marie Antoinette, there is no evidence that she ever uttered it, and it is now generally regarded as a journalistic cliché. "
+            "The phrase can actually be traced back to Jean-Jacques Rousseau's Confessions in 1765, 24 years prior to the French Revolution, "
+            "and when Antoinette was nine years old and had never been to France. "
+            "The phrase was not attributed to Antoinette until decades after her death. [...] "
+            "Rousseau recounts an episode in which he was seeking bread to accompany some wine he had stolen. [...] "
+            "At length I remembered the last resort of a great princess who, when told that the peasants had no bread, replied: \"Then let them eat brioches.\" "
+            "Rousseau does not name the \"great princess\", and he may have invented the anecdote altogether, as the Confessions is not considered entirely factual. [...] "
+            "Anti-monarchists during the French Revolution never cited this anecdote, but it nevertheless acquired great symbolic importance in subsequent historical accounts "
+            "when pro-revolutionary commentators employed the phrase to denounce the upper classes of the Ancien Régime as oblivious and rapacious. [...] "
+            "The phrase was attributed to Antoinette by Alphonse Karr in Les Guêpes of March 1843. [...] "
+            "According to Antonia Fraser, the notorious story of the ignorant princess was first said 100 years before Antoinette in relation to Maria Theresa, the wife of Louis XIV, "
+            "citing the memoirs of Louis XVIII [...] "
+            "the family always believed that Maria Theresa had originated the phrase. [...] "
+            "the first in April–May 1775, a few weeks before the king's coronation [...] "
+            "Letters from Antoinette to her family in Austria at this time reveal an attitude largely contrary to the spirit of Let them eat brioche",
+            nome="Let them eat cake")],
+    },
+    # 8 "Elementar, meu caro Watson" não está nos livros
+    {
+        "temas_secundarios": ["literatura", "teatro_danca"],
+        "tipos_espanto": ["mito_desmentido"],
+        "gancho": "Sherlock Holmes nunca diz \"Elementar, meu caro Watson\" nas 60 histórias de Conan Doyle. Ele diz \"elementar\" e diz \"meu caro Watson\", mas nunca na mesma frase.",
+        "explicacao": (
+            "A frase virou uma das falas mais citadas do detetive, que estreou em 1887 em \"Um Estudo em Vermelho\" e "
+            "aparece em quatro romances e 56 contos. Nas histórias originais, Holmes costuma dizer que suas "
+            "conclusões são \"elementares\" e às vezes chama o amigo de \"meu caro Watson\", mas a combinação famosa "
+            "não aparece em nenhuma delas. O mais perto que Conan Doyle chegou foi no conto \"The Crooked Man\", de "
+            "1893: numa fala, Holmes usa \"meu caro Watson\"; pouco depois, quando Watson elogia a dedução, ele "
+            "responde apenas \"Elementar\". Quem costuma levar o crédito é o ator William Gillette, que teria dito "
+            "\"Oh, isto é elementar, meu caro amigo\" na peça \"Sherlock Holmes\", de 1899. Só que o roteiro foi "
+            "revisado muitas vezes ao longo de umas três décadas de remontagens, e a fala está em algumas versões e "
+            "não em outras. Uma paródia de 1901 já trazia \"Elementar, meu caro Potson\", o que levou alguns autores a "
+            "suspeitar que a frase completa já circulasse antes. Holmes é, segundo o Guinness, o personagem humano "
+            "da literatura mais retratado no cinema e na televisão, e foi por essas adaptações que a frase pegou."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Elementary,_my_dear_Watson",
+            "The character Sherlock Holmes first appeared in print in 1887's A Study in Scarlet. [...] "
+            "eventually totalling four novels and 56 short stories. [...] "
+            "Guinness World Records lists him as the most portrayed human literary character in film and television history. [...] "
+            "The phrase \"Elementary, my dear Watson\" has become one of the most quoted aspects of the character. "
+            "However, although Holmes often observes that his conclusions are \"elementary\" and occasionally calls Watson \"my dear Watson\", "
+            "the phrase \"Elementary, my dear Watson\" is never uttered in any of the sixty stories by Conan Doyle. "
+            "One of the nearest approximations of the phrase appears in \"The Adventure of the Crooked Man\" (1893) when Holmes explains a deduction: "
+            "\"'I have the advantage of knowing your habits, my dear Watson,' said he [Holmes]. [...] 'Excellent,' I [Watson] cried. 'Elementary,' said he.\" "
+            "William Gillette is widely considered to have originated the phrase with the formulation, \"Oh, this is elementary, my dear fellow\", allegedly in his 1899 play Sherlock Holmes. "
+            "However, the script was revised many times over the course of some three decades of revivals and publications, "
+            "and the phrase is present in some versions of the script but not others. "
+            "The appearance of the line \"Elementary, my dear Potson\" in a Sherlock Holmes parody from 1901 has led some authors to speculate "
+            "that rather than this being an incidental formulation, the parodist drew upon already well-established occurrences of \"Elementary, my dear Watson.\"",
+            nome="Sherlock Holmes")],
+    },
+    # 9 OK: uma piada de Boston
+    {
+        "temas_secundarios": ["palavras_viajantes", "linguas_mundo"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "\"OK\", descrito como a palavra mais usada do planeta, deve ter nascido de uma piada: em Boston, nos anos 1830, virou moda abreviar erros de grafia de propósito, e \"oll korrect\" virou OK.",
+        "explicacao": (
+            "A origem foi reconstituída pelo linguista Allen Walker Read, numa série de seis artigos publicados em "
+            "1963 e 1964 na revista American Speech, depois de rastrear a palavra em jornais e documentos da época. "
+            "Ele mostrou que, a partir do verão de 1838, Boston viveu uma moda de siglas engraçadas, muitas delas "
+            "tiradas de grafias erradas de propósito: \"OW\", de \"oll wright\", \"NG\", de \"no go\", e \"OK\", de "
+            "\"oll korrect\", deturpação de \"all correct\", \"tudo certo\". O salto para o país inteiro veio na "
+            "eleição presidencial de 1840. Os democratas diziam que OK queria dizer \"Old Kinderhook\", apelido do "
+            "presidente Martin Van Buren, nascido em Kinderhook, Nova York; os adversários retrucavam que era a "
+            "ortografia ruim de Andrew Jackson, o presidente anterior. A explicação de Read hoje aparece na maioria "
+            "dos dicionários, mas a origem ainda é disputada. Até 1961, três grandes dicionários americanos davam "
+            "como provável uma origem na língua indígena choctaw, que tem uma partícula \"okeh\", \"é assim\". Outros "
+            "pesquisadores defendem uma origem em línguas da África Ocidental. O próprio Read encarava as dúvidas "
+            "com calma: \"Nada é absoluto\", escreveu."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("OK",
+            "It has been described as the most frequently spoken or written word on the planet. "
+            "The origin of OK is disputed; however, most modern reference works hold that it originated around Boston as part of a fad in the late 1830s of abbreviating misspellings "
+            "– that it is an initialism of \"oll korrect\" as a misspelling of \"all correct\". [...] "
+            "a series of six articles by Allen Walker Read in the journal American Speech in 1963 and 1964. "
+            "He tracked the spread and evolution of the word in American newspapers and other written documents [...] "
+            "The abbreviation fad began in Boston in the summer of 1838 ... and used expressions like OFM, \"our first men,\" NG, \"no go,\" GT, \"gone to Texas,\" and SP, \"small potatoes.\" "
+            "Many of the abbreviated expressions were exaggerated misspellings, a stock in trade of the humorists of the day. "
+            "One predecessor of OK was OW, \"oll wright.\" [...] "
+            "The term appears to have achieved national prominence in 1840, when supporters of the Democratic Party claimed during the 1840 United States presidential election "
+            "that it stood for \"Old Kinderhook\", a nickname for the Democratic president and candidate for reelection, Martin Van Buren, a native of Kinderhook, New York. [...] "
+            "In response, Whig opponents attributed OK, in the sense of \"Oll Korrect\", to the bad spelling of Andrew Jackson, Van Buren's predecessor. [...] "
+            "Read's etymology gained immediate acceptance, and is now offered without reservation in most dictionaries. [...] "
+            "\"Nothing is absolute,\" he once wrote, \"nothing is forever.\" [...] "
+            "Three major American reference works (Webster's, New Century, Funk & Wagnalls) cited this etymology as the probable origin until as late as 1961. [...] "
+            "These missionaries ended many sentences in their translation of the Bible with the particle \"okeh\", meaning \"it is so\" [...] "
+            "A West African (Mande and/or Bantu) etymology has been argued in scholarly sources",
+            nome="OK")],
+    },
+    # 10 abracadabra: um amuleto contra a malária
+    {
+        "temas_secundarios": ["historia_medicina", "roma_antiga"],
+        "tipos_espanto": ["origem_inesperada", "misterio_aberto"],
+        "gancho": "\"Abracadabra\" começou como remédio: no século 2, um médico romano receitou a quem tinha malária um amuleto com a palavra escrita em forma de triângulo.",
+        "explicacao": (
+            "O primeiro registro conhecido está no \"Liber Medicinalis\", de Sereno Samônico, médico do imperador "
+            "romano Caracala. No capítulo 52, ele recomenda o amuleto aos doentes de malária e garante que seu poder "
+            "afasta doenças mortais. O pergaminho, pendurado no pescoço do doente, trazia uma fórmula em triângulo "
+            "derivada da palavra, e acreditava-se que esse formato funcionava como um funil, expulsando a doença do "
+            "corpo. Gnósticos da seita de Basílides também usaram a fórmula para pedir a ajuda de espíritos contra "
+            "doenças e desgraças. Muito depois, Daniel Defoe zombou dos londrinos que escreviam a palavra na porta "
+            "de casa para se proteger da Grande Peste de Londres. Só no início dos anos 1800 ela virou exemplo do que "
+            "os mágicos diziam, e hoje é a palavra típica do fim de um truque de palco. De onde ela vem, ninguém "
+            "sabe. Há palpites que a ligam ao aramaico, ao hebraico ou às primeiras letras do alfabeto grego, mas, "
+            "segundo o dicionário Oxford, nenhuma dessas hipóteses tem documentação. O linguista Steve Caruso afirma "
+            "que a origem aramaica, muito repetida, é um engano que se popularizou numa longa discussão num antigo "
+            "fórum da internet."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Abracadabra",
+            "Abracadabra is of unknown origin, and is first attested in a second-century work of Serenus Sammonicus relating to a cure for a fever. "
+            "Some conjectural etymologies are: from a phrase in Aramaic that means \"I create like the word\" (אברא כדברא), "
+            "to etymologies that point to similar words in Latin and Greek such as abraxas or to its similarity to the first four letters of the Greek alphabet "
+            "(alpha-beta-gamma-delta or ΑΒΓΔ). However, according to the Oxford English Dictionary, \"no documentation has been found to support any of the various conjectures\". "
+            "The historian Don Skemer suggests that it might originate from the Hebrew phrase ha brachah dabarah (name of the blessed), said to be a magical phrase. "
+            "The Aramaic linguist Steve Caruso argues that Abracadabra cannot be Aramaic, and suggests that the popularisation of the mistaken etymology "
+            "is a result of an extended discussion on an early internet message board [...] "
+            "The first known mention of the word was in the second century AD in a book called Liber Medicinalis "
+            "(sometimes known as De Medicina Praecepta Saluberrima) by Serenus Sammonicus, physician to the Roman emperor Caracalla, "
+            "who in chapter 52 prescribed that malaria sufferers wear an amulet containing Abracadabra written in the form of a triangle. "
+            "The power of the amulet, he claimed, makes lethal diseases go away. [...] "
+            "It was used as a magical formula by the Gnostics of the sect of Basilides in invoking the aid of beneficent spirits against disease and misfortune. [...] "
+            "To use it, when a person was sick and unhealthy they would wear an amulet around their neck that was made up of a piece of parchment inscribed with a triangular formula derived from this. "
+            "It was believed that when it was written out this way that it acted like a funnel and drove the sickness out of the body. [...] "
+            "Daniel Defoe wrote dismissively about Londoners who posted the word on their doorways to ward off sickness during the Great Plague of London. "
+            "In the early 1800s, the word was used as an example of what magicians would say. "
+            "Abracadabra is now more commonly used in the performance of stage magic as a magic word at the culmination of a trick.",
+            nome="Abracadabra")],
+    },
+    # 11 não entender patavina: o latim de Tito Lívio
+    {
+        "temas_secundarios": ["roma_antiga", "palavras_portugues"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "\"Não entender patavina\" provavelmente vem de Pádua, a antiga Patavium, terra do historiador Tito Lívio, cujo latim foi criticado em Roma por ter regionalismos da cidade.",
+        "explicacao": (
+            "Os romanos chamavam a cidade de Patavium, e \"patavino\" é tudo o que se refere a ela. Tito Lívio "
+            "nasceu ali, provavelmente em 59 a.C., e escreveu uma monumental história de Roma, \"Ab Urbe Condita\". "
+            "O político Asínio Polião zombou da \"patavinidade\" do historiador: dizia que o latim de Lívio tinha "
+            "provincianismos malvistos em Roma. Segundo o \"Dicionário de Expressões Correntes\", de Orlando Neves, "
+            "citado pelo Ciberdúvidas da Língua Portuguesa, a obra de Lívio foi acusada de ter \"patavinitas\" "
+            "demais, palavras e construções típicas do dialeto local, e \"não saber patavina\" seria não "
+            "compreender nada do que ele escreveu. A origem, porém, não está fechada. Outra explicação lembra que "
+            "Pádua tinha, desde 1222, uma das universidades mais importantes da Europa, rival da de Bolonha no "
+            "ensino do Direito: não saber \"patavina\" seria não saber nada de leis. Uma terceira, registrada pelo "
+            "escritor Sérgio Luís de Carvalho, fala de frades de Pádua que visitariam Portugal com frequência na "
+            "Idade Média e cuja fala o povo não entendia. Seja qual for a versão certa, todas apontam para a mesma "
+            "cidade italiana."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            {"url": CIBER_PATAVINA, "titulo": "«Não perceber patavina» vs. «Não saber patavina» - Ciberdúvidas da Língua Portuguesa",
+             "idioma": "pt",
+             "trecho": (
+                "Chamavam os Romanos Patavium à actual cidade de Pádua nos primeiros anos da era cristã. "
+                "\"Patavino\" será, pois, não apenas o natural de Pádua, mas tudo o que lhe diz respeito. [...] "
+                "Pádua foi a terra natal do orador e historiógrafo Tito Lívio. [...] "
+                "Todavia, As Décadas foram acusadas de incluírem demasiadas patavinitas, isto é, palavras ou construções regionais típicas do dialecto da sua cidade. "
+                "\"Não saber patavina\" (ou \"o patavino\") era, assim, não compreender nada do que Lívio escrevera. [...] "
+                "Adianta-se, por vezes, outra explicação, mais restritiva. Pádua tinha, desde 1222, uma das mais importantes universidades europeias. "
+                "Rivalizava com a de Bolonha, durante a Idade Média, sobretudo no ensino do Direito. "
+                "Ninguém que seguisse a carreira das leis poderia ignorar a ciência jurídica proveniente de Pádua – "
+                "ou seja, \"não saber (a escola) patavina\" era o mesmo que não saber nada em tal matéria. "
+                "A obra Nas Bocas do Mundo, de Sérgio Luís de Carvalho, edição da Planeta, além de citar a explicação de Orlando Neves, "
+                "adianta ainda que «Uma outra justificação remete também para a Idade Média portuguesa. "
+                "Nessa época, (...), alguns frades provenientes de Pádua — os patavinos — visitariam o nosso país com frequência. "
+                "Quando falavam na rua, não eram, naturalmente, entendidos pelo povo, que assim não percebia \"patavina\"...»")},
+            wiki("Livy",
+                "He wrote a monumental history of Rome and the Roman people, titled Ab Urbe Condita [...] "
+                "Livy was born in Patavium in northern Italy, now modern Padua, probably in 59 BC. [...] "
+                "Asinius Pollio derisively commented on Livy's \"patavinity\", saying that Livy's Latin showed certain \"provincialisms\" frowned upon in Rome.",
+                nome="Livy"),
+        ],
+    },
+    # 12 o ovo de Colombo talvez seja de Brunelleschi
+    {
+        "temas_secundarios": ["grandes_navegacoes", "arquitetura"],
+        "tipos_espanto": ["mito_desmentido", "conexao_inesperada"],
+        "gancho": "O \"ovo de Colombo\" talvez nem seja de Colombo: a história saiu num livro de 1565, mas 15 anos antes Vasari já contava que o arquiteto Brunelleschi pusera um ovo em pé para ganhar uma obra.",
+        "explicacao": (
+            "Na versão conhecida, alguém diz a Colombo que achar o caminho das Índias não tinha mérito, porque "
+            "outro faria o mesmo. Ele pede um ovo e desafia os presentes a deixá-lo em pé; todos tentam e falham. "
+            "Colombo bate a ponta do ovo na mesa, amassando um pouco a casca, e o ovo fica em pé: depois que alguém "
+            "faz, todo mundo sabe fazer. Daí \"ovo de Colombo\" para a tarefa que parece impossível e vira óbvia "
+            "quando alguém mostra o caminho. O relato pode ter nascido com o historiador italiano Girolamo Benzoni, "
+            "na \"História do Novo Mundo\", de 1565. O problema é que, quinze anos antes, enquanto Benzoni ainda "
+            "viajava pelas Américas, o pintor e arquiteto Giorgio Vasari publicou uma história quase igual sobre "
+            "Filippo Brunelleschi. O jovem arquiteto tinha projetado uma cúpula enorme e pesada para a catedral de "
+            "Santa Maria del Fiore, em Florença, e se recusou a mostrar o modelo às autoridades. Propôs que fizesse "
+            "a cúpula quem conseguisse pôr um ovo em pé sobre um mármore liso. Nenhum dos mestres conseguiu, e ele "
+            "deu uma pancada com a ponta do ovo no mármore. A semelhança põe em dúvida a versão de Colombo, que "
+            "hoje é considerada apócrifa."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Egg_of_Columbus",
+            "An egg of Columbus or Columbus's egg (Italian: uovo di Colombo [ˈwɔːvo di koˈlombo]) refers to a seemingly impossible task that becomes easy once understood. "
+            "The expression refers to an apocryphal story, dating from at least the 16th century, in which it is said that Christopher Columbus, "
+            "having been told that finding a new trade route was inevitable and no great accomplishment, challenges his critics to make an egg stand on its tip. "
+            "After his challengers give up, Columbus does it himself by tapping the egg on the table to flatten its tip. [...] "
+            "The Columbus egg story may have originated with Italian historian and traveler Girolamo Benzoni. In his book History of the New World, published in 1565, he wrote: [...] "
+            "When the egg came round to the hands of Columbus, by beating it down on the table he fixed it, having thus crushed a little of one end; "
+            "wherefore all remained confused, understanding what he would have said: that after the deed is done, everybody knows how to do it [...] "
+            "The factual accuracy of this story is called into question by its similarity to another tale published fifteen years earlier "
+            "(while Benzoni was still travelling in the Americas) by painter and architect Giorgio Vasari. "
+            "According to Vasari, the young Italian architect Filippo Brunelleschi had designed an unusually large and heavy dome for Santa Maria del Fiore in Florence, "
+            "the capital of Tuscany. City officials had asked to see his model, but he refused, proposing instead: [...] "
+            "that whosoever could make an egg stand upright on a flat piece of marble should build the cupola, since thus each man's intellect would be discerned. "
+            "Taking an egg, therefore, all those Masters sought to make it stand upright, but not one could find a way. "
+            "Whereupon Filippo, being told to make it stand, took it graciously, and, giving one end of it a blow on the flat piece of marble, made it stand upright.",
+            nome="Egg of Columbus")],
+    },
+    # 13 obras de Santa Engrácia: quase três séculos
+    {
+        "temas_secundarios": ["arquitetura", "grandes_obras"],
+        "tipos_espanto": ["escala_absurda", "origem_inesperada"],
+        "gancho": "Em Portugal, obra que nunca acaba é \"obra de Santa Engrácia\". A igreja de Lisboa que deu nome à expressão começou a ser erguida no século 17 e só foi concluída em 1966.",
+        "explicacao": (
+            "A igreja fica em Alfama e substituiu templos anteriores dedicados a santa Engrácia, mártir de Braga. "
+            "Depois que as estruturas antigas desabaram, a construção da atual começou com projeto de João Antunes, "
+            "arquiteto real e um dos grandes nomes do barroco português. Era um desenho inédito em Portugal: planta "
+            "central em forma de cruz grega, torres nos cantos e fachadas ondulantes, como nos projetos de "
+            "Borromini. As obras avançaram até 1712, quando Antunes morreu. O rei D. João V perdeu o interesse e "
+            "concentrou os recursos no gigantesco Convento de Mafra, e o prédio ficou sem terminar. A expressão "
+            "\"obras de Santa Engrácia\" virou sinônimo português de construção sem fim. Em 1916, já na República, o "
+            "templo inacabado foi transformado em Panteão Nacional. A cúpula só foi acrescentada no século 20, e o "
+            "edifício foi reinaugurado em 1966, durante o governo de Salazar. Hoje ele guarda os restos de "
+            "presidentes da República, de escritores como Eça de Queiroz e Sophia de Mello Breyner Andresen, da "
+            "fadista Amália Rodrigues e do jogador Eusébio, além de cenotáfios de figuras como Camões, Pedro Álvares "
+            "Cabral e Vasco da Gama."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Church_of_Santa_Engr%C3%A1cia",
+            "It is located in the Alfama neighbourhood [...] "
+            "The current building of the Church of Santa Engrácia substituted previous churches dedicated to a martyr of the city of Braga, Saint Engratia. [...] "
+            "In 1681, construction of the current church began after previous structures collapsed. "
+            "The design was the work of João Antunes, royal architect and one of the most important baroque architects in Portugal. "
+            "Construction proceeded from 1682 through 1712, when the architect died. "
+            "King John V lost interest in the project, concentrating his resources in the gigantic Convent of Mafra. "
+            "The church was not completed until the 20th century, so that obras de Santa Engrácia (literally works of Saint Engratia) "
+            "has become a Portuguese synonym for an endless construction project. A dome was added, and the church was reinaugurated in 1966. [...] "
+            "João Antunes prepared an ingenious design for Santa Engrácia, never before attempted in Portugal. "
+            "The church has a centralised floorplan, with a Greek cross shape. On each corner there is a square tower (the pinnacles were never completed), "
+            "and the façades are undulated like in the baroque designs of Borromini. [...] "
+            "In 1916, during the First Portuguese Republic, the Church of Santa Engrácia was converted into a National Pantheon. "
+            "It was completed only in 1966, during the government of the dictator António de Oliveira Salazar. [...] "
+            "The personalities entombed here include the Presidents of the Republic [...] "
+            "writers João de Deus, Almeida Garrett, Guerra Junqueiro, Aquilino Ribeiro, Sophia de Mello Breyner Andresen, and Eça de Queiroz; "
+            "fado singer Amália Rodrigues; and footballer Eusébio. "
+            "There are cenotaphs to Luís de Camões, Pedro Álvares Cabral, Afonso de Albuquerque, Nuno Álvares Pereira, Vasco da Gama",
+            nome="Church of Santa Engrácia")],
+    },
+    # 14 a "lei para inglês ver"
+    {
+        "temas_secundarios": ["brasil_imperio", "heranca_africana", "leis_julgamentos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "A lei de 1831 que proibiu o tráfico de africanos escravizados para o Brasil ficou conhecida como \"lei para inglês ver\": depois dela, mais de 700 mil pessoas foram trazidas ilegalmente.",
+        "explicacao": (
+            "A Grã-Bretanha, que tinha abolido o tráfico em seu império em 1807, pressionava as outras nações a "
+            "fazer o mesmo. Em troca do reconhecimento britânico da independência, D. Pedro I se comprometeu, em "
+            "1826, a tornar o tráfico ilegal. A Lei de 7 de novembro de 1831, chamada Lei Feijó por causa do ministro "
+            "da Justiça Diogo Antônio Feijó, declarava livre todo africano que desembarcasse dali em diante e "
+            "multava os envolvidos em 200 mil-réis por pessoa trazida, além das despesas de devolvê-la à África. No "
+            "começo houve repressão: de cerca de 57 mil africanos desembarcados em 1830, o número caiu para uns 6 mil "
+            "em 1831. Mas o esforço não durou, e entre 1831 e 1850 mais de 700 mil pessoas que deveriam ser livres "
+            "ao chegar foram trazidas ilegalmente. Daí o apelido \"para inglês ver\", e por muito tempo autores como "
+            "Caio Prado Júnior e Celso Furtado trataram a lei como farsa para apaziguar os britânicos. O tráfico só "
+            "acabou de fato com a Lei Eusébio de Queirós, de 1850. Historiadores mais recentes acrescentam uma "
+            "reviravolta: mesmo desrespeitada, a lei criou uma contradição no sistema escravista, e Sidney Chalhoub "
+            "mostra como ela deu a abolicionistas e escravizados uma ferramenta para lutar pela liberdade nos "
+            "tribunais."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lei_Feij%C3%B3",
+            "A Lei de 7 de novembro de 1831, também conhecida como Lei Feijó — em referência a Diogo Antônio Feijó, então Ministro da Justiça do Império do Brasil —, "
+            "foi a primeira lei a proibir formalmente o tráfico transatlântico de africanos escravizados para o Brasil. [...] "
+            "a legislação declarava que qualquer africano que desembarcasse no país a partir daquela data era considerado livre e impunha severas sanções penais aos traficantes. [...] "
+            "o tráfico não foi abolido, sendo trazidos, ilegalmente, entre 1831 e 1850, mais de 700 mil pessoas escravizadas que deveriam ter sido libertadas assim que chegassem ao Brasil. "
+            "Por conta dessa ineficácia, a lei ficou posteriormente conhecida como \"lei para inglês ver\". "
+            "O fim do tráfico de escravos e um combate efetivo das autoridades imperiais nesse sentido só viria quase vinte anos depois, a partir da aprovação, em 1850, da Lei Eusébio de Queirós. [...] "
+            "A partir de 1807, com a aprovação, por parte do parlamento britânico, do Slave Trade Act, que abolia o tráfico de escravizados o Império Britânico passou a pressionar as outras potências europeias [...] "
+            "em troca do reconhecimento britânico, o Imperador Dom Pedro I foi obrigado a assumir - sem a anuência do parlamento - em 1826, o compromisso de declarar o tráfico ilegal em três anos. [...] "
+            "que deveriam arcar com a multa de 200$000 (duzentos mil-réis) por cabeça de cada um dos escravizados trazidos ilegalmente e, ainda, pagar as despesas do retorno dessas pessoas à África. [...] "
+            "O governo Feijó demonstrou um esforço inicial para aplicá-la, resultando numa queda drástica do tráfico: "
+            "de cerca de 57.000 africanos desembarcados em 1830, o número caiu para aproximadamente 6.000 em 1831 [...] "
+            "Por muito tempo, a lei foi vista quase exclusivamente através do prisma de seu fracasso, sendo considerada uma farsa, "
+            "um ato cínico do Estado brasileiro para apaziguar a Grã-Bretanha, sem nenhuma intenção de implementá-la. "
+            "Autores como Caio Prado Júnior e Celso Furtado a trataram como um exemplo da subordinação e da falta de autonomia do Império. [...] "
+            "a existência da lei introduziu uma contradição fatal no sistema legal escravista. [...] "
+            "Chalhoub, por sua vez, explora como a lei armou abolicionistas e escravizados com uma ferramenta legal para lutar pela liberdade nos tribunais.",
+            nome="Lei Feijó", idioma="pt")],
+    },
+]

@@ -1,0 +1,120 @@
+{
+ "lote": "2026-11-18-buracos_negros-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "buracos_negros-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "John Michell e Gaia BH1 conferem; ponte de 1783 a 2022"
+   },
+   {
+    "id": "buracos_negros-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'de onde quem entrava não saía vivo' é fama, não fato (houve 23 sobreviventes, inclusive o autor do relato)",
+    "correcao": "Gancho: 'cela famosa de onde quem entrava não saía vivo.' -> 'cela que ganhou fama de lugar de onde ninguém saía vivo.' Explicação: 'uma prisão que ficou notória porque as pessoas entravam e nunca saíam com vida' -> 'uma prisão que ganhou a fama de lugar onde se entrava para nunca mais sair com vida'. Opcional com fonte (Black_Hole_of_Calcutta): os 23 sobreviventes de 146; sem fonte, sem números."
+   },
+   {
+    "id": "buracos_negros-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "disputa Chandrasekhar-Eddington confere"
+   },
+   {
+    "id": "buracos_negros-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "aposta de Cygnus X-1 confere"
+   },
+   {
+    "id": "buracos_negros-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "paradoxo da informação e aposta de 1997 conferem"
+   },
+   {
+    "id": "buracos_negros-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "ESO e Nobel 2020 conferem"
+   },
+   {
+    "id": "buracos_negros-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "sugere que a falta de voos atrasou a imagem até 2022; a fonte só fala do processamento até dez/2017",
+    "correcao": "Reescrever o trecho de Sagitário A* para dizer que o conjunto completo só pôde ser processado depois que os discos chegaram em dezembro de 2017, e que a imagem foi divulgada em 12/5/2022, sem ligar as duas coisas."
+   },
+   {
+    "id": "buracos_negros-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Supermassive black hole e Spaghettification conferem"
+   },
+   {
+    "id": "buracos_negros-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'em torno de 10⁻⁷ K' exagera (1 M☉ = 62 nK, logo 3 M☉ ~20 nK); frase truncada",
+    "correcao": "1) 'ela ficaria em torno de 10⁻⁷ kelvin, um décimo de milionésimo de grau acima do zero absoluto' -> 'ela ficaria abaixo de 10⁻⁷ kelvin, menos de um décimo de milionésimo de grau acima do zero absoluto'. 2) 'e nenhum buraco negro estelar consegue evaporar mais frio que o ambiente' -> 'e, como são mais frios que o espaço em volta, nenhum buraco negro estelar consegue evaporar'."
+   },
+   {
+    "id": "buracos_negros-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Neutron star confere"
+   },
+   {
+    "id": "buracos_negros-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Nuclear pasta e arXiv 1807.02557 conferem; hipótese clara"
+   },
+   {
+    "id": "buracos_negros-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "NASA e SGR 1806-20 conferem"
+   },
+   {
+    "id": "buracos_negros-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "PSR B1257+12 confere"
+   },
+   {
+    "id": "buracos_negros-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Chandra e Perseus Cluster conferem"
+   },
+   {
+    "id": "buracos_negros-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Pulsar timing array confere; 'indícios' e consenso_parcial"
+   }
+  ],
+  "2": [
+   {
+    "id": "buracos_negros-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Calcutá como fama"
+   },
+   {
+    "id": "buracos_negros-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "voos ligados só ao processamento"
+   },
+   {
+    "id": "buracos_negros-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "abaixo de 10⁻⁷ K; frase corrigida"
+   }
+  ]
+ }
+}

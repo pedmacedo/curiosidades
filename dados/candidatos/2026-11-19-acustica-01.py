@@ -1,0 +1,619 @@
+LOTE = "2026-11-19-acustica-01"
+AREA = "fisica_quimica"
+TEMA = "acustica"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/"
+
+CANDIDATOS = [
+    # 1 a voz gravada em 1860 que só foi ouvida em 2008
+    {
+        "temas_secundarios": ["invencoes", "telecomunicacoes"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "A gravação de voz humana inteligível mais antiga que se conhece, de 1860, não foi feita para ser ouvida: era só uma linha ondulada riscada na fuligem. Ela virou som pela primeira vez em 2008.",
+        "explicacao": (
+            "O aparelho era o fonautógrafo, patenteado em 25 de março de 1857 pelo francês Édouard-Léon Scott de "
+            "Martinville, tipógrafo e revisor numa editora científica de Paris. A ideia surgiu quando ele revisava "
+            "um livro de fisiologia e viu uma gravura da anatomia do ouvido. Scott imitou o ouvido: na ponta estreita "
+            "de uma corneta prendeu uma membrana fina, no papel do tímpano, e no centro dela uma cerda de javali de "
+            "cerca de um centímetro, que roçava uma superfície coberta de negro de fumo. Quem falasse na corneta "
+            "fazia a cerda desenhar as vibrações do som. O inventor imaginava que um dia esses traços seriam lidos "
+            "como uma \"estenografia natural\", e não tocados: antes da década de 1870, não ocorreu a ninguém que "
+            "eles guardassem informação suficiente para recriar o som. Em 9 de abril de 1860, Scott registrou alguém "
+            "cantando \"Au clair de la lune\". Em 2008, o grupo de historiadores do áudio First Sounds localizou "
+            "registros dele em Paris, e cientistas do Laboratório Nacional Lawrence Berkeley os escanearam e "
+            "converteram em áudio por computador. Até então, a voz gravada mais antiga que se conhecia era a de um "
+            "fonógrafo de Thomas Edison, de 1877."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Phonautograph",
+            "The phonautograph is the earliest known device for recording sound. [...] "
+            "Invented by Frenchman Édouard-Léon Scott de Martinville, it was patented on March 25, 1857. "
+            "It transcribed sound waves as undulations or other deviations in a line traced on smoke-blackened paper or glass. "
+            "Scott believed that future technology would allow the traces to be deciphered as a kind of \"natural stenography\". [...] "
+            "It did not occur to anyone before the 1870s that the recordings, called phonautograms, contained enough information about the sound that they could be used to recreate it. [...] "
+            "several phonautograms recorded before 1861 were successfully converted and played as sound in 2008 by optically scanning them and using a computer to process the scans into digital audio files. [...] "
+            "an editor and typographer of manuscripts at a scientific publishing house in Paris. "
+            "One day while editing Professor Longet's Traité de Physiologie, he happened upon that customer's engraved illustration of the anatomy of the human ear [...] "
+            "Scott coated a plate of glass with a thin layer of lampblack. He then took an acoustic trumpet, and at its tapered end affixed a thin membrane that served as the analog to the eardrum. "
+            "At the center of that membrane, he attached a rigid boar's bristle approximately a centimeter long, placed so that it just grazed the lampblack. [...] "
+            "The earliest known intelligible recorded sound of a human voice was conducted on April 9, 1860 when Scott recorded someone singing the song \"Au Clair de la Lune\" [...] "
+            "However, the device was not designed to play back sounds [...] "
+            "it was discovered and resurrected in a Paris patent office by First Sounds, an informal collaborative of American audio historians, recording engineers, and sound archivists [...] "
+            "The phonautograms were then digitally converted by scientists at the Lawrence Berkeley National Laboratory in California, who were able to play back the recorded sounds, something Scott had never conceived of. "
+            "Prior to this point, the earliest known record of a human voice was thought to be an 1877 phonograph recording by Thomas Edison.",
+            nome="Phonautograph")],
+    },
+    # 2 a sombra acústica: canhões ouvidos em Londres e não na costa
+    {
+        "temas_secundarios": ["atmosfera", "revolucao_cientifica"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Em 1666, Londres ouviu os canhões de uma batalha naval no Mar do Norte, enquanto cidades da costa, mais perto do combate, não ouviram nada. O ar pode curvar o som e fazê-lo pular quem está no meio do caminho.",
+        "explicacao": (
+            "Era a Batalha dos Quatro Dias, de 11 a 14 de junho de 1666, entre ingleses e holandeses, uma das mais "
+            "longas batalhas navais da história. Dois autores de diários de Londres registraram o mistério. John "
+            "Evelyn ouviu os canhões do jardim, às seis da tarde, e partiu a cavalo rumo à costa, até saber por um "
+            "oficial que em Deal não houvera barulho nem sinal de combate. Samuel Pepys escreveu que em toda parte se ouviam os tiros com clareza, mas que em Deal e Dover "
+            "não se ouviu um único, e que aquilo abria \"uma grande disputa na filosofia\". A explicação é a refração "
+            "do som. A velocidade do som muda com a temperatura, que costuma cair com a altitude, e então as ondas "
+            "se curvam para cima e criam, a alguma distância da fonte, uma \"sombra acústica\". Já um vento que "
+            "muda bastante com a altura pode curvar o som de volta para o chão no sentido em que sopra. Em certas "
+            "condições, o som sobe, percorre longas distâncias e só volta à superfície bem longe. Na Guerra Civil "
+            "americana isso se repetiu várias vezes: na Batalha de Iuka, um vento norte impediu o general Ulysses "
+            "Grant de ouvir o combate e mandar reforços. Às vezes, observadores viam a fumaça e os clarões dos "
+            "canhões sem ouvir o estrondo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Acoustic_shadow",
+                "Anomalous sound propagation in the atmosphere can occur in certain conditions of wind, temperature and pressure. "
+                "Such conditions enable sound to travel in refraction channels over long distances until returning to the Earth's surface, and it thus may not be heard in intervening locations. [...] "
+                "For example, at the Battle of Iuka, a northerly wind prevented General Ulysses S. Grant from hearing the sounds of battle and sending more troops. "
+                "Many other instances of acoustic shadowing were prevalent during the American Civil War [...] "
+                "Observers of nearby battles would sometimes see the smoke and flashes of light from cannon but not hear the corresponding roar of battle [...] "
+                "Two diarists John Evelyn and Samuel Pepys heard from London the naval guns of the Four Days' Battle, which ranged over the southern North Sea between England and the Flanders coast. "
+                "However the guns were not heard at all in towns on the coast nearer to the action: "
+                "Being in my garden at 6 o'clock in the evening, and hearing the great guns go thick off, I took horse and rode ...next day toward the Downs and seacoast, but meeting the Lieutenant of the Hampshire frigate, who told me what passed [...] "
+                "there being no noise, or appearance at Deal, or on that coast of any engagement. [...] "
+                "did hear every where most plainly the guns go off, and yet at Deale and Dover to last night they did not hear one word of a fight, nor think they heard one gun. "
+                "This...makes room for a great dispute in philosophy",
+                nome="Acoustic shadow"),
+            wiki("Four_Days%27_Battle",
+                "The Four Days' Battle was a naval engagement fought from 11 to 14 June 1666 (1–4 June O.S.) during the Second Anglo-Dutch War. "
+                "It began off the Flemish coast and ended near the English coast, and remains one of the longest naval battles in history.",
+                nome="Four Days' Battle"),
+            wiki("Speed_of_sound",
+                "The speed of sound varies with temperature. "
+                "Since temperature and sound velocity normally decrease with increasing altitude, sound is refracted upward, away from listeners on the ground, creating an acoustic shadow at some distance from the source. [...] "
+                "Higher values of wind gradient will refract sound downward toward the surface in the downwind direction, eliminating the acoustic shadow on the downwind side.",
+                nome="Speed of sound"),
+        ],
+    },
+    # 3 a onda solitária perseguida a cavalo
+    {
+        "temas_secundarios": ["revolucao_industrial", "telecomunicacoes"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1834, um engenheiro escocês perseguiu a cavalo uma onda que corria sozinha por um canal sem mudar de forma nem perder velocidade. Grandes físicos da época duvidaram dele. Hoje ela tem nome: sóliton.",
+        "explicacao": (
+            "John Scott Russell estudava o formato mais eficiente para barcos de canal. Em agosto de 1834, no Union "
+            "Canal, na Escócia, um barco puxado por dois cavalos parou de repente. A água que ele empurrava se "
+            "acumulou na proa e seguiu adiante sozinha, como um morro d'água liso e arredondado, com cerca de trinta pés "
+            "(uns nove metros) de comprimento. Russell a seguiu a cavalo e só a perdeu depois de uma ou duas milhas, nas "
+            "curvas do canal. Ele chamou o fenômeno de \"onda de translação\" e montou tanques em casa para estudá-lo. "
+            "Descobriu que essas ondas são estáveis e viajam distâncias muito grandes, enquanto ondas comuns se "
+            "achatam ou quebram. A velocidade depende do tamanho, e uma onda grande ultrapassa uma pequena em vez de "
+            "se fundir com ela. George Airy e George Stokes tiveram dificuldade em aceitar as observações, que as "
+            "teorias da época não explicavam. Um tratamento teórico só saiu nos anos 1870. O nome \"sóliton\" foi "
+            "dado por Norman Zabusky e Martin Kruskal, que em 1965 demonstraram esse comportamento numa simulação "
+            "em computador. O sufixo \"-on\", como em elétron, lembra partículas, porque essas ondas se comportam como elas. Russell não foi o primeiro: em 1826, Giorgio "
+            "Bidone já descrevera ondas solitárias em Turim, mas quase ninguém notou. Só a partir dos anos 1960 se "
+            "entendeu a importância da descoberta, inclusive para a fibra óptica."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Soliton",
+                "In 1826, Giorgio Bidone in Turin described solitary waves, but Bidone's work seems to have gone unnoticed by researchers in the Netherlands and Britain [...] "
+                "I was observing the motion of a boat which was rapidly drawn along a narrow channel by a pair of horses, when the boat suddenly stopped – not so the mass of water in the channel which it had put in motion; "
+                "it accumulated round the prow of the vessel in a state of violent agitation, then suddenly leaving it behind, rolled forward with great velocity, assuming the form of a large solitary elevation, a rounded, smooth and well-defined heap of water, "
+                "which continued its course along the channel apparently without change of form or diminution of speed. "
+                "I followed it on horseback, and overtook it still rolling on at a rate of some eight or nine miles an hour, preserving its original figure some thirty feet long and a foot to a foot and a half in height. "
+                "Its height gradually diminished, and after a chase of one or two miles I lost it in the windings of the channel. "
+                "Such, in the month of August 1834, was my first chance interview with that singular and beautiful phenomenon which I have called the Wave of Translation. [...] "
+                "He built wave tanks at his home and noticed some key properties: "
+                "The waves are stable, and can travel over very large distances (normal waves would tend to either flatten out, or steepen and topple over) "
+                "The speed depends on the size of the wave, and its width on the depth of water. "
+                "Unlike normal waves they will never merge – so a small wave is overtaken by a large one, rather than the two combining. [...] "
+                "George Biddell Airy and George Gabriel Stokes had difficulty accepting Scott Russell's experimental observations because they could not be explained by the existing water wave theories. [...] "
+                "it would take until the 1870s before Joseph Boussinesq and Lord Rayleigh published a theoretical treatment and solutions. [...] "
+                "in a computational investigation using a finite difference approach. [...] "
+                "with the \"on\" suffix recalling the usage for particles such as electrons, baryons and hadrons [...] "
+                "It was next described in 1834 by John Scott Russell who observed a solitary wave in the Union Canal in Scotland. [...] "
+                "the term \"soliton\" was coined by Norman Zabusky and Martin David Kruskal [...] "
+                "reflecting their observed particle-like behaviour. [...] "
+                "In 1965 Norman Zabusky of Bell Labs and Martin Kruskal of Princeton University first demonstrated soliton behavior",
+                nome="Soliton"),
+            wiki("John_Scott_Russell",
+                "In 1834, while conducting experiments to determine the most efficient design for canal boats, he discovered a phenomenon that he described as the wave of translation. [...] "
+                "It was not until the 1960s and the advent of modern computers that the significance of Scott Russell's discovery in physics, electronics, biology and especially fibre optics started to become understood",
+                nome="John Scott Russell"),
+        ],
+    },
+    # 4 Doppler: nasceu errado nas estrelas e foi confirmado num trem
+    {
+        "temas_secundarios": ["estrelas", "transportes", "historia_astronomia"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "O efeito Doppler, que muda o tom da sirene que passa, foi proposto em 1842 para explicar as cores das estrelas duplas, ideia que se provou errada. Em 1845, foi confirmado com músicos tocando num trem.",
+        "explicacao": (
+            "Christian Doppler era professor em Praga quando, aos 38 anos, publicou um trabalho sobre a luz colorida "
+            "das estrelas duplas. Nele, propôs o princípio que leva o seu nome: a frequência que se percebe numa "
+            "onda depende da velocidade entre a fonte e quem observa. Quando a fonte se aproxima, cada ciclo da onda "
+            "sai de um ponto mais próximo do ouvinte que o anterior, e os ciclos chegam mais juntos, com frequência "
+            "maior. Quando ela se afasta, acontece o contrário. Doppler tentou usar a ideia para explicar as cores "
+            "visíveis das estrelas binárias, hipótese que mais tarde se mostrou errada. A primeira parte, porém, "
+            "estava certa, e o holandês Buys Ballot a testou com som em 1845, pondo um grupo de músicos para tocar "
+            "uma nota calibrada num trem da linha entre Utrecht e Amsterdã. O som ficava mais agudo quando os "
+            "músicos se aproximavam e mais grave quando se afastavam. Ironia: o efeito acabou se tornando essencial "
+            "justamente na astronomia, para medir a velocidade de estrelas e galáxias, descobrir que uma estrela "
+            "aparentemente única é um par e detectar exoplanetas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Christian_Doppler",
+                "In 1842, at the age of 38, Doppler gave a lecture to the Royal Bohemian Society of Sciences and subsequently published Über das farbige Licht der Doppelsterne und einiger anderer Gestirne des Himmels "
+                "(\"On the coloured light of the binary stars and some other stars of the heavens\"). "
+                "In this work, Doppler postulated his principle (later named the Doppler effect) that the observed frequency of a wave depends on the relative speed of the source and the observer, "
+                "and he later tried to use this concept to explain the visible colours of binary stars (this hypothesis was later proven wrong). [...] "
+                "he was appointed as an associate professor of math and geometry at the Prague Polytechnic Institute",
+                nome="Christian Doppler"),
+            wiki("C._H._D._Buys_Ballot",
+                "Buys Ballot tested the Doppler effect for sound waves in 1845 by using a group of musicians playing a calibrated note on a train in the Utrecht-Amsterdam line.",
+                nome="C. H. D. Buys Ballot"),
+            wiki("Doppler_effect",
+                "A common example of a Doppler shift is the change of pitch heard when a vehicle approaches and recedes from an observer. [...] "
+                "When the source of the sound wave is moving towards the observer, each successive cycle of the wave is emitted from a position closer to the observer than the previous cycle. "
+                "Hence, from the observer's perspective, the period or time between cycles is reduced, meaning the frequency is increased. [...] "
+                "The hypothesis was tested for sound waves by Buys Ballot in 1845. "
+                "He confirmed that the sound's pitch was higher than the emitted frequency when the sound source approached him, and lower than the emitted frequency when the sound source receded from him. [...] "
+                "The Doppler effect for electromagnetic waves such as light is of widespread use in astronomy to measure the speed at which stars and galaxies are approaching or receding from us [...] "
+                "This may be used to detect if an apparently single star is, in reality, a close binary, to measure the rotational speed of stars and galaxies, or to detect exoplanets.",
+                nome="Doppler effect"),
+        ],
+    },
+    # 5 Chladni, Napoleão e Sophie Germain
+    {
+        "temas_secundarios": ["historia_matematica", "personagens_esquecidos", "musica_ciencia"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Em 1808, um físico mostrou a Napoleão os desenhos que a areia forma sobre uma placa vibrando. O prêmio para explicá-los acabou com uma só concorrente, Sophie Germain, a primeira mulher premiada pela Academia de Paris.",
+        "explicacao": (
+            "O físico era o alemão Ernst Chladni, às vezes chamado de pai da acústica. A técnica dele, publicada em "
+            "1787, era passar um arco de violino na borda de uma placa de metal polvilhada de areia. Quando a placa "
+            "ressoa, ela se divide em regiões que vibram em sentidos opostos, separadas por linhas que ficam paradas, "
+            "e a areia se acumula nessas linhas, desenhando as \"figuras de Chladni\". Robert Hooke já tinha visto "
+            "algo parecido em 1680, com farinha sobre vidro. Em 1808, Chladni se apresentou na Academia de Paris "
+            "para os maiores cientistas franceses e o próprio Napoleão, que instituiu um prêmio para a melhor "
+            "explicação matemática. Lagrange avisou que resolver o problema exigiria um novo ramo da análise, e isso "
+            "afastou quase todos. Quando Poisson virou jurado, Sophie Germain, que estudara sozinha nos livros do "
+            "pai, ficou como a única concorrente. Ela perdeu em 1811 e levou só uma menção honrosa em 1813. Na "
+            "terceira tentativa, em 8 de janeiro de 1816, venceu, a primeira mulher a ganhar um prêmio da Academia, "
+            "e não foi à cerimônia. Ainda hoje, variações da técnica ajudam a construir violinos e violões."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Ernst_Chladni",
+                "His most important work, for which he is sometimes labeled the father of acoustics, included research on vibrating plates [...] "
+                "When resonating, a plate or membrane is divided into regions that vibrate in opposite directions, bounded by lines where no vibration occurs (nodal lines). "
+                "Chladni repeated the pioneering experiments of Robert Hooke who, on 8 July, 1680, had observed the nodal patterns associated with the vibrations of glass plates. "
+                "Hooke ran a violin bow along the edge of a plate covered with flour and saw the nodal patterns emerge. [...] "
+                "Chladni's technique, first published in 1787 in his book Entdeckungen über die Theorie des Klanges (\"Discoveries in the Theory of Sound\"), consisted of drawing a bow over a piece of metal whose surface was lightly covered with sand. "
+                "The plate was bowed until it reached resonance, when the vibration causes the sand to move and concentrate along the nodal lines where the surface is still, outlining the nodal lines. [...] "
+                "Chladni had visited the Paris Academy in 1808 and had demonstrated the vibration patterns before an audience that included not only the leading French scientists but Napoleon himself; "
+                "Napoleon set a prize for the best mathematical explanation. [...] "
+                "Variations of this technique are still commonly used in the design and construction of acoustic instruments such as violins, guitars, and cellos.",
+                nome="Ernst Chladni"),
+            wiki("Sophie_Germain",
+                "she gained education from books in her father's library [...] "
+                "she took interest in a contest sponsored by the Paris Academy of Sciences concerning Ernst Chladni's experiments with vibrating metal plates. [...] "
+                "Lagrange's comment that a solution to the problem would require the invention of a new branch of analysis deterred all but two contestants, Denis Poisson and Germain. "
+                "Then Poisson was elected to the academy, thus becoming a judge instead of a contestant, and leaving Germain as the only entrant to the competition. [...] "
+                "She submitted her paper early in the autumn of 1811 and did not win the prize. [...] "
+                "Germain's anonymous 1813 submission was still littered with mathematical errors, especially involving double integrals, and it received only an honorable mention [...] "
+                "on 8 January 1816 she became the first woman to win a prize from the Paris Academy of Sciences. "
+                "She did not appear at the ceremony to receive her award.",
+                nome="Sophie Germain"),
+        ],
+    },
+    # 6 a galeria dos sussurros e a luz presa em esferas
+    {
+        "temas_secundarios": ["arquitetura", "luz_cores"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "Na cúpula da Catedral de São Paulo, em Londres, um sussurro junto à parede é ouvido do outro lado. Lord Rayleigh mostrou que o som corre colado à parede curva. Hoje a mesma onda prende luz em esferinhas de vidro.",
+        "explicacao": (
+            "Antes de Rayleigh, achava-se que o sussurro atravessava a cúpula e só podia ser ouvido do lado oposto, "
+            "não nos pontos intermediários. Por volta de 1878, ele corrigiu essa ideia. O som vai rebatendo na parede "
+            "circular em sequência, como uma série de cordas de um círculo, e por isso fica grudado nela. Assim, a "
+            "intensidade cai só na proporção da distância, e não do quadrado da distância, como acontece quando o "
+            "som se espalha em todas as direções. Por isso o sussurro é ouvido em toda a volta da galeria. Batendo "
+            "palmas ali, ouvem-se quatro ecos. Rayleigh voltou ao tema com teorias de ondas em 1910 e 1914. Essas "
+            "\"ondas de galeria de sussurros\" aparecem em outros monumentos, como o Gol Gumbaz, na Índia, e o "
+            "Templo do Céu, em Pequim, e também nas vibrações da Terra inteira e das estrelas. O mais surpreendente "
+            "é que elas existem para a luz. Em esferas microscópicas de vidro, a luz dá voltas quase sem perdas e "
+            "fica presa muito mais tempo do que o som numa galeria, o que serve para fazer lasers e sensores capazes "
+            "de detectar uma única partícula ou molécula biológica."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Whispering-gallery_wave",
+                "Whispering-gallery waves, or whispering-gallery modes, are a type of wave that can travel around a concave surface. "
+                "Originally discovered for sound waves in the whispering gallery of St Paul's Cathedral, they can exist for light and for other waves [...] "
+                "Whispering-gallery waves were first explained for the case of St Paul's Cathedral circa 1878 by Lord Rayleigh, who revised a previous misconception that whispers could be heard across the dome but not at any intermediate position. "
+                "He explained the phenomenon of travelling whispers with a series of specularly reflected sound rays making up chords of the circular gallery. "
+                "Clinging to the walls the sound should decay in intensity only as the inverse of the distance — rather than the inverse square as in the case of a point source of sound radiating in all directions. "
+                "This accounts for the whispers being audible all round the gallery. "
+                "Rayleigh developed wave theories for St Paul's in 1910 and 1914. [...] "
+                "Many other monuments have been shown to exhibit whispering-gallery waves, such as the Gol Gumbaz in Bijapur and the Temple of Heaven in Beijing. [...] "
+                "Examples include the vibrations of the whole Earth or stars. [...] "
+                "Whispering-gallery waves exist for light waves. "
+                "They have been produced in microscopic glass spheres or tori and in soap bubbles, for example, with applications as optical resonators for lasing, optomechanical cooling, frequency comb generation and optical sensing. "
+                "The light waves are guided around almost perfectly by total internal reflection, leading to Q factors in excess of 1010 being achieved. "
+                "This is far greater than the best values, about 104, that can be obtained in acoustics. [...] "
+                "especially for the detection of a single particle or biomolecule",
+                nome="Whispering-gallery wave"),
+            wiki("Whispering_gallery",
+                "The extent to which the sound travels at St Paul's can also be judged by clapping in the gallery, which produces four echoes.",
+                nome="Whispering gallery"),
+        ],
+    },
+    # 7 o canal SOFAR, onde o som atravessa oceanos
+    {
+        "temas_secundarios": ["oceanografia", "segunda_guerra", "guerra_fria"],
+        "tipos_espanto": ["escala_absurda", "engenhosidade"],
+        "gancho": "No oceano há uma camada profunda onde o som fica preso e viaja milhares de quilômetros. Sinais emitidos no sul do Oceano Índico chegaram a ser captados no Atlântico Norte e no Pacífico Norte.",
+        "explicacao": (
+            "No mar, a velocidade do som depende sobretudo da temperatura. Perto da superfície a água é quente e o "
+            "som é rápido. Descendo, a água esfria e o som fica mais lento, até que a temperatura se estabiliza e a "
+            "pressão passa a mandar, acelerando o som de novo. No ponto de velocidade mínima fica o eixo do canal "
+            "SOFAR, a cerca de 1.200 metros de profundidade em Perth, na Austrália, e nas Bermudas. As ondas sonoras "
+            "se curvam na direção em que andam mais devagar, e então ficam presas nessa camada, como a luz numa "
+            "fibra óptica. Espalhando-se em duas dimensões, e não em três, o som perde força bem mais devagar. O "
+            "canal foi descoberto nos anos 1940, de forma independente, por Maurice Ewing e J. Lamar Worzel, nos "
+            "EUA, e por Leonid Brekhovskikh, na União Soviética. Num teste de 1944, Ewing e Worzel ouviram cargas "
+            "explosivas detonadas a até 1.700 km. A Marinha americana usou a ideia para localizar a explosão de "
+            "bombas de socorro de pilotos derrubados e, depois, para caçar submarinos. Num teste a partir da ilha "
+            "Heard, um sinal percorreu 9.200 km até a ilha de Ascensão em cerca de 1 hora e 44 minutos. Baleias-"
+            "comuns talvez mergulhem até ali para cantar e se comunicar com outras a quilômetros de distância."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("SOFAR_channel",
+                "The SOFAR channel (short for sound fixing and ranging channel), or deep sound channel (DSC), is a horizontal layer of water in the ocean at which depth the speed of sound is at its minimum. "
+                "The SOFAR channel acts as a waveguide for sound, and low frequency sound waves within the channel may travel thousands of miles before dissipating. "
+                "An example was reception of coded signals generated by the US Navy-chartered ocean surveillance vessel Cory Chouest off Heard Island, located in the southern Indian Ocean (between Africa, Australia and Antarctica), "
+                "by hydrophones in portions of all five major ocean basins and as distant as the North Atlantic and North Pacific. [...] "
+                "The deep sound channel was discovered and described independently by Maurice Ewing and J. Lamar Worzel at Columbia University and Leonid Brekhovskikh at the Lebedev Physics Institute in the 1940s. "
+                "In testing the concept in 1944 Ewing and Worzel hung a hydrophone from Saluda, a sailing vessel assigned to the Underwater Sound Laboratory, with a second ship setting off explosive charges up to 900 nmi (1,000 mi; 1,700 km) away. [...] "
+                "Temperature is the dominant factor in determining the speed of sound in the ocean. "
+                "In areas of higher temperatures (e.g. near the ocean surface), there is higher sound speed. "
+                "Temperature decreases with depth, with sound speed decreasing accordingly until temperature becomes stable and pressure becomes the dominant factor. "
+                "The axis of the SOFAR channel lies at the point of minimum sound speed at a depth where pressure begins dominating temperature and sound speed increases. [...] "
+                "Analysis of Heard Island Feasibility Test data received by the Ascension Island Missile Impact Locating System hydrophones at an intermediate range of 9,200 km (5,700 mi; 5,000 nmi) from the source [...] "
+                "after a travel time of about 1 hour, 44 minutes and 17 seconds. [...] "
+                "At both Perth and Bermuda the sound channel axis occurs at a depth of around 1,200 m (3,937 ft). [...] "
+                "The first practical application began development during World War II when the United States Navy began experimenting and implementing the capability to locate the explosion of a SOFAR bomb used as a distress signal by downed pilots. [...] "
+                "The first application quickly became of intense interest to the Navy for reasons other than locating downed air crews. [...] "
+                "the passive sonar potential of the SOFAR channel be exploited for the Navy's Anti-Submarine Warfare (ASW) effort. [...] "
+                "Scientists believe fin whales may dive down to this channel and sing to communicate with other fin whales many kilometers away.",
+                nome="SOFAR channel"),
+            wiki("Speed_of_sound",
+                "In the SOFAR channel, the speed of sound is lower than that in the layers above and below. "
+                "Just as light waves will refract towards a region of higher refractive index, sound waves will refract towards a region where their speed is reduced. "
+                "The result is that sound gets confined in the layer, much the way light can be confined to a sheet of glass or optical fiber. "
+                "Thus, the sound is confined in essentially two dimensions. "
+                "In two dimensions the intensity drops in proportion to only the inverse of the distance.",
+                nome="Speed of sound"),
+        ],
+    },
+    # 8 o Bloop: o monstro que era gelo
+    {
+        "temas_secundarios": ["oceanografia", "agua_doce_gelo"],
+        "tipos_espanto": ["mito_desmentido", "escala_absurda"],
+        "gancho": "Em 1997, hidrofones captaram no Pacífico Sul um som tão forte que foi registrado a mais de 5 mil km. Parecia de animal, mas maior que o de qualquer baleia. A explicação da NOAA: um terremoto de gelo.",
+        "explicacao": (
+            "O som ficou conhecido como Bloop. Ele foi captado por uma rede de hidrofones da NOAA, a agência "
+            "oceânica e atmosférica dos EUA, que complementa o sistema da Marinha americana criado para detectar "
+            "submarinos soviéticos. A origem foi triangulada, de forma aproximada, num ponto remoto do Pacífico Sul, "
+            "a oeste da ponta da América do Sul. O tom subia ao longo de cerca de um minuto, um padrão que lembra "
+            "os sons de animais marinhos. Em 2002, numa reportagem da New Scientist, o pesquisador Christopher Fox, "
+            "da NOAA, comentou essa semelhança, mas notou que o sinal seria muito mais potente que o de qualquer "
+            "animal da Terra. A reportagem perguntou se poderia existir uma criatura maior que qualquer baleia, e a "
+            "especulação se espalhou. Curiosamente, já em 2001 Fox dizia achar que o som vinha de gelo se partindo "
+            "na Antártida. A peça que faltava veio ao acompanhar o iceberg A53a, que se desfazia perto da ilha "
+            "Geórgia do Sul no início de 2008: muitos tremores de gelo tinham o mesmo perfil e a mesma potência do "
+            "Bloop. Em 2012, a NOAA já descrevia o som como compatível com um tremor de gelo, e não com um animal."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Bloop",
+            "Bloop was an ultra-low-frequency, high-amplitude underwater sound detected by the U.S. National Oceanic and Atmospheric Administration (NOAA) in 1997. "
+            "By 2012, earlier speculation that the sound originated from a marine animal was replaced by NOAA's description of the sound as being consistent with noises generated via non-tectonic cryoseisms originating from glacial movements such as ice calving, or through seabed gouging by ice. [...] "
+            "The sound's source was roughly triangulated to 50°S 100°W, a remote point in the South Pacific Ocean west of the southern tip of South America. [...] "
+            "to augment NOAA's use of the U.S. Navy Sound Surveillance System (SOSUS), which was equipment originally designed to detect Soviet submarines. "
+            "According to the NOAA description, the sound \"rose\" in frequency over about one minute and was sufficiently loud to be heard on multiple sensors at a range of over 5,000 km (3,000 miles). [...] "
+            "Numerous ice quakes share similar spectrograms with Bloop, as well as the amplitude necessary to detect them despite ranges exceeding 5,000 km (3,000 miles). "
+            "This was found during the tracking of iceberg A53a as it disintegrated near South Georgia Island in early 2008. [...] "
+            "NOAA's Christopher Fox, in an interview with CNN in 2001, stated that he believed Bloop to be ice calving in Antarctica. "
+            "In 2002, Fox was interviewed by David Wolman for an article in New Scientist [...] "
+            "Fox also stated that, while Bloop's audio profile resembles that of a living creature, the source was a mystery because it would be \"far more powerful than the calls made by any animal on Earth.\" [...] "
+            "because its signature is a rapid variation in frequency similar to that of sounds known to be made by marine beasts. [...] "
+            "Is it even remotely possible that some creature bigger than any whale is lurking in the ocean depths? [...] "
+            "opened the door for subsequent speculation as to what such an 'efficient' noise-making entity might be.",
+            nome="Bloop")],
+    },
+    # 9 em Marte, o agudo corre mais que o grave
+    {
+        "temas_secundarios": ["sistema_solar", "exploracao_espacial"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Em Marte, sons agudos viajam mais rápido que os graves: acima de cerca de 240 Hz, a velocidade do som sobe uns 10 m/s. O microfone do Perseverance mediu isso com estalos de laser e o zumbido do helicóptero Ingenuity.",
+        "explicacao": (
+            "Antes da chegada do Perseverance, ninguém sabia como era o ambiente sonoro de Marte. Os "
+            "modelos previam que a velocidade do som lá variaria com a frequência, algo que não acontece perto da "
+            "superfície da Terra. A causa está no ar marciano, rarefeito e com cerca de 95% de gás carbônico. O "
+            "ponto em que a velocidade muda depende do ritmo das colisões entre as moléculas, e portanto da "
+            "pressão: em Marte, ele fica perto de 240 Hz. O microfone do instrumento SuperCam testou isso de dois jeitos. Os "
+            "estalos das faíscas que o laser do jipe provoca nas rochas permitem medir a velocidade de sons acima "
+            "de 2 kHz, e ela ficou entre 246 e "
+            "257 metros por segundo durante o dia. Já o tom grave das pás do helicóptero Ingenuity, perto de 84 Hz, "
+            "deu cerca de 240 metros por segundo, calculados pelo efeito Doppler enquanto ele voava. Na Terra, a "
+            "20 °C, o som anda a uns 343 metros por segundo. Marte também abafa muito os agudos: um som de 8 kHz "
+            "perde 40 decibéis em apenas 8 metros. Os pesquisadores concluíram que essa dupla velocidade é uma "
+            "característica única de uma atmosfera de baixa pressão dominada por gás carbônico."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": EPMC + "PMC9132769/fullTextXML", "titulo": "In situ recording of Mars soundscape (Maurice et al., Nature, 2022)", "idioma": "en",
+             "trecho": "Before the Perseverance rover landing, the acoustic environment of Mars was unknown. [...] "
+                "(2) the speed of sound varies at the surface with frequency [...] "
+                "Using point sources of sound (Ingenuity rotorcraft, laser-induced sparks), we highlight two distinct values for the speed of sound that are about 10 m s [...] "
+                "apart below and above 240 Hz, a unique characteristic of low-pressure CO [...] "
+                "On Earth, the adiabatic ratio [...] "
+                "is constant up to a few MHz at ambient pressure [...] "
+                "and sound speed does not vary with frequency near the surface. [...] "
+                "at Mars pressure, the approximately 95% [...] "
+                "This frequency depends on the rate at which molecules can collide, hence [...] "
+                "is proportional to the pressure. As a result, at 0.6 kPa, the relaxation frequency is about 240 Hz on Mars. [...] "
+                "The recording of pulsed waves generated in LIBS mode provides a unique opportunity to measure directly and repetitively the local speed of sound for acoustic waves above 2 kHz, that is, for [...] "
+                "is close to a harmonic source centred around 84 Hz, and [...] "
+                "From the daytime measurements, sound speeds between 246 m s [...] "
+                "and 257 m s [...] "
+                "An emitted frequency at 84.43 Hz and a speed of sound [...] "
+                "are estimated on the basis of a fit of the Doppler effect for Ingenuity’s fourth flight [...] "
+                "the true sound speed is about 240 m s [...] "
+                "As expected, high-pitched sounds are strongly attenuated. "
+                "Compared with a signal emitted at 1 m, attenuation of an 8-kHz wave ranges from −9 dB at 2 m to −40 dB at 8 m."},
+            wiki("Speed_of_sound",
+                "At 20 °C (68 °F), the speed of sound in air is about 343 m/s",
+                nome="Speed of sound"),
+        ],
+    },
+    # 10 a "nota marrom" é lenda
+    {
+        "temas_secundarios": ["corpo_extremo", "exploracao_espacial"],
+        "tipos_espanto": ["mito_desmentido", "origem_inesperada"],
+        "gancho": "A \"nota marrom\", um som grave que faria qualquer um perder o controle do intestino, é lenda urbana. Num teste para a TV, caixas de som de show chegaram a 120 decibéis em 9 Hz, e nada disso aconteceu.",
+        "explicacao": (
+            "A frequência mágica estaria entre 5 e 9 Hz, abaixo do limite da audição humana, e faria o intestino "
+            "entrar em ressonância. Em fevereiro de 2005, o programa MythBusters pôs a ideia à prova com doze "
+            "subwoofers do tipo usado em grandes shows, modificados para graves ainda mais profundos. Testaram "
+            "frequências de até 5 Hz, chegaram a 120 decibéis em 9 Hz e a 153 decibéis acima de 20 Hz. Os "
+            "voluntários sentiram alguma ansiedade, falta de ar e até um pouco de enjoo, mas os apresentadores "
+            "atribuíram isso ao ar sendo empurrado para dentro e para fora dos pulmões. O mito foi declarado "
+            "derrubado. O ar é um péssimo meio para passar vibrações de baixa frequência para o corpo. O perigo "
+            "real está no contato mecânico. Preocupado com os efeitos dos voos de foguete, o programa espacial "
+            "americano montou assentos de cabine sobre mesas vibratórias, com até 160 decibéis em 2 a 3 Hz. Os "
+            "voluntários tiveram perda de coordenação, náusea, problemas de visão e dificuldade para se comunicar. "
+            "Os pesquisadores supõem que esses testes sejam o núcleo da lenda."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Brown_note",
+            "The brown note (sometimes brown tone or frequency) is a fictional infrasonic frequency capable of causing fecal incontinence by creating acoustic resonance in the human bowel. "
+            "Considered an urban myth [...] "
+            "Frequencies supposedly involved are between 5 and 9 Hz, which are below the lower frequency limit of human hearing. [...] "
+            "Air is a very inefficient medium for transferring low frequency vibration from a transducer to the human body. "
+            "Mechanical connection of the vibration source to the human body, however, provides a potentially dangerous combination. "
+            "The U.S. space program, worried about the harmful effects of rocket flight on astronauts, ordered vibration tests that used cockpit seats mounted on vibration tables [...] "
+            "Very high power levels of 160 dB were achieved at frequencies of 2–3 Hz. [...] "
+            "Test subjects suffered motor ataxia, nausea, visual disturbance, degraded task performance and difficulties in communication. "
+            "These tests are assumed by researchers to be the nucleus of the current urban myth. [...] "
+            "The show declared the brown note myth \"busted\". [...] "
+            "In February 2005, the television show MythBusters attempted to verify whether the \"brown note\" was a reality. "
+            "They used twelve Meyer Sound 700-HP subwoofers—a model and quantity that has been employed for major rock concerts. [...] "
+            "had been specially modified for deeper bass extension. [...] "
+            "The hosts on the show tried a series of frequencies as low as 5 Hz, attaining a level of 120 decibels of sound pressure at 9 Hz and up to 153 dB at frequencies above 20 Hz, but the rumored physiological effects did not materialize. "
+            "The test subjects all reported some physical anxiety and shortness of breath, even a small amount of nausea, but this was dismissed by the hosts, noting that sound at that frequency and intensity moves air rapidly in and out of one's lungs.",
+            nome="Brown note")],
+    },
+    # 11 o "fantasma" que era um ventilador a 19 Hz
+    {
+        "temas_secundarios": ["percepcao_ilusoes", "sentidos"],
+        "tipos_espanto": ["misterio_aberto", "historia_humana"],
+        "gancho": "Um pesquisador achou que via um vulto num laboratório \"assombrado\" e descobriu um ventilador vibrando a quase 19 Hz, grave demais para ser ouvido. Se infrassom gera sensações de assombração ainda é hipótese.",
+        "explicacao": (
+            "Vic Tandy trabalhava até tarde, sozinho, num laboratório que tinha fama de mal-assombrado. Sentiu uma "
+            "ansiedade forte e notou um vulto cinza no canto do olho, mas, ao se virar, não havia nada. No dia "
+            "seguinte, prendeu na morsa a lâmina de um florete de esgrima, e ela começou a vibrar sozinha, sem que "
+            "nada a tocasse. Investigando, descobriu que o exaustor da sala emitia 18,98 Hz, perto da frequência de "
+            "ressonância do olho, de 18 Hz segundo a NASA. A sala tinha o comprimento exato de meia onda, o que "
+            "formava uma onda estacionária. Tandy conjecturou que o vulto era uma ilusão causada pelos próprios "
+            "olhos vibrando, e em 1998 publicou com Tony Lawrence o artigo \"Ghosts in the Machine\". Em 2003, "
+            "pesquisadores britânicos tocaram para cerca de 700 pessoas, em Londres, músicas com um tom de 17 Hz "
+            "escondido em algumas delas. Com o tom presente, 22% relataram mal-estar, tristeza, calafrios ou medo. "
+            "O psicólogo Richard Wiseman disse que os resultados apoiam a ideia de que sons assim, presentes em "
+            "alguns lugares tidos como assombrados, causem sensações atribuídas a fantasmas. A relação, porém, segue "
+            "como sugestão a confirmar."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "hipotese",
+        "fontes": [wiki("Infrasound",
+            "One study has suggested that infrasound may cause feelings of awe or fear in humans. [...] "
+            "On 31 May 2003, a group of UK researchers held a mass experiment, where they exposed some 700 people to music laced with soft 17 Hz sine waves played at a level described as \"near the edge of hearing\" [...] "
+            "took place in the Purcell Room⁠‍—‍‌a concert and performance venue which is part of Central London's Southbank Centre [...] "
+            "Two of the pieces in each concert had 17 Hz tones played underneath. [...] "
+            "The presence of the tone resulted in a significant number (22%) of respondents reporting feeling uneasy or sorrowful, getting chills down the spine or nervous feelings of revulsion or fear. [...] "
+            "Professor Richard Wiseman said \"These results suggest that low frequency sound can cause people to have unusual experiences even though they cannot consciously detect infrasound. "
+            "Some scientists have suggested that this level of sound may be present at some allegedly haunted sites and so cause people to have odd sensations that they attribute to a ghost—our findings support these ideas. [...] "
+            "Vic Tandy, experimental officer and part-time lecturer in the school of international studies and law at Coventry University, along with Dr. Tony Lawrence of the University's psychology department, wrote in 1998 a paper called \"Ghosts in the Machine\" [...] "
+            "Their research suggested that an infrasonic signal of 19 Hz might be responsible for some ghost sightings. "
+            "Tandy was working late one night alone in a supposedly haunted laboratory at Warwick, when he felt very anxious and could detect a grey blob out of the corner of his eye. "
+            "When Tandy turned to face the grey blob, there was nothing. "
+            "The following day, Tandy was working on his fencing foil, with the handle held in a vice. "
+            "Although there was nothing touching it, the blade started to vibrate wildly. "
+            "Further investigation led Tandy to discover that the extractor fan in the lab was emitting a frequency of 18.98 Hz, very close to the resonant frequency of the eye given as 18 Hz by NASA. "
+            "This, Tandy conjectured, was why he had seen a ghostly figure—it was, he believed, an optical illusion caused by his eyeballs resonating. "
+            "The room was exactly half a wavelength in length, and the desk was in the centre, thus causing a standing wave which caused the vibration of the foil.",
+            nome="Infrasound")],
+    },
+    # 12 o Sol vibra, e isso salvou os modelos do Sol
+    {
+        "temas_secundarios": ["estrelas", "fisica_particulas"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "O Sol vibra o tempo todo, movido por ondas sonoras. \"Escutando\" essas vibrações, astrônomos mostraram que o mistério dos neutrinos solares não vinha de falhas nos modelos do Sol, e sim da física de partículas.",
+        "explicacao": (
+            "As oscilações do Sol foram notadas no começo dos anos 1960 como uma variação de brilho e de velocidade "
+            "da superfície que se repetia a cada cerca de 5 minutos. Elas são causadas principalmente por ondas "
+            "sonoras alimentadas e amortecidas pela convecção perto da superfície. Em meados dos anos 1970, ficou "
+            "claro que essas ondas atravessam o Sol inteiro e permitem estudar o seu interior profundo, de um jeito "
+            "parecido com o que a sismologia faz com a Terra. É a heliossismologia. Ela mostrou, por exemplo, que o "
+            "núcleo gira quase como um corpo rígido, enquanto o envoltório gira em velocidades diferentes conforme "
+            "a região. Sua contribuição mais famosa foi no chamado problema dos neutrinos solares: o fluxo dessas "
+            "partículas vindo do Sol não batia com o previsto. A heliossismologia mostrou que a discrepância não "
+            "podia ser causada por falhas nos modelos das estrelas e tinha de ser um problema da física de "
+            "partículas. A solução acabou sendo a oscilação de neutrinos, cuja descoberta experimental foi "
+            "reconhecida com o Prêmio Nobel de Física de 2015. Para acompanhar o Sol sem interrupção, as primeiras "
+            "observações contínuas foram feitas perto do Polo Sul, durante o verão austral."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Helioseismology",
+            "Helioseismology is the study of the structure and dynamics of the Sun through its oscillations. "
+            "These are principally caused by sound waves that are continuously driven and damped by convection near the Sun's surface. "
+            "It is similar to geoseismology, or asteroseismology, which are respectively the studies of the Earth or stars through their oscillations. "
+            "While the Sun's oscillations were first detected in the early 1960s, it was only in the mid-1970s that it was realized that the oscillations propagated throughout the Sun and could allow scientists to study the Sun's deep interior. [...] "
+            "The most notable was to show that the anomaly in the predicted neutrino flux from the Sun could not be caused by flaws in stellar models and must instead be a problem of particle physics. "
+            "The so-called solar neutrino problem was ultimately resolved by neutrino oscillations. "
+            "The experimental discovery of neutrino oscillations was recognized by the 2015 Nobel Prize for Physics. [...] "
+            "The first helioseismic calculations of the Sun's internal rotation profile showed a rough separation into a rigidly-rotating core and differentially-rotating envelope. [...] "
+            "Helioseismology benefits most from continuous monitoring of the Sun, which began first with uninterrupted observations from near the South Pole over the austral summer. [...] "
+            "Solar oscillations were first observed in the early 1960s as a quasi-periodic intensity and line-of-sight velocity variation with a period of about 5 minutes.",
+            nome="Helioseismology")],
+    },
+    # 13 o "segundo som": calor que viaja como onda
+    {
+        "temas_secundarios": ["estados_materia", "termodinamica", "mecanica_quantica"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "No hélio superfluido, o calor não se espalha aos poucos: viaja como onda, num fenômeno chamado \"segundo som\". Em 2019, ele foi visto num material comum, o grafite, a cerca de 120 kelvin.",
+        "explicacao": (
+            "Normalmente o calor se propaga por difusão, sem formar ondas. O "
+            "físico soviético Lev Landau descreveu em 1941 um jeito diferente. No som comum, o que oscila é a "
+            "densidade das moléculas. No \"segundo som\", o que oscila é a densidade das excitações térmicas, uma "
+            "espécie de partículas de vibração, e o resultado é uma onda de temperatura: um pulso de calor que "
+            "avança como um som. O lugar clássico para vê-lo é o hélio líquido abaixo de 2,1768 kelvin, quando ele "
+            "vira um superfluido. Nesse estado, o hélio conduz calor melhor que qualquer outro material conhecido, "
+            "centenas de vezes melhor que o cobre. Por volta de 1,8 kelvin, o segundo som anda a cerca de 20 metros "
+            "por segundo, uma velocidade dez vezes menor que a do som comum no hélio. O fenômeno também aparece em "
+            "alguns cristais muito frios. A surpresa de 2019 foi encontrá-lo no grafite comum, a cerca de 120 "
+            "kelvin, uma das temperaturas mais altas em que já foi observado. Mas só em escala microscópica, porque "
+            "a onda se apaga muito rápido."
+        ),
+        "nivel": 3, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Second_sound",
+            "In condensed matter physics, second sound is a quantum mechanical phenomenon in which heat transfer occurs by wave-like motion, rather than by the more usual mechanism of diffusion. [...] "
+            "It is known as \"second sound\" because the wave motion of entropy and temperature is similar to the propagation of pressure waves in air (sound). "
+            "The phenomenon of second sound was first described by Lev Landau in 1941. [...] "
+            "Normal sound waves are fluctuations in the displacement and density of molecules in a substance; "
+            "second sound waves are fluctuations in the density of quasiparticle thermal excitations (rotons and phonons). [...] "
+            "In this sense, the second sound can also be considered as oscillations of the local temperature. [...] "
+            "Second sound is observed in liquid helium at temperatures below the lambda point, 2.1768 K, where 4He becomes a superfluid known as helium II. "
+            "Helium II has the highest thermal conductivity of any known material (several hundred times higher than copper). [...] "
+            "The speed of second sound is close to zero near the lambda point, increasing to approximately 20 m/s around 1.8 K, about ten times slower than normal sound waves. [...] "
+            "and in some dielectric solids [...] "
+            "In 2019 it was reported that ordinary graphite exhibits second sound at around 120 K. [...] "
+            "Second sound in graphite was subsequently confirmed experimentally and represents, to date, one of the highest temperatures at which this phenomenon has been observed . "
+            "However, this second sound is observed only at the microscale, because the wave dies out exponentially",
+            nome="Second sound")],
+    },
+    # 14 as dunas que cantam
+    {
+        "temas_secundarios": ["paisagens_extremas", "minerais_rochas"],
+        "tipos_espanto": ["misterio_aberto", "escala_absurda"],
+        "gancho": "Em cerca de 35 desertos do mundo, há dunas que \"cantam\": quando a areia escorrega, soltam um ronco grave que pode chegar a 105 decibéis e durar vários minutos. Por que isso acontece ainda está em debate.",
+        "explicacao": (
+            "O som lembra um estrondo grave e contínuo e sai de dunas em forma de meia-lua, as barcanas. Ele "
+            "acompanha uma pequena avalanche de areia, disparada pelo vento ou por alguém andando perto da crista. "
+            "Entre os exemplos estão as dunas de Kelso, na Califórnia, Mingsha Shan, em Dunhuang, na China, e as "
+            "dunas \"que ribombam\" do deserto do Namibe, na África. Nem toda areia canta. Os grãos precisam ser "
+            "arredondados, ter entre 0,1 e 0,5 milímetro e conter sílica, e a umidade precisa estar num ponto "
+            "certo. As explicações competem. Uma propõe que a frequência dependa da velocidade com que as camadas "
+            "de grãos deslizam umas sobre as outras. Outra liga o tom à espessura da camada seca da superfície: o "
+            "som iria e voltaria entre a superfície da duna e a camada úmida de baixo, numa ressonância que o "
+            "amplifica. E o ruído em si poderia vir do atrito entre os grãos ou do ar comprimido entre eles. Em "
+            "algumas praias acontece algo parecido em menor escala: a areia de quartzo muito esférica chia sob os "
+            "pés, e um pouco de sujeira nos grãos basta para silenciá-la."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Singing_sand",
+            "The sand grains have to be round and between 0.1 and 0.5 mm in diameter. "
+            "The sand has to contain silica. "
+            "The sand needs to be at a certain humidity. [...] "
+            "There are various theories about the singing sand mechanism. "
+            "It has been proposed that the sound frequency is controlled by the shear rate. "
+            "Others have suggested that the frequency of vibration is related to the thickness of the dry surface layer of sand. "
+            "The sound waves bounce back and forth between the surface of the dune and the surface of the moist layer, creating a resonance that increases the sound's volume. "
+            "The noise may be generated by friction between the grains or by the compression of air between them. [...] "
+            "This is a natural sound phenomenon of up to 105 decibels, lasting as long as several minutes, that occurs in about 35 desert locations around the world. "
+            "The sound is similar to a loud low-pitch rumble. "
+            "It emanates from crescent-shaped dunes, or barchans. "
+            "The sound emission accompanies a slumping or avalanching movement of sand, usually triggered by wind passing over the dune or by someone walking near the crest. "
+            "Examples of singing sand dunes include California's Kelso Dunes [...] "
+            "the Booming Dunes in the Namib Desert, Africa [...] "
+            "Ming Sha Shan in Dunhuang, China [...] "
+            "The phenomenon is not completely understood scientifically, but it has been found that quartz sand does this if the grains are highly spherical. [...] "
+            "Even small amounts of pollution on the sand grains reduce the friction enough to silence the sand.",
+            nome="Singing sand")],
+    },
+    # 15 a "ola" se comporta como uma onda no coração
+    {
+        "temas_secundarios": ["futebol", "psicologia_social", "ciencia_esporte"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "Físicos descreveram a \"ola\" dos estádios com modelos criados para ondas no músculo do coração. Analisando 14 olas no México, viram que bastam algumas dezenas de torcedores para começar uma.",
+        "explicacao": (
+            "A ola ficou famosa na Copa do Mundo de 1986, no México. Em 2002, o físico húngaro Tamás Vicsek, da "
+            "Universidade Eötvös Loránd, e colegas analisaram vídeos de 14 olas em grandes estádios mexicanos e "
+            "publicaram o estudo na revista Nature. Para interpretar esse comportamento coletivo, usaram uma "
+            "variante de modelos feitos para os chamados meios excitáveis, como o tecido cardíaco. Na arquibancada, "
+            "um setor se levanta com os braços para cima e senta de novo enquanto o seguinte se ergue para repetir "
+            "o movimento, e assim a onda corre pelas fileiras. As medidas mostraram que a onda costuma girar no sentido horário, a cerca de 12 "
+            "metros por segundo, o equivalente a uns 22 assentos por segundo, e que a cada instante ela tem uns 15 "
+            "assentos de largura. Essas observações parecem valer em culturas e esportes diferentes, embora os "
+            "detalhes variem. Os autores sugeriram que entender como a ola é disparada pode ajudar a controlar "
+            "eventos que envolvem multidões agitadas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Wave_(audience)",
+                "In 2002, Tamás Vicsek of the Eötvös Loránd University, Hungary along with his colleagues, analyzed videos of 14 waves at large Mexican football stadiums, developing a standard model of wave behavior (published in Nature). "
+                "He found that it takes only the actions of a few dozen fans to trigger a wave. "
+                "Once started, it usually rolls in a clockwise direction at a rate of about 12 m/s (39 ft/s; 43 km/h; 27 mph), or about 22 seats per second. "
+                "At any given time the wave is about 15 seats wide. "
+                "These observations appear to be applicable across different cultures and sports, though details vary in individual cases.",
+                nome="Wave (audience)"),
+            {"url": EPMC + "search?query=DOI:10.1038/419131a&resultType=core&format=json",
+             "titulo": "Mexican waves in an excitable medium (Farkas, Helbing e Vicsek, Nature, 2002) — resumo via Europe PMC", "idioma": "en",
+             "trecho": "The Mexican wave, or La Ola, which rose to fame during the 1986 World Cup in Mexico, surges through the rows of spectators in a stadium as those in one section leap to their feet with their arms up, "
+                "and then sit down again as the next section rises to repeat the motion. "
+                "To interpret and quantify this collective human behaviour, we have used a variant of models that were originally developed to describe excitable media such as cardiac tissue. "
+                "Modelling the reaction of the crowd to attempts to trigger the wave reveals how this phenomenon is stimulated, and may prove useful in controlling events that involve groups of excited people."},
+        ],
+    },
+]

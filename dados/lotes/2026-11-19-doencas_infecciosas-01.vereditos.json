@@ -1,0 +1,162 @@
+{
+ "lote": "2026-11-19-doencas_infecciosas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "doencas_infecciosas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Broad Street (127 e 420 mortos, ressalva de Snow, cervejaria, experimento natural). Nota 3."
+   },
+   {
+    "id": "doencas_infecciosas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (10% x 4%, 18,3%, 2,2%, 1,2%); partos fingidos na rua; 'possivelmente' mantido."
+   },
+   {
+    "id": "doencas_infecciosas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Mary Mallon (25 casos e 400 portadores por extenso, North Brother, 1907–1938)."
+   },
+   {
+    "id": "doencas_infecciosas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Finlay e Lazear (1881, Aedes, picada deliberada, caderno de 1947)."
+   },
+   {
+    "id": "doencas_infecciosas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas 'dez vezes mais' é taxa, não número absoluto; aspas em 'obsessão cara' sugerem citação literal.",
+    "correcao": "Explicação: 'e, em 1906, morreram dez vezes mais que os brancos' -> 'e, em 1906, morriam a uma taxa dez vezes maior que a dos brancos'. Gancho: 'que afastasse o médico com uma \"obsessão cara\" por mosquitos' -> 'que afastasse o médico por sua obsessão cara com mosquitos'."
+   },
+   {
+    "id": "doencas_infecciosas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Dracunculiasis (3,5 milhões em 1986, 10 em 2025, sem vacina nem remédio, filtros); Carter Center confirma os três países."
+   },
+   {
+    "id": "doencas_infecciosas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Rinderpest; mas o vírus não foi 'extinto' (estoques em laboratório): a doença foi erradicada.",
+    "correcao": "Gancho: 'era a peste bovina, extinta em 2011.' -> 'era a peste bovina, declarada erradicada em 2011.'"
+   },
+   {
+    "id": "doencas_infecciosas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo confere (estudo de 2020, 528 a.C.); mas 'séculos XI e XII' e 'século V' sem era parecem a.C.",
+    "correcao": "'apontavam para os séculos XI e XII, com margem que chegava ao século V.' -> 'apontavam para os séculos XI e XII d.C., com margem que chegava ao século V d.C.'"
+   },
+   {
+    "id": "doencas_infecciosas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Corrige equívoco listado (máscara de bico); Plague doctor costume confere. Nota 3."
+   },
+   {
+    "id": "doencas_infecciosas-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: 'quarentena = quarenta dias' é óbvio em português; a etapa de 30 dias em Ragusa vem sem porquê, e o resto é lista de datas."
+   },
+   {
+    "id": "doencas_infecciosas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Sequência confere; mas o Nobel: a fonte considera mais provável o indicador único e os laços do comitê do que a oposição local; 'em 1909... de uma vez' exagera; Cruz era mentor, não amigo.",
+    "correcao": "(a) Gancho: 'Em 1909, descreveu parasita, inseto transmissor, hospedeiros e sintomas' -> 'A partir de 1909, descreveu parasita, inseto vetor, hospedeiros e sintomas'. (b) 'em homenagem ao amigo' -> 'em homenagem ao seu mentor, Oswaldo Cruz'. (c) 'Descrever de uma vez uma doença desconhecida' -> 'Ter descrito em detalhe uma doença desconhecida'. (d) Trocar as duas últimas frases por: 'Chagas foi indicado ao Nobel em 1913 e em 1921, mas não ganhou. Muitos atribuem isso à oposição que ele sofreu no Brasil, onde houve quem duvidasse da existência da doença. A análise dos arquivos do Nobel, porém, aponta outros motivos: a cada vez ele teve um único indicador, brasileiro, e o comitê se ligava quase só a cientistas da Europa e dos EUA.'"
+   },
+   {
+    "id": "doencas_infecciosas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com History of polio; mas Martinez-Bakker et al. (PLoS Biology 2015) atribuem a expansão de meados do século à demografia (baby boom), não à higiene; confiança alta não se sustenta.",
+    "correcao": "1) confianca -> consenso_parcial. 2) Trocar a frase da epidemia de 1952 por: 'Mas a explicação tem limites: um estudo de 2015, com dados dos EUA de meados do século XX, concluiu que o avanço da pólio nessas décadas se explica melhor pelo baby boom, que multiplicou as crianças suscetíveis, do que pela higiene. Os autores admitem, porém, que a higiene pode ter pesado no surgimento das epidemias, por volta de 1900.' 3) Fonte: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002172 com trecho do resumo."
+   },
+   {
+    "id": "doencas_infecciosas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Cocoliztli epidemics (5–15 milhões, Paratyphi C, contestação de Ávila-Arcos); consenso_parcial e misterio_aberto."
+   },
+   {
+    "id": "doencas_infecciosas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Ali Maow Maalin; três imprecisões de redação (guia, não motorista; colega de gênero indefinido; medo, não fuga).",
+    "correcao": "1) 'guiou um carro que levava duas crianças com varíola' -> 'foi como guia no carro que levava duas crianças com varíola'; 2) 'até que uma colega o denunciou' -> 'até que um colega da enfermagem o denunciou'; 3) 'contou que fugiu dela porque a agulhada parecia doer' -> 'contou que não se vacinou por medo, porque a injeção parecia doer'."
+   },
+   {
+    "id": "doencas_infecciosas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Explicação confere com Leprosy; o gancho generaliza (15–20% de uma espécie) e reforça a suspeita.",
+    "correcao": "Gancho: 'Tatus do sul dos EUA carregam a bactéria da hanseníase e podem passá-la a pessoas.' -> 'Parte dos tatus do sul dos EUA carrega a bactéria da hanseníase e pode passá-la a pessoas.'; 'provavelmente dos primeiros europeus nas Américas' -> 'e a suspeita recai sobre os primeiros europeus nas Américas'."
+   },
+   {
+    "id": "doencas_infecciosas-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números e datas conferem; mas o 'sem prova de participação' é atribuído aos 461 deportados, quando a fonte o aplica às vítimas em geral (os deportados tinham antecedentes). Nota 3.",
+    "correcao": "Trocar 'A repressão deixou 945 presos na Ilha das Cobras, 30 mortos, 110 feridos e 461 deportados para o Acre, muitos deles sem prova de que tivessem participado.' por 'A repressão deixou 945 presos na Ilha das Cobras, 30 mortos, 110 feridos e 461 deportados para o Acre, e atingiu sobretudo os mais pobres, cuja participação nem sempre foi comprovada.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "doencas_infecciosas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Taxa dez vezes maior e obsessão sem aspas aplicadas; números conferem."
+   },
+   {
+    "id": "doencas_infecciosas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Declarada erradicada em 2011' aplicado; tudo confere com Rinderpest."
+   },
+   {
+    "id": "doencas_infecciosas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Datas com d.C. aplicadas; estudo de 2020 confere."
+   },
+   {
+    "id": "doencas_infecciosas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As quatro correções aplicadas; o Nobel segue a fonte (indicador único, comitê europeu e americano)."
+   },
+   {
+    "id": "doencas_infecciosas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "consenso_parcial, ressalva do estudo de 2015 e fonte nova aplicados. Ajuste pontual aplicado sem nova verificação: tirado 'grandes' do gancho (as de meados do século são atribuídas ao baby boom).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "doencas_infecciosas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções de redação aplicadas; números conferem."
+   },
+   {
+    "id": "doencas_infecciosas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Parte dos tatus' e 'a suspeita recai' aplicados."
+   },
+   {
+    "id": "doencas_infecciosas-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Frase da repressão segue a fonte; números conferem. Nota 3."
+   }
+  ]
+ }
+}
