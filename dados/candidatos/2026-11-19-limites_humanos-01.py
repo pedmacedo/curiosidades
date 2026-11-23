@@ -1,0 +1,551 @@
+LOTE = "2026-11-19-limites_humanos-01"
+AREA = "esportes_jogos"
+TEMA = "limites_humanos"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 o baço gigante dos Sama-Bajau
+    {
+        "temas_secundarios": ["evolucao", "genetica", "corpo_extremo"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "Mergulhadores do povo Sama-Bajau, do Sudeste Asiático, passam mais de 5 horas por dia submersos em apneia. Um estudo de 2018 achou neles baços cerca de 50% maiores que os de um povo vizinho de terra firme.",
+        "explicacao": (
+            "Os Sama-Bajau, povo nômade do mar, vivem há séculos de colher alimento debaixo d'água, e o tempo que "
+            "seus mergulhadores passam em apneia foi descrito como o maior já registrado em humanos. Mais de mil "
+            "anos desse modo de vida parecem ter deixado marcas no DNA. Num estudo de 2018, o baço deles era cerca "
+            "de 50% maior que o dos Saluan, vizinhos que vivem em terra. O tamanho importa porque o baço funciona "
+            "como uma reserva: quando o mergulhador está no fundo, ele se contrai e despeja no sangue mais "
+            "hemácias carregadas de hemoglobina, o que permite mergulhos mais longos sem respirar. A diferença "
+            "parece ligada a uma variante do gene PDE10A. Outros genes com sinais de seleção nesse povo têm a ver "
+            "com o aperto dos vasos sanguíneos das extremidades, parte do reflexo de mergulho, e com o controle da "
+            "acidez do sangue quando o gás carbônico se acumula. Segundo os pesquisadores, essas variantes "
+            "provavelmente ficaram mais comuns por seleção natural. Algo parecido aparece nas haenyeo, mergulhadoras "
+            "da Coreia do Sul: durante a apneia, o coração delas desacelera de forma acentuada, e elas toleram o "
+            "frio de modo excepcional, com indícios de variação genética por trás dessas vantagens."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Sama-Bajau",
+                "Divers work long days with the \"greatest daily apnea diving time reported in humans\" of greater than 5 hours per day submerged. [...] "
+                "More than a thousand years of subsistence freediving associated with their life on the sea appear to have endowed the Bajau with several genetic adaptations to facilitate their lifestyle. "
+                "A 2018 study showed that Bajau spleens are about 50 percent larger than those of a neighbouring land-based group, the Saluan, letting them store more haemoglobin-rich blood, which is expelled into the bloodstream when the spleen contracts at depth, allowing breath-holding dives of longer duration. "
+                "This difference is apparently related to a variant of the PDE10A gene. "
+                "Other genes that appear to have been under selection in the Bajau include BDKRB2, which is related to peripheral vasoconstriction, involved in the diving response; "
+                "FAM178B, a regulator of carbonic anhydrase, which is related to maintaining blood pH when carbon dioxide accumulates; and another one involved in the response to hypoxia. "
+                "These adaptations were found to likely result from natural selection",
+                nome="Sama-Bajau"),
+            wiki("Diving_reflex",
+                "Having harvested underwater seafood over centuries, the nomadic Sama-Bajau people of Southeast Asia have enlarged spleens and more intense peripheral vasoconstriction during breath-hold diving [...] "
+                "Similarly, the Haenyeo women divers of South Korea have pronounced bradycardia and exceptional cold tolerance during breath-hold diving, with evidence of adaptive genetic variation contributing to these advantages.",
+                nome="Diving reflex"),
+        ],
+    },
+    # 2 John Stapp: 46,2 g, nascido em Salvador, e a Lei de Murphy
+    {
+        "temas_secundarios": ["transportes", "historia_medicina", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Em 1954, o médico John Stapp, nascido em Salvador, freou num trenó-foguete a 1.017 km/h e aguentou 46,2 g. Foi ele quem popularizou a Lei de Murphy, nascida em testes anteriores com trenós.",
+        "explicacao": (
+            "Stapp era filho de missionários batistas e nasceu na Bahia, mas fez carreira como médico da Força "
+            "Aérea dos Estados Unidos. A pergunta dele era quanta desaceleração um corpo humano suporta num "
+            "acidente, e a cobaia mais frequente dos testes foi ele mesmo. Nos trenós-foguete, quebrou o pulso "
+            "direito em duas ocasiões, fraturou costelas, perdeu obturações dos dentes e teve sangramentos na "
+            "retina que o deixaram temporariamente sem enxergar. Na 29.ª e última corrida, em 10 de dezembro de "
+            "1954, chegou a 1.017 km/h, acima do recorde de velocidade em terra, e suportou 46,2 g, a maior "
+            "aceleração conhecida enfrentada voluntariamente por alguém. Descreveu a sensação nos olhos como a de "
+            "arrancar um molar sem anestesia. Os testes mostraram que, bem preso por cintos, um piloto sobrevive "
+            "a impactos muito maiores do que se pensava, e que o assento virado para trás é o mais seguro. Num "
+            "teste anterior, um engenheiro chamado Edward Murphy instalou sensores no cinto de Stapp; quando "
+            "eles falharam por um erro de ligação, Murphy reclamou do técnico, e a frase virou lei. A origem "
+            "exata é debatida, mas a forma final, \"tudo o que pode dar errado vai dar errado\", é atribuída a "
+            "Stapp, que a apresentou numa entrevista coletiva."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("John_Stapp",
+                "Born in Salvador de Bahia, Brazil, Stapp was the eldest of four sons of Reverend Charles Franklin Stapp and Mrs. Mary Louise Shannon, Baptist missionaries. [...] "
+                "Stapp, one of the most frequent volunteers on the runs, sustained a fracture of his right wrist during the runs on two separate occasions, also broke ribs, lost fillings from his teeth and developed bleeding into his retinas that caused temporary vision loss [...] "
+                "It proved beyond a doubt that this position was the safest for aircraft passengers and required little harness support, and that a human can withstand much greater deceleration than in the forward position. [...] "
+                "His work showed that a pilot could walk away from crashes when properly protected by harnesses if the seat does not break loose. [...] "
+                "By riding the decelerator sled, in his 29th and last ride at Holloman Air Force Base in New Mexico, Stapp demonstrated that a human can withstand at least 46.2 g (in the forward position, with adequate harnessing). "
+                "This is the highest known acceleration voluntarily encountered by a human, set on December 10, 1954. "
+                "Stapp reached a speed of 632 mph (1,017 km/h), which exceeded the land speed record and made him the fastest man on Earth. "
+                "Stapp believed that the tolerance of humans to acceleration had not yet been reached in tests. "
+                "He believed it is much greater than thought possible. "
+                "He said \"I felt a sensation in the eyes, somewhat like the extraction of a molar without anesthetic,\" [...] "
+                "Stapp is credited with being the popularizer, as well as the author of the final form of the principle known as Murphy's law, \"Anything that can go wrong, will go wrong.\"",
+                nome="John Stapp"),
+            wiki("Murphy%27s_law",
+                "its exact origins are debated, but it is generally agreed it originated from Murphy and his team following a mishap during rocket sled tests some time in 1948 or 1949, and was finalized and first popularized by testing project head John Stapp during a later press conference. [...] "
+                "Edward Murphy proposed using electronic strain gauges attached to the restraining clamps of Stapp's harness to measure the force exerted on them by his rapid deceleration. [...] "
+                "Frustration with a strap transducer which was malfunctioning due to an error in wiring the strain gage bridges caused him to remark – \"If there is any way to do it wrong, he will\" – referring to the technician who",
+                nome="Murphy's law"),
+        ],
+    },
+    # 3 Randy Gardner: 11 dias sem dormir
+    {
+        "temas_secundarios": ["sono_ritmos", "neurociencia", "memoria"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Na virada de 1963 para 1964, o estudante Randy Gardner, de 17 anos, ficou 11 dias sem dormir. Disseram que ele saiu quase ileso, mas o médico que o acompanhou registrou paranoia, alucinações e falhas de memória.",
+        "explicacao": (
+            "Gardner, de San Diego, ficou 264,4 horas acordado e superou o recorde anterior, de 260 horas. A "
+            "tentativa teve a presença do pesquisador do sono William Dement, de Stanford, e a saúde do rapaz foi "
+            "monitorada pelo oficial da Marinha John Ross. Por muito tempo se repetiu que a experiência mostrava "
+            "que a privação extrema de sono tinha pouco efeito além do mau humor, em boa parte porque Dement "
+            "contou que, no décimo dia, Gardner o venceu no fliperama. O relato de Ross é outro: mudanças de "
+            "humor, dificuldade de concentração, problemas de memória recente, paranoia e alucinações. No "
+            "décimo primeiro dia, pediram que ele subtraísse sete seguidamente a partir de 100; parou no 65 e "
+            "explicou que tinha esquecido o que estava fazendo. Depois, dormiu 14 horas e 46 minutos, e exames "
+            "semanas mais tarde não mostraram diferenças importantes. Em 2017, porém, ele disse ter insônia séria "
+            "desde por volta de 2007 e culpou a experiência. Recordes assim são difíceis de conferir, porque a "
+            "pessoa pode ter microcochilos sem perceber. Desde 1997, o Guinness não aceita novas tentativas, por "
+            "segurança."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Randy_Gardner_(record_holder)",
+            "Randy Gardner (born 1946) is an American man from San Diego, California, who once held the record for the longest amount of time a human has gone without sleep. "
+            "Between December 1963 and January 1964, the then 17-year-old Gardner stayed awake for 11 days and 25 minutes (264.4 hours), breaking the previous record of 260 hours held by Tom Rounds. "
+            "Gardner's record was then broken repeatedly until 1997, when Guinness World Records ceased accepting new attempts for safety reasons. [...] "
+            "Gardner's record attempt was attended by Stanford sleep researcher Dr. William C. Dement, while his health was monitored by Lt. Cmdr. John J. Ross. [...] "
+            "It has been claimed that Gardner's experiment demonstrated that extreme sleep deprivation has little effect, other than the mood changes associated with tiredness, primarily due to a report by researcher William C. Dement, who stated that on the tenth day of the experiment, Gardner had been, among other things, able to beat Dement at pinball. "
+            "However, contrary to this, Lieutenant Commander John J. Ross, who monitored his health, reported serious cognitive and behavioral changes. "
+            "These included moodiness, problems with concentration and short-term memory, paranoia, and hallucinations. "
+            "On the eleventh day, when he was asked to subtract seven repeatedly, starting with 100, he stopped at 65. "
+            "When asked why he had stopped, he replied that he had forgotten what he was doing. [...] "
+            "After completing his record, Gardner slept for 14 hours and 46 minutes [...] "
+            "with follow-up sleep recordings taken one, six, and ten weeks after the fact, showing no significant differences. "
+            "However, in 2017, Gardner reported that he started experiencing serious insomnia around 2007, decades after his sleep experiment, and believed his participation in the 1960s sleep study was to blame. [...] "
+            "It is difficult to determine the accuracy of a sleep deprivation period unless the participant is carefully observed to detect short microsleeps, which the participant might not even notice.",
+            nome="Randy Gardner (record holder)")],
+    },
+    # 4 Angus Barbieri: 382 dias de jejum
+    {
+        "temas_secundarios": ["historia_medicina", "corpo_extremo"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "Em 1965, um escocês de 207 kg começou um jejum acompanhado por médicos que durou 382 dias, só com chá, café, água com gás e vitaminas. Terminou com 82 kg, e a primeira refeição foi um ovo cozido.",
+        "explicacao": (
+            "Angus Barbieri tinha 27 anos quando se internou num hospital de Dundee, na Escócia. Os médicos "
+            "planejavam um jejum curto, porque consideravam os curtos preferíveis aos longos, mas ele insistiu em "
+            "continuar: estava se adaptando bem e queria chegar ao peso que considerava ideal. Começou no "
+            "hospital, mas passou a maior parte do tempo em casa, voltando para exames de sangue e de urina. "
+            "Nesse período, consumiu apenas vitaminas, eletrólitos, um pouco de levedura e bebidas sem calorias, "
+            "às vezes com leite ou açúcar, sobretudo nas últimas semanas. Com o tempo, perdeu toda a vontade de "
+            "comer, e há relatos de que chegou a ficar 48 dias sem evacuar. Em 11 de julho de 1966, comeu um ovo "
+            "cozido e uma fatia de pão com manteiga e disse aos repórteres que tinha esquecido o gosto da comida. "
+            "Perdeu 125 kg. Um estudo de 1973 encontrou-o com 89 kg e concluiu que o jejum prolongado não lhe "
+            "causara efeitos nocivos. O Guinness reconheceu o recorde na edição de 1971, mas hoje não incentiva "
+            "recordes de jejum, por medo de estimular comportamentos perigosos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Angus_Barbieri%27s_fast",
+            "was a Scottish man who fasted for 382 days, from 14 June 1965 to 30 June 1966. "
+            "He subsisted on tea, coffee, sparkling water, vitamins and yeast extract while living at home in Tayport, Scotland, frequently visiting Maryfield Hospital for medical evaluation. "
+            "Barbieri went from almost 33 stone / 456 pounds (207 kg) to 13 stone / 180 pounds (82 kg), losing 20 stone / 276 pounds (125 kg) and setting a record for the length of a fast. [...] "
+            "In 1965, at the age of 27, Barbieri checked into the Maryfield Hospital in Dundee. "
+            "Initially only a short fast was planned; doctors believed short fasts were preferable to longer ones. "
+            "Barbieri insisted on continuing because \"he adapted so well and was eager to reach his 'ideal' weight\". [...] "
+            "As the fast progressed, he lost all desire for food. "
+            "For 382 days, from 14 June 1965 through 30 June 1966, he consumed only vitamins, electrolytes, an unspecified amount of yeast (a source of all essential amino acids) and zero-calorie beverages such as tea, coffee, and sparkling water, although he occasionally added milk and/or sugar to the beverages, especially during the final weeks of the fast. "
+            "Barbieri began his treatment in the hospital but for most of the 382 days lived at home, visiting the hospital for outpatient checkups, including blood and urine samples. "
+            "Stool tests were not taken but he reportedly went up to 48 days between stools. [...] "
+            "Angus Barbieri ate his first solid meal at 10 AM on 11 July 1966: a boiled egg and a slice of buttered bread. "
+            "He said to the gathered newspaper reporters and photographers, \"I have forgotten what food tasted like [...] "
+            "In the 1971 edition of The Guinness Book of Records, Barbieri's 382-day fast was recognized as the longest recorded. [...] "
+            "Guinness does not actively encourage records relating to fasting for fear of encouraging unsafe behaviour. [...] "
+            "a 1973 study found that Barbieri maintained a healthy weight of 14 stone / 196 pounds (89 kg), concluding that \"prolonged fasting in this patient had no ill-effects\".",
+            nome="Angus Barbieri's fast")],
+    },
+    # 5 Anna Bågenholm: 13,7 °C e de volta
+    {
+        "temas_secundarios": ["corpo_extremo", "historia_medicina", "termodinamica"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Em 1999, uma médica sueca ficou 80 minutos presa sob o gelo na Noruega. Chegou ao hospital com o corpo a 13,7 °C, passou 2 h 35 min sem batimentos e se recuperou quase por completo.",
+        "explicacao": (
+            "Anna Bågenholm, então com 29 anos, esquiava perto de Narvik quando caiu de cabeça num riacho "
+            "congelado. Ficou presa sob uma camada de gelo de 20 centímetros, com só os pés e os esquis para fora. "
+            "Achou um bolsão de ar e se manteve consciente por 40 minutos, até a circulação parar. Os colegas, "
+            "também médicos, fizeram massagem cardíaca assim que ela foi retirada, e a reanimação continuou no "
+            "helicóptero até o hospital de Tromsø. Lá, o eletrocardiograma não mostrava sinal de vida, mas o "
+            "chefe da emergência seguiu a regra de aquecer o paciente antes de declarar a morte. Uma máquina "
+            "de circulação extracorpórea aqueceu o sangue fora do corpo, e o coração voltou a bater às 22h15. "
+            "Mais de cem médicos e enfermeiros se revezaram por nove horas. Ela acordou dez dias depois, "
+            "paralisada do pescoço para baixo, e se recuperou quase totalmente, restando sintomas leves nas mãos "
+            "e nos pés. O segredo, segundo o médico, é que o corpo esfriou por inteiro antes de o coração parar: "
+            "com o cérebro tão frio, os neurônios precisavam de pouquíssimo oxigênio. Abaixo de 28 °C, sobrevivem "
+            "só de 10% a 33% dos adultos. O recorde anterior, 14,4 °C, era de uma criança."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Anna_B%C3%A5genholm",
+            "who survived after a skiing accident in 1999 left her trapped under a layer of ice for 80 minutes in freezing water. [...] "
+            "After rescue, Bågenholm was transported by helicopter to the Tromsø University Hospital, where a team of more than a hundred doctors and nurses worked in shifts for nine hours to save her life. "
+            "Bågenholm woke up ten days after the accident, paralyzed from the neck down [...] "
+            "Although she has made an almost full recovery from the incident, late in 2009 she was still having minor symptoms in hands and feet related to nerve injury. [...] "
+            "At the time of the incident, she was 29 years old [...] "
+            "On that day, Bågenholm was skiing in the mountains outside of Narvik [...] "
+            "She fell headfirst onto a layer of ice on a frozen stream near a waterfall, landing on her back. [...] "
+            "Her body became trapped under the ice, which was 20 centimetres (7.9 in) thick. "
+            "When Falkenberg and Næsheim found Bågenholm, only her feet and skis were above the ice. [...] "
+            "she found an air pocket and was able to remain conscious for 40 minutes before experiencing circulatory arrest. [...] "
+            "Falkenberg and Næsheim, both doctors, began giving her cardiopulmonary resuscitation (CPR). [...] "
+            "The helicopter emergency team continued to give her CPR during the flight [...] "
+            "Her body temperature at this point was 13.7 °C (56.7 °F), the lowest survived body temperature ever recorded in a human with accidental hypothermia at the time. "
+            "Dr. Mads Gilbert, an anesthesiologist and the chief of the hospital's emergency room, proceeded with the resuscitation attempt. [...] "
+            "The electrocardiogram connected to her showed no signs of life, but Gilbert knew patients should be \"warmed up before you declare them dead\". [...] "
+            "she was connected to a cardiopulmonary bypass machine that warmed up her blood outside of her body before it was reinserted into her veins. "
+            "Bågenholm's first heart beat was recorded at 22:15 [...] "
+            "She had no heart beat for 2 hours 35 minutes, from 19:40 till 22:15. [...] "
+            "The survival rate for adults whose body temperature has decreased to below 28 °C (82 °F) is 10%–33%. "
+            "Prior to Bågenholm's accident, the lowest survived body temperature was 14.4 °C (57.9 °F), which had been recorded in a child. [...] "
+            "\"Her body had time to cool down completely before the heart stopped. "
+            "Her brain was so cold when the heart stopped that the brain cells needed very little oxygen, so the brain could survive for quite a prolonged time.\"",
+            nome="Anna Bågenholm")],
+    },
+    # 6 Barkley Marathons: a corrida inspirada numa fuga de prisão
+    {
+        "temas_secundarios": ["historia_esportes", "personagens_esquecidos"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "Uma das ultramaratonas mais duras do mundo nasceu de uma piada: o assassino de Martin Luther King fugiu da prisão e andou só 13 km em 54 horas. O criador da prova pensou: \"eu faria pelo menos 160\".",
+        "explicacao": (
+            "Em 1977, James Earl Ray, condenado pelo assassinato de Luther King, fugiu da penitenciária de Brushy "
+            "Mountain, no Tennessee, e percorreu cerca de 13 km nas 54 horas seguintes. Debochando da marca, Gary "
+            "Cantrell, que usa o apelido Lazarus Lake, decidiu que faria pelo menos 100 milhas, cerca de 160 km, "
+            "na mata vizinha. Assim nasceu a Barkley Marathons, corrida pela primeira vez em 1986 e batizada com "
+            "o nome de um vizinho dele. No formato atual, são cinco voltas sem marcação, oficialmente de 32 km "
+            "cada, mas estimadas em cerca de 40 km, com limite de 60 horas e água em só dois pontos. Para provar "
+            "que passaram por todo o percurso, os corredores precisam achar de 9 a 15 livros escondidos e "
+            "arrancar de cada um a página com o número do seu peito. A inscrição custa 1,60 dólar, inclui "
+            "perguntas absurdas e uma redação, e a largada é dada quando Cantrell acende um cigarro. Desde 2009, "
+            "com a prisão fechada, o trajeto passa por um túnel sob ela. Até o fim da edição de 2026, a prova "
+            "completa tinha sido terminada dentro do prazo só 26 vezes, por 20 pessoas. Em 2024, a britânica "
+            "Jasmin Paris foi a primeira mulher a conseguir, 99 segundos antes do limite."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Barkley_Marathons",
+            "The Barkley Marathons is an ultramarathon trail race held each year in Frozen Head State Park in Morgan County, Tennessee, United States. [...] "
+            "The course, which varies from year to year, consists of five loops of 20 miles (32 km) of off-trail course for a total of 100 miles (160 km) of harsh terrain. "
+            "The race is limited to a 60-hour period from the start of the first loop [...] "
+            "The idea for the race was inspired by the 1977 escape of James Earl Ray, who was convicted for the assassination of Martin Luther King Jr., from nearby Brushy Mountain State Penitentiary. "
+            "Ray covered only about 8 miles (13 km) after escaping for 54 hours. "
+            "Mocking Ray's low mileage, Cantrell said to himself, \"I could do at least 100 miles\". "
+            "Thus, the Barkley Marathons were born. "
+            "Cantrell named the race for his longtime neighbor and running companion, Barry Barkley. [...] "
+            "The race was first run in 1986. [...] "
+            "In 2009, Brushy Mountain State Penitentiary closed, allowing it to eventually become part of the Barkley course including a tunnel under the prison and a pass by the wall through which Ray escaped. [...] "
+            "In 2024, Paris became the first woman to complete all five loops within the time limit, finishing the event 99 seconds before the 60-hour cut-off. [...] "
+            "and pay a $1.60 application fee, representing one penny per mile for both the 60-mile and 100-mile races. "
+            "Additionally, an entry form must also be completed which includes bizarre and irrelevant questions. [...] "
+            "This is followed by a written essay on \"Why I Should be Allowed to Run in the Barkley.\" [...] "
+            "It currently consists of an unmarked loop [...] "
+            "the current estimate being around 25 miles (40 km) per loop while \"officially\" the loop is still stated to be 20 miles (32 km). [...] "
+            "There are no aid stations, except water in two places. [...] "
+            "the race officially begins when Cantrell lights a cigarette. "
+            "In addition to running, competitors must find between 9 and 15 books along the course (the exact number varies each year) and remove the page corresponding to the runner's race number from each book as proof of completion. [...] "
+            "As of the end of the 2026 event, the full, five-loop race has been completed within 60 hours a total of 26 times by 20 runners.",
+            nome="Barkley Marathons")],
+    },
+    # 7 Vesna Vulović: o recorde de queda e a contestação
+    {
+        "temas_secundarios": ["transportes", "guerra_fria"],
+        "tipos_espanto": ["historia_humana", "misterio_aberto"],
+        "gancho": "O Guinness lista a comissária Vesna Vulović como sobrevivente da queda mais alta sem paraquedas: 10.160 m, em 1972. Em 2009, jornalistas disseram que o avião foi abatido a 800 m; as autoridades tchecas rejeitaram a tese.",
+        "explicacao": (
+            "Em 26 de janeiro de 1972, uma explosão no compartimento de bagagens partiu um DC-9 da companhia "
+            "iugoslava JAT sobre a então Tchecoslováquia. Os investigadores atribuíram a explosão a uma bomba numa "
+            "maleta. Das 28 pessoas a bordo, só Vesna sobreviveu. Segundo os investigadores, ela "
+            "ficou presa por um carrinho de comida dentro de um pedaço da fuselagem, que caiu inclinado numa "
+            "encosta coberta de mata e de neve, o que amorteceu o impacto. Fraturou o crânio, três vértebras, as "
+            "pernas, a pelve e costelas, passou dias em coma e ficou temporariamente paralisada da cintura para "
+            "baixo, mas voltou a andar em dez meses. Não guardou memória da queda. Os médicos dela atribuíram "
+            "parte da sorte à pressão baixa, que a teria feito desmaiar logo após a despressurização; ela "
+            "contou que, sabendo disso, tinha tomado muito café antes do exame médico da empresa para ser "
+            "aprovada. Em 1985, o Guinness reconheceu o recorde. Em 2009, dois jornalistas de Praga disseram que "
+            "o avião fora abatido por engano pela força aérea tchecoslovaca, a 800 m, e que o recorde seria "
+            "uma farsa da polícia secreta. A autoridade de aviação tcheca chamou a ideia de teoria da "
+            "conspiração, e um dos jornalistas admitiu que as provas eram circunstanciais. O Guinness mantém o "
+            "recorde."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Vesna_Vulovi%C4%87",
+            "3 January 1950 – 23 December 2016) was a Serbian flight attendant who survived the highest fall without a parachute: 10,160 metres (33,330 feet; 6.31 miles). "
+            "She was the sole survivor of JAT Flight 367 after an explosion tore through the baggage compartment on 26 January 1972 [...] "
+            "Air safety investigators attributed the explosion to a briefcase bomb. [...] "
+            "Following the bombing, Vulović spent days in a coma and was hospitalized for several months. "
+            "She suffered a fractured skull, three broken vertebrae, broken legs, broken ribs, and a fractured pelvis. "
+            "These injuries resulted in her being temporarily paralyzed from the waist down. [...] "
+            "She had little to no memory of the incident [...] "
+            "The aircraft, a McDonnell Douglas DC-9 [...] "
+            "Vulović was the only survivor of the 28 passengers and crew. [...] "
+            "Air safety investigators attributed Vulović's survival to her being trapped by a food trolley in the DC-9's fuselage as it broke away from the rest of the aircraft and plummeted towards the ground. [...] "
+            "Investigators believed that the fuselage, with Vulović pinned inside, landed at an angle in a heavily wooded and snow-covered mountainside, which cushioned the impact. "
+            "Vulović's physicians concluded that her history of low blood pressure caused her to pass out quickly after the cabin depressurized [...] "
+            "Vulović said that she was aware of her low blood pressure before applying to become a flight attendant and knew that it would result in her failing her medical examination, but she drank an excessive amount of coffee beforehand and was accepted. [...] "
+            "Within ten months, Vulović had regained the ability to walk [...] "
+            "In 1985, The Guinness Book of World Records recognized Vulović as the world record holder for surviving the highest fall without a parachute [...] "
+            "In 2009, Peter Hornung and Pavel Theiner, two Prague-based journalists, claimed that Flight 367 had been mistaken for an enemy aircraft and shot down by the Czechoslovak Air Force at an altitude of 800 metres (2,600 ft), far lower than the official altitude of 10,160 metres (33,330 ft). "
+            "The two claimed that the Czechoslovak State Security had conjured up Vulović's record fall as part of a cover-up. [...] "
+            "The Czech Civil Aviation Authority dismissed the journalists' claim, calling it a conspiracy theory. "
+            "Hornung conceded that the pair's evidence was only circumstantial. [...] "
+            "Guinness World Records continues to list her as the record-holder for surviving the highest fall without a parachute.",
+            nome="Vesna Vulović")],
+    },
+    # 8 Juliane Koepcke: a queda na Amazônia e o filme de Herzog
+    {
+        "temas_secundarios": ["amazonia", "cinema_fotografia"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Na véspera do Natal de 1971, um raio atingiu um avião sobre a Amazônia peruana. Juliane Koepcke caiu cerca de 3 km presa à poltrona, sobreviveu e passou mais de uma semana sozinha na selva até achar ajuda.",
+        "explicacao": (
+            "Juliane era filha de dois zoólogos alemães que viviam no Peru. Aos 14 anos, foi com eles montar a "
+            "estação de pesquisa Panguana, na floresta, onde aprendeu a sobreviver na mata. Em 24 de dezembro de "
+            "1971, um dia depois da formatura no colégio, embarcou com a mãe num voo da LANSA. O avião foi "
+            "atingido por um raio, se desfez no ar, e ela caiu ainda presa à fileira de poltronas. Especialistas "
+            "acham que o conjunto de três assentos pode ter funcionado como um paraquedas, e que a corrente de ar "
+            "da tempestade e a mata fechada podem ter amortecido a queda. Com a clavícula quebrada, um corte no "
+            "braço e um ligamento do joelho rompido, seguiu um riacho até um rio. Larvas de mosca se instalaram "
+            "no ferimento. Depois de nove dias, achou um acampamento de madeireiros, que despejaram gasolina no "
+            "corte e a levaram de canoa por 11 horas. Até 14 outros passageiros sobreviveram à queda, mas "
+            "morreram à espera de resgate. Juliane virou bióloga especialista em morcegos e, em 2000, assumiu "
+            "a direção da Panguana. O cineasta Werner Herzog, que só não estava no mesmo voo por uma mudança de planos de "
+            "última hora, contou a história dela no documentário Asas da Esperança, de 1998."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Juliane_Koepcke",
+            "is a German-Peruvian mammalogist who specialises in bats. "
+            "She is the daughter of German zoologists Maria and Hans-Wilhelm Koepcke. [...] "
+            "When the plane was struck by lightning, she fell 3,000 m (10,000 ft) while strapped to her seat [...] "
+            "At the age of 14, she left Lima with her parents to establish the Panguana research station in the Amazon rainforest, where she learned survival skills. [...] "
+            "graduating on 23 December 1971. [...] "
+            "On 24 December 1971, just one day after she graduated, Koepcke flew on LANSA Flight 508. [...] "
+            "The plane was struck by lightning mid-flight and began to disintegrate before plummeting to the ground. "
+            "Koepcke found herself falling, still strapped to her row of seats, [...] "
+            "Koepcke survived the fall but suffered injuries including a broken collarbone, a deep cut on her right arm, an eye injury, a ruptured ligament in her knee, and a concussion. "
+            "She then spent 11 days in the rainforest, most of which she spent following a creek to a river. "
+            "While in the jungle, she dealt with severe insect bites and an infestation of botfly larvae in her injured arm. "
+            "After nine days, she was able to find an encampment that had been set up by local lumberjacks. "
+            "A few hours later, the returning lumberjacks found her, poured gasoline onto her wound, and used a canoe to transport her for 11 hours to a more inhabited area. [...] "
+            "Experts have said that she survived the fall because she was harnessed into her seat, the window seat, which was attached to the two seats to her left as part of a row of three. "
+            "That was thought to have functioned as a parachute or helicopter which slowed her fall. "
+            "The impact may have also been lessened by the updraft from a thunderstorm Koepcke fell through, as well as the thick foliage at her landing site. "
+            "As many as 14 other passengers were later discovered to have survived the initial crash but died while waiting to be rescued. [...] "
+            "In 2000, following the death of her father, she took over as the director of Panguana. [...] "
+            "Koepcke's story was more faithfully told by Koepcke herself in German filmmaker Werner Herzog's documentary Wings of Hope (1998). "
+            "Herzog was interested in telling her story because of a personal connection: He was scheduled to be on the same flight while scouting locations for his film Aguirre, the Wrath of God (1972), but a last-minute change of plans spared him from the crash.",
+            nome="Juliane Koepcke")],
+    },
+    # 9 Jeanne Calment: 122 anos e a dúvida que o DNA resolveria
+    {
+        "temas_secundarios": ["desenvolvimento_humano", "genetica", "probabilidade"],
+        "tipos_espanto": ["escala_absurda", "misterio_aberto"],
+        "gancho": "Jeanne Calment morreu em 1997 aos 122 anos, mais de três anos além de qualquer outra pessoa documentada. Uma tese diz que a filha assumiu o lugar dela; a maioria dos especialistas a rejeita, e um exame de DNA resolveria.",
+        "explicacao": (
+            "Nascida em Arles, na França, em 1875, Calment é a única pessoa com idade verificada a chegar aos 120 "
+            "anos. Também é das mais bem documentadas: aparece em 14 recenseamentos, o primeiro de 1876, quando "
+            "tinha um ano. Fumou até os 117 e contava ter conhecido Van Gogh aos 13 ou 14 anos, na loja de tecidos de um "
+            "tio, que ele seria desagradável e cheiraria a álcool. Para os demógrafos, a idade dela é um ponto "
+            "fora da curva: entre os recordistas, as diferenças costumam ser de meses ou semanas. Em 2018, o "
+            "gerontólogo russo Valery Novoselov e o matemático Nikolay Zak retomaram a hipótese de que Jeanne "
+            "teria morrido em 1934 e a filha, Yvonne, nascida em 1898, teria assumido a identidade da mãe, "
+            "morrendo portanto aos 99. A maioria dos especialistas considera a tese fraca. O demógrafo Jean-Marie "
+            "Robine lembrou que Calment respondeu corretamente a perguntas sobre fatos que a filha não teria como "
+            "conhecer de primeira mão, e cientistas franceses publicaram em 2019 uma refutação. A dúvida, porém, "
+            "tem solução simples: Jeanne tinha 16 trisavós distintos, e Yvonne, só 12. Um tipo específico de exame de "
+            "DNA resolveria a questão, se houvesse uma amostra de "
+            "sangue ou tecido disponível."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Jeanne_Calment",
+            "21 February 1875 – 4 August 1997) was a French supercentenarian who is the oldest person in recorded history whose age has been verified, with a documented lifespan of 122 years and 164 days. [...] "
+            "Calment is the only person in history who has been verified to have reached the age of 120 years. [...] "
+            "Calment claimed to reporters that she had met van Gogh at that time, introduced to him by her future husband in her uncle's fabric shop. [...] "
+            "She described his personality as ugly, ungracious, and \"very disagreeable\", adding that he \"reeked of alcohol\". [...] "
+            "when she was 13 and 14 years old. [...] "
+            "Calment is widely regarded as the best-documented supercentenarian recorded. "
+            "For example, she was listed in fourteen census records, beginning in 1876 as a one-year-old infant. [...] "
+            "Demographers have highlighted that Calment's age is an outlier, her lifespan being more than three years longer than the next oldest people ever documented, where the differences are usually by months or weeks. [...] "
+            "In 2018, Russian gerontologist Valery Novoselov and mathematician Nikolay Zak revived the hypothesis that Jeanne died in 1934 and her daughter Yvonne, born in 1898, assumed her mother's official identity and was therefore 99 years old when she died in 1997. [...] "
+            "This hypothesis is considered weak by mainstream longevity experts, such as French gerontologist Jean-Marie Robine, who pointed out that during his research, Calment had correctly answered questions about things that her daughter could not have known first-hand. [...] "
+            "that Novoselov and Zak's claims have been dismissed by the overwhelming majority of experts [...] "
+            "In September 2019, several French scientists released a paper in The Journals of Gerontology pointing out inaccuracies in the Zak et al. paper. [...] "
+            "Since Jeanne Calment had 16 distinct great-great-grandparents while her daughter Yvonne had only 12, geneticists have noted that the question of identity could easily be settled by a test for autozygous DNA if a blood or tissue sample were to be made available. [...] "
+            "Calment continued smoking in her elderly years until she was 117.",
+            nome="Jeanne Calment")],
+    },
+    # 10 homem contra cavalo e a hipótese do corredor de longa distância
+    {
+        "temas_secundarios": ["evolucao", "pre_historia", "anatomia"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Desde 1980, uma corrida no País de Gales põe gente a pé contra cavalos montados em cerca de 35 km de serra. Um corredor venceu pela primeira vez em 2004. Uma hipótese debatida diz que evoluímos para correr longe.",
+        "explicacao": (
+            "A prova nasceu num pub de Llanwrtyd Wells: o dono, Gordon Green, ouviu dois fregueses discutindo se, "
+            "numa distância longa e em terreno variado, um homem se igualaria a um cavalo, e resolveu testar em "
+            "público. Em 1989, um ciclista venceu o primeiro cavalo, mas só em 2004 um corredor a pé, Huw Lobb, "
+            "ganhou a corrida, em 2 horas, 5 minutos e 19 segundos, levando um prêmio de 25 mil libras que "
+            "crescia mil libras a cada ano sem vencedor humano. Em 2007, os corredores repetiram o feito, quase 11 "
+            "minutos à frente do primeiro cavalo. A hipótese da corrida de resistência propõe que o corpo do "
+            "gênero Homo foi moldado para correr longas distâncias: nenhum outro primata faz isso, e temos "
+            "tendão de Aquiles que funciona como mola, glúteos grandes e um sistema eficiente de suor para "
+            "perder calor. Assim, nossos ancestrais poderiam perseguir presas até a exaustão em dias quentes, "
+            "quando quadrúpedes grandes têm dificuldade de se resfriar. Há críticas fortes: vários desses traços "
+            "já existiam em australopitecos ou parecem ter evoluído para caminhar, com a corrida como "
+            "subproduto, e a atividade dos glúteos indica que eles servem mais a movimentos rápidos e potentes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Man_versus_Horse_Marathon",
+                "The Man versus Horse Marathon is an annual race over 21 miles (34 km), where runners compete against riders on horseback through a mix of road, trail and mountainous terrain. [...] "
+                "The event started in 1980, when local landlord Gordon Green overheard a discussion between two men in his pub, the Neuadd Arms. "
+                "One man suggested that over a significant distance across country, man was equal to any horse. "
+                "Green decided that the challenge should be tested in full public view, and organised the first event. [...] "
+                "takes place in the Welsh town of Llanwrtyd Wells every June. [...] "
+                "The course is slightly shorter than a traditional marathon at a reported 22 miles (35 km), but over rougher terrain. [...] "
+                "In 1989, British cyclist Tim Gould beat the first horse by three minutes – the first time that a horse was beaten by a human in the race. [...] "
+                "In 2004, the 25th race was won by Huw Lobb in 2 hours, 5 minutes and 19 seconds. "
+                "It was the first time that a man racing on foot had won the race, thereby winning the prize fund of £25,000, which had been growing by £1,000 each year from the race's inception until claimed by a winning runner. [...] "
+                "The feat was repeated in 2007, when human competitors outpaced the first equine competitor by almost 11 minutes.",
+                nome="Man versus Horse Marathon"),
+            wiki("Endurance_running_hypothesis",
+                "The endurance running hypothesis is a series of conjectures which presume humans evolved anatomical and physiological adaptations to run long distances [...] "
+                "No primates other than humans are capable of endurance running, and in fact, Australopithecus did not have structural adaptations for running. "
+                "Instead, forensic anthropology suggests that anatomical features that directly contributed to endurance running capabilities were heavily selected for within the genus Homo dating back to 1.9Ma. [...] "
+                "This tactic of exhausting prey was especially advantageous for capturing large quadrupedal mammals struggling to thermoregulate in hot weather and over extended distances. "
+                "Conversely, humans possess efficient means to dissipate heat, primarily through sweating. [...] "
+                "large gluteal muscles are crucial for erect bipedal locomotion [...] "
+                "Achilles tendon springs conserve energy [...] "
+                "From a study of those reports, hindlimb proposed traits were already present in Australopithecus or early Homo. "
+                "Those hindlimb characteristics most likely evolved to improve walking efficiency with improved running as a by-product. [...] "
+                "The data suggests that the large size of the gluteus maximus reflects multiple roles during rapid and powerful movements rather than a specific adaptation to submaximal endurance running.",
+                nome="Endurance running hypothesis"),
+        ],
+    },
+    # 11 o "governador central": o cansaço como freio do cérebro
+    {
+        "temas_secundarios": ["ciencia_esporte", "neurociencia", "emocoes"],
+        "tipos_espanto": ["misterio_aberto", "contraintuitivo"],
+        "gancho": "E se a exaustão numa prova longa não for pane do músculo, mas um freio do cérebro? Pela hipótese do \"governador central\", ainda debatida, a fadiga é uma sensação criada para proteger o corpo.",
+        "explicacao": (
+            "A ideia tem quase um século. Em 1924, Archibald Hill, Nobel de Medicina de 1922, sugeriu que algum "
+            "mecanismo no corpo funcionaria como um \"governador\", protegendo o coração da falta de oxigênio no "
+            "esforço intenso. A proposta foi deixada de lado, e a fadiga passou a ser explicada como falha "
+            "mecânica do próprio músculo: falta de oxigênio, acúmulo de ácido lático ou esgotamento de energia. "
+            "Em 1997, o cientista do esporte Tim Noakes, da Universidade da Cidade do Cabo, retomou o argumento, "
+            "e a teoria completa saiu em 2004 e 2005. Por ela, o cérebro ajusta o tempo todo quantas fibras "
+            "musculares recruta, com base em experiências anteriores, na duração planejada do esforço e no estado "
+            "do corpo naquele momento, guardando sempre uma reserva de emergência. Esse controle fica fora da "
+            "consciência e é sentido como cansaço. A favor, há o efeito forte de placebos não só em provas longas, "
+            "mas até na velocidade de corrida curta e no peso máximo levantado. Contra, há colapsos reais de "
+            "maratonistas, que sugerem que esse freio pode ser vencido, e fatores do próprio músculo que também "
+            "protegem contra a catástrofe. A disputa continua aberta."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "hipotese",
+        "fontes": [wiki("Central_governor",
+            "The central governor is a proposed process in the brain that regulates exercise in regard to a neurally calculated safe  exertion by the body. [...] "
+            "The central governor limits exercise by reducing the neural recruitment of muscle fibers. "
+            "This reduced recruitment causes the sensation of fatigue. [...] "
+            "The existence of a central governor was proposed by Tim Noakes in 1997, but a similar idea was suggested in 1924 by Archibald Hill. "
+            "It was first published as a full theory by Tim Noakes, Alan St Clair Gibson and Vicki Lambert in five linked articles in the British Journal of Sports Medicine in 2004-2005 [...] "
+            "The 1922 Nobel Prize in Physiology or Medicine winner Archibald Hill proposed in 1924 that the heart was protected from anoxia in strenuous exercise by the existence of a governor. [...] "
+            "This hypothesis was disregarded and further research upon exercise fatigue was modeled in terms of it being due to a mechanical failure of the exercising muscles (\"peripheral muscle fatigue\"). "
+            "This failure was caused either by an inadequate oxygen supply to the exercising muscles, lactic acid buildup, or total energy depletion in the exhausted muscles. [...] "
+            "Tim Noakes, a professor of exercise and sports science at the University of Cape Town, in 1997 has renewed Hill's argument on the basis of modern research. [...] "
+            "These neural calculations factor in earlier experience with strenuous exercise, the planning duration of the exercise, and the present metabolic state of the body. "
+            "These brain models ensure that body homeostasis is protected, and an emergency reserve margin is maintained. "
+            "This neural control adjusts the number of activated skeletal muscle motor units, a control which is subjectively experienced as fatigue. "
+            "This process, though occurring in the brain, is outside conscious control. [...] "
+            "placebos (which must be mediated by a central process) have a powerful effect upon not only fatigue in prolonged exercise, but also upon short term endurance exercise such as sprint speed, the maximum weight that could be lifted with leg extension [...] "
+            "The existence of a central governor over physiology has been questioned since 'physiological catastrophes' can and do occur in athletes (important examples in marathons have been Dorando Pietri, Jim Peters and Gabriela Andersen-Schiess). "
+            "This suggests that humans can over-ride 'the central governor'. "
+            "Moreover, a variety of peripheral factors in addition to those such as lactic acid build up can impair muscle power and might act to protect against \"catastrophe\".",
+            nome="Central governor")],
+    },
+    # 12 Everest sem oxigênio: o que se julgava impossível
+    {
+        "temas_secundarios": ["corpo_extremo", "atmosfera", "paisagens_extremas"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "No topo do Everest, o oxigênio do ar tem só cerca de um terço da pressão do nível do mar. Até 1978, havia quem duvidasse que alguém subisse lá sem cilindro. Messner e Habeler subiram.",
+        "explicacao": (
+            "A proporção de oxigênio no ar, de 20,9%, é a mesma no alto da montanha. O que cai com a altitude é a pressão "
+            "do ar e, com ela, a pressão parcial do oxigênio. Acima de 8.000 metros "
+            "fica a chamada zona da morte, expressão criada em 1953 pelo médico suíço Edouard Wyss-Dunant. Ali, "
+            "acredita-se que nenhum corpo humano consegue se aclimatar: ele gasta o oxigênio mais depressa do que "
+            "consegue repor, e uma permanência longa sem cilindro leva à deterioração das funções do corpo e à "
+            "morte. Já acima de 7.500 metros, dormir fica muito difícil e digerir comida, quase impossível. O "
+            "limite para morar parece estar perto dos 5.950 metros, altitude em que há registro de pessoas que "
+            "sobreviveram por dois anos. Em 8 de maio de 1978, o italiano Reinhold Messner e o austríaco Peter "
+            "Habeler chegaram ao cume sem oxigênio suplementar, algo que certos médicos e montanhistas "
+            "consideravam impossível. Em 1980, Messner repetiu a subida sozinho, sem oxigênio e sem equipe de "
+            "apoio, e depois se tornou o primeiro a escalar as 14 montanhas de mais de 8.000 metros, todas sem "
+            "cilindro."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Death_zone",
+                "This point is generally considered to be 8,000 m (26,246.72 ft), where atmospheric pressure is less than 356 millibars [...] "
+                "The concept was conceived in 1953 by Edouard Wyss-Dunant, a Swiss doctor, who called it the lethal zone. [...] "
+                "An extended stay above 8,000 m (26,200 ft) without a high-altitude breathing apparatus (which includes bottled oxygen) will result in deterioration of bodily functions and death. [...] "
+                "The concentration of oxygen (O2) in air is 20.9% [...] "
+                "Atmospheric pressure decreases with altitude while the O2 fraction remains constant to about 85 km (53 mi), so PO2 decreases with altitude as well. [...] "
+                "Humans have survived for 2 years at 5,950 m (19,500 ft) [475 millibars (14.0 inHg; 6.89 psi) of atmospheric pressure], which appears to be near the limit of the permanently tolerable highest altitude. "
+                "At extreme altitudes, above 7,500 m (24,600 ft) [383 millibars (11.3 inHg; 5.55 psi) of atmospheric pressure], sleeping becomes very difficult, digesting food is near-impossible [...] "
+                "In the death zone and higher, no human body can acclimatize. "
+                "The body uses up its store of oxygen faster than it can be replenished.",
+                nome="Death zone"),
+            wiki("Effects_of_high_altitude_on_humans",
+                "It is about half of its sea-level value at 5,000 m (16,000 ft), the altitude of the Everest Base Camp, and only a third at 8,848 m (29,029 ft), the summit of Mount Everest. [...] "
+                "mountaineers refer to the altitudes above 8,000 metres (26,000 ft) as the death zone, where it is generally believed that no human body can acclimatize.",
+                nome="Effects of high altitude on humans"),
+            wiki("Reinhold_Messner",
+                "is an Italian climber, explorer, and author from the German-speaking province of South Tyrol. [...] "
+                "He was the first person to climb all 14 eight-thousanders, doing so without supplementary oxygen. [...] "
+                "In 1978, he reached the summit of Everest with Habeler. "
+                "This was the first time anyone had been that high without supplemental oxygen and Messner and Habeler achieved what certain doctors, specialists, and mountaineers thought impossible. [...] "
+                "On 8 May 1978, Messner and Habeler reached the summit of Mount Everest, becoming the first men to climb it without using supplemental oxygen. "
+                "Before this ascent, it was disputed whether this was possible at all. [...] "
+                "Two years later, on 20 August 1980, Messner again stood atop the highest mountain in the world, without supplementary oxygen. [...] "
+                "Author Jon Krakauer calls Messner's 1980 ascent of Everest alone, without relying on oxygen, established camps, fixed ropes, or a support team, \"still the greatest mountaineering feat of all time\".",
+                nome="Reinhold Messner"),
+            wiki("Peter_Habeler",
+                "Peter Habeler (born 22 July 1942) is an Austrian mountaineer.",
+                nome="Peter Habeler"),
+        ],
+    },
+    # 13 Andreas Mihavecz: esquecido 18 dias numa cela
+    {
+        "temas_secundarios": ["leis_julgamentos", "corpo_extremo"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Em 1979, um jovem austríaco foi posto numa cela de porão e esquecido: cada um dos três policiais achou que outro o tinha soltado. Sobreviveu 18 dias sem comida, só com a água que se condensava nas paredes.",
+        "explicacao": (
+            "Andreas Mihavecz tinha 18 anos e estava de passageiro num carro que bateu, em Bregenz. Em 1.º de "
+            "abril de 1979, foi levado por engano para uma cela de custódia. Os três policiais responsáveis por "
+            "ele o esqueceram, cada um certo de que os outros dois já o tinham libertado, e ignoraram os apelos "
+            "da mãe, preocupada com o sumiço do filho. Como a cela ficava no porão, ninguém ouvia os gritos. Ele "
+            "sobreviveu ingerindo a água condensada nas paredes e perdeu 24 kg. Em 19 de abril, um policial que "
+            "foi ao porão por outro motivo sentiu o mau cheiro e abriu a cela. Mihavecz levou semanas para se "
+            "recuperar. No processo criminal, os três policiais acusaram uns aos outros e só pagaram multa, "
+            "porque não houve prova de negligência criminosa nem de quem era o principal culpado. Dois anos "
+            "depois, a Justiça civil lhe deu uma indenização. O caso está no Guinness como o de mais tempo "
+            "sobrevivido sem comida nem líquidos, e entrou num livro alemão de lendas urbanas como versão moderna "
+            "de um conto medieval: o do camponês esquecido na prisão de devedores."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Andreas_Mihavecz",
+            "is an Austrian man from Bregenz who holds the record of surviving the longest without any food or liquids. "
+            "His ordeal is documented in the Guinness World Records. [...] "
+            "On 1 April 1979, the then 18-year-old Mihavecz was mistakenly put into custody in a holding cell for being a passenger in a crashed car and completely forgotten about by the three policemen responsible for him. "
+            "Each of them thought that the two others had already freed Mihavecz. "
+            "They also ignored the pleas of his worried mother, who was concerned for what might have happened to her son. "
+            "As Mihavecz's cell was in the basement, nobody could hear his screams. "
+            "He survived by ingesting condensed water from the walls and eventually lost 24 kg (53 pounds) of weight. "
+            "Eighteen days later on 19 April, an officer who had unrelated business in the basement opened his cell after noticing the stench that was emanating from it. "
+            "Mihavecz needed several weeks to regain his health. [...] "
+            "In the criminal trial that followed, the three policemen accused each other. "
+            "In the end, they were fined 4000 ATS, an amount equivalent to €990 or AU$1500 in 2026, as there was no evidence of criminal neglect or who was the main culprit. "
+            "Two years later, however, a civil court awarded Mihavecz 250,000 ATS [...] "
+            "Mihavecz's case was later included in the first edition of a German book on urban legends, as the updated form of a medieval German folk tale of the forgotten peasant in the debtors' prison.",
+            nome="Andreas Mihavecz")],
+    },
+]

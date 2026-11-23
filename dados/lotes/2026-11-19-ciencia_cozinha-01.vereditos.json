@@ -1,0 +1,162 @@
+{
+ "lote": "2026-11-19-ciencia_cozinha-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "ciencia_cozinha-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Searing e Liebig; mito listado, mas origem em Liebig e mecanismo sustentam. Nota 3."
+   },
+   {
+    "id": "ciencia_cozinha-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A cor dos corpos dos pântanos tem explicações concorrentes (esfagnana, taninos, acidez); não cabe como certeza.",
+    "correcao": "1) confianca → consenso_parcial. 2) Gancho: 'também escurece a pele de corpos da Idade do Ferro preservados em pântanos e pode deixar o cabelo deles ruivo. Só que bem devagar.' → 'é apontada como causa da pele escura e do cabelo ruivo de corpos da Idade do Ferro preservados em pântanos. Só que bem devagar.' 3) Explicação: 'Fora da cozinha, a arqueologia reconhece o mesmo processo nos corpos dos pântanos' → 'Fora da cozinha, o mesmo processo é apontado como explicação para o aspecto dos corpos dos pântanos'."
+   },
+   {
+    "id": "ciencia_cozinha-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'O açúcar não derrete' é absoluto: com aquecimento ultrarrápido (Magoń et al. 2014) a sacarose funde sem degradação; vale para o aquecimento comum.",
+    "correcao": "1) confianca → consenso_parcial. 2) Gancho: 'Aquecido do jeito comum, o açúcar não derrete de verdade: ele começa a se decompor justamente quando parece derreter. Por isso o \"ponto de fusão\" da sacarose muda conforme a rapidez do aquecimento.' 3) 'já não era só sacarose' → 'já não era só sacarose, ao menos nas velocidades de aquecimento usuais'. Opcional, com fonte nova (Magoń et al. 2014, Thermochimica Acta, doi 10.1016/j.tca.2014.05.029) e trecho literal: 'Trabalhos posteriores, com aquecimento ultrarrápido em laboratório, conseguiram fundir a sacarose quase sem decomposição, e o valor do seu ponto de fusão \"verdadeiro\" ainda é discutido.' Sem fonte, ficar só com 1 e 2."
+   },
+   {
+    "id": "ciencia_cozinha-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Eram as comunidades que a saudavam como novidade, não o inventor que vendia; 1935 é o lançamento da Automa, não a expedição. Nota 3.",
+    "correcao": "1) Gancho: 'Em 1910, um inventor de Denver vendia panelas de pressão como novidade para quem cozinhava nas montanhas do Colorado.' → 'Em 1910, a panela de pressão de um inventor de Denver foi saudada como invenção maravilhosa nas montanhas do Colorado.' 2) Explicação: 'Em 1935, montanhistas que tentavam escalar o Everest levaram uma panela de pressão para cozinhar lá no alto.' → 'Um modelo lançado em 1935, a Automa, chegou a ser levado por montanhistas que tentavam escalar o Everest, para cozinhar lá no alto.'"
+   },
+   {
+    "id": "ciencia_cozinha-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hypsometer e Francisco José de Caldas; evita o 'primeiro' e atenua a frase de Morillo."
+   },
+   {
+    "id": "ciencia_cozinha-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O 'Por isso' sugere que o frio é a razão de o reaquecimento funcionar.",
+    "correcao": "Gancho: 'Por isso, aquecê-lo a 60 °C o deixa macio de novo, em parte.' → 'E, como esses cristais derretem com calor, aquecê-lo a 60 °C o deixa macio de novo, em parte.' (se passar de 220: 'Como os cristais derretem com calor, aquecê-lo a 60 °C o amacia de novo, em parte.')."
+   },
+   {
+    "id": "ciencia_cozinha-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte se contradiz sobre a penetração (1 cm x vários centímetros); o gancho exagera ('só as camadas de fora'). Nota 3.",
+    "correcao": "1) Gancho: 'As ondas aquecem só as camadas de fora, e o miolo de um pedaço grosso esquenta pelo calor que vem delas.' → 'As ondas só alcançam alguns centímetros; o miolo de um pedaço grosso esquenta pelo calor conduzido dessa camada.' 2) Explicação: 'Nessa frequência, as ondas penetram cerca de 1 cm na maioria dos alimentos, e mesmo num alimento homogêneo e úmido o aquecimento só é razoavelmente uniforme nos 25 a 38 mm de fora.' → 'Nessa frequência, mesmo num alimento homogêneo e úmido, o aquecimento só é razoavelmente uniforme nos 25 a 38 mm de fora.' (tirar o 1 cm também do trecho, se ficar sem uso)."
+   },
+   {
+    "id": "ciencia_cozinha-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "As Sunions foram selecionadas por cruzamento para ter poucos voláteis, sem 'silenciar a LFS' (só a Wikipedia diz isso); 'primeira safra comercial' é duvidoso (já havia cebola sem lágrimas no Japão). Nota 3.",
+    "correcao": "1) Gancho: 'A cebola faz chorar graças a duas enzimas que agem em sequência quando ela é cortada. Em 2008, bloqueando a segunda por engenharia genética, cientistas da Nova Zelândia criaram cebolas que não ardem nos olhos.' 2) Explicação: 'No início de 2018, a Bayer lançou a primeira safra comercial de cebolas com a LFS silenciada, as Sunions, fruto de 30 anos de cruzamentos, sem modificação genética.' → 'No início de 2018, a Bayer lançou nos EUA as Sunions, cebolas que fazem pouco ou nenhum lacrimejar, fruto de 30 anos de cruzamentos, sem modificação genética.' (ajustar o trecho se ele contiver só a versão da LFS silenciada)."
+   },
+   {
+    "id": "ciencia_cozinha-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; desmente equívoco listado; origem numa carta de 1968 e viés racial. Nota 3."
+   },
+   {
+    "id": "ciencia_cozinha-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz 'may help explain'; a última frase (cozinheiros por tentativa) não tem apoio.",
+    "correcao": "1) Gancho: 'ajuda a explicar' → 'explicaria'. 2) Explicação: 'A sinergia pode explicar combinações tradicionais' → 'A sinergia pode ajudar a explicar combinações tradicionais'; apagar 'Cozinheiros chegaram a essas duplas por tentativa, muito antes de alguém saber o porquê.'"
+   },
+   {
+    "id": "ciencia_cozinha-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A técnica nasceu nos anos 1940 (William Peschardt, cerejas artificiais); a Unilever só a documentou nos anos 1950. Nota 3.",
+    "correcao": "1) Fonte nova: https://news.lafayette.edu/2019/07/25/a-food-burst-in-your-mouth com trecho literal sobre 'invented in the 1940s by food scientist William Peschardt' e 'edible artificial cherries'. 2) Gancho: 'As bolinhas de \"caviar\" de suco que o El Bulli, de Ferran Adrià, tornou famosas vêm de um truque industrial dos anos 1940, criado para fazer cerejas artificiais: alginato de algas que vira gel no cálcio.' 3) Explicação: 'A técnica foi documentada pela Unilever nos anos 1950 e levada à cozinha de vanguarda...' → 'A técnica nasceu na indústria: nos anos 1940, o cientista de alimentos William Peschardt a desenvolveu tentando fazer cerejas artificiais comestíveis, e a Unilever a documentou nos anos 1950. Décadas depois, ela foi levada à cozinha de vanguarda...'. Se a fonte não passar: no gancho, 'que a Unilever já documentava nos anos 1950' → 'que a indústria de alimentos já conhecia décadas antes (a Unilever a documentou nos anos 1950)'."
+   },
+   {
+    "id": "ciencia_cozinha-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Ouzo effect; misterio_aberto justificado."
+   },
+   {
+    "id": "ciencia_cozinha-0013",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: 'coentro com gosto de sabão é genético' é curiosidade batida; e o papel do OR6A2 é pequeno (Eriksson et al. 2012: ~15% x 11,5%, herdabilidade ~0,087), não causa."
+   },
+   {
+    "id": "ciencia_cozinha-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Flambé; corrige crença comum."
+   },
+   {
+    "id": "ciencia_cozinha-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Não exagera o comunicado; 'em parte' e lisozima."
+   },
+   {
+    "id": "ciencia_cozinha-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Nicholas Kurti e Molecular gastronomy."
+   }
+  ],
+  "2": [
+   {
+    "id": "ciencia_cozinha-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Corpos dos pântanos como explicação apontada; consenso_parcial."
+   },
+   {
+    "id": "ciencia_cozinha-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Aquecimento comum x ultrarrápido, com Magoń et al. 2014."
+   },
+   {
+    "id": "ciencia_cozinha-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Saudada como invenção maravilhosa'; Automa de 1935."
+   },
+   {
+    "id": "ciencia_cozinha-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sem causalidade invertida."
+   },
+   {
+    "id": "ciencia_cozinha-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Sem o 1 cm contraditório; 'alguns centímetros'."
+   },
+   {
+    "id": "ciencia_cozinha-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Nova Zelândia/2008 e Sunions com a NPR."
+   },
+   {
+    "id": "ciencia_cozinha-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: sem a data de 1957 para a sinergia (1957 é do GMP).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "ciencia_cozinha-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Peschardt nos anos 1940 com a fonte da Lafayette."
+   }
+  ]
+ }
+}

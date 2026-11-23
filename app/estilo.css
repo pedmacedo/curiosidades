@@ -183,10 +183,24 @@ textarea { width: 100%; resize: vertical; }
 .reportes li { margin: 0.5em 0; }
 .rodape { margin-top: 2em; text-align: center; }
 
+/* ---------- temas ---------- */
+.busca-temas { width: 100%; margin: 4px 0 8px; }
+.area-temas h2 { font-size: 1rem; margin: 1.4em 0 0.4em; color: var(--destaque); text-transform: uppercase; letter-spacing: 0.04em; }
+.lista-temas { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.lista-temas a {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  min-height: 52px; padding: 10px 14px; border-radius: 12px;
+  background: var(--superficie); border: 1px solid var(--borda); color: var(--texto); text-decoration: none;
+}
+.lista-temas a:hover { border-color: var(--destaque); }
+.lista-temas .contagem { flex: none; font-size: 0.85rem; color: var(--texto-leve); font-variant-numeric: tabular-nums; }
+.voltar { display: inline-block; margin-bottom: 8px; color: var(--texto-leve); text-decoration: none; }
+.voltar:hover { color: var(--texto); }
+
 /* ---------- abas ---------- */
 .abas {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
-  display: grid; grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(4, 1fr);
   background: var(--superficie); border-top: 1px solid var(--borda);
   padding-bottom: env(safe-area-inset-bottom);
 }
@@ -224,3 +238,6 @@ dialog .linha-botoes { justify-content: flex-end; margin-top: 12px; }
   .gancho { font-size: 1.55rem; }
   .bloco { padding: 24px 16px; }
 }
+
+/* texto só para leitores de tela */
+.visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

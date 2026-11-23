@@ -1,0 +1,165 @@
+{
+ "lote": "2026-11-19-segunda_guerra-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "segunda_guerra-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Fu-Go balloon bomb; ponte com a geologia; vítimas tratadas com respeito."
+   },
+   {
+    "id": "segunda_guerra-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A medalha foi concedida por lei em 2022 (entregue em 2024); Ellsworth Kelly precisa de apresentação. Nota 3: tanques infláveis são bem difundidos.",
+    "correcao": "Explicação: 'e em 2022 os veteranos receberam a Medalha de Ouro do Congresso.' → 'e em 2022 uma lei concedeu à unidade a Medalha de Ouro do Congresso.' Gancho: 'como Ellsworth Kelly,' → 'como o pintor Ellsworth Kelly,'."
+   },
+   {
+    "id": "segunda_guerra-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Eram três lentes e telas (até três pombos); o gancho sugere causalidade que a fonte não afirma; motivo oficial do cancelamento omitido.",
+    "correcao": "Gancho: 'Os militares acharam a ideia excêntrica e a cancelaram;' → 'Os militares a acharam excêntrica, e ela foi cancelada;'. Explicação: 'uma lente no nariz da bomba projetava a imagem do alvo numa tela, e o pombo, treinado para reconhecê-lo, bicava a imagem.' → 'três lentes no nariz da bomba projetavam a imagem do alvo em telas, e cada pombo, treinado para reconhecê-lo, bicava a imagem na sua.'; 'Foi cancelado em outubro de 1944,' → 'Foi cancelado em outubro de 1944, sob o argumento de que atrasaria projetos mais promissores,'."
+   },
+   {
+    "id": "segunda_guerra-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A velocidade máxima do U-2 era 'parecida' com a de estol dos caças alemães, não menor (Polikarpov Po-2); as unidades não ficaram só de mulheres. Nota 3.",
+    "correcao": "Gancho: 'As \"Bruxas da Noite\", aviadoras soviéticas, atacavam em biplanos de treino de 1928 cuja velocidade máxima era parecida com a velocidade de estol dos caças alemães, o que os tornava difíceis de abater.' Explicação: 'sua velocidade máxima era menor que a velocidade de estol dos caças alemães Bf 109 e Fw 190' → 'sua velocidade máxima era parecida com a velocidade de estol dos caças alemães Bf 109 e Fw 190'; 'formar unidades de combate só de mulheres' → 'formar unidades de combate femininas'. Fonte nova: https://en.wikipedia.org/wiki/Polikarpov_Po-2 com o trecho 'the stall speed of both the Messerschmitt Bf 109 and the Focke-Wulf Fw 190 was similar to the U-2s maximum speed'. Sem a fonte: 'parecida' + 'segundo algumas fontes'."
+   },
+   {
+    "id": "segunda_guerra-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho sugere resistência voluntária, mas o rádio parou e eles só pediram ajuda em agosto; a frase sobre o clima da Europa não tem apoio.",
+    "correcao": "Gancho: 'A última tropa alemã a se render na Segunda Guerra foi uma equipe de meteorologia em Svalbard, no Ártico. Souberam da rendição em maio de 1945, mas, isolados, só se entregaram em setembro, a caçadores de focas.' Explicação: trocar 'Na guerra, a previsão do tempo era informação estratégica, e boa parte do clima da Europa se forma no Atlântico Norte e no Ártico. Por isso, os dois lados disputaram estações meteorológicas em lugares remotos.' por 'Na guerra, a previsão do tempo era informação estratégica, e por isso os dois lados disputaram estações meteorológicas em lugares remotos do Ártico.'"
+   },
+   {
+    "id": "segunda_guerra-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com George de Hevesy e Aqua regia; mecanismo químico claro."
+   },
+   {
+    "id": "segunda_guerra-0007",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "mito: o mecanismo da omissão do 'J' é contestado por Fábio Koifman e Rui Afonso (2021), que examinaram os vistos e não acharam irregularidade ('All the passports had J in them'); o 'J' era carimbo alemão no passaporte. Exigiria reescrever como controvérsia com outras fontes."
+   },
+   {
+    "id": "segunda_guerra-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Juan Pujol García."
+   },
+   {
+    "id": "segunda_guerra-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "O cerco foi levantado em 27/1/1944, não 'na primavera de 1944' (erro do verbete); concordância truncada na frase de Lysenko.",
+    "correcao": "(1) 'Vários guardiões morreram de fome antes do fim do cerco, na primavera de 1944.' → 'Vários guardiões morreram de fome antes do fim do cerco.' (2) 'depois de se opor às ideias de Lysenko, que rejeitava a genética e agradavam a Stálin,' → 'depois de se opor a Lysenko, que rejeitava a genética e tinha o apoio de Stálin,'."
+   },
+   {
+    "id": "segunda_guerra-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O pykrete já tinha sido descrito por Mark e Hohenstein no Brooklyn; o projeto não o criou.",
+    "correcao": "'O material criado para o projeto, o pykrete, batizado em homenagem a Pyke, era mais resistente' → 'O material adotado, o pykrete, já descrito antes por dois pesquisadores no Brooklyn e batizado em homenagem a Pyke, era mais resistente' (trecho: 'the material was originally described in a paper by Mark and Hohenstein in Brooklyn')."
+   },
+   {
+    "id": "segunda_guerra-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A frase 'gravação e impressão excelentes, papel inferior' é sobre as amostras de US$ 100, não das libras; dos 12 condecorados, só 3 eram judeus.",
+    "correcao": "1) Apagar 'A gravação e a impressão eram consideradas excelentes, embora o papel fosse inferior ao verdadeiro.' ou, depois da frase do atraso no dólar: 'Mesmo assim, no início de 1945 eles já tinham reproduzido os dois lados da nota de 100 dólares; as amostras foram elogiadas pela gravação, embora o papel ainda ficasse aquém do original.' 2) 'reuniu no campo de Sachsenhausen presos judeus escolhidos em vários campos de concentração' → 'reuniu no campo de Sachsenhausen presos de vários campos de concentração, em grande parte judeus, escolhidos por saberem desenhar, gravar, imprimir ou lidar com bancos'."
+   },
+   {
+    "id": "segunda_guerra-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O texto anuncia duas versões e descreve uma; o 'voluntário' vem de ele aceitar a missão apresentada como convite, não da forma da prisão.",
+    "correcao": "Trocar 'Há duas versões sobre como foi parar no campo: numa, deixou-se capturar numa batida alemã em Varsóvia justamente para se infiltrar; por isso muitas fontes dizem que ele se ofereceu como voluntário.' por 'A missão lhe foi apresentada pelo chefe de seu grupo clandestino como um convite. Pilecki a encarou como castigo por ter discordado dele, mas aceitou, e por isso muitas fontes o descrevem como voluntário. Há duas versões de como foi preso, ambas de propósito: numa batida de rua em Varsóvia ou numa revista de prédio, no apartamento de uma conhecida.'"
+   },
+   {
+    "id": "segunda_guerra-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Sobrevivência de 99%' logo após os 464 deportados pode ser lida como 99% dos deportados.",
+    "correcao": "'e a pressão dinamarquesa em favor deles ajudou a garantir a sobrevivência de 99%.' → 'e a pressão dinamarquesa em favor deles, somada à fuga, fez com que 99% dos judeus da Dinamarca sobrevivessem ao Holocausto.'"
+   },
+   {
+    "id": "segunda_guerra-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Última frase ambígua; 'que os presos tinham feito amigo' mal construída.",
+    "correcao": "1) 'É um dos dois casos conhecidos de americanos e alemães lutando lado a lado na guerra, dois dias antes da rendição alemã.' → 'É um dos dois casos conhecidos de americanos e alemães lutando lado a lado na guerra, e aconteceu só dois dias antes da rendição incondicional da Alemanha.' 2) 'Um oficial da SS que os presos tinham feito amigo também ajudou na defesa.' → 'Um oficial da SS de quem os presos tinham ficado amigos também ajudou na defesa.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "segunda_guerra-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'entre eles Ellsworth Kelly' tira a redundância (a fonte diz só 'artists').",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "segunda_guerra-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas."
+   },
+   {
+    "id": "segunda_guerra-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: a velocidade 'ajudava', somada ao voo rente às árvores, com trecho do Po-2.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "segunda_guerra-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Isolados, não resistindo; frase do clima removida."
+   },
+   {
+    "id": "segunda_guerra-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Sem 'primavera de 1944'; Lysenko corrigido."
+   },
+   {
+    "id": "segunda_guerra-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Pykrete descrito antes no Brooklyn, com trecho."
+   },
+   {
+    "id": "segunda_guerra-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase das amostras retirada; presos 'em grande parte judeus'."
+   },
+   {
+    "id": "segunda_guerra-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Convite e duas versões da prisão com trechos."
+   },
+   {
+    "id": "segunda_guerra-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "99% dos judeus da Dinamarca, sem ambiguidade."
+   },
+   {
+    "id": "segunda_guerra-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Retoques de redação aplicados."
+   }
+  ]
+ }
+}

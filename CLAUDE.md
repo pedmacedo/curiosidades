@@ -208,6 +208,7 @@ Produzir ~1.500 fatos com verificação na web consome bastante uso da assinatur
    - Etapa 2: **15 ganchos de amostra**, escolhidos para cobrir áreas e tipos de espanto variados, com as reações abaixo.
 3. **Feed**: um fato por vez. Mostra o gancho, o botão "Ver explicação", as reações, ⭐ salvar, os links de "aprofundar", "⚠ Parece errado" e, discretamente, um selo quando `confianca` ≠ `alta`.
 4. **Favoritos**.
+   - **Temas** (aba própria, pedida pelo Pedro em 2026-11-23): lista dos temas por área, com busca; tocar num tema mostra todos os fatos dele. Ler por ali não altera o recomendador.
 5. **Meu perfil**: visualização simples dos temas preferidos, botões para refazer o questionário e para exportar/importar o perfil (JSON), além da lista de fatos marcados como "parece errado", que pode ser copiada para enviar ao Pedro.
 
 Reações: 🤯 **Uau!** · 🙂 **Legal** · 😐 **Meh**. (A reação "Já sabia" foi retirada em 2026-11-17, por decisão do Pedro: o que importa é a reação ao conteúdo, mesmo que a pessoa já conhecesse o fato.)

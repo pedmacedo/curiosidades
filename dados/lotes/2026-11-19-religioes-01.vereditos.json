@@ -1,0 +1,157 @@
+{
+ "lote": "2026-11-19-religioes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "religioes-0001",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "duplicado: mesmo assunto de mitologia-0008 (Barlaam e Josafá, o Buda como santo cristão), produzido em paralelo e já em verificação."
+   },
+   {
+    "id": "religioes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Immovable Ladder e Holy Sepulchre; divergência de dono bem tratada."
+   },
+   {
+    "id": "religioes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Kakure Kirishitan; ponte com o português."
+   },
+   {
+    "id": "religioes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Fundir o misticismo europeu e o asiático' não tem apoio fora da Wikipedia; as sessões começaram em 1853 (1852–1855 é o exílio).",
+    "correcao": "'ele mesmo praticou o espiritismo na ilha de Jersey, de 1852 a 1855, e previu que seria o profeta de uma nova religião capaz de fundir o misticismo europeu e o asiático.' → 'durante o exílio na ilha de Jersey, de 1852 a 1855, ele mesmo fez sessões espíritas e chegou a prever que seria o profeta de uma nova religião.'"
+   },
+   {
+    "id": "religioes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Tower of Silence e Indian vulture crisis; ótima ponte ecologia–rito."
+   },
+   {
+    "id": "religioes-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'A maior mulher que já existiu' é interpretação de comentaristas; o contraste com Gálatas engana (os Evangelhos a nomeiam); a tamareira do Pseudo-Mateus é na fuga para o Egito; a ligação com apócrifos é tese de estudiosos modernos.",
+    "correcao": "1) Gancho: 'Maria, mãe de Jesus, é a única mulher chamada pelo nome no Alcorão, que lhe dedica uma surata inteira e narra um parto diferente do bíblico: sozinha, sob uma tamareira, com um bebê que fala em sua defesa.' 2) 'o Alcorão a apresenta como a maior mulher que já existiu' → 'o Alcorão diz que Deus a escolheu acima das mulheres dos mundos, e muitos comentaristas a consideram a maior mulher de todos os tempos'. 3) 'Estudiosos ligam esses episódios' → 'Estudiosos modernos ligam esses episódios'; 'um milagre da tamareira com Maria aparece no Evangelho do Pseudo-Mateus' → 'um milagre da tamareira com Maria, durante a fuga para o Egito, aparece no Evangelho do Pseudo-Mateus'. 4) Frase final: 'O texto mais antigo do Novo Testamento a mencioná-la, a carta aos Gálatas, escrita antes dos evangelhos, diz apenas que Jesus nasceu \"de mulher\", sem dar nome; nos Evangelhos e nos Atos, ela já aparece pelo nome várias vezes.'"
+   },
+   {
+    "id": "religioes-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "As invenções não foram patenteadas e a prioridade é disputada (serra circular); o gancho induz a crer que são deles sem discussão.",
+    "correcao": "1) Gancho: 'Os shakers, cristãos celibatários dos EUA, chegaram a 6 mil fiéis e ficaram famosos como inventores (a eles se atribuem, sem patente, a serra circular e o prendedor de roupa). Em 2026, restam só dois.' 2) Depois de '...uma máquina de lavar movida a roda e penas de metal.', acrescentar 'Como eles não patenteavam o que criavam, é difícil provar quem veio primeiro, e a autoria da serra circular, por exemplo, é disputada.' (trecho: 'Even prolific Shaker inventors like Tabitha Babbit did not patent their inventions [...] which has complicated subsequent efforts by 20th-century historians to assign priority'). Se passar de 250 palavras, cortar a frase sobre os órfãos."
+   },
+   {
+    "id": "religioes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Jefferson Bible; pouco conhecido no Brasil."
+   },
+   {
+    "id": "religioes-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Mil anos mais velho que os manuscritos conhecidos' generaliza (a fonte limita a hebraicos; há códices gregos do séc. IV); as 2.600 variantes são em grande parte pequenas e distintas de erros e correções.",
+    "correcao": "1) Gancho: 'Um pastor que buscava um animal perdido perto do mar Morto atirou uma pedra e ouviu cerâmica quebrando. Ali surgiria um rolo de Isaías de cerca de 125 a.C., mil anos mais velho que as cópias hebraicas então conhecidas.' 2) Explicação: 'Mesmo assim, há mais de 2.600 variantes, entre erros de copista, correções e diferenças em versículos.' → 'Mesmo assim, além de erros de copista e correções, há mais de 2.600 variantes em relação ao texto massorético: a maioria é pequena, como grafias ou uma palavra trocada, mas algumas envolvem versículos inteiros.'"
+   },
+   {
+    "id": "religioes-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 16 eram o acervo, não o que estava exposto na abertura (eram cinco os expostos).",
+    "correcao": "Gancho: 'O Museu da Bíblia, em Washington, abriu em 2017 exibindo fragmentos dos Manuscritos do Mar Morto. Em 2020, análises concluíram que os 16 fragmentos do acervo eram falsificações modernas.' Explicação: 'Em março de 2020, todos os 16 estavam confirmados como falsificações modernas.' → 'Em março de 2020, uma investigação encomendada pelo museu concluiu que todos os 16 fragmentos do acervo eram falsificações modernas.'"
+   },
+   {
+    "id": "religioes-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "origem_inesperada fraca sem mostrar de onde vem a palavra; a fonte liga 'secret' a 'secretary'. Nota 3.",
+    "correcao": "Depois de '...e não de algum departamento da Cúria Romana.', acrescentar 'É o mesmo sentido antigo que sobrevive em \"secretário\", na origem alguém de confiança ligado aos assuntos particulares de quem serve.' (com trecho da fonte sobre 'secretary'). Se passar de 250 palavras, cortar 'Estima-se que haja 85 quilômetros de estantes.'"
+   },
+   {
+    "id": "religioes-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 36 anos vêm só da introdução; a seção da morte diz que as estimativas vão de 35 a 42 anos.",
+    "correcao": "Gancho: 'viveu 36 anos no alto de colunas' → 'viveu cerca de 36 anos no alto de colunas'. Explicação: depois de '...e lhe sobrava pouco tempo para as devoções.', acrescentar 'Os relatos divergem sobre quanto tempo ele ficou lá em cima: as estimativas vão de 35 a 42 anos.' com o trecho 'Accounts differ with regard to how long Simeon lived upon the pillar, with estimates ranging from 35 to 42 years.'"
+   },
+   {
+    "id": "religioes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com John Frum; 'segundo relatos' preservado."
+   },
+   {
+    "id": "religioes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Samaritans; tom neutro e respeitoso."
+   },
+   {
+    "id": "religioes-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Saint Christopher; duas tradições de lenda."
+   },
+   {
+    "id": "religioes-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com a seção do século XVII; nota 3 por circular bastante."
+   }
+  ],
+  "2": [
+   {
+    "id": "religioes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem 'fundir misticismos'; exílio em Jersey com fonte Victor Hugo."
+   },
+   {
+    "id": "religioes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'dá o nome dela a uma surata' (a surata 19 narra outros também).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "religioes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'muitos inventores shakers' não patenteavam.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "religioes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Comparação limitada a cópias hebraicas; variantes qualificadas."
+   },
+   {
+    "id": "religioes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Expostos x acervo distinguidos; fonte sustenta 2020."
+   },
+   {
+    "id": "religioes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Ponte com 'secretary' com trecho literal."
+   },
+   {
+    "id": "religioes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: frase das estimativas movida para depois da subida na coluna.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

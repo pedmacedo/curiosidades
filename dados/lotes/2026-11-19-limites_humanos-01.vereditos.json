@@ -1,0 +1,150 @@
+{
+ "lote": "2026-11-19-limites_humanos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "limites_humanos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo bate com Sama-Bajau e Diving reflex (baço 50% maior, PDE10A, haenyeo), com ressalvas."
+   },
+   {
+    "id": "limites_humanos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Ótimo, mas com quatro exageros: 'cobaia mais frequente', superlativo dos 46,2 g (Beeding 82,6 g no Guinness), Murphy não instalou os sensores, e a origem da lei é disputada.",
+    "correcao": "1) Gancho: 'a Lei de Murphy, nascida em testes anteriores com trenós.' -> 'a Lei de Murphy, que teria nascido em testes anteriores com trenós.' 2) 'e a cobaia mais frequente dos testes foi ele mesmo' -> 'e ele próprio foi um dos voluntários mais frequentes dos testes'. 3) Apagar ', a maior aceleração conhecida enfrentada voluntariamente por alguém'. 4) Trocar a frase de Murphy por 'Anos antes, o engenheiro Edward Murphy propôs medir as forças com sensores presos ao cinto de Stapp; num teste, os sensores falharam porque tinham sido ligados errado, Murphy pôs a culpa no técnico, e a reclamação acabou virando lei.' 5) Trocar a frase dos testes por 'Os testes mostraram que um piloto bem preso por cintos pode sair andando de um acidente, desde que o assento não se solte, e que o assento virado para trás é o mais seguro.'"
+   },
+   {
+    "id": "limites_humanos-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas Ross é dito oficial que monitorou a saúde, não 'o médico'.",
+    "correcao": "Gancho: 'mas o médico que o acompanhou registrou paranoia' -> 'mas quem monitorou sua saúde registrou paranoia'."
+   },
+   {
+    "id": "limites_humanos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas 'só com' exagera, há risco de soar como incentivo (falta a transição e a ressalva 'nesse paciente'). Nota 3.",
+    "correcao": "1) Gancho: 'só com chá, café, água com gás e vitaminas' -> 'à base de chá, café, água com gás e vitaminas'. 2) 'Em 11 de julho de 1966, comeu um ovo cozido' -> 'O jejum terminou em 30 de junho de 1966; depois de dez dias de transição, com sal e depois açúcar, em 11 de julho ele comeu um ovo cozido'. 3) 'concluiu que o jejum prolongado não lhe causara efeitos nocivos' -> 'concluiu que, nesse paciente, o jejum prolongado não deixara efeitos nocivos'. 4) Acrescentar ao final: 'É um caso isolado, feito com acompanhamento médico e suplementos, e não uma prova de que jejuns longos sejam seguros.'"
+   },
+   {
+    "id": "limites_humanos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Anna Bågenholm (80 min sob o gelo, 13,7 °C, 2 h 35 min sem batimentos, 10 dias)."
+   },
+   {
+    "id": "limites_humanos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a citação foi alterada ('100 miles' virou '160') e o túnel entrou no trajeto depois de 2009, sem data.",
+    "correcao": "Gancho: 'O criador da prova pensou: \"eu faria pelo menos 160\".' -> 'O criador da prova pensou que faria pelo menos 160 km.'. Explicação: 'Desde 2009, com a prisão fechada, o trajeto passa por um túnel sob ela.' -> 'Depois que a prisão fechou, em 2009, o trajeto passou a incluir um túnel sob ela.'"
+   },
+   {
+    "id": "limites_humanos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Vesna Vulović (10.160 m, 1972, tese de 2009 com as ressalvas); consenso_parcial."
+   },
+   {
+    "id": "limites_humanos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Juliane Koepcke; só o título 'Asas da Esperança' é tradução livre (o filme é Wings of Hope).",
+    "correcao": "'no documentário Asas da Esperança, de 1998.' -> 'no documentário Wings of Hope (\"Asas da esperança\"), de 1998.'"
+   },
+   {
+    "id": "limites_humanos-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Jeanne Calment; falta o porquê dos 12 trisavós (casamento com primo de segundo grau duplo).",
+    "correcao": "'A dúvida, porém, tem solução simples: Jeanne tinha 16 trisavós distintos, e Yvonne, só 12.' -> 'A dúvida, porém, tem solução simples: como Jeanne se casou com um primo de segundo grau duplo, Yvonne tinha só 12 trisavós distintos, contra 16 da mãe.'"
+   },
+   {
+    "id": "limites_humanos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo bate com Man versus Horse Marathon e Endurance running hypothesis (1980, Huw Lobb 2004, críticas); consenso_parcial."
+   },
+   {
+    "id": "limites_humanos-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A ideia de Hill é de 1924 (mais de um século, não 'quase').",
+    "correcao": "'A ideia tem quase um século.' -> 'A ideia tem mais de um século.'"
+   },
+   {
+    "id": "limites_humanos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas Wyss-Dunant criou o conceito e o chamou de 'zona letal', não a expressão 'zona da morte'. Nota 3.",
+    "correcao": "'expressão criada em 1953 pelo médico suíço Edouard Wyss-Dunant' -> 'conceito criado em 1953 pelo médico suíço Edouard Wyss-Dunant, que a chamou de zona letal'."
+   },
+   {
+    "id": "limites_humanos-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Não é lenda (imprensa de 1979 e Guinness); mas o local da batida não é informado e a data diverge (18 ou 19 de abril).",
+    "correcao": "'Andreas Mihavecz tinha 18 anos e estava de passageiro num carro que bateu, em Bregenz.' -> 'Andreas Mihavecz, de Bregenz, tinha 18 anos e estava de passageiro num carro que bateu.'; 'Em 19 de abril, um policial que foi ao porão' -> 'Dezoito dias depois, um policial que foi ao porão'."
+   }
+  ],
+  "2": [
+   {
+    "id": "limites_humanos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "As cinco correções aplicadas; sem erro novo."
+   },
+   {
+    "id": "limites_humanos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Quem monitorou sua saúde' aplicado; números conferem."
+   },
+   {
+    "id": "limites_humanos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "As quatro correções aplicadas; números conferem."
+   },
+   {
+    "id": "limites_humanos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Paráfrase de Cantrell e túnel datado aplicados; números conferem."
+   },
+   {
+    "id": "limites_humanos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Wings of Hope (1998) aplicado; resto confere."
+   },
+   {
+    "id": "limites_humanos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção dos 12 trisavós aplicada e sustentada; números conferem."
+   },
+   {
+    "id": "limites_humanos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de um século' aplicado; números e confiança hipotese coerentes."
+   },
+   {
+    "id": "limites_humanos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Conceito de 1953 de Wyss-Dunant corrigido; números conferem."
+   },
+   {
+    "id": "limites_humanos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Bregenz e 'dezoito dias depois' corrigidos; números conferem."
+   }
+  ]
+ }
+}

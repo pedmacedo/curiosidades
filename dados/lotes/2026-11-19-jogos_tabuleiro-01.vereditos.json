@@ -1,0 +1,156 @@
+{
+ "lote": "2026-11-19-jogos_tabuleiro-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "jogos_tabuleiro-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Por milênios, ninguém soube como jogar' não tem apoio e contradiz Kochi; a fonte fala da redescoberta.",
+    "correcao": "'Por milênios, ninguém soube como jogar.' → 'Quando os tabuleiros foram redescobertos, ninguém sabia como jogar.' Opcional: 'nas estátuas de touros alados' → 'nas estátuas de touros alados com cabeça humana'."
+   },
+   {
+    "id": "jogos_tabuleiro-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado por Senet e Royal Game of Ur."
+   },
+   {
+    "id": "jogos_tabuleiro-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Landlord's Game, Monopoly e Banco Imobiliário."
+   },
+   {
+    "id": "jogos_tabuleiro-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte só diz que o MI9 procurou a EMI; 'discos de vinil' é anacrônico (goma-laca).",
+    "correcao": "'O MI9 também escondeu mapas em discos de vinil.' → 'O MI9 também procurou a gravadora EMI para esconder mapas laminados dentro de discos de gramofone.'"
+   },
+   {
+    "id": "jogos_tabuleiro-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Já tinha pontos de vida' é anacrônico; é o equivalente ao conceito.",
+    "correcao": "Gancho: 'Um jogo de guerra prussiano de 1824 já tinha o equivalente aos \"pontos de vida\" dos games: as tropas sofriam perdas parciais sem sair do mapa. Era o Kriegsspiel, e o rei mandou dar um a cada regimento.'"
+   },
+   {
+    "id": "jogos_tabuleiro-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A restrição à promoção de peões não foi 'reação' à regra nova; a fonte trata as duas coisas à parte (e a restrição é anterior).",
+    "correcao": "'Houve reação: em certas épocas, proibia-se promover um peão a dama enquanto a original estivesse no tabuleiro, para não dar ao rei mais de uma rainha.' → 'As regras novas enfrentaram resistência. E, em várias épocas, chegou-se a restringir a promoção de um peão a dama enquanto a original estivesse no tabuleiro, para não dar ao rei mais de uma rainha.'"
+   },
+   {
+    "id": "jogos_tabuleiro-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com a página de John Tromp; '1080' é 10^80 sem expoente."
+   },
+   {
+    "id": "jogos_tabuleiro-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'O maior campeão da história' afirma o que a fonte diz como 'widely considered'; Schaeffer tirou o Chinook das competições em 1995, depois da defesa contra Lafferty.",
+    "correcao": "Gancho: 'O maior campeão da história, Marion Tinsley,' → 'Tido como o maior de todos, Marion Tinsley,'. Explicação: 'Schaeffer então parou de competir e foi tentar resolver o jogo.' → 'Em 1995, depois de defender o título contra outro humano, Schaeffer tirou o Chinook das competições e foi tentar resolver o jogo.'"
+   },
+   {
+    "id": "jogos_tabuleiro-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Snakes and ladders; detalhe moral dá mecanismo. Nota 3."
+   },
+   {
+    "id": "jogos_tabuleiro-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Shogi; especulação samurai com ressalva."
+   },
+   {
+    "id": "jogos_tabuleiro-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Ear-reddening game; nota 3 pelo jargão e por ser de nicho."
+   },
+   {
+    "id": "jogos_tabuleiro-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O efeito sobre Kasparov é versão de Campbell; o lance perturbador é situado em partidas diferentes conforme o relato; 'veio a público' exagera (Hsu já relatara em 2002); a 'criatividade incomum' era suspeita de intervenção humana.",
+    "correcao": "1) Gancho: 'um lance estranho do Deep Blue fez Kasparov ver nele \"inteligência superior\"' → 'um lance estranho do Deep Blue teria feito Kasparov ver nele \"inteligência superior\"'. 2) 'Quinze anos depois, a história veio a público no livro' → 'Quinze anos depois, a história ganhou fama com o livro'. 3) Trocar 'No fim, o Deep Blue venceu o match, e Kasparov, que já tinha se gabado de que nunca perderia para uma máquina, passou a dizer que às vezes via nela uma criatividade incomum.' por 'No fim, o Deep Blue venceu o match. Kasparov, que já tinha se gabado de que nunca perderia para uma máquina, disse que às vezes via nos lances dela uma criatividade incomum, que atribuía a intervenção humana; a IBM negou.' 4) Antes da última frase: 'A versão não é unânime: há relatos que situam o lance perturbador na segunda partida, e não na primeira.' (trecho da Wired: 'either at the end of the first game or the beginning of the second, depending on who's telling the story')."
+   },
+   {
+    "id": "jogos_tabuleiro-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Nigel Richards e Scrabble."
+   },
+   {
+    "id": "jogos_tabuleiro-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A coautoria de Chambers e a 'aposta' só aparecem num verbete de qualidade duvidosa; 'empatar sempre' exagera 'draw consistently'.",
+    "correcao": "1) 'A máquina, MENACE, foi construída com o colega Roger Chambers, depois de uma aposta com alguém que dizia que ela era impossível.' → 'A máquina se chamava MENACE.' 2) 'depois de vinte partidas os dois passaram a empatar sempre, que é o resultado de duas estratégias perfeitas' → 'depois de vinte partidas os dois passaram a empatar de forma consistente, que é o que acontece quando os dois lados jogam a estratégia perfeita'."
+   },
+   {
+    "id": "jogos_tabuleiro-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A Sotheby's apresenta a peça só como atribuída à oficina de Lewis; o carbono-14 dá data mais tardia; 'viu-se que era' exagera. Nota 3.",
+    "correcao": "1) Gancho: 'Em 1964, um antiquário de Edimburgo pagou 5 libras por uma peça de xadrez de marfim de morsa e a guardou numa gaveta. Em 2019, a Sotheby's a atribuiu à oficina das famosas peças de Lewis e a vendeu por £735.000.' 2) 'Era uma das torres que faltavam, em forma de guarda armado.' → 'Para a casa de leilões, era provavelmente uma das torres que faltavam, em forma de guarda armado, embora a própria Sotheby's admita que o tema segue em debate e a datação por carbono-14 da peça tenha dado uma data mais tardia que a do conjunto.' (com trechos literais do catálogo: 'ATTRIBUTED TO THE LEWIS CHESSMEN WORKSHOP', 'healthy scholarly debate'). Opcional: a cena do 'xadrez de bruxo' do primeiro filme de Harry Potter, se o catálogo citar."
+   }
+  ],
+  "2": [
+   {
+    "id": "jogos_tabuleiro-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Redescoberta e touros com cabeça humana, com trecho."
+   },
+   {
+    "id": "jogos_tabuleiro-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "MI9 procurou a EMI; discos de gramofone."
+   },
+   {
+    "id": "jogos_tabuleiro-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'O equivalente aos pontos de vida', com trecho."
+   },
+   {
+    "id": "jogos_tabuleiro-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Resistência e restrição à promoção separadas, sem causalidade."
+   },
+   {
+    "id": "jogos_tabuleiro-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; vírgula entre sujeito e verbo tirada como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "jogos_tabuleiro-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Teria feito', ressalva da partida e negativa da IBM."
+   },
+   {
+    "id": "jogos_tabuleiro-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem Chambers nem aposta; 'empatar de forma consistente'."
+   },
+   {
+    "id": "jogos_tabuleiro-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Atribuição, debate e datação mais tardia, com trechos da Sotheby's."
+   }
+  ]
+ }
+}

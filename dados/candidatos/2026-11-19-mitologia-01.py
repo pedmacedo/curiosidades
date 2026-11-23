@@ -1,0 +1,594 @@
+LOTE = "2026-11-19-mitologia-01"
+AREA = "artes"
+TEMA = "mitologia"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 ciclopes e crânios de elefante anão: a explicação famosa não tem base
+    {
+        "temas_secundarios": ["paleontologia", "grecia_antiga"],
+        "tipos_espanto": ["mito_desmentido", "misterio_aberto"],
+        "gancho": "Diz-se que o mito do ciclope nasceu de crânios de elefantes anões da Sicília, com um buraco central para a tromba. Mas a ideia ganhou fama apoiada num relato de Empédocles que não aparece em nenhum registro.",
+        "explicacao": (
+            "A hipótese é do paleontólogo Othenio Abel, que a defendeu em 1914, 1925 e 1939. Ele notou que o "
+            "crânio do elefante-anão siciliano Palaeoloxodon falconeri, do Pleistoceno, tem no meio uma grande "
+            "cavidade nasal, onde se prendia a tromba, que poderia ser tomada por uma única órbita gigante. A "
+            "explicação se popularizou em boa parte porque Abel afirmava que o filósofo grego Empédocles já teria "
+            "identificado ossos de elefante como restos de ciclopes. Só que essa história não tem base em nenhum "
+            "registro que sobreviveu. Os estudiosos de mitologia grega Mercedes Aguirre e Richard Buxton criticam a "
+            "ideia por falta de evidência e por não poder ser refutada. O paleontólogo Mark Witton e Richard Hing vão "
+            "na mesma linha: sem o suposto relato de Empédocles, nada liga em especial os fósseis da Sicília ao "
+            "mito, já que fósseis de elefante e monstros de um olho só existem no mundo todo. Witton também contesta "
+            "outra explicação famosa do mesmo tipo, a de que a imagem grega do grifo teria sido influenciada por "
+            "fósseis de dinossauros com bico, como o Protoceratops. Para Aguirre e Buxton, explicações assim podem "
+            "soar plausíveis, mas falta uma cadeia de argumentos que ligue a suposta origem ao mito."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Cyclops",
+                "A possible origin for one-eyed Cyclopes was advanced by the palaeontologist Othenio Abel in 1914, 1925 and 1939. "
+                "Abel proposed that fossil skulls of Pleistocene dwarf elephants, specifically the Sicilian dwarf elephant Palaeoloxodon falconeri, inspired the cyclopes myth. "
+                "Abel suggested that the large, central nasal cavity (for the trunk) in the skull might have been interpreted as a large single eye-socket. "
+                "However, this claim has been criticised by Greek mythology scholars Mercedes Aguirre and Richard Buxton as lacking evidence and being unfalsifiable. "
+                "Othenio Abel's hypothesis was widely popularized because he claimed that Greek philosopher Empedocles identified elephant bones as cyclopes remains. "
+                "However, this claim has \"no basis in any surviving records\". "
+                "Paleontologist Mark Witton and Richard Hing were similarly critical of the dwarf elephant hypothesis, stating that \"without his literary evidence [of the Empedocles story], Abel's geomyth becomes baseless: elephant fossils and myths of one-eyed monsters exist all over the world, and there is no evidence from historic texts or artwork that makes their connection in Sicily particularly notable or important\". [...] "
+                "Mercedes Aguirre and Richard Buxton write that while these scientific explanations for the Cyclopes might have \"an air of plausibility\" they lack a \"robust chain of argument, a demonstrable sequence of circumstances, that might link the supposed origin with the myth\"",
+                nome="Cyclops"),
+            wiki("Griffin",
+                "Adrienne Mayor, a classical folklorist and science historian, speculates that the way the Greeks imagined griffins from the seventh century BC onwards may have been influenced in part by the fossilized remains of beaked dinosaurs such as Protoceratops and Psittacosaurus [...] "
+                "Paleontologist Mark P. Witton contests this hypothesis.",
+                nome="Griffin"),
+        ],
+    },
+    # 2 amonites: chifres de Amon e "pedras-serpente"
+    {
+        "temas_secundarios": ["paleontologia", "religioes"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "Os fósseis de amonite levam o nome do deus egípcio Amon, retratado com chifres de carneiro. Na Europa medieval, eram tidos como cobras petrificadas, e comerciantes entalhavam neles cabeças de cobra para vender.",
+        "explicacao": (
+            "As amonites eram animais de concha enrolada, parentes mais próximos de polvos e lulas do que dos "
+            "náutilos, com os quais se parecem. Os primeiros surgiram há cerca de 410 milhões de anos, e os últimos "
+            "sumiram por volta de 66 milhões de anos atrás, na extinção do fim do Cretáceo. O nome vem de Plínio, o "
+            "Velho, que chamava esses fósseis de \"chifres de Amon\": a espiral lembra os chifres de carneiro com que "
+            "o deus egípcio costumava ser representado. Na Europa medieval, a leitura foi outra. As amonites seriam "
+            "serpentes enroladas que viraram pedra, as \"pedras-serpente\", vistas como prova de milagres de santos, "
+            "como Santa Hilda de Whitby e São Patrício, e como objetos com poderes de cura ou de adivinhação. Ajudava "
+            "que um tipo de espiral larga, comum nas rochas do Jurássico europeu, lembre mesmo uma cobra enrolada. "
+            "Para completar a ilusão, comerciantes às vezes entalhavam uma cabeça de cobra na ponta larga e vazia do "
+            "fóssil, ou só a pintavam, e vendiam a peça como serpente petrificada. No Nepal, amonites do rio Gandaki, "
+            "chamadas shaligrams, são vistas por hindus como uma manifestação concreta do deus Vishnu."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ammonoidea",
+            "They are more closely related to living octopuses, squid, and cuttlefish (which compose the clade Coleoidea) than they are to nautiluses (family Nautilidae), which their shells resemble. "
+            "The earliest ammonoids appeared during the Emsian stage of the Early Devonian, around 410-408 million years ago, with the last species vanishing during or soon after the Cretaceous–Paleogene extinction event approximately 66 million years ago. [...] "
+            "Pliny the Elder (d. 79 AD near Pompeii) called fossils of these animals ammonis cornua (\"horns of Ammon\") because the Egyptian god Ammon (Amun) was typically depicted wearing rams' horns. [...] "
+            "Serpenticone ammonites resemble coiled snakes and are abundant in the Jurassic rocks of Europe. [...] "
+            "In medieval Europe, fossilised ammonites were thought to be petrified coiled snakes, and were called \"snakestones\" or, more commonly in medieval England, \"serpentstones\". "
+            "They were considered to be evidence for the actions of saints, such as Hilda of Whitby, a myth referenced in Sir Walter Scott's Marmion, and Saint Patrick, and were held to have healing or oracular powers. "
+            "Traders would occasionally carve the head of a snake onto the empty, wide end of the ammonite fossil, and then sell them as petrified snakes. "
+            "In other cases, the snake's head would be simply painted on. [...] "
+            "Ammonites from the Gandaki River in Nepal are known as Shaligrams, and are believed by Hindus to be a concrete manifestation of Vishnu.",
+            nome="Ammonoidea")],
+    },
+    # 3 pedras de raio: machados pré-históricos caídos do céu
+    {
+        "temas_secundarios": ["pre_historia", "europa_medieval"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Por séculos, machados de pedra pré-históricos foram guardados na Europa como \"pedras de raio\", que teriam caído do céu nas tempestades. Só no século XVIII ganhou força a ideia de que eram ferramentas feitas por gente.",
+        "explicacao": (
+            "O nome vinha da crença de que a pedra era achada onde um raio tinha caído; em latim, eram as ceraunia, "
+            "de uma palavra grega para \"raio\". Gregos e romanos, ao menos a partir do período helenístico, usavam "
+            "machados neolíticos como proteção de edifícios: um levantamento de 1985 achou 40 desses machados em "
+            "contextos romanos na Britânia, 29 deles ligados a construções como vilas, quartéis, templos e fornos. "
+            "Na Idade Média, essas pedras eram veneradas como armas usadas na \"guerra no céu\" para expulsar Satanás. "
+            "Na Escandinávia, chegavam a receber cerveja derramada como oferenda. Ainda no século XVII, um embaixador "
+            "francês deu ao príncipe-bispo de Verdun um machado de pedra, garantindo que ele tinha poderes de cura. "
+            "No fim do século XVI, Michele Mercati tentou provar que eram armas e ferramentas de povos antigos, mas "
+            "seu livro só foi publicado no começo do século XVIII. Em 1723, Antoine de Jussieu mostrou à Academia "
+            "Francesa que viajantes traziam de várias partes do mundo objetos de pedra essencialmente iguais às "
+            "\"pedras de raio\" europeias. No relato citado do historiador Andrew Dickson White, foi com Jussieu e com o "
+            "jesuíta Lafitau, que comparou costumes de povos de outras terras aos dos antigos europeus, que começou a "
+            "etnografia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Thunderstone_(folklore)",
+            "A thunderstone is a prehistoric hand axe, stone tool, or fossil which was later used as an amulet to protect a person or a building. "
+            "The name derives from the ancient belief that the object was found at a place where lightning had struck. "
+            "They were also called ceraunia (a Latin word, derived from the Greek word κεραυνός, both of which mean 'thunderbolt'). [...] "
+            "The Greeks and Romans, at least from the Hellenistic period onward, used Neolithic stone axeheads for the apotropaic protection of buildings. "
+            "A 1985 survey of the use of prehistoric axes in Romano-British contexts found forty examples, of which twenty-nine were associated with buildings including villas, military structures such as barracks, temples, and kilns. [...] "
+            "During the Middle Ages many of these well-wrought stones were venerated as weapons, which during the \"war in heaven\" had been used in driving forth Satan and his hosts. [...] "
+            "In Scandinavia thunderstones were frequently worshiped as family gods who kept off spells and witchcraft. "
+            "Beer was poured over them as an offering [...] "
+            "Even as late as the 17th century, a French ambassador brought a stone hatchet, which still exists in the museum at Nancy, as a present to the Prince-Bishop of Verdun, and claimed that it had healing properties. "
+            "Andrew Dickson White described the discovery of the true origin of thunderstones as a \"line of observation and thought ... fatal to the theological view\". "
+            "In the last years of the 16th century Michael Mercati tried to prove that the \"thunder-stones\" were weapons or implements of early races of men; but for some reason his book was not published until the beginning of the 18th century [...] "
+            "In 1723 Antoine de Jussieu addressed the French Academy on 'The Origin and Uses of Thunder-stones'. "
+            "He showed that recent travelers from various parts of the world had brought a number of weapons and other implements of stone to France, and that they were essentially similar to what in Europe had been known as \"thunderstones\". "
+            "A year later this fact was firmly embedded in the minds of French scientists by the Jesuit Joseph-Francois Lafitau, who published a work showing the similarity between the customs of aborigines then existing in other lands and those of the early inhabitants of Europe. "
+            "So began, in these works of Jussieu and Lafitau, the science of ethnography.",
+            nome="Thunderstone (folklore)")],
+    },
+    # 4 o pânico vampiro da Nova Inglaterra e a tuberculose
+    {
+        "temas_secundarios": ["doencas_infecciosas", "literatura"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Em 1892, nos EUA, vizinhos desenterraram uma jovem morta de tuberculose, queimaram seu coração e deram as cinzas com água ao irmão doente. Acreditavam que a morta sugava a vida da família.",
+        "explicacao": (
+            "O caso de Mercy Brown, em Rhode Island, é um dos mais bem documentados do chamado pânico vampiro da "
+            "Nova Inglaterra, que acompanhou surtos de tuberculose no fim do século XVIII e no século XIX. A doença, "
+            "então chamada de \"consumpção\", parecia consumir o corpo do doente, e sua causa só foi conhecida no fim "
+            "do século XIX. Como ela se espalha com facilidade dentro de uma família, quando alguém morria, outros "
+            "parentes iam perdendo a saúde aos poucos. A explicação popular era que o morto drenava a vida dos vivos. "
+            "Para achar o culpado, exumavam-se os corpos: se um parecesse fresco demais, sobretudo com sangue líquido "
+            "no coração, era apontado. Na família Brown, a mãe e uma filha morreram da doença em 1883 e 1884; em 1891, "
+            "Mercy e o irmão, Edwin, adoeceram. Depois da morte dela, o pai, que não acreditava que um vampiro fosse "
+            "o culpado, acabou permitindo a exumação. O coração e o fígado de Mercy foram queimados, e as cinzas, "
+            "misturadas com água, viraram um tônico para Edwin. Ele morreu dois meses depois. Estudiosos sugerem que "
+            "Bram Stoker soube do caso pelos jornais e se baseou nele para criar a personagem Lucy Westenra, de "
+            "\"Drácula\". E, provavelmente, as famílias nem chamavam os mortos de vampiros: o termo era dos jornais e "
+            "de gente de fora."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Mercy_Brown_vampire_incident",
+                "The Mercy Brown vampire incident occurred in Rhode Island in January 1892. "
+                "It is one of the best documented cases of the exhumation of a corpse in order to perform rituals to banish an undead manifestation. [...] "
+                "Mary Eliza was the first to die of the disease on December 8, 1883, followed on June 6, 1884, by her eldest daughter Mary Olive at age 20, according to her grave stone. "
+                "In 1891, daughter Mercy Lena Brown and only son Edwin \"Eddie\" Atwood Brown also contracted the disease. [...] "
+                "As superstition dictated, Mercy's heart and liver were burned, and the ashes were mixed with water to create a tonic which was given to Edwin in an effort to resolve his illness and stop the influence of the undead. "
+                "The young man died two months later. [...] "
+                "Scholars have suggested that Bram Stoker knew about the Mercy Brown case through newspaper articles and based the character Lucy Westenra upon her in his novel Dracula.",
+                nome="Mercy Brown vampire incident"),
+            wiki("New_England_vampire_panic",
+                "The New England vampire panic was the reaction to an outbreak of tuberculosis in the late 18th and 19th centuries throughout Rhode Island, eastern Connecticut, southern Massachusetts, Vermont, and other areas of the New England states. [...] "
+                "Tuberculosis was known as \"consumption\" at the time, as it appeared to consume an infected person's body. "
+                "It is now known to be a bacterial disease, but the cause was unknown until the late 19th century. "
+                "The infection spreads easily among a family; thus, when one family member died of consumption, other members were often infected and gradually lost their health. "
+                "People believed that this was due to the deceased TB sufferer draining the life from other family members. [...] "
+                "The corpse was deemed to be feeding on the living if it was determined to be unusually fresh, especially if the heart or other organs contained liquid blood. [...] "
+                "Two months after Mercy's death, her father George Brown—who did not believe that a vampire was to blame—reluctantly permitted others to exhume the bodies of his family. [...] "
+                "It is unlikely that the deceased would have been known as vampires by their affected families, because the word was not in common use in the community at that time. "
+                "However, the term was used by newspapers and outsiders at the time",
+                nome="New England vampire panic"),
+        ],
+    },
+    # 5 o trono de "unicórnio" é de narval
+    {
+        "temas_secundarios": ["vida_marinha", "religioes"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "Segundo a lenda, o trono de coroação dos reis dinamarqueses é de chifre de unicórnio. É de presas de narval: por séculos, esse dente comprido de um mamífero marinho foi vendido na Europa como chifre do bicho mítico.",
+        "explicacao": (
+            "O trono foi feito entre 1662 e 1671, logo depois que a Dinamarca e a Noruega adotaram a monarquia "
+            "absoluta, e serviu nas coroações de 1671 a 1840. Fica no Castelo de Rosenborg, em Copenhague, guardado "
+            "por três leões de prata em tamanho natural. O material era tido como um dos bens mais valiosos que "
+            "alguém podia ter: \"chifres de unicórnio\" eram dados como presentes diplomáticos, e lascas e pó deles "
+            "eram vendidos em boticas como antídoto universal até o século XVIII. Segundo o cirurgião francês Ambroise "
+            "Paré, na corte do rei da França eles serviam para detectar veneno na comida e na bebida. A fonte real era "
+            "o narval, um mamífero marinho cuja \"presa\" é, na verdade, um dente alongado, presente nos machos e em "
+            "algumas fêmeas. Vikings e nórdicos da Groenlândia provavelmente começaram esse comércio. Até a Bíblia "
+            "entrou na história: o re'em, animal citado nove vezes na Bíblia hebraica, virou \"unicórnio\" na Vulgata "
+            "latina, e a Bíblia inglesa do rei Jaime seguiu essa tradução no livro de Jó. Alguns estudiosos defendem "
+            "que o re'em era, na verdade, o auroque, um boi selvagem."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Throne_Chair_of_Denmark",
+                "According to legend, the Coronation Chair is made of the horn of unicorns. "
+                "In reality, it is made from Norwegian narwhal tusks. "
+                "It is guarded by three life-size silver lions [...] "
+                "The Coronation Chair is located in the Castle of Rosenborg in Copenhagen. [...] "
+                "Following the 1660 introduction of absolute monarchy in Denmark and Norway, King Frederick III (r. 1648–1670) ordered a coronation chair to be created. "
+                "The Coronation Chair was made between 1662 and 1671 by Bendix Grodtschilling. [...] "
+                "The Coronation Chair was used at coronations between 1671, for Christian V, and 1840.",
+                nome="Coronation Chair of Denmark"),
+            wiki("Unicorn_horn",
+                "Seen as one of the most valuable assets that a person could possess, unicorn horns were given as diplomatic gifts, and chips and dust from them could be purchased at apothecaries as universal antidotes until the 18th century. [...] "
+                "This marine mammal is the true bearer of the alicorn, actually an extended tooth found in the mouth of males and some females. [...] "
+                "Ambroise Paré explains that alicorns were used in the court of the King of France to detect the presence of poison in food and drink",
+                nome="Unicorn horn"),
+            wiki("Narwhal",
+                "Vikings and Greenland Norse likely began the trade of narwhal tusks",
+                nome="Narwhal"),
+            wiki("Re'em",
+                "is an animal mentioned nine times in the Hebrew Bible. "
+                "It has been translated as \"unicorn\" in the Latin Vulgate, King James Version [...] "
+                "Natan Slifkin has argued that the re'em was an aurochs, as has Isaac Asimov before him. [...] "
+                "The King James Version of the Book of Job followed the Septuagint and Jerome's Vulgate in the translation of re'em into unicorn [...] "
+                "interpret re'em as \"wild ox\" or \"wild bull\".",
+                nome="Re'em"),
+        ],
+    },
+    # 6 o chupacabra e o filme Species
+    {
+        "temas_secundarios": ["cultura_popular", "cinema_fotografia"],
+        "tipos_espanto": ["origem_inesperada", "mito_desmentido"],
+        "gancho": "O chupacabra surgiu em Porto Rico em 1995. Segundo um investigador, a testemunha que deu a descrição original tinha acabado de ver o filme de terror \"Species\", cujo monstro é quase idêntico ao relato dela.",
+        "explicacao": (
+            "Em março de 1995, oito ovelhas foram achadas mortas em Porto Rico, cada uma com três perfurações no "
+            "peito e, segundo se dizia, sem nenhum sangue. Em agosto, uma moradora de Canóvanas, Madelyne Tolentino, "
+            "relatou ter visto a criatura, em meio a uma onda de mortes de animais; só naquele ano, os relatos na "
+            "ilha passaram de 200. O nome, \"chupa-cabras\", é atribuído ao humorista porto-riquenho Silverio Pérez, "
+            "que o cunhou num programa de rádio. O investigador Benjamin Radford passou cinco anos no caso e "
+            "concluiu, num livro de 2011, que a descrição de Tolentino se baseava em Sil, a criatura alienígena do "
+            "filme \"Species\", de 1995. Ela tinha visto o filme antes do relato e disse que a semelhança era "
+            "impressionante. Segundo Radford, ela acreditava que o que aparecia no filme estava acontecendo de "
+            "verdade em Porto Rico, e por isso a descrição mais importante do chupacabra não merece confiança. "
+            "Nenhuma necropsia confirmou que os animais tinham sido drenados: um veterinário do Departamento de "
+            "Agricultura porto-riquenho analisou 300 supostas vítimas e viu que elas não estavam sem sangue. Nos EUA, "
+            "os \"chupacabras\" examinados costumam ser coiotes e cães com sarna grave."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Chupacabra",
+            "The first reported attack later associated with the chupacabras phenomenon occurred in Puerto Rico in March 1995. "
+            "Eight sheep were found dead, each reportedly bearing three puncture wounds to the chest and alleged to have been completely drained of blood. "
+            "Several months later, in August, a resident named Madelyne Tolentino reported a sighting of the creature in the municipality of Canóvanas. [...] "
+            "The first reports from Puerto Rico numbered more than 200 in 1995. [...] "
+            "The name is generally attributed to Puerto Rican comedian Silverio Pérez, who coined the term in 1995 while discussing the reported livestock attacks during his radio program in San Juan. [...] "
+            "A five-year investigation by Benjamin Radford, documented in his 2011 book Tracking the Chupacabra, concluded that the description given by the original eyewitness in Puerto Rico, Madelyne Tolentino, was based on the creature Sil in the 1995 science-fiction horror film Species. "
+            "The alien creature Sil is nearly identical to Tolentino's chupacabra eyewitness account and she had seen the movie before her report: "
+            "\"It was a creature that looked like the chupacabra, with spines on its back and all... The resemblance to the chupacabra was really impressive\", Tolentino reported. "
+            "Radford revealed that Tolentino \"believed that the creatures and events she saw in Species were happening in reality in Puerto Rico at the time\", and therefore concludes that \"the most important chupacabra description cannot be trusted\". [...] "
+            "The reports of blood-sucking by the chupacabra were never confirmed by a necropsy, the only way to conclude that the animal was drained of blood. "
+            "Dr. David Morales, a Puerto Rican veterinarian with the Department of Agriculture, analyzed 300 reported victims of the chupacabra and found that they had not been bled dry. [...] "
+            "Investigations of purported sightings in northern Mexico and the Southern United States have instead identified the animals involved as canids afflicted by severe mange.",
+            nome="Chupacabra")],
+    },
+    # 7 Slender Man: um mito com data de nascimento
+    {
+        "temas_secundarios": ["cultura_popular", "videogames"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O Slender Man, figura de terror alta e sem rosto, tem data de nascimento: 10 de junho de 2009, num concurso de montagens \"paranormais\" num fórum da internet. Folcloristas o estudam como um mito que se viu nascer.",
+        "explicacao": (
+            "O autor foi Eric Knudsen, sob o pseudônimo Victor Surge. Ele pegou duas fotos em preto e branco de "
+            "grupos de crianças e acrescentou uma figura alta e magra, de terno preto. Os participantes anteriores "
+            "tinham postado só fotos; ele juntou trechos de supostos testemunhos sobre o sumiço de crianças e deu à "
+            "criatura o nome de \"Slender Man\". A partir daí, outros usuários foram ampliando a história. Um dos "
+            "primeiros acréscimos foi um conto passado na Alemanha do século XVI, com um personagem chamado Der "
+            "Großman, apresentado como se fosse um registro antigo da mesma figura. Sem cânone oficial, o personagem "
+            "se espalhou por séries de vídeo, jogos e filmes, e inspirou o Enderman do Minecraft. Para vários "
+            "estudiosos, ele é uma forma de folclore digital, mesmo sendo ficção com origem identificável: foi criado "
+            "de forma coletiva, muda conforme quem conta e se molda à reação do público. A pesquisadora Shira Chess "
+            "observa que, ao contrário de vampiros e lobisomens, a formação desse mito pode ser rastreada, o que "
+            "ajuda a entender como mitos e folclore se formam. Já o folclorista Jeff Tolbert vê aí o caminho inverso "
+            "do habitual: em vez de encenar uma lenda que já existia, criou-se um conjunto de narrativas com cara de "
+            "tradição onde não havia nenhuma."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Slender_Man",
+            "The Slender Man also inspired the Enderman in Minecraft. [...] "
+            "The Slender Man was created on 10 June 2009, on a thread in the Something Awful Internet forum. "
+            "The thread was a Photoshop contest in which users were challenged to create \"paranormal images\". "
+            "Forum poster Eric Knudsen, under the pseudonym \"Victor Surge\", contributed two black-and-white images of groups of children to which he added a tall, thin, spectral figure wearing a black suit. "
+            "Although previous entries had consisted solely of photographs, Surge supplemented his submission with snatches of text—supposedly from witnesses—describing the abductions of groups of children and giving the character the name \"the Slender Man\" [...] "
+            "Subsequent posters expanded upon the character, adding their own visual or textual contributions. [...] "
+            "One of the earliest additions was added by a forum user named \"Thoreau-Up\", who created a folklore story set in 16th-century Germany involving a character called Der Großman, which was implied by the writer to be an early reference to the Slender Man. [...] "
+            "Several scholars have argued that, despite being a fictional work with an identifiable origin point, the Slender Man represents a form of digital folklore. "
+            "Shira Chess argues that Slender Man exemplifies the similarities between traditional folklore and the open source ethos of the Internet, and that, unlike those of traditional monsters such as vampires and werewolves, the fact that the Slender Man's mythos can be tracked and signposted offers a powerful insight into how myth and folklore form. "
+            "Chess identifies three aspects of the Slender Man mythos that tie it to folklore: collectivity (meaning that it is created by a collective, rather than a single individual), variability (meaning that the story changes depending on the teller), and performance (meaning that the storyteller's narrative changes to reflect the audience's response). [...] "
+            "Jeff Tolbert also accepts the Slender Man as folkloric, and suggests it represents a process he calls \"reverse ostension\". "
+            "Ostension in folkloristics is the process of acting out a folk narrative. "
+            "According to Tolbert, the Slender Man does the opposite by creating a set of folklore-like narratives where none existed before.",
+            nome="Slender Man")],
+    },
+    # 8 Barlaam e Josafá: o Buda como santo cristão
+    {
+        "temas_secundarios": ["religioes", "asia_antiga"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "Por cerca de mil anos, cristãos veneraram um santo que era, sem que soubessem, o Buda. A vida de São Josafá é uma versão cristianizada da história de Sidarta Gautama, e o nome Josafá vem de \"bodisatva\".",
+        "explicacao": (
+            "Na lenda, um rei da Índia que perseguia cristãos ouve de astrólogos que o filho, o príncipe Josafá, um "
+            "dia se converteria. Ele isola o rapaz, mas o eremita Barlaam o encontra e o converte. No fim, o próprio "
+            "rei se converte, e o príncipe abdica para viver em retiro com o velho mestre. A história fez uma longa "
+            "viagem. Partiu de um texto budista em sânscrito dos séculos II a IV, passou por uma versão maniqueísta e "
+            "por um livro árabe que circulava em Bagdá no século VIII, e foi cristianizada num épico georgiano do "
+            "século X. Um monge georgiano a traduziu para o grego antes de 1028, e em 1048 ela ganhou versão latina. O "
+            "nome mudou pelo caminho: o sânscrito \"bodisatva\" virou Bodisav em textos do persa médio e Budhasaf em "
+            "árabe, onde um ponto duplicado na escrita trocou o \"b\" por \"y\". Depois veio Iodasaph, em georgiano, "
+            "Ioasaph, em grego, e enfim Josaphat, em latim. Barlaam e Josafá entraram no calendário ortodoxo e em "
+            "edições antigas do Martirológio Romano. Só em 1859-1860 pesquisadores europeus estabeleceram que, em "
+            "Josafá, o Buda vinha sendo venerado como santo cristão havia cerca de mil anos. Uma cena da lenda, a das "
+            "três caixinhas, chegou até \"O Mercador de Veneza\", de Shakespeare."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Barlaam_and_Josaphat",
+            "According to tradition, an Indian king persecuted the Christian Church in his realm. "
+            "After astrologers predicted that his own son would some day become a Christian, the king imprisoned the young prince Josaphat, who nevertheless met the hermit Saint Barlaam and converted to Christianity. "
+            "After much tribulation the young prince's father accepted the Christian faith, turned over his throne to Josaphat, and retired to the desert to become a hermit. "
+            "Josaphat himself later abdicated and went into seclusion with his old teacher Barlaam. "
+            "The story is thought to be a Christianized and later version of the story of Siddhartha Gautama, who became the Buddha. [...] "
+            "The tale derives from a second to fourth century Sanskrit Mahayana Buddhist text, via a Manichaean version, then the Arabic Kitāb Bilawhar wa-Būd̠āsaf (Book of Bilawhar and Budhasaf), current in Baghdad in the eighth century, from where it entered into Middle Eastern Christian circles before appearing in European versions. "
+            "The first Christianized adaptation was the Georgian epic Balavariani dating back to the 10th century. "
+            "A Georgian monk, Euthymius of Athos, translated the story into Greek, some time before he died in an accident while visiting Constantinople in 1028. "
+            "There the Greek adaptation was translated into Latin in 1048 [...] "
+            "a scene there involving three caskets eventually appeared, via Caxton's English translation of a Latin version, in Shakespeare's \"The Merchant of Venice\". [...] "
+            "In this context, the name Josaphat is derived from the Sanskrit bodhisattva. "
+            "The Sanskrit word was changed to Bodisav in Middle Persian texts in the 6th or 7th century, then to Būdhasaf or Yūdhasaf in an 8th-century Arabic document (Arabic initial \"b\" ﺑ changed to \"y\" ﻳ by duplication of a dot in handwriting). "
+            "This became Iodasaph in Georgian in the 10th century, and that name was adapted as Ioasaph (Ἰωάσαφ) in Greece in the 11th century, and then was assimilated to Iosaphat/Josaphat in Latin. [...] "
+            "Barlaam and Josaphat were included in earlier editions of the Roman Martyrology [...] "
+            "Barlaam and Josaphat were entered into the Greek Orthodox liturgical calendar [...] "
+            "\"But not till the mid-nineteenth century was it recognised that, in Josaphat, the Buddha had been venerated as a Christian saint for about a thousand years.\" "
+            "This was ascertained through the researches of Edouard de Laboulaye and Felix Liebrecht in 1859-1860.",
+            nome="Barlaam and Josaphat")],
+    },
+    # 9 Cinderelas antigas: Ye Xian e Ródope
+    {
+        "temas_secundarios": ["literatura", "asia_antiga"],
+        "tipos_espanto": ["conexao_inesperada", "mito_desmentido"],
+        "gancho": "Uma Cinderela chinesa escrita por volta de 850 já tinha madrasta cruel, sapatinho perdido e um rei à procura da dona. Antes ainda, o grego Estrabão registrou uma história de sandália que leva uma moça a casar com o rei.",
+        "explicacao": (
+            "A versão chinesa é a de Ye Xian, publicada numa coletânea da dinastia Tang compilada por Duan Chengshi. "
+            "Órfã, a moça vira serva da madrasta e da meia-irmã e tem como amigo um peixe, espírito protetor enviado "
+            "pela mãe morta. A madrasta mata o peixe, mas os ossos dele realizam os desejos de Ye Xian: um vestido de "
+            "seda verde-mar, um manto de penas de martim-pescador e sapatinhos de ouro. Ela perde um deles numa "
+            "festa, e o sapato chega às mãos de um rei, fascinado pelo tamanho minúsculo, que manda procurar a moça "
+            "em cujo pé ele caiba. A versão grega, a de Ródope, costuma ser considerada a mais antiga conhecida: "
+            "segundo Estrabão, enquanto ela se banhava, uma águia roubou uma de suas sandálias e a largou no colo do "
+            "rei do Egito, em Mênfis. Intrigado, ele mandou procurar a dona e se casou com ela. Já o sapatinho de "
+            "vidro é de Perrault. Circula a ideia de que seria um erro: o original seria de \"vair\", pele de esquilo, "
+            "confundida com \"verre\", vidro, algo que Balzac defendeu em 1841. Mas a maioria dos estudiosos acha que "
+            "o vidro foi uma invenção poética deliberada de Perrault."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Ye_Xian",
+                "It is one of the oldest known variants of Cinderella, first published in the Tang dynasty compilation Miscellaneous Morsels from Youyang written around 850 by Duan Chengshi. [...] "
+                "With her family reduced to poverty, Ye Xian is forced to become a lowly servant and work for her unloving and cruel stepmother, Jin, and spoiled and lazy younger half-sister Jun-Li. [...] "
+                "The fish was really a guardian spirit sent to her by her own mother, who never forgot her daughter even beyond the grave. [...] "
+                "She makes a silent wish to the bones, and Ye Xian finds herself clothed magnificently in a gown of sea-green silk, a cloak of kingfisher feathers, and a pair of tiny golden slippers. [...] "
+                "Fascinated by the shoe's small size, he issues a search to find the maiden whose foot will fit into the shoe and proclaims he will marry that girl.",
+                nome="Ye Xian"),
+            wiki("Cinderella",
+                "The earliest known version of the Cinderella story is usually considered to be the Greek story of Rhodopis, as described by the scholar Strabo sometime between 7 BC and 23 AD, about a Greek slave girl who marries the king of Egypt. [...] "
+                "when [Rhodopis] was bathing, an eagle snatched one of her sandals from her maid and carried it to Memphis; and while the king was administering justice in the open air, the eagle, when it arrived above his head, flung the sandal into his lap; "
+                "and the king, stirred both by the beautiful shape of the sandal and by the strangeness of the occurrence, sent men in all directions into the country in quest of the woman who wore the sandal; "
+                "and when she was found in the city of Naucratis, she was brought up to Memphis, and became the wife of the king. [...] "
+                "Some interpreters, perhaps troubled by sartorial impracticalities, have suggested that Perrault's \"glass slipper\" (pantoufle de verre) had been a \"squirrel fur slipper\" (pantoufle de vair) in some unidentified earlier version of the tale, and that Perrault or one of his sources confused the words. "
+                "However, most scholars believe the glass slipper was a deliberate piece of poetic invention on Perrault's part. [...] "
+                "Honoré de Balzac wrote in his 1841 philosophical study titled ′Catherine de' Medici′ that Perreault's Cinderella slipper was no doubt of vair",
+                nome="Cinderella"),
+        ],
+    },
+    # 10 Atlântida: invenção de Platão, ressuscitada em 1882
+    {
+        "temas_secundarios": ["grecia_antiga", "literatura"],
+        "tipos_espanto": ["mito_desmentido", "origem_inesperada"],
+        "gancho": "A Atlântida não foi um continente perdido: foi uma ilha inventada por Platão numa alegoria sobre a arrogância das nações. Quem a transformou em civilização real foi um autor amador americano, num livro de 1882.",
+        "explicacao": (
+            "As únicas fontes primárias sobre a Atlântida são dois diálogos de Platão, o Timeu e o Crítias; todas "
+            "as outras menções vêm deles. Na história, uma potência naval do oeste conquista boa parte da Europa e da "
+            "Líbia, perde o favor dos deuses depois de uma campanha fracassada contra uma Atenas ficcional e afunda no "
+            "oceano. Platão criou de propósito um contraste com o Império Aquemênida, a grande potência terrestre do "
+            "leste, e retratou a Atenas vitoriosa à imagem do Estado ideal da sua \"República\". O próprio Aristóteles, "
+            "aluno dele, achava que o mestre tinha inventado a ilha para ensinar filosofia. Hoje, filólogos e "
+            "estudiosos clássicos concordam que a história é ficção, embora ainda se discuta o que a inspirou. O mito "
+            "moderno nasceu no século XIX, quando estudiosos amadores leram Platão como relato histórico. O mais "
+            "famoso foi Ignatius Donnelly, cujo livro \"Atlantis: The Antediluvian World\", de 1882, sustentava que "
+            "todas as civilizações antigas conhecidas descendiam de uma Atlântida tecnologicamente avançada, "
+            "destruída pelo dilúvio bíblico. Donnelly é apontado como o motivo de o mito durar até hoje. Pouco depois, "
+            "a fundadora da teosofia, Helena Blavatsky, retomou as ideias dele e afirmou que seu livro de 1888 tinha "
+            "sido ditado originalmente na Atlântida."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Atlantis",
+            "is a fictional island mentioned in Plato's works Timaeus and Critias as part of an allegory on the hubris of nations. "
+            "By describing Atlantis as a naval empire from the west that had conquered most of Europe and Libya, Plato purposely created a literary contrast with the Achaemenid Empire, the great land-based power that ruled the east (what the Greeks called Asia). "
+            "In Plato's account, Atlantis loses divine favor after an ill-fated campaign against a fictionalized Athens, and subsequently submerges into the Atlantic Ocean. "
+            "By portraying the victorious Athens in the image of his ideal state from the Republic, Plato intended the Atlantis story to bear witness to the superiority of his concept of a state. [...] "
+            "nineteenth-century amateur scholars misinterpreted Plato's narrative as historical tradition, most famously Ignatius L. Donnelly in his Atlantis: The Antediluvian World. [...] "
+            "While present-day philologists and classicists agree on the story's fictional nature, there is still debate on what served as its inspiration. [...] "
+            "The only primary sources for Atlantis are Plato's dialogues Timaeus and Critias; all other mentions of the island are based on them. [...] "
+            "Aristotle believed that Plato, his teacher, had invented the island to teach philosophy. [...] "
+            "The 1882 publication of Atlantis: The Antediluvian World by Ignatius L. Donnelly stimulated much popular interest in Atlantis. "
+            "He was greatly inspired by early works in Mayanism, and like them, attempted to establish that all known ancient civilizations were descended from Atlantis, which he saw as a technologically sophisticated, more advanced culture. [...] "
+            "As implied by the title of his book, he also believed that Atlantis was destroyed by the Great Flood mentioned in the Bible. "
+            "Donnelly is credited as the \"father of the nineteenth century Atlantis revival\" and is the reason the myth endures today. [...] "
+            "Helena Petrovna Blavatsky, the founder of the Theosophists, took up Donnelly's interpretations when she wrote The Secret Doctrine (1888), which she claimed was originally dictated in Atlantis.",
+            nome="Atlantis")],
+    },
+    # 11 tântalo e nióbio: a família mítica na tabela periódica
+    {
+        "temas_secundarios": ["elementos_quimicos", "grecia_antiga"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O tântalo, metal de capacitores de computadores, homenageia o Tântalo do mito, que nunca conseguia beber: o metal não absorve ácido. E o nióbio vem de Níobe, filha dele, porque os dois metais são quase gêmeos.",
+        "explicacao": (
+            "O sueco Anders Ekeberg descobriu o tântalo em 1802. No mito grego, Tântalo foi castigado depois da morte "
+            "a ficar com água pelos joelhos e frutas perfeitas sobre a cabeça: quando se abaixava para beber, a água "
+            "baixava, e quando estendia a mão, os galhos fugiam. Ekeberg explicou que escolheu o nome em parte pela "
+            "incapacidade do metal, mergulhado em ácido, de absorver qualquer quantidade dele. A família mítica "
+            "seguiu na química. Em 1801, o inglês Charles Hatchett tinha achado um elemento parecido e o chamado de "
+            "colúmbio. Em 1809, William Wollaston concluiu, errado, que os dois eram o mesmo. Em 1846, o alemão "
+            "Heinrich Rose afirmou haver dois elementos novos no minério de tântalo e os batizou com nomes de filhos "
+            "de Tântalo: nióbio, de Níobe, e pelópio, de Pélops. O pelópio era só uma mistura, e o nióbio se revelou o "
+            "mesmo colúmbio de Hatchett. Os dois nomes conviveram por cerca de um século, até que, em 1949, nióbio foi "
+            "o nome escolhido oficialmente. O nome reflete a enorme semelhança física e química entre os dois "
+            "elementos, que os torna difíceis de distinguir. Hoje o Brasil é o maior produtor mundial de nióbio."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Tantalum",
+                "It is named after Tantalus, a figure in Greek mythology. [...] "
+                "It is used in tantalum capacitors for electronic equipment such as computers. [...] "
+                "Tantalum was discovered in Sweden in 1802 by Anders Ekeberg [...] "
+                "In the story, he had been punished after death by being condemned to stand knee-deep in water with perfect fruit growing above his head, both of which eternally tantalized him. "
+                "(If he bent to drink the water, it drained below the level he could reach, and if he reached for the fruit, the branches moved out of his grasp.) "
+                "Anders Ekeberg wrote \"This metal I call tantalum ... partly in allusion to its incapacity, when immersed in acid, to absorb any and be saturated.\"",
+                nome="Tantalum"),
+            wiki("Niobium",
+                "Its name comes from Greek mythology: Niobe, daughter of Tantalus, the namesake of tantalum. "
+                "The name reflects the great similarity between the two elements in their physical and chemical properties, which makes them difficult to distinguish. "
+                "English chemist Charles Hatchett reported a new element similar to tantalum in 1801 and named it columbium. "
+                "In 1809, English chemist William Hyde Wollaston wrongly concluded that tantalum and columbium were identical. [...] "
+                "for a century both names were used interchangeably. "
+                "Niobium was officially adopted as the name of the element in 1949 [...] "
+                "Brazil is the leading producer of niobium and ferroniobium [...] "
+                "This conclusion was disputed in 1846 by German chemist Heinrich Rose, who argued that there were two different elements in the tantalite sample, and named them after children of Tantalus: niobium (from Niobe) and pelopium (from Pelops). [...] "
+                "The claimed new elements pelopium, ilmenium, and dianium were in fact identical to niobium or mixtures of niobium and tantalum.",
+                nome="Niobium"),
+        ],
+    },
+    # 12 mitos que guardam erupções reais
+    {
+        "temas_secundarios": ["vulcoes_terremotos", "pre_historia"],
+        "tipos_espanto": ["conexao_inesperada", "escala_absurda"],
+        "gancho": "Um mito dos Klamath, nos EUA, narra a luta de dois deuses que destruiu uma montanha e criou um lago. O lago nasceu mesmo do colapso de um vulcão, há uns 7.700 anos, e já havia gente vivendo ali.",
+        "explicacao": (
+            "O lago é o Crater Lake, no Oregon. Ele ocupa a caldeira formada há cerca de 7.700 anos, quando o vulcão "
+            "Mount Mazama desabou. A tradição oral dos Klamath fala de uma batalha entre Skell, deus do céu, e Llao, "
+            "deus do mundo subterrâneo, na qual o Mazama foi destruído, dando origem ao lago, que eles chamam de "
+            "Giiwas. Segundo essa tradição, os antepassados do povo viram o colapso acontecer. E a arqueologia mostra "
+            "que a presença humana ali é anterior à erupção: sandálias e outros objetos foram achados sob camadas de "
+            "cinza e pedra-pomes mais antigas que ela. Na Austrália há um caso possivelmente bem mais antigo. A "
+            "história da criação do povo Gunditjmara se baseia na erupção do vulcão Budj Bim, quando teria se "
+            "revelado um ser criador ancestral de mesmo nome. Uma datação publicada em 2020 situou essa erupção em "
+            "torno de 36.900 anos atrás. Como há artefatos humanos sob as cinzas de outro vulcão da região, de idade "
+            "parecida, isso também pode ser lido como evidência de que as histórias orais dos Gunditjmara sobre "
+            "erupções estão entre as tradições orais mais antigas que existem. O Crater Lake segue sagrado para os "
+            "Klamath."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Crater_Lake",
+                "The lake partly fills a 2,148-foot-deep (655 m) caldera that was formed around 7,700 (± 150) years ago by the collapse of the volcano Mount Mazama. [...] "
+                "A Native American connection with this area has been traced back to before the eruption of Mount Mazama. "
+                "Archaeologists have found sandals and other artifacts buried under layers of ash, dust, and pumice that antedate the eruption roughly 7,700 years ago. "
+                "Crater Lake remains significant to the Klamath tribes today. "
+                "The Klamath name for the lake is Giiwas. [...] "
+                "The Klamath tribe of Native Americans, whose oral history describes their ancestors witnessing the collapse of Mount Mazama and the formation of Crater Lake, regard the lake as an \"abode to the Great Spirit\". "
+                "Klamath oral history tells of a battle between the sky god Skell and the god of the underworld Llao (a prominent feature at Crater Lake is Llao Rock). "
+                "Mount Mazama was destroyed in the battle, creating Crater Lake, called giiwas in the Klamath language. [...] "
+                "The tribe still holds Crater Lake in high regard as a spiritual site.",
+                nome="Crater Lake"),
+            wiki("Budj_Bim",
+                "Research published in February 2020 using argon–argon dating, a method of radiometric dating, has dated the eruption at around 36,900 years ago. "
+                "Specifically, Budj Bim was dated at within 3,100 years either side of 36,900 years BP, and Tower Hill was dated at within 3,800 years either side of 36,800 years BP. "
+                "Significantly, owing to the presence of human artefacts found under volcanic ash at Tower Hill, this is a \"minimum age constraint for human presence in Victoria\", and also could be interpreted as evidence for the Gunditjmara oral histories which tell of volcanic eruptions being some of the oldest oral traditions in existence. [...] "
+                "The creation story of the local Gunditjmara people is based on the eruption of the volcano more than 30,000 years ago. "
+                "It was via this event that an ancestral creator-being known as Budj Bim was revealed.",
+                nome="Budj Bim"),
+        ],
+    },
+    # 13 o flautista de Hamelin: sem ratos no começo
+    {
+        "temas_secundarios": ["europa_medieval", "literatura"],
+        "tipos_espanto": ["misterio_aberto", "historia_humana"],
+        "gancho": "Na lenda do flautista de Hamelin, os ratos só entraram por volta de 1559. Os relatos mais antigos falam apenas de 130 crianças que sumiram da cidade em 1284, e até hoje não se sabe o que aconteceu com elas.",
+        "explicacao": (
+            "A menção mais antiga parece ser um vitral posto na igreja de Hamelin, na Alemanha, por volta de 1300. "
+            "Ele foi descrito em vários relatos até ser destruído, em 1660, e mostrava uma figura de roupa colorida "
+            "e crianças vestidas de branco. Em geral, é visto como memória de uma tragédia real da cidade. Um "
+            "manuscrito de meados do século XV, achado em 1936 nos arquivos de Lüneburg, conta que, no dia dos "
+            "santos João e Paulo de 1284, um rapaz de uns 30 anos, bonito e bem vestido, atravessou a cidade tocando "
+            "uma flauta de prata, e 130 crianças o seguiram para fora dos portões e desapareceram sem deixar rastro. "
+            "Segundo discussões dos registros da cidade, uma anotação de 1384 dizia: \"Faz 100 anos que nossas "
+            "crianças partiram\". Há séculos de pesquisa e nenhuma explicação aceita por todos. Entre as hipóteses "
+            "estão um afogamento no rio Weser, um deslizamento de terra, uma epidemia e a emigração. O site oficial de Hamelin "
+            "apresenta como a mais plausível a de que os \"filhos de Hamelin\" eram jovens recrutados para colonizar "
+            "terras no leste da Europa; sobrenomes comuns em Hamelin na época aparecem com frequência surpreendente "
+            "em regiões perto de Berlim. Os ratos, que viraram o centro da história, não aparecem nos relatos "
+            "anteriores a cerca de 1559."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Pied_Piper_of_Hamelin",
+            "The earliest mention of the story seems to have been on a stained-glass window placed in the Church of Hamelin c. 1300. "
+            "The window was described in several accounts between the 14th and 17th centuries. "
+            "It was destroyed in 1660. [...] "
+            "It features the colourful figure of the Pied Piper and several figures of children dressed in white. "
+            "The window is generally considered to have been created in memory of a tragic historical event for the town. "
+            "According to multiple secondary discussions of Hamelin’s town records, an entry dated 1384 stated: \"It is 100 years since our children left.\" "
+            "Although research has been conducted for centuries, no explanation for the historical event is universally accepted as true. "
+            "In any case, the rats were first added to the story in a version from c. 1559 and are absent from earlier accounts. [...] "
+            "The Lüneburg manuscript (c. 1440–50) gives an early German account of the event. [...] "
+            "Heinrich Spanuth, discovered the earliest version of the story in the Lüneburg city archives in 1936. [...] "
+            "in this Year of Our Lord, 1284, on the Feast of Saints John and Paul. "
+            "A certain young man thirty years of age, handsome and well-dressed, so that all who saw him admired him because of his appearance, crossed the bridges and entered the town by the West Gate. "
+            "He then began to play all through the town a silver pipe of the most magnificent sort. "
+            "All the children who heard his pipe, in the number of 130, followed him to the East Gate and out of the town to the so-called execution place or Calvary. "
+            "There they proceeded to vanish, so that no trace of them could be found. [...] "
+            "the children drowned in the river Weser, were killed in a landslide or contracted some disease during an epidemic. [...] "
+            "Among the various interpretations, reference to the colonization of East Europe starting from Low Germany is the most plausible one: "
+            "The \"Children of Hameln\" would have been in those days citizens willing to emigrate being recruited by landowners to settle in Moravia, East Prussia, Pomerania or in the Teutonic Land. [...] "
+            "The theory is provided credence by the fact that family names common to Hamelin at the time \"show up with surprising frequency in the areas of Uckermark and Prignitz, near Berlin.\"",
+            nome="Pied Piper of Hamelin")],
+    },
+    # 14 o Saci começou como pássaro
+    {
+        "temas_secundarios": ["cultura_popular", "povos_indigenas"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O nome saci-pererê se referia de início a um pássaro, o saci, cujo canto parece vir de lugar nenhum. Para Câmara Cascudo, a perna única do Saci pode vir das aves, que muitas vezes pousam num pé só.",
+        "explicacao": (
+            "O nome vem do tupinambá, e \"pererê\" quer dizer algo como \"saltitante\". O saci-pererê do mito se "
+            "referia originalmente a uma ave da família dos cucos, também chamada de matitaperê. Esse pássaro alterna "
+            "notas agudas e graves para fingir que está mais perto ou mais longe do que de fato está, e assim seu "
+            "canto melancólico parece não vir de lugar nenhum, confundindo viajantes. Na lenda, o próprio Saci vira "
+            "esse pássaro para agir sem ser visto. O folclorista Luís da Câmara Cascudo defendeu que o Saci era "
+            "provavelmente um mito de ave, e notou que um pássaro muitas vezes se apoia numa perna só, o que pode "
+            "levar facilmente à imagem de um menino de uma perna. A lenda atual mistura tradições tupis com mitos "
+            "afro-brasileiros e europeus. E boa parte do que se conta hoje sobre o Saci remonta a uma enquete: em "
+            "1917, Monteiro Lobato, colaborador de jornal, pediu aos leitores de São Paulo e arredores que "
+            "mandassem o que sabiam sobre ele, e publicou o resultado em livro em 1918. Detalhes como o cachimbo de "
+            "barro e o redemoinho em que ele dança faziam parte desse material. Em 1921, Lobato lançou ainda uma "
+            "versão para crianças."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Saci_(Brazilian_folklore)",
+            "The Saci legend is seen as a combination of native Tupi lore with African-Brazilian and European myth or superstition combined into it. "
+            "Also, much of the currently told folklore about the Saci is traceable to what writer Monteiro Lobato collected and published in 1917–1918, and the children's book version he created and published in 1921. [...] "
+            "The term saci derives from Tupinambá: çaci meaning \"sick eye\", or rather Tupinambá: çua ci \"evil eye\". "
+            "The suffixed -pererê also derives from Tupinambá perérég meaning \"bouncy, jumpy\". "
+            "The Saci-pererê of myth originally referred to a Cuculiformes (cuckoo family) bird, more specifically the striped cuckoo. [...] "
+            "Certain details as the smoking the clay pipe, and the ability to create whirlwind and to dance and twirl inside it, were part of the folklore solicited in 1917 from the readership of São Paulo and its periphery by newspaper contributor Monteiro Lobato, subsequently published in book form in 1918. [...] "
+            "Also in order to do his deeds unseen, the Saci can transform himself into a bird, the striped cuckoo (called Matitaperê, Matita Pereira, or  saci in Brazilian Portuguese), whose melancholic song seems to come from nowhere: "
+            "that is to say, the bird uses high-pitched and low-pitched calls to falsely simulate the closeness/lowness or distance/height of its perch, thus confusing travelers and making them lose the way. [...] "
+            "Just as saci is also the name of a bird, the \"striped cuckoo\", Saci was probably originally an avian myth, as Luís da Câmara Cascudo (1976) has argued. "
+            "A bird will often perch on just one standing leg, and this can easily lead to the legend that the Saci in human form was one-legged.",
+            nome="Saci (Brazilian folklore)")],
+    },
+    # 15 Fata Morgana: a miragem com nome de feiticeira
+    {
+        "temas_secundarios": ["luz_cores", "atmosfera"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "No estreito de Messina, na Itália, miragens que mostram castelos no ar eram atribuídas à magia de Morgana, a feiticeira das lendas do rei Artur. O fenômeno óptico ainda leva o nome dela: Fata Morgana.",
+        "explicacao": (
+            "Fata Morgana é a tradução italiana de Morgan le Fay, a fada Morgana das lendas arturianas. Essas "
+            "miragens, frequentes no estreito de Messina, eram descritas como castelos de fadas no ar ou terras "
+            "falsas criadas pela magia dela. O mecanismo é a curvatura da luz. Em tempo calmo, uma camada de ar bem "
+            "mais quente pode ficar sobre ar frio e denso e formar um \"duto atmosférico\", que age como uma lente. "
+            "Os raios se curvam ao atravessar camadas de temperaturas diferentes e, quando essa curvatura fica mais "
+            "forte que a da própria Terra, descrevem arcos. O resultado é uma pilha de imagens invertidas e direitas "
+            "de um objeto distante, como um barco, uma ilha ou um trecho de litoral, com faixas comprimidas e "
+            "esticadas que mudam depressa e muitas vezes deixam o objeto irreconhecível. Uma inversão de "
+            "temperatura sozinha não basta: é preciso haver o duto, e o observador tem de estar dentro ou abaixo "
+            "dele. Nas regiões polares, a Fata Morgana aparece sobre grandes mantos de gelo, e lá ela surge em dias "
+            "relativamente quentes."
+        ),
+        "nivel": 2, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Fata_Morgana_(mirage)",
+            "A Fata Morgana (Italian: [ˈfaːta morˈɡaːna]) is a complex form of mirage visible in a narrow band right above the horizon. "
+            "The term Fata Morgana is the Italian translation of Morgan le Fay of Arthurian legend. "
+            "These mirages are often seen in the Italian Strait of Messina, and were described as fairy castles in the air or false land conjured by her magic. "
+            "Fata Morgana mirages significantly distort the object or objects on which they are based, often such that the object is completely unrecognizable. "
+            "A Fata Morgana may be seen at sea or on land, in polar regions, or in deserts. "
+            "It may involve almost any kind of distant object, including boats, islands, and the coastline. "
+            "Often, a Fata Morgana changes rapidly. "
+            "The mirage comprises several inverted (upside down) and upright images stacked on top of one another. "
+            "Fata Morgana mirages also show alternating compressed and stretched zones. "
+            "The optical phenomenon occurs because rays of light bend when they pass through air layers of different temperatures in a steep thermal inversion where an atmospheric duct has formed. "
+            "In calm weather, a layer of significantly warmer air may rest over colder dense air, forming an atmospheric duct that acts like a refracting lens, producing a series of both inverted and erect images. "
+            "A Fata Morgana requires a duct to be present; thermal inversion alone is not enough to produce this kind of mirage. [...] "
+            "A Fata Morgana is commonly seen in polar regions, where it may be known as an iceblink, especially over large sheets of ice that have a uniform low temperature. [...] "
+            "In polar regions the Fata Morgana phenomenon is observed on relatively hot days. [...] "
+            "To generate the Fata Morgana phenomenon, the thermal inversion has to be strong enough that the curvature of the light rays within the inversion layer is stronger than the curvature of the Earth. "
+            "Under these conditions, the rays bend and create arcs. "
+            "An observer needs to be within or below an atmospheric duct in order to be able to see a Fata Morgana.",
+            nome="Fata Morgana (mirage)")],
+    },
+]

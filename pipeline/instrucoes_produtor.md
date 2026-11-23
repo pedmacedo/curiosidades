@@ -81,3 +81,6 @@ que o validar do lote passou e que nenhum gancho passou de 220 caracteres.
   em transportes; o calendário republicano francês, a hora decimal, o metro de Méchain e a origem do 8 de março saíram
   em revolucoes_politicas; "o chá preto não é fermentado" já saiu em fermentação. Tacoma Narrows e Vajont ficam para
   falhas_engenharia (o navio Vasa também).
+- Já usados em psicologia_social (evite em experimentos_psicologia): Asch, Milgram, Robbers Cave, Prisão de Stanford,
+  Hawthorne, as baratas de Zajonc, When Prophecy Fails, o mundo pequeno de Milgram, Kitty Genovese, Dunbar, grupos mínimos
+  de Tajfel, a epidemia de dança de 1518 e o "pânico" nas multidões.

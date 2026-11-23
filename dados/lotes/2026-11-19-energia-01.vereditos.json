@@ -1,0 +1,190 @@
+{
+ "lote": "2026-11-19-energia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "energia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Megatons to Megawatts; conexão forte entre Guerra Fria e energia."
+   },
+   {
+    "id": "energia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz 'the first artificial nuclear reactor'; houve reatores naturais (Oklo).",
+    "correcao": "Gancho inteiro: \"O primeiro reator nuclear artificial foi montado em 1942 sob a arquibancada de um estádio de Chicago, numa quadra de squash. Sem blindagem, gerava meio watt, e um cientista vigiava com um balde de solução de cádmio.\""
+   },
+   {
+    "id": "energia-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 14,8 m eram a cota do terreno da usina, não a altura de um muro (Wikipedia de Hirai, Tohoku Electric, Bulletin of the Atomic Scientists).",
+    "correcao": "1) Gancho: \"Um engenheiro insistira numa barreira de 14,8 m contra tsunamis; colegas achavam 12 m o bastante.\" → \"Um engenheiro insistira em erguê-la 14,8 m acima do mar; colegas achavam 12 m o bastante.\" 2) Explicação: \"citado como a única pessoa do projeto a defender a barreira de 14,8 metros, quando muitos colegas achavam que 12 metros bastariam. A empresa acabou pagando o custo extra.\" → \"citado como a única pessoa do projeto a defender que a usina fosse construída 14,8 metros acima do nível do mar, quando muitos colegas achavam que 12 metros bastariam. A empresa acabou pagando o custo extra.\" 3) Fonte nova: https://en.wikipedia.org/wiki/Yanosuke_Hirai com trecho literal contendo 'that the plant be built 14.8 m above the sea level'."
+   },
+   {
+    "id": "energia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Itaipu, HVDC Itaipu, Utility frequency e a legislação brasileira."
+   },
+   {
+    "id": "energia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "A frase dos 113 GWh inverte a causa; 'relógios de rádio' pode ser lido como relógio controlado por rádio.",
+    "correcao": "Gancho: 'relógios de forno e de rádio' → 'relógios de forno e rádios-relógio'. Explicação: 'Parece nada, mas, acumulada por semanas, a diferença somou 113 GWh de energia faltante e deixou os relógios quase seis minutos atrasados.' → 'Parece nada, mas o déficit, que já somava 113 GWh de energia faltante, foi acumulando atraso por semanas e deixou os relógios quase seis minutos atrasados.'"
+   },
+   {
+    "id": "energia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho generaliza (nem toda gravação tem o zumbido) e exagera ('conseguem dizer' x 'can help identify').",
+    "correcao": "Gancho: 'O zumbido da rede elétrica no fundo de muitas gravações funciona como marca-d'água: comparando suas variações com registros históricos, peritos podem datar um áudio e detectar cortes.'"
+   },
+   {
+    "id": "energia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'As regras da rede o consideram exclusivo' não tem apoio; os MW de Dinorwig divergem entre fontes; o recorde é o da TV (o eclipse de 1999 foi maior).",
+    "correcao": "(a) 'O fenômeno tem nome, TV pickup, e as próprias regras da rede o consideram exclusivo do Reino Unido.' → 'O fenômeno tem nome, TV pickup, e é tido como uma peculiaridade britânica.' (b) 'ela vai de zero a 1.800 MW em cerca de 16 segundos' → 'ela vai de zero à potência total em cerca de 16 segundos'. (c) Gancho: 'O recorde veio dos pênaltis' → 'O recorde da TV veio dos pênaltis'."
+   },
+   {
+    "id": "energia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A cadeia bateria→diesel→hidrelétrica é um exemplo na fonte, não regra; o problema do ar-condicionado é 'depois de um apagão longo no verão'. Nota 3.",
+    "correcao": "(a) Gancho: 'Usinas precisam de eletricidade para funcionar. Após um apagão total, religar a rede pode exigir uma partida em cadeia: uma bateria liga um gerador a diesel, que liga uma hidrelétrica, que religa as usinas maiores.' (b) 'porque religar tudo de uma vez, com os aparelhos de ar-condicionado ligados, exigiria mais do que a rede pode fornecer.' → 'porque, depois de um apagão longo no verão, religar tudo de uma vez, com os aparelhos de ar-condicionado ligados, exigiria mais do que a rede pode fornecer.'"
+   },
+   {
+    "id": "energia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O dado oficial (Bundesnetzagentur/SMARD) é 457 horas; 459 é da Montel.",
+    "correcao": "Gancho: 'Na Alemanha, isso aconteceu em 459 horas de 2024.' → 'Na Alemanha, isso aconteceu em mais de 450 horas de 2024.'"
+   },
+   {
+    "id": "energia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A data de 400 a.C. vem de frase solta; a historiografia põe os canos de bambu na dinastia Han (relevos de Sichuan). 'Mostly a nuisance' = quase sempre. Nota 3.",
+    "correcao": "1) Gancho: 'ele era um estorvo' → 'ele era quase sempre um estorvo'; 'Na China, por volta de 400 a.C., o gás desses poços já era levado por canos de bambu.' → 'Na China antiga, o gás desses poços já era levado por canos de bambu.' 2) Explicação: 'o gás que saía de perfurações em busca de salmoura começou a ser usado por volta de 400 a.C., levado por canos rústicos de bambu' → 'relevos em tumbas da dinastia Han, em Sichuan, já mostram poços de salmoura e fornalhas aquecidas por gás natural levado por canos de bambu' (tirar 'em Sichuan' do fim da frase). 3) Fonte nova: https://en.wikipedia.org/wiki/Science_and_technology_of_the_Han_dynasty com trecho literal tipo 'The furnaces were heated by natural gas brought by bamboo pipes'; retirar a data da fonte Natural gas."
+   },
+   {
+    "id": "energia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 30 anos em Montrose se contradizem na fonte (desmontada em 1914); 1951 foi a primeira turbina de serviço público, não a primeira turbina; 'biografia dele' é vago. A anedota do Diabo tem confirmação da Universidade de Strathclyde.",
+    "correcao": "1) 'Uma versão melhorada serviu por 30 anos como fonte de emergência num hospital psiquiátrico de Montrose.' → 'Uma versão melhorada serviu por anos como fonte de emergência num hospital psiquiátrico de Montrose.' 2) 'o Reino Unido só voltou a construir turbinas eólicas em 1951, 64 anos depois do primeiro protótipo de Blyth' → 'a primeira turbina eólica de serviço público do Reino Unido só entrou em operação em 1951, nas Órcadas, 64 anos depois do primeiro protótipo de Blyth'. 3) 'Segundo o relato registrado na biografia dele' → 'Segundo o relato preservado pela Universidade de Strathclyde'. 4) Fonte nova: https://www.strath.ac.uk/professionalservices/library/researchrevise/collections/archivesspecialcollections/items/papersofjamesblyth/ com trecho literal sobre a recusa ('was rejected by locals, fearing it')."
+   },
+   {
+    "id": "energia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Mouchot e Shuman; evita o superlativo 'world's first'."
+   },
+   {
+    "id": "energia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quem patenteou foi o AERE, e o royalty zero foi condição dele; 'baterias de íon-lítio' em 1980 é anacrônico.",
+    "correcao": "Gancho: \"John Goodenough achou um material capaz de dobrar a capacidade das baterias de lítio, mas a Universidade de Oxford não quis patenteá-lo. Ele cedeu os direitos sem receber royalties e, aos 97 anos, ganhou o Nobel.\""
+   },
+   {
+    "id": "energia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Niagara Falls; contraintuitivo com mecanismo."
+   },
+   {
+    "id": "energia-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Dormiram encostados' contraria a fonte (quase não dormiram por vomitar); eram moradores buscando lenha, não lenhadores; a obra parou com a independência se aproximando.",
+    "correcao": "Gancho: \"Em 2001, três homens que buscavam lenha na Geórgia acharam duas cápsulas quentes, com o chão fumegando ao redor, e passaram a noite encostados nelas. Eram núcleos radioativos de geradores soviéticos abandonados.\" Explicação: 'Com a independência da Geórgia, a obra parou' → 'Com a independência da Geórgia se aproximando, a obra parou'. Opcional: 'Os três se feriram e um deles morreu.' → 'Os três se feriram, e um deles morreu em 2004, mais de dois anos depois.'"
+   },
+   {
+    "id": "energia-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "3,15/300 ≈ 1,05%: 'menos de 1%' não fecha.",
+    "correcao": "'de modo que a fusão devolveu menos de 1% da energia gasta pela instalação' → 'de modo que a fusão devolveu só cerca de 1% da energia gasta pela instalação'."
+   }
+  ],
+  "2": [
+   {
+    "id": "energia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Primeiro reator nuclear artificial' aplicado."
+   },
+   {
+    "id": "energia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Usina 14,8 m acima do mar, com a fonte de Hirai."
+   },
+   {
+    "id": "energia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Rádios-relógio e déficit sem causalidade invertida."
+   },
+   {
+    "id": "energia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Muitas gravações' e 'podem datar'."
+   },
+   {
+    "id": "energia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas."
+   },
+   {
+    "id": "energia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Cadeia como possibilidade; ressalva do verão."
+   },
+   {
+    "id": "energia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de 450 horas' compatível com 457 e 459."
+   },
+   {
+    "id": "energia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Sem 400 a.C.; relevos Han com fonte nova."
+   },
+   {
+    "id": "energia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As quatro correções aplicadas, fonte da Strathclyde."
+   },
+   {
+    "id": "energia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'baterias de lítio recarregáveis' também na explicação.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "energia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; morte em 2004 com trecho."
+   },
+   {
+    "id": "energia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Cerca de 1%' confere com a conta."
+   }
+  ]
+ }
+}

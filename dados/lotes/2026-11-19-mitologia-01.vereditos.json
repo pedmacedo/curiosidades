@@ -1,0 +1,155 @@
+{
+ "lote": "2026-11-19-mitologia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "mitologia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Não aparece em nenhum registro' é falso literalmente (aparece em Abel); a fonte diz 'no basis in any surviving records'.",
+    "correcao": "Gancho: 'que não aparece em nenhum registro.' → 'que não aparece em nenhum texto antigo.'"
+   },
+   {
+    "id": "mitologia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Comerciantes entalhavam' sugere prática comum; a fonte diz 'occasionally'.",
+    "correcao": "Gancho: 'e comerciantes entalhavam neles cabeças de cobra para vender.' → 'e comerciantes às vezes entalhavam neles cabeças de cobra para vender.'"
+   },
+   {
+    "id": "mitologia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Thunderstone (folklore); atribuição a A. D. White adequada."
+   },
+   {
+    "id": "mitologia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A ligação com Lucy Westenra é especulativa ('Scholars have suggested'), sem prova direta.",
+    "correcao": "'Estudiosos sugerem que Bram Stoker soube do caso pelos jornais e se baseou nele para criar a personagem Lucy Westenra, de \"Drácula\".' → 'Alguns estudiosos especulam, sem prova direta, que Bram Stoker soube do caso pelos jornais e se inspirou nele para criar a personagem Lucy Westenra, de \"Drácula\".'"
+   },
+   {
+    "id": "mitologia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Throne Chair, Unicorn horn, Narwhal e Re'em."
+   },
+   {
+    "id": "mitologia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Tinha acabado de ver' não tem apoio; a fonte diz 'had seen the movie before her report'.",
+    "correcao": "Gancho: 'a testemunha que deu a descrição original tinha acabado de ver o filme de terror \"Species\"' → 'a testemunha que deu a descrição original tinha visto antes o filme de terror \"Species\"'."
+   },
+   {
+    "id": "mitologia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Slender Man; folclore que se viu nascer."
+   },
+   {
+    "id": "mitologia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "'Sem que soubessem' exagera: um manuscrito de Marco Polo e Diogo do Couto notaram a semelhança antes de 1859.",
+    "correcao": "Gancho: 'veneraram um santo que era, sem que soubessem, o Buda' → 'veneraram um santo que era, na prática, o Buda'. Explicação: 'Só em 1859-1860 pesquisadores europeus estabeleceram' → 'Houve quem notasse a semelhança antes, como um manuscrito de Marco Polo e o cronista português Diogo do Couto, mas só em 1859-1860 pesquisadores europeus estabeleceram', com os trechos literais correspondentes da fonte."
+   },
+   {
+    "id": "mitologia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Ye Xian e Cinderella; desmonta o equívoco do 'vair'."
+   },
+   {
+    "id": "mitologia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Donnelly não inventou a Atlântida 'real': Crantor, Estrabão e Posidônio já a tomavam por real, e desde o séc. XVI ligavam-na à América. Nota 3.",
+    "correcao": "Gancho: 'Quem a transformou em civilização real foi um autor amador americano, num livro de 1882.' → 'A ideia de uma supercivilização real perdida deve muito a um autor amador, num livro de 1882.' Explicação: 'O mito moderno nasceu no século XIX, quando estudiosos amadores leram Platão como relato histórico.' → 'Já na Antiguidade houve quem a tomasse por real, como Crantor e Estrabão, e a partir do século XVI muitos a ligaram à América. Mas a versão popular de hoje vem do século XIX, quando estudiosos amadores leram Platão como relato histórico.' Trechos: 'Other ancient historians and philosophers who believed in the existence of Atlantis were Strabo and Posidonius.' e 'modern interpretations regarding Atlantis are an amalgamation of diverse, speculative movements that began in the sixteenth century, when scholars began to identify Atlantis with the New World.'"
+   },
+   {
+    "id": "mitologia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Tantalum e Niobium; boa ponte com o Brasil."
+   },
+   {
+    "id": "mitologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Crater Lake e Budj Bim; ressalvas mantidas; consenso_parcial."
+   },
+   {
+    "id": "mitologia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Pied Piper of Hamelin; ratos tardios e base histórica."
+   },
+   {
+    "id": "mitologia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O canto enganador do pássaro é folclore, não fato zoológico; a observação da perna única não é atribuída claramente a Cascudo.",
+    "correcao": "Explicação: 'Esse pássaro alterna notas agudas e graves para fingir que está mais perto ou mais longe do que de fato está, e assim seu canto melancólico parece não vir de lugar nenhum, confundindo viajantes.' → 'Segundo a tradição, esse pássaro alterna notas agudas e graves que enganam sobre a distância de onde está pousado, e seu canto melancólico parece não vir de lugar nenhum, fazendo viajantes se perderem.'; 'O folclorista Luís da Câmara Cascudo defendeu que o Saci era provavelmente um mito de ave, e notou que um pássaro muitas vezes se apoia numa perna só, o que pode levar facilmente à imagem de um menino de uma perna.' → 'O folclorista Luís da Câmara Cascudo defendeu que o Saci era provavelmente um mito de ave. E um pássaro muitas vezes se apoia numa perna só, o que pode levar facilmente à imagem de um menino de uma perna.' Gancho: 'Para Câmara Cascudo, a perna única do Saci pode vir das aves, que muitas vezes pousam num pé só.' → 'Câmara Cascudo via nele um antigo mito de ave, e a perna única pode vir daí: aves muitas vezes pousam num pé só.'"
+   },
+   {
+    "id": "mitologia-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Engenhosidade' não se aplica. Nota 3: no limite, salvo pelo mecanismo.",
+    "correcao": "tipos_espanto → [\"conexao_inesperada\", \"origem_inesperada\"]. Manter nota 3."
+   }
+  ],
+  "2": [
+   {
+    "id": "mitologia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Nenhum texto antigo' aplicado."
+   },
+   {
+    "id": "mitologia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Às vezes entalhavam' aplicado."
+   },
+   {
+    "id": "mitologia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ligação com Drácula como especulação."
+   },
+   {
+    "id": "mitologia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Tinha visto antes' aplicado."
+   },
+   {
+    "id": "mitologia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'Na prática' e Marco Polo/Diogo do Couto com trechos."
+   },
+   {
+    "id": "mitologia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Estrabão, Posidônio e séc. XVI com trechos; Donnelly como 'deve muito'."
+   },
+   {
+    "id": "mitologia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Canto como tradição; Cascudo separado da perna única."
+   },
+   {
+    "id": "mitologia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tipos trocados; mecanismo confere."
+   }
+  ]
+ }
+}

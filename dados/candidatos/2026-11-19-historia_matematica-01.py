@@ -1,0 +1,653 @@
+LOTE = "2026-11-19-historia_matematica-01"
+AREA = "matematica"
+TEMA = "historia_matematica"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 a "fórmula de Bhaskara" só tem esse nome no Brasil
+    {
+        "temas_secundarios": ["asia_antiga", "cultura_popular"],
+        "tipos_espanto": ["mito_desmentido", "origem_inesperada"],
+        "gancho": "A \"fórmula de Bhaskara\" só tem esse nome no Brasil. No resto do mundo ela é a fórmula quadrática, e o indiano Bhaskara II não foi quem a descobriu: outros chegaram a métodos parecidos antes dele.",
+        "explicacao": (
+            "Bhaskara II, matemático e astrônomo indiano que viveu de 1114 a 1185, ajudou a popularizar a "
+            "resolução das equações do segundo grau. O método que ele usava, porém, era de outro indiano, "
+            "Sridhara, e o próprio Bhaskara reconhecia isso; o livro de álgebra de Sridhara se perdeu e só é "
+            "conhecido por citações. Antes ainda, por volta de 628, Brahmagupta descreveu em palavras um jeito "
+            "de achar uma raiz desse tipo de equação. E os babilônios, uns 4.000 anos atrás, já seguiam uma "
+            "espécie de receita para chegar às raízes, sem a notação de hoje. A fórmula cobrindo todos os casos "
+            "só apareceu com Simon Stevin, em 1594, e François Viète lhe deu um tratamento algébrico mais "
+            "formal. Na Índia, ela às vezes leva o nome de Sridhara. No Brasil, a homenagem a Bhaskara teria se "
+            "firmado por volta de 1960, e esse nome não se vê em outros países. Em partes da Alemanha e da Suíça, "
+            "há um apelido escolar: \"fórmula da meia-noite\", porque o aluno deveria saber recitá-la mesmo se "
+            "fosse acordado no meio da noite."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Bhaskara_II",
+                "Bhaskara Akaria, também conhecido como Bhaskara II (Chalisgaon, 1114 — Ujjain, 1185) foi um matemático, astrônomo e astrólogo indiano. "
+                "Ajudou a popularizar a fórmula de resolução das equações do segundo grau, que, no Brasil, ficou conhecida como \"fórmula de Bhaskara\", sendo chamada geralmente de \"fórmula quadrática\" no resto do mundo. [...] "
+                "No Brasil, por volta de 1960, o nome de Bhaskara passou a designar a fórmula de resolução da equação do 2º grau. "
+                "Não se vê essa nomeclatura em outros países, mesmo porque não foi ele quem a descobriu. "
+                "Historicamente existem registros de sua existência cerca de 4000 anos antes, em textos escritos pelos babilônios. "
+                "Naquela época não existia a simbologia utilizada hoje, ou seja, não havia a fórmula atual, mas sim uma espécie de \"receita\" de como proceder para encontrar as raízes da equação quadrática. [...] "
+                "O método empregado por Bhaskara nas resoluções das equações quadráticas é do matemático indiano Sridhara [...] "
+                "e reconhecido pelo próprio Bhaskara. "
+                "A fórmula para extrair essas raízes veio com um matemático francês, François Viète (1540-1603), que foi quem procurou dar um tratamento mais formal e algébrico para obter uma fórmula geral.",
+                nome="Bhaskara II", idioma="pt"),
+            wiki("Quadratic_formula",
+                "The Indian mathematician Brahmagupta included a generic method for finding one root of a quadratic equation in his treatise Brāhmasphuṭasiddhānta (circa 628 AD), written out in words in the style of that time. [...] "
+                "came up with a similar algorithm for solving quadratic equations in a now-lost work on algebra quoted by Bhāskara II. "
+                "The modern quadratic formula is sometimes called Sridharacharya's formula in India and Bhaskara's formula in Brazil. [...] "
+                "The quadratic formula covering all cases was first obtained by Simon Stevin in 1594.",
+                nome="Quadratic formula"),
+            wiki("F%C3%B3rmula_de_Bhaskara",
+                "Em partes da Alemanha e da Suíça, a fórmula é coloquialmente conhecida como a \"fórmula da meia-noite\", porque os alunos devem ser capazes de recitá-la mesmo que sejam acordados à meia-noite.",
+                nome="Fórmula de Bhaskara", idioma="pt"),
+        ],
+    },
+    # 2 Plimpton 322: trios pitagóricos 1.300 anos antes dos gregos
+    {
+        "temas_secundarios": ["primeiras_civilizacoes", "teoria_numeros"],
+        "tipos_espanto": ["misterio_aberto", "origem_inesperada"],
+        "gancho": "Uma tabuinha babilônica de cerca de 1800 a.C. tem 15 linhas ligadas a triângulos retângulos de lados inteiros, alguns enormes, como 12.709, 13.500 e 18.541. Até hoje não se sabe para que ela servia.",
+        "explicacao": (
+            "A peça, chamada Plimpton 322, é de argila, escrita em cuneiforme, e tem uns 13 cm de largura. "
+            "Cada linha da tabela se refere a um trio de inteiros em que a soma dos quadrados de dois deles dá o "
+            "quadrado do terceiro, o que hoje chamamos de trio pitagórico. Ela foi escrita uns 13 a 15 séculos "
+            "antes da época das grandes descobertas gregas em geometria. Alguns trios são tão grandes que "
+            "dificilmente teriam sido achados por tentativa, o que sugere que os escribas tinham um método para "
+            "gerá-los. Há uma pista: o lado maior de cada triângulo, que não aparece na tabuinha, é sempre um "
+            "número cujos únicos fatores primos são 2, 3 ou 5. Assim, as divisões por ele dão resultados exatos "
+            "no sistema de base 60 dos babilônios. A finalidade, porém, segue em debate. A ideia de uma tabela de "
+            "trigonometria é descartada pela maioria, porque os babilônios não parecem ter tido a noção de medir "
+            "ângulos. Outra proposta, defendida por vários estudiosos, é que fosse material de professor para "
+            "montar exercícios. O editor americano George Plimpton a comprou por volta de 1922 e a deixou para a "
+            "Universidade Columbia."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Plimpton_322",
+            "Plimpton 322 is a Babylonian clay tablet, believed to have been written around 1800 BC, that contains a mathematical table written in cuneiform script. "
+            "Each row of the table relates to a Pythagorean triple, that is, a triple of integers (s,l,d) that satisfies the Pythagorean theorem [...] "
+            "The era in which Plimpton 322 was written was roughly 13 to 15 centuries prior to the era in which the major Greek discoveries in geometry were made. [...] "
+            "Plimpton 322 strongly suggested that they had a systematic method for generating Pythagorean triples as some of the triples are very large and unlikely to have been discovered by ad hoc methods. "
+            "Row 4 of the table, for example, relates to the triple (12709,13500,18541). "
+            "The table exclusively lists triples (s,l,d) in which the longer leg, l, (which is not given on the tablet) is a regular number, that is a number whose prime factors are 2, 3, or 5. "
+            "As a consequence, the ratios s/l and d/l of the other two sides to the long leg have exact, terminating representations in the Mesopotamians' sexagesimal (base-60) number system. [...] "
+            "The purpose of Plimpton 322 is not known. [...] "
+            "The proposal that Plimpton 322 is a trigonometric table is ruled out for similar reasons, given that the Babylonians appear not to have had the concept of angle measure. [...] "
+            "or that it was  compilation of parameters to enable a teacher to set problems for students. [...] "
+            "Other scholars, such as Jöran Friberg and Eleanor Robson, who also favor the teacher's aid interpretation [...] "
+            "Plimpton 322 is partly broken, approximately 13 cm (5.1 in) wide [...] "
+            "New York publisher George Arthur Plimpton purchased the tablet from an archaeological dealer, Edgar J. Banks, in about 1922, and bequeathed it with the rest of his collection to Columbia University in the mid-1930s. [...] "
+            "The main content of Plimpton 322 is a table of numbers, with four columns and fifteen rows",
+            nome="Plimpton 322")],
+    },
+    # 3 YBC 7289: raiz de 2 com seis casas
+    {
+        "temas_secundarios": ["primeiras_civilizacoes", "teoria_numeros"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "Numa tabuinha babilônica do tamanho da palma da mão, feita entre 1800 e 1600 a.C., um estudante anotou a raiz quadrada de 2 com erro menor que uma parte em 2 milhões, como se tivesse seis casas decimais.",
+        "explicacao": (
+            "A tabuinha YBC 7289, hoje na coleção babilônica da Universidade Yale, mostra um quadrado com as duas "
+            "diagonais. Num lado está escrito 30, e na diagonal aparecem dois números na notação sexagesimal dos babilônios. O primeiro, "
+            "1;24,51,10, vale cerca de 1,414213, uma aproximação da raiz de 2, que é a medida da diagonal de um "
+            "quadrado de lado 1. O segundo é o resultado de multiplicar 30 por essa aproximação, ou seja, a "
+            "diagonal do quadrado desenhado. O formato pequeno e redondo e a letra grande sugerem um rascunho de "
+            "aluno, que provavelmente copiou o valor de uma tabela de constantes; outra tabuinha babilônica traz um "
+            "procedimento repetitivo para calculá-lo. A precisão foi descrita como a maior conhecida em cálculos de "
+            "todo o mundo antigo. O mesmo valor, na mesma notação sexagesimal, reaparece muito depois no Almagesto do grego "
+            "Ptolomeu, que não explica de onde o tirou, sinal de que já devia ser bem conhecido. O significado "
+            "matemático da tabuinha só foi reconhecido em 1945, por Otto Neugebauer e Abraham Sachs."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("YBC_7289",
+            "YBC 7289 is a Babylonian clay tablet notable for containing an accurate sexagesimal approximation to the square root of 2, the length of the diagonal of a unit square. "
+            "This number is given to the equivalent of six decimal digits, \"the greatest known computational accuracy ... in the ancient world\". "
+            "The tablet is believed to be the work of a student in southern Mesopotamia from some time between 1800 and 1600 BC. [...] "
+            "The tablet depicts a square with its two diagonals. "
+            "One side of the square is labeled with the sexagesimal number 30. "
+            "The diagonal of the square is labeled with two sexagesimal numbers. "
+            "The first of these two, 1;24,51,10 represents the fraction [...] "
+            "≈ 1.414213, a numerical approximation of the square root of two that is off by less than one part in 2 million. [...] "
+            "This number is the result of multiplying 30 by the given approximation to the square root of two, and approximates the length of the diagonal of a square of side length 30. [...] "
+            "The small round shape of the tablet, and the large writing on it, suggests that it was a \"hand tablet\" of a type typically used for rough work by a student who would hold it in the palm of his hand. "
+            "The student would likely have copied the sexagesimal value of the square root of 2 from a table of constants, but an iterative procedure for computing this value can be found in another Babylonian tablet [...] "
+            "The mathematical significance of this tablet was first recognized by Otto Neugebauer and Abraham Sachs in 1945. [...] "
+            "was used much later by Greek mathematician Claudius Ptolemy in his Almagest. "
+            "Ptolemy did not explain where this approximation came from and it may be assumed to have been well known by his time. [...] "
+            "The original tablet is currently kept in the Yale Babylonian Collection at Yale University.",
+            nome="YBC 7289")],
+    },
+    # 4 papiro Rhind 79 e a charada de St Ives
+    {
+        "temas_secundarios": ["egito_antigo", "literatura"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "Um papiro egípcio de matemática de cerca de 1550 a.C. lista 7 casas, 49 gatos, 343 ratos, 2.401 espigas e 16.807 medidas de grão. É a mesma soma de potências de 7 de uma charada infantil inglesa.",
+        "explicacao": (
+            "É o problema 79 do papiro Rhind, que o escriba Ahmes copiou de um texto mais antigo, hoje perdido. "
+            "Cada termo é sete vezes o anterior, e o problema soma cinco termos dessa progressão geométrica, com "
+            "resultado 19.607; parece ilustrar um método de multiplicação. A leitura como historinha, com sete "
+            "casas, sete gatos em cada uma, cada gato comendo sete ratos e cada rato que teria comido sete "
+            "espigas, é uma paráfrase de comentaristas modernos: o papiro só traz o esqueleto da conta. A "
+            "semelhança com charadas posteriores chama a atenção. Em 1202, no Liber Abaci, Fibonacci propôs o "
+            "problema de sete velhos a caminho de Roma, cada um com sete mulas, cada mula com sete sacos, e assim "
+            "por diante. E a cantiga inglesa \"As I was going to St Ives\", registrada num manuscrito de cerca de "
+            "1730, fala de um homem com sete esposas, 49 sacos, 343 gatos e 2.401 filhotes. A pegadinha "
+            "tradicional é que só o narrador ia para St Ives; os outros vinham de lá. Se todos fossem contados, "
+            "seriam 2.802."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Rhind_Mathematical_Papyrus",
+                "It was copied by the scribe Ahmes (i.e., Ahmose; Ahmes is an older transcription favoured by historians of mathematics) from a now-lost text from the reign of the 12th dynasty king Amenemhat III. "
+                "It dates to around 1550 BC. [...] "
+                "Problem 79 explicitly cites, \"seven houses, 49 cats, 343 mice, 2401 ears of spelt, 16807 hekats.\" "
+                "In particular problem 79 concerns a situation in which 7 houses each contain seven cats, which all eat seven mice, each of which would have eaten seven ears of grain, [...] "
+                "Problem 79 sums five terms in a geometric progression. "
+                "Its language is strongly suggestive of the more modern riddle and nursery rhyme \"As I was going to St Ives\".",
+                nome="Rhind Mathematical Papyrus"),
+            wiki("As_I_was_going_to_St_Ives",
+                "\"As I was going to St Ives\" (Roud 19772) is a traditional English-language nursery rhyme in the form of a riddle. [...] "
+                "The following version is found in a manuscript (Harley MS 7316) dating from approximately 1730 [...] "
+                "The traditional understanding of this rhyme is that only one is going to St Ives—the narrator. "
+                "All of the others are coming from St Ives. [...] "
+                "If everyone mentioned in the riddle were bound for St Ives, then the number would be 2,802: the narrator, the man and his seven wives, 49 sacks, 343 cats, and 2,401 kits. [...] "
+                "The problem appears to be an illustration of an algorithm for multiplying numbers. [...] "
+                "the sum on the left is 7×2,801 = 19,607, the same as the sum of the terms on the right. [...] "
+                "The problem has been paraphrased by modern commentators as a story problem involving houses, cats, mice, and grain, although in the Rhind Mathematical Papyrus there is no discussion beyond the bare outline stated above. [...] "
+                "In Fibonacci's book Liber Abaci (published in 1202), the problem \"Seven Old Men Go to Rome\" again involves summing powers of seven, to one more level: seven men each have seven mules, each mule carries seven sacks",
+                nome="As I was going to St Ives"),
+        ],
+    },
+    # 5 o problema do gado de Arquimedes
+    {
+        "temas_secundarios": ["grecia_antiga", "teoria_numeros"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "Um poema grego atribuído a Arquimedes desafia o leitor a contar o gado do deus Sol. A menor resposta tem 206.545 algarismos: muito mais bois do que caberiam no universo observável.",
+        "explicacao": (
+            "O poema, de 44 versos, foi achado em 1773 por Gotthold Lessing num manuscrito grego da biblioteca de "
+            "Wolfenbüttel, na Alemanha, onde ele era bibliotecário. O título diz que Arquimedes mandou o problema "
+            "numa carta a Eratóstenes, mas a autoria ainda é discutida. O rebanho tem touros e vacas de quatro "
+            "cores, e o poema dá proporções entre eles, como \"os touros brancos são metade mais um terço dos "
+            "pretos, mais todos os amarelos\". Essa primeira parte é um sistema de equações cuja menor solução "
+            "tem pouco mais de 50 milhões de cabeças. O poema avisa que isso ainda não faz de ninguém um sábio e "
+            "acrescenta duas condições: brancos e pretos juntos formam um quadrado, e amarelos e malhados juntos "
+            "formam um triângulo. Aí a conta explode, porque leva a uma equação de Pell. Em 1880, August Amthor, "
+            "diretor de um colégio em Dresden, usou tábuas de logaritmos para mostrar que a menor resposta é de "
+            "cerca de 7,76 vezes 10 elevado a 206.544. Todos os algarismos só foram calculados em 1965, por três "
+            "pesquisadores da Universidade de Waterloo, com dois computadores IBM."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Archimedes%27s_cattle_problem",
+            "Attributed to Archimedes, the problem involves computing the number of cattle in a herd of the sun god from a given set of restrictions. "
+            "The problem was discovered by Gotthold Ephraim Lessing in a Greek manuscript containing a poem of 44 lines, in the Herzog August Library in Wolfenbüttel, Germany in 1773. [...] "
+            "The general solution was found in 1880 by Carl Ernst August Amthor (1845–1916), headmaster of the Gymnasium zum Heiligen Kreuz (Gymnasium of the Holy Cross) in Dresden, Germany. "
+            "Using logarithmic tables, he calculated the first digits of the smallest solution, showing that it is about 7.76×10206544 cattle, far more than could fit in the observable universe. [...] "
+            "In 1769, Gotthold Ephraim Lessing was appointed librarian of the Herzog August Library in Wolfenbüttel [...] "
+            "The question whether Archimedes actually set forth the problem is largely unsettled. [...] "
+            "\"the problem which Archimedes discovered and sent in an epigram... in a letter to Eratosthenes.\" [...] "
+            "divided into four herds of different colours, one milk white, another a glossy black, a third yellow and the last dappled. [...] "
+            "the white bulls were equal to a half and a third of the black together with the whole of the yellow [...] "
+            "thou wouldst not be called unskilled or ignorant of numbers, but not yet shalt thou be numbered among the wise. [...] "
+            "When the white bulls mingled their number with the black, they stood firm, equal in depth and breadth [...] "
+            "when the yellow and the dappled bulls were gathered into one herd they stood in such a manner that their number, beginning from one, grew slowly greater till it completed a triangular figure [...] "
+            "which is a total of 50389082 cattle, and the other solutions are integral multiples of these. [...] "
+            "The second part of the problem states that W+B is a square number, and Y+D is a triangular number. [...] "
+            "the fundamental solution of the Pell equation [...] "
+            "Modern computers can easily print out all digits of the answer. "
+            "This was first done at the University of Waterloo, in 1965 by Hugh C. Williams, R. A. German, and Charles Robert Zarnke. "
+            "They used a combination of the IBM 7040 and IBM 1620 computers. [...] "
+            "Decimal expansion of the 206545-digit integer solution to Archimedes's cattle problem",
+            nome="Archimedes's cattle problem")],
+    },
+    # 6 a série de pi de Madhava, séculos antes de Leibniz
+    {
+        "temas_secundarios": ["asia_antiga", "infinito"],
+        "tipos_espanto": ["origem_inesperada", "misterio_aberto"],
+        "gancho": "A série que dá pi somando e subtraindo frações, 1 − 1/3 + 1/5 − 1/7..., leva na Europa o nome de Leibniz, mas já era conhecida séculos antes no sul da Índia, onde é atribuída ao matemático Madhava.",
+        "explicacao": (
+            "Madhava de Sangamagrama viveu por volta de 1340 a 1425 e fundou a chamada escola de Kerala, de "
+            "astronomia e matemática, uma tradição passada de mestre para discípulo. Quase todas as obras "
+            "originais dele se perderam, e o que se sabe vem de autores posteriores, como Nilakantha, que por "
+            "volta de 1500 o cita como fonte de várias séries infinitas, entre elas as do seno e do arco-tangente. "
+            "A série de pi saiu justamente da do arco-tangente. Madhava também deu termos de correção para o erro "
+            "de parar a soma no meio e, com uma série que converge mais depressa, usou 21 termos para chegar a pi "
+            "com 11 casas decimais certas. As provas dessas séries aparecem num livro escrito em malaiala por "
+            "volta de 1530, o Yuktibhasa. A escola trabalhou com séries de funções trigonométricas cerca de 250 a "
+            "300 anos antes de a ideia surgir na Europa, e hoje a série de pi também é chamada de "
+            "Madhava-Gregory-Leibniz. Se esse conhecimento chegou aos europeus, talvez por mercadores ou "
+            "missionários jesuítas, é uma pergunta em aberto: não há nenhuma prova documental de que a "
+            "transmissão tenha ocorrido."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Madhava_of_Sangamagrama",
+                "Mādhava of Sangamagrāma (Mādhavan) (c. 1340 – c. 1425) was an Indian mathematician and astronomer (jyotirvid) who founded the Kerala school of astronomy and mathematics. [...] "
+                "Today, it is referred to as the Madhava-Gregory-Leibniz series. [...] "
+                "now known as the Madhava-Leibniz series [...] "
+                "which he obtained from the power-series expansion of the arc-tangent function. "
+                "However, what is most impressive is that he also gave a correction term Rn for the error after computing the sum up to n terms [...] "
+                "He also gave a more rapidly converging series by transforming the original infinite series of π [...] "
+                "By using the first 21 terms to compute an approximation of π, he obtains a value correct to 11 decimal places (3.14159265359). [...] "
+                "However, except for a couple, most of Madhava's original works have been lost. "
+                "He is referred to in the work of subsequent Kerala mathematicians, particularly in Nilakantha Somayaji's Tantrasangraha (c. 1500), as the source for several infinite series expansions, including sin θ and arctan θ.",
+                nome="Madhava of Sangamagrama"),
+            wiki("Kerala_school_of_astronomy_and_mathematics",
+                "proofs for the series for sine, cosine, and inverse tangent were provided a century later in the work Yuktibhasa (c. 1530), written in Malayalam, by Jyesthadeva [...] "
+                "Transmission from teacher to pupil conserved knowledge [...] "
+                "The Kerala school worked with power series for trigonometric functions, an idea now considered part of calculus, approximately 250 to 300 years before the same concept appeared in Europe. [...] "
+                "knowledge of these results might have been transmitted to Europe through trade routes by merchants and Jesuit missionaries, as Kerala maintained continuous contact with China, Arabia, and Europe. "
+                "While communication routes and chronologies make this transmission a possibility, there is currently no direct manuscript evidence demonstrating that such a transfer took place.",
+                nome="Kerala school of astronomy and mathematics"),
+        ],
+    },
+    # 7 Zu Chongzhi e a fração 355/113
+    {
+        "temas_secundarios": ["asia_antiga", "teoria_numeros"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "No século V, o chinês Zu Chongzhi chegou à fração 355/113 para pi, certa até a sexta casa decimal. Nenhuma fração com denominador de até quatro algarismos chega mais perto, e a Europa só a achou em 1585.",
+        "explicacao": (
+            "Zu, que viveu de 429 a 500, era astrônomo e matemático. Usando o método de Liu Hui, que aproxima o "
+            "círculo por polígonos regulares, calculou que pi fica entre 3,1415926 e 3,1415927, recorde de "
+            "precisão que duraria quase 900 anos. Também deu duas frações: 22/7, a \"razão aproximada\", que "
+            "Arquimedes já tinha obtido séculos antes, e 355/113, a \"razão próxima\". Esta erra por menos de "
+            "0,000009%. Para achar uma fração melhor, é preciso ir até 52163/16604, e mesmo ela só acerta seis "
+            "casas. O segredo da precisão aparece na fração contínua de pi, que começa com 3, 7, 15, 1, 292... "
+            "Cortar a sequência logo antes do 292, um termo grande e incomum, dá exatamente 355/113, e o que se "
+            "despreza é minúsculo. Na Europa, a mesma fração só foi obtida pelo holandês Adriaan Anthoniszoon, em "
+            "1585. Já o livro em que Zu e o filho registraram seus métodos se perdeu desde a dinastia Song."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Zu_Chongzhi",
+                "429–500), courtesy name Wenyuan [...] "
+                "was a Chinese astronomer, inventor, mathematician, politician, and writer during the Liu Song and Southern Qi dynasties. "
+                "He was most notable for calculating pi as between 3.1415926 and 3.1415927, a record in precision which would not be surpassed for nearly 900 years. [...] "
+                "Zu Chongzhi, along with his son Zu Gengzhi, wrote a mathematical text entitled Zhui Shu [...] "
+                "Though originally one of the Ten Computational Canons, this book has been lost since the Song dynasty. [...] "
+                "⁠22/7⁠ was nothing more than the π value obtained several hundred years earlier by the Greek mathematician Archimedes, however milü π = ⁠355/113⁠ could not be found in any Greek, Indian or Arabian manuscripts, "
+                "not until 1585 Dutch mathematician Adriaan Anthoniszoon obtained this fraction",
+                nome="Zu Chongzhi"),
+            wiki("Mil%C3%BC",
+                "is the name given to an approximation of π (pi) found by the Chinese mathematician and astronomer Zu Chongzhi during the 5th century. "
+                "Using Liu Hui's algorithm, which is based on the areas of regular polygons approximating a circle, Zu computed π as being between 3.1415926 and 3.1415927 [...] "
+                "which were named yuelü (约率; yuēlǜ; 'approximate ratio') and milü respectively. [...] "
+                "is the best rational approximation of π with a denominator of four digits or fewer, being accurate to six decimal places. "
+                "It is within 0.000009% of the value of π [...] "
+                "The next rational number (ordered by size of denominator) that is a better rational approximation of π is ⁠52163/16604⁠, though it is still only correct to six decimal places. [...] "
+                "the first few terms of which are [3; 7, 15, 1, 292, 1, 1, ...] [...] "
+                "To obtain milü, truncate the continued fraction expansion of π immediately before the term 292 [...] "
+                "Since 292 is an unusually large term in a continued fraction expansion (corresponding to the next truncation introducing only a very small term [...] "
+                "this convergent will be especially close to the true value of π",
+                nome="Milü"),
+        ],
+    },
+    # 8 Leibniz, o binário e a criação a partir do nada
+    {
+        "temas_secundarios": ["historia_computacao", "religioes"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Leibniz, a quem se credita o sistema binário usado hoje por quase todo computador, via nele um símbolo religioso: todos os números saindo só do 1 e do 0, como a criação do mundo a partir do nada.",
+        "explicacao": (
+            "O binário escreve qualquer número com apenas dois símbolos, 0 e 1. Na Europa, ele já tinha sido "
+            "estudado por Thomas Harriot, que não publicou o que fez, mas o crédito pela invenção costuma ir para "
+            "Gottfried Leibniz. Em 1703, ele publicou um artigo sobre a aritmética \"que usa apenas os caracteres "
+            "1 e 0\", cujo título completo prometia também mostrar a luz que ela lançava sobre antigas figuras "
+            "chinesas atribuídas a Fu Xi. É que, em cartas trocadas por volta de 1700 e 1701, o jesuíta francês "
+            "Joachim Bouvet, missionário na China e estudioso do I Ching, mostrou a Leibniz que os hexagramas "
+            "desse livro de adivinhação eram uma invenção paralela e independente da notação binária. Leibniz viu "
+            "neles uma confirmação da universalidade da sua fé cristã. Para ele, os números binários "
+            "simbolizavam a criação a partir do nada pelo poder de Deus, uma ideia que, segundo escreveu, não era "
+            "fácil de transmitir aos pagãos. O binário acabou virando a base dos computadores modernos por outro "
+            "motivo, bem mais terreno: é simples de implementar em circuitos eletrônicos digitais com portas "
+            "lógicas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Binary_number",
+            "a method for representing numbers that uses only two symbols for the natural numbers: typically 0 (zero) and 1 (one). [...] "
+            "Because of its straightforward implementation in digital electronic circuitry using logic gates, the binary system is used by almost all modern computers and computer-based devices [...] "
+            "The modern binary number system was first studied in Europe in the 15th, 16th and 17th centuries by Thomas Harriot, and decades later by Gottfried Leibniz, who is credited for the invention. [...] "
+            "Thomas Harriot investigated several positional numbering systems, including binary, but did not publish his results [...] "
+            "His most well known work appears in his article Explication de l'Arithmétique Binaire (published in 1703). "
+            "The full title of Leibniz's article is translated into English as the \"Explanation of Binary Arithmetic, which uses only the characters 1 and 0, with some remarks on its usefulness, and on the light it throws on the ancient Chinese figures of Fu Xi\". [...] "
+            "While corresponding with the Jesuit priest Joachim Bouvet in 1700, who had made himself an expert on the I Ching while a missionary in China, Leibniz explained his binary notation, and Bouvet demonstrated in his 1701 letters that the I Ching was an independent, parallel invention of binary notation. [...] "
+            "Leibniz was first introduced to the I Ching through his contact with the French Jesuit Joachim Bouvet, who visited China in 1685 as a missionary. "
+            "Leibniz saw the I Ching hexagrams as an affirmation of the universality of his own religious beliefs as a Christian. "
+            "Binary numerals were central to Leibniz's theology. "
+            "He believed that binary numbers were symbolic of the Christian idea of creatio ex nihilo or creation out of nothing. "
+            " [A concept that] is not easy to impart to the pagans, is the creation ex nihilo through God's almighty power. [...] "
+            "The I Ching dates from the 9th century BC in China. "
+            "The binary notation in the I Ching is used to interpret its quaternary technique of divination.",
+            nome="Binary number")],
+    },
+    # 9 Tartaglia, Cardano e a fórmula da cúbica
+    {
+        "temas_secundarios": ["personagens_esquecidos", "revolucao_cientifica"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "Tartaglia revelou em versos a Cardano como resolver equações do 3º grau, sob promessa de segredo. Anos depois, Cardano publicou o método: tinha visto um trabalho mais antigo, de outro autor, com a mesma solução.",
+        "explicacao": (
+            "No começo do século XVI, Scipione del Ferro descobriu como resolver um tipo de equação cúbica e "
+            "guardou o segredo até pouco antes de morrer, quando o contou ao aluno Antonio Fior. Em 1535, Fior "
+            "desafiou Niccolò Tartaglia para um duelo: cada um propunha problemas ao outro, e quem resolvesse mais "
+            "em 30 dias levava o dinheiro apostado. Tartaglia tinha chegado por conta própria a um método e "
+            "venceu. O apelido dele quer dizer \"gago\": em 1512, quando os franceses tomaram Brescia, um soldado "
+            "cortou com um sabre a mandíbula e o palato do menino, que ficou com dificuldade para falar. Em 1539, "
+            "Gerolamo Cardano convenceu Tartaglia a revelar a solução, prometendo não publicá-la. Depois, viu o "
+            "trabalho inédito de del Ferro, anterior ao de Tartaglia, e concluiu que a promessa podia ser "
+            "quebrada: em 1545, publicou o método no livro Ars Magna, dando crédito aos dois. Tartaglia ficou "
+            "furioso, e o desafio público acabou sendo contra Lodovico Ferrari, aluno de Cardano, que se saiu "
+            "melhor. Tartaglia perdeu prestígio e renda. Já as histórias de que ele passou o resto da vida "
+            "tentando arruinar Cardano parecem ter sido inventadas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Niccol%C3%B2_Fontana_Tartaglia",
+                "Nicolo experienced further tragedy in 1512 when King Louis XII's troops invaded Brescia [...] "
+                "French soldiers entered the cathedral, and a soldier sliced Nicolo's jaw and palate with a sabre and left him for dead. "
+                "His mother nursed him back to health, but the young boy was left with a speech impediment, prompting the nickname \"Tartaglia\" (\"stammerer\"). [...] "
+                "In 1539, Cardano cajoled Tartaglia into revealing his solution to the cubic equations by promising not to publish them. "
+                "Tartaglia divulged the secrets of the solutions of three different forms of the cubic equation in verse. "
+                "Several years later, Cardano happened to see unpublished work by Scipione del Ferro who independently came up with the same solution as Tartaglia. [...] "
+                "As the unpublished work was dated before Tartaglia's, Cardano decided his promise could be broken and included Tartaglia's solution in his next publication. "
+                "Even though Cardano credited his discovery, Tartaglia was extremely upset, and a famous public challenge match resulted between himself and Cardano's student, Ludovico Ferrari. "
+                "Widespread stories that Tartaglia devoted the rest of his life to ruining Cardano, however, appear to be completely fabricated.",
+                nome="Niccolò Fontana Tartaglia"),
+            wiki("Cubic_equation",
+                "In the early 16th century, the Italian mathematician Scipione del Ferro (1465–1526) found a method for solving a class of cubic equations [...] "
+                "Del Ferro kept his achievement secret until just before his death, when he told his student Antonio Fior about it. "
+                "In 1535, Niccolò Tartaglia (1500–1557) received two problems in cubic equations from Zuanne da Coi and announced that he could solve them. "
+                "He was soon challenged by Fior, which led to a famous contest between the two. "
+                "Each contestant [...] "
+                "a certain amount of money and to propose a number of problems for his rival to solve. "
+                "Whoever solved more problems within 30 days would get all the money. "
+                "Tartaglia received questions in the form x3 + mx = n, for which he had worked out a general method. [...] "
+                "and Tartaglia won the contest. [...] "
+                "Cardano learned about del Ferro's prior work and published del Ferro's method in his book Ars Magna in 1545 [...] "
+                "(with credit given to Tartaglia for an independent solution). [...] "
+                "The challenge was eventually accepted by Cardano's student Lodovico Ferrari (1522–1565). "
+                "Ferrari did better than Tartaglia in the competition, and Tartaglia lost both his prestige and his income.",
+                nome="Cubic equation"),
+        ],
+    },
+    # 10 os números imaginários nasceram das cúbicas
+    {
+        "temas_secundarios": ["paradoxos_logica", "revolucao_cientifica"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Os números imaginários ganharam atenção no século XVI por causa das equações do 3º grau: mesmo quando as três respostas são números reais comuns, a fórmula obriga a passar por raízes quadradas de negativos.",
+        "explicacao": (
+            "A fórmula de del Ferro e Tartaglia, publicada por Cardano em 1545, às vezes exigia extrair a raiz "
+            "quadrada de um número negativo. O incômodo é que isso acontece justamente em cúbicas com três raízes "
+            "reais. Hoje se sabe, pela teoria de Galois, que nesse caso, quando nenhuma raiz é racional, as "
+            "soluções não podem ser escritas por radicais usando só números reais: é o chamado caso irredutível. "
+            "Com o que se sabia na época de Cardano, a equação não podia ser resolvida. Cardano incluiu uma conta "
+            "com essas quantidades no Ars Magna, mas não as entendia bem: disse que eram \"tão sutis quanto "
+            "inúteis\" e que usá-las era uma \"tortura mental\". Quem as levou a sério foi Rafael Bombelli, que "
+            "em 1572, no livro L'Algebra, criou regras para fazer contas com elas e chamou a raiz de menos um de "
+            "\"mais de menos\". Por isso costuma ser visto como o inventor dos números complexos. O nome "
+            "\"imaginário\" veio depois, de Descartes, em 1637, que fazia questão de sublinhar que não eram reais. "
+            "Apesar do nome, esses números são tão válidos quanto os reais e essenciais para descrever o mundo "
+            "físico."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Complex_number",
+                "This conundrum led Italian mathematician Gerolamo Cardano to conceive of complex numbers around 1545 in his Ars Magna, though his understanding was rudimentary; moreover, he later described complex numbers as being \"as subtle as they are useless\". "
+                "Cardano did use imaginary numbers, but described using them as \"mental torture\". [...] "
+                "The impetus to study complex numbers as a topic in itself first arose in the 16th century when algebraic solutions for the roots of cubic and quartic polynomials were discovered by Italian mathematicians (Niccolò Fontana Tartaglia and Gerolamo Cardano). "
+                "It was soon realized (but proved much later) that these formulas, even if one were interested only in real solutions, sometimes required the manipulation of square roots of negative numbers. [...] "
+                "Rafael Bombelli was the first to address explicitly these seemingly paradoxical solutions of cubic equations and developed the rules for complex arithmetic, trying to resolve these issues. "
+                "The term \"imaginary\" for these quantities was coined by René Descartes in 1637, who was at pains to stress their unreal nature [...] "
+                "Despite the historical nomenclature, \"imaginary\" numbers are not fictitious: they are no less valid mathematically than real numbers, and they are essential to the scientific description of the physical world.",
+                nome="Complex number"),
+            wiki("Cubic_equation",
+                "Cardano noticed that Tartaglia's method sometimes required him to extract the square root of a negative number. "
+                "He even included a calculation with these complex numbers in Ars Magna, but he did not really understand it. "
+                "Rafael Bombelli studied this issue in detail and is therefore often considered as the discoverer of complex numbers. [...] "
+                "If 4p3+27q2<0, there are three real roots, but Galois theory allows proving that, if there is no rational root, the roots cannot be expressed by an algebraic expression involving only real numbers. "
+                "Therefore, the equation cannot be solved in this case with the knowledge of Cardano's time. "
+                "This case has thus been called casus irreducibilis, meaning irreducible case in Latin.",
+                nome="Cubic equation"),
+            wiki("Rafael_Bombelli",
+                "In the book that was published in 1572, entitled Algebra, Bombelli gave a comprehensive account of the algebra known at the time. [...] "
+                "Bombelli called the imaginary number i \"plus of minus\" and used \"minus of minus\" for -i.",
+                nome="Rafael Bombelli"),
+        ],
+    },
+    # 11 Napier, os logaritmos e o fim do mundo
+    {
+        "temas_secundarios": ["religioes", "revolucao_cientifica"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "John Napier, que descobriu os logaritmos, considerava sua obra mais importante outro livro: um cálculo, a partir do Apocalipse, de quando o mundo acabaria. A resposta dele foi 1688 ou 1700.",
+        "explicacao": (
+            "O escocês publicou em 1614 o livro que apresentava os logaritmos, com 57 páginas de explicação e 90 "
+            "de tabelas. Duas décadas antes, em 1593, tinha lançado \"A Plaine Discovery of the Whole Revelation "
+            "of St. John\", que via como seu trabalho principal. Ao contrário dos outros livros dele, escreveu-o "
+            "em inglês, para alcançar o maior público possível. Nele, aplicava análise matemática ao Apocalipse: "
+            "punha em ordem fatos que julgava paralelos às profecias, datava a sétima trombeta em 1541 e concluía "
+            "que o fim viria em 1688 ou 1700. A leitura era fortemente antipapal, a ponto de chamar o papa de "
+            "Anticristo em alguns escritos. Entre os vizinhos, Napier tinha fama de mago. Dizia-se que andava com "
+            "uma aranha preta numa caixinha e que seu galo preto era um espírito familiar. Um episódio reforçou "
+            "os boatos: para achar um ladrão, mandou os criados entrarem num quarto escuro e passarem a mão no "
+            "galo, que cantaria ao toque do culpado. Antes, tinha coberto a ave de fuligem, e depois examinou as "
+            "mãos para achar quem tivera medo de tocá-la."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("John_Napier",
+            "was a Scottish landowner known as a mathematician, physicist and astronomer. [...] "
+            "Napier is best known as the discoverer of logarithms. [...] "
+            "he developed a strongly anti-papal reading, going as far as to say that the Pope was the Antichrist in some of his writings. "
+            "Napier regarded A Plaine Discovery of the Whole Revelation of St. John (1593) as his most important work. "
+            "It was written in English, unlike his other publications, in order to reach the widest audience [...] "
+            "A Plaine Discovery used mathematical analysis of the Book of Revelation to attempt to predict the date of the Apocalypse. "
+            "Napier identified events in chronological order which he believed were parallels to events described in the Book of Revelation [...] "
+            "In this work Napier dated the seventh trumpet to 1541, and predicted the end of the world would occur in either 1688 or 1700. [...] "
+            "Napier was often perceived as a magician, and is thought to have dabbled in alchemy and necromancy. "
+            "It was said that he would travel about with a black spider in a small box, and that his black cockerel was his familiar spirit. [...] "
+            "These rumours were stoked when Napier used his black cockerel to catch a thief. "
+            "Napier told his servants to go into a darkened room and pet the cockerel, claiming the bird would crow if they were the one who stole his property. "
+            "Unbeknownst to the servants, Napier had covered the bird with soot and when the servants emerged from the room, Napier inspected their hands to find the one who had been too afraid to touch the rooster. [...] "
+            "His work Mirifici Logarithmorum Canonis Descriptio (1614) contained fifty-seven pages of explanatory matter and ninety pages of tables",
+            nome="John Napier")],
+    },
+    # 12 William Shanks: 707 casas de pi, 180 erradas
+    {
+        "temas_secundarios": ["personagens_esquecidos", "teoria_numeros"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Em 1873, o inglês William Shanks chegou a pi com 707 casas decimais, depois de duas décadas de cálculos. Só em 1944 se viu que apenas as primeiras 527 estavam certas: um erro cometido em 1853 estragou o resto.",
+        "explicacao": (
+            "Shanks era um matemático amador que tinha um internato em Houghton-le-Spring, na Inglaterra, o que "
+            "lhe deixava tempo para o passatempo de calcular constantes matemáticas. Dizia-se que passava a manhã "
+            "calculando dígitos novos e a tarde conferindo o trabalho da manhã. Para pi, usou a fórmula de Machin, "
+            "que combina dois arcos-tangentes. Em janeiro de 1853, chegou a 530 casas, das quais as 527 primeiras "
+            "estavam certas; as últimas provavelmente sofreram com arredondamentos. Em abril do mesmo ano, "
+            "estendeu a conta para 607 casas, mas errou logo no ponto em que o cálculo anterior parava, e, pela "
+            "natureza da fórmula, o erro contaminou tudo a partir da 528ª casa. Vinte anos depois, ampliou o "
+            "resultado para 707 casas em cima dessa base errada, e todas as casas novas também saíram erradas. O "
+            "erro só foi descoberto em 1944, por D. F. Ferguson, com uma calculadora mecânica de mesa. Ainda "
+            "assim, a expansão de Shanks foi a mais longa de pi até a chegada dos computadores eletrônicos "
+            "digitais, nos anos 1940."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("William_Shanks",
+            "was an English amateur mathematician. "
+            "He is famous for his calculation of π to 707 decimal places in 1873, which was correct up to the first 527 places. "
+            "The error was discovered in 1944 by D. F. Ferguson (using a mechanical desk calculator). "
+            "Nevertheless, Shanks's approximation was the longest expansion of π until the advent of the digital electronic computer in the 1940s. [...] "
+            "Shanks earned his living by owning a boarding school at Houghton-le-Spring, which left him enough time to spend on his hobby of calculating mathematical constants. [...] "
+            "Shanks was said to have calculated new digits all morning and would then spend all afternoon checking his morning's work. [...] "
+            "To calculate π, Shanks used Machin's formula [...] "
+            "Shanks calculated π to 530 decimal places in January 1853, of which the first 527 were correct (the last few likely being incorrect because of round-off errors). "
+            "He subsequently expanded his calculation to 607 decimal places in April 1853, but an error introduced at the start of the new calculation, right at the 530th decimal place where his previous calculation ended, rendered the rest of his calculation erroneous. "
+            "Given the nature of Machin's formula, the error propagated back to the 528th decimal place, leaving only the first 527 digits correct once again. "
+            "In April 1873, twenty years later, Shanks expanded his calculation to 707 decimal places. "
+            "Because this was an expansion of his previous calculation, all of the new digits were incorrect as well.",
+            nome="William Shanks")],
+    },
+    # 13 a "lei do pi" de Indiana
+    {
+        "temas_secundarios": ["leis_julgamentos", "geometria_topologia"],
+        "tipos_espanto": ["historia_humana", "mito_desmentido"],
+        "gancho": "Em 1897, a Câmara do estado americano de Indiana aprovou sem nenhum voto contra um projeto de lei com uma \"quadratura do círculo\" errada, que implicava valores falsos para pi. Um professor de passagem ajudou a barrá-lo.",
+        "explicacao": (
+            "O autor era o médico Edward Goodwin, matemático amador, que acreditava ter resolvido a quadratura do "
+            "círculo: construir, só com régua e compasso, um quadrado com a mesma área de um círculo. Isso tinha "
+            "sido provado impossível em 1882 por Ferdinand von Lindemann. O texto oferecia a \"nova verdade "
+            "matemática\" ao estado sem cobrança de royalties. Na Câmara, um deputado sugeriu mandá-lo à comissão "
+            "de canais, onde poderia \"encontrar um túmulo merecido\", mas ele passou pela comissão de educação e "
+            "foi aprovado em 6 de fevereiro. Por acaso, C. A. Waldo, professor da Universidade Purdue, estava na "
+            "capital para garantir a verba anual da academia de ciências do estado. Ofereceram-lhe conhecer o "
+            "gênio autor do projeto, e ele recusou, dizendo que já conhecia malucos o bastante. Depois de Waldo "
+            "conversar com os senadores, e com jornais de Chicago zombando do caso, o Senado adiou a votação "
+            "indefinidamente, em 12 de fevereiro. Curiosamente, o texto nem usa a palavra \"pi\". Muitos relatos "
+            "dizem que ele fixava pi em 4, mas não há indício de que Goodwin quisesse isso; uma passagem implica "
+            "3,2, e um estudo achou sete valores diferentes na obra dele."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Indiana_pi_bill",
+            "The Indiana pi bill was bill 246 of the 1897 sitting of the Indiana General Assembly, one of the most notorious attempts to establish mathematical truth by legislative fiat. "
+            "Despite its name, the main result claimed by the bill is a method to square the circle. "
+            "The bill implies incorrect values of the mathematical constant π (pi), the ratio of the circumference of a circle to its diameter. "
+            "The bill, written by a physician turned amateur mathematician, never became law due to the intervention of C. A. Waldo, a professor at Purdue University, who happened to be present in the legislature on the day it went up for a vote. "
+            "The mathematical impossibility of squaring the circle using only straightedge and compass constructions, suspected since ancient times, had been proven 15 years previously, in 1882, by Ferdinand von Lindemann. [...] "
+            "In 1894, Indiana physician Edward J. Goodwin [...] "
+            "believed that he had discovered a way of squaring the circle. [...] "
+            "\"A Bill for an act introducing a new mathematical truth and offered as a contribution to education to be used only by the State of Indiana free of cost by paying any royalties whatever on the same [...] "
+            "the Speaker accepted another member's recommendation to refer the bill to the Committee on Canals (also known as the Committee on Swamp Lands), where the bill could \"find a deserved grave\". "
+            "It was transferred to the Committee on Education, which reported favorably. "
+            "Following a motion to suspend the rules, the bill passed on February 6, 1897 without a dissenting vote. [...] "
+            "Purdue University professor C. A. Waldo arrived in Indianapolis to secure the annual appropriation for the Indiana Academy of Science. "
+            "An assemblyman handed him the bill, offering to introduce him to the genius who wrote it. "
+            "He declined, saying that he already met as many crazy people as he cared to. "
+            "When it reached the Indiana Senate, the bill was not treated as kindly, for Waldo had talked to the senators previously. [...] "
+            "the Senate on February 12, 1897, postponed the bill indefinitely. [...] "
+            "Influencing some of the senators was a report that major newspapers, such as the Chicago Tribune, were ridiculing the situation. [...] "
+            "Although the bill has become known as the \"pi bill\", its text does not use the word \"pi\" at all. [...] "
+            "In other words, π=41.25=3.2 [...] "
+            "which, in many accounts of the pi bill, is interpreted as a claim that π=4, but there is no evidence in the bill that Goodwin intended to make such a claim. [...] "
+            "finds seven different values of pi implied in Goodwin's work.",
+            nome="Indiana pi bill")],
+    },
+    # 14 Nicolas Bourbaki, o matemático que nunca existiu
+    {
+        "temas_secundarios": ["personagens_esquecidos", "primeira_guerra"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Nicolas Bourbaki assinou uma longa série de livros de matemática e chegou a pedir filiação à Sociedade Americana de Matemática. Mas ele nunca existiu: era o pseudônimo de um grupo de matemáticos, quase todos franceses.",
+        "explicacao": (
+            "O grupo nasceu de uma queixa. A Primeira Guerra matou uma geração de matemáticos franceses, e os "
+            "jovens professores dependiam de livros ultrapassados. Em dezembro de 1934, num café de Paris, André "
+            "Weil, Henri Cartan e outros se reuniram para escrever juntos um novo livro de análise, e o projeto "
+            "cresceu até virar os Éléments de mathématique. O nome veio de um general francês do século XIX e de "
+            "um trote estudantil: um veterano se fez passar por professor e encerrou a aula pedindo a prova de um "
+            "\"teorema de Bourbaki\". O humor virou marca do grupo. Em 1939, ele divulgou o anúncio de casamento da "
+            "\"filha\" de Bourbaki. Quando a Sociedade Americana de Matemática recusou a filiação individual, "
+            "entendendo que se tratava de um coletivo, Bourbaki espalhou o boato de que o matemático Ralph Boas, "
+            "que o tinha descrito como coletivo num artigo da Enciclopédia Britânica, é que não existia. Em 1968, "
+            "saiu um obituário de brincadeira. Os membros atuais são mantidos em segredo, espera-se que cada um "
+            "se aposente por volta dos 50 anos, e um texto só é publicado com aprovação unânime."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Nicolas_Bourbaki",
+            "Nicolas Bourbaki (French: [nikola buʁbaki]) is the collective pseudonym of a group of mathematicians, predominantly French alumni of the École normale supérieure (ENS). "
+            "Founded in 1934–1935, the Bourbaki group originally intended to prepare a new textbook in analysis. "
+            "Over time the project became much more ambitious, growing into a large series of textbooks published under the Bourbaki name, meant to treat modern pure mathematics. "
+            "The series is known collectively as the Éléments de mathématique (Elements of Mathematics), the group's central work. [...] "
+            "Bourbaki was founded in response to the effects of the First World War which caused the death of a generation of French mathematicians; as a result, young university instructors were forced to use dated texts. [...] "
+            "Although former members openly discuss their past involvement with the group, Bourbaki has a custom of keeping its current membership secret. "
+            "The group's name derives from the 19th-century French general Charles-Denis Bourbaki [...] "
+            "Weil remembered an ENS student prank in which an upperclassman posed as a professor and presented a \"theorem of Bourbaki\"; the name was later adopted. [...] "
+            "unanimous agreement is required before a text is deemed fit for publication. [...] "
+            "at noon on Monday, 10 December 1934, at the Café Grill-Room A. Capoulade, Paris, in the Latin Quarter. [...] "
+            "in 1939 the group released a wedding announcement for the marriage of \"Betti Bourbaki\" (daughter of Nicolas) [...] "
+            "During the 1940s–1950s, the American Mathematical Society received applications for individual membership from Bourbaki. "
+            "They were rebuffed by J.R. Kline who understood the entity to be a collective, inviting them to re-apply for institutional membership. "
+            "In response, Bourbaki floated a rumor that Ralph Boas was not a real person, but a collective pseudonym of the editors of Mathematical Reviews with which Boas had been affiliated. "
+            "The reason for targeting Boas was because he had known the group in its earlier days when they were less strict with secrecy, and he'd described them as a collective in an article for the Encyclopædia Britannica. "
+            "In November 1968, a mock obituary of Nicolas Bourbaki was released during one of the seminars. [...] "
+            "The group is supposed to have an age limit: active members are expected to retire at (or about) 50 years of age.",
+            nome="Nicolas Bourbaki")],
+    },
+    # 15 Emmy Noether: simetrias, conservação e aulas em nome de Hilbert
+    {
+        "temas_secundarios": ["relatividade", "personagens_esquecidos"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Emmy Noether provou o teorema que liga cada simetria das leis da física a uma grandeza que se conserva, como a energia. Na época, dava aulas sem salário e sem cargo, anunciadas em nome de outro professor.",
+        "explicacao": (
+            "Em 1915, David Hilbert e Felix Klein levaram Noether para Göttingen porque queriam a ajuda dela para "
+            "entender a relatividade geral de Einstein. Havia um enigma: nessa teoria, a conservação da energia "
+            "parecia falhar, porque a própria energia gravitacional também gera gravidade. A solução veio num "
+            "artigo de 1918, com dois teoremas. O primeiro, o teorema de Noether, associa uma lei de conservação a "
+            "cada simetria contínua das leis físicas. Se um experimento funciona do mesmo jeito em qualquer "
+            "momento, a energia se conserva; se funciona igual em qualquer lugar, o momento linear se conserva. "
+            "Einstein escreveu a Hilbert que a velha guarda de Göttingen deveria tomar umas lições com ela. A "
+            "faculdade, porém, barrou a entrada dela como docente. Um professor perguntou o que os soldados "
+            "pensariam ao voltar da guerra e ter de aprender aos pés de uma mulher. Conta-se que Hilbert "
+            "respondeu que a universidade não era uma casa de banhos, embora as palavras exatas não tenham sido "
+            "preservadas. Nos primeiros anos, ela ensinou sem cargo e sem pagamento, com cursos anunciados em "
+            "nome de Hilbert. A habilitação só foi aprovada em 1919."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Emmy_Noether",
+            "In early 1915, Noether was invited to return to the University of Göttingen by Hilbert and Felix Klein. "
+            "Their effort to recruit her was initially blocked by the philologists and historians among the philosophical faculty, who insisted that women should not become privatdozenten. "
+            "In a joint department meeting on the matter, one faculty member protested: \"What will our soldiers think when they return to the university and find that they are required to learn at the feet of a woman?\" [...] "
+            "His exact words have not been preserved, but his objection is often said to have included the remark that the university was \"not a bathhouse\". [...] "
+            "During her first years teaching at Göttingen, she had no official position and was not paid. "
+            "Her lectures often were advertised under Hilbert's name, with Noether providing \"assistance\". [...] "
+            "Her habilitation was approved in 1919 [...] "
+            "Noether was brought to Göttingen in 1915 by Hilbert and Klein, who wanted her expertise in invariant theory to help them understand general relativity, a geometrical theory of gravitation developed mainly by Einstein. "
+            "Hilbert had observed that the conservation of energy seemed to be violated in general relativity, because gravitational energy could itself gravitate. "
+            "Noether provided the resolution of this paradox, and a fundamental tool of modern theoretical physics, in a 1918 paper. "
+            "This paper presented two theorems, of which the first is known as Noether's theorem. "
+            "Together, these theorems not only solve the problem for general relativity, but also determine the conserved quantities for every system of physical laws that possesses some continuous symmetry. "
+            "Upon receiving her work, Einstein wrote to Hilbert:Yesterday I received from Miss Noether a very interesting paper on invariants. "
+            "I'm impressed that such things can be understood in such a general way. "
+            "The old guard at Göttingen should take some lessons from Miss Noether! [...] "
+            "if a physical experiment works the same way at any place and at any time, then its laws are symmetric under continuous translations in space and time; by Noether's theorem, these symmetries account for the conservation laws of linear momentum and energy within this system",
+            nome="Emmy Noether")],
+    },
+    # 16 o osso de Ishango e os "números primos"
+    {
+        "temas_secundarios": ["pre_historia", "teoria_numeros"],
+        "tipos_espanto": ["misterio_aberto", "mito_desmentido"],
+        "gancho": "Um osso de uns 20 mil anos achado no Congo tem entalhes em grupos, e uma das colunas parece mostrar os números primos entre 10 e 20. Pode ser coincidência: ninguém sabe ao certo o que as marcas significam.",
+        "explicacao": (
+            "O osso de Ishango foi achado em 1950 pelo belga Jean de Heinzelin, perto do rio Semliki, e levado "
+            "para o Instituto Real Belga de Ciências Naturais, em Bruxelas. Tem uns 10 centímetros, um pedaço de "
+            "quartzo preso numa ponta e 168 entalhes dispostos em três colunas. A datação é debatida, porque a "
+            "atividade vulcânica da região alterou a proporção de isótopos de carbono, mas a estimativa atual é "
+            "de cerca de 20 mil anos. As interpretações variam muito. O descobridor viu ali sinais de aritmética "
+            "simples. Outros propõem uma ferramenta de contagem em base 12, ou um calendário lunar de seis meses, "
+            "ideia de Alexander Marshack que críticos consideram falha. A leitura como tabela de primos tem "
+            "problemas: o historiador Peter Rudman argumenta que os primos provavelmente só foram entendidos por "
+            "volta de 500 a.C., com os gregos, e até os defensores da base 12 acham a evidência insuficiente para "
+            "falar em primos. Há ainda um alerta: outro osso achado na mesma camada arqueológica tem marcas sem "
+            "nenhum padrão matemático sugestivo. E também já se propôs que os riscos só servissem para melhorar a "
+            "pegada."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ishango_bone",
+            "The curved bone is dark brown in color, about 10 centimeters in length, and features a sharp piece of quartz affixed to one end, perhaps for engraving. [...] "
+            "although it has also been suggested that the scratches might have been to create a better grip on the handle or for some other non-mathematical reason. [...] "
+            "The Ishango bone was found in 1950 by Belgian Jean de Heinzelin de Braucourt while exploring what was then the Belgian Congo. "
+            "It was discovered in the area of Ishango near the Semliki River. [...] "
+            "Professor de Heinzelin brought the Ishango bone to Belgium, where it was stored in the treasure room of the Royal Belgian Institute of Natural Sciences in Brussels. [...] "
+            "The dating of the site where it was discovered was re-evaluated, however, and it is now believed to be about 20,000 years old [...] "
+            "The dating of this bone is widely debated in the archaeological community, as the ratio of carbon isotopes was upset by nearby volcanic activity. [...] "
+            "The 168 etchings on the bone are ordered in three parallel columns along the length of the bone [...] "
+            "The discoverer of the Ishango bone, de Heinzelin, suggested that the bone was evidence of knowledge of simple arithmetic [...] "
+            "The third column has been interpreted as a \"table of prime numbers\", as column G appears to illustrate prime numbers between 10 and 20, but this might be a coincidence. "
+            "Historian of mathematics Peter S. Rudman argues that prime numbers were probably not understood until the early Greek period of about 500 BCE [...] "
+            "Dirk Huylebrouck and Vladimir Pletser have proposed that the Ishango bone is a counting tool using the base 12 and sub-bases 3 and 4 [...] "
+            "They have concluded, however, that the evidence is insufficient to confirm an understanding of prime numbers during this time period. [...] "
+            "Caution in interpretation is warranted by the existence of a second bone found in the same archaeological layer, one whose marks are not mathematically suggestive. [...] "
+            "Alexander Marshack, an archaeologist from Harvard University, speculated that the Ishango bone represents numeric notation of a six-month lunar calendar [...] "
+            "Critics in the field of archaeology have concluded, however, that Marshack's interpretation is flawed",
+            nome="Ishango bone")],
+    },
+]

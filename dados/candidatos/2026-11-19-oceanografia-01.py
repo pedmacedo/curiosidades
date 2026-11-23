@@ -1,0 +1,550 @@
+LOTE = "2026-11-19-oceanografia-01"
+AREA = "terra"
+TEMA = "oceanografia"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 os patinhos de borracha que mapearam correntes
+    {
+        "temas_secundarios": ["brinquedos", "transportes"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "Em 1992, um contêiner com 28.800 brinquedos de banho caiu no Pacífico Norte. Oceanógrafos transformaram os patos, castores, tartarugas e sapos de plástico num grande experimento sobre correntes.",
+        "explicacao": (
+            "Em 10 de janeiro de 1992, uma tempestade perto da Linha Internacional de Data derrubou doze contêineres "
+            "de um navio que ia de Hong Kong para Tacoma, nos EUA. Um deles levava 28.800 Friendly Floatees, "
+            "brinquedos sem furos, que não se enchem de água. A embalagem de papelão se desfez no mar e eles ficaram "
+            "livres. Os oceanógrafos Curtis Ebbesmeyer e James Ingraham, de Seattle, viram ali uma chance rara: o "
+            "método usual era soltar de 500 a 1.000 garrafas à deriva, e no Pacífico só cerca de 2% dos objetos "
+            "costumam ser recuperados. Dez meses depois, os primeiros brinquedos apareceram no Alasca, a uns 3.200 km "
+            "do ponto de partida, e até agosto de 1993 foram achados 400 na costa leste do Golfo do Alasca. Cada "
+            "achado alimentou um modelo de computador das correntes de superfície, que acertou a previsão de novas "
+            "chegadas ao estado de Washington em 1996. Os pesquisadores calcularam ainda que parte dos brinquedos "
+            "passaria pelo Estreito de Bering, ficaria presa no gelo do Ártico e levaria anos para chegar ao "
+            "Atlântico Norte. Com o tempo, sol e água salgada desbotaram patos e castores até o branco, enquanto "
+            "tartarugas e sapos mantiveram as cores."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Friendly_Floatees",
+            "departed from Hong Kong on a container ship, the Evergreen Ever Laurel, destined for Tacoma, Washington. "
+            "On 10 January 1992, during a storm in the North Pacific Ocean close to the International Date Line, twelve 40-foot (12-m) intermodal containers were washed overboard. "
+            "One of these containers held 28,800 Floatees, a child's bath toy which came in a number of forms: red beavers, green frogs, blue turtles and yellow ducks. [...] "
+            "subsequent tests showed that the cardboard quickly degraded in sea water allowing the Floatees to escape. "
+            "Unlike many bath toys, Friendly Floatees have no holes in them so they do not take on water. "
+            "Seattle oceanographers Curtis Ebbesmeyer and James Ingraham, who were working on an ocean surface current model, began to track their progress. "
+            "The mass release of 28,800 objects into the ocean at one time offered significant advantages over the standard method of releasing 500–1000 drift bottles. "
+            "The recovery rate of objects from the Pacific Ocean is typically around 2% [...] "
+            "Ten months after the incident, the first Floatees began to wash up along the Alaskan coast. "
+            "The first discovery consisted of ten toys found by a beachcomber near Sitka, Alaska on 16 November 1992, about 3,200 kilometres (2,000 mi) from their starting point. [...] "
+            "in total 400 were found along the eastern coast of the Gulf of Alaska in the period up to August 1993. [...] "
+            "the oceanographers correctly predicted further landfalls of the toys in Washington state in 1996 and theorized that many of the remaining Floatees would have traveled to Alaska, westward to Japan, back to Alaska, and then drifted northwards through the Bering Strait and become trapped in the Arctic pack ice. "
+            "Moving slowly with the ice across the Pole, they predicted it would take five or six years for the toys to reach the North Atlantic [...] "
+            "Bleached by sun and seawater, the ducks and beavers had faded to white, but the turtles and frogs had kept their original colors.",
+            nome="Friendly Floatees")],
+    },
+    # 2 a onda Draupner: a onda gigante que deixou de ser lenda
+    {
+        "temas_secundarios": ["grandes_obras", "clima_tempo"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Ondas gigantes que surgem do nada já foram tratadas como lenda de marinheiro. Em 1º de janeiro de 1995, um laser numa plataforma do Mar do Norte mediu uma de 25,6 m, mais que o dobro das vizinhas.",
+        "explicacao": (
+            "Relatos de marinheiros e estragos em navios sugeriam havia muito tempo que essas ondas existiam, mas "
+            "faltavam provas sólidas, e elas chegaram a ser consideradas míticas. A plataforma Draupner, uma estrutura "
+            "de apoio a gasodutos a cerca de 160 km da ponta sul da Noruega, tinha sido projetada para aguentar a onda "
+            "calculada para um evento de uma vez em 10.000 anos, com altura prevista de 20 m. Trazia um laser apontado "
+            "para baixo, que media o mar. Em 1º de janeiro de 1995, com ondas de cerca de 12 m ao redor, o aparelho "
+            "registrou uma de 25,6 m de altura, com a crista a 18,5 m acima do nível da água parada. Os outros "
+            "sensores confirmaram a leitura, e a plataforma teve danos leves. A onda era mais que duas vezes mais alta "
+            "e íngreme que as vizinhas, com características fora de qualquer modelo de ondas conhecido, e reforçou a "
+            "ideia de que ondas assim ocorrem naturalmente. Elas podem surgir quando correntes ou ventos fazem as "
+            "ondas viajarem em velocidades diferentes e se juntarem numa só, ou quando efeitos não lineares "
+            "transferem energia entre ondas até formar uma única onda enorme."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Draupner_wave",
+                "The wave, determined to be 25.6 m (84 ft) in height, was recorded on 1 January 1995 at Unit E of the Draupner platform, a gas pipeline support complex located in the North Sea about 160 km (100 miles) southwest from the southern tip of Norway. "
+                "The Draupner platform rig, located in the Norwegian North Sea and 160 km (99 mi) offshore from Norway, was built to withstand a calculated 1-in-10,000-years wave with a predicted height of 20 m (64 ft) and was fitted with state-of-the-art sensors, including a laser rangefinder wave recorder on the platform's underside. [...] "
+                "The laser beam recorded a rogue wave with a maximum wave height of 25.6 m (84 ft). Peak elevation above still water level was 18.5 m (61 ft). "
+                "The reading was confirmed by the other sensors. The platform sustained minor damage in the event. "
+                "In the area, the significant wave height at the time was about 12 m (39 ft), so the Draupner wave was more than twice as tall and steep as its neighbors, with characteristics that fell outside any known wave model. [...] "
+                "helped solidify the initial speculation that rogue waves did naturally occur",
+                nome="Draupner wave"),
+            wiki("Rogue_wave",
+                "They can be caused when currents or winds cause waves to travel at different speeds, and the waves merge to create a single large wave, or when nonlinear effects cause energy to move between waves to create a single extremely large wave. "
+                "Once considered mythical and lacking hard evidence, rogue waves are now proven to exist and are known to be natural ocean phenomena. "
+                "Eyewitness accounts from mariners and damage inflicted on ships have long suggested they occur.",
+                nome="Rogue wave"),
+        ],
+    },
+    # 3 Bathybius: a "gosma primordial" que era sulfato de cálcio
+    {
+        "temas_secundarios": ["evolucao", "microbiologia"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1868, Thomas Huxley achou no lodo do fundo do Atlântico uma gosma que tomou pela matéria primordial da vida. Era sulfato de cálcio, formado quando a água do mar reagiu com o álcool que conservava a amostra.",
+        "explicacao": (
+            "Huxley reexaminou uma amostra de lama do fundo do Atlântico colhida em 1857 e guardada num pote com "
+            "álcool. Viu nela um lodo de aspecto albuminoso, cortado por \"veias\", e o batizou de Bathybius haeckelii, "
+            "em homenagem a Ernst Haeckel, que imaginava um \"lodo primordial\" de onde toda a vida teria vindo. "
+            "Haeckel ficou lisonjeado e escreveu que a substância surgia sem parar no fundo do mar, a partir de matéria "
+            "sem vida. Em 1870, Huxley chegou a dizer que ela formava um tapete vivo contínuo sobre milhares de milhas "
+            "quadradas do leito oceânico, provavelmente em volta da Terra toda. Mas a expedição do navio Challenger, "
+            "iniciada em 1872, passou três anos estudando os oceanos sem achar sinal dela. Em 1875, o químico de "
+            "bordo, John Young Buchanan, percebeu que a gosma era um precipitado de sulfato de cálcio: a água do mar "
+            "reagia com o álcool conservante e formava um gel que grudava em partículas como se as engolisse. Huxley "
+            "admitiu o erro na revista Nature. Haeckel resistiu e defendeu a ideia até 1883. Opositores da evolução "
+            "usaram o caso como argumento contra a teoria."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Bathybius_haeckelii",
+            "Bathybius haeckelii was a substance that British biologist Thomas Henry Huxley discovered and initially thought to be a form of primordial matter, a source of all organic life. "
+            "He later admitted his mistake when it proved to be the product of an inorganic chemical process (precipitation). "
+            "In 1868, Huxley studied an old sample of mud from the Atlantic seafloor taken in 1857. "
+            "When he first examined it, he had found only protozoan cells and placed the sample into a jar of alcohol to preserve it. "
+            "Now he noticed that the sample contained an albuminous slime that appeared to be criss-crossed with veins. "
+            "Huxley thought he had discovered a new organic substance and named it Bathybius haeckelii, in honor of German biologist Ernst Haeckel. "
+            "Haeckel had theorized about Urschleim (\"primordial slime\"), a protoplasm from which all life had originated. [...] "
+            "Haeckel was impressed and flattered and procured a sample for himself. "
+            "In the next edition of his textbook, The History of Creation Haeckel suggested that the substance was constantly coming into being at the bottom of the sea, \"monera\" arising from non-living matter due to \"physicochemical causes.\" "
+            "Huxley asserted in a speech given to the Royal Geographical Society in 1870 that Bathybius undoubtedly formed a continuous mat of living protoplasm that covered the whole ocean floor for thousands of square miles, probably a continuous sheet around the Earth. [...] "
+            "In 1872, the Challenger expedition began and spent three years studying the oceans. [...] "
+            "They did not find any sign of Bathybius, despite the claim that it was a nearly universal substance. "
+            "In 1875, ship's chemist John Young Buchanan analyzed a substance that looked like Bathybius from an earlier collected sample. "
+            "He noticed that it was a precipitate of calcium sulfate from the seawater that had reacted with the preservative liquid (alcohol), forming a gelatinous ooze which clung to particles as if ingesting them. [...] "
+            "He published part of the letter in Nature and recanted his previous views. [...] "
+            "He continued to support this position until 1883. [...] "
+            "Other opponents of evolution, including George Campbell, 8th Duke of Argyll, tried to use the case as an argument against evolution.",
+            nome="Bathybius haeckelii")],
+    },
+    # 4 a "cachoeira" submarina do Estreito da Dinamarca
+    {
+        "temas_secundarios": ["paisagens_extremas", "clima_tempo"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Entre a Groenlândia e a Islândia, água gelada desce pelo fundo do mar por mais de 3,5 km. Se estivesse em terra, seria a cachoeira mais alta do mundo, com mais de três vezes a altura do Salto Ángel.",
+        "explicacao": (
+            "É o transbordamento do Estreito da Dinamarca, chamado em dinamarquês e norueguês de \"bomba da "
+            "Groenlândia\". Ele nasce de uma diferença de densidade: a água que desce dos mares nórdicos é mais fria, "
+            "e por isso mais pesada, que a do Mar de Irminger, ao sul do estreito. Ao passar pela crista submarina "
+            "entre a Groenlândia e a Islândia, essa água escorre pelo leito ao longo de cerca de 1.000 km, numa "
+            "coluna de uns 200 m de largura e 200 m de espessura. O fluxo é de cerca de 3,2 milhões de metros cúbicos "
+            "por segundo, muito acima da descarga do Amazonas no Atlântico. O efeito Coriolis desvia a corrente para "
+            "a direita, e por isso a água do lado da Groenlândia fica cerca de 1 km mais alta que a do lado oposto do "
+            "canal. Os oceanógrafos não classificam esses fluxos como cachoeiras, mas a queda supera em mais de três "
+            "vezes a do Salto Ángel, a maior cachoeira contínua em terra. O transbordamento responde por cerca de "
+            "metade da água densa que passa dos mares nórdicos para o Atlântico Norte e é peça-chave da circulação "
+            "termohalina, a rede de correntes profundas que leva calor e substâncias dissolvidas pelo planeta."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("Denmark_Strait_cataract",
+                "The Denmark Strait overflow (Danish: Grønlandspumpen; Norwegian: Grønlandspumpa, meaning \"the Greenland pump\") is an undersea overflow located in the Denmark Strait between Greenland and Iceland. "
+                "The overflow transports around 3.2 million m3 (110 million ft3) of water per second, greatly eclipsing the discharge of the Amazon River into the Atlantic Ocean [...] "
+                "The descending column of water is approximately 200 m (660 ft) wide and 200 m (660 ft) thick and descends over a length of around 1,000 km (620 mi). "
+                "The overflow is formed by the density difference of the water masses either side of the Denmark Strait; the southward-flowing water originating from the Nordic Seas is colder and consequently more dense than the Irminger Sea to the south of the strait. [...] "
+                "Due to the Coriolis effect, the downward flow of water is deflected to the right, resulting in the descending water on the Greenland side of the channel being roughly 1 km (0.62 mi) higher than the opposite side of the channel. "
+                "The overflow provides one of the main inflows of North Atlantic Deep Water, accounting for around half of dense water overflow between the Nordic Seas and the North Atlantic. [...] "
+                "DSOW is a key component of the present-day thermohaline circulation [...] "
+                "Although undersea overflows are not considered waterfalls, the Denmark Strait overflow would be the tallest waterfall in the world were it on land, with water falling over 3.5 km (2.2 mi); "
+                "this descent is over three times the height of Angel Falls, the world's tallest uninterrupted waterfall over land.",
+                nome="Denmark Strait cataract"),
+            wiki("Thermohaline_circulation",
+                "The water in these circuits transport energy (as heat) and mass (as dissolved solids and gases) around the globe.",
+                nome="Thermohaline circulation"),
+        ],
+    },
+    # 5 Haber e o ouro do mar para pagar a guerra
+    {
+        "temas_secundarios": ["primeira_guerra", "elementos_quimicos"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Depois da Primeira Guerra, o químico Fritz Haber propôs pagar a dívida da Alemanha com ouro tirado do mar. Não deu certo, mas a expedição criada em parte para isso fez um mapa inédito do fundo do Atlântico Sul.",
+        "explicacao": (
+            "Em 1872, o químico E. Sonstadt tinha relatado que os oceanos continham 65 miligramas de ouro por "
+            "tonelada de água. O Tratado de Versalhes, de 1919, obrigava a Alemanha a pagar em ouro uma enorme dívida "
+            "de guerra, e Haber sugeriu que o ouro extraído dos mares internacionais podia resolver o problema. Nos "
+            "anos 1920, ele procurou exaustivamente um método de extração e publicou vários artigos sobre o tema. A "
+            "conclusão, depois de anos, foi frustrante: a concentração de ouro dissolvido era muito menor que a "
+            "relatada antes, e a extração não compensava. A expedição alemã do navio Meteor, de 1925 a 1927, teve de "
+            "início esse objetivo econômico, mas ficou famosa por outro motivo. Equipado com um ecobatímetro, aparelho "
+            "então recente que mede a profundidade pelo tempo que um pulso sonoro leva para ir ao fundo e voltar, o "
+            "navio ziguezagueou entre a África e a América do Sul e fez 67.000 sondagens. Foi o primeiro levantamento "
+            "detalhado do fundo do Atlântico Sul, e ele mostrou que a Dorsal Mesoatlântica, a grande cordilheira "
+            "submarina do meio do oceano, seguia contínua por todo o Atlântico Sul e continuava até o Oceano Índico."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.ebsco.com/research-starters/history/german-expedition-discovers-mid-atlantic-ridge",
+             "titulo": "German Expedition Discovers the Mid-Atlantic Ridge (EBSCO Research Starters)", "idioma": "en",
+             "trecho": "The initial purpose of the German Meteor expedition was economic. "
+                       "In 1872, E. Sonstadt reported that the oceans contained a gold concentration of 65 milligrams per metric ton of seawater. "
+                       "The Treaty of Versailles (1919), which ended World War I, required that Germany repay its enormous war debt in gold, and Fritz Haber, a German chemist, proposed that gold extracted from the international seas might solve the problem. [...] "
+                       "An echo sounder works by measuring the time it takes a sonic or ultrasonic pulse emitted by the sounder to reach the object below and then return to the sounder."},
+            wiki("Fritz_Haber",
+                "In the 1920s, Haber searched exhaustively for a method to extract gold from sea water, and published a number of scientific papers on the subject. "
+                "After years of research, he concluded that the concentration of gold dissolved in sea water was much lower than that reported by earlier researchers, and that gold extraction from sea water was uneconomic.",
+                nome="Fritz Haber"),
+            wiki("German_Meteor_expedition",
+                "The German Meteor expedition (German: Deutsche Atlantik Expedition) was an oceanographic expedition that explored the South Atlantic ocean from the equatorial region to Antarctica in 1925–1927 [...] "
+                "The ship zigzagged between Africa and South America and took echo soundings of the South Atlantic between 20° North and 60° South. [...] "
+                "In the course of the venture 67,000 depth soundings were made [...] "
+                "Meteor was equipped with early sonar equipment with which it produced the first detailed survey of the south Atlantic Ocean floor. "
+                "The survey established that  the Mid-Atlantic Ridge was continuous through the South Atlantic and continued into the Indian Ocean beyond the Cape of Good Hope.",
+                nome="German Meteor expedition"),
+        ],
+    },
+    # 6 Marie Tharp e o vale no meio do Atlântico
+    {
+        "temas_secundarios": ["personagens_esquecidos", "geologia_profunda", "guerra_fria"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "Barrada dos navios de pesquisa por ser mulher, Marie Tharp desenhou o fundo do Atlântico a partir das sondagens e achou um vale no eixo da cordilheira submarina. O colega desdenhou: \"conversa de menina\".",
+        "explicacao": (
+            "Tharp trabalhava no Observatório Geológico Lamont, nos EUA, com o geólogo Bruce Heezen. Ele colhia "
+            "medidas de profundidade a bordo do navio Vema, e ela as transformava em mapas, porque na época mulheres "
+            "eram proibidas de trabalhar em navios. Em 1952, alinhando com paciência perfis de sondagem do navio "
+            "Atlantis, ela notou uma estrutura em V que corria sem interrupção pelo eixo da Dorsal Mesoatlântica e "
+            "suspeitou que fosse um vale de rifte, aberto pelo afastamento do fundo oceânico. Heezen não se "
+            "convenceu, porque a ideia apoiava a deriva continental, que muitos cientistas, ele incluído, achavam "
+            "impossível. A virada veio quando um mapa de epicentros de terremotos no oceano, feito por outro "
+            "colaborador, foi sobreposto ao perfil dela: os tremores se alinhavam com o vale. Só então Heezen aceitou "
+            "a hipótese. Na Guerra Fria, o governo americano proibia publicar mapas topográficos do fundo do mar, por "
+            "medo de que submarinos soviéticos os usassem, e os dois contornaram a regra desenhando o relevo num "
+            "estilo mais realista. Em 1977, a National Geographic publicou o mapa de todo o fundo oceânico feito por "
+            "eles. Em 1997, a Biblioteca do Congresso dos EUA apontou Tharp como uma das quatro maiores cartógrafas "
+            "do século XX."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Marie_Tharp",
+            "She was hired to perform drafting work with Maurice Ewing, the founder of the Lamont Geological Observatory [...] "
+            "For the first 18 years of their collaboration, Heezen collected bathymetric data aboard the research ship Vema, while Tharp drew maps from that data since women were barred from working on ships at the time. [...] "
+            "In 1952, Tharp painstakingly aligned sounding profiles from Atlantis, acquired during 1946–1952 [...] "
+            "Tharp identified an aligned, v-shaped structure running continuously through the axis of the ridge and believed that it might be a rift valley formed by the oceanic surface being pulled apart. "
+            "Heezen was initially unconvinced as the idea would have supported continental drift, then a controversial theory. "
+            "Many scientists, including Heezen, believed that continental drift was impossible at the time. "
+            "Instead, for a time, he favored the Expanding Earth hypothesis, dismissing her explanation as \"girl talk\". [...] "
+            "When Foster's map of earthquake epicenters was overlaid with Tharp's profile of the Mid-Atlantic Ridge, it became clear that the location of these earthquakes aligned with Tharp's rift valley. [...] "
+            "It was only after seeing that the location of earthquake epicenters aligned with Tharp's rift valley that Heezen accepted her hypothesis [...] "
+            "Because of the Cold War, the U.S. government forbade topographic seafloor maps to be published for fear that Soviet submarines could use them. "
+            "To circumvent that restriction, Tharp and Heezen decided to draw their maps in a more realistic style [...] "
+            "their map of the entire ocean floor, which was published in 1977 by National Geographic under the title of The World Ocean Floor. [...] "
+            "Tharp was recognized in 1997 by the Library of Congress as one of the four greatest cartographers of the 20th century.",
+            nome="Marie Tharp")],
+    },
+    # 7 Franklin, o primo baleeiro e a Corrente do Golfo
+    {
+        "temas_secundarios": ["grandes_navegacoes", "comercio_rotas"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Os navios do correio britânico levavam semanas a mais que os mercantes americanos para cruzar o Atlântico. Benjamin Franklin descobriu o motivo com um primo baleeiro: eles navegavam contra a Corrente do Golfo.",
+        "explicacao": (
+            "Em 1768, na Inglaterra, Franklin ouviu uma queixa curiosa das autoridades alfandegárias. Os paquetes do "
+            "correio, que partiam de Falmouth, na Cornualha, demoravam várias semanas a mais para chegar a Nova York "
+            "do que um navio mercante comum para chegar a Newport, em Rhode Island. E os mercantes saíam de Londres, "
+            "tendo ainda de descer o Tâmisa e percorrer todo o Canal da Mancha antes de cruzar o oceano. Franklin "
+            "perguntou ao primo Timothy Folger, capitão baleeiro da ilha de Nantucket. Folger explicou que os "
+            "mercantes reconheciam a corrente pelo comportamento das baleias, pela temperatura e pela cor da água, e a "
+            "atravessavam, enquanto os capitães do correio seguiam contra ela. Franklin pediu ao primo que desenhasse "
+            "o caminho da corrente numa carta do Atlântico, com notas sobre como evitá-la na viagem da Inglaterra "
+            "para a América, e mandou o mapa ao secretário dos Correios britânicos. A carta foi impressa em Londres em "
+            "1769, mas os capitães britânicos em geral a ignoraram. A corrente não era novidade para os navegadores: "
+            "um resumo do diário de bordo da expedição de Ponce de León, de 1513, já registrava uma corrente mais "
+            "forte que o vento."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Gulf_Stream",
+            "A summary of Ponce de León's voyage log on April 22, 1513, noted, \"A current such that, although they had great wind, they could not proceed forwards, but backwards and it seems that they were proceeding well; at the end, it was known that the current was more powerful than the wind.\" [...] "
+            "In 1768, while in England, Franklin heard a curious complaint from the Colonial Board of Customs: "
+            "\"Why did it take British packets several weeks longer to reach New York from England than it took an average American merchant ship to reach Newport, Rhode Island, despite the merchant ships leaving from London and having to sail down the River Thames and then the length of the English Channel before they sailed across the Atlantic, while the packets left from Falmouth in Cornwall?\" "
+            "Franklin asked his cousin Timothy Folger, a Nantucket Island whaling captain, for an answer. "
+            "Folger explained that merchant ships routinely crossed the current—which was identified by whale behaviour, measurement of the water's temperature, and changes in the water's colour—while the mail packet captains ran against it. "
+            "Franklin had Folger sketch the path of the current on a chart of the Atlantic and add notes on how to avoid the current when sailing from England to America. "
+            "Franklin then forwarded the chart to Anthony Todd, secretary of the British Post Office. "
+            "Franklin's Gulf Stream chart was printed in 1769 in London, but it was mostly ignored by British sea captains.",
+            nome="Gulf Stream")],
+    },
+    # 8 a "água morta" que segurava navios
+    {
+        "temas_secundarios": ["navegacao_antiga", "agua_doce_gelo", "roma_antiga"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Em águas calmas, um navio pode quase parar, como se algo o segurasse. A \"água morta\" era tida como lenda de marinheiro até Nansen enfrentá-la em 1893. A culpa é de ondas escondidas sob a superfície.",
+        "explicacao": (
+            "O fenômeno aparece quando uma camada de água doce ou salobra fica sobre água salgada, mais densa, sem "
+            "que as duas se misturem. É frequente em fiordes onde o degelo das geleiras chega ao mar. Se a camada de "
+            "cima tem mais ou menos a profundidade do casco, o navio gasta energia criando e mantendo ondas internas "
+            "na fronteira entre as duas águas. Ele fica difícil de manobrar e pode perder velocidade até quase parar. "
+            "Em agosto de 1893, num arquipélago perto da Península de Taimir, no Ártico, o explorador norueguês "
+            "Fridtjof Nansen anotou que o Fram, capaz de 6 a 7 nós com tempo calmo e carga leve, não chegava a 1,5 nó "
+            "na água morta e nem sempre obedecia ao leme, por mais voltas e manobras que a tripulação tentasse. Nansen "
+            "pediu ao físico Vilhelm Bjerknes que estudasse o caso, e um aluno dele, Vagn Walfrid Ekman, demonstrou "
+            "que as ondas internas eram a causa. Acelerar alguns nós pode bastar para escapar. Há ainda uma hipótese "
+            "histórica curiosa: o efeito pode ter atrapalhado os navios de Cleópatra na Batalha de Áccio, em 31 a.C., "
+            "derrota que a lenda atribuía a rêmoras grudadas nos cascos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Dead_water",
+            "Dead water  is the nautical term for a phenomenon that can occur when there is strong vertical density stratification due to salinity or temperature or both. "
+            "It is common where a layer of fresh or brackish water rests on top of denser salt water, without the two layers mixing. "
+            "The phenomenon is frequently, but not exclusively, observed in fjords where glacier runoff flows into salt water without much mixing. [...] "
+            "In the better known surface phenomenon a ship traveling in a fresh water layer with a depth approximately equal to the vessel's draft will expend energy creating and maintaining internal waves between the layers. "
+            "The vessel may be hard to maneuver or can even slow down almost to a standstill and \"stick\". "
+            "An increase in speed by a few knots can overcome the effect. [...] "
+            "The phenomenon, long considered sailor's yarns, was first described for science by Fridtjof Nansen, the Norwegian Arctic explorer. "
+            "Nansen wrote the following from his ship Fram in August 1893 in the Nordenskiöld Archipelago near the Taymyr Peninsula: "
+            "When caught in dead water Fram appeared to be held back, as if by some mysterious force, and she did not always answer the helm. "
+            "In calm weather, with a light cargo, Fram was capable of 6 to 7 knots. When in dead water she was unable to make 1.5 knots. "
+            "We made loops in our course, turned sometimes right around, tried all sorts of antics to get clear of it, but to very little purpose. "
+            "Nansen's experience led him to request physicist and meteorologist Vilhelm Bjerknes to study it scientifically. "
+            "Bjerknes had his student, Vagn Walfrid Ekman, investigate. [...] demonstrated the effect of internal waves as being the cause of dead water. [...] "
+            "An interesting historical possibility is that the effect caused Cleopatra's ships difficulties and loss at the Battle of Actium in 31 BC, in which legend attributes the loss to remora (suckerfish) attaching to the hulls.",
+            nome="Dead water")],
+    },
+    # 9 o vento empurra o mar de lado (transporte de Ekman)
+    {
+        "temas_secundarios": ["clima_tempo", "ecologia"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "O vento não empurra o mar na direção em que sopra. Somando todas as camadas que ele arrasta, a água anda a 90° do vento: para a direita no Hemisfério Norte e para a esquerda no Sul.",
+        "explicacao": (
+            "O vento arrasta por atrito a parte de cima do oceano, entre 10 e 100 m de profundidade. Mas, enquanto a "
+            "água se move, a rotação da Terra a desvia, pelo efeito Coriolis. A superfície corre a 45° do vento, e "
+            "cada camada abaixo, puxada pela de cima, fica mais lenta e um pouco mais desviada, num padrão chamado "
+            "espiral de Ekman. Somando o movimento de toda essa camada, o transporte líquido fica a 90° da direção do "
+            "vento. A primeira pista veio de Fridtjof Nansen, que percebeu, a bordo do Fram, numa expedição ao Ártico, "
+            "que o gelo derivava de 20° a 40° à direita do vento predominante. Nansen pediu a Vilhelm Bjerknes que "
+            "pusesse um aluno no problema, e Vagn Walfrid Ekman apresentou a teoria em 1902, na tese de doutorado. O "
+            "efeito molda a vida no mar. Na costa do Peru e da Califórnia, onde o vento sopra paralelo ao litoral, a "
+            "água da superfície é levada para longe da costa e precisa ser reposta por água de baixo. Essa água "
+            "profunda, fria e rica em nutrientes alimenta florações de fitoplâncton e sustenta algumas das maiores "
+            "pescarias do planeta."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ekman_transport",
+            "As the wind blows it casts a friction force on the ocean surface that drags the upper 10–100m of the water column with it. "
+            "However, due to the influence of the Coriolis effect, as the ocean water moves it is subject to a force at a 90° angle from the direction of motion causing the water to move at an angle to the wind direction. [...] "
+            "the surface current is found to be (as expected) 45 degrees to the right (left) of the wind in the Northern (Southern) Hemisphere. [...] "
+            "the magnitude of the velocity (the speed) decreases from a maximum at the surface until it dissipates. "
+            "The direction also shifts slightly across each subsequent layer (right in the Northern Hemisphere and left in the Southern Hemisphere). "
+            "This is called an Ekman spiral. [...] "
+            "If all flow over the Ekman layer is integrated, the net transportation is at 90° to the right (left) of the surface wind in the Northern (Southern) Hemisphere. [...] "
+            "Ekman developed the theory of the Ekman layer after Fridtjof Nansen observed that ice drifts at an angle of 20°–40° to the right of the prevailing wind direction while on an Arctic expedition aboard the Fram. "
+            "Nansen asked his colleague, Vilhelm Bjerknes to set one of his students upon study of the problem. "
+            "Bjerknes tapped Ekman, who presented his results in 1902 as his doctoral thesis. [...] "
+            "Upwelling carries nutrient rich, and cold deep-sea water to the euphotic zone, promoting phytoplankton blooms and kickstarting an extremely productive environment. [...] "
+            "provides the nutrient supply for some of the largest fishing markets on the planet [...] "
+            "Wind in these regimes blows parallel to the coast (such as along the coast of Peru, where the wind blows out of the southeast, and also in California, where it blows out of the northwest). [...] "
+            "Because the surface water flows away from the coast, the water must be replaced with water from below.",
+            nome="Ekman transport")],
+    },
+    # 10 o mar não é plano (geoide)
+    {
+        "temas_secundarios": ["geologia_profunda", "medidas_padroes"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "A superfície do mar não é lisa. Por causa de diferenças na gravidade, o nível que o oceano teria em repouso fica 106 m mais baixo que a forma de referência da Terra ao sul da Índia e 85 m mais alto perto da Islândia.",
+        "explicacao": (
+            "A massa da Terra não é distribuída por igual, e a gravidade varia um pouco de lugar para lugar. Os "
+            "geodesistas chamam de geoide a superfície que o oceano teria se tivesse densidade constante e não "
+            "sofresse com marés, correntes e clima. Ela sobe acima do elipsoide, a Terra \"lisa\" usada nos cálculos, "
+            "onde há excesso de massa, e afunda onde há falta. O desvio vai de +85 m, na Islândia, a −106 m, no sul da "
+            "Índia, menos de 200 m no total. A maior depressão é o chamado Baixo do Geoide do Oceano Índico. Outra "
+            "feição grande, a elevação do Atlântico Norte, deve-se em parte ao peso do gelo que cobriu a América do "
+            "Norte e o norte da Europa na última era glacial. Comparado ao relevo de terra firme, que vai do Everest, "
+            "com uns 8.800 m, aos 11.000 m da Fossa das Marianas, o geoide é bem mais suave. Mas o efeito aparece no "
+            "dia a dia: o GPS mede a altura em relação ao elipsoide, e por isso o receptor de um navio pode indicar "
+            "que o barco sobe e desce durante uma viagem longa, embora ele esteja sempre no nível do mar."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Geoid",
+            "Although the \"ground\" of the Earth has excursions on the order of +8,800 m (Mount Everest) and −11,000 m (Marianas Trench), the geoid's deviation from an ellipsoid ranges from +85 m (Iceland) to −106 m (southern India), less than 200 m total. "
+            "If the ocean were of constant density and undisturbed by tides, currents or weather, its surface would resemble the geoid. [...] "
+            "So a GPS receiver on a ship may, during the course of a long voyage, indicate height variations, even though the ship will always be at sea level (neglecting the effects of tides). [...] "
+            "The surface of the geoid is higher than the reference ellipsoid wherever there is a positive gravity anomaly or negative disturbing potential (mass excess) and lower than the reference ellipsoid wherever there is a negative gravity anomaly or positive disturbing potential (mass deficit). [...] "
+            "The largest absolute deviation can be found in the Indian Ocean Geoid Low, 106 meters below the average sea level. "
+            "Another large feature is the North Atlantic Geoid High (or North Atlantic Geoid Swell), caused in part by the weight of ice cover over North America and northern Europe in the Late Cenozoic Ice Age.",
+            nome="Geoid")],
+    },
+    # 11 as máquinas de prever marés
+    {
+        "temas_secundarios": ["historia_computacao", "segunda_guerra"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "Antes dos computadores eletrônicos, as marés eram previstas por máquinas de polias e engrenagens. Uma delas, americana, foi mantida em segredo na Segunda Guerra e usada para prever as marés do Dia D.",
+        "explicacao": (
+            "A maré é a soma de muitos ritmos, ligados aos movimentos da Lua e do Sol, que no conjunto nunca se repetem "
+            "exatamente. Nos anos 1860, William Thomson, mais tarde Lord Kelvin, introduziu a análise harmônica das "
+            "marés, que decompõe a curva em componentes regulares. Somar esses termos à mão era trabalhoso e sujeito a "
+            "erro, e a resposta de Thomson foi mecânica. Na máquina dele, construída em 1872–73, cada componente "
+            "movia um eixo para cima e para baixo, e uma corrente passava alternadamente por cima e por baixo das "
+            "polias desses eixos. A ponta livre da corrente somava todos os movimentos e guiava uma caneta que "
+            "desenhava a curva da maré numa fita de papel. A ideia da corrente foi sugerida pelo engenheiro Beauchamp "
+            "Tower. Com um volante pesado, o operador traçava a curva de um ano em uns vinte e cinco minutos. Esses "
+            "computadores analógicos ganharam importância militar nas duas guerras mundiais. A máquina americana No. "
+            "2 foi classificada como secreta, junto com os dados que produzia, e serviu para prever as marés do "
+            "desembarque na Normandia e de todos os desembarques em ilhas na Guerra do Pacífico. Os computadores "
+            "digitais as tornaram obsoletas, mas algumas seguiram em uso até as décadas de 1960 e 1970."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Tide-predicting_machine",
+            "A tide-predicting machine was a special-purpose mechanical analog computer of the late 19th and early 20th centuries, constructed and set up to predict the ebb and flow of sea tides and the irregular variations in their heights – which change in mixtures of rhythms, that never (in the aggregate) repeat themselves exactly. "
+            "Its purpose was to shorten the laborious and error-prone computations of tide-prediction. [...] "
+            "The first tide-predicting machine, designed and built in 1872–73, and followed by two larger machines on similar principles in 1876 and 1879, was conceived by Sir William Thomson. "
+            "Thomson had introduced the method of harmonic analysis of tidal patterns in the 1860s [...] "
+            "Tower suggested the use of a device that (as he remembered) was once used by Wheatstone. "
+            "It was a chain running alternately over and under a sequence of pulleys on movable shafts. [...] "
+            "The movements in position of the free (movable) end of the chain represented the sum of the movements of the different shafts. "
+            "The movable end was kept taut, and fitted with a pen and a moving band of paper on which the pen plotted a tida [...] "
+            "A flywheel of great inertia enabled the operator to turn the machine fast, without jerking the pulleys, and so to run off a year's curve in about twenty-five minutes. [...] "
+            "They came to be regarded as of military strategic importance during World War I, and again during the Second World War, when the US No.2 Tide Predicting Machine, described below, was classified, along with the data that it produced, and used to predict tides for the D-Day Normandy landings and all the island landings in the Pacific War. [...] "
+            "They were made obsolete by digital electronic computers that can be programmed to carry out similar computations, but the tide-predicting machines continued in use until the 1960s and 1970s.",
+            nome="Tide-predicting machine")],
+    },
+    # 12 pontos anfidrômicos: lugares sem maré
+    {
+        "temas_secundarios": ["sistema_solar", "acustica"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "Há pontos no oceano onde quase não existe maré: entre a preamar e a baixa-mar, o nível praticamente não muda. Em volta deles, a maré gira como um ponteiro, e a variação cresce conforme se afasta.",
+        "explicacao": (
+            "São os pontos anfidrômicos, do grego amphi (\"em volta\") e dromos (\"corrida\"). As marés funcionam "
+            "como ondas enormes, com milhares de quilômetros de comprimento, criadas pela atração da Lua e do Sol. "
+            "Num oceano real, essas ondas não viajam livres: refletem nas costas e nas mudanças de profundidade, e a "
+            "onda refletida se soma à original. Em certos pontos as duas se reforçam; em outros, se anulam. Com a "
+            "rotação da Terra, o efeito Coriolis faz o padrão girar em torno desses pontos de amplitude zero, no "
+            "sentido anti-horário no Hemisfério Norte e horário no Sul. As linhas que ligam os lugares onde a maré "
+            "alta chega na mesma hora, chamadas linhas cotidais, encontram-se nesses pontos. Cada componente da maré "
+            "tem o seu sistema, e na maioria dos lugares o maior é o lunar semidiurno, com duas marés altas por dia. "
+            "Mesmo onde o nível quase não varia, pode haver correntes de maré, porque a água dos dois lados do ponto "
+            "não está na mesma altura. O primeiro a descobrir o fenômeno foi William Whewell: ao prolongar as linhas "
+            "cotidais traçadas a partir da costa do Mar do Norte, ele viu que elas tinham de se encontrar em algum "
+            "lugar."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Amphidromic_point",
+            "An amphidromic point, also called a tidal node, is a geographical location where there is little or no difference in sea height between high tide and low tide; it has zero tidal amplitude for one harmonic constituent of the tide. "
+            "The tidal range (the peak-to-peak amplitude, or the height difference between high tide and low tide) for that harmonic constituent increases with distance from this point, though not uniformly. [...] "
+            "The term derives from the Greek words amphi (\"around\") and dromos (\"running\"), referring to the rotary tides which circulate around amphidromic points. "
+            "It was first discovered by William Whewell, who extrapolated the cotidal lines from the coast of the North Sea and found that the lines must meet at some point. [...] "
+            "There can still be tidal currents since the water levels on either side of the amphidromic point are not the same. "
+            "A separate amphidromic system is created by each periodic tidal component. "
+            "In most locations the \"principal lunar semi-diurnal\", known as M2, is the largest tidal constituent. "
+            "Cotidal lines connect points which reach high tide at the same time and low tide at the same time. [...] "
+            "Where the lines meet are amphidromes, and the tide rotates around them [...] "
+            "Tides are generated as a result of gravitational attraction by the Sun and Moon. [...] "
+            "the wavelength (λ) which is in the order of thousands of kilometres. [...] "
+            "The waves reflect due to changes in water depth (for example when entering shelf seas) and at coastal boundaries. "
+            "The result is a reflected wave that propagates in the opposite direction to the incident wave. [...] "
+            "The points at which the two waves amplify each other are known as antinodes and the points at which the two waves cancel each other out are known as nodes. [...] "
+            "The sense of rotation of the wave around the amphidromic point is in the direction of the Coriolis force; anticlockwise in the northern hemisphere and clockwise in the southern hemisphere.",
+            nome="Amphidromic point")],
+    },
+    # 13 Lituya: o megatsunami que subiu 524 m
+    {
+        "temas_secundarios": ["vulcoes_terremotos", "paisagens_extremas"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "Em 1958, um terremoto no Alasca jogou 30 milhões de m³ de rocha numa baía estreita. A água varreu árvores até 524 m de altura na encosta. Um pescador e o filho de 7 anos sobreviveram de barco à onda.",
+        "explicacao": (
+            "Às 22h15 de 9 de julho de 1958, ainda com luz do dia, um terremoto de magnitude 7,8 na Falha de "
+            "Fairweather derrubou mais de 30 milhões de metros cúbicos de rocha, de centenas de metros de altura, na "
+            "enseada Gilbert, na Baía Lituya. O impacto foi ouvido a 80 km. A água deslocada formou o maior e mais "
+            "importante megatsunami dos tempos modernos e arrancou árvores até 524 m acima da baía. Isso não "
+            "significa que uma parede de meio quilômetro de água atravessou a baía: uma reconstrução em escala "
+            "indicou uma crista de cerca de 150 m, e o próprio sobrevivente Howard Ulrich disse que a onda não subiu "
+            "àquela altura, a água espirrou até lá. Ulrich e o filho de 7 anos estavam ancorados no barco Edrie. Ele "
+            "viu a onda se formar, e ela chegou ao barco dois ou três minutos depois, arrastando-o até a margem sul e "
+            "de volta ao centro da baía. Os dois saíram com ferimentos leves, e Ulrich ainda manobrou pelas ondas "
+            "seguintes até deixar a baía. Dois ocupantes de outro barco de pesca morreram. O episódio obrigou os "
+            "cientistas a reconhecer deslizamentos e quedas de rocha como causas de ondas muito grandes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("1958_Lituya_Bay_earthquake_and_megatsunami",
+            "The strike-slip earthquake took place on the Fairweather Fault and triggered a rockslide of 30 million cubic meters (40 million cubic yards) and about 90 million tons into the narrow inlet of the bay. "
+            "The impact was heard 80 kilometers (50 mi) away, and the sudden displacement of water resulted in a megatsunami that washed out trees to a maximum elevation of 524 meters (1,719 feet) at the entrance of Gilbert Inlet. "
+            "This is the largest and most significant megatsunami in modern times; it forced a re-evaluation of large-wave events and the recognition of impact events, rockfalls, and landslides as causes of very large waves. [...] "
+            "Over 30 million cubic meters of rock fell from a height of several hundred meters into the bay, creating a megatsunami. [...] "
+            "A 1:675 recreation of the tsunami found the wave crest was 150 m (490 ft) tall. [...] "
+            "Two people on a fishing boat died from a wave in the bay. "
+            "Two more people, a fishing boat captain and his seven-year-old son, were struck by the wave and lifted high into the air by the swell. "
+            "Remarkably, both survived with minimal injuries. [...] "
+            "At 22:15 hours PST on July 9, 1958, which was still daylight at that time of year, an earthquake with a magnitude of 7.8 struck the Lituya Bay area. [...] "
+            "When the earthquake struck, Howard G. Ulrich and his 7-year-old son were in Lituya Bay aboard their boat, the Edrie. [...] "
+            "The wave did not go up 1,800 feet, the water splashed there. "
+            "The wave made its way to his boat 2–3 minutes after he saw it and carried the Edrie down to the southern shore and then back near the center of the bay. "
+            "Ulrich was able to control the boat once the main wave passed, maneuvering through subsequent waves up to 20 ft high until he could finally exit the bay.",
+            nome="1958 Lituya Bay earthquake and megatsunami")],
+    },
+    # 14 Trieste: os peixes chatos que talvez não existissem
+    {
+        "temas_secundarios": ["vida_marinha", "animais_extremos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Na primeira descida humana ao ponto mais fundo do oceano, em 1960, os dois tripulantes disseram ter visto peixes chatos no fundo. Hoje os especialistas não aceitam o relato: peixes não parecem viver tão fundo.",
+        "explicacao": (
+            "Em 23 de janeiro de 1960, o batiscafo Trieste levou o oceanógrafo suíço Jacques Piccard e o tenente da "
+            "Marinha americana Don Walsh ao fundo do Challenger Deep, na Fossa das Marianas, a cerca de 10.916 m. A "
+            "descida durou 4 horas e 47 minutos e teve um susto: depois dos 9.000 m, um dos vidros externos de "
+            "acrílico rachou e sacudiu o veículo inteiro. Eles passaram vinte minutos no fundo, com a cabine a 7 °C, "
+            "e conseguiram falar com o navio de apoio por um sistema de voz por som, em que cada mensagem levava uns "
+            "sete segundos para chegar. Lá embaixo, relataram ter visto linguados e solhas, dois tipos de peixe "
+            "achatado. A observação foi questionada depois, e autoridades recentes não a reconhecem como válida. O "
+            "limite teórico para peixes fica por volta de 8.000 a 8.500 m; abaixo disso, eles ficariam "
+            "hiperosmóticos. Já invertebrados como pepinos-do-mar, alguns dos quais poderiam ser confundidos com "
+            "peixes chatos, foram confirmados a 10.000 m ou mais. O próprio Walsh admitiu depois que a observação "
+            "podia estar errada, porque os dois sabiam pouco de biologia. O que eles registraram com certeza foi o "
+            "chão: um lodo de diatomáceas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Trieste_(bathyscaphe)",
+            "The vessel was piloted by Swiss oceanographer Jacques Piccard and US Navy lieutenant Don Walsh. "
+            "They reached a depth of about 10,916 metres (35,814 ft). [...] "
+            "On 23 January 1960, it reached the ocean floor in the Challenger Deep (the deepest southern part of the Mariana Trench), carrying Jacques Piccard and Don Walsh. [...] "
+            "The descent to the ocean floor took 4 hours 47 minutes at a descent rate of 0.9 metres per second (3.2 km/h; 2.0 mph). "
+            "After passing 9,000 metres (30,000 ft), one of the outer Plexiglas window panes cracked, shaking the entire vessel. "
+            "The two men spent twenty minutes on the ocean floor. The temperature in the cabin was 7 °C (45 °F) at the time. "
+            "While at maximum depth, Piccard and Walsh unexpectedly regained the ability to communicate with the support ship, USS Wandank (ATA-204), using a sonar/hydrophone voice communications system. [...] "
+            "it took about seven seconds for a voice message to travel from the craft to the support ship [...] "
+            "While at the bottom, Piccard and Walsh reported observing a number of sole and flounder (both flatfish). "
+            "The accuracy of this observation has later been questioned and recent authorities do not recognize it as valid. "
+            "The theoretical maximum depth for fish is at about 8,000–8,500 m (26,200–27,900 ft), beyond which they would become hyperosmotic. "
+            "Invertebrates such as sea cucumbers, some of which potentially could be mistaken for flatfish, have been confirmed at depths of 10,000 m (33,000 ft) and more. "
+            "Walsh later said that their original observation could be mistaken as their knowledge of biology was limited. "
+            "Piccard and Walsh noted that the floor of the Challenger Deep consisted of \"diatomaceous ooze\". [...] "
+            "In 1960, it became the first crewed vessel to reach the bottom of Challenger Deep in the Mariana Trench, the deepest point in Earth's seabed.",
+            nome="Trieste (bathyscaphe)")],
+    },
+    # 15 lagos de salmoura no fundo do mar
+    {
+        "temas_secundarios": ["vida_marinha", "microbiologia", "animais_extremos"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "No fundo do mar existem lagos, com margens e tudo: poças de salmoura três a oito vezes mais salgada que o oceano em volta, tão densa que não se mistura com a água de cima. Para muitos animais, cair nelas é fatal.",
+        "explicacao": (
+            "Esses \"lagos\" se acumulam em depressões do leito marinho. O sal vem de três processos. Quando a água do "
+            "mar congela nas regiões polares, o sal não cabe na estrutura do gelo e é expulso, formando uma salmoura "
+            "fria e pesada que afunda. Em outros lugares, a água dissolve antigas camadas de sal soterradas, como as "
+            "que surgiram quando o Golfo do México, então um mar raso, secou no período Jurássico. E há salmouras "
+            "aquecidas por atividade geotérmica nas fronteiras de placas, como no Mar Vermelho. Por ser densa e quase "
+            "não ter correntes que a misturem, a salmoura forma uma fronteira nítida com a água acima e, sem mistura, "
+            "fica sem oxigênio em semanas. O excesso de sal e a falta de oxigênio podem levar animais marinhos a "
+            "choque tóxico e à morte. Mas as \"margens\" são cheias de vida: a salmoura costuma ter muito sulfeto de "
+            "hidrogênio e metano, que alimentam micróbios quimiossintéticos e os animais que vivem em simbiose com "
+            "eles. Às vezes se veem camadas avermelhadas flutuando sobre a salmoura, formadas por arqueias que "
+            "adoram sal. Os lagos vão de menos de 1 m² até os 120 km² da Bacia Orca."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Brine_pool",
+            "A brine pool, sometimes called an underwater lake, deepwater lake or brine lake, is a volume of brine collected in a seafloor depression. "
+            "These pools are dense bodies of water that have a salinity that is typically three to eight times greater than the surrounding ocean. [...] "
+            "The brine often contains high concentrations of hydrogen sulfide and methane, which provide energy to chemosynthetic organisms that live near the pool. "
+            "These creatures are often extremophiles and symbionts. "
+            "Deep-sea and polar brine pools are toxic to marine animals due to their high salinity and anoxic properties, which can ultimately lead to toxic shock and possibly death. [...] "
+            "Brine pools are sometimes called sea floor \"lakes\" because the dense brine does not easily mix with overlying seawater, creating a distinct interface between water masses. "
+            "The pools range in area from less than 1 square metre (11 sq ft) to as large as the 120-square-kilometre (46 sq mi) Orca Basin. [...] "
+            "Because of the brine's high density and lack of mixing currents in the deep ocean, brine pools often become anoxic and deadly to respiring organisms. "
+            "Brine pools supporting chemosynthetic activity, however, form life on the pool's shores where bacteria and their symbionts grow near the highest concentrations of nutrient release. "
+            "Patchy, reddish layers can be observed floating above the dense brine interface due to high densities of halophilic archaea that are supported by these environments. [...] "
+            "Brine pools are created through three primary methods: brine rejection below sea ice, dissolution of salts into bottom water through salt tectonics, and geothermal heating of brine at tectonic boundaries and hot spots. "
+            "Brine rejection: When sea water freezes, salts do not fit into the crystalline structure of ice, so the salts are expelled. "
+            "The expelled salts form a cold, dense brine that sinks below the sea ice to the sea floor. [...] "
+            "In the absence of mixing, the brine will become anoxic in a matter of weeks. "
+            "Salt tectonics: During the Middle Jurassic period, the Gulf of Mexico was a shallow sea that dried out, producing a thick layer of salt and seawater-derived minerals up to 8 km thick. [...] "
+            "In the Red Sea, for example, Red Sea Deep Water (RSDW) seeps into the fissures created at the tectonic boundary. [...] "
+            "The resulting brine is then superheated in the hydrothermal active zone over the magma chamber.",
+            nome="Brine pool")],
+    },
+]

@@ -1,0 +1,122 @@
+{
+ "lote": "2026-11-19-historia_medicina-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "historia_medicina-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado pelo verbete Werner Forssmann; ressalva 'segundo o relato conhecido' adequada."
+   },
+   {
+    "id": "historia_medicina-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Joseph Goldberger; nixtamalização sustentada em Pellagra."
+   },
+   {
+    "id": "historia_medicina-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Louse-feeder e Rudolf Weigl; caso pouco conhecido com ponte entre áreas."
+   },
+   {
+    "id": "historia_medicina-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Perkins tractors sustenta cada afirmação; 'considerado pioneiro' sem exagero."
+   },
+   {
+    "id": "historia_medicina-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Relato de Laennec confere; nota 3 por a história circular bastante, salva pelo método anatomoclínico."
+   },
+   {
+    "id": "historia_medicina-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Tudo começou num erro de tradução' omite a escassez de betume no séc. XII; 'daí em diante' após Simon Geneunsis (m. 1303) erra a cronologia da raspagem, que começa no séc. XII.",
+    "correcao": "Gancho: trocar 'Tudo começou num erro de tradução:' por 'Na origem, houve um erro de tradução:'. Explicação: trocar 'O melhor vinha de uma montanha em Darabgerd, na Pérsia, e era raro e caro.' por 'O melhor vinha de uma montanha em Darabgerd, na Pérsia, e era raro e caro; por volta do século XII, o betume importado ficou escasso na Europa.' e 'Daí em diante, passou-se a raspar' por 'A partir do século XII, passou-se a raspar' (trecho: 'Beginning around the 12th century when supplies of imported natural bitumen ran short, mummia was misinterpreted')."
+   },
+   {
+    "id": "historia_medicina-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com o verbete de Kelsey; evita a versão romantizada."
+   },
+   {
+    "id": "historia_medicina-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Eben Byers e Radithor; mecanismo do rádio no osso."
+   },
+   {
+    "id": "historia_medicina-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Heroin; nota 3 por circular em listas, segurada pelos 11 dias."
+   },
+   {
+    "id": "historia_medicina-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Tobacco smoke enema; atenuações adequadas."
+   },
+   {
+    "id": "historia_medicina-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Em 1865 só veio a público a alegação sobre o corpo; o nome de nascimento foi confirmado depois por pesquisadores. 'Uma das primeiras cesarianas conhecidas' soa global; a fonte limita à África, com mãe e bebê vivos.",
+    "correcao": "1) Gancho: \"James Barry, cirurgião do exército britânico, fez uma das primeiras cesarianas registradas na África com mãe e bebê vivos. Só após a morte dele, em 1865, soube-se que Barry fora criado como menina.\" (apoio: 'was named Margaret Anne at birth and was known as female in childhood'). 2) Explicação: trocar \"Não houve exame oficial, e a história chegou à imprensa.\" por \"Nenhum médico examinou o corpo para confirmar, e a história chegou à imprensa. O nome de nascimento, Margaret Anne Bulkley, só foi confirmado por pesquisadores muito depois.\" 3) Trocar \"com a ajuda de amigos liberais da família\" por \"com a ajuda de amigos liberais do falecido tio pintor\" (fonte: 'her late brother's influential, liberal-minded friends')."
+   },
+   {
+    "id": "historia_medicina-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A explicação diz que Moniz 'passou a cortar essas ligações', mas a fonte diz que ele nunca operou: quem operava era Pedro Almeida Lima.",
+    "correcao": "Trocar \"passou a cortar essas ligações, a leucotomia, que ficaria conhecida como lobotomia.\" por \"propôs cortar essas ligações: era a leucotomia, que ficaria conhecida como lobotomia. Moniz nunca operou com as próprias mãos, porque não tinha formação em neurocirurgia e sofria de gota. Quem fazia as cirurgias era o neurocirurgião Pedro Almeida Lima.\" (trecho: 'Moniz never performed a surgery himself, partially because of his lack of neurosurgical training but also because he had limited use of his hands as a complication of gout')."
+   },
+   {
+    "id": "historia_medicina-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte se contradiz sobre o sexo e a ordem da primeira vítima assassinada; deixar neutro.",
+    "correcao": "Trocar \"Pouco mais de dois meses depois, mataram uma inquilina com febre e também a venderam.\" por \"Pouco mais de dois meses depois, mataram um hóspede que estava com febre e também venderam o corpo.\""
+   },
+   {
+    "id": "historia_medicina-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo sustentado pelo artigo Theriac; ressalva 'segundo a lenda' mantida; espanto moderado."
+   }
+  ],
+  "2": [
+   {
+    "id": "historia_medicina-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas; sem erro novo."
+   },
+   {
+    "id": "historia_medicina-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas; gancho fiel à fonte."
+   },
+   {
+    "id": "historia_medicina-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: Lima operava 'sobretudo', sob instruções de Moniz (fez dez das primeiras vinte).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "historia_medicina-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada; vítima neutra quanto ao sexo."
+   }
+  ]
+ }
+}

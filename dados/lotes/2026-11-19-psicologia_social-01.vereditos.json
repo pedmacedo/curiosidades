@@ -1,0 +1,177 @@
+{
+ "lote": "2026-11-19-psicologia_social-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "psicologia_social-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 5% com um parceiro são de respostas críticas, não de voluntários (a Wikipedia provavelmente erra).",
+    "correcao": "'Bastava um único ator dando a resposta certa para que só 5% continuassem seguindo a maioria.' → 'Bastava um único ator dando a resposta certa para que a adesão ao erro da maioria despencasse.'"
+   },
+   {
+    "id": "psicologia_social-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Milgram experiment; Perry e Blass atribuídos e equilibrados."
+   },
+   {
+    "id": "psicologia_social-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho generaliza um único estudo; uma frase é tradução literal.",
+    "correcao": "Gancho: 'A história das 38 testemunhas inertes no assassinato de Kitty Genovese, que inspirou o estudo do efeito espectador, era exagerada. E um estudo com câmeras de rua viu alguém ajudar em mais de 90% das brigas.' Explicação: 'a presença de outras pessoas inibia a ajuda, muitas vezes por larga margem' → 'quem estava acompanhado tendia a ajudar bem menos do que quem estava sozinho'."
+   },
+   {
+    "id": "psicologia_social-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A barraca derrubada é lembrança de um membro da equipe, contada a Perry; o gancho afirma como fato. Nota 3.",
+    "correcao": "Gancho: 'Antes de Robbers Cave, o famoso acampamento em que meninos viraram inimigos, houve um ensaio em 1953 dado como fracasso. Segundo um membro da equipe, colegas derrubaram uma barraca para atiçar a rivalidade.'"
+   },
+   {
+    "id": "psicologia_social-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "As gravações foram 'muito discutidas em 2017', não reveladas em 2017.",
+    "correcao": "'Em 2017, gravações do site oficial do estudo mostraram o assistente' → 'Gravações do site oficial do estudo, muito discutidas em 2017, mostram o assistente'."
+   },
+   {
+    "id": "psicologia_social-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Halfmann et al. 2020; espécie diferente informada; consenso_parcial adequado."
+   },
+   {
+    "id": "psicologia_social-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dunbar pediu dados de símios (incluindo gibões e orangotangos), não 'só grandes símios'.",
+    "correcao": "'Dunbar respondeu que a conta deveria usar só dados de grandes símios.' → 'Dunbar respondeu que a conta deveria usar só dados de símios (gibões, orangotangos, chimpanzés, bonobos e gorilas), poucos demais para uma análise estatística, segundo os críticos.'"
+   },
+   {
+    "id": "psicologia_social-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Sem parar por semanas' exagera (Troffea parava para dormir); 'perdeu força' apresenta como consenso a posição de Waller.",
+    "correcao": "Gancho: 'dezenas de pessoas dançaram sem parar por semanas' → 'dezenas de pessoas passaram semanas dançando nas ruas'. Explicação: 'A hipótese do esporão-do-centeio perdeu força, porque o envenenamento' → 'Waller rejeita a hipótese do esporão-do-centeio, porque o envenenamento'."
+   },
+   {
+    "id": "psicologia_social-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho afirma como fato a tese de um único autor independente (Kelly 2025), ainda sem confirmação; 'virou base da teoria' exagera.",
+    "correcao": "Gancho: 'Um livro de 1956 virou caso clássico da dissonância cognitiva: quando o fim do mundo não veio, uma seita teria redobrado a fé. Em 2025, um estudo de arquivos recém-abertos afirmou o contrário.' Explicação: 'o pesquisador Thomas Kelly' → 'o pesquisador independente Thomas Kelly'."
+   },
+   {
+    "id": "psicologia_social-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho generaliza: cerca de três quartos subestimavam, não todos.",
+    "correcao": "Gancho: 'Em Riad, 87% dos jovens maridos de um estudo apoiavam, em sigilo, o trabalho feminino fora de casa, mas a maioria subestimava o apoio dos vizinhos. Informados, mais deles inscreveram a esposa num serviço de empregos.'"
+   },
+   {
+    "id": "psicologia_social-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os garotos de Bristol se conheciam (não sabiam quem era do próprio grupo); a frase do ganho soa contraditória.",
+    "correcao": "Gancho: 'Pessoas divididas em grupos só por preferirem quadros de Klee ou de Kandinsky passaram a favorecer o próprio grupo ao dividir dinheiro, chegando a abrir mão de ganho só para ficar à frente do outro grupo.'"
+   },
+   {
+    "id": "psicologia_social-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os dados reapareceram antes de 2011 (NBER w15016, 2009); 2011 é a versão publicada.",
+    "correcao": "1) Gancho: 'Uma fábrica dos anos 1920 aumentou a luz e a produção subiu; diminuiu a luz e ela subiu de novo, até na sala de controle. Daí veio o \"efeito Hawthorne\". Décadas depois, os dados originais mal o confirmaram.' 2) 'até achá-los num microfilme da Universidade de Wisconsin em Milwaukee, em 2011.' → 'até achá-los num microfilme da Universidade de Wisconsin em Milwaukee.'"
+   },
+   {
+    "id": "psicologia_social-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'O mesmo dos estudos de obediência' sem apoio; 'a maioria se perdeu porque alguém se recusava' atribui causa à maioria; só a crítica de um lado.",
+    "correcao": "1) 'O experimento foi de Stanley Milgram, o mesmo dos estudos de obediência, e foi divulgado em 1967.' → 'O experimento foi do psicólogo Stanley Milgram e foi divulgado em 1967.' 2) 'A maioria das correntes se perdeu porque alguém se recusava a continuar.' → 'Muitas correntes se perderam porque alguém se recusava a continuar.' 3) Depois de '...gente que se considerava bem relacionada.', inserir 'Por outro lado, como ninguém enxerga a rede inteira, as cartas nem sempre seguiam o caminho mais curto, o que pode ter alongado as correntes.' (trecho: 'overestimating the average number of ties')."
+   },
+   {
+    "id": "psicologia_social-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Vandalismo' traduz mal 'hooliganism'; Hillsborough precisa de contexto; 'muitas vezes não sabe' exagera 'may be unaware'.",
+    "correcao": "1) 'Em Hillsborough, em 1989, parte dos policiais e fiscais estava tão preocupada com o que via como possível vandalismo de torcedores' → 'No desastre do estádio de Hillsborough, na Inglaterra, em 1989, parte dos policiais e fiscais estava tão preocupada com o que via como possível violência de torcedores (o hooliganismo)'. 2) 'Quem chega atrás muitas vezes não sabe o que acontece na frente e continua empurrando.' → 'Quem chega atrás pode não saber o que acontece na frente e continuar empurrando.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "psicologia_social-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem os 5%; 'a adesão despencava' com trecho."
+   },
+   {
+    "id": "psicologia_social-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Um estudo com câmeras; frase reescrita."
+   },
+   {
+    "id": "psicologia_social-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Episódio da barraca atribuído a um membro da equipe."
+   },
+   {
+    "id": "psicologia_social-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gravações 'muito discutidas em 2017'."
+   },
+   {
+    "id": "psicologia_social-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Dados de símios com trecho; números conferem."
+   },
+   {
+    "id": "psicologia_social-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Semanas dançando nas ruas'; posição de Waller atribuída."
+   },
+   {
+    "id": "psicologia_social-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tese de Kelly atribuída; 'pesquisador independente'."
+   },
+   {
+    "id": "psicologia_social-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'A maioria subestimava'; números conferem."
+   },
+   {
+    "id": "psicologia_social-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho corrigido; fiel ao ganho relativo."
+   },
+   {
+    "id": "psicologia_social-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Entre 1924 e 1927' com trecho; sem 2011."
+   },
+   {
+    "id": "psicologia_social-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas."
+   },
+   {
+    "id": "psicologia_social-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hooliganismo e 'pode não saber'; 'estádio' só dá contexto."
+   }
+  ]
+ }
+}

@@ -27,6 +27,8 @@ const N_QUESTIONARIO = 15;
 
 let acervo = null; // {fatos, taxonomia, tipos, indice, nomeTipo, versao}
 let passoQuestionario = 0; // posição na etapa 2 (só na memória)
+let buscaTemas = ""; // filtro da lista de temas (só na memória)
+let rolagemTemas = 0; // posição da lista de temas, para voltar ao mesmo ponto
 
 // ---------- utilidades ----------
 
@@ -115,14 +117,17 @@ const TELAS = {
   "/perfis": telaPerfis,
   "/questionario": telaQuestionario,
   "/feed": telaFeed,
+  "/temas": telaTemas,
   "/favoritos": telaFavoritos,
   "/perfil": telaMeuPerfil,
 };
 
 function render() {
   const rota = location.hash.replace(/^#/, "") || "/feed";
+  // rotas com parâmetro: "#/temas/<id do tema>"
+  const [, base = "", param = ""] = rota.match(/^(\/[^/]*)(?:\/(.*))?$/) || [];
   const p = perfil();
-  let destino = TELAS[rota] ? rota : "/feed";
+  let destino = TELAS[base] ? base : "/feed";
   if (!p) destino = "/perfis";
   else if (destino !== "/perfis" && !(p.questionario.etapa1 && p.questionario.etapa2)) destino = "/questionario";
 
@@ -133,9 +138,9 @@ function render() {
   if (p) chip.textContent = p.nome;
   document.body.classList.toggle("com-abas", comAbas);
 
-  TELAS[destino]();
+  const rolagem = TELAS[destino](param);
   tela.focus({ preventScroll: true });
-  window.scrollTo(0, 0);
+  window.scrollTo(0, typeof rolagem === "number" ? rolagem : 0);
 }
 
 // ---------- perfis ----------
@@ -327,12 +332,12 @@ function telaFim(p) {
     </section>`;
 }
 
-function htmlCartao(f, { favorito, aberto }) {
+function htmlCartao(f, { favorito, aberto, rotulo = true }) {
   const area = acervo.indice.temas.get(f.tema).area;
   const paragrafos = f.explicacao.split(/\n{2,}/).map((t) => `<p>${esc(t)}</p>`).join("");
   return `
     <article class="cartao" data-fato="${esc(f.id)}">
-      <p class="rotulo">${esc(nomeArea(area))} · ${esc(nomeTema(f.tema))}</p>
+      ${rotulo ? `<p class="rotulo">${esc(nomeArea(area))} · ${esc(nomeTema(f.tema))}</p>` : ""}
       <h1 class="gancho">${esc(f.gancho)}</h1>
       <p class="etiquetas">
         ${f.tipos_espanto.map((t) => `<span class="etiqueta">${esc(acervo.nomeTipo[t] || t)}</span>`).join("")}
@@ -404,6 +409,102 @@ function abrirReporte(f) {
     dlg.remove();
   });
   dlg.showModal();
+}
+
+// ---------- temas ----------
+
+/** Texto sem acentos e em minúsculas, para a busca. */
+const normalizar = (s) => String(s).normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+
+function telaTemas(param) {
+  if (param) {
+    let id = param;
+    try { id = decodeURIComponent(param); } catch { /* fica o texto cru */ }
+    return telaTema(id);
+  }
+  const p = perfil();
+  const vistos = new Set(p.historico.filter((h) => h.exibido).map((h) => h.id));
+  const porNome = (a, b) => a.nome.localeCompare(b.nome, "pt-BR");
+  const areas = acervo.taxonomia.areas
+    .map((a) => ({
+      nome: a.nome,
+      temas: a.temas
+        .filter((t) => acervo.indice.fatosPorTema.has(t.id))
+        .map((t) => {
+          const fatos = acervo.indice.fatosPorTema.get(t.id);
+          return { id: t.id, nome: t.nome, n: fatos.length, vistos: fatos.filter((f) => vistos.has(f.id)).length };
+        })
+        .sort(porNome),
+    }))
+    .filter((a) => a.temas.length);
+  const totalTemas = areas.reduce((s, a) => s + a.temas.length, 0);
+
+  tela.innerHTML = `
+    <section class="bloco">
+      <h1>Temas</h1>
+      <p class="leve">Escolha um tema para ler todas as curiosidades dele. São ${totalTemas} temas com ${acervo.fatos.length.toLocaleString("pt-BR")} curiosidades.</p>
+      <label class="visualmente-oculto" for="busca-temas">Buscar tema</label>
+      <input id="busca-temas" class="busca-temas" type="search" placeholder="Buscar tema ou área" autocomplete="off" value="${esc(buscaTemas)}">
+      <p class="leve" id="sem-temas" hidden>Nenhum tema com esse nome.</p>
+      ${areas.map((a) => `
+        <div class="area-temas" data-area="${esc(normalizar(a.nome))}">
+          <h2>${esc(a.nome)}</h2>
+          <ul class="lista-temas">
+            ${a.temas.map((t) => `<li data-nome="${esc(normalizar(t.nome))}"><a href="#/temas/${encodeURIComponent(t.id)}">
+              <span>${esc(t.nome)}</span>
+              <span class="contagem">${t.vistos ? `${t.vistos} de ${t.n} vistas` : `${t.n} curiosidade${t.n === 1 ? "" : "s"}`}</span></a></li>`).join("")}
+          </ul>
+        </div>`).join("")}
+    </section>`;
+
+  const busca = tela.querySelector("#busca-temas");
+  const filtrar = () => {
+    buscaTemas = busca.value;
+    const termo = normalizar(buscaTemas.trim());
+    let algum = false;
+    for (const bloco of tela.querySelectorAll(".area-temas")) {
+      const areaCasa = termo && bloco.dataset.area.includes(termo);
+      let visiveis = 0;
+      for (const li of bloco.querySelectorAll("li")) {
+        const mostra = !termo || areaCasa || li.dataset.nome.includes(termo);
+        li.hidden = !mostra;
+        if (mostra) visiveis++;
+      }
+      bloco.hidden = !visiveis;
+      if (visiveis) algum = true;
+    }
+    tela.querySelector("#sem-temas").hidden = algum;
+  };
+  busca.addEventListener("input", filtrar);
+  filtrar();
+  tela.querySelectorAll(".lista-temas a").forEach((a) => a.addEventListener("click", () => { rolagemTemas = window.scrollY; }));
+  return rolagemTemas;
+}
+
+function telaTema(id) {
+  const tema = acervo.indice.temas.get(id);
+  const fatos = acervo.indice.fatosPorTema.get(id) || [];
+  if (!tema || !fatos.length) {
+    tela.innerHTML = `<section class="bloco">
+      <a class="voltar" href="#/temas">← Todos os temas</a>
+      <h1>Tema não encontrado</h1>
+      <p class="leve">Este tema ainda não tem curiosidades no acervo.</p></section>`;
+    return 0;
+  }
+  const p = perfil();
+  const descricao = acervo.taxonomia.areas.flatMap((a) => a.temas).find((t) => t.id === id)?.descricao || "";
+  const ordenados = [...fatos].sort((a, b) => (b.nota_surpresa || 0) - (a.nota_surpresa || 0) || a.id.localeCompare(b.id));
+  tela.innerHTML = `
+    <section class="bloco">
+      <a class="voltar" href="#/temas">← Todos os temas</a>
+      <p class="rotulo">${esc(nomeArea(tema.area))}</p>
+      <h1>${esc(tema.nome)}</h1>
+      ${descricao ? `<p class="leve">${esc(descricao)}</p>` : ""}
+      <p class="leve pequeno">${fatos.length} curiosidade${fatos.length === 1 ? "" : "s"}. Ler aqui não muda as recomendações do feed.</p>
+      <div class="lista-cartoes">${ordenados.map((f) => htmlCartao(f, { favorito: p.favoritos.includes(f.id), aberto: false, rotulo: false })).join("")}</div>
+    </section>`;
+  ordenados.forEach((f) => ligarCartao(f));
+  return 0;
 }
 
 // ---------- favoritos ----------

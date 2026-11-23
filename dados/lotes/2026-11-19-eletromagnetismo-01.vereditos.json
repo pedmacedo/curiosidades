@@ -1,0 +1,156 @@
+{
+ "lote": "2026-11-19-eletromagnetismo-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "eletromagnetismo-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O capítulo do alho é da edição de 1589 da Magia Naturalis; 1558 é duvidoso. Chibatadas com ressalva, ok.",
+    "correcao": "Gancho: 'Em 1558, um italiano testou com o próprio bafo' → 'No século XVI, um italiano testou com o próprio bafo'."
+   },
+   {
+    "id": "eletromagnetismo-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O número de monges diverge entre fontes (200 x 700); o gancho afirma como fato fechado.",
+    "correcao": "Gancho: 'ligou cerca de duzentos monges com pedaços de fio de ferro, numa roda de 1,6 km, e descarregou neles um choque.' → 'ligou centenas de monges com pedaços de fio de ferro, numa grande roda, e descarregou neles um choque.' Explicação: 'Na versão mais conhecida, eram uns duzentos monges' → 'Na versão mais conhecida (os números variam entre os relatos), eram uns duzentos monges'."
+   },
+   {
+    "id": "eletromagnetismo-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Teve então a ideia' sugere reação a Dalibard; 'derrubou' é 'deixou desacordado'; a carga foi induzida na pipa também.",
+    "correcao": "'Franklin teve então a ideia de erguer a haste com uma pipa.' → 'Franklin teve a ideia de erguer a haste com uma pipa.'; 'a nuvem carregada induziu carga na linha de cânhamo molhada' → 'a nuvem carregada induziu carga na pipa e na linha de cânhamo molhada'; 'A explosão derrubou o gravurista que o acompanhava' → 'A explosão deixou desacordado o gravurista que o acompanhava'."
+   },
+   {
+    "id": "eletromagnetismo-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Giovanni Aldini; Frankenstein atenuado."
+   },
+   {
+    "id": "eletromagnetismo-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Michael Faraday."
+   },
+   {
+    "id": "eletromagnetismo-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A frase sobre as equações não serem as mesmas fica solta e quase traduzida; explicação é colagem de traduções. Nota 3.",
+    "correcao": "Trocar 'Menos sabido é que as equações de Heaviside não são exatamente as mesmas de Maxwell.' por 'E as duas versões não são idênticas: a de Heaviside é até mais fácil de adaptar à física quântica.' (trecho: 'it is easier to modify the former to make them compatible with quantum physics'), ou apagar a frase. Reescrever com palavras mais próprias as frases que hoje são tradução direta."
+   },
+   {
+    "id": "eletromagnetismo-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Conta conferida; atribuição honesta à Wikipedia."
+   },
+   {
+    "id": "eletromagnetismo-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 28 anos até 31/03/2024 não têm fonte que os confirme (as referências são de 2017: 22 anos); os 100 mil anos são estimativa genérica; 'sem nenhuma fonte de energia' engana (há refrigeração).",
+    "correcao": "1) Gancho: 'Numa bobina de um gravímetro na Bélgica, uma corrente elétrica circulou sem bateria nem gerador de 1995 a pelo menos 2017, 22 anos seguidos. Experimentos indicam que correntes assim durariam ao menos 100 mil anos.' 2) Explicação: 'a corrente circulou de 4 de agosto de 1995 a 31 de março de 2024.' → 'a corrente foi injetada em 4 de agosto de 1995 e, em setembro de 2017, completava 8.081 dias (22 anos e 45 dias) sem se dissipar, um recorde.' 3) Fonte nova: https://eos.org/science-updates/recording-belgiums-gravitational-history com o trecho 'In 1995, currents were injected into the superconducting coils, causing the sphere to levitate. More than 22 years later, the currents persist.'"
+   },
+   {
+    "id": "eletromagnetismo-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Sem gastar energia' engana: a rã precisou de um eletroímã potentíssimo.",
+    "correcao": "'Com um ímã potente, porém, um corpo cheio de água pode flutuar em equilíbrio estável, sem gastar energia.' → 'Com um ímã potente, porém, um corpo cheio de água pode flutuar em equilíbrio estável.'"
+   },
+   {
+    "id": "eletromagnetismo-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte aponta duas causas da confusão (jornais com 'Edison Company' e o crédito do filme). Nota 3.",
+    "correcao": "Gancho: ', como se repete. Ele não estava lá, e essa disputa tinha acabado dez anos antes. A confusão veio de um filme.' → '. Ele não estava lá, e essa disputa tinha acabado dez anos antes. A confusão veio de um filme e de um nome.' Opcional: 'cabos ligados a um guincho a vapor' → 'cordas ligadas a um guincho a vapor'."
+   },
+   {
+    "id": "eletromagnetismo-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Em 1800 ele presenciou a cena; o relato saiu anos depois.",
+    "correcao": "Gancho: 'Em 1800, Humboldt contou ter visto poraquês' → 'Humboldt relatou ter visto, em 1800, poraquês'."
+   },
+   {
+    "id": "eletromagnetismo-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Magnetic monopole; questão aberta é o consenso."
+   },
+   {
+    "id": "eletromagnetismo-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Retoques de redação; o crédito a Papell se sustenta.",
+    "correcao": "1) Gancho: 'Hoje está em uns 300 milhões de alto-falantes e afins por ano.' → 'Hoje entra em uns 300 milhões de alto-falantes e afins por ano.' 2) Explicação: 'entre eles alto-falantes de laptops e celulares, fones de ouvido.' → 'entre eles alto-falantes de laptops e celulares e fones de ouvido.'"
+   },
+   {
+    "id": "eletromagnetismo-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com as três fontes; hipótese dos autores bem sinalizada."
+   }
+  ],
+  "2": [
+   {
+    "id": "eletromagnetismo-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'No século XVI' aplicado; resto confere."
+   },
+   {
+    "id": "eletromagnetismo-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números de monges com ressalva; resto confere."
+   },
+   {
+    "id": "eletromagnetismo-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas; sem erro novo."
+   },
+   {
+    "id": "eletromagnetismo-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Explicação reescrita e sustentada; frase quântica com trecho."
+   },
+   {
+    "id": "eletromagnetismo-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "22 anos (1995–2017) com Eos e ORB; 100 mil anos como estimativa geral."
+   },
+   {
+    "id": "eletromagnetismo-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem 'sem gastar energia'; resto confere."
+   },
+   {
+    "id": "eletromagnetismo-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Um filme e um nome'; 'cordas'; desmente mito listado."
+   },
+   {
+    "id": "eletromagnetismo-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Humboldt relatou ter visto, em 1800'; resto confere."
+   },
+   {
+    "id": "eletromagnetismo-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Retoques de redação aplicados; resto confere."
+   }
+  ]
+ }
+}

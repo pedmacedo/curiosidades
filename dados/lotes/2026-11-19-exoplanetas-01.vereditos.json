@@ -1,0 +1,141 @@
+{
+ "lote": "2026-11-19-exoplanetas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "exoplanetas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com 51 Pegasi b e a NASA; superlativo bem delimitado."
+   },
+   {
+    "id": "exoplanetas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Barnard's Star; sem exagero."
+   },
+   {
+    "id": "exoplanetas-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Superlativo absoluto no gancho (a fonte diz 'the earliest known'); 'sem que ninguém entendesse o que ela mostrava' simplifica demais.",
+    "correcao": "Gancho inteiro: \"A evidência mais antiga conhecida de um sistema planetário fora do nosso foi registrada em 1917, numa chapa de vidro, e passou quase um século num arquivo sem que ninguém percebesse seu valor. Foi reconhecida em 2016.\" (conferir ≤ 220)."
+   },
+   {
+    "id": "exoplanetas-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A culpa das ejeções de massa coronal é a análise de um pesquisador (ESMATS 2017), plausível mas não comprovada; o gancho afirma como fato.",
+    "correcao": "1) Gancho: \"E o Sol era também o culpado: suas erupções haviam estragado as rodas.\" → \"E o Sol é também o principal suspeito de ter estragado as rodas.\" 2) Explicação: \"Mais tarde, as falhas foram atribuídas a corrosão nos rolamentos de aço causada por arcos elétricos, que por sua vez vinham de ejeções de massa coronal do Sol.\" → \"Uma análise posterior ligou as falhas a corrosão nos rolamentos de aço por arcos elétricos, que seriam provocados por ejeções de massa coronal do Sol.\""
+   },
+   {
+    "id": "exoplanetas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Methods of detecting exoplanets, Kepler e NASA."
+   },
+   {
+    "id": "exoplanetas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a NASA; ventos atribuídos; chuva de vidro como possibilidade."
+   },
+   {
+    "id": "exoplanetas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O 'menos de 1%' depende de modelo (2,53% se todo o contraste fosse reflexão; análises posteriores dão 1,4% a 5%); Fahrenheit sozinho não serve ao leitor brasileiro.",
+    "correcao": "1) Gancho: 'astrônomos mostraram que o planeta TrES-2b reflete' → 'astrônomos estimaram que o planeta TrES-2b reflete'. 2) Depois de 'Um mundo mais refletor produziria oscilações maiores.', inserir 'Se toda essa oscilação viesse de luz refletida, o planeta refletiria 2,53%; mas, como boa parte dela parece ser brilho próprio do calor, a estimativa caiu para menos de 1%.' com o trecho literal 'If the entire day–night contrast were due to geometric albedo, it would be 2.53%, but modeling suggests that much of this is dayside emission due to the planet's high temperature and the true albedo is much lower. It is estimated to be less than 1%'. 3) 'passa de 1.800 graus Fahrenheit' → 'passa de 1.800 °F (quase 1.000 °C)'. 4) confianca → consenso_parcial."
+   },
+   {
+    "id": "exoplanetas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 3,8 massas terrestres de Kepler-51d não batem com a densidade de 0,0381 g/cm³ (que corresponde a ~5,6, valor do JWST em 2025).",
+    "correcao": "'tem 9,32 vezes o raio da Terra, quase o tamanho de Saturno, e só 3,8 vezes a massa dela.' → 'tem 9,32 vezes o raio da Terra, quase o tamanho de Saturno, mas massa de só algumas vezes a dela.'"
+   },
+   {
+    "id": "exoplanetas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com WASP-12b; decaimento por maré bem estabelecido."
+   },
+   {
+    "id": "exoplanetas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Primeira órbita retrógrada descoberta' confere (HAT-P-7b foi anunciado um dia depois); resto confere."
+   },
+   {
+    "id": "exoplanetas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Descartaram que ele tenha uma' exagera: a fonte diz que o Webb indica nenhuma atmosfera ou uma muito tênue.",
+    "correcao": "'Mas não há evidência de atmosfera em nenhum deles, e as observações de TRAPPIST-1b descartaram que ele tenha uma.' → 'Mas não há evidência de atmosfera em nenhum deles, e as observações do Webb indicam que TRAPPIST-1b não tem atmosfera ou tem só uma muito tênue.' Trecho: 'JWST observations indicate that it has either no atmosphere at all or a very thin one'."
+   },
+   {
+    "id": "exoplanetas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Rogue planet; consenso_parcial adequado."
+   },
+   {
+    "id": "exoplanetas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Tabby's Star; nada publicado depois resolve o caso."
+   },
+   {
+    "id": "exoplanetas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; controvérsia bem retratada; hipotese adequada."
+   },
+   {
+    "id": "exoplanetas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O vale não é ausência, só tamanhos relativamente raros; a 1ª frase da explicação quase traduz a NASA e usa 'ele' sem referente.",
+    "correcao": "Gancho: 'há um \"vale\" de tamanhos que quase não aparecem.' → 'há um \"vale\" de tamanhos bem mais raros que os vizinhos.' Explicação: 'Segundo a NASA, o tamanho de planeta que ele mais encontrou, entre o da Terra e o de Netuno, não tem nenhum representante entre os nossos vizinhos, e ainda há muito a aprender sobre esses mundos.' → 'Esses mundos, maiores que a Terra e menores que Netuno, foram o tipo que o Kepler mais achou, e a NASA admite que ainda se sabe pouco sobre eles.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "exoplanetas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Gancho com 'mais antiga conhecida'; sem erro novo."
+   },
+   {
+    "id": "exoplanetas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Causa solar como suspeita; fonte nova sustenta a cautela."
+   },
+   {
+    "id": "exoplanetas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As quatro correções aplicadas; 2,53% sustentado."
+   },
+   {
+    "id": "exoplanetas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem os 3,8 massas incompatíveis; resto confere."
+   },
+   {
+    "id": "exoplanetas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Atmosfera de TRAPPIST-1b como 'nenhuma ou muito tênue', com trecho."
+   },
+   {
+    "id": "exoplanetas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Vale 'bem mais raros'; redação própria na explicação."
+   }
+  ]
+ }
+}

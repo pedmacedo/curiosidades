@@ -1,0 +1,182 @@
+{
+ "lote": "2026-11-19-historia_matematica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "historia_matematica-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Só no Brasil' e 'no resto do mundo' exageram (há uso na Argentina; na Índia é Sridhara); a data de 1960 vem da pt.wikipedia sem referência; Bhaskara cita Sridhara, não 'reconhecia'. Nota 3: circula nas escolas.",
+    "correcao": "1) Gancho: 'A \"fórmula de Bhaskara\" só tem esse nome no Brasil. No resto do mundo ela é a fórmula quadrática, e o indiano...' → 'A \"fórmula de Bhaskara\" tem esse nome quase só no Brasil. Na maior parte do mundo ela é só a fórmula quadrática, e o indiano...'. 2) Explicação: 'No Brasil, a homenagem a Bhaskara teria se firmado por volta de 1960, e esse nome não se vê em outros países.' → 'O nome Bhaskara é típico do Brasil: na maioria dos países ela é só a fórmula quadrática.' (trecho: 'is sometimes called Sridharacharya's formula in India and Bhaskara's formula in Brazil'). 3) 'e o próprio Bhaskara reconhecia isso' → 'e o próprio Bhaskara o cita'."
+   },
+   {
+    "id": "historia_matematica-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O número regular que não aparece na tabuinha é o cateto maior, não 'o lado maior' (a hipotenusa aparece na coluna 3).",
+    "correcao": "'o lado maior de cada triângulo, que não aparece na tabuinha, é sempre um número' → 'o cateto maior de cada triângulo (o maior dos dois lados que formam o ângulo reto), que não aparece na tabuinha, é sempre um número'."
+   },
+   {
+    "id": "historia_matematica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz 'is believed to be the work of a student'; o gancho afirma como certo.",
+    "correcao": "Gancho: 'um estudante anotou a raiz quadrada de 2' → 'provavelmente um estudante anotou a raiz quadrada de 2'."
+   },
+   {
+    "id": "historia_matematica-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A charada não pede soma e tem 4 níveis; a versão de c. 1730 tinha nove esposas (o homem com sete aparece depois); o papiro registra 2.301 em vez de 2.401. Nota 3.",
+    "correcao": "1) Gancho: 'É a mesma soma de potências de 7 de uma charada infantil inglesa.' → 'A mesma escadinha de potências de 7 reaparece, milênios depois, numa charada infantil inglesa.' 2) Explicação: 'E a cantiga inglesa \"As I was going to St Ives\", registrada num manuscrito de cerca de 1730, fala de um homem com sete esposas, 49 sacos, 343 gatos e 2.401 filhotes.' → 'E a cantiga inglesa \"As I was going to St Ives\", que já circulava em variantes num manuscrito de cerca de 1730, fala, na versão mais conhecida, de um homem com sete esposas, 49 sacos, 343 gatos e 2.401 filhotes.' 3) Recomendado: depois de 'com resultado 19.607', acrescentar '(o escriba errou uma das parcelas, escrevendo 2.301 em vez de 2.401, mas acertou o total)' com o trecho 'Note that the author of the papyrus listed a wrong value for the fourth power of 7; it should be 2,401, not 2,301. However, the sum of the powers (19,607) is correct.'"
+   },
+   {
+    "id": "historia_matematica-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A condição do quadrado e do triângulo vale só para os touros (W+B, Y+D).",
+    "correcao": "'brancos e pretos juntos formam um quadrado, e amarelos e malhados juntos formam um triângulo' → 'os touros brancos e pretos juntos formam um quadrado, e os touros amarelos e malhados juntos formam um triângulo'."
+   },
+   {
+    "id": "historia_matematica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado; 'atribuída' respeita a ressalva; transmissão marcada como aberta."
+   },
+   {
+    "id": "historia_matematica-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "1585 é prioridade desatualizada: Valentinus Otho propôs 355/113 em 1573.",
+    "correcao": "Gancho: 'e a Europa só a achou em 1585.' → 'e a Europa só a reencontrou no fim do século XVI.' Explicação: 'Na Europa, a mesma fração só foi obtida pelo holandês Adriaan Anthoniszoon, em 1585.' → 'Na Europa, a mesma fração só reapareceu no fim do século XVI, mais de mil anos depois: o alemão Valentinus Otho a propôs em 1573, e o holandês Adriaan Anthoniszoon chegou a ela em 1585.' com a fonte https://en.wikipedia.org/wiki/Valentinus_Otho e o trecho 'In 1573 he came to Wittenberg, proposing to Johannes Praetorius an approximation of pi as'. Sem fonte nova: só 'Na Europa, a mesma fração só reapareceu no fim do século XVI, mais de mil anos depois.'"
+   },
+   {
+    "id": "historia_matematica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Binary number; 'a quem se credita' evita exagero."
+   },
+   {
+    "id": "historia_matematica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo nas fontes; não é redundante com 0010 (disputa x origem dos imaginários)."
+   },
+   {
+    "id": "historia_matematica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fontes confirmam; corrige a ideia de que os imaginários nasceram de x²=−1."
+   },
+   {
+    "id": "historia_matematica-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O galo coberto de fuligem é tradição sem fonte da época; falta a ressalva de que Napier dizia não ser possível saber a data exata.",
+    "correcao": "'Um episódio reforçou os boatos: para achar um ladrão, mandou os criados' → 'Conta-se também que, para achar um ladrão, ele mandou os criados'. Depois de 'concluía que o fim viria em 1688 ou 1700.', acrescentar 'Ele dizia que ninguém podia saber a data exata, mas achava que a Bíblia trazia pistas de sobra para a Igreja.' (trecho: 'Napier did not believe that people could know the true date of the Apocalypse, but claimed that... God wanted the Church to know when the end was coming'). Se passar de 250 palavras, encurtar a frase sobre a leitura antipapal."
+   },
+   {
+    "id": "historia_matematica-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Depois de duas décadas de cálculos' exagera: foi um cálculo em 1853 e uma ampliação em 1873.",
+    "correcao": "Gancho: 'Em 1873, o inglês William Shanks chegou a pi com 707 casas decimais, depois de duas décadas de cálculos.' → 'Em 1873, o inglês William Shanks chegou a pi com 707 casas decimais, ampliando um cálculo seu de 1853.'"
+   },
+   {
+    "id": "historia_matematica-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Indiana pi bill; corrige a versão popular pi=4."
+   },
+   {
+    "id": "historia_matematica-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O limite de idade é suposto; a historiadora Liliane Beaulieu não achou a regra por escrito e aponta exceções.",
+    "correcao": "'espera-se que cada um se aposente por volta dos 50 anos' → 'diz-se que cada um deve se aposentar por volta dos 50 anos (regra que historiadores não acharam por escrito)' (trecho: 'historian Liliane Beaulieu has been critical of the claim. She reported never having found written affirmation of the rule')."
+   },
+   {
+    "id": "historia_matematica-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O teorema vale para simetrias contínuas; as aulas 'often' em nome de Hilbert; o bloqueio da faculdade foi em 1915, por filólogos e historiadores.",
+    "correcao": "Gancho: 'Emmy Noether provou o teorema que liga cada simetria contínua das leis da física a uma grandeza que se conserva, como a energia. Na época, dava aulas sem salário nem cargo, muitas vezes em nome de outro professor.' Explicação: 'A faculdade, porém, barrou a entrada dela como docente.' → 'Já em 1915, porém, filólogos e historiadores da faculdade tinham barrado a entrada dela como docente.'; 'com cursos anunciados em nome de Hilbert' → 'com cursos muitas vezes anunciados em nome de Hilbert'."
+   },
+   {
+    "id": "historia_matematica-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A leitura dos primos não foi refutada, só é tida como insuficiente: mito_desmentido não cabe.",
+    "correcao": "tipos_espanto: [\"misterio_aberto\", \"mito_desmentido\"] → [\"misterio_aberto\"]."
+   }
+  ],
+  "2": [
+   {
+    "id": "historia_matematica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Quase só no Brasil', sem 1960, 'o cita': aplicados."
+   },
+   {
+    "id": "historia_matematica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Cateto maior' aplicado; números conferem."
+   },
+   {
+    "id": "historia_matematica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Provavelmente um estudante' aplicado."
+   },
+   {
+    "id": "historia_matematica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Escadinha de potências, variantes da cantiga e erro 2.301 aplicados."
+   },
+   {
+    "id": "historia_matematica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Condições só para os touros; números conferem."
+   },
+   {
+    "id": "historia_matematica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Otho 1573 e Anthoniszoon 1585 com fontes; resto confere."
+   },
+   {
+    "id": "historia_matematica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Conta-se' e ressalva sobre a data aplicados, com trecho."
+   },
+   {
+    "id": "historia_matematica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Ampliando um cálculo seu de 1853'; números conferem."
+   },
+   {
+    "id": "historia_matematica-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Regra dos 50 anos com ressalva de Beaulieu."
+   },
+   {
+    "id": "historia_matematica-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Simetria contínua, 'muitas vezes', bloqueio de 1915: aplicados."
+   },
+   {
+    "id": "historia_matematica-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Só misterio_aberto; incerteza clara."
+   }
+  ]
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "lote": "2026-11-19-oceanografia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "oceanografia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Friendly Floatees; evita o equívoco de 2007. Nota 3 por circular em listas. Opcional: 'calcularam' → 'previram'."
+   },
+   {
+    "id": "oceanografia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Não diz 'a primeira'; números conferem com Draupner wave e Rogue wave."
+   },
+   {
+    "id": "oceanografia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Bathybius haeckelii; mecanismo e ponte química-evolução."
+   },
+   {
+    "id": "oceanografia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A largura de 200 m é duvidosa (o verbete se contradiz; outras fontes dão 160–480 km); no gancho, 'desce por mais de 3,5 km' pode ser lido como distância, não desnível.",
+    "correcao": "Explicação: trocar 'essa água escorre pelo leito ao longo de cerca de 1.000 km, numa coluna de uns 200 m de largura e 200 m de espessura.' por 'essa água escorre pelo leito ao longo de cerca de 1.000 km, numa rampa suave, e não numa queda vertical.' Gancho: 'água gelada desce pelo fundo do mar por mais de 3,5 km' → 'água gelada desce mais de 3,5 km de altura pelo fundo do mar'."
+   },
+   {
+    "id": "oceanografia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ligação Haber–Meteor confirmada por buscas independentes; 'criada em parte para isso' é cauteloso."
+   },
+   {
+    "id": "oceanografia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Uma das quatro maiores cartógrafas' muda o sentido (a fonte não faz recorte de gênero); o gancho não diz por que o vale importa (deriva continental).",
+    "correcao": "1) Explicação: 'apontou Tharp como uma das quatro maiores cartógrafas do século XX' → 'incluiu Tharp entre os quatro maiores cartógrafos do século XX'. 2) Gancho: 'Proibida de embarcar por ser mulher, Marie Tharp mapeou o fundo do Atlântico pelas sondagens e achou o vale que indicava a deriva dos continentes. O colega desdenhou: \"conversa de menina\".' (trecho: 'the idea would have supported continental drift')."
+   },
+   {
+    "id": "oceanografia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A queixa original era de cerca de quinze dias: 'várias semanas' exagera.",
+    "correcao": "'demoravam várias semanas a mais para chegar a Nova York' → 'demoravam semanas a mais para chegar a Nova York'."
+   },
+   {
+    "id": "oceanografia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Em águas calmas' põe a causa na calmaria; a causa é a estratificação (água doce sobre salgada).",
+    "correcao": "Gancho: 'Em águas calmas, um navio pode quase parar' → 'Onde água doce cobre a salgada, um navio pode quase parar'."
+   },
+   {
+    "id": "oceanografia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 45° são da teoria simplificada; nas medições, 5° a 20°.",
+    "correcao": "'A superfície corre a 45° do vento, e cada camada abaixo' → 'Na teoria de Ekman, a superfície corre a 45° do vento (nas medições reais, o ângulo costuma ficar entre 5° e 20°), e cada camada abaixo' (trecho: 'the angle is between 5–20 degrees instead of the 45 degrees as expected')."
+   },
+   {
+    "id": "oceanografia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A frase do gelo glacial no Atlântico Norte é duvidosa; o GPS 'sobe e desce' só sem correção; a depressão fica no oceano ao sul da Índia.",
+    "correcao": "1) Remover 'Outra feição grande, a elevação do Atlântico Norte, deve-se em parte ao peso do gelo que cobriu a América do Norte e o norte da Europa na última era glacial.' 2) 'e por isso o receptor de um navio pode indicar' → 'e por isso um receptor sem correção, num navio, pode indicar'. 3) 'a −106 m, no sul da Índia' → 'a −106 m, no oceano ao sul da Índia'."
+   },
+   {
+    "id": "oceanografia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "As marés do Dia D foram previstas por Doodson com máquinas britânicas (Parker 2011); a fonte credita 'máquinas de latão derivadas da de Thomson'. Os 25 minutos são de outro projeto; a fonte dá ~4 horas para as máquinas de 1876/1879.",
+    "correcao": "Gancho: 'Uma delas, americana, foi mantida em segredo na Segunda Guerra e usada para prever as marés do Dia D.' → 'Máquinas assim previram as marés do Dia D, e a americana foi mantida em segredo na Segunda Guerra.' Explicação: trocar a frase da No. 2 por 'A máquina americana No. 2 foi classificada como secreta, junto com os dados que produzia, e serviu para os desembarques em ilhas na Guerra do Pacífico; as marés do Dia D são creditadas a máquinas de latão derivadas do projeto original de Thomson.' e 'Com um volante pesado, o operador traçava a curva de um ano em uns vinte e cinco minutos.' por 'Um volante pesado deixava o operador girar a máquina depressa, sem trancos nas polias, e a previsão de um ano para um porto saía em poucas horas.' Acrescentar ao trecho: 'Brass machines based on Thomson's original tide machine are credited for the accurate tide predictions in the build-up to the 1944 \"D-Day\" Normandy landings of World War II.' e 'A year's tidal predictions for a given place, usually a chosen seaport, could be plotted by the 1876 and 1879 machines in about four hours'."
+   },
+   {
+    "id": "oceanografia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado; contraintuitivo com mecanismo."
+   },
+   {
+    "id": "oceanografia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; 524 m tratados corretamente como altura na encosta."
+   },
+   {
+    "id": "oceanografia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; sobreposição com vida_marinha-0010 é só de apoio."
+   },
+   {
+    "id": "oceanografia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado; mecanismo e margens com vida."
+   }
+  ],
+  "2": [
+   {
+    "id": "oceanografia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Troca opcional 'previram' aplicada; dados conferem."
+   },
+   {
+    "id": "oceanografia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Coluna de 200 m cortada; gancho como desnível; números conferem."
+   },
+   {
+    "id": "oceanografia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As duas correções aplicadas; gancho sustentado."
+   },
+   {
+    "id": "oceanografia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Semanas a mais' aplicado; resto confere."
+   },
+   {
+    "id": "oceanografia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho põe a causa na estratificação; números conferem."
+   },
+   {
+    "id": "oceanografia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva dos 5° a 20° inserida com trecho."
+   },
+   {
+    "id": "oceanografia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas; números conferem."
+   },
+   {
+    "id": "oceanografia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Dia D creditado a 'máquinas assim'; ~4 horas no lugar dos 25 min; trechos novos no cache."
+   }
+  ]
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "lote": "2026-11-19-asia_antiga-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "asia_antiga-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O mecanismo do fósforo vem sobretudo de R. Balasubramaniam; há outros fatores (escória, ciclos de umidade, clima seco segundo Wranglén 1970). 'O segredo é o fósforo' afirma demais.",
+    "correcao": "1) Gancho: 'há uns 1.600 anos. O segredo é o fósforo do ferro antigo, que forma uma película protetora.' → 'há uns 1.600 anos, graças, ao que tudo indica, ao fósforo do ferro antigo.' 2) Explicação: 'A diferença está na química.' → 'Segundo a explicação mais aceita, do metalurgista R. Balasubramaniam, a diferença está na química.' 3) confianca → consenso_parcial. Opcional: citar o título brasileiro do livro de Däniken ('Eram os Deuses Astronautas?') se houver apoio."
+   },
+   {
+    "id": "asia_antiga-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Segundo sua biografia' sugere biografia publicada (a frase é do verbete); conexao_inesperada é fraco. Nota 3.",
+    "correcao": "1) 'Prinsep morreu em 1840, poucos anos depois; segundo sua biografia, literalmente se matou de trabalhar.' → 'Prinsep morreu em 1840, aos 40 anos, depois de dois anos doente; diz-se que literalmente se matou de trabalhar.' 2) tipos_espanto → ['historia_humana', 'contraintuitivo']."
+   },
+   {
+    "id": "asia_antiga-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O peso da influência chinesa na reforma Northcote–Trevelyan é debatido (Kim e Massey 2025: apoio só circunstancial).",
+    "correcao": "1) Gancho: 'Os concursos do serviço público britânico se inspiraram nos exames da China imperial.' → 'Os concursos públicos britânicos se inspiraram em parte nos exames da China imperial.' 2) confianca → consenso_parcial. 3) Opcional, no fim: 'Quanto a China de fato pesou na reforma ainda é discutido: ela também respondia à antiga distribuição de cargos por apadrinhamento.' (trecho: 'prior to which admission into the civil service was purely a matter of patronage')."
+   },
+   {
+    "id": "asia_antiga-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Só imagens de satélite' (a fonte diz satélite e outras técnicas); 'servia para irrigar' é afirmado como certo, mas a fonte diz 'is believed' e registra o debate sobre os barays.",
+    "correcao": "1) Gancho: 'e só imagens de satélite revelaram uma cidade de pelo menos 1.000 km².' → 'e foram precisas imagens de satélite para revelar uma cidade de pelo menos 1.000 km².' 2) 'servia para irrigar os campos diante das monções imprevisíveis' → 'provavelmente servia para irrigar os campos diante das monções imprevisíveis, embora alguns estudiosos vejam nos grandes reservatórios também um símbolo religioso'."
+   },
+   {
+    "id": "asia_antiga-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Oracle bone; não repete sistemas_escrita-0005."
+   },
+   {
+    "id": "asia_antiga-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Sementes: 130 na Wikipedia, 138 e meia em fontes chinesas; estavam no estômago, intestinos e esôfago; 'small amounts' de sangue; data da morte divergente.",
+    "correcao": "Gancho: 'e sangue nas veias. Tinha 130 sementes de melão no estômago.' → 'e restos de sangue nas veias. Tinha mais de 130 sementes de melão no aparelho digestivo.' Explicação: 'em 169 ou 168 a.C.' → 'por volta de 168 a.C.'; 'As sementes de melão no estômago' → 'As mais de 130 sementes de melão no estômago'."
+   },
+   {
+    "id": "asia_antiga-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado por Marquis Yi of Zeng e Bianzhong; divergências não atingem o texto."
+   },
+   {
+    "id": "asia_antiga-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Para marcar o feito' atribui motivo que a fonte não dá; o maior conjunto de murais são as cavernas 1, 2, 16 e 17, não as 30. Nota 3.",
+    "correcao": "Gancho: 'Para marcar o feito, riscou o nome sobre a figura de um bodisatva.' → 'Lá dentro, riscou de propósito o próprio nome sobre a figura de um bodisatva.' Explicação: 'guardam o maior conjunto de pinturas murais da Índia antiga que chegou até nós' → 'incluem, nas cavernas 1, 2, 16 e 17, o maior conjunto de pinturas murais da Índia antiga que chegou até nós'."
+   },
+   {
+    "id": "asia_antiga-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Sem barragem' absoluto demais para o presente (há vertedouro de concreto e barragens a montante); 'danificado em guerras' força a fonte.",
+    "correcao": "Gancho: 'controla as cheias do rio Min sem barragem:' → 'controla as cheias do rio Min sem represá-lo:'. Explicação: 'Danificado em guerras e destruído por um terremoto em 1933' → 'Degradado nas convulsões do século XVII e destruído por um terremoto em 1933'."
+   },
+   {
+    "id": "asia_antiga-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de 20 mil kofun' engana: a fonte do lote estima ~160 mil entre meados do séc. III e o início do VIII; 'a ligação com Nintoku vem do século XIX' generaliza frase sobre 'many tombs'.",
+    "correcao": "'Entre o fim do século III e o século VI, o Japão ergueu mais de 20 mil kofun' → 'Entre meados do século III e o início do século VIII, o Japão ergueu cerca de 160 mil kofun', com o trecho literal da the-past.com 'It is estimated that some 160,000 burial mounds (kofun in Japanese, meaning ‘old mound’) were constructed between the middle of the 3rd century AD and the early 8th century.' Trocar 'A ligação com Nintoku vem do século XIX.' por 'Boa parte dessas atribuições é do século XIX.'"
+   },
+   {
+    "id": "asia_antiga-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Sanxingdui; ressalvas bem marcadas."
+   },
+   {
+    "id": "asia_antiga-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mostra como um artefato estatístico vira 'a maior atrocidade'."
+   },
+   {
+    "id": "asia_antiga-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Gancho categórico não combina com consenso_parcial (há quem veja Zeus); trecho da explicação quase traduzido.",
+    "correcao": "1) Gancho: 'Os guardiões musculosos e furiosos nos portões de templos budistas do Japão teriam um ancestral grego: Héracles. Na arte greco-budista, o herói virou o protetor do Buda, e essa imagem viajou pelo Leste Asiático.' 2) Explicação: 'guardiões irados e musculosos do Buda postos na entrada de muitos templos budistas' → 'a dupla de guardiões de expressão feroz e músculos saltados que flanqueia a entrada de muitos templos budistas'. 3) Manter consenso_parcial."
+   },
+   {
+    "id": "asia_antiga-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Xi'an Stele; imprecisões toleráveis."
+   },
+   {
+    "id": "asia_antiga-0015",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: 'empresa mais antiga do mundo' é trivia de lista da internet; o ano 578 é tradicional e só a pt.wikipedia o sustenta; incoerência de datas com o Shitennō-ji (593)."
+   }
+  ],
+  "2": [
+   {
+    "id": "asia_antiga-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'hoje em Délhi' (o pilar foi levado para lá depois) e sem o ano da edição inglesa de Däniken.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "asia_antiga-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tipos e datas de Prinsep aplicados com trechos."
+   },
+   {
+    "id": "asia_antiga-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Em parte', consenso_parcial e ressalva do apadrinhamento."
+   },
+   {
+    "id": "asia_antiga-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Satélite e outras técnicas; irrigação provável com ressalva."
+   },
+   {
+    "id": "asia_antiga-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Sementes e data corrigidas; resto confere."
+   },
+   {
+    "id": "asia_antiga-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Riscou de propósito' e cavernas 1, 2, 16 e 17 aplicados."
+   },
+   {
+    "id": "asia_antiga-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Sem represá-lo' e convulsões do séc. XVII aplicados."
+   },
+   {
+    "id": "asia_antiga-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: referente de 'atribuições' e frase do acesso reescrita.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "asia_antiga-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: sem 'dupla' (a fonte não diz).",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

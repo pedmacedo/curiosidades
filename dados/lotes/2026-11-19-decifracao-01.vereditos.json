@@ -1,0 +1,151 @@
+{
+ "lote": "2026-11-19-decifracao-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "decifracao-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Alice Kober e Ventris; contraponto ao mito do gênio solitário."
+   },
+   {
+    "id": "decifracao-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Quem esperava epopeias se decepcionou' não tem apoio; o texto reforça o mito do gênio solitário, sem Kober nem Chadwick.",
+    "correcao": "(a) 'Quem esperava epopeias se decepcionou: os textos são registros de palácios, com lã, ovelhas e grãos.' → 'Os textos não são poemas: são registros de palácios, com lã, ovelhas e grãos.' (b) 'A virada foi um palpite:' → 'Partindo das tabelas de sinais de Alice Kober, a virada veio de um palpite:'. (c) Depois de '...anunciou isso pela rádio BBC em 1º de julho de 1952.', acrescentar 'Quem ouviu foi John Chadwick, filólogo de Cambridge, que passou a trabalhar com ele.' (d) Trechos: na fonte Linear B, 'His initial decipherment was achieved using Kober's classification tables, to which he applied his own theories.'; na fonte Ventris, 'which was heard by John Chadwick, a classicist at the University of Cambridge [...] The two men began to collaborate on further research into deciphering Linear B.'"
+   },
+   {
+    "id": "decifracao-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Grotefend e a Universidade de Göttingen; crédito a Münter preservado."
+   },
+   {
+    "id": "decifracao-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Rawlinson decifrou o persa antigo' atribui a uma pessoa só; a fonte diz 'successfully completed'.",
+    "correcao": "'Rawlinson decifrou o persa antigo, e ele e Hincks' → 'Rawlinson concluiu a decifração do persa antigo, iniciada décadas antes por outros, e ele e Hincks'."
+   },
+   {
+    "id": "decifracao-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Parente do português' sugere parentesco próximo; o hitita é um ramo indo-europeu muito distante.",
+    "correcao": "Gancho: 'era uma língua parente do português.' → 'era uma parente distante do português.'"
+   },
+   {
+    "id": "decifracao-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Anacronismo: em 1562 e por volta de 1566 Landa era frade franciscano; só virou bispo de Iucatã depois de 1571.",
+    "correcao": "Gancho: 'veio do bispo que mandou destruir os livros deles' → 'veio do frade que mandou destruir os livros deles'; 'o \"alfabeto\" anotado pelo bispo' → 'o \"alfabeto\" anotado pelo frade'. Explicação: 'o bispo espanhol Diego de Landa' → 'o frade franciscano espanhol Diego de Landa, que mais tarde seria bispo de Iucatã,'; 'como o bispo pronunciava a letra' → 'como Landa pronunciava a letra'. Fonte nova: https://en.wikipedia.org/wiki/Diego_de_Landa com trechos literais (ex.: 'became a Franciscan friar in 1541' e 'allowing King Philip II of Spain to appoint Landa as the second bishop of Yucatán')."
+   },
+   {
+    "id": "decifracao-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Tatiana Proskouriakoff; texto próprio."
+   },
+   {
+    "id": "decifracao-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com Liber Linteus; conexão inesperada excelente."
+   },
+   {
+    "id": "decifracao-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Dá para pronunciar' exagera (pronúncias de algumas letras são incertas); 'não traduzidos' exagera (há palavras de sentido conhecido). Nota 3.",
+    "correcao": "Gancho: 'dá para pronunciar os textos' → 'dá para soletrar os textos'. Explicação: 'Com isso, os textos podem ser transcritos, mas não traduzidos: faltam textos bilíngues.' → 'Com isso, os textos podem ser transcritos, mas só se entende uma pequena parte deles, como nomes e algumas palavras: faltam textos bilíngues.'"
+   },
+   {
+    "id": "decifracao-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Omite que a madeira da tabuinha D é de espécie não nativa e reaproveitada, o que limita o valor da data; 'três eram do século XIX' não confere (a C chega ao fim do séc. XVII).",
+    "correcao": "1) Gancho: 'Uma tabuinha da Ilha de Páscoa com rongorongo, escrita que ninguém sabe ler, é de madeira cortada por volta de 1500, antes dos europeus. Mas a árvore não é da ilha, e a data virou um enigma.' 2) Explicação: trocar 'Três eram do século XIX, mas a árvore da tabuinha D teria sido derrubada entre 1493 e 1509, data que os próprios autores não esperavam. A ressalva é que se datou a madeira, não a escrita, que pode ser mais recente.' por 'As outras três deram datas bem posteriores, do fim do século XVII em diante, mas a árvore da tabuinha D teria sido derrubada entre 1493 e 1509, data que os próprios autores não esperavam. Há duas ressalvas: datou-se a madeira, não a escrita, que pode ser mais recente; e essa madeira vem de uma espécie que não é nativa da ilha, foi reaproveitada, e ninguém sabe quando chegou lá, o que os próprios autores admitem limitar o valor da data.' 3) 'Se o texto for tão antigo, o rongorongo seria' → 'Se o texto for tão antigo e o rongorongo for de fato escrita, seria'. 4) Trechos: 'Given that the tablets A (Tahua) and D (Échancrée) are crafted from wood derived from non-native tree species, it is evident that they were fashioned from repurposed wood, thus limiting their utility in dating the tablet's production and the carvings adorning them' e 'Three ranges of the four expand the range of tablets A and B, reaching back to the late seventeenth c. AD'. Manter consenso_parcial."
+   },
+   {
+    "id": "decifracao-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado por Phaistos Disc; autenticidade com ressalva."
+   },
+   {
+    "id": "decifracao-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Linear Elamite; consenso_parcial correto; 'propôs'."
+   },
+   {
+    "id": "decifracao-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os quipus surgem no 1º milênio d.C. (1100–1532 é o florescimento); 'quase tudo são números' é mais forte que 'most of the information'; a 'Pedra de Roseta' é avaliação dos pesquisadores.",
+    "correcao": "(1) 'Esses conjuntos de cordões circularam pelos Andes entre cerca de 1100 e 1532 e serviram' → 'Esses conjuntos de cordões floresceram nos Andes entre cerca de 1100 e 1532 e serviram'; (2) 'Quase tudo o que os pesquisadores conseguiram ler até hoje são números, em sistema decimal.' → 'A maior parte da informação dos quipus estudados até hoje é numérica, em sistema decimal.'; (3) 'a ligação mais próxima de uma Pedra de Roseta que se conhece' → 'que os pesquisadores consideram a ligação mais próxima de uma Pedra de Roseta já encontrada'."
+   },
+   {
+    "id": "decifracao-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Nunca o perdoou' não tem apoio (a fonte diz que Bankes 'assumed' e cortou a ajuda); 'usou essa leitura' sugere cópia, mas Champollion pode ter chegado por mais de um caminho.",
+    "correcao": "Gancho: 'Usou essa leitura sem dizer como chegou a ela, e o inglês nunca o perdoou.' → 'Adotou a leitura sem explicar como, e o inglês, furioso, cortou a ajuda.' Explicação: 'Bankes concluiu, furioso, que a sugestão dele fora usada sem crédito' → 'Bankes presumiu, furioso, que a sugestão dele fora usada sem crédito'."
+   }
+  ],
+  "2": [
+   {
+    "id": "decifracao-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'Entre os ouvintes estava' Chadwick.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "decifracao-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Concluiu a decifração' aplicado."
+   },
+   {
+    "id": "decifracao-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: sujeito claro no gancho.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "decifracao-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Frade em vez de bispo, com a fonte Diego de Landa."
+   },
+   {
+    "id": "decifracao-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Soletrar' e 'pequena parte' aplicados."
+   },
+   {
+    "id": "decifracao-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalvas da madeira não nativa e datas corrigidas."
+   },
+   {
+    "id": "decifracao-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas."
+   },
+   {
+    "id": "decifracao-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Cortou a ajuda' e 'presumiu' aplicados."
+   }
+  ]
+ }
+}

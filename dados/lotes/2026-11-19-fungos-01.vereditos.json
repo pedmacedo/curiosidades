@@ -1,0 +1,158 @@
+{
+ "lote": "2026-11-19-fungos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "fungos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado por Prototaxites; 'até 8 m' conservador; debate em aberto justifica consenso_parcial."
+   },
+   {
+    "id": "fungos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "35.000 tons são toneladas curtas (~31.500 t métricas); 440 tons ≈ 400 t; o gigante de Michigan é Armillaria gallica, não A. ostoyae; 'pinheiros' generaliza 'conifer trees'; a Posidonia tem 200 km², não é um 'rival' empatado; idade é estimativa. Trivia conhecida: nota 3.",
+    "correcao": "Gancho: trocar 'pode pesar até 35 mil toneladas e teria uns 8 mil anos' por 'pode pesar até cerca de 31 mil toneladas e, segundo estimativas, ter até 8 mil anos'; incluir no trecho o literal '(about 31,500 tonnes)'. Explicação: (a) trocar a frase da Posidonia por 'Se for tratado como um só organismo, em área ele só fica atrás de uma colônia de capim marinho, a Posidonia australis, que cobre 200 km² do fundo do mar da Austrália.' (trecho: 'a colony of Posidonia australis on the Australian seabed that measures 200 square kilometres'); (b) reescrever Michigan como 'Em Michigan, um parente próximo, a Armillaria gallica, tem um indivíduo com uns 2.500 anos que pesa cerca de 400 toneladas, o equivalente a três baleias-azuis.' e remover a frase dos esporos do Ontário e dos 37 hectares (trecho: 'a specimen of Armillaria gallica found at a site near Crystal Falls, Michigan'); se não der para sustentar, cortar o parágrafo de Michigan; (c) 'os pinheiros jovens, de até 10 anos' → 'as coníferas jovens, de até 10 anos'; (d) 'Só no outono ele põe para fora os cogumelos' → 'No outono, ele põe para fora os cogumelos'."
+   },
+   {
+    "id": "fungos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado por Ophiocordyceps unilateralis; fóssil de Messel e mecanismo do meio-dia dão novidade."
+   },
+   {
+    "id": "fungos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Floudas et al. 2012 data os genes que quebram lignina no fim do Carbonífero, não no Permiano; a frase do Permiano no extrato não está ligada a esse estudo.",
+    "correcao": "Trocar a frase do estudo de 2012 por 'Um estudo de 2012 na revista Science, que comparou 31 genomas de fungos, reforçou a ideia ao datar o surgimento dos genes que quebram a lignina por volta do fim do Carbonífero.' e acrescentar a fonte https://science.osti.gov/ber/Highlights/2012/BER-2012-06-a com trecho literal sobre os 31 genomas e o fim do Carbonífero. Se a fonte não passar no checar, remover a menção ao estudo de 2012 e aos 31 genomas e escrever 'Uma análise genética de fungos basidiomicetos, donos de enzimas que quebram a lignina, reforçou a ideia ao sugerir que eles surgiram tarde, já no Permiano.' (Opcional: Nelsen et al. 2016, PNAS, como contestação principal.)"
+   },
+   {
+    "id": "fungos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado por History of penicillin e Penicillium rubens; evita a data divergente e a lenda de Mary Hunt."
+   },
+   {
+    "id": "fungos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Dadachova 2007 e a Wikipedia; hipótese bem sinalizada."
+   },
+   {
+    "id": "fungos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho diz '90 delas extintas', mas a fonte diz 'confirmed or presumed to have gone extinct'.",
+    "correcao": "Gancho: '90 delas extintas na natureza' → '90 delas dadas como extintas na natureza'. Opcional: 'leva à parada do coração' → 'leva à falência do coração'."
+   },
+   {
+    "id": "fungos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "'Os voos mais rápidos já medidos na natureza' soa absoluto: os nematocistos da hidra (2006) chegam a ~5,4 milhões de g. 'Sem nenhum mecanismo especial' generaliza; o ciclo pelo intestino de herbívoros é do Pilobolus, não das quatro espécies.",
+    "correcao": "1) Gancho: 'em aceleração, os voos mais rápidos já medidos na natureza' → 'entre as maiores acelerações já medidas em seres vivos'. 2) 'O ciclo desses fungos passa pelo intestino de herbívoros.' → 'O ciclo do Pilobolus, um desses fungos, passa pelo intestino de herbívoros.' 3) 'em níveis comuns nos fungos, sem nenhum mecanismo especial' → 'em níveis comuns nas células dos fungos, sem precisar acumular sais ou açúcares em concentrações fora do normal'."
+   },
+   {
+    "id": "fungos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "O resumo de Karst et al. 2023 sustenta exatamente o fato; consenso_parcial e os tipos cabem."
+   },
+   {
+    "id": "fungos-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Provavelmente a maioria' dos liquens com o terceiro parceiro foi contestado (Lendemer et al. 2019: leveduras em 9 de 339 espécies); 'formam a camada externa' afirma demais.",
+    "correcao": "1) 'Parece que muitos liquens, provavelmente a maioria, abrigam esse terceiro parceiro.' → 'Depois, leveduras desse tipo foram achadas em liquens de outras partes do mundo, mas ainda se discute em quantas espécies elas aparecem.' (trecho: 'The additional fungal component has also been found in lichens around the world'). 2) 'As leveduras formam a camada externa do líquen e podem influir na sua forma' → 'As leveduras estariam ligadas à formação da camada externa do líquen e talvez à sua forma'. Opcional no gancho: 'Desde 1867, o líquen é descrito como' → 'Desde 1867, propõe-se que o líquen seja'."
+   },
+   {
+    "id": "fungos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números tratados como estimativa; fontes sustentam; aspas em 'sexos' adequadas."
+   },
+   {
+    "id": "fungos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'382 a.C.' é impossível para Aristóteles (nasceu em 384 a.C.); 'fogo-fátuo' em português é o fenômeno dos pântanos, não o foxfire.",
+    "correcao": "Trocar 'A luz é o \"fogo-fátuo\" das florestas, em inglês \"foxfire\": o brilho verde-azulado' por 'A luz é o que em inglês se chama \"foxfire\": o brilho verde-azulado'; trocar 'Aristóteles já falava, em 382 a.C., de uma luz que' por 'Aristóteles já falava, no século 4 a.C., de uma luz que'."
+   },
+   {
+    "id": "fungos-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Só o poliporo-da-bétula estava em tiras de couro (iceman.it); o fungo isqueiro ficava na bolsinha do cinto. 'Cogumelos-orelha' não é nome usual: orelha-de-pau.",
+    "correcao": "Gancho: 'levava dois fungos presos em tiras de couro: um para acender fogo e outro com uma substância tóxica' → 'levava dois fungos: um para acender fogo e outro, preso em tiras de couro, com uma substância tóxica'. Explicação: 'dois tipos de cogumelos-orelha, os poliporos, atravessados por tiras de couro' → 'dois tipos de orelha-de-pau (fungos do grupo dos poliporos)'; 'O outro era o poliporo-da-bétula, que cresce quase só nessa árvore.' → 'O outro, em pedaços atravessados por tiras de couro, era o poliporo-da-bétula, que cresce quase só nessa árvore.' Incluir a fonte https://www.iceman.it/en/oetzi/equipment com o trecho 'Two pieces of birch polypore (birch fungus) were threaded onto hide strips'."
+   },
+   {
+    "id": "fungos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Candida auris; hipótese bem sinalizada."
+   },
+   {
+    "id": "fungos-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A página da Sociedade Lineana desmente o gancho: os trabalhos eram sempre lidos por outra pessoa, mulheres só entraram como membros em 1905, e em 1997 não houve pedido formal de desculpas, só uma declaração do secretário-executivo ao Sunday Times. A retirada não é atribuída a amostras contaminadas.",
+    "correcao": "1) Fonte nova: https://www.linnean.org/the-society/history-of-science/beatrix-potter-the-tale-of-the-linnean-society, com trechos literais como 'She was treated scurvily by members of the society' e 'women were not admitted as Fellows (or members) of the Society until 1905'. 2) Gancho: 'A criadora de Pedro Coelho, Beatrix Potter, estudou a germinação de esporos de cogumelos. Em 1897, quando mulheres nem podiam ser membros da Sociedade Lineana, um botânico apresentou o trabalho dela lá.' 3) 'porque mulheres não podiam assistir às sessões nem ler os próprios trabalhos' → 'porque na época os trabalhos eram lidos por outra pessoa e mulheres só foram aceitas como membros da sociedade em 1905'. 4) 'Depois, ela retirou o artigo, ao perceber que algumas amostras estavam contaminadas.' → 'Dias depois, ela retirou o artigo, que segundo os avaliadores precisava de mais trabalho antes de ser impresso, e nunca o reapresentou.' 5) Última frase → 'Em 1997, o secretário-executivo da sociedade admitiu a um jornal que ela tinha sido \"tratada com desdém\" pelos membros da época.' (sem 'pediu desculpas'). 6) 'Mas o diretor de Kew a rejeitou por ser mulher e amadora' → 'Mas o diretor de Kew a desprezou, segundo biógrafos, por ser mulher e amadora'."
+   }
+  ],
+  "2": [
+   {
+    "id": "fungos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: concordância ('as mais vulneráveis') e 'até cerca de 31.500 toneladas'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "fungos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada; a fonte do DOE confirma o fim do Carbonífero e os 31 genomas."
+   },
+   {
+    "id": "fungos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: 'algumas espécies se adaptaram', como na fonte.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "fungos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere; ajuste pontual aplicado sem nova verificação: quem atravessa o intestino é o pacote de esporos (esporângio).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "fungos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; consenso_parcial adequado."
+   },
+   {
+    "id": "fungos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem 'fogo-fátuo' e com 'século IV a.C.'; resto confere."
+   },
+   {
+    "id": "fungos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Só o poliporo-da-bétula em tiras de couro (iceman.it); orelha-de-pau."
+   },
+   {
+    "id": "fungos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "As seis correções aplicadas com a fonte da Sociedade Lineana; sem 'pediu desculpas'."
+   }
+  ]
+ }
+}
