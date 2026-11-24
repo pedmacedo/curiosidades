@@ -1,0 +1,523 @@
+LOTE = "2026-11-24-contabilidade_brasileira-01"
+AREA = "brasil"
+TEMA = "contabilidade_brasileira"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+LIVRO_IR = "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/ebooks/memoria-receita-federal/livro-historia-irpf-brasil.pdf"
+
+
+def livro_ir(trecho):
+    return {"url": LIVRO_IR,
+            "titulo": "História do Imposto de Renda no Brasil, um enfoque da pessoa física (1922-2013) — Receita Federal",
+            "idioma": "pt", "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 o quinto do ouro e o khums islâmico
+    {
+        "temas_secundarios": ["mundo_islamico_medieval", "grandes_navegacoes"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "O quinto, os 20% do ouro que iam para o rei no Brasil colonial, tem um antecedente islâmico: o khums, a quinta parte dos espólios de guerra prevista no Corão e cobrada nos reinos muçulmanos da Península Ibérica.",
+        "explicacao": (
+            "O quinto real reservava ao monarca 20% dos metais preciosos e de outros bens obtidos como saque de "
+            "guerra, achados como tesouro ou extraídos de minas. Foi instituído primeiro em estados muçulmanos "
+            "medievais, a partir de um versículo do Corão (8:41) que destina um quinto dos espólios. As escolas de "
+            "direito islâmico divergiam sobre estender a regra a tesouros e minas; os reinos de taifas de al-Andalus "
+            "adotaram a interpretação que dizia sim. Do lado cristão, o imposto vinha também de outra ideia "
+            "medieval: o rei seria o dono original dos recursos ainda não explorados, como os metais do subsolo, e "
+            "quem os extraísse lhe devia uma compensação. Castela e Portugal adotaram essa concepção durante a "
+            "Reconquista e a levaram às colônias. Para estimular a exploração, os reis às vezes abriam mão de parte "
+            "do quinto: o infante D. Henrique recebeu o da Madeira e da África em 1443, Colombo pôde ficar com 10% "
+            "do quinto das Índias Ocidentais em 1492, e os contratos de 1532 dos capitães donatários do Brasil lhes "
+            "permitiam reter 5% do quinto real."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Royal_fifth",
+            "The royal fifth (Spanish: quinto del rey; Portuguese: quinto real) is a historical royal tax which reserves to the monarch 20% of all precious metals and other commodities (including slaves) acquired by his subjects as war loot, found as treasure or extracted by mining. "
+            "The 'royal fifth' was first instituted in medieval Muslim states from interpretations of Qur'an [...] "
+            "The 20% tax rate on war booty stems from the practice of khums [...] with the rate set down in Qur'an 8:41 [...] "
+            "Schools of Islamic law were divided on whether the fifth extended to treasure troves and mining. [...] "
+            "The medieval Taifa kingdoms of al-Andalus embraced the Hanafi argument and institutionalized the fifth on war spoils, treasure troves and mining. [...] "
+            "In Christian kingdoms, the royal fifth partly comes from the medieval legal conception of seigneural or regalian rights over the natural patrimony, which assigned to the monarch or feudal overlord original property rights over all unclaimed, undiscovered and undeveloped natural resources (e.g. precious metals in the subsoil [...] "
+            "Consequently, private individuals who extracted these natural resources owed compensation to their original 'owner', the monarch. "
+            "It was adopted by the Christian states of the Iberian Peninsula (Castile, Portugal, etc.) during the reconquista and extended to their overseas colonies [...] "
+            "in 1443, the Portuguese Prince Henry the Navigator was granted the royal fifth on all enterprise in the Madeira islands and sub-Saharan Africa; "
+            "in 1492, Christopher Columbus was allowed to retain 10% of the royal fifth of the West Indies (although he famously argued he was promised more); "
+            "the 1532 contracts of the captains-donatary of colonial Brazil allowed them to retain 5% of the royal fifth.",
+            nome="Royal fifth")],
+    },
+    # 2 o ouro quintado e o carimbo falso de Taubaté
+    {
+        "temas_secundarios": ["brasil_colonial", "minerais_rochas"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "No Brasil colonial, o ouro só podia circular fundido em barras com a marca da Coroa, prova de que o quinto fora pago. Em Taubaté, um morador e dois religiosos fabricaram um carimbo falso para escapar do imposto.",
+        "explicacao": (
+            "O controle ficava nas casas de fundição. O minerador levava o ouro, que era purificado e transformado "
+            "em barras; ali mesmo se retirava a quinta parte, 20%, para o rei. O restante voltava ao dono com uma "
+            "marca que o identificava como \"ouro quintado\" e um certificado que devia acompanhá-lo dali em diante. "
+            "Em Taubaté, a Casa dos Quintos foi aberta em 1695 e a casa de fundição em 1697. Mesmo com o processo "
+            "vigiado, houve fraude: um civil, Domingos Dias Torres, e dois religiosos, um padre e um frei beneditino, "
+            "fizeram um cunho falso para marcar o ouro sem pagar o quinto. Em 1702, a Coroa resolveu mandar uma "
+            "máquina de cunhar para Taubaté, mas ela nunca chegou: o Caminho do Facão, entre Paraty e Taubaté, era "
+            "difícil demais. Em 1704, as casas de Taubaté e Guaratinguetá foram fechadas e transferidas para Paraty. "
+            "Em Minas, a imposição das casas de fundição em 1719, que proibia a circulação de ouro em pó, esteve entre "
+            "as causas diretas da Revolta de Vila Rica, em 1720, que terminou com a execução de Filipe dos Santos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Casa_de_fundição",
+                "As casas de fundição recolhiam o ouro extraído pelos mineiros, purificavam-no e o transformavam em barras, nas quais era aposto um cunho que a identificava como \"ouro quintado\", isto é, do qual já fora deduzido o tributo do \"quinto\". "
+                "Era também expedido um certificado que deveria acompanhá-la daí em diante. [...] "
+                "Junto com a casa de fundição, geralmente, ficava a casa de quintos, em que a quinta parte do ouro (20%) era retirada para o rei. "
+                "O restante era devolvido em forma de barras fundidas acompanhadas de um certificado que legitimava sua posse. [...] "
+                "A Casa dos Quintos de Taubaté foi fundada em 1695, sendo a primeira delas. Logo depois, em 1697, foi fundada a casa de fundição [...] "
+                "apesar de ser muito protegido o processo, ainda assim sofria sonegações, como no caso de um civil, Domingos Dias Torres, e dois religiosos, padre José Rodrigues Preto e o frei Roberto, da Ordem de São Bento, que construíram um cunho falso e, usando-o para registrar o ouro, não pagavam o respectivo quinto. "
+                "Diante desse fato, em 1702, a Casa Real Portuguesa decidiu enviar a Taubaté uma máquina de cunhar. "
+                "Porém essa nunca chegou ao destino, pois o caminho entre Paraty e Taubaté, o Caminho do Facão, era muito difícil de se atravessar. "
+                "Em 1704, El Rei decidiu fechar as casas de fundição de Taubaté e Guaratinguetá, e transferi-las para Paraty.",
+                nome="Casa de fundição", idioma="pt"),
+            wiki("Revolta_de_Vila_Rica",
+                "Aconteceu entre 28 de junho e 19 de julho de 1720, na então Vila Rica (Ouro Preto) [...] "
+                "Entre suas causas diretas, estavam a criação das casas de fundição, proibindo a circulação de ouro em pó [...] "
+                "uma enérgica reação que culminou com a execução do principal líder, Filipe dos Santos. [...] "
+                "Uma das medidas adotadas, em 1719, foi a imposição das casas de fundição segundo a qual ficava proibido a circulação de ouro em pó",
+                nome="Revolta de Vila Rica", idioma="pt"),
+        ],
+    },
+    # 3 a capitação: imposto por cabeça no lugar do quinto
+    {
+        "temas_secundarios": ["brasil_colonial", "heranca_africana"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Em Minas colonial, o quinto do ouro chegou a ser trocado por um imposto por cabeça de escravo, cobrado também de pobres livres que trabalhavam com as mãos. Sem o quinto, levar ouro em pó deixou de ser contrabando.",
+        "explicacao": (
+            "O sistema se chamava capitação, nome que vem de \"por cabeça\": o valor não dependia de quanto a pessoa "
+            "ganhava. Começou a ser cobrado em 1734. Todo dono de escravo, fosse branco, índio ou negro forro, pagava "
+            "a cada semestre 4 oitavas e 3 quartos de ouro por escravo, sob pena de ter o cativo confiscado. Negros "
+            "forros, pretos livres e brancos pobres que trabalhassem com as próprias mãos pagavam por si mesmos, com "
+            "punições que incluíam prisão, multa, açoites para os negros e degredo para os reincidentes. Enquanto a "
+            "capitação vigorou, os quintos deixaram de existir. Com isso, o ouro em pó pôde circular livremente, a "
+            "1.200 réis a oitava, e o contrabando de ouro deixou de ser crime. Em 1749, um desembargador do Conselho "
+            "Ultramarino, Tomé Gomes Moreira, denunciou que o sistema servia de prêmio aos contrabandistas e de ruína "
+            "para os inocentes. No mesmo texto, lê-se que ricos contratadores, banqueiros, agiotas e grandes "
+            "comerciantes nunca ganharam tanto nas Minas, porque o peso do imposto passara a cair sobretudo nos pobres."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Capitação",
+            "Capitação são os impostos que são pagos para a capita (literalmente, \"por cabeça\"), cobrados em diversas épocas da história. "
+            "O seu valor é independente do rendimento do coletado. [...] "
+            "No Brasil colonial, foi cobrada a partir de 1734 [...] "
+            "Cada dono de escravo, fosse branco, índio ou negro forro, tinha que pagar, semestralmente, sob pena de confisco do escravo e outras penas, esse imposto de 4 oitavas e 3 quartos de ouro por cabeça de escravo que possuísse. "
+            "Da mesma forma, os negros forros, os pretos livres e os brancos pobres, que tivessem ou não escravos, caso trabalhassem com as próprias mãos, também tinham que pagar por si mesmos esse imposto, sob pena de prisão, multa, com açoites para os negros, e degredo para as reincidências [...] "
+            "Durante a capitação os quintos deixaram de existir, descriminalizando o contrabando de ouro, permitindo a abertura de picadas e a livre movimentação do ouro em pó que ficou cotado em 1200$ (um mil e duzentos réis) à oitava (3,586 gramas). "
+            "Segundo denunciou em 1749, o desembargador do Conselho Ultramar, Tomé Gomes Moreira, a capitação “ficou servindo de prêmio e utilidade para os delinquentes dos descaminhos dos quintos e de total ruína e castigo para os inocentes, (…). "
+            "Os ricos contratadores, banqueiros, agiotas e grandes comerciantes nunca ganharam tanto com os seus negócios nas Minas Gerais, pois, além de não terem mais que recolher os quintos - que com a Capitação passaram a ser pagos em maior parte pelos pobres",
+            nome="Capitação", idioma="pt")],
+    },
+    # 4 o delator da Inconfidência era cobrador de impostos endividado
+    {
+        "temas_secundarios": ["brasil_colonial", "revolucoes_politicas"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Joaquim Silvério dos Reis, o delator da Inconfidência Mineira, era um cobrador de impostos que devia mais de 220 contos de réis à Coroa. Pela denúncia, teve todas as dívidas fiscais perdoadas e ganhou pensão vitalícia.",
+        "explicacao": (
+            "Silvério dos Reis era um militar português que, em Minas, atuou como comerciante, fazendeiro, "
+            "minerador e contratador de impostos. Entre 1782 e 1784, arrematou o Contrato das Entradas da capitania e "
+            "acumulou uma dívida de mais de 220 contos de réis com a Real Fazenda, por valores que não repassou. Ele "
+            "não era o único conspirador endividado: muitos tinham grandes dívidas com o governo colonial, e a "
+            "intenção da Coroa de cobrar tudo de uma vez, a derrama, pesou para a conspiração. O plano era começar o "
+            "levante no dia em que a derrama fosse lançada. Com medo de falir, Silvério entrou no movimento, mas, ao "
+            "perceber suas fragilidades, procurou o governador, o Visconde de Barbacena, em 15 de março de 1789, e "
+            "denunciou o plano; em 11 de abril, assinou a carta-denúncia com os nomes dos envolvidos. A recompensa "
+            "incluiu o perdão total das dívidas fiscais, uma pensão vitalícia e o título de fidalgo da Casa Real. "
+            "Hostilizado nas ruas, mudou-se para Portugal; voltou com a Corte em 1808 e morreu em São Luís, em 1819."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Joaquim_Silvério_dos_Reis",
+                "Joaquim Silvério dos Reis foi um militar português que se estabeleceu no Brasil Colônia. [...] "
+                "Também exerceu as atividades de comerciante, fazendeiro, minerador e contratador de impostos. "
+                "Sua notoriedade histórica decorre de sua participação na Inconfidência Mineira, movimento no qual atuou como denunciante da conspiração separatista à Coroa Portuguesa, em troca do perdão de suas dívidas fiscais. [...] "
+                "1782 – 1784 | Atuação Profissional: Atuou como arrematante do Contrato das Entradas na capitania de Minas Gerais, atividade na qual acumulou uma dívida de mais de 220 contos de réis com a Real Fazenda por valores não repassados. [...] "
+                "Assustado com a possibilidade de falência diante da ameaça de cobrança de suas dívidas por meio da \"derrama\", Silvério dos Reis ingressou nas articulações da Conjuração Mineira. "
+                "15 de março de 1789 | A Delação: Percebendo as fragilidades do movimento, dirigiu-se ao Visconde de Barbacena em Cachoeira do Campo e denunciou verbalmente o plano dos inconfidentes. "
+                "11 de abril de 1789 | Formalização: Assinou a carta-denúncia na qual detalhou as intenções dos conspiradores e expôs os nomes dos envolvidos. [...] "
+                "por sofrer hostilidades e ameaças nas ruas do Rio de Janeiro e em Minas Gerais, acabou mudando-se para Portugal. "
+                "1808 – 1809 | Retorno: Retornou ao Brasil acompanhando a Corte portuguesa. [...] "
+                "17 de fevereiro de 1819 | Morte: Faleceu em São Luís do Maranhão [...] "
+                "recebeu significativas recompensas do Império Português: o perdão total de suas dívidas fiscais, uma pensão vitalícia (entre 200 e 400 mil réis anuais), o foro de Fidalgo da Casa Real",
+                nome="Joaquim Silvério dos Reis", idioma="pt"),
+            wiki("Inconfidência_Mineira",
+                "Conspirators seeking independence from Portugal planned to rise up in rebellion on the day that the derrama would be instituted. [...] "
+                "Many had studied in Europe, especially in the University of Coimbra, and some had large debts with the colonial government. "
+                "In the context of declining gold production, the intention of the Portuguese government to impose the obligatory payment of all debts (the derrama) was a leading cause behind the conspiracy.",
+                nome="Inconfidência Mineira"),
+        ],
+    },
+    # 5 a Casa dos Contos de Ouro Preto
+    {
+        "temas_secundarios": ["brasil_colonial", "arquitetura"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Em Ouro Preto, a mansão de um cobrador de impostos endividado serviu de prisão para inconfidentes, e o poeta Cláudio Manuel da Costa morreu numa cela sob a escada. Tomada pelo fisco, a casa virou a repartição de contas.",
+        "explicacao": (
+            "A casa foi construída entre 1782 e 1784 por João Rodrigues de Macedo, negociante e contratador de "
+            "impostos, e na época era considerada a mais cara da capitania de Minas Gerais. No térreo, Macedo "
+            "administrava a arrecadação das Entradas e dos Dízimos, por isso o prédio era chamado de Casa dos "
+            "Contratos; no andar de cima, dava bailes, saraus e jogos de cartas. Amigo e compadre de vários "
+            "conjurados, ele viu a casa servir de ponto de encontro da Inconfidência Mineira. Mas Macedo devia muito "
+            "à Coroa e, para abater a dívida, alugou parte do imóvel ao governo. Assim, durante a repressão, a casa "
+            "abrigou as tropas do vice-rei e serviu de prisão para os inconfidentes de maior posição social. Cláudio "
+            "Manuel da Costa foi encontrado enforcado em sua cela em 4 de julho de 1789. Em 1797, ainda endividado, "
+            "Macedo transferiu a casa para a Real Fazenda, que a transformou em sede da administração e da "
+            "contabilidade pública da capitania, daí o nome Casa dos Contos. O confisco definitivo veio em 1802. Hoje "
+            "o prédio é um museu dedicado à história econômica e fiscal do ciclo do ouro."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Casa_dos_Contos_(Ouro_Preto)",
+            "A casa foi construída entre 1782 e 1784 pelo negociante e contratador de impostos português João Rodrigues de Macedo [...] "
+            "Ela foi considerada na época a casa mais cara da Capitania de Minas Gerais [...] "
+            "Na parte térrea do imóvel, Macedo administrava a Arrecadação das Entradas e Dízimos. "
+            "Deste modo a casa já desde seus primórdios teve ligação com o sistema financeiro, sendo conhecida na época como \"Casa dos Contratos\". [...] "
+            "Macedo residia no andar superior, local onde promovia reuniões sociais da Vila Rica, como bailes, saraus, recitais e jogos de cartas e gamão. [...] "
+            "Como João Rodrigues de Macedo era cliente, amigo e compadre de diversos participantes da conjuração da Inconfidência Mineira, a casa serviu várias vezes de local de encontro dos conjurados. [...] "
+            "Como Macedo acabou acumulando grande dívida perante a coroa portuguesa, parte da Casa dos Contos passou a ser alugada por Macedo ao governo para pagar parte de suas dívidas. "
+            "Foi assim que durante a repressão à Inconfidência Mineira, a Casa dos Contos serviu para acomodar as tropas do vice-rei, e de prisão para os inconfidentes com elevados títulos sociais. "
+            "O poeta Claudio Manuel da Costa se enforcou em sua cela debaixo da escadaria durante seu aprisionamento na Casa dos Contos em 4 de julho de 1789. "
+            "Em 1797, Macedo, ainda em grande dívida com a Real Fazenda, transferiu sua casa para esta, que a transformou em sede da administração e contabilidade pública da Capitania de Minas Gerais recebendo assim seu nome atual \"Casa dos Contos\". "
+            "O Erário Régio acabou confiscando a casa de Macedo definitivamente em 1802. [...] "
+            "com a finalidade de mostrar a história econômico-fiscal do Ciclo do Ouro.",
+            nome="Casa dos Contos (Ouro Preto)", idioma="pt")],
+    },
+    # 6 o subsídio literário: carne e aguardente pagando professores
+    {
+        "temas_secundarios": ["brasil_colonial", "bebidas_alcoolicas"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "Em 1772, Portugal criou um imposto para pagar professores. No Brasil, ele incidia sobre a carne vendida nos açougues e sobre a aguardente feita na terra. Mesmo assim, em várias capitanias, não dava para pagar os mestres.",
+        "explicacao": (
+            "O tributo se chamava subsídio literário e nasceu das reformas de ensino do Marquês de Pombal. As "
+            "primeiras aulas régias, escolas mantidas pela Coroa, tinham sido criadas em 1759, mas o dinheiro para "
+            "pagá-las chegava de forma irregular. A lei de 10 de novembro de 1772 deu ao ensino uma receita própria. "
+            "A cobrança mudava conforme o lugar: no reino, recaía sobre o vinho, a aguardente e o vinagre; na América "
+            "e na África, cobrava-se um real por arrátel de carne abatida nos açougues e, também na Ásia, dez réis por "
+            "canada de aguardente produzida localmente. Na prática, a conta não fechava. Um estudo de relatórios de "
+            "cinco capitanias, entre elas Pernambuco, Minas Gerais e Goiás, mostrou que, entre 1795 e 1797, o que se "
+            "arrecadava era menor do que o devido aos professores em todas elas, por dificuldades de cobrança, crises "
+            "econômicas e irregularidades. O imposto sobreviveu à Independência e, depois do Ato Adicional de 1834, "
+            "passou às províncias. Em Portugal, só foi extinto em 1857."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Subsídio_literário",
+            "Subsídio literário foi um imposto instituído no Reino de Portugal em 1772 para financiar os estudos menores régios, sobretudo o pagamento dos professores das aulas régias. "
+            "Criado no contexto das reformas pombalinas da educação [...] "
+            "O subsídio foi extinto em Portugal continental em 1857 e nos Açores e na Madeira em 1861; no Brasil, após a descentralização administrativa promovida pelo Ato Adicional de 1834, sua cobrança passou à responsabilidade das províncias. [...] "
+            "As primeiras aulas régias foram estabelecidas em 1759, mas seu financiamento permaneceu irregular. [...] "
+            "A legislação de 10 de novembro daquele ano instituiu o subsídio literário [...] "
+            "No reino, nos Açores e na Madeira, cobravam-se um real por canada de vinho, quatro réis por canada de aguardente e 160 réis por pipa de vinagre. "
+            "Na América e na África, incidia um real por arrátel de carne abatida nos açougues; na América, na África e na Ásia, cobravam-se ainda dez réis por canada de aguardente produzida localmente. [...] "
+            "Um estudo que analisou relatórios referentes às capitanias de Pernambuco, Mato Grosso, Maranhão, Minas Gerais e Goiás constatou que, entre 1795 e 1797, a arrecadação era inferior aos valores devidos aos professores nas cinco capitanias. "
+            "As causas variavam conforme as condições locais e incluíam dificuldades de cobrança, crises econômicas e irregularidades na arrecadação. "
+            "No Brasil independente, o subsídio continuou a aparecer na documentação fiscal",
+            nome="Subsídio literário", idioma="pt")],
+    },
+    # 7 o terremoto de 1755, as partidas dobradas e o Ministério da Fazenda
+    {
+        "temas_secundarios": ["vulcoes_terremotos", "historia_matematica", "brasil_imperio"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "O terremoto de Lisboa de 1755 destruiu quase toda a papelada das contas públicas de Portugal. A reforma que veio depois adotou as partidas dobradas, foi refeita no Rio em 1808 e deu origem ao Ministério da Fazenda.",
+        "explicacao": (
+            "As contas do reino eram conferidas desde o fim do século XIII pela Casa dos Contos de Lisboa. O "
+            "terremoto de 1755 e os incêndios que vieram em seguida destruíram quase todo o prédio e praticamente toda "
+            "a documentação, e o caos nos serviços apressou o fim da instituição. Em 22 de dezembro de 1761, um alvará "
+            "do Marquês de Pombal extinguiu os Contos e criou o Erário Régio, com um tesouro único por onde entrava e "
+            "saía todo o dinheiro da Coroa. A escrituração passou a seguir o método mercantil das partidas dobradas, "
+            "visto como o mais claro para saber, a qualquer momento, o saldo de cada cobrador da Fazenda. Havia três "
+            "livros: o mestre, com contas separadas; o diário, em ordem cronológica; e o auxiliar, para cada imposto "
+            "ou contrato. Uma das quatro contadorias cuidava do Rio de Janeiro. Quando a Corte se mudou para o Brasil, "
+            "o príncipe D. João recriou o Erário no Rio, em 1808. Com a Independência, a parte que ficou no Brasil "
+            "virou o Tesouro Público e, em 1824, ganhou o nome de Ministério da Fazenda."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Casa_dos_Contos",
+                "As origens da Casa dos Contos remontam ao final do final do século XIII, tendo sido extinta e substituída pelo Erário Régio em 22 de Dezembro de 1761 [...] "
+                "O terramoto de 1755 e os incêndios que se lhe seguiram destruíram quase por completo o edifício onde funcionavam os Contos e praticamente toda a sua documentação, provocando uma anarquia nos serviços que precipitaria a sua extinção. [...] "
+                "Determinou-se que o método de arrecadação das contas seria o mercantil, mais precisamente o método das partidas dobradas, considerado como o mais breve e claro para se ter, em qualquer momento, a perceção da conta líquida e corrente do débito e crédito de cada um dos múltiplos recebedores da Fazenda. "
+                "Previa-se a existência de três livros: o mestre, onde se registariam, por contas separadas, todas as operações efetuadas; o diário, para o registo cronológico de operações de tesouraria; e o auxiliar, para o acompanhamento exclusivo de cada fonte de rendimento, contrato, direito ou imposto. [...] "
+                "uma quarta para os dos territórios da Relação do Rio de Janeiro, da África oriental e Ásia portuguesa.",
+                nome="Casa dos Contos", idioma="pt"),
+            wiki("Erário_Régio",
+                "foi uma instituição portuguesa criada por Alvará de 22 de dezembro de 1761, por El-Rei D. José I, da autoria de Sebastião José de Carvalho e Melo, o Marquês de Pombal [...] "
+                "institui para ele um tesouro único e geral, para nele entrarem e dele saírem os referidos cabedais [...] "
+                "foram introduzidos novos métodos contabilísticos, com a imposição do método das partidas dobradas para a escrituração da contabilidade pública. [...] "
+                "Já no Brasil, a 11 de Março de 1808, o Príncipe D. João reinstituiu aí  o Erário Régio [...] "
+                "Com a independência do Brasil, em 1822, a parte do Real Erário que permanecia no Rio de Janeiro passou a ser o Tesouro Público do Rio de Janeiro, assumindo o nome Ministério da Fazenda em 1824",
+                nome="Erário Régio", idioma="pt"),
+        ],
+    },
+    # 8 a Revolta do Vintém
+    {
+        "temas_secundarios": ["brasil_imperio", "transportes"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Na virada de 1880, um imposto de um vintém sobre a passagem do bonde provocou no Rio uma revolta com mortos e derrubou o gabinete. O New York Times comparou o caso aos protestos de 2013 contra vinte centavos a mais.",
+        "explicacao": (
+            "O tributo, de vinte réis, entrou na lei do orçamento de outubro de 1879, por obra do ministro da Fazenda Afonso Celso, "
+            "futuro Visconde de Ouro Preto. Era pouco dinheiro, algo como 139 gramas de açúcar, mas pesava para quem "
+            "andava de bonde, gente de baixa renda. Cerca de 5 mil manifestantes foram ao palácio de São Cristóvão. O "
+            "imperador acenou com negociação, mas o jornalista republicano Lopes Trovão recusou e, pela Gazeta da "
+            "Noite, chamou a população a reagir. No primeiro dia do ano, quando a cobrança começaria, a multidão gritou "
+            "\"Fora o vintém\", espancou condutores, esfaqueou as mulas, virou bondes e arrancou trilhos na Rua "
+            "Uruguaiana. O Exército foi chamado e abriu fogo. O número de vítimas é incerto: estima-se que houve pelo "
+            "menos 3 mortes. Desgastado, o gabinete caiu, e o novo governo revogou o tributo. Curiosamente, no mesmo "
+            "ano de 1879, Afonso Celso consultou financistas e propôs à Câmara um imposto de 5% sobre a renda, ideia "
+            "que foi rejeitada."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Revolta_do_Vintém_(Rio_de_Janeiro)",
+                "A Revolta do Vintém foi um protesto ocorrido entre 28 de dezembro de 1879 e 4 de janeiro de 1880 [...] "
+                "contra a criação de um tributo de vinte réis, ou seja, um vintém, sobre as passagens dos bondes e trens, instituída pelo ministro da fazenda do Gabinete Sinimbu, Afonso Celso de Assis Figueiredo, futuro Visconde de Ouro Preto (Lei do Orçamento, 31/10/1879). "
+                "Aos gritos de \"Fora o vintém\" a população espancou os condutores, esfaqueou os burros, virou os bondes e arrancou os trilhos ao longo da Rua Uruguaiana. "
+                "O valor aproximado em reais, seria de menos de vinte centavos na moeda que atualmente vigora no país, o que na época poderia render em torno de 139 gramas de açúcar e 29 gramas de banha, pouco significativo, mas relevante quando considerado que os usuários desse serviço público eram de baixa renda. "
+                "A estatística de feridos e mortos não é precisa, estima-se que houve no mínimo 3 mortes. "
+                "Desgastado, o gabinete caiu, tendo o novo gabinete revogado o tributo. [...] "
+                "Um levante de aproximadamente cinco mil manifestantes se colocou em frente o campo de São Cristóvão, sede do palácio imperial [...] "
+                "O imperador, que prometia abrir negociação para resolver a contenda, teve seu pedido negado pelo jornalista republicano que adotou uma nova estratégia. "
+                "Lançando seus argumentos no jornal Gazeta da Noite, Lopes Trovão convocava a população carioca a reagir com violência contra a medida imperial. "
+                "No primeiro dia do ano seguinte, data em que o valor seria oficializado [...] "
+                "pediram o auxílio das autoridades do Exército. [...] "
+                "Ameaçados pela turba, os oficiais abriram fogo contra a multidão. [...] "
+                "A Revolta do Vintém foi comparada pelo jornal The New York Times aos protestos contra o aumento das tarifas de transporte público no Brasil em 2013 (também chamada de revolta do vinagre ou revolta dos vinte centavos)",
+                nome="Revolta do Vintém (Rio de Janeiro)", idioma="pt"),
+            livro_ir(
+                "Afonso Celso, o Visconde de Ouro Preto, quando Ministro da Fazenda, preocupado em reorganizar o sistema tributário, consultou, em 1879, os maiores fi nancistas da época sobre a conveniência de instituir o imposto sobre a renda. [...] "
+                "Ainda em 1879, uma comissão presidida pelo Visconde de Ouro Preto apresentou à Câmara de Deputados proposta de instituição do imposto sobre a renda: "
+                "Cobrar-se-ão 5% sobre a renda dos contribuintes [...] "
+                "A ideia foi rejeitada e o projeto não se converteu em lei."),
+        ],
+    },
+    # 9 o imposto de renda e a "bazófia" dos brasileiros
+    {
+        "temas_secundarios": ["brasil_imperio", "brasil_republica"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "Em 1867, um visconde defendeu um imposto de renda no Brasil com um argumento curioso: a vaidade ajudaria a cobrança, porque aqui muita gente prefere parecer rica a confessar que é pobre. O imposto só viria em 1922.",
+        "explicacao": (
+            "A primeira tentativa foi em 1843, no começo do reinado de D. Pedro II: uma contribuição progressiva, de "
+            "2% a 10%, sobre os vencimentos pagos pelos cofres públicos, que vigorou por dois anos. Em 1867, o "
+            "Visconde de Jequitinhonha defendeu um imposto geral sobre a renda e admitiu que a cobrança seria difícil "
+            "no início, mas apostou que a boa-fé de uns e a \"bazófia\", isto é, a fanfarronice, de outros a "
+            "tornariam fácil e rendosa. Não convenceu. Em 1879, uma consulta aos maiores financistas do país dividiu "
+            "opiniões, e um projeto apresentado à Câmara foi rejeitado. O imposto geral sobre a renda só nasceu em 31 "
+            "de dezembro de 1922, e de modo discreto: um único artigo, com oito incisos, dentro da lei do orçamento "
+            "de 1923. O texto mandava que a arrecadação se tornasse efetiva em 1924. Nem assim deu tempo: o prazo da "
+            "primeira declaração, 14 de novembro de 1924, foi adiado para 14 de março de 1925, porque as instruções "
+            "ficaram prontas só dois meses antes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [livro_ir(
+            "A primeira disposição no Brasil sobre o imposto de renda, não especifi camente com esse nome, surgiu no início do reinado de D. Pedro II,1 com a edição da Lei nº 317, de 21 de outubro de 1843 [...] "
+            "estabeleceu um imposto progressivo sobre os vencimentos percebidos pelos cofres públicos e vigorou por dois anos. [...] "
+            "De 500$000 a 1:000$000 2 por cento [...] "
+            "De 8:000$000 para cima  10 por cento. [...] "
+            "A primeira sinalização de um r eal e defi nitivo imposto sobre a renda remonta a 1867, quando o Visconde de Jequitinhonha expôs e defendeu sua implementação, sem, no entanto, lograr êxito: "
+            "A arrecadação deste imposto ofer ece algumas difi culdades, mormente a princípio [...] "
+            "Talvez que, entre nós, não só a boa-fé de alguns, mas também a bazófi a de outros tornem fácil e produtiva a arrecadação. "
+            "Sim, entre nós há muita gente que antes quer parecer rica, do que confessar que é pobre. [...] "
+            "consultou, em 1879, os maiores fi nancistas da época sobre a conveniência de instituir o imposto sobre a renda. "
+            "As opiniões fi caram divididas. [...] "
+            "A ideia foi rejeitada e o projeto não se converteu em lei. [...] "
+            "VII- O Poder Executivo providenciará expedindo os precisos regulamentos e instrucções, e executando as medidas necessarias, ao lançamento, por forma que a arrecadação do imposto se torne eﬀ ectiva em 1924. [...] "
+            "Com apenas um artigo e oito incisos da lei orçamentária para o exercício de 1923, estava instituído o imposto geral sobre a renda no país [...] "
+            "O prazo para entrega da declaração do exercício de 1924 foi fi xado em 14 de novembro de 1924. "
+            "As instruções de preenchimento fi caram prontas dois meses antes da data limite, pouco tempo para o contribuinte assimilar as regras de um novo e complexo imposto. "
+            "Não houve alternativa senão adiar o prazo para 14 de março de 1925. [...] "
+            "até chegarmos ao ano de 1922, quando, por meio do art. 31 da Lei nº 4.625, de 31 de dezembro, foi instituído o imposto geral s")],
+    },
+    # 10 o "imposto do solteiro"
+    {
+        "temas_secundarios": ["brasil_republica", "leis_julgamentos"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "De 1941 a 1964, o Brasil cobrou um adicional no imposto de renda de quem tinha mais de 25 anos e nenhum filho: 15% a mais para solteiros e viúvos, 10% para casados. Ficou conhecido como \"imposto do solteiro\".",
+        "explicacao": (
+            "A cobrança veio num decreto-lei de 19 de abril de 1941, do Estado Novo, com várias medidas de \"proteção "
+            "à família\". O apelido não era exato, porque o adicional atingia também casados sem filhos e, com 5%, "
+            "quem tinha mais de 45 anos e um único filho. Para aplicar a regra, a declaração de renda ganhou, a partir "
+            "de 1942, um campo para o valor do adicional e outro para a idade do contribuinte. A lei foi polêmica, e "
+            "em 1943 a própria Divisão do Imposto de Renda se manifestou: o objetivo não seria empurrar ninguém para o "
+            "casamento nem punir casais estéreis, e aquilo não seria um imposto sobre o celibato, como o que a Itália "
+            "adotara em 1927. A justificativa oficial era outra: quem não tinha dependentes teria mais capacidade de "
+            "contribuir, e o dinheiro ajudaria famílias numerosas. As alíquotas e os grupos atingidos nunca mudaram "
+            "até a revogação, por uma lei de julho de 1964, que valeu a partir da declaração seguinte."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [livro_ir(
+            "O Decreto-lei nº 3.200, de 19 de abril de 1941, instituiu uma série de medidas sobre a organização e proteção da família. "
+            "Uma delas fi cou conhecida como imposto de r enda do solteiro, embora não atingisse exclusivamente os solteiros. [...] "
+            "Art. 32. Os contribuintes do imposto de renda, solteiros ou viúvos sem fi lhos, maiores de vinte e cinco anos, pagarão o adicional de quinze por cento, e os casados, também maiores de vinte e cinco anos, sem fi lho, pagarão o adicional de dez por cento, sobre a importância, a que estiverem obrigados, do mesmo imposto. "
+            "Art. 33. Os contribuintes do imposto de renda, maiores de quarenta e cinco anos, que tenham um só fi lho, pagarão o adicional de cinco po [...] "
+            "a par tir da declaração de r endimentos de 1942, foram criados dois campos: um para o contribuinte informar o valor do adicional de proteção à família e outro para declarar a idade. [...] "
+            "A lei de proteção à família foi polêmica e levou a Divisão do Imposto de Renda, órgão máximo da administração desse imposto, a pronunciar-se a respeito, como a decisão do processo 5643-43, publicado no Diário Ofi cial da União em 6 de novembro de 1943: "
+            "O objetivo da lei criando semelhante imposto não foi coagir indir etamente ao matrimônio e à fundação de família numerosa nem punir os casais estéreis. "
+            "Não se trata do imposto do celibato, para cuja aplicação forçoso seria atender-se àqueles motivos, como a Lei Sui Celibi adotado na Itália em 1927 [...] "
+            "pr ovendo as necessidades das famílias numer osas [...] "
+            "fazendo-o recair de preferência sobre os contribuintes solteiros, viúvos ou casados sem fi lho, cuja capacidade de contribuição é mais elevada em razão da falta de dependentes. "
+            "A Lei de proteção à família só foi revogada pelo art. 22 da Lei nº 4.357, de 16 de julho de 1964 e vigorou até a declaração do exercício de 1964, ano-base de 1963. "
+            "Durante todo esse período, não foram alteradas as alíquotas nem os contribuintes sujeitos ao adicional.")],
+    },
+    # 11 escritores, jornalistas e professores imunes a impostos
+    {
+        "temas_secundarios": ["brasil_republica", "literatura"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "De 1934 a 1964, a Constituição brasileira proibiu que imposto recaísse diretamente sobre a profissão de escritor, jornalista ou professor. Assim, a renda dessas profissões ficou fora do imposto de renda.",
+        "explicacao": (
+            "A regra estava na Constituição de 1934, num artigo de uma linha: \"Nenhum imposto gravará diretamente a "
+            "profissão de escritor, jornalista ou professor\". Na mesma Carta, o imposto de renda entrou pela primeira "
+            "vez na lista de tributos que só a União podia criar. A proteção atravessou o Estado Novo e o pós-guerra; "
+            "em 1947, uma lei ainda retirou da tributação os rendimentos de professor, jornalista, escritor, pintor e "
+            "escultor e os direitos autorais. O privilégio só acabou com a Emenda Constitucional nº 9, de 22 de julho "
+            "de 1964, que pôs fim à imunidade do imposto de renda de que gozavam professores, jornalistas, autores e "
+            "também magistrados. Meses depois, uma lei de novembro daquele ano regulou como esses rendimentos "
+            "passariam a ser tributados. Foi parte de uma revisão ampla do imposto de renda feita em 1964, dentro da "
+            "reforma tributária daquele período."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [livro_ir(
+            "A Constituição Federal de 1934 estabeleceu imunidade para vencimentos de escritor, jornalista e professor, conforme o art. 113 nº 36: “Nenhum imposto gravará diretamente a profi ssão de escritor, jornalista ou professor”. "
+            "A imunidade só foi revogada em 1964, por meio da Emenda Constitucional nº 9 de 22 de julho de 1964. "
+            "O Imposto de Renda na Constituição A partir da Constituição de 1934, o imposto de renda passou a fazer parte da Carta Magna na relação dos impostos de competência da União. [...] "
+            "Em 1964, ocorreu uma ampla reavaliação do imposto de renda, dentro do projeto de reforma tributária programado pelo governo. [...] "
+            "A Emenda Constitucional nº 9 de 22 de julho de 1964 extinguiu o privilégio da imunidade do imposto de renda de que gozavam professores, jornalistas, autores e magistrados. "
+            "A Lei nº 4.480, de 14 de novembro de 1964 regulou a tributação pelo Imposto de Renda dos direitos de autor, da remuneração dos professores e jornalistas e dos vencimentos dos magistrados [...] "
+            "Lei nº 154, de 25 de novembro de 1947 Retirou da tributação na cédula D os rendimentos de professor, jornalista, escritor, pintor, escultor e as importâncias correspondentes a direitos autorais.")],
+    },
+    # 12 fiscais proibidos de olhar os livros de contabilidade
+    {
+        "temas_secundarios": ["brasil_republica", "leis_julgamentos"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Nos primeiros anos do imposto de renda no Brasil, os fiscais que revisavam as declarações eram proibidos por lei de pedir os livros de contabilidade do contribuinte. A restrição durou até 1939.",
+        "explicacao": (
+            "A regra estava numa lei de 31 de dezembro de 1923: as declarações podiam ser revistas pelos agentes do "
+            "fisco, mas eles não podiam exigir a exibição de livros contábeis, documentos reservados nem "
+            "esclarecimentos que devassassem a vida privada. A origem era bem mais antiga. O Código Comercial de 1850 "
+            "dizia que nenhuma autoridade, juízo ou tribunal, sob pretexto algum, podia mandar examinar se o "
+            "comerciante mantinha seus livros de escrituração em ordem ou se havia neles algum vício. Na discussão "
+            "sobre a criação do imposto de renda, um dos argumentos contrários era justamente que o governo invadiria "
+            "a privacidade do contribuinte e teria acesso a dados pessoais. O resultado foi um imposto baseado na "
+            "declaração, que o fisco tinha poucos meios de conferir, e a proibição virou um entrave à arrecadação. Só "
+            "em 22 de março de 1939 um decreto-lei permitiu que peritos e funcionários do imposto de renda, com ordem "
+            "escrita do diretor, examinassem a escrita comercial dos contribuintes; quem recusasse mostrar os livros "
+            "ficava sujeito a punição."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [livro_ir(
+            "Nos termos do ar t. 3º, § 7º, da Lei nº 4.783, de 31 de de zembro de 1923, as declarações dos contribuintes estavam sujeitas à r evisão dos agentes fi scais, que não podiam solicitar a exibição de livr os de contabilidade, documentos de natureza reservada ou esclarecimentos, devassando a vida privada. "
+            "Essa proibição tinha como origem o art. 17 do Código Comercial de 1850, que dispunha que nenhuma [...] "
+            "ridade, juízo ou tribunal, debaix o de pretexto algum, por mais especioso que fosse, podia praticar ou or denar alguma diligência para examinar se o comer ciante arrumava ou não devidamente seus livr os de escrituração mercantil, ou neles tinha cometido algum vício. [...] "
+            "Houve os que alegavam que a administração tributária invadiria a privacidade do contribuinte e teria acesso a dados pessoais. "
+            "A proibição foi um entrav e na arrecadação do imposto e permaneceu até o fi nal da década seguinte, quando foi publicado o Decreto-lei nº 1.168, de 22 de março de 1939, cujo art.14 deu mais autonomia à fi scalização. "
+            "Art. 14: Os peritos e funcionários do imposto de renda, mediante ordem escrita do diretor do Imposto e dos chefes de Seções nos Estados, poderão proceder a exame na escrita comercial dos contribuintes, para verifi carem a exatidão de suas declarações e balanços. "
+            "§ 1º. A recusa de exibição dos livros dará lugar à imposição")],
+    },
+    # 13 a CPMF "provisória" e a votação perdida por maioria
+    {
+        "temas_secundarios": ["brasil_republica", "economia_curiosa"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "A CPMF, contribuição \"provisória\" sobre movimentação financeira, foi cobrada de 1997 a 2007. Caiu no Senado mesmo com mais votos a favor do que contra, 45 a 34: para continuar, precisava de pelo menos 49.",
+        "explicacao": (
+            "A CPMF substituiu o IPMF, um imposto \"provisório\" criado em julho de 1993, no governo Itamar Franco, "
+            "quando Fernando Henrique Cardoso era ministro da Fazenda. O IPMF cobrava 0,25% sobre os débitos "
+            "lançados nas contas bancárias e vigorou durante 1994. A CPMF, criada por lei em 1996, começou a "
+            "ser cobrada em janeiro de 1997, também a 0,25%. Teve um breve intervalo em 1999 e voltou com 0,38%. "
+            "Nasceu para custear a saúde e, depois, passou a financiar também a Previdência e um fundo contra a "
+            "pobreza. A prorrogação até 2011 exigia mudar a Constituição, o que pede ao menos 49 votos no Senado em "
+            "cada um de dois turnos. Na madrugada de 13 de dezembro de 2007, o governo conseguiu 45 votos contra 34, "
+            "uma maioria clara, mas insuficiente. As defecções na própria base governista selaram o resultado, e a "
+            "contribuição deixou de existir em 31 de dezembro daquele ano."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Contribuição_Provisória_sobre_Movimentação_Financeira",
+            "foi um tributo brasileiro. Sua esfera de aplicação foi federal e foi aplicada de 1997 a 2007. Sua última taxa foi de 0,38%. [...] "
+            "A Contribuição Provisória sobre Movimentação Financeira (CPMF) substituiu o Imposto Provisório sobre Movimentação Financeira (IPMF), que havia sido criado em 13 de julho de 1993, durante o governo de Itamar Franco, cujo ministro da Fazenda era Fernando Henrique Cardoso. "
+            "O IPMF vigorou de 1º de janeiro de 1994 até 31 de dezembro de 1994 [...] "
+            "Tinha uma alíquota de 0,25% que incidia sobre os débitos lançados nas contas mantidas pelas instituições financeiras [...] "
+            "passou a vigorar em 23 de janeiro de 1997, com base na Lei nº 9.311, de 24 de outubro de 1996. "
+            "A contribuição provisória foi extinta em 23 de janeiro de 1999, tendo sido substituída pelo IOF até seu restabelecimento em 17 de junho de 1999. "
+            "A alíquota, que era originalmente de 0,25%, foi elevada na época de seu restabelecimento para 0,38%. [...] "
+            "Diferentemente do IPMF, a CPMF era uma contribuição destinada especificamente ao custeio da Saúde Pública, da Previdência Social e do Fundo de Combate e Erradicação da Pobreza. "
+            "No começo, pelo artigo 18 da Lei nº 9.311 de outubro de 1996, a totalidade da arrecadação era destinada ao Fundo Nacional de Saúde. [...] "
+            "Na madrugada do dia 13 de dezembro de 2007, o Senado rejeitou a proposta de prorrogação da CPMF até 2011, com 45 votos a favor do tributo e 34 contra (não houve abstenções). "
+            "Para ter sido aprovada, a proposta precisaria ter passado em dois turnos, com ao menos 49 votos favoráveis em cada um. [...] "
+            "A vigência da CPMF terminou no dia 31 de dezembro de 2007. "
+            "A lista da última votação indica que a rejeição se deu em razão de defecções na base de apoio ao governo",
+            nome="Contribuição Provisória sobre Movimentação Financeira", idioma="pt")],
+    },
+    # 14 o imposto sobre grandes fortunas que nunca saiu do papel
+    {
+        "temas_secundarios": ["brasil_republica", "economia_curiosa"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "A Constituição de 1988 previu um imposto federal sobre grandes fortunas, mas ele nunca foi regulamentado e por isso não pode ser cobrado. Um dos projetos para criá-lo era do então senador Fernando Henrique Cardoso.",
+        "explicacao": (
+            "O imposto aparece no artigo 153 da Constituição, entre os tributos de competência exclusiva da União. "
+            "Para sair do papel, precisa de uma lei complementar que o regulamente, e ela nunca foi aprovada. Pela "
+            "ideia, quem tivesse um patrimônio considerado grande fortuna pagaria uma alíquota sobre o total dos seus "
+            "bens; em vários projetos, as alíquotas seriam progressivas, maiores para patrimônios maiores. Projetos "
+            "não faltaram: um do senador Fernando Henrique Cardoso (PLP 162/89), outros de deputados e um do governo "
+            "Collor (PLP 218/1990), seguidos por outros no Senado e na Câmara. Em 2014, dois advogados chegaram a "
+            "pedir ao Supremo, por mandado de injunção, que obrigasse a regulamentação. O debate trava em pontos "
+            "difíceis: se o imposto arrecadaria bem ou reduziria a concentração de riqueza, o que conta como grande "
+            "fortuna, se ele valeria para empresas e se incentivaria fraudes para esconder patrimônio."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Imposto_sobre_grandes_fortunas",
+            "O Imposto sobre Grandes Fortunas (IGF) é um tributo previsto na Constituição brasileira de 1988, mas ainda não regulamentado. "
+            "Trata-se de um imposto federal, ou seja, de competência exclusiva da União para sua instituição e aplicação (Constituição da República, artigo 153, inciso VII). "
+            "Por ainda não ter sido regulamentado, não pode ser aplicado. "
+            "Uma pessoa com patrimônio considerado grande fortuna pagaria, sobre a totalidade de seus bens, uma alíquota de imposto. "
+            "Em determinados projetos de lei apresentados no Senado Federal do Brasil, as alíquotas previstas são progressivas, ou seja, quanto maior o patrimônio, maior a porcentagem incidente sobre a base de cálculo. [...] "
+            "Os advogados Wellington Catta Preta Costa e Djair Nunes de Santana, em junho de 2014, ingressaram com pedido judicial requerendo a regulamentação do tributo sobre as grandes fortunas (MI 6389) [...] "
+            "A Revista de Informação Legislativa elenca alguns projetos de lei complementar, visando à instituição prática do IGF, entre os quais: o PLP 162/89, do senador Fernando Henrique Cardoso, o PLP 108/89, do deputado Juarez Marques Batista, o PLP nº 208/89, do deputado federal Antônio Mariz e o PLP nº 218/1990 do Governo Collor. [...] "
+            "No Brasil, políticos, tributaristas e economistas divergem se o IGF é um instrumento eficaz de arrecadação ou de diminuição da concentração de renda e de riqueza. "
+            "Definir qualitativamente e quantitativamente o que é uma grande fortuna [...] "
+            "Definir se o IGF deve recair apenas sobre pessoas físicas residentes ou também sobre pessoas jurídicas [...] "
+            "A instituição do IGF poderia incitar um aumento em fraudes de declaração",
+            nome="Imposto sobre grandes fortunas", idioma="pt")],
+    },
+    # 15 o tratado de 1810: 15% para os ingleses, 25% para os outros
+    {
+        "temas_secundarios": ["brasil_imperio", "comercio_rotas", "revolucao_industrial"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Em 1810, com a Corte portuguesa no Rio, um tratado fixou em 15% a taxa sobre produtos ingleses que entravam no Brasil, contra 25% para os de outras nações. Artigos britânicos baratos, feitos à máquina, inundaram o país.",
+        "explicacao": (
+            "O tratado foi assinado no Rio de Janeiro em 19 de fevereiro de 1810, negociado pelo diplomata britânico "
+            "Lorde Strangford. Era o pagamento pela proteção: a Inglaterra tinha ajudado o governo português a fugir "
+            "do exército francês e defenderia Portugal e suas colônias nas guerras napoleônicas. O contexto deixa o "
+            "efeito ainda mais forte. Até 1808, um decreto de 1785 só permitia às fábricas brasileiras produzir "
+            "tecido para roupa de escravos ou para sacos de mantimentos. A proibição caiu junto com a abertura dos "
+            "portos, mas logo depois as mercadorias industriais britânicas, mais baratas, passaram a dominar mercados "
+            "antes abastecidos pelo artesanato local. O acordo ainda limitava os recursos judiciais de brasileiros "
+            "contra súditos britânicos e proibia a venda de tabaco e açúcar do Brasil nos mercados britânicos, para "
+            "proteger os produtores das Antilhas inglesas. Portugal também se comprometeu a limitar a importação de "
+            "escravizados africanos. O tratado deveria expirar em 1825 se não fosse renovado, mas ficou em vigor até "
+            "1844."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Strangford_Treaty",
+            "was a treaty signed at Rio de Janeiro the 19th of February 1810 by the British and the Portuguese government, then in exile in its colony of Brazil. "
+            "The treaty granted the British special commercial privileges, notably preferential tariffs of 15% on British goods imported into Brazil, in exchange for their defense of Portugal and its colonies during the Napoleonic War. "
+            "Portugal also agreed to limit the importation of African slaves and to consider the abolition of the slave trade. "
+            "In 1785, a decree proclaimed that Brazilian factories could only produce cloth that would be used for clothing slaves or to make sacks for food goods. "
+            "This decree was lifted in 1808, accompanied by an open ports policy. [...] "
+            "During this period, the British had helped the Portuguese government to flee the invading French army and find refuge in Rio de Janeiro. "
+            "The Anglo-Irish diplomat, Percy Smythe, 6th Viscount Strangford, negotiated an agreement to grant Britain trade privileges with Brazil. [...] "
+            "The result of the treaty was that exports from the United Kingdom came to dominate markets in Brazil. "
+            "Imported British goods only received a 15% duty, compared to 25% for goods from other nations. "
+            "It also limited legal recourse by Brazilians against British subjects and allowed British agents to become established throughout the country. "
+            "As a result, low cost imported goods from Britain which were manufactured by machine industry began to swamp markets that had previously been dominated by the local handicrafts industry. "
+            "Exports of tobacco and sugar from Brazil to British markets were prohibited, which protected producers in the British West Indies. "
+            "The treaty was written so as to expire in 1825 unless renewed. It remained in effect until 1844.",
+            nome="Strangford Treaty")],
+    },
+]

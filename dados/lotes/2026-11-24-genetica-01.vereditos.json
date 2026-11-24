@@ -1,0 +1,149 @@
+{
+ "lote": "2026-11-24-genetica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "genetica-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Omite que o crédito de Tschermak é contestado e que Hartl e Fairbanks rejeitam a análise de Fisher (livro de 2008 conclui que não há motivo para dizer que Mendel inventou os dados).",
+    "correcao": "1) Trocar 'Em 1900, Hugo de Vries, Carl Correns e Erich von Tschermak, cada um num país, confirmaram por conta própria vários resultados dele e publicaram a redescoberta num intervalo de dois meses.' por 'Em 1900, Hugo de Vries e Carl Correns chegaram por conta própria a resultados parecidos e, junto com Erich von Tschermak (cujo crédito hoje é contestado), publicaram a redescoberta num intervalo de dois meses.' 2) Trocar a última frase ('Várias explicações já foram propostas, entre elas o viés de confirmação, e o caso segue em discussão.') por algo como 'Várias explicações já foram propostas, entre elas o viés de confirmação. Já os geneticistas Daniel Hartl e Daniel Fairbanks rejeitam a análise de Fisher: para eles, Fisher interpretou mal os experimentos, e um livro de 2008 escrito por eles com outros autores concluiu que não há motivo para dizer que Mendel inventou os dados.' Acrescentar ao trecho da fonte a frase 'Daniel L. Hartl and Daniel J. Fairbanks reject Fisher's statistical argument outright, suggesting that Fisher incorrectly interpreted Mendel's experiments.' Manter confianca 'consenso_parcial'."
+   },
+   {
+    "id": "genetica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Miescher, 1869, nucleína dos glóbulos brancos do pus das ataduras e o cuidado de dizer 'ácidos nucleicos' conferem.",
+    "correcao": "Opcional: 'dono do laboratório' por 'chefe do laboratório'."
+   },
+   {
+    "id": "genetica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: o recorde de 160 bilhões (2024) é da Tmesipteris oblanceolata, não da T. truncata (erro herdado da Wikipedia).",
+    "correcao": "Trocar 'Depois disso, mediu-se uma samambaia, Tmesipteris truncata, com cerca de 160 bilhões.' por 'Em 2024, uma pequena samambaia da Nova Caledônia, Tmesipteris oblanceolata, tomou o recorde, com cerca de 160 bilhões.' Acrescentar a fonte https://www.sciencenews.org/article/largest-genome-tiny-fern (Science News, 'The largest known genome belongs to a tiny fern') com o trecho 'One species — T. oblanceolata — has the largest genome of any organism yet measured.' e/ou 'But its genome has a length of 160 billion nucleobases'. No trecho da fonte Paris japonica, retirar a parte sobre Tmesipteris truncata."
+   },
+   {
+    "id": "genetica-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte dá 'up to 5–8% (lower estimates of 3%)'; a interferência da proteína HERV-K no HIV foi mostrada em experimento.",
+    "correcao": "1) Gancho: trocar 'Entre 5% e 8% do DNA humano é feito de restos de vírus' por 'Algo entre 3% e 8% do DNA humano é feito de restos de vírus'. 2) Na explicação, trocar 'e uma proteína da HERV-K se mistura à do HIV e atrapalha a montagem da cápsula desse vírus' por 'e, em experimentos, uma proteína da HERV-K se mistura à proteína equivalente do HIV e atrapalha a montagem da cápsula desse vírus'. (Não acrescente a placenta: esse assunto fica com o lote de gravidez.)"
+   },
+   {
+    "id": "genetica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "McClintock, Ac/Ds, Nobel de 1983, a contestação de Comfort ao 'mito McClintock' e 'mais da metade do DNA humano' conferem."
+   },
+   {
+    "id": "genetica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "HeLa: coleta sem consentimento em 1951, contaminação estimada em 10–20%, 76–80 cromossomos, Helacyton gartleri como proposta não levada a sério, genoma de 2013 e acordo com o NIH conferem."
+   },
+   {
+    "id": "genetica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Caso Keegan (Yu et al., NEJM 2002): tipagem HLA, tecidos com o segundo genoma e o mecanismo como 'explicação mais razoável' conferem; a identificação como Karen Keegan confere em busca própria."
+   },
+   {
+    "id": "genetica-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Burglaries' são invasões para furto, não 'roubos'; 'para qualquer pessoa' soa absoluto (a estimativa é de 60% das buscas).",
+    "correcao": "Na explicação, troque 'e pelo menos 120 roubos' por 'e pelo menos 120 invasões de casas'. Troque também 'uma busca desse tipo, para qualquer pessoa de ascendência europeia, acharia' por 'uma busca desse tipo, para uma pessoa de ascendência europeia, acharia'."
+   },
+   {
+    "id": "genetica-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte fala em 'algumas' populações do leste da África, e nenhuma variante foi mostrada como causal exclusiva.",
+    "correcao": "Na explicação, troque 'Em populações do leste da África, a persistência foi' por 'Em algumas populações do leste da África, a persistência foi'. Troque também 'As variantes responsáveis não ficam no gene da lactase' por 'As variantes associadas a ela não ficam no gene da lactase'."
+   },
+   {
+    "id": "genetica-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada data atribuída ao estudo certo; a crença de que Eva e Adão foram casal é registrada como comum pela fonte; mito_desmentido sustentado."
+   },
+   {
+    "id": "genetica-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A linhagem CHM13 não tem 'só uma cópia de cada cromossomo': tem as duas cópias idênticas (mola hidatiforme).",
+    "correcao": "Na explicação, troque 'Também usou uma linhagem de células com só uma cópia de cada cromossomo, quando a maioria das células humanas tem duas.' por 'Também usou uma linhagem de células em que as duas cópias de cada cromossomo são idênticas, o que evita misturar as duas versões diferentes que a maioria das células humanas carrega.' No trecho da fonte Wikipedia, acrescente (com '[...]') a frase literal 'a hydatidiform mole-derived cell line in which both copies of each chromosome are identical'."
+   },
+   {
+    "id": "genetica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Sonic hedgehog: triagem de 1980, Robert Riddle, papel de morfógeno, holoprosencefalia e as críticas ao nome conferem, com as ressalvas da fonte."
+   },
+   {
+    "id": "genetica-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ricardo III: mtDNA de Ibsen e de outra descendente, Y sem correspondência, 19 gerações e a falsa paternidade como inferência conferem."
+   },
+   {
+    "id": "genetica-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A cronologia engana: o teste do intestino foi nos anos 1990, antes de os dois últimos corpos aparecerem em 2007.",
+    "correcao": "Na explicação, troque 'Os dois últimos corpos apareceram em 2007, e testes repetidos mostraram que nenhuma das quatro filhas sobreviveu. Restava um trecho de intestino de Anderson, retirado numa cirurgia em 1979 e guardado num hospital da Virgínia. O DNA dele não batia com o dos Romanov, mas batia com o de Karl Maucher, neto de uma irmã de Franziska Schanzkowska.' por 'Um trecho de intestino de Anderson, retirado numa cirurgia em 1979 e guardado num hospital da Virgínia, foi comparado com esse DNA: não batia com o dos Romanov, mas batia com o de Karl Maucher, neto de uma irmã de Franziska Schanzkowska. Mais tarde, em 2007, apareceram os dois últimos corpos, e testes repetidos mostraram que nenhuma das quatro filhas sobreviveu.'"
+   },
+   {
+    "id": "genetica-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Nancy Wexler: família, o estudo no lago Maracaibo desde 1979, as amostras e a revelação de 2020 no NYT conferem."
+   }
+  ],
+  "2": [
+   {
+    "id": "genetica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "genetica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "genetica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "genetica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "genetica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "genetica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "genetica-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   }
+  ]
+ }
+}

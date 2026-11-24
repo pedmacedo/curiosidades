@@ -1,0 +1,142 @@
+{
+ "lote": "2026-11-24-gravidez-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "gravidez-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho sugere que a rã era o único teste; os testes com camundongo e coelho eram usados na mesma época.",
+    "correcao": "No gancho, trocar 'o teste de gravidez foi uma rã africana' por 'um teste de gravidez comum foi uma rã africana'. Opcional: na explicação, encurtar 'Os testes anteriores usavam camundongos ou coelhos, que precisavam ser mortos para o exame' para 'Ao contrário dos testes com coelhos e camundongos, a rã podia ser reaproveitada', para não antecipar o gravidez-0003."
+   },
+   {
+    "id": "gravidez-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Papiros, os 70% de 1963, a falha na previsão do sexo e o estrogênio como explicação provável conferem com a revisão de 2023."
+   },
+   {
+    "id": "gravidez-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Friedman e Lapham (1931), o termo de 1949 e todas as coelhas mortas por dissecção conferem; confirmado em busca própria."
+   },
+   {
+    "id": "gravidez-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os '150 anos' não têm apoio independente: o PMC fala em quase um século; a cronologia dá de 100 a 135 anos.",
+    "correcao": "No gancho, trocar 'Por cerca de 150 anos, uma família' por 'Por mais de um século, uma família'. Se a explicação mencionar a duração do segredo, usar a mesma formulação."
+   },
+   {
+    "id": "gravidez-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "'Custava em média 15 dólares' omite a unidade (era por dia, segundo reportagens).",
+    "correcao": "Na explicação, trocar 'Em 1903, cuidar de um bebê custava em média 15 dólares, e Couney não cobrava dos pais:' por 'O tratamento era caro, mas Couney não cobrava dos pais:'."
+   },
+   {
+    "id": "gravidez-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Apgar: 1952 defensável (apresentada em 1952, publicada em 1953), o chefe Whipple, o guardanapo como 'conta-se' e os números conferem."
+   },
+   {
+    "id": "gravidez-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ian Donald: Babcock & Wilcox em 1955, o bife como controle, o detector de falhas, a cama e o Meccano e o artigo de 1958 conferem."
+   },
+   {
+    "id": "gravidez-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Fred Hutch 2012: 59 mulheres, 63%, a mais velha com 94; efeitos na saúde como hipóteses."
+   },
+   {
+    "id": "gravidez-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Presente em todos os primatas' contradiz a fonte: a sincitina-2 está ausente nos prossímios.",
+    "correcao": "Na explicação, trocar 'presente em todos os primatas e com idade estimada em 45 milhões de anos' por 'presente tanto nos macacos do Velho quanto nos do Novo Mundo (mas ausente nos prossímios, como os lêmures) e com idade estimada em 45 milhões de anos'."
+   },
+   {
+    "id": "gravidez-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A hipótese energética explica quando o bebê nasce (imaturo), não por que o parto é difícil; o gancho as põe respondendo à mesma pergunta.",
+    "correcao": "Trocar o gancho por: 'A explicação clássica para o bebê humano nascer tão imaturo é o quadril estreito de quem anda em pé. Uma hipótese rival diz que o parto chega quando a mãe atinge o limite de energia que consegue gastar.'"
+   },
+   {
+    "id": "gravidez-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho transforma em posição firme o que a fonte diz como possibilidade ('could indicate a fine-tuning').",
+    "correcao": "No gancho, trocar 'Os cientistas veem nisso um ajuste fino, como na puberdade.' por 'Para os cientistas, isso pode ser um ajuste fino, como na puberdade.'"
+   },
+   {
+    "id": "gravidez-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "GDF15, sete em cada dez gestações, beta-talassemia e a variante como associação conferem com o comunicado de Cambridge; sem conselho médico."
+   },
+   {
+    "id": "gravidez-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Só dois casos relatados até 2019, as quimeras do caso de 2007 e o mecanismo como explicação proposta conferem."
+   },
+   {
+    "id": "gravidez-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho generaliza: a doença foi quase eliminada nos países ricos ('in the developed world').",
+    "correcao": "No gancho, trocar 'quase eliminou uma doença que matava milhares de bebês.' por 'quase eliminou dos países ricos uma doença que matava bebês aos milhares.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "gravidez-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "gravidez-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "gravidez-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "gravidez-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "gravidez-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "gravidez-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "gravidez-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   }
+  ]
+ }
+}

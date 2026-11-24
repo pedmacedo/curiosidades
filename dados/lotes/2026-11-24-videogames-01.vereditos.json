@@ -1,0 +1,190 @@
+{
+ "lote": "2026-11-24-videogames-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "videogames-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Higinbotham chefiou o grupo de eletrônica do laboratório de Los Alamos, não a 'eletrônica do Projeto Manhattan'; a recusa da patente vale para a época (depois ele admitiu que devia ter pedido); a fonte não diz quem desmontou o jogo.",
+    "correcao": "1) Trocar o gancho por: 'Em 1958, um físico que tinha chefiado a equipe de eletrônica da bomba atômica, em Los Alamos, criou um jogo de tênis para animar a visita do público a um laboratório dos EUA. O jogo foi desmontado e caiu no esquecimento.' 2) Na explicação, trocar 'Antes, de 1943 a 1945, tinha chefiado a divisão de eletrônica do Projeto Manhattan.' por 'Na Segunda Guerra, trabalhou no Projeto Manhattan, em Los Alamos, onde chefiou o grupo de eletrônica; sua equipe criou o mecanismo de ignição e os instrumentos de medição da primeira bomba atômica.' 3) Adicionar a fonte https://en.wikipedia.org/wiki/William_Higinbotham com o trecho 'headed the lab's electronics group' [...] 'His team created the bomb's ignition mechanism as well as measuring instruments for the device.' e rodar o checar_citacoes de novo. 4) Trocar 'Higinbotham não achava que ele merecesse patente:' por 'Na época, Higinbotham não achou que o jogo merecesse patente, por ser só uma extensão do programa da bola quicando;'. 5) Trocar 'em Nova York' por 'no estado de Nova York'."
+   },
+   {
+    "id": "videogames-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Expensive Planetarium' era o nome do programa, não apelido; a ideia do jogo foi de Russell, Graetz e Wiitanen juntos.",
+    "correcao": "1) Trocar 'O apelido era \"Planetário Caro\", por causa do preço do computador.' por 'O programa se chamava \"Expensive Planetarium\" (planetário caro), por causa do preço do computador.' 2) Trocar 'Steve Russell tinha a ideia, mas não pretendia programá-la, e os colegas o pressionavam.' por 'Steve Russell tinha concebido o jogo com dois amigos, mas não pretendia programá-lo, e os colegas o pressionavam.'"
+   },
+   {
+    "id": "videogames-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Aceleração emergente pelo processador, 'Nagoya shooting' e a fala de Miyamoto conferem; sem contestação séria."
+   },
+   {
+    "id": "videogames-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Desmentido sólido e listado na List of common misconceptions; mas quem comparou a produção da Casa da Moeda com a renda do jogo foi um numismata só (Mark Fox).",
+    "correcao": "No gancho, trocar 'Numismatas compararam a produção da Casa da Moeda japonesa com a renda do jogo e não acharam sinal disso.' por 'Um numismata comparou a produção da Casa da Moeda japonesa com a renda do jogo e não achou sinal disso.'"
+   },
+   {
+    "id": "videogames-0005",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: público feminino, personalidade dos fantasmas e Puck Man são o núcleo das listas de 'fatos sobre o Pac-Man' que quem gosta de videogame já conhece; sobrepõe-se ao 0006, mais forte."
+   },
+   {
+    "id": "videogames-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Estouro de inteiro na fase 256, recorde perfeito, carta de Reagan a Jeffrey Yee, viagem de Walter Day e oferta de Mitchell conferem; o gancho deixa claro que o recorde era impossível."
+   },
+   {
+    "id": "videogames-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Alcorn não era engenheiro novato (tinha experiência na Ampex); só não tinha feito videogames. O Pong foi o primeiro jogo da Atari, não o primeiro produto.",
+    "correcao": "No gancho, trocar 'como exercício de treino para um engenheiro novato' por 'como exercício de treino para um engenheiro recém-contratado, sem experiência em videogames'. Se passar de 220 caracteres, usar 'para um engenheiro que nunca tinha feito videogames'. Na explicação, trocar 'virou o primeiro produto da empresa' por 'virou o primeiro jogo da empresa'."
+   },
+   {
+    "id": "videogames-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz que foi lançado um controle periférico (havia outros acessórios, como o adaptador de tomada) e 'the first video game light gun'.",
+    "correcao": "Na explicação, trocar 'O único acessório lançado foi um rifle de luz, a primeira pistola de videogame,' por 'O único controle extra lançado foi um rifle de luz, a primeira pistola de luz da história dos videogames,'."
+   },
+   {
+    "id": "videogames-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Easter egg do Adventure: tudo confere com a Wikipedia, inclusive a ressalva de que não foi o primeiro."
+   },
+   {
+    "id": "videogames-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Com o Pac-Man a empresa tinha feito pior ainda' é julgamento sem fonte (o Pac-Man foi o mais vendido do console; o exagero foi na produção); 'cerca de 728 mil' amacia o número exato de Heller.",
+    "correcao": "Na explicação, trocar 'Com o Pac-Man para o Atari 2600 a empresa tinha feito pior ainda: fabricou 12 milhões de cartuchos quando só havia cerca de 10 milhões de consoles vendidos.' por 'Com o Pac-Man para o Atari 2600, o excesso tinha sido ainda maior: a empresa fabricou 12 milhões de cartuchos quando só havia cerca de 10 milhões de consoles vendidos e, mesmo depois de enviar 7 milhões às lojas, ficou com mais de 5 milhões encalhados.' Trocar também 'disse que foram cerca de 728 mil cartuchos, não milhões' por 'disse que foram 728 mil cartuchos, não milhões'."
+   },
+   {
+    "id": "videogames-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fundação em 1889 em Kyoto, karuta do português 'carta', hanafuda tolerado e casas de jogo da yakuza em Kyoto como clientes conferem; não há duplicado no acervo.",
+    "correcao": "Opcional: trocar 'Esses baralhos japoneses se chamam karuta' por 'Baralhos japoneses como esses se chamam karuta'."
+   },
+   {
+    "id": "videogames-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho generaliza a lei soviética (escritores recebiam direitos) e diz que países brigaram, quando foram empresas e a Elorg.",
+    "correcao": "No gancho, troque 'e a lei da URSS não deixava ninguém lucrar com as próprias criações. O jogo se espalhou de graça, e os direitos viraram uma briga entre vários países.' por 'e a lei da URSS não lhe dava direito de lucrar com o jogo. Ele se espalhou de graça, e os direitos viraram uma briga entre empresas de vários países.'"
+   },
+   {
+    "id": "videogames-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Willis Gibson, nível 157, hypertapping, rolling, níveis 138, 146 e 148 e o sentido de 'zerar' conferem com a Wikipedia."
+   },
+   {
+    "id": "videogames-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Reiniciar os servidores um a um falhou; o que acabou com a peste foi o reset ao estado anterior. Falta a ressalva dos pesquisadores sobre o jogo como modelo.",
+    "correcao": "Troque 'A Blizzard só acabou com a peste reiniciando os servidores.' por 'Reiniciar os servidores um a um não resolveu: a peste voltava. A Blizzard só acabou com ela fazendo os servidores voltarem ao estado de antes da epidemia, e alguns pesquisadores lembraram que, num jogo em que o personagem ressuscita, as pessoas não se comportam como no mundo real.'"
+   },
+   {
+    "id": "videogames-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os '15 anos' só aparecem na Wikipedia; o artigo original e a Universidade de Washington falam em 'more than a decade'. O vírus causa sintomas parecidos com a aids, não é 'parecido com o HIV'.",
+    "correcao": "1) Trocar o gancho inteiro por: 'Em 2011, jogadores do Foldit, um game de dobrar proteínas, modelaram em dez dias uma enzima de vírus de macaco que causa doença parecida com a aids, cuja estrutura desafiava cientistas havia mais de uma década.' 2) Na explicação, trocar 'Sua estrutura cristalina estava sem solução havia 15 anos.' por 'Sua estrutura cristalina estava sem solução havia mais de uma década.'"
+   },
+   {
+    "id": "videogames-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Sem memória de curto prazo' é impreciso (amnésia anterógrada: não formavam novas memórias declarativas); o gancho generaliza o que foi visto em 3 dos 5 amnésicos.",
+    "correcao": "1) Trocar o gancho por: 'Num estudo publicado em 2000, três de cinco pacientes com amnésia que jogaram Tetris viram peças caindo ao pegar no sono, sem lembrar de ter jogado. Uma delas punha os dedos nas teclas certas sem saber por quê.' 2) Na explicação, trocar 'cinco pessoas com amnésia por lesões no hipocampo, sem memória de curto prazo' por 'cinco pessoas com amnésia por lesões no hipocampo, incapazes de formar novas memórias conscientes'."
+   },
+   {
+    "id": "videogames-0017",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Master System no Brasil: os 8 milhões estão atribuídos à Tectoy; Mônica, Chapolim, Pica-Pau, Manaus e 'ainda à venda' conferem."
+   },
+   {
+    "id": "videogames-0018",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o bigode do Mario por falta de pixels é das curiosidades de videogame que mais circulam, e a anedota do senhorio Segale é conhecida entre fãs; o mecanismo já está no fato do Space Invaders."
+   }
+  ],
+  "2": [
+   {
+    "id": "videogames-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; a fonte nova (William Higinbotham) sustenta Los Alamos e o mecanismo de ignição."
+   },
+   {
+    "id": "videogames-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Expensive Planetarium' como nome do programa e a ideia dos três amigos conferem."
+   },
+   {
+    "id": "videogames-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Um numismata comparou' bate com a fonte (Mark Fox)."
+   },
+   {
+    "id": "videogames-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho reescrito fiel; retoque mínimo: a fonte diz que o protótipo deu defeito, não que 'parou'.",
+    "correcao": "No gancho, 'o protótipo parou' virou 'o protótipo deu defeito'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "videogames-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Único controle extra' e 'primeira pistola de luz da história dos videogames' conferem."
+   },
+   {
+    "id": "videogames-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Pac-Man (12, 7 e mais de 5 milhões) e os 728 mil exatos de Heller conferem."
+   },
+   {
+    "id": "videogames-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Lei da URSS sobre o jogo e briga entre empresas conferem."
+   },
+   {
+    "id": "videogames-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Reinício um a um que falhou, reset ao estado anterior e a ressalva de Ferguson conferem."
+   },
+   {
+    "id": "videogames-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A fonte nova (National Geographic) sustenta 'mais de uma década' e a doença parecida com a aids."
+   },
+   {
+    "id": "videogames-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Três de cinco pacientes' e 'incapazes de formar novas memórias conscientes' conferem."
+   }
+  ]
+ }
+}

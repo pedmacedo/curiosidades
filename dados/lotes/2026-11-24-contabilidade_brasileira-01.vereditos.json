@@ -1,0 +1,143 @@
+{
+ "lote": "2026-11-24-contabilidade_brasileira-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "contabilidade_brasileira-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte não diz que o quinto cristão descende do khums; diz que nos reinos cristãos ele vem 'em parte' dos direitos regalianos. 'Às vezes' deve ser 'com frequência' ('often allowed').",
+    "correcao": "1) No gancho, trocar 'tem um antecedente islâmico: o khums' por 'teve um precedente islâmico: o khums'. 2) Na explicação, trocar 'Do lado cristão, o imposto vinha também de outra ideia medieval:' por 'Nos reinos cristãos, a fonte aponta que o imposto vinha, ao menos em parte, de uma ideia medieval:'. 3) Trocar 'os reis às vezes abriam mão de parte do quinto' por 'os reis com frequência abriam mão de parte ou de todo o quinto'."
+   },
+   {
+    "id": "contabilidade_brasileira-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho generaliza: o ouro em pó circulou em Minas antes de 1719 e durante a capitação.",
+    "correcao": "No gancho, trocar 'No Brasil colonial, o ouro só podia circular fundido em barras com a marca da Coroa, prova de que o quinto fora pago.' por 'Nas casas de fundição do Brasil colonial, o ouro virava barra com a marca da Coroa, prova de que o quinto fora pago.'"
+   },
+   {
+    "id": "contabilidade_brasileira-0003",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "numero_divergente e fonte_fraca: o verbete pt diz 4 oitavas e 3/4 'a cada semestre' desde 1734; a literatura acadêmica dá 4,75 oitavas por ano, de 1735 a 1750/51; a frase sobre os pobres não tem autoria clara."
+   },
+   {
+    "id": "contabilidade_brasileira-0004",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "numero_divergente e fonte_fraca: os 220 contos só aparecem num verbete pt pouco revisado (trabalhos acadêmicos dão cerca de 160 a 172 contos), e o perdão das dívidas é incerto segundo os próprios verbetes."
+   },
+   {
+    "id": "contabilidade_brasileira-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Casa dos Contos: construção 1782–1784, Macedo, prisão de inconfidentes, Cláudio Manuel da Costa 'encontrado enforcado', nome de 1797 e museu conferem."
+   },
+   {
+    "id": "contabilidade_brasileira-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Subsídio literário: lei de 1772, valores por lugar, estudo de 1795–1797 nas cinco capitanias, Ato Adicional de 1834 e extinção em 1857 conferem."
+   },
+   {
+    "id": "contabilidade_brasileira-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Em 1824 ganhou o nome de Ministério da Fazenda' simplifica e é contestado (o Erário é antepassado direto); 'Casa dos Contos de Lisboa' desde o século XIII é impreciso (a divisão 'Contos de Lisboa' é de 1370).",
+    "correcao": "Na explicação, troque 'As contas do reino eram conferidas desde o fim do século XIII pela Casa dos Contos de Lisboa.' por 'As contas do reino eram conferidas pela Casa dos Contos, órgão com origens no fim do século XIII.' Troque também 'Com a Independência, a parte que ficou no Brasil virou o Tesouro Público e, em 1824, ganhou o nome de Ministério da Fazenda.' por 'Com a Independência, a parte que ficou no Brasil virou o Tesouro Público, antepassado direto do atual Ministério da Fazenda.'"
+   },
+   {
+    "id": "contabilidade_brasileira-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Derrubou o gabinete' é causalidade forte demais (a fonte diz 'Desgastado, o gabinete caiu', em março de 1880); o projeto de 5% foi apresentado por uma comissão presidida pelo ministro.",
+    "correcao": "Gancho: troque 'Na virada de 1880, um imposto' por 'Em 1880, um imposto' e 'e derrubou o gabinete.' por 'e ajudou a derrubar o gabinete.'. Explicação: troque 'Desgastado, o gabinete caiu' por 'Desgastado também pela revolta, o gabinete caiu meses depois' e 'Afonso Celso consultou financistas e propôs à Câmara um imposto de 5% sobre a renda' por 'Afonso Celso consultou financistas e uma comissão presidida por ele propôs à Câmara um imposto de 5% sobre a renda'."
+   },
+   {
+    "id": "contabilidade_brasileira-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Lei de 1843, a 'bazófia' de Jequitinhonha (citação literal), 1879 e o art. 31 da Lei 4.625/1922 conferem com o livro da Receita."
+   },
+   {
+    "id": "contabilidade_brasileira-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Decreto-lei 3.200/1941 (números por extenso na fonte), campos da declaração, decisão da DIR de 1943 negando a inspiração italiana e revogação em 1964 conferem."
+   },
+   {
+    "id": "contabilidade_brasileira-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A continuidade de 1934 a 1964 é falsa: a Carta de 1937 não tem a imunidade; ela voltou na Constituição de 1946 (art. 203).",
+    "correcao": "1) Trocar o gancho por: 'A Constituição de 1934 proibiu impostos sobre a profissão de escritor, jornalista ou professor. A regra sumiu em 1937, voltou em 1946 e só em 1964 esses rendimentos passaram de vez a pagar imposto de renda.' 2) Na explicação, trocar 'A proteção atravessou o Estado Novo e o pós-guerra; em 1947, uma lei ainda retirou da tributação...' por: 'A Carta do Estado Novo, de 1937, deixou a regra de fora, mas a Constituição de 1946 a retomou: nenhum imposto incidiria diretamente sobre direitos de autor nem sobre a remuneração de professores e jornalistas. Em 1947, uma lei retirou da tributação os rendimentos de professor, jornalista, escritor, pintor e escultor e os direitos autorais.' 3) Acrescentar a fonte https://www.planalto.gov.br/ccivil_03/constituicao/constituicao46.htm com o trecho do art. 203 ('Nenhum imposto gravará diretamente os direitos de autor, nem a remuneração de professores e jornalistas'; conferir a grafia exata, que pode ser 'impôsto' e 'professôres')."
+   },
+   {
+    "id": "contabilidade_brasileira-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Lei 4.783/1923, art. 17 do Código Comercial de 1850 e Decreto-lei 1.168/1939 conferem com o livro da Receita."
+   },
+   {
+    "id": "contabilidade_brasileira-0013",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o fim da CPMF em 2007 foi notícia de grande repercussão, e a 'surpresa' é só a regra de quórum de emenda constitucional."
+   },
+   {
+    "id": "contabilidade_brasileira-0014",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o IGF nunca regulamentado é tema recorrente no noticiário; a explicação ignora a decisão do STF de 2025 (ADO 55) e a fonte é fraca."
+   },
+   {
+    "id": "contabilidade_brasileira-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A historiografia e a Wikipedia pt dão 24% para outras nações e 16% para as mercadorias portuguesas (os ingleses pagavam menos que os portugueses); a fonte em inglês é fraca (tabaco e açúcar 'proibidos'); o compromisso sobre o tráfico estava no tratado de aliança do mesmo dia.",
+    "correcao": "1) Novo gancho: 'Em 1810, um tratado com a Inglaterra fez os produtos ingleses pagarem só 15% de imposto para entrar no Brasil, menos que os 16% cobrados dos produtos do próprio Portugal. Os de outros países pagavam 24%.' 2) Acrescentar a fonte https://pt.wikipedia.org/wiki/Tratados_de_1810, com trecho literal que inclua 'mantinha os 16% sobre as mercadorias portuguesas' e '24% sobre as mercadorias de outras origens' (copiar a frase exata do extrato) e, se possível, 'a tarifa cobrada dos ingleses era menor do que de Portugal'. 3) Na explicação, eliminar qualquer menção a 25%. Trocar 'proibia a venda de tabaco e açúcar do Brasil nos mercados britânicos' por 'não abriu o mercado britânico ao açúcar do Brasil, para proteger os produtores das Antilhas inglesas', ou remover a frase. Trocar 'Portugal também se comprometeu a limitar...' por 'Num tratado assinado no mesmo dia, Portugal também se comprometeu a limitar...'. 4) Opcional: mencionar a uniformização posterior em 15%, se a fonte em português sustentar."
+   }
+  ],
+  "2": [
+   {
+    "id": "contabilidade_brasileira-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque mínimo: tirado 'a fonte aponta que'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "contabilidade_brasileira-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sem generalização; Taubaté, Paraty e 1719 conferem."
+   },
+   {
+    "id": "contabilidade_brasileira-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Órgão com origens no fim do século XIII' e 'antepassado direto do Ministério da Fazenda' conferem."
+   },
+   {
+    "id": "contabilidade_brasileira-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Ajudou a derrubar o gabinete' e a comissão presidida pelo ministro conferem."
+   },
+   {
+    "id": "contabilidade_brasileira-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Art. 203 da Constituição de 1946 confere; a Carta de 1937 não tem a imunidade (conferida no planalto.gov.br)."
+   },
+   {
+    "id": "contabilidade_brasileira-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Núcleo confere com o verbete pt; retoque: saíram a anedota de 'policy' virando 'polícia' e o imposto de 8%, sem fonte sólida.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

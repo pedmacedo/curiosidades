@@ -1,0 +1,170 @@
+{
+ "lote": "2026-11-24-experimentos_psicologia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "experimentos_psicologia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'A origem econômica parecia explicar a outra metade' vem do resumo da Wikipedia e contradiz o corpo e o artigo: os controles (família, capacidade cognitiva, ambiente de casa) reduziram ainda mais a metade que sobrou.",
+    "correcao": "No gancho, troque 'Refeito em 2018 com amostra dez vezes maior, achou só metade do efeito; a origem econômica parecia explicar a outra metade.' por 'Refeito em 2018 com amostra dez vezes maior, achou metade do efeito, que encolheu ainda mais ao considerar a família.' Opcional: 'dez vezes maior' por 'mais de dez vezes maior'."
+   },
+   {
+    "id": "experimentos_psicologia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "23 laboratórios na análise (cerca de duas dezenas), 2.141 participantes, a replicação de Vohs com 36 laboratórios e 3.531 pessoas conferem; consenso_parcial adequado."
+   },
+   {
+    "id": "experimentos_psicologia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Estudo de 2010, TED, Ranehill 2015, declaração de Carney em 2016 e a revisão de 128 estudos conferem; não exagera nem o efeito nem o desmentido."
+   },
+   {
+    "id": "experimentos_psicologia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O medo condicionado aparece como resultado firme, mas Watson admitiu que não foi forte nem duradouro, e a releitura de Harris (1979) achou pouca evidência de fobia; 'com um dia de diferença' não diz de quem.",
+    "correcao": "1) Na explicação, depois de '...a um coelho, um cachorro e um casaco de pele.', insira: 'O próprio Watson admitiu que o medo não foi forte nem duradouro, e uma releitura de 1979 achou pouca evidência de uma fobia de verdade.' 2) Troque 'que nasceu com um dia de diferença e deixou o hospital' por 'que nasceu com um dia de diferença de Merritte e deixou o hospital'."
+   },
+   {
+    "id": "experimentos_psicologia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 24,8 pontos vêm de um recorte não identificado e exageram o efeito; Raudenbush diz 'mais de duas semanas'.",
+    "correcao": "1) Remova a frase 'Rosenthal chegou a afirmar ganhos de 24,8 pontos acima dos do grupo de controle.' (se quiser, use 'Rosenthal chegou a falar em ganhos grandes e duradouros.', sem número). 2) Troque 'quando os professores já conheciam os alunos havia duas semanas' por 'quando os professores já conheciam os alunos havia mais de duas semanas'."
+   },
+   {
+    "id": "experimentos_psicologia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O contexto histórico está generalizado: o conselho tradicional era evitar o colo para não mimar, e Bowlby discordava.",
+    "correcao": "No gancho, trocar 'Na época, achava-se que o contato físico fazia mal aos bebês.' por 'Na época, aconselhava-se evitar o colo para não mimar bebês.' Na explicação, trocar 'o contato físico com bebês era considerado prejudicial ao desenvolvimento, e essa visão levou a berçários esterilizados e sem contato pelo país.' por 'o conselho tradicional era limitar o contato físico com bebês para não mimá-los, e havia quem o considerasse prejudicial ao desenvolvimento, visão que levou a berçários esterilizados e sem contato nos EUA; o psiquiatra John Bowlby discordava.'"
+   },
+   {
+    "id": "experimentos_psicologia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Não se confirmou ao ser refeito' generaliza uma única replicação; os estudos seguintes tiveram resultados mistos.",
+    "correcao": "No gancho, trocar 'mas não se confirmou ao ser refeito.' por 'mas falhou ao ser refeito em 1996.'"
+   },
+   {
+    "id": "experimentos_psicologia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "O episódio dos 41 impostores só existe no relato de Rosenhan, que está sob acusação de fraude; o gancho o afirma como fato. Cahalan apontou 'aparentes' distorções.",
+    "correcao": "Trocar o gancho por: 'Após Rosenhan relatar que falsos pacientes enganaram 12 hospitais psiquiátricos, um hospital duvidou. Segundo ele, a equipe apontou 41 impostores em três meses, mas ele não tinha mandado nenhum.' Na explicação, trocar 'Dos 193 pacientes que chegaram' por 'Segundo o relato, dos 193 pacientes que chegaram' e trocar 'relatou dados inconsistentes e citações imprecisas ou inventadas' por 'apontou aparentes distorções, como dados inconsistentes e citações imprecisas ou inventadas'."
+   },
+   {
+    "id": "experimentos_psicologia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte diz 'até cinco vezes mais chance de imitar', não que imitaram cinco vezes mais; a conclusão não é atribuída diretamente a Bandura.",
+    "correcao": "Na explicação, trocar 'imitaram a agressão até cinco vezes mais do que as que já conheciam o brinquedo' por 'tinham até cinco vezes mais chance de imitar a agressão do que as que já conheciam o brinquedo'. Trocar também 'A leitura de Bandura:' por 'A leitura do estudo:'."
+   },
+   {
+    "id": "experimentos_psicologia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho dá a entender que o efeito de 1 contra 20 dólares falhou; a replicação de 2024 testou uma variante (redação e escolha), e a hipótese que falhou foi a da escolha.",
+    "correcao": "Trocar o gancho por: 'Em 1959, quem ganhou 1 dólar para dizer que uma tarefa chata era divertida passou a gostar mais dela que quem ganhou 20. Em 2024, 39 laboratórios refizeram uma variante desse tipo de teste, e a previsão central falhou.'"
+   },
+   {
+    "id": "experimentos_psicologia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Na biologia do câncer, 50 de 193 foram os experimentos EXECUTADOS, não os que deram o mesmo resultado; o gancho sugere que a metade do tamanho vale só para os 36%.",
+    "correcao": "(a) Gancho: trocar por 'Em 2015, cientistas refizeram 100 estudos de três das principais revistas de psicologia. Dos 97 que tinham achado um efeito, só 36% o acharam de novo, e no geral os efeitos medidos caíram à metade.' (b) Explicação: apagar a frase 'De fato, em 2021 a versão do projeto para biologia do câncer só conseguiu repetir 50 de 193 experimentos de 53 artigos de destaque, e os efeitos encontrados foram, em média, 85% menores que os originais.' e tirar do trecho da fonte Reproducibility Project a parte 'In 2021, the project showed ... original findings.' (opção preferida)."
+   },
+   {
+    "id": "experimentos_psicologia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere (inclusive Bem como parecerista, confirmado por ele aos autores), mas 'Science Brevia' não é revista: é a seção Brevia da Science.",
+    "correcao": "Na explicação, trocar 'A própria revista de Bem, a Science Brevia e a Psychological Science recusaram o artigo por ser uma replicação.' por 'A própria revista de Bem, a seção Brevia da revista Science e a Psychological Science recusaram o artigo por ser uma replicação.'"
+   },
+   {
+    "id": "experimentos_psicologia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Doyen et al. 2012 (sensores infravermelhos, efeito só quando o aplicador esperava) e as frases de Kahneman conferem; consenso_parcial adequado."
+   },
+   {
+    "id": "experimentos_psicologia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Fiel a Maier e Seligman 2016 ('got it backward'); só a grafia 'ganía' está errada.",
+    "correcao": "Na explicação, trocar 'a maioria dos outros se deitava e ganía' por 'a maioria dos outros se deitava e gania'."
+   }
+  ],
+  "2": [
+   {
+    "id": "experimentos_psicologia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "experimentos_psicologia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "experimentos_psicologia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "experimentos_psicologia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "experimentos_psicologia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "experimentos_psicologia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "experimentos_psicologia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Até cinco vezes mais chance de imitar' e 'A leitura do estudo' aplicados; sem erro novo."
+   },
+   {
+    "id": "experimentos_psicologia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com 'uma variante desse tipo de teste' e 'previsão central'; números conferem."
+   },
+   {
+    "id": "experimentos_psicologia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho novo e biologia do câncer retirada do texto e do trecho; números conferem."
+   },
+   {
+    "id": "experimentos_psicologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'A seção Brevia da revista Science' aplicado; o resto confere."
+   },
+   {
+    "id": "experimentos_psicologia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Grafia 'gania' corrigida; fiel a Maier e Seligman 2016."
+   }
+  ]
+ }
+}
