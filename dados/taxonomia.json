@@ -8,7 +8,7 @@
       {"id": "plantas", "nome": "Plantas", "descricao": "Fotossíntese, defesas químicas e a vida secreta das plantas", "vizinhos": ["domesticacao", "farmacos", "especiarias", "biomas_brasileiros"]},
       {"id": "fungos", "nome": "Fungos", "descricao": "Cogumelos, bolores, liquens e redes subterrâneas", "vizinhos": ["fermentacao", "farmacos", "alimentos_perigosos"]},
       {"id": "evolucao", "nome": "Evolução", "descricao": "Seleção natural, adaptações e becos sem saída da evolução", "vizinhos": ["paleontologia", "pre_historia", "teoria_jogos"]},
-      {"id": "genetica", "nome": "Genética", "descricao": "DNA, genes, herança e o que o genoma revela", "vizinhos": ["desenvolvimento_humano", "domesticacao", "pre_historia", "sistema_imunologico"]},
+      {"id": "genetica", "nome": "Genética", "descricao": "DNA, genes, herança e o que o genoma revela", "vizinhos": ["desenvolvimento_humano", "domesticacao", "pre_historia", "sistema_imunologico", "gravidez"]},
       {"id": "comportamento_animal", "nome": "Comportamento animal", "descricao": "Inteligência, comunicação e estratégias dos animais", "vizinhos": ["emocoes", "aprendizagem_inteligencia", "psicologia_social", "eletromagnetismo"]},
       {"id": "ecologia", "nome": "Ecologia", "descricao": "Ecossistemas, simbioses, parasitas e cadeias alimentares", "vizinhos": ["mudancas_climaticas", "biomas_brasileiros", "teoria_jogos", "microbioma"]}
     ]},
@@ -21,6 +21,7 @@
       {"id": "historia_medicina", "nome": "História da medicina", "descricao": "Descobertas, tratamentos estranhos e médicos pioneiros", "vizinhos": ["revolucao_cientifica", "mundo_islamico_medieval", "egito_antigo", "personagens_esquecidos"]},
       {"id": "farmacos", "nome": "Remédios e venenos", "descricao": "Farmacologia, toxinas e a linha fina entre cura e veneno", "vizinhos": ["plantas", "fungos", "quimica_cotidiano", "alimentos_perigosos"]},
       {"id": "desenvolvimento_humano", "nome": "Desenvolvimento humano", "descricao": "Do embrião à velhice: crescer e envelhecer", "vizinhos": ["genetica", "evolucao", "aprendizagem_inteligencia"]},
+      {"id": "gravidez", "nome": "Gravidez humana", "descricao": "Da concepção ao parto: o que acontece com a mãe e com o bebê", "vizinhos": ["genetica", "evolucao", "costumes_rituais"]},
       {"id": "sono_ritmos", "nome": "Sono e relógio biológico", "descricao": "Sono, sonhos e ritmos circadianos", "vizinhos": ["memoria", "consciencia", "exploracao_espacial"]},
       {"id": "corpo_extremo", "nome": "Corpo em condições extremas", "descricao": "Altitude, frio, calor, mergulho profundo e espaço", "vizinhos": ["exploracao_espacial", "limites_humanos", "animais_extremos", "termodinamica"]}
     ]},
@@ -119,7 +120,8 @@
       {"id": "biomas_brasileiros", "nome": "Biomas brasileiros", "descricao": "Cerrado, Pantanal, Caatinga, Mata Atlântica e Pampa", "vizinhos": ["ecologia", "plantas", "paisagens_extremas"]},
       {"id": "cultura_popular", "nome": "Cultura popular brasileira", "descricao": "Festas, folclore e costumes do Brasil", "vizinhos": ["costumes_rituais", "mitologia", "teatro_danca", "comida_brasileira"]},
       {"id": "musica_brasileira", "nome": "Música brasileira", "descricao": "Ritmos, instrumentos e histórias da música do Brasil", "vizinhos": ["historia_musica", "musica_ciencia"]},
-      {"id": "ciencia_brasileira", "nome": "Ciência brasileira", "descricao": "Cientistas, inventores e descobertas brasileiras", "vizinhos": ["invencoes", "transportes", "doencas_infecciosas"]}
+      {"id": "ciencia_brasileira", "nome": "Ciência brasileira", "descricao": "Cientistas, inventores e descobertas brasileiras", "vizinhos": ["invencoes", "transportes", "doencas_infecciosas"]},
+      {"id": "contabilidade_brasileira", "nome": "Contabilidade brasileira", "descricao": "Impostos, escrituração e a história das contas no Brasil", "vizinhos": ["dinheiro", "economia_curiosa", "historia_matematica"]}
     ]},
     {"id": "linguas", "nome": "Línguas e palavras", "temas": [
       {"id": "palavras_portugues", "nome": "Palavras do português", "descricao": "De onde vêm palavras do nosso dia a dia", "vizinhos": ["roma_antiga", "costumes_rituais"]},
@@ -146,7 +148,7 @@
       {"id": "pigmentos", "nome": "Pigmentos e cores da arte", "descricao": "De onde vieram as tintas e cores usadas pelos artistas", "vizinhos": ["elementos_quimicos", "minerais_rochas", "luz_cores", "insetos", "moda"]}
     ]},
     {"id": "sociedade", "nome": "Sociedade, costumes e economia", "temas": [
-      {"id": "dinheiro", "nome": "Dinheiro", "descricao": "Moedas, cédulas e a história do dinheiro", "vizinhos": ["primeiras_civilizacoes", "africa_antiga", "decisoes_economia"]},
+      {"id": "dinheiro", "nome": "Dinheiro", "descricao": "Moedas, cédulas e a história do dinheiro", "vizinhos": ["primeiras_civilizacoes", "africa_antiga", "decisoes_economia", "contabilidade_brasileira"]},
       {"id": "economia_curiosa", "nome": "Economia curiosa", "descricao": "Bolhas, hiperinflações e episódios econômicos estranhos", "vizinhos": ["decisoes_economia", "brasil_republica", "probabilidade"]},
       {"id": "costumes_rituais", "nome": "Costumes e rituais", "descricao": "Costumes, rituais e etiquetas pelo mundo", "vizinhos": ["cultura_popular", "heranca_africana", "expressoes", "historia_pratos", "esportes_tradicionais"]},
       {"id": "leis_julgamentos", "nome": "Leis e julgamentos", "descricao": "Leis curiosas, julgamentos famosos e a origem de regras", "vizinhos": ["roma_antiga", "probabilidade", "europa_medieval", "memoria", "crimes_arte"]},

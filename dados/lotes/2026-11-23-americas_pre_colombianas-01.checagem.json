@@ -1,0 +1,341 @@
+{
+ "arquivo": "dados\\lotes\\2026-11-23-americas_pre_colombianas-01.jsonl",
+ "gerado_em": "2026-11-24",
+ "limiar": 0.9,
+ "resumo": {
+  "ok": 15,
+  "aproximado": 0,
+  "falhou": 0,
+  "com_aviso_numero": 0
+ },
+ "fatos": [
+  {
+   "id": "americas_pre_colombianas-0001",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://www.cambridge.org/core/journals/antiquity/article/running-out-of-empty-space-environmental-lidar-and-the-crowded-ancient-landscape-of-campeche-mexico/FFDB435047017853F26CFC5D8804B08D",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_cambridge_org_core_journals_antiquity_article_running_out_of_empty_space_env__94e38fbaa1__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    },
+    {
+     "url": "https://www.sciencedaily.com/releases/2024/10/241029121056.htm",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_sciencedaily_com_releases_2024_10_241029121056_htm__95ecfa6911__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0002",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chasqui",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Chasqui__70cb1a3978__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Inca_road_system",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Inca_road_system__a1811afcb3__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0003",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Machu_Picchu",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Machu_Picchu__d12de947ce__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0004",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cahokia",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Cahokia__92b34f092f__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0005",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Caral",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Caral__d73635977b__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Norte_Chico_civilization",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Norte_Chico_civilization__b8356078ce__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0006",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://news.miami.edu/stories/2018/06/holes-in-the-head.html",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\news_miami_edu_stories_2018_06_holes_in_the_head_html__3b1be9978f__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0007",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://www.nature.com/articles/s41586-021-03972-8",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_nature_com_articles_s41586_021_03972_8__2b11693edd__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_L_Anse_aux_Meadows__6bfcfa17a0__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0008",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chinchorro_mummies",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Chinchorro_mummies__df529231f9__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://whc.unesco.org/en/list/1634/",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\whc_unesco_org_en_list_1634__c237d9e513__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://revistapesquisa.fapesp.br/en/worlds-oldest-mummies-found-in-asia/",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\revistapesquisa_fapesp_br_en_worlds_oldest_mummies_found_in_asia__6d1575dbe0__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0009",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chu%C3%B1o",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Chu_o__324c35103a__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Waru_Waru",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Waru_Waru__9f3b32c562__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0010",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11459208/fullTextXML",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_ebi_ac_uk_europepmc_webservices_rest_PMC11459208_fullTextXML__8a8761936e__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nazca_Lines",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Nazca_Lines__5ef12534c1__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0011",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Maya_blue",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Maya_blue__52ea02e24e__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0012",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://ich.unesco.org/en/RL/knowledge-skills-and-rituals-related-to-the-annual-renewal-of-the-qeswachaka-bridge-00594",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\ich_unesco_org_en_RL_knowledge_skills_and_rituals_related_to_the_annual_renewal___1054165074__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Q%27eswachaka",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Q_eswachaka__d20e94a49b__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0013",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Teotihuacan",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Teotihuacan__d07f3ac669__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0014",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aztecs",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Aztecs__758cd79741__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "americas_pre_colombianas-0015",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chinampa",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Chinampa__63e2c8b066__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Waru_Waru",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Waru_Waru__9f3b32c562__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  }
+ ]
+}

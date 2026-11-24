@@ -1,0 +1,162 @@
+{
+ "lote": "2026-11-19-agua_doce_gelo-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "agua_doce_gelo-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Missoula floods e J Harlen Bretz; 'até dez vezes' coerente com estimativas revisadas."
+   },
+   {
+    "id": "agua_doce_gelo-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho fala no presente de um lago que 'foi' o 4º maior; os 10% são de 2007, pós-URSS; 'secou de vez' exagera.",
+    "correcao": "1) Gancho: 'O mar de Aral, que já foi o 4º maior lago do mundo, encolheu a 10% do tamanho depois que a URSS desviou seus rios para o algodão. Técnicos previam isso em 1964. E cronistas dizem que ele já sumira em 1417.' 2) Explicação: 'e em 2014 a bacia leste secou de vez' → 'e em 2014 a bacia leste secou por completo, pela primeira vez na história moderna'."
+   },
+   {
+    "id": "agua_doce_gelo-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Glacial surge e Glacier."
+   },
+   {
+    "id": "agua_doce_gelo-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Por isso não congela' é inferência mais forte que a fonte; 'respiram sulfato usando o ferro' inverte os papéis e tira o 'may'.",
+    "correcao": "1) 'e a salmoura que sobra ficou de duas a três vezes mais salgada que o oceano, por isso não congela.' → 'e a salmoura que sobra ficou de duas a três vezes mais salgada que o oceano; o sal provavelmente ajuda a mantê-la líquida mesmo abaixo de zero.' 2) 'Uma explicação é que eles respiram sulfato usando o ferro, um processo nunca antes visto na natureza.' → 'Uma explicação possível é que eles usem o sulfato para \"respirar\" ferro em vez de oxigênio, um processo nunca antes visto na natureza.'"
+   },
+   {
+    "id": "agua_doce_gelo-0005",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "duplicado: o azul pela absorção do vermelho (vibração O-H) já está aprovado em fisica_quimica (a água é azul por conta própria); o resto é pouco para um fato próprio."
+   },
+   {
+    "id": "agua_doce_gelo-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Contradição interna ('a maioria acaba no oceano' x 'quase tudo pode ser recuperado'); o ponto da fonte é a ausência do viés de quem acha.",
+    "correcao": "'mas lá, onde quase tudo o que cai pode ser recuperado, eles são só 0,4% dos achados.' → 'mas na Antártida, onde a busca é sistemática e não depende de alguém estranhar uma pedra, eles são só 0,4% dos achados.'"
+   },
+   {
+    "id": "agua_doce_gelo-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Subglacial lake e Lake Whillans."
+   },
+   {
+    "id": "agua_doce_gelo-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A calibração vai até 52.800 anos atrás (não são 52.800 lâminas contadas); varvas também se formam no mar (Santa Barbara), segundo a própria fonte.",
+    "correcao": "1) Gancho: 'e a sequência contada cobre 52.800 anos.' → 'e essa sequência permitiu calibrá-lo até 52.800 anos atrás.' 2) Apagar 'Elas só se formam em água doce ou salobra, porque no mar o sal faz a argila se juntar em grãos grossos o ano inteiro.' 3) 'estenderam a calibração para 52.800 anos' → 'estenderam a calibração até 52.800 anos atrás'."
+   },
+   {
+    "id": "agua_doce_gelo-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Yellow River; sem duplicata."
+   },
+   {
+    "id": "agua_doce_gelo-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Ficou selado até 1996' engana: o Grímsvötn solta jökulhlaups com frequência (1934, 1938, 1954...).",
+    "correcao": "'O lago Grímsvötn, sob o Vatnajökull, ficou selado até 1996, quando a erupção de Gjálp derreteu gelo demais e ergueu a barragem.' → 'O lago Grímsvötn, sob o Vatnajökull, solta enchentes com frequência; em 1996, a erupção de Gjálp derreteu tanto gelo que chegou a erguer a barragem de gelo do lago.'"
+   },
+   {
+    "id": "agua_doce_gelo-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Causalidade inventada: a fonte não diz que o sangue extra permite os 70 minutos.",
+    "correcao": "'e tem dois litros de sangue a mais que outras focas do seu tamanho, o que lhe permite ficar até 70 minutos debaixo d'água quando foge de perigo.' → 'e tem dois litros de sangue a mais que outras focas do seu tamanho; assustada ou fugindo de perigo, aguenta até 70 minutos debaixo d'água.'"
+   },
+   {
+    "id": "agua_doce_gelo-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Casiquiare canal; mecanismo diferente do 0016, os dois ficam."
+   },
+   {
+    "id": "agua_doce_gelo-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho diz 'até 5 m', mas a fonte diz 'over 5 metres'.",
+    "correcao": "Gancho: 'campos de lâminas de até 5 m de altura' → 'campos de lâminas que podem passar de 5 m de altura'."
+   },
+   {
+    "id": "agua_doce_gelo-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Lake Peigneur; mecanismo claro."
+   },
+   {
+    "id": "agua_doce_gelo-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A explicação do sol derretendo um lado é contradita pelo estudo de 2020 (Hotaling, Bartholomaus e Gilbert): a direção não acompanha a radiação solar.",
+    "correcao": "Remover a frase 'Uma explicação proposta, a partir de bolas que migravam para o sul no Alasca: ... e assim por diante.' Opcional: pôr 'Uma hipótese para o movimento de cada bola: ela faz sombra no gelo embaixo dela, que derrete mais devagar, fica empoleirada num pedestal de gelo e acaba rolando dele. Mas por que a manada inteira muda de direção junta continua sem explicação.' com a fonte https://news.climate.columbia.edu/2020/06/12/moss-balls-travel-herds-glaciers e o trecho 'As the rest of the ice melts around them, the moss ball is left elevated on a pedestal of ice' (conferido no checar). Sem a fonte nova, só remover."
+   },
+   {
+    "id": "agua_doce_gelo-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Danube Sinkhole; o mais forte dos dois casos de captura."
+   }
+  ],
+  "2": [
+   {
+    "id": "agua_doce_gelo-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Já foi o quarto maior'; 'pela primeira vez na história moderna'."
+   },
+   {
+    "id": "agua_doce_gelo-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Hesitações da fonte mantidas."
+   },
+   {
+    "id": "agua_doce_gelo-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Contradição resolvida; viés de recuperação."
+   },
+   {
+    "id": "agua_doce_gelo-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Até 52.800 anos atrás'; frase falsa sobre o mar retirada."
+   },
+   {
+    "id": "agua_doce_gelo-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Grímsvötn corrigido; o pico de 500.000 m³/s (inflado ~10x na Wikipedia) saiu como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "agua_doce_gelo-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem causalidade inventada."
+   },
+   {
+    "id": "agua_doce_gelo-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Podem passar de 5 m'."
+   },
+   {
+    "id": "agua_doce_gelo-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hipótese do pedestal com fonte da Columbia; enigma da direção mantido."
+   }
+  ]
+ }
+}

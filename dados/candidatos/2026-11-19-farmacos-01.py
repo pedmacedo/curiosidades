@@ -1,0 +1,586 @@
+LOTE = "2026-11-19-farmacos-01"
+AREA = "corpo_medicina"
+TEMA = "farmacos"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 varfarina: do trevo podre ao veneno de rato e ao remédio
+    {
+        "temas_secundarios": ["plantas", "historia_medicina"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "A varfarina, anticoagulante usado até hoje, foi lançada como veneno de rato. Ela descende de uma substância do feno de trevo-doce mofado, que fazia o gado sangrar até a morte nos EUA e no Canadá dos anos 1920.",
+        "explicacao": (
+            "No começo dos anos 1920, uma doença nova apareceu no gado do norte dos EUA e do Canadá: os animais "
+            "sangravam depois de pequenos procedimentos, como a retirada dos chifres, e às vezes sem motivo algum. "
+            "Em 1921, o veterinário canadense Frank Schofield ligou o problema ao trevo-doce estragado: um coelho "
+            "alimentado com os talos danificados morreu de hemorragia, e outro, que comeu os talos bons do mesmo "
+            "monte de feno, continuou saudável. Um fazendeiro chegou a levar à Universidade de Wisconsin uma vaca "
+            "morta e um latão de leite cheio de sangue que não coagulava. No laboratório de Karl Paul Link, foram "
+            "anos de trabalho até identificar o culpado, o dicumarol, em 1940. Link continuou criando compostos "
+            "parecidos e mais potentes, agora pensados como raticidas, e daí saiu a varfarina, em 1948. O nome junta "
+            "a sigla da fundação que bancou a pesquisa, WARF, à terminação de \"cumarina\". Depois que um recruta da "
+            "Marinha dos EUA ingeriu o raticida em 1951 e se recuperou com vitamina K, começaram os estudos do uso "
+            "médico. A varfarina foi aprovada para humanos em 1954, e em 1955 o presidente Dwight Eisenhower passou "
+            "a tomá-la depois de um infarto."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Warfarin",
+                "In the early 1920s, an outbreak of a previously unrecognized cattle disease occurred in the northern United States and Canada. "
+                "Cattle were haemorrhaging after minor procedures, and on some occasions spontaneously. [...] "
+                "In 1921, Frank Schofield, a Canadian veterinary pathologist, determined that the cattle were ingesting moldy silage made from sweet clover, and that this was functioning as a potent anticoagulant. [...] "
+                "Schofield separated good clover stalks and damaged clover stalks from the same hay mow, and fed each to a different rabbit. "
+                "The rabbit that had ingested the good stalks remained well, but the rabbit that had ingested the damaged stalks died from a haemorrhagic illness. [...] "
+                "In 1933, Karl Paul Link and his laboratory of chemists working at the University of Wisconsin set out to isolate and characterize the haemorrhagic agent from the spoiled hay. [...] "
+                "which they later named dicoumarol. They confirmed their results by synthesizing dicoumarol and proving in 1940 that it was identical to the naturally occurring agent. [...] "
+                "Karl Link continued working on developing more potent coumarin-based anticoagulants for use as rodent poisons, resulting in warfarin in 1948. "
+                "The name \"warfarin\" stems from the acronym WARF, for Wisconsin Alumni Research Foundation, with the ending \"-arin\" indicating its link with coumarin. [...] "
+                "After an incident in 1951, in which a U.S. Navy inductee attempted suicide with multiple doses of warfarin in rodenticide, but recovered fully after presenting to a naval hospital and being treated with vitamin K (by then known as a specific antidote), studies began in the use of warfarin as a therapeutic anticoagulant. "
+                "It was found to be generally superior to dicoumarol, and in 1954 it was approved for medical use in humans. "
+                "An early recipient of warfarin was U.S. President Dwight D. Eisenhower, who was prescribed the drug after having a heart attack in 1955.",
+                nome="Warfarin"),
+            wiki("Dicoumarol",
+                "Dicoumarol was isolated by Karl Link's laboratory at University of Wisconsin, six years after a farmer had brought a dead cow and a milk can full of uncoagulated blood to an agricultural extension station of the university.",
+                nome="Dicoumarol"),
+        ],
+    },
+    # 2 captopril e o veneno da jararaca
+    {
+        "temas_secundarios": ["ciencia_brasileira", "historia_medicina"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "O captopril, remédio contra pressão alta, foi inspirado numa molécula do veneno da jararaca. A pista veio de cientistas brasileiros que estudavam como o veneno da cobra derruba a pressão de suas vítimas.",
+        "explicacao": (
+            "Em 1948, no Instituto Biológico de São Paulo, Maurício Rocha e Silva e dois colegas acrescentaram veneno "
+            "de jararaca, trazido do Instituto Butantan, ao plasma de animais e descobriram a bradicinina, substância "
+            "com forte efeito de baixar a pressão. Sérgio Henrique Ferreira, que aprendeu farmacologia com Rocha e "
+            "Silva, encontrou no mesmo veneno uma família de peptídeos que potencializava a bradicinina, batizada de "
+            "fator potenciador da bradicinina. No fim dos anos 1960, Ferreira levou amostras do veneno ao laboratório "
+            "de John Vane, na Inglaterra. A equipe viu que um dos peptídeos inibia a enzima conversora de "
+            "angiotensina, a ECA, e nos anos 1970 ficou claro que essa enzima eleva a pressão. Faz sentido: o veneno "
+            "age derrubando a pressão de quem é picado. Na empresa americana Squibb, Miguel Ondetti, Bernard Rubin e "
+            "David Cushman sintetizaram em 1975 uma molécula análoga ao peptídeo: o captopril, primeiro inibidor da "
+            "ECA. Foi um dos primeiros sucessos do desenho de remédios a partir da estrutura das moléculas, e dele "
+            "descende toda a classe dos inibidores da ECA, usados contra hipertensão e alguns tipos de insuficiência "
+            "cardíaca."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Captopril",
+                "In the late 1960s, John Vane of the Royal College of Surgeons of England was working on mechanisms by which the body regulates blood pressure. "
+                "He was joined by Sérgio Henrique Ferreira of Brazil, who had been studying the venom of a Brazilian pit viper, the jararaca (Bothrops jararaca), and brought a sample of the viper's venom. "
+                "Vane's team found that one of the venom's peptides selectively inhibited the action of angiotensin-converting enzyme (ACE), which was thought to function in blood pressure regulation; "
+                "the snake venom functions by severely depressing blood pressure. "
+                "During the 1970s, ACE was found to elevate blood pressure by controlling the release of water and salts from the kidneys. "
+                "Captopril, an analog of the snake venom's ACE-inhibiting peptide, was first synthesized in 1975 by three researchers at the U.S. drug company E.R. Squibb & Sons Pharmaceuticals (now Bristol-Myers Squibb): Miguel Ondetti, Bernard Rubin, and David Cushman. [...] "
+                "It was the first ACE inhibitor developed [...] "
+                "The development of captopril was among the earliest successes of the revolutionary concept of structure-based drug design.",
+                nome="Captopril"),
+            wiki("Bradykinin",
+                "Bradykinin was discovered in 1948 by three Brazilian physiologists and pharmacologists working at the Biological Institute, in São Paulo, Brazil, led by Dr. Maurício Rocha e Silva. "
+                "Together with colleagues Wilson Teixeira Beraldo and Gastão Rosenfeld, they discovered the powerful hypotensive effects of bradykinin in animal preparations. "
+                "Bradykinin was detected in the blood plasma of animals after the addition of venom extracted from the Bothrops jararaca (Brazilian lancehead snake), brought by Rosenfeld from the Butantan Institute.",
+                nome="Bradykinin"),
+            wiki("Sérgio_Henrique_Ferreira",
+                "His research training in pharmacology initiated in this Department with Prof. Maurício Rocha e Silva, the discoverer of bradykinin. "
+                "While working on this subject, he discovered a family of peptides present in the venom of a Brazilian snake, Bothrops jararaca, which inhibited kininase activity and strongly potentiated the effects of bradykinin in vivo and in vitro. "
+                "This factor was named bradykinin potentiating factor, BPF.",
+                nome="Sérgio Henrique Ferreira"),
+            wiki("Bothrops_jararaca",
+                "The drugs known as angiotensin converting enzyme (ACE) inhibitors, used for the treatment of hypertension and some types of congestive heart failure, were developed from a peptide found in the venom of this species",
+                nome="Bothrops jararaca"),
+        ],
+    },
+    # 3 exenatida: o veneno do monstro-de-gila e os remédios de GLP-1
+    {
+        "temas_secundarios": ["animais_extremos", "historia_medicina"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "A classe de remédios contra diabetes e obesidade que imita o hormônio GLP-1 começou com o veneno de um lagarto: o monstro-de-gila, dos EUA e do México. A primeira droga, de 2005, era a cópia de uma molécula dele.",
+        "explicacao": (
+            "No começo dos anos 1980, Jean-Pierre Raufman trabalhava nos Institutos Nacionais de Saúde dos EUA com "
+            "John Pisano, um bioquímico que colecionava venenos de animais em busca de substâncias com efeito no "
+            "corpo humano. Curioso com um lagarto que passa muito tempo sem comer, Raufman estudou o monstro-de-gila "
+            "e achou na saliva moléculas que inflamavam o pâncreas de animais de laboratório. O endocrinologista John "
+            "Eng assistiu a uma palestra dele e, em 1992, isolou do veneno uma substância nova, a exendina-4. Em "
+            "camundongos diabéticos, ela baixava a glicose e o efeito durava várias horas. Esse era o pulo do gato: "
+            "o hormônio humano GLP-1 tem vida tão curta no sangue que as tentativas de transformá-lo em remédio "
+            "tinham fracassado. O empregador de Eng não quis patentear a molécula, então ele mesmo pediu a patente, "
+            "em 1993, e passou três anos sem convencer a indústria. Em 1996, a Amylin licenciou a descoberta e criou "
+            "uma versão sintética, a exenatida, aprovada nos EUA em 2005. O sucesso provou que mirar o receptor de "
+            "GLP-1 funcionava e levou outras empresas a investir nessa classe, hoje usada contra diabetes tipo 2 e "
+            "obesidade."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("Exenatide",
+                "During the early 1980s, Jean-Pierre Raufman worked as a postdoctoral researcher at the National Institutes of Health for John Pisano, an \"eccentric biochemist\" who specialized in collecting venoms from various animals and looking for novel substances that could affect human physiology. "
+                "In the course of this work, Raufman focused on investigating the Gila monster because he was curious about how it only eats once or twice per year. "
+                "He discovered molecules in the monster's saliva \"that caused inflammation of the pancreas in test animals\". [...] "
+                "When Raufman gave a lecture about his findings, his research piqued the curiosity of John Eng [...] "
+                "In 1992, Eng used that technique to isolate a novel substance from Gila monster venom which he called exendin-4. "
+                "He tested exendin-4 on diabetic mice and discovered that it was not only effective for reducing blood glucose but was effective for several hours. "
+                "This was an enormously significant clinical finding, because it was GLP-1's extremely short half-life which had defeated earlier attempts to turn that substance into a drug. [...] "
+                "Eng's employer, the U.S. Department of Veterans Affairs, turned out to have no interest in obtaining a drug patent on exendin-4, so Eng filed the patent application himself in 1993. "
+                "He then spent three years on fruitless efforts to persuade the pharmaceutical industry to develop exendin-4 into a drug. [...] "
+                "At a 1996 American Diabetes Association conference in San Francisco, Eng finally caught the attention of scientist Andrew Young of Amylin Pharmaceuticals, who immediately recognized exendin-4's potential and arranged for his company to license Eng's patent. [...] "
+                "Amylin went on to create exenatide, a synthetic version of exendin-4 [...] "
+                "Exenatide was approved by the FDA in April 2005 [...] "
+                "This was a landmark event which proved that targeting the GLP-1 receptor was a viable strategy and inspired other pharmaceutical companies to focus their research and development on that receptor.",
+                nome="Exenatide"),
+            wiki("Gila_monster",
+                "is a species of venomous lizard native to the Southwestern United States and the northwestern Mexican state of Sonora. [...] "
+                "The venom contains multiple peptides; one of these, exendin-4, formed the basis for the development of the GLP-1 receptor agonists, used to treat type 2 diabetes and obesity. [...] "
+                "They can store fat in their tails and therefore do not need to eat often.",
+                nome="Gila monster"),
+        ],
+    },
+    # 4 ziconotida: o analgésico do caramujo-cone
+    {
+        "temas_secundarios": ["vida_marinha", "historia_medicina"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Um analgésico para dores crônicas graves é a versão sintética de uma toxina de caramujo-cone, molusco marinho venenoso. A molécula foi descoberta por um rapaz que mal tinha saído do ensino médio.",
+        "explicacao": (
+            "Os venenos dos caramujos-cone têm milhares de substâncias químicas, e Baldomero Olivera começou a "
+            "investigá-los no fim dos anos 1960, inspirado pelos relatos dos efeitos mortais dessas toxinas que ouvia "
+            "na infância, nas Filipinas. Já professor de biologia na Universidade de Utah, nos EUA, ele trabalhava com "
+            "Michael McIntosh, que no começo dos anos 1980, quase recém-saído do ensino médio, descobriu a molécula "
+            "que daria origem à ziconotida, tirada da espécie Conus magus. A substância bloqueia um tipo de canal de "
+            "cálcio dos neurônios e, com isso, impede a liberação de mensageiros químicos da dor no cérebro e na "
+            "medula espinhal. Há um preço: tomada por boca ou na veia, ela causa efeitos colaterais fortes ou não "
+            "funciona, e por isso precisa ser infundida direto no líquido da coluna, por uma bomba. Foi aprovada nos "
+            "EUA em dezembro de 2004, com o nome Prialt, para dores graves que não cedem a outros tratamentos, "
+            "inclusive à morfina aplicada na coluna. Uma vantagem chamou atenção: mesmo em uso prolongado, ela não "
+            "parece causar tolerância nem sinais de dependência."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Ziconotide",
+                "Derived from Conus magus, a cone snail, it is the synthetic form of an ω-conotoxin peptide. "
+                "In December 2004 the US Food and Drug Administration (FDA) approved ziconotide when delivered as an infusion into the cerebrospinal fluid using an intrathecal pump system. [...] "
+                "Due to the profound side effects or lack of efficacy when delivered through more common routes, such as orally or intravenously, ziconotide must be administered intrathecally (i.e., directly into the spinal fluid). [...] "
+                "\"management of severe chronic pain in patients for whom intrathecal (IT) therapy is warranted and who are intolerant of or refractory to other treatment, such as systemic analgesics, adjunctive therapies or IT morphine\". [...] "
+                "the apparent lack of tolerance and other signs of dependence even after extended treatment [...] "
+                "Ziconotide acts as a selective N-type voltage-gated calcium channel blocker. "
+                "This action inhibits the release of pro-nociceptive neurochemicals like glutamate, calcitonin gene-related peptide (CGRP), and substance P in the brain and spinal cord, resulting in pain relief. [...] "
+                "Scientists have been intrigued by the effects of the thousands of chemicals in marine snail toxins since the initial investigations in the late 1960s by Baldomero Olivera. "
+                "Olivera, now a professor of biology in the University of Utah, was inspired by accounts of the deadly effects of these toxins from his childhood in the Philippines. "
+                "Ziconotide was discovered in the early 1980s by University of Utah research scientist Michael McIntosh, when he was barely out of high school and working with Baldomero Olivera. [...] "
+                "It was approved for sale under the name Prialt by the U.S. Food and Drug Administration on December 28, 2004",
+                nome="Ziconotide"),
+        ],
+    },
+    # 5 toxina botulínica: o veneno da salsicha
+    {
+        "temas_secundarios": ["alimentos_perigosos", "microbiologia"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "A toxina do Botox deve o nome ao latim \"botulus\", salsicha: era o \"veneno da salsicha\" alemão. O médico que a descreveu, entre 1817 e 1822, já sugeria usá-la como remédio para nervos hiperativos.",
+        "explicacao": (
+            "No sul da Alemanha, as intoxicações por salsicha eram tantas que, em 1802, as autoridades de "
+            "Württemberg alertaram a população contra as salsichas de sangue defumadas. Entre 1817 e 1822, o médico "
+            "Justinus Kerner publicou a primeira descrição completa da doença, com base em pacientes e em "
+            "experimentos com animais. Concluiu que o veneno surgia em salsichas estragadas, sem ar, que agia sobre "
+            "o sistema nervoso e que matava mesmo em pequenas quantidades. E levantou a hipótese de que ele poderia "
+            "tratar doenças causadas por um sistema nervoso hiperativo. Em 1870, outro médico alemão batizou a doença "
+            "de botulismo, e em 1895 o belga Émile van Ermengem achou a bactéria que produz a toxina. A ideia de "
+            "Kerner só se concretizou no século XX. A toxina bloqueia a liberação de acetilcolina, o mensageiro "
+            "químico que os nervos usam para comandar os músculos. O oftalmologista Alan Scott testou a toxina em "
+            "músculos dos olhos de macacos e, em 1977, injetou os primeiros pacientes com estrabismo. Chamou o remédio "
+            "de Oculinum, \"alinhador de olhos\". Em 1989, a empresa dele, já comprada pela Allergan, foi aprovada nos "
+            "EUA, e a Allergan passou a usar a marca Botox. O efeito contra rugas foi descrito naquele mesmo ano."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Botulinum_toxin",
+                "Additional cases of fatal food poisoning in Württemberg led the authorities to issue a public warning against consuming smoked blood sausages in 1802 and to collect case reports of \"sausage poisoning\". "
+                "Between 1817 and 1822, the German physician Justinus Kerner published the first complete description of the symptoms of botulism, based on extensive clinical observations and animal experiments. "
+                "He concluded that the toxin develops in bad sausages under anaerobic conditions, is a biological substance, acts on the nervous system, and is lethal even in small amounts. "
+                "Kerner hypothesized that this \"sausage toxin\" could be used to treat a variety of diseases caused by an overactive nervous system, making him the first to suggest that it could be used therapeutically. "
+                "In 1870, the German physician John Müller coined the term botulism to describe the disease caused by sausage poisoning, from the Latin word botulus, meaning 'sausage'. "
+                "In 1895, Émile van Ermengem, a Belgian microbiologist, discovered what is now known as Clostridium botulinum and confirmed that a toxin produced by the bacteria causes botulism. [...] "
+                "The mechanism of botulinum toxin action – blocking the release of the neurotransmitter acetylcholine from nerve endings – was elucidated in the mid-20th century [...] "
+                "Alan B. Scott and colleagues injected botulinum toxin into monkey extraocular muscles. [...] "
+                "He injected the first strabismus patients in 1977, reported its clinical utility in 1980, and had soon trained hundreds of ophthalmologists in EMG-guided injection of the drug he named Oculinum (\"eye aligner\"). [...] "
+                "Oculinum Inc (which was soon acquired by Allergan) received FDA approval in 1989 to market Oculinum for clinical use in the United States to treat adult strabismus (crossed eyes) and blepharospasm (uncontrollable blinking). "
+                "Allergan then began using the trademark Botox. [...] "
+                "was the first report on the specific treatment of wrinkles and was published in the journal Plastic and Reconstructive Surgery in 1989.",
+                nome="Botulinum toxin"),
+        ],
+    },
+    # 6 dedaleira: a "Mãe Hutton" é invenção de propaganda
+    {
+        "temas_secundarios": ["plantas", "historia_medicina"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "A curandeira \"Mãe Hutton\", que teria ensinado ao médico William Withering o uso da dedaleira contra a insuficiência cardíaca, nunca existiu: ela foi criada em 1928 para a propaganda de um laboratório.",
+        "explicacao": (
+            "Em 1785, o médico e botânico inglês William Withering publicou um livro sobre a dedaleira, a planta "
+            "Digitalis, com relatos de testes clínicos e notas sobre seus efeitos e sua toxicidade. Ele vinha usando "
+            "a planta contra a hidropisia, o inchaço causado pela insuficiência cardíaca, e documentou 156 casos. A "
+            "obra é vista como o começo da terapêutica moderna, e dela descende a digoxina, usada até hoje para "
+            "fortalecer as batidas do coração e controlar o ritmo cardíaco. Muitos textos contam que ele aprendeu "
+            "tudo com \"Mother Hutton\", uma herbanária de Shropshire que usava a dedaleira numa mistura de mais de "
+            "20 ervas. Mas essa personagem surgiu em 1928, numa ilustração de William Meade Prince para uma campanha "
+            "publicitária da Parke-Davis, que vendia preparados de digitalis. Withering não menciona nenhuma Mother "
+            "Hutton nem diz ter encontrado uma velha. Ele conta que um colega lhe pediu opinião sobre a receita que "
+            "uma senhora guardava em segredo, e cita sete ocasiões em que a planta lhe foi indicada. Com o tempo, a "
+            "figura do anúncio virou, em livros e artigos, uma sábia passada para trás pelo médico, porque autores "
+            "copiaram e enfeitaram textos alheios sem voltar às fontes originais."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("William_Withering",
+                "In 1785, Withering published An Account of the Foxglove and some of its Medical Uses, which contained reports on clinical trials and notes on digitalis's effects and toxicity. [...] "
+                "Allegedly, Withering first learned of the use of digitalis in treating \"dropsy\" [...] from \"Mother Hutton\", an old woman who practised as a folk herbalist in Shropshire, who used the plant as part of a polyherbal formulation containing over 20 different ingredients to successfully treat this condition. "
+                "Withering deduced that digitalis was the active ingredient in the formulation, and  over the next ten years he carefully tried out different preparations of various parts of the plant (collected at different seasons) documenting 156 cases in which he had used digitalis [...] "
+                "In reality \"Mother Hutton\" was created in 1928 in an illustration by William Meade Prince as part of an advertising campaign by Parke-Davis, who marketed digitalis preparations. "
+                "There is no mention of a Mother Hutton in Withering's works or anyone else's and no mention of him meeting any old woman directly. "
+                "In his account he states that he was merely asked by a colleague to comment on what was originally an old woman's receipt or recipe (that she had long kept secret). "
+                "Since 1928, Mother Hutton's status has grown from being an image in an advertising poster to an acclaimed wise woman, herbalist, pharmacist, and medical practitioner in Shropshire who was cheated out of her true recognition by Dr. Withering's unscrupulous methods. [...] "
+                "The myth of Mother Hutton and how Withering chased her around Shropshire has been created by authors not going back to primary sources but instead copying and then embellishing the unreferenced work of others. [...] "
+                "In Withering's Account of the Foxglove, printed in 1785, Withering mentions seven different occasions when foxglove was brought to his attention.",
+                nome="William Withering"),
+            wiki("Digitalis",
+                "The use of D. purpurea extract containing cardiac glycosides for the treatment of heart conditions was first described in the English-speaking medical literature by William Withering, in 1785, which is considered the beginning of modern therapeutics. "
+                "In contemporary medicine, digitalis (usually digoxin) is obtained from D. lanata. "
+                "It is used to increase cardiac contractility (it is a positive inotrope) and as an antiarrhythmic agent to control the heart rate",
+                nome="Digitalis"),
+        ],
+    },
+    # 7 aspirina: vendida por décadas sem se saber como agia
+    {
+        "temas_secundarios": ["plantas", "quimica_cotidiano"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "A Bayer vendia aspirina no mundo todo desde 1899, mas só em 1971 se descobriu como ela age: bloqueando a produção de prostaglandinas. E o nome do remédio não vem do salgueiro, e sim de outra planta.",
+        "explicacao": (
+            "Remédios feitos de salgueiro e de outras plantas ricas em salicilatos já aparecem em tabuinhas de argila "
+            "da Suméria e no papiro egípcio de Ebers. Em 1763, o reverendo inglês Edward Stone relatou à Royal "
+            "Society que a casca de salgueiro em pó, cujo amargor lembrava o da casca de quina, funcionava tão bem "
+            "quanto ela e saía mais barata. O princípio ativo, o ácido salicílico, foi extraído em 1839 de outra "
+            "planta, a ulmária, chamada em alemão de Spirsäure, e esse nome serviu de base para batizar a Aspirin. Em "
+            "1897, a Bayer obteve o ácido acetilsalicílico numa forma pura e estável, feito atribuído a Felix Hoffmann "
+            "ou a Arthur Eichengrün, e em 1899 já o vendia no mundo todo. O mecanismo, porém, continuou um mistério "
+            "até 1971, quando o farmacologista britânico John Vane mostrou que a aspirina suprime a produção de "
+            "prostaglandinas e tromboxanos. Isso explicou como ela alivia a dor e a inflamação, e o efeito sobre os "
+            "tromboxanos ajudou a entender por que ela reduz a formação de coágulos, uso hoje comum na prevenção de "
+            "infartos e derrames. Vane dividiu o Nobel de Medicina de 1982 com Sune Bergström e Bengt Samuelsson."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Aspirin",
+                "Medicines made from willow and other salicylate-rich plants appear in clay tablets from ancient Sumer as well as the Ebers Papyrus from ancient Egypt. [...] "
+                "after the Rev Edward Stone of Chipping Norton, Oxfordshire, noticed that the bitter taste of willow bark resembled the taste of the bark of the cinchona tree, known as \"Peruvian bark\" [...] "
+                "Stone experimented with preparations of powdered willow bark on people in Chipping Norton for five years and found it to be as effective as Peruvian bark and a cheaper domestic version. "
+                "In 1763, he sent a report of his findings to the Royal Society in London. [...] "
+                "In 1897, scientists at the drug and dye firm Bayer began investigating acetylsalicylic acid as a less-irritating replacement for standard common salicylate medicines, and identified a new way to synthesize it. "
+                "That year, Felix Hoffmann (or Arthur Eichengrün) of Bayer was the first to produce acetylsalicylic acid in a pure, stable form. "
+                "Salicylic acid had been extracted in 1839 from the herb meadowsweet, whose German name, Spirsäure, was the basis for naming the newly synthesized drug, which, by 1899, Bayer was selling globally. [...] "
+                "clinical trials and other studies from the 1960s to the 1980s established aspirin's efficacy as an anti-clotting agent that reduces the risk of clotting diseases. [...] "
+                "remain strong in the 21st century with widespread use as a preventive treatment for heart attacks and strokes. [...] "
+                "In 1971, the British pharmacologist John Robert Vane, then employed by the Royal College of Surgeons in London, showed that aspirin suppressed the production of prostaglandins and thromboxanes. "
+                "For this discovery, he was awarded the 1982 Nobel Prize in Physiology or Medicine, jointly with Sune Bergström and Bengt Ingemar Samuelsson.",
+                nome="Aspirin"),
+            wiki("John_Vane",
+                "was a British pharmacologist who was instrumental in the understanding of how aspirin produces pain-relief and anti-inflammatory effects",
+                nome="John Vane"),
+        ],
+    },
+    # 8 Paracelso: a frase completa sobre a dose
+    {
+        "temas_secundarios": ["quimica_cotidiano", "revolucao_cientifica"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "\"A dose faz o veneno\" é um resumo. Em 1538, Paracelso escreveu que todas as coisas são veneno e nada existe sem veneno, e que só a dose faz com que uma coisa não seja veneno.",
+        "explicacao": (
+            "Paracelso, médico suíço do século XVI, é lembrado como o \"pai da toxicologia\". Na frase original, em "
+            "alemão, a ênfase está no lado oposto ao do provérbio: tudo é potencialmente tóxico, e é a dose que torna "
+            "uma substância inofensiva. Para ele, \"veneno\" não era necessariamente algo negativo, porque só a dose "
+            "decidia se uma substância envenenava. Ele chegou a teorizar que materiais venenosos em grande quantidade "
+            "podiam curar em pequena. A versão condensada, \"sola dosis facit venenum\" em latim, virou um princípio "
+            "básico da toxicologia: uma substância só produz seu efeito nocivo se chegar a um sistema sensível do "
+            "corpo numa concentração alta o bastante. Daí vem a constatação de que todas as substâncias químicas, até "
+            "a água e o oxigênio, podem ser tóxicas em excesso. A ideia sustenta os padrões de saúde pública que fixam "
+            "concentrações máximas de contaminantes na comida, na água de beber e no ambiente. E vale também no "
+            "sentido inverso: um veneno como a dedaleira pode ser remédio, na forma de digoxina, em doses pequenas e "
+            "controladas."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("The_dose_makes_the_poison",
+                "Alle Dinge sind Gift, und nichts ist ohne Gift; allein die Dosis macht, dass ein Ding kein Gift ist. "
+                "All things are poison, and nothing is without poison; the dosage alone makes it, so a thing is not a poison. [...] Paracelsus, 1538 [...] "
+                "This is often condensed to: \"The dose makes the poison\" or in Latin, \"Sola dosis facit venenum\". "
+                "It means that a substance can produce the harmful effect associated with its toxic properties only if it reaches a susceptible biological system within the body in a high enough concentration (i.e., dose). "
+                "The principle relies on the finding that all chemicals—even water and oxygen—can be toxic if too much is eaten, drunk, or absorbed. [...] "
+                "This finding also provides the basis for public health standards, which specify maximum acceptable concentrations of various contaminants in food, public drinking water, and the environment. "
+                "The idea also describes the phenomenon in which a poisonous substance, such as digitalis, can be medicinal (digoxin) in small, controlled, doses.",
+                nome="The dose makes the poison"),
+            wiki("Paracelsus",
+                "was a Swiss physician, alchemist, lay theologian, and philosopher of the German Renaissance. [...] "
+                "He is credited as the \"father of toxicology\". [...] "
+                "Paracelsus theorized that materials which are poisonous in large doses may be curative in small doses [...] "
+                "However, 'poisons' were not necessarily something negative, in part because related substances interacted, but also because only the dose determined if a substance was poisonous.",
+                nome="Paracelsus"),
+        ],
+    },
+    # 9 nocebo: os efeitos colaterais das estatinas e a pílula falsa
+    {
+        "temas_secundarios": ["experimentos_psicologia", "historia_medicina"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "Num estudo britânico, pessoas que tinham largado as estatinas por efeitos colaterais tomaram, sem saber, ora o remédio, ora pílulas falsas. Cerca de 90% dos sintomas apareceram também com a pílula falsa.",
+        "explicacao": (
+            "O estudo SAMSON, do Imperial College de Londres, recrutou 60 adultos que tinham parado havia pouco de "
+            "tomar estatinas, remédios que baixam o colesterol. Cada um recebeu 12 frascos, um para cada mês: quatro "
+            "com atorvastatina, quatro com placebo e quatro vazios, numa ordem sorteada por computador. Todos os "
+            "dias, durante um ano, os participantes registravam num aplicativo como se sentiam, de 0 (nenhum sintoma) "
+            "a 100 (o pior imaginável). A intensidade média foi de 16,3 nos meses de estatina, 15,4 nos de placebo e "
+            "apenas 8,0 nos meses sem comprimido. Os resultados saíram em 2020 no New England Journal of Medicine. "
+            "Para os pesquisadores, a maior parte daqueles sintomas vinha do efeito nocebo: a pessoa sente efeitos "
+            "ruins porque espera senti-los, e não pela ação do remédio. Depois de ver os próprios resultados, metade "
+            "dos participantes voltou a tomar estatinas. O fenômeno tem custo real: no Reino Unido, a publicidade de "
+            "2013 sobre supostos efeitos colaterais levou centenas de milhares de pacientes a abandonar o remédio, e "
+            "estimam-se cerca de 2.000 eventos cardiovasculares a mais nos anos seguintes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.bhf.org.uk/what-we-do/news-from-the-bhf/news-archive/2020/november/no-difference-in-side-effects-with-a-statin-or-dummy-pill",
+             "titulo": "No difference in side effects with a statin or dummy pill (British Heart Foundation)",
+             "idioma": "en",
+             "trecho": (
+                "Published: 15 November 2020 [...] "
+                "The findings are being presented at the American Heart Association Scientific Sessions and published in the New England Journal of Medicine (NEJM). "
+                "For the first time, a personalised clinical trial - the SAMSON trial - has found that 90 per cent of the symptoms people reported when they unknowingly took a daily statin were also experienced when they took a daily placebo pill. "
+                "Researchers at Imperial College London recruited 60 adults who had recently stopped taking their statins. [...] "
+                "The results suggest that these side effects are mostly caused by the nocebo effect - where people experience side effects from a therapy because of a negative association with it, rather than the actual biological effect of the drug. "
+                "After participants received an explanation of their results at the end of the study, half of them successfully restarted taking their statins [...] "
+                "Each patient was given a set of 12 bottles, one for each month. Four contained 20mg of atorvastatin, four contained a placebo tablet and four were empty. "
+                "A computer randomly allocated each bottle to a specific month. "
+                "Each day for a year, participants recorded whether they’d taken the pill and how they felt on a scale of 0 (no symptoms) to 100 (worst imaginable) using a smartphone app. [...] "
+                "Amongst the 60 patients, the average perceived symptom intensity score was 15.4 in the months taking the placebo and 16.3 in the statin months. "
+                "The intensity was much lower at 8.0 during the no-tablet months. "
+                "Statins reduce a person's risk of a heart attack or stroke by lowering the levels of ‘bad cholesterol’ in the blood."
+             )},
+            wiki("Nocebo",
+                "In the UK, publicity in 2013 about the apparent side effects caused hundreds of thousands of patients to stop taking statins, leading to an estimated 2,000 additional cardiovascular events in the subsequent years.",
+                nome="Nocebo"),
+        ],
+    },
+    # 10 lítio: porquinhos-da-índia numa despensa
+    {
+        "temas_secundarios": ["neurociencia", "historia_medicina"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "O primeiro remédio eficaz contra uma doença mental surgiu numa despensa: em 1948, um psiquiatra australiano injetava urina de pacientes em porquinhos-da-índia e notou que o lítio os acalmava.",
+        "explicacao": (
+            "John Cade foi prisioneiro de guerra dos japoneses e, no cativeiro, desconfiou que o comportamento "
+            "oscilante de alguns colegas viesse de uma toxina eliminada pela urina. De volta à Austrália, num hospital "
+            "psiquiátrico de Melbourne, fez experimentos rudimentares numa despensa desativada: sem equipamentos "
+            "sofisticados, injetava urina de pacientes no abdômen de porquinhos-da-índia. A urina de pacientes com "
+            "mania lhe pareceu mais tóxica, e ele foi testar o ácido úrico. Como esse ácido não se dissolve em água, "
+            "acrescentou lítio para formar urato de lítio. Nos controles, os animais que recebiam só carbonato de "
+            "lítio ficavam mais tranquilos, embora esse sossego talvez fosse efeito tóxico de uma dose excessiva. "
+            "Depois de tomar lítio ele mesmo, para checar a segurança, Cade o testou em pacientes com mania e publicou "
+            "os resultados em 1949. Até então, o tratamento padrão era eletrochoque ou lobotomia. Mas um dos primeiros "
+            "pacientes morreu intoxicado, e Cade largou essa pesquisa, retomada por dinamarqueses. Como substância "
+            "natural, o lítio não podia ser patenteado e não interessava à indústria: nos EUA, só foi aprovado em "
+            "1970. Cade dizia ser apenas um garimpeiro que achou uma pepita."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("John_Cade",
+                "was an Australian psychiatrist who in 1948 discovered the effects of lithium as a mood stabilizer in the treatment of bipolar disorder, then known as manic depression. "
+                "At a time when the standard treatments for mania were electroconvulsive therapy and lobotomy, lithium had the distinction of being the first effective medication available to treat a mental illness. [...] "
+                "After the Fall of Singapore to Japan, he became a prisoner of war at Changi Prison from February 1942 to September 1945. "
+                "During his imprisonment, he reportedly would observe some fellow inmates having strange, vacillating behaviour. "
+                "He thought perhaps a toxin was affecting their brains and when it was eliminated through their urine, they lost their symptoms. [...] "
+                "then took up a position at Bundoora Repatriation Mental Hospital in Melbourne. "
+                "It was at an unused pantry in Bundoora that he conducted crude experiments which led to the discovery of lithium as a treatment of bipolar disorder. "
+                "Since he had no sophisticated analytical equipment these experiments mostly consisted of injecting urine from mentally ill patients into the abdomen of guinea pigs. "
+                "His early experiments suggested to him that the urine from manic patients was more toxic. [...] "
+                "On its own uric acid would not dissolve in water. "
+                "Then, in an effort to increase the water solubility of uric acid, lithium was added to make a solution of lithium urate. "
+                "Cade found that in the guinea pigs injected with lithium carbonate solution, as a control solution, the guinea pigs were more restful. "
+                "His use of careful controls in his experiments revealed that the lithium-ion had a calming effect by itself, but even this finding may have been caused by the toxic effects of an excessive dose of lithium. "
+                "After ingesting lithium himself to ensure its safety in humans, Cade began a small-scale trial of lithium citrate and/or lithium carbonate on some of his patients diagnosed with mania [...] "
+                "He published these findings in the Medical Journal of Australia in a paper entitled 'Lithium salts in the treatment of psychotic excitement', published in 1949. [...] "
+                "Of the first patients Cade treated with lithium, one died of lithium toxicity. "
+                "Afterward, Cade stopped using lithium in his patients and stopped his research of the element. [...] "
+                "Among them, Mogens Schou and Poul Baastrup of Denmark conducted a new trial and published their results in 1954. [...] "
+                "Moreover, as a naturally occurring chemical, lithium salt could not be patented, meaning that its manufacturing and sales were not considered commercially viable. [...] "
+                "lithium was finally approved by the US Food and Drug Administration in 1970. [...] "
+                "Dr. Cade remained humble about his chance discovery, describing himself as merely a gold prospector who happened to find a nugget.",
+                nome="John Cade"),
+        ],
+    },
+    # 11 nitroglicerina: o explosivo de Nobel virou remédio do coração
+    {
+        "temas_secundarios": ["quimica_cotidiano", "invencoes"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Alfred Nobel, que enriqueceu com a dinamite, recebeu do médico uma receita de nitroglicerina para o coração. E o Nobel de Medicina de 1998 premiou quem descobriu como esse explosivo age no corpo.",
+        "explicacao": (
+            "Desde que a nitroglicerina foi sintetizada, em 1846, se notou que manuseá-la ou prová-la provocava dores "
+            "de cabeça súbitas e fortes, sinal de que ela dilatava os vasos sanguíneos. Em 1878, o médico inglês "
+            "William Murrell começou a tratar pacientes com angina, a dor no peito, usando doses pequenas e diluídas, "
+            "e publicou os resultados em 1879 na revista The Lancet. Os médicos passaram a chamá-la de \"trinitrina\" "
+            "ou \"trinitrato de glicerila\", para não assustar ninguém com o nome do explosivo. Poucos meses antes de "
+            "morrer, em 1896, o próprio Nobel, doente do coração, recebeu a receita e escreveu a um amigo que era uma "
+            "ironia do destino ter de tomar nitroglicerina por dentro. Segundo a Fundação Nobel, ele se recusou a "
+            "tomá-la, sabendo que dava dor de cabeça e duvidando que tirasse a dor no peito. A explicação levou cerca "
+            "de cem anos: em 1977, Ferid Murad descobriu que a nitroglicerina libera óxido nítrico, um gás que relaxa "
+            "a musculatura dos vasos. Depois, Robert Furchgott e Louis Ignarro mostraram que o próprio corpo usa esse "
+            "gás como sinal. Foi a primeira vez que se viu um gás agir como molécula sinalizadora no organismo, e os "
+            "três dividiram o Nobel de 1998."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Nitroglycerin_(medication)",
+                "It was known almost from the time of the first synthesis of nitroglycerin by Ascanio Sobrero in 1846 that handling and tasting of nitroglycerin could cause sudden intense headaches, which suggested a vasodilation effect. [...] "
+                "Murrell began treating patients with small doses of nitroglycerin in 1878, and the substance was widely adopted after he published his results in The Lancet in 1879. "
+                "The medical establishment used the name \"glyceryl trinitrate\" or \"trinitrin\" to avoid alarming patients, because of a general awareness that nitroglycerin was explosive.",
+                nome="Nitroglycerin (medication)"),
+            wiki("Nitroglycerin",
+                "the physician William Murrell experimented with the use of nitroglycerin to alleviate angina pectoris and to reduce the blood pressure. "
+                "He began treating his patients with small diluted doses of nitroglycerin in 1878 [...] "
+                "A few months before he died in 1896, Alfred Nobel was prescribed nitroglycerin for this heart condition, writing to a friend: "
+                "\"Isn't it the irony of fate that I have been prescribed nitro-glycerin, to be taken internally! They call it Trinitrin, so as not to scare the chemist and the public.\"",
+                nome="Nitroglycerin"),
+            {"url": "https://www.nobelprize.org/prizes/medicine/1998/press-release/",
+             "titulo": "The Nobel Prize in Physiology or Medicine 1998 - Press release",
+             "idioma": "en",
+             "trecho": (
+                "The Nobel Prize in Physiology or Medicine 1998 [...] "
+                "for their discoveries concerning “nitric oxide as a signalling molecule in the cardiovascular system”. [...] "
+                "Ferid Murad, MD and pharmacologist now in Houston, analyzed how nitroglycerin and related vasodilating compounds act and discovered in 1977 that they release nitric oxide, which relaxes smooth muscle cells. [...] "
+                "He performed a brilliant series of analyses and concluded in 1986, together with and independently of Robert Furchgott, that EDRF was identical to NO. [...] "
+                "This was the first discovery that a gas can act as a signal molecule in the organism. [...] "
+                "Alfred Nobel invented dynamite, a product in which the explosion-prone nitroglycerin is curbed by being absorbed in kieselguhr, a porous soil rich in shells of diatoms. "
+                "When Nobel was taken ill with heart disease, his doctor prescribed nitroglycerin. "
+                "Nobel refused to take it, knowing that it caused headache and ruling out that it could eliminate chest pain. [...] "
+                "However, it would take 100 years until it was clarified that nitroglycerin acts by releasing NO gas."
+             )},
+        ],
+    },
+    # 12 Vital Brazil e a especificidade dos soros
+    {
+        "temas_secundarios": ["ciencia_brasileira", "sistema_imunologico"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "O soro do francês Albert Calmette contra a naja indiana não servia para as cobras do Brasil. Ao provar isso em 1901, Vital Brazil passou a fazer soros específicos e criou o primeiro soro polivalente.",
+        "explicacao": (
+            "Em 1892, o imunologista francês Albert Calmette demonstrou que era possível tratar picadas com soro, "
+            "desenvolvendo um soro contra a naja indiana. O médico mineiro Vital Brazil começou a estudar acidentes "
+            "com cobras em 1896, quando clinicava em Botucatu, e, já em São Paulo, provou em 1901 que os soros contra "
+            "espécies asiáticas não funcionavam contra as sul-americanas. Passou então a produzir soros próprios contra "
+            "jararacas, cascavéis e corais, com anticorpos tirados do sangue de cavalos que recebiam pequenas doses de "
+            "veneno. Como os envenenamentos por jararaca e por cascavel tinham semelhanças, foi o primeiro a obter um "
+            "soro polivalente, eficaz contra os dois. O instituto que ele dirigia, criado em 1901 numa área afastada "
+            "de São Paulo, ficou conhecido como Instituto Butantan, e sua equipe fez também os primeiros soros contra "
+            "venenos de escorpiões e aranhas. Nos EUA, o nome dele foi parar nas manchetes quando seu soro salvou a "
+            "vida de um funcionário do Zoológico do Bronx, em Nova York, picado por uma cascavel. Até o nome do "
+            "cientista tem história: o pai o batizou em homenagem ao país, ao estado e à cidade onde ele nasceu, "
+            "Campanha, e ao santo do dia, São Vital."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Vital_Brazil",
+                "Vital Brazil Mineiro da Campanha (April 28, 1865 – May 8, 1950), was a Brazilian physician, biomedical scientist and immunologist, known for the discovery of the polyvalent anti-ophidic serum used to treat bites of venomous snakes of the Crotalus,  Bothrops and Elaps genera. "
+                "He went on to be also the first to develop anti-scorpion and anti-spider serums. [...] "
+                "born on April 28, 1865, in the town of Campanha, in the state of Minas Gerais [...] "
+                "His father gave him this curious name in homage to the country, the state and the city where he was born, as well as from the date, St. Vital’s Day. [...] "
+                "In 1896, when he was still working in Botucatu, Vital Brazil became specially interested in snake incidents and began his studies on snake poisoning [...] "
+                "the government of São Paulo founded a new Serum Therapy Institute in 1901 and gave its directorship to Vital Brazil. [...] "
+                "The new São Paulo Institute was built in a section of the city named Butantan, at the time a far-away place [...] "
+                "A French immunologist, Albert Calmette  (1863–1933) had demonstrated this for the first time in 1892, by developing a monovalent serum to treat bites by the Indian cobra (Naja tripudians). "
+                "Vital Brazil thus began a series of experimental investigations, and in 1901 he was able to prove that monovalent sera against the Asiatic species were ineffective against South American snakes, "
+                "and proceeded to develop his first monovalent sera against the most common envenomations in Brazil, those produced by the Bothrops, Crotalus and Elapidae genera (represented respectively by the jararaca snake, the rattlesnake, and the coral snake). "
+                "He found several clinical and biochemical similarities between bothropic and crotalic envenomations and so he was the first to achieve a polyvalent serum, i.e., simultaneously effective against both species [...] "
+                "In the USA, Vital Brazil's name made the headlines when he used his serum to save the life of a worker in the Bronx Zoo in New York City who was bitten by a rattlesnake.",
+                nome="Vital Brazil"),
+            wiki("Vital_Brazil",
+                "Em 1903, após intensa pesquisa logrou enunciar cientificamente o soro antiofídico, desenvolvido a partir de anticorpos produzidos no sangue dos cavalos, depois da injeção de uma pequena quantidade de veneno da própria cobra.",
+                nome="Vital Brazil", idioma="pt"),
+        ],
+    },
+    # 13 rapamicina: da Ilha de Páscoa ao mTOR
+    {
+        "temas_secundarios": ["microbiologia", "genetica"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "A rapamicina, usada contra a rejeição de transplantes, veio de uma bactéria do solo da Ilha de Páscoa, a Rapa Nui. E deu nome a uma proteína central do crescimento das células, a mTOR.",
+        "explicacao": (
+            "Em 1964 e 1965, uma expedição médica organizada pelo canadense Stanley Skoryna foi à Ilha de Páscoa "
+            "coletar plantas e amostras de solo, atrás de substâncias com potencial terapêutico. Em 1972, Surendra Nath "
+            "Sehgal purificou, de uma bactéria do solo, a Streptomyces hygroscopicus, uma molécula que de início "
+            "parecia um bom antifúngico, e a batizou de rapamicina, em homenagem ao nome nativo da ilha. Testes logo "
+            "mostraram que ela também suprimia o sistema imune e freava a multiplicação de células, e o uso contra "
+            "fungos foi abandonado. A indústria só se interessou nos anos 1980, e o remédio, chamado sirolimo, foi "
+            "aprovado nos EUA em 1999 para evitar a rejeição de órgãos transplantados; hoje também reveste stents "
+            "usados nas artérias do coração. Ao investigar como a molécula age, cientistas chegaram a uma proteína "
+            "que regula o crescimento, a multiplicação e a sobrevivência das células e que foi preservada ao longo da "
+            "evolução dos eucariontes. Ela recebeu o nome de mTOR, \"alvo mecanístico da rapamicina\". A rapamicina "
+            "retardou o envelhecimento em vermes, leveduras e moscas e, num estudo publicado em 2009, aumentou pela "
+            "primeira vez a vida de camundongos comuns, resultado repetido depois em várias linhagens."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Sirolimus",
+                "is a macrolide compound that is used to coat coronary stents, prevent organ transplant rejection [...] "
+                "It is produced by the bacterium Streptomyces hygroscopicus and was isolated for the first time in 1972, from samples of S. hygroscopicus found on Easter Island. "
+                "The compound was originally named rapamycin after the native name of the island, Rapa Nui. "
+                "Sirolimus was initially developed as an antifungal agent. "
+                "However, this use was abandoned when it was discovered to have potent immunosuppressive and antiproliferative properties due to its ability to inhibit mTOR. "
+                "It was approved by the US Food and Drug Administration (FDA) in 1999. [...] "
+                "sirolimus was shown to inhibit and slow aging in worms, yeast, and flies, and then to improve the condition of mouse models of various diseases of aging. "
+                "Sirolimus was first shown to extend lifespan in wild-type mice in a study published by NIH investigators in 2009; the studies have been replicated in mice of many different genetic backgrounds.",
+                nome="Sirolimus"),
+            wiki("MTOR",
+                "The mechanistic target of rapamycin (mTOR), also known as mammalian target of rapamycin, is a serine-threonine protein kinase that regulates cell growth, cell proliferation, cell motility, cell survival, protein synthesis, autophagy, and transcription. [...] "
+                "is evolutionarily conserved across eukaryotes. [...] "
+                "The study of TOR (target of rapamycin) originated in the 1960s with the Medical Expedition to Easter Island (METEI) in 1964–1965 organized by Canadian scientist Stanley Skoryna, with the goal of identifying natural products from plants and soil with possible therapeutic potential. "
+                "In 1972, Surendra Nath Sehgal identified a small molecule, from the soil bacterium Streptomyces hygroscopicus, that he purified and initially reported to possess potent antifungal activity. "
+                "He named it rapamycin, noting its original source and activity. "
+                "Early testing revealed that rapamycin also had potent immunosuppressive and cytostatic anti-cancer activity. "
+                "Rapamycin did not initially receive significant interest from the pharmaceutical industry until the 1980s",
+                nome="mTOR"),
+        ],
+    },
+    # 14 paracetamol: descartado por engano e redescoberto dentro de outros remédios
+    {
+        "temas_secundarios": ["historia_medicina", "quimica_cotidiano"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "O paracetamol foi deixado de lado em 1893 por causa de uma avaliação equivocada. Meio século depois, descobriu-se que o corpo humano converte os analgésicos usados em seu lugar justamente em paracetamol.",
+        "explicacao": (
+            "No fim do século XIX, a acetanilida, cujo efeito contra dor e febre foi achado por acaso, entrou na "
+            "medicina em 1886 com o nome de Antifebrin. Mas ela podia deixar a pele azulada, porque transformava "
+            "parte da hemoglobina numa forma que não carrega oxigênio. Começou então a busca por parentes menos "
+            "tóxicos. O paracetamol já tinha sido sintetizado por Harmon Northrop Morse, na Universidade Johns "
+            "Hopkins, e foi testado em humanos por Joseph von Mering em 1887. Em 1893, von Mering publicou que o "
+            "paracetamol tinha uma leve tendência a causar o mesmo problema no sangue, ao contrário da fenacetina, e "
+            "o paracetamol foi logo abandonado. A fenacetina fez da Bayer uma grande farmacêutica. A afirmação de von "
+            "Mering ficou quase sem contestação por meio século. Em 1947 e 1948, pesquisadores americanos, entre eles "
+            "Bernard Brodie e Julius Axelrod, mostraram que o corpo humano converte a acetanilida principalmente em "
+            "paracetamol, que alivia a dor tão bem quanto ela, e que o problema no sangue vinha de outro derivado. Em "
+            "1949, viram que a fenacetina também vira paracetamol no organismo. Foi a \"redescoberta\": o paracetamol "
+            "chegou ao mercado dos EUA em 1950."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Paracetamol",
+                "Acetanilide was the first aniline derivative serendipitously found to possess analgesic as well as antipyretic properties, and was quickly introduced into medical practice under the name of Antifebrin by Cahn & Hepp in 1886. "
+                "But its unacceptable toxic effects—the most alarming being cyanosis due to methemoglobinemia, an increase of hemoglobin in its ferric [Fe3+] state, called methemoglobin, which cannot bind oxygen, and thus decreases overall carriage of oxygen to tissue—prompted the search for less toxic aniline derivatives. [...] "
+                "Harmon Northrop Morse synthesized paracetamol at Johns Hopkins University [...] "
+                "but it was not until 1887 that clinical pharmacologist Joseph von Mering tried paracetamol on humans. "
+                "In 1893, von Mering published a paper reporting on the clinical results of paracetamol with phenacetin, another aniline derivative. "
+                "Von Mering claimed that, unlike phenacetin, paracetamol had a slight tendency to produce methemoglobinemia. "
+                "Paracetamol was then quickly discarded in favor of phenacetin. "
+                "The sales of phenacetin established Bayer as a leading pharmaceutical company. "
+                "Von Mering's claims remained essentially unchallenged for half a century until two teams of researchers from the United States analysed the metabolism of acetanilide and phenacetin. "
+                "In 1947, David Lester and Leon Greenberg found strong evidence that paracetamol was a major metabolite of acetanilide in human blood [...] "
+                "In 1948, Bernard Brodie, Julius Axelrod and Frederick Flinn confirmed that paracetamol was the major metabolite of acetanilide in humans, and established that it was just as efficacious an analgesic as its precursor. "
+                "They also suggested that methemoglobinemia is produced in humans mainly by another metabolite, phenylhydroxylamine. "
+                "A follow-up paper by Brodie and Axelrod in 1949 established that phenacetin was also metabolized to paracetamol. "
+                "This led to a \"rediscovery\" of paracetamol. "
+                "Paracetamol was first marketed in the United States in 1950",
+                nome="Paracetamol"),
+        ],
+    },
+]

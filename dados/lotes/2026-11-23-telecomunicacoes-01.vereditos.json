@@ -1,0 +1,154 @@
+{
+ "lote": "2026-11-23-telecomunicacoes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "telecomunicacoes-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 67 minutos da mensagem da rainha não fecham com a própria fonte nem com IEEE/PBS (~16 h); o dano à isolação não foi só pelas tensões; Thomson não era 'técnico'.",
+    "correcao": "(1) Na explicação, trocar 'a mensagem da rainha Vitória ao presidente Buchanan levou 67 minutos para chegar à Terra Nova, e a cópia de confirmação levou 16 horas para voltar à Irlanda' por 'a mensagem de 98 palavras da rainha Vitória ao presidente Buchanan levou cerca de 16 horas para ser transmitida'. No trecho, tirar a frase 'The inaugural message from Queen Victoria took 67 minutes to transmit to Newfoundland, but it took 16 hours for the confirmation copy to be transmitted back to Whitehouse in Valentia.' e pôr no lugar 'Queen Victoria's message of 98 words took 16 hours to send.' (2) No gancho, trocar 'forçou até 2.000 volts por ele e danificou a isolação' por 'forçou até 2.000 volts por ele e ajudou a arruinar a isolação'. (3) Na explicação, trocar 'O projeto tinha dois técnicos que não se entendiam.' por 'Dois homens-chave do projeto não se entendiam.'"
+   },
+   {
+    "id": "telecomunicacoes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Irmãos Blanc, 1834–1836, erros combinados no telégrafo óptico e o golpe parecido em Monte Cristo conferem."
+   },
+   {
+    "id": "telecomunicacoes-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A escuta contínua veio de uma emenda de julho de 1912 à Wireless Ship Act de 1910, só para navios de passageiros, não da Radio Act de 1912 'em todos os navios'.",
+    "correcao": "(1) No gancho, trocar 'a escuta de rádio 24 horas virou regra nos navios' por 'a escuta de rádio contínua virou exigência nos navios de passageiros'. (2) Na explicação, trocar a última frase por: 'Depois do desastre, uma emenda de julho de 1912 a uma lei americana de 1910 passou a exigir dois ou mais operadores e escuta contínua nos navios de passageiros, e a primeira Convenção Internacional para a Salvaguarda da Vida Humana no Mar também previu escuta de rádio 24 horas.' (3) Acrescentar a fonte https://en.wikipedia.org/wiki/Wireless_Ship_Act_of_1910 com trechos que incluam 'some of the provisions of the original act were strengthened by an amendment passed on July 23, 1912' e 'a requirement that ships carry two or more operators and maintain a continuous watch', e rodar o checar_citacoes.py de novo. (4) No trecho da fonte SS Californian, tirar 'The United States passed the Radio Act of 1912, which required 24-hour radio watch on all ships in case of an emergency.' e manter só a frase sobre a convenção."
+   },
+   {
+    "id": "telecomunicacoes-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A explicação se contradiz (abaixo de 200 m confinado e 'ilegal ir abaixo'); os contatos de 1924 eram em Morse; causalidade 'por isso' sem apoio.",
+    "correcao": "(1) Apagar a frase 'Ir abaixo disso era tecnicamente ilegal, mas tolerado, justamente porque as autoridades achavam aquelas ondas inúteis.' (2) Trocar 'Em 1923, alguns, com licença especial, fizeram nos 100 metros' por 'Em 1923, alguns, com licença especial para ir abaixo dos 150 metros, fizeram nos 100 metros'. (3) Trocar 'em 1924 muitos já conversavam a 9.600 km ou mais; amadores da Califórnia chegaram a falar com um da Nova Zelândia' por 'em 1924 muitos já faziam contatos de rotina a 9.600 km ou mais; amadores da Califórnia chegaram a trocar mensagens com um da Nova Zelândia'. (4) Trocar 'eram vistas como imprestáveis para longa distância e por isso ficavam com os amadores' por 'eram vistas como imprestáveis para longa distância e, em muitos países, estavam reservadas aos amadores'."
+   },
+   {
+    "id": "telecomunicacoes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "O 'S' de Marconi: só afirma a dúvida documentada; números conferem. (Opcional: reescrever duas frases quase literais da fonte.)"
+   },
+   {
+    "id": "telecomunicacoes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fotofone: 213 m, selênio, 'greater than the telephone', nome para a filha e ligação com a fibra óptica conferem."
+   },
+   {
+    "id": "telecomunicacoes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Starfish Prime na véspera (8/7 em Honolulu, Telstar em 10/7) e falha atribuída à radiação em duas fontes."
+   },
+   {
+    "id": "telecomunicacoes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "TeleGeography/ICPC: zero falhas por mordida de peixe em 2007–2014; pesca e âncoras são 2/3."
+   },
+   {
+    "id": "telecomunicacoes-0009",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o 'lo' da ARPANET é trivia clássica de aniversário da internet, sem mecanismo."
+   },
+   {
+    "id": "telecomunicacoes-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte diz que Antheil 'tentou' sincronizar as pianolas.",
+    "correcao": "Na explicação, trocar \"a experiência de uma obra de vanguarda em que sincronizara várias pianolas com rolos iguais\" por \"a experiência de uma obra de vanguarda em que tentara sincronizar várias pianolas com rolos iguais\"."
+   },
+   {
+    "id": "telecomunicacoes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Spread Networks: US$ 300 milhões, 13 ms vs. 14,5 ms, índice de refração ~1,5, micro-ondas mais rápidas conferem."
+   },
+   {
+    "id": "telecomunicacoes-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A fonte diz que Strowger morreu com alguma riqueza; e o lugar onde foi agente funerário varia (Kansas ou Kansas City, Missouri).",
+    "correcao": "Na explicação, troque 'e depois virou agente funerário no Kansas.' por 'e depois virou agente funerário no meio-oeste americano (as fontes citam cidades do Kansas e Kansas City, no Missouri).'. Troque também 'Strowger não enriqueceu com ela: vendeu' por 'Strowger ficou com pouco do valor que a invenção alcançaria: vendeu'."
+   },
+   {
+    "id": "telecomunicacoes-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A causalidade dos fusos horários é duvidosa (telefone local em 1877–1880; fusos dos EUA só em 1883).",
+    "correcao": "Na explicação, apague as duas primeiras frases ('Antes do telefone, os cumprimentos costumavam mencionar a hora do dia, como \"bom dia\". Mas o aparelho passou a ligar pessoas em fusos horários diferentes, e saudações sem hora ganharam espaço.') e comece o texto em 'As palavras já existiam com outros usos: ...'. Se o texto ficar abaixo de 80 palavras, complete só com o que já está na fonte. Exemplo: 'O \"hello\" já aparecia por escrito nos EUA desde 1826.' (o trecho correspondente do cache é 'used in publications in the U.S. as early as the 18 January 1826 edition of the Norwich Courier'). Nesse caso, acrescente esse trecho às fontes."
+   },
+   {
+    "id": "telecomunicacoes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "SOS: regra alemã de 1905, Berlim 1906, sequência contínua sem letras, Titanic misturando CQD e SOS conferem."
+   },
+   {
+    "id": "telecomunicacoes-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "A fonte diz que o PAMOR 'buscava' espionar, não que captou; o enlace com o Havaí é de 1959, depois do Sputnik.",
+    "correcao": "Troque o gancho por: 'Antes dos satélites de comunicação, a Marinha dos EUA usou a Lua como satélite, refletindo nela sinais de rádio entre Washington e o Havaí. A ideia veio de uma tentativa de espionar radares soviéticos na Lua.' Na explicação, troque 'começou a captar sinais de radares soviéticos que batiam na Lua e voltavam, num programa que virou espionagem oficial.' por 'passou a observar a Lua para tentar interceptar sinais de radares soviéticos que batiam nela e voltavam, num programa que em menos de um ano virou espionagem oficial da Marinha.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "telecomunicacoes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mensagem da rainha em ~16 h; 'ajudou a arruinar a isolação'; 'homens-chave'."
+   },
+   {
+    "id": "telecomunicacoes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Emenda de 1912 à lei de 1910 com fonte nova; frase errada da Radio Act retirada."
+   },
+   {
+    "id": "telecomunicacoes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As quatro correções aplicadas, sem erro novo."
+   },
+   {
+    "id": "telecomunicacoes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frases reescritas com palavras próprias, fiéis à fonte."
+   },
+   {
+    "id": "telecomunicacoes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Tentara sincronizar' aplicado."
+   },
+   {
+    "id": "telecomunicacoes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Meio-oeste americano; 'ficou com pouco do valor'."
+   },
+   {
+    "id": "telecomunicacoes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Sem a causalidade dos fusos; 'hello' de 1826 com trecho literal."
+   },
+   {
+    "id": "telecomunicacoes-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'Tentativa de espionar'; 'antes dos satélites de comunicação'."
+   }
+  ]
+ }
+}

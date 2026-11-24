@@ -1,0 +1,386 @@
+{
+ "arquivo": "dados\\lotes\\2026-11-24-moda-01.jsonl",
+ "gerado_em": "2026-11-24",
+ "limiar": 0.9,
+ "resumo": {
+  "ok": 14,
+  "aproximado": 0,
+  "falhou": 0,
+  "com_aviso_numero": 4
+ },
+ "fatos": [
+  {
+   "id": "moda-0001",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://www.nationalgeographic.com/culture/article/dress-hat-fashion-clothing-mercury-arsenic-poison-history",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_nationalgeographic_com_culture_article_dress_hat_fashion_clothing_mercury_ar__3a1cdaf072__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Scheele%27s_green",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Scheele_s_green__2520b18379__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0002",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Erethism",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Erethism__e1da9df891__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Mad_as_a_hatter",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Mad_as_a_hatter__bc35f7255a__extrato.txt"
+     ],
+     "similaridade": 1.0
+    },
+    {
+     "url": "https://www.nationalgeographic.com/culture/article/dress-hat-fashion-clothing-mercury-arsenic-poison-history",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_nationalgeographic_com_culture_article_dress_hat_fashion_clothing_mercury_ar__3a1cdaf072__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0003",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://www.bbc.com/news/magazine-21151350",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_bbc_com_news_magazine_21151350__0f9e53df63__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/High-heeled_shoe",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_High_heeled_shoe__09496a61e9__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "moda-0004",
+   "status": "ok",
+   "aviso_numero": [
+    "5"
+   ],
+   "fontes": [
+    {
+     "url": "https://www.smithsonianmag.com/arts-culture/when-did-girls-start-wearing-pink-1370097/",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_smithsonianmag_com_arts_culture_when_did_girls_start_wearing_pink_1370097__0eba857a02__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pink",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Pink__7a28a23d52__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "moda-0005",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pocket",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Pocket__d5c6914141__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Reticule_(handbag)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Reticule_handbag__3d62d28148__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0006",
+   "status": "ok",
+   "aviso_numero": [
+    "2",
+    "3"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Crinoline",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Crinoline__1a33908d56__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://www.nationalgeographic.com/culture/article/dress-hat-fashion-clothing-mercury-arsenic-poison-history",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_nationalgeographic_com_culture_article_dress_hat_fashion_clothing_mercury_ar__3a1cdaf072__pagina.txt"
+     ],
+     "similaridade": 1.0
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/William_Wilde",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_William_Wilde__abe3f2b27a__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0007",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Jacob_W._Davis",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Jacob_W_Davis__6991890fe6__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Jeans",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Jeans__87e5e3b595__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0008",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Zipper",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Zipper__c113b9f568__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0009",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Necktie",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Necktie__c128ea18c0__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cravat_(early)",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Cravat_early__001898ae40__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://pt.wikipedia.org/wiki/Gravata",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\pt_wikipedia_org_wiki_Gravata__66c2ad1ebc__extrato.txt"
+     ],
+     "similaridade": 1.0
+    }
+   ]
+  },
+  {
+   "id": "moda-0010",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mauveine",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Mauveine__47868314b7__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/William_Henry_Perkin",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_William_Henry_Perkin__40d2b1e3d4__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0011",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sea_silk",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Sea_silk__62e973604a__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões fora da ordem da fonte"
+    }
+   ]
+  },
+  {
+   "id": "moda-0012",
+   "status": "ok",
+   "aviso_numero": [
+    "1",
+    "25"
+   ],
+   "fontes": [
+    {
+     "url": "https://www.vam.ac.uk/articles/golden-spider-silk",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_vam_ac_uk_articles_golden_spider_silk__778b526b5c__pagina.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://www.rom.on.ca/magazine/high-fashion-cape-created-using-silk-golden-orb-spider",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\www_rom_on_ca_magazine_high_fashion_cape_created_using_silk_golden_orb_spider__4e38711f69__pagina.txt"
+     ],
+     "similaridade": 1.0
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Golden_Spider_Silk_Cape",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Golden_Spider_Silk_Cape__52e1a62626__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0013",
+   "status": "ok",
+   "aviso_numero": [],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/History_of_clothing_and_textiles",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_History_of_clothing_and_textiles__a9e143ce0d__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Body_louse",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Body_louse__5257cf2392__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  },
+  {
+   "id": "moda-0014",
+   "status": "ok",
+   "aviso_numero": [
+    "554"
+   ],
+   "fontes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Silk",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Silk__29f7ae6d7e__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Byzantine_silk",
+     "status": "ok",
+     "cache": [
+      "D:\\Usuarios\\03172817121\\Desktop\\CLAUDE\\curiosidades\\dados\\cache_fontes\\en_wikipedia_org_wiki_Byzantine_silk__fb281fad85__extrato.txt"
+     ],
+     "similaridade": 1.0,
+     "nota": "com elisões"
+    }
+   ]
+  }
+ ]
+}

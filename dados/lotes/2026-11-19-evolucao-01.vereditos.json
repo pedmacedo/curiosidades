@@ -1,0 +1,155 @@
+{
+ "lote": "2026-11-19-evolucao-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "evolucao-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com o LTEE; contestação de Van Hofwegen apresentada como debate."
+   },
+   {
+    "id": "evolucao-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Darwin's finches; mito desmentido legítimo."
+   },
+   {
+    "id": "evolucao-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A seca foi em 2003 e 2004 (Nature News 2006); o gancho generaliza para 'os tentilhões', mas foi uma espécie.",
+    "correcao": "1) Explicação: 'Quando veio uma seca tão forte quanto a de 1977, em 2003,' → 'Quando veio uma seca tão forte quanto a de 1977, em 2003 e 2004,'; acrescentar ao trecho de Medium ground finch: 'During a drought in 2004, overlap in the diets of the medium ground finch population and a recently settled population of large ground finches'. 2) Gancho: 'os tentilhões da ilha passaram a ter bicos maiores' → 'uma espécie de tentilhão passou a ter bicos maiores'."
+   },
+   {
+    "id": "evolucao-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Sabolić et al. 2024 (Molecular Ecology, PMID 38133599, com Herrel) atribuem a maior parte das diferenças a plasticidade; em ambiente comum, cabeça e mordida se igualam.",
+    "correcao": "1) confianca 'alta' → 'consenso_parcial'. 2) Acrescentar ao fim: 'Ainda se discute quanto disso é mudança genética: um estudo genômico recente, com parte da mesma equipe, concluiu que a maior parte das diferenças parece vir de plasticidade, a resposta do corpo à dieta e ao ambiente, e que diferenças de cabeça e mordida somem quando os animais crescem em condições iguais.' Cortar 'A nova população cresceu por décadas sem interferência humana e chegou a superar outra espécie de lagartixa, hoje extinta no local.' 3) Segunda fonte: resumo via Europe PMC (https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:38133599%20AND%20SRC:MED&resultType=core&format=json), com trecho literal contendo 'phenotypic plasticity and/or genotype by environment interactions' e a frase do common garden. 4) Trocar 'escala_absurda' por 'misterio_aberto' ou manter só 'contraintuitivo'."
+   },
+   {
+    "id": "evolucao-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Angraecum sesquipedale; ressalva do artigo de descrição preservada."
+   },
+   {
+    "id": "evolucao-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Quase ninguém notou' exagera 'muted'; 'apresentação dos dois' sugere presença; a frase a Lyell foi mal lida ('he' é Wallace).",
+    "correcao": "1) Gancho: 'Em 1858, Wallace enviou a Darwin um ensaio com a ideia que Darwin elaborava havia 20 anos sem publicar. Lidos juntos em Londres, os textos tiveram reação tão morna que o ano foi tido como sem grandes descobertas.' 2) Explicação: 'Darwin o recebeu em 18 de junho de 1858 e escreveu a Lyell que nem ele faria um resumo melhor.' → 'Darwin o recebeu em 18 de junho de 1858 e escreveu a Lyell que o texto parecia um resumo perfeito da sua própria teoria: até os termos de Wallace coincidiam com os títulos dos seus capítulos.' (trecho: 'Even his terms now stand as heads of my chapters')."
+   },
+   {
+    "id": "evolucao-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Lamarckism; evita a data contraditória; mito didático confirmado."
+   },
+   {
+    "id": "evolucao-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Evolution of the eye; ressalvas de escopo sem refutação."
+   },
+   {
+    "id": "evolucao-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Em 1994 Geoffroy se mostrou correto' exagera: o apoio foi à inversão do eixo dorso-ventral.",
+    "correcao": "'Georges Cuvier rejeitou a tese, mas em 1994 Geoffroy se mostrou correto.' → 'Georges Cuvier rejeitou a tese, mas, a partir de 1994, estudos de genes do desenvolvimento deram apoio à ideia de que o eixo barriga–costas está invertido entre artrópodes e vertebrados.'"
+   },
+   {
+    "id": "evolucao-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Prestin; convergência na sequência atribuída."
+   },
+   {
+    "id": "evolucao-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Ormia ochracea é larvípara: deposita larvas, não ovos (erro herdado da Wikipedia).",
+    "correcao": "'Achado o macho, ela põe ovos sobre ele e ao redor; as larvas entram no grilo' → 'Achado o macho, ela deposita larvas já eclodidas sobre ele e ao redor; as larvas entram no grilo'. Opcional: fonte sobre larviposição (bioone.org, Florida Entomologist 92(4), 024.092.0411), após checar_citacoes."
+   },
+   {
+    "id": "evolucao-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho afirma como atual que as enzimas são inéditas (estudos de 1977, desmentidos depois); o frameshift de Ohno (1984) era hipótese para a EII, não para outra enzima.",
+    "correcao": "Gancho: trocar ', com enzimas diferentes das de qualquer outra bactéria.' por ': substâncias que não existiam na natureza antes da invenção do material.' Explicação: (a) 'eram muito diferentes das de outras bactérias' → 'pareciam, na época, muito diferentes das de outras bactérias'; (b) 'a cópia antiga é cerca de cem vezes menos eficiente' → 'a outra cópia, chamada EII, é cerca de cem vezes menos eficiente'; (c) apagar de 'Para outra, o geneticista Susumu Ohno propôs...' até '...pertence a uma família conhecida de enzimas.' e pôr: 'A terceira, EIII, chegou a ser tida como totalmente inédita, mas sua estrutura, resolvida em 2018, mostrou que ela pertence a uma família conhecida de enzimas.' (Opcional: manter Ohno como hipótese de 1984 para a EII que não se confirmou, com fonte PNAS PMC345072 e trecho literal.)"
+   },
+   {
+    "id": "evolucao-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Rough-skinned newt; mecanismo de corrida armamentista bem explicado."
+   },
+   {
+    "id": "evolucao-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Americano' para Draper vai além da fonte (era inglês de nascimento); o gancho não situa Huxley.",
+    "correcao": "Explicação: 'uma palestra do americano John William Draper' → 'uma palestra de John William Draper, da Universidade de Nova York'. Gancho: 'No célebre debate de 1860 sobre Darwin, em Oxford, o bispo Wilberforce teria perguntado a Huxley' → 'No debate de 1860 sobre Darwin, em Oxford, o bispo Wilberforce teria perguntado ao darwinista Huxley'."
+   },
+   {
+    "id": "evolucao-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Eclipse of Darwinism e Modern synthesis; nome atribuído aos historiadores."
+   },
+   {
+    "id": "evolucao-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Números conferem com Science News e PBS NOVA; sem contestação séria."
+   }
+  ],
+  "2": [
+   {
+    "id": "evolucao-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Seca de 2003 e 2004 com trecho; 'uma espécie de tentilhão'."
+   },
+   {
+    "id": "evolucao-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva de plasticidade com Sabolić et al.; consenso_parcial. Nota 4."
+   },
+   {
+    "id": "evolucao-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Reação morna e carta a Lyell corrigidas."
+   },
+   {
+    "id": "evolucao-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Apoio de 1994 restrito ao eixo dorso-ventral."
+   },
+   {
+    "id": "evolucao-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Larvas, não ovos."
+   },
+   {
+    "id": "evolucao-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo corrigido; ambiguidade do gancho resolvida como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "evolucao-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Draper da NYU; 'darwinista Huxley'. Nota 3."
+   }
+  ]
+ }
+}

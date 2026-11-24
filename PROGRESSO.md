@@ -2,14 +2,14 @@
 
 > Estado atual do projeto. Atualize ao fim de cada sessão de trabalho. A referência permanente é o `CLAUDE.md`.
 
-**Última atualização:** 2026-11-23
+**Última atualização:** 2026-11-24
 **Fase atual:** 4 (produção de lotes), iniciada em 2026-11-17 a pedido do Pedro.
 
 > **Retomado em 2026-11-18 (sem amostragem):** o Pedro dispensou a revisão humana por amostragem ("estou concordando quase 100%"). A produção segue direto pela fila do `situacao.py`, sem pausas.
 >
 > **Produção em paralelo (desde 2026-11-18, ideia do Pedro):** o orquestrador (a sessão principal) lança 4 subagentes produtores, um por tema da fila, com as regras de `pipeline/instrucoes_produtor.md`. Cada produtor só escreve, baixa (`pipeline/baixar_fontes.py`), monta e checa o seu lote, e depois faz o r2 com os vereditos. A verificação continua com o subagente `verificador` independente, de 4 a 5 fatos por chamada, e quem grava vereditos, aplica e mexe no PROGRESSO é só o orquestrador, um lote por vez, para não haver escrita simultânea em `dados/fatos`. Duplicatas entre lotes paralelos: o orquestrador mantém um e descarta o outro como `duplicado`.
 >
-> **Onde parou (2026-11-23):** 18 levas paralelas fechadas (71 temas, mais o lote de IA). **Geração pausada a pedido do Pedro** (2026-11-23) para incluir no app a lista de temas. Ficaram parados no meio, sem nada gravado em dados/fatos: os produtores de Evolução (rascunho em `dados/candidatos/2026-11-19-evolucao-01.py`), Remédios e venenos, Rios, lagos e gelo e Astrobiologia. Ao retomar, comece por eles (relançar ou continuar do rascunho) e depois siga a fila do `situacao.py`.
+> **Onde parou (2026-11-24):** 21 levas paralelas fechadas (86 temas, mais o lote de IA). **Geração pausada a pedido do Pedro** (2026-11-24) depois da 21ª leva, sem nenhum lote pela metade. A taxonomia ganhou Gravidez humana e Contabilidade brasileira (agora 163 temas). Ao retomar, siga a fila do `situacao.py` (próximos: Experimentos de psicologia, Videogames, Genética, Desenvolvimento humano, Paleontologia...).
 >
 > **Para retomar:** rode `python pipeline/situacao.py`. Ele mostra o lote pela metade (e o próximo passo), se é hora de amostra de revisão humana e os próximos temas da fila. Siga o "Fluxo de um lote" (seção da Fase 2) e, ao fim de cada tema, atualize a tabela da Fase 4 e as estatísticas.
 
@@ -18,7 +18,7 @@
 | Fase | Situação |
 |---|---|
 | 0. Fundação | ✅ Concluída em 2026-11-17 |
-| 1. Taxonomia | ✅ Aprovada pelo Pedro em 2026-11-17 (16 áreas, 161 temas; tipos de espanto da lista fixa) |
+| 1. Taxonomia | ✅ Aprovada pelo Pedro em 2026-11-17 (16 áreas, 161 temas; tipos de espanto da lista fixa). Em 2026-11-24, a pedido do Pedro, entraram Gravidez humana e Contabilidade brasileira (163 temas) |
 | 2. Piloto de conteúdo | ✅ Concluída em 2026-11-17 (Pedro revisou os 40: 39 ok, 1 chato; 39 fatos aprovados) |
 | 3. App MVP | ✅ Publicado em 2026-11-17 (https://pedmacedo.github.io/curiosidades/); o Pedro liberou a Fase 4 |
 | 4. Produção | ⏳ Em andamento (ver seção da Fase 4) |
@@ -128,6 +128,20 @@
 | Ciência da cozinha | 2026-11-19-ciencia_cozinha-01 | 16 | 15 | 1 | 18ª leva paralela. Rodada 1: 7 aprovados, 8 ajustar, 1 reprovado (coentro com gosto de sabão: curiosidade batida, e o efeito do gene OR6A2 é pequeno). Destaques: o açúcar "não derrete" só no aquecimento comum (a 1000 K/s ele funde sem se decompor); a cor dos corpos dos pântanos por Maillard é explicação apontada, não certeza; a esferificação nasceu nos anos 1940 com cerejas artificiais, antes da Unilever; as cebolas Sunions vêm de cruzamento, sem "LFS silenciada"; o micro-ondas alcança alguns centímetros (o "1 cm" da fonte era contraditório). Os 8 aprovados na 2ª (1 com ajuste pontual) |
 | Psicologia social | 2026-11-19-psicologia_social-01 | 14 | 14 | 0 | 18ª leva paralela. Rodada 1: 2 aprovados, 12 ajustar (quase todos de nuance, por causa da crise de replicação). Destaques: os "5%" de Asch com um parceiro eram de respostas, não de pessoas; a barraca derrubada em Robbers Cave é lembrança de um membro da equipe; a acusação de 2025 contra "When Prophecy Fails" é de um único pesquisador independente; os dados de Hawthorne reapareceram antes de 2011; os garotos de Tajfel já se conheciam (o que não sabiam era o grupo); a resposta de Dunbar incluía gibões e orangotangos. Os 12 aprovados na 2ª |
 | Jogos de tabuleiro | 2026-11-19-jogos_tabuleiro-01 | 15 | 15 | 0 | 18ª leva paralela. Rodada 1: 7 aprovados, 8 ajustar. Destaques: o Jogo Real de Ur ficou sem regras só até ser redescoberto (Kochi ainda o jogava); o MI9 escondeu mapas em discos de gramofone, não de "vinil"; o Kriegsspiel tinha o equivalente aos "pontos de vida", não o termo; o efeito do lance do Deep Blue sobre Kasparov é versão de um engenheiro; a coautoria e a "aposta" do MENACE vinham de fonte fraca; a peça de Lewis de £735.000 é só atribuída à oficina, e o carbono-14 deu data mais tardia. Os 8 aprovados na 2ª (1 com ajuste pontual) |
+| Evolução | 2026-11-19-evolucao-01 | 16 | 16 | 0 | 19ª leva paralela (retomada em 2026-11-23). Rodada 1: 9 aprovados, 7 ajustar. Destaques: a seca dos tentilhões foi em 2003 e 2004 e o bico mudou numa espécie só; as lagartixas de Pod Mrčaru viraram consenso_parcial (estudo genômico de 2024 aponta plasticidade); a carta de Darwin a Lyell tinha sido lida ao contrário; a mosca dos grilos havaianos deposita larvas, não ovos (erro da Wikipedia); o frameshift de Ohno no náilon saiu (era hipótese para outra enzima). Os 7 aprovados na 2ª (1 com ajuste pontual) |
+| Astrobiologia | 2026-11-19-astrobiologia-01 | 16 | 16 | 0 | 19ª leva paralela. Rodada 1: 12 aprovados, 4 ajustar. Destaques: o paradoxo de Fermi ganhou a crítica (Fermi nunca publicou; Sagan achava a frase apócrifa; para Gray, Fermi duvidava da viagem interestelar); o fósforo de Encélado foi "indicado", não medido; o hidrogênio de Titã "rarearia", e o próprio McKay achou outras causas mais prováveis. Os 4 aprovados na 2ª |
+| Rios, lagos e gelo | 2026-11-19-agua_doce_gelo-01 | 16 | 15 | 1 | 19ª leva paralela. Rodada 1: 7 aprovados, 8 ajustar, 1 reprovado (o azul do gelo das geleiras: duplicado de "a água é azul"). Destaques: o mar de Aral "já foi" o 4º maior lago e chegou a 10% já depois da URSS; as varvas também se formam no mar (a frase "só em água doce" era falsa) e o lago Suigetsu calibra o carbono-14 "até 52.800 anos atrás"; o Grímsvötn solta enchentes com frequência e o pico de 1996 da Wikipedia (500 mil m³/s) estava inflado ~10x; a explicação "pelo sol" dos ratos de geleira foi contradita em 2020. Os 8 aprovados na 2ª (1 com ajuste pontual) |
+| Remédios e venenos | 2026-11-19-farmacos-01 | 14 | 13 | 1 | 19ª leva paralela. Rodada 1: 6 aprovados, 7 ajustar, 1 reprovado (Paracelso e "a dose faz o veneno": pouco interessante). Destaques: o "Mother Hutton" da digitális é invenção publicitária de 1928; o "spir" de aspirina vem de Spirsäure, ligado à Spiraea (a Wikipedia chama Spirsäure de "meadowsweet", o que não é exato); o lítio é "tido como" o primeiro remédio eficaz para doença mental; a recusa de Nobel à nitroglicerina vem do comunicado do Nobel de 1998. Os 7 aprovados na 2ª |
+| Criptografia | 2026-11-23-criptografia-01 | 15 | 14 | 1 | 20ª leva paralela. Rodada 1: 10 aprovados, 4 ajustar, 1 reprovado (Histieu e a mensagem tatuada na cabeça raspada: trivia conhecida). Destaques: as 57 cartas cifradas de Maria Stuart achadas na BnF; os números 330 e 309 do Grande Cifrário eram "máscara" e ponto final, e o "até 1811" da Wikipedia confundia com o Grande Chiffre de Napoleão; Cocks não anotou a ideia "na hora" (a nota de 1973 existe); o Copiale sugere que os Oculistas, "ou ao menos o conde Veltheim", eram maçons. Os 4 aprovados na 2ª (1 com ajuste pontual) |
+| Física de partículas | 2026-11-23-fisica_particulas-01 | 16 | 14 | 2 | 20ª leva paralela. Rodada 1: 5 aprovados, 9 ajustar, 2 reprovados (os cadernos de Marie Curie "em caixas de chumbo": exagero viral que a BnF não confirma; Becquerel e os dias nublados: trivia escolar). Destaques: o telegrama de Pauli aparentemente nunca chegou (Arquivo do CERN); o Higgs dá ~1% da massa do próton, mas cálculos completos dão ~9% aos quarks; Wu recebeu outros prêmios antes do Wolf; Maria Gabriela levou a peça de césio à Vigilância Sanitária, não a um hospital (IPEN). Os 9 aprovados na 2ª (1 com ajuste pontual) |
+| Telecomunicações | 2026-11-23-telecomunicacoes-01 | 15 | 14 | 1 | 20ª leva paralela. Rodada 1: 7 aprovados, 7 ajustar, 1 reprovado (o "lo" da ARPANET: trivia clássica). Destaques: a mensagem da rainha Vitória levou ~16 h (os "67 minutos" da Wikipedia não fecham com a própria fonte); a escuta contínua depois do Titanic veio de uma emenda de 1912 à lei de 1910, só para navios de passageiros; o PAMOR "tentava" espionar radares soviéticos na Lua; Strowger não ficou pobre. O Starfish Prime entrou aqui (e saiu como duplicado da Guerra Fria). Os 8 aprovados na 2ª |
+| Guerra Fria | 2026-11-23-guerra_fria-01 | 15 | 14 | 1 | 20ª leva paralela. Rodada 1: 9 aprovados, 5 ajustar, 1 reprovado (Starfish Prime: duplicado de telecomunicacoes-0007). Destaques: Arkhipov com a intenção do capitão atribuída a tripulantes; no túnel de Berlim, quem sabia era a KGB, que não avisou nem os militares soviéticos; o código 00000000 sem a conciliação editorial entre Blair e a Força Aérea; em Palomares, o Alvin achou a bomba em março e os 80 dias são até o içamento. Os 5 aprovados na 2ª |
+| Américas pré-colombianas | 2026-11-23-americas_pre_colombianas-01 | 15 | 15 | 0 | 20ª leva paralela. Rodada 1: 7 aprovados, 8 ajustar. Destaques: a distância entre os postos dos chasquis varia entre cronistas; Cahokia "maior que Londres" só pelas estimativas altas; Caral sem sinal de guerra, mas com sacrifícios em Áspero; as múmias chinchorro perderam o título de "mais antigas" para um estudo de 2025 na PNAS; o azul maia aparece bem antes do ano 800. Os 8 aprovados na 2ª (5 com ajuste pontual) |
+| Cinema e fotografia | 2026-11-24-cinema_fotografia-01 | 16 | 16 | 0 | 21ª leva paralela. Rodada 1: 5 aprovados, 11 ajustar. Destaques: a foto de Niépce é a mais antiga "tirada com câmera" (há heliografias de contato anteriores); no Boulevard du Temple, o homem parado era o freguês do engraxate; o primeiro teste de Muybridge foi com um trotador, e o galope veio depois; a Kodak vendia e revelava quase todo o filme colorido; Lippmann usava emulsão de preto e branco (com corante sensibilizante); o som do filme de Dickson só foi ligado ao filme em 1998. Os 11 aprovados na 2ª |
+| Línguas do mundo | 2026-11-24-linguas_mundo-01 | 16 | 16 | 0 | 21ª leva paralela. Rodada 1: 8 aprovados, 8 ajustar. Destaques: o taa tem de 58 a 130 consoantes conforme a contagem; o hebraico deixou de ser língua materna, mas não de ser falado; a língua de sinais nicaraguense ganhou a contestação de Stokoe ao inatismo; os dois "últimos falantes" do ayapaneco negam a briga, mas um repórter não conseguiu reuni-los; o tocário é o ramo mais oriental "na Antiguidade"; o apoio genético ao dene-ieniseiano é "tentativo". Os 8 aprovados na 2ª |
+| Biomas brasileiros | 2026-11-24-biomas_brasileiros-01 | 13 | 13 | 0 | 21ª leva paralela. Rodada 1: 5 aprovados, 8 ajustar. Destaques: a ararinha-azul ganhou o revés de nov/2025 (as 11 aves soltas recapturadas com circovírus, ICMBio); as 430 mil jararacas-ilhoas eram crença, não estimativa; o lobo-guará come "boa parte" de vegetais, não a maior parte; a arara-azul-de-lear cresceu ~10x (de ~170 para 1.694), não 30x; a seca do Pantanal foi no próprio ano de 2020. Os 8 aprovados na 2ª (1 com ajuste pontual) |
+| Roupas e moda | 2026-11-24-moda-01 | 14 | 12 | 2 | 21ª leva paralela. Rodada 1: 7 aprovados, 5 ajustar, 2 reprovados ("gravata vem de croata": trivia de almanaque; os monges com ovos de bicho-da-seda "em bastões ocos": mito que funde os relatos de Procópio e Teófanes). Destaques: o verde vivo da moda "costumava" vir do arsênico; o abandono do salto pelos homens em 1740 é de Semmelhack, e as botas de montaria mantiveram saltos; o zíper já estava em roupas militares antes de 1925; as aranhas da capa do V&A são do bordado. Os 5 aprovados na 2ª |
+| Alimentos perigosos | 2026-11-24-alimentos_perigosos-01 | 14 | 14 | 0 | 21ª leva paralela, sem doses letais nem modos de preparo. Rodada 1: 1 aprovado, 13 ajustar. Destaques: a origem bacteriana do veneno do baiacu é a explicação mais aceita, não certeza; o papel das sementes do akee vem de um só estudo; a redistribuição das folhas de ruibarbo na Segunda Guerra não tinha fonte boa e saiu; o mel louco foi em 400 a.C., não 401; na Coreia, a anemia por primaquina atingiu sobretudo soldados afro-americanos (a origem étnica saiu); Ninnis caiu em 1912; em Salem eram "enfeitiçadas". Os 13 aprovados na 2ª (3 com ajuste pontual) |
 
 ## Fase 2: piloto (2026-11-17)
 
@@ -224,7 +238,7 @@ Opcional: a variável de ambiente `CURIOSIDADES_CONTATO` acrescenta um contato a
 
 ## Fase 1: taxonomia
 
-- `dados/taxonomia.json`: 16 áreas e 161 temas (10 por área; História antiga e medieval tem 11), cada tema com 2 a 5 vizinhos de outras áreas, e todo tema alcançável por algum vizinho. Resumo em `dados/revisao/taxonomia-proposta.md`.
+- `dados/taxonomia.json`: 16 áreas e 161 temas (10 por área; História antiga e medieval tem 11; desde 2026-11-24 são 163, com `gravidez` em Corpo humano e medicina e `contabilidade_brasileira` em Brasil), cada tema com 2 a 5 vizinhos de outras áreas, e todo tema alcançável por algum vizinho. Resumo em `dados/revisao/taxonomia-proposta.md`.
 - Encaixes: Paleontologia em *Terra*; Neurociência em *Mente*; Comida brasileira em *Comida*; Mitologia em *Artes*; Teoria dos jogos e Algoritmos em *Matemática*.
 
 ## Decisões e observações
@@ -242,7 +256,7 @@ Opcional: a variável de ambiente `CURIOSIDADES_CONTATO` acrescenta um contato a
 
 ## Estatísticas de conteúdo
 
-Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-23):
+Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-24):
 
 | Lote | Tema | Candidatos | Aprovados | Descartados | Descarte | Rodada 1 (apr/ajus/repr) | Motivos | Nota média |
 |---|---|---|---|---|---|---|---|---|
@@ -299,7 +313,9 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-23):
 | 2026-11-18-vieses_cognitivos-01 | vieses_cognitivos | 9 | 9 | 0 | 0% | 3/6/0 | — | 3.6 |
 | 2026-11-18-vulcoes_terremotos-01 | vulcoes_terremotos | 10 | 10 | 0 | 0% | 6/4/0 | — | 4.0 |
 | 2026-11-19-acustica-01 | acustica | 15 | 15 | 0 | 0% | 11/4/0 | — | 3.8 |
+| 2026-11-19-agua_doce_gelo-01 | agua_doce_gelo | 16 | 15 | 1 | 6% | 7/8/1 | duplicado 1 | 4.1 |
 | 2026-11-19-asia_antiga-01 | asia_antiga | 15 | 14 | 1 | 7% | 5/9/1 | pouco_interessante 1 | 3.9 |
+| 2026-11-19-astrobiologia-01 | astrobiologia | 16 | 16 | 0 | 0% | 12/4/0 | — | 3.8 |
 | 2026-11-19-bebidas_alcoolicas-01 | bebidas_alcoolicas | 15 | 15 | 0 | 0% | 9/6/0 | — | 3.6 |
 | 2026-11-19-cafe_cha_cacau-01 | cafe_cha_cacau | 15 | 14 | 1 | 7% | 5/9/1 | pouco_interessante 1 | 3.9 |
 | 2026-11-19-calendarios-01 | calendarios | 15 | 14 | 1 | 7% | 9/5/1 | pouco_interessante 1 | 3.7 |
@@ -311,7 +327,9 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-23):
 | 2026-11-19-eletromagnetismo-01 | eletromagnetismo | 14 | 14 | 0 | 0% | 5/9/0 | — | 3.9 |
 | 2026-11-19-emocoes-01 | emocoes | 13 | 13 | 0 | 0% | 9/4/0 | — | 3.9 |
 | 2026-11-19-energia-01 | energia | 16 | 16 | 0 | 0% | 4/12/0 | — | 4.0 |
+| 2026-11-19-evolucao-01 | evolucao | 16 | 16 | 0 | 0% | 9/7/0 | — | 4.1 |
 | 2026-11-19-exoplanetas-01 | exoplanetas | 15 | 15 | 0 | 0% | 9/6/0 | — | 4.1 |
+| 2026-11-19-farmacos-01 | farmacos | 14 | 13 | 1 | 7% | 6/7/1 | pouco_interessante 1 | 3.8 |
 | 2026-11-19-fungos-01 | fungos | 15 | 15 | 0 | 0% | 7/8/0 | — | 3.9 |
 | 2026-11-19-galaxias-01 | galaxias | 14 | 14 | 0 | 0% | 7/7/0 | — | 3.9 |
 | 2026-11-19-geometria_topologia-01 | geometria_topologia | 15 | 15 | 0 | 0% | 11/4/0 | — | 4.0 |
@@ -342,9 +360,19 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-23):
 | 2026-11-19-sistemas_escrita-01 | sistemas_escrita | 17 | 17 | 0 | 0% | 11/6/0 | — | 3.7 |
 | 2026-11-19-termodinamica-01 | termodinamica | 15 | 15 | 0 | 0% | 6/9/0 | — | 3.8 |
 | 2026-11-19-transportes-01 | transportes | 15 | 15 | 0 | 0% | 6/9/0 | — | 3.9 |
-| **Total** | | 1318 | 1283 | 35 | 3% | | | |
+| 2026-11-23-americas_pre_colombianas-01 | americas_pre_colombianas | 15 | 15 | 0 | 0% | 7/8/0 | — | 3.8 |
+| 2026-11-23-criptografia-01 | criptografia | 15 | 14 | 1 | 7% | 10/4/1 | pouco_interessante 1 | 3.9 |
+| 2026-11-23-fisica_particulas-01 | fisica_particulas | 16 | 14 | 2 | 12% | 5/9/2 | exagero 1, pouco_interessante 1 | 3.9 |
+| 2026-11-23-guerra_fria-01 | guerra_fria | 15 | 14 | 1 | 7% | 9/5/1 | duplicado 1 | 3.9 |
+| 2026-11-23-telecomunicacoes-01 | telecomunicacoes | 15 | 14 | 1 | 7% | 7/7/1 | pouco_interessante 1 | 3.8 |
+| 2026-11-24-alimentos_perigosos-01 | alimentos_perigosos | 14 | 14 | 0 | 0% | 1/13/0 | — | 3.9 |
+| 2026-11-24-biomas_brasileiros-01 | biomas_brasileiros | 13 | 13 | 0 | 0% | 5/8/0 | — | 3.8 |
+| 2026-11-24-cinema_fotografia-01 | cinema_fotografia | 16 | 16 | 0 | 0% | 5/11/0 | — | 3.9 |
+| 2026-11-24-linguas_mundo-01 | linguas_mundo | 16 | 16 | 0 | 0% | 8/8/0 | — | 3.9 |
+| 2026-11-24-moda-01 | moda | 14 | 12 | 2 | 14% | 7/5/2 | pouco_interessante 1, mito 1 | 3.8 |
+| **Total** | | 1529 | 1485 | 44 | 3% | | | |
 
-Cobertura: 96 de 161 temas com pelo menos um fato aprovado.
+Cobertura: 110 de 163 temas com pelo menos um fato aprovado.
 
 ## Revisões humanas
 

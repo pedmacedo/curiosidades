@@ -1,0 +1,161 @@
+{
+ "lote": "2026-11-24-linguas_mundo-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "linguas_mundo-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "840 línguas (Ethnologue), 'pidgin' da pronúncia chinesa de 'business', tok pisin de 'talk pidgin'."
+   },
+   {
+    "id": "linguas_mundo-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Unserdeutsch: orfanato de Vunapope em 1898, único crioulo do alemão colonial, ~100 falantes na Austrália."
+   },
+   {
+    "id": "linguas_mundo-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 4.320 falantes são da língua rotokas inteira; 'pelo menos 58' omite as contagens de 87 a 130 e conflita com o ubykh (84) do 0004.",
+    "correcao": "1) No gancho, trocar 'tem pelo menos 58 consoantes, e numa contagem 82% das palavras básicas começam com um clique' por 'tem de 58 a 130 consoantes, conforme a contagem, e numa delas 82% das palavras básicas começam com um clique'. 2) Na explicação, depois de 'Parte da divergência vem de decidir quais sons combinados contam como um só.', inserir: 'Contando todos os sons consonantais, as listas chegam a 122 (DoBeS) ou 130 (Traill).' 3) Trocar 'No extremo oposto está o dialeto central do rotokas, falado por cerca de 4.320 pessoas na ilha de Bougainville. Ele tem um dos menores inventários' por 'No extremo oposto está o rotokas, língua falada por cerca de 4.320 pessoas na ilha de Bougainville. Seu dialeto central tem um dos menores inventários'."
+   },
+   {
+    "id": "linguas_mundo-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte chama a despedida de 'speech', não diz que foi escrita.",
+    "correcao": "Na explicação, trocar 'Ao encerrar o trabalho, escreveu a Charachidzé:' por 'Ao encerrar o trabalho, despediu-se de Charachidzé com estas palavras:'."
+   },
+   {
+    "id": "linguas_mundo-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Canguru' não quer dizer 'não entendi' (mito listado); a espécie fica sem nome por causa da contradição da fonte."
+   },
+   {
+    "id": "linguas_mundo-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Kuşköy: segue o resumo da Current Biology (contribuição simétrica dos hemisférios); silbo gomero confere."
+   },
+   {
+    "id": "linguas_mundo-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz que o hebraico deixou de ser língua materna, não que deixou de ser falado (seguia pronunciado e como língua franca).",
+    "correcao": "Na explicação, trocar 'Depois do fim do hebraico falado, no século II, a língua seguiu viva na oração, no estudo e na escrita, mas ninguém mais a aprendia no berço.' por 'Depois que o hebraico deixou de ser língua materna, no século II, a língua seguiu viva na oração, no estudo e na escrita, mas ninguém mais a aprendia no berço.'"
+   },
+   {
+    "id": "linguas_mundo-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Manx e córnico reclassificados pela UNESCO; Ned Maddrell, gravação de 1948; sem crianças nativas de manx."
+   },
+   {
+    "id": "linguas_mundo-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "A leitura inatista aparece como conclusão, mas a fonte registra a contestação de Stokoe e o debate aberto; 'só gestos caseiros' exagera.",
+    "correcao": "No gancho, trocar 'que só conheciam gestos caseiros' por 'que antes usavam quase só gestos caseiros'. No fim da explicação, depois de '...a única vez em que se viu uma língua ser criada do nada.', acrescentar: 'Outros, como William Stokoe, contestam essa leitura e duvidam que não tenha havido influência externa; o debate entre inatismo e aprendizado segue aberto.'"
+   },
+   {
+    "id": "linguas_mundo-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A IBTimes reforça o afastamento dos dois; as aulas juntos não provam harmonia; Suslak é antropólogo.",
+    "correcao": "Na explicação, trocar 'Os dois chegaram a dar aulas da língua juntos a crianças e adolescentes, e o filho de Manuel passou a manter uma escola de ayapaneco no vilarejo.' por 'Os dois negam a briga e chegaram a dar aulas da língua juntos a crianças e adolescentes, embora um repórter que os visitou em 2013 não tenha conseguido reuni-los. O filho de Manuel passou a manter uma escola de ayapaneco no vilarejo.' No gancho, trocar 'o linguista que os estudou' por 'o antropólogo que os estudou'."
+   },
+   {
+    "id": "linguas_mundo-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "De 4 palavras em Boas a 100 no NYT de 1984; Krupnik e os sámis; consenso_parcial adequado."
+   },
+   {
+    "id": "linguas_mundo-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Malgaxe: ~7.300 km, parente mais próximo o ma'anyan (Dahl 1951); condicional mais cauteloso que a fonte."
+   },
+   {
+    "id": "linguas_mundo-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Mais a leste' é falso hoje (russo); a fonte diz ramo mais oriental na Antiguidade; o uso litúrgico do tocário A é inferência.",
+    "correcao": "No gancho, trocar 'A língua indo-europeia mais a leste, o tocário, foi escrita entre os séculos V e VIII no noroeste da China. E o chinês \"mì\", mel, pode vir dela, primo do inglês \"mead\", hidromel.' por 'O ramo mais oriental da família indo-europeia na Antiguidade, o tocário, foi escrito entre os séculos V e VIII no noroeste da China. E o chinês \"mì\", mel, pode vir dele, primo do inglês \"mead\", hidromel.' Na explicação, trocar 'O tocário A servia como língua litúrgica budista.' por 'O tocário A provavelmente servia como língua litúrgica budista.'"
+   },
+   {
+    "id": "linguas_mundo-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Primeiro apoio do DNA' exagera: Vajda já citara o haplogrupo Q1 em 2012 e o estudo de 2025 chama o apoio de tentativo e fraco.",
+    "correcao": "No gancho, trocar 'Em 2025, um estudo genético trouxe o primeiro apoio do DNA à ideia.' por 'Em 2025, um estudo genético trouxe um apoio, ainda tentativo, à ideia.' Na explicação, trocar 'Em 2025, geneticistas acharam a contribuição de uma mesma população antiga, que vivia a oeste do lago Baikal, tanto em povos atabascanos do Alasca quanto nos ieniseianos atuais.' por 'Em 2025, geneticistas acharam sinais, que eles mesmos chamaram de tentativos, de que uma mesma população antiga, que vivia a oeste do lago Baikal, contribuiu tanto para povos atabascanos do Alasca quanto para os ieniseianos atuais.' Acrescentar como fonte https://pmc.ncbi.nlm.nih.gov/articles/PMC12342343/ ('Ancient DNA reveals the prehistory of the Uralic and Yeniseian peoples'), com trecho literal conferido pelo script, por exemplo a frase que contém 'may also provide—for the first time—tentative genetic support'. Manter confianca 'hipotese'."
+   },
+   {
+    "id": "linguas_mundo-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fábula de Schleicher (1868) e as revisões de Hirt, Lehmann e Zgusta, Adams e Kortlandt conferem."
+   },
+   {
+    "id": "linguas_mundo-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Publicou pela primeira vez' exagera (é o registro mais antigo conhecido); o professor do Bronx vem só do relato de Weinreich; a China manteve a unidade 'com breves interrupções'.",
+    "correcao": "No gancho, trocar 'Mas ele a ouviu de um professor de escola do Bronx, na plateia de uma palestra sua, nos anos 1940.' por 'Mas, segundo ele, a ouviu de um professor de escola do Bronx, na plateia de uma palestra sua, nos anos 1940.' Na explicação, trocar 'Weinreich, estudioso do iídiche, publicou a frase pela primeira vez num texto apresentado como discurso em 5 de janeiro de 1945.' por 'O registro publicado mais antigo que se conhece da frase é um texto de Weinreich, estudioso do iídiche, apresentado como discurso em 5 de janeiro de 1945.' Trocar também 'e a manteve, enquanto' por 'e a manteve, com breves interrupções, enquanto'."
+   }
+  ],
+  "2": [
+   {
+    "id": "linguas_mundo-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "58 a 130 consoantes conforme a contagem; 4.320 falantes da língua inteira."
+   },
+   {
+    "id": "linguas_mundo-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Despediu-se com estas palavras'."
+   },
+   {
+    "id": "linguas_mundo-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Deixou de ser língua materna'."
+   },
+   {
+    "id": "linguas_mundo-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'Quase só gestos caseiros'; contestação de Stokoe e debate aberto."
+   },
+   {
+    "id": "linguas_mundo-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Antropólogo'; ressalva da IBTimes sobre o afastamento."
+   },
+   {
+    "id": "linguas_mundo-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Ramo mais oriental na Antiguidade'; 'provavelmente' litúrgica."
+   },
+   {
+    "id": "linguas_mundo-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Apoio genético 'tentativo', com o artigo de 2025 como fonte."
+   },
+   {
+    "id": "linguas_mundo-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Segundo ele'; registro publicado mais antigo; breves interrupções."
+   }
+  ]
+ }
+}

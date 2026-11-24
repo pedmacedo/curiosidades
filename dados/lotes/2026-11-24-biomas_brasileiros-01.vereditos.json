@@ -1,0 +1,144 @@
+{
+ "lote": "2026-11-24-biomas_brasileiros-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "biomas_brasileiros-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Omissão que engana: em nov/2025 o ICMBio recapturou 11 ararinhas soltas, todas positivas para circovírus.",
+    "correcao": "1) Acrescentar a fonte https://agenciagov.ebc.com.br/noticias/202511/ararinhas-azuis-que-estavam-em-vida-livre-testam-positivo-para-circovirus (Agência Gov/ICMBio, 26/11/2025), com um trecho literal sobre as 11 ararinhas recapturadas no início de novembro por suspeita de circovírus que testaram positivo, e rodar de novo o checar_citacoes.py. 2) No fim da explicação, acrescentar: 'Em 2025, porém, veio um revés: 11 ararinhas que viviam soltas foram recapturadas por suspeita de circovírus, uma doença sem cura e em geral fatal para araras e papagaios, e todas testaram positivo.' Só afirme que não resta nenhuma ave na natureza se a nova fonte disser isso literalmente (e só diga 'sem cura' ou 'em geral fatal' se a fonte sustentar). 3) Para não passar de 250 palavras, encurte outro trecho (por exemplo, 'Depois de anos de criação, e de aves trazidas da Alemanha para o Brasil em 2020,' por 'Com aves trazidas da Alemanha em 2020,'). 4) Opcional: no gancho, trocar 'voltaram à Caatinga.' por 'voltaram à Caatinga, num retorno ainda frágil.', desde que continue com até 220 caracteres."
+   },
+   {
+    "id": "biomas_brasileiros-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mico-leão-dourado: 146 soltos de 43 zoológicos, febre amarela, vacina desde 2021, 46% de descendentes dos reintroduzidos na área principal."
+   },
+   {
+    "id": "biomas_brasileiros-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 430 mil eram crença ('previously thought'), não estimativa científica; o texto sugere que a cobra não dá o bote.",
+    "correcao": "1) No gancho, trocar 'Já se estimou que a Ilha da Queimada Grande (SP) tivesse 430 mil jararacas-ilhoas' por 'Dizia-se que a Ilha da Queimada Grande (SP) tinha 430 mil jararacas-ilhoas'. 2) Na explicação, trocar 'a mesma cifra da antiga estimativa de cobras' por 'a mesma cifra do antigo número de cobras'. 3) Trocar 'Em vez de dar o bote, soltar a presa e segui-la pelo cheiro, como outras víboras, ela a mantém presa na boca' por 'Outras víboras dão o bote, soltam a presa e a seguem pelo cheiro; ela, depois do bote, não solta a presa da boca'. Não mencionar veneno."
+   },
+   {
+    "id": "biomas_brasileiros-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'A maior parte vegetal' sem ressalva: estudos de campo variam (54% vegetal em MG; 56,8% animal em outra reserva); a fonte diz 'with some exceptions'.",
+    "correcao": "1) No gancho, trocar 'e a maior parte do que come é vegetal' por 'e boa parte do que come é vegetal'. 2) Na explicação, trocar 'mas a maior parte da dieta é vegetal' por 'mas boa parte da dieta, muitas vezes mais da metade, é vegetal' (apoio no artigo Solanum lycocarpum: 'its fruit accounts for more than 50% of maned wolves' diet'). 3) Logo depois de 'O preferido é a lobeira', acrescentar 'que, com exceções, responde por 40% a 90% da dieta'. O 'pode responder por 40% a 90%' do gancho pode ficar."
+   },
+   {
+    "id": "biomas_brasileiros-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Pequenas generalizações: 'alguns outros tatus', 'entre os mamíferos'; a fonte se contradiz sobre tocas, então restringir a cavar para se defender.",
+    "correcao": "Na explicação, troque 'climas secos demais para outros tatus' por 'climas secos demais para alguns outros tatus'. Troque 'Só pumas e onças adultos têm força para ser uma ameaça natural.' por 'Entre os mamíferos, só pumas e onças adultos têm força para ser uma ameaça natural.' Troque 'ele dispensa cavar buracos para se proteger, ao contrário da maioria dos parentes' por 'ele não cava buracos para se defender, ao contrário da maioria dos parentes'."
+   },
+   {
+    "id": "biomas_brasileiros-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Cupinzeiros da Caatinga: 200 milhões, área da Grã-Bretanha, 10 km³ (4.000 pirâmides), até 3.820 anos; Cell Press e Wikipedia."
+   },
+   {
+    "id": "biomas_brasileiros-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cupinzeiros luminosos: Redford 1982 e FAPESP (declínio com soja e cana) sustentam tudo."
+   },
+   {
+    "id": "biomas_brasileiros-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 53% dos ovos predados estão certos; a fatia do tucano na dispersão varia entre 83% e 86% nas fontes.",
+    "correcao": "Na explicação, troque 'e o tucano sozinho respondia por quase 85% da dispersão' por 'e o tucano sozinho respondia por mais de 80% da dispersão das sementes'."
+   },
+   {
+    "id": "biomas_brasileiros-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "numero_divergente: 'trinta vezes' neste século contradiz os dados do próprio artigo (~170 em 2000, 1.694 em 2018).",
+    "correcao": "Na explicação, troque 'Com um esforço intenso de conservação, a população mundial da espécie cresceu cerca de trinta vezes nas duas primeiras décadas do século XXI.' por 'Com um esforço intenso de conservação, a população selvagem, estimada em cerca de 170 aves em 2000, passou de 1.600 em 2018.' e acrescente ao trecho da fonte (Wikipedia, Lear's macaw) as frases literais 'The wild population was surveyed as some 170 individuals in 2000.' e 'grew further to 1,694 in the 2018 count.' Se preferir não mexer no trecho, use a versão sem números: 'Com um esforço intenso de conservação, a população selvagem cresceu muitas vezes neste século.'"
+   },
+   {
+    "id": "biomas_brasileiros-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte fala de espécies sensíveis ao fogo nas matas de galeria, não das matas inteiras; e não diz que o rebrote é rápido.",
+    "correcao": "Na explicação: (1) troque 'matas de galeria e brejos de palmeiras podem não se recuperar de um incêndio grande' por 'nas matas de galeria e nos brejos de palmeiras, espécies sensíveis ao fogo podem não se recuperar de um incêndio grande'; (2) troque 'já tinham notado que ele rebrota e floresce depressa após queimar' por 'já tinham notado que ele rebrota e floresce depois de queimar'."
+   },
+   {
+    "id": "biomas_brasileiros-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Decoada: boletim 121 da Embrapa Pantanal sustenta anoxia, CO2, mecanismo e mortandade de milhares de toneladas nos anos fortes."
+   },
+   {
+    "id": "biomas_brasileiros-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A seca de 40% foi no próprio ano de 2020, não num ano anterior; números conferem (16.952.000; 9.391.408 cobras pequenas).",
+    "correcao": "Na explicação, troque 'Em 2020, depois de um ano com chuvas 40% abaixo do normal na região, foram 39.030 km².' por 'Em 2020, ano em que as chuvas na região ficaram 40% abaixo do normal, foram 39.030 km².'"
+   },
+   {
+    "id": "biomas_brasileiros-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Campos rupestres: <1% do território, ~15% das plantas, ~30% exclusivas, solo pobre e ilhas no alto das serras."
+   }
+  ],
+  "2": [
+   {
+    "id": "biomas_brasileiros-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Revés de 2025 com fonte do ICMBio; gancho e 'as 11 que ainda viviam soltas' corrigidos como ajuste pontual (eram todas as aves soltas).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "biomas_brasileiros-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Dizia-se'; antigo número; bote sem soltar a presa."
+   },
+   {
+    "id": "biomas_brasileiros-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Boa parte, muitas vezes mais da metade'; 'com exceções'."
+   },
+   {
+    "id": "biomas_brasileiros-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "As três trocas aplicadas e conferidas."
+   },
+   {
+    "id": "biomas_brasileiros-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de 80%' entre 83% e 85%; 53% dos ovos predados."
+   },
+   {
+    "id": "biomas_brasileiros-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "~170 aves em 2000 e 1.694 em 2018, com trechos literais."
+   },
+   {
+    "id": "biomas_brasileiros-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Espécies sensíveis ao fogo; sem 'depressa'."
+   },
+   {
+    "id": "biomas_brasileiros-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Seca de 40% no próprio ano de 2020."
+   }
+  ]
+ }
+}

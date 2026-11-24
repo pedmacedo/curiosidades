@@ -1,0 +1,140 @@
+{
+ "lote": "2026-11-24-moda-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "moda-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho generaliza: a fonte diz que o arsênico 'também foi parar' em vestidos, luvas e sapatos, não que todo verde vinha dele.",
+    "correcao": "No gancho, trocar 'O verde da moda no século XIX vinha do arsênico.' por 'O verde vivo da moda no século XIX costumava vir do arsênico.'"
+   },
+   {
+    "id": "moda-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mercúrio dos chapeleiros: carroting, 'Danbury shakes', fim nos EUA em 1941 pelos detonadores; origem de 'mad as a hatter' incerta; sem instrução."
+   },
+   {
+    "id": "moda-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O abandono do salto em 1740 é de Semmelhack e vale para o salto alto de moda (botas de montaria mantiveram saltos); frase truncada.",
+    "correcao": "Na explicação: (a) trocar 'ganhava 10 cm com saltos de sola e salto sempre vermelhos e, nos anos 1670,' por 'ganhava 10 cm com saltos, sempre com sola e salto vermelhos, e, nos anos 1670,'; (b) trocar 'e por volta de 1740 os homens o tinham abandonado.' por 'e, segundo Semmelhack, por volta de 1740 os homens tinham deixado o salto alto de lado; ficaram só saltos baixos e robustos, como os das botas de montaria.'"
+   },
+   {
+    "id": "moda-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Rosa para meninos' em 1918 e a inversão como exagero (Del Giudice: 34 contra 28 casos); consenso_parcial adequado."
+   },
+   {
+    "id": "moda-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O gancho para em 'deixou de servir' e deixa de fora a graça (a bolsa no braço).",
+    "correcao": "Trocar o gancho inteiro por: 'Por séculos, o bolso das mulheres era uma bolsinha à parte, amarrada na cintura sob a saia. Com os vestidos retos e finos do fim do século XVIII, ele ficou inútil, e elas passaram a levar a bolsa no braço.'"
+   },
+   {
+    "id": "moda-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Crinolinas: estimativa de Nightingale (630 mortas em 1863–1864), igreja de Santiago, filhas de William Wilde conferem."
+   },
+   {
+    "id": "moda-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Jacob Davis, rebites de cobre, patente de 1873; etimologias de jeans e denim; lendas desmentidas."
+   },
+   {
+    "id": "moda-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Só em 1925 chegou às roupas' é contestado (macacões de voo e cintos em 1917–1918).",
+    "correcao": "1) Na explicação, trocar 'Só em 1925 ele chegou às roupas, em jaquetas de couro.' por 'Em 1925, a marca Schott NYC passou a usá-lo em jaquetas de couro.' 2) No gancho, trocar 'O zíper demorou décadas para chegar às roupas.' por 'O zíper demorou décadas para se firmar nas roupas.'"
+   },
+   {
+    "id": "moda-0009",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: 'gravata vem de croata' é trivia de almanaque clássica."
+   },
+   {
+    "id": "moda-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Perkin, a quinina e a malva: 1856, 'one of the first', 'Mauve Measles' da Punch."
+   },
+   {
+    "id": "moda-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Seda marinha: bisso da nacra, ~150 conchas por par de luvas, Sant'Antioco; a lenda da casca de noz posta em dúvida (Scales)."
+   },
+   {
+    "id": "moda-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "As aranhas tecendo teias são do desenho bordado; o texto pode ser lido como aranhas vivas na capa.",
+    "correcao": "Na explicação, trocar 'Depois de tecida, a capa ganhou 6 mil horas de bordado, com dezenas de aranhas tecendo teias.' por 'Depois de tecida, a capa ganhou 6 mil horas de bordado, num desenho com dezenas de aranhas tecendo teias entre flores.'"
+   },
+   {
+    "id": "moda-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Piolho-do-corpo: 83 a 170 mil anos, sem estimativa amplamente aceita; consenso_parcial e misterio_aberto adequados."
+   },
+   {
+    "id": "moda-0014",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "mito: os 'monges com ovos em bastões ocos' fundem dois relatos (Procópio fala de monges sem bastão; Teófanes, de um persa com bastão); a AHA duvida de ambos."
+   }
+  ],
+  "2": [
+   {
+    "id": "moda-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Costumava vir do arsênico'."
+   },
+   {
+    "id": "moda-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Abandono em 1740 atribuído a Semmelhack; botas de montaria ressalvadas."
+   },
+   {
+    "id": "moda-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho com a bolsa no braço."
+   },
+   {
+    "id": "moda-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "William Wilde, pai de Oscar Wilde, com fonte nova."
+   },
+   {
+    "id": "moda-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase do denim fiel à fonte (Nîmes é lenda)."
+   },
+   {
+    "id": "moda-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Schott NYC em 1925; 'se firmar nas roupas'."
+   },
+   {
+    "id": "moda-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Aranhas do desenho bordado."
+   }
+  ]
+ }
+}

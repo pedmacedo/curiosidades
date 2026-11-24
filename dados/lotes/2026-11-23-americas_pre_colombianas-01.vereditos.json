@@ -1,0 +1,160 @@
+{
+ "lote": "2026-11-23-americas_pre_colombianas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "americas_pre_colombianas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Valeriana: lidar de 2013, 122 km², elementos de capital maia, >6.500 estruturas conferem com Antiquity e Tulane."
+   },
+   {
+    "id": "americas_pre_colombianas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O espaçamento entre postos é disputado (1/4 a 1,5 légua; D'Altroy 6–9 km) e a extensão da rede varia (23–60 mil km).",
+    "correcao": "1) No gancho, trocar 'com postos a cada 2,5 km' por 'com postos a poucos quilômetros uns dos outros'. 2) Na explicação, trocar 'a uns 2,5 km uns dos outros' por 'a cerca de 2,5 km uns dos outros, segundo vários cronistas (outros relatos e estudos modernos falam em distâncias maiores)'. 3) Na explicação, trocar 'somava cerca de 40.000 km' por 'somava dezenas de milhares de quilômetros (uma estimativa comum fala em 40.000 km)'."
+   },
+   {
+    "id": "americas_pre_colombianas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Huayna Picchu (Ñawpa Pacha 2021) com 'talvez'; Lizárraga em 1902 com a anotação de Bingham."
+   },
+   {
+    "id": "americas_pre_colombianas-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A comparação com Londres só vale pelas estimativas altas e a explicação não diz isso; 'de madeira' sem apoio; 'de mais 15 m' com erro.",
+    "correcao": "1) Na explicação, trocar 'era coroado por uma grande construção de madeira de mais 15 m' por 'era coroado por uma grande construção com mais 15 m de altura'. 2) Na explicação, logo depois da frase sobre Filadélfia, inserir: 'A comparação com a Londres do século XII, que a própria literatura faz com um \"talvez\", só se sustenta pelas estimativas mais altas; pelas mais baixas, Cahokia seria menor.'"
+   },
+   {
+    "id": "americas_pre_colombianas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Nem corpos mutilados' contraria a própria fonte (sacrifícios com mutilação); 'nenhuma arte visual' exagera ('almost no').",
+    "correcao": "1) No gancho, trocar 'nem muralhas, nem armas, nem corpos mutilados.' por 'nem muralhas, nem armas.' 2) Na explicação, trocar 'e dela não sobrou nenhuma arte visual' por 'e dela quase não sobrou arte visual'. 3) Na explicação, depois de 'os povoados não tinham defesas.', inserir: 'Isso não quer dizer ausência de violência: há indícios de sacrifícios humanos rituais na região.'"
+   },
+   {
+    "id": "americas_pre_colombianas-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem, mas sobrevivência inferida pela cicatrização (Andes) e mortalidade da Guerra Civil não foram medidas do mesmo jeito.",
+    "correcao": "Na explicação, logo depois da frase 'sem ela, assumiram que o paciente morreu na cirurgia ou poucos dias depois.', inserir: 'Por isso, os números dos Andes e os da Guerra Civil não foram medidos do mesmo jeito, e a comparação, feita pelos próprios autores, é aproximada.' O gancho pode ficar como está."
+   },
+   {
+    "id": "americas_pre_colombianas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Nature 2021: pico de radiocarbono de 993 nos anéis, três árvores cortadas em 1021, ferramentas de metal."
+   },
+   {
+    "id": "americas_pre_colombianas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "exagero: o superlativo 'mais antigas do mundo' foi contestado por estudo da PNAS de 2025 (corpos defumados na Ásia).",
+    "correcao": "1) Trocar o gancho por: 'Entre as múmias feitas de propósito mais antigas do mundo estão as do povo chinchorro, no deserto do Atacama, no Chile, desde cerca de 5050 a.C. E não só da elite: crianças também.' 2) Na explicação, depois de 'o exemplo mais antigo é uma criança enterrada no vale de Camarones.', inserir: 'Por décadas, foram tidas como as múmias artificiais mais antigas do mundo. Em 2025, um estudo na PNAS propôs que corpos defumados no sul da China e no Sudeste Asiático, de até cerca de 12 mil anos, seriam ainda mais antigos, mas a datação ainda é discutida.' Acrescentar uma fonte para essa frase (por exemplo, https://revistapesquisa.fapesp.br/en/worlds-oldest-mummies-found-in-asia/ ou o artigo de Hung et al. na PNAS, 2025) e rodar o checar_citacoes.py de novo. Se não quiser acrescentar a fonte, faça só a troca 1 e não inclua a frase sobre 2025."
+   },
+   {
+    "id": "americas_pre_colombianas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Chuño: liofilização natural pela geada, pisoteio, uso pelos soldados incas conferem."
+   },
+   {
+    "id": "americas_pre_colombianas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "PNAS 2024: 430 em quase um século, 303 novas em 6 meses; interpretações com 'provavelmente'."
+   },
+   {
+    "id": "americas_pre_colombianas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Sem mistério aberto; data 'anos 1950' duvidosa; van Olphen já sintetizou em 1966; a técnica se perdeu 'no México'.",
+    "correcao": "1) Em tipos_espanto, trocar 'misterio_aberto' por 'conexao_inesperada'. 2) Trocar 'A composição só foi descoberta nos anos 1950, por difração em pó.' por 'A composição foi desvendada no século XX, com análises de difração.' 3) Trocar 'mas a técnica se perdeu' por 'mas depois a técnica se perdeu no México'. 4) Trocar 'Uma receita para reproduzi-lo só foi publicada em 1993, pelo historiador e químico mexicano Constantino Reyes-Valerio, que juntou' por 'Em 1993, o historiador e químico mexicano Constantino Reyes-Valerio publicou uma receita que reconstitui o processo antigo, juntando'. Ajuste a concordância do resto da frase."
+   },
+   {
+    "id": "americas_pre_colombianas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Q'eswachaka: UNESCO 2013, três dias, quatro comunidades, colapso em 2021 e reconstrução conferem."
+   },
+   {
+    "id": "americas_pre_colombianas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Teotihuacan: nome dado pelos astecas, sem palácios nem cativos, governança coletiva; não redundante com o 0014."
+   },
+   {
+    "id": "americas_pre_colombianas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'O uso moderno vem de Humboldt' soa como se ele tivesse criado a palavra (Clavijero já usava em 1780).",
+    "correcao": "No gancho, trocar 'O uso moderno do termo vem de Humboldt, em 1810.' por 'O termo foi popularizado por Humboldt, em 1810.' Na explicação, trocar 'quem, em 1810, deu origem ao uso moderno de \"asteca\" como nome coletivo' por 'quem, em 1810, popularizou \"asteca\" como nome coletivo'."
+   },
+   {
+    "id": "americas_pre_colombianas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "As 'sete colheitas' são teto moderno com [citation needed]; GIAHS simplificado.",
+    "correcao": "1) No gancho, trocar 'davam até sete colheitas por ano' por 'podiam dar até sete colheitas por ano'. 2) Na explicação, trocar 'a produtividade era altíssima: até sete colheitas por ano' por 'a produtividade era altíssima: segundo algumas estimativas, até sete colheitas por ano'. 3) Trocar 'receberam da ONU em 2018 o título de patrimônio agrícola mundial' por 'foram reconhecidas pela ONU, em 2018, como Sistema Importante do Patrimônio Agrícola Mundial'."
+   }
+  ],
+  "2": [
+   {
+    "id": "americas_pre_colombianas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Espaçamento dos postos como relato de cronistas; 'distâncias diferentes' como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "americas_pre_colombianas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva sobre Londres pelas estimativas altas; concordância e '15 m a mais' como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "americas_pre_colombianas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem 'corpos mutilados'; sacrifícios em Áspero com trecho; referente do 'Isso' esclarecido como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "americas_pre_colombianas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva sobre medidas diferentes, comparação dos próprios autores."
+   },
+   {
+    "id": "americas_pre_colombianas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Estudo da PNAS de 2025 via FAPESP com 'propôs'; 'teriam exemplares ainda mais antigos' como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "americas_pre_colombianas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Quatro correções aplicadas; a data 'por volta do ano 800' (a literatura põe bem antes) saiu como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "americas_pre_colombianas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Popularizado por Humboldt'."
+   },
+   {
+    "id": "americas_pre_colombianas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Podiam dar'; 'segundo algumas estimativas'; GIAHS por extenso."
+   }
+  ]
+ }
+}

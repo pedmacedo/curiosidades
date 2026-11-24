@@ -1,0 +1,134 @@
+{
+ "lote": "2026-11-23-guerra_fria-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "guerra_fria-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Petrov: cinco mísseis, Sol em nuvens altas e órbitas Molniya, revelação em 1998; sem 'salvou o mundo'."
+   },
+   {
+    "id": "guerra_fria-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz 'podia ter começado'; a intenção do capitão vem só de depoimentos.",
+    "correcao": "Trocar o gancho por: \"Em 1962, navios dos EUA soltaram cargas de sinalização perto de um submarino soviético com torpedo nuclear. Segundo tripulantes, o capitão achou que a guerra podia ter começado e quis disparar. Um oficial se opôs.\" Na explicação, nada muda."
+   },
+   {
+    "id": "guerra_fria-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Linha direta nunca foi telefone; teleimpressoras, pangrama de 1963, fax em 1986, e-mail desde 2008 conferem."
+   },
+   {
+    "id": "guerra_fria-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Projeto A119: 1958, Reiffel, Sagan na projeção da nuvem, cancelamento em 1959, revelação em 2000."
+   },
+   {
+    "id": "guerra_fria-0005",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "duplicado: telecomunicacoes-0007 já conta o Starfish Prime, inclusive os postes apagados no Havaí e os satélites derrubados."
+   },
+   {
+    "id": "guerra_fria-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Plowshare (27 testes), Carryall (22 explosões estudadas para a I-40), Negev (520), URSS apagando poços de gás conferem; sem instrução técnica."
+   },
+   {
+    "id": "guerra_fria-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O relato de Marchetti circulava antes de 2001 (só os documentos saíram em 2001); Wallace era diretor do Office of Technical Service, não 'dirigente da agência'.",
+    "correcao": "Na explicação, trocar 'O caso veio a público em 2001, com a liberação de documentos da CIA.' por 'Os documentos da CIA sobre o projeto só foram liberados em 2001.' No gancho, trocar 'Um ex-dirigente da agência contestou' por 'Um ex-diretor técnico da CIA contestou'."
+   },
+   {
+    "id": "guerra_fria-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quem sabia era a KGB (não avisou nem os militares soviéticos); os EUA bancaram 'a maior parte'.",
+    "correcao": "No gancho, trocar 'Os soviéticos sabiam de tudo desde o início, por um espião, e deixaram.' por 'A KGB sabia de tudo desde o início, por um espião, e deixou.' Na explicação, trocar 'Os americanos financiaram e cavaram o túnel' por 'Os americanos bancaram a maior parte e cavaram o túnel'."
+   },
+   {
+    "id": "guerra_fria-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Schabowski: texto embargado, 'imediatamente, sem demora', multidão no mesmo dia conferem."
+   },
+   {
+    "id": "guerra_fria-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A frase 'as duas versões não chegam a se contradizer' é interpretação editorial sem fonte e toma partido numa disputa real.",
+    "correcao": "Na explicação, apagar por inteiro a frase 'As duas versões não chegam a se contradizer: a Força Aérea fala de mísseis que nunca foram de fato disparados; Blair, de qual era o código.' Não há outra mudança."
+   },
+   {
+    "id": "guerra_fria-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Marinha da Pepsi': navios velhos vendidos como sucata; desmentido do 'erroneous factoid' bem descrito."
+   },
+   {
+    "id": "guerra_fria-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Goldsboro: bomba 1 com o interruptor em 'Safe' a um passo da detonação; bomba 2 em 'Arm' sem condição de detonar."
+   },
+   {
+    "id": "guerra_fria-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tálio para a barba, Comissão Church (pelo menos oito complôs), 638 atribuído a Escalante, charuto explosivo como possível mito; sem instrução."
+   },
+   {
+    "id": "guerra_fria-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Projeto Azorian: 4.900 m, US$ 800 milhões, fachada de Hughes e origem do nome 'resposta Glomar'."
+   },
+   {
+    "id": "guerra_fria-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: o Alvin achou a bomba em março (~2 meses); os 80 dias são até o içamento.",
+    "correcao": "Na explicação, trocar 'Depois de 80 dias, o submersível Alvin encontrou a bomba.' por 'O submersível Alvin localizou a bomba em março, e ela foi içada intacta depois de 80 dias de busca.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "guerra_fria-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho atribui a intenção a tripulantes; 'podia ter começado'."
+   },
+   {
+    "id": "guerra_fria-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Ex-diretor técnico da CIA'; documentos liberados em 2001."
+   },
+   {
+    "id": "guerra_fria-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'A KGB sabia'; 'bancaram a maior parte'."
+   },
+   {
+    "id": "guerra_fria-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Frase editorial apagada, junto com o trecho que a sustentava."
+   },
+   {
+    "id": "guerra_fria-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Alvin em março; içada depois de 80 dias."
+   }
+  ]
+ }
+}

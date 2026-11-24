@@ -1,0 +1,627 @@
+LOTE = "2026-11-19-agua_doce_gelo-01"
+AREA = "terra"
+TEMA = "agua_doce_gelo"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 as inundações de Missoula e os 40 anos de Bretz
+    {
+        "temas_secundarios": ["mudancas_climaticas", "paisagens_extremas"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "No fim da era glacial, um lago represado por gelo nos EUA se rompeu dezenas de vezes, em enxurradas de até dez vezes a vazão somada dos rios atuais. Quem propôs isso enfrentou 40 anos de resistência.",
+        "explicacao": (
+            "O lago Missoula se formava quando o manto de gelo da Cordilheira barrava o vale do rio Clark Fork, no "
+            "noroeste dos EUA. De tempos em tempos, essa barragem de gelo cedia, e a água varria o leste do estado de "
+            "Washington e descia pelo vale do rio Columbia; depois o gelo voltava a fechar o vale e o lago enchia de "
+            "novo. Os geólogos estimam que o ciclo durava em média 55 anos e se repetiu dezenas de vezes entre 15 mil "
+            "e 13 mil anos atrás, com a água chegando perto de 130 km/h. Somadas, as enxurradas arrancaram 210 km³ de "
+            "solo, sedimento e basalto, e deixaram uma paisagem de canais secos, as Channeled Scablands. Quem leu essa "
+            "paisagem foi o geólogo J Harlen Bretz, que em 1923 publicou que ela vinha de uma inundação gigantesca. A "
+            "ideia de uma catástrofe ia contra a visão dominante, de mudanças lentas e graduais, e foi recebida com "
+            "ceticismo. Em 1927, ele a defendeu numa reunião em que outros geólogos apresentaram teorias rivais, o "
+            "começo de um debate áspero que durou 40 anos. Em 1979, aos 96 anos, Bretz recebeu a Medalha Penrose, a "
+            "maior honra da Sociedade Geológica dos EUA, e brincou com o filho que todos os seus inimigos estavam "
+            "mortos e ele não tinha de quem se gabar."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("Missoula_floods",
+                "were a series of cataclysmic glacial lake outburst floods that swept periodically across the area that would become eastern Washington, northern Idaho and northern Oregon, and down the Columbia River Gorge at the end of the last ice age. "
+                "These floods were the result of periodic sudden ruptures of the ice dam on the Clark Fork River that created Glacial Lake Missoula. [...] "
+                "After the lake drained, the ice would reform, creating glacial Lake Missoula again. [...] "
+                "geologists estimate that a cycle of flooding and reformation of the lake lasted an average of 55 years and that the floods occurred dozens of times over the 2,000 years between 15,000 and 13,000 years ago. [...] "
+                "The maximum flow speed approached 36 meters/second (130 km/h or 80 mph). [...] "
+                "More recent estimates place the flow rate at ten times the flow of all current rivers combined. [...] "
+                "The Cordilleran ice sheet formed a glacial dam across the Clark Fork valley [...] "
+                "The cumulative effect of the floods was to excavate 210 cubic kilometres (50 cu mi) of loess, sediment, and basalt from the Channeled Scablands of eastern Washington",
+                nome="Missoula floods"),
+            wiki("J_Harlen_Bretz",
+                "Bretz published a paper in 1923, arguing that the Channelled Scablands in Eastern Washington were caused by massive flooding in the distant past. "
+                "This was seen as arguing for a catastrophic explanation of the geology, against the prevailing view of uniformitarianism, and Bretz's views were initially met with skepticism [...] "
+                "The Geological Society of Washington invited the young Bretz to present his previously published research at a meeting on January 12, 1927, where several other geologists presented competing theories. [...] "
+                "Bretz defended his theories, kicking off an acrimonious 40-year debate over the origin of the Scablands. [...] "
+                "Bretz received the Penrose Medal, the Geological Society of America's highest award, in 1979, at the age of 96. "
+                "After this award, he told his son: \"All my enemies are dead, so I have no one to gloat over.\"",
+                nome="J Harlen Bretz"),
+        ],
+    },
+    # 2 o mar de Aral: morte anunciada (e não a primeira)
+    {
+        "temas_secundarios": ["guerra_fria", "paisagens_extremas"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "O mar de Aral, quarto maior lago do mundo, encolheu a 10% do tamanho quando a URSS desviou seus rios para plantar algodão. Técnicos já previam isso em 1964. E cronistas contam que ele já tinha sumido em 1417.",
+        "explicacao": (
+            "O Aral, entre o Cazaquistão e o Uzbequistão, é um lago salgado sem saída para o mar, alimentado por dois "
+            "rios, o Amu Darya e o Syr Darya. No início dos anos 1960, o governo soviético desviou os dois para irrigar "
+            "o deserto e fazer do algodão, o \"ouro branco\", um grande produto de exportação. Deu certo por um tempo: "
+            "em 1988 o Uzbequistão era o maior exportador de algodão do mundo. Mas o lago começou a recuar. O "
+            "desfecho não pegou ninguém de surpresa. Em 1964, Aleksandr Asarin, do Instituto Hidroprojeto, já dizia que "
+            "o lago estava condenado, e que ninguém ousava contrariar os planos aprovados pelo Politburo. Alguns "
+            "especialistas soviéticos chegavam a ver o Aral como um \"erro da natureza\". De 1960 a 1998, a área caiu "
+            "60% e o volume, 80%; em 2007 restavam 10% do tamanho original, divididos em quatro lagos, e em 2014 a "
+            "bacia leste secou de vez. Nem foi a primeira vez. Geógrafos muçulmanos como Hafiz-i Abru escreveram que o "
+            "Aral desapareceu em 1417, também por desvios dos dois rios; o Syr Darya só voltou ao leito natural depois "
+            "de 1573, quando os canais que o desviavam se arruinaram. Hoje, no norte, a barragem de Kokaral, concluída "
+            "em 2005, ergueu o nível da água em 12 m até 2008, e os peixes voltaram."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Aral_Sea",
+            "The Aral Sea was an endorheic salt lake lying between Kazakhstan to its north and Uzbekistan to its south [...] "
+            "Formerly the fourth-largest lake in the world with an area of 68,000 km2 (26,300 sq mi), the Aral Sea began shrinking in the 1960s after the rivers that fed it were diverted by Soviet irrigation projects. "
+            "By 2007, it had declined to 10% of its original size, splitting into four lakes [...] "
+            "Satellite images by NASA in August 2014 revealed that for the first time in modern history the eastern basin of the Aral Sea had completely dried up. [...] "
+            "the Dike Kokaral dam was completed in 2005. By 2008, the water level had risen 12 m (39 ft) above that of 2003, to 42 m (138 ft). "
+            "As of 2013, salinity had dropped, and fish were again present in sufficient numbers for some fishing to be viable. [...] "
+            "Muslim geographers, such as Hafiz-i Abru, wrote about the disappearance of the Aral Sea in 1417 due to diversions in both the Amu Darya and Syr Darya. "
+            "The Syr Darya only resumed its natural course into the lake after 1573, when the channels that had been carved to divert its course to the south fell into disrepair. [...] "
+            "In the early 1960s, as part of the Soviet government plan for cotton, or \"white gold\", to become a major export, the Amu Darya river in the south and the Syr Darya river in the east were diverted from feeding the Aral Sea to irrigate the desert [...] "
+            "by 1988, Uzbekistan was the world's largest exporter of cotton. [...] "
+            "As early as 1964, Aleksandr Asarin at the Hydroproject Institute pointed out that the lake was doomed, explaining, \"It was part of the five-year plans, approved by the council of ministers and the Politburo. "
+            "Nobody on a lower level would dare to say a word contradicting those plans, even if it was the fate of the Aral Sea.\" [...] "
+            "Some Soviet experts apparently considered the Aral to be \"nature's error\" [...] "
+            "From 1960 to 1998, the sea's surface area shrank by 60%, and its volume by 80%.",
+            nome="Aral Sea")],
+    },
+    # 3 geleiras que "galopam"
+    {
+        "temas_secundarios": ["geologia_profunda"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Algumas geleiras passam décadas andando devagar e, de repente, \"galopam\": por meses ou anos, correm até 100 vezes mais rápido que o normal. Só cerca de uma em cada cem geleiras do mundo faz isso.",
+        "explicacao": (
+            "Esses episódios se chamam surges, ou avanços súbitos. A fase calma entre dois deles costuma durar de 10 a "
+            "200 anos, e em algumas geleiras os ciclos se repetem com certa regularidade, a cada 15 a 100 anos ou "
+            "mais; em outras, não há como prever. As geleiras que fazem isso se concentram em poucas regiões, como o "
+            "Karakoram, o Pamir, Svalbard, o Ártico canadense, o Alasca e a Islândia. Há dois estilos. No Alasca, o "
+            "avanço começa e termina de repente, com velocidades de dezenas de metros por dia, e muitas vezes acaba "
+            "com a liberação de água acumulada: quando o avanço da geleira Variegated terminou, em 5 de julho de 1982, "
+            "veio uma grande enchente no mesmo dia. Em Svalbard, a aceleração é gradual, chega a quatro ou cinco metros por "
+            "dia e leva anos para se acalmar. A causa ainda é debatida. Uma hipótese é a água de degelo na base, que "
+            "reduz o atrito: quanto mais rápido o gelo anda, mais calor de atrito gera e mais água produz. Outras "
+            "apontam um leito de sedimentos frágeis que cede, ou o acúmulo de massa até um ponto crítico. Há registros "
+            "de velocidades temporárias de até 90 m por dia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Glacial_surge",
+                "Glacial surges are short-lived events where the flow velocity on a portion of a glacier can increase to up to 100 times faster than normal during a few months or years. [...] "
+                "High concentrations of surging glaciers occur in the Karakoram, Pamir Mountains, Svalbard, the Canadian Arctic islands, Alaska and Iceland, although overall it is estimated that only one percent of all the world's glaciers ever surge. "
+                "In some glaciers, surges can occur in fairly regular cycles, with cycle periods commonly ranging from 15 to 100 years or more. In other glaciers, surging remains unpredictable. "
+                "The period of stagnation and build-up between two surges typically lasts 10 to 200 years and is called the quiescent phase. "
+                "During this period the velocities of the glacier are significantly lower [...] "
+                "Glaciers in Alaska exhibit surges with a sudden onset, an extremely high maximum flow rate (tens of meters/day) and a sudden termination, often with a discharge of stored water. [...] "
+                "Svalbard surges are typically associated with slower onset with an acceleration phase, rising to a maximum velocity which is typically slower (up to four or five meters per day) than Alaskan surges, and a return to quiescence often taking years. [...] "
+                "When the 1982 surge ended on July 5, there was a large flood event that day [...] "
+                "Meltwater is important in reducing frictional forces to glacial ice flow. [...] "
+                "There is a positive feedback between velocity and friction at the bed, high velocities will generate more frictional heat and create more meltwater. [...] "
+                "poorly consolidated sedimentary rocks are more prone to failure under stress; a sub-glacial \"landslip\" may permit the glacier to slide. [...] "
+                "Meier and Post suggest that once mass accumulates to a critical point, basal melting begins to occur.",
+                nome="Glacial surge"),
+            wiki("Glacier",
+                "A few glaciers have periods of very rapid advancement called surges. "
+                "These glaciers exhibit normal movement until suddenly they accelerate, then return to their previous movement state. [...] "
+                "Temporary rates up to 90 m (300 ft) per day have occurred",
+                nome="Glacier"),
+        ],
+    },
+    # 4 Blood Falls, a geleira que "sangra"
+    {
+        "temas_secundarios": ["microbiologia", "astrobiologia"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "Na Antártida, uma geleira parece sangrar. A cascata vermelha é água salgada rica em ferro, presa sob 400 m de gelo, que enferruja ao tocar o ar. E nela vivem micróbios que dispensam oxigênio.",
+        "explicacao": (
+            "As Cataratas de Sangue ficam na ponta da geleira Taylor, nos Vales Secos de McMurdo. O geólogo Griffith "
+            "Taylor achou o depósito avermelhado em 1911, e a primeira suspeita foi de algas vermelhas; depois se viu "
+            "que era óxido de ferro. A água vem de um bolsão sob cerca de 400 m de gelo, a vários quilômetros da "
+            "saída. Seria um resto de mar antigo, isolado quando a geleira fechou um fiorde, há uns 5 milhões de anos. "
+            "Ao congelar, a água pura vira gelo e expulsa o sal, e a salmoura que sobra ficou de duas a três vezes mais "
+            "salgada que o oceano, por isso não congela. Ela não tem oxigênio e carrega ferro dissolvido. Ao sair "
+            "pelas fendas e encontrar o ar, o ferro oxida e se deposita: é uma ferrugem a céu aberto. Amostras "
+            "tiveram pelo menos 17 tipos de micróbios. Uma explicação é que eles respiram sulfato usando o ferro, "
+            "um processo nunca antes visto na natureza. Em 2014, uma sonda que derrete o gelo coletou a salmoura "
+            "direto da fonte: −7 °C e 8% de sal. Para a NASA, lugares assim ajudam a imaginar vida sob o gelo de "
+            "Marte ou de Europa, lua de Júpiter."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Blood_Falls",
+            "Blood Falls is an outflow of an iron(III) oxide–tainted plume of saltwater, flowing from the tongue of Taylor Glacier onto the ice-covered surface of West Lake Bonney in the Taylor Valley of the McMurdo Dry Valleys [...] "
+            "The saltwater source is a subglacial pool of unknown size overlain by about 400 metres (1,300 ft) of ice, several kilometers from its tiny outlet at Blood Falls. "
+            "The reddish deposit was found in 1911 by the Australian geologist Thomas Griffith Taylor, who first explored the valley that bears his name. "
+            "The Antarctica pioneers first attributed the red color to red algae, but later it was proven to be due to iron oxides. [...] "
+            "Poorly soluble hydrous ferric oxides are deposited at the surface of ice after the ferrous ions present in the unfrozen saltwater are oxidized in contact with atmospheric oxygen. "
+            "The more soluble ferrous ions initially are dissolved in old seawater trapped in an ancient pocket remaining from the Antarctic Ocean when a fjord was isolated by the glacier in its progression during the Miocene period, some 5 million years ago [...] "
+            "Salt cryo-concentration occurred in the deep relict seawater when pure ice crystallized and expelled its dissolved salts as it cooled down [...] "
+            "As a consequence, the trapped seawater was concentrated in brines with a salinity two to three times that of the mean ocean water. [...] "
+            "Hypersaline fluid, sampled fortuitously through a crack in the ice, was oxygen-free and rich in sulfate and ferrous iron. [...] "
+            "water samples from Blood Falls contained at least 17 different types of microbes, and almost no oxygen. "
+            "An explanation may be that the microbes use sulfate to respire with ferric ions and metabolize the trace levels of organic matter trapped with them. "
+            "Such a metabolic process had never before been observed in nature. [...] "
+            "In December 2014, scientists and engineers led by Mikucki returned to Taylor Glacier and used a probe called IceMole, designed by a German collaboration, to melt into the glacier and directly sample the salty water (brine) that feeds Blood Falls. "
+            "Samples were analyzed, and revealed a cold (−7 °C (19 °F)), iron-rich (3.4 mM) subglacial brine (8% sodium chloride). [...] "
+            "in places such as Mars or Europa, an ice-covered moon of Jupiter. "
+            "Scientists of the NASA Astrobiology Institute speculate that these worlds could contain subglacial liquid water environments favorable to hosting elementary forms of life",
+            nome="Blood Falls")],
+    },
+    # 5 por que o gelo das geleiras é azul
+    {
+        "temas_secundarios": ["luz_cores", "estados_materia"],
+        "tipos_espanto": ["contraintuitivo"],
+        "gancho": "O azul das geleiras não vem do efeito que pinta o céu. O gelo, como a água, absorve um pouco do vermelho da luz por causa da vibração das moléculas. Em blocos grandes e sem bolhas, sobra o azul.",
+        "explicacao": (
+            "Um cubo de gelo parece branco por dois motivos: tem bolhas de ar, que espalham a luz, e é pouca água, "
+            "que em pequena quantidade parece incolor. Numa geleira, o peso da neve acumulada espreme as bolhas para "
+            "fora e deixa o gelo mais denso. Os cristais também crescem, e a luz percorre um caminho mais longo dentro "
+            "deles, o que reforça a absorção da ponta vermelha do espectro. Às vezes se atribui esse azul ao "
+            "espalhamento de Rayleigh, o fenômeno que deixa o céu azul, mas é engano. A causa é um sobretom da "
+            "vibração da ligação entre oxigênio e hidrogênio da molécula de água: a luz vermelha é absorvida e vira "
+            "vibração, que normalmente seria excitada por radiação infravermelha. É a mesma razão pela qual a água "
+            "em grande volume é azul, algo visível depois de uns 3 metros de profundidade. O azul pode sumir rápido: "
+            "exposto ao ar mais quente, o gelo racha na superfície, as fendas se enchem de ar e, em poucas horas, ele "
+            "parece branco de novo. Em 2011, turistas na geleira Tasman, na Nova Zelândia, viram um iceberg virar e "
+            "mostrar o lado que ficara meses debaixo d'água, de um azul impressionante."
+        ),
+        "nivel": 2, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Blue_ice_(glacial)",
+            "It has been highly compressed by the weight of the overlying snow such that the ice crystals become enlarged. [...] "
+            "Small amounts of regular ice appear to be white because of air bubbles inside and also because small quantities of water appear to be colorless. "
+            "In glaciers, the pressure causes the air bubbles to be squeezed out, increasing the density of the created ice. "
+            "Water is blue in large quantities, as it absorbs other colors more efficiently than blue. [...] "
+            "Under pressure, the ice crystals increase in size and so the path that light travels through the crystal gets longer, increasing the absorption of the red end of the spectrum and intensifying the blue color. "
+            "Once blue ice is exposed to warmer air, cracks and fissures appear in surface layers, and break up the large blue crystals of dense, pure ice. "
+            "Within hours these air filled fissures cloud the surface making the ice appear white. [...] "
+            "For example, tourists at Tasman Glacier, New Zealand in January 2011 saw an iceberg roll over to reveal startling blue ice, kept from air by staying underwater for months since the iceberg calved. [...] "
+            "The blue color is sometimes wrongly attributed to Rayleigh scattering, which is responsible for the color of the sky. "
+            "Rather, water ice is blue for the same reason that large quantities of liquid water are blue: it is a result of an overtone of an oxygen–hydrogen (O−H) bond stretch in water, which absorbs light at the red end of the visible spectrum. "
+            "So, water owes its intrinsic blueness (as seen after > 3 meters of penetration) to selective absorption in the red part of its visible spectrum. "
+            "The absorbed photons drive vibrational (normally infrared) transitions.",
+            nome="Blue ice (glacial)")],
+    },
+    # 6 a esteira de gelo que junta meteoritos
+    {
+        "temas_secundarios": ["asteroides_cometas", "sistema_solar"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "O gelo da Antártida funciona como uma esteira que junta meteoritos: eles caem, viajam presos no gelo por séculos e reaparecem onde montanhas o barram e o vento o desgasta. Já foram recolhidos mais de 20 mil.",
+        "explicacao": (
+            "A descoberta veio em 1969, quando uma expedição japonesa achou nove meteoritos num campo de gelo azul "
+            "perto das montanhas Yamato. Ficou claro que o movimento do gelo podia concentrá-los em certos pontos, e "
+            "uma expedição japonesa de 1974 voltou só para isso e recolheu quase 700. O mecanismo é este: um "
+            "meteorito que cai nos campos altos de gelo logo é coberto pela neve e desce lentamente, preso no manto "
+            "que escoa pelo continente. Onde uma barreira como as montanhas Transantárticas detém o gelo, o vento "
+            "desgasta a superfície parada e traz as pedras de volta à tona. Contra o branco, e sem rochas da Terra em "
+            "volta, os meteoritos escuros são fáceis de ver. Desde 1976, o programa americano ANSMET já trouxe mais de "
+            "20.000, procurados a olho por equipes em motos de neve espaçadas 30 m umas das outras. Entre eles há "
+            "pedaços da Lua e de Marte, como o ALH84001. Ainda assim, a grande maioria dos meteoritos presos no gelo "
+            "acaba no oceano sem ser achada. A Antártida também corrige uma distorção: no resto do mundo, as pessoas "
+            "notam mais os meteoritos de metal, mas lá, onde quase tudo o que cai pode ser recuperado, eles são só "
+            "0,4% dos achados."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Antarctic_Search_for_Meteorites",
+                "This geographical area serves as a collection point for meteorites that have originally fallen on the extensive high-altitude ice fields throughout  Antarctica. "
+                "Such meteorites are quickly covered by subsequent snowfall and begin a centuries-long journey traveling \"downhill\" across the Antarctic continent while embedded in a vast sheet of flowing ice. "
+                "Portions of such flowing ice can be halted by natural barriers such as the Transantarctic Mountains. "
+                "Subsequent wind erosion of the motionless ice brings trapped meteorites back to the surface once more where they may be collected. "
+                "This process concentrates meteorites in a few specific areas to much higher concentrations than they are normally found everywhere else. "
+                "The contrast of the dark meteorites against the white snow, and lack of terrestrial rocks on the ice, makes such meteorites relatively easy to find. "
+                "However, the vast majority of such ice-embedded meteorites eventually slide undiscovered into the ocean. [...] "
+                "in addition to a Lunar meteorite ALH 81005, and the Martian meteorites EETA 79001, ALH77005 and ALH84001. [...] "
+                "The search for the meteorites is done visually. [...] "
+                "Using snowmobiles spaced 30 m apart they scan the blue ice for meteorites. [...] "
+                "Since 1976, ANSMET has returned over 20,000 meteorites.",
+                nome="Antarctic Search for Meteorites"),
+            wiki("Meteorite",
+                "In 1969, the 10th Japanese Antarctic Research Expedition found nine meteorites on a blue ice field near the Yamato Mountains. "
+                "With this discovery, came the realization that movement of ice sheets might act to concentrate meteorites in certain areas. "
+                "After a dozen other specimens were found in the same place in 1973, a Japanese expedition was launched in 1974 dedicated to the search for meteorites. "
+                "This team recovered nearly 700 meteorites. [...] "
+                "Due to the low abundance of iron meteorites in collection areas such as Antarctica, where most of the meteoric material that has fallen can be recovered, it is possible that the percentage of iron-meteorite falls is lower than 5%. "
+                "This would be explained by a recovery bias; laypeople are more likely to notice and recover solid masses of metal than most other meteorite types. "
+                "The abundance of iron meteorites relative to total Antarctic finds is 0.4%.",
+                nome="Meteorite"),
+        ],
+    },
+    # 7 lagos sob o gelo que enchem e esvaziam (Whillans)
+    {
+        "temas_secundarios": ["microbiologia", "astrobiologia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Sob o gelo da Antártida há mais de 400 lagos, e alguns enchem e esvaziam como uma rede de encanamentos. Um deles foi achado porque um satélite viu o gelo subir e descer. Perfurado, tinha vida.",
+        "explicacao": (
+            "Lagos sob o gelo se formam onde o calor da Terra e a pressão do gelo espesso derretem a base da camada. "
+            "Por muito tempo eles pareceram reservatórios parados, mas em 2005 uma equipe interpretou, em imagens de "
+            "radar de satélite, trechos da superfície do gelo que afundavam e subiam como lagos enchendo e "
+            "esvaziando, os lagos \"ativos\". O satélite ICESat, da NASA, mediu a altura do gelo com laser e mostrou "
+            "que o fenômeno é comum: em 2009 já se contavam 124 lagos assim. Como vários são interligados, surgiu uma "
+            "nova preocupação com a contaminação quando se perfura um deles. Um desses lagos, o Whillans, foi descrito "
+            "em 2007 pela glaciologista Helen Fricker justamente porque o gelo ali subia e descia. Em janeiro de 2013, "
+            "a equipe do projeto WISSARD chegou a ele derretendo 800 m de gelo com uma broca de água quente. A água "
+            "e o lodo do fundo tinham mais de 3.900 tipos de vida microbiana, vivendo sem luz nem fotossíntese: o "
+            "ecossistema parece se apoiar na oxidação de amônia e metano de sedimentos depositados há pelo menos 120 "
+            "mil anos. A água fica a −0,49 °C, abaixo de zero por causa da pressão, e o lago tem só cerca de 2 m de "
+            "profundidade."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Subglacial_lake",
+                "more than 400 subglacial lakes have been discovered in Antarctica, beneath the Greenland Ice Sheet, and under Iceland's Vatnajökull ice cap. [...] "
+                "Gray et al. (2005) interpreted ice surface slumping and raising from RADARSAT data as evidence for subglacial lakes filling and emptying - termed \"active\" lakes. [...] "
+                "NASA's ICESat satellite was key in developing this concept further and subsequent work demonstrated the pervasiveness of this phenomenon. "
+                "ICESat ceased measurements in 2007 and the detected \"active\" lakes were compiled by Smith et al. (2009) who identified 124 such lakes. "
+                "The realisation that lakes were interconnected created new contamination concerns for plans to drill into lakes",
+                nome="Subglacial lake"),
+            wiki("Lake_Whillans",
+                "Lake depths measured thus far have been around 2 metres (7 feet). Its temperature is −0.49 °C, below 0 °C because of the high pressure. [...] "
+                "The lake was first described in 2007 by Helen Fricker, a glaciologist at the Scripps Institution of Oceanography. "
+                "Satellite laser altimeter data from NASA's ICESat had revealed the ice at that location rising and falling, leading her team to conclude the presence of the lake. [...] "
+                "On 28 January 2013, the Whillans Ice Stream Subglacial Access Research Drilling (WISSARD) team announced that they had reached the lake surface having drilled 800 m (2,600 ft) through the ice above. "
+                "Drilling was accomplished using a hot-water drill to create a borehole 30 cm (12 in) in diameter. [...] "
+                "Initial analysis of water and sediment has revealed that they contain more than 3,900 kinds of microbial life. "
+                "Bacteria are surviving in this environment without photosynthesis. "
+                "The ecosystem is apparently based on the oxidation of ammonia and methane from sediments laid down at least 120,000 years ago.",
+                nome="Lake Whillans"),
+        ],
+    },
+    # 8 o lago japonês que acerta o relógio do carbono-14
+    {
+        "temas_secundarios": ["pre_historia", "elementos_quimicos"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "As camadas do fundo de um lago japonês ajudam a acertar o relógio do carbono-14. Cada ano deixou ali uma lâmina de sedimento, e a sequência contada cobre 52.800 anos.",
+        "explicacao": (
+            "Essas camadas anuais se chamam varvas, do sueco varv. Em muitos lagos, a primavera traz água forte, que "
+            "deposita grãos mais grossos, e o resto do ano deixa grãos finos: cada par é um ano. Elas só se formam em "
+            "água doce ou salobra, porque no mar o sal faz a argila se juntar em grãos grossos o ano inteiro. O sueco "
+            "Gerard De Geer notou que essas camadas pareciam anéis de árvores e montou a primeira cronologia com elas, "
+            "no fim do século XIX. O lago Suigetsu, no Japão, é especial: recebe água só por um canal raso, vinda de "
+            "um lago vizinho, e quase não tem saída, então só o sedimento mais fino chega; e a água do fundo, sem "
+            "oxigênio, não deixa organismos revirarem as camadas. Nas lâminas ficam presos fragmentos de folhas, e "
+            "dá para medir o carbono-14 de cada ano contado. Os anéis de árvores calibram essa datação até certo "
+            "ponto; o Suigetsu foi além. Depois de quase vinte anos, com vários testemunhos sobrepostos para achar "
+            "lâminas faltantes, os resultados saíram em 2012 na revista Science e estenderam a calibração para 52.800 "
+            "anos. Segundo o pesquisador Christopher Bronk Ramsey, um registro feito em terra dá mais resolução e "
+            "confiança à datação."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Lake_Suigetsu",
+                "It is possible to identify the annual deposits of silt in a similar manner that tree rings are identified. [...] "
+                "The varves of Lake Suigetsu allow a chronology to be established, because of the leaf fragments embedded in them, which have been used to calibrate the Carbon-14 time scale beyond the range of the absolute tree-ring calibration. [...] "
+                "In most cases the radiocarbon levels deduced from marine and other records have not been too far wrong. "
+                "However, having a truly terrestrial record gives us better resolution and confidence in radiocarbon dating,\" said Christopher Bronk Ramsey. [...] "
+                "Results were published in 2012 in the journal Science increasing the calibration from 12,593 to 52,800 years. "
+                "The only inflow to Lake Suigetsu is through a shallow channel from the neighbouring Lake Mikata and there is little outflow. "
+                "Consequently, only the finest sediment comes into the lake. "
+                "The water is anoxic (deoxygenated) preventing the growth of organisms [...] "
+                "It has taken almost twenty years to overcome the consequent problems, using multiple cores and new detection techniques to complete the sequence.",
+                nome="Lake Suigetsu"),
+            wiki("Varve",
+                "A varve is an annual layer of sediment or sedimentary rock. "
+                "The word 'varve' derives from the Swedish word varv [...] "
+                "An annual layer can be highly visible because the particles washed into the layer in the spring when there is greater flow strength are much coarser than those deposited later in the year. "
+                "This forms a pair of layers—one coarse and one fine—for each annual cycle. "
+                "Varves form only in fresh or brackish water, because the high levels of salt in normal sea water coagulate the clay into coarse grains. [...] "
+                "De Geer noticed a close visual similarity between the laminated sediments he was mapping, and tree-rings. [...] "
+                "The first varve chronology was constructed by De Geer in Stockholm in the late 19th century. [...] "
+                "by 2012, “missing” varves in the Lake Suigetsu sequence were identified in the Lake Suigetsu 2006 Project by overlapping multiple cores and improved varve counting techniques, extending the timescale to 52,800 years.",
+                nome="Varve"),
+        ],
+    },
+    # 9 o rio Amarelo, suspenso acima da planície
+    {
+        "temas_secundarios": ["primeiras_civilizacoes", "grandes_obras"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Em Kaifeng, na China, o rio Amarelo corre 10 metros acima do chão em volta. O lodo eleva o leito, os diques sobem junto, e quando um deles rompe, a água não consegue voltar ao rio.",
+        "explicacao": (
+            "O rio Amarelo deve o nome e a cor ao lodo fino que arranca do planalto de loess. No curso inferior, esse "
+            "lodo se deposita no fundo, e o leito foi subindo até ficar vários metros acima do terreno em volta: é "
+            "chamado de \"rio suspenso\". A resposta tradicional foram diques cada vez mais altos, o que às vezes "
+            "piorava as cheias. Numa enchente comum, a água transbordada escorre de volta ao leito; aqui, com o rio "
+            "mais alto que a planície, ela se espalhava e o rio podia abrir um caminho novo até o mar. A foz chegou a "
+            "se deslocar 480 km, ora ao norte, ora ao sul da península de Shandong. Uma estimativa conta 1.593 cheias "
+            "nos 2.540 anos entre 595 a.C. e 1946, com 26 mudanças de curso notáveis, nove delas graves. De 1128 a "
+            "1855, o rio desaguou bem mais ao sul, junto com o rio Huai, no mar Amarelo; voltou ao norte entre 1851 e "
+            "1855. A cheia de 1887 matou entre 900 mil e 2 milhões de pessoas. Não à toa, o rio tem dois apelidos: "
+            "\"Orgulho da China\" e \"Tristeza da China\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Yellow_River",
+            "has flooded and changed course frequently, with one estimate counting 1,593 floods in the 2,540 years between 595 BC and 1946 AD. "
+            "As such, the Yellow River has been considered a blessing and a curse throughout history, and has been nicknamed both \"China's Pride\" and \"China's Sorrow\". [...] "
+            "The river is named for the yellow color of its water, which comes from the large amount of sediment discharged into the water as the river flows through the Loess Plateau. [...] "
+            "The silts received from the middle reaches form sediments here, elevating the river bed. "
+            "Excessive sediment deposits have raised the riverbed several meters above the surrounding ground. "
+            "That is why this part of the river is called the 'Earth Suspended River'. "
+            "At Kaifeng, Henan, the Yellow River is 10 meters (33 ft) above the ground level. [...] "
+            "In the 2,540 years from 595 BC to 1946 AD, the Yellow River has been reckoned to have flooded 1,593 times, shifting its course 26 times noticeably and nine times severely. [...] "
+            "The traditional Chinese response of building higher and higher levees along the banks sometimes also contributed to the severity of the floods: "
+            "When flood water did break through the levees, it could no longer drain back into the river bed as it would after a normal flood, as the river bed was sometimes now higher than the surrounding countryside. "
+            "These changes could cause the river's mouth to shift as much as 480 km (300 mi), sometimes reaching the ocean to the north of the Shandong Peninsula and sometimes to the south. [...] "
+            "From 1128 to 1855, the Yellow River did not flow in today's course towards Bohai Sea, instead, it flowed southward, merging with the Huai River and emptying into the Yellow Sea [...] "
+            "Between 1851 and 1855, the Yellow River returned to the north amid the floods that provoked the Nien and Taiping Rebellions. "
+            "The 1887 flood has been estimated to have killed between 900,000 and 2 million people",
+            nome="Yellow River")],
+    },
+    # 10 sob a geleira, a água sobe morro (jökulhlaup)
+    {
+        "temas_secundarios": ["vulcoes_terremotos", "paisagens_extremas"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Sob uma geleira, a água pode correr morro acima, empurrada pela pressão do gelo para onde ele é mais fino. Na Islândia, vulcões sob o gelo enchem lagos que estouram em enchentes súbitas, as jökulhlaups.",
+        "explicacao": (
+            "Jökulhlaup quer dizer \"corrida da geleira\" em islandês. O nome surgiu para as enchentes que saem de "
+            "debaixo do Vatnajökull, a grande calota de gelo da Islândia, provocadas pelo calor geotérmico e às vezes "
+            "por erupções sob o gelo, e hoje vale para qualquer descarga grande e brusca de um lago glacial. A água "
+            "derretida se junta na base, coberta por centenas de metros de gelo, e a pressão cresce até ela abrir "
+            "caminho ou erguer o gelo de cima. O rumo do canal depende antes da espessura do gelo do que da "
+            "inclinação do terreno, e por isso a água pode subir ladeiras até sair na frente da geleira. O lago "
+            "Grímsvötn, sob o Vatnajökull, ficou selado até 1996, quando a erupção de Gjálp derreteu gelo demais e "
+            "ergueu a barragem. A enchente durou vários dias, com pico de 500.000 m³ por segundo, a maior já "
+            "registrada ali. O vulcão Katla, sob outra calota, provoca grandes enchentes quando entra em erupção, a "
+            "cada 40 a 80 anos; a de 1755 teria chegado a 200.000 a 400.000 m³ por segundo. Houve até um caso em que "
+            "um furo de sondagem no gelo disparou uma jökulhlaup sem querer."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Jökulhlaup",
+                "literally 'glacial run') is a type of glacial outburst flood. [...] "
+                "It originally referred to the well-known subglacial outburst floods from Vatnajökull, Iceland, which are triggered by geothermal heating and occasionally by a volcanic subglacial eruption, but it is now used to describe any large and abrupt release of water from a subglacial or proglacial lake/reservoir. [...] "
+                "collects at the base of the glacier in ponds and lakes in a pocket overlain by hundreds of metres of ice. [...] "
+                "The hydraulic head of the water collected in a basal lake will increase as water drains through the ice until the pressure grows high enough either to force a path through the ice or to float the ice above it. [...] "
+                "The direction of the channel is defined primarily by the overlying ice thickness and second by the gradient of the underlying earth, and may be observed to \"run uphill\" as the pressure of the ice forces the water to areas of lower ice coverage until it emerges at a glacial face. [...] "
+                "A subglacial lake in Iceland was inadvertently triggered by a borehole drilled through the overlying ice. [...] "
+                "Mýrdalsjökull is subject to large jökulhlaups when the subglacial volcano Katla erupts, roughly every 40 to 80 years. "
+                "The eruption in 1755 is estimated to have had a peak discharge of 200,000 to 400,000 m3/s (7,100,000 to 14,100,000 cu ft/s). [...] "
+                "The 1996 eruption of Gjálp sent melt water southwards into Grímsvötn, that caused a jökulhlaup with a peak flow of 500,000 m3/s (18,000,000 cu ft/s) and lasted for several days. "
+                "This is the largest Grímsvötn glacial flood ever recorded.",
+                nome="Jökulhlaup"),
+            wiki("Subglacial_lake",
+                "Grímsvötn is perhaps the best known subglacial lake beneath the Vatnajökull ice cap. [...] "
+                "Notably, subglacial lake Grímsvötn's hydraulic seal remained intact until 1996, when significant meltwater production from the Gjálp eruption resulted in uplift of Grímsvötn's ice dam.",
+                nome="Subglacial lake"),
+        ],
+    },
+    # 11 a foca do lago Baikal
+    {
+        "temas_secundarios": ["evolucao", "vida_marinha"],
+        "tipos_espanto": ["misterio_aberto", "conexao_inesperada"],
+        "gancho": "No lago Baikal, no meio da Sibéria, vive uma foca que não existe em nenhum outro lugar, uma das poucas só de água doce. Ela descende de focas do Ártico, e como chegou ao lago ainda é incerto.",
+        "explicacao": (
+            "A nerpa, ou foca-do-baikal, é uma das menores focas verdadeiras: os adultos medem de 1,1 a 1,4 m. A "
+            "população estimada é de 80 a 100 mil animais. Pelo crânio, ela é parente próxima da foca-do-cáspio, que "
+            "vive em outro lago, este salgado, e as duas parecem descender da foca-anelada do Ártico. Como uma foca "
+            "marinha foi parar no coração da Sibéria? Há duas ideias: os ancestrais podem ter subido rios, ou o Baikal "
+            "pode ter se ligado ao mar em algum momento por uma grande massa de água, como o antigo mar Paratétis ou "
+            "um lago glacial da Sibéria Ocidental, formado numa era do gelo anterior. Estima-se que a espécie esteja "
+            "no lago há uns dois milhões de anos. Ela se adaptou bem: come sobretudo a golomyanka, um peixe oleoso que "
+            "também só existe no Baikal, e consome mais da metade do que essa espécie produz por ano, cerca de 64 mil "
+            "toneladas. Mergulha até 400 m e tem dois litros de sangue a mais que outras focas do seu tamanho, o que "
+            "lhe permite ficar até 70 minutos debaixo d'água quando foge de perigo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Baikal_seal",
+            "is a species of earless seal endemic to Lake Baikal in Siberia, Russia. "
+            "The Baikal seal is one of the smallest earless/true seals, and one of the few exclusively freshwater pinniped species. "
+            "The related Caspian seal inhabits another lake, albeit being saltwater, the Caspian Sea. "
+            "Both species are closely related to the ringed seal, which inhabits the Arctic Ocean. [...] "
+            "The most recent population estimates are 80,000 to 100,000 animals [...] "
+            "Adults typically grow to 1.1–1.4 m (3 ft 7 in – 4 ft 7 in) in length [...] "
+            "The skull structure of the Baikal seal suggests it is closely related to the Caspian seal. "
+            "In addition, the morphological structures in both species suggest they are descended from Arctic ringed seals. "
+            "In prehistory, they may have swum up rivers and streams, or there is the possibility that Lake Baikal was linked to the sea at some point through a large body of water, such as the Paratethys Sea, West Siberian Glacial Lake or West Siberian Plain, formed in a previous ice age. "
+            "The seals are estimated to have inhabited Lake Baikal for some two million years. [...] "
+            "Their main food source is the golomyanka, a cottoid oilfish found only in Lake Baikal. "
+            "Baikal seals eat more than half of the annually produced biomass of golomyanka, some 64,000 tons. [...] "
+            "Baikal seals can dive up to depths of 400 m (1,300 ft) and stay underwater for more than 40 minutes. [...] "
+            "Baikal seals have two litres more blood than any other seal of their size and can stay underwater for up to 70 minutes if they are frightened or need to escape danger.",
+            nome="Baikal seal")],
+    },
+    # 12 o Casiquiare, o rio que liga o Orinoco ao Amazonas
+    {
+        "temas_secundarios": ["amazonia", "fronteiras_paises"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Na Venezuela, um rio sai do Orinoco e deságua no rio Negro, afluente do Amazonas, ligando as duas bacias. Um padre o percorreu em 1744, mas seu relato só ganhou crédito quando foi confirmado, em 1756.",
+        "explicacao": (
+            "O Casiquiare é um braço do alto Orinoco que corre para o sul até o rio Negro, numa extensão de cerca de "
+            "320 km. Rios que se dividem assim e ligam dois grandes sistemas fluviais são chamados de bifurcações, e "
+            "este é o maior do mundo. Um missionário europeu já o mencionara em 1639, mas a história mais curiosa é a "
+            "de 1744: subindo o Orinoco, o jesuíta Manuel Román encontrou traficantes portugueses de escravos vindos "
+            "do rio Negro, que juravam não estar em território espanhol, e sim num afluente do Amazonas. Eles o "
+            "levaram de volta pelo Casiquiare, e Román refez o caminho até o Orinoco. O relato chegou à Academia "
+            "francesa por Charles Marie de La Condamine, mas ganhou pouco crédito até ser confirmado em 1756 por uma "
+            "comissão espanhola de limites. Em 1800, Alexander von Humboldt e Aimé Bonpland o exploraram. O "
+            "Casiquiare começa a 123 m de altitude e chega ao rio Negro a 91 m. Não é um canal parado numa planície, "
+            "e sim um rio rápido, que vem crescendo devagar. É provável que esteja em curso uma captura: no futuro, o "
+            "trecho mais alto do Orinoco pode acabar desviado por inteiro para a bacia do Amazonas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Casiquiare_canal",
+            "is a natural distributary of the upper Orinoco flowing southward into the Rio Negro in Venezuela. "
+            "As such, it forms a unique natural canal between the Orinoco and Amazon river systems. "
+            "It is the world's largest river of the kind that links two major river systems, a so-called bifurcation. [...] "
+            "The first European to describe it was Spanish Jesuit missionary and explorer Cristóbal Diatristán de Acuña in 1639. "
+            "In 1744 a Jesuit priest named Manuel Román, while ascending the Orinoco River in the region of La Esmeralda, met some Portuguese slave-traders from the settlements on the Rio Negro. "
+            "The Portuguese insisted they were not in Spanish territory but on a tributary of the Amazon River; they invited Román back with them to prove their claim. "
+            "He accompanied them on their return, by way of the Casiquiare canal, and afterwards retraced his route to the Orinoco. [...] "
+            "Charles Marie de La Condamine, seven months later, was able to give to the Académie française an account of Román's voyage and thus confirm the existence of this waterway. "
+            "Little credence was given to Román's statement until it was verified in 1756 by the Spanish boundary-line commission of José Yturriaga and Solano. "
+            "In 1800 German scientist Alexander von Humboldt and French botanist Aimé Bonpland explored the river. [...] "
+            "and about 123 metres (404 ft) above sea level. "
+            "Its mouth at the Rio Negro, an affluent of the Amazon River, is near the town of San Carlos and is 91 metres (299 ft) above sea level. "
+            "The general course is southwest, and its length is about 320 kilometres (200 mi). [...] "
+            "Nevertheless, the geological processes are ongoing, and evidence points to a slow and gradual increase in the size of Casiquiare. "
+            "It is likely that stream capture is in progress, i.e. what currently is the uppermost Orinoco basin, including Cunucunuma River, eventually will be entirely diverted by the Casiquiare into the Amazon basin. [...] "
+            "The Casiquiare is not a sluggish canal on a flat tableland but a rapid river",
+            nome="Casiquiare canal")],
+    },
+    # 13 penitentes: florestas de lâminas de neve
+    {
+        "temas_secundarios": ["estados_materia", "sistema_solar"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Nos Andes secos, a neve forma campos de lâminas de até 5 m de altura, os penitentes. Darwin teve de passar espremido entre elas em 1835. O segredo: sublimar gasta 8,5 vezes mais energia que derreter.",
+        "explicacao": (
+            "O nome vem da semelhança com uma multidão de penitentes encapuzados nas procissões da Semana Santa "
+            "espanhola. As lâminas de neve dura ou gelo, bem juntas e apontadas para o Sol, surgem acima de 4.000 m "
+            "nos Andes secos e vão de poucos centímetros a mais de 5 m. Darwin as atravessou em 22 de março de 1835, "
+            "a caminho de Santiago para Mendoza, e registrou a crença local, que persiste, de que eram esculpidas pelo "
+            "vento. O motor, na verdade, é o Sol. Onde a radiação se concentra, a neve perde massa e surgem sulcos. "
+            "Nas pontas, o ar frio e seco faz a neve passar direto a vapor, a sublimação, que consome 2.838 joules "
+            "por grama, contra 335 do derretimento. Assim, as pontas gastam a energia do Sol e perdem pouca massa, "
+            "enquanto no fundo dos sulcos o ar fica parado e úmido, a sublimação não acontece e a energia vai toda "
+            "para derreter, o que cava ainda mais. O glaciólogo Louis Lliboutry mediu pontas secas a −5 °C ao lado de "
+            "neve molhada, com 14% de água líquida, no fundo dos sulcos. E a sonda New Horizons achou no "
+            "Plutão, segundo um estudo de 2017, penitentes com centenas de metros, provavelmente de gelo de metano."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Penitente_(snow_formation)",
+            "They take the form of elongated, thin blades of hardened snow or ice, closely spaced and pointing towards the general direction of the sun. "
+            "The name comes from the resemblance of a field of penitentes to a crowd of kneeling people doing penance. "
+            "The formation evokes the tall, pointed habits and hoods worn by brothers of religious orders in the Processions of Penance during Spanish Holy Week. [...] "
+            "These spires of snow and ice grow over all glaciated and snow-covered areas in the Dry Andes above 4,000 metres (13,000 ft). "
+            "They range in length from a few centimetres to over 5 metres (16 ft). [...] "
+            "Penitentes were first described in scientific literature by Charles Darwin in 1839. "
+            "On March 22, 1835, he had to squeeze his way through snowfields covered in penitentes near the Piuquenes Pass, on the way from Santiago de Chile to the Argentine city of Mendoza, and reported the local belief (continuing to the present day) that they were formed by the strong winds of the Andes. [...] "
+            "Snow surfaces facing the sun absorb more radiation, causing more sublimation and melting, leading to the formation of troughs and wedges. [...] "
+            "The latent heat of melting is 335 J g−1 , whereas the latent heat of sublimation is 2838 J g−1 , a factor of 8.5 larger. "
+            "The extreme topography of penitentes results from this 8.5-fold difference: the peaks remain dry and cold by sublimation, losing little mass, but in the troughs the air becomes stagnant and humid, so that sublimation cannot occur; the absorbed solar energy is instead consumed by melting, resulting in rapid loss of mass. [...] "
+            "He noticed that the sublimating spikes of 50-cm height were hard and dry with a temperature of −5°C, whereas in the troughs between the spikes, the snow was wet, containing 14% liquid water. [...] "
+            "According to a 2017 study, NASA's New Horizons mission discovered penitentes hundreds of meters high on Pluto, likely composed primarily of methane ice deposited seasonally from Pluto's thin atmosphere.",
+            nome="Penitente (snow formation)")],
+    },
+    # 14 o lago Peigneur, que escoou para dentro de uma mina
+    {
+        "temas_secundarios": ["falhas_engenharia", "grandes_obras"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Em 1980, uma sonda de petróleo furou uma mina de sal sob um lago na Louisiana. O lago escoou para dentro da mina, engoliu a plataforma e 11 barcaças, e um canal passou a correr ao contrário.",
+        "explicacao": (
+            "O lago Peigneur tinha 3 m de profundidade e era usado para lazer. Embaixo dele havia um domo de sal, "
+            "explorado por uma mina desde 1919, com galerias até 1.500 pés, uns 460 m, de profundidade. Em 20 de "
+            "novembro de 1980, uma sonda contratada pela Texaco perfurava a borda do domo quando a broca atravessou "
+            "um nível desativado da mina. A água doce do lago foi dissolvendo o sal e alargando o buraco, formou um "
+            "redemoinho e dissolveu os pilares de sal que sustentavam as galerias, que desabaram. A cratera engoliu a "
+            "plataforma de perfuração, 11 barcaças, um rebocador, árvores e 26 hectares de terra em volta. Entrou "
+            "tanta água na mina que o canal de Delcambre, que normalmente esvazia o lago rumo ao mar, inverteu o "
+            "fluxo: por alguns dias, a água salgada do golfo despencou numa cachoeira de 50 m, a mais alta da "
+            "Louisiana. O ar expulso das galerias saiu pelos poços em jatos de até 120 m. Ninguém morreu: os 55 "
+            "funcionários da mina escaparam, e os sete da sonda fugiram pouco antes de ela afundar. Dias depois, nove "
+            "das 11 barcaças voltaram à tona. O lago passou a ter 60 m de profundidade, o mais fundo da Louisiana. A "
+            "culpa nunca foi definida: não se soube se a Texaco furou no lugar errado ou se os mapas da mina estavam "
+            "errados."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lake_Peigneur",
+            "With a maximum depth of 200 feet (60 meters), it is the deepest lake in Louisiana. [...] "
+            "It had been a 10-foot-deep (3 m) freshwater lake, popular for recreation, until human activity caused an unusual disaster on November 20, 1980 [...] "
+            "On November 20, 1980, an oil rig contracted by Texaco was drilling on Jefferson Island, when the drilling assembly pierced an inactive third level of the Diamond Crystal Salt Company salt mine. "
+            "The drill hole produced a vortex that drained the lake into the mine, filling the enormous caverns that had been created through the removal of salt. "
+            "The mine, in operation since 1919, consisted of several levels up to 1,500 feet (460 m) below the surface. [...] "
+            "The pillars were dissolved by the encroaching fresh water and caused the mine tunnels to collapse. "
+            "The resultant sinkhole swallowed the drilling platform, 11 barges holding supplies for the drilling operation, a tugboat, many trees, and 65 acres (26 hectares) of the surrounding terrain [...] "
+            "So much water drained into the caverns that the flow of the Delcambre Canal that usually empties the lake into Vermilion Bay was reversed, causing salt water from the Gulf of Mexico to flow into what was now an empty lakebed. "
+            "This backflow created for a few days the tallest waterfall in Louisiana, at 164 ft (50 m) [...] "
+            "Air displaced by water flowing into the mine caverns erupted through the mineshafts as compressed air and then later as 400-foot (120 m) geysers. "
+            "Although there were no human deaths, three dogs were reported killed. "
+            "All 55 employees in the mine at the time of the accident escaped [...] "
+            "The crew of seven on the drilling rig fled the platform shortly before it collapsed into the new depths of the lake. [...] "
+            "Days after the disaster, once the water pressure equalized, nine of the eleven sunken barges popped out of the whirlpool and refloated on the lake's surface. [...] "
+            "the oil rig was conducting exploratory drilling in the lake alongside the edge of the salt dome. [...] "
+            "Over the course of several hours, the fresh lake water dissolved the salt and enlarged the hole, causing the lake to drain into the mine. [...] "
+            "The Mine Safety and Health Administration was unable to determine blame because they could not determine whether Texaco was drilling in the wrong place or if the mine's maps were inaccurate.",
+            nome="Lake Peigneur")],
+    },
+    # 15 "ratos de geleira": bolas de musgo que andam em bando
+    {
+        "temas_secundarios": ["plantas", "comportamento_animal"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Em algumas geleiras vivem \"ratos de geleira\": bolas de musgo que rolam pelo gelo cerca de 2,5 cm por dia, movendo-se juntas como uma manada, e não só ao sabor do vento ou da ladeira.",
+        "explicacao": (
+            "O nome vem do islandês jökla-mýs, dado em 1950 pelo meteorologista Jón Eyþórsson. São colônias de várias "
+            "espécies de musgo, e servem de abrigo para nematoides, colêmbolos e tardígrados. Já foram vistas no "
+            "Alasca, no Chile, na Groenlândia, na Islândia, em Svalbard, em Uganda e na Venezuela, mas ainda não se "
+            "sabe que condições são necessárias para que se formem. O mais curioso é o movimento: ele não parece "
+            "aleatório, e sim coordenado, como o de uma manada, e não se explica só pelo vento ou pela inclinação do "
+            "gelo. Sensores de aceleração mostraram que as bolas de fato giram e rolam, em vez de só deslizar, e com o "
+            "tempo expõem todos os lados. Uma explicação proposta, a partir de bolas que migravam para o sul no "
+            "Alasca: o musgo escuro absorve sol do lado iluminado e faz sombra do outro, o gelo derrete só do lado "
+            "ensolarado, forma-se uma pequena depressão e a bola rola para dentro dela, e assim por diante. Elas "
+            "guardam calor e umidade, criando um refúgio para micro-organismos que não sobreviveriam no gelo nu, e "
+            "podem durar seis anos ou mais. Em pelo menos alguns casos, parecem se reproduzir sem sexo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Glacier_mice",
+            "Glacier mice are colonies of mosses found on some glaciers and adjacent ecosystems. "
+            "They are composed of multiple species of moss and can also host other species, such as nematode worms, springtails, and water bears. "
+            "Although what preconditions are necessary for glacier mice to form has yet to be determined, they have been observed in Alaska, Chile, Greenland, Iceland, Svalbard, Uganda and Venezuela, as well as several sub-Antarctic islands. "
+            "In at least some cases, glacier mice apparently reproduce asexually [...] "
+            "Glacier mice are notable for their movement across the ice, which appears to be non-random, taking the form of herd-like behavior. "
+            "This movement does not appear to be solely the product of wind or the direction of a slope. [...] "
+            "Gilbert and Bartholomaus's evidence shows a southern migration in Alaska which suggests a mechanism: the dark coloured moss absorbs sun energy on the south side, and casts a shadow on the north side. "
+            "This causes the ice to melt only on the sunny side, creating a small depression, the moss then rolls into the depression and the process continues [...] "
+            "On average, they move about 2.5 cm (0.98 in) per day. "
+            "The use of accelerometers has demonstrated that glacier mice do in fact rotate and roll, rather than simply sliding across the ice, over time exposing all of their surfaces. "
+            "Measurements of glacier mice show that they retain heat and moisture, creating a suitable ecosystem for microorganisms that otherwise could not live on a glacier. "
+            "Glacier mice are believed to persist for six years or longer. "
+            "Glacier mice were first described in 1950 by Icelandic meteorologist Jón Eyþórsson, who referred to them as jökla-mýs",
+            nome="Glacier mice")],
+    },
+    # 16 o Danúbio que some e vai para o Reno
+    {
+        "temas_secundarios": ["minerais_rochas", "leis_julgamentos"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Perto da nascente, o Danúbio some por dias inteiros num sumidouro na Alemanha. A água reaparece a uns doze quilômetros e vai para o Reno: o rio do mar Negro está sendo \"roubado\" pelo rio do mar do Norte.",
+        "explicacao": (
+            "Entre Immendingen e Möhringen, a água do Danúbio afunda no leito e corre por cavernas no calcário até o "
+            "Aachtopf, uma nascente a cerca de doze quilômetros dali, onde ressurge como o rio Radolfzeller Aach. Ele deságua no "
+            "lago de Constança, que alimenta o Reno. Assim, parte do Danúbio atravessa a grande divisória de águas "
+            "da Europa, que separa as bacias do mar do Norte e do mar Negro. O primeiro registro do rio sumindo por "
+            "completo é de 1874, e os dias por ano em que isso acontece aumentaram muito: em média 80 entre 1884 e "
+            "1904, 270 entre 1938 e 1945, e um recorde de 309 em 1921. A ligação foi provada em outubro de 1877 pelo "
+            "geólogo Adolf Knop, que despejou no rio 10 kg de fluoresceína, 20 toneladas de sal e 1.200 kg de óleo de "
+            "xisto. Depois de 60 horas, as três coisas saíram no Aachtopf, com a água verde e com gosto de creosoto. "
+            "Em 1927, a disputa pela água chegou ao Supremo Tribunal do Reich, opondo Württemberg e a Prússia ao "
+            "estado de Baden. O rio subterrâneo remove cerca de 7.000 toneladas de calcário por ano, e a tendência, "
+            "a longo prazo, é que o alto Danúbio seja desviado inteiro para o Reno."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Danube_Sinkhole",
+            "Between Immendingen and Möhringen and also near Fridingen (Tuttlingen), the water of the Danube sinks into the riverbed in various places. [...] "
+            "the Danube's water flows through caverns to the Aachtopf, where it emerges as the river Radolfzeller Aach, a tributary of Lake Constance and the Rhine, respectively. [...] "
+            "appears again in a horizontal limestone layer, the ki4 layer, approximately twelve kilometers away at Aachtopf. [...] "
+            "Thus, a part of the Danube water also flows into the Rhine. "
+            "This geographical situation is a striking feature of the large European Watershed, which separates the catchment areas of the North Sea and the Black Sea. [...] "
+            "The first documented case of the Danube completely disappearing into the hole dates back to 1874. "
+            "Since then, the number of days per year when this happens has risen sharply. "
+            "Between 1884 and 1904, it happened, on average, 80 days per year. [...] "
+            "from 1938 to 1945, it was 270 days. The highest number so far, was in 1921, with 309 days. "
+            "The relationship between the sinkhole and Aachtopf spring was proven in October 1877. "
+            "Geologist Adolf Knop of the Karlsruhe Institute of Technology poured 10 kg of sodium fluorescein, 20 tons of salt, and 1200 kg of shale oil into the Danube on 9 October. "
+            "After 60 hours, all three substances emerged at the Aachtopf. "
+            "The water at Aachtopf was described as \"gorgeously green lit\" by the fluorescein and tasting of creosote. [...] "
+            "In 1927, a case was brought before the Supreme Court of the German Reich between Württemberg and Prussia as the ruler of the Hohenzollern Province on the one hand, and the state of Baden on the other hand [...] "
+            "The underground river Danube annually removes about 7,000 tons of lime [...] "
+            "In the long run, today's upper Danube will probably be redirected entirely into the Radolfzeller Aach, and thus to the Rhine.",
+            nome="Danube Sinkhole")],
+    },
+]

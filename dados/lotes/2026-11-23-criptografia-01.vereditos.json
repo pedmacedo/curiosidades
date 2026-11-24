@@ -1,0 +1,128 @@
+{
+ "lote": "2026-11-23-criptografia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "criptografia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Al-Kindi, século IX; hipótese do Alcorão como 'há quem sugira'."
+   },
+   {
+    "id": "criptografia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Bellaso 1553, Babbage 1854 sem publicar, Kasiski 1863, Carroll 1868, Scientific American 1917 conferem."
+   },
+   {
+    "id": "criptografia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Babington: barril de cerveja, Phelippes, pedido dos nomes, julgamento e execução conferem; não redundante com o 0004."
+   },
+   {
+    "id": "criptografia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Smithsonian sustenta as 57 cartas, 150 mil símbolos, hill-climbing e a frase de John Guy."
+   },
+   {
+    "id": "criptografia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "330 e 309 eram 'máscara' e ponto final, não dois números para 'máscara'; o 'até 1811' parece confundir com o Grande Chiffre de Paris de Napoleão.",
+    "correcao": "1) Trocar 'deduziu que dois números desconhecidos significavam \"máscara\": seria o Homem da Máscara de Ferro.' por 'deduziu que os números desconhecidos 330 e 309 queriam dizer \"máscara\" e ponto final: o general seria o Homem da Máscara de Ferro.' 2) Apagar a frase 'Versões modificadas serviram ao exército francês até 1811.' e trocar 'Depois, muitos documentos dos arquivos franceses ficaram ilegíveis' por 'Quando a cifra caiu em desuso, muitos documentos dos arquivos franceses ficaram ilegíveis'. 3) No trecho da fonte, retirar 'Modified forms were in use by the French Peninsular army until the summer of 1811. ' e manter 'After it fell out of current use, many documents in the French archives were unreadable until it was decoded.'"
+   },
+   {
+    "id": "criptografia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Z408 quebrada pelo casal Harden em 1969; Z340 em 2020 com 650 mil tentativas; texto só sobre as cifras."
+   },
+   {
+    "id": "criptografia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Kryptos: datas, NSA, Stein, BERLIN/CLOCK, papéis no Smithsonian em 2025, leilão de US$ 962.500 e K4 ainda sem criptoanálise (Paradigm confirma)."
+   },
+   {
+    "id": "criptografia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Venona: 35 mil páginas duplicadas, só pequena parte lida; tudo confere."
+   },
+   {
+    "id": "criptografia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz que Cocks não anotou 'na hora' (a nota de 20/11/1973 existe); 'antes' solto no gancho.",
+    "correcao": "No gancho, trocar 'foi concebida antes, em segredo, na inteligência britânica. Clifford Cocks chegou ao futuro RSA em 1973 e nem anotou a ideia.' por 'foi concebida primeiro em segredo, na inteligência britânica. Clifford Cocks chegou ao futuro RSA em 1973 sem anotar nada na hora.'"
+   },
+   {
+    "id": "criptografia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz 'more than 600 volunteers'; o gancho diz '600'.",
+    "correcao": "No gancho, trocar 'com uma mensagem cifrada.' por 'com uma cifra.' e 'Entre 1993 e 1994, 600 voluntários resolveram.' por 'Entre 1993 e 1994, mais de 600 voluntários a quebraram.'"
+   },
+   {
+    "id": "criptografia-0011",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: a anedota do escravo de cabeça raspada (Histieu) abre quase toda história popular da criptografia; é trivia conhecida. 'Da mesma época' também não tem apoio (Demarato é ~20 anos posterior)."
+   },
+   {
+    "id": "criptografia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Steganographia: datas, Índex 1609–1900, Clavis de 1606 e decifração por Reeds e Ernst conferem."
+   },
+   {
+    "id": "criptografia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Choctaw code talkers: 26/10/1918, 'little gun shoot fast'; não os chama de primeiros; navajos em escala maior com apoio."
+   },
+   {
+    "id": "criptografia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem, mas 'um documento ligado ao manuscrito' é o próprio Copiale, e falta a ressalva 'ou ao menos o conde Veltheim'.",
+    "correcao": "Na explicação, trocar 'Um documento ligado ao manuscrito sugere que os Oculistas eram maçons preservando ritos proibidos pelo papa Clemente XII.' por 'O próprio manuscrito sugere que os Oculistas, ou ao menos o conde Veltheim, que os liderava, eram maçons preservando ritos proibidos pouco antes pelo papa Clemente XII.'"
+   },
+   {
+    "id": "criptografia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Beale: textos, Morriss, cifra de livro, 'abcdefghiijklmmnohpp' e chance <1 em cem trilhões conferem; consenso_parcial mantido."
+   }
+  ],
+  "2": [
+   {
+    "id": "criptografia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "330 e 309 = 'máscara' e ponto final; frase de 1811 retirada."
+   },
+   {
+    "id": "criptografia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Sem anotar nada na hora'; retoque sobre o papel do receptor aplicado como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "criptografia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mais de 600 voluntários a quebraram'."
+   },
+   {
+    "id": "criptografia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "O próprio manuscrito sugere; ressalva sobre Veltheim com trecho literal."
+   }
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "lote": "2026-11-23-fisica_particulas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "fisica_particulas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "OPERA: 60,7 ns, cabo de fibra solto e relógio, renúncias de 2012 conferem."
+   },
+   {
+    "id": "fisica_particulas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Segundo o Arquivo do CERN, o telegrama de agradecimento de Pauli aparentemente não chegou; sobreviveu como rascunho.",
+    "correcao": "Na explicação, troque 'e agradeceu por telegrama, com a frase sobre saber esperar.' por 'e redigiu um telegrama de agradecimento com a frase sobre saber esperar; segundo o Arquivo do CERN, essa resposta aparentemente nunca chegou aos destinatários e sobreviveu só num rascunho.' Acrescente como fonte https://archives.web.cern.ch/?p=610 (título '…57 years ago – CERN Archives', idioma en) com o trecho literal 'Apparently Pauli's reply to the telegram did not arrive' e rode de novo o checar_citacoes. Se essa fonte não passar, use só 'e redigiu um telegrama de agradecimento com a frase sobre saber esperar.', sem a frase sobre o CERN."
+   },
+   {
+    "id": "fisica_particulas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Oh-My-God: ~51 J ≈ bola de 140 g a ~100 km/h; 40 milhões de vezes o LHC; Amaterasu 2021 conferem."
+   },
+   {
+    "id": "fisica_particulas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hess: 5.300 m, ionização dobrada, voo no eclipse, Nobel de 1936 conferem."
+   },
+   {
+    "id": "fisica_particulas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Desde 1923' (Skobeltsyn) é contestado, e os Joliot-Curie leram os rastros como elétrons, não prótons.",
+    "correcao": "Na explicação, troque 'Rastros parecidos já tinham sido observados por Dmitri Skobeltsyn desde 1923, sem explicação na época, e o casal Joliot-Curie tinha indícios de pósitrons em fotos antigas, mas os havia tomado por prótons.' por 'Rastros parecidos já tinham aparecido em fotos de outros físicos, como o soviético Dmitri Skobeltsyn e o casal Joliot-Curie, mas ninguém soube explicá-los na época.' No trecho da fonte, inclua a frase literal 'Similar photographic evidence had been seen by Irene and Frederic Joliot-Curie and others but no one at the time had an explanation for these anomalous tracks.' e retire a frase sobre os Joliot-Curie que 'had dismissed them as protons'. A frase sobre Skobeltsyn pode ficar no trecho, desde que o texto não use mais o ano de 1923."
+   },
+   {
+    "id": "fisica_particulas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "~4.000 pósitrons por dia do potássio-40 e a assimetria matéria-antimatéria conferem."
+   },
+   {
+    "id": "fisica_particulas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Gancho correto, mas a explicação omite o ~9% do condensado de quarks que está nas mesmas fontes.",
+    "correcao": "Na explicação, logo depois de '...partículas sem massa de repouso que prendem os quarks uns aos outros.', inserir: 'Cálculos mais completos da cromodinâmica quântica, que contam também os quarks virtuais que surgem e somem dentro do próton, atribuem às massas dos quarks algo perto de 9% do total; mesmo assim, uns 91% vêm da força forte, e não do Higgs.' Acrescentar aos trechos: na fonte Higgs boson, 'About 91% of the proton mass is due to the quark and gluon fields and the QCD conformal anomaly rather than the Higgs interaction.'; na fonte Proton, 'the quark condensate (~9%, comprising the up and down quarks and a sea of virtual strange quarks)'. O gancho fica como está."
+   },
+   {
+    "id": "fisica_particulas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere, mas 'ligação com um livro muito mais antigo' é vaga: a fonte diz que é a Torre de Babel.",
+    "correcao": "Na explicação, trocar 'A segunda: haveria uma ligação com um livro muito mais antigo.' por 'A segunda: uma ligação com um livro bem mais antigo, a Bíblia. Lederman compara o campo de Higgs, que desfez a simetria do universo primordial e deu origem à variedade de partículas e forças, à Torre de Babel, onde uma língua única se fragmenta em muitas.' Acrescentar ao trecho da fonte Higgs boson: 'his tongue-in-cheek title draws an analogy between the impact of the Higgs field on the fundamental symmetries at the Big Bang, and the apparent chaos of structures, particles, forces and interactions that resulted and shaped our present universe, with the biblical story of Babel in which the primordial single language of early Genesis was fragmented into many disparate languages and cultures'."
+   },
+   {
+    "id": "fisica_particulas-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Só foi premiada em 1978' exagera: Wu recebeu outros prêmios antes (Comstock 1964).",
+    "correcao": "Na explicação, trocar 'Wu foi mencionada no discurso deles, mas só foi premiada pela descoberta em 1978, com o primeiro Prêmio Wolf.' por 'Wu foi mencionada no discurso deles e, anos depois, em 1978, recebeu o primeiro Prêmio Wolf de Física.'"
+   },
+   {
+    "id": "fisica_particulas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Bismuto-209: meia-vida de 20,1 quintilhões de anos, Orsay 2003, Gran Sasso 2012 e Pepto-Bismol conferem."
+   },
+   {
+    "id": "fisica_particulas-0011",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "exagero: caixas de chumbo e roupa de proteção são a versão viral; a BnF, que guarda os cadernos de Marie Curie, fala em encapsulamento plástico, consulta sob protocolo e ~2 nSv em 10 minutos."
+   },
+   {
+    "id": "fisica_particulas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 1.500 anos em 2050 valem só para o cenário de emissões mais altas; o texto não deixa claro.",
+    "correcao": "Na explicação, trocar 'Uma análise posterior, com cenários ainda mais altos, previu resultados ambíguos para amostras de quase 1.500 anos já em 2050.' por 'Uma análise posterior foi além: no cenário de emissões mais altas, a datação daria resultados ambíguos para amostras de quase 1.500 anos já em 2050.' No trecho da fonte PMC7757245, acrescentar antes de 'In this scenario' a frase literal 'The “age” of the atmosphere in the highest emission scenario is up to 2,500 years in the year 2100', para que o cenário fique registrado."
+   },
+   {
+    "id": "fisica_particulas-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Citação de Hawass escolhida a dedo (depois ele chamou de 'major discovery'); o corredor foi detectado em 2016-2017 e publicado em 2023.",
+    "correcao": "Na explicação, trocar 'e o egiptólogo Zahi Hawass reagiu dizendo que o estudo não oferecia nada à egiptologia.' por 'e o egiptólogo Zahi Hawass reagiu dizendo que o estudo não oferecia nada à egiptologia, embora depois tenha chamado de grande descoberta outro achado da mesma equipe.' Trocar 'Em 2023, a técnica revelou um corredor atrás da entrada original.' por 'Em 2023, a equipe publicou outro achado feito com múons: um corredor atrás da entrada original, depois inspecionado com uma câmera endoscópica.' No trecho da fonte ScanPyramids, acrescentar a frase literal 'Later, once the North Face Corridor was inspected with an Endoscope, Hawass conversely commented that ScanPyramids's work had provided a \"major discovery\"'."
+   },
+   {
+    "id": "fisica_particulas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O número de neutrinos da SN 1987A diverge entre fontes (10, 11, 12).",
+    "correcao": "Na explicação, trocar 'registrar dez neutrinos da supernova SN 1987A' por 'registrar cerca de uma dezena de neutrinos da supernova SN 1987A'."
+   },
+   {
+    "id": "fisica_particulas-0015",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: a anedota de Becquerel e os dias nublados está nos livros escolares e em listas de descobertas acidentais; 'graças a dias nublados' também exagera."
+   },
+   {
+    "id": "fisica_particulas-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fontes brasileiras dizem que Maria Gabriela levou a peça à Vigilância Sanitária, não a um hospital, e acompanhada.",
+    "correcao": "No gancho, trocar 'ela mesma levou o material a um hospital.' por 'levou a peça à Vigilância Sanitária.' Na explicação, trocar 'Em 28 de setembro, recuperou o material e o levou a um hospital;' por 'Em 28 de setembro, recuperou a peça, que tinha sido revendida a outro ferro-velho, e a levou numa sacola plástica até a Vigilância Sanitária;'. Acrescentar a fonte https://www.gov.br/ipen/pt-br/assuntos/clipping-de-noticias/quem-e-o-fisico-que-identificou-o-acidente-com-cesio-137-em-goiania (título 'Quem é o físico que identificou o acidente com césio-137 em Goiânia', idioma pt) com o trecho literal 'que em 28 de setembro levou a cápsula em uma sacola de plástico até a Vigilância Sanitária'. Rodar de novo o checar_citacoes.py para essa fonte."
+   }
+  ],
+  "2": [
+   {
+    "id": "fisica_particulas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Telegrama que não chegou, com fonte do CERN; autoria do nome 'neutrino' suavizada como ajuste pontual.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "fisica_particulas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem 1923 e sem 'prótons'; trecho dos Joliot-Curie literal."
+   },
+   {
+    "id": "fisica_particulas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva dos ~9% e ~91% com trechos literais."
+   },
+   {
+    "id": "fisica_particulas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "A analogia com Babel, feita pelo próprio Lederman."
+   },
+   {
+    "id": "fisica_particulas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem o 'só foi premiada'; Prêmio Wolf de 1978."
+   },
+   {
+    "id": "fisica_particulas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'No cenário de emissões mais altas' aplicado, com trecho literal."
+   },
+   {
+    "id": "fisica_particulas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva sobre Hawass e cronologia do corredor (publicado em 2023) aplicadas."
+   },
+   {
+    "id": "fisica_particulas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Cerca de uma dezena de neutrinos'."
+   },
+   {
+    "id": "fisica_particulas-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Vigilância Sanitária e sacola plástica com fonte do IPEN; revenda com apoio na Wikipedia."
+   }
+  ]
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "lote": "2026-11-19-astrobiologia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "astrobiologia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Allan Hills 84001; sem duplicata."
+   },
+   {
+    "id": "astrobiologia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Viking lander biological experiments; debate persistente justifica consenso_parcial."
+   },
+   {
+    "id": "astrobiologia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Life on Venus; disputa aberta bem descrita."
+   },
+   {
+    "id": "astrobiologia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Wow! signal; a proposta de 2024 é preprint e aparece como proposta."
+   },
+   {
+    "id": "astrobiologia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Drake equation; nota 3 porque o apelido é mais anedota que mecanismo."
+   },
+   {
+    "id": "astrobiologia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Omite a crítica da mesma fonte: Fermi não publicou nada, Sagan sugeriu que a frase seria apócrifa e Gray diz que Fermi duvidava da viagem interestelar.",
+    "correcao": "1) Trocar a última frase (precursores Fontenelle, Verne, Tsiolkovsky) por: 'Fermi nunca publicou nada sobre o tema, e Carl Sagan chegou a sugerir que a frase seria apócrifa. Para o pesquisador Robert Gray, a leitura tradicional distorce a pergunta: Fermi estaria duvidando da viagem interestelar, e não da existência de extraterrestres.' (precursores numa oração curta, se couber). 2) Acrescentar ao trecho: 'Fermi did not publish anything regarding the paradox, with Sagan once suggesting the quote to be apocryphal. [...] According to Gray, the current understanding of the paradox misinterprets Fermi's question and subsequent discussion, which was challenging the feasibility of interstellar travel rather than the existence of advanced extraterrestrial life.' 3) Considerar 'mito_desmentido' ou 'contraintuitivo' nos tipos."
+   },
+   {
+    "id": "astrobiologia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Apresentado como contestado; Rummel et al. 2011 confirmam a controvérsia. Nota 3."
+   },
+   {
+    "id": "astrobiologia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere; não duplica sistema_solar-0001."
+   },
+   {
+    "id": "astrobiologia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Beresheet e Traspas 2021. Nota 3."
+   },
+   {
+    "id": "astrobiologia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O artigo diz que os dados 'suggest' o valor; 'mostraram' é forte demais.",
+    "correcao": "Gancho: 'grãos de gelo de Encélado mostraram que o oceano dessa lua tem ao menos 100 vezes mais que os nossos.' → 'grãos de gelo de Encélado indicaram que o oceano dessa lua tem ao menos 100 vezes mais que os nossos.'"
+   },
+   {
+    "id": "astrobiologia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Sem vida nenhuma' pode ser lido como 'Europa não tem vida'.",
+    "correcao": "Gancho: 'produz cerca de mil toneladas de oxigênio por dia, sem vida nenhuma:' → 'produz cerca de mil toneladas de oxigênio por dia, sem precisar de seres vivos:'"
+   },
+   {
+    "id": "astrobiologia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A previsão de 2005 era de queda, não de sumiço; 'acha' no presente atribui opinião de 2010. Nota 3.",
+    "correcao": "Gancho: 'Em 2005, previu-se que, se houvesse vida em Titã consumindo hidrogênio, o gás rarearia perto da superfície. Em 2010, dados sugeriram isso. É só hipótese: o autor da previsão achou outras causas mais prováveis.' Explicação: 'McKay concordou que vida é uma explicação possível, mas alertou que outras são mais prováveis' → 'McKay concordou que vida era uma explicação possível, mas alertou que outras eram mais prováveis'."
+   },
+   {
+    "id": "astrobiologia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Methane on Mars; suspeita de 2025 (Viscardy et al.) como hipótese."
+   },
+   {
+    "id": "astrobiologia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Apollo 11, Lunar Receiving Laboratory, Back contamination e Planetary protection."
+   },
+   {
+    "id": "astrobiologia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Nature/Scientific American e NASA."
+   },
+   {
+    "id": "astrobiologia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com James Lovelock; morte no 103º aniversário está na fonte."
+   }
+  ],
+  "2": [
+   {
+    "id": "astrobiologia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Crítica de Sagan e Gray com trecho literal."
+   },
+   {
+    "id": "astrobiologia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Indicaram' acompanha o 'suggest'."
+   },
+   {
+    "id": "astrobiologia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Sem precisar de seres vivos'."
+   },
+   {
+    "id": "astrobiologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho como hipótese; McKay no passado. Nota 3."
+   }
+  ]
+ }
+}

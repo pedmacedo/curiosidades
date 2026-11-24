@@ -1,0 +1,182 @@
+{
+ "lote": "2026-11-24-cinema_fotografia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "cinema_fotografia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O Harry Ransom Center diz 'a mais antiga feita com câmera'; há mais de vinte heliografias de Niépce de 1825–1829 feitas por contato.",
+    "correcao": "No gancho, trocar 'A foto mais antiga que sobreviveu, feita por Niépce em 1827,' por 'A foto mais antiga tirada com câmera que sobreviveu, feita por Niépce em 1827,'. Opcional: na explicação, depois de 'Nicéphore Niépce fez a imagem...', acrescentar que ele já fazia cópias de gravuras por contato, sem câmera, desde 1825."
+   },
+   {
+    "id": "cinema_fotografia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho inverte a cena (era o freguês, com o engraxate) e é mais categórico que a fonte ('widely considered').",
+    "correcao": "Trocar o gancho por: 'A foto tida como a mais antiga com gente, de cerca de 1838, mostra uma avenida movimentada de Paris que parece vazia: só um homem que mandava engraxar as botas (e o engraxate) ficou parado o bastante para aparecer.' Na explicação, trocar 'A placa original foi arruinada por uma restauração malsucedida depois de 1970' por 'A placa original, já deteriorada, foi ainda mais danificada por uma restauração malsucedida a partir de 1970'."
+   },
+   {
+    "id": "cinema_fotografia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Getty e TIME: exposição longa só em parte; etiqueta, 'say prunes', Kodak 1888; consenso_parcial correto."
+   },
+   {
+    "id": "cinema_fotografia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "No teste com a charrete o cavalo trotava e os fios eram acionados, não rompidos; o galope veio depois, com Sallie Gardner.",
+    "correcao": "Na explicação, trocar 'Fios passavam sob a pista e, ao serem rompidos um a um pela roda da charrete puxada pelo cavalo, disparavam os obturadores em sequência, com exposições que, segundo se anunciou, duravam um milésimo de segundo.' por 'No primeiro teste, um cavalo a trote puxava uma charrete: fios sob a pista eram acionados um a um pela roda, interrompiam um circuito elétrico e disparavam os obturadores em sequência, com exposições que, segundo se anunciou, duravam um milésimo de segundo. Logo depois, a égua Sallie Gardner passou pela pista a galope.'"
+   },
+   {
+    "id": "cinema_fotografia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Trem dos Lumière: sem relatos contemporâneos de pânico (Loiperdinger, Bottomore); 'provavelmente' no gancho."
+   },
+   {
+    "id": "cinema_fotografia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A sequência sugere ligação entre o suicídio do filho e Edison, que a fonte não afirma; falta a ressalva 'nunca surgiu prova concreta'.",
+    "correcao": "1) Trocar 'A viúva suspeitou de crime ligado à disputa de patentes com Edison.' por 'A viúva suspeitou de crime ligado à disputa de patentes com Edison, mas nunca surgiu prova concreta disso.' 2) Trocar 'Em 1898, o filho Adolphe testemunhou num processo em que Edison dizia ser o único inventor do cinema; três anos depois, foi achado morto, tendo se matado com um tiro.' por 'Em 1898, o filho Adolphe depôs contra Edison num processo em que o americano se dizia o único inventor do cinema, na esperança de ver o pai reconhecido; o caso foi perdido. Três anos depois, Adolphe se matou com um tiro.'"
+   },
+   {
+    "id": "cinema_fotografia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere; só falta converter os 500 mil pés.",
+    "correcao": "Trocar 'empilhou na piscina 500 mil pés de filme' por 'empilhou na piscina 500 mil pés de filme (cerca de 150 km de película)'."
+   },
+   {
+    "id": "cinema_fotografia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte fala em mergulhar o filme, não em jogar água.",
+    "correcao": "Trocar 'e jogar água pode até aumentar a fumaça' por 'e mergulhar o filme em chamas na água pode não apagá-lo e ainda aumentar a fumaça'."
+   },
+   {
+    "id": "cinema_fotografia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A Kodak vendia (e revelava em suas lojas) quase todo o filme; o retrato 'Shirley' teve modelos posteriores com o mesmo nome.",
+    "correcao": "1) Na explicação, trocar 'quebrar o monopólio da Kodak, que então revelava quase todo o filme colorido do país' por 'quebrar o monopólio da Kodak, que então vendia quase todo o filme colorido do país e também o revelava em suas lojas'. 2) Trocar o gancho por: 'Por décadas, laboratórios calibraram as cores das fotos pelo retrato de uma mulher branca, a \"Shirley\", nome da primeira modelo, funcionária da Kodak. O filme favorecia a pele clara; Godard chegou a recusá-lo.'"
+   },
+   {
+    "id": "cinema_fotografia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A câmera emperrada como relato do próprio Méliès, contraposto ao filme de Edison de 1895 (Deslandes)."
+   },
+   {
+    "id": "cinema_fotografia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A cópia na Argélia é 'um relato'; a falência veio do contrato com a Pathé, não da pirataria.",
+    "correcao": "1) Trocar 'uma cópia vendida para exibição só na Argélia foi parar' por 'segundo um relato, uma cópia vendida para exibição só na Argélia foi parar'. 2) Trocar 'Endividado, ele faliu e não fez mais filmes depois de 1912.' por 'Anos depois, um contrato ruinoso com a produtora Pathé o deixou endividado; ele faliu e não fez mais filmes depois de 1912.'"
+   },
+   {
+    "id": "cinema_fotografia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Prokudin-Gorsky: 1909–1915, vagão-laboratório, compra em 1948, 1.902 negativos combinados em 2004; não repete luz_cores-0011."
+   },
+   {
+    "id": "cinema_fotografia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Sem corante algum' é falso: a placa recebia cianina; o que a fonte diz é processo de preto e branco.",
+    "correcao": "No gancho, trocar 'Em 1891, Gabriel Lippmann fez fotos coloridas sem corante algum:' por 'Em 1891, Gabriel Lippmann fez fotos coloridas com uma emulsão de preto e branco:'. Opcional, na explicação: trocar 'após nove meses de exposição' por 'após cerca de nove meses de exposição'."
+   },
+   {
+    "id": "cinema_fotografia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A demora veio de ninguém ligar o cilindro ao filme até 1998, não da quebra; a pergunta vem antes de a câmera rodar.",
+    "correcao": "Gancho inteiro passa a ser: 'O filme mais antigo que se conhece com som gravado ao vivo, de 1894 ou 1895, mostra dois homens dançando ao som de um violino. O som, num cilindro de cera quebrado, só foi ligado ao filme em 1998.' Na explicação, trocar 'No cilindro, antes da música, um homem pergunta se já está funcionando.' por 'No cilindro, antes de a câmera começar a rodar, um homem pergunta se já está funcionando.'"
+   },
+   {
+    "id": "cinema_fotografia-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "As fadas eram cópias desenhadas e recortadas em papelão; Frances vinha da África do Sul; só Elsie falou da vergonha.",
+    "correcao": "Gancho inteiro passa a ser: 'Na Inglaterra, em 1917, duas primas de 16 e 9 anos fotografaram \"fadas\" de papelão copiadas de um livro infantil. Conan Doyle, criador de Sherlock Holmes, publicou as fotos como prova. Só em 1983 admitiram a farsa.' Na explicação, trocar 'Disseram que ficaram envergonhadas de desmentir um homem tão brilhante.' por 'Elsie contou que as duas ficaram envergonhadas de desmentir um homem tão brilhante.'"
+   },
+   {
+    "id": "cinema_fotografia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "80% dos filmes com alguma cor no início dos anos 1920; código de cores, viragem e fim com o som conferem."
+   }
+  ],
+  "2": [
+   {
+    "id": "cinema_fotografia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Tirada com câmera'; heliografias de contato com trecho do HRC."
+   },
+   {
+    "id": "cinema_fotografia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Freguês e engraxate; 'tida como'; placa já deteriorada."
+   },
+   {
+    "id": "cinema_fotografia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Trotador com charrete no primeiro teste; Sallie Gardner a galope depois."
+   },
+   {
+    "id": "cinema_fotografia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem prova concreta; sem causalidade entre o processo e o suicídio."
+   },
+   {
+    "id": "cinema_fotografia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "500 mil pés ≈ 150 km."
+   },
+   {
+    "id": "cinema_fotografia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Mergulhar o filme em chamas'."
+   },
+   {
+    "id": "cinema_fotografia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Kodak vendia e revelava; Shirley como nome da primeira modelo."
+   },
+   {
+    "id": "cinema_fotografia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Falência pelo rompimento com a Pathé em 1913, fiel à fonte; 'segundo um relato'."
+   },
+   {
+    "id": "cinema_fotografia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Com uma emulsão de preto e branco'; 'cerca de nove meses'."
+   },
+   {
+    "id": "cinema_fotografia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ligação feita só em 1998; pergunta antes de a câmera rodar."
+   },
+   {
+    "id": "cinema_fotografia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Fadas de papelão copiadas; vergonha atribuída a Elsie."
+   }
+  ]
+ }
+}

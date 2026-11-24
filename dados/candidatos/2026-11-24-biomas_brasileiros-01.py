@@ -1,0 +1,547 @@
+LOTE = "2026-11-24-biomas_brasileiros-01"
+AREA = "brasil"
+TEMA = "biomas_brasileiros"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 a última ararinha-azul e a volta à Caatinga
+    {
+        "temas_secundarios": ["ecologia", "comportamento_animal"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Nos anos 1990, a última ararinha-azul conhecida na natureza era um macho que vivia em par com uma fêmea de outra espécie, uma maracanã. Ele sumiu em 2000. Em 2022, aves criadas em cativeiro voltaram à Caatinga.",
+        "explicacao": (
+            "A ararinha-azul vivia numa faixa estreita da Caatinga, nas matas de beira de riacho da bacia do rio São "
+            "Francisco, e dependia das caraibeiras, árvores que lhe davam ninho, abrigo e comida. O desmatamento, a "
+            "represa de Sobradinho, iniciada em 1974, e o tráfico de aves derrubaram a espécie: por volta de 1980, no "
+            "auge do comércio ilegal, caçadores tiraram dezenas delas da natureza. Em 1990, no riacho Melância, na "
+            "Bahia, só restava um macho, que formava par com uma fêmea de maracanã. Em 1995, uma fêmea de ararinha "
+            "que estava em cativeiro foi solta ali, mas morreu sete semanas depois ao bater numa linha de energia. O "
+            "macho desapareceu em outubro de 2000, e em 2019 a IUCN classificou a espécie como extinta na natureza. "
+            "Restava a população de cativeiro, descendente de apenas 7 aves capturadas e com diversidade genética "
+            "muito baixa. Depois de anos de criação, e de aves trazidas da Alemanha para o Brasil em 2020, grupos de "
+            "ararinhas foram soltos em junho e em dezembro de 2022. No fim de outubro de 2023, foi confirmado o "
+            "nascimento de filhotes na natureza, de um casal formado depois da soltura."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Spix%27s_macaw",
+            "The species inhabited riparian Caraibeira (Tabebuia aurea) woodland galleries in the drainage basin of the Rio São Francisco within the Caatinga dry forest climate of interior northeastern Brazil. "
+            "It had a very restricted natural habitat due to its dependence on the tree for nesting, feeding and roosting. [...] "
+            "moved birds back from Germany to Brazil in 2020 [...] "
+            "Study of the lone bird discovered at Melância creek in 1990 [...] "
+            "Beginning around 1980, at the very height of the illegal bird trade, traders and trappers removed dozens of Spix's from the wild [...] "
+            "A single male, paired with a female blue-winged macaw, was discovered at the site in 1990. "
+            "A female Spix's macaw released from captivity at the site in 1995 was killed by collision with a power line after seven weeks. "
+            "The last wild male disappeared from the site in October 2000 [...] "
+            "the construction of the Sobradinho Dam above Juazeiro starting in 1974 [...] "
+            "As of 2019, the IUCN classifies the species as extinct in the wild. [...] "
+            "The existing captive population is descended from just 7 wild caught founder birds [...] "
+            "The captive population suffers from very low heterozygosity [...] "
+            "The Spix's macaw was eventually reintroduced to the wild in June and December 2022. [...] "
+            "Two more Spix's macaws were confirmed to have hatched in the wild in late October 2023 from a pair that came together after being released from captivity in June and December respectively.",
+            nome="Spix's macaw")],
+    },
+    # 2 micos-leões-dourados de zoológico e a vacina na mata
+    {
+        "temas_secundarios": ["doencas_infecciosas", "sistema_imunologico", "ecologia"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "Quase metade dos micos-leões-dourados livres hoje descende de animais nascidos em zoológicos de vários países e soltos no Rio de Janeiro. Depois de um surto de febre amarela, eles passaram a ser vacinados na mata.",
+        "explicacao": (
+            "O mico-leão-dourado só existe no estado do Rio de Janeiro, na Mata Atlântica. Nos anos 1970, as "
+            "estimativas para a espécie iam de apenas 100 a 600 animais. Entre 1984 e 2000, foram soltos 146 micos "
+            "nascidos em cativeiro, vindos de 43 zoológicos e centros de pesquisa do Brasil, da Europa e dos Estados "
+            "Unidos, em lugares onde a espécie não existia mais. Eles tiveram apoio intensivo: comida extra, caixas "
+            "para abrigo e resgate quando se perdiam. O programa somou o replantio de mata para ligar fragmentos "
+            "isolados e, em 2020, passagens de fauna sobre a rodovia BR-101. Entre 2016 e 2019, um surto de febre "
+            "amarela matou cerca de 30% da população selvagem. Pesquisadores adaptaram uma dose da vacina humana para "
+            "animais de corpo pequeno, testaram-na em micos de cativeiro e, em 2021, começaram a vacinar micos livres, "
+            "aparentemente o primeiro programa desse tipo para uma espécie de primata ameaçada. O censo de 2022-2023 "
+            "estimou mais de 4.800 micos na principal área da espécie, e cerca de 46% deles descendem dos animais "
+            "reintroduzidos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Golden_lion_tamarin",
+            "Endemic to the Atlantic coastal forests of Brazil, the golden lion tamarin is an endangered species. "
+            "Its geographic range is entirely within the state of Rio de Janeiro. [...] "
+            "reforestation with a particular focus on connecting separated areas of habitat [...] "
+            "the first published estimates did not appear until the 1970s. "
+            "By then, golden lion tamarin population estimates ranged from only 100 to 600 surviving individuals [...] "
+            "Most recently, a 2022/2023 census estimated more than 4,800 golden lion tamarins living in the current primary area of occurrence [...] "
+            "2016-2019: An outbreak of yellow fever caused extensive mortality among golden lion tamarins, killing around 30% of the wild population [...] "
+            "developed a dosage of surplus human yellow fever vaccine appropriate for smaller body-sized animals. "
+            "After the Rio de Janeiro Primate Center tested the vaccine's efficacy and safety on lion tamarins housed there, Associação Mico-Leão-Dourado biologists begin vaccinating wild tamarins in 2021, apparently the first such program for wild individuals of an endangered primate. [...] "
+            "2020: Wildlife passageways across the recently widened highway BR-101 were completed [...] "
+            "From 1984 to 2000, as part of the Golden Lion Tamarin Conservation Program (and later the Associação Mico Leão Dourado), 146 captive-born and seven confiscated wild-born golden lion tamarins were released into the wild [...] "
+            "The animals had been born at or lived in 43 different zoos and research centers in Brazil, Europe, and the United States. "
+            "None of the release sites, including the specific release sites in Poço das Antas, was thought to have wild golden lion tamarins at the time of the reintroductions. [...] "
+            "Most were given supplementary food and artificial shelter boxes for at least several months, and were captured and returned to the release site if they got lost. [...] "
+            "an estimated 2,256 surviving descendants of reintroduced golden lion tamarins remained, representing almost half (46%) of the total estimated population in the species' primary area of occurrence",
+            nome="Golden lion tamarin")],
+    },
+    # 3 a ilha das cobras tem bem menos cobras do que se dizia
+    {
+        "temas_secundarios": ["evolucao", "paisagens_extremas"],
+        "tipos_espanto": ["mito_desmentido", "engenhosidade"],
+        "gancho": "Já se estimou que a Ilha da Queimada Grande (SP) tivesse 430 mil jararacas-ilhoas, uma por metro quadrado. O primeiro estudo sistemático achou de 2 mil a 4 mil. Elas estão isoladas ali desde o fim da última glaciação.",
+        "explicacao": (
+            "A ilha fica a cerca de 33 km do litoral paulista e tem uns 43 hectares, ou seja, aproximadamente 430 mil "
+            "metros quadrados, a mesma cifra da antiga estimativa de cobras. O primeiro levantamento sistemático "
+            "contou de 2 mil a 4 mil jararacas-ilhoas, concentradas quase só na parte de mata. Uma estimativa "
+            "publicada em 2021, que combinou observações e escaneamento da ilha, chegou a algo entre 2.414 e 2.899. A "
+            "espécie só existe ali. Um estudo genético de 2005 a situou dentro da diversidade da jararaca comum, e a "
+            "explicação aceita é que uma população de jararacas ficou presa na ilha quando a subida do mar, no início "
+            "do Holoceno, a separou do continente. Sem mamíferos nativos para comer, a cobra passou a depender das "
+            "aves migratórias que param na ilha. Em vez de dar o bote, soltar a presa e segui-la pelo cheiro, como "
+            "outras víboras, ela a mantém presa na boca, o que parece ser uma adaptação: rastrear uma presa que sai "
+            "voando seria muito mais difícil. A ilha é fechada ao público, e a espécie está criticamente ameaçada. "
+            "A endogamia já aparece no nascimento de indivíduos intersexo, a maioria estéreis."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Ilha_da_Queimada_Grande",
+                "Queimada Grande is closed to the public [...] "
+                "The snakes became trapped on the island thousands of years ago, following the end of the last ice age, when rising ocean levels disconnected the island from the mainland. [...] "
+                "Located approximately 33 kilometres (21 mi) off the coast of the state of São Paulo, Brazil, the island of Queimada Grande is approximately 430,000 square metres (106 acres) in area [...] "
+                "The island was previously thought to have a population of about 430,000 snakes, but recent estimates are much lower. "
+                "The first systematic study of the population of the golden lancehead (Bothrops insularis), which lives exclusively on Queimada Grande, found the number to be 2,000 to 4,000, concentrated almost entirely in the rainforest area of the island.",
+                nome="Ilha da Queimada Grande"),
+            wiki("Bothrops_insularis",
+                "This island has a total area of only 43 hectares [...] "
+                "A 2005 genetic study found that the golden lancehead was nested within the living genetic diversity of B. jararaca [...] "
+                "The golden lancehead is thought to descend from a population of B. jararaca that became isolated on Queimada Grande, which was connected to the South American mainland during the last glacial period, after a major sea-level rise at the beginning of the Holocene. [...] "
+                "No mammals are native to the island Queimada Grande [...] "
+                "Owing to the dependence of B. insularis on migratory birds visiting the island as a food source [...] "
+                "The population of B. insularis on the island was estimated in 2021, based on a combination of observations and two- and three-dimensional scanning of the island in 2015, to be between 2,414 (2D scan estimate) and 2,899 (3D scan estimate). [...] "
+                "classified as critically endangered [...] "
+                "Associated with the heavy inbreeding of B. insularis is the occurrence of \"intersexes\", individuals born with both a hemipenis and female reproductive parts. [...] "
+                "since most of the intersexes are sterile. [...] "
+                "Unlike other venomous snakes that tend to strike, release, and then track their prey, B. insularis keeps its prey in its mouth once it has been envenomated. "
+                "This is thought to be an adaptation to hunting birds, as chemical tracking of prey after release",
+                nome="Bothrops insularis"),
+        ],
+    },
+    # 4 o lobo-guará come frutas e planta lobeiras com a ajuda das saúvas
+    {
+        "temas_secundarios": ["ecologia", "plantas", "insetos"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "O lobo-guará, maior canídeo da América do Sul, não é lobo nem raposa, e a maior parte do que come é vegetal. A lobeira, fruto do Cerrado parecido com tomate, pode responder por 40% a 90% da sua dieta.",
+        "explicacao": (
+            "O lobo-guará é a única espécie do seu gênero, e seu parente vivo mais próximo é o cachorro-vinagre. As "
+            "pernas compridas, que fazem dele o mais alto dos canídeos selvagens, provavelmente são uma adaptação aos "
+            "campos de capim alto onde vive. Ele caça roedores, aves, répteis e até insetos, mas a maior parte da "
+            "dieta é vegetal, e já se registraram 301 itens diferentes no seu cardápio. O preferido é a lobeira, cujo "
+            "fruto pode chegar a 20 cm de diâmetro e lembra um tomate por fora. Diferentemente de outros frutos, que "
+            "só abundam na estação das chuvas, ela é comida o ano todo. O lobo engole as sementes inteiras e as "
+            "espalha nas fezes, que muitas vezes deixa em cima de ninhos de saúvas. As formigas usam o esterco para "
+            "adubar o fungo que cultivam e jogam as sementes nos montes de descarte, logo fora do ninho, o que "
+            "aumenta muito a germinação. A comunicação química do lobo também rende histórias: a urina, que marca "
+            "trilhas e territórios, tem cheiro que algumas pessoas comparam ao da maconha, e no zoológico de Roterdã "
+            "esse odor já levou a polícia a procurar fumantes."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Maned_wolf",
+                "Its markings resemble those of a red fox but it is neither a fox nor a wolf. "
+                "It is the only species in the genus Chrysocyon [...] "
+                "It is the largest canine in South America [...] "
+                "Its closest living relative is the bush dog (genus Speothos) [...] "
+                "The maned wolf is the tallest of the wild canids; its long legs are probably an adaptation to the tall grasslands of its native habitat. [...] "
+                "Both female and male maned wolves use their urine to communicate, e.g. to mark their hunting paths [...] "
+                "The urine has a very distinctive odor, which some people liken to hops or cannabis. [...] "
+                "At the Rotterdam Zoo, this smell once set the police on a hunt for cannabis smokers. [...] "
+                "It specialises in preying on small and medium-sized animals, including small mammals (typically rodents and rabbits), birds and their eggs, reptiles, and even fish, gastropods, other terrestrial molluscs, and insects, but the main portion of its diet is vegetable matter [...] "
+                "Up to 301 food items have been recorded in the maned wolf's diet [...] "
+                "The wolf apple (Solanum lycocarpum), a tomato-like fruit, is the maned wolf's most common food item. "
+                "With some exceptions, these fruits make up 40–90% of the maned wolf's diet. "
+                "The wolf apple is actively sought by the maned wolf, and is consumed throughout the year, unlike other fruits that can only be eaten in abundance during the rainy season. "
+                "It can consume several fruits at a time and disperse intact seeds by defecating [...] "
+                "Often, maned wolves defecate on the nests of leafcutter ants. "
+                "The ants then use the dung to fertilize their fungus gardens, but they discard the seeds contained in the dung onto refuse piles just outside their nests. "
+                "This process significantly increases the germination rate of the seeds.",
+                nome="Maned wolf"),
+            wiki("Solanum_lycocarpum",
+                "Solanum lycocarpum, or wolf apple, is a species of nightshade, common in the Brazilian Cerrado ecoregion. [...] "
+                "The fruits are large, up to 20 cm (8 in) in diameter [...] "
+                "They resemble the tomato in external shape",
+                nome="Solanum lycocarpum"),
+        ],
+    },
+    # 5 quase nenhum tatu vira bola
+    {
+        "temas_secundarios": ["evolucao", "comportamento_animal"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Só duas espécies de tatu conseguem se fechar numa bola, e uma delas é o tatu-bola, da Caatinga e do Cerrado. A defesa que o protege da maioria dos predadores o torna fácil de apanhar por caçadores.",
+        "explicacao": (
+            "O segredo está numa armadura um pouco mais frouxa que a dos outros tatus, o que dá liberdade de "
+            "movimento às duas espécies do gênero Tolypeutes: o tatu-bola brasileiro e o tatu-bola-do-sul. Ao se "
+            "enrolar, o animal guarda as orelhas dentro da carapaça, e a cabeça e a cauda se encaixam, vedando a "
+            "bola. A folga da armadura também deixa uma camada de ar entre o casco e o corpo, que funciona como "
+            "isolante e ajuda o bicho a viver em climas secos demais para outros tatus. Como tem essa defesa, ele "
+            "dispensa cavar buracos para se proteger, ao contrário da maioria dos parentes, e às vezes espera ser "
+            "tocado para se fechar de repente e assustar o agressor. Só pumas e onças adultos têm força para ser uma "
+            "ameaça natural. O perigo real é humano: justamente por se enrolar quando ameaçado, o tatu-bola é muito "
+            "recolhido para servir de comida, o que, somado à perda de habitat, derrubou suas populações. Em 2012, uma "
+            "ONG da Caatinga lançou uma campanha para que ele fosse o mascote da Copa do Mundo de 2014, e a ideia foi "
+            "adotada."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Brazilian_three-banded_armadillo",
+            "It is one of only two species of armadillo that can roll into a ball (the other is the southern three-banded armadillo). [...] "
+            "The genus Tolypeutes, which includes both the Brazilian and southern species of three-banded armadillos, is unique in the ability to roll up in a tight, almost impenetrable ball. "
+            "This is because their armor is slightly looser than that of other armadillo genera, which allows for greater freedom of movement. "
+            "The loose armor also creates a layer of air between the shell and the body, which insulates the animal. "
+            "This higher capacity for thermoregulation allows them to survive in climates too arid for some of the other armadillo species. "
+            "When the armadillo rolls into a defensive ball, the ears are tucked into the shell and the head and tail interlock to seal the shell completely. [...] "
+            "The Brazilian three-banded armadillo lives primarily in open savannahs (Cerrado) and dry woodlands (Caatinga) [...] "
+            "All the armadillos are spectacular diggers, but unlike most of the other species, three-banded armadillos do not dig in defense or to find shelter. [...] "
+            "When threatened, they occasionally do not seal their armor completely, but wait until they are touched. "
+            "They then quickly snap shut in an effort to startle the predator. [...] "
+            "Adult pumas and jaguars are the only South American mammals powerful enough to be a natural threat. [...] "
+            "this species is facing a dual threat of heavy hunting pressure and habitat loss. "
+            "Due to its tendency to ball up when threatened, this species is frequently collected for food, which has resulted in significant population declines across its range. [...] "
+            "The Caatinga Association, a Brazilian environmental NGO, launched in January 2012 a national campaign proposing the three-banded armadillo to become mascot of the 2014 FIFA World Cup hosted by Brazil. [...] "
+            "Official announcement came in September 2012.",
+            nome="Brazilian three-banded armadillo")],
+    },
+    # 6 os 200 milhões de cupinzeiros da Caatinga
+    {
+        "temas_secundarios": ["insetos", "padroes_fractais"],
+        "tipos_espanto": ["escala_absurda", "engenhosidade"],
+        "gancho": "No sertão nordestino há cerca de 200 milhões de montes de terra feitos por uma só espécie de cupim, numa área do tamanho da Grã-Bretanha. Alguns têm quase 4 mil anos, e a ciência só os notou com o desmatamento.",
+        "explicacao": (
+            "Os montes têm em média uns 2,5 metros de altura e 9 de diâmetro e ficam espalhados num padrão "
+            "curiosamente regular, a cerca de 20 metros um do outro. Dá para vê-los no Google Earth. Não são ninhos: "
+            "são a terra que cupins da espécie Syntermes dirus tiraram ao cavar uma imensa rede de túneis "
+            "interligados, por onde chegam com segurança às folhas secas do chão da mata, seu alimento. O volume "
+            "escavado passa de 10 quilômetros cúbicos, o equivalente, segundo os pesquisadores, a 4 mil pirâmides "
+            "de Gizé. Amostras de solo tiradas do centro de 11 montes foram datadas e deram idades entre 690 e 3.820 "
+            "anos, comparáveis às dos cupinzeiros mais antigos conhecidos, na África. Escondidos na Caatinga densa e "
+            "espinhosa, os montes só ficaram à vista de cientistas de fora quando parte da vegetação foi derrubada para "
+            "pasto, nas últimas décadas. Os autores do estudo, publicado em 2018, testaram cupins de montes vizinhos e "
+            "viram pouca agressividade entre eles. Por isso propõem que o padrão regular surge por auto-organização, e "
+            "não por disputa. Ainda há perguntas abertas: ninguém encontrou até hoje uma câmara real dessa espécie."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.eurekalert.org/news-releases/502167",
+             "titulo": "4,000-year-old termite mounds found in Brazil are visible from space (Cell Press / EurekAlert!, 2018)",
+             "idioma": "en",
+             "trecho": (
+                "19-Nov-2018 [...] "
+                "Researchers reporting in Current Biology on November 19 have found that a vast array of regularly spaced, still-inhabited termite mounds in northeastern Brazil--covering an area the size of Great Britain--are up to about 4,000 years old. "
+                "The mounds, which are easily visible on Google Earth, are not nests. "
+                "Rather, they are the result of the insects' slow and steady excavation of a network of interconnected underground tunnels. "
+                "The termites' activities over thousands of years has resulted in huge quantities of soil deposited in approximately 200 million cone-shaped mounds, each about 2.5 meters tall and 9 meters across. [...] "
+                "These mounds were formed by a single termite species that excavated a massive network of tunnels to allow them to access dead leaves to eat safely and directly from the forest floor [...] "
+                "The amount of soil excavated is over 10 cubic kilometers, equivalent to 4,000 great pyramids of Giza [...] "
+                "They'd only really come into view by \"outsiders,\" including scientists, when some of the lands were cleared for pasture in recent decades. "
+                "Soil samples collected from the centers of 11 mounds and dated indicated that the mounds were filled 690 to 3,820 years ago. "
+                "That makes them about as old as the world's oldest known termite mounds in Africa. [...] "
+                "Their behavioral tests found little aggression at the mound level. [...] "
+                "Martin and his colleagues propose that the mound pattern arose through self-organizational processes [...] "
+                "no one knows how these termite colonies are physically structured because a queen chamber of the species has never been found."
+             )},
+            wiki("Mound-building_termites",
+                "The caatinga ecoregion in northeast Brazil has about 200 million termite mounds spread over an area the size of Great Britain. "
+                "Some of the mounds are 3 m (10 ft) tall and 10 m (33 ft) wide, and they are spaced about 20 m (66 ft) apart. [...] "
+                "The mounds were built by Syntermes dirus termites",
+                nome="Mound-building termites"),
+        ],
+    },
+    # 7 os cupinzeiros que acendem no Cerrado
+    {
+        "temas_secundarios": ["insetos", "luz_cores"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "No Cerrado de Goiás, cupinzeiros se enchem à noite de pontinhos de luz verde. São larvas de um besouro que moram nos túneis do monte e usam a própria luz como isca para capturar insetos voadores.",
+        "explicacao": (
+            "O espetáculo é típico do Parque Nacional das Emas e arredores. As larvas são de Pyrearinus "
+            "termitilluminans, um besouro bioluminescente descrito como espécie nova em 1982. Cada larva produz luz "
+            "no segmento logo atrás da cabeça e fica em túneis na superfície do cupinzeiro. Um estudo daquele ano "
+            "notou que elas só brilham nas primeiras semanas da estação chuvosa, exatamente quando formigas e cupins "
+            "alados saem em revoada. Atraídos pela luz, esses insetos viram uma fonte importante de comida, e as "
+            "larvas ainda guardam parte das presas. Para o autor, a luz seria uma resposta evolutiva a um pulso de "
+            "alimento curto e farto. Quem viu o fenômeno no auge compara a pastagem cheia de montes acesos a uma "
+            "cidade à noite. Só que ele está sumindo: pesquisadores da UFSCar que visitam a região há mais de 30 anos "
+            "dizem que ele nunca foi tão raro, porque plantações de soja e cana tomaram os pastos onde ficavam os "
+            "cupinzeiros. A luz artificial das cidades vizinhas, que cresce dentro do parque, também pode ameaçar os "
+            "besouros luminosos que restam."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.scielo.br/j/rbzool/a/gcTkWSbJHZ7mtRdBgr4ntsB/?lang=en",
+             "titulo": "Prey attraction as a possible function of bioluminescence in the larvae of Pyrearinus termitilluminans (Redford, Revista Brasileira de Zoologia, 1982)",
+             "idioma": "en",
+             "trecho": (
+                "Pyrearinus termitilluminans (sp.n., Costa, 1982.) live in termite mounds in central Brazil. "
+                "Each larva produces light in the segment immediately behind its head. "
+                "Larvae were observed to luminesce only during the first weeks of the rainy season, the same times as the ant and termite alate flights. "
+                "Alates, apparently attracted to P. termitilluminans larval lights, serve as an important food source for the larvae. "
+                "The prey-catching and food-storing behavior and the phenomenon of bioluminescence are apparently an evolutionary response by P. termitilluminans larvae to a short, rich pulse of food."
+             )},
+            {"url": "https://agencia.fapesp.br/50429",
+             "titulo": "Em 30 anos, besouros bioluminescentes tiveram redução de diversidade no Cerrado (Agência FAPESP, 2023)",
+             "idioma": "pt",
+             "trecho": (
+                "Nas noites do Cerrado, as larvas do vagalume da espécie Pyrearinus termitilluminans, que vivem em cupinzeiros, expõem suas lanternas verdes a fim de capturar presas atraídas pela luz. "
+                "Em mais de 30 anos de expedições com seus estudantes ao Parque Nacional das Emas, em Goiás, e fazendas no entorno da unidade de conservação em busca de espécimes, nunca o fenômeno foi tão raro quanto agora [...] "
+                "Agora, a maioria dos campos foi substituída por monoculturas de cana-de-açúcar, onde quase não se encontram esses besouros luminescentes [...] "
+                "A queda se deu ao mesmo tempo em que ocorria a substituição das pastagens por plantações de soja e cana-de-açúcar [...] "
+                "Os níveis cada vez maiores de luz artificial dentro do Parque Nacional das Emas, vinda dos crescentes centros urbanos adjacentes, podem ameaçar muitas espécies bioluminescentes"
+             )},
+            {"url": "https://agencia.fapesp.br/luzes-de-alerta/12138",
+             "titulo": "Luzes de alerta (Agência FAPESP)",
+             "idioma": "pt",
+             "trecho": (
+                "Milhares de minúsculos pontos de luz brilhavam sobre dezenas de cupinzeiros que cobriam a pastagem, aparentando ser uma cidade à noite, em um espetáculo luminoso em meio à escuridão da noite do Cerrado. [...] "
+                "As luzes são emitidas pelas larvas dos vaga-lumes em túneis na superfície do cupinzeiro."
+             )},
+        ],
+    },
+    # 8 a arara-azul depende do tucano que come seus ovos
+    {
+        "temas_secundarios": ["ecologia", "teoria_jogos"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "No Pantanal, o tucano-toco é um grande predador dos ovos da arara-azul. Mas a arara depende dele: é o tucano que espalha as sementes do manduvi, a árvore onde ela faz quase todos os seus ninhos.",
+        "explicacao": (
+            "No Pantanal, cerca de 90% dos ninhos da arara-azul-grande ficam em ocos de manduvi, e a árvore só tem "
+            "cavidades do tamanho certo quando passa de uns 60 anos. Pesquisadores da Unesp observaram 12 manduvis "
+            "entre 2002 e 2005, num total de 255 horas, para ver quem comia seus frutos. Catorze espécies de aves "
+            "visitaram as árvores, mas só o tucano-toco e o araçari engoliam as sementes e as levavam embora, e o "
+            "tucano sozinho respondia por quase 85% da dispersão. O mesmo tucano foi responsável por 53% dos ovos de "
+            "arara predados no estudo. Ou seja, a arara depende indiretamente do seu próprio predador para ter onde "
+            "se reproduzir, situação que o artigo, publicado em 2008, chamou de quebra-cabeça para a conservação. "
+            "Isso complica os planos para a espécie: sem tucanos suficientes, nascem menos manduvis e, no futuro, "
+            "faltarão ocos para os ninhos; com tucanos demais, perdem-se mais ovos. Mesmo assim, segundo os autores, "
+            "o maior problema da arara-azul não é o tucano, e sim a destruição acelerada dos ecossistemas do Pantanal."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://agencia.fapesp.br/dependente-do-inimigo/8831",
+             "titulo": "Dependente do inimigo (Agência FAPESP, 2008)",
+             "idioma": "pt",
+             "trecho": (
+                "14 de maio de 2008 [...] "
+                "apesar de diversos pássaros comerem os frutos do manduvi, o único que consegue abri-lo e engolir a semente é o tucano-toco que, além de ser o principal responsável pela dispersão das sementes do manduvi é, por outro lado, o grande predador dos ninhos e dos ovos de araras-azuis. "
+                "\"O tucano dispersa quase 85% das sementes produzidas pelo manduvi. "
+                "Observamos 14 espécies de aves comendo manduvi, mas apenas o tucano-toco e o araçari engolem as sementes e as dispersam. "
+                "Sem o tucano-toco, a regeneração do manduvi seria afetada. "
+                "Sem o manduvi, a arara-azul não tem onde fazer ninhos, uma vez que 90% deles são feitos nessa espécie de árvore\" [...] "
+                "\"Isso que dizer que a arara-azul depende indiretamente dos serviços de dispersão do tucano. [...] "
+                "Os pesquisadores observaram, de 2002 a 2005, na Fazenda Rio Negro [...] "
+                "12 árvores de manduvi durante o período de maturação dos frutos. [...] "
+                "em um total de 255 horas de análises do comportamento dos animais. [...] "
+                "\"Para conservar as araras precisamos de manduvis, mas só haverá manduvis se tivermos tucanos suficientes para dispersar suas sementes. "
+                "Por outro lado, um aumento populacional excessivo de tucanos afetaria as populações de araras. [...] "
+                "Ainda que 53% dos ovos das araras sejam predados por tucanos, a segunda não é o principal problema de conservação da primeira. "
+                "\"O maior é a rápida destruição dos ecossistemas do Pantanal. [...] "
+                "O artigo Conservation puzzle: Endangered hyacinth macaw depends on its nest predator for reproduction"
+             )},
+            wiki("Hyacinth_macaw",
+                "The hyacinth macaw mostly nests in Manduvi trees, which rely on the toco toucan for 83% of the tree's distribution of seeds. [...] "
+                "In the Pantanal region, 90% of nests are constructed in the manduvi tree (Sterculia apetala). [...] "
+                "However, the toucan is responsible for dispersing 83% of the seeds of Sterculia apetala, but also consumes 53% of eggs preyed. "
+                "Hollows of sufficient size are only found in trees around 60 years of age or older",
+                nome="Hyacinth macaw"),
+        ],
+    },
+    # 9 a arara batizada por um poeta, achada só em 1978
+    {
+        "temas_secundarios": ["literatura", "pintura"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "A arara-azul-de-lear leva o nome do poeta Edward Lear, que a pintou no início dos anos 1830 achando que era outra espécie. Por mais de um século, ninguém soube onde ela vivia: o lar, na Caatinga, só foi achado em 1978.",
+        "explicacao": (
+            "Ainda adolescente, Lear publicou um livro de desenhos e pinturas de papagaios e araras vivos em "
+            "zoológicos e coleções. Uma das figuras, que ele chamou de arara-azul-grande, parecia muito com uma ave "
+            "diferente. Um quarto de século depois, em 1856, o ornitólogo Charles Lucien Bonaparte, sobrinho de "
+            "Napoleão, usou a pintura para descrever uma espécie nova e a batizou em homenagem ao artista. Muitos "
+            "especialistas não se convenceram, e por muito tempo a ave, rara e vista só de vez em quando no comércio "
+            "de animais, passou por uma variante da arara-azul-grande. A dúvida acabou em 1978, quando o ornitólogo "
+            "Helmut Sick encontrou a população selvagem no interior da Bahia. Ela dorme e faz ninhos em paredões de "
+            "arenito e se alimenta sobretudo de cocos da palmeira licuri, até 350 por dia. Os bandos também andam "
+            "pelo chão de currais atrás dos coquinhos que o gado come e depois regurgita, já limpos da polpa. Com um "
+            "esforço intenso de conservação, a população mundial da espécie cresceu cerca de trinta vezes nas duas "
+            "primeiras décadas do século XXI."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lear%27s_macaw",
+            "Lear's macaw (Anodorhynchus leari), also known as the indigo macaw, is a large all-blue Brazilian parrot [...] "
+            "It is rare with a highly restricted native range, which was only discovered in 1978, although intensive conservation efforts have increased the world population about thirtyfold in the first two decades of the 21st century. "
+            "It inhabits a dry desert-like shrubby environment known as caatinga, and roosts and nests in cavities in sandstone cliffs. [...] "
+            "Lear's macaw was named after the famous poet, Edward Lear [...] "
+            "In his teens in the early 1830s, Lear published a book of drawings and paintings of live parrots in zoos and collections [...] "
+            "One of his paintings in his book strongly resembles this species, and although at the time he titled the work as 'hyacinth macaw' [...] "
+            "a quarter century later, in 1856, the illustration was given a species description by the French ornithologist and nephew of Emperor Napoleon, Prince Charles Lucien Bonaparte, who chose to commemorate the poet in the specific name. "
+            "Most authorities, however, were unconvinced of the distinctness of the new taxon. [...] "
+            "The primary diet of Lear's macaw are the nuts (as many as 350 per day) of the palm Syagrus coronata, locally known as licuri [...] "
+            "the nuts regurgitated by cattle, which eat the fruit, but usually cough up the large seeds, cleaned of pulp [...] "
+            "Flocks of Lear's macaws will congregate at cattle corrals and walk around on the bare ground of rumination sites. [...] "
+            "For a century and a half after it had been described, the species was only known from sporadic occurrences in the bird trade, and the whereabouts of the wild population was unknown. "
+            "A wild population was eventually discovered in 1978 by ornithologist Helmut Sick in Bahia in the interior northeast of Brazil. "
+            "Until this discovery the birds were thought to be simply a variant form of the closely related hyacinth macaw.",
+            nome="Lear's macaw")],
+    },
+    # 10 a planta que floresce um dia depois do fogo
+    {
+        "temas_secundarios": ["plantas", "ecologia"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "O cabelo-de-índio, planta do Cerrado parecida com capim, começa a florescer 24 horas depois de queimado. Do toco carbonizado brotam inflorescências, e em pouco mais de uma semana as flores estão prontas.",
+        "explicacao": (
+            "A espécie é a Bulbostylis paradoxa, uma ciperácea que ocorre da Venezuela ao sul da América do Sul. Em "
+            "queimadas controladas feitas por pesquisadores da Unesp, plantas reduzidas a tocos carbonizados "
+            "mostraram pontinhos brancos um dia depois do fogo: eram as inflorescências começando a se formar. Em "
+            "pouco mais de uma semana, as flores estavam prontas para a polinização. Segundo a primeira autora do "
+            "estudo, publicado em 2019, Alessandra Fidelis, é o único caso do tipo descrito no mundo até então. A "
+            "pressa tem lógica: logo após o fogo, o solo fica descoberto e sem competidores, e as sementes, levadas "
+            "pelo vento, se espalham sem barreiras. Quarenta dias depois da queimada, já é difícil achar alguma. A "
+            "planta só floresce em grande quantidade depois de incêndios. O caso ilustra como o Cerrado evoluiu com o "
+            "fogo: naturalistas como Saint-Hilaire e Warming já tinham notado que ele rebrota e floresce depressa "
+            "após queimar, e dois meses bastam para a savana se cobrir de flores. Isso não torna todo fogo inofensivo: "
+            "matas de galeria e brejos de palmeiras podem não se recuperar de um incêndio grande, e o uso inadequado "
+            "do fogo é uma das maiores ameaças ao bioma."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [{"url": "https://agencia.fapesp.br/30341",
+            "titulo": "Scientists identify plant that flowers in Brazilian savanna one day after fire (Agência FAPESP, 2019)",
+            "idioma": "en",
+            "trecho": (
+                "2019-05-15 [...] "
+                "Plants in the Brazilian savanna, the Cerrado, have evolved to deal with fire. [...] "
+                "Two months suffice for the Cerrado to burst into flower after a fire [...] "
+                "\"The species is Bulbostylis paradoxa, a sedge [perennial herb similar to rushes and grasses] belonging to the family Cyperaceae,\" Alessandra Fidelis, first author of the article, told Agência FAPESP. "
+                "\"Its common name in Brazil is cabelo-de-índio [‘Amerindian hair’].\" [...] "
+                "This had already been reported in the nineteenth and early twentieth centuries by naturalists who visited Brazil, such as French botanist Augustin de Saint-Hilaire (1779-1853) and Danish plant ecologist Eugen Warming (1841-1924). [...] "
+                "\"It’s the only event of its kind described worldwide to date,\" she said. "
+                "B. paradoxa is distributed throughout South America and is found from Venezuela to the south of the continent. "
+                "It flowers on a significant scale only after fires. "
+                "\"In our experiments with burning as a careful management practice, we found that plants of this species reduced to carbonized stumps began exhibiting white spots 24 hours after the fire. "
+                "These spots were incipient inflorescences,\" Fidelis recalled. "
+                "\"In little more than a week, the flowers were fully formed and ready for pollination. "
+                "The speed of this response is a significant advantage for the plant, enabling it to flower, fructify and disperse windborne seeds in the open, with the soil uncovered and without barriers or competitors. "
+                "Only 40 days after a fire, it’s very hard to find seeds because they’ve dispersed.\" [...] "
+                "It is crucial to bear in mind that the Cerrado contains gallery forest, valley forest and palm marshes, where fire-sensitive species may fail to recover after a major burning. [...] "
+                "Improper use of fire is the next most important threat. [...] "
+                "all affiliated with UNESP."
+            )}],
+    },
+    # 11 a decoada: quando a cheia tira o oxigênio da água
+    {
+        "temas_secundarios": ["agua_doce_gelo", "ecologia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Todo ano, quando a cheia avança sobre o Pantanal, a água dos rios pode ficar escura e quase sem oxigênio. É a decoada, fenômeno natural que, nos anos mais fortes, mata peixes na casa dos milhares de toneladas.",
+        "explicacao": (
+            "Na enchente, a água transborda dos rios e cobre campos que estavam secos. O capim e o resto da vegetação "
+            "submersa começam a se decompor, sobretudo gramíneas que se degradam depressa com o calor do verão, e o "
+            "oxigênio da água vai sumindo. O resultado, que os pantaneiros chamam de decoada ou dequada, pode incluir "
+            "água escura e com cheiro, oxigênio dissolvido chegando a zero, pH abaixo de 6 e gás carbônico livre "
+            "subindo de uns 20 para mais de 100 miligramas por litro, nem sempre tudo ao mesmo tempo. Os peixes "
+            "morrem por estresse respiratório, e nos eventos de grande magnitude a mortandade atinge praticamente "
+            "todas as espécies. Falta de oxigênio desse tipo é típica de planícies inundáveis tropicais cheias de "
+            "vegetação herbácea, mas a enorme planície do Pantanal a intensifica. A Embrapa Pantanal mapeou o "
+            "fenômeno com dados de qualidade da água de 1988 a 2011: ele aparece de Cáceres, no norte, a Porto "
+            "Murtinho, no sul, com mais força no rio Paraguai. Em algumas lagoas da área de grande inundação, como as "
+            "baías Vermelha, Castelo e Tuiuiú, a decoada acontece todos os anos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [{"url": "https://www.infoteca.cnptia.embrapa.br/bitstream/doc/958791/1/BP121.pdf",
+            "titulo": "Mapeamento e descrição das áreas de ocorrência dos eventos de decoada no Pantanal (Embrapa Pantanal, Boletim 121, 2013)",
+            "idioma": "pt",
+            "trecho": (
+                "Decoada ou dequada é o nome popular que se dá no Pantanal aos eventos anuais de alteração natural da qualidade da água durante a fase hidrológica de enchente [...] "
+                "baseados nos dados de monitoramento de qualidade de água de 1988 a 2011 [...] "
+                "os eventos de decoada foram observados desde Cáceres, ao Norte, até Porto Murtinho, ao Sul, sendo de alta intensidade no rio Paraguai [...] "
+                "Já as baías Vermelha, Castelo e Tuiuiú, na área de alta inundação, são os locais onde eventos com alta frequência e intensidade foram registrados, ocorrendo anualmente. [...] "
+                "The changes include color and odor, depletion of dissolved oxygen (DO) reaching anoxia, decreased pH (<6.0) [...] "
+                "(>20 to over 100mg/L), not necessarily occurring simultaneously. [...] "
+                "são típicos de planícies de inundação com abundância de vegetação herbácea, especialmente em rios tropicais [...] "
+                "No Pantanal, este fenômeno se intensifica pelo efeito de sua extensa planície e geomorfologia [...] "
+                "Quando o fenômeno é de grande magnitude pode causar mortandade de peixes por estresse respiratório em nível de milhares de toneladas, afetando praticamente todas as espécies [...] "
+                "À medida que a água extravasa dos rios e entra em contato com a planície inundável, submergindo solo e vegetação na fase inicial da enchente, começam a ocorrer processos de decomposição da matéria orgânica submersa, em especial gramíneas facilmente degradáveis sob as altas temperaturas do verão, levando à formação de ambientes com baixo oxigênio"
+            )}],
+    },
+    # 12 os 17 milhões de vertebrados mortos no fogo de 2020
+    {
+        "temas_secundarios": ["mudancas_climaticas", "ecologia"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Os incêndios de 2020 no Pantanal mataram na hora cerca de 17 milhões de vertebrados, segundo um estudo que contou carcaças em campo. As mais encontradas eram de cobras pequenas, que somariam mais de 9 milhões.",
+        "explicacao": (
+            "Em 2019, o fogo queimou 16.210 km² da parte brasileira do Pantanal. Em 2020, depois de um ano com "
+            "chuvas 40% abaixo do normal na região, foram 39.030 km². Para medir o estrago, pesquisadores da Embrapa "
+            "Pantanal, do ICMBio e de outras instituições percorreram trilhas em linha reta em áreas recém-queimadas, "
+            "entre agosto e novembro, contando carcaças em até 72 horas depois do fogo, antes que os necrófagos as "
+            "levassem. Com uma técnica estatística chamada amostragem por distância, estimaram a densidade de "
+            "animais mortos e a estenderam para toda a área queimada: cerca de 217 vertebrados por km², ou quase 17 "
+            "milhões no total. Entre as vítimas encontradas havia sucuri, jacaré, tamanduá, tatus e primatas. A conta "
+            "é só do impacto imediato e deixa de fora animais que provavelmente não foram achados, como anfíbios, "
+            "cobras e roedores que vivem em tocas ou ocos de árvore. Os autores lembram ainda que a área queimada por "
+            "ano no Pantanal cresceu 376% nas duas décadas anteriores, e que a repetição do fogo pode empobrecer o "
+            "ecossistema."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [{"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8677733/fullTextXML",
+            "titulo": "Distance sampling surveys reveal 17 million vertebrates directly killed by the 2020's wildfires in the Pantanal, Brazil (Tomas et al., Scientific Reports, 2021)",
+            "idioma": "en",
+            "trecho": (
+                "We adopted the distance sampling technique to estimate the densities and the number of dead vertebrates in the 39,030 square kilometers affected by fire. "
+                "Our estimates indicate that at least 16.952 million vertebrates were killed immediately by the fires in the Pantanal [...] "
+                "fire recurrence may lead to the impoverishment of ecosystems [...] "
+                "While fires burned 16,210 km [...] "
+                "of the Brazilian portion of the Pantanal in 2019, astonishing 39,030 km [...] "
+                "there was already a 40% shortage in rainfall in the region in [...] "
+                "a 376% increase in annual average burned area has been registered for the last two decades [...] "
+                "Embrapa Pantanal [...] "
+                "Instituto Chico Mendes de Conservação E Biodiversidade - ICMbio [...] "
+                "between August 1st and November 17th, 2020 [...] "
+                "To avoid removal of carcasses by scavengers, samplings were conducted within 72 h after burning [...] "
+                "(217.17 vertebrates per km [...] "
+                "vertebrates died due to direct effect of the 2020 wildfires in the wetland [...] "
+                "the dead animals most frequently detected in our surveys pertained to the subgroups of small snakes, small birds, medium-large birds, and small rodents [...] "
+                "one anaconda, nine small snake, one caiman, 11 small bird, seven medium to large bird, two small marsupial, two armadillo, one anteater, three primate [...] "
+                "9,391,408 [...] "
+                "Among the expected undetected dead animals in the surveyed areas in the Pantanal we may include especially amphibians, snakes, rodents, and armadillos, among other animal groups composed of fossorial animals and wood hollow users."
+            )}],
+    },
+    # 13 os campos rupestres: 1% do território, 15% das plantas
+    {
+        "temas_secundarios": ["plantas", "paisagens_extremas", "evolucao"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Os campos rupestres, áreas de pedra e capim no alto das serras, ocupam menos de 1% do Brasil, mas reúnem cerca de 15% das espécies de plantas do país. Perto de 30% da sua flora só existe ali.",
+        "explicacao": (
+            "Eles aparecem entre 900 e 2.033 metros de altitude, sobretudo na Serra do Espinhaço, em Minas "
+            "Gerais e na Bahia, e também em serras como a da Canastra, a Chapada Diamantina e Carajás, espalhados por "
+            "três biomas: Cerrado, Mata Atlântica e Caatinga. O solo é raso, jovem, ácido e muito pobre em fósforo, "
+            "sobre uma base geológica antiga e estável, e as plantas enfrentam ventos fortes, sol intenso e invernos "
+            "secos. Para sobreviver, surgiram soluções variadas: há espécies carnívoras, raízes superficiais que "
+            "captam depressa a água da chuva e órgãos subterrâneos de reserva. Como cada mancha de campo rupestre "
+            "fica isolada no topo de uma serra, elas funcionam como ilhas, o que também favorece a diversidade. Em "
+            "duas famílias típicas desses campos, Velloziaceae e Eriocaulaceae, cerca de 70% das espécies são "
+            "exclusivas deles. Pesquisadores comparam essas paisagens antigas e pobres em nutrientes às da região do "
+            "Cabo, na África do Sul, e do sudoeste da Austrália. Mesmo assim, a aparência de pedra e capim passa a "
+            "falsa impressão de pouca biodiversidade, e plantações de eucalipto avançam sobre os campos."
+        ),
+        "nivel": 2, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Campo_rupestre",
+            "The campo rupestre (\"rupestrian grassland\") is a discontinuous montane subtropical ecoregion occurring across three different biomes in Brazil: Cerrado, Atlantic Forest and Caatinga. [...] "
+            "Campo rupestre (sensu lato) occupies less than one percent of the Brazilian territory [...] "
+            "mostly distributed in the Espinhaço Range in eastern Brazil [...] "
+            "Carajás Mountains, Serra da Canastra, Serra do Caparaó, Chapada Diamantina and many others. "
+            "Campo rupestre is found at elevations from 900 to 2,033 meters (2,953 to 6,670 ft) and is characterized by dry winters and wet summers, strong winds and high levels of irradiance. "
+            "The soil in this ecoregion is nutrient-poor, extremely shallow and young. "
+            "The geological formation subtending this impoverished soil is ancient, stable, weathered and diverse [...] "
+            "plants must overcome very low levels of P, high levels of Al (in some areas), acidity and low water retention [...] "
+            "the flora thriving in the campo rupestre has developed several adaptations, such as carnivory, C4 metabolism, superficial root systems (to absorb periodic rain water faster), underground storage [...] "
+            "the Pantepui Highlands in Venezuela, South Africa's Greater Cape and the Southwest Australian Floristic region. [...] "
+            "the resemblance of this Brazilian ecoregion with the areas mentioned above has been highlighted by other researchers [...] "
+            "all the mountain ranges comprising the entirety of campo rupestre harbor approximately 15% of Brazil's plant diversity. [...] "
+            "Insularity can also foster diversity in the campos rupestres [...] "
+            "around 30% of the flora is restricted to this ecoregion. "
+            "Within the families Velloziaceae and Eriocaulaceae around 70% of all species are endemic to the campo rupestre [...] "
+            "General misconceptions that grasslands and rocky outcrops present low levels of biodiversity, given their dry and \"homogeneous\" aspect, have only worsened this situation. "
+            "The eucalyptus plantations not only reduce the number of native species",
+            nome="Campo rupestre")],
+    },
+]

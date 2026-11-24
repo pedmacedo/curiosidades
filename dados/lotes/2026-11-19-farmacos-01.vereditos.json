@@ -1,0 +1,142 @@
+{
+ "lote": "2026-11-19-farmacos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "farmacos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Warfarin e Dicoumarol."
+   },
+   {
+    "id": "farmacos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Bradykinin, Sérgio Ferreira, Captopril e Bothrops jararaca; créditos equilibrados."
+   },
+   {
+    "id": "farmacos-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Nenhuma fonte diz 'primeira'; o gancho alimenta o equívoco 'Ozempic vem do lagarto' (liraglutida e semaglutida derivam do GLP-1 humano).",
+    "correcao": "Gancho: 'Os remédios contra diabetes e obesidade que imitam o hormônio GLP-1 devem muito a um lagarto venenoso, o monstro-de-gila: a exenatida, aprovada em 2005, é a versão sintética de uma molécula do veneno dele.' Explicação, ao final: 'Os sucessores mais famosos, porém, não vêm do lagarto: a liraglutida, por exemplo, foi derivada do próprio GLP-1 humano.' Fonte nova: https://en.wikipedia.org/wiki/Liraglutide, trecho 'derived from human GLP-1-(7-37)'."
+   },
+   {
+    "id": "farmacos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Ziconotide."
+   },
+   {
+    "id": "farmacos-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A Allergan comprou a empresa depois da aprovação de 1989; 'intoxicações eram tantas' não está na fonte.",
+    "correcao": "1) 'No sul da Alemanha, as intoxicações por salsicha eram tantas que, em 1802, as autoridades de Württemberg alertaram' → 'No sul da Alemanha, depois de vários casos fatais de intoxicação, as autoridades de Württemberg alertaram, em 1802,'. 2) 'Em 1989, a empresa dele, já comprada pela Allergan, foi aprovada nos EUA, e a Allergan passou a usar a marca Botox.' → 'Em 1989, o Oculinum foi aprovado nos EUA para estrabismo e piscar involuntário; a empresa de Scott logo foi comprada pela Allergan, que passou a usar a marca Botox.'"
+   },
+   {
+    "id": "farmacos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Withering cita uma receita de uma senhora anônima; o inventado é a personagem com nome. Hidropisia é acúmulo de líquido, não só por insuficiência cardíaca. Nota 3.",
+    "correcao": "1) Gancho: 'nunca existiu: ela foi criada em 1928 para a propaganda de um laboratório.' → 'é invenção: nome e figura surgiram em 1928 na propaganda de um laboratório.' 2) Explicação: 'contra a hidropisia, o inchaço causado pela insuficiência cardíaca,' → 'contra a hidropisia, o acúmulo de líquido no corpo, muitas vezes ligado à insuficiência cardíaca,'."
+   },
+   {
+    "id": "farmacos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Spirsäure é o nome do ácido, não da planta em alemão.",
+    "correcao": "Trocar 'O princípio ativo, o ácido salicílico, foi extraído em 1839 de outra planta, a ulmária, chamada em alemão de Spirsäure, e esse nome serviu de base para batizar a Aspirin.' por 'O princípio ativo, o ácido salicílico, foi extraído em 1839 de outra planta, a ulmária, então classificada no gênero Spiraea (hoje Filipendula). Daí o nome alemão do ácido, Spirsäure, que serviu de base para batizar a Aspirin.' Acrescentar ao trecho de Aspirin: 'The name is ultimately a blend of the prefix a(cetyl) + spir, from Spirsäure, German for meadowsweet, the plant genus from which the aspirin precursor salicylic acid was first isolated (originally Spiraea, now Filipendula) + -in'."
+   },
+   {
+    "id": "farmacos-0008",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: 'a dose faz o veneno' é bem conhecido; a ênfase 'oposta ao provérbio' beira pegadinha de palavras."
+   },
+   {
+    "id": "farmacos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com a British Heart Foundation; resultado reforçado por estudos maiores."
+   },
+   {
+    "id": "farmacos-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Houve usos de sais de lítio no século XIX (Hammond, Lange); 'o primeiro' absoluto precisa de amortecimento.",
+    "correcao": "Gancho: 'O primeiro remédio eficaz contra uma doença mental surgiu numa despensa:' → 'O remédio tido como o primeiro eficaz contra uma doença mental surgiu numa despensa:'"
+   },
+   {
+    "id": "farmacos-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O comunicado é da Assembleia Nobel do Karolinska, não da Fundação Nobel.",
+    "correcao": "'Segundo a Fundação Nobel, ele se recusou a tomá-la' → 'Segundo o comunicado oficial do Nobel de Medicina de 1998, ele se recusou a tomá-la'."
+   },
+   {
+    "id": "farmacos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; 'primeiro polivalente' sem contestação. Nota 3. Opcional: citar o Butantan no gancho."
+   },
+   {
+    "id": "farmacos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Sirolimus e mTOR; efeitos limitados a animais."
+   },
+   {
+    "id": "farmacos-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte diz 'suggested', não 'mostraram', sobre a causa da metemoglobinemia.",
+    "correcao": "'que alivia a dor tão bem quanto ela, e que o problema no sangue vinha de outro derivado.' → 'que alivia a dor tão bem quanto ela, e sugeriram que o problema no sangue vinha sobretudo de outro derivado.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "farmacos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sem 'primeira'; ressalva sobre a liraglutida com fonte própria."
+   },
+   {
+    "id": "farmacos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Depois de vários casos fatais'; aprovação em 1989 antes da compra pela Allergan."
+   },
+   {
+    "id": "farmacos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Mother Hutton' é invenção de 1928; hidropisia 'muitas vezes' ligada à insuficiência cardíaca."
+   },
+   {
+    "id": "farmacos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Spirsäure 'ligado ao gênero' Spiraea, sem o deslize da Wikipedia; tromboxanos com apoio."
+   },
+   {
+    "id": "farmacos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Tido como o primeiro eficaz' para doença mental, fiel à fonte."
+   },
+   {
+    "id": "farmacos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Atribuído ao comunicado do Nobel de 1998."
+   },
+   {
+    "id": "farmacos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Sugeriram que o problema vinha sobretudo de outro derivado'."
+   }
+  ]
+ }
+}

@@ -1,0 +1,614 @@
+LOTE = "2026-11-19-evolucao-01"
+AREA = "biologia"
+TEMA = "evolucao"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 as bactérias de Lenski que aprenderam a comer citrato
+    {
+        "temas_secundarios": ["microbiologia", "genetica"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Desde 1988, um laboratório acompanha 12 populações de E. coli. Depois de mais de 31 mil gerações, uma delas passou a se alimentar de algo que sempre esteve no frasco: o citrato, na presença de oxigênio.",
+        "explicacao": (
+            "O experimento foi iniciado por Richard Lenski em 24 de fevereiro de 1988, com 12 populações idênticas de "
+            "uma linhagem de E. coli que se reproduz só de forma assexuada. Todo dia, 1% de cada população vai para um "
+            "frasco novo, o que rende 6,64 gerações diárias. A cada 500 gerações, amostras são congeladas e continuam "
+            "vivas: é o \"registro fóssil congelado\", que permite ressuscitar ancestrais e compará-los com os "
+            "descendentes. O meio de cultura sempre teve muito citrato, cerca de 11 vezes mais que glicose, mas a E. coli "
+            "normalmente não consegue crescer com citrato quando há oxigênio, porque não liga o transportador que o põe "
+            "para dentro da célula. Essa incapacidade é considerada uma marca da espécie. Entre as gerações 31.000 e "
+            "31.500, uma das populações mudou isso. Ao \"rebobinar a fita\" a partir de clones congelados, a equipe viu a "
+            "habilidade surgir de novo 19 vezes, mas só partindo de clones posteriores à geração 20.000: mutações "
+            "anteriores tinham preparado o terreno. Há debate sobre quão rara foi a novidade: outro grupo obteve "
+            "mutantes que usam citrato em 12 a 100 gerações, com seleção prolongada sob fome. Em agosto de 2024, as "
+            "populações do experimento passaram de 80 mil gerações."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("E._coli_long-term_evolution_experiment",
+            "It has been tracking genetic changes in 12 initially identical populations of asexual Escherichia coli bacteria since 24 February 1988. [...] "
+            "In August 2024, the LTEE populations passed 80,000 generations in the Barrick lab. [...] "
+            "The most notable adaptation reported so far is the evolution of aerobic growth on citrate, which is unusual in E. coli, in one population at some point between generations 31,000 and 31,500. [...] "
+            "DM25 also contains a large amount of citrate (about 11 times the concentration of glucose) [...] "
+            "Each day, 1% of each population is transferred to a flask of fresh DM25 growth medium. "
+            "The dilution means that each population experiences 6.64 generations, or doublings, each day. "
+            "Large, representative samples of each population are frozen with glycerol as a cryoprotectant at 500-generation (75-day) intervals. "
+            "The bacteria in these samples remain viable, and can be revived at any time. [...] "
+            "E. coli is normally unable to grow aerobically on citrate due to the inability to express a citrate transporter when oxygen is present. [...] "
+            "is considered a defining characteristic of E. coli as a species [...] "
+            "In these experiments, they observed 19 new, independent instances of Cit+ re-evolution, but only when starting from clones isolated from after generation 20,000. [...] "
+            "Lenski and his colleagues concluded that the evolution of the Cit+ function in this one population arose due to one or more earlier, possibly nonadaptive, \"potentiating\" mutations that increased the rate of mutation to an accessible level. [...] "
+            "Dustin Van Hofwegen et al. were able to isolate 46 independent citrate-utilizing mutants of E. coli in just 12 to 100 generations using highly prolonged selection under starvation",
+            nome="E. coli long-term evolution experiment")],
+    },
+    # 2 Darwin mal ligou para os tentilhões
+    {
+        "temas_secundarios": ["ecologia"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Os tentilhões de Galápagos viraram símbolo de Darwin, mas na viagem ele mal ligou para eles e achou que eram aves de grupos diferentes. Uma pista de que as espécies mudam veio de outras aves: os tordos-imitadores.",
+        "explicacao": (
+            "Na viagem do Beagle, Darwin não era especialista em aves e, naquela fase, se dedicava sobretudo à "
+            "geologia. Em Galápagos, deixou boa parte da caça de aves ao seu criado, Syms Covington. Os "
+            "tordos-imitadores (mockingbirds, em inglês) chamaram a atenção dele: um lembrava os que vira no Chile, "
+            "outro, de outra ilha, era diferente, e ele passou a anotar com cuidado onde cada um tinha sido capturado. "
+            "Com os tentilhões, deu pouca atenção. Já a caminho do Taiti, notou que ilhas diferentes tinham tordos de "
+            "espécies diferentes. Isso, somado ao que ouvira sobre as tartarugas gigantes, o fez questionar a "
+            "estabilidade das espécies. Em Londres, em janeiro de 1837, o ornitólogo John Gould anunciou que as aves "
+            "que Darwin tomara por melros, \"bicos-grossos\" e tentilhões eram todas tentilhões, um grupo inteiramente "
+            "novo com 12 espécies. Para descobrir de que ilha vinha cada exemplar seu, Darwin teve de se apoiar nas "
+            "coleções de outros tripulantes, como o capitão Robert FitzRoy e o próprio Covington, que tinham etiquetado "
+            "as aves por ilha. Só então os tentilhões entraram na história da teoria."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Darwin%27s_finches",
+            "During the survey voyage of HMS Beagle, Darwin was unaware of the significance of the birds of the Galápagos. "
+            "He had learned how to preserve bird specimens from John Edmonstone while at the University of Edinburgh and had been keen on shooting, but he had no expertise in ornithology and by this stage of the voyage concentrated mainly on geology. "
+            "In Galápagos he mostly left bird shooting to his servant Syms Covington. "
+            "Nonetheless, these birds were to play an important part in the inception of Darwin's theory of evolution by natural selection. [...] "
+            "On Chatham Island, he recorded that a mockingbird was similar to those he had seen in Chile, and after finding a different one on Charles Island he carefully noted where mockingbirds had been caught. "
+            "In contrast, he paid little attention to the finches. "
+            "When examining his specimens on the way to Tahiti, Darwin noted that all of the mockingbirds on Charles Island were of one species, those from Albemarle of another, and those from James and Chatham Islands of a third. "
+            "As they sailed home about nine months later, this, together with other facts, including what he had heard about Galápagos tortoises, made him wonder about the stability of species. [...] "
+            "Following his return from the voyage Darwin presented the finches to the Zoological Society of London on 4 January 1837 [...] "
+            "Gould set aside his paying work and at the next meeting, on 10 January, reported that the birds from the Galápagos Islands that Darwin had thought were blackbirds, \"gross-beaks\" and finches were actually \"a series of ground Finches which are so peculiar [as to form] an entirely new group, containing 12 species.\" [...] "
+            "Specimens had also been collected by Captain Robert FitzRoy, FitzRoy's steward Harry Fuller, and Darwin's servant Covington, who had labelled them by island. "
+            "From these, Darwin tried to reconstruct the locations from where he had collected his own specimens.",
+            nome="Darwin's finches")],
+    },
+    # 3 os bicos dos tentilhões mudam a cada seca
+    {
+        "temas_secundarios": ["ecologia", "comportamento_animal"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Numa ilhota de Galápagos, um casal de biólogos viu a seleção natural agir em poucos anos: após a seca de 1977, os tentilhões da ilha passaram a ter bicos maiores. Numa seca décadas depois, os bicos encolheram.",
+        "explicacao": (
+            "Peter e Rosemary Grant chegaram à ilha de Daphne Major em 1973 para um estudo que imaginavam durar dois "
+            "anos. Acabaram voltando por décadas, marcando, medindo e colhendo sangue das aves. Na estação chuvosa de "
+            "1977 caíram só 24 milímetros de chuva. As sementes pequenas e macias acabaram, sobraram as grandes e "
+            "duras, e muitos tentilhões morreram. Sobreviveram e se reproduziram sobretudo os de bico grande e, como o "
+            "tamanho do bico é muito herdável, a geração seguinte do tentilhão-de-terra-médio (Geospiza fortis) teve bico "
+            "maior em média. Em 1982 e 1983, o El Niño trouxe oito meses seguidos de chuva, e a vegetação mudou: "
+            "passaram a predominar sementes pequenas e macias. Nesse meio-tempo, uma espécie maior, o tentilhão-de-terra-grande "
+            "(Geospiza magnirostris), formou uma população reprodutora na ilha, e ela também come sementes grandes. "
+            "Quando veio uma seca tão forte quanto a de 1977, em 2003, o bico médio do tentilhão-de-terra-médio diminuiu. A hipótese é que os de bico menor "
+            "sobreviveram melhor por não disputar as sementes grandes com o vizinho maior. Ou seja, a seleção empurrou "
+            "o bico num sentido e, anos depois, no sentido oposto."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Peter_and_Rosemary_Grant",
+            "In 1973, the Grants headed out on what they thought would be a two-year study on the island of Daphne Major. [...] "
+            "The Grants tagged, labelled, measured, and took blood samples of the birds they were studying. "
+            "The two-year study continued through 2012. "
+            "During the rainy season of 1977 only 24 millimetres of rain fell. "
+            "Two of the main finch species were hit exceptionally hard and many of them died. [...] "
+            "The smaller, softer seeds ran out, leaving only the larger, tougher seeds. [...] "
+            "Finches with larger beaks were able to eat the seeds and reproduce. "
+            "The population in the years following the drought in 1977 had \"measurably larger\" beaks than had the previous birds. [...] "
+            "Over the course of 1982–1983, El Niño brought a steady eight months of rain. [...] "
+            "The seeds shifted from large, hard to crack seeds to many different types of small, softer seeds. [...] "
+            "In 2003, a drought similar in severity to the 1977 drought occurred on the island. "
+            "However, in the time between the droughts (beginning in late 1982), the large ground finch (Geospiza magnirostris) had established a breeding population on the island. "
+            "This species has diet overlap with the medium ground finch (G. fortis), so they are potential competitors. [...] "
+            "Following the drought, the medium ground finch population had a decline in average beak size, in contrast to the increase in size found following the 1977 drought. "
+            "This was hypothesized to be due to the presence of the large ground finch; the smaller-beaked individuals of the medium ground finch may have been able to survive better due to a lack of competition over large seeds with the large ground finch.",
+            nome="Peter and Rosemary Grant"),
+            wiki("Medium_ground_finch",
+            "This strong selective pressure favoring larger beaks, coupled with the high heritability of traits relating to beak size in finches, caused the medium ground finch population to experience evolution by natural selection, leading to an increase in average beak size in the subsequent generation.",
+            nome="Medium ground finch")],
+    },
+    # 4 lagartixas croatas que ganharam um órgão novo
+    {
+        "temas_secundarios": ["microbioma", "ecologia"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Em 1971, cinco casais de lagartixas foram levados a uma ilhota croata. Décadas depois, os descendentes comiam muito mais plantas e tinham no intestino válvulas que a população de origem não tem.",
+        "explicacao": (
+            "Os animais, da espécie Podarcis siculus, saíram da ilha de Pod Kopište para Pod Mrčaru, a uns 3,5 km dali, "
+            "no mar Adriático. As duas ilhas têm tamanho, altitude e microclima parecidos e quase não têm predadores "
+            "terrestres. A nova população cresceu por décadas sem interferência humana e chegou a superar outra "
+            "espécie de lagartixa, hoje extinta no local. Quando cientistas voltaram, nos anos 1990, encontraram "
+            "animais maiores, de patas traseiras mais curtas e mais lentos na corrida que os da ilha de origem. Em 2008, "
+            "novas análises mostraram cabeças mais longas, largas e altas e mordida mais forte, ligadas a uma mudança "
+            "de cardápio: em Pod Kopište elas comem sobretudo insetos; em Pod Mrčaru, bem mais plantas. A maior "
+            "novidade estava no intestino: válvulas cecais, que retardam a passagem do alimento e formam câmaras de "
+            "fermentação, onde micróbios convertem a celulose em nutrientes que a lagartixa aproveita. Essas válvulas "
+            "existem em menos de 1% das espécies conhecidas de répteis escamados e foram descritas como uma novidade "
+            "adaptativa, ausente na população ancestral. O DNA mitocondrial confirmou que os animais de Pod Mrčaru "
+            "continuam geneticamente muito parecidos com os da ilha de onde vieram."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Italian_wall_lizard",
+            "In 1971, 10 adult specimens (five breeding pairs) of P. siculus were transported from the Croatian island of Pod Kopište to the island Pod Mrčaru (about 3.5 km to the east). "
+            "Both islands lie in the Adriatic Sea near Lastovo, where the lizards founded a new bottlenecked population. "
+            "The two islands have similar size, elevation, microclimate, and a general absence of terrestrial predators and  P. siculus expanded for decades without human interference, even outcompeting the (now locally extinct) Podarcis melisellensis population. "
+            "In the 1990s, scientists returned to Pod Mrčaru and found that the lizards currently occupying Mrčaru differ greatly from those on Kopište. "
+            "While mitochondrial DNA analyses have verified that P. siculus specimens currently on Mrčaru are genetically very similar to the Kopište source population, the new Mrčaru population of P. siculus was described as having a larger average size, shorter hind limbs, lower maximal sprint speed, and altered response to simulated predatory attacks compared to the original Kopište population. [...] "
+            "In 2008, further analysis revealed that the Mrčaru population of P. siculus has significantly different head morphology (longer, wider, and taller heads) and increased bite force compared to the original Kopište population. "
+            "This change in head shape corresponded with a shift in diet: Kopište P. siculus are primarily insectivorous, but those on Mrčaru eat substantially more plant matter. [...] "
+            "Another difference found between the two populations was the discovery, in the Mrčaru lizards, of cecal valves, which slow down food passage and provide fermenting chambers, allowing commensal microorganisms to convert cellulose to nutrients digestible by the lizards. [...] "
+            "Kopište P. siculus, which do not have cecal valves. "
+            "The cecal valves, which occur in less than 1% of all known species of scaled reptiles, have been described as an \"adaptive novelty, a brand new feature not present in the ancestral population and newly evolved in these lizards\".",
+            nome="Italian wall lizard")],
+    },
+    # 5 a orquídea de Darwin e a mariposa prevista
+    {
+        "temas_secundarios": ["plantas", "insetos"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Em 1862, diante de uma orquídea de Madagascar com o néctar no fundo de um tubo enorme, Darwin previu que existia uma mariposa de língua igualmente longa. A ideia foi ridicularizada. A mariposa só apareceu em 1903.",
+        "explicacao": (
+            "A orquídea Angraecum sesquipedale guarda o néctar no fim de um esporão extremamente longo. Darwin recebeu "
+            "flores dela de James Bateman e tentou, sem sucesso, retirar os pacotes de pólen com agulhas e cerdas. Só "
+            "conseguiu ao enfiar um cilindro de 2,5 mm de diâmetro até o fim do esporão: ao puxá-lo, o pólen veio "
+            "grudado. Concluiu que uma mariposa, ao buscar o néctar, levaria o pólen para a próxima flor, e que para "
+            "isso precisaria de uma probóscide longa o bastante. Por um tempo, a ideia de um polinizador com "
+            "probóscide de 35 cm foi ridicularizada. Em 1867, o duque de Argyll defendeu que tanta complexidade "
+            "indicava um criador sobrenatural, e Alfred Russel Wallace respondeu no mesmo ano descrevendo como flor e "
+            "mariposa poderiam ter evoluído juntas só por seleção natural. Em 1903, Walter Rothschild e Karl Jordan "
+            "acharam em Madagascar a mariposa esperada, batizada de Xanthopan morganii praedicta. Darwin tinha morrido "
+            "21 anos antes. O nome \"praedicta\" talvez homenageie a previsão, mas o artigo que descreveu a mariposa nem "
+            "cita Darwin. O episódio virou uma das previsões célebres da teoria da evolução."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Angraecum_sesquipedale",
+            "Darwin's prediction went unverified for 21 years after his death, until just such a moth was discovered and his conjecture vindicated. "
+            "The story of its postulated pollinator has come to be seen as one of the celebrated predictions of the theory of evolution. [...] "
+            "After being sent several flowers of A. sesquipedale by James Bateman, Darwin noted the defining characteristic of the species, its extremely long spur. "
+            "From his observations, Darwin surmised, in his 1862 publication On the Various Contrivances by Which British and Foreign Orchids Are Fertilized by Insects, and On the Good Effects of Intercrossing, that there must be a pollinator moth with a proboscis long enough to reach the nectar at the end of the spur. "
+            "He arrived at this conclusion after attempting in vain to remove the pollinia of the flower using needles and bristles. "
+            "Only after placing a cylinder with a diameter of 1⁄10 of an inch (2.5 mm) down the full length of the spur was he able to detach the pollinia upon retracting it. [...] "
+            "Darwin surmised that during the moth's attempt at getting the nectar at the end of the spur, the moth would get the pollinarium attached to itself. "
+            "The next orchid it visited would then be pollinated in the same manner. "
+            "For some time after this prediction the notion of a pollinator with a 35 cm long proboscis was ridiculed and generally not believed to exist. "
+            "After Darwin's publication, George Campbell, 8th Duke of Argyll published a book in 1867 titled, The Reign of Law, in which he argued that the complexity of this species implied that it was created by a supernatural being. "
+            " Alfred Russel Wallace replied in the same year with a paper he titled \"Creation by Law\", setting out in detail a sequence through which the moth and the flower could have coevolved with no guidance other than natural selection. "
+            "In 1903, such a moth was discovered in Madagascar by Walter Rothschild and Karl Jordan. "
+            "This confirmed Darwin's prediction. "
+            "The moth was named Xanthopan morganii praedicta. "
+            " It is possible that the subspecific epithet praedicta was given in honor of the fact that Darwin predicted its existence, but there is no reference to Darwin in the paper that described the moth.",
+            nome="Angraecum sesquipedale")],
+    },
+    # 6 a carta de Wallace e a leitura que ninguém notou
+    {
+        "temas_secundarios": ["personagens_esquecidos", "amazonia"],
+        "tipos_espanto": ["historia_humana"],
+        "gancho": "Em 1858, Wallace mandou do arquipélago malaio a Darwin um ensaio com a ideia que Darwin elaborava havia 20 anos sem publicar. A apresentação dos dois em Londres foi tão discreta que quase ninguém notou.",
+        "explicacao": (
+            "Alfred Russel Wallace já tinha passado por um desastre: em 1852, voltando da Amazônia, o navio em que "
+            "viajava pegou fogo, e ele perdeu quase todos os exemplares dos dois últimos anos de coleta, passando dez "
+            "dias num bote até o resgate. Depois foi pesquisar no arquipélago malaio. Lá, segundo contou, teve a ideia "
+            "da seleção natural de cama, com febre, pensando no que Malthus escrevera sobre os freios ao crescimento "
+            "das populações humanas. Os dois já se correspondiam, e Darwin tinha escrito que ia \"muito mais longe\" que "
+            "Wallace. Wallace mandou então o ensaio numa carta particular, pedindo a Darwin que o repassasse a Charles "
+            "Lyell se valesse a pena. Darwin o recebeu em 18 de junho de 1858 e escreveu a Lyell que nem ele faria um "
+            "resumo melhor. Lyell e Joseph Hooker decidiram apresentar o ensaio na Linnean Society, em 1º de julho, "
+            "junto com textos inéditos de Darwin que mostravam sua prioridade. Wallace, a meses de distância pelo "
+            "correio, ficou de fora da decisão, aceitou o arranjo e nunca demonstrou amargura. A reação foi morna: em "
+            "maio de 1859, o presidente da sociedade comentou que o ano não tinha sido marcado por nenhuma descoberta "
+            "notável. A importância só ficou clara com A Origem das Espécies, publicada no fim daquele ano."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Alfred_Russel_Wallace",
+            "On 12 July 1852, Wallace embarked for the UK on the brig Helen. "
+            "After 25 days at sea, the ship's cargo caught fire, and the crew was forced to abandon ship. "
+            "All the specimens Wallace had on the ship, mostly collected during the last, and most interesting, two years of his trip, were lost. [...] "
+            "Wallace and the crew spent ten days in an open boat before being picked up by the brig Jordeson [...] "
+            "He stated that it was while he was in bed with a fever that he thought about Malthus's idea of positive checks on human population, and had the idea of natural selection. [...] "
+            "commented that \"I believe I go much further than you\". "
+            "Wallace believed this and sent Darwin his February 1858 essay, \"On the Tendency of Varieties to Depart Indefinitely From the Original Type\", asking Darwin to review it and pass it to Charles Lyell if he thought it worthwhile. "
+            "Although Wallace had sent several articles for journal publication during his travels through the Malay archipelago, the Ternate essay was in a private letter. "
+            "Darwin received the essay on 18 June 1858. [...] "
+            "In this sense, it was very similar to the theory that Darwin had worked on for 20 years, but had yet to publish. "
+            "Darwin sent the manuscript to Charles Lyell with a letter saying \"he could not have made a better short abstract! [...] "
+            "Darwin put the problem to Charles Lyell and Joseph Hooker, who decided to publish the essay in a joint presentation together with unpublished writings which highlighted Darwin's priority. "
+            "Wallace's essay was presented to the Linnean Society of London on 1 July 1858 [...] "
+            "Communication with Wallace in the far-off Malay Archipelago involved months of delay, so he was not part of this rapid publication. "
+            "Wallace accepted the arrangement after the fact, happy that he had been included at all, and never expressed bitterness in public or in private. [...] "
+            "The reaction to the reading was muted, with the president of the Linnean Society remarking in May 1859 that the year had not been marked by any striking discoveries; but, with Darwin's publication of On the Origin of Species later in 1859, its significance became apparent.",
+            nome="Alfred Russel Wallace")],
+    },
+    # 7 Darwin também era um pouco lamarckista
+    {
+        "temas_secundarios": ["genetica"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "Os livros opõem a girafa de Lamarck, que esticaria o pescoço e passaria isso aos filhos, à seleção natural de Darwin. Mas o próprio Darwin aceitava a herança de mudanças causadas pelo uso e pelo desuso.",
+        "explicacao": (
+            "Jean-Baptiste Lamarck, que viveu de 1744 a 1829, juntou duas ideias tradicionais: o que é usado se "
+            "desenvolve e o que não é usado se perde, e essas mudanças passam aos descendentes. A girafa que estica o "
+            "pescoço para alcançar folhas altas era só uma ilustração imaginada por ele. Nem a herança de caracteres "
+            "adquiridos era novidade: tinha sido aceita antes por Hipócrates, Aristóteles e Galeno, entre outros. "
+            "Darwin, em A Origem das Espécies, tratou a seleção natural como mecanismo principal, mas, como Lamarck, "
+            "deu crédito aos efeitos herdáveis do uso e do desuso como mecanismo auxiliar. Em 1868, propôs a "
+            "pangênese, que ele frisava ser uma hipótese: as células do corpo soltariam partículas, as gêmulas, que se "
+            "acumulariam nas células reprodutivas e passariam à geração seguinte as mudanças sofridas. August Weismann "
+            "atacou a ideia cortando o rabo de camundongos ao longo de cinco gerações; em 1889, relatou que, de 901 "
+            "filhotes, nenhum nasceu com rabo rudimentar. Mas cortar o rabo não é desuso, e o teste hoje é visto como "
+            "insuficiente para derrubar o lamarckismo. O que o tirou de cena foi a genética de Mendel, que levou à "
+            "síntese moderna."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lamarckism",
+            "idea is named after the French zoologist Jean-Baptiste Lamarck (1744–1829) [...] "
+            "Introductory textbooks contrast Lamarckism with Charles Darwin's theory of evolution by natural selection. "
+            "However, Darwin's book On the Origin of Species gave credence to the idea of heritable effects of use and disuse, as Lamarck had done, and his own concept of pangenesis similarly implied soft inheritance. [...] "
+            "August Weismann's experiment, considered definitive in its time, is now considered to have failed to disprove Lamarckism, as it did not address use and disuse. "
+            "Later, Mendelian genetics supplanted the notion of inheritance of acquired traits, eventually leading to the development of the modern synthesis, and the general abandonment of Lamarckism in biology. [...] "
+            "The inheritance of acquired characters had been accepted previously by Hippocrates, Aristotle, Galen [...] "
+            "Charles Darwin's On the Origin of Species proposed natural selection as the main mechanism for development of species, but (like Lamarck) gave credence to the idea of heritable effects of use and disuse as a supplementary mechanism. "
+            "Darwin subsequently set out his concept of pangenesis in the final chapter of his book The Variation of Animals and Plants Under Domestication (1868) [...] "
+            "Pangenesis, which he emphasised was a hypothesis, was based on the idea that somatic cells would, in response to environmental stimulation (use and disuse), throw off 'gemmules' or 'pangenes' which travelled around the body [...] "
+            "Darwin believed that they eventually accumulated in the germ cells where they could pass on to the next generation [...] "
+            "Lamarck briefly mentioned two traditional ideas in his discussion of heredity, in his day considered to be generally true. "
+            "The first was the idea of use versus disuse; he theorized that individuals lose characteristics they do not require, or use, and develop characteristics that are useful. "
+            "The second was to argue that the acquired traits were heritable. "
+            "He gave as an imagined illustration the idea that when giraffes stretch their necks to reach leaves high in trees, they would strengthen and gradually lengthen their necks. [...] "
+            "Weismann conducted the experiment of removing the tails of 68 white mice, and those of their offspring over five generations, and reporting that no mice were born in consequence without a tail or even with a shorter tail. "
+            "In 1889, he stated that \"901 young were produced by five generations of artificially mutilated parents, and yet there was not a single example of a rudimentary tail",
+            nome="Lamarckism")],
+    },
+    # 8 o olho "absurdo" de Darwin
+    {
+        "temas_secundarios": ["sentidos", "paleontologia"],
+        "tipos_espanto": ["mito_desmentido", "escala_absurda"],
+        "gancho": "Darwin escreveu que o olho surgir por seleção natural parecia \"absurdo no mais alto grau\". Mas logo mostrava como seria possível, em etapas úteis. Um cálculo posterior estimou menos de 364 mil anos.",
+        "explicacao": (
+            "Em 1802, o filósofo William Paley tinha chamado o olho de milagre de \"design\". Em 1859, em A Origem das "
+            "Espécies, Darwin admitiu que, à primeira vista, a evolução do olho por seleção natural parecia absurda. Em "
+            "seguida, argumentou que a dificuldade estava na nossa imaginação, não na teoria: se existissem gradações "
+            "de um olho simples e imperfeito até um complexo, cada uma útil a quem a tivesse, e se as variações fossem "
+            "herdadas, a seleção poderia produzi-lo. Ele propôs uma sequência que começava com um nervo óptico apenas "
+            "coberto de pigmento e citou exemplos de olhos intermediários em animais vivos. Mais tarde, uma "
+            "estimativa calculou quanto tempo uma mancha circular de células sensíveis à luz levaria para virar um "
+            "olho de vertebrado, a partir de taxas de mutação e da vantagem de cada etapa. O tempo de cada etapa foi "
+            "propositalmente exagerado, e cada geração contou como um ano, o que é comum em animais pequenos. Mesmo "
+            "assim, o resultado ficou abaixo de 364 mil anos. Para comparar: o olho fóssil mais antigo que se conhece "
+            "com certeza, achado na Estônia, tem cerca de 530 milhões de anos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Evolution_of_the_eye",
+            "In 1802, philosopher William Paley called it a miracle of \"design.\" "
+            "In 1859, Charles Darwin himself wrote in his Origin of Species, that the evolution of the eye by natural selection seemed at first glance \"absurd in the highest possible degree\". "
+            "However, he went on that despite the difficulty in imagining it, its evolution was perfectly feasible: [...] "
+            "if numerous gradations from a simple and imperfect eye to one complex and perfect can be shown to exist, each grade being useful to its possessor, as is certainly the case; if further, the eye ever varies and the variations be inherited [...] "
+            "though insuperable by our imagination, should not be considered as subversive of the theory. "
+            "He suggested a stepwise evolution from \"an optic nerve merely coated with pigment, and without any other mechanism\" to \"a moderately high stage of perfection\", and gave examples of existing intermediate. [...] "
+            "the oldest certain fossilized eye is from a Schmidtiellus reetae fossil from 530 million years ago, collected in Saviranna in northern Estonia. [...] "
+            "How fast a circular patch of photoreceptor cells can evolve into a fully functional vertebrate eye has been estimated based on rates of mutation, relative advantage to the organism, and natural selection. "
+            "However, the time needed for each state was consistently overestimated and the generation time was set to one year, which is common in small animals. "
+            "Even with these pessimistic values, the vertebrate eye could still evolve from a patch of photoreceptor cells in less than 364,000 years.",
+            nome="Evolution of the eye")],
+    },
+    # 9 o gene do olho do camundongo funciona na mosca
+    {
+        "temas_secundarios": ["genetica", "insetos"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "O olho de uma mosca e o de um camundongo são construídos de jeitos muito diferentes. Mesmo assim, a versão de camundongo de um gene essencial para o olho, o Pax6, consegue disparar a formação de olhos na mosca.",
+        "explicacao": (
+            "Insetos têm olhos compostos; vertebrados, olhos do tipo câmera. Ainda assim, o Pax6 de camundongo funciona "
+            "como gatilho do desenvolvimento do olho na drosófila, a mosca-das-frutas. A função dessa proteína se "
+            "manteve surpreendentemente parecida entre os animais de simetria bilateral, e o gene ficou conhecido "
+            "pelo uso em experimentos que induzem olhos em lugares do corpo onde normalmente não haveria. O Pax6 é o "
+            "exemplo clássico de \"homologia profunda\": estruturas que parecem não ter nada em comum, mas cujo "
+            "crescimento é comandado por mecanismos genéticos herdados de um ancestral. A explicação mais aceita é que "
+            "esse ancestral já tinha algum tipo de célula sensível à luz, que em ramos diferentes deu origem às "
+            "células fotorreceptoras de insetos e lulas e às células ganglionares da retina dos vertebrados. Em "
+            "humanos, mutações no PAX6 causam defeitos como a aniridia, a ausência da íris. A ideia de parentesco "
+            "profundo tem raízes antigas: em 1822, o zoólogo francês Étienne Geoffroy Saint-Hilaire dissecou um "
+            "lagostim e concluiu que seus órgãos seguiam a ordem dos de um vertebrado, só que invertidos entre "
+            "barriga e costas. Georges Cuvier rejeitou a tese, mas em 1994 Geoffroy se mostrou correto."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("PAX6",
+                "This transcription factor is most noted for its use in the interspecifically induced expression of ectopic eyes and is of medical importance because heterozygous mutants produce a wide spectrum of ocular defects such as aniridia in humans. [...] "
+                "PAX6 protein function is surprisingly conserved across bilaterian species. "
+                " For instance, mouse Pax6 can trigger eye development in Drosophila melanogaster, despite insects and vertebrates having very different eyes (compound vs. camera). "
+                "As a result, Pax6 is hailed as the prototypical example of deep homology, where structures that appear very different turn out to use homologous processes for their growth and development.",
+                nome="PAX6"),
+            wiki("Deep_homology",
+                "the concept of deep homology is used to describe cases where growth and differentiation processes are governed by genetic mechanisms that are homologous and deeply conserved across a wide range of species. [...] "
+                "In 1822, the French zoologist Étienne Geoffroy Saint-Hilaire dissected a crayfish, discovering that its body is organised like a vertebrate's, but inverted belly to back (dorsoventrally): [...] "
+                "Geoffroy's homology theory was denounced by the leading French zoologist of his day, Georges Cuvier, but in 1994, Geoffroy was shown to be correct. [...] "
+                "The commonly-accepted explanation of the shared role of Pax6 is that it reflects an ancestral kind of light-sensing, opsin-expressing, microvillar-type cell that evolved into the light-detecting cells of insects and squids and the retinal ganglion cells of vertebrates.",
+                nome="Deep homology"),
+        ],
+    },
+    # 10 prestina: a convergência na própria proteína
+    {
+        "temas_secundarios": ["acustica", "vida_marinha"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "Morcegos e golfinhos desenvolveram a ecolocalização cada um por conta própria. Mesmo assim, uma proteína da audição deles acumulou várias trocas iguais: a convergência aparece até na sequência da molécula.",
+        "explicacao": (
+            "A proteína é a prestina, o motor das células ciliadas externas da cóclea, no ouvido interno dos "
+            "mamíferos. Ela se contrai e se alonga conforme a voltagem, e esse movimento faz parte do amplificador "
+            "coclear, que aumenta a sensibilidade às ondas sonoras que chegam. Diferentemente dos motores celulares "
+            "clássicos, movidos por enzimas, ela converte voltagem diretamente em movimento, várias ordens de "
+            "grandeza mais depressa. Por isso, o grupo de Peter Dallos, que a descobriu em 2000, deu a ela o nome da "
+            "indicação musical presto. Quando o gene da prestina é desativado em experimentos, a sensibilidade "
+            "auditiva cai mais de cem vezes. Há boas evidências de que a proteína passou por evolução adaptativa "
+            "ligada à aquisição da audição de alta frequência nos mamíferos. Em morcegos, baleias e golfinhos, que "
+            "desenvolveram de forma independente a audição de ultrassom e a ecolocalização, ela mostra várias "
+            "substituições paralelas de aminoácidos. A convergência costuma ser vista no formato do corpo, como nas "
+            "asas de aves e morcegos; casos em que ela aparece na sequência de uma proteína são raros."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Prestin",
+            "Prestin is the motor protein of the outer hair cells of the inner ear of the mammalian cochlea. [...] "
+            "There is good evidence that prestin has undergone adaptive evolution in mammals  associated with acquisition of high frequency hearing in mammals. "
+            "The prestin protein shows several parallel amino acid replacements in bats, whales, and dolphins that have independently evolved ultrasonic hearing and echolocation, and these represent rare cases of convergent evolution at the sequence level. [...] "
+            "Unlike the classical, enzymatically driven motors, this new type of motor is based on direct voltage-to-displacement conversion and acts several orders of magnitude faster than other cellular motor proteins. "
+            "A targeted gene disruption strategy of prestin showed a >100-fold (or 40 dB) loss of auditory sensitivity. "
+            "Prestin is a transmembrane protein that mechanically contracts and elongates leading to electromotility of outer hair cells (OHC). "
+            "Electromotility is the driving force behind the somatic motor of the cochlear amplifier, which is a mammalian evolution that increases sensitivity to incoming sound wave frequencies and, thus, amplifies the signal. [...] "
+            "Prestin was discovered by Peter Dallos's group in 2000 and named from the musical notation presto because of the speed of the protein.",
+            nome="Prestin")],
+    },
+    # 11 os grilos do Havaí que pararam de cantar
+    {
+        "temas_secundarios": ["insetos", "comportamento_animal"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "No Havaí, uma mosca parasita localiza grilos machos pelo canto. Numa ilha, em menos de 20 gerações, mais de 90% dos machos passaram a ter asas que não cantam. E o silêncio surgiu de forma independente várias vezes.",
+        "explicacao": (
+            "O canto do macho do grilo Teleogryllus oceanicus serve para atrair fêmeas, mas também denuncia onde ele "
+            "está. A mosca Ormia ochracea, nativa da América do Norte e introduzida no Havaí, escuta esse canto com um "
+            "aparelho auditivo que evoluiu de forma convergente ao das fêmeas do grilo. Achado o macho, ela põe ovos "
+            "sobre ele e ao redor; as larvas entram no grilo, crescem dentro dele e saem cerca de 7 dias depois, "
+            "matando-o. Em 2003, na ilha de Kauai, foi identificada uma mutação na forma da asa que deixa o macho "
+            "obrigatoriamente mudo, a \"flatwing\". Com tanto parasita, ela se espalhou depressa. O preço é que esses "
+            "machos não conseguem chamar parceiras: eles se aproximam dos que cantam para interceptar fêmeas, e as "
+            "fêmeas das ilhas parasitadas rejeitam bem menos os machos silenciosos do que as de populações "
+            "australianas sem parasita. Machos mudos de três ilhas havaianas, parecidos por fora, vieram de mutações "
+            "separadas, e há ainda outras soluções, como asas encrespadas ou pequenas. No total, o silêncio adaptativo "
+            "evoluiu pelo menos cinco vezes. Em Molokai, alguns machos passaram a emitir um canto que lembra um gato "
+            "ronronando e ainda atrai fêmeas."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Teleogryllus_oceanicus",
+            "While this behavior is vital for mate attraction, it also gives up the calling individual's locations to nearby predators [...] "
+            "Ormia ochracea is an acoustically-orienting parasitoid fly that is native to North America, but has also been introduced to Hawaii. "
+            " Females of this species are able to locate singing male Teleogryllus oceanicus crickets using a hearing apparatus evolutionarily convergent to T. oceanicus females. "
+            " Once the singing male has been located, the female fly lays eggs on and around the male cricket, allowing her larvae to burrow into the host. "
+            " The larvae eat and grow inside the cricket, emerging roughly 7 days later to pupate, killing the male cricket in the process. [...] "
+            "In 2003, a novel mutation was identified in the highly parasitized Teleogryllus oceanicus population in Kauai that resulted in a wing morphology that renders the male obligately silent (known as flatwing). [...] "
+            "With such a heavy parasite presence, males with the mutation could have a survival advantage, which led to rapid evolution, with over 90% of males exhibiting the flatwing morphology after less than 20 generations. [...] "
+            "Flatwing males in the field move towards a calling song source at a faster rate and settle closer when compared to wild type males. [...] "
+            "While females from ancestral, non-parasitized Australian females will still mate with silent flatwing males, females from parasitized Hawaiian island populations discriminate significantly less against silent courting males. "
+            "Recent work has demonstrated the surprising extent of parallel adaptation occurring in this system. "
+            "Although they are superficially similar, silent flatwing morphs observed in populations on three different Hawaiian islands have been shown to be the result of separate mutational events which occurred in the same or nearby genomic regions. "
+            "Additionally, adaptive silence has evolved through morphologically distinct changes in wing morphology, including changes to 3D forewing morphology (the 'curlywing' phenotype) and size ('small-wing'), which similarly protect males from parasitism by O. ochracea. "
+            "Adaptive silence has thus evolved independently on at least five occasions. [...] "
+            "In 2017, males were identified in another population of T. oceanicus on the island of Molokai that produce a different song when stridulating, which superficially sounds like a cat's purr. "
+            "Unlike the silent, flatwing morph, these \"purring\" males can use this new calling song to attract females.",
+            nome="Teleogryllus oceanicus")],
+    },
+    # 12 a bactéria que aprendeu a comer náilon
+    {
+        "temas_secundarios": ["microbiologia", "quimica_cotidiano"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "O náilon foi inventado em 1935. Em 1975, cientistas japoneses acharam em lagoas com resíduos de uma fábrica de náilon uma bactéria que digere subprodutos dele, com enzimas diferentes das de qualquer outra bactéria.",
+        "explicacao": (
+            "As substâncias que a bactéria aproveita, como certos fragmentos curtos que sobram da fabricação do "
+            "náilon 6, não têm existência conhecida antes da invenção do material. Estudos de 1977 mostraram que as "
+            "três enzimas usadas por ela, apelidadas de nylonases, eram muito diferentes das de outras bactérias e só "
+            "agiam sobre esses resíduos artificiais. Os genes delas ficam num plasmídeo, um anel de DNA à parte. A "
+            "origem dessas enzimas virou exemplo no ensino da evolução. Uma delas surgiu da duplicação de um gene "
+            "seguida de trocas de bases: a cópia antiga é cerca de cem vezes menos eficiente, e bastam duas trocas de "
+            "aminoácidos para levá-la a 85% da atividade da nova. Para outra, o geneticista Susumu Ohno propôs que "
+            "nasceu de uma mutação que desloca a leitura do gene, embaralhando a proteína, e mesmo assim deu origem a "
+            "uma enzima com atividade fraca. A estrutura dessa enzima, resolvida em 2018, indicou que ela não é tão "
+            "inédita: pertence a uma família conhecida de enzimas. Em 1995, cientistas também fizeram outra espécie, "
+            "a Pseudomonas aeruginosa, desenvolver em laboratório a capacidade de quebrar os mesmos subprodutos, "
+            "forçando-a a viver sem nenhuma outra fonte de nutrientes."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Nylon-eating_bacteria",
+            "In 1975, a team of Japanese scientists discovered a strain of bacterium, living in ponds containing waste water from a nylon factory, that could digest certain byproducts of nylon 6 manufacture, such as the linear dimer of 6-aminohexanoate. "
+            "These substances are not known to have existed before the invention of nylon in 1935. [...] "
+            "Studies in 1977 revealed that the three enzymes that the bacteria were using to digest the byproducts were significantly different from any other enzymes produced by any other bacteria, and not effective on any material other than the manmade nylon byproducts. [...] "
+            "All three enzymes are encoded on a plasmid called pOAD2. [...] "
+            "EII has evolved by gene duplication followed by base substitution of another protein EII'. [...] "
+            "The EII' (NylB', P07062) protein is about 100x times less efficient compared to EII. "
+            "A 2007 research by the Seiji Negoro team shows that just two amino-acid alterations to EII', i.e. G181D and H266N, raises its activity to 85% of EII. [...] "
+            "The structure of EIII was resolved in 2018. "
+            "Instead of being a completely novel enzyme, it appears to be a member of the N-terminal nucleophile (N-tn) hydrolase family. [...] "
+            "EIII was originally thought to be completely novel. "
+            "Susumu Ohno proposed that it had come about from the combination of a gene-duplication event with a frameshift mutation. [...] "
+            "one of the enzymes involved was produced by a frame-shift mutation that completely scrambled transcribed amino acids. "
+            "Despite this, the new gene still had a novel, albeit weak, catalytic capacity. "
+            "This is seen as a good example of how mutations easily can provide the raw material for evolution by natural selection. "
+            "A 1995 paper showed that scientists have also been able to induce another species of bacterium, Pseudomonas aeruginosa, to evolve the capability to break down the same nylon byproducts in a laboratory by forcing them to live in an environment with no other source of nutrients.",
+            nome="Nylon-eating bacteria")],
+    },
+    # 13 a corrida armamentista entre tritão e cobra
+    {
+        "temas_secundarios": ["animais_extremos", "teoria_jogos"],
+        "tipos_espanto": ["escala_absurda", "engenhosidade"],
+        "gancho": "Um tritão da América do Norte pode ter toxina suficiente para matar vários adultos humanos. É resultado de uma corrida armamentista com uma cobra que, em algumas populações, evoluiu resistência à toxina.",
+        "explicacao": (
+            "O tritão Taricha granulosa, do noroeste da América do Norte, produz tetrodotoxina, a mesma toxina do "
+            "baiacu, que nessa espécie parece ser fabricada pelos micróbios da pele. Ela age como uma rolha nos canais "
+            "de sódio das células nervosas, bloqueia os impulsos e leva à paralisia e à morte por asfixia. Em 1979, um "
+            "homem de 29 anos morreu no Oregon depois de engolir um desses tritões. A cobra-liga comum (Thamnophis "
+            "sirtalis), em várias populações, tem uma versão do canal de sódio em que a toxina se encaixa mal ou não se "
+            "encaixa. Ela chega a engolir parte do tritão para avaliar a dose e então decide se termina a refeição ou "
+            "o solta. Cobras mais resistentes favorecem tritões mais tóxicos, que por sua vez favorecem cobras ainda "
+            "mais resistentes: é a chamada corrida armamentista evolutiva, um caso de coevolução entre predador e "
+            "presa. Hoje, as cobras resistentes são os únicos animais conhecidos capazes de comer esse tritão e "
+            "sobreviver. Em algumas áreas, a cobra parece ter vencido a corrida: ficou tão resistente que o tritão não "
+            "consegue acompanhar com sua produção de toxina."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Rough-skinned_newt",
+            "The rough-skinned newt or roughskin newt (Taricha granulosa) is a North American newt known for the strong toxin exuded from its skin. [...] "
+            "Rough-skinned newts are found throughout the Pacific Northwest. [...] "
+            "In this species the toxin seems to be produced by their skin microbiome. [...] "
+            "In 1979, a 29-year-old man from Oregon died after ingesting a rough-skinned newt. [...] "
+            "The newt produces a neurotoxin called tetrodotoxin (TTX), which in this species was formerly called \"tarichatoxin\". "
+            "It is the same toxin found in pufferfish and a number of other marine animals. "
+            "This toxin targets voltage-gated sodium channels [...] "
+            "Because TTX is much larger than a sodium ion, it acts like a cork in a bottle and prevents the flow of sodium. "
+            "The reverse binding to sodium channels in nerve cells blocks electrical signals necessary for conducting nerve impulses. "
+            "This inhibition of firing action potentials has the effect of inducing paralysis and death by asphyxiation. [...] "
+            "researchers have identified a genetic disposition in several snake populations where the protein is configured in such a way as to hamper or prevent binding of the toxin. [...] "
+            "T. sirtalis assays toxin levels of the rough-skinned newt and decides whether or not the levels are manageable by partially swallowing the newt, and either swallowing or releasing the newt. "
+            "Toxin-resistant garter snakes are the only known animals today that can eat a rough-skinned newt and survive. [...] "
+            "The relationship between the rough-skinned newt and the common garter snake is considered an example of co-evolution. "
+            "The mutations in the snake's genes that conferred resistance to the toxin have resulted in a selective pressure that favors newts which produce more potent levels of toxin. "
+            "Increases in the amount of toxin then apply a selective pressure favoring snakes with mutations conferring even greater resistance. "
+            "This cycle of a predator and prey evolving in response to one another is sometimes termed an evolutionary arms race. "
+            "As a result, some newts secrete enough toxin to kill several adult humans. "
+            "It appears that in some areas, the common garter snake has surpassed the newt in the evolutionary arms race by developing such a strong resistance to the toxin that the newt is unable to compete with its production of the toxin.",
+            nome="Rough-skinned newt")],
+    },
+    # 14 o debate de Oxford que ninguém registrou
+    {
+        "temas_secundarios": ["religioes", "revolucao_cientifica"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "No célebre debate de 1860 sobre Darwin, em Oxford, o bispo Wilberforce teria perguntado a Huxley se ele descendia de macaco pelo lado do avô ou da avó. Não há registro literal, e cada lado achou que venceu.",
+        "explicacao": (
+            "Nem foi um debate formal entre os dois: foi uma discussão acalorada depois de uma palestra do americano "
+            "John William Draper, longa e maçante segundo todos os relatos, na reunião anual da Associação Britânica "
+            "para o Avanço da Ciência. Darwin, doente, não foi. Na versão que virou lenda, Thomas Huxley respondeu que "
+            "não teria vergonha de ter um macaco como ancestral, mas sim de estar ligado a um homem que usava grandes "
+            "dons para obscurecer a verdade. Como não existe relato literal, até a pergunta do bispo muda conforme a "
+            "testemunha. Joseph Hooker, amigo de Darwin, escreveu que Huxley mal se fazia ouvir no salão e se atribuiu "
+            "a resposta mais eficaz. Robert FitzRoy, ex-capitão do Beagle, ergueu uma Bíblia enorme e implorou ao "
+            "público que acreditasse em Deus, e não no homem. Depois, Wilberforce escreveu que tinha derrotado Huxley, "
+            "Huxley disse ter sido o homem mais popular de Oxford por vinte e quatro horas inteiras, e Hooker contou ter sido cumprimentado "
+            "até por clérigos. Na época, o episódio rendeu só menções de passagem nos jornais, e, segundo um "
+            "historiador, quase sumiu da memória pública até ser resgatado nos anos 1890."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("1860_Oxford_evolution_debate",
+            "The 1860 Oxford evolution debate took place at the Oxford University Museum in Oxford, England [...] "
+            "It was not a formal debate between the two, but rather it was an animated discussion after the presentation of a paper by John William Draper of New York University [...] "
+            "The debate is best remembered today for a heated exchange in which Wilberforce supposedly asked Huxley whether it was through his grandfather or his grandmother that he claimed his descent from a monkey. "
+            "Huxley is said to have replied that he would not be ashamed to have a monkey for his ancestor, but he would be ashamed to be connected with a man who used his great gifts to obscure the truth. "
+            "However, what Huxley and Wilberforce actually said is uncertain, and subsequent accounts were subject to distortion since no verbatim account of the debate exists. [...] "
+            "Darwin himself was too sick to attend. [...] "
+            "By all accounts, Draper's presentation was long and boring. [...] "
+            "Joseph Dalton Hooker, Darwin's friend and botanical mentor, noted in a letter to Darwin that Huxley had been largely inaudible in the hall [...] "
+            "FitzRoy denounced Darwin's book and, \"lifting an immense Bible first with both hands and afterwards with one hand over his head, solemnly implored the audience to believe God rather than man\". [...] "
+            "According to his own account, it was he and not Huxley who delivered the most effective reply to Wilberforce's arguments [...] "
+            "Notably, all three major participants felt they had had the best of the debate. [...] "
+            "I think I thoroughly beat him.\" "
+            "Huxley claimed \"[I was] the most popular man in Oxford for a full four & twenty hours afterwards.\" "
+            "Hooker wrote that \"I have been congratulated and thanked by the blackest coats and whitest stocks in Oxford.\" [...] "
+            "However, at the time it received only a few passing references in newspapers, and Brooke argues that \"the event almost completely disappeared from public awareness until it was resurrected in the 1890s",
+            nome="1860 Oxford evolution debate")],
+    },
+    # 15 o eclipse do darwinismo
+    {
+        "temas_secundarios": ["genetica", "revolucao_cientifica"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "No fim do século XIX, a evolução já era aceita, mas muitos biólogos achavam que a seleção natural tinha sido um palpite errado de Darwin. Em 1903, um botânico disse que o darwinismo estava no leito de morte.",
+        "explicacao": (
+            "Historiadores chamam o período dos anos 1880 até cerca de 1920 de \"eclipse do darwinismo\", expressão "
+            "do biólogo Julian Huxley. A teoria enfrentava objeções sérias. Em 1862, o físico Lord Kelvin calculou que "
+            "a Terra teria esfriado em 100 milhões de anos ou menos, tempo curto demais para a evolução. Em 1868, o "
+            "engenheiro Fleeming Jenkin notou, com razão, que a herança por mistura, aceita por Darwin, atrapalharia a "
+            "ação da seleção natural. Ganharam força alternativas como o neolamarckismo, a ortogênese, em que forças "
+            "internas empurrariam a evolução numa direção, e o mutacionismo, com espécies novas surgindo num único "
+            "salto. Em 1903, o botânico alemão Eberhard Dennert editou uma série de artigos para mostrar que o "
+            "darwinismo logo seria coisa do passado. Em 1907, até um defensor da seleção, o entomologista Vernon "
+            "Kellogg, admitiu que ela estava seriamente desacreditada. Segundo Ernst Mayr, ainda em 1930 a maioria dos "
+            "livros didáticos destacava mecanismos não darwinianos. A virada veio da matemática: a partir de 1918, "
+            "R. A. Fisher mostrou que a herança de Mendel era compatível com a seleção natural. A combinação ganhou o "
+            "nome de \"síntese moderna\" num livro de Julian Huxley de 1942."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Eclipse_of_Darwinism",
+                "Julian Huxley used the phrase \"the eclipse of Darwinism\" to describe the state of affairs prior to what he called the \"modern synthesis\". "
+                "During the \"eclipse\", evolution was widely accepted in scientific circles but relatively few biologists believed that natural selection was its primary mechanism. "
+                "Historians of science such as Peter J. Bowler have used the same phrase as a label for the period within the history of evolutionary thought from the 1880s to around 1920, when alternatives to natural selection were developed and explored—as many biologists considered natural selection to have been a wrong guess on Charles Darwin's part, or at least to be of relatively minor importance. [...] "
+                "Neo-Lamarckism, the idea that evolution was driven by the inheritance of characteristics acquired during the life of the organism "
+                "Orthogenesis, the belief that organisms were affected by internal forces or laws of development that drove evolution in particular directions "
+                "Mutationism, the idea that evolution was largely the product of mutations that created new forms or species in a single step. [...] "
+                "Ernst Mayr wrote that as late as 1930 most textbooks still emphasized such non-Darwinian mechanisms. [...] "
+                "The physicist Lord Kelvin calculated in 1862 that the Earth would have cooled in 100 million years or less from its formation, too little time for evolution. [...] "
+                "The engineer Fleeming Jenkin correctly noted in 1868, reviewing The Origin of Species, that the blending inheritance favoured by Charles Darwin would oppose the action of natural selection. [...] "
+                "in 1903 the German botanist, Eberhard Dennert , edited a series of articles intended to show that \"Darwinism will soon be a thing of the past, a matter of history; that we even now stand at its death-bed, while its friends are solicitous only to secure for it a decent burial.\" "
+                "In 1907, the Stanford University entomologist Vernon Lyman Kellogg, who supported natural selection, asserted that \"... the fair truth is that the Darwinian selection theory, considered with regard to its claimed capacity to be an independently sufficient mechanical explanation of descent, stands today seriously discredited in the biological world.\"",
+                nome="Eclipse of Darwinism"),
+            wiki("Modern_synthesis_(20th_century)",
+                "Julian Huxley coined the term in his 1942 book, Evolution: The Modern Synthesis. [...] "
+                "In 1918, R. A. Fisher wrote \"The Correlation between Relatives on the Supposition of Mendelian Inheritance,\" which showed how continuous variation could come from a number of discrete genetic loci. "
+                "In this and other papers, culminating in his 1930 book The Genetical Theory of Natural Selection, Fisher showed how Mendelian genetics was consistent with the idea of evolution by natural selection.",
+                nome="Modern synthesis (20th century)"),
+        ],
+    },
+    # 16 elefantes sem presas em Moçambique
+    {
+        "temas_secundarios": ["genetica", "ecologia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Durante a guerra civil de Moçambique, a caça por marfim fez a fração de elefantas sem presas no Parque da Gorongosa subir de 18% para 51%. A seleção mudou a população em cerca de duas décadas.",
+        "explicacao": (
+            "A guerra durou de 1977 a 1992, e os exércitos caçaram elefantes e outros animais por comida e marfim. No "
+            "Parque Nacional da Gorongosa, o número de grandes herbívoros caiu mais de 90%. Algumas fêmeas, por uma "
+            "mutação genética rara, já não tinham presas e, sem marfim a oferecer, eram mais poupadas. Pelas contas de "
+            "um estudo publicado na revista Science em 2021, ao longo dos 28 anos analisados elas tiveram cerca de "
+            "cinco vezes mais chance de sobreviver que as fêmeas com presas, e cerca de um terço das fêmeas nascidas "
+            "depois da guerra não tinha presas. Como não há registro de machos sem presas no parque, os pesquisadores "
+            "suspeitaram de uma característica dominante, ligada ao cromossomo X e letal para machos. Se fosse assim, "
+            "as mães sem presas teriam mais filhas, e foi o que se viu: quase 66% dos filhotes delas eram fêmeas. "
+            "Comparando o genoma de 18 elefantas, com e sem presas, a equipe apontou dois genes ligados ao "
+            "desenvolvimento dos dentes, o AMELX e o MEP1a. Em humanos, o AMELX está associado a uma síndrome também "
+            "ligada ao X e letal para o sexo masculino, que limita o crescimento dos incisivos laterais, o nosso "
+            "equivalente das presas. Com a proteção atual, os autores esperam que a falta de presas fique mais rara."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.sciencenews.org/article/tuskless-elephants-evolution-poaching",
+             "titulo": "Tuskless elephants became common as an evolutionary response to poachers (Science News)",
+             "idioma": "en",
+             "trecho": (
+                "During the Mozambican Civil War, which lasted from 1977 to 1992, armies hunted elephants and other wildlife for food and ivory [...] "
+                "This caused the number of large herbivores to drop more than 90 percent in the country’s Gorongosa National Park. "
+                "Now, video footage and photographic records show that as elephant numbers plummeted, the proportion of tuskless female African savanna elephants (Loxodonta africana) rose from about 18 percent to 51 percent. "
+                "Decades of poaching appear to have made tusklessness more advantageous from an evolution standpoint in Gorongosa, encouraging the proliferation of tuskless females with mutations in two tooth genes, researchers report in the Oct. 22 Science. [...] "
+                "S.C. Campbell-Staton et al. Ivory poaching and the rapid evolution of tusklessness in African elephants. Science. Vol. 374, October 22, 2021, p. 483. [...] "
+                "The rapid culling of tusked individuals changed the makeup of traits in the elephant population in only two decades, leaving behind more tuskless individuals [...] "
+                "The team also analyzed the genetic instruction books of 18 tusked and tuskless females, zeroing in on two genes rife with mutations in tuskless females.")},
+            {"url": "https://www.pbs.org/wgbh/nova/article/elephant-poaching-tuskless-evolution-mozambique-africa",
+             "titulo": "Extreme ivory poaching led to tuskless elephants in Mozambique (NOVA, PBS)",
+             "idioma": "en",
+             "trecho": (
+                "Among them were some individuals that, thanks to a rare genetic mutation, lacked tusks. "
+                "With no ivory to offer, they were more likely to be spared and survive to pass on their tusklessness to their offspring. [...] "
+                "Whereas at the start of the war, tuskless females made up 18% of the female population in the park, they now represent more than half, and about a third of female elephants born after the war were tuskless. "
+                "In total, the authors estimate that across the 28-year period the study analyzed, tuskless females were some five times likelier to survive than tusked individuals. "
+                "The researchers then drilled down into the selection mechanism by observing that there was no record of tuskless male elephants in the park. "
+                "They hypothesized that any evolutionary mechanism acting on Gorongosa tusks would likely be an “X chromosome–linked dominant, male-lethal trait.” [...] "
+                "If that were to be the case, tuskless mothers in the park would be much more likely to give birth to daughters. "
+                "The data bore out that hypothesis. [...] "
+                "they found that tuskless mothers were giving birth to almost 66% daughters. "
+                "Finally, the authors moved to more nitty-gritty genomics to try to pinpoint the exact genes responsible for this wave of tusklessness. "
+                "Comparing whole-genome scans for 18 Gorongosa elephants with and without tusks, they zeroed in on mutations on two possible genes: AMELX and MEP1a, both of which play an important role in tooth development in many mammals. "
+                "AMELX is even associated with a similar “X-linked dominant, male-lethal” syndrome in humans—one that limits growth of our lateral incisors, our equivalent of tusks. [...] "
+                "“We actually expect that this syndrome will decrease in frequency in our study population, provided that the conservation picture continues to stay as positive as it has been recently,”")},
+        ],
+    },
+]
