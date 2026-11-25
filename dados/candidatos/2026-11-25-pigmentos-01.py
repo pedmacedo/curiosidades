@@ -1,0 +1,641 @@
+LOTE = "2026-11-25-pigmentos-01"
+AREA = "artes"
+TEMA = "pigmentos"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 ultramarino: valia ouro, prêmio de 1824 e hoje azulador de roupa
+    {
+        "temas_secundarios": ["minerais_rochas", "comercio_rotas"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "O azul do manto da Virgem nas pinturas renascentistas vinha de uma pedra afegã moída e chegou a valer tanto quanto ouro. Hoje, versões sintéticas desse azul disfarçam o amarelado da roupa branca.",
+        "explicacao": (
+            "O ultramarino era feito de lápis-lazúli, extraído historicamente perto de Sar-i-Sang, no atual "
+            "Afeganistão. O nome vem do latim ultramarinus, \"além do mar\": mercadores italianos o traziam das minas "
+            "afegãs, e Veneza era o grande centro desse comércio. Moer, peneirar e lavar a pedra dava tanto trabalho "
+            "que o pigmento custava cerca de dez vezes mais que a própria pedra, e em certas épocas foi avaliado como "
+            "ouro. Por isso os pintores o economizavam: guardavam o melhor azul para as vestes de Maria e do Menino "
+            "Jesus e às vezes faziam a camada de baixo com azurita, mais barata. A virada começou com um acaso: em "
+            "1814, um composto azul muito parecido surgiu sozinho num forno de cal da fábrica de vidros e espelhos "
+            "Saint-Gobain. Em 1824, uma sociedade francesa de fomento à indústria ofereceu 6.000 francos a quem "
+            "fabricasse a cor artificialmente. Jean-Baptiste Guimet chegou lá em 1826 e guardou segredo; Christian "
+            "Gmelin, professor de química em Tübingen, publicou seu método em 1828 e deu origem à indústria do "
+            "ultramarino artificial. O sintético ficou tão barato que entra no azulador de roupa, que corrige o tom "
+            "amarelado do que deveria ser branco, e também em rímeis e sombras."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ultramarine",
+            "The name ultramarine comes from the Latin ultramarinus, meaning “beyond the sea,” referring to its import into Europe by Italian traders from mines in Afghanistan during the 14th and 15th centuries. Venice served as a major center for this trade and distribution. "
+            "Ultramarine was among the finest and most expensive blue pigments used by Renaissance painters, at times valued as highly as gold in Europe. It was especially used for the robes of the Virgin Mary [...] "
+            "Lapis lazuli stone was historically mined near Sar-i-Sang in modern-day Afghanistan [...] "
+            "the lengthy process of pulverizing, sifting, and washing to produce ultramarine makes the natural pigment quite valuable and roughly ten times more expensive than the stone it comes from. [...] "
+            "reserving their highest quality blues for the robes of Mary and the Christ child, possibly in an effort to show piety, spending as a means of expressing devotion. As a result of the high price, artists sometimes economized by using a cheaper blue, azurite, for under painting. [...] "
+            "In 1814, Tassaert observed the spontaneous formation of a blue compound, very similar to ultramarine, if not identical with it, in a lime kiln belonging to the glass and mirror manufacturer Saint-Gobain. "
+            "In 1824, this caused the Societé pour l'Encouragement d'Industrie to offer a prize of 6,000 francs for the artificial production of the precious color. "
+            "Processes were devised by Jean Baptiste Guimet (1826) and by Christian Gmelin (1828), then professor of chemistry in Tübingen. "
+            "While Guimet kept his process a secret, Gmelin published his, and became the originator of the \"artificial ultramarine\" industry. [...] "
+            "Synthetic ultramarine, being very cheap, is used for wall painting, the printing of paper hangings, and calico. "
+            "It also is used as a corrective for the yellowish tinge often present in things meant to be white, such as linen and paper. "
+            "Bluing or \"laundry blue\" is a suspension of synthetic ultramarine, or the chemically different Prussian blue, that is used for this purpose when washing white clothes. "
+            "It is often found in makeup such as mascaras or eye shadows.",
+            nome="Ultramarine")],
+    },
+    # 2 lápis-lazúli no tártaro de uma mulher medieval
+    {
+        "temas_secundarios": ["europa_medieval", "minerais_rochas"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "No tártaro dos dentes de uma mulher enterrada num mosteiro alemão por volta de 1100, cientistas acharam centenas de grãos de lápis-lazúli. A explicação mais provável: ela lambia o pincel ao pintar manuscritos.",
+        "explicacao": (
+            "O tártaro é a placa que endurece nos dentes ao longo da vida. Ao analisá-lo em esqueletos de um cemitério "
+            "ligado a uma comunidade religiosa feminina em Dalheim, na Alemanha, uma equipe liderada pelo Instituto "
+            "Max Planck e pela Universidade de York teve uma surpresa nos dentes de uma mulher que morreu com 45 a 60 "
+            "anos, por volta de 1000 a 1200. Quando o tártaro se dissolveu, soltou centenas de partículas azuis "
+            "minúsculas. Análises de espectroscopia mostraram que eram de lápis-lazúli, matéria-prima do ultramarino, "
+            "pigmento raro e tão caro quanto o ouro. Os pesquisadores examinaram vários cenários para explicar como o "
+            "mineral foi parar ali e, pela distribuição dele na boca, concluíram que o mais provável era ela mesma "
+            "pintar com o pigmento e lamber a ponta do pincel. Segundo uma historiadora do projeto, o ultramarino era "
+            "reservado, junto com o ouro e a prata, aos manuscritos mais luxuosos, e só escribas e pintores de "
+            "habilidade excepcional o recebiam. O achado mexe num pressuposto: como muitos escribas e pintores "
+            "medievais não assinavam o trabalho, sobretudo as mulheres, muitos estudiosos supunham que elas pouco "
+            "participavam da produção de livros. A pedra azul viajou das minas do Afeganistão até essa mulher, "
+            "passando pelo Egito islâmico e por Constantinopla."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "consenso_parcial",
+        "fontes": [{"url": "https://www.mpg.de/12632827/medieval-women-early-involvement-in-manuscript-production",
+            "titulo": "Illuminating women’s role in the creation of medieval manuscripts (Max-Planck-Gesellschaft)", "idioma": "en",
+            "trecho": "An international team of researchers led by the Max Planck Institute for the Science of Human History and the University of York have revealed direct evidence of Medieval women’s involvement in the production of illuminated manuscripts. [...] "
+                "the identification of lapis lazuli pigment embedded in the calcified dental plaque of a middle-aged woman buried at a small women’s monastery in Germany around 1100 AD. [...] "
+                "Some of these illuminated manuscripts were embellished with luxurious paints and pigments, including gold leaf and ultramarine, a rare and expensive blue pigment made from lapis lazuli stone. [...] "
+                "researchers examined the remains of individuals who were buried in a medieval cemetery associated with a women’s monastery at the site of Dalheim in Germany. [...] "
+                "One woman in the cemetery was found to have numerous flecks of blue pigment embedded within her dental calculus. She was 45-60 years old when she died around 1000-1200 AD. [...] "
+                "as the calculus dissolved, it released hundreds of tiny blue particles [...] "
+                "Careful analysis using a number of different spectrographic methods – including energy dispersive X-ray spectroscopy (SEM-EDS) and micro-Raman spectroscopy – revealed the blue pigment to be made from lapis lazuli. "
+                "A pigment as rare and expensive as gold [...] "
+                "\"We examined many scenarios for how this mineral could have become embedded in the calculus on this woman’s teeth,\" explains Radini. \"Based on the distribution of the pigment in her mouth, we concluded that the most likely scenario was that she was herself painting with the pigment and licking the end of the brush while painting,\" [...] "
+                "The use of ultramarine pigment made from lapis lazuli was reserved, along with gold and silver, for the most luxurious manuscripts. Only scribes and painters of exceptional skill would have been entrusted with its use,\" says Alison Beach of Ohio State University, a historian on the project. [...] "
+                "As a sign of humility, many medieval scribes and painters did not sign their work, a practice that especially applied to women. The low visibility of women’s labour in manuscript production has led many modern scholars to assume that women played little part in it. [...] "
+                "She was plugged into a vast global commercial network stretching from the mines of Afghanistan to her community in medieval Germany through the trading metropolises of Islamic Egypt and Byzantine Constantinople.",
+            "acessado_em": "2026-11-25"}],
+    },
+    # 3 azul da Prússia: erro, cianeto e Goiânia
+    {
+        "temas_secundarios": ["elementos_quimicos", "farmacos"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O azul da Prússia nasceu de um erro: um fabricante de tintas tentava fazer vermelho de cochonilha com potassa contaminada por sangue. O pigmento deu nome ao cianeto e hoje é antídoto contra césio radioativo.",
+        "explicacao": (
+            "O azul foi provavelmente obtido pela primeira vez por volta de 1706, em Berlim, pelo fabricante de tintas "
+            "Johann Jacob Diesbach. Ele queria um vermelho de cochonilha, receita que levava potassa, sulfato de ferro "
+            "e o inseto seco. Acredita-se que a potassa estava contaminada com sangue, e a reação gerou um "
+            "ferrocianeto de ferro de um azul intenso. Um relato publicado em 1731 diz que a potassa fora emprestada "
+            "por Johann Konrad Dippel, mas nenhuma outra fonte da época cita Dippel nessa história. É tido como o "
+            "primeiro pigmento sintético moderno. Logo substituiu o caríssimo ultramarino em muitos usos e chegou ao "
+            "Japão, onde Hokusai o usou em \"A Grande Onda de Kanagawa\". Em 1782, o sueco Carl Wilhelm Scheele isolou "
+            "e caracterizou um ácido obtido a partir dele, que os alemães chamaram de \"ácido azul\" e os ingleses de "
+            "ácido prússico: o cianeto de hidrogênio. A própria palavra cianeto vem do grego para azul-escuro. Mesmo "
+            "assim, o pigmento não é tóxico, porque os grupos cianeto ficam presos com força ao ferro. Hoje ele é "
+            "remédio contra intoxicação por tálio e por césio radioativo, que captura graças à sua afinidade por esses "
+            "íons. No acidente com césio-137 em Goiânia, em 1987, foi usado para descontaminar muitas pessoas por "
+            "dentro, embora parte do material já tivesse passado do sangue para os músculos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Prussian_blue",
+                "Prussian blue was created in the early 18th century and is the first modern synthetic pigment. [...] "
+                "In medicine, orally administered Prussian blue is used as an antidote for certain kinds of heavy metal poisoning, e.g., by thallium(I) and radioactive isotopes of caesium. "
+                "The therapy exploits Prussian blue's ion-exchange properties and high affinity for certain \"soft\" metal cations. [...] "
+                "Prussian blue lent its name to prussic acid (hydrogen cyanide) derived from it. In German, hydrogen cyanide is called Blausäure ('blue acid'). [...] "
+                "was probably synthesized for the first time by the paint maker Johann Jacob Diesbach in Berlin around 1706. "
+                "The pigment is believed to have been accidentally created when Diesbach used potash tainted with blood to create some red cochineal dye. "
+                "The original dye required potash, ferric sulfate, and dried cochineal. "
+                "Instead, the blood, potash, and iron sulfate reacted to create a compound known as iron ferrocyanide, which, unlike the desired red pigment, has a very distinct blue hue. [...] "
+                "The pigment readily replaced the expensive lapis lazuli-derived ultramarine [...] "
+                "The pigment was prominently used by the Japanese artist Katushika Hokusai in his woodblock print series Thirty-six Views of Mount Fuji, including the celebrated print The Great Wave off Kanagawa (c.1831). "
+                "In 1731, Georg Ernst Stahl published an account of the first synthesis of Prussian blue. The story involves not only Diesbach, but also Johann Konrad Dippel. [...] "
+                "He borrowed the potash from Dippel, who had used it to produce his animal oil. No other known historical source mentions Dippel in this context. [...] "
+                "The new acid, hydrogen cyanide, first isolated from Prussian blue in pure form and characterized in 1782 by Swedish chemist Carl Wilhelm Scheele, was eventually given the name Blausäure (literally 'blue acid') because of its derivation from Prussian blue, and in English became known popularly as prussic acid. "
+                "Cyanide, a colorless anion that forms in the process of making Prussian blue, derives its name from the Greek word for dark blue. [...] "
+                "Despite the fact that it is prepared from cyanide salts, Prussian blue is not toxic because the cyanide groups are tightly bound to iron.",
+                nome="Prussian blue"),
+            wiki("Goiânia_accident",
+                "also known locally as the caesium-137 accident/caesium-137 Goiânia, was a radioactive contamination accident that occurred on September 13, 1987, in Goiânia, Goiás, Brazil [...] "
+                "Prussian blue was used to internally decontaminate many people, although by the time it was applied, much of the radioactive material had already migrated from the bloodstream to muscle tissue, greatly hampering its effectiveness.",
+                nome="Goiânia accident"),
+        ],
+    },
+    # 4 YInMn: o azul que saiu do forno por acaso
+    {
+        "temas_secundarios": ["elementos_quimicos", "invencoes"],
+        "tipos_espanto": ["origem_inesperada", "engenhosidade"],
+        "gancho": "Em 2009, um químico tentava criar um material para eletrônicos e tirou do forno um azul vivo. O YInMn, de ítrio, índio e manganês, foi chamado pela própria universidade de primeiro azul novo em dois séculos.",
+        "explicacao": (
+            "Na Universidade Estadual do Oregon, nos EUA, o pós-graduando Andrew Smith, do grupo de Mas Subramanian, "
+            "aquecia óxido de manganês a cerca de 1.200 °C para estudar suas propriedades eletrônicas. Em vez de um "
+            "material eletrônico eficiente, saiu do forno um composto de um azul brilhante. Subramanian, que vinha da "
+            "DuPont, onde uma divisão desenvolvia pigmentos, percebeu na hora que aquilo era incomum; ele diz que, sem "
+            "essa experiência na indústria, não teria notado o potencial comercial. Os pigmentos azuis conhecidos "
+            "desde a Antiguidade têm fama de instáveis: muitos desbotam fácil e vários contêm substâncias tóxicas. O "
+            "YInMn é estável, não desbota, não é tóxico e resiste a ácidos como o nítrico. A cor vem de íons de "
+            "manganês presos num arranjo específico do cristal, e mudar a proporção entre índio e manganês ajusta a "
+            "intensidade do azul. O pigmento também reflete muito o infravermelho, o que serve para revestimentos que "
+            "esquentam menos ao sol. A patente saiu em 2012. Em 2017, a Crayola lançou um giz de cera \"inspirado\" "
+            "nele, batizado de \"Bluetiful\", que não contém o pigmento de verdade."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            {"url": "https://chemistry.oregonstate.edu/content/story-yinmn-blue",
+             "titulo": "YInMn Blue: A testament to discovery (Oregon State University, Department of Chemistry)", "idioma": "en",
+             "trecho": "is a serendipitous discovery of a bright blue pigment by scientists led by Mas Subramanian at OSU while researching materials for electronics applications. "
+                "The pigment contains the elements Yttrium, Indium, Manganese, and Oxygen. "
+                "The first new blue in two centuries "
+                "In 2009, graduate student Andrew Smith was exploring the electronic properties of manganese oxide by heating it to approximately 1200 °C (~2000 °F). "
+                "Instead of a new, high-efficiency electronic material, what emerged from the furnace was a brilliant blue compound [...] "
+                "“If I hadn’t come from an industry research background – DuPont has a division that developed pigments and obviously they are used in paint and many other things – I would not have known this was highly unusual, a discovery with strong commercial potential,” he says. "
+                "Blue pigments dating back to ancient times have been notoriously unstable – many fade easily and contain toxic materials. [...] "
+                "In May 2012, the Subramanian team received a patent with the U.S. Patent Office for the new pigment",
+             "acessado_em": "2026-11-25"},
+            wiki("YInMn_Blue",
+                "The compound has a unique crystal structure in which trivalent manganese ions in the trigonal bipyramidal coordination are responsible for the observed intense blue color. [...] "
+                "YInMn Blue is chemically stable, does not fade and is non-toxic. [...] "
+                "The pigment is resistant to acids such as nitric acid, and is difficult to combust. [...] "
+                "Infrared radiation is strongly reflected by YInMn Blue, which makes this pigment suitable for energy-saving, cool coatings. [...] "
+                "The intense blue color can be varied by adjusting the indium: manganese ratio. [...] "
+                "The American art supplies company Crayola announced in May 2017 that it planned to replace its retired Dandelion color (a yellow) with a new color \"inspired by\" YInMn. "
+                "The new color does not contain any YInMn. "
+                "Crayola held a contest for more pronounceable name ideas, and announced the new color name, \"Bluetiful\", on 14 September 2017.",
+                nome="YInMn Blue"),
+        ],
+    },
+    # 5 Vantablack, o rosa mais rosa e o artista que virou Anish Kapoor
+    {
+        "temas_secundarios": ["luz_cores", "crimes_arte"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Anish Kapoor obteve a exclusividade artística do Vantablack, um preto extremo. Em resposta, Stuart Semple lançou um \"rosa mais rosa\" proibido a Kapoor. Em 2024, Semple mudou de nome: virou Anish Kapoor.",
+        "explicacao": (
+            "O Vantablack é um revestimento feito de uma \"floresta\" de nanotubos de carbono crescidos na vertical. A "
+            "luz que entra fica presa, desviada de tubo em tubo, até ser absorvida e virar calor: a versão original "
+            "absorve até 99,965% da luz visível medida de frente. Aplicado em objetos tridimensionais, dá a impressão "
+            "de uma superfície plana ou de um vazio. A empresa britânica que o fabrica deu ao estúdio do escultor "
+            "Anish Kapoor a licença exclusiva para usar em arte a versão em spray, e muitos artistas protestaram contra "
+            "o monopólio. Em dezembro de 2016, o artista britânico Stuart Semple respondeu com uma tinta chamada \"o "
+            "rosa mais rosa do mundo\", vendida com a condição de o comprador declarar que não era Kapoor nem tinha "
+            "ligação com ele. Kapoor conseguiu um pote por outros meios e postou nas redes uma foto do dedo mergulhado "
+            "na tinta. Semple lançou depois pretos alternativos ao Vantablack; o Black 3.0 foi financiado por uma "
+            "vaquinha online que passou de 400 mil libras. Em junho de 2024, ele trocou oficialmente o próprio nome "
+            "para Anish Kapoor, como um teste do que significa ser dono de um nome. Especulou que o novo nome talvez "
+            "lhe permitisse procurar direto o fabricante do Vantablack, mas disse que ainda não tinha tentado."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Vantablack",
+                "absorbing up to 99.965% of visible light measured perpendicular to the material. [...] "
+                "Surrey Nanosystems granted Anish Kapoor exclusive rights to use Vantablack in artistic applications. Many artists voiced opposition to his monopoly over the substance. [...] "
+                "When applied to three-dimensional objects, Vantablack produces the appearance of a two-dimensional surface or void space. [...] "
+                "CVD Vantablack is composed of a forest of vertical carbon nanotubes \"grown\" on a substrate using a modified chemical vapor deposition process. "
+                "When light strikes Vantablack, instead of bouncing off, it becomes trapped and continually deflected amongst the tubes, absorbed, and eventually dissipated as heat. [...] "
+                "Vantablack S-VIS, a sprayable paint that uses randomly aligned carbon nanotubes and very high levels of absorption from ultraviolet to the terahertz spectrum, has been exclusively licensed to Anish Kapoor's studio for artistic use.",
+                nome="Vantablack"),
+            wiki("Stuart_Semple",
+                "is a British artist who works across painting, installation, performance and public art. [...] "
+                "In 2016, the artist Anish Kapoor acquired exclusive artistic rights to Vantablack, then the darkest manufactured substance. "
+                "In December 2016, Semple responded with a paint titled \"The World's Pinkest Pink\", sold on condition that buyers declare they were not Kapoor and had no association with him. "
+                "Kapoor later obtained a pot by other means and posted an image of his finger dipped in it on social media. "
+                "Semple followed with a series of black paints created as alternatives to Vantablack: Black 2.0 (2017), a matte acrylic developed with feedback from artists who tested early batches; "
+                "Black 3.0, funded through a Kickstarter campaign that raised over £400,000 and released in February 2019 [...] "
+                "In June 2024, Semple changed his name by deed poll to Anish Kapoor, describing it as a way to test what ownership of a name means; "
+                "he speculated the new name might let him approach Vantablack's manufacturer directly, though said he had not yet attempted it.",
+                nome="Stuart Semple"),
+        ],
+    },
+    # 6 amarelo indiano: urina de vaca, lenda que se confirmou
+    {
+        "temas_secundarios": ["domesticacao", "asia_antiga"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "O amarelo indiano, usado por Turner e Van Gogh, seria feito de urina de vacas alimentadas com folhas de manga. A história chegou a ser tratada como lenda, mas a análise de uma amostra de 1883 confirmou a origem animal.",
+        "explicacao": (
+            "Era um amarelo-alaranjado transparente e luminoso, famoso nas miniaturas rajputs e mogóis da Índia entre "
+            "os séculos XVI e XIX. Na Europa, Turner o usou, e Van Gogh também, em \"A Noite Estrelada\". O pigmento "
+            "chegava em bolas malcheirosas chamadas \"purree\", e sua origem sempre foi disputada: em 1844, um químico "
+            "concluiu que vinha de alguma planta. Em 1883, a pedido de Joseph Hooker, do jardim botânico de Kew, na "
+            "Inglaterra, T. N. Mukharji, de Calcutá, investigou a produção em Monghyr, no nordeste da Índia. Ele "
+            "descreveu vacas alimentadas com folhas de manga, mal nutridas, cuja urina escassa era recolhida em "
+            "potinhos, concentrada no fogo, filtrada e transformada em bolas secas. Mukharji mandou uma amostra a "
+            "Hooker. Em 2002, a escritora Victoria Finlay se mostrou muito cética: a carta de Mukharji era a única "
+            "fonte impressa sobre a prática, e ela não achou relatos orais da produção. Estudos de 2017 e 2018, porém, "
+            "incluindo a reanálise de parte da amostra enviada a Kew, confirmaram a origem animal: acharam ácido "
+            "hipúrico, um marcador de urina. Estudos com animais mostram que o fígado produz o ácido euxântico, "
+            "principal componente do pigmento. A cor deixou de ser vendida por volta de 1921."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Indian_yellow",
+            "Indian yellow is a complex pigment consisting primarily of euxanthic acid salts [...] "
+            "After application Indian yellow produced a clear, deep, luminescent orange-yellow color [...] "
+            "It was most used in India in the Mughal period and in Europe in the nineteenth century, before becoming commercially unavailable circa 1921. [...] "
+            "Studies in 2018 of a sample collected by T. N. Mukharji in 1883 give credibility to his observations that it was obtained from concentrated urine from cows fed on a diet of mango leaves. [...] "
+            "It was noted for its intense luminance and was especially well known from its use in Rajput-Mughal miniature paintings from the 16th to the 19th century. [...] "
+            "The urine would be collected and dried, producing foul-smelling hard dirty yellow balls of the raw pigment, called \"purree\". "
+            "The pigment was prized by British and Post-Impressionist painters; J. M. W. Turner used it in works such as The Angel Standing in the Sun (1846), and Vincent van Gogh employed it in The Starry Night (1889). [...] "
+            "A description of the above process was given by T. N. Mukharji of Calcutta, who in response to a request from Sir Joseph Hooker, investigated an animal source in Monghyr, north-east Bihar, India. [...] "
+            "he noted how cows were fed with mango leaves, suffered from the poor nutrition, with the sparse urine having to be collected in small pots, cooled, and then concentrated over a fire. "
+            "The liquid was then filtered through cloth and the sediment collected in balls, then dried over a fire and in the sun. [...] "
+            "Mukharji also sent a sample to Hooker. [...] "
+            "In a 2018 publication, the analysis of part of this sample was documented. It confirms the animal origin of the sample and identifies the source as urine based on hippuric acid which is a key marker. [...] "
+            "In 1844, chemist John Stenhouse examined the origin of Indian yellow [...] "
+            "He carried out a chemical analysis and concluded that he believed it was in fact of vegetable origin [...] "
+            "In her 2002 book Colour: Travels Through the Paintbox, Victoria Finlay examined whether Indian yellow was really made from cow urine. "
+            "The only printed source that she found mentioning this practice was the single letter written by T. N. Mukharji, who claimed to have seen the color being made. "
+            "Finlay was very skeptical as she found no oral evidence of the production of pigment in Mirzapur [...] "
+            "Several studies in 2017 and 2018, including a re-examination of the sample supplied by Mukharji to Hooker, confirm that Mukharji was accurate in his observation and highlight the origins of Indian yellow from urine by identifying metabolic studies on animals demonstrating euxanthic acid production through glucuronidation pathways in the liver.",
+            nome="Indian yellow")],
+    },
+    # 7 púrpura de Tiro: 12 mil caramujos para 1,4 grama
+    {
+        "temas_secundarios": ["vida_marinha", "roma_antiga"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "Num teste de 1908, 12 mil caramujos marinhos renderam só 1,4 grama do corante púrpura de Tiro, o bastante para tingir a barra de uma única roupa. No século IV, só o imperador romano podia vestir essa cor.",
+        "explicacao": (
+            "A púrpura de Tiro, nome de uma cidade fenícia no atual Líbano, vem do muco de uma glândula de caramujos "
+            "predadores da família dos murícidas. Os próprios bichos usam essa secreção para sedar as presas e como "
+            "proteção antimicrobiana dos ovos. Os fenícios fabricavam o corante desde cerca de 1200 a.C. Escavações "
+            "em Tiro indicam que os caramujos eram juntados em grandes tanques e deixados para apodrecer, num fedor "
+            "que autores antigos mencionam, e o método de produção em massa nunca foi reconstruído por completo. O "
+            "preço acompanhava o esforço: segundo o historiador Teopompo, do século IV a.C., em Cólofon a púrpura "
+            "valia o seu peso em prata. Leis suntuárias limitavam quem podia usá-la, e no século IV d.C. só o "
+            "imperador romano tinha esse direito; daí \"vestir a púrpura\" querer dizer tornar-se imperador. Em "
+            "Bizâncio, o filho de um imperador reinante era chamado de \"nascido na púrpura\". A conta dos 12 mil "
+            "caramujos vem de um experimento feito em 1908 por Paul Friedländer. A substância colorida é o "
+            "6,6'-dibromoíndigo, um parente do índigo, o azul do anil, com dois átomos de bromo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Tyrian_purple",
+            "It is secreted by several species of predatory sea snails in the family Muricidae [...] "
+            "The coloured compound is 6,6'-dibromoindigo. "
+            "The name Tyrian refers to the city of Tyre in ancient Phoenicia (modern-day Lebanon). [...] "
+            "Production of Tyrian purple for use as a fabric dye began as early as 1200 BC by the Phoenicians [...] "
+            "the 4th century BC historian Theopompus reported, \"Purple for dyes fetched its weight in silver at Colophon\" in Asia Minor. "
+            "The expense meant that purple-dyed textiles became status symbols, whose use was restricted by sumptuary laws. [...] "
+            "By the fourth century AD, sumptuary laws in Rome had been tightened so much that only the Roman emperor was permitted to wear Tyrian purple. "
+            "As a result, 'purple' is sometimes used as a metonym for the office (e.g. the phrase 'donned the purple' means 'became emperor'). [...] "
+            "Later (9th century), a child born to a reigning emperor was said to be porphyrogenitos, \"born in the purple\". [...] "
+            "The dye substance is a mucous secretion from the hypobranchial gland of one of several species of medium-sized predatory sea snails [...] "
+            "David Jacoby, citing the 1908 experiment by Paul Friedländer, remarks that \"twelve thousand snails of Murex brandaris yield no more than 1.4 grams (22 grains) of pure dye, enough to colour only the trim of a single garment.\" [...] "
+            "In nature, the snails use the secretion as part of their predatory behaviour to sedate prey and as an antimicrobial lining on egg masses. [...] "
+            "Archaeological data from Tyre indicate that the snails were collected in large vats and left to decompose. "
+            "This produced a hideous stench that was mentioned by ancient authors. "
+            "Not much is known about the subsequent steps, and the actual ancient method for mass-producing the two murex dyes has not yet been successfully reconstructed [...] "
+            "Variations in colours of \"Tyrian purple\" from different snails are related to the presence of indigo dye (blue), 6-bromoindigo (purple), and the red 6,6'-dibromoindigo.",
+            nome="Tyrian purple")],
+    },
+    # 8 púrpura Han: dos guerreiros de terracota à física quântica
+    {
+        "temas_secundarios": ["mecanica_quantica", "asia_antiga"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "O roxo sintético que pintou as calças dos Guerreiros de Terracota da China virou assunto de física: em 2006, sob campo magnético forte e frio extremo, as ondas magnéticas dentro do pigmento \"perderam\" uma dimensão.",
+        "explicacao": (
+            "A púrpura Han é um silicato de bário e cobre fabricado na China antiga do período Zhou Ocidental até o "
+            "fim da dinastia Han, por volta de 220 d.C. No exército de terracota do túmulo do imperador Qin Shi "
+            "Huang, ela aparece sobretudo nas calças dos guerreiros. As estátuas eram queimadas na mesma faixa de "
+            "temperatura exigida pelo pigmento, de 950 a 1.050 °C, e talvez os mesmos fornos servissem aos dois. Uma "
+            "hipótese é que alquimistas taoistas tenham chegado a ele a partir do que sabiam de vidraria. Em 2006, "
+            "pesquisadores de Stanford, de Los Alamos e da Universidade de Tóquio, com o laboratório de altos campos "
+            "magnéticos dos EUA, puseram cristais do pigmento sob campos acima de 23 tesla e perto do zero absoluto. "
+            "O magnetismo dos pares de átomos de cobre entrou num estado raro da matéria, um condensado de "
+            "Bose-Einstein. No ponto crítico quântico, a onda magnética deixou de se propagar na vertical e ficou "
+            "presa a duas dimensões, como as ondulações na superfície de um lago. A causa é o deslocamento entre as "
+            "camadas de cobre, a chamada frustração geométrica. Até então, essa \"redução dimensional\", que teóricos "
+            "usam para tentar explicar fenômenos como a supercondutividade de alta temperatura, nunca tinha sido "
+            "observada em experimento."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("Han_purple_and_Han_blue",
+                "Han purple and Han blue (also called Chinese purple and Chinese blue) are synthetic barium copper silicate pigments developed in China and used in ancient and imperial China from the Western Zhou period (1045–771 BC) until the end of the Han dynasty (c. 220 AD). [...] "
+                "In 2006 scientists at Stanford, Los Alamos National Laboratory and the Institute for Solid State Physics (University of Tokyo), showed that Han purple \"loses a dimension\" under suitable conditions when it enters a new state, as a Bose-Einstein Condensate. [...] "
+                "Taoist alchemists may have developed Han purple from their knowledge of glassmaking. [...] "
+                "Han purple was used for the Terracotta Army in the tomb of Emperor Qin Shi Huang [...] "
+                "Han purple seems to have mostly been used on the trousers (pants) of the warriors. [...] "
+                "The warriors were fired at the same temperature as that needed for the manufacture of Han purple (950–1,050 °C [1,740–1,920 °F]), so the same kilns may have been used for both processes.",
+                nome="Han purple and Han blue"),
+            {"url": "https://www.sciencedaily.com/releases/2006/06/060601211745.htm",
+             "titulo": "Raiders Of The Lost Dimension (ScienceDaily, National High Magnetic Field Laboratory)", "idioma": "en",
+             "trecho": "The researchers discovered that when they exposed crystals of the pigment to high magnetic fields at very low temperatures, it entered a rarely observed state of matter. "
+                "At the threshold of that matter state -- the \"quantum critical point\" -- the waves actually lost a dimension. [...] "
+                "Theoretical physicists have postulated that this kind of dimensional reduction might help explain some mysterious properties of other materials (high temperature superconductors and metallic magnets known as \"heavy fermions\" for example) near the absolute zero of temperature, but until now, a change in dimension had not been experimentally observed. [...] "
+                "A wave in two dimensions looks like ripples on the surface of a pond. [...] "
+                "They observed that at high magnetic fields (above 23 tesla) and temperatures between 1 and 3 degrees Kelvin [...] "
+                "The magnetic waves in the pigment exist in a unique state of matter called a Bose Einstein condensate (BEC) [...] "
+                "(associated with magnetism from pairs of copper atoms in BaCuSi2O6) [...] "
+                "layers, which are shifted relative to each other",
+             "acessado_em": "2026-11-25"},
+        ],
+    },
+    # 9 amarelo de chumbo e estanho: usado pelos mestres e esquecido
+    {
+        "temas_secundarios": ["pintura", "elementos_quimicos"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "Ticiano, Rafael, Rembrandt e Vermeer usaram um mesmo amarelo que depois sumiu: após 1750, não se conhece pintura com ele, e até sua existência foi esquecida. Só foi redescoberto em 1941.",
+        "explicacao": (
+            "O amarelo de chumbo e estanho aparece em obras como \"Baco e Ariadne\", de Ticiano, a \"Madona Sistina\", "
+            "de Rafael, \"O Festim de Baltazar\", de Rembrandt, e \"A Leiteira\", de Vermeer. No começo do século XVIII, "
+            "foi quase todo trocado pelo amarelo de Nápoles. Depois de 1750, parece que nenhuma pintura foi feita com "
+            "ele, e o pigmento acabou esquecido por razões que ainda não estão totalmente claras. Uma hipótese de peso "
+            "é a confusão com outros amarelos: às vezes ele era chamado de massicote, embora seja outra substância, e, "
+            "antes das ferramentas modernas de análise microscópica, os historiadores da arte nem sempre conseguiam "
+            "separar pigmentos parecidos, de modo que quase todo amarelo com chumbo levava o rótulo de amarelo de "
+            "Nápoles. Em 1941, o cientista alemão Richard Jakobi, então diretor do Instituto Doerner, redescobriu o "
+            "pigmento e o chamou de Blei-Zinn-Gelb, \"amarelo de chumbo e estanho\"; o nome em inglês é tradução "
+            "literal. A partir de 1967, Hermann Kühn mostrou, numa série de estudos, que ele era de uso geral na "
+            "pintura a óleo tradicional dos séculos anteriores e distinguiu dois tipos do pigmento."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lead-tin_yellow",
+            "Lead-tin yellow was widely employed in the Renaissance by painters such as Titian (Bacchus and Ariadne), Bellini (The Feast of the Gods) and Raphael (Sistine Madonna), and during the Baroque period by Rembrandt (Belshazzar's Feast), Vermeer (The Milkmaid), and Diego Velázquez (Apollo in the Forge of Vulcan). "
+            "In the early eighteenth century, lead-tin yellow was almost completely replaced in use by Naples yellow. "
+            "After 1750, no paintings seem to have been made containing the pigment, and its existence was eventually forgotten for reasons that are not entirely clear. "
+            "Lead-tin yellow was rediscovered in 1941 by the German scientist Richard Jakobi, then-director of the Doerner Institute. "
+            "Jakobi called it Blei-Zinn-Gelb; the English \"lead-tin yellow\" is a literal translation of the German term. "
+            "After 1967, Hermann Kühn in a series of studies proved its general use in the traditional oil technique of earlier centuries, coining the distinction between the Type I and Type II varieties. [...] "
+            "One prominent hypothesis for its disappearance from collective memory is confusion with other yellow pigments like massicot. "
+            "Lead-tin yellow was sometimes called massicot, although it is a different substance. "
+            "Prior to the development of modern analytical tools allowing for microscopic testing of paint, it was not always possible for art historians to distinguish between similar pigments, meaning that most yellow pigment containing lead was generally labeled Naples yellow.",
+            nome="Lead-tin yellow")],
+    },
+    # 10 os Girassóis de Van Gogh estão escurecendo
+    {
+        "temas_secundarios": ["pintura", "elementos_quimicos"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Os Girassóis de Van Gogh estão mudando de cor. Parte do amarelo de cromo que ele usou, um tipo com enxofre, escurece com a luz, e análises de 2015 acharam essa alteração na versão do Museu Van Gogh.",
+        "explicacao": (
+            "Van Gogh é famoso pelos amarelos fortes, e para obtê-los usou os amarelos de cromo, compostos de chumbo, "
+            "cromo e oxigênio. O cromato de chumbo, base desses pigmentos, foi sintetizado no início do século XIX, "
+            "depois que o químico francês Louis Nicolas Vauquelin achou um elemento novo, o cromo, num mineral. Há "
+            "tons diferentes desse amarelo, e nem todos aguentam a luz: o mais claro leva enxofre na mistura e se "
+            "degrada quando iluminado, escurecendo. O quadro estudado, de 1889, tem três versões, em Londres, Tóquio e "
+            "Amsterdã. Uma equipe liderada por Letizia Monico, de Perúgia, na Itália, tirou duas amostras com menos de "
+            "1 milímetro da versão de Amsterdã e as examinou com raios X de síncrotron, na Alemanha e na França. Os "
+            "tons amarelo-alaranjados eram sobretudo do tipo resistente à luz, e os amarelos-claros, do tipo "
+            "sensível. Quando esse amarelo escurece, o cromo muda de estado químico, e a equipe achou cerca de 35% do "
+            "cromo da superfície na forma alterada. Ao menos nos dois pontos analisados, a cor já mudou, o que "
+            "sugere que o quadro tinha outra aparência quando foi pintado. O estudo indicou as áreas a vigiar de "
+            "perto e lembrou que outros pintores do fim do século XIX usaram os mesmos pigmentos."
+        ),
+        "nivel": 2, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.sciencedaily.com/releases/2015/10/151020103822.htm",
+             "titulo": "Why van Gogh's Sunflowers are wilting (ScienceDaily, DESY)", "idioma": "en",
+             "trecho": "The colour of Vincent van Gogh's famous Sunflowers is changing over time, because of the mixture of pigments used by the Dutch master. [...] "
+                "A group of scientists headed by Letizia Monico from the Institute of Molecular Science and Technology (CNR-ISTM) of Perugia, the University of Perugia and the University of Antwerp, shone X-rays from DESY's lightsource PETRA III through tiny particles of paint taken from the painting. [...] "
+                "The study also identifies areas of the painting that should be monitored particularly closely for any changes. "
+                "Vincent van Gogh (1853-1890) is famous for his use of bright yellow colors. "
+                "The Dutch painter used so-called chrome yellows, a class of compounds consisting of lead, chromium and oxygen. "
+                "\"There are different shades of the pigment, and not all of them are photochemically stable over time,\" explains Monico. "
+                "\"Lighter chrome yellow has sulphur mixed into it, and is susceptible to chemical degradation when exposed to light, which leads to a darkening of the pigment.\" [...] "
+                "The scientists examined a Sunflowers painting, which dates back to 1889, to determine whether van Gogh had used different types of chrome yellow when painting it. "
+                "He produced three versions of the painting, one of which is on display at the National Gallery in London, one at the Seji Togo Memorial Sompo Japan Nipponkoa Museum of Art in Tokyo and one at the Van Gogh Museum in Amsterdam. "
+                "Two small paint samples, measuring less than 1 millimetre each, were taken from the painting in Amsterdam [...] "
+                "\"The analysis shows that the orange-yellow hues mainly contain the lightfast version of chrome yellow, whereas the light-sensitive type is mainly found in the pale yellow areas,\" [...] "
+                "At the European Synchrotron Radiation Facility (ESRF) in Grenoble, the team examined the chemical state of the paint samples. "
+                "When light sensitive chrome yellow darkens, the chromium is reduced from its highest oxidation state CrVI to CrIII. "
+                "The scientists were indeed able to detect a relative proportion of 35 per cent CrIII on the surface of the paint. "
+                "\"At least at the two sites from which the paint samples were taken, a color change has occurred in the Sunflowers as a result of the reduction of chrome yellow,\" says Monico. "
+                "This suggests that the Sunflowers may originally have looked different from what we see today. [...] "
+                "\"Since chrome yellow pigments were widely used by late 19th-century painters, this study also has broader implications for assessing the colors of other works of art,\" [...] "
+                "Angewandte Chemie International Edition, 2015",
+             "acessado_em": "2026-11-25"},
+            wiki("Chrome_yellow",
+                "The pigment is derived from lead chromate, a chemical compound that was first synthesized in the early 1800s. "
+                "The discovery of lead chromate, the primary component of chrome yellow, is credited to the French chemist Louis Nicolas Vauquelin. "
+                "Vauquelin was studying the mineral crocoite, a natural form of lead chromate, when he identified the presence of a new element, chromium.",
+                nome="Chrome yellow"),
+        ],
+    },
+    # 11 os murais de Rothko restaurados com luz
+    {
+        "temas_secundarios": ["pintura", "luz_cores"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "Os murais de Rothko em Harvard desbotaram tanto com o sol que um deles passou de carmesim a azul-claro. A solução foi restaurá-los sem tocar na tela: projetores lançam luz calculada pixel a pixel para devolver a cor.",
+        "explicacao": (
+            "Em 1962, Mark Rothko pintou cinco grandes painéis para uma sala de jantar no 10º andar de um prédio de "
+            "Harvard projetado pelo arquiteto Josep Lluís Sert. Ele pediu cortinas de fibra de vidro contra o sol, "
+            "mas elas não deram conta das janelas do chão ao teto. O carmesim profundo vinha de um pigmento sensível "
+            "à luz, o vermelho litol, como mostrou nos anos 1980 o cientista de conservação Paul Whitmore. Com o "
+            "tempo, a cor se foi: o Painel Cinco, o mais afetado, ficou azul-claro. Os murais, também marcados por "
+            "móveis, comida e pichações, foram retirados no fim dos anos 1970. Retocar com tinta era impossível, por "
+            "causa da superfície delicada e das pinceladas à mostra. Para recuperar as cores originais, a equipe "
+            "recorreu a um sexto painel, nunca exposto e nunca desbotado, e a fotos de 1964 que também tinham "
+            "desbotado e precisaram ser restauradas digitalmente. Com ajuda do MIT, criou-se um programa que compara "
+            "uma foto atual de cada mural com a imagem original e gera uma \"imagem de compensação\", lançada sobre a "
+            "tela por um projetor. A técnica, apresentada em 2014 na reabertura dos museus de arte de Harvard, segue a "
+            "regra de ouro da conservação, que é ser reversível: basta desligar o projetor."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [{"url": "https://news.harvard.edu/gazette/story/2014/05/a-light-touch-for-rothko-murals",
+            "titulo": "A light touch for Rothko murals (Harvard Gazette)", "idioma": "en",
+            "trecho": "May 20, 2014 [...] "
+                "Virtual restoration to be unveiled with opening of Harvard Art Museums "
+                "What would the famously exacting abstract artist Mark Rothko think about using a ghostlike technology to recapture the vibrancy of his faded Harvard murals, a virtual restoration that can disappear with the flip of a switch? [...] "
+                "Many applaud the new technique for its adherence to art conservation’s cardinal rule: it’s reversible. [...] "
+                "The new method was a perfect fit for the murals, whose delicate surfaces and prominent brushwork made “inpainting” impossible. [...] "
+                "But restoring a large-scale painting, pixel by pixel, was something new. [...] "
+                "They built on work done in the 1980s by Harvard conservation scientist Paul Whitmore, who found the abstract artist relied on the light-sensitive pigment lithol red to give his murals their deep crimson. [...] "
+                "With help from Ramesh Raskar, a computational photography expert at MIT, and two MIT students, they developed a piece of software that could isolate the images’ colors one pixel at a time. "
+                "To determine the murals’ original colors, the team had to rely on another delicate process. "
+                "While they could consult the sixth panel by Rothko — which had not been displayed and had never faded — they also needed to reference a series of Ektachrome photographs of the works taken in 1964. "
+                "Sadly, those pictures had faded as well. [...] "
+                "The resulting technology uses a digital camera to shoot pictures of the murals in the new gallery. "
+                "That image is then compared to the restored photograph of the original. "
+                "The information the comparison generates is fed to a computer that uses the new software to create a “compensation image” that is sent to a digital projector [...] "
+                "The five murals were painted for Harvard in 1962 as commission for a special function and dining room on the 10th floor of the Holyoke Center designed by Josep Lluís Sert [...] "
+                "He also requested fiberglass curtains to help block the sunlight that spilled into the room, but the shades were no match for Sert’s floor-to-ceiling windows. "
+                "As the years passed, the paintings faded. (Panel Five, the mural most dramatically affected, today looks light blue compared with its original deep crimson.) "
+                "They were also damaged by furniture, and stained with food and graffiti. The murals were removed in the late 1970s and put into storage.",
+            "acessado_em": "2026-11-25"}],
+    },
+    # 12 o tubo de tinta e o impressionismo
+    {
+        "temas_secundarios": ["invencoes", "pintura"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "O tubo de tinta dobrável foi patenteado em 1841 por um retratista americano. Renoir teria dito que, sem ele, não haveria Cézanne, Monet, nem o que chamaram de impressionismo. Há historiadores que acham exagero.",
+        "explicacao": (
+            "Até o século XIX, os próprios artistas, ou seus aprendizes, moíam os pigmentos e preparavam as tintas. "
+            "Isso tornava difícil levar o material para fora e prendia quase toda a pintura ao ateliê. O pintor e "
+            "inventor John Goffe Rand, que viveu em Boston, Londres e Nova York, criou um tubo de estanho que podia "
+            "ser apertado e guardava a tinta a óleo que sobrava sem deixá-la secar. Ele o patenteou nos EUA em 11 de "
+            "setembro de 1841 e depois registrou melhorias, mas a maioria de suas outras invenções não deu dinheiro. "
+            "Com as tintas vendidas prontas em tubos, ficou fácil misturar as cores na hora, e pintar ao ar livre se "
+            "tornou relativamente prático pela primeira vez, algo muito comum entre os impressionistas franceses. "
+            "Jean Renoir, filho do pintor Pierre-Auguste Renoir, contou que o pai dizia: sem as tintas em tubo, não "
+            "haveria Cézanne, nem Monet, nem Sisley, nem Pissarro, nem nada do que os jornalistas mais tarde "
+            "chamariam de impressionismo. A historiadora da arte Anthea Callen discorda: para ela, o impressionismo "
+            "não pode ser atribuído simplesmente à facilidade de transportar a tinta."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("John_Goffe_Rand",
+                "was an American painter and inventor. He lived and worked in Boston, London, and New York. "
+                "Rand invented and patented the first collapsible artist's paint tube. "
+                "The tin tube allowed unused oil paint to be stored and used later without drying out. "
+                "In 1841, Rand patented the invention with the United States Patent Office (Sept 11, 1841 Patent No. 2,252). "
+                "He went on to patent several later improvements. "
+                "Jean Renoir, son of the Impressionist painter Pierre-Auguste Renoir, states that his father once said “Without paints in tubes, there would have been no Cézanne, no Monet, no Sisley or Pissaro, nothing of what the journalists were later to call Impressionism.” "
+                "Art historian Anthea Callen has argued, however, that Impressionism \"cannot be attributed simply to the ready portability\" of paint. "
+                "Other later inventions by Rand were not as widely received, and most of his ideas were not financially successful.",
+                nome="John Goffe Rand"),
+            wiki("Oil_painting",
+                "Before the 19th century, artists or their apprentices ground pigments and mixed their paints for the range of painting media. "
+                "This made portability difficult and kept most painting activities confined to the studio. "
+                "This changed when tubes of oil paint became widely available following the American portrait painter John Goffe Rand's invention of the squeezable or collapsible metal tube in 1841. "
+                "Artists could mix colors quickly and easily, which enabled, for the first time, relatively convenient plein air painting (a common approach in French Impressionism)",
+                nome="Oil painting"),
+        ],
+    },
+    # 13 a oficina de pigmento de 100 mil anos de Blombos
+    {
+        "temas_secundarios": ["pre_historia", "minerais_rochas"],
+        "tipos_espanto": ["escala_absurda", "engenhosidade"],
+        "gancho": "Há 100 mil anos, numa caverna sul-africana, alguém preparou uma mistura rica em ocre e a guardou em conchas de abalone: é o primeiro caso conhecido de pigmento planejado, feito e guardado num recipiente.",
+        "explicacao": (
+            "A caverna de Blombos fica no litoral sul da África do Sul, a uns 300 km a leste da Cidade do Cabo. Em "
+            "2008, em camadas de 100 mil anos, arqueólogos acharam dois kits de ferramentas deixados no lugar. Havia "
+            "ocre, osso, carvão, pedras de moer e percutores, e as conchas de dois abalones tinham servido para "
+            "produzir e armazenar um composto líquido cheio de pigmento. Como quase não há outros vestígios nessa "
+            "camada, o local parece ter funcionado só como oficina, abandonada pouco depois. A areia das dunas soprou "
+            "para dentro da caverna, cobriu os kits e, por acaso, os preservou. Para que servia a mistura não está "
+            "claro: não há resinas nem cera que indiquem uma cola, e uma das possibilidades é pintar uma superfície "
+            "para decorá-la ou protegê-la. O trabalho exigiu planejamento: juntar matérias-primas de várias origens, "
+            "talvez usar o fogo para tirar a gordura dos ossos, seguir uma receita provável e guardar o resultado "
+            "para usar depois. Para os pesquisadores, isso indica um conhecimento elementar de química e capacidade "
+            "de planejar a longo prazo. Na mesma caverna apareceu um fragmento de rocha riscado com um lápis de ocre "
+            "há 73 mil anos, apontado como o desenho abstrato mais antigo conhecido."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Blombos_Cave",
+            "Blombos Cave is an archaeological site located in Blombos Private Nature Reserve, about 300 km east of Cape Town on the Southern Cape coastline, South Africa. [...] "
+            "In 2011, archeologists found small rock fragment among spear points and other excavated material. "
+            "After extensive testing for seven years, it was revealed that the nine red lines drawn on the rock were handmade and from an ochre crayon dating back 73,000 years. "
+            "This makes it the oldest known abstract rock drawing. [...] "
+            "In 2008 an ochre processing workshop consisting of two toolkits was uncovered in the 100,000-year-old levels at Blombos Cave, South Africa. "
+            "Analysis shows that a liquefied pigment-rich mixture was produced and stored in the shells of two Haliotis midae (abalone), and that ochre, bone, charcoal, grindstones, and hammer-stones also formed a composite part of the toolkits. "
+            "As both toolkits were left in situ, and as there are few other archaeological remains in the same layer, it seems the site was used primarily as a workshop and was abandoned shortly after the pigment-rich compounds were made. "
+            "Dune sand then blew into the cave from the outside, encapsulated the toolkits and by happenstance ensured their preservation [...] "
+            "The application or use of the compound is not self-evident. No resins or wax were detected that might indicate it was an adhesive for hafting. "
+            "Possible uses could include painting a surface in order to decorate or protect it, or to create a design. [...] "
+            "It documents the first known instance for the deliberate planning, production and curation of a pigmented compound and for the use of a container. "
+            "Evidence for the complexity of the task includes procuring and combining raw materials from various sources (implying they had a mental template of the process they would follow), possibly using pyrotechnology to facilitate fat extraction from bone, using a probable recipe to produce the compound, and the use of shell containers for mixing and storage for later use. "
+            "An elementary knowledge of chemistry and the ability for long-term planning suggests conceptual and cognitive abilities previously unknown for this time",
+            nome="Blombos Cave")],
+    },
+    # 14 pastel-dos-tintureiros contra o índigo: pena de morte para o mesmo corante
+    {
+        "temas_secundarios": ["comercio_rotas", "plantas"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1609, um édito do rei Henrique IV puniu com a morte, na França, o uso do índigo, \"a falsa e perniciosa droga indiana\". A planta que a lei protegia, o pastel-dos-tintureiros, tinge com a mesma substância.",
+        "explicacao": (
+            "O pastel-dos-tintureiros, Isatis tinctoria, era a grande fonte de azul da Europa medieval. Era cultivado "
+            "na Inglaterra, na Alemanha, na Itália e sobretudo no Languedoc francês, no triângulo entre Toulouse, "
+            "Albi e Carcassonne. O negócio enriqueceu cidades: os mercadores de Toulouse ergueram mansões que ainda "
+            "estão de pé, e um deles, Jean de Bernuy, foi o principal fiador do resgate do rei Francisco I, preso "
+            "depois da batalha de Pavia. Em Erfurt, na Alemanha, os comerciantes de pastel deram o dinheiro para "
+            "fundar a universidade. Depois que Vasco da Gama abriu a rota marítima para a Índia, em 1498, grandes "
+            "quantidades de índigo, tirado de outra planta, a Indigofera tinctoria, passaram a chegar da Ásia. Para "
+            "proteger os produtores locais, partes da Europa aprovaram leis contra o concorrente, e se proclamou que o "
+            "índigo fazia os fios apodrecerem; a proibição foi repetida em 1594 e em 1603. Mas a substância que tinge "
+            "é a mesma nas duas plantas, o índigo, só que o pastel a tem em concentração menor. No começo do século "
+            "XX, a síntese química do corante derrubou as duas indústrias. A última colheita comercial de pastel, até "
+            "a retomada recente para artesãos, foi em 1932, na Inglaterra."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Woad",
+            "In medieval times, centres of woad cultivation lay in Lincolnshire and Somerset in England, Jülich and the Erfurt area in Thuringia in Germany, Piedmont and Tuscany in Italy, and Gascogne, Normandy, the Somme Basin (from Amiens to Saint-Quentin), Brittany and, above all, Languedoc in France. "
+            "This last region, in the triangle created by Toulouse, Albi and Carcassonne, known as the Lauragais, was for a long time the biggest producer of woad [...] "
+            "The woad merchants of Toulouse displayed their affluence in mansions, many of which still stand [...] "
+            "One merchant, Jean de Bernuy, a Spanish Jew who had fled the Spanish Inquisition, was credit-worthy enough to be the main guarantor of the ransomed King Francis I after his capture at the Battle of Pavia by Charles V of Spain. [...] "
+            "In Erfurt, the woad-traders gave the funds to found the University of Erfurt. [...] "
+            "The dye chemical extracted from woad is indigo, the same dye extracted from \"true indigo\", Indigofera tinctoria, but in a lower concentration. "
+            "Following the Portuguese discovery of the sea route to India by the navigator Vasco da Gama in 1498, great amounts of indigo were imported from Asia. "
+            "Laws were passed in some parts of Europe to protect the woad industry from the competition of the indigo trade. "
+            "It was proclaimed that indigo caused yarns to rot. This prohibition was repeated in 1594 and again in 1603. "
+            "In France, Henry IV, in an edict of 1609, punished by death the use of \"the false and pernicious Indian drug\". "
+            "With the development of a chemical process to synthesize the pigment, both the woad and natural indigo industries collapsed in the first years of the 20th century. "
+            "The last commercial harvest of woad until recent times occurred in 1932, in Lincolnshire, Britain. "
+            "Small amounts of woad are now grown in the UK and France to supply craft dyers.",
+            nome="Woad")],
+    },
+    # 15 Yves Klein não patenteou o IKB
+    {
+        "temas_secundarios": ["pintura", "leis_julgamentos"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Yves Klein nunca patenteou o seu famoso azul, o IKB: registrou a fórmula num envelope que só marca a data da invenção. A patente que ele tirou em 1960 foi de outra coisa: um método de pintar com modelos cobertas de cor.",
+        "explicacao": (
+            "O International Klein Blue foi desenvolvido pelo artista francês com Edouard Adam, fornecedor de tintas "
+            "de Paris cuja loja ainda funciona em Montparnasse. O pigmento em si é o ultramarino. O que muda é o "
+            "aglutinante: uma resina sintética fosca, um acetato de polivinila vendido na época pela farmacêutica "
+            "Rhône-Poulenc, que segura o pó e deixa a cor manter ao máximo a intensidade original. Em maio de 1960, "
+            "Klein depositou um \"envelope Soleau\" no instituto francês de propriedade industrial, registrando a "
+            "fórmula sob o nome IKB. Esse envelope, válido só na lei francesa, apenas marca a data da invenção "
+            "declarada por quem o deposita, antes de qualquer pedido de patente. A cópia do instituto foi destruída em "
+            "1965; a do próprio Klein, carimbada, ainda existe. A patente que ele de fato obteve, em março de 1960, "
+            "foi de um método para se afastar da execução física das obras, dirigindo à distância modelos cobertas da "
+            "cor. Nas performances dessa fase, Klein pintava de IKB o corpo nu de modelos, que se deitavam e rolavam "
+            "sobre telas em branco. Na estreia da \"Sinfonia Monótona-Silêncio\", em 1960, três modelos nuas foram "
+            "pintadas de azul no palco e deixaram a marca do corpo na tela."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("International_Klein_Blue",
+            "International Klein Blue (IKB) is a deep blue hue first mixed by the French artist Yves Klein. IKB's visual impact comes from its heavy reliance on ultramarine [...] "
+            "International Klein Blue (IKB) was developed by Yves Klein in collaboration with Edouard Adam, a Parisian art paint supplier whose shop is still in business on the Boulevard Edgar-Quinet in Montparnasse. "
+            "IKB uses a matte, synthetic resin binder, which suspends the color and allows the pigment to maintain as much of its original qualities and intensity of color as possible. "
+            "The synthetic resin used in the binder is a polyvinyl acetate developed and marketed at the time under the name Rhodopas M or M60A by the French pharmaceutical company Rhône-Poulenc. [...] "
+            "In May 1960, Klein deposited a Soleau envelope, registering the paint formula under the name International Klein Blue (IKB) at the Institut national de la propriété industrielle (INPI), but he never patented IKB. "
+            "Only valid under French law, a Soleau envelope registers the date of invention, according to the depositor, prior to any legal patent application. "
+            "The copy held by the INPI was destroyed in 1965. Klein's own copy, which the INPI returned to him duly stamped, still exists. "
+            "In March 1960, Klein patented a method by which he was able to distance himself from the physical creation of his paintings by remotely directing models covered in the color. [...] "
+            "These included performance art where Klein painted models' naked bodies and had them walk, roll and sprawl upon blank canvases [...] "
+            "In the original performance of Klein's Monotone-Silence Symphony in 1960, three naked models on stage were painted with International Klein Blue body paint during the performance, and left imprints of their bodies on canvas.",
+            nome="International Klein Blue")],
+    },
+    # 16 quermes: o vermelho de insetos tomados por grãos
+    {
+        "temas_secundarios": ["insetos", "palavras_viajantes"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O carmesim, vermelho mais nobre da Idade Média, vinha de insetos secos que os europeus tomavam por grãos de planta. O nome guarda a origem: chegou pelo árabe, e a raiz sânscrita quer dizer \"feito por verme\".",
+        "explicacao": (
+            "O quermes, Kermes vermilio, é um inseto que vive no carvalho-quermes, em países do Mediterrâneo. Seus "
+            "ovos secos lembravam grãos finos de trigo ou de areia e eram confundidos com plantas. Por isso, em todas "
+            "as línguas da Europa Ocidental, o corante era chamado de \"grão\" (grana), e em inglês o tecido tingido "
+            "com ele era \"dyed in the grain\". Nos séculos XIV e XV, o escarlate de quermes puro era de longe a cor "
+            "mais estimada e mais régia para a lã de luxo da Inglaterra, da França, da Espanha e da Itália, e as "
+            "sedas italianas tingidas com ele chegaram a superar a lendária púrpura de Tiro em prestígio. O nome fez "
+            "uma longa viagem: o sânscrito \"kṛmija\", \"feito por verme\", passou ao persa e ao árabe como "
+            "\"qermez\". Do árabe \"qirmizi\", \"vermelho\", veio o latim medieval que deu o \"carmesim\" português, o "
+            "\"crimson\" inglês e o \"cremisi\" italiano. O vermelhão também aponta para bichos: \"vermilion\" vem do "
+            "latim \"vermiculus\", diminutivo de \"verme\", e o nome se refere à cor do corante de quermes. Depois da "
+            "conquista das Américas, a cochonilha, mais potente, tomou o lugar do quermes na Europa."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Kermes_(dye)",
+                "Kermes ultimately derives from the Sanskrit word कृमिज or kṛmija meaning \"worm-made\". "
+                "This was adopted into Persian and later Arabic as قرمز qermez. [...] "
+                "In the Middle Ages, rich crimson and scarlet silks dyed with kermes in the new silk-weaving centers of Italy and Sicily exceeded the legendary Tyrian purple \"in status and desirability\". "
+                "The dyestuff was called \"grain\" (grana) in all Western European languages because the desiccated eggs resembled fine grains of wheat (or sand), and they were mistaken for plants; so textiles dyed with kermes were described as dyed in the grain. [...] "
+                "By the 14th and early 15th century, brilliant full grain pure kermes scarlet was \"by far the most esteemed, most regal\" colour for luxury woollen textiles in the Low Countries, England, France, Spain and Italy.",
+                nome="Kermes (dye)"),
+            wiki("Crimson",
+                "Crimson (NR4) is produced using the dried bodies of a scale insect, Kermes, which were gathered commercially in Mediterranean countries, where they live on the kermes oak, and sold throughout Europe. [...] "
+                "In Europe, cochineal dyes from the Western Hemisphere replaced kermes dyes from the Mediterranean during the Columbian exchange in the 15th century, as cochineal dyes are more potent. [...] "
+                "These were adapted via Old Spanish from the Medieval Latin cremesinus (also kermesinus or carmesinus), the dye produced from Kermes scale insects, and can be traced back to Arabic qirmizi (قرمزي) (\"red\") [...] "
+                "German Karmesin, Italian cremisi, French cramoisi, Portuguese carmesim, Dutch karmozijn, etc. (via Latin).",
+                nome="Crimson"),
+            wiki("Vermilion",
+                "It comes from Old French vermeillon, derived from vermeil, from Latin vermiculus – the diminutive of vermis 'worm'. "
+                "The name refers to the color of the red dye kermes made from the insect Kermes vermilio, which was widely used in Europe.",
+                nome="Vermilion"),
+        ],
+    },
+]

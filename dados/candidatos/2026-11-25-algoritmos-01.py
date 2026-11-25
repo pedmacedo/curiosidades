@@ -1,0 +1,636 @@
+LOTE = "2026-11-25-algoritmos-01"
+AREA = "matematica"
+TEMA = "algoritmos"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 o algoritmo de Euclides, de 300 a.C. ao RSA
+    {
+        "temas_secundarios": ["historia_matematica", "criptografia"],
+        "tipos_espanto": ["escala_absurda", "conexao_inesperada"],
+        "gancho": "Um dos algoritmos mais antigos ainda em uso, o de Euclides, que acha o maior divisor comum de dois números, foi descrito por volta de 300 a.C. Hoje ele é um dos passos do RSA, a criptografia do comércio eletrônico.",
+        "explicacao": (
+            "O algoritmo calcula o máximo divisor comum, o maior número que divide dois inteiros sem deixar resto. "
+            "Ele aparece nos Elementos de Euclides, mas provavelmente não foi invenção dele: Euclides reuniu no livro "
+            "resultados de matemáticos anteriores, e Eudoxo de Cnido provavelmente já o conhecia por volta de 375 a.C. "
+            "Séculos depois, foi redescoberto de forma independente na Índia e na China, sobretudo para resolver "
+            "equações que surgiam na astronomia e na confecção de calendários precisos. No fim do século V, o "
+            "astrônomo indiano Aryabhata o chamou de \"pulverizador\". O método serve para simplificar frações e "
+            "entra em muitos cálculos de criptografia. No RSA, muito usado no comércio eletrônico, ele ajuda a "
+            "achar o número que serve para decifrar a mensagem. Em 1844, Gabriel Lamé provou que o algoritmo nunca "
+            "precisa de mais passos do que cinco vezes o número de algarismos do menor dos dois números. Essa prova "
+            "é vista como o começo da teoria da complexidade computacional e como a primeira aplicação prática dos "
+            "números de Fibonacci: o pior caso, já estudado em 1837, acontece justamente quando os dois números são "
+            "Fibonacci consecutivos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Euclidean_algorithm",
+            "greatest common divisor (GCD) of two integers, the largest number that divides them both without a remainder. "
+            "It is named after the ancient Greek mathematician Euclid, who first described it in his Elements (c. 300 BC). "
+            "It is an example of an algorithm, and is one of the oldest algorithms in common use. "
+            "It can be used to reduce fractions to their simplest form, and is a part of many other number-theoretic and cryptographic calculations. [...] "
+            "The algorithm was probably not discovered by Euclid, who compiled results from earlier mathematicians in his Elements. [...] "
+            "The algorithm was probably known by Eudoxus of Cnidus (about 375 BC). [...] "
+            "Centuries later, Euclid's algorithm was discovered independently both in India and in China, primarily to solve Diophantine equations that arose in astronomy and making accurate calendars. "
+            "In the late 5th century, the Indian mathematician and astronomer Aryabhata described the algorithm as the \"pulverizer\" [...] "
+            "This equation can be solved by the Euclidean algorithm, as described above. "
+            "Finding multiplicative inverses is an essential step in the RSA algorithm, which is widely used in electronic commerce; "
+            "specifically, the equation determines the integer used to decrypt the message. [...] "
+            "Émile Léger, in 1837, studied the worst case, which is when the inputs are consecutive Fibonacci numbers. "
+            "Finck's analysis was refined by Gabriel Lamé in 1844, who showed that the number of steps required for completion is never more than five times the number h of base-10 digits of the smaller number b. [...] "
+            "This proof, published by Gabriel Lamé in 1844, represents the beginning of computational complexity theory, and also the first practical application of the Fibonacci numbers.",
+            nome="Euclidean algorithm")],
+    },
+    # 2 o problema da parada não tem o nome dado por Turing
+    {
+        "temas_secundarios": ["historia_computacao", "paradoxos_logica"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "Turing provou que nenhum algoritmo consegue prever, para todo programa, se ele um dia termina ou roda para sempre. Mas o nome \"problema da parada\" não veio dele: Turing nunca usou a palavra \"parar\" nos seus trabalhos.",
+        "explicacao": (
+            "A pergunta é esta: dado um programa qualquer e uma entrada, ele vai terminar ou continuar rodando para "
+            "sempre? Alan Turing mostrou que não existe um algoritmo geral que acerte a resposta para todos os pares "
+            "de programa e entrada. A prova dele saiu em janeiro de 1937, meses depois de Alonzo Church publicar, em "
+            "abril de 1936, outra prova de indecidibilidade. Muitos artigos e livros atribuem ao artigo de Turing a "
+            "definição do \"problema da parada\", mas isso não é correto: ele nunca escreveu \"halt\" nem \"halting\" "
+            "em nenhum trabalho publicado. Uma busca na literatura de 1936 a 1958 achou o termo impresso pela "
+            "primeira vez em 1957, num autor que tinha em mãos um rascunho do livro de Martin Davis, e por isso a "
+            "expressão é atribuída a Davis, que disse usá-la desde 1952. O resultado também costuma ser mal "
+            "entendido. Ele não quer dizer que seja impossível saber se um programa específico termina. Ferramentas "
+            "como o T2 conseguiram provar automaticamente que certas rotinas de drivers do Windows sempre acabam. O "
+            "que não existe é um único método que funcione para todos os programas e todas as entradas."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Halting_problem",
+            "determining whether said program will eventually finish running and halt, or will continue to run forever. "
+            "Alan Turing proved in 1937 that the halting problem is undecidable, meaning that no general algorithm exists that can correctly solve the problem for all possible program–input pairs. [...] "
+            "In April 1936, Alonzo Church published his proof of the undecidability of a problem in the lambda calculus. "
+            "Turing's proof was published later, in January 1937. [...] "
+            "Many papers and textbooks refer the definition and proof of undecidability of the halting problem to Turing's 1936 paper. "
+            "However, this is not correct. Turing did not use the terms \"halt\" or \"halting\" in any of his published works, including his 1936 paper. "
+            "A search of the academic literature from 1936 to 1958 showed that the first published material using the term \"halting problem\" was Rogers (1957). "
+            "However, Rogers says he had a draft of Davis (1958) available to him [...] "
+            "so the terminology must be attributed to Davis. Davis stated in a letter that he had been referring to the halting problem since 1952. [...] "
+            "The fact that the halting problem is undecidable is often naively taken to mean that establishing whether a program halts is impossible. "
+            "However, programs such as the T2 Temporal Prover could automatically establish that certain Windows device-driver dispatch routines will always eventually return. [...] "
+            "The halting problem requires a decision procedure that works for all programs and inputs.",
+            nome="Halting problem")],
+    },
+    # 3 nenhum antivírus perfeito: Fred Cohen, 1987
+    {
+        "temas_secundarios": ["historia_computacao", "criptografia"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Nenhum antivírus pode ser perfeito, e isso tem demonstração: em 1987, Fred Cohen mostrou que não existe algoritmo capaz de detectar todos os vírus possíveis. O termo \"vírus de computador\" veio do mentor dele.",
+        "explicacao": (
+            "Em 1984, Fred Cohen, da Universidade do Sul da Califórnia, escreveu o artigo \"Computer Viruses – Theory "
+            "and Experiments\", o primeiro a chamar explicitamente de \"vírus\" um programa que se autorreproduz. Cohen "
+            "creditou o termo a Leonard Adleman, seu mentor, que é também um dos criadores do RSA, sistema de "
+            "criptografia que lhe rendeu o Prêmio Turing de 2002. Em 1987, Cohen publicou a demonstração de que "
+            "nenhum algoritmo consegue detectar com perfeição todos os vírus possíveis. Há um resultado geral da "
+            "teoria da computação na mesma linha, o teorema de Rice: todas as propriedades não triviais do "
+            "comportamento de um programa são indecidíveis, isto é, não existe método geral que as decida para "
+            "qualquer programa. Esse teorema generaliza a indecidibilidade do problema da parada. Por isso, os "
+            "antivírus trabalham com aproximações. O método mais comum compara arquivos e memória com uma lista de "
+            "\"assinaturas\" de vírus conhecidos, o que não protege contra vírus novos. Outro usa regras heurísticas "
+            "baseadas em comportamentos típicos de vírus: pega ameaças ainda sem assinatura, mas gera mais alarmes "
+            "falsos."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Computer_virus",
+                "In 1984, Fred Cohen from the University of Southern California wrote his paper \"Computer Viruses – Theory and Experiments\". "
+                "It was the first paper to explicitly call a self-reproducing program a \"virus\", a term introduced by Cohen's mentor Leonard Adleman. "
+                "In 1987, Cohen published a demonstration that there is no algorithm that can perfectly detect all possible viruses. [...] "
+                "far the most common method of virus detection is using a list of virus signature definitions. [...] "
+                "The disadvantage of this detection method is that users are only protected from viruses that are detected by signatures in their most recent virus definition update, and not protected from new viruses [...] "
+                "A second method to find viruses is to use a heuristic algorithm based on common virus behaviors. "
+                "This method can detect new viruses for which antivirus security firms have yet to define a \"signature\", but it also gives rise to more false positives than using signatures.",
+                nome="Computer virus"),
+            wiki("Leonard_Adleman",
+                "He is one of the creators of the RSA encryption algorithm, for which he received the 2002 Turing Award. [...] "
+                "Fred Cohen, in his 1984 paper, Experiments with Computer Viruses credited Adleman with coining the term \"computer virus\".",
+                nome="Leonard Adleman"),
+            wiki("Rice%27s_theorem",
+                "Rice's theorem states that all non-trivial semantic properties of programs are undecidable. "
+                "A semantic property is one about the program's behavior [...] "
+                "The theorem generalizes the undecidability of the halting problem.",
+                nome="Rice's theorem"),
+        ],
+    },
+    # 4 Dijkstra: 20 minutos num café, sem lápis nem papel
+    {
+        "temas_secundarios": ["historia_computacao", "transportes"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "O algoritmo de Dijkstra, que acha o caminho mais curto e é a base de protocolos de roteamento de redes, foi criado em uns 20 minutos, no terraço de um café de Amsterdã, sem lápis nem papel.",
+        "explicacao": (
+            "Em 1956, Edsger Dijkstra era programador do Centro de Matemática de Amsterdã e queria exibir o novo "
+            "computador ARMAC com um problema que leigos entendessem: qual o caminho mais curto de uma cidade a outra, "
+            "como de Roterdã a Groningen. Segundo o relato dele, numa manhã de compras com a noiva, os dois cansaram e "
+            "se sentaram no terraço de um café para tomar um cafezinho. Ali, em cerca de vinte minutos, ele bolou o "
+            "algoritmo, que só publicou em 1959. Dijkstra achava que parte da elegância do método vinha justamente de "
+            "ter sido pensado sem lápis e papel, o que quase obriga a evitar toda complicação evitável. Na "
+            "demonstração, usou um mapa simplificado com 64 cidades holandesas, número escolhido para que 6 bits "
+            "bastassem para codificar cada cidade. Para seu grande espanto, disse, o algoritmo virou um dos pilares "
+            "da sua fama. Hoje ele costuma ser o princípio de funcionamento dos protocolos de roteamento do tipo "
+            "\"estado de enlace\", como o OSPF e o IS-IS, que escolhem por onde os dados passam numa rede, e "
+            "variantes dele aparecem em inteligência artificial como forma de busca."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Dijkstra%27s_algorithm",
+            "many fields, particularly artificial intelligence, Dijkstra's algorithm or a variant offers a uniform cost search and is formulated as an instance of the more general idea of best-first search. [...] "
+            "What is the shortest way to travel from Rotterdam to Groningen, in general: from given city to given city. "
+            "It is the algorithm for the shortest path, which I designed in about twenty minutes. "
+            "One morning I was shopping in Amsterdam with my young fiancée, and tired, we sat down on the café terrace to drink a cup of coffee and I was just thinking about whether I could do this, and I then designed the algorithm for the shortest path. "
+            "As I said, it was a twenty-minute invention. In fact, it was published in '59, three years later. [...] "
+            "One of the reasons that it is so nice was that I designed it without pencil and paper. "
+            "I learned later that one of the advantages of designing without pencil and paper is that you are almost forced to avoid all avoidable complexities. "
+            "Eventually, that algorithm became to my great amazement, one of the cornerstones of my fame. "
+            "Dijkstra thought about the shortest path problem while working as a programmer at the Mathematical Center in Amsterdam in 1956. "
+            "He wanted to demonstrate the capabilities of the new ARMAC computer. "
+            "His objective was to choose a problem and a computer solution that non-computing people could understand. "
+            "He designed the shortest path algorithm and later implemented it for ARMAC for a slightly simplified transportation map of 64 cities in the Netherlands (he limited it to 64, so that 6 bits would be sufficient to encode the city number). [...] "
+            "Dijkstra's algorithm is usually the working principle behind link-state routing protocols. OSPF and IS-IS are the most common.",
+            nome="Dijkstra's algorithm")],
+    },
+    # 5 o artigo de Bill Gates sobre panquecas
+    {
+        "temas_secundarios": ["historia_computacao", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "O único artigo de matemática de destaque de Bill Gates, fundador da Microsoft, trata de como pôr em ordem uma pilha de panquecas virando-as com uma espátula. Um dos criadores de Futurama também publicou sobre o tema.",
+        "explicacao": (
+            "No problema, há uma pilha de panquecas de tamanhos diferentes, e a única operação permitida é enfiar a "
+            "espátula em qualquer ponto e virar de uma vez todas as que estão acima. Quantas viradas bastam para "
+            "deixá-las em ordem de tamanho? O problema foi proposto pelo geômetra Jacob Goodman sob o pseudônimo "
+            "\"Harry Dweighter\", trocadilho com \"harried waiter\", garçom apressado em inglês. Em 1979, Gates, "
+            "assinando William Gates, publicou com Christos Papadimitriou o artigo \"Bounds for Sorting by Prefix "
+            "Reversal\", com limites para o número de viradas. O limite superior deles só foi melhorado trinta anos "
+            "depois. Até hoje não se sabe o número exato de viradas necessário para n panquecas: sabe-se apenas que "
+            "fica entre cerca de 1,07n e 1,64n. E, em 2011, provou-se que achar a menor sequência de viradas para "
+            "uma pilha específica é um problema NP-difícil. Numa variante, cada panqueca tem um lado queimado, que "
+            "precisa terminar virado para baixo. O artigo mais notável de David X. Cohen, um dos criadores de "
+            "Futurama, escrito com Manuel Blum, trata justamente dela. Em 2008, estudantes de graduação programaram "
+            "bactérias E. coli para resolver um exemplo simples dessa versão, invertendo trechos de DNA. Fora a "
+            "brincadeira, o problema tem uso em redes de processadores paralelos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Pancake_sorting",
+            "Pancake sorting is the mathematical problem of sorting a disordered stack of pancakes in order of size when a spatula can be inserted at any point in the stack and used to flip all pancakes above it. [...] "
+            "The minimum number of flips required to sort any stack of n pancakes has been shown to lie between [...] "
+            "(approximately 1.07n and 1.64n), but the exact value is not known. [...] "
+            "In 1979, Bill Gates and Christos Papadimitriou gave a lower bound of [...] "
+            "The upper bound was improved, thirty years later, to [...] "
+            "In 2011, Laurent Bulteau, Guillaume Fertin, and Irena Rusu proved that the problem of finding the shortest sequence of flips for a given stack of pancakes is NP-hard [...] "
+            "In a variation called the burnt pancake problem, the bottom of each pancake in the pile is burnt, and the sort must be completed with the burnt side of every pancake down. [...] "
+            "In 2008, a group of undergraduates built a bacterial computer that can solve a simple example of the burnt pancake problem by programming E. coli to flip segments of DNA which are analogous to burnt pancakes. [...] "
+            "The pancake sorting problem was first posed by Jacob E. Goodman, writing under the pseudonym \"Harry Dweighter\" (\"harried waiter\"). "
+            "Although seen more often as an educational device, pancake sorting also appears in applications in parallel processor networks [...] "
+            "The problem is notable as the topic of the only well-known mathematics paper by Microsoft founder Bill Gates (as William Gates), entitled \"Bounds for Sorting by Prefix Reversal\" and co-authored with Christos Papadimitriou. "
+            "Published in 1979, it describes an efficient algorithm for pancake sorting. "
+            "In addition, the most notable paper published by Futurama co-creator David X. Cohen (as David S. Cohen), co-authored with Manuel Blum, concerned the burnt pancake problem.",
+            nome="Pancake sorting")],
+    },
+    # 6 Shor: a ameaça quântica que só fatorou 15 e 21
+    {
+        "temas_secundarios": ["mecanica_quantica", "criptografia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "O algoritmo quântico de Shor, de 1994, ameaça a criptografia que protege o comércio na internet. Mas, em máquinas reais, só fatorou números como 15 e 21, e com atalhos que já usavam a resposta.",
+        "explicacao": (
+            "Achar os fatores primos de um número enorme é muito difícil para computadores comuns: não se conhece "
+            "algoritmo clássico que faça isso em tempo polinomial, e a segurança do RSA depende disso. Em 1994, o "
+            "matemático americano Peter Shor mostrou que um computador quântico ideal conseguiria fatorar com "
+            "eficiência. Uma máquina com qubits suficientes, que funcionasse sem sucumbir ao ruído quântico, poderia "
+            "quebrar o RSA e as trocas de chave do tipo Diffie-Hellman. O resultado virou um forte motor para a "
+            "construção de computadores quânticos e impulsionou a criptografia pós-quântica, feita para resistir a "
+            "eles. A prática, porém, está longe disso. Em 2001, um grupo da IBM fatorou 15 em 3 × 5 com um "
+            "computador quântico de sete qubits; em 2012, chegou-se ao 21. Por causa das altas taxas de erro, as "
+            "demonstrações de laboratório acertam só uma parte das tentativas e só funcionaram com números pequenos. "
+            "E nenhuma delas cumpre de fato os requisitos do algoritmo: os circuitos foram montados com conhecimento "
+            "prévio da solução, e alguns foram tão simplificados que equivalem a jogar uma moeda."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Shor%27s_algorithm",
+                "Shor's algorithm is a quantum algorithm for finding the prime factors of an integer. "
+                "It was developed in 1994 by the American mathematician Peter Shor. [...] "
+                "Assuming a quantum computer with a sufficient number of qubits could operate without succumbing to quantum noise and other quantum-decoherence phenomena, then Shor's algorithm could be used to break public-key cryptography schemes, such as [...] "
+                "The RSA scheme The finite-field Diffie–Hellman key exchange The elliptic-curve Diffie–Hellman key exchange [...] "
+                "RSA can be broken if factoring large integers is computationally feasible. "
+                "As far as is known, this is not possible using classical (non-quantum) computers; no classical algorithm is known that can factor integers in polynomial time. [...] "
+                "This was a powerful motivator for the design and construction of quantum computers, and for the study of new quantum-computer algorithms. "
+                "It has also facilitated research on new cryptosystems that are secure from quantum computers, collectively called post-quantum cryptography (PQC). [...] "
+                "the high error rates of quantum computers and limited number of physical qubits available for quantum error correction, laboratory demonstrations of Shor's algorithm obtain correct results in only a fraction of attempts, and have only succeeded with small semiprimes. "
+                "In 2001, Shor's algorithm was demonstrated by a group at IBM, who factored 15 into 3×5, using an NMR implementation of a quantum computer with seven qubits. [...] "
+                "Later, in 2012, the factorization of 21 was achieved. [...] "
+                "However, none of these demonstrations fulfill the requirements of Shor’s algorithm: they compile the circuit using prior knowledge of the solution, and some have even oversimplified the algorithm in a way that makes it equivalent to coin flipping.",
+                nome="Shor's algorithm"),
+            wiki("Euclidean_algorithm",
+                "the RSA algorithm, which is widely used in electronic commerce",
+                nome="Euclidean algorithm"),
+        ],
+    },
+    # 7 Karatsuba derruba a conjectura de Kolmogorov em uma semana
+    {
+        "temas_secundarios": ["historia_matematica", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1960, o grande matemático Kolmogorov conjecturou que não havia jeito de multiplicar números grandes mais rápido que o da escola. Em menos de uma semana, um estudante de 23 anos, Anatoly Karatsuba, provou que havia.",
+        "explicacao": (
+            "No método que aprendemos na escola, multiplicar dois números de n algarismos exige um número de "
+            "operações proporcional a n². Andrei Kolmogorov achava que isso era o melhor possível e apresentou a "
+            "conjectura num seminário sobre problemas matemáticos da cibernética, que organizou em 1960 na "
+            "Universidade Estatal de Moscou. Em uma semana, Karatsuba achou um atalho do tipo \"dividir para "
+            "conquistar\": a multiplicação de dois números de n algarismos vira três multiplicações de números com "
+            "metade dos algarismos. Repetindo o truque, o total cai para no máximo cerca de n elevado a 1,58 "
+            "multiplicações de um algarismo só. Foi o primeiro algoritmo de multiplicação assintoticamente mais "
+            "rápido que o escolar, o que quer dizer que a vantagem cresce à medida que os números aumentam. "
+            "Kolmogorov ficou muito animado, apresentou a descoberta na reunião seguinte, e o seminário foi "
+            "encerrado. Ele divulgou o resultado em conferências pelo mundo e o publicou em 1962, num artigo que ele "
+            "mesmo escreveu, juntando o algoritmo de Karatsuba a um resultado separado de Yuri Ofman e listando os "
+            "dois como autores. Karatsuba só ficou sabendo do artigo quando recebeu as separatas da editora."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Karatsuba_algorithm",
+            "It is a divide-and-conquer algorithm that reduces the multiplication of two n-digit numbers to three multiplications of n/2-digit numbers and, by repeating this reduction, to  at most nlog23≈n1.58 single-digit multiplications. It is therefore asymptotically faster than the traditional algorithm, which performs n2 single-digit products. "
+            "The Karatsuba algorithm was the first multiplication algorithm asymptotically faster than the quadratic \"grade school\" algorithm. [...] "
+            "The standard procedure for multiplication of two n-digit numbers requires a number of elementary operations proportional to n2 [...] "
+            "Andrey Kolmogorov conjectured that the traditional algorithm was asymptotically optimal [...] "
+            "In 1960, Kolmogorov organized a seminar on mathematical problems in cybernetics at the Moscow State University, where he stated the Ω(n2) conjecture and other problems in the complexity of computation. "
+            "Within a week, Karatsuba, then a 23-year-old student, found an algorithm that multiplies two n-digit numbers in [...] "
+            "elementary steps, thus disproving the conjecture. "
+            "Kolmogorov was very excited about the discovery; he communicated it at the next meeting of the seminar, which was then terminated. "
+            "Kolmogorov gave some lectures on the Karatsuba result at conferences all over the world [...] "
+            "and published the method in 1962, in the Proceedings of the USSR Academy of Sciences. "
+            "The article had been written by Kolmogorov and contained two results on multiplication, Karatsuba's algorithm and a separate result by Yuri Ofman; it listed \"A. Karatsuba and Yu. Ofman\" as the authors. "
+            "Karatsuba only became aware of the paper when he received the reprints from the publisher.",
+            nome="Karatsuba algorithm")],
+    },
+    # 8 FFT: testes nucleares soviéticos e um rascunho de Gauss
+    {
+        "temas_secundarios": ["guerra_fria", "historia_matematica"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "A transformada rápida de Fourier, essencial ao processamento de sinais digitais, ficou famosa em 1965, com uma ideia ligada à detecção de testes nucleares soviéticos. Mas Gauss usou um método parecido em 1805.",
+        "explicacao": (
+            "A FFT é um atalho para calcular a transformada discreta de Fourier, a conta que decompõe um sinal nas "
+            "frequências que o formam. Em 1994, o matemático Gilbert Strang a chamou de \"o algoritmo numérico mais "
+            "importante da nossa vida\". A versão moderna costuma ser creditada a James Cooley e John Tukey, que a "
+            "publicaram em 1965. Tukey teve a ideia numa reunião do comitê de assessoria científica do presidente "
+            "Kennedy, em que se discutia como detectar testes nucleares da União Soviética com sensores instalados "
+            "em volta do país. Analisar os dados desses sensores exigiria um algoritmo assim. O físico Richard Garwin "
+            "percebeu que a ideia servia para muito mais coisas e a passou a Cooley, na IBM. Como Tukey não "
+            "trabalhava na empresa, duvidou-se que a ideia pudesse ser patenteada, e o algoritmo caiu em domínio "
+            "público. Mas ele tinha um precursor ilustre: num trabalho não publicado de 1805, sobre as órbitas dos "
+            "asteroides Palas e Juno, Carl Friedrich Gauss usou um método muito parecido, antes até dos resultados de "
+            "Fourier, de 1822. Gauss não analisou quanto o método economizava e acabou usando outros caminhos. Entre "
+            "1805 e 1965, outras versões chegaram a ser publicadas, sem fama."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Fast_Fourier_transform",
+            "In 1994, Gilbert Strang described the FFT as \"the most important numerical algorithm of our lifetime\" [...] "
+            "The development of fast algorithms for DFT was prefigured in Carl Friedrich Gauss's unpublished 1805 work on the orbits of asteroids Pallas and Juno. "
+            "Gauss wanted to interpolate the orbits from sample observations; his method was very similar to the one that would be published in 1965 by James Cooley and John Tukey, who are generally credited with the invention of the modern generic FFT algorithm. "
+            "While Gauss's work predated even Joseph Fourier's 1822 results, he did not analyze the method's complexity, and eventually used other methods to achieve the same end. "
+            "Between 1805 and 1965, some versions of FFT were published by other authors. [...] "
+            "Tukey came up with the idea during a meeting of President Kennedy's Science Advisory Committee, where a discussion topic involved detecting nuclear tests by the Soviet Union by setting up sensors to surround the country from outside. "
+            "To analyze the output of these sensors, an FFT algorithm would be needed. "
+            "In discussion with Tukey, Richard Garwin recognized the general applicability of the algorithm not just to national security problems, but also to a wide range of problems [...] "
+            "Garwin gave Tukey's idea to Cooley (both worked at IBM's Watson labs) for implementation. [...] "
+            "As Tukey did not work at IBM, the patentability of the idea was doubted and the algorithm went into the public domain, which, through the computing revolution of the next decade, made FFT one of the indispensable algorithms in digital signal processing.",
+            nome="Fast Fourier transform")],
+    },
+    # 9 a constante mágica 0x5F3759DF do Quake III
+    {
+        "temas_secundarios": ["videogames", "historia_computacao"],
+        "tipos_espanto": ["engenhosidade", "misterio_aberto"],
+        "gancho": "O jogo Quake III calculava 1/√x com um truque: lia os bits de um número com vírgula como se fosse inteiro e o subtraía de uma constante mágica, 0x5F3759DF. Por anos, ninguém sabia quem tinha inventado aquilo.",
+        "explicacao": (
+            "Gráficos 3D usam o inverso da raiz quadrada o tempo todo, por exemplo para reduzir vetores ao "
+            "comprimento 1 e calcular a iluminação, e jogos como Quake III Arena precisam fazer muitas dessas contas "
+            "por segundo. No começo dos anos 1990, contas com números de ponto flutuante eram lentas em comparação "
+            "com contas com inteiros. O algoritmo tira proveito disso: trata os bits do número como um inteiro, "
+            "desloca-os uma posição para a direita e subtrai o resultado da constante 0x5F3759DF. Reinterpretado "
+            "como número com vírgula, isso já dá um bom chute: num exemplo, com erro de cerca de 3,4%. Uma única "
+            "rodada do método de Newton derruba o erro para 0,17%. O código ficou famoso depois que o jogo, lançado "
+            "em 1999, o usou, e se espalhou por fóruns em 2002 e 2003. Houve quem apostasse que o autor era John "
+            "Carmack, e nem a liberação do código-fonte completo do jogo, em 2005, resolveu a dúvida. Só em 2006 o "
+            "autor original se apresentou: Greg Walsh, que criou a constante a partir de uma técnica de William "
+            "Kahan e K.C. Ng, de Berkeley, que lhe chegou no fim dos anos 1980. Hoje os processadores têm uma "
+            "instrução própria, mais rápida e mais precisa."
+        ),
+        "nivel": 3, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Fast_inverse_square_root",
+            "The algorithm is best known for its implementation in the 1999 video game Quake III Arena. [...] "
+            "Then, treating the bits representing the floating-point number as a 32-bit integer, a logical shift right by one bit is performed and the result subtracted from the number 0x5F3759DF [...] "
+            "This results in an initial guess of the inverse square root of the input. "
+            "Treating the bits again as a floating-point number, it runs one iteration of Newton's method, yielding a more precise approximation. [...] "
+            "William Kahan and K.C. Ng at Berkeley wrote an unpublished paper in May 1986 describing how to calculate the square root using bit fiddling techniques followed by Newton iterations. "
+            "In the late 1980s, Cleve Moler at Ardent Computer learned about this technique and passed it along to his coworker Greg Walsh. "
+            "Greg Walsh devised the now-famous constant and fast inverse square root algorithm. [...] "
+            "A discussion of the code appeared on the Chinese developer forum CSDN in 2000, and Usenet and the gamedev.net forum spread the code widely in 2002 and 2003. "
+            "Speculation arose as to who wrote the algorithm and how the constant was derived; some guessed John Carmack. "
+            "Quake III's full source code was released at QuakeCon 2005, but provided no answers. "
+            "The authorship question was resolved in 2006 when Greg Walsh, the original author, contacted Beyond3D [...] "
+            "Computer graphics frequently uses inverse square roots for transform, clipping, lighting, and shading [...] "
+            "Programs such as Quake III: Arena must perform a large number of these calculations every second to simulate lighting. "
+            "In particular, the operation of scaling a vector to length 1 to produce a unit vector uses the inverse square root. [...] "
+            "When the fast inverse square root algorithm was developed in the early 1990s, most floating point processing power lagged the speed of integer processing. [...] "
+            "In a 2009 benchmark on the Intel Core 2, this instruction took 0.85ns per float compared to 3.54ns for the fast inverse square root algorithm, and had less error. [...] "
+            "which has an error of about 3.4%. After one iteration of Newton's method, the final result is y=2.52549, an error of only 0.17%.",
+            nome="Fast inverse square root")],
+    },
+    # 10 o Quicksort nasceu para ordenar palavras russas
+    {
+        "temas_secundarios": ["historia_computacao", "guerra_fria"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O Quicksort, método de ordenação ainda muito usado, nasceu em Moscou, em 1959: o britânico Tony Hoare precisava pôr palavras russas em ordem alfabética para um projeto de tradução automática.",
+        "explicacao": (
+            "Hoare estava na Universidade Estatal de Moscou como estudante de intercâmbio e estudava tradução "
+            "automática sob a orientação de Andrei Kolmogorov. Trabalhava para um projeto do Laboratório Nacional de "
+            "Física britânico: antes de procurar as palavras de uma frase em russo num dicionário russo-inglês "
+            "gravado em fita magnética, em ordem alfabética, era preciso ordená-las. A primeira ideia dele, a "
+            "ordenação por inserção, seria lenta, e ele bolou outra. O Quicksort escolhe um elemento \"pivô\", "
+            "separa os demais em dois grupos, os menores e os maiores que ele, e repete o processo dentro de cada "
+            "grupo. De volta à Inglaterra, Hoare recebeu a tarefa de programar outro método, o Shellsort. Disse ao "
+            "chefe que conhecia um algoritmo mais rápido, e o chefe apostou seis pence que não. Acabou admitindo "
+            "que perdeu a aposta. O Quicksort virou a rotina de ordenação padrão do Unix e deu nome à função qsort "
+            "da biblioteca padrão da linguagem C. Hoare ficou conhecido também por um mea-culpa: em 2009, pediu "
+            "desculpas por ter inventado, em 1965, a referência nula, que chamou de seu \"erro de um bilhão de "
+            "dólares\", pelos erros, falhas de segurança e panes que ela causou."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Quicksort",
+                "Quicksort was developed by British computer scientist Tony Hoare in 1959 and published in 1961. "
+                "It is still a commonly used algorithm for sorting. [...] "
+                "It works by selecting a \"pivot\" element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. [...] "
+                "The sub-arrays are then sorted recursively. [...] "
+                "The quicksort algorithm was developed in 1959 by Tony Hoare while he was a visiting student at Moscow State University. "
+                "At that time, Hoare was working on a machine translation project for the National Physical Laboratory. "
+                "As a part of the translation process, he needed to sort the words in Russian sentences before looking them up in a Russian-English dictionary, which was in alphabetical order on magnetic tape. "
+                "After recognizing that his first idea, insertion sort, would be slow, he came up with a new idea. [...] "
+                "On return to England, he was asked to write code for Shellsort. "
+                "Hoare mentioned to his boss that he knew of a faster algorithm, and his boss bet a sixpence that he did not. "
+                "His boss ultimately accepted that he had lost the bet. [...] "
+                "Quicksort gained widespread adoption, appearing, for example, in Unix as the default library sort subroutine. "
+                "Hence, it lent its name to the C standard library subroutine qsort",
+                nome="Quicksort"),
+            wiki("Tony_Hoare",
+                "He then went to Moscow State University as a British Council exchange student, where he studied machine translation supervised by Andrey Kolmogorov. [...] "
+                "Speaking at a software conference in 2009, Hoare apologised for inventing the null reference: "
+                "I call it my billion-dollar mistake. It was the invention of the null reference in 1965. [...] "
+                "This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.",
+                nome="Tony Hoare"),
+        ],
+    },
+    # 11 a regra dos 37% e as 11 noivas de Kepler
+    {
+        "temas_secundarios": ["probabilidade", "decisoes_economia"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Para escolher o melhor de uma fila de candidatos sem poder voltar atrás, a estratégia ótima é descartar os primeiros 37% e ficar com o próximo que superar todos eles. Kepler encarou dilema parecido ao buscar esposa.",
+        "explicacao": (
+            "É o chamado problema da secretária. Os candidatos são entrevistados um a um, em ordem aleatória, e cada "
+            "um precisa ser aceito ou recusado na hora, sem chance de voltar atrás. Depois de cada entrevista, dá "
+            "para comparar o candidato com os anteriores, mas não com os que ainda virão. A regra de parada ótima "
+            "manda recusar sempre os primeiros n/e candidatos (e é a base dos logaritmos naturais), o que dá uns 37%, e "
+            "depois parar no primeiro que for melhor que todos os já vistos. Com isso, a pessoa fica com o melhor "
+            "candidato em cerca de 37% das vezes, seja a fila de 100 ou de 100 milhões. A primeira publicação "
+            "parece ter sido de Martin Gardner, na revista Scientific American, em fevereiro de 1960, numa versão "
+            "chamada \"jogo do googol\". Mas a questão é mais antiga: Arthur Cayley considerou um problema parecido "
+            "em 1875, e Johannes Kepler, depois da morte da primeira mulher, passou dois anos, de 1611 a 1613, "
+            "avaliando 11 candidatas a casamento. Experimentos com pessoas de verdade indicam que, em geral, paramos "
+            "de procurar cedo demais. Se isso valer na vida real, a pessoa tende a pagar mais caro, por exemplo, ao "
+            "escolher o posto onde abastecer numa estrada."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Secretary_problem",
+            "Its solution is also known as the 37% rule. [...] "
+            "The applicants are interviewed one by one in random order. "
+            "A decision about each particular applicant is to be made immediately after the interview. "
+            "Once rejected, an applicant cannot be recalled. "
+            "During the interview, the administrator gains information sufficient to rank the applicant among all applicants interviewed so far, but is unaware of the quality of yet unseen applicants. [...] "
+            "It implies that the optimal win probability is always at least 1/e (where e is the base of the natural logarithm) [...] "
+            "The optimal stopping rule prescribes always rejecting the first ∼n/e applicants that are interviewed and then stopping at the first applicant who is better than every applicant interviewed so far [...] "
+            "the optimal policy for the problem (the stopping rule) is simple and selects the single best candidate about 37% of the time, irrespective of whether there are 100 or 100 million applicants. [...] "
+            "The first publication was apparently by Martin Gardner in Scientific American, February 1960. [...] "
+            "they called it the \"game of googol\". [...] "
+            "a similar (but different) problem had been considered by Arthur Cayley in 1875 and even by Johannes Kepler long before that, who spent 2 years investigating 11 candidates for marriage during 1611–1613 after the death of his first wife. [...] "
+            "In large part, this work has shown that people tend to stop searching too soon. [...] "
+            "For example, when trying to decide at which gas station along a highway to stop for gas, people might not search enough before stopping. "
+            "If true, then they would tend to pay more for gas than if they had searched longer.",
+            nome="Secretary problem")],
+    },
+    # 12 Markov testou suas cadeias num poema de Púchkin
+    {
+        "temas_secundarios": ["probabilidade", "literatura"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "As cadeias de Markov, que definem o PageRank usado pelo Google para classificar páginas, tiveram a primeira aplicação prática num poema: Andrei Markov classificou 20 mil letras de Eugênio Onêguin, de Púchkin.",
+        "explicacao": (
+            "Markov começou a estudar essas cadeias por causa de uma discordância com o matemático Pavel Nekrasov, "
+            "para quem a lei dos grandes números só valia para eventos independentes. No primeiro artigo sobre o "
+            "tema, de 1906, Markov mostrou que ela também vale, sob certas condições, para sequências em que cada "
+            "evento depende do anterior. Para ilustrar o método, em 1913 ele pegou as primeiras 20 mil letras do "
+            "romance em versos de Púchkin, classificou cada uma só como vogal ou consoante, ignorando qualquer "
+            "sentido poético, e analisou as probabilidades de passar de uma categoria à outra. Foi a primeira "
+            "aplicação empírica do que hoje se chama cadeia de Markov. Hoje a mesma ideia ordena a internet: o "
+            "PageRank de uma página, usado pelo Google, é definido como a probabilidade de se estar nela, no longo "
+            "prazo, numa cadeia de Markov que percorre todas as páginas conhecidas. Markov tinha fama de rebelde. "
+            "Em 1908, recusou a ordem de vigiar estudantes e acabou afastado das aulas. Ateu, em 1912 respondeu à "
+            "excomunhão de Liev Tolstói pedindo a própria excomunhão à Igreja Ortodoxa Russa, que atendeu ao pedido."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Andrey_Markov",
+                "To illustrate his methods, he analyzed the distribution of vowels and consonants in Alexander Pushkin's Eugene Onegin, treating letters purely as abstract categories and stripping away any poetic or semantic content. [...] "
+                "In 1913, he conducted a study on the distribution of vowels and consonants in the first 20,000 letters of Alexander Pushkin's Eugene Onegin, treating the text as a sequence of symbols and analyzing the statistical relationships between them. "
+                "By classifying each letter as either a vowel or a consonant and analyzing the probabilities of transitions between these categories, Markov demonstrated that chains of dependent events could be rigorously modeled. "
+                "This was the first empirical application of what are now called Markov chains. [...] "
+                "In connection with student riots in 1908, professors and lecturers of St. Petersburg University were ordered to monitor their students. "
+                "Markov refused to accept this decree [...] "
+                "Markov was removed from further teaching duties at St. Petersburg University [...] "
+                "Markov was an atheist. In 1912, he responded to Leo Tolstoy's excommunication from the Russian Orthodox Church by requesting his own excommunication. "
+                "The Church complied with his request.",
+                nome="Andrey Markov"),
+            wiki("Markov_chain",
+                "Markov was interested in studying an extension of independent random sequences, motivated by a disagreement with Pavel Nekrasov who claimed independence was necessary for the weak law of large numbers to hold. "
+                "In his first paper on Markov chains, published in 1906, Markov showed that under certain conditions the average outcomes of the Markov chain would converge to a fixed vector of values, so proving a weak law of large numbers without the independence assumption [...] "
+                "Markov later used Markov chains to study the distribution of vowels in Eugene Onegin, written by Alexander Pushkin [...] "
+                "The PageRank of a webpage as used by Google is defined by a Markov chain. "
+                "It is the probability to be at page i in the stationary distribution on the following Markov chain on all (known) webpages.",
+                nome="Markov chain"),
+        ],
+    },
+    # 13 o Campo Minado é NP-completo
+    {
+        "temas_secundarios": ["videogames", "jogos_tabuleiro"],
+        "tipos_espanto": ["conexao_inesperada", "misterio_aberto"],
+        "gancho": "Saber se um tabuleiro de Campo Minado admite alguma arrumação de minas é um problema NP-completo. Quem achar um método rápido para isso resolve o P versus NP, que vale prêmio de US$ 1 milhão.",
+        "explicacao": (
+            "O P versus NP é uma das grandes questões abertas da computação. Ele pergunta, informalmente, se todo "
+            "problema cuja resposta é rápida de conferir também é rápido de resolver. Os problemas NP-completos são "
+            "os mais duros desse grupo: qualquer outro problema da classe pode ser convertido neles. Por isso, se "
+            "um único deles tiver um algoritmo rápido, de tempo polinomial, segue-se que P = NP. É um dos sete "
+            "Problemas do Milênio do Instituto Clay, e cada um vale US$ 1 milhão para a primeira solução correta. "
+            "Em 2000, Kaye publicou a prova de que o Campo Minado entra nesse clube: dado um tabuleiro com casas "
+            "abertas, numeradas e marcadas, decidir se existe alguma distribuição de minas compatível com as regras "
+            "é NP-completo. A prova é construtiva: ensina a transformar rapidamente qualquer circuito lógico num "
+            "tabuleiro que só é possível se o circuito puder dar \"verdadeiro\". Ninguém conseguiu, em décadas, "
+            "achar um algoritmo de tempo polinomial para qualquer um dos mais de 3 mil problemas NP-completos "
+            "importantes conhecidos. Kaye também provou que um Campo Minado infinito é Turing-completo, isto é, "
+            "capaz em princípio de simular qualquer computador."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Minesweeper_(video_game)",
+                "In 2000, Sadie Kaye published a proof that Minesweeper is NP-complete to determine whether a given grid of uncovered, correctly flagged, and unknown squares, the labels of the foremost also given, has an arrangement of mines for which it is possible within the rules of the game. "
+                "The argument is constructive, a method to quickly convert any Boolean circuit into such a grid that is possible if and only if the circuit is satisfiable [...] "
+                "Kaye also proved that infinite Minesweeper is Turing-complete.",
+                nome="Minesweeper (video game)"),
+            wiki("P_versus_NP_problem",
+                "The P versus NP problem is a major unsolved problem in theoretical computer science. "
+                "Informally, it asks whether every decision problem for which a proposed positive answer can be quickly verified can also be quickly solved. [...] "
+                "It is one of the seven Millennium Prize Problems selected by the Clay Mathematics Institute, each of which carries a US$1,000,000 prize for the first correct solution. [...] "
+                "That is, any NP problem can be transformed into any NP-complete problem. [...] "
+                "If any NP-complete problem is in P, then it would follow that P = NP. [...] "
+                "after decades of studying these problems no one has been able to find a polynomial-time algorithm for any of more than 3,000 important known NP-complete problems",
+                nome="P versus NP problem"),
+        ],
+    },
+    # 14 o TeX vai virar pi quando Knuth morrer
+    {
+        "temas_secundarios": ["historia_computacao", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Donald Knuth, o \"pai da análise de algoritmos\", decidiu que, após sua morte, a versão do TeX, seu programa de tipografia, passará a ser π, e os erros que restarem virarão \"recursos\". Hoje ela é 3.141592653.",
+        "explicacao": (
+            "Knuth, professor de Stanford e autor da série The Art of Computer Programming, recebeu em 1974 o Prêmio "
+            "Turing, considerado informalmente o Nobel da computação. Ele criou o TeX, lançado em 1978 e muito usado "
+            "para compor fórmulas matemáticas complexas. Desde a versão 3, cada atualização apenas acrescenta mais "
+            "um algarismo ao número da versão, que assim se aproxima de pi. O projeto foi congelado: as novas "
+            "versões só corrigem erros, e a última atualização saiu em 2021. Knuth acha mais importante ter um "
+            "sistema imutável, que produza o mesmo resultado agora e no futuro, do que acrescentar novidades. Por "
+            "isso, a \"mudança absolutamente final, a ser feita depois da minha morte\", será trocar a versão por pi. "
+            "Ele também premia quem acha erros: US$ 2,56 para o primeiro a apontar cada erro em seus livros. São 256 "
+            "centavos, ou um \"dólar hexadecimal\". Para erros no código do TeX, a recompensa começou em US$ 2,56 e "
+            "dobrou a cada ano até travar em US$ 327,68. Até 2001, ele já tinha assinado mais de 2 mil cheques, mas "
+            "pouquíssimos foram descontados: em geral, viram quadro na parede. Em 2008, por causa de fraudes com "
+            "cheques, passou a mandar certificados de um banco fictício."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("TeX",
+                "TeX  (), stylized as TeX, is a free and open source software typesetting program that was designed and written by computer scientist and Stanford University professor Donald Knuth and first released in 1978. [...] "
+                "TeX is a popular means of typesetting complex mathematical formula [...] "
+                "Since version 3, TeX has used an idiosyncratic version numbering system, where updates have been indicated by adding an extra digit at the end of the decimal, so that the version number asymptotically approaches π. [...] "
+                "The current version of TeX is 3.141592653; it was last updated in 2021. "
+                "The design was frozen after version 3.0, and no new feature or fundamental change will be added, so all newer versions will contain only bug fixes. [...] "
+                "he firmly believes that having an unchanged system that will produce the same output now and in the future is more important than introducing new features. "
+                "For this reason, he has stated that the \"absolutely final change (to be made after my death)\" will be to change the version number to π, at which point all remaining \"bugs\" will become \"features\"",
+                nome="TeX"),
+            wiki("Donald_Knuth",
+                "He is the 1974 recipient of the ACM Turing Award, informally considered the Nobel Prize of computer science. "
+                "Knuth has been called the \"father of the analysis of algorithms\". "
+                "Knuth is the author of the multi-volume work The Art of Computer Programming.",
+                nome="Donald Knuth"),
+            wiki("Knuth_reward_check",
+                "He stopped doing so in October 2008 because of problems with check fraud. "
+                "As a replacement, he started his own \"Bank of San Serriffe\", in the fictional nation of San Serriffe [...] "
+                "As of October 2001, Knuth reported having written more than 2,000 checks, with an average value exceeding $8 per check. [...] "
+                "Very few of these checks were actually cashed, even the largest ones. "
+                "More often they have been framed and kept as a valued keepsake. [...] "
+                "Knuth offers a reward of $2.56 (USD) to the first person to find each error in his published books [...] "
+                "Knuth explains that $2.56, or 256 cents, corresponds to one hexadecimal dollar. [...] "
+                "reward for coding errors found in Knuth's TeX and Metafont programs [...] "
+                "starting at $2.56, and doubling every year until it reached $327.68.",
+                nome="Knuth reward check"),
+        ],
+    },
+    # 15 o caixeiro-viajante dos 49.687 pubs
+    {
+        "temas_secundarios": ["transportes", "bebidas_alcoolicas"],
+        "tipos_espanto": ["escala_absurda", "engenhosidade"],
+        "gancho": "Matemáticos calcularam o menor trajeto a pé que passa por 49.687 pubs do Reino Unido e provaram que não existe outro nem 1 metro mais curto. A prova exigiu o equivalente a 250 anos de computação.",
+        "explicacao": (
+            "É o problema do caixeiro-viajante: dada uma lista de lugares, achar o menor circuito que passa por todos "
+            "e volta ao ponto de partida. Testar todas as rotas é impossível. Com N paradas, o número de circuitos é o "
+            "produto (N−1) × (N−2) × ... × 2 × 1; para os 24.727 pubs de uma versão anterior do projeto, isso dá "
+            "cerca de 1 seguido de 100 mil zeros. Não se conhece método simples e rápido para resolver qualquer caso, "
+            "e a questão está ligada ao problema P versus NP, que vale US$ 1 milhão. A equipe de William Cook, da "
+            "Universidade de Waterloo, no Canadá, usou como distância o trajeto a pé indicado pelo Google Maps. Um "
+            "programa de busca, o LKH, procurou rotas cada vez mais curtas, enquanto o método de planos de corte do "
+            "Concorde estabelecia um limite abaixo do qual nenhuma rota pode estar. O grosso do trabalho foi provar "
+            "que não havia rota menor que a encontrada: o cálculo terminou em março de 2018, somando cerca de 250 "
+            "anos de processamento se feito num só núcleo de processador. A rota tem 63.739.687 metros, e os autores "
+            "oferecem 49.687 ienes a quem achar uma 1 metro mais curta."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.math.uwaterloo.ca/tsp/uk/index.html",
+             "titulo": "UK49687 - Shortest possible tour to nearly every pub in the United Kingdom (University of Waterloo)",
+             "idioma": "en",
+             "trecho": (
+                "It took another year-and-a-half of work and 250 years of computer time (up from the earlier tour's 10-month computation), but we now have a shortest-possible walking tour through nearly every UK pub. "
+                "A total of 49,687 places to get a pint. [...] "
+                "The bulk of our work, spanning 250 years of computation time, was to prove there could be no shorter tour than the one found by Keld's LKH code. [...] "
+                "The computation finally finished on March 5, 2018 [...] "
+                "bringing the total to 250 years (if carried out on a single processor core of a Linux server). [...] "
+                "So, we offer 49,687 Japanese Yen to the first person who can find a tour that is even 1 meter shorter than our 63,739,687-meter route."
+             )},
+            {"url": "https://www.math.uwaterloo.ca/tsp/pubs/index.html",
+             "titulo": "UK Pubs Traveling Salesman Problem (University of Waterloo)",
+             "idioma": "en",
+             "trecho": (
+                "find the shortest route to visit some 24,727 stops found on the great Web site Pubs Galore [...] "
+                "measuring the distance between any two pubs as the length of the route produced by Google Maps [...] "
+                "The total number of tours is obtained by multiplying these values: N-1 x (N-2) x (N-3) x . . . x 3 x 2 x 1. "
+                "Now this is a big number. For the pubs problem, it is roughly 1 followed by 100,000 zeroes. [...] "
+                "For the TSP we don't know of any simple and fast solution method like we have for sorting words. [...] "
+                "(If you are interested in this and could use an extra $1,000,000, check out the P vs NP problem.) [...] "
+                "Concorde's cutting-plane method finds a fractional tour of value L. "
+                "From the way this is constructed with linear programming, we know for sure that no TSP tour can have value less than L. [...] "
+                "William Cook, Combinatorics and Optimization, University of Waterloo, Canada"
+             )},
+        ],
+    },
+    # 16 o bolor limoso que redesenhou os trens de Tóquio
+    {
+        "temas_secundarios": ["microbiologia", "transportes"],
+        "tipos_espanto": ["conexao_inesperada", "engenhosidade"],
+        "gancho": "Com flocos de aveia no lugar de Tóquio e de 36 cidades vizinhas, um bolor limoso, uma espécie de ameba, formou uma rede de tubos parecida com a malha de trens real, de eficiência, custo e tolerância a falhas comparáveis.",
+        "explicacao": (
+            "O Physarum polycephalum é um bolor limoso. Numa fase da vida, forma o plasmódio: uma massa amarela, "
+            "visível a olho nu, com muitos núcleos, organizada como uma rede de tubos entrelaçados. Por gostar de "
+            "lugares úmidos e sombreados, chegou a ser confundido com um fungo. Pesquisadores japoneses e húngaros "
+            "mostraram que ele resolve o problema do caminho mais curto: num labirinto com aveia em dois pontos, o "
+            "plasmódio se retrai de todo lugar, menos do trajeto mais curto que liga as duas fontes de comida. Com "
+            "mais de duas fontes, monta redes eficientes. Num artigo de 2010, a aveia foi espalhada como se fosse "
+            "Tóquio e 36 cidades em volta, e o organismo criou uma rede parecida com o sistema de trens existente. "
+            "Resultados semelhantes saíram com as redes de estradas do Reino Unido e da Península Ibérica. Como ele "
+            "faz isso? O fluxo dentro dos tubos transporta sinais pela rede, e é provável que o efeito desses sinais "
+            "sobre a espessura dos tubos explique a capacidade de achar o caminho mais curto. A rede que ele forma "
+            "entre fontes de comida também já foi vista como uma solução aproximada para o problema do "
+            "caixeiro-viajante."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Physarum_polycephalum",
+                "Physarum polycephalum, an acellular slime mold, or myxomycete, is an amoeba with diverse cellular forms and broad geographic distribution. "
+                "The \"acellular\" moniker derives from the plasmodial stage of the life cycle:  the plasmodium is a bright yellow macroscopic multinucleate coenocyte shaped in a network of interlaced tubes. "
+                "This stage of the life cycle, along with its preference for damp shady habitats, likely contributed to the original mischaracterization of the organism as a fungus. [...] "
+                "In fact, the flows are even hijacked to transport signals throughout the plasmodium network. "
+                "It is likely that the feedback of transported signals on tube size underlies Physarum's capability to find the shortest path through a maze. [...] "
+                "a team of Japanese and Hungarian researchers have shown P. polycephalum can solve the shortest path problem. "
+                "When grown in a maze with oatmeal at two spots, P. polycephalum retracts from everywhere in the maze, except the shortest route connecting the two food sources. "
+                "When presented with more than two food sources, P. polycephalum apparently solves a more complicated transportation problem. "
+                "With more than two sources, the amoeba also produces efficient networks. "
+                "In a 2010 paper, oatflakes were dispersed to represent Tokyo and 36 surrounding towns. "
+                "P. polycephalum created a network similar to the existing train system, and \"with comparable efficiency, fault tolerance, and cost\". "
+                "Similar results have been shown based on road networks in the United Kingdom and the Iberian Peninsula",
+                nome="Physarum polycephalum"),
+            wiki("Travelling_salesman_problem",
+                "the amoeboid Physarum polycephalum adapts its morphology to create an efficient path between the food sources, which can also be viewed as an approximate solution to TSP.",
+                nome="Travelling salesman problem"),
+        ],
+    },
+]

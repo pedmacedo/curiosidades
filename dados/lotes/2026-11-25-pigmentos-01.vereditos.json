@@ -1,0 +1,156 @@
+{
+ "lote": "2026-11-25-pigmentos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "pigmentos-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e atribuições conferem; mas o episódio de 1814 não foi o começo (Goethe já observou o azul em fornos de cal por volta de 1787).",
+    "correcao": "Trocar 'A virada começou com um acaso: em 1814, um composto azul muito parecido surgiu sozinho num forno de cal da fábrica de vidros e espelhos Saint-Gobain.' por 'Um passo decisivo veio de um acaso: em 1814, um composto azul muito parecido surgiu sozinho num forno de cal da fábrica de vidros e espelhos Saint-Gobain.'"
+   },
+   {
+    "id": "pigmentos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com o comunicado do Max Planck (Dalheim, partículas de lápis-lazúli, lamber o pincel como cenário mais provável); consenso_parcial adequado."
+   },
+   {
+    "id": "pigmentos-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas o pigmento deu nome ao ácido prússico, não ao 'cianeto' (que vem do grego), e 'parte do material' atenua 'much of'.",
+    "correcao": "(1) No gancho, trocar 'O pigmento deu nome ao cianeto e hoje é antídoto contra césio radioativo.' por 'Deu nome a um veneno, o ácido prússico, e hoje é antídoto contra césio radioativo.' (2) Trocar 'embora parte do material já tivesse passado do sangue para os músculos' por 'embora boa parte do material já tivesse passado do sangue para os músculos'."
+   },
+   {
+    "id": "pigmentos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Dados conferem; mas o 'primeiro azul novo em dois séculos' é slogan desmentido pela própria fonte (azul de manganês de 1907); nota 3.",
+    "correcao": "(1) Gancho: 'Em 2009, um químico que buscava um material para eletrônicos tirou do forno um azul vivo. A universidade anunciou o YInMn, de ítrio, índio e manganês, como o primeiro azul novo em dois séculos, com exagero.' (2) Depois de '...não teria notado o potencial comercial.', inserir: 'O slogan da universidade, \"primeiro azul novo em dois séculos\", é generoso: o azul de manganês, por exemplo, foi desenvolvido em 1907 e acabou abandonado pela indústria por questões de segurança.' (3) Acrescentar ao trecho de YInMn Blue: 'Synthetic alternatives, such as barium manganate sulfate (or Manganese Blue, developed in 1907 and patented in 1935), have been phased out industrially due to safety and regulatory concerns'."
+   },
+   {
+    "id": "pigmentos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Vantablack e Stuart Semple (exclusividade de Kapoor, o rosa de 2016, a troca de nome em junho de 2024)."
+   },
+   {
+    "id": "pigmentos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas Monghyr fica no nordeste de Bihar (não 'nordeste da Índia'), e o ácido hipúrico apareceu em parte das amostras.",
+    "correcao": "1) Trocar 'investigou a produção em Monghyr, no nordeste da Índia' por 'investigou a produção em Monghyr, no nordeste do estado de Bihar, na Índia'. 2) Trocar 'confirmaram a origem animal: acharam ácido hipúrico, um marcador de urina' por 'confirmaram a origem animal: em parte das amostras, acharam ácido hipúrico, um marcador de urina'. Manter consenso_parcial."
+   },
+   {
+    "id": "pigmentos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Tyrian purple (12 mil caramujos, 1,4 g, Friedländer 1908, porphyrogenitos); roxo real é conhecido, nota 3."
+   },
+   {
+    "id": "pigmentos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos de 2006 conferem; mas a explicação pela frustração geométrica foi descartada em 2020 (Allenspach et al., EPFL), e a perda de dimensão é aparente.",
+    "correcao": "1) Gancho: trocar 'as ondas magnéticas dentro do pigmento \"perderam\" uma dimensão' por 'as ondas magnéticas dentro do pigmento pareceram \"perder\" uma dimensão'. 2) Trocar 'A causa é o deslocamento entre as camadas de cobre, a chamada frustração geométrica.' por 'Na época, a explicação proposta foi a \"frustração geométrica\" entre camadas de cobre deslocadas; em 2020, porém, um estudo com nêutrons descartou essa frustração e atribuiu o comportamento em duas dimensões à existência de três tipos diferentes de camadas de cobre no cristal.' 3) Fonte nova: https://actu.epfl.ch/news/understanding-quantum-critical-magnetism-in-han-pu com o trecho 'Multiple mechanisms proposed to explain this phenomenon assumed geometrical frustration of the interactions between the bilayers'."
+   },
+   {
+    "id": "pigmentos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Lead-tin yellow (esquecido após 1750, redescoberto em 1941 por Jakobi; razões não claras)."
+   },
+   {
+    "id": "pigmentos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem com a DESY (35% de CrIII na superfície); distinto do 0011; nota 3."
+   },
+   {
+    "id": "pigmentos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a Harvard Gazette 2014 (vermelho litol, restauração por projeção de luz reversível)."
+   },
+   {
+    "id": "pigmentos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com John Goffe Rand e Oil painting (patente de 1841; frase de Renoir via o filho; contestação de Callen); nota 3."
+   },
+   {
+    "id": "pigmentos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Blombos Cave (oficina de ocre de 100 mil anos em conchas de abalone; desenho de 73 mil anos)."
+   },
+   {
+    "id": "pigmentos-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O édito de 1609 com pena de morte só tem apoio num livro popular de 1846 citado pela Wikipedia; o alcance não é documentado e 'puniu com a morte' sugere execuções; confiança não pode ser alta.",
+    "correcao": "1) Gancho: 'Em 1609, um édito de Henrique IV teria previsto a morte para quem usasse índigo na França, para proteger o pastel-dos-tintureiros. Mas as duas plantas tingem com a mesma substância.' 2) Depois de 'a proibição foi repetida em 1594 e em 1603.', inserir: 'Na França, segundo um relato tradicional, um édito de Henrique IV de 1609 previa a pena de morte para quem usasse \"a falsa e perniciosa droga indiana\"; o texto do édito, porém, é pouco documentado.' 3) confianca 'consenso_parcial'."
+   },
+   {
+    "id": "pigmentos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com International Klein Blue e o Centre Pompidou (envelope Soleau, nunca patenteou o IKB, patente do método com modelos); nota 3."
+   },
+   {
+    "id": "pigmentos-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A origem última de 'carmesim' é persa (o sânscrito kṛmija é parente, não raiz), 'o mais nobre' generaliza, e 'séculos XIV e XV' estende a fonte; nota 3.",
+    "correcao": "1) Gancho: trocar 'O carmesim, vermelho mais nobre da Idade Média,' por 'O carmesim, vermelho de luxo da Europa medieval,' e 'chegou pelo árabe, e a raiz sânscrita quer dizer \"feito por verme\".' por 'chegou pelo árabe e vem de uma antiga palavra persa ligada a \"verme\".' 2) Trocar 'Nos séculos XIV e XV, o escarlate' por 'No século XIV e no início do XV, o escarlate'. 3) Trocar 'o sânscrito \"kṛmija\", \"feito por verme\", passou ao persa e ao árabe como \"qermez\".' por 'a palavra vem do persa, de uma raiz indo-iraniana ligada a \"verme\", parente do sânscrito \"kṛmija\", \"feito por verme\", e passou ao árabe como \"qermez\".'"
+   }
+  ],
+  "2": [
+   {
+    "id": "pigmentos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'passo decisivo'."
+   },
+   {
+    "id": "pigmentos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: ácido prússico; 'boa parte'."
+   },
+   {
+    "id": "pigmentos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: slogan com exagero; azul de manganês."
+   },
+   {
+    "id": "pigmentos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Bihar; 'em parte das amostras'."
+   },
+   {
+    "id": "pigmentos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoques: duas frases ainda tratavam a redução dimensional como real.",
+    "correcao": "'deixou de se propagar... ficou presa' virou 'pareceu deixar... como se estivesse presa'; 'o comportamento em duas dimensões' virou 'essa aparência de duas dimensões'; a frase 'Até então... nunca tinha sido observada' virou 'O resultado chamou atenção... parecia ser a primeira vez'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "pigmentos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: édito 'teria previsto'; consenso_parcial."
+   },
+   {
+    "id": "pigmentos-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: luxo medieval; origem persa."
+   }
+  ]
+ }
+}

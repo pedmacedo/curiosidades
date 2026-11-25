@@ -1,0 +1,174 @@
+{
+ "lote": "2026-11-25-nomes_lugares-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "nomes_lugares-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com California, Las Sergas de Esplandián e Island of California (1510, Calafia, ilha nos mapas de 1622 a 1774–76); consenso_parcial correto."
+   },
+   {
+    "id": "nomes_lugares-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere; mas a leitura de Magalhães é relato ('said to be'), e 'já que' cria causalidade não afirmada.",
+    "correcao": "No gancho, trocar 'que estava na moda e era uma das leituras favoritas de Fernão de Magalhães.' por 'que estava na moda e, segundo se conta, estava entre as leituras de Fernão de Magalhães.'. Na explicação, trocar 'O livro estava muito em voga e era uma das leituras favoritas de Magalhães.' por 'O livro estava muito em voga, e conta-se que Magalhães o lia.' e 'mas essa etimologia é questionável, já que o relato de Pigafetta não explica de onde veio a palavra.' por 'mas essa etimologia é questionável, e o relato de Pigafetta não explica de onde veio a palavra.'."
+   },
+   {
+    "id": "nomes_lugares-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mas o mito escolhido (Cartier entendeu errado) é folclore canadense, enquanto o 'cá nada' português, que a fonte desmonta, é o que o leitor brasileiro conhece; detalhe sobre as línguas iroquesas; nota 3.",
+    "correcao": "Gancho: 'Canadá não vem do português \"cá nada\", como diz uma lenda antiga: vem de kanata, \"aldeia\" numa língua iroquesa hoje extinta. E Jacques Cartier, que adotou o nome, sabia o que a palavra queria dizer.' Na explicação, trocar 'Houve também teorias de uma origem espanhola ou portuguesa, mas nunca se achou prova' por 'A teoria rival mais conhecida diz que exploradores ibéricos, sem achar ouro nem prata, teriam escrito \"cá nada\" (ou \"acá nada\", em espanhol) nos mapas. Mas nunca se achou prova', e 'mas era próxima de línguas como o mohawk, o onondaga e o sêneca, que têm palavras parecidas para \"cidade\"' por 'mas era próxima de outras línguas iroquesas, como o oneida e o mohawk; em mohawk, onondaga e sêneca há palavras parecidas para \"cidade\"'. Acrescentar ao trecho as frases do 'cá nada' da mesma fonte."
+   },
+   {
+    "id": "nomes_lugares-0004",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: a Groenlândia batizada para atrair colonos é trivia clássica (está na List of common misconceptions), e a virada 'não era só propaganda' não tem apoio (a fonte não liga o clima ameno ao nome)."
+   },
+   {
+    "id": "nomes_lugares-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas as fontes divergem sobre quem matou Aleixo Garcia (guaranis ou payaguás).",
+    "correcao": "Trocar 'Garcia foi morto pelos guaranis no fim de 1525, mas a prata chegou ao litoral' por 'Garcia foi morto no fim de 1525 (os relatos divergem sobre quem o matou), mas a prata chegou ao litoral'."
+   },
+   {
+    "id": "nomes_lugares-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Todos os exemplos conferem; mas 'o exemplo mais famoso' é superlativo sem apoio.",
+    "correcao": "Trocar 'O exemplo mais famoso, porém, é exagerado.' por 'Um dos exemplos mais citados, porém, é exagerado.'"
+   },
+   {
+    "id": "nomes_lugares-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere; ressalva 'supposedly' preservada e versões anteriores citadas; nome longo é conhecido, nota 3."
+   },
+   {
+    "id": "nomes_lugares-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mas quem chama a tradução de farsa é um jornalista, falta a confissão de Daly, e 'desde 1912' contradiz os postais de ~1910; nota 3.",
+    "correcao": "No gancho, trocar 'Segundo especialistas, essa tradução é farsa.' por 'Mas essa tradução parece ter sido inventada por um editor de jornal.' Na explicação, trocar 'Desde 1912, porém, ele também é conhecido' por 'Desde o começo do século XX, porém, ele também é conhecido' e, depois de 'por volta de 1910.', acrescentar 'Consta que o próprio Daly confessou várias vezes ter inventado a tradução.' (com o trecho 'Reportedly, Daly had confessed to fabricating the name on multiple occasions')."
+   },
+   {
+    "id": "nomes_lugares-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Equilíbrio adequado (axšaina- 'generally accepted', cores como pontos cardeais contestadas); consenso_parcial."
+   },
+   {
+    "id": "nomes_lugares-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere; mas 'só seria explorado décadas depois' não tem apoio (a costa foi avistada em 1820), e 1545 é o uso mais antigo conhecido.",
+    "correcao": "Trocar 'A forma encurtada \"Australia\" aparece em latim pela primeira vez em 1545' por 'O uso mais antigo conhecido da forma encurtada \"Australia\", em latim, é de 1545,' e 'O do polo Sul, que só seria explorado décadas depois, ficou sem nome' por 'O do polo Sul ficou sem nome'."
+   },
+   {
+    "id": "nomes_lugares-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Nome, Alaska (três teorias, '? Name', Anvil City, corrida do ouro); consenso_parcial."
+   },
+   {
+    "id": "nomes_lugares-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mas Everest 'se opôs', não recusou com sucesso, e 'Sagarmatha' só foi proposto em 1938, então não 'existia' em 1856; nota 3.",
+    "correcao": "No gancho, trocar 'um agrimensor que recusou a honra' por 'um agrimensor que se opôs à homenagem'. Na explicação, trocar 'Os nomes locais existem: em nepalês, a montanha é Sagarmatha' por 'Hoje a montanha tem nomes locais oficiais: em nepalês, Sagarmatha'."
+   },
+   {
+    "id": "nomes_lugares-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hy-Brasil (Dulcert c. 1325, Bristol 1480–81, 'Brasil Rock' até 1865); não afirma que deu nome ao país."
+   },
+   {
+    "id": "nomes_lugares-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Antillia (sete bispos, Pizzigano 1424, Behaim 1492, nome das Antilhas); distinto do 0013."
+   },
+   {
+    "id": "nomes_lugares-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Ipanema e Copacabana conferem; mas 'neto de Manco Kapac' é insustentável (Tito Yupanqui descendia da nobreza inca, provavelmente de Huayna Cápac), e uma frase está confusa.",
+    "correcao": "Trocar 'Segundo a história do lugar, a imagem foi feita em 1582 por um neto do governante inca Manco Kapac, depois de muitas tentativas fracassadas, inspirado pelas imagens da Virgem que viu em igrejas de La Paz.' por 'Segundo a tradição, a imagem foi esculpida por volta de 1582 por um artista indígena descendente da nobreza inca, depois de muitas tentativas fracassadas, inspirado pelas imagens da Virgem que viu em igrejas de La Paz.' Trocar 'o bairro homenageia o barão e a terra natal dele, não a praia' por 'o nome não nasceu da praia, mas do título do barão e da terra natal dele'."
+   },
+   {
+    "id": "nomes_lugares-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O artigo de Navarro sustenta tudo; mas 'ninguém mais falava a língua' exagera (o nheengatu ainda é falado; extintos estavam o tupi antigo e a língua geral paulista).",
+    "correcao": "No gancho, trocar 'quando ninguém mais falava a língua, e alguns saíram errados' por 'quando o tupi antigo já estava extinto havia séculos, e alguns saíram errados'. Opcional: 'Na análise de Navarro, alguns ficaram corretos'."
+   }
+  ],
+  "2": [
+   {
+    "id": "nomes_lugares-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: leitura de Magalhães como relato; sem 'já que'."
+   },
+   {
+    "id": "nomes_lugares-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas; retoques: a fonte trata o 'cá nada' como teoria, e 'by 1545' é 'em 1545'.",
+    "correcao": "'uma lenda antiga' virou 'uma velha teoria'; 'por volta de 1545' virou 'em 1545'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "nomes_lugares-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: relatos divergem sobre quem matou Garcia."
+   },
+   {
+    "id": "nomes_lugares-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'um dos exemplos mais citados'."
+   },
+   {
+    "id": "nomes_lugares-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas; retoque: a fonte diz que Daly confessou ter inventado o nome, sem separar nome e tradução.",
+    "correcao": "'ter inventado a tradução' virou 'a invenção'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "nomes_lugares-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: uso mais antigo conhecido em 1545."
+   },
+   {
+    "id": "nomes_lugares-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: 'se opôs'; nomes locais oficiais hoje."
+   },
+   {
+    "id": "nomes_lugares-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: artista descendente da nobreza inca."
+   },
+   {
+    "id": "nomes_lugares-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: 'whose creators are known'.",
+    "correcao": "'gente conhecida' virou 'autores identificados'.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

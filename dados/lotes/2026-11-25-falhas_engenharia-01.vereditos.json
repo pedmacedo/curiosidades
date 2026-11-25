@@ -1,0 +1,207 @@
+{
+ "lote": "2026-11-25-falhas_engenharia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "falhas_engenharia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas as réguas diferentes são explicação provável da assimetria (há alternativas), e a causa principal do naufrágio foi o excesso de peso no alto.",
+    "correcao": "Trocar 'As equipes mediram com unidades diferentes, e o navio ficou mais pesado a bombordo.' por 'O casco também é assimétrico, com mais peso a bombordo, e uma explicação provável é que equipes diferentes trabalharam com réguas diferentes. Mas o que derrubou o navio foi o excesso de peso no alto.' Opcional: 'depois de só três travessias'."
+   },
+   {
+    "id": "falhas_engenharia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas 'onda pegajosa' soa leve demais para uma tragédia com mortos.",
+    "correcao": "No gancho, trocar 'uma onda pegajosa matou 21 pessoas' por 'uma onda de melaço matou 21 pessoas'."
+   },
+   {
+    "id": "falhas_engenharia-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Mecanismo confere; mas 'quatro estados' só aparece no resumo da fonte, e o corpo lista três.",
+    "correcao": "Trocar 'A empresa de engenharia perdeu as licenças em quatro estados' por 'A empresa de engenharia perdeu as licenças em vários estados americanos'."
+   },
+   {
+    "id": "falhas_engenharia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a explicação clássica da sincronia é contestada (Nature Communications 2021: a coordenação foi consequência, não causa).",
+    "correcao": "1) confianca 'consenso_parcial'. 2) Gancho: 'A ponte do Milênio, em Londres, fechou dois dias após abrir, em 2000, porque balançava de lado. A explicação clássica: os pedestres entravam no ritmo do balanço sem perceber e o reforçavam. Hoje isso é questionado.' 3) Antes de 'Ela reabriu...', acrescentar: 'Um estudo publicado em 2021 na Nature Communications contestou essa versão: para os autores, os passos coordenados foram consequência do balanço, e não a causa, porque o jeito como cada pedestre se equilibra já bastaria para alimentar a oscilação, mesmo sem sincronia.' 4) Fonte nova: https://www.nature.com/articles/s41467-021-27568-y (ou https://www.repository.cam.ac.uk/handle/1810/332076) com trecho literal do resumo. 5) Opcional: 'mito_desmentido' no lugar de 'conexao_inesperada'."
+   },
+   {
+    "id": "falhas_engenharia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas o foguete saiu da rota aos 37 s e só depois se destruiu, e 'engenhosidade' não combina com uma falha.",
+    "correcao": "1) No gancho, trocar 'se destruiu 37 segundos após decolar' por 'saiu da rota 37 segundos após decolar e se destruiu'. 2) Em tipos_espanto, remover 'engenhosidade' (fica ['contraintuitivo'] ou ['contraintuitivo', 'historia_humana'])."
+   },
+   {
+    "id": "falhas_engenharia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere e é sóbrio; mas 'estudo obrigatório' exagera 'has become a case study'.",
+    "correcao": "Trocar 'O caso virou estudo obrigatório sobre o excesso de confiança de engenheiros que desprezam os relatos de quem usa a máquina.' por 'O caso virou estudo de caso em engenharia de software e ética na computação, como exemplo do excesso de confiança de engenheiros que desprezam os relatos de quem usa a máquina.'"
+   },
+   {
+    "id": "falhas_engenharia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'Por isso' sugere que a medição de 1999 motivou um projeto de 1991.",
+    "correcao": "Trocar 'Por isso, desde a construção do terminal, iniciada em 1991, o prédio se apoia em colunas ajustáveis' por 'Para compensar o afundamento, o terminal, cuja construção começou em 1991, foi projetado sobre colunas ajustáveis'."
+   },
+   {
+    "id": "falhas_engenharia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Explicação equilibrada; mas o gancho afirma como fato o argumento dos céticos (e o gasto baixo é contestado), e misterio_aberto não cabe.",
+    "correcao": "1) Gancho: trocar 'Coreia do Sul, Itália e Rússia gastaram pouco ou nada para se preparar e tiveram tão poucos problemas quanto quem gastou fortunas.' por 'Céticos citam Coreia do Sul, Itália e Rússia, que teriam gastado pouco e não tiveram mais problemas que quem gastou fortunas.' 2) tipos_espanto: ['contraintuitivo', 'historia_humana']. Manter consenso_parcial."
+   },
+   {
+    "id": "falhas_engenharia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Mars Climate Orbiter e IEEE Spectrum (fator 4,45; navegadores ignorados por não preencherem o formulário); troca de unidades conhecida, nota 3."
+   },
+   {
+    "id": "falhas_engenharia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Atribuições conferem; mas a solda foi fator na propagação, e a fonte só descarta a solda malfeita como origem das trincas.",
+    "correcao": "No gancho, trocar 'mostrou que o culpado não era a solda, e sim o aço' por 'mostrou que o culpado não era a solda malfeita, e sim o aço'."
+   },
+   {
+    "id": "falhas_engenharia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere e o mito se confirma; mas 'many' virou todos, '33 (some say 35)' virou 'contagem mais citada', e fora de Toronto os anéis são de aço.",
+    "correcao": "1) Gancho: 'Muitos engenheiros canadenses usam no mindinho um anel de ferro que lembra suas obrigações. Diz o mito que os primeiros saíram das vigas da ponte de Quebec, que desabou em 1907. Mas foram feitos por veteranos de guerra.' (≤ 220). 2) Trocar '33 deles eram metalúrgicos mohawks de Kahnawake, segundo a contagem mais citada' por '33 deles (algumas fontes dizem 35) eram metalúrgicos mohawks de Kahnawake'. 3) Depois da frase do dedo mínimo, acrescentar 'Hoje, fora de Toronto, os anéis são de aço inoxidável.'"
+   },
+   {
+    "id": "falhas_engenharia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: a pesquisa anônima 'entre 1 em 50 e 1 em 200' só aparece na Wikipedia e não bate com o Apêndice F de Feynman (engenheiros ~1 em 100, gerência 1 em 100 mil); o resto confere.",
+    "correcao": "1) Gancho: 'A gerência da NASA estimava em 1 em 100 mil o risco de perder um ônibus espacial; os engenheiros, em cerca de 1 em 100. No fim do programa, foram 2 desastres em 135 voos.' 2) Na explicação, registrar que Feynman, no apêndice que escreveu para o relatório, anotou a divergência (cerca de 1 em 100, dos engenheiros, a 1 em 100 mil, da gerência) e que 1 em 100 mil equivaleria a lançar uma nave por dia durante 300 anos e perder só uma; retirar qualquer menção a pesquisa anônima ou a '1 em 50 e 1 em 200'. 3) No trecho de Rogers_Commission_Report, trocar a parte do 'poll the engineers' por 'The estimates range from roughly 1 in 100 to 1 in 100,000. The higher figures come from the working engineers, and the very low figures from management. [...] Since 1 part in 100,000 would imply that one could put a Shuttle up each day for 300 years expecting to lose only one' (mesmo cache), mantendo a frase dos 2 em 135 voos."
+   },
+   {
+    "id": "falhas_engenharia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas 'escapou por ter mais barras' é causalidade inventada, 'toda a carga' exagera, e a Hercílio Luz foi interditada aos veículos em 1982, antes do fechamento total em 1991.",
+    "correcao": "1) Gancho: trocar 'Só havia outras duas pontes do mesmo tipo, e uma é a Hercílio Luz, em Florianópolis, que escapou por ter mais barras.' por 'Só havia outras duas pontes de desenho parecido, e uma é a Hercílio Luz, em Florianópolis, que tinha o dobro de barras em cada elo.' 2) Trocar 'se uma rompesse, a outra ficava com toda a carga' por 'se uma rompesse, a outra ficaria muito sobrecarregada'. 3) Trocar 'Ela foi fechada em 1991 por corrosão e reaberta em 2019.' por 'Mesmo assim, a corrosão a levou a ser fechada de vez em 1991, e ela só foi reaberta em 2019, depois de uma longa restauração.'"
+   },
+   {
+    "id": "falhas_engenharia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Tay Bridge disaster e Forth Bridge (Airy e a carga de vento, 'em parte', McGonagall)."
+   },
+   {
+    "id": "falhas_engenharia-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a anedota do diretor e o 'pronta adiantada' não têm apoio (a Equinor diz que o prazo foi cumprido), as câmaras implodiram durante a descida, e 'simulação mal feita' simplifica demais.",
+    "correcao": "1) Gancho: trocar 'A causa foi uma simulação de computador mal feita.' por 'A causa principal foi um erro numa simulação de computador.' 2) Trocar 'No fundo do fiorde, de 210 metros, as câmaras implodiram, e os destroços causaram o tremor.' por 'Enquanto ela descia no fiorde, de 210 metros, as câmaras de flutuação implodiram, e o choque dos destroços contra o fundo causou o tremor.' 3) Apagar 'Segundo o relato do caso, os gerentes esperavam punição, mas o diretor só perguntou se eles conseguiam fazer outra antes do prazo. A nova base ficou pronta adiantada, e' e começar por 'A base foi redesenhada, a plataforma ficou pronta em junho de 1993, e o caso virou lição...', com o trecho 'The hull was redesigned after the accident and the Sleipner A Platform was successfully completed in June 1993.' e retirando do trecho o 'Can you make a new one'. 4) Fonte nova: https://canadianconsultingengineer.com/features/failure-of-an-offshore-platform com trecho literal sobre a análise por elementos finitos ter subestimado o cisalhamento."
+   },
+   {
+    "id": "falhas_engenharia-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A SEC confere; mas a função deixou de ser usada em 2003 (em 2005 só foi quebrada), e o prejuízo veio depois de desfeitas as posições acumuladas nos 45 minutos.",
+    "correcao": "Gancho: 'Em 2012, uma corretora dos EUA perdeu mais de 460 milhões de dólares por 45 minutos de ordens descontroladas: uma função antiga, fora de uso mas nunca apagada, voltou a funcionar. E-mails automáticos tinham avisado.' Na explicação, depois de 'negociou mais de 397 milhões de ações', acrescentar ', acumulando posições de bilhões de dólares que, ao serem desfeitas, deram o prejuízo de mais de 460 milhões'."
+   }
+  ],
+  "2": [
+   {
+    "id": "falhas_engenharia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: réguas como explicação provável; excesso de peso no alto."
+   },
+   {
+    "id": "falhas_engenharia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'onda de melaço'."
+   },
+   {
+    "id": "falhas_engenharia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'vários estados'."
+   },
+   {
+    "id": "falhas_engenharia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: explicação clássica questionada; estudo de 2021."
+   },
+   {
+    "id": "falhas_engenharia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: saiu da rota aos 37 s; tipos."
+   },
+   {
+    "id": "falhas_engenharia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada ('estudo de caso'); retoque: a fonte diz 'Several'.",
+    "correcao": "'Muitas mensagens de erro' virou 'Várias mensagens de erro'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "falhas_engenharia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: colunas previstas para compensar."
+   },
+   {
+    "id": "falhas_engenharia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: argumento atribuído aos céticos; tipos; consenso_parcial."
+   },
+   {
+    "id": "falhas_engenharia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'solda malfeita'."
+   },
+   {
+    "id": "falhas_engenharia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'Muitos engenheiros'; 33 ou 35; aço fora de Toronto."
+   },
+   {
+    "id": "falhas_engenharia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: números do Apêndice F; sem pesquisa anônima."
+   },
+   {
+    "id": "falhas_engenharia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: desenho parecido; dobro de barras; fechada de vez em 1991."
+   },
+   {
+    "id": "falhas_engenharia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: causa principal; implosão na descida; sem a anedota; fonte nova."
+   },
+   {
+    "id": "falhas_engenharia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: a fonte diz 'embora', não 'porque'.",
+    "correcao": "'Como ela não devia mais ser usada, ficou lá.' virou 'Embora ela não devesse mais ser usada, a empresa a deixou lá.'",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

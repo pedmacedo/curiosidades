@@ -1,0 +1,149 @@
+{
+ "lote": "2026-11-25-algoritmos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "algoritmos-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Euclidean algorithm; mas o RSA não é 'a' criptografia do comércio eletrônico ('widely used').",
+    "correcao": "No gancho, trocar 'Hoje ele é um dos passos do RSA, a criptografia do comércio eletrônico.' por 'Hoje ele é um dos passos do RSA, criptografia muito usada no comércio eletrônico.'"
+   },
+   {
+    "id": "algoritmos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O fato se contradiz: a fonte diz que atribuir a Turing a definição e a prova do problema da parada 'is not correct'; ele provou problemas aparentados, e a formulação surgiu nos anos 1950; nota 3.",
+    "correcao": "Gancho novo: 'O problema da parada, segundo o qual nenhum algoritmo prevê se qualquer programa termina, costuma ser creditado a Turing. Mas ele nunca escreveu \"halt\" (parar): essa formulação só surgiu nos anos 1950.' Na explicação, trocar 'Alan Turing mostrou que não existe um algoritmo geral que acerte a resposta para todos os pares de programa e entrada. A prova dele saiu em janeiro de 1937, meses depois de Alonzo Church publicar, em abril de 1936, outra prova de indecidibilidade.' por 'Não existe algoritmo geral que acerte a resposta para todos os pares de programa e entrada. O resultado costuma ser creditado ao artigo de Turing publicado em janeiro de 1937, meses depois de Alonzo Church publicar, em abril de 1936, outra prova de indecidibilidade. Mas, nesse artigo, Turing provou indecidíveis problemas aparentados, como o de saber se uma máquina chega a imprimir certo símbolo; o problema da parada, nessa forma, só surgiu nos anos 1950.' Trocar também 'atribuem ao artigo de Turing a definição do \"problema da parada\"' por 'atribuem ao artigo de Turing a definição e a prova do \"problema da parada\"'."
+   },
+   {
+    "id": "algoritmos-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere e a ligação com Rice é justa; mas o termo 'vírus' tem outras origens (conto de 1970; 'coined by Fred Cohen'), e Cohen o creditou a Adleman; 'Por isso' é causalidade não afirmada.",
+    "correcao": "No gancho, trocar 'O termo \"vírus de computador\" veio do mentor dele.' por 'Ele creditou o nome \"vírus\" ao seu mentor.' Na explicação, trocar 'o primeiro a chamar explicitamente de \"vírus\"' por 'o primeiro artigo acadêmico a chamar explicitamente de \"vírus\"' e 'Por isso, os antivírus trabalham com aproximações.' por 'Na prática, os antivírus trabalham com aproximações.'"
+   },
+   {
+    "id": "algoritmos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com o relato de Dijkstra (vinte minutos, café, sem lápis; publicado em 1959; OSPF e IS-IS)."
+   },
+   {
+    "id": "algoritmos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Pancake sorting (Gates e Papadimitriou 1979, Harry Dweighter, David X. Cohen, E. coli 2008)."
+   },
+   {
+    "id": "algoritmos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Shor's algorithm (15 e 21; demonstrações com conhecimento prévio da resposta; 'As of 2026' só semiprimos pequenos); não repete criptografia-0010."
+   },
+   {
+    "id": "algoritmos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Karatsuba algorithm (1960, 23 anos, uma semana, seminário encerrado, artigo escrito por Kolmogorov)."
+   },
+   {
+    "id": "algoritmos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Atribuições corretas (Tukey, Garwin, Gauss 1805); mas 'sem fama' é juízo sem apoio (Yates e Danielson-Lanczos foram usados).",
+    "correcao": "Trocar 'Entre 1805 e 1965, outras versões chegaram a ser publicadas, sem fama.' por 'Entre 1805 e 1965, outros autores chegaram a publicar versões do método, sem perceber todo o seu alcance.'"
+   },
+   {
+    "id": "algoritmos-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mas o mistério foi resolvido em 2006 (não é misterio_aberto) e o gancho omite o deslocamento de um bit antes da subtração; meme famoso entre programadores, nota 3.",
+    "correcao": "(1) Em tipos_espanto, trocar 'misterio_aberto' por 'historia_humana'. (2) Gancho: 'O jogo Quake III calculava 1/√x lendo os bits de um número com vírgula como se fosse inteiro, dividindo por 2 e subtraindo de uma constante mágica, 0x5F3759DF. Por anos, ninguém soube quem inventou aquilo.' (3) Nota 3."
+   },
+   {
+    "id": "algoritmos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Quicksort e Tony Hoare (Moscou 1959, tradução automática, aposta de seis pence; o 'erro de um bilhão' corretamente ligado à referência nula)."
+   },
+   {
+    "id": "algoritmos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Secretary problem (n/e, ~37%, Gardner 1960, Kepler e as 11 candidatas)."
+   },
+   {
+    "id": "algoritmos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (IEEE Spectrum confirma); mas a Igreja não o excomungou formalmente (só declarou que se afastara, segundo Sheynin), 'fama de rebelde' vai além da fonte, e 'aplicação prática' traduz mal 'empirical'.",
+    "correcao": "1) Trocar 'Ateu, em 1912 respondeu à excomunhão de Liev Tolstói pedindo a própria excomunhão à Igreja Ortodoxa Russa, que atendeu ao pedido.' por 'Ateu, em 1912 pediu à Igreja Ortodoxa Russa a própria excomunhão, numa referência à de Liev Tolstói.' 2) Trocar 'Markov tinha fama de rebelde.' por 'Desde a escola, alguns professores o viam como rebelde.' 3) No gancho, trocar 'tiveram a primeira aplicação prática num poema' por 'tiveram a primeira aplicação empírica num poema'. 4) Acrescentar a fonte https://spectrum.ieee.org/andrey-markov-and-claude-shannon-built-the-first-language-generation-models com 'wrote out the first 20,000 letters of the book in one long string of letters'."
+   },
+   {
+    "id": "algoritmos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Simplificação aceitável (problema de consistência, Kaye 2000); P vs NP e prêmio conferem."
+   },
+   {
+    "id": "algoritmos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com TeX, Knuth e Knuth reward check (versão 3.141592653, US$ 2,56, San Serriffe)."
+   },
+   {
+    "id": "algoritmos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com o site de William Cook (49.687 pubs, 63.739.687 m, ~250 anos num núcleo, 49.687 ienes)."
+   },
+   {
+    "id": "algoritmos-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Physarum polycephalum (Tóquio e 36 cidades com aveia, eficiência comparável)."
+   }
+  ],
+  "2": [
+   {
+    "id": "algoritmos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'criptografia muito usada'."
+   },
+   {
+    "id": "algoritmos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: gancho novo; formulação dos anos 1950."
+   },
+   {
+    "id": "algoritmos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: creditou o nome ao mentor; 'Na prática'."
+   },
+   {
+    "id": "algoritmos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem 'sem fama'."
+   },
+   {
+    "id": "algoritmos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: historia_humana; divisão por 2."
+   },
+   {
+    "id": "algoritmos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoques: a fonte fala só da escola e diz 'responded to'.",
+    "correcao": "'Desde a escola' virou 'Na escola... já'; 'numa referência à de' virou 'em resposta à excomunhão de'.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

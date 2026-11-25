@@ -9,7 +9,7 @@
 >
 > **Produção em paralelo (desde 2026-11-18, ideia do Pedro):** o orquestrador (a sessão principal) lança 4 subagentes produtores, um por tema da fila, com as regras de `pipeline/instrucoes_produtor.md`. Cada produtor só escreve, baixa (`pipeline/baixar_fontes.py`), monta e checa o seu lote, e depois faz o r2 com os vereditos. A verificação continua com o subagente `verificador` independente, de 4 a 5 fatos por chamada, e quem grava vereditos, aplica e mexe no PROGRESSO é só o orquestrador, um lote por vez, para não haver escrita simultânea em `dados/fatos`. Duplicatas entre lotes paralelos: o orquestrador mantém um e descarta o outro como `duplicado`.
 >
-> **Onde parou (2026-11-25):** 29 levas paralelas fechadas (126 temas, mais o lote de IA). A 29ª leva fez Ecologia, Sono e relógio biológico, Atmosfera, História da astronomia e Estados da matéria. A 30ª leva (Algoritmos, Falhas de engenharia, África antiga e medieval, Nomes de lugares e Pigmentos) está em andamento; faltam 13 temas.
+> **Onde parou (2026-11-25):** 30 levas paralelas fechadas (131 temas, mais o lote de IA). A 30ª leva fez Algoritmos, Falhas de engenharia, África antiga e medieval, Nomes de lugares e Pigmentos. Os 8 últimos temas da Fase 4 estão em produção (31ª leva: Personagens esquecidos, Ciência brasileira, Fronteiras e países, Comida brasileira; 32ª: Neurociência, Esportes tradicionais, Corpo em condições extremas, Navegadores antigos).
 >
 > **Para retomar:** rode `python pipeline/situacao.py`. Ele mostra o lote pela metade (e o próximo passo), se é hora de amostra de revisão humana e os próximos temas da fila. Siga o "Fluxo de um lote" (seção da Fase 2) e, ao fim de cada tema, atualize a tabela da Fase 4 e as estatísticas.
 
@@ -182,6 +182,11 @@
 | Atmosfera | 2026-11-25-atmosfera-01 | 16 | 14 | 2 | 29ª leva paralela (tema novo). Rodada 1: 5 aprovados, 9 ajustar, 2 reprovados (um quarto fato de ozônio, redundante e com a frase da DuPont de atribuição frágil; e os hemisférios de Magdeburgo, cuja cena de 1654 é contestada). Destaques: Midgley não criou o primeiro CFC (Swarts, anos 1890); os dados de satélite do buraco de ozônio foram marcados como prováveis erros, não descartados, e o '1976' era impossível para o Nimbus 7; a data da Grande Oxidação e as cianobactérias de 3,5 bilhões de anos são debatidas; o mar profundo seguiu sem oxigênio até ~580 milhões de anos; só 11% do potássio-40 vira argônio; os insetos respiram ativamente; Tateno fica perto de Tóquio, não do Fuji. Os 9 aprovados na 2ª. |
 | Sono e relógio biológico | 2026-11-25-sono_ritmos-01 | 16 | 16 | 0 | 29ª leva paralela (tema novo). Rodada 1: 9 aprovados, 7 ajustar. Destaques: o sono em dois turnos é tese de Ekirch sobre o Ocidente, com cerca de uma hora acordado no meio; a duração da estadia de Siffre na caverna diverge entre as fontes (ficou 'quase dois meses'); o ritmo do assistente de Kleitman só começou a se ajustar ao dia de 28 horas; as fragatas voam semanas sem pousar na água, não só 10 dias; o 'gene do sono curto' sugere, mas não prova, outra base; as células com melanopsina contribuem um pouco para a visão consciente; a descoberta do REM foi reescrita com texto próprio. Os 7 aprovados na 2ª (1 com ajuste pontual). |
 | História da astronomia | 2026-11-25-historia_astronomia-01 | 16 | 16 | 0 | 29ª leva paralela (tema novo). Rodada 1: 7 aprovados, 9 ajustar. Destaques: a datação do disco de Nebra foi contestada em 2020 e defendida no mesmo ano; Annie Cannon manteve O, B, A, F, G, K, M e N; Kepler, se tivesse matado Tycho, queria o laboratório, não os dados; a história de que Le Gentil foi dado como morto e teve a mulher recasada é duvidosa e saiu; Urano foi visto mais de 20 vezes antes de Herschel; o sextante de Ulugh Beg tinha ~40 m, não 36; a queda linear da velocidade de Júpiter é o modelo das tabuinhas babilônicas; na ema guarani só a cabeça e o pescoço são manchas escuras. Os 9 aprovados na 2ª. |
+| Algoritmos e computação | 2026-11-25-algoritmos-01 | 16 | 16 | 0 | 30ª leva paralela (tema novo). Rodada 1: 10 aprovados, 6 ajustar. Destaques: Turing não definiu nem provou o 'problema da parada' nessa forma, que surgiu nos anos 1950; Cohen creditou o nome 'vírus' a Adleman, mas o termo tem outras origens; outras versões da FFT antes de 1965 não perceberam seu alcance; o mistério da constante do Quake III foi resolvido em 2006; Markov pediu a excomunhão em resposta à de Tolstói, mas a Igreja não a concedeu formalmente. Os 6 aprovados na 2ª (1 com ajuste pontual). |
+| África antiga e medieval | 2026-11-25-africa_antiga-01 | 17 | 17 | 0 | 30ª leva paralela (tema novo). Rodada 1: 9 aprovados, 8 ajustar. Destaques: a lista das 'quatro Candaces' incluía uma figura que a fonte diz não ser mulher; a primazia da cruz nas moedas de Axum é discutida; o obelisco foi levado durante a ocupação italiana, e a 'maior carga aérea da história' era exagero; o radiocarbono confirmou a data dos monges para os Evangelhos de Garima; o museu nigeriano feito para os bronzes do Benin não abriu como se dizia (protestos em 2025); Frobenius viu uma só cabeça de Ife; os 350 mil manuscritos de Tombuctu são número dos organizadores, contestado por Charlie English. Os 8 aprovados na 2ª. |
+| Pigmentos e cores da arte | 2026-11-25-pigmentos-01 | 16 | 16 | 0 | 30ª leva paralela (tema novo). Rodada 1: 9 aprovados, 7 ajustar. Destaques: o forno de 1814 foi um passo decisivo, não o começo, do ultramar sintético (Goethe já vira o azul em 1787); o azul da Prússia deu nome ao ácido prússico, não ao 'cianeto'; o 'primeiro azul novo em dois séculos' do YInMn é slogan exagerado; o ácido hipúrico apareceu só em parte das amostras de amarelo indiano; a 'perda de dimensão' da púrpura Han foi aparente (EPFL, 2020); o édito de Henrique IV com pena de morte para o índigo é pouco documentado; 'carmesim' vem do persa, não do sânscrito. Os 7 aprovados na 2ª (1 com ajuste pontual). |
+| Falhas de engenharia | 2026-11-25-falhas_engenharia-01 | 16 | 16 | 0 | 30ª leva paralela (tema novo). Rodada 1: 2 aprovados, 14 ajustar. Destaques: as réguas diferentes do Vasa explicam a assimetria, mas o naufrágio veio do excesso de peso no alto; a sincronia dos pedestres na ponte do Milênio foi contestada em 2021 (consequência, não causa); o argumento de que o bug do milênio foi exagero é dos céticos; os números de risco do Challenger seguem o apêndice de Feynman (cerca de 1 em 100 contra 1 em 100 mil), sem a 'pesquisa anônima'; a Hercílio Luz não 'escapou' por ter mais barras; a anedota do diretor da Sleipner saiu; a função da Knight Capital estava fora de uso desde 2003. Os 14 aprovados na 2ª (2 com ajuste pontual). |
+| Nomes de lugares | 2026-11-25-nomes_lugares-01 | 16 | 15 | 1 | 30ª leva paralela (tema novo). Rodada 1: 6 aprovados, 9 ajustar, 1 reprovado (a Groenlândia batizada para atrair colonos é trivia clássica, e a virada proposta não tinha apoio). Destaques: a leitura do Primaleón por Magalhães é relato; Canadá não vem do 'cá nada' português, velha teoria sem prova; as fontes divergem sobre quem matou Aleixo Garcia; a tradução do lago Chaubunagungamaug parece invenção de um editor de jornal; George Everest se opôs à homenagem, e 'Sagarmatha' é nome proposto em 1938; a imagem da padroeira de Copacabana não foi feita por um 'neto de Manco Cápac'; os nomes 'tupis' do século XX vieram quando o tupi antigo já estava extinto (análise de Eduardo Navarro). Os 9 aprovados na 2ª (3 com ajuste pontual). |
 
 ## Fase 2: piloto (2026-11-17)
 
@@ -435,6 +440,8 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-25):
 | 2026-11-24-teatro_danca-01 | teatro_danca | 15 | 15 | 0 | 0% | 3/12/0 | — | 3.7 |
 | 2026-11-24-teoria_jogos-01 | teoria_jogos | 16 | 16 | 0 | 0% | 8/8/0 | — | 4.0 |
 | 2026-11-24-videogames-01 | videogames | 18 | 16 | 2 | 11% | 6/10/2 | pouco_interessante 2 | 3.9 |
+| 2026-11-25-africa_antiga-01 | africa_antiga | 17 | 17 | 0 | 0% | 9/8/0 | — | 3.9 |
+| 2026-11-25-algoritmos-01 | algoritmos | 16 | 16 | 0 | 0% | 10/6/0 | — | 3.9 |
 | 2026-11-25-atmosfera-01 | atmosfera | 16 | 14 | 2 | 12% | 5/9/2 | pouco_interessante 1, numero_divergente 1 | 3.6 |
 | 2026-11-25-biomimetica-01 | biomimetica | 12 | 11 | 1 | 8% | 2/9/1 | pouco_interessante 1 | 3.7 |
 | 2026-11-25-brinquedos-01 | brinquedos | 15 | 15 | 0 | 0% | 4/11/0 | — | 3.7 |
@@ -444,15 +451,18 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-25):
 | 2026-11-25-decisoes_economia-01 | decisoes_economia | 15 | 14 | 1 | 7% | 6/8/1 | pouco_interessante 1 | 3.7 |
 | 2026-11-25-ecologia-01 | ecologia | 16 | 16 | 0 | 0% | 8/8/0 | — | 4.0 |
 | 2026-11-25-estados_materia-01 | estados_materia | 15 | 13 | 2 | 13% | 5/8/2 | duplicado 2 | 3.9 |
+| 2026-11-25-falhas_engenharia-01 | falhas_engenharia | 16 | 16 | 0 | 0% | 2/14/0 | — | 3.9 |
 | 2026-11-25-historia_astronomia-01 | historia_astronomia | 16 | 16 | 0 | 0% | 7/9/0 | — | 4.0 |
 | 2026-11-25-imperios_coloniais-01 | imperios_coloniais | 15 | 14 | 1 | 7% | 4/10/1 | duplicado 1 | 4.0 |
 | 2026-11-25-linguas_construidas-01 | linguas_construidas | 17 | 17 | 0 | 0% | 7/10/0 | — | 4.1 |
 | 2026-11-25-mundo_islamico_medieval-01 | mundo_islamico_medieval | 14 | 14 | 0 | 0% | 6/8/0 | — | 3.8 |
 | 2026-11-25-musica_brasileira-01 | musica_brasileira | 14 | 14 | 0 | 0% | 3/11/0 | — | 3.8 |
+| 2026-11-25-nomes_lugares-01 | nomes_lugares | 16 | 15 | 1 | 6% | 6/9/1 | pouco_interessante 1 | 3.7 |
+| 2026-11-25-pigmentos-01 | pigmentos | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.7 |
 | 2026-11-25-sono_ritmos-01 | sono_ritmos | 16 | 16 | 0 | 0% | 9/7/0 | — | 4.1 |
-| **Total** | | 2131 | 2065 | 66 | 3% | | | |
+| **Total** | | 2212 | 2145 | 67 | 3% | | | |
 
-Cobertura: 150 de 163 temas com pelo menos um fato aprovado.
+Cobertura: 155 de 163 temas com pelo menos um fato aprovado.
 
 ## Revisões humanas
 
