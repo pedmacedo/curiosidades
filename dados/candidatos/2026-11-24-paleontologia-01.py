@@ -1,0 +1,634 @@
+LOTE = "2026-11-24-paleontologia-01"
+AREA = "terra"
+TEMA = "paleontologia"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Mary Anning e o crédito que não recebeu
+    {
+        "temas_secundarios": ["personagens_esquecidos", "evolucao"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Aos 12 anos, Mary Anning ajudou a desenterrar o primeiro esqueleto de ictiossauro identificado corretamente. Por ser mulher, não podia entrar na Sociedade Geológica de Londres, e nem sempre recebia crédito.",
+        "explicacao": (
+            "Anning (1799–1847) vivia em Lyme Regis, no litoral sul da Inglaterra, onde as falésias do Jurássico "
+            "desabavam no inverno e expunham fósseis que precisavam ser recolhidos antes que o mar os levasse. A "
+            "família, pobre, vendia os achados a turistas numa mesa em frente de casa. Em 1811, o irmão Joseph "
+            "desenterrou um crânio de 1,22 metro; em 1812, ela achou o resto do esqueleto, com mais de 4,57 metros. "
+            "Depois vieram os dois primeiros esqueletos quase completos de plesiossauro. O segundo tinha um pescoço "
+            "com 35 vértebras, algo nunca visto, e o anatomista francês Georges Cuvier sugeriu que fosse uma fraude "
+            "montada com ossos de bichos diferentes. Uma reunião especial da Sociedade Geológica concluiu que o "
+            "fóssil era legítimo, e Cuvier admitiu depois que se precipitara. Foi Anning também quem sugeriu que as "
+            "\"pedras bezoar\" eram fezes fossilizadas, hoje chamadas coprólitos. Mesmo assim, os artigos de "
+            "Everard Home sobre o ictiossauro nunca disseram quem o coletou. Uma moça que a acompanhava registrou o "
+            "desabafo de Anning: os homens de ciência tinham \"sugado o cérebro\" dela e publicado obras com o "
+            "conteúdo que ela fornecia, sem que ela ganhasse nada com isso."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Mary_Anning",
+            "Mary Anning (21 May  1799 –   9 March  1847) was an English fossil collector, dealer, and palaeontologist. [...] "
+            "particularly during the winter months when landslides exposed new fossils that had to be collected quickly before they were lost to the sea. "
+            "Her discoveries included the first correctly identified ichthyosaur skeleton when she was twelve years old; the first two nearly complete plesiosaur skeletons; [...] "
+            "her observations played a key role in the discovery that coprolites, known as bezoar stones at the time, were fossilised faeces [...] "
+            "As a woman, she was not eligible to join the Geological Society of London, and she did not always receive full credit for her scientific contributions. [...] "
+            "They offered their discoveries for sale to tourists on a table outside their home. [...] "
+            "Their first well-known find was in 1811 when Mary Anning was 12; her brother Joseph dug up a 4-foot (1.22 metre) ichthyosaur skull, and a few months later in 1812, Anning herself found the rest of the skeleton, which turned out to be over 5 yards (4.57 metres) in length. [...] "
+            "The papers never mentioned who had collected the fossil [...] "
+            "The fact that the plesiosaur's long neck had an unprecedented 35 vertebrae raised the suspicions of the eminent French anatomist Georges Cuvier when he reviewed Anning's drawings of the second skeleton, and he wrote to Conybeare suggesting the possibility that the find was a fake produced by combining fossil bones from different kinds of animals. [...] "
+            "Cuvier's accusation had resulted in a special meeting of the Geological Society earlier in 1824, which, after some debate, had concluded the skeleton was legitimate. "
+            "Cuvier later admitted he had acted in haste and was mistaken. [...] "
+            "Anna Pinney, a young woman who sometimes accompanied Anning while she collected, wrote: \"She says the world has used her ill ... these men of learning have sucked her brains, and made a great deal of publishing works, of which she furnished the contents, while she derived none of the advantages.\"",
+            nome="Mary Anning")],
+    },
+    # 2 a Guerra dos Ossos entre Cope e Marsh
+    {
+        "temas_secundarios": ["personagens_esquecidos", "evolucao"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Na \"Guerra dos Ossos\", dois paleontólogos americanos usaram suborno, roubo e destruição de fósseis contra o rival. Um deles deixou o próprio crânio para a ciência, esperando provar que tinha o cérebro maior.",
+        "explicacao": (
+            "Edward Drinker Cope e Othniel Charles Marsh se conheceram em Berlim em 1864 e chegaram a batizar "
+            "espécies um em homenagem ao outro. A amizade azedou. Marsh subornou, às escondidas, os operadores de "
+            "poços de fósseis que Cope explorava em Nova Jersey para que os achados fossem para ele, e humilhou o "
+            "rival ao apontar que Cope montara o réptil marinho Elasmosaurus com a cabeça na ponta da cauda. Cope "
+            "tentou comprar todos os exemplares da revista com o erro; Marsh tratou de espalhar a história. De 1877 "
+            "a 1892, os dois usaram fortuna e influência para bancar expedições rivais no oeste dos Estados Unidos. "
+            "Destruíam fósseis pequenos ou danificados para que não caíssem nas mãos do outro, e certa vez as "
+            "equipes brigaram a pedradas. Ambos terminaram arruinados, financeira e socialmente, mas o esforço "
+            "resultou em 142 novas espécies de dinossauros descritas e despertou o interesse do público pelos "
+            "dinossauros. Cope lançou um último desafio: doou o crânio à ciência para que o cérebro fosse medido, "
+            "esperando que superasse o de Marsh, numa época em que se achava que o tamanho do cérebro indicava a "
+            "inteligência. Marsh nunca aceitou. E há dúvida se o crânio guardado na Universidade da Pensilvânia é "
+            "mesmo o de Cope."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Bone_Wars",
+            "Each of the two paleontologists used underhanded methods to try to outdo the other in the field, resorting to bribery, theft, and the destruction of bones. [...] "
+            "From 1877 to 1892, both paleontologists used their wealth and influence to finance their own expeditions and to procure services and dinosaur bones from fossil hunters. [...] "
+            "Cope and Marsh were financially and socially ruined by their attempts to outcompete and disgrace each other [...] "
+            "The efforts of the two men led to 142 new species of dinosaurs being discovered and described. "
+            "The products of the Bone Wars resulted in an increase in knowledge of prehistoric life, and sparked the public's interest in dinosaurs [...] "
+            "They met in Berlin in 1864 and spent several days together. They even named species after each other. [...] "
+            "Though the two parted amicably, Marsh secretly bribed the pit operators to divert future fossil finds to him, instead of Cope. [...] "
+            "Marsh humiliated Cope by pointing out that his reconstruction of the plesiosaur Elasmosaurus was flawed, with the head placed where the tail should have been [...] "
+            "The two men were so protective of their digging sites that they would destroy smaller or damaged fossils to prevent them from falling into their rival's hands [...] "
+            "On one occasion the scientists' rival teams fought each other by throwing stones. [...] "
+            "Cope tried to cover up his mistake by purchasing every copy he could find of the journal in which it was published. Marsh, meanwhile, made sure to publicize the story. [...] "
+            "He had his skull donated to science so that his brain could be measured, hoping that his brain would be larger than that of his adversary; at the time, brain size was believed to be a measure of intelligence. "
+            "Marsh never accepted the challenge, and Cope's skull is reportedly still preserved at the University of Pennsylvania. "
+            "(Whether the skull stored at the university is Cope's is disputed;",
+            nome="Bone Wars")],
+    },
+    # 3 o brontossauro que "voltou" em 2015
+    {
+        "temas_secundarios": ["evolucao"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "O brontossauro passou quase todo o século XX como nome inválido, um sinônimo do Apatosaurus, e museus o exibiam com cabeça de outro dinossauro. Em 2015, um estudo o \"ressuscitou\", e o debate continua.",
+        "explicacao": (
+            "Othniel Marsh batizou o Brontosaurus, o \"lagarto-trovão\", em 1879, a partir de um esqueleto parcial "
+            "sem crânio achado no Wyoming. Em 1903, Elmer Riggs concluiu que ele não era diferente o bastante do "
+            "Apatosaurus para ser outro gênero; como Apatosaurus foi publicado antes, esse nome tinha prioridade "
+            "pelas regras da nomenclatura zoológica. Quase todos os paleontólogos do século XX concordaram. Faltava "
+            "também a cabeça certa: sem crânios do animal, a montagem do Museu Americano de História Natural ganhou "
+            "um crânio esculpido à mão, provavelmente baseado no Camarasaurus, e a maioria dos museus usava moldes "
+            "de crânio desse outro saurópode. Só em 20 de outubro de 1979 um crânio de Apatosaurus foi montado num "
+            "esqueleto de museu, no Carnegie. O nome popular resistiu: em 1989, um selo dos correios americanos com "
+            "\"Brontosaurus\" provocou queixas de \"incentivar o analfabetismo científico\", e os correios "
+            "responderam que o nome era mais familiar ao público. Em 2015, Emanuel Tschopp, Octávio Mateus e Roger "
+            "Benson criaram um método estatístico para medir as diferenças entre gêneros e espécies fósseis e "
+            "concluíram que o Brontosaurus podia ser \"ressuscitado\" como gênero válido. O estudo recebeu "
+            "críticas, e parte dos paleontólogos ainda o considera sinônimo do Apatosaurus."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Brontosaurus",
+            "It was described by American paleontologist Othniel Charles Marsh in 1879, the type species being dubbed B. excelsus, based on a partial skeleton lacking a skull found in Como Bluff, Wyoming. [...] "
+            "For decades, the animal was thought to have been a taxonomic synonym of its close relative Apatosaurus, but a 2015 study by Emmanuel Tschopp and colleagues found it to be distinct. [...] "
+            "However, the status of Brontosaurus is still uncertain, with some paleontologists still considering it a synonym of Apatosaurus. [...] "
+            "In the 1903 edition of Geological Series of the Field Columbian Museum, Elmer Riggs argued that Brontosaurus was not different enough from Apatosaurus to warrant a separate genus [...] "
+            "These skulls were likely those of Camarasaurus, the only other sauropod of which good skull material was known at the time. "
+            "The mount construction was overseen by Adam Hermann, who failed to find Brontosaurus skulls. Hermann was forced to sculpt a stand-in skull by hand. [...] "
+            "On October 20, 1979, after the publications by McIntosh and Berman, the first skull of an Apatosaurus was mounted on a skeleton in a museum, that of the Carnegie. [...] "
+            "Almost all 20th-century paleontologists agreed with Riggs that all Apatosaurus and Brontosaurus species should be classified in a single genus. "
+            "According to the rules of the ICZN, which governs the scientific names of animals, the name Apatosaurus, having been published first, had priority; [...] "
+            "In 2015, an extensive study of diplodocid relationships by Emanuel Tschopp, Octavio Mateus, and Roger Benson concluded that Brontosaurus was indeed a valid genus of sauropod distinct from Apatosaurus. "
+            "The scientists developed a statistical method to more objectively assess differences between fossil genera and species and concluded that Brontosaurus could be \"resurrected\" as a valid name. [...] "
+            "The publication was met with some criticism from other paleontologists [...] "
+            "While at the time most museums were using Camarasaurus casts for skulls [...] "
+            "As late as 1989, the U.S. Postal Service faced controversy when it issued four \"dinosaur\" stamps: Tyrannosaurus, Stegosaurus, Pteranodon, and Brontosaurus. "
+            "The use of the term Brontosaurus in place of Apatosaurus led to complaints of \"fostering scientific illiteracy.\" "
+            "The Postal Service defended itself (in Postal Bulletin 21742) by saying, \"Although now recognized by the scientific community as Apatosaurus, the name Brontosaurus was used for the stamp because it is more familiar to the general population.\"",
+            nome="Brontosaurus")],
+    },
+    # 4 o Spinosaurus destruído no bombardeio de Munique
+    {
+        "temas_secundarios": ["segunda_guerra", "evolucao"],
+        "tipos_espanto": ["historia_humana", "misterio_aberto"],
+        "gancho": "O fóssil original do Spinosaurus foi destruído num bombardeio a Munique em 1944: por tensões entre o descobridor e o diretor do museu, um nazista fervoroso, ele não tinha sido tirado de lá.",
+        "explicacao": (
+            "Os ossos foram achados em 1912 no oásis de Bahariya, no Egito, por Richard Markgraf, um coletor "
+            "financiado pelo paleontólogo alemão Ernst Stromer, que descreveu o Spinosaurus aegyptiacus em 1915. "
+            "Na noite de 24 para 25 de abril de 1944, o prédio do museu de paleontologia de Munique foi muito "
+            "danificado por um bombardeio britânico. Por causa de tensões pessoais e políticas entre Stromer e o "
+            "diretor, Karl Beurlen, os fósseis não foram transferidos para outro lugar e se perderam. Os achados de "
+            "Stromer receberam pouca atenção, e o Spinosaurus seguiu como um terópode enigmático por décadas. Em "
+            "1995, o filho de Stromer doou os arquivos do pai, e um estudo de 2006 analisou fotos do exemplar "
+            "original, concluindo que os desenhos de 1915 eram um pouco imprecisos. Novos fósseis surgiram no "
+            "início do século XXI. Em 2014, a equipe de Nizar Ibrahim propôs um esqueleto do Marrocos como "
+            "substituto do exemplar perdido e descreveu o animal como semiaquático, de pernas curtas e talvez "
+            "quadrúpede, o que causou surpresa e controvérsia. Outros pesquisadores rejeitaram o novo exemplar "
+            "como substituto oficial, e até que ponto o Spinosaurus nadava ainda é muito contestado: estudos de "
+            "2024 propõem que ele caçava mais como uma garça do que mergulhando atrás das presas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Spinosaurus",
+            "The genus was known first from Egyptian remains discovered in 1912 and described by German palaeontologist Ernst Stromer in 1915. "
+            "The original remains were destroyed in World War II, but additional material came to light in the early 21st century. [...] "
+            "Evidence suggests that it was semiaquatic, although the extent of its swimming capability has been strongly contested. [...] "
+            "The first confidently referable remains of Spinosaurus were discovered in the autumn of 1912 by Austro-Hungarian paleontologist Richard Markgraf, a fossil collector who was financed by Stromer and the Bavarian Academy of Sciences, in deposits of the Bahariya Formation in the Bahariya Oasis of western Egypt. [...] "
+            "Unfortunately, during the night of April 24/25, 1944, the building of the Paläontologisches Museum München (Bavarian State Collection of Paleontology) of the Bavarian Academy of Sciences was severely damaged during the British Bombing of Munich. "
+            "Due to personal and political tensions between Stromer and the museum's director Karl Beurlen, who was a fervent Nazi, the Spinosaurus fossils held there were not rehoused and subsequently destroyed as a result of the bombing. "
+            "Stromer's finds, including Spinosaurus, received little academic or public attention. "
+            "In 1995, Stromer's son donated his father's archives to the Paläontologische Staatssammlung München, leading to a 2006 study by American researcher Joshua Smith and colleagues of the photographs, two of which were of Spinosaurus' holotype. "
+            "Based on these photographs of the mandible and the entire specimen as mounted, Smith concluded that Stromer's original 1915 drawings were slightly inaccurate. [...] "
+            "with Spinosaurus remaining an enigmatic and mysterious theropod. [...] "
+            "In 2014, Ibrahim and colleagues assigned the fossils to S. aegyptiacus, proposed it the neotype (replacement holotype) [...] "
+            "The description of these remains were met with intrigue, surprise, and controversy, as the authors claimed that Spinosaurus was a possibly quadrupedal, semiaquatic, short-limbed spinosaurid. [...] "
+            "In 2015, British paleontologist Serjoscha Evers and colleagues rejected the neotype proposal for FSAC-KK-11888 [...] "
+            "A 2024 paper by Myrhvold and colleagues also disputes that Spinosaurus and Baryonyx were diving pursuit predators. "
+            "Instead, they also argue that Spinosaurus and Baryonyx hunted more like herons instead of diving after prey.",
+            nome="Spinosaurus")],
+    },
+    # 5 o Iguanodon com o polegar no nariz
+    {
+        "temas_secundarios": ["evolucao", "revolucao_cientifica"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "As primeiras reconstruções do Iguanodon puseram um chifre no nariz dele. Era o polegar, uma ponta óssea. A correção trouxe outro erro: uma pose de canguru que só seria possível com a cauda quebrada.",
+        "explicacao": (
+            "O Iguanodon foi batizado em 1825 pelo geólogo inglês Gideon Mantell e foi o segundo dinossauro a "
+            "receber nome formal, depois do Megalosaurus. Com um esqueleto incompleto, Mantell pôs no focinho uma "
+            "peça que tomou por chifre. As esculturas em tamanho real do Palácio de Cristal, em Londres, de 1852, "
+            "repetiram o engano e mostraram o animal como um quadrúpede parecido com um elefante. A virada veio de "
+            "uma mina de carvão em Bernissart, na Bélgica: em 1878, a 322 metros de profundidade, dois mineiros "
+            "toparam com ossos que pensaram ser madeira petrificada. Eram pelo menos 38 indivíduos de Iguanodon. "
+            "Louis Dollo, que os estudou, mostrou que o tal chifre ficava no polegar e montou os esqueletos em pé, "
+            "inspirado no casuar e no wallaby, um parente do canguru. Essa versão durou muito tempo, mas também "
+            "estava errada: a cauda do Iguanodon era quase reta, enrijecida por tendões ossificados, e a curva da "
+            "montagem de Dollo só existiria se ela fosse quebrada. Com a cauda e as costas retas, o animal andaria "
+            "com o corpo na horizontal. Até hoje se discute para que servia o espinho do polegar: talvez para "
+            "defesa, talvez para obter comida."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Iguanodon",
+            "Distinctive features include large thumb spikes, which were possibly used for defense against predators [...] "
+            "The genus was named in 1825 by English geologist Gideon Mantell, based on fossil specimens found in England [...] "
+            "Iguanodon was the second type of dinosaur formally named based on fossil specimens, after Megalosaurus. [...] "
+            "In early restorations, the spike was placed on the animal's nose. "
+            "Later fossils revealed the true nature of the thumb spikes, although their exact function is still debated. "
+            "They could have been used for defense, or for foraging for food. [...] "
+            "but due to its incompleteness, Mantell made some mistakes, the most famous of which was the placement of what he thought was a horn on the nose. [...] "
+            "The largest find of Iguanodon remains to that date occurred on 28 February 1878 in a coal mine at Bernissart in Belgium, at a depth of 322 m (1,056 ft), when two mineworkers, Jules Créteur and Alphonse Blanchard, accidentally hit on a skeleton that they initially took for petrified wood. [...] "
+            "At least 38 Iguanodon individuals were uncovered, most of which were adults. [...] "
+            "He instead modelled the skeletal mounts after the cassowary and wallaby, and put the spike that had been on the nose firmly on the thumb. "
+            "His reconstruction would prevail for a long period of time, but would later be discounted. [...] "
+            "A major flaw with Dollo's reconstruction was the bend he introduced into the tail. "
+            "This organ was more or less straight, as shown by the skeletons he was excavating, and the presence of ossified tendons. "
+            "In fact, to get the bend in the tail for a more wallaby or kangaroo-like posture, the tail would have had to be broken. "
+            "With its correct, straight tail and back, the animal would have walked with its body held horizontal to the ground [...] "
+            "Two lifesize reconstructions of Mantellodon (considered Iguanodon at the time) built at the Crystal Palace in London in 1852 greatly contributed to the popularity of the genus. "
+            "Their thumb spikes were mistaken for horns, and they were depicted as elephant-like quadrupeds",
+            nome="Iguanodon")],
+    },
+    # 6 a Hallucigenia, montada de cabeça para baixo
+    {
+        "temas_secundarios": ["evolucao", "animais_extremos"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "A Hallucigenia, um animal do Cambriano, foi reconstruída de cabeça para baixo e de trás para a frente: os espinhos viraram pernas, as pernas viraram tentáculos, e uma mancha passou por cabeça.",
+        "explicacao": (
+            "Charles Walcott a descreveu primeiro como uma espécie de verme marinho. Em 1977, Simon Conway Morris "
+            "viu que era algo bem diferente e lhe deu um nome ligado a alucinação, por causa da aparência "
+            "\"bizarra e onírica\". Nenhum fóssil mostrava as duas fileiras de pernas, então ele montou o bicho "
+            "andando sobre os espinhos, com a única fileira de pernas visível servindo de tentáculos nas costas. "
+            "Uma mancha escura numa ponta virou uma cabeça sem traços. A versão levantava perguntas, como andar "
+            "sobre pernas rígidas, mas foi aceita, com ressalvas, como a melhor disponível. Em 1991, Lars Ramskold e "
+            "Hou Xianguang, com fósseis de um parente achados na China, viraram o animal: os \"tentáculos\" eram "
+            "pernas, em pares, e os espinhos serviam de proteção. Raspando o sedimento, apareceram as \"segundas "
+            "pernas\", enterradas num ângulo diferente do plano em que a rocha se partiu. A suposta cabeça seria "
+            "uma mancha comum em muitos exemplares, talvez resto da decomposição. Pesquisas de meados da década de "
+            "2010 mostraram que a cabeça fica na ponta mais longa, com boca, pelo menos um par de olhos simples e "
+            "dentes. Hoje não há dúvida de que a Hallucigenia é um lobópode, um tipo de verme com patas, mas o "
+            "parentesco exato ainda é discutido; muitas análises a põem perto dos ancestrais dos onicóforos, os "
+            "vermes-aveludados."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Hallucigenia",
+            "Hallucigenia is a genus of lobopodian known from Cambrian-aged fossils in Burgess Shale-type deposits in Canada (Burgess Shale) and China [...] "
+            "when it was erected as a genus, H. sparsa was reconstructed as an enigmatic animal upside down and back to front. [...] "
+            "Hallucigenia sparsa was originally described by Charles Walcott as a species of the polychaete worm Canadia. "
+            "In his 1977 redescription of the organism, Simon Conway Morris recognized the animal as something quite distinct, for which he proposed the name Hallucigenia because of the \"bizarre and dream-like appearance of the animal.\" "
+            "No specimen was available that showed both rows of legs, so Conway Morris reconstructed the animal walking on its spines, with its single row of legs interpreted as tentacles on the animal's back. "
+            "A dark stain at one end of the animal was interpreted as a featureless head. [...] "
+            "This raised questions, such as how it would walk on the stiff legs, but it was accepted (with reservations) as the best available interpretation. [...] "
+            "In 1991, Lars Ramskold and Hou Xianguang, working with additional specimens of a \"hallucigenid\", Microdictyon, from the lower Cambrian Maotianshan shales of China, reinterpreted Hallucigenia as a lobopodian [...] "
+            "They inverted it, interpreting the tentacles, which they believe to be paired, as walking structures and the spines as protective. "
+            "Further preparation of fossil specimens showed that \"second legs\" were buried at an angle to the plane along which the rock had split, and could be revealed by removing the overlying sediment. "
+            "Ramskold and Hou also believe that the blob-like \"head\" is actually a stain that appears in many specimens, not a preserved portion of the anatomy. "
+            "This stain may be an artifact of decomposition. [...] "
+            "Research in the mid-2010s clarified that the longer end is a head with anteroventral mouth and at least a pair of simple eyes. [...] "
+            "At least in H. sparsa, the head possesses radial teeth and pharyngeal teeth within the front of the gut. [...] "
+            "Since the revisions around 1990s, Hallucigenia is unquestionably a lobopodian panarthropod, although the relationship with other panarthropods remains controversial. "
+            "Hallucigenia has long been interpreted as a stem-group onychophoran (velvet worms) – a position that has found support from multiple phylogenetic analysis.",
+            nome="Hallucigenia")],
+    },
+    # 7 o celacanto "ressuscitado" e a segunda espécie na feira
+    {
+        "temas_secundarios": ["vida_marinha", "evolucao"],
+        "tipos_espanto": ["historia_humana", "mito_desmentido"],
+        "gancho": "O celacanto era dado como extinto havia uns 66 milhões de anos até surgir, em 1938, entre os peixes de um pescador sul-africano. A segunda espécie viva foi vista em 1997 num mercado de peixe da Indonésia.",
+        "explicacao": (
+            "Os celacantos aparecem em rochas de mais de 410 milhões de anos e, pelos fósseis, pareciam ter sumido "
+            "no fim do Cretáceo. Em 22 de dezembro de 1938, a curadora de museu Marjorie Courtenay-Latimer achou "
+            "um exemplar na pesca de um pescador, perto do rio Chalumna, na África do Sul. Ela mandou desenhos ao "
+            "ictiólogo J. L. B. Smith, que respondeu com um telegrama famoso pedindo que preservasse o esqueleto e "
+            "as guelras. O gênero ganhou o nome de Latimeria em homenagem a ela, e o peixe virou o exemplo mais "
+            "conhecido de \"táxon Lázaro\", um grupo que some do registro fóssil e reaparece muito depois. Em "
+            "setembro de 1997, Mark Erdmann e a mulher, Arnaz Mehta, viram um celacanto num mercado de peixe em "
+            "Manado, na Indonésia, mas só conseguiram fotografá-lo antes que fosse vendido. Um segundo exemplar, "
+            "entregue por um pescador em 1998, permitiu descrever a nova espécie em 1999. O peixe tem fama de "
+            "\"fóssil vivo\", com um corpo que mal teria mudado em uns 400 milhões de anos. Estudos recentes "
+            "contestam: os celacantos fósseis tiveram formas e modos de vida bem mais variados do que se pensava, "
+            "e a ideia de que o grupo quase não mudou seria uma crença sem base em dados."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Coelacanth",
+            "Well-represented in freshwater and marine deposits from as early as the Devonian period (more than 410 million years ago), they were thought to have become extinct in the Late Cretaceous, around 66 million years ago. [...] "
+            "The two species within the extant genus Latimeria are often considered examples of \"living fossils\" in popular science because they were considered the sole remaining members of a taxon otherwise known only from fossils (a biological relict), and that they had retained the same bodyplan that had evolved approximately 400 million years ago. "
+            "However, fossil coelacanths have shown body shapes and niches that were much more diverse than what was previously thought [...] "
+            "The genus name Latimeria commemorates Marjorie Courtenay-Latimer, who discovered the first specimen. [...] "
+            "On 22 December 1938, the first Latimeria specimen was found off the east coast of South Africa, off the Chalumna River (now Tyolomnqa). "
+            "Museum curator Marjorie Courtenay-Latimer discovered the fish among the catch of a local fisherman. "
+            "Courtenay-Latimer contacted a Rhodes University ichthyologist, J. L. B. Smith, sending him drawings of the fish, and he confirmed the fish's importance with a famous cable: \"Most Important Preserve Skeleton and Gills = Fish Described.\" "
+            "Its discovery over 60 million years after its supposed extinction makes the coelacanth the best-known example of a Lazarus taxon, a taxon or an evolutionary line that seems to have disappeared from the fossil record only to reappear much later. [...] "
+            "The second extant species, the Indonesian coelacanth, was first recognized in Manado, North Sulawesi, Indonesia, by Mark V. Erdmann and his wife Arnaz Mehta at a local fish market in September 1997, but were only able to take a few photographs of the first specimen of this species before it was sold. [...] "
+            "A second specimen was caught by a fisherman in July 1998 and was then handed to Erdmann. "
+            "The species was described in 1999 by Pouyaud et al. [...] "
+            "Living coelacanths have been considered \"living fossils\" based on their supposedly conservative morphology relative to fossil species; however, recent studies have expressed the view that coelacanth morphologic conservatism is a belief not based on data.",
+            nome="Coelacanth")],
+    },
+    # 8 a cor de um dinossauro pelos melanossomos
+    {
+        "temas_secundarios": ["luz_cores", "evolucao"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Fósseis podem revelar a cor de dinossauros. O Sinosauropteryx, primeiro dinossauro não ave achado com penas, tinha dorso escuro, barriga clara, cauda listrada e uma máscara nos olhos, como um guaxinim.",
+        "explicacao": (
+            "Descrito em 1996, na China, o Sinosauropteryx era um terópode pequeno, de cauda muito longa, coberto "
+            "de penas simples, parecidas com filamentos. Os pesquisadores de início acharam que as faixas da cauda "
+            "eram um efeito da separação das placas de rocha. Em 2002, Nicholas Longrich argumentou que elas eram "
+            "espaçadas de forma regular demais para serem acaso: eram pigmento fossilizado. A confirmação veio da "
+            "microscopia. Em janeiro de 2010, um estudo na revista Nature mostrou que penas fósseis preservam "
+            "melanossomos, as estruturas que dão cor às penas das aves atuais. Pela forma e pela distribuição "
+            "deles, comparadas às de aves vivas, dá para estimar cores e padrões. Uma pesquisa com três exemplares "
+            "de Sinosauropteryx encontrou uma máscara como a do guaxinim e o contrassombreamento, escuro em cima e "
+            "claro embaixo, padrão que pelo estudo combinava com um ambiente aberto. Há uma reviravolta: a cor "
+            "castanho-avermelhada que se atribuiu ao animal veio dos melanossomos de um exemplar que hoje é "
+            "classificado como outro gênero, o Huadanosaurus. O próprio Sinosauropteryx tem o crédito de ser o "
+            "primeiro dinossauro fora do grupo das aves e de seus parentes imediatos achado com evidência de penas."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Sinosauropteryx",
+            "Described in 1996, it was the first dinosaur taxon outside of Avialae (birds and their immediate relatives) to be found with evidence of feathers. "
+            "It was covered with a coat of very simple filament-like feathers. "
+            "Structures that indicate the colour pattern have also been preserved in some of its feathers, which show that Sinosauropteryx had a countershading pattern in its body with a banded tail. "
+            "The reddish brown colouration previously inferred for Sinosauropteryx is based on the melanosomes preserved in the specimen of a separate genus, Huadanosaurus. [...] "
+            "Sinosauropteryx was a small theropod with an unusually long tail and short arms. [...] "
+            "Chen and colleagues initially interpreted this banding pattern as an artifact of the splitting between the main slab and counter slab in which the original specimen was preserved. "
+            "However, Longrich suggested in his 2002 presentation for the Society of Vertebrate Paleontology that these specimens actually preserve remnants of the colouration pattern the animal would have exhibited in life. "
+            "He argued that the dark, banded areas on the tail were too evenly spaced to have been caused by random separation of the fossil slabs, and that they represent fossilized pigments present in the feathers. [...] "
+            "Longrich's conclusions were supported in a paper first published online in the journal Nature in January 2010. "
+            "Fucheng Zhang and colleagues examined the fossilized feathers of several dinosaurs and early birds, and found evidence that they preserved melanosomes, the cell components that give the feathers of modern birds their colour. [...] "
+            "By examining melanosome structure and distribution, Zhang and colleagues were able to confirm the presence of light and dark bands of colou [...] "
+            "odern birds to determine a general range of colour. [...] "
+            "More research on the coloration of Sinosauropteryx based on three specimens (NIGP 127586, NIGP 127587, and IVPP V12415) reveals that it had a raccoon-like bandit mask and countershading patterns most likely associated with an open habitat",
+            nome="Sinosauropteryx")],
+    },
+    # 9 os olhos de calcita dos trilobitas
+    {
+        "temas_secundarios": ["luz_cores", "minerais_rochas", "sentidos"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "Os trilobitas enxergavam por lentes de calcita, um mineral transparente. Em alguns, a lente era dupla e corrigia distorções seguindo princípios de óptica que só seriam descritos no século XVII.",
+        "explicacao": (
+            "Os trilobitas foram artrópodes marinhos que existiram por quase 270 milhões de anos, com mais de 22 "
+            "mil espécies descritas. Até os mais antigos já tinham olhos compostos complexos, com lentes de "
+            "calcita, uma marca de todos os olhos de trilobita. A calcita pura é transparente, e alguns deles "
+            "formavam cada lente com um cristal límpido, orientado de modo preciso. Só que uma lente rígida de "
+            "mineral não consegue mudar o foco como o cristalino do olho humano. Em certos trilobitas, a calcita "
+            "formava por dentro uma estrutura dupla, que dava ótima profundidade de campo e aberração esférica "
+            "mínima, de acordo com princípios ópticos descobertos pelo francês René Descartes e pelo holandês "
+            "Christiaan Huygens no século XVII. Em outros, nos quais essa interface parece ausente, propõe-se uma "
+            "lente de índice gradual, com a refração mudando em direção ao centro. A quantidade de lentes variava "
+            "muito: alguns tinham uma só; outros, milhares num único olho. Um animal vivo com lentes parecidas é o "
+            "ofiúro Ophiocoma wendtii. Como os olhos de trilobita fossilizam bem, dá para acompanhar a evolução "
+            "deles ao longo do tempo, o que compensa em parte a falta das partes moles."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Trilobite",
+            "trilobites were among the most successful of all early animals, existing in oceans for almost 270 million years, with over 22,000 species having been described. [...] "
+            "Even the earliest trilobites had complex, compound eyes with lenses made of calcite (a characteristic of all trilobite eyes) [...] "
+            "The number of lenses in such an eye varied: some trilobites had only one, while some had thousands of lenses in a single eye. [...] "
+            "The fossil record of trilobite eyes is complete enough that their evolution can be studied through time, which compensates to some extent for the lack of preservation of soft internal parts. "
+            "Lenses of trilobites' eyes were made of calcite (calcium carbonate, CaCO3). "
+            "Pure forms of calcite are transparent, and some trilobites used crystallographically oriented, clear calcite crystals to form each lens of each eye. "
+            "Rigid calcite lenses would have been unable to accommodate to a change of focus like the soft lens in a human eye would; "
+            "in some trilobites, the calcite formed an internal doublet structure, giving superb depth of field and minimal spherical aberration, according to optical principles discovered by French scientist René Descartes and Dutch physicist Christiaan Huygens in the 17th century. "
+            "A living species with similar lenses is the brittle star Ophiocoma wendtii. "
+            "In other trilobites, with a Huygens interface apparently missing, a gradient-index lens is invoked with the refractive index of the lens changing toward the center.",
+            nome="Trilobite")],
+    },
+    # 10 o Megatério levado da Argentina a Madri
+    {
+        "temas_secundarios": ["revolucao_cientifica", "evolucao"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Em 1788, o esqueleto de um animal gigante achado na Argentina chegou a Madri em sete caixotes. Sem nunca vê-lo, só por gravuras, Georges Cuvier concluiu em Paris que era uma preguiça gigante extinta.",
+        "explicacao": (
+            "O exemplar foi achado em 1787 às margens do rio Luján, no atual norte da Argentina. O vice-rei do Rio "
+            "da Prata o levou a Buenos Aires, onde o esqueleto foi desenhado pela primeira vez, numa pose parecida "
+            "com a de um cavalo, e chamou líderes indígenas para perguntar se conheciam o animal. Enviado ao Real "
+            "Gabinete de História Natural de Madri, foi montado para o público sob a direção do taxidermista Juan "
+            "Bautista Bru; a peça continua em exibição no Museu Nacional de Ciências Naturais, com a montagem "
+            "inalterada. Em 1795, um diplomata francês em Madri obteve provas preliminares das gravuras da "
+            "descrição que Bru preparava e as enviou ao museu de história natural de Paris. Ali, Cuvier comparou "
+            "as imagens com esqueletos de mamíferos \"desdentados\" da coleção e reconheceu acertadamente que se "
+            "tratava de uma preguiça gigante e de um animal totalmente extinto. No começo de 1796 ele o batizou de "
+            "Megatherium americanum, a \"grande besta americana\", um dos primeiros animais pré-históricos a "
+            "receber nome científico. A espécie, do porte de um elefante, com 3,5 a 4 toneladas, desapareceu há "
+            "cerca de 12 mil anos, depois da chegada dos humanos às Américas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Megatherium",
+            "It is best known for the elephant-sized, 3.5–4 tonnes (7,700–8,800 lb) type species Megatherium americanum [...] "
+            "Megatherium became extinct around 12,000 years ago as part of the end-Pleistocene extinction event, simultaneously with the majority of other large mammals in the Americas. "
+            "The extinctions followed the first arrival of humans in the Americas. [...] "
+            "The first (holotype) specimen of Megatherium americanum was discovered in 1787 on the bank of the Luján River in what is now northern Argentina. [...] "
+            "He named the animal in 1796, making it one of the first prehistoric animals to be scientifically named. [...] "
+            "There the skeleton was drawn for the first time by José Custodio Sáa y Faria in a horse-like posture. "
+            "Campo summoned a number of local indigenous leaders to ask if they had heard of the animal. "
+            "The skeleton was then transferred by Campo to the Royal Cabinet of Natural History of Madrid (now the National Museum of Natural Sciences MNCN) in 7 crates, which had arrived and been unpacked by late 1788. "
+            "At the direction of the cabinets main taxidermist Juan Bautista Bru, the specimen was then mounted for public exhibition (The specimen is still on display in the National Museum of Natural Sciences today, with the mount still unaltered from Bru's original effort). [...] "
+            "As the work was going through the process of publication in 1795, preliminary prints of the paper were obtained by French diplomat Philippe-Rose Roume who was in Madrid at the time, who sent them to the National Museum of Natural History (Muséum national d'histoire naturelle) in Paris, France, where they were seen by French anatomist and paleontologist Georges Cuvier. "
+            "Cuvier, working solely from the prints from Madrid and not visiting the specimen personally, and using comparative anatomy with \"edentate\" mammals (now recognised as members of the order Xenarthra) in the collection of the Paris museum, correctly recognised that the remains represented those of a giant sloth, and an animal that was entirely extinct and not living. "
+            "In early 1796, somewhat before the full publication of the work by Bru, Garriga and Navarro, Cuvier published a paper naming the species Megatherium americanum (literally \"Great American beast\")",
+            nome="Megatherium")],
+    },
+    # 11 o Ubirajara, que perdeu o nome e voltou ao Brasil
+    {
+        "temas_secundarios": ["ciencia_brasileira", "leis_julgamentos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Um pequeno dinossauro brasileiro com uma crina de filamentos foi parar num museu alemão e perdeu o nome científico: o artigo que o batizou foi retirado por suspeita de exportação ilegal. Em 2023, ele voltou.",
+        "explicacao": (
+            "O fóssil, de uns 115 milhões de anos, saiu de uma pedreira entre Nova Olinda e Santana do Cariri, na "
+            "Formação Crato. É um terópode jovem, com cerca de 1 metro em vida, que tinha filamentos formando uma "
+            "crina nas costas e duas estruturas longas, como fitas, saindo dos ombros. Foi descrito como o primeiro "
+            "terópode não ave de Gondwana achado com esse tipo de revestimento preservado. Em dezembro de 2020, um "
+            "artigo divulgado antes da publicação o chamou de Ubirajara jubatus, \"senhor da lança\" em tupi. Os "
+            "autores diziam que o Museu Estadual de História Natural de Karlsruhe o tinha comprado com a "
+            "documentação necessária. Pesquisadores brasileiros contestaram: a lei do país não permite tirar "
+            "fósseis do território. A campanha #UbirajaraBelongstoBR mobilizou as redes sociais, e o artigo saiu do "
+            "ar dias depois, sendo retirado de vez em 2021. Uma investigação confirmou que o fóssil saiu do Brasil "
+            "em 2006 e não encontrou licença válida de exportação. Em 12 de junho de 2023, uma comitiva alemã o "
+            "devolveu, e hoje ele está no Museu de Paleontologia Plácido Cidade Nuvens, da Universidade Regional "
+            "do Cariri. Como o artigo nunca foi publicado, o nome não tem valor científico, e o caso é citado como "
+            "exemplo de colonialismo científico."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ubirajara_jubatus",
+            "The manuscript describing it was available online pre-publication but was never formally published and, as a consequence, both genus and species name are considered invalid and unavailable. [...] "
+            "It was described as the first Gondwanan non-avian theropod dinosaur discovered with preserved integumentary structures. "
+            "Such proto-feathers, most likely used for display, include slender monofilaments associated with the base of the neck, increasing in length along the dorsal thoracic region, where they would form a mane, as well as a pair of elongate, ribbon-like structures likely emerging from its shoulders. [...] "
+            "The description caused controversy due to the fossil having been apparently illegally smuggled from Brazil. "
+            "In June 2023, Germany returned the fossil to Brazil after a legitimate export permit could not be found. [...] "
+            "The case has been labeled as an instance of scientific colonialism. [...] "
+            "Workers recovered a number of fossils from a chalk quarry located between Nova Olinda and Santana do Cariri. [...] "
+            "dating from the Aptian, about 115 million years old. [...] "
+            "It represents a juvenile, and possibly male, individual. [...] "
+            "The authors of the 2020 study claimed that the fossil had been acquired by the State Museum of Natural History Karlsruhe (SMNK) in 1995, following an export from Brazil with the necessary documentation. "
+            "This led to a considerable backlash as researchers from Brazil disputed this claim. "
+            "They argued that Brazilian law does not allow the removal of fossils from its territory [...] "
+            "This campaign relied heavily on social media and mobilised a large number of supporters under the hashtag #UbirajaraBelongstoBR. "
+            "Due to the ethical issues involving the potentially illegal transfer of the fossil from Brazil to Germany, the paper describing the specimen was \"temporarily removed\" only a few days after being made available online \"in press\" prior to formal publication. "
+            "The article was later withdrawn in September 2021. [...] "
+            "In 2021, a spokesperson for the Ministry of Science, Research and Culture of Baden-Württemberg confirmed that the fossil had, in fact, been removed from Brazil in 2006 and acquired by the SMNK in 2009. "
+            "The investigation also failed to retrieve legitimate permits for the export of the specimens from Brazil. [...] "
+            "During a ceremony on 12 June 2023, the specimen was officially repatriated by a German delegation headed by German Foreign Minister Annalena Baerbock. "
+            "It is now on display at the Plácido Cidade Nuvens Paleontology Museum which is associated with the Regional University of Cariri (Urca). [...] "
+            "The genus name \"Ubirajara\" was erected by Robert S. H. Smyth, David Michael Martill, Eberhard Frey, Hector Eduardo Rivera-Silva and Norbert Lenz in December 2020. "
+            "The generic name means \"Lord of the Spear\" in the local Tupi language, in reference to the elongate shoulder filaments. [...] "
+            "In life, the fossil individual would have been approximately 1 metre (3.3 ft) long.",
+            nome="Ubirajara jubatus")],
+    },
+    # 12 o Irritator, batizado pela irritação com o fóssil adulterado
+    {
+        "temas_secundarios": ["ciencia_brasileira", "literatura", "crimes_arte"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "Um dinossauro do Araripe se chama Irritator por causa da irritação dos cientistas: comerciantes tinham alongado o focinho do crânio com pedaços de osso e coberto tudo de gesso para valorizá-lo.",
+        "explicacao": (
+            "O crânio, de 113 a 110 milhões de anos, saiu da Formação Romualdo, na Bacia do Araripe, e foi vendido "
+            "por comerciantes de fósseis ao Museu Estadual de História Natural de Stuttgart, na Alemanha. Para "
+            "parecer mais completo e valioso, tinha sido escondido sob gesso, prática comum entre coletores da "
+            "Chapada do Araripe, e uma rachadura no meio fora selada com massa de funilaria. Os compradores só "
+            "perceberam ao mandar o fóssil para tomografias em universidades britânicas: os coletores tinham "
+            "enxertado partes da maxila, o osso principal do maxilar superior, na ponta do focinho. Em 1996, David "
+            "Martill e colegas descreveram o animal e escreveram que o nome vinha da irritação que sentiram, "
+            "\"atenuada aqui\", ao descobrir o focinho alongado artificialmente. A espécie, Irritator challengeri, "
+            "homenageia o professor Challenger de \"O Mundo Perdido\", de Arthur Conan Doyle. O bicho chegou a "
+            "ser tomado por um pterossauro antes de ser reconhecido como um espinossaurídeo, e o crânio continua "
+            "sendo o mais completo do grupo. Depois de uma longa disputa de devolução, uma declaração conjunta dos "
+            "governos do Brasil e da Alemanha, divulgada em abril de 2026, saudou a disposição do museu de "
+            "entregar o fóssil ao Brasil, ainda sem data marcada."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Irritator",
+            "Irritator is a genus of spinosaurid dinosaur that lived in what is now Brazil during the Albian stage of the Early Cretaceous Period, about 113 to 110 million years ago. "
+            "It is known from a nearly complete skull found in the Romualdo Formation of the Araripe Basin. "
+            "Fossil dealers had acquired this skull and sold it to the State Museum of Natural History Stuttgart. [...] "
+            "The genus name comes from the word \"irritation\", reflecting the feelings of paleontologists who found the skull had been heavily damaged and altered by the collectors. [...] "
+            "Belonging to a subadult, Irritator challengeri's holotype remains the most completely preserved spinosaurid skull yet found. [...] "
+            "Irritator had been mistaken initially for a pterosaur, and later a maniraptoran dinosaur. "
+            "In 1996, the animal was identified as a spinosaurid theropod. [...] "
+            "which had apparently been sealed with car body filler. "
+            "In hopes of making it look more complete and valuable, the fossil traders had severely obscured the skull beneath plaster; a widespread practice among local collectors in the Chapada do Araripe, especially on fish fossils. "
+            "The buyers were unaware of the modifications to the specimen until it was sent to universities in the United Kingdom for CT scan imaging. "
+            "This revealed the collectors had tried to reconstruct the skull by grafting parts of the maxilla (main upper jaw bone) onto the front of the rostrum (snout). [...] "
+            "In this paper, Martill and his team wrote that the generic name Irritator came \"from irritation, the feeling the authors felt (understated here) when discovering that the snout had been artificially elongated.\" "
+            "The type species, Irritator challengeri, was named after Professor Challenger, a character in Arthur Conan Doyle's novels, specifically The Lost World. [...] "
+            "In April 2026, the Ministry of Foreign Affairs of Brazil and the German Press Office shared the Joint Declaration signed during the 3rd German-Brazilian Intergovernmental Consultations, which stated that \"both governments welcome the willingness of the State of Baden-Württemberg and the State Museum of Natural History in Stuttgart to hand over the Irritator challengeri fossil to Brazil\". "
+            "No timeframe has been announced for the return;",
+            nome="Irritator")],
+    },
+    # 13 a Grande Morte do Permiano
+    {
+        "temas_secundarios": ["vulcoes_terremotos", "mudancas_climaticas", "insetos"],
+        "tipos_espanto": ["escala_absurda", "conexao_inesperada"],
+        "gancho": "No fim do Permiano, erupções na Sibéria levaram à pior extinção conhecida: sumiram 81% das espécies marinhas e 70% dos vertebrados terrestres. Talvez seja a única extinção em massa que abalou mesmo os insetos.",
+        "explicacao": (
+            "Para a maioria dos cientistas, a causa principal foram as erupções que formaram os Trapps Siberianos, "
+            "um dos maiores eventos vulcânicos conhecidos, que cobriu de lava mais de 2.000.000 km², uma área "
+            "parecida com a da Arábia Saudita. Elas soltaram dióxido de enxofre e gás carbônico; o CO2 do ar subiu "
+            "de cerca de 400 para 2.500 partes por milhão. O resultado foi um planeta mais quente, com oceanos "
+            "ácidos, sem oxigênio e ricos em enxofre. Também se propõe que as erupções tenham incendiado depósitos "
+            "de carvão e petróleo, liberando ainda mais carbono. No mar, o pulso principal da matança durou de 60 "
+            "mil a 100 mil anos, e os organismos com esqueleto de carbonato de cálcio foram os mais atingidos. A "
+            "recuperação levou de 4 a 6 milhões de anos para começar. Oito ou nove ordens de insetos "
+            "desapareceram. Em terra, o Lystrosaurus, um terápsido herbívoro do tamanho de um porco, chegou a "
+            "somar até 90% dos vertebrados terrestres de alguns lugares no começo do Triássico. E não se conhece "
+            "nenhuma camada de carvão do início do Triássico, um \"vazio do carvão\" que ainda tem várias "
+            "explicações possíveis."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Permian–Triassic_extinction_event",
+            "It is Earth's most severe known extinction event, with the extinction of 57% of biological families, 62% of genera, 81% of marine species,  and 70% of terrestrial vertebrate species. "
+            "It is also the greatest known mass extinction of insects. [...] "
+            "with the major pulse of marine extinction occurring in a 60,000-100,000 year interval around 251.902 million years ago [...] "
+            "The scientific consensus is that the main cause of the extinction was the flood basalt eruptions that created the Siberian Traps, which released sulfur dioxide and carbon dioxide, resulting in euxinia (oxygen-starved, sulfurous oceans), elevated global temperatures, and acidified oceans. "
+            "The level of atmospheric carbon dioxide rose from around 400 ppm to 2,500 ppm [...] "
+            "Several other contributing factors have been proposed, including the emission of carbon dioxide from the burning of oil and coal deposits ignited by the eruptions; [...] "
+            "which affected organisms with calcium carbonate skeletons most severely; the long period (4 to 6 million years) before recovery started [...] "
+            "The flood basalt eruptions that produced the large igneous province of the Siberian Traps were among the largest known volcanic events, extruding lava over 2,000,000 square kilometres (770,000 sq mi), roughly the size of Saudi Arabia [...] "
+            "The end-Permian is the largest known mass extinction of insects; according to some sources, it may well be the only mass extinction to affect insect diversity significantly. "
+            "Eight or nine insect orders became extinct and ten more were greatly reduced in diversity. [...] "
+            "No coal deposits are known from the Early Triassic, and those in the Middle Triassic are thin and low-grade. "
+            "This \"coal gap\" has been explained in many ways. [...] "
+            "Lystrosaurus, a pig-sized herbivorous dicynodont therapsid, constituted as much as 90% of some earliest Triassic land vertebrate fauna",
+            nome="Permian–Triassic extinction event")],
+    },
+    # 14 o T. rex "Bob", o helicóptero e o tecido mole
+    {
+        "temas_secundarios": ["evolucao", "genetica"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Um bloco com parte de um T. rex passava do limite do helicóptero e teve de ser dividido, e um osso da perna se partiu. Nos pedaços, Mary Schweitzer achou sinais de tecido mole e de que o bicho era uma fêmea.",
+        "explicacao": (
+            "O esqueleto, apelidado de Bob em homenagem a Bob Harmon, que o achou num penhasco em Montana, foi "
+            "retirado ao longo de três verões. Em 2001, a equipe envolveu um trecho dele em gesso, e o pacote, com "
+            "mais de 2.000 libras, ficou pouco acima da capacidade do helicóptero. Foi dividido em dois, e um osso "
+            "da perna se quebrou em pedaços, exatamente o tipo de material que Schweitzer queria. Dentro do fêmur, "
+            "ela reconheceu osso medular, camada rica em cálcio que as fêmeas de aves formam antes de botar ovos, "
+            "para fazer as cascas. Comparou com ossos de avestruz e de emu e viu feições quase idênticas: Bob era "
+            "fêmea. Depois, deixado em ácido fraco, que dissolve osso mas não tecido mole, um fragmento revelou um "
+            "material elástico e uma rede de vasos ramificados. A ideia de que algo mole resistisse 68 milhões de "
+            "anos surpreendeu os colegas. Um paleontólogo comentou que ninguém \"em sã consciência\" faria o que ela "
+            "fez: destruir em ácido um fóssil tão trabalhoso de desenterrar. A interpretação foi contestada: um "
+            "estudo de 2008 questionou se o material era mesmo tecido do T. rex, e outro de 2010 apoiou a conclusão "
+            "dela. Schweitzer também propôs que partículas de ferro ajudem a preservar esses tecidos ao longo do "
+            "tempo geológico."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "consenso_parcial",
+        "fontes": [
+            {"url": "https://www.smithsonianmag.com/science-nature/dinosaur-shocker-115306469/",
+             "titulo": "Dinosaur Shocker (Smithsonian Magazine)", "idioma": "en",
+             "trecho": "After 68 million years in the ground, a Tyrannosaurus rex found in Montana was dug up, its leg bone was broken in pieces, and fragments were dissolved in acid in Schweitzer’s laboratory [...] "
+                       "The finding amazed colleagues, who had never imagined that even a trace of still-soft dinosaur tissue could survive. [...] "
+                       "“The reason it hasn’t been discovered before is no right-thinking paleontologist would do what Mary did with her specimens. "
+                       "We don’t go to all this effort to dig this stuff out of the ground to then destroy it in acid,” says dinosaur paleontologist Thomas Holtz Jr. [...] "
+                       "Over the next three summers, workers chipped away at the dinosaur, gradually removing it from the cliff face. "
+                       "They called it B. rex in Harmon’s honor and nicknamed it Bob. "
+                       "In 2001, they encased a section of the dinosaur and the surrounding dirt in plaster to protect it. "
+                       "The package weighed more than 2,000 pounds, which turned out to be just above their helicopter’s capacity, so they split it in half. "
+                       "One of B. rex’s leg bones was broken into two big pieces and several fragments—just what Schweitzer needed for her micro-scale explorations. "
+                       "It turned out Bob had been misnamed. [...] "
+                       "Before female birds start to lay eggs, they form a calcium-rich structure called medullary bone on the inside of their leg and other bones; they draw on it during the breeding season to make eggshells. [...] "
+                       "To understand her dinosaur bone, Schweitzer turned to two of the most primitive living birds: ostriches and emus. [...] "
+                       "A paper published in Science last June presents microscope pictures of medullary bone from ostrich and emu side by side with dinosaur bone, showing near-identical features. "
+                       "In the course of testing a B. rex bone fragment further, Schweitzer asked her lab technician, Jennifer Wittmeyer, to put it in weak acid, which slowly dissolves bone, including fossilized bone—but not soft tissues."},
+            wiki("Mary_Higby_Schweitzer",
+                "Since then, the claim of discovering soft tissues in an ancient fossil has been disputed by some molecular biologists. "
+                "Later research by Kaye et al. published in PLoS ONE (30 July 2008) challenged the claims that the material found is the soft tissue of Tyrannosaurus. "
+                "A more recent study (October 2010) published in PLoS ONE contradicts the conclusion of Kaye and supports Schweitzer's original conclusion. [...] "
+                "Schweitzer has also discovered that iron particles may play a part in the preservation of soft tissue over geologic time.",
+                nome="Mary Higby Schweitzer"),
+        ],
+    },
+    # 15 o Archaeoraptor, a fraude que escondia um dinossauro real
+    {
+        "temas_secundarios": ["evolucao", "crimes_arte"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1999, a National Geographic apresentou um \"elo perdido\" entre dinossauros e aves. Era uma montagem de fósseis de animais diferentes. Mas a cauda vinha de um dinossauro real, ainda desconhecido.",
+        "explicacao": (
+            "Segundo a própria revista, a história começou em 1997, na China, onde agricultores cavavam de forma "
+            "ilegal, mas rotineira, e vendiam fósseis a comerciantes. Um deles achou o fóssil raro de uma ave com "
+            "dentes e, perto, uma cauda e pernas com penas, e colou as peças para formar um exemplar mais completo. "
+            "A placa foi contrabandeada para os Estados Unidos e comprada em fevereiro de 1999 pelo casal Czerkas, "
+            "dono de um museu de dinossauros. Os sinais estavam lá: o paleontólogo Phil Currie viu que os pés "
+            "esquerdo e direito eram espelhos perfeitos, e uma tomografia indicou que a cauda e a parte de baixo "
+            "das pernas não pertenciam ao resto. A Nature e a Science recusaram o artigo, mas a revista publicou "
+            "sem revisão por pares e chamou o bicho de \"Archaeoraptor liaoningensis\". Quem desfez a farsa foi o "
+            "paleontólogo chinês Xu Xing: a cauda lembrava a de um pequeno dinossauro que ele estudava, e ele "
+            "achou na China o fóssil com a contraparte exata, até com as mesmas duas manchas amarelas. Esse animal "
+            "foi batizado em 2000 como Microraptor zhaoianus, um pequeno dromeossaurídeo com asas; a parte de cima "
+            "era da ave primitiva Yanornis. O fóssil voltou à China em junho de 2000, e o caso expôs o comércio "
+            "ilegal de fósseis no país."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Archaeoraptor",
+            "\"Archaeoraptor\" is the informal generic name for a fossil chimera from China in an article published in National Geographic magazine in 1999. "
+            "The magazine claimed that the fossil was a \"missing link\" between birds and terrestrial theropod dinosaurs. [...] "
+            "Further scientific study showed it to be a forgery constructed from rearranged pieces of real fossils from different species. "
+            "The tail is part of the holotype of Microraptor zhaoianus, a small winged dromaeosaur named in 2000. "
+            "Zhou et al. (2002) found that the head and upper body belong to a specimen of the primitive fossil bird Yanornis. [...] "
+            "The scandal brought attention to illegal fossil deals conducted in China. [...] "
+            "According to National Geographic's report, the story of \"Archaeoraptor\" began in July 1997 in Xiasanjiazi, China, where farmers illegally but routinely dug in the shale pits and sold fossils to dealers for a few dollars. "
+            "One farmer found a rare fossil of a toothed bird, complete with feather impressions. "
+            "Nearby, he found a feathered tail and legs. "
+            "He cemented several of these pieces together to make a more complete-looking fossil. "
+            "It was sold in June 1998 and smuggled to the United States. [...] "
+            "The Dinosaur Museum, run by dinosaur enthusiast Stephen A. Czerkas and his wife, Sylvia Czerkas, purchased it in February 1999. [...] "
+            "Examining the fossil on March 6, 1999, Currie saw that the left and right feet mirrored each other perfectly [...] "
+            "determining that the tail and the lower legs were not part of the larger fossil. [...] "
+            "National Geographic published without peer review. [...] "
+            "In the article Sloan used the name \"Archaeoraptor liaoningensis\" [...] "
+            "Xu noticed that the tail of \"Archaeoraptor\" strongly resembled an unnamed maniraptoran dinosaur that he was studying—later named Microraptor zhaoianus. [...] "
+            "He found a good fossil of a tiny dromaeosaur, whose tail corresponded so exactly to the tail on the \"Archaeoraptor\" that it had to be the counterslab—it even had two matching yellow oxide stains. [...] "
+            "In June 2000 the fossil was returned to China.",
+            nome="Archaeoraptor")],
+    },
+    # 16 Tanis, o minuto seguinte ao asteroide (e as dúvidas)
+    {
+        "temas_secundarios": ["asteroides_cometas", "vulcoes_terremotos"],
+        "tipos_espanto": ["escala_absurda", "misterio_aberto"],
+        "gancho": "Num sítio fóssil nos EUA, a 3.000 km da cratera do asteroide que extinguiu os dinossauros, há peixes com gotículas de rocha derretida do impacto nas guelras. Mas parte dos cientistas ainda desconfia das conclusões.",
+        "explicacao": (
+            "Tanis fica na Formação Hell Creek, em Dakota do Norte, e foi escavado por Robert DePalma a partir de "
+            "2012, quase em segredo. O artigo principal saiu em 2019, com coautores como Walter Alvarez, um dos "
+            "maiores especialistas no impacto de Chicxulub, no golfo do México. Segundo a equipe, ondas sísmicas de "
+            "terremotos de magnitude 10 a 11,5 chegaram à região poucos minutos depois da queda e provocaram "
+            "seiches, oscilações violentas da água, de 10 a 100 metros no mar interior que cortava a América do "
+            "Norte. A água invadiu a curva de um rio e amontoou peixes de água doce e salgada, plantas e detritos, "
+            "enquanto caíam milhões de microtectitas, gotículas de rocha fundida lançadas pelo impacto. Muitos "
+            "peixes têm essas gotículas nas guelras, como se tentassem respirar em meio a elas. Um tsunami vindo do "
+            "golfo só chegaria de 18 a 26 horas depois, tarde demais para explicar o depósito. A equipe relatou "
+            "ainda uma tartaruga empalada num galho e formigueiros inundados com detritos do impacto. Por serem "
+            "achados tão excepcionais, alguns cientistas preferiram esperar mais escrutínio, e houve preocupação "
+            "com a confiabilidade dos dados numa corrida pelo crédito. A conclusão de que o impacto ocorreu na "
+            "primavera foi criticada num estudo de 2024 por falta de dados primários."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "consenso_parcial",
+        "fontes": [wiki("Tanis_(fossil_site)",
+            "Tanis is a private paleontological site in southwestern North Dakota, United States. "
+            "It is part of the heavily studied Hell Creek Formation [...] "
+            "Based solely on the Tanis team's publications, the Tanis is unique in that it appears to record, in detail, concrete evidence of the direct effects of the giant Chicxulub asteroid impact which struck the Gulf of Mexico 65.5 million years ago, and wiped out almost all dinosaurs [...] "
+            "The site was systematically excavated by Robert DePalma over several years beginning in 2012, working in near-total secrecy. [...] "
+            "The full paper introducing Tanis was widely covered in worldwide media on 29 March 2019, in advance of its official publication three days later. "
+            "The co-authors included Walter Alvarez and Jan Smit, both renowned experts on the K–Pg impact and extinction. [...] "
+            "impact some 3,000 km (1,900 mi) distant. [...] "
+            "Instead, much faster seismic waves from the magnitude 10 – 11.5 earthquakes probably reached the Hell Creek area as soon as ten minutes after the impact, creating seiche waves between 10–100 m (33–328 ft) high in the Western Interior Seaway. "
+            "The site formed in part of a bend in an ancient river on the westward shore of the seaway, and was flooded with great force by these waves, which carried sea, land, freshwater animals and plants, and other debris several miles inland. [...] "
+            "articulated and cartilaginous salt and freshwater fish and marine reptiles found together miles inland, with many microtektites (molten debris particles from the impact) embedded in their gills as they tried to breathe [...] "
+            "a turtle killed by impalement on a tree branch [...] "
+            "drowned ant nests with ants inside and chambers filled with asteroid debris [...] "
+            "Depalma et al. (2021) opted for a spring-summer range, but During et al. (2024) reevaluated and criticized this study based on its lack of primary data [...] "
+            "The exceptional nature of the findings and conclusions led some scientists to await further scrutiny before agreeing that the discoveries at Tanis had been correctly understood, further exacerbated by concerns over the reliability of data with researchers racing to claim credit for findings. [...] "
+            "Any water-borne waves would have arrived between 18 and 26 hours later, long after the microtektites had already fallen back to earth, and far too late to leave the geological record found at the site.",
+            nome="Tanis (fossil site)")],
+    },
+]

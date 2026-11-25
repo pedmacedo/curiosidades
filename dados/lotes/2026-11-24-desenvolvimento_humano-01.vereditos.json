@@ -1,0 +1,180 @@
+{
+ "lote": "2026-11-24-desenvolvimento_humano-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "desenvolvimento_humano-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O modelo de Lampl foi contestado (comentário na Science em 1995, debate sobre erro de medição) e vem de um só estudo com 31 bebês; o gancho o afirma como verdade estabelecida.",
+    "correcao": "1) Trocar a confianca para 'consenso_parcial'. 2) Atribuir o gancho ao estudo, por exemplo: 'Um estudo que mediu bebês até todos os dias concluiu que eles não crescem aos pouquinhos: passam de 2 a 63 dias sem crescimento mensurável e então dão um salto, às vezes de até um centímetro num dia.' (até 220 caracteres). 3) Na explicação, depois de 'três deles todos os dias', acrescentar 'eram 31 bebês, 19 meninas e 12 meninos'. 4) Trocar 'Pelas contas do estudo' por 'Os autores estimaram que'. 5) Não afirmar que o modelo é consenso."
+   },
+   {
+    "id": "desenvolvimento_humano-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O gancho afirma o mecanismo; a crítica de Skoyles (carta ao PNAS) e a réplica dos autores tornam o debate documentado e devem entrar.",
+    "correcao": "1) Gancho, por exemplo: 'Aos 5 anos, o cérebro de uma criança usa o dobro da glicose do cérebro de um adulto. É também a fase em que o corpo cresce mais devagar, e cientistas ainda debatem por que as duas coisas coincidem.' 2) Trocar a última frase da explicação por algo como: 'A ligação é uma interpretação. Numa carta à mesma revista, o pesquisador John Skoyles calculou que o ganho de peso de uma criança de 5 anos equivale a cerca de 1% da glicose que o cérebro usa no ano, pouco demais para explicar a troca. Ele propôs outra razão: menos músculo significa menos disputa com o cérebro pela glicose liberada pelo fígado. Os autores do estudo responderam que a massa muscular continua crescendo nessa idade.' 3) Acrescentar as fontes PMC4246319 (carta de Skoyles; trecho com 'A child in its 5th y gains 1,600 g' e '1.02% of the 517,205 g glucose used by the brain in its 5th y') e PMC4246347 (réplica de Kuzawa et al.), pela Europe PMC. 4) Avaliar incluir 'misterio_aberto'."
+   },
+   {
+    "id": "desenvolvimento_humano-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O '25' tem origem rastreável: um palpite de Jay Giedd (NIMH) à revista Time em 2004; o psicólogo é Laurence Steinberg.",
+    "correcao": "1) Gancho, por exemplo: 'A ideia de que o cérebro fica pronto aos 25 anos nasceu de um palpite, não de um resultado. Um estudo de 2025, com exames de 3.802 pessoas, viu a fiação cerebral seguir em fase adolescente até cerca de 32.' 2) Na explicação, trocar 'o 25 resume tendências gerais, sem um estudo definitivo por trás' por 'o número vem de um palpite do psiquiatra Jay Giedd, do NIMH, que em 2004, ao comentar seu estudo de ressonância para a revista Time, disse que, se tivesse de escolher uma idade, escolheria 25'. 3) Acrescentar a fonte https://en.wikipedia.org/wiki/Brain_matures_at_25_myth, com o trecho literal da citação de Giedd ('If we had to pick a number now, we'd probably go to age 25'). 4) Trocar 'Larry Steinberg' por 'Laurence Steinberg'."
+   },
+   {
+    "id": "desenvolvimento_humano-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A poda pelo complemento foi mostrada em camundongos; o efeito do C4 sobre o risco é modesto (risco relativo de 1,00 a 1,27).",
+    "correcao": "1) Gancho, por exemplo: 'Em camundongos, uma peça do sistema imune ajuda a podar conexões do cérebro jovem. Em humanos, variantes do gene dela, o C4, que aumentam sua produção no cérebro elevam um pouco o risco de esquizofrenia.' (até 220 caracteres). 2) Na explicação, depois de 'maior o risco', acrescentar: 'O efeito é modesto: entre as variantes comuns, o risco relativo vai de 1,00 a 1,27, ou seja, até cerca de 27% a mais.' 3) Acrescentar ao trecho da fonte Sekar et al. o literal 'these alleles showed relative risks ranging from 1.00 to 1.27'."
+   },
+   {
+    "id": "desenvolvimento_humano-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Carrel manteve a cultura, provavelmente não as mesmas células; 'as células de câncer' generaliza ('most cancer cells').",
+    "correcao": "1) No gancho, trocar 'manteve células de coração de embrião de galinha se multiplicando por mais de 20 anos' por 'manteve viva por mais de 20 anos uma cultura de células de coração de embrião de galinha' (até 220 caracteres). 2) Na explicação, trocar 'As células de câncer escapam graças à enzima telomerase' por 'A maioria das células de câncer escapa graças à enzima telomerase'. 3) Opcional: a hipótese de J. A. Witkowski de que células novas teriam sido introduzidas de propósito, talvez sem que Carrel soubesse."
+   },
+   {
+    "id": "desenvolvimento_humano-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Acharam menopausa' em chimpanzés e gorilas afirma mais que as fontes: há pesquisas que dizem que chimpanzés selvagens não têm menopausa, e o estudo dos gorilas não separa outras causas de esterilidade.",
+    "correcao": "Na explicação, trocar 'e estudos recentes acharam menopausa também em chimpanzés e gorilas selvagens de Uganda' por 'e estudos recentes acharam indícios de menopausa também em chimpanzés e gorilas selvagens de Uganda, embora isso ainda seja discutido'."
+   },
+   {
+    "id": "desenvolvimento_humano-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O artigo original de Robinson (Popular Science Monthly, 1892) diz 'mais de 60', 'com só duas exceções' e um dedo ou bastão fino, não uma barra; o feto mostra o reflexo até a 28ª semana.",
+    "correcao": "1) Gancho: trocar por 'Em 1891, um médico darwinista pendurou mais de 60 bebês com menos de um mês num dedo ou num bastão fino: segundo ele, quase todos aguentaram o próprio peso por 10 segundos ou mais, e um ficou 2 min 35 s.' 2) Na explicação, trocar 'Um feto já o mostra por volta de 28 semanas de gestação' por 'Um feto já o mostra até a 28ª semana de gestação (às vezes já na 16ª)'. 3) Acrescentar como fonte primária https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_40/March_1892/Darwinism_in_the_Nursery, com o trecho 'I have now records of upward of sixty cases in which the children were under a month old [...] In every instance, with only two exceptions, the child was able to hang on to the finger or a small stick [...] and one infant of three weeks old for two minutes thirty-five seconds!'. Manter Lancaster como fonte secundária."
+   },
+   {
+    "id": "desenvolvimento_humano-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "NCD-RisC 2016: +20,2 cm das sul-coreanas, 182,5 cm dos holandeses, 140,3 cm das guatemaltecas de 1896 e a queda holandesa de 1830–1857 conferem."
+   },
+   {
+    "id": "desenvolvimento_humano-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quem fez o levantamento de 2010 foi o Ministério da Justiça, sobre os registros de família, não a polícia.",
+    "correcao": "Na explicação, trocar 'A busca que se seguiu mostrou que a polícia não sabia se 234.354 pessoas com mais de 100 anos estavam vivas.' por 'Um levantamento nacional que se seguiu mostrou que as autoridades não sabiam se 234.354 pessoas com mais de 100 anos, listadas como vivas nos registros de família, ainda existiam; muitas teriam mais de 120 anos.' Opcional: depois da frase sobre Saul Newman, acrescentar 'e citou o caso japonês como exemplo'."
+   },
+   {
+    "id": "desenvolvimento_humano-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Superidosos da Northwestern: 80 anos ou mais, memória de três décadas mais jovem, 290 participantes, 79 cérebros e o córtex cingulado mais espesso conferem.",
+    "correcao": "Opcional: no gancho, 'mais de 80 anos' por '80 anos ou mais'."
+   },
+   {
+    "id": "desenvolvimento_humano-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Progéria: troca de C por T na posição 1824 do LMNA, progerina em células senescentes comuns com as ressalvas da fonte, lonafarnibe em 2020 conferem."
+   },
+   {
+    "id": "desenvolvimento_humano-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Só a National Autistic Society se disse preocupada; não houve 'entidades' que 'protestaram'.",
+    "correcao": "Na explicação, trocar 'e entidades ligadas ao autismo protestaram.' por 'e a National Autistic Society, entidade britânica ligada ao autismo, se disse extremamente preocupada com os efeitos sobre pessoas autistas.'"
+   },
+   {
+    "id": "desenvolvimento_humano-0013",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "duplicado: consciencia-0015 já traz o problema de Molyneux e o Projeto Prakash, com o mesmo gancho e a mesma explicação."
+   },
+   {
+    "id": "desenvolvimento_humano-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Relógio de Horvath: 353 CpGs, 8 mil amostras, erro mediano de 3,6 anos e o cerebelo de seis centenários cerca de 15 anos mais novo conferem."
+   },
+   {
+    "id": "desenvolvimento_humano-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Falta a ressalva: a linha só aparece se o bebê sobreviveu alguns dias, e a ausência dela não prova natimorto; convém uma segunda fonte (Janardhanan et al., 2011).",
+    "correcao": "1) No fim da explicação, acrescentar: 'Há limites: o bebê precisa ter sobrevivido pelo menos alguns dias para a linha aparecer, e a ausência dela não prova que ele nasceu morto.' 2) No gancho, trocar 'Peritos a usam para saber se um bebê nasceu vivo e quanto viveu.' por 'Peritos a usam para indicar se um bebê nasceu vivo e quanto viveu.' 3) Acrescentar como segunda fonte o artigo PMC3190441 (Janardhanan et al., 2011, 'Neonatal line as a linear evidence of live birth', J Forensic Dent Sci), com trecho literal sobre a ausência da linha não indicar natimorto ('the absence of this line is not an indication of still birth'); use a Europe PMC, porque o NCBI mostra captcha."
+   }
+  ],
+  "2": [
+   {
+    "id": "desenvolvimento_humano-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "desenvolvimento_humano-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "desenvolvimento_humano-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "desenvolvimento_humano-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "desenvolvimento_humano-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "desenvolvimento_humano-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Indícios de menopausa... embora ainda seja discutido' aplicado; o resto confere."
+   },
+   {
+    "id": "desenvolvimento_humano-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho fiel ao original de Robinson; retoque mínimo: a fonte só diz que o achado em anencéfalos apoia a ideia de que o reflexo depende da medula.",
+    "correcao": "'Ele depende da medula espinhal.' virou 'Ele parece ser comandado pela medula espinhal, já que aparece até em bebês anencéfalos.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "desenvolvimento_humano-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Levantamento nacional, 234.354 centenários e mais de 77 mil acima de 120 anos conferem."
+   },
+   {
+    "id": "desenvolvimento_humano-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'80 anos ou mais' aplicado; o resto confere."
+   },
+   {
+    "id": "desenvolvimento_humano-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "National Autistic Society aplicada; retoques mínimos: 'a maioria das pessoas' e 'possíveis efeitos nocivos'.",
+    "correcao": "'que quase todos escutam' virou 'que a maioria das pessoas escuta'; 'com os efeitos' virou 'com possíveis efeitos nocivos'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "desenvolvimento_humano-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Indicar' e a ressalva com Janardhanan et al. 2011 aplicados e conferidos."
+   }
+  ]
+ }
+}

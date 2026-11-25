@@ -9,7 +9,7 @@
 >
 > **Produção em paralelo (desde 2026-11-18, ideia do Pedro):** o orquestrador (a sessão principal) lança 4 subagentes produtores, um por tema da fila, com as regras de `pipeline/instrucoes_produtor.md`. Cada produtor só escreve, baixa (`pipeline/baixar_fontes.py`), monta e checa o seu lote, e depois faz o r2 com os vereditos. A verificação continua com o subagente `verificador` independente, de 4 a 5 fatos por chamada, e quem grava vereditos, aplica e mexe no PROGRESSO é só o orquestrador, um lote por vez, para não haver escrita simultânea em `dados/fatos`. Duplicatas entre lotes paralelos: o orquestrador mantém um e descarta o outro como `duplicado`.
 >
-> **Onde parou (2026-11-24):** 22 levas paralelas fechadas (91 temas, mais o lote de IA). A 22ª leva trouxe, a pedido do Pedro, os temas novos Gravidez humana e Contabilidade brasileira, junto com Experimentos de psicologia, Videogames e Genética, sem nenhum lote pela metade. Próximos da fila do `situacao.py`: Desenvolvimento humano, Paleontologia, Exploração espacial, Elementos químicos...
+> **Onde parou (2026-11-24):** 23 levas paralelas fechadas (96 temas, mais o lote de IA). A 23ª leva fez Desenvolvimento humano, Paleontologia, Exploração espacial, Elementos químicos e Padrões e fractais, sem nenhum lote pela metade. Próximos da fila do `situacao.py`: Medidas e padrões, Europa medieval...
 >
 > **Para retomar:** rode `python pipeline/situacao.py`. Ele mostra o lote pela metade (e o próximo passo), se é hora de amostra de revisão humana e os próximos temas da fila. Siga o "Fluxo de um lote" (seção da Fase 2) e, ao fim de cada tema, atualize a tabela da Fase 4 e as estatísticas.
 
@@ -147,6 +147,11 @@
 | Genética | 2026-11-24-genetica-01 | 15 | 15 | 0 | 22ª leva paralela. Rodada 1: 8 aprovados, 7 ajustar. Destaques: Hartl e Fairbanks rejeitam a acusação de Fisher contra Mendel, e o crédito de Tschermak não é mais aceito; o recorde de 160 bilhões de pares de bases é da samambaia Tmesipteris oblanceolata (a Wikipedia dava a espécie errada); os retrovírus endógenos são de 3% a 8% do genoma; a linhagem do genoma T2T tem as duas cópias de cada cromossomo idênticas, não uma só; o teste do intestino de Anna Anderson foi nos anos 1990, antes dos corpos de 2007. Os 7 aprovados na 2ª |
 | Contabilidade brasileira | 2026-11-24-contabilidade_brasileira-01 | 15 | 11 | 4 | 22ª leva paralela; tema novo pedido pelo Pedro. Rodada 1: 5 aprovados, 6 ajustar, 4 reprovados (capitação e Silvério dos Reis por verbetes pt fracos e números que a literatura acadêmica não confirma; CPMF e imposto sobre grandes fortunas por serem conhecidos demais). Destaques: o quinto teve precedente no khums islâmico, sem herança afirmada; a imunidade de escritores, jornalistas e professores sumiu na Carta de 1937 e voltou em 1946; no Tratado de 1810, os ingleses pagavam 15%, menos que os 16% dos próprios portugueses (e 24% os demais); a Revolta do Vintém "ajudou a derrubar" o gabinete. Os 6 aprovados na 2ª (2 com ajuste pontual) |
 | Gravidez humana | 2026-11-24-gravidez-01 | 14 | 14 | 0 | 22ª leva paralela; tema novo pedido pelo Pedro. Rodada 1: 7 aprovados, 7 ajustar. Destaques: a rã de Hogben era um teste comum, não o único (coelhos e camundongos eram usados na mesma época); o segredo do fórceps dos Chamberlen durou "mais de um século", não 150 anos; os 15 dólares de Couney não tinham unidade (eram por dia) e saíram; a sincitina-2 falta nos prossímios; a hipótese energética explica quando o bebê nasce, não por que o parto é difícil; a anti-D quase eliminou a doença Rh nos países ricos. Os 7 aprovados na 2ª |
+| Elementos químicos | 2026-11-24-elementos_quimicos-01 | 16 | 16 | 0 | 23ª leva paralela, sem doses nem modos de obtenção. Rodada 1: 9 aprovados, 7 ajustar. Destaques: os 5.700 litros de urina de Brand são estimativa; Mendeleev adotou o grupo zero, não o criou; Marguerite Perey tinha diploma técnico e a nota de Perrin era praxe da Academia; o laurêncio remete a Ernest Lawrence; o cobalto é o primeiro metal com descobridor conhecido, não "o primeiro desde a pré-história"; o tungstênio não foi o único elemento levado a juízo por patente (Seaborg patenteou amerício e cúrio). Os 7 aprovados na 2ª |
+| Padrões e fractais | 2026-11-24-padroes_fractais-01 | 15 | 15 | 0 | 23ª leva paralela. Rodada 1: 8 aprovados, 7 ajustar. Destaques: as fontes divergem sobre qual país deu 987 km e qual deu 1.214 km para a fronteira Portugal–Espanha (o gancho ficou neutro); um estudo de 2014 ligou a ideia de Turing aos dedos, sem "explicar" tudo; a média de 1,31 do náutilo vale para as 65 conchas do gênero Nautilus; a revisão de 2025 sobre os círculos de fadas é de dois defensores da auto-organização; a frase sobre Hertz e as figuras de Lichtenberg saiu por falta de fonte. Os 7 aprovados na 2ª |
+| Exploração espacial | 2026-11-24-exploracao_espacial-01 | 16 | 16 | 0 | 23ª leva paralela. Rodada 1: 10 aprovados, 6 ajustar. Destaques: o radar da Apollo 11 roubava ciclos do computador, não gerava interrupções; o erro de 4% explica a queda do Skylab em terra, e a área quase desabitada foi sorte; a história dos Beatles no Disco de Ouro é contestada e saiu; o VLS-1 foi o maior acidente do programa espacial brasileiro (o ranking mundial era frágil); o "98%" sobre o Snoopy é da equipe de Nick Howes, não da Royal Astronomical Society, e só o estágio de subida foi para a órbita solar. Os 6 aprovados na 2ª (2 com ajuste pontual) |
+| Paleontologia | 2026-11-24-paleontologia-01 | 16 | 16 | 0 | 23ª leva paralela. Rodada 1: 9 aprovados, 7 ajustar. Destaques: Leidy já tinha notado o Elasmosaurus de cabeça na cauda, e o desafio do cérebro de Cope é a versão mais contada; Stromer descreveu o Spinosaurus, quem o achou foi Markgraf; a fama de "fóssil vivo" do celacanto é discutida, não desmentida; a lente dupla dos trilobitas é interpretação com debate; a saída do Ubirajara em 2006 não está confirmada; a frase de Holtz sobre Schweitzer era elogio. Os 7 aprovados na 2ª |
+| Desenvolvimento humano | 2026-11-24-desenvolvimento_humano-01 | 15 | 14 | 1 | 23ª leva paralela. Rodada 1: 4 aprovados, 10 ajustar, 1 reprovado (o problema de Molyneux duplicava consciencia-0015). Destaques: o crescimento aos saltos vem de um só estudo contestado (consenso_parcial); a ligação entre o cérebro faminto e o crescimento lento aos 5 anos é debatida (carta de Skoyles); o "cérebro pronto aos 25" nasceu de um palpite de Jay Giedd à Time; a poda pelo complemento foi vista em camundongos e o C4 eleva pouco o risco de esquizofrenia; o original de Robinson (1891) fala em mais de 60 bebês num dedo ou bastão, não numa barra. Os 10 aprovados na 2ª (2 com ajuste pontual) |
 
 ## Fase 2: piloto (2026-11-17)
 
@@ -374,15 +379,20 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-24):
 | 2026-11-24-biomas_brasileiros-01 | biomas_brasileiros | 13 | 13 | 0 | 0% | 5/8/0 | — | 3.8 |
 | 2026-11-24-cinema_fotografia-01 | cinema_fotografia | 16 | 16 | 0 | 0% | 5/11/0 | — | 3.9 |
 | 2026-11-24-contabilidade_brasileira-01 | contabilidade_brasileira | 15 | 11 | 4 | 27% | 5/6/4 | reprovado_verificador 2, pouco_interessante 2 | 3.7 |
+| 2026-11-24-desenvolvimento_humano-01 | desenvolvimento_humano | 15 | 14 | 1 | 7% | 4/10/1 | duplicado 1 | 3.9 |
+| 2026-11-24-elementos_quimicos-01 | elementos_quimicos | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.8 |
 | 2026-11-24-experimentos_psicologia-01 | experimentos_psicologia | 14 | 14 | 0 | 0% | 3/11/0 | — | 4.2 |
+| 2026-11-24-exploracao_espacial-01 | exploracao_espacial | 16 | 16 | 0 | 0% | 10/6/0 | — | 3.8 |
 | 2026-11-24-genetica-01 | genetica | 15 | 15 | 0 | 0% | 8/7/0 | — | 3.9 |
 | 2026-11-24-gravidez-01 | gravidez | 14 | 14 | 0 | 0% | 7/7/0 | — | 4.0 |
 | 2026-11-24-linguas_mundo-01 | linguas_mundo | 16 | 16 | 0 | 0% | 8/8/0 | — | 3.9 |
 | 2026-11-24-moda-01 | moda | 14 | 12 | 2 | 14% | 7/5/2 | pouco_interessante 1, mito 1 | 3.8 |
+| 2026-11-24-padroes_fractais-01 | padroes_fractais | 15 | 15 | 0 | 0% | 8/7/0 | — | 4.0 |
+| 2026-11-24-paleontologia-01 | paleontologia | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.9 |
 | 2026-11-24-videogames-01 | videogames | 18 | 16 | 2 | 11% | 6/10/2 | pouco_interessante 2 | 3.9 |
-| **Total** | | 1605 | 1555 | 50 | 3% | | | |
+| **Total** | | 1683 | 1632 | 51 | 3% | | | |
 
-Cobertura: 115 de 163 temas com pelo menos um fato aprovado.
+Cobertura: 120 de 163 temas com pelo menos um fato aprovado.
 
 ## Revisões humanas
 

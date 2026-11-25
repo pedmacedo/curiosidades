@@ -1,0 +1,157 @@
+{
+ "lote": "2026-11-24-elementos_quimicos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "elementos_quimicos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ytterby: quatro elementos com o nome e mais cinco descobertos ali conferem; contagem conservadora."
+   },
+   {
+    "id": "elementos_quimicos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 5.700 litros são estimativa com apoio fraco (o Science History Institute fala em cerca de 4.500 L); não devem aparecer como medida exata.",
+    "correcao": "No gancho, trocar 'Ele usou cerca de 5.700 litros para obter só 120 gramas, e jogou fora a parte mais rica.' por 'Usou, por estimativa, uns 5.700 litros para obter só 120 gramas, e jogou fora a parte mais rica.' Não acrescentar nenhum detalhe do processo."
+   },
+   {
+    "id": "elementos_quimicos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gálio: 4,7 e 5,9 g/cm³, Mendeleev pedindo a nova medida a Lecoq e o trocadilho 'le coq' conferem."
+   },
+   {
+    "id": "elementos_quimicos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O grupo zero foi proposto por outros (Ramsay e Errera); Mendeleev o adotou em 1902, não o criou.",
+    "correcao": "Na explicação, trocar 'Mendeleev criou em 1902 um \"grupo zero\" para esses gases que quase não reagem' por 'Mendeleev pôs esses gases que quase não reagem, em 1902, num \"grupo zero\" da sua tabela'."
+   },
+   {
+    "id": "elementos_quimicos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tecnécio: a folha de molibdênio enviada por Lawrence, Palermo 1937, o masúrio descartado e as gigantes vermelhas de 1952 conferem."
+   },
+   {
+    "id": "elementos_quimicos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A causa 'sem diploma, por isso Perrin apresentou a nota' é enganosa (notas de não membros eram sempre apresentadas por um acadêmico; ela tinha diploma técnico); a eleição de 1962 foi como membro correspondente.",
+    "correcao": "1) Gancho novo: 'O frâncio, último elemento descoberto na natureza, foi achado em 1939 por Marguerite Perey, que entrou no laboratório de Marie Curie como técnica, sem diploma universitário.' 2) Na explicação, trocar 'A nota à Academia de Ciências foi apresentada pelo físico Jean Perrin, porque ela era só assistente de laboratório, sem diploma universitário.' por 'A nota à Academia de Ciências foi apresentada pelo físico Jean Perrin.' 3) Trocar 'Em 1962, Perey se tornou a primeira mulher eleita para a Academia de Ciências da França, honra que fora negada a Marie Curie.' por 'Em 1962, Perey se tornou a primeira mulher eleita para a Academia de Ciências da França, como membro correspondente, honra que fora negada a Marie Curie.'"
+   },
+   {
+    "id": "elementos_quimicos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O laurêncio homenageia Ernest Lawrence (que dá nome ao laboratório), não o laboratório; a graça do endereço (ordem de envelope) não fica clara.",
+    "correcao": "Na explicação, trocar 'O endereço de brincadeira, notado pela revista Discover, juntava o seabórgio ao laurêncio (do laboratório onde ele trabalhava), ao berquélio, ao califórnio e ao amerício.' por 'O endereço de brincadeira, notado pela revista Discover, segue a ordem de um envelope: o destinatário (seabórgio), o local de trabalho (laurêncio, que remete ao Laboratório Lawrence Berkeley), a cidade (berquélio, de Berkeley), o estado (califórnio) e, por fim, as Américas (amerício).'"
+   },
+   {
+    "id": "elementos_quimicos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Háfnio: Bury em 1921, Bohr em 1923, zircão da Noruega e Hafnia conferem; o papel de Bohr não está exagerado."
+   },
+   {
+    "id": "elementos_quimicos-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Primeiro metal descoberto desde a pré-história' é falso pela própria fonte (zinco e bismuto não são pré-históricos); o ponto sólido é o descobridor registrado.",
+    "correcao": "Na explicação, trocar 'Foi o primeiro metal descoberto desde a pré-história: ferro, cobre, ouro e os outros metais antigos não têm descobridor registrado.' por 'É apontado como o primeiro metal com descobridor conhecido: ferro, cobre, ouro e os demais metais conhecidos antes dele, inclusive zinco e bismuto, não têm descobridor registrado.'"
+   },
+   {
+    "id": "elementos_quimicos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Platina como diminutivo de plata, descartada pelos espanhóis, Scaliger, Ulloa, Chabaneau e a sinterização associada a La Tolita conferem.",
+    "correcao": "Opcional: 'que os arqueólogos costumam associar à cultura La Tolita'."
+   },
+   {
+    "id": "elementos_quimicos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ivy Mike, os filtros de papel, menos de 200 átomos, o segredo até 1955 e o processo r conferem.",
+    "correcao": "Opcional: trocar 'que morreram entre a proposta e o anúncio, em agosto de 1955' por 'que morreram antes do anúncio, feito em agosto de 1955'."
+   },
+   {
+    "id": "elementos_quimicos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Único elemento objeto de processo de patente' é contestado (Seaborg patenteou o amerício e o cúrio, com decisão judicial a favor da AEC); a fonte diz 'durante a extração', não 'na fundição'.",
+    "correcao": "Trocar o gancho por: 'O símbolo do tungstênio é W por causa de \"espuma de lobo\": o minério parecia devorar o estanho na extração. Em 1928, a Justiça dos EUA anulou a patente com que a GE tentava se apropriar do elemento.' Não usar 'único' em nenhum lugar."
+   },
+   {
+    "id": "elementos_quimicos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Meia-vida de 0,7 ms, previsão de sólido e reativo, ponto de fusão 325±15 K e o efeito relativístico conferem; hipótese bem marcada."
+   },
+   {
+    "id": "elementos_quimicos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Smolańczuk 1998, anúncio de 1999, retratação de 2001, fraude de Ninov em 2002 e Dubna conferem; não duplica o 0013.",
+    "correcao": "Opcional: retirar 'experimentos_psicologia' de temas_secundarios."
+   },
+   {
+    "id": "elementos_quimicos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Diferença de 0,5%, Cavendish 1785, isolamento em 1894 e o Nobel de 1904 conferem."
+   },
+   {
+    "id": "elementos_quimicos-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "As algas davam o carbonato de sódio usado na produção do salitre; 'a vida toda' exagera (ele fabricou iodo e ganhou o Prêmio Montyon).",
+    "correcao": "Na explicação, trocar 'Courtois, porém, lutou com dificuldades financeiras a vida toda e morreu em 1838' por 'Courtois, porém, enfrentou dificuldades financeiras até o fim da vida e morreu em 1838'. No gancho, trocar 'nas cinzas de algas usadas para fazer salitre' por 'nas cinzas de algas usadas na produção de salitre'."
+   }
+  ],
+  "2": [
+   {
+    "id": "elementos_quimicos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "elementos_quimicos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "elementos_quimicos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "elementos_quimicos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "elementos_quimicos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "elementos_quimicos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "elementos_quimicos-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   }
+  ]
+ }
+}

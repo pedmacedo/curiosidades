@@ -1,0 +1,586 @@
+LOTE = "2026-11-24-padroes_fractais-01"
+AREA = "matematica"
+TEMA = "padroes_fractais"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 a fronteira que mede 987 ou 1.214 km (paradoxo do litoral)
+    {
+        "temas_secundarios": ["fronteiras_paises", "medidas_padroes"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Portugal dizia que sua fronteira com a Espanha tinha 987 km; a Espanha, 1.214 km. Ninguém errou: numa linha irregular, quanto menor a régua usada, maior o comprimento medido.",
+        "explicacao": (
+            "Quem notou a diferença foi o inglês Lewis Fry Richardson, pouco antes de 1951, enquanto investigava se "
+            "o tamanho das fronteiras entre países influía na chance de guerra. O método da época era percorrer o "
+            "mapa com um compasso aberto num tamanho fixo e somar os segmentos. Richardson descobriu que a soma "
+            "sempre cresce quando o segmento encolhe: os geógrafos dos dois países só usavam réguas diferentes. Com "
+            "uma barra de metal reta, uma régua mais fina aproxima o valor verdadeiro. Com um litoral, cheio de "
+            "baías dentro de baías, o detalhe extra só aumenta o total, e em certas condições o comprimento tende ao "
+            "infinito quando a régua tende a zero. Em 1967, Benoit Mandelbrot publicou o artigo \"Qual é o "
+            "comprimento da costa da Grã-Bretanha?\" e propôs medir essas curvas por outra grandeza, a dimensão "
+            "fracionária, que ele chamaria de fractal em 1975. Ela fica entre 1 e 2: cerca de 1,02 para a costa da "
+            "África do Sul, bem lisa, e 1,25 para a costa oeste da Grã-Bretanha, toda recortada."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Coastline_paradox",
+            "the coastline of a landmass does not have a well-defined length or perimeter. [...] "
+            "With a coastline, however, measuring in finer and finer detail does not improve the accuracy; it merely adds to the total. [...] "
+            "Shortly before 1951, Lewis Fry Richardson, in researching the possible effect of border lengths on the probability of war, noticed that the Portuguese reported their measured border with Spain to be 987 km (613 mi), but the Spanish reported it as 1,214 km (754 mi). [...] "
+            "The prevailing method of estimating the length of a border (or coastline) was to lay out n equal straight-line segments of length l with dividers on a map or aerial photograph. [...] "
+            "the sum of the segments monotonically increases when the common length of the segments decreases. "
+            "In effect, the shorter the ruler, the longer the measured border; the Spanish and Portuguese geographers were simply using different-length rulers. "
+            "The result most astounding to Richardson is that, under certain circumstances, as l approaches zero, the length of the coastline approaches infinity. [...] "
+            "In \"How Long Is the Coast of Britain? Statistical Self-Similarity and Fractional Dimension\", published on 5 May 1967, Mandelbrot discusses self-similar curves that have Hausdorff dimension between 1 and 2. "
+            "These curves are examples of fractals, although Mandelbrot does not use this term in the paper, as he did not coin it until 1975. [...] "
+            "D is approximately 1.02 for the coastline of South Africa, and approximately 1.25 for the west coast of Great Britain.",
+            nome="Coastline paradox")],
+    },
+    # 2 o favo de mel: 36 a.C. a 1999
+    {
+        "temas_secundarios": ["insetos", "geometria_topologia"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "Que hexágonos, como os do favo de mel, são o jeito mais econômico de dividir um plano em partes iguais já se suspeitava em 36 a.C. A prova só veio em 1999. E o fundo das células das abelhas não é o ótimo.",
+        "explicacao": (
+            "A afirmação, hoje chamada teorema do favo de mel, diz que a grade de hexágonos regulares é, entre "
+            "todas as formas de repartir o plano em regiões de mesma área, a que tem menor perímetro total. Para "
+            "uma abelha, isso significa gastar menos cera para a mesma capacidade, e a cera é cara: elas consomem "
+            "cerca de 3,8 kg de mel para produzir 450 g dela. O registro mais antigo da ideia é do romano Marco "
+            "Terêncio Varrão. Em 1943, László Fejes Tóth provou o caso em que as células são polígonos convexos, e o "
+            "caso geral foi resolvido por Thomas Hales em 1999. Há uma explicação rival para o formato: D'Arcy "
+            "Thompson defendia que ele surge sozinho quando as abelhas juntam as células, como bolhas de sabão "
+            "apertadas, e notou que as células de rainha, feitas isoladas, são irregulares. E a perfeição tem "
+            "limites. O fundo das células é formado por três losangos, e em 1965 Fejes Tóth mostrou que um fundo "
+            "com dois hexágonos e dois losangos menores seria 0,035% mais eficiente, diferença pequena demais para "
+            "medir num favo real."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Honeycomb_conjecture",
+                "The honeycomb theorem, formerly the honeycomb conjecture, states that a regular hexagonal grid or honeycomb has the least total perimeter of any subdivision of the plane into regions of equal area. "
+                "The conjecture was proven in 1999 by mathematician Thomas C. Hales. [...] "
+                "The first record of the conjecture dates back to 36 BC, from Marcus Terentius Varro [...] "
+                "In 1943, László Fejes Tóth published a proof for a special case of the conjecture, in which each cell is required to be a convex polygon. "
+                "The full conjecture was proven in 1999 by mathematician Thomas C. Hales",
+                nome="Honeycomb conjecture"),
+            wiki("Honeycomb",
+                "Honey bees consume about 8.4 lb (3.8 kg) of honey to secrete 1 lb (450 g) of wax [...] "
+                "Thus, a hexagonal structure uses the least material to create a lattice of cells within a given volume. "
+                "A second reason, given by D'Arcy Wentworth Thompson, is that the shape simply results from the process of individual bees putting cells together: somewhat analogous to the boundary shapes created in a field of soap bubbles. "
+                "In support of this, he notes that queen cells, which are constructed singly, are irregular and lumpy with no apparent attempt at efficiency. [...] "
+                "In 1965, László Fejes Tóth discovered that the trihedral pyramidal shape (which is composed of three rhombi) used by the honeybee is not the theoretically optimal three-dimensional geometry. "
+                "A cell end composed of two hexagons and two smaller rhombi would actually be .035% (or about one part per 2850) more efficient. "
+                "This difference is too minute to measure on an actual honeycomb",
+                nome="Honeycomb"),
+        ],
+    },
+    # 3 a espuma de Kelvin derrotada (Weaire-Phelan e o Cubo d'Água)
+    {
+        "temas_secundarios": ["arquitetura", "estados_materia"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Em 1887, Lorde Kelvin propôs a espuma mais econômica possível. A ideia resistiu por mais de cem anos, até que, em 1993, uma simulação achou uma melhor. Ela inspirou o Cubo d'Água das Olimpíadas de Pequim.",
+        "explicacao": (
+            "A pergunta de Kelvin era a versão em três dimensões do problema do favo de mel: como dividir o espaço "
+            "em células de mesmo volume usando o mínimo de superfície entre elas, ou seja, qual seria a espuma de "
+            "bolhas mais eficiente. A resposta que ele sugeriu usava células com 6 faces quadradas e 8 "
+            "hexagonais, levemente curvadas, e foi aceita por mais de um século sem que ninguém achasse algo melhor. "
+            "Em 1993, o físico Denis Weaire, do Trinity College de Dublin, e seu aluno Robert Phelan simularam "
+            "espumas no computador e encontraram uma estrutura com dois tipos de células de mesmo volume, com área "
+            "0,3% menor. Depois disso surgiram outras estruturas que também batem a de Kelvin, mas a de "
+            "Weaire-Phelan segue com a menor área conhecida. Se ela é a melhor possível, ninguém provou: problemas "
+            "com superfícies mínimas são dificílimos, e até a versão com só duas bolhas ficou aberta por mais de "
+            "100 anos, até 2002. Em experimentos, bolhas iguais chegam a se organizar sozinhas nesse arranjo. "
+            "Tristram Carfrae se inspirou nele para projetar o Centro Aquático Nacional de Pequim, o "
+            "\"Cubo d'Água\", dos Jogos de 2008."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Weaire%E2%80%93Phelan_structure",
+            "In 1887, Lord Kelvin asked the corresponding question for three-dimensional space: how can space be partitioned into cells of equal volume with the least area of surface between them? "
+            "Or, in short, what was the most efficient soap bubble foam? [...] "
+            "a space-filling convex polyhedron with 6 square faces and 8 hexagonal faces. [...] "
+            "It was widely believed, and no counterexample was known for more than 100 years. "
+            "Finally, in 1993, Trinity College Dublin physicist Denis Weaire and his student Robert Phelan discovered the Weaire–Phelan structure through computer simulations of foam, and showed that it was more efficient, disproving the Kelvin conjecture. "
+            "Since the discovery of the Weaire–Phelan structure, other counterexamples to the Kelvin conjecture have been found, but the Weaire–Phelan structure continues to have the smallest known surface area per cell of these counterexamples. "
+            "Although numerical experiments suggest that the Weaire–Phelan structure is optimal, this remains unproven. "
+            "In general, it has been very difficult to prove the optimality of structures involving minimal surfaces. [...] "
+            "the double bubble conjecture on enclosing two volumes, remained open for over 100 years until being proven in 2002. [...] "
+            "The Weaire–Phelan structure differs from Kelvin's in that it uses two kinds of cells, although they have equal volume. [...] "
+            "Like the hexagons in the Kelvin structure, the pentagons in both types of cells are slightly curved. "
+            "The surface area of the Weaire–Phelan structure is 0.3% less than that of the Kelvin structure. [...] "
+            "Experiments have shown that, with favorable boundary conditions, equal-volume bubbles spontaneously self-assemble into the Weaire–Phelan structure. [...] "
+            "The Weaire–Phelan structure is the inspiration for the design by Tristram Carfrae of the Beijing National Aquatics Centre, the 'Water Cube', for the 2008 Summer Olympics.",
+            nome="Weaire–Phelan structure")],
+    },
+    # 4 Turing e a formação dos dedos
+    {
+        "temas_secundarios": ["desenvolvimento_humano", "historia_computacao"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Alan Turing, pai da computação, publicou um único artigo de biologia matemática, em 1952: duas substâncias que reagem e se espalham criariam listras e pintas sozinhas. Em 2014, a ideia explicou a formação dos dedos.",
+        "explicacao": (
+            "O artigo, \"A base química da morfogênese\", mostrava que duas moléculas que se difundem e interagem "
+            "do jeito certo podem, a partir de uma mistura uniforme, se organizar num padrão repetido. O "
+            "surpreendente é que a difusão, que normalmente mistura e apaga diferenças, ajuda a criá-las. Os padrões "
+            "de Turing passaram a ser aceitos para formas simples, como listras de zebra e ondulações de dunas, mas "
+            "na embriologia a ideia de que estruturas como os dedos surgissem assim enfrentou resistência por "
+            "décadas. Em 2014, um grupo do Centro de Regulação Genômica, em Barcelona, liderado por James Sharpe, "
+            "publicou na Science que as proteínas BMP e WNT fazem o papel das moléculas de Turing nos dedos do "
+            "embrião, ligadas por uma terceira, a Sox9. O modelo previu como o padrão mudaria ao bloquear essas "
+            "vias, e pedaços de tecido do broto do membro, cultivados em placa, mudaram do jeito previsto. O "
+            "resultado ajuda a entender a polidactilia, os dedos extras, que afeta até 1 em cada 500 nascimentos: "
+            "sistemas de Turing são um pouco menos precisos para controlar o número de \"listras\"."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.crg.eu/en/node/13001",
+             "titulo": "CRG researchers confirm that a mathematical theory first proposed by Alan Turing in 1952 can explain the formation of fingers",
+             "idioma": "en",
+             "trecho": "In a paper published today in Science, researchers from the Centre for Genomic Regulation (CRG) in Barcelona, show that BMP and WNT proteins are the so-called “Turing molecules” for creating embryonic fingers [...] "
+                       "This confirms a fundamental theory first proposed by the founding father of computer science, Alan Turing, back in 1952. [...] "
+                       "Barcelona, 31st of July 2014. [...] "
+                       "This explains why polydactyly – the development of extra fingers or toes – is relatively common in humans, affecting up to 1 in 500 births [...] "
+                       "His contribution to mathematical biology is less famous, but was no less profound. He published just one paper (1952), but it triggered a whole new field of mathematical enquiry into pattern formation. "
+                       "He discovered that a system with just 2 molecules could, at least in theory, create spotty or stripy patterns if they diffused and chemically interacted in just the right way. [...] "
+                       "This theory has come to be accepted as an explanation of fairly simple patterns such as zebra stripes and even the ridges on sand dunes, but in embryology it has been resisted for decades as an explanation of how structures such as fingers are formed. "
+                       "Now a group of researchers from the Multicellular Systems Biology lab at the CRG, led by ICREA Research Professor James Sharpe, has provided the long sought-for data which confirms that the fingers and toes are patterned by a Turing mechanism. [...] "
+                       "the two signalling pathways were linked through a non-diffusible molecule – the transcription factor Sox9. "
+                       "Finally, they were able to make computational predictions about the effects of inhibiting these 2 pathways – either individually, or in combination – which predicted how the pattern of fingers should change. "
+                       "Strikingly, when the same experiments were done on small pieces of limb bud tissue cultured in a petri dish the same alterations in embryonic finger pattern were observed, confirming the computational prediction. [...] "
+                       "Turing systems are mathematically known to have slightly lower precision in regulating the number of “stripes” than alternative models."},
+            wiki("Turing_pattern",
+                "The Turing pattern is a concept introduced by English mathematician Alan Turing in a 1952 paper titled \"The Chemical Basis of Morphogenesis\", which describes how patterns in nature, such as stripes and spots, can arise naturally and autonomously from a homogeneous, uniform state. [...] "
+                "The instability mechanism is surprising because a pure diffusion, such as molecular diffusion, would be expected to have a stabilizing influence on the system (i.e., complete mixing).",
+                nome="Turing pattern"),
+        ],
+    },
+    # 5 os girassóis de Turing
+    {
+        "temas_secundarios": ["plantas", "historia_computacao"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "As espirais dos girassóis costumam seguir os números de Fibonacci (21, 34, 55...), um enigma que Turing estudava quando morreu. Num estudo com 657 girassóis cultivados pelo público, nem todos seguiram a regra.",
+        "explicacao": (
+            "Na cabeça do girassol, as sementes formam espirais que giram nos dois sentidos, e a quantidade de "
+            "espirais em cada sentido costuma ser um número de Fibonacci, a sequência em que cada termo é a soma "
+            "dos dois anteriores. Quem ligou a disposição das folhas a essa sequência foram os irmãos Bravais, em "
+            "1837, e em 1868 Wilhelm Hofmeister propôs o mecanismo: cada folha nova nasce no ponto menos apertado "
+            "do broto, e o famoso ângulo de ouro entre folhas sucessivas sai desse empurra-empurra, sem nenhuma "
+            "\"matemática\" na planta. Alan Turing, que trabalhou na Universidade de Manchester de 1948 até morrer, "
+            "em 1954, tentava explicar esse padrão e não terminou o trabalho. No centenário dele, em 2012, o Museu "
+            "de Ciência e Indústria de Manchester convidou o público a plantar girassóis e enviar as contagens. O "
+            "estudo, publicado em 2016, reuniu dados de 657 flores. No conjunto mais confiável, de 768 contagens "
+            "de espirais, 565 deram números de Fibonacci e outras 67 deram estruturas aparentadas, como os números "
+            "de Lucas. O resto fugiu do padrão, e algumas cabeças tinham regiões desordenadas onde nem dava para "
+            "contar. Para os autores, essas exceções são um desafio para os modelos que explicam a regra."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4892450/fullTextXML",
+             "titulo": "Novel Fibonacci and non-Fibonacci structure in the sunflower: results of a citizen science experiment (Royal Society Open Science, 2016)",
+             "idioma": "en",
+             "trecho": "We collected data on 657 sunflowers. "
+                       "In our most reliable data subset, we evaluated 768 clockwise or anticlockwise parastichy numbers of which 565 were Fibonacci numbers, and a further 67 had Fibonacci structure of a predefined type. [...] "
+                       "The Fibonacci sequence is the sequence of integers 1,2,3,5,8,13,21,34,55,89,144… in which each member after the second is the sum of the two preceding. [...] "
+                       "As common in other species, the previous sunflower studies found not only Fibonacci numbers, but also the occasional occurrence of the double Fibonacci numbers, Lucas numbers and [...] "
+                       "To mark the centenary of Alan Turing’s birth, the Museum of Science and Industry, Manchester, UK (MSI) ran a project in 2012 which invited members of the public to grow their own sunflower and either submit their data online or to bring it into MSI for counting. [...] "
+                       "Sixth, seedheads sometimes possess completely disordered regions which make the assignment of parastichy numbers impossible. [...] "
+                       "but taken together they pose a challenge for further research."},
+            {"url": "https://www.manchester.ac.uk/about/news/turings-sunflowers-growing-alan-turings-legacy/",
+             "titulo": "Turing’s Sunflowers: Growing Alan Turing’s legacy (University of Manchester)",
+             "idioma": "en",
+             "trecho": "18 May 2016 [...] "
+                       "Today, the findings of a major citizen science project, Turing’s Sunflowers, are being published in the open journal, Royal Society Open Science. [...] "
+                       "built on work which was started by the mathematician before his death in 1954. [...] "
+                       "From 1948 until his death, Turing worked at The University of Manchester. [...] "
+                       "The spirals on sunflower heads often conform to a Fibonacci number (see notes), and Turing was one of a number of scientists who tried to explain ‘Fibonacci phyllotaxis’, but he died before the work was complete."},
+            wiki("Phyllotaxis",
+                "Auguste Bravais and his brother Louis connected phyllotaxis ratios to the Fibonacci sequence in 1837. "
+                "Insight into the mechanism had to wait until Wilhelm Hofmeister proposed a model in 1868. "
+                "A primordium, the nascent leaf, forms at the least crowded part of the shoot meristem. "
+                "The golden angle between successive leaves is the blind result of this jostling.",
+                nome="Phyllotaxis"),
+        ],
+    },
+    # 6 o náutilo não segue a razão áurea
+    {
+        "temas_secundarios": ["vida_marinha", "historia_matematica"],
+        "tipos_espanto": ["mito_desmentido"],
+        "gancho": "A concha do náutilo é a imagem clássica da razão áurea, 1,618. Mas medidas de 80 conchas de um museu deram em média 1,31. E até a correção mais repetida do mito, \"é 4 para 3\", tem base frágil.",
+        "explicacao": (
+            "A concha do náutilo cresce mesmo numa espiral logarítmica, que se alarga sempre na mesma proporção. O "
+            "erro é supor que toda espiral desse tipo tem a ver com a razão áurea, ou que cada câmara nova guarda "
+            "proporção áurea com a anterior. O mito aparece em livros de divulgação e no romance O Código Da Vinci, "
+            "e o matemático Keith Devlin admitiu tê-lo repetido sem querer enquanto desmentia outros usos da razão "
+            "áurea. O desmentido mais citado é de Clement Falbo, que afirmou ter medido conchas na Academia de "
+            "Ciências da Califórnia em 1999 e achado razões de 1,24 a 1,43, com média de 1,33. Num artigo publicado "
+            "no fim de 2018, o pesquisador Christopher Bartlett mediu 80 conchas de náutilo da coleção Smithsonian, identificadas "
+            "por especialistas, e encontrou média de 1,310: nem a áurea nem exatamente 4 para 3. Ele lembra que a "
+            "curadoria da Academia não achou registro formal da visita de Falbo e que os estudos anteriores "
+            "costumavam se basear em uma concha só. Uma espécie, o náutilo-crostoso, destoou, com média de 1,356."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://link.springer.com/article/10.1007/s00004-018-0419-3",
+             "titulo": "Nautilus Spirals and the Meta-Golden Ratio Chi (Nexus Network Journal)",
+             "idioma": "en",
+             "trecho": "Nautilus Spirals and the Meta-Golden Ratio Chi Download PDF Christopher Bartlett [...] "
+                       "Published: 12 December 2018 [...] "
+                       "eighty Nautilus shells were measured in the Smithsonian collection. "
+                       "The results show that the Nautilus genus is clearly not the widely quoted 4:3 (1.333), but averaged 1.310. "
+                       "However, there was one species that was remarkably different, the Crusty Nautilus averaging 1.356 [...] "
+                       "he inadvertently claimed that the Nautilus shell growth was governed by the golden ratio. "
+                       "Novelist Dan Brown (2003: 94) famously popularized this myth in ‘The Da Vinci Code’. [...] "
+                       "“In 1999, I measured shells of Nautilus pompilius, the chambered nautilus, in the collection at the California Academy of Sciences (CAS) in San Francisco…The ratios ranged from 1.24 to 1.43, and the average was 1.33, not phi (which is approximately 1.618). [...] "
+                       "Yet, the Collections Curator of Invertebrate Zoology and Geology at CAS reasoned that since no record of formal access in 1999 for Dr. Clement Falbo could be found [...] "
+                       "earch studies were usually based on a single specimen. [...] "
+                       "it took a large sample size, examining 80 shells from the Smithsonian National Museum of Natural History (NMNH) in Washington D.C. "
+                       "The museum specimens had also been identified by world renowned specialists."},
+            wiki("Golden_ratio",
+                "The shells of mollusks such as the nautilus are often claimed to be in the golden ratio. "
+                "The growth of nautilus shells follows a logarithmic spiral, and it is sometimes erroneously claimed that any logarithmic spiral is related to the golden ratio, or sometimes claimed that each new chamber is golden-proportioned relative to the previous one. "
+                "However, measurements of nautilus shells do not support this claim.",
+                nome="Golden ratio"),
+        ],
+    },
+    # 7 os círculos de fadas
+    {
+        "temas_secundarios": ["ecologia", "paisagens_extremas"],
+        "tipos_espanto": ["misterio_aberto", "contraintuitivo"],
+        "gancho": "No deserto da Namíbia, o capim é salpicado de círculos de terra nua, de 2 a 12 m, espaçados com enorme regularidade. Cupins ou um padrão de Turing criado pelas próprias plantas? A disputa segue aberta.",
+        "explicacao": (
+            "Os \"círculos de fadas\" ocupam uma faixa de uns 2.400 km, a cerca de 160 km da costa, de Angola à "
+            "África do Sul, e em 2014 foram achados também no oeste da Austrália. Cada um vive de 30 a 60 anos. "
+            "Para os himbas, povo do norte da Namíbia, seriam pegadas de deuses. Na ciência, há dois campos. Em "
+            "2013, Norbert Juergens apontou um cupim-de-areia, achado em 80% a 100% dos círculos, que comeria a "
+            "vegetação e deixaria a água da chuva se acumular no subsolo. Críticos disseram que ele confundiu "
+            "correlação com causa, e outro especialista não achou o cupim com a mesma frequência. O outro campo vê "
+            "auto-organização: onde a chuva e os nutrientes são escassos, a competição entre os capins os faz se "
+            "arranjar sozinhos num padrão periódico, do tipo descrito por Turing. Em 2014, um estudo mostrou que nem "
+            "cupins nem gases explicam o espaçamento tão regular. Em 2022, escavações de centenas de touceiras "
+            "indicaram que o capim de dentro morre de falta de água, com as raízes intactas. Uma revisão de 2025 "
+            "concluiu que só a auto-organização é compatível com todas as observações, mas nenhuma hipótese foi "
+            "comprovada de forma conclusiva."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Fairy_circle_(arid_grass_formation)",
+            "Fairy circles are circular patches of barren land, varying between 2 and 12 metres (7 and 39 ft) in diameter, often encircled by a stimulated growth of grass. [...] "
+            "Studies have proposed various hypotheses about their origins, but none have conclusively proven how they are formed. "
+            "Theories include hypotheses that the activities of various types of termites affect growth or that competition between grasses naturally yields certain vegetation patterns. [...] "
+            "The circles occur in a band lying about 160 kilometres (100 miles) inland and extending southward from Angola for some 2,400 kilometres (1,500 miles) down to the Northwestern Cape province of South Africa. [...] "
+            "In 2014, ecologists were alerted to similar rings of vegetation outside Africa, in a part of the Pilbara in Western Australia. [...] "
+            "Studies show that these circles pass through a life cycle of some 30 to 60 years. [...] "
+            "In 2013, this theory was supported by Norbert Juergens. [...] "
+            "The sand termite was found in 80-100% of the circles, in 100% of newly formed circles [...] "
+            "Sand termites create the fairy circle by consuming vegetation and burrowing in the soil to create the ring. "
+            "The barren circle allows water to percolate down through sandy soil and accumulate underground [...] "
+            "remarked that Juergens \"has made the common scientific error of confusing correlation (even very strong correlation) with causation\". [...] "
+            "\"We have not found such a ubiquitous presence of sand termites at fairy circles as was suggested by Juergens [2013] when carrying out ad hoc searches throughout the fairy circle range.\" [...] "
+            "They examined the conditions under which fairy circles arise and found that fairy circles are negatively correlated with precipitation and soil nutrition. "
+            "This observation is consistent with resource competition being a cause of the circles. [...] "
+            "In May 2014, Getzin et al. demonstrated that termite or gas activity cannot explain the extremely regular spacing of the fairy circles, but the patterns are congruent with typical patterns resulting from vegetation self-organization. [...] "
+            "The spatially periodic (Turing-like) pattern of fairy circles is a typical example of vegetation self-organization in desert regions. [...] "
+            "In 2022, a study was published that tested the termite theory and the theory of plant self-organization for Namibia by excavating hundreds of grasses within and around the fairy circles. "
+            "The study revealed that the grasses within fairy circles died of plant-water stress but not due to root herbivory by termites because the roots were initially undamaged [...] "
+            "In February 2025, Cramer and Tschinkel published a review article about all fairy circle theories. "
+            "They emphasize that the self-organization of vegetation is the only theory that is consistent with all field observations [...] "
+            "the Himba people note that their original ancestor, Mukuru, was responsible for the creation of the fairy circles, or that they were the footprints of gods.",
+            nome="Fairy circle (arid grass formation)")],
+    },
+    # 8 o romanesco: flores que nunca chegam a ser
+    {
+        "temas_secundarios": ["plantas", "domesticacao"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "O romanesco, a couve-flor verde em espirais pontudas, é quase um fractal. Um estudo de 2021 explicou: seus brotos tentam virar flores, falham, viram ramos que tentam de novo, numa reação em cadeia.",
+        "explicacao": (
+            "No romanesco, cada botão é feito de botões menores, também arranjados em espiral logarítmica, e o "
+            "desenho se repete em escalas cada vez menores, até que o detalhe fica pequeno demais e a repetição "
+            "para. Por isso ele é só aproximadamente um fractal. O número de espirais na cabeça é um número de "
+            "Fibonacci. Pesquisadores do CNRS e do Inria, na França, combinaram biologia de plantas e modelos "
+            "matemáticos e publicaram a explicação na Science, em julho de 2021. Os botões da couve-flor nascem "
+            "programados para virar flores, mas nunca chegam lá: viram caules, que continuam tentando produzir "
+            "flores, e o resultado é uma sucessão de caules sobre caules. A breve passagem pelo estado de flor muda "
+            "o funcionamento desses brotos, que crescem sem folhas e se multiplicam quase sem fim. O que distingue "
+            "o romanesco é a aceleração: seus caules produzem novos botões cada vez mais rápido, enquanto nas "
+            "outras couves-flores o ritmo é constante, e isso dá a cada florete a forma de pirâmide. Segundo os "
+            "autores, é um exemplo de como mutações escolhidas na domesticação mudaram a forma das hortaliças."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            {"url": "https://www.cnrs.fr/en/press/where-does-shape-romanesco-cauliflower-come",
+             "titulo": "Where does the shape of the Romanesco cauliflower come from? (CNRS)",
+             "idioma": "en",
+             "trecho": "The mystery of the formation of one of the most peculiar plant forms – the Romanesco cauliflower – has been solved by a team of scientists from the CNRS1 and Inria in an article published on the 9 July in Science. "
+                       "Thanks to work combining mathematical modelling and plant biology, the scientists were able to determine that cauliflowers, and Romanescos in particular, are in fact buds that are designed to become flowers but which never reach their goal. "
+                       "Instead, they develop into stems, which in turn continue trying to produce flowers. "
+                       "The cauliflower is born from this chain reaction, resulting in a succession of stems upon stems. "
+                       "This study shows that the brief incursion of buds into a flowering state profoundly affects their functioning and allows them, unlike normal stems, to grow without leaves and to multiply almost infinitely. "
+                       "The atypical shape of the Romanesco is explained by the fact that its stems produce buds more and more rapidly (whereas the production rate is constant in other cauliflowers). "
+                       "This acceleration gives each floret a pyramidal appearance, making the fractal aspect of the structure clear. "
+                       "The study highlights how the selection of mutations in plants during the process of domestication has changed their shape [...] "
+                       "Science, 9 July 2021."},
+            wiki("Romanesco_broccoli",
+                "each bud is composed of a series of smaller buds, all arranged in yet another logarithmic spiral. "
+                "This self-similar pattern continues at smaller levels. "
+                "The pattern is only an approximate fractal since the pattern eventually terminates when the feature size becomes sufficiently small. "
+                "The number of spirals on the head of Romanesco broccoli is a Fibonacci number.",
+                nome="Romanesco broccoli"),
+        ],
+    },
+    # 9 figuras de Lichtenberg: na pele e na origem da xerox
+    {
+        "temas_secundarios": ["eletromagnetismo", "clima_tempo"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Quem é atingido por raio pode ganhar na pele um desenho ramificado, como uma samambaia, que costuma sumir em 24 horas. É uma figura de Lichtenberg, padrão fractal estudado em 1777, num experimento que antecipou a xerox.",
+        "explicacao": (
+            "O físico alemão Georg Christoph Lichtenberg construiu em 1777 um grande eletróforo, aparelho que gera "
+            "eletricidade estática de alta tensão. Depois de descarregar uma ponta eletrizada sobre uma placa "
+            "isolante, ele polvilhava pós sobre ela, e os grãos grudavam nas áreas carregadas, revelando desenhos "
+            "radiais e ramificados. Ao pressionar folhas de papel sobre esses desenhos, conseguia transferi-los e "
+            "guardá-los, o princípio básico da xerografia moderna. Mais tarde, Heinrich Hertz usou essas figuras no "
+            "trabalho que comprovou as ondas eletromagnéticas de Maxwell. Os padrões têm propriedades fractais e "
+            "surgem sempre que uma descarga elétrica atravessa um material isolante, seja sólido, líquido ou gás. "
+            "Um raio pode gravar uma figura assim na grama em volta do ponto atingido, às vezes em campos de golfe. "
+            "Na pele das vítimas de raio, as marcas também são chamadas de marcas queraunográficas. Para os "
+            "engenheiros, elas são um sinal de alerta: as \"árvores elétricas\" que crescem dentro de isolantes "
+            "acompanham a deterioração de equipamentos de alta tensão."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lichtenberg_figure",
+            "A Lichtenberg figure (German: Lichtenberg-Figur), or Lichtenberg dust figure, is a branching electric discharge that sometimes appears on the surface or in the interior of insulating materials. "
+            "Lichtenberg figures are often associated with the progressive deterioration of high-voltage components and equipment. [...] "
+            "Lichtenberg figures are now known to occur on or within solids, liquids, and gases during electrical breakdown. "
+            "Lichtenberg figures are natural phenomena that exhibit fractal properties. [...] "
+            "Lichtenberg figures are named after the German physicist Georg Christoph Lichtenberg, who originally discovered and studied them. [...] "
+            "In 1777, Lichtenberg built a large electrophorus to generate high-voltage static electricity through induction. "
+            "After discharging a high-voltage point to the surface of an insulator, he recorded the resulting radial patterns by sprinkling various powdered materials onto the surface. "
+            "By then pressing blank sheets of paper onto these patterns, Lichtenberg was able to transfer and record these images, thereby discovering the basic principle of modern xerography. [...] "
+            "Heinrich Rudolf Hertz employed Lichtenberg dust figures in his seminal work proving Maxwell's electromagnetic wave theories. [...] "
+            "Lichtenberg figures are fern-like patterns that may appear on the skin of lightning strike victims and typically disappear in 24 hours. "
+            "They are also known as Keraunographic markings. "
+            "A lightning strike can also create a large Lichtenberg figure in grass surrounding the point struck. "
+            "These are sometimes found on golf courses or in grassy meadows.",
+            nome="Lichtenberg figure")],
+    },
+    # 10 colunas de basalto e amido de milho
+    {
+        "temas_secundarios": ["vulcoes_terremotos", "minerais_rochas"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "A Calçada dos Gigantes, na Irlanda do Norte, tem cerca de 40 mil colunas de basalto, a maioria com seis lados. Ninguém as esculpiu: a lava rachou ao esfriar. Amido de milho secando faz colunas iguais, em miniatura.",
+        "explicacao": (
+            "As colunas nasceram de uma erupção vulcânica há cerca de 60 milhões de anos, e a lenda local diz que "
+            "o gigante Finn McCool construiu a calçada para chegar à Escócia. A física é outra. Ao esfriar, a lava "
+            "solidificada se contrai e precisa rachar para aliviar a tensão. As primeiras rachaduras, na superfície, "
+            "se encontram em forma de T, como na lama seca, porque cada uma corre até topar com outra. Mas a frente "
+            "de rachaduras vai descendo pela rocha, e a cada avanço o desenho se reorganiza num arranjo de menor "
+            "energia. Alguns metros abaixo, já virou uma grade de hexágonos de largura parecida. A largura depende "
+            "do material e da velocidade da frente, controlada pela água subterrânea. Como todas as colunas desse "
+            "tipo obedecem à mesma proporção entre largura, velocidade e difusão do calor, dá para fazer um modelo "
+            "em escala: uma camada de amido de milho de 1 cm, ao secar, forma colunas de cerca de 1 mm. Na "
+            "Calçada, há colunas de quatro a oito lados, e as mais altas têm uns 12 metros."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Columnar_jointing",
+                "Columnar jointing occurs in many types of igneous rocks (e.g. basalt, andesite, rhyolite, tuff), and forms as the rock cools and contracts. [...] "
+                "As it cools down further, the basalt contracts, and it forms cracks to release the tensile energy. "
+                "It then is cooled down further by groundwater boiling and reflux. "
+                "When the cracks first form at the surface, the cracks are dominated by T-junctions, like mudcracks, because they were formed individually. "
+                "One crack would form and move across the surface, until it hits upon a previous crack, forming a T-junction. "
+                "Then, these cracks extend downwards in a moving front that is roughly planar and parallel to the surface. "
+                "As it moves, the crack pattern anneals to become lower in energy. "
+                "The speed v at which the front moves is determined by the groundwater flow rate. "
+                "After the front moves a few meters deep, it would evolve into a hexagonal grid with roughly equal width L. "
+                "The width L is determined by the basalt's material properties, and the speed v at which the front moves. [...] "
+                "For all columnar jointing, the value of Pe is around 0.2, and thus the shape and speed of all columnar joints are similar after scaling. "
+                "A scaled model can be made by drying cornstarch a centimeter thick, which creates columns about 1 mm wide. [...] "
+                "The Giant's Causeway (Irish: Clochán An Aifir) on the north Antrim coast of Northern Ireland was created by volcanic activity 60 million years ago, and consists of over 40,000 columns. "
+                "According to a legend, the giant Finn McCool created the Giant's Causeway, as a causeway to Scotland.",
+                nome="Columnar jointing"),
+            wiki("Giant%27s_Causeway",
+                "is an area of approximately 40,000 interlocking basalt columns, the result of an ancient volcanic fissure eruption [...] "
+                "Most of the columns are hexagonal, although some have between four and eight sides. "
+                "The tallest are approximately 12 metres (39 ft) high",
+                nome="Giant's Causeway"),
+        ],
+    },
+    # 11 riachos que se bifurcam a 72 graus
+    {
+        "temas_secundarios": ["agua_doce_gelo", "geometria_topologia"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Numa região arenosa da Flórida, onde os vales são cavados pela água que brota do chão, os riachos se dividem num ângulo médio de 72 graus. Foi o que uma teoria do MIT previu, e quase 5 mil bifurcações confirmaram.",
+        "explicacao": (
+            "Lá, a erosão não vem de enxurradas na superfície, e sim da água subterrânea. Guardada nos morros em "
+            "volta, ela escorre devagar pela areia porosa, aflora na cabeceira do vale e leva grãos junto. Com o "
+            "tempo, isso alonga o vale até ele se partir em dois. A equipe do geofísico Dan Rothman calculou os "
+            "caminhos da água subterrânea em direção a dois riachos recém-separados. Quando o ângulo entre eles é "
+            "pequeno, esses caminhos se curvam para longe um do outro; quando é grande, se curvam um para o outro. "
+            "Só num ângulo especial, 72 graus, eles seguem retos, e o grupo concluiu que é nesse ângulo que os "
+            "riachos se dividem. A previsão foi testada em quase 5 mil junções de riachos no Panhandle da Flórida, "
+            "perto da cidade de Bristol, e a média bateu com o número. O artigo saiu em dezembro de 2012 na revista "
+            "PNAS. Segundo Rothman, a mesma análise talvez sirva para outros sistemas que se ramificam, como os "
+            "dendritos dos neurônios e os filamentos de fungos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [{"url": "https://news.mit.edu/2012/river-networks-mathematics-1205",
+            "titulo": "River networks: Mathematical branches (MIT News, 2012)",
+            "idioma": "en",
+            "trecho": "In a paper published this week in the Proceedings of the National Academy of Sciences, Dan Rothman and his colleagues formulate a mathematical theory to discover a common angle at which valleys branch. "
+                      "In environments where erosion is driven by the seepage of water out of the ground, the group’s theory predicts that rivers branch at an angle of 72 degrees. "
+                      "Putting the theory to the test, Rothman and his group measured 5,000 branching angles in the Florida Panhandle, a region of soft, sandy soils — finding that the average valley branching was indeed 72 degrees. "
+                      "Rothman, a professor of geophysics in MIT’s Department of Earth, Atmospheric and Planetary Sciences (EAPS), says such a mathematical analysis may also be applicable to other systems, such as neuron dendrites and fungal filaments. [...] "
+                      "Near the town of Bristol, along the eastern stretch of the Florida Panhandle, a network of valleys cuts into the landscape [...] "
+                      "Essentially, groundwater stored in the hills surrounding a valley slowly seeps out, carrying with it some sand. "
+                      "Over time, the process slowly erodes the surrounding hills, extending a valley and eventually splitting it in two. "
+                      "To find the angle at which this split occurs, Rothman’s group derived a mathematical expression for the paths taken by groundwater as it flows toward a newly split stream. "
+                      "Such paths generally curve either away from each other, when the angle between the streams is small, or toward each other, when the angle is large. "
+                      "However, Rothman’s group found that there is a special angle — 72 degrees — for which the paths are straight, reasoning that this is the angle at which streams branch. "
+                      "They subsequently confirmed their prediction by examining nearly 5,000 stream junctions in the Florida Panhandle. [...] "
+                      "Publication Date: December 5, 2012"}],
+    },
+    # 12 a reação química que oscila (Belousov)
+    {
+        "temas_secundarios": ["termodinamica", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1951, o soviético Boris Belousov viu uma mistura química oscilar sozinha entre amarelo e incolor. Revistas recusaram o artigo duas vezes, porque ele não sabia explicar. Hoje a reação é um clássico.",
+        "explicacao": (
+            "Belousov procurava uma versão sem seres vivos do ciclo de Krebs, parte da respiração das células. Na "
+            "mistura de bromato de potássio, sulfato de cério, ácidos malônico e cítrico e ácido sulfúrico "
+            "diluído, o cério alternava entre duas formas, e a cor ia e voltava. Como não convenceu os editores com "
+            "uma explicação, só conseguiu publicar em 1959, numa revista menos prestigiada e sem revisão por pares. "
+            "Em 1961, o bioquímico Simon Shnoll passou o problema a um aluno de pós-graduação, Anatol Zhabotinsky, "
+            "que destrinchou a sequência de reações, mas o trabalho só ficou conhecido no Ocidente numa conferência "
+            "em Praga, em 1968. A reação mostra que nem toda química corre direto para o equilíbrio. Numa placa de "
+            "Petri, ela forma pontos coloridos que crescem em anéis concêntricos ou espirais, que somem quando se "
+            "agita a placa e depois voltam. Espirais muito parecidas aparecem em colônias de uma ameba do solo, o "
+            "Dictyostelium, numa escala de dias a anos, e não de minutos. O mecanismo envolve cerca de 18 etapas."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Belousov%E2%80%93Zhabotinsky_reaction",
+            "The reactions are important to theoretical chemistry in that they show that chemical reactions do not have to be dominated by equilibrium thermodynamic behavior. [...] "
+            "The discovery of the phenomenon is credited to Boris Belousov. "
+            "In 1951, while trying to find the non-organic analog to the Krebs cycle, he noted that in a mix of potassium bromate, cerium(IV) sulfate, malonic acid, and citric acid in dilute sulfuric acid, the ratio of concentration of the cerium(IV) and cerium(III) ions oscillated, causing the colour of the solution to oscillate between a yellow solution and a colorless solution. [...] "
+            "Belousov made two attempts to publish his finding, but was rejected on the grounds that he could not explain his results to the satisfaction of the editors of the journals to which he submitted his results. [...] "
+            "In 1959 his work was finally published in a less respectable, nonreviewed journal. "
+            "After Belousov's publication, Shnoll gave the project in 1961 to a graduate student, Anatol Zhabotinsky, who investigated the reaction sequence in detail; however, the results of these men's work were still not widely disseminated, and were not known in the West until a conference in Prague in 1968. [...] "
+            "These reactions, if carried out in petri dishes, result in the formation first of colored spots. "
+            "These spots grow into a series of expanding concentric rings or perhaps expanding spirals [...] "
+            "The colors disappear if the dishes are shaken, and then reappear. [...] "
+            "Strikingly similar oscillatory spiral patterns appear elsewhere in nature, at very different spatial and temporal scales, for example the growth pattern of Dictyostelium discoideum, a soil-dwelling amoeba colony. "
+            "In the BZ reaction, the size of the interacting elements is molecular and the time scale of the reaction is minutes. "
+            "In the case of the soil amoeba, the size of the elements is typical of single-celled organisms and the times involved are on the order of days to years. [...] "
+            "The mechanism for this reaction is very complex and is thought to involve around 18 different steps",
+            nome="Belousov–Zhabotinsky reaction")],
+    },
+    # 13 pi escondido no conjunto de Mandelbrot
+    {
+        "temas_secundarios": ["teoria_numeros", "historia_computacao"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "Pi aparece onde ninguém esperava: contando quantos passos um ponto leva para escapar do conjunto de Mandelbrot perto de um gargalo estreito. Com o ponto a 0,0000001 do gargalo, são 31.415.928 passos.",
+        "explicacao": (
+            "O conjunto de Mandelbrot reúne os números complexos c para os quais repetir a conta z → z² + c, "
+            "começando de zero, nunca dispara para o infinito. Sua borda é infinitamente complicada: tão "
+            "\"enrugada\" que, como provou Mitsuhiro Shishikura, tem dimensão fractal 2, a mesma de uma superfície. "
+            "Para saber se um ponto c = −3/4 + iε, logo acima de um estreitamento da figura, está fora do conjunto, "
+            "repete-se a conta até o valor sair de um círculo de raio maior que 2. O número de repetições "
+            "necessárias, multiplicado por ε, se aproxima de pi. Com ε = 0,0000001, são 31.415.928 repetições, e o "
+            "produto dá 3,1415928. Muita gente fez esse experimento de forma independente no começo dos anos 1990, "
+            "como David Boll. Algo parecido acontece em outros pontos. Uma prova para c = 1/4 saiu em 2001, e em "
+            "2023 um trabalho de graduação explicou por que surge pi ali: é a metade da circunferência de um "
+            "círculo de raio 1. Em 2025, três estudantes do ensino médio estenderam a explicação a todos os "
+            "infinitos pontos de bifurcação do conjunto."
+        ),
+        "nivel": 3, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [wiki("Mandelbrot_set",
+            "the complex numbers c for which the function fc(z)=z2+c does not diverge to infinity when iterated starting at z=0. [...] "
+            "Images of the Mandelbrot set exhibit an infinitely complicated boundary [...] "
+            "The Hausdorff dimension of the boundary of the Mandelbrot set equals 2 as determined by a result of Mitsuhiro Shishikura. [...] "
+            "Roughly speaking, Shishikura's result states that the Mandelbrot set boundary is so \"wiggly\" that it locally fills space as eff [...] "
+            "There are intriguing experiments in the Mandelbrot set that lead to the occurrence of the number π. "
+            "For a parameter c=−34+iε with ε>0, verifying that c is not in the Mandelbrot set means iterating the sequence z↦z2+c starting with z=0, until the sequence leaves the disk around 0 of any radius R>2. [...] "
+            "It turns out that the necessary number of iterations, multiplied by ε, converges to pi. "
+            "For example, for ε = 0.0000001, and R=2, the number of iterations is 31415928 and the product is 3.1415928. "
+            "This experiment was performed independently by many people in the early 1990s, if not before; for instance by David Boll. "
+            "Analogous observations have also been made at the parameters c=−5/4 and c=1/4 (with a necessary modification in the latter case). "
+            "In 2001, Aaron Klebanoff published a (non-conceptual) proof for this phenomenon at c=1/4 "
+            "In 2023, Paul Siewert developed, in his Bachelor thesis, a conceptual proof also for the value c=1/4, explaining why the number pi occurs (geometrically as half the circumference of the unit circle). "
+            "In 2025, the three high school students Thies Brockmöller, Oscar Scherz, and Nedim Srkalovic extended the theory and the conceptual proof to all the infinitely many bifurcation points in the Mandelbrot set.",
+            nome="Mandelbrot set")],
+    },
+    # 14 o hexágono de Saturno
+    {
+        "temas_secundarios": ["sistema_solar", "clima_tempo"],
+        "tipos_espanto": ["escala_absurda", "misterio_aberto"],
+        "gancho": "No polo norte de Saturno, as nuvens formam um hexágono com lados de 14.500 km, mais que o diâmetro da Terra, estável há décadas. Num laboratório, um tanque de líquido girando produziu formas parecidas.",
+        "explicacao": (
+            "O hexágono apareceu nas imagens das sondas Voyager, de 1981, e foi revisto pela Cassini a partir de "
+            "2006. Tem uns 300 km de altura e pode ser uma corrente de jato com ventos de 320 km/h. Ele gira com "
+            "período de 10 h 39 min 24 s, o mesmo das emissões de rádio vindas do interior do planeta, e, ao "
+            "contrário de outras nuvens, não se desloca em longitude. Entre 2012 e 2016, mudou de azulado para "
+            "dourado, talvez por uma névoa criada pela luz do Sol com a mudança de estação. O polo sul não tem "
+            "hexágono. Por que seis lados? Ainda há várias hipóteses. Uma, de Oxford, propõe que ele se forme onde "
+            "a velocidade dos ventos muda bruscamente com a latitude. Num tanque circular com o centro e a borda "
+            "girando em velocidades diferentes, surgiram polígonos de três a oito lados, sendo o hexágono o mais "
+            "comum, formados por redemoinhos que se espaçam por igual ao longo da fronteira. Outros pesquisadores "
+            "contestam que o laboratório mostre o mesmo fenômeno, e há modelos alternativos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Saturn%27s_hexagon",
+            "Saturn's hexagon is a persistent approximately hexagonal cloud pattern around the north pole of the planet Saturn [...] "
+            "The sides of the hexagon are about 14,500 km (9,000 mi) long, which is about 2,000 km (1,200 mi) longer than the diameter of Earth. "
+            "The hexagon is around 300 km (190 mi) high, and may be a jet stream made of atmospheric gases moving at 320 km/h (200 mph). "
+            "It rotates with a period of 10h 39m 24s, the same period as Saturn's radio emissions from its interior. "
+            "The hexagon does not shift in longitude like other clouds in the visible atmosphere. "
+            "Saturn's hexagon was discovered during the Voyager mission in 1981, and was later revisited by Cassini-Huygens in 2006. [...] "
+            "Saturn's south pole does not have a hexagon [...] "
+            "Multiple hypotheses for the hexagonal cloud pattern have been developed. [...] "
+            "Between 2012 and 2016, the hexagon changed from a mostly blue color to more of a golden color. "
+            "One hypothesis for this is that sunlight is creating haze as the pole is exposed to sunlight due to the change in season. [...] "
+            "A hypothesis developed at Oxford University is the hexagon forms where there is a steep latitudinal gradient in the speed of the atmospheric winds in Saturn's atmosphere. "
+            "Similar regular shapes were created in a laboratory when a circular tank of liquid was rotated at different speeds at its centre and periphery. "
+            "The most common shape was six sided, but shapes with three to eight sides were also produced. [...] "
+            "A number of stable vortices of similar size form on the slower (south) side of the fluid boundary, and these interact with each other to space themselves out evenly around the perimeter. [...] "
+            "Other researchers claim that lab studies exhibit vortex streets, a series of spiraling vortices not observed in Saturn's hexagon.",
+            nome="Saturn's hexagon")],
+    },
+    # 15 o floco de neve "de desenho" é raro
+    {
+        "temas_secundarios": ["clima_tempo", "agua_doce_gelo"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "O floco de neve de seis braços iguais, o dos desenhos, é raro: estudos sugerem que menos de 0,1% dos flocos tem essa forma ideal. E a temperatura muda tudo: alguns graus a mais de frio, e saem agulhas e colunas ocas.",
+        "explicacao": (
+            "A simetria de seis vem da estrutura hexagonal do cristal de gelo: no início, o floco é um "
+            "hexagonozinho, e cada braço cresce a partir de um canto. Como os seis braços atravessam quase o mesmo "
+            "ar, com a mesma temperatura e umidade, tendem a crescer parecidos, mas isso não é garantido, e nenhum "
+            "floco é perfeitamente simétrico. A variedade foi revelada por Wilson Bentley, que fotografou milhares "
+            "de flocos ao microscópio a partir de 1885, em busca de dois iguais. Ukichiro Nakaya organizou "
+            "as formas num diagrama de temperatura e umidade. Até −3 °C, os cristais tendem a ser placas finas. "
+            "Mais frio, até −8 °C, viram colunas ocas, prismas ou agulhas. Perto de −22 °C, voltam a ser placas, "
+            "muitas vezes com ramificações. Ar supersaturado de umidade dá formas rendadas; ar mais seco, formas "
+            "compactas. Quanto à frase \"não existem dois flocos iguais\", é improvável achar dois idênticos na "
+            "natureza, já que um floco típico tem cerca de 10 quintilhões de moléculas de água, mas flocos quase "
+            "idênticos já foram cultivados em laboratório."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Snowflake",
+            "it is unlikely that any two snowflakes are alike due to the estimated 1019 (10 quintillion) water molecules which make up a typical snowflake [...] "
+            "Snowflakes that look identical, but may vary at the molecular level, have been grown under controlled conditions. "
+            "Although snowflakes are never perfectly symmetrical, the growth of a non-aggregated snowflake often approximates six-fold radial symmetry, arising from the hexagonal crystalline structure of ice. "
+            "At that stage, the snowflake has the shape of a minute hexagon. "
+            "The six \"arms\" of the snowflake, or dendrites, then grow independently from each of the corners of the hexagon [...] "
+            "Since the micro-environment (and its changes) are very nearly identical around the snowflake, each arm tends to grow in nearly the same way. "
+            "However, being in the same micro-environment does not guarantee that each arm grows the same [...] "
+            "Empirical studies suggest less than 0.1% of snowflakes exhibit the ideal six-fold symmetric shape. [...] "
+            "Although nearly-identical snowflakes have been made in laboratories, they are very unlikely to be found in nature. "
+            "Initial attempts to find identical snowflakes by photographing thousands of them with a microscope from 1885 onward by Wilson Alwyn Bentley found the wide variety of snowflakes we know about today. "
+            "Ukichiro Nakaya developed a crystal morphology diagram, relating crystal shape to the temperature and moisture conditions under which they formed [...] "
+            "Freezing air down to  −3 °C (27 °F) promotes planar crystals (t [...] "
+            "In colder air down to −8 °C (18 °F), the crystals form as hollow columns, prisms or needles. "
+            "In air as cold as −22 °C (−8 °F), shapes become plate-like again, often with branched or dendritic features. [...] "
+            "Forms below the saturation line trend more towards solid and compact. "
+            "Crystals formed in supersaturated air trend more towards lacy, delicate and ornate.",
+            nome="Snowflake")],
+    },
+]

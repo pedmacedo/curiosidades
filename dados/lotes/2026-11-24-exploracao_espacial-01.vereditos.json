@@ -1,0 +1,149 @@
+{
+ "lote": "2026-11-24-exploracao_espacial-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "exploracao_espacial-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gagarin ejetado, a regra da FAI de 1961 e a admissão soviética em 1971 conferem."
+   },
+   {
+    "id": "exploracao_espacial-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Leonov baixou a pressão do traje abaixo do limite seguro sem avisar; relatos posteriores marcados como tal."
+   },
+   {
+    "id": "exploracao_espacial-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Soyuz 11: únicos mortos acima da linha de Kármán e a troca de tripulação pela suspeita de tuberculose conferem."
+   },
+   {
+    "id": "exploracao_espacial-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte fala em 'cycle steals', mecanismo diferente de interrupção.",
+    "correcao": "Na explicação, troque 'o computador recebia 6.400 interrupções por segundo' por 'o radar roubava do computador 6.400 ciclos de processamento por segundo'."
+   },
+   {
+    "id": "exploracao_espacial-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O erro de 4% explica a queda em terra, a 480 km de Perth; que a área era quase desabitada é constatação separada.",
+    "correcao": "Na explicação, troque 'A estação não queimou tão rápido quanto se calculava e, por um erro de cálculo de quatro por cento, os destroços caíram numa área quase desabitada do oeste da Austrália.' por 'A estação não queimou tão rápido quanto se calculava e, por um erro de cálculo de quatro por cento, os destroços caíram em terra, cerca de 480 km a leste de Perth, no oeste da Austrália. Por sorte, era uma área quase desabitada.'"
+   },
+   {
+    "id": "exploracao_espacial-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Espelho do Hubble: 2.200 nm, lente do corretor nulo 1,3 mm fora do lugar, e a correção com 'óculos' (COSTAR) em 1993 conferem."
+   },
+   {
+    "id": "exploracao_espacial-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A recusa da EMI a 'Here Comes the Sun' é a versão de Druyan, contestada por Ferris em 2017.",
+    "correcao": "Na explicação, remover a frase 'A equipe também quis incluir \"Here Comes the Sun\", dos Beatles, mas a gravadora dona dos direitos recusou.' Alternativa: trocá-la por 'Segundo Ann Druyan, a equipe quis incluir \"Here Comes the Sun\", dos Beatles, mas a EMI, dona dos direitos, recusou; o produtor Timothy Ferris contestou essa versão em 2017.'"
+   },
+   {
+    "id": "exploracao_espacial-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tecido do Wright Flyer no Ingenuity, o código JZRO da OACI e os números do voo conferem."
+   },
+   {
+    "id": "exploracao_espacial-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Caneta espacial: equívoco listado; capital privado de Fisher, os perigos do lápis e a compra soviética em 1969 conferem."
+   },
+   {
+    "id": "exploracao_espacial-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Vanguard TV-3 ('Flopnik') e o Vanguard 1, objeto artificial mais antigo ainda em órbita, conferem."
+   },
+   {
+    "id": "exploracao_espacial-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O 'quarto desastre mais mortal' é ranking frágil; a regra das seis pessoas foi ampliada além da fonte.",
+    "correcao": "(1) No gancho, trocar 'É oficialmente o quarto desastre mais mortal da exploração espacial.' por 'Foi o pior acidente da história do programa espacial brasileiro.' (se preciso, acrescente uma fonte que diga isso, por exemplo https://olhardigital.com.br/2023/08/22/ciencia-e-espaco/acidente-na-base-de-alcantara-completa-20-anos/). (2) Na explicação, trocar 'As normas de segurança permitiam só seis pessoas na área naquele tipo de atividade, mas havia muito mais.' por 'Segundo as normas de segurança, só seis pessoas poderiam estar no local, mas havia muito mais.'"
+   },
+   {
+    "id": "exploracao_espacial-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "John Aaron deu a instrução 'SCE to Aux' e Bean a acionou; números e o temor dos paraquedas conferem."
+   },
+   {
+    "id": "exploracao_espacial-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A frase sobre a equipe (mecânico e técnico de TV) é de uma resenha do livro citada pela Smithsonian, não da revista; a tolerância é em relação à linha da costura; 'hoje' vem de um texto de 2012.",
+    "correcao": "1) Na explicação, trocar 'Segundo a revista Smithsonian, a equipe, liderada por' por 'Segundo uma resenha do livro Spacesuit: Fashioning Apollo, de Nicholas de Monchaux, citada pela revista Smithsonian, a equipe, liderada por'. 2) No gancho, trocar 'Costureiras trabalhavam com tolerância de menos de 1/64 de polegada por ponto.' por 'Nas costuras, as costureiras tinham uma tolerância de menos de 1/64 de polegada (cerca de 0,4 mm).' 3) Na explicação, trocar 'Hoje, mais de 300 trajes espaciais' por 'Em 2012, segundo a Smithsonian, mais de 300 trajes espaciais'."
+   },
+   {
+    "id": "exploracao_espacial-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Anomalia das Pioneer explicada por calor irradiado de forma desigual (conclusão de 2012) confere."
+   },
+   {
+    "id": "exploracao_espacial-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Korolev em Kolyma, o anonimato como projetista-chefe e a identidade revelada após 1966 conferem; não duplica musica_ciencia-0014."
+   },
+   {
+    "id": "exploracao_espacial-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Só o estágio de subida foi para a órbita solar; a maior aproximação foi 14,4 km; os 98% foram dados pelo líder da busca, não pela RAS; 'Se for, é a única nave' tem lógica errada.",
+    "correcao": "1) Gancho, trocar o texto inteiro por: 'Em 1969, o módulo lunar da Apollo 10 chegou a 14,4 km da Lua sem poder pousar: tinha só metade do combustível para voltar. Sua parte de cima foi mandada para uma órbita em torno do Sol, e talvez tenha sido reencontrada.' 2) Na explicação, trocar 'levou Stafford e Cernan até 15,6 km da superfície' por 'levou Stafford e Cernan até 14,4 km da superfície'. 3) Trocar 'o combustível restante do Snoopy foi queimado para mandá-lo a uma órbita em torno do Sol' por 'o combustível restante do estágio de subida do Snoopy foi queimado para mandá-lo a uma órbita em torno do Sol'. 4) Trocar 'em 2019, a Royal Astronomical Society anunciou uma possível redescoberta: o pequeno asteroide 2018 AV2 seria o Snoopy, com \"98%\" de certeza.' por 'em 2019, o grupo anunciou uma possível redescoberta: o pequeno asteroide 2018 AV2 seria o Snoopy, com \"98%\" de certeza, segundo o líder da busca, membro da Royal Astronomical Society.' 5) Trocar 'Se for, é a única nave que já levou tripulantes e que segue vagando pelo espaço vazia.' por 'Até onde se sabe, é a única nave que já levou tripulantes e que segue vagando pelo espaço, vazia.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "exploracao_espacial-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "exploracao_espacial-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "exploracao_espacial-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "exploracao_espacial-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "exploracao_espacial-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; retoque mínimo de redação aplicado.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "exploracao_espacial-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; retoque mínimo de redação aplicado.",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

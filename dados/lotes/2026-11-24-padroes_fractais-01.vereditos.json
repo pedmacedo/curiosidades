@@ -1,0 +1,149 @@
+{
+ "lote": "2026-11-24-padroes_fractais-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "padroes_fractais-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "As fontes divergem sobre qual país deu 987 km e qual deu 1.214 km; melhor não cravar.",
+    "correcao": "No gancho, troque 'Portugal dizia que sua fronteira com a Espanha tinha 987 km; a Espanha, 1.214 km.' por 'Para a mesma fronteira entre Portugal e Espanha, um país dava 987 km; o outro, 1.214 km.' (Se a explicação também atribuir os números a cada país, ajuste do mesmo jeito.)"
+   },
+   {
+    "id": "padroes_fractais-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Varrão, Fejes Tóth 1943 e 1965 (0,035%), Hales 1999 e D'Arcy Thompson conferem; não repete a conjectura de Kepler."
+   },
+   {
+    "id": "padroes_fractais-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Kelvin 1887, Weaire e Phelan 1993, área 0,3% menor e o Cubo d'Água conferem."
+   },
+   {
+    "id": "padroes_fractais-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Explicou a formação dos dedos' exagera um único estudo; a rede de Turing age modulada por gradientes de morfógenos.",
+    "correcao": "1) No gancho, troque 'Em 2014, a ideia explicou a formação dos dedos.' por 'Em 2014, um estudo a ligou à formação dos dedos.' 2) Na explicação, depois de 'ligadas por uma terceira, a Sox9.', acrescente: 'Pelo título do artigo, essa rede de Turing não age sozinha: é ajustada por gradientes de outras moléculas ao longo do membro.'"
+   },
+   {
+    "id": "padroes_fractais-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "657 girassóis, 768 contagens, 565 de Fibonacci e 67 aparentadas, o projeto do centenário de Turing e Hofmeister 1868 conferem."
+   },
+   {
+    "id": "padroes_fractais-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A média de 1,310 vale para as 65 conchas do gênero Nautilus, não para as 80; falta dizer que a proporção é a do retângulo que envolve a espiral.",
+    "correcao": "1) No gancho, trocar 'Mas medidas de 80 conchas de um museu deram em média 1,31.' por 'Mas, das 80 conchas medidas num museu, as do gênero mais comum deram média de 1,31.' 2) Na explicação, trocar 'mediu 80 conchas de náutilo da coleção Smithsonian, identificadas por especialistas, e encontrou média de 1,310: nem a áurea nem exatamente 4 para 3.' por 'mediu 80 conchas de náutilo da coleção Smithsonian, identificadas por especialistas, comparando os lados do retângulo que envolve a espiral. As do gênero Nautilus deram média de 1,310: nem a áurea nem exatamente 4 para 3.' 3) Trocar 'Uma espécie, o náutilo-crostoso, destoou, com média de 1,356.' por 'O náutilo-crostoso, hoje classificado num gênero à parte, destoou, com média de 1,356.'"
+   },
+   {
+    "id": "padroes_fractais-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Cada um vive de 30 a 60 anos' generaliza (alguns somem em menos de 10 anos); a revisão de 2025 é de dois defensores da auto-organização.",
+    "correcao": "1) Trocar 'Cada um vive de 30 a 60 anos.' por 'Estudos estimam um ciclo de vida típico de 30 a 60 anos, mas alguns somem em menos de uma década.' 2) Trocar 'Uma revisão de 2025 concluiu que só a auto-organização é compatível com todas as observações' por 'Uma revisão de 2025, assinada por dois defensores dessa ideia, concluiu que só a auto-organização é compatível com todas as observações'."
+   },
+   {
+    "id": "padroes_fractais-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Romanesco: o estudo CNRS/Inria de 2021 na Science e o mecanismo dos botões que falham conferem."
+   },
+   {
+    "id": "padroes_fractais-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "'Surgem sempre' exagera ('often develop'); a frase sobre Hertz se apoia numa linha solta sem confirmação.",
+    "correcao": "1) Trocar 'Os padrões têm propriedades fractais e surgem sempre que uma descarga elétrica atravessa um material isolante, seja sólido, líquido ou gás.' por 'Os padrões têm propriedades fractais e costumam surgir quando uma descarga elétrica rompe um material isolante, seja sólido, líquido ou gás.' 2) Remover a frase 'Mais tarde, Heinrich Hertz usou essas figuras no trabalho que comprovou as ondas eletromagnéticas de Maxwell.'"
+   },
+   {
+    "id": "padroes_fractais-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "As proporções do basalto (0,35) e do amido (0,1) são parecidas, não iguais.",
+    "correcao": "1) No gancho, trocar 'Amido de milho secando faz colunas iguais, em miniatura.' por 'Amido de milho secando faz colunas parecidas, em miniatura.' 2) Na explicação, trocar 'Como todas as colunas desse tipo obedecem à mesma proporção entre largura, velocidade e difusão do calor' por 'Como todas as colunas desse tipo seguem uma proporção parecida entre largura, velocidade e difusão do calor'."
+   },
+   {
+    "id": "padroes_fractais-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Riachos alimentados por água subterrânea a 72°, quase 5 mil junções na Flórida e o mecanismo conferem com a MIT News."
+   },
+   {
+    "id": "padroes_fractais-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A escala 'dias a anos' do Dictyostelium não se sustenta (as ondas de cAMP têm período de minutos); 'não sabia explicar' simplifica.",
+    "correcao": "Na explicação, trocar 'Espirais muito parecidas aparecem em colônias de uma ameba do solo, o Dictyostelium, numa escala de dias a anos, e não de minutos.' por 'Espirais muito parecidas aparecem em colônias de uma ameba do solo, o Dictyostelium, só que formadas por células inteiras, e não por moléculas.' No gancho, trocar 'porque ele não sabia explicar' por 'porque ele não conseguia explicar o fenômeno'."
+   },
+   {
+    "id": "padroes_fractais-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Pi no Mandelbrot: 31.415.928 iterações, Boll, Klebanoff 2001, Siewert 2023 e os estudantes de 2025 conferem."
+   },
+   {
+    "id": "padroes_fractais-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hexágono de Saturno: medidas, Voyager 1981, tanque de Oxford e o debate conferem.",
+    "correcao": "Opcional: 'lados de cerca de 14.500 km'."
+   },
+   {
+    "id": "padroes_fractais-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Floco 'de desenho' raro (estudos sugerem menos de 0,1%), diagrama de Nakaya e flocos quase idênticos em laboratório conferem."
+   }
+  ],
+  "2": [
+   {
+    "id": "padroes_fractais-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "padroes_fractais-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "padroes_fractais-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "padroes_fractais-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "padroes_fractais-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "padroes_fractais-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "padroes_fractais-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   }
+  ]
+ }
+}

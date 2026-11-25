@@ -1,0 +1,154 @@
+{
+ "lote": "2026-11-24-paleontologia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "paleontologia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mary Anning: o crânio achado pelo irmão em 1811 e o resto do esqueleto por ela em 1812, aos 12 anos; a acusação de Cuvier sobre o plesiossauro conferem."
+   },
+   {
+    "id": "paleontologia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Leidy já tinha notado o erro do Elasmosaurus em 1870; Cope tentou recolher os preprints, não comprar exemplares; o desafio do cérebro é a versão mais contada, não fato documentado; 'escala_absurda' não cabe.",
+    "correcao": "1) Gancho: trocar 'Um deles deixou o próprio crânio para a ciência, esperando provar que tinha o cérebro maior.' por 'Um deles deixou o corpo para a ciência e, diz a história mais contada, queria provar que tinha o cérebro maior.' 2) Explicação: trocar 'e humilhou o rival ao apontar que Cope montara o réptil marinho Elasmosaurus com a cabeça na ponta da cauda' por 'e humilhou o rival espalhando que Cope montara o réptil marinho Elasmosaurus com a cabeça na ponta da cauda (Joseph Leidy já tinha notado o erro em 1870)'. 3) Trocar 'Cope tentou comprar todos os exemplares da revista com o erro' por 'Cope tentou recolher todos os exemplares do artigo com o erro'. 4) Trocar 'Cope lançou um último desafio: doou o crânio à ciência para que o cérebro fosse medido, esperando que superasse o de Marsh' por 'Segundo a versão mais difundida, Cope lançou um último desafio: doou o corpo à ciência para que o cérebro fosse medido, esperando que superasse o de Marsh'. 5) Em tipos_espanto, trocar 'escala_absurda' por 'contraintuitivo' ou removê-lo. Explicação com no máximo 250 palavras."
+   },
+   {
+    "id": "paleontologia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Brontosaurus: Marsh 1879, Riggs 1903, crânio de Camarasaurus, 1979 no Carnegie, selo de 1989 e o estudo de 2015 como debatido conferem."
+   },
+   {
+    "id": "paleontologia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Stromer descreveu os ossos; quem os achou foi Markgraf, então 'descobridor' está errado no gancho.",
+    "correcao": "No gancho, trocar 'por tensões entre o descobridor e o diretor do museu, um nazista fervoroso' por 'por tensões entre o paleontólogo que o descreveu e o diretor do museu, um nazista fervoroso'."
+   },
+   {
+    "id": "paleontologia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Iguanodon: Mantell 1825, o espinho no nariz, Crystal Palace, Bernissart 1878, pelo menos 38 indivíduos e a pose de canguru impossível conferem."
+   },
+   {
+    "id": "paleontologia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hallucigenia de cabeça para baixo e de trás para a frente, a inversão de 1991 e a cabeça identificada nos anos 2010 conferem; o parentesco aparece como debate."
+   },
+   {
+    "id": "paleontologia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O desmentido do 'fóssil vivo' não está equilibrado (o genoma de 2013 achou evolução lenta, e há debate); o gancho não trata do mito, então mito_desmentido não se sustenta.",
+    "correcao": "1) Na explicação, trocar 'Estudos recentes contestam: os celacantos fósseis tiveram formas e modos de vida bem mais variados do que se pensava, e a ideia de que o grupo quase não mudou seria uma crença sem base em dados.' por 'Essa fama é discutida: estudos recentes mostram que os celacantos fósseis tiveram formas e modos de vida bem mais variados do que se pensava, e alguns pesquisadores consideram uma crença sem base em dados a ideia de que o grupo quase não mudou.' 2) Em tipos_espanto, trocar 'mito_desmentido' por 'escala_absurda'."
+   },
+   {
+    "id": "paleontologia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sinosauropteryx: melanossomos, máscara e contrassombreamento, e a cor ruiva vinda do Huadanosaurus conferem."
+   },
+   {
+    "id": "paleontologia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A lente dupla é interpretação clássica (Clarkson e Levi-Setti, 1975) com debate publicado; a comparação com o ofiúro Ophiocoma foi superada em 2018.",
+    "correcao": "1) Gancho: trocar 'Em alguns, a lente era dupla e corrigia distorções seguindo princípios de óptica que só seriam descritos no século XVII.' por 'Em alguns, a lente parece ter sido dupla, reduzindo distorções por princípios de óptica que só seriam descritos no século XVII.' 2) Na explicação, trocar 'a calcita formava por dentro uma estrutura dupla' por 'a calcita parece ter formado por dentro uma estrutura dupla'. 3) Remover a frase 'Um animal vivo com lentes parecidas é o ofiúro Ophiocoma wendtii.' 4) Mudar confianca para 'consenso_parcial'."
+   },
+   {
+    "id": "paleontologia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "O rio Luján fica na província de Buenos Aires, não no norte da Argentina.",
+    "correcao": "Na explicação, trocar 'às margens do rio Luján, no atual norte da Argentina.' por 'às margens do rio Luján, na atual Argentina.'"
+   },
+   {
+    "id": "paleontologia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A saída do Brasil em 2006 não está confirmada (é a versão do comerciante; o museu comprou em 2009 e admitiu dados falsos); o nome nunca foi válido, então não foi 'perdido'.",
+    "correcao": "1) Na explicação, troque 'Uma investigação confirmou que o fóssil saiu do Brasil em 2006 e não encontrou licença válida de exportação.' por 'A investigação derrubou essa versão: o museu só o comprou em 2009, de um comerciante que diz tê-lo levado à Alemanha em 2006, e nenhuma licença válida de exportação foi encontrada.' Opcional: em 'Os autores diziam que o Museu... o tinha comprado', acrescente 'em 1995'. 2) No gancho, troque 'perdeu o nome científico' por 'ficou sem nome científico válido'."
+   },
+   {
+    "id": "paleontologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Irritator: gesso e massa de funilaria, o nome pela irritação, Challenger e a declaração conjunta de abril de 2026 (confirmada em busca própria) conferem."
+   },
+   {
+    "id": "paleontologia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Grande Morte: 81% e 70%, CO2 de 400 para 2.500 ppm, insetos, Lystrosaurus e o 'vazio do carvão' conferem."
+   },
+   {
+    "id": "paleontologia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "A frase de Thomas Holtz saiu do contexto: explicava por que ninguém tinha achado aquilo antes e terminava em elogio.",
+    "correcao": "Na explicação, troque 'Um paleontólogo comentou que ninguém \"em sã consciência\" faria o que ela fez: destruir em ácido um fóssil tão trabalhoso de desenterrar.' por 'Um paleontólogo explicou por que ninguém tinha visto isso antes: nenhum colega sensato destruiria em ácido um fóssil tão trabalhoso de desenterrar. E concluiu que aquilo era ótima ciência.'"
+   },
+   {
+    "id": "paleontologia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Archaeoraptor: relato atribuído à National Geographic, tomografia, recusas da Nature e da Science e a cauda de Microraptor conferem."
+   },
+   {
+    "id": "paleontologia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tanis: conclusões atribuídas à equipe, números conferem e as críticas (inclusive a de 2024) aparecem; consenso_parcial adequado."
+   }
+  ],
+  "2": [
+   {
+    "id": "paleontologia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "paleontologia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "paleontologia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "paleontologia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "paleontologia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "paleontologia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   },
+   {
+    "id": "paleontologia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções da rodada 1 aplicadas e conferidas; sem erro novo."
+   }
+  ]
+ }
+}
