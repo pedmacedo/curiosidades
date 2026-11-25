@@ -1,0 +1,154 @@
+{
+ "lote": "2026-11-25-corpo_extremo-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "corpo_extremo-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Project Excelsior e Joseph Kittinger (luva falhou, não avisou a equipe, 31.333 m, mão inchou ao dobro)."
+   },
+   {
+    "id": "corpo_extremo-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Armstrong limit (6,3 kPa, 18–19 km; saliva e lágrimas fervem, o sangue nos vasos não); de acordo com a lista de equívocos."
+   },
+   {
+    "id": "corpo_extremo-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e data (dez/1966) conferem, mito_desmentido legítimo; mas 'o calor só sai por radiação' é contradito pela fonte (a evaporação forma gelo na boca).",
+    "correcao": "Trocar 'sem ar, o calor só sai por radiação, um processo lento.' por 'sem ar, o calor sai quase só por radiação, um processo lento (a evaporação pode formar um pouco de gelo na boca, mas isso não é o perigo).'"
+   },
+   {
+    "id": "corpo_extremo-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas os telômeros voltaram 'perto' do nível anterior, e persistiu um número maior de telômeros curtos.",
+    "correcao": "No gancho, trocar 'Na Terra, voltaram ao normal.' por 'Na Terra, o comprimento médio voltou a perto do de antes.'"
+   },
+   {
+    "id": "corpo_extremo-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Effect of spaceflight on the human body (2,5 cm, calos caem, lágrimas em bola, ~1,5% de osso por mês)."
+   },
+   {
+    "id": "corpo_extremo-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com SANS e Effect of spaceflight (olho achatado, óculos de leitura, causa desconhecida, 23% e 49%)."
+   },
+   {
+    "id": "corpo_extremo-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Space adaptation syndrome e Jake Garn (escala informal, Titov 1961); anedota já circula, nota 3."
+   },
+   {
+    "id": "corpo_extremo-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Afirmações conferem; mas falta o estudo de 2021 (Davis, PLoS ONE) que mediu a força de preensão e achou benefício, e o texto pende para o 'não serve'.",
+    "correcao": "1) Fonte nova: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8294484/fullTextXML com trecho literal que contenha 'wrinkly fingers reduce the grip force needed to grip a wet object'. 2) Trocar 'A questão segue em aberto.' por 'Em 2021, porém, um estudo britânico mediu outra coisa, a força necessária para segurar um objeto molhado, e viu que os dedos enrugados precisavam de menos força. A questão segue em aberto.' 3) No gancho, trocar 'outro repetiu o teste e não confirmou.' por 'outro repetiu o teste e não confirmou, e a disputa continua.' (≤ 220)."
+   },
+   {
+    "id": "corpo_extremo-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Nitrogen narcosis (lei do martíni, xenônio, Cousteau); sem instrução de mergulho."
+   },
+   {
+    "id": "corpo_extremo-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com High-pressure nervous syndrome e Saturation diving (701 m, 534 m, Bacia de Campos); sem instrução."
+   },
+   {
+    "id": "corpo_extremo-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hypothermia (20% a 50% das mortes associadas ao despir paradoxal; explicações como hipóteses); tom sóbrio."
+   },
+   {
+    "id": "corpo_extremo-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas o 'menos de 3.000 anos' é estimativa genômica contestada (tema a evitar), e o mal crônico é atribuído ao excesso de hemácias com ressalva ('believed').",
+    "correcao": "1) Apagar a frase 'A adaptação tibetana é considerada o exemplo mais rápido conhecido de evolução humana: teria levado menos de 3.000 anos.' 2) Trocar 'deixam o sangue mais viscoso e estão por trás do mal crônico das montanhas' por 'deixam o sangue mais viscoso e são apontadas como a causa do mal crônico das montanhas'."
+   },
+   {
+    "id": "corpo_extremo-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 31 °C não é 'limite real' de sobrevivência: é o ponto em que a temperatura interna passa a subir sem controle (debate Lu e Romps x Vecellio).",
+    "correcao": "1) Gancho: 'Calculava-se que o corpo humano aguentaria calor úmido até 35 °C de \"bulbo úmido\". Medido em jovens saudáveis numa câmara, o ponto em que a temperatura interna passou a subir sem controle ficou perto de 31 °C.' 2) Depois de '...até o corpo não conseguir mais manter a temperatura interna.', acrescentar: 'Esse ponto não é o da morte: é aquele a partir do qual a temperatura do corpo passa a subir sem parar, o que, mantido por muito tempo, pode levar à insolação.' 3) Apagar '; nos quentes e secos, entre 25 °C e 28 °C' e terminar a frase em 'entre 30 °C e 31 °C.' 4) confianca 'consenso_parcial'."
+   },
+   {
+    "id": "corpo_extremo-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Lee et al. 2017; 'bem acima' exagera 'significantly elevated' (estatístico).",
+    "correcao": "Trocar 'o metabolismo basal das mergulhadoras ficava bem acima do registrado no verão' por 'o metabolismo basal das mergulhadoras ficava significativamente acima do registrado no verão'."
+   },
+   {
+    "id": "corpo_extremo-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Fatos conferem; mas o gancho se apoia nas casas de show Zénith (pouco conhecidas no Brasil) e repete a sensação de atmosfera-0011; o diferencial é a carta de Paul Bert; nota 3.",
+    "correcao": "Gancho: 'Em 1875, três franceses subiram no balão Zénith para bater o recorde de altitude e desmaiaram por falta de oxigênio; só um acordou. A carta de um fisiologista avisando que o oxigênio levado era pouco não chegou a tempo.'"
+   },
+   {
+    "id": "corpo_extremo-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com J. B. S. Haldane (mergulho aos 13 anos em 1906, tímpanos perfurados, a frase da fumaça como citação); sem instrução."
+   }
+  ],
+  "2": [
+   {
+    "id": "corpo_extremo-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'quase só por radiação'."
+   },
+   {
+    "id": "corpo_extremo-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: comprimento médio perto do de antes."
+   },
+   {
+    "id": "corpo_extremo-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: estudo de 2021 com fonte; disputa continua."
+   },
+   {
+    "id": "corpo_extremo-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem os 3.000 anos; 'apontadas como a causa'."
+   },
+   {
+    "id": "corpo_extremo-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: ponto não é o da morte; consenso_parcial."
+   },
+   {
+    "id": "corpo_extremo-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'significativamente acima'."
+   },
+   {
+    "id": "corpo_extremo-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: gancho da carta de Paul Bert."
+   }
+  ]
+ }
+}

@@ -3,13 +3,13 @@
 > Estado atual do projeto. Atualize ao fim de cada sessão de trabalho. A referência permanente é o `CLAUDE.md`.
 
 **Última atualização:** 2026-11-25
-**Fase atual:** 4 (produção de lotes), iniciada em 2026-11-17 a pedido do Pedro.
+**Fase atual:** 4 concluída em 2026-11-25 (163 de 163 temas, 2.258 fatos verificados, `validar.py` limpo). Próxima: Fase 5 (polimento), a combinar com o Pedro.
 
 > **Retomado em 2026-11-18 (sem amostragem):** o Pedro dispensou a revisão humana por amostragem ("estou concordando quase 100%"). A produção segue direto pela fila do `situacao.py`, sem pausas.
 >
 > **Produção em paralelo (desde 2026-11-18, ideia do Pedro):** o orquestrador (a sessão principal) lança 4 subagentes produtores, um por tema da fila, com as regras de `pipeline/instrucoes_produtor.md`. Cada produtor só escreve, baixa (`pipeline/baixar_fontes.py`), monta e checa o seu lote, e depois faz o r2 com os vereditos. A verificação continua com o subagente `verificador` independente, de 4 a 5 fatos por chamada, e quem grava vereditos, aplica e mexe no PROGRESSO é só o orquestrador, um lote por vez, para não haver escrita simultânea em `dados/fatos`. Duplicatas entre lotes paralelos: o orquestrador mantém um e descarta o outro como `duplicado`.
 >
-> **Onde parou (2026-11-25):** 31ª leva fechada (Personagens esquecidos, Ciência brasileira, Fronteiras e países, Comida brasileira) e, da 32ª, Esportes tradicionais e Navegadores antigos. Faltam 2 temas para fechar a Fase 4: Neurociência e Corpo em condições extremas, ambos na rodada 2.
+> **Onde parou (2026-11-25):** FASE 4 CONCLUÍDA: 32 levas paralelas fecharam os 163 temas da taxonomia (mais o lote de IA). A 32ª leva fez Neurociência, Esportes tradicionais, Corpo em condições extremas e Navegadores antigos. Próximo passo: Fase 5 (polimento), a combinar com o Pedro.
 >
 > **Para retomar:** rode `python pipeline/situacao.py`. Ele mostra o lote pela metade (e o próximo passo), se é hora de amostra de revisão humana e os próximos temas da fila. Siga o "Fluxo de um lote" (seção da Fase 2) e, ao fim de cada tema, atualize a tabela da Fase 4 e as estatísticas.
 
@@ -21,7 +21,7 @@
 | 1. Taxonomia | ✅ Aprovada pelo Pedro em 2026-11-17 (16 áreas, 161 temas; tipos de espanto da lista fixa). Em 2026-11-24, a pedido do Pedro, entraram Gravidez humana e Contabilidade brasileira (163 temas) |
 | 2. Piloto de conteúdo | ✅ Concluída em 2026-11-17 (Pedro revisou os 40: 39 ok, 1 chato; 39 fatos aprovados) |
 | 3. App MVP | ✅ Publicado em 2026-11-17 (https://pedmacedo.github.io/curiosidades/); o Pedro liberou a Fase 4 |
-| 4. Produção | ⏳ Em andamento (ver seção da Fase 4) |
+| 4. Produção | ✅ Concluída em 2026-11-25: 163 de 163 temas cobertos, 2.258 fatos aprovados, `validar.py` sem erros (ver seção da Fase 4) |
 | 5. Polimento | — |
 
 ## Fase 4: produção (desde 2026-11-17)
@@ -193,6 +193,8 @@
 | Comida brasileira | 2026-11-25-comida_brasileira-01 | 15 | 11 | 4 | 31ª leva paralela (tema novo). Rodada 1: 4 aprovados, 7 ajustar, 4 reprovados (o brigadeiro é trivia conhecida; a origem japonesa do pastel não tem fonte boa; o mito das claras de convento é contestado pela tese de Coimbra de 2023; o abacaxi repetia palavras_viajantes-0003). Destaques: o mito da feijoada nascida nas senzalas ficou com os dois lados do debate; a lista de fraudes de 2009 com o açaí era do Better Business Bureau, não da FTC; a transmissão oral de Chagas pelo açaí ficou com as limitações declaradas pelo estudo; a data de invenção do bauru é disputada; os jesuítas foram expulsos em 1767. Os 7 aprovados na 2ª (2 com ajuste pontual). |
 | Esportes tradicionais | 2026-11-25-esportes_tradicionais-01 | 16 | 16 | 0 | 32ª leva paralela (tema novo). Rodada 1: 8 aprovados, 8 ajustar. Destaques: só algumas partidas tradicionais de lacrosse eram grandes acontecimentos; o ulama tem três formas, e a de quadril é a mais difundida; o prêmio igual para os quatro melhores nos Jogos Mundiais dos Povos Indígenas foi a regra anunciada, não necessariamente aplicada; a padronização do sepak takraw em 1960 foi com a Malaia, antes da Malásia; o recorde do arremesso de haggis é o mais citado, com relatos maiores; o sumô no Brasil existe desde 1914, mas o feminino veio depois. Os 8 aprovados na 2ª (2 com ajuste pontual). |
 | Navegadores antigos | 2026-11-25-navegacao_antiga-01 | 15 | 14 | 1 | 32ª leva paralela (tema novo). Rodada 1: 6 aprovados, 8 ajustar, 1 reprovado (Hípalo e a monção: personagem desconhecido e etimologia em debate). Destaques: o sistema 'avatea' do mapa de Tupaia é uma leitura de 2019, debatida; a Hōkūleʻa deu evidência, não prova, de viagens intencionais; a batata-doce e o DNA de 2020 sugerem contato polinésio com a América; a volta da África por fenícios tem céticos (Lloyd, Haywood); os navios desmontados de Punt são do Reino Médio; o 'mar solidificado' de Pítias era provavelmente gelo à deriva; as ilhas Auckland têm o vestígio polinésio mais ao sul. Os 9 aprovados na 2ª (1 com ajuste pontual). |
+| Corpo em condições extremas | 2026-11-25-corpo_extremo-01 | 16 | 16 | 0 | 32ª leva paralela (tema novo). Rodada 1: 9 aprovados, 7 ajustar. Destaques: no vácuo o calor sai quase só por radiação (a evaporação forma um pouco de gelo na boca); os telômeros de Scott Kelly voltaram a perto do comprimento de antes, com mais telômeros curtos; a vantagem dos dedos enrugados segue em disputa (estudo de 2021); a 'evolução em menos de 3.000 anos' dos tibetanos saiu por depender de datação genômica contestada; os 31 °C de bulbo úmido marcam o ponto em que a temperatura interna dispara, não o da morte; o balão Zénith ficou centrado na carta de Paul Bert que chegou tarde. Os 7 aprovados na 2ª. |
+| Neurociência | 2026-11-25-neurociencia-01 | 14 | 14 | 0 | 32ª leva paralela (tema novo). Rodada 1: 7 aprovados, 7 ajustar. Destaques: o estudo de Marian Diamond sobre o cérebro de Einstein é de 1985, e a limitação do 'único Einstein' foi admitida por ela; Quian Quiroga era orientando, não neurocirurgião; a espécie de lula de Plymouth não era a do Atlântico ocidental, e o Nobel de 1963 foi dividido com Eccles; William James é uma das origens do mito dos 10%; a reorganização do mapa cerebral no membro fantasma foi contestada em 2025 (Makin); o cerebelo tem a maioria dos neurônios, mas os '50 bilhões, três quartos' eram incoerentes. Os 7 aprovados na 2ª (1 com ajuste pontual). |
 
 ## Fase 2: piloto (2026-11-17)
 
@@ -455,7 +457,7 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-25):
 | 2026-11-25-comercio_rotas-01 | comercio_rotas | 15 | 14 | 1 | 7% | 8/6/1 | pouco_interessante 1 | 4.0 |
 | 2026-11-25-comida_brasileira-01 | comida_brasileira | 15 | 11 | 4 | 27% | 4/7/4 | pouco_interessante 1, fonte_fraca 1, mito 1, duplicado 1 | 3.5 |
 | 2026-11-25-conservacao-01 | conservacao | 15 | 15 | 0 | 0% | 6/9/0 | — | 3.7 |
-| 2026-11-25-corpo_extremo-01 | 2026-11-25-corpo_extremo-01 | 0 | 0 | 0 | 0% | 9/7/0 | — | 0.0 |
+| 2026-11-25-corpo_extremo-01 | corpo_extremo | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.9 |
 | 2026-11-25-crimes_arte-01 | crimes_arte | 15 | 15 | 0 | 0% | 9/6/0 | — | 4.0 |
 | 2026-11-25-decisoes_economia-01 | decisoes_economia | 15 | 14 | 1 | 7% | 6/8/1 | pouco_interessante 1 | 3.7 |
 | 2026-11-25-ecologia-01 | ecologia | 16 | 16 | 0 | 0% | 8/8/0 | — | 4.0 |
@@ -469,14 +471,14 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-25):
 | 2026-11-25-mundo_islamico_medieval-01 | mundo_islamico_medieval | 14 | 14 | 0 | 0% | 6/8/0 | — | 3.8 |
 | 2026-11-25-musica_brasileira-01 | musica_brasileira | 14 | 14 | 0 | 0% | 3/11/0 | — | 3.8 |
 | 2026-11-25-navegacao_antiga-01 | navegacao_antiga | 15 | 14 | 1 | 7% | 6/8/1 | pouco_interessante 1 | 3.9 |
-| 2026-11-25-neurociencia-01 | 2026-11-25-neurociencia-01 | 0 | 0 | 0 | 0% | 7/7/0 | — | 0.0 |
+| 2026-11-25-neurociencia-01 | neurociencia | 14 | 14 | 0 | 0% | 7/7/0 | — | 3.9 |
 | 2026-11-25-nomes_lugares-01 | nomes_lugares | 16 | 15 | 1 | 6% | 6/9/1 | pouco_interessante 1 | 3.7 |
 | 2026-11-25-personagens_esquecidos-01 | personagens_esquecidos | 15 | 13 | 2 | 13% | 5/8/2 | exagero 2 | 3.9 |
 | 2026-11-25-pigmentos-01 | pigmentos | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.7 |
 | 2026-11-25-sono_ritmos-01 | sono_ritmos | 16 | 16 | 0 | 0% | 9/7/0 | — | 4.1 |
-| **Total** | | 2303 | 2228 | 75 | 3% | | | |
+| **Total** | | 2333 | 2258 | 75 | 3% | | | |
 
-Cobertura: 161 de 163 temas com pelo menos um fato aprovado.
+Cobertura: 163 de 163 temas com pelo menos um fato aprovado.
 
 ## Revisões humanas
 

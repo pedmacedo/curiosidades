@@ -1,0 +1,144 @@
+{
+ "lote": "2026-11-25-neurociencia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "neurociencia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Neuron doctrine e Camillo Golgi (técnica de 1873, Cajal desde 1887, Nobel dividido em 1906, rivalidade)."
+   },
+   {
+    "id": "neurociencia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Maior parte confere; mas o estudo de Diamond é de 1985 (não 1984), a limitação do 'único Einstein' foi admitida por ela, 'indicam' é mais forte que 'suggested', e o museu recebeu o acervo de Harvey.",
+    "correcao": "1) Trocar 'Em 1984, a equipe de Marian Diamond publicou' por 'Nos anos 1980, a equipe de Marian Diamond publicou' e, no trecho, trocar a frase do 'In 1984' por 'In the 1980s, University of California, Berkeley professor Marian Diamond received four sections of the cortical association regions'. 2) Trocar 'Os críticos apontaram problemas: um único Einstein, controles com idade média de 64 anos, contra 76 dele, e pesquisadores que sabiam qual cérebro era o famoso.' por 'A própria Diamond admitiu que tinha um só Einstein para comparar; críticos apontaram ainda controles com idade média de 64 anos, contra 76 dele, e pesquisadores que sabiam qual cérebro era o famoso.' 3) Trocar 'pesquisas mais recentes indicam' por 'pesquisas mais recentes sugerem'. 4) Trocar 'entregaram o que restava a um museu' por 'entregaram o que restava em poder de Harvey a um museu'."
+   },
+   {
+    "id": "neurociencia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Phineas Gage (exagero da 'mudança total', diligências no Chile, recuperação social de Macmillan); corrige equívoco listado."
+   },
+   {
+    "id": "neurociencia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas Quiroga não é neurocirurgião (é orientando de Fried), e o estudo foi conjunto UCLA e Caltech.",
+    "correcao": "Trocar 'Neurocirurgiões da Universidade da Califórnia em Los Angeles, entre eles Itzhak Fried e Rodrigo Quian Quiroga,' por 'Pesquisadores da Universidade da Califórnia em Los Angeles e do Caltech, entre eles o neurocirurgião Itzhak Fried e seu orientando Rodrigo Quian Quiroga,'."
+   },
+   {
+    "id": "neurociencia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a espécie de Plymouth era Loligo forbesi, não a lula do Atlântico ocidental; o gancho se apoia numa pegadinha de palavras; 'base da neurociência' extrapola; o Nobel foi dividido com Eccles.",
+    "correcao": "1) Remover a frase final 'A espécie das experiências era a lula-de-nadadeira-longa do Atlântico, bem longe dos gigantes do fundo do mar.' e retirar do trecho 'using the longfin inshore squid as the model organism'. 2) Gancho: 'O impulso nervoso foi decifrado num nervo de lula: sem a capa isolante dos nossos nervos, ela compensa com um axônio de até 1,5 mm, largo o bastante para receber eletrodos por dentro.' 3) Trocar 'O modelo virou base da neurociência e rendeu aos dois o Nobel de 1963.' por 'O modelo serviu de base à maioria dos modelos de neurônio nas quatro décadas seguintes e rendeu aos dois o Nobel de 1963, dividido com John Eccles.' (incluir no trecho a frase da fonte Alan Hodgkin sobre o Nobel dividido)."
+   },
+   {
+    "id": "neurociencia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Karolinska, Columbia e Sorrells (1.400 por dia somando os dois hipocampos; estudos opostos de 2018); a técnica do pulso da bomba já aparece no acervo, nota 4."
+   },
+   {
+    "id": "neurociencia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Connectome e Drosophila connectome (302 neurônios em 1986; ~130 mil em 2023; o mapa não basta); nota 3."
+   },
+   {
+    "id": "neurociencia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Mirror neuron (recusa da Nature, Hickok, recuo do 'espelho quebrado'); equilibrado."
+   },
+   {
+    "id": "neurociencia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas William James é 'uma' das origens prováveis (a fonte lista outras), e as palestras vieram depois das experiências dos anos 1890; nota 3.",
+    "correcao": "Trocar 'A origem provável está no psicólogo William James, de Harvard. A partir dos anos 1890, ele dizia em palestras que' por 'Uma das origens prováveis está no psicólogo William James, de Harvard. Depois de experiências feitas nos anos 1890, ele passou a dizer em palestras que'. Opcional: depois de 'uma afirmação plausível.', acrescentar 'Há outras explicações, como leituras erradas de pesquisas neurológicas antigas.'"
+   },
+   {
+    "id": "neurociencia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas a reorganização do mapa cortical foi contestada em 2025 (Schone, Makin et al., Nature Neuroscience: mapas estáveis antes e depois da amputação), e a própria fonte diz que não há consenso sobre a causa.",
+    "correcao": "1) Gancho: 'Muitos amputados sentem o membro perdido, e alguns sentem toques na mão fantasma quando alguém toca o rosto. Por décadas, isso foi explicado por um mapa cerebral que se reorganiza; em 2025, um estudo desafiou a ideia.' 2) Trocar 'exames do cérebro de amputados depois viram essa reorganização.' por 'exames do cérebro de amputados pareceram confirmar essa reorganização. Em 2025, porém, uma equipe da pesquisadora Tamar Makin acompanhou com ressonância três pessoas antes e até cinco anos depois de amputarem um braço e viu os mapas da mão e dos lábios praticamente estáveis; para os autores, a dor viria sobretudo dos nervos cortados no coto, e a causa do fenômeno segue em debate.' 3) Fonte nova: https://pmc.ncbi.nlm.nih.gov/articles/PMC12477700/ (ou a nota https://www.cam.ac.uk/research/news/gone-but-not-forgotten-brains-map-of-the-body-remains-unchanged-after-amputation) com trecho literal ('amputation does not trigger large-scale cortical reorganization'); na fonte Phantom limb, usar também 'there is still no clear consensus as to its cause'. 4) confianca 'consenso_parcial'. 5) tipos_espanto ['contraintuitivo', 'misterio_aberto', 'engenhosidade']."
+   },
+   {
+    "id": "neurociencia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hippocampus e The Knowledge (~25 mil ruas, 3 a 4 anos, hipocampo posterior maior, efeito nos aprendizes)."
+   },
+   {
+    "id": "neurociencia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Equilibrado e números conferem; mas os pacientes típicos são crianças (não 'conservam' a leitura), e a perda do campo visual ocorre na 'maioria', não em 'quase todos'.",
+    "correcao": "No gancho, trocar 'Muitos pacientes ficam livres das crises e conservam a fala, a leitura e a capacidade de andar.' por 'Muitos pacientes ficam livres das crises e, mesmo assim, falam, leem e andam.' Na explicação, trocar 'quase todos perdem a metade do campo visual' por 'a maioria perde a metade do campo visual'. Opcional: depois de 'todos com capacidade cognitiva relativamente normal', acrescentar ', escolhidos entre os casos de bom resultado'."
+   },
+   {
+    "id": "neurociencia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Gancho e números conferem; mas '50 bilhões, três quartos de todos os neurônios' é incoerente com os 69 bilhões do cerebelo, e o '3,6 para 1' é média entre mamíferos.",
+    "correcao": "Trocar 'e são os mais numerosos: as estimativas giram em torno de 50 bilhões, cerca de três quartos de todos os neurônios do cérebro.' por 'e são os mais numerosos de todo o cérebro.' Trocar 'A proporção, de cerca de 3,6 neurônios no cerebelo para cada um no neocórtex, se repete em muitas espécies de mamíferos.' por 'Em muitas espécies de mamíferos, o cerebelo tem cerca de 3,6 neurônios para cada um do neocórtex, uma proporção que se mantém de espécie para espécie.'"
+   },
+   {
+    "id": "neurociencia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Otto Loewi (sonho de 1921 atribuído ao relato dele, Vagusstoff/acetilcolina, Nobel de 1936, prisão em 1938)."
+   }
+  ],
+  "2": [
+   {
+    "id": "neurociencia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: anos 1980; limitação admitida por Diamond; acervo de Harvey."
+   },
+   {
+    "id": "neurociencia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: pesquisadores da UCLA e do Caltech."
+   },
+   {
+    "id": "neurociencia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: gancho do axônio sem mielina; Nobel com Eccles."
+   },
+   {
+    "id": "neurociencia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: uma das origens prováveis."
+   },
+   {
+    "id": "neurociencia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas (estudo de 2025, nota de Cambridge, consenso_parcial); retoque: a falta de consenso é sobre a dor fantasma.",
+    "correcao": "'A causa do fenômeno' virou 'A causa da dor fantasma'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "neurociencia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: falam, leem e andam; a maioria perde metade do campo visual."
+   },
+   {
+    "id": "neurociencia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem os 50 bilhões; 3,6 como média entre mamíferos."
+   }
+  ]
+ }
+}
