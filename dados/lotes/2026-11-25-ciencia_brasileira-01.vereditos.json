@@ -1,0 +1,150 @@
+{
+ "lote": "2026-11-25-ciencia_brasileira-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "ciencia_brasileira-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas a autoria do artigo de 1947 segue a ordem alfabética (ser 'primeiro autor' não era liderança), e a ponte com a Plataforma Lattes rende mais.",
+    "correcao": "1) Gancho: 'A Plataforma Lattes, o banco nacional de currículos de cientistas, homenageia o curitibano César Lattes, um dos descobridores do píon em 1947. O Nobel ligado à descoberta foi só para o chefe do grupo.' 2) Na explicação, não apresentar a posição de primeiro autor como mérito; se citada, dizer que os autores aparecem em ordem alfabética. 3) Não acrescentar a justificativa sobre o comitê do Nobel premiar só chefes de grupo."
+   },
+   {
+    "id": "ciencia_brasileira-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a fonte não diz que Gamow 'notou' o sentido de 'urka'.",
+    "correcao": "Trocar 'Gamow ainda notou que, no dialeto russo dele, \"urka\" pode significar ladrão.' por 'Por coincidência, no dialeto do sul da Rússia falado por Gamow, \"urka\" também pode significar ladrão ou bandido.'"
+   },
+   {
+    "id": "ciencia_brasileira-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Weinberg o cita entre as especulações de 1958 sobre correntes neutras, com Bludman; o texto descreve isso com exatidão; consenso_parcial adequado; nota 3."
+   },
+   {
+    "id": "ciencia_brasileira-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Nise da Silveira (recusa ao eletrochoque, ateliês, museu de 1952, Jung, animais coterapeutas); conhecida pelo filme, nota 3."
+   },
+   {
+    "id": "ciencia_brasileira-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere; mas a formatura foi em 1901 (não 1905), e em 1909 ele foi para Jena, só depois para Hamburgo (Anais Brasileiros de Dermatologia, 2015).",
+    "correcao": "(1) Trocar 'Rocha Lima, carioca formado em medicina em 1905, foi um dos fundadores' por 'Rocha Lima, médico carioca, foi um dos fundadores'. (2) Trocar 'e, a partir de 1909, dirigiu o departamento de patologia de um instituto de doenças tropicais em Hamburgo, na Alemanha' por 'e depois foi trabalhar num instituto de doenças tropicais em Hamburgo, na Alemanha, onde chefiou o departamento de patologia'."
+   },
+   {
+    "id": "ciencia_brasileira-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Africanized bee (26 enxames em 1957, Rio Claro, versão de Kerr); relativamente conhecido no Brasil, nota 3."
+   },
+   {
+    "id": "ciencia_brasileira-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Bertha Lutz (igualdade de direitos na Carta contra Gildersleeve; rãs; Museu Nacional); 'insistiu' não implica autoria exclusiva."
+   },
+   {
+    "id": "ciencia_brasileira-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A Revista Pesquisa FAPESP corrige: as picadas foram entre dez/1902 e jan/1903; quem ficou com objetos sujos foram três voluntários italianos em abril de 1903; Lutz não foi o 'primeiro latino-americano' (Finlay); mito_desmentido não cabe; tema próximo de fato já no acervo, nota 3.",
+    "correcao": "(1) No gancho, trocar 'Em 1903,' por 'Entre 1902 e 1903,'. (2) Trocar 'Em 1903, Ribas repetiu na capital paulista' por 'Entre dezembro de 1902 e janeiro de 1903, Ribas repetiu na capital paulista'. (3) Trocar 'No mesmo ano, no Hospital de Isolamento, que hoje leva o seu nome, tocou em dejetos de doentes e deitou-se ao lado deles para mostrar que a doença não pegava pelo contato.' por 'Em abril de 1903, no Hospital de Isolamento, que hoje leva o seu nome, três voluntários italianos passaram 20 dias em quartos protegidos de mosquitos, cheios de roupas e objetos sujos de doentes, e nenhum adoeceu.', com a fonte https://revistapesquisa.fapesp.br/na-propria-pele/ e trecho literal (se não passar, apagar a frase). (4) Trocar a última frase por 'Lutz dirigia então o Instituto Bacteriológico de São Paulo.'. (5) tipos_espanto: ['historia_humana', 'contraintuitivo']."
+   },
+   {
+    "id": "ciencia_brasileira-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere (inclusive com fontes acadêmicas); mas a colônia funcionou até 2022, então 'leva o seu nome' é impreciso; nota 3.",
+    "correcao": "(1) Trocar 'Uma colônia psiquiátrica no Rio leva o seu nome.' por 'Uma colônia psiquiátrica no Rio, que funcionou de 1924 a 2022, levou o seu nome.'. (2) Opcional: acrescentar a fonte https://www.scielo.br/j/anp/a/M96PpVryDbWFgW5bnQWn7Wc/?lang=en ('Moreira joined the Medical School of Bahia (FAMEB) in 1886 at the age of 14') e/ou https://www.scielo.br/j/rbp/a/wzF5QyZ7pVvVVF5VqRHwSHf/ ('a retirada de grades de ferro das janelas')."
+   },
+   {
+    "id": "ciencia_brasileira-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Fatos históricos conferem; mas três frases da explicação quase copiam a Revista de Manguinhos; nota 3.",
+    "correcao": "(1) Trocar 'Na construção da ferrovia que ligaria Bauru, em São Paulo, a Mato Grosso, eram comuns os casos da \"úlcera de Bauru\"' por 'Os operários que abriam a ferrovia de Bauru (SP) rumo a Mato Grosso sofriam muito com a chamada \"úlcera de Bauru\"'. (2) Trocar 'As feridas dos pacientes secaram, e ele apresentou' por 'Com o novo tratamento, as lesões cicatrizaram, e ele apresentou'. (3) Trocar 'levou no rosto um jato do líquido da cavidade torácica, que entrou pela boca e pelo nariz' por 'foi atingido no rosto por líquido contaminado que esguichou do tórax do cadáver e lhe chegou à boca e ao nariz'."
+   },
+   {
+    "id": "ciencia_brasileira-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem e o equilíbrio é bom; mas McClung já recomendava calcário e adubação nos anos 1950, antes da Embrapa, e 'principal motor' exagera 'largely'; nota 3.",
+    "correcao": "(1) Trocar 'Pesquisadores da Embrapa, empresa pública criada em 1973, descobriram que o solo podia ser corrigido com fósforo e calcário' por 'A pesquisa agronômica, com papel central da Embrapa (empresa pública criada em 1973), mostrou que o solo podia ser corrigido com fósforo e calcário'. Opcional: citar McClung com a fonte https://www.worldfoodprize.org/en/laureates/20002009_laureates/2006_lobato_mcclung_paolinelli/ e trecho literal. (2) Trocar 'e a expansão da soja é o principal motor da perda' por 'e a perda é puxada em grande parte pela expansão da soja'."
+   },
+   {
+    "id": "ciencia_brasileira-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem e não repete o 0011; mas 'cerca de metade da soja do planeta' é número antigo (hoje perto de dois terços).",
+    "correcao": "Trocar 'Isso pesa no mundo: Brasil e EUA produzem cerca de metade da soja do planeta, uma das principais fontes de proteína, em geral via ração animal.' por 'Isso pesa no mundo: Brasil e EUA são os maiores produtores de soja, uma das principais fontes de proteína do planeta, consumida sobretudo como ração animal.'"
+   },
+   {
+    "id": "ciencia_brasileira-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Parte histórica confere; mas a Magneti Marelli aprimorou e lançou a versão comercial, nem todo motor com injeção tem sonda lambda, e o software deduz a mistura que está queimando; nota 3.",
+    "correcao": "(1) No gancho, trocar 'para saber quanto álcool há no tanque' por 'para saber quanto álcool está queimando' e 'com a sonda que já mede a queima em qualquer motor com injeção' por 'com a sonda que os motores comuns já usam para avaliar a queima' (≤ 220). (2) Trocar 'A tecnologia foi desenvolvida pela subsidiária brasileira da Bosch em 1994 e lançada comercialmente em 2003, no Gol Total Flex.' por 'A filial brasileira da Bosch desenvolveu a tecnologia em 1994; aprimorada pela Magneti Marelli, ela chegou ao mercado em 2003, quando o Gol Total Flex inaugurou os carros flex.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "ciencia_brasileira-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: gancho da Plataforma Lattes; sem mérito de primeiro autor."
+   },
+   {
+    "id": "ciencia_brasileira-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'urka' por coincidência."
+   },
+   {
+    "id": "ciencia_brasileira-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem 1905 e sem 1909."
+   },
+   {
+    "id": "ciencia_brasileira-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: datas da FAPESP; voluntários italianos; tipos."
+   },
+   {
+    "id": "ciencia_brasileira-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: colônia de 1924 a 2022; SciELO."
+   },
+   {
+    "id": "ciencia_brasileira-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: três frases reescritas."
+   },
+   {
+    "id": "ciencia_brasileira-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: papel central da Embrapa; 'em grande parte'."
+   },
+   {
+    "id": "ciencia_brasileira-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: maiores produtores, sem número antigo."
+   },
+   {
+    "id": "ciencia_brasileira-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: Bosch e Magneti Marelli; sonda dos motores comuns."
+   }
+  ]
+ }
+}

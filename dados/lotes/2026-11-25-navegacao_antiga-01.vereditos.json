@@ -1,0 +1,163 @@
+{
+ "lote": "2026-11-25-navegacao_antiga-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "navegacao_antiga-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Marshall Islands stick chart (ondulações, memorizados em terra, não levados na viagem)."
+   },
+   {
+    "id": "navegacao_antiga-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Biografia confere; mas o sistema 'avatea' é leitura de Eckstein e Schwarz (2019), contestada por outros especialistas; confiança não pode ser alta.",
+    "correcao": "1) Gancho: 'Em 1769, o sacerdote e navegador Tupaia, das ilhas da Sociedade, desenhou para James Cook um mapa do Pacífico. Segundo uma leitura de 2019, ele usou um truque para traduzir sua navegação à bússola: o \"sol do meio-dia\".' 2) Trocar 'Para os ingleses entenderem, Tupaia inventou um sistema:' por 'Segundo esses autores, para os ingleses entenderem, Tupaia teria inventado um sistema:' e, depois de 'virava rumos de bússola.', acrescentar 'A leitura é debatida por outros especialistas, que interpretam o mapa de outro modo.' 3) confianca 'consenso_parcial'."
+   },
+   {
+    "id": "navegacao_antiga-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a fonte fala em 'evidence', não em 'prova'.",
+    "correcao": "Trocar 'A chegada ao Taiti foi tomada como prova de viagens intencionais de ida e volta pela Oceania.' por 'Para os acadêmicos, a chegada ao Taiti foi uma evidência de viagens intencionais de ida e volta pela Oceania.'"
+   },
+   {
+    "id": "navegacao_antiga-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo e equilíbrio conferem; mas a frase das variedades maoris de casca branca é contradita pelo mesmo verbete e não acrescenta nada.",
+    "correcao": "Apagar a frase 'Na Nova Zelândia, as variedades maoris tinham tubérculos compridos de casca branca.' e retirar do trecho a parte final sobre as variedades maoris."
+   },
+   {
+    "id": "navegacao_antiga-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Pytheas e Thule (sol da meia-noite, mar solidificado, Estrabão cético). Opcional: dizer que o 'mar solidificado' é hoje lido como gelo à deriva."
+   },
+   {
+    "id": "navegacao_antiga-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fontes confirmam quase tudo; mas os zenús não são da costa do Pacífico, e 'o DNA mostrou um contato real' é forte demais (há contestação).",
+    "correcao": "Trocar 'a parecença maior é com os zenús da costa do Pacífico da Colômbia' por 'a parecença maior é com os zenús, povo indígena da Colômbia'. No gancho, trocar 'Mas o DNA mostrou um contato real, mais provável com polinésios indo à América.' por 'Mas o DNA sugere que houve contato, mais provável com polinésios indo à América.'"
+   },
+   {
+    "id": "navegacao_antiga-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas faltam os céticos que a mesma fonte lista (Lloyd, Haywood), e 'dá crédito' passa do 'potentially credible'.",
+    "correcao": "No gancho, trocar 'Hoje, é justo esse detalhe que dá crédito ao relato.' por 'Hoje, é justo esse detalhe que torna o relato verossímil.' Antes da última frase ('Se tudo for verdade...'), inserir: 'Há céticos, porém: o egiptólogo A. B. Lloyd duvidou, em 1977, que um faraó autorizasse uma viagem assim, e o historiador John Haywood questiona como os fenícios teriam se abastecido e vencido as correntes e os ventos da costa oeste da África.' (com o trecho correspondente na fonte)."
+   },
+   {
+    "id": "navegacao_antiga-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hanno the Navigator (60 navios, Gorillai, nome dado em 1847 sem identificar os dois)."
+   },
+   {
+    "id": "navegacao_antiga-0009",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: desmente o crédito de um personagem (Hípalo) que o leitor não conhece; o gancho contradiz a explicação; base frágil e etimologia em debate."
+   },
+   {
+    "id": "navegacao_antiga-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Ahmad ibn Majid (provavelmente nunca encontrou Vasco da Gama; o piloto foi um guzerate de Melinde)."
+   },
+   {
+    "id": "navegacao_antiga-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Kamal (cartão, cordão nos dentes, nós de um dedo, uso no Índico)."
+   },
+   {
+    "id": "navegacao_antiga-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas o uso 'sobretudo comercial' é suposição da maioria (contestada por Pettegrew, 2011).",
+    "correcao": "Trocar 'e servia sobretudo ao comércio, mas em guerras também acelerou campanhas' por 'e, para a maioria dos estudiosos, servia sobretudo ao comércio, embora haja quem conteste isso; em guerras, também acelerou campanhas'."
+   },
+   {
+    "id": "navegacao_antiga-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fontes sustentam quase tudo; mas a desmontagem dos navios é atestada no Reino Médio, e 'outro babuíno' não tem apoio.",
+    "correcao": "No gancho, trocar 'Nas viagens à terra de Punt, os navios egípcios eram desmontados' por 'No Reino Médio, os navios egípcios que iam a Punt eram desmontados'. Na explicação, trocar 'o DNA mitocondrial de outro babuíno mumificado' por 'o DNA mitocondrial de um babuíno mumificado'."
+   },
+   {
+    "id": "navegacao_antiga-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Gokstad ship e a réplica Viking (casco flexível, 18 mm, 15 cm, 10–11 nós, relato de Andersen)."
+   },
+   {
+    "id": "navegacao_antiga-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Fatos conferem; mas o gancho fecha com frase vaga e desperdiça o dado mais forte (vestígio polinésio mais ao sul), e 'mar gelado' exagera; nota 3.",
+    "correcao": "Gancho: 'Nos séculos XIII ou XIV, polinésios chegaram às ilhas Auckland, no mar frio ao sul da Nova Zelândia, comeram focas e albatrozes e foram embora. É o vestígio polinésio mais ao sul que se conhece.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "navegacao_antiga-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: leitura de 2019; consenso_parcial."
+   },
+   {
+    "id": "navegacao_antiga-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'uma evidência'."
+   },
+   {
+    "id": "navegacao_antiga-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem as variedades maoris."
+   },
+   {
+    "id": "navegacao_antiga-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: gelo à deriva com trecho."
+   },
+   {
+    "id": "navegacao_antiga-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: zenús; 'o DNA sugere'."
+   },
+   {
+    "id": "navegacao_antiga-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: céticos Lloyd e Haywood."
+   },
+   {
+    "id": "navegacao_antiga-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva aplicada; retoque: o desconhecido é o quanto impulsionou o comércio, não o uso.",
+    "correcao": "'pouco se sabe desse uso' virou 'pouco se sabe do quanto ele de fato impulsionou o comércio'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "navegacao_antiga-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Reino Médio; um babuíno."
+   },
+   {
+    "id": "navegacao_antiga-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: vestígio polinésio mais ao sul."
+   }
+  ]
+ }
+}

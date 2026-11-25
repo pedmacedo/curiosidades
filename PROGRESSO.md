@@ -9,7 +9,7 @@
 >
 > **Produção em paralelo (desde 2026-11-18, ideia do Pedro):** o orquestrador (a sessão principal) lança 4 subagentes produtores, um por tema da fila, com as regras de `pipeline/instrucoes_produtor.md`. Cada produtor só escreve, baixa (`pipeline/baixar_fontes.py`), monta e checa o seu lote, e depois faz o r2 com os vereditos. A verificação continua com o subagente `verificador` independente, de 4 a 5 fatos por chamada, e quem grava vereditos, aplica e mexe no PROGRESSO é só o orquestrador, um lote por vez, para não haver escrita simultânea em `dados/fatos`. Duplicatas entre lotes paralelos: o orquestrador mantém um e descarta o outro como `duplicado`.
 >
-> **Onde parou (2026-11-25):** 30 levas paralelas fechadas (131 temas, mais o lote de IA). A 30ª leva fez Algoritmos, Falhas de engenharia, África antiga e medieval, Nomes de lugares e Pigmentos. Os 8 últimos temas da Fase 4 estão em produção (31ª leva: Personagens esquecidos, Ciência brasileira, Fronteiras e países, Comida brasileira; 32ª: Neurociência, Esportes tradicionais, Corpo em condições extremas, Navegadores antigos).
+> **Onde parou (2026-11-25):** 31ª leva fechada (Personagens esquecidos, Ciência brasileira, Fronteiras e países, Comida brasileira) e, da 32ª, Esportes tradicionais e Navegadores antigos. Faltam 2 temas para fechar a Fase 4: Neurociência e Corpo em condições extremas, ambos na rodada 2.
 >
 > **Para retomar:** rode `python pipeline/situacao.py`. Ele mostra o lote pela metade (e o próximo passo), se é hora de amostra de revisão humana e os próximos temas da fila. Siga o "Fluxo de um lote" (seção da Fase 2) e, ao fim de cada tema, atualize a tabela da Fase 4 e as estatísticas.
 
@@ -187,6 +187,12 @@
 | Pigmentos e cores da arte | 2026-11-25-pigmentos-01 | 16 | 16 | 0 | 30ª leva paralela (tema novo). Rodada 1: 9 aprovados, 7 ajustar. Destaques: o forno de 1814 foi um passo decisivo, não o começo, do ultramar sintético (Goethe já vira o azul em 1787); o azul da Prússia deu nome ao ácido prússico, não ao 'cianeto'; o 'primeiro azul novo em dois séculos' do YInMn é slogan exagerado; o ácido hipúrico apareceu só em parte das amostras de amarelo indiano; a 'perda de dimensão' da púrpura Han foi aparente (EPFL, 2020); o édito de Henrique IV com pena de morte para o índigo é pouco documentado; 'carmesim' vem do persa, não do sânscrito. Os 7 aprovados na 2ª (1 com ajuste pontual). |
 | Falhas de engenharia | 2026-11-25-falhas_engenharia-01 | 16 | 16 | 0 | 30ª leva paralela (tema novo). Rodada 1: 2 aprovados, 14 ajustar. Destaques: as réguas diferentes do Vasa explicam a assimetria, mas o naufrágio veio do excesso de peso no alto; a sincronia dos pedestres na ponte do Milênio foi contestada em 2021 (consequência, não causa); o argumento de que o bug do milênio foi exagero é dos céticos; os números de risco do Challenger seguem o apêndice de Feynman (cerca de 1 em 100 contra 1 em 100 mil), sem a 'pesquisa anônima'; a Hercílio Luz não 'escapou' por ter mais barras; a anedota do diretor da Sleipner saiu; a função da Knight Capital estava fora de uso desde 2003. Os 14 aprovados na 2ª (2 com ajuste pontual). |
 | Nomes de lugares | 2026-11-25-nomes_lugares-01 | 16 | 15 | 1 | 30ª leva paralela (tema novo). Rodada 1: 6 aprovados, 9 ajustar, 1 reprovado (a Groenlândia batizada para atrair colonos é trivia clássica, e a virada proposta não tinha apoio). Destaques: a leitura do Primaleón por Magalhães é relato; Canadá não vem do 'cá nada' português, velha teoria sem prova; as fontes divergem sobre quem matou Aleixo Garcia; a tradução do lago Chaubunagungamaug parece invenção de um editor de jornal; George Everest se opôs à homenagem, e 'Sagarmatha' é nome proposto em 1938; a imagem da padroeira de Copacabana não foi feita por um 'neto de Manco Cápac'; os nomes 'tupis' do século XX vieram quando o tupi antigo já estava extinto (análise de Eduardo Navarro). Os 9 aprovados na 2ª (3 com ajuste pontual). |
+| Fronteiras e países | 2026-11-25-fronteiras_paises-01 | 17 | 16 | 1 | 31ª leva paralela (tema novo). Rodada 1: 11 aprovados, 5 ajustar, 1 reprovado (os voos binacionais 'domésticos' do aeroporto de Rivera ainda não operam). Destaques: na ilha dos Faisões a soberania é conjunta e só a administração se alterna; Nunavut não assinou a divisão da ilha Hans; a fronteira indefinida do lago de Constança vale para a maior parte do lago, não para todo; Jungholz ainda aplica o IVA alemão; a 'lenda do cavalo' do Acre saiu, porque o desmentido proposto contradizia as fontes. Os 5 aprovados na 2ª. |
+| Personagens esquecidos | 2026-11-25-personagens_esquecidos-01 | 15 | 13 | 2 | 31ª leva paralela (tema novo). Rodada 1: 5 aprovados, 8 ajustar, 2 reprovados (Alice Ball não 'tornou injetável' o óleo de chaulmugra, que a Bayer já vendia em 1907; Lewis Latimer tinha três afirmações sem apoio). Destaques: as 14 vacinas de Hilleman são a contagem de 2005; Tu Youyou e colegas se ofereceram como cobaias; o Carnegie Hero Fund nega motivo racial na medalha negada a Garrett Morgan; a saída de Charles Drew da Cruz Vermelha tem data disputada; Jean Purdy foi a primeira a ver dividir o embrião de Louise Brown, não qualquer embrião. Os 8 aprovados na 2ª. |
+| Ciência brasileira | 2026-11-25-ciencia_brasileira-01 | 13 | 13 | 0 | 31ª leva paralela (tema novo). Rodada 1: 4 aprovados, 9 ajustar. Destaques: Lattes era 'primeiro autor' do artigo de 1947 só pela ordem alfabética (o gancho passou a partir da Plataforma Lattes); as datas da formação de Rocha Lima foram corrigidas pelos Anais Brasileiros de Dermatologia; a Revista Pesquisa FAPESP corrigiu as datas e os voluntários do experimento de Emílio Ribas e Adolfo Lutz; a correção do solo do Cerrado foi pesquisa coletiva, com papel central da Embrapa (McClung já a recomendava nos anos 1950); o software flex foi da Bosch, aprimorado e lançado pela Magneti Marelli. Os 9 aprovados na 2ª. |
+| Comida brasileira | 2026-11-25-comida_brasileira-01 | 15 | 11 | 4 | 31ª leva paralela (tema novo). Rodada 1: 4 aprovados, 7 ajustar, 4 reprovados (o brigadeiro é trivia conhecida; a origem japonesa do pastel não tem fonte boa; o mito das claras de convento é contestado pela tese de Coimbra de 2023; o abacaxi repetia palavras_viajantes-0003). Destaques: o mito da feijoada nascida nas senzalas ficou com os dois lados do debate; a lista de fraudes de 2009 com o açaí era do Better Business Bureau, não da FTC; a transmissão oral de Chagas pelo açaí ficou com as limitações declaradas pelo estudo; a data de invenção do bauru é disputada; os jesuítas foram expulsos em 1767. Os 7 aprovados na 2ª (2 com ajuste pontual). |
+| Esportes tradicionais | 2026-11-25-esportes_tradicionais-01 | 16 | 16 | 0 | 32ª leva paralela (tema novo). Rodada 1: 8 aprovados, 8 ajustar. Destaques: só algumas partidas tradicionais de lacrosse eram grandes acontecimentos; o ulama tem três formas, e a de quadril é a mais difundida; o prêmio igual para os quatro melhores nos Jogos Mundiais dos Povos Indígenas foi a regra anunciada, não necessariamente aplicada; a padronização do sepak takraw em 1960 foi com a Malaia, antes da Malásia; o recorde do arremesso de haggis é o mais citado, com relatos maiores; o sumô no Brasil existe desde 1914, mas o feminino veio depois. Os 8 aprovados na 2ª (2 com ajuste pontual). |
+| Navegadores antigos | 2026-11-25-navegacao_antiga-01 | 15 | 14 | 1 | 32ª leva paralela (tema novo). Rodada 1: 6 aprovados, 8 ajustar, 1 reprovado (Hípalo e a monção: personagem desconhecido e etimologia em debate). Destaques: o sistema 'avatea' do mapa de Tupaia é uma leitura de 2019, debatida; a Hōkūleʻa deu evidência, não prova, de viagens intencionais; a batata-doce e o DNA de 2020 sugerem contato polinésio com a América; a volta da África por fenícios tem céticos (Lloyd, Haywood); os navios desmontados de Punt são do Reino Médio; o 'mar solidificado' de Pítias era provavelmente gelo à deriva; as ilhas Auckland têm o vestígio polinésio mais ao sul. Os 9 aprovados na 2ª (1 com ajuste pontual). |
 
 ## Fase 2: piloto (2026-11-17)
 
@@ -445,24 +451,32 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-25):
 | 2026-11-25-atmosfera-01 | atmosfera | 16 | 14 | 2 | 12% | 5/9/2 | pouco_interessante 1, numero_divergente 1 | 3.6 |
 | 2026-11-25-biomimetica-01 | biomimetica | 12 | 11 | 1 | 8% | 2/9/1 | pouco_interessante 1 | 3.7 |
 | 2026-11-25-brinquedos-01 | brinquedos | 15 | 15 | 0 | 0% | 4/11/0 | — | 3.7 |
+| 2026-11-25-ciencia_brasileira-01 | ciencia_brasileira | 13 | 13 | 0 | 0% | 4/9/0 | — | 3.4 |
 | 2026-11-25-comercio_rotas-01 | comercio_rotas | 15 | 14 | 1 | 7% | 8/6/1 | pouco_interessante 1 | 4.0 |
+| 2026-11-25-comida_brasileira-01 | comida_brasileira | 15 | 11 | 4 | 27% | 4/7/4 | pouco_interessante 1, fonte_fraca 1, mito 1, duplicado 1 | 3.5 |
 | 2026-11-25-conservacao-01 | conservacao | 15 | 15 | 0 | 0% | 6/9/0 | — | 3.7 |
+| 2026-11-25-corpo_extremo-01 | 2026-11-25-corpo_extremo-01 | 0 | 0 | 0 | 0% | 9/7/0 | — | 0.0 |
 | 2026-11-25-crimes_arte-01 | crimes_arte | 15 | 15 | 0 | 0% | 9/6/0 | — | 4.0 |
 | 2026-11-25-decisoes_economia-01 | decisoes_economia | 15 | 14 | 1 | 7% | 6/8/1 | pouco_interessante 1 | 3.7 |
 | 2026-11-25-ecologia-01 | ecologia | 16 | 16 | 0 | 0% | 8/8/0 | — | 4.0 |
+| 2026-11-25-esportes_tradicionais-01 | esportes_tradicionais | 16 | 16 | 0 | 0% | 8/8/0 | — | 3.9 |
 | 2026-11-25-estados_materia-01 | estados_materia | 15 | 13 | 2 | 13% | 5/8/2 | duplicado 2 | 3.9 |
 | 2026-11-25-falhas_engenharia-01 | falhas_engenharia | 16 | 16 | 0 | 0% | 2/14/0 | — | 3.9 |
+| 2026-11-25-fronteiras_paises-01 | fronteiras_paises | 17 | 16 | 1 | 6% | 11/5/1 | exagero 1 | 3.9 |
 | 2026-11-25-historia_astronomia-01 | historia_astronomia | 16 | 16 | 0 | 0% | 7/9/0 | — | 4.0 |
 | 2026-11-25-imperios_coloniais-01 | imperios_coloniais | 15 | 14 | 1 | 7% | 4/10/1 | duplicado 1 | 4.0 |
 | 2026-11-25-linguas_construidas-01 | linguas_construidas | 17 | 17 | 0 | 0% | 7/10/0 | — | 4.1 |
 | 2026-11-25-mundo_islamico_medieval-01 | mundo_islamico_medieval | 14 | 14 | 0 | 0% | 6/8/0 | — | 3.8 |
 | 2026-11-25-musica_brasileira-01 | musica_brasileira | 14 | 14 | 0 | 0% | 3/11/0 | — | 3.8 |
+| 2026-11-25-navegacao_antiga-01 | navegacao_antiga | 15 | 14 | 1 | 7% | 6/8/1 | pouco_interessante 1 | 3.9 |
+| 2026-11-25-neurociencia-01 | 2026-11-25-neurociencia-01 | 0 | 0 | 0 | 0% | 7/7/0 | — | 0.0 |
 | 2026-11-25-nomes_lugares-01 | nomes_lugares | 16 | 15 | 1 | 6% | 6/9/1 | pouco_interessante 1 | 3.7 |
+| 2026-11-25-personagens_esquecidos-01 | personagens_esquecidos | 15 | 13 | 2 | 13% | 5/8/2 | exagero 2 | 3.9 |
 | 2026-11-25-pigmentos-01 | pigmentos | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.7 |
 | 2026-11-25-sono_ritmos-01 | sono_ritmos | 16 | 16 | 0 | 0% | 9/7/0 | — | 4.1 |
-| **Total** | | 2212 | 2145 | 67 | 3% | | | |
+| **Total** | | 2303 | 2228 | 75 | 3% | | | |
 
-Cobertura: 155 de 163 temas com pelo menos um fato aprovado.
+Cobertura: 161 de 163 temas com pelo menos um fato aprovado.
 
 ## Revisões humanas
 

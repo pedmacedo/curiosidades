@@ -1,0 +1,146 @@
+{
+ "lote": "2026-11-25-fronteiras_paises-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "fronteiras_paises-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Baarle-Hertog e Baarle-Nassau (22 enclaves, sete contraenclaves, tratado de 1843, rádio clandestino)."
+   },
+   {
+    "id": "fronteiras_paises-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Bir Tawil (2.060 km², 1899 e 1902, Halaib; aceitar Bir Tawil seria abrir mão de Halaib)."
+   },
+   {
+    "id": "fronteiras_paises-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas a ilha é condomínio de soberania conjunta, e o que se alterna é a administração, não o país.",
+    "correcao": "No gancho, trocar 'troca de país a cada seis meses: é espanhola de fevereiro a julho e francesa de agosto a janeiro.' por 'muda de mãos a cada seis meses: fica sob administração da Espanha de fevereiro a julho e da França de agosto a janeiro.'"
+   },
+   {
+    "id": "fronteiras_paises-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Números conferem (102 e 71 enclaves, Dahala Khagrabari, troca de 31/7/2015)."
+   },
+   {
+    "id": "fronteiras_paises-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Llívia (aldeias x vila, tratado de 1660, mapas imprecisos, estrada neutra); ressalva suficiente."
+   },
+   {
+    "id": "fronteiras_paises-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Quadripoint e Kazungula Bridge (~150 m ou 135 m, balsa, ponte em curva, servidão); consenso_parcial; nota 3."
+   },
+   {
+    "id": "fronteiras_paises-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Diomede Islands (3,8 km, 21 horas, Lynne Cox em 1987, Cortina de Gelo)."
+   },
+   {
+    "id": "fronteiras_paises-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere (inclusive a menção ao Brasil); mas Nunavut não assinou em 2022, e a divisão foi 'quase' ao meio.",
+    "correcao": "No gancho, trocar 'Em 2022, dividiram a ilha ao meio, e os dois países ganharam uma fronteira terrestre.' por 'Em 2022, dividiram a ilha em duas, e os dois países ganharam uma fronteira terrestre.' Na explicação, trocar 'Em junho de 2022, os dois governos e os da Groenlândia e de Nunavut assinaram a divisão da ilha quase ao meio,' por 'Em junho de 2022, Canadá, Dinamarca e Groenlândia assinaram a divisão da ilha quase ao meio,'."
+   },
+   {
+    "id": "fronteiras_paises-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Märket (farol de 1885 do lado sueco, ajuste de 1985 em S invertido, sem troca líquida de território)."
+   },
+   {
+    "id": "fronteiras_paises-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a indefinição vale para a maior parte do lago (o Untersee tem fronteira por tratado), a posição alemã é descrita de formas diferentes, e misterio_aberto não se aplica.",
+    "correcao": "1) Gancho: 'No lago de Constança, entre Alemanha, Suíça e Áustria, nunca se acertou onde passa a fronteira na maior parte do lago, longe das margens. A Suíça diz que é no meio; a Áustria, que a área é de todos.' 2) Trocar 'Para o resto do lago, não existe nenhum acordo' por 'Para a maior parte do resto do lago, a porção principal chamada Obersee, não existe nenhum acordo' e 'A Alemanha mantém uma posição ambígua.' por 'A posição da Alemanha é descrita de formas diferentes: ambígua, segundo algumas fontes, ou próxima da austríaca, segundo o órgão de cartografia da Suíça.' 3) Fonte nova: https://www.swisstopo.admin.ch/en/technical-boundary-in-lake-constance com trecho literal. 4) tipos_espanto só 'contraintuitivo'."
+   },
+   {
+    "id": "fronteiras_paises-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Pig War (única baixa, o porco; 12 anos de ocupação conjunta; Guilherme I em 1872); muito citado, nota 3."
+   },
+   {
+    "id": "fronteiras_paises-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Canada–United States border (Fort Blunder 1,2 km ao norte do paralelo; linha errada mantida em 1842)."
+   },
+   {
+    "id": "fronteiras_paises-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Point Roberts (crianças cruzam a fronteira quatro vezes por dia; escola até o 3º ano)."
+   },
+   {
+    "id": "fronteiras_paises-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas a vila continua na área alfandegária alemã (aplica o IVA alemão), e a frase sugere que isso acabou em 1995.",
+    "correcao": "Trocar 'Até a Áustria entrar na União Europeia, em 1995, a vila fazia parte da área alfandegária alemã, e usou o marco alemão até a chegada do euro, em 2002.' por 'Antes mesmo de a Áustria entrar na União Europeia, em 1995, a vila já ficava na área alfandegária alemã, e ainda hoje aplica as alíquotas alemãs de imposto sobre consumo; até a chegada do euro, em 2002, usava o marco alemão.'"
+   },
+   {
+    "id": "fronteiras_paises-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Sealand (tribunal sem jurisdição em 1968, golpe de 1978, ampliação para 12 milhas em 1987, não reconhecida); não endossa a soberania."
+   },
+   {
+    "id": "fronteiras_paises-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere; mas o desmentido da lenda do cavalo é inferência incoerente com as próprias fontes (Melgarejo cedeu terras da região do Acre em 1867), Gálvez não foi cônsul, e a data da rendição diverge.",
+    "correcao": "(a) Apagar da explicação as frases de 'Daí a fragilidade de uma história famosa:' até 'mas deixou o Acre com a Bolívia.'. (b) tipos_espanto: trocar 'mito_desmentido' por 'contraintuitivo'. (c) Remover as fontes de Mariano Melgarejo (en e pt). (d) Trocar 'chefiada pelo espanhol Luis Gálvez, que tinha sido cônsul boliviano em Belém.' por 'chefiada pelo espanhol Luis Gálvez.'. (e) Trocar 'em 15 de março de 1900, uma flotilha de guerra brasileira chegou a Puerto Alonso' por 'em março de 1900, uma flotilha de guerra brasileira chegou a Puerto Alonso'. O gancho fica como está."
+   },
+   {
+    "id": "fronteiras_paises-0017",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "exagero: os voos binacionais 'domésticos' de Rivera ainda não operam (dependem de postos da Receita e da PF; a linha anunciada em 2023 não começou); sem isso, sobra a Praça Internacional, já conhecida do leitor brasileiro."
+   }
+  ],
+  "2": [
+   {
+    "id": "fronteiras_paises-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: administração alternada, soberania conjunta."
+   },
+   {
+    "id": "fronteiras_paises-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'em duas'; sem Nunavut."
+   },
+   {
+    "id": "fronteiras_paises-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: maior parte do lago; posição alemã; swisstopo."
+   },
+   {
+    "id": "fronteiras_paises-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: ainda aplica o IVA alemão."
+   },
+   {
+    "id": "fronteiras_paises-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem a lenda do cavalo; sem 'cônsul'; março de 1900."
+   }
+  ]
+ }
+}

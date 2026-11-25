@@ -1,0 +1,657 @@
+LOTE = "2026-11-25-fronteiras_paises-01"
+AREA = "sociedade"
+TEMA = "fronteiras_paises"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Baarle: a cidade retalhada entre Bélgica e Holanda
+    {
+        "temas_secundarios": ["cidades", "primeira_guerra"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Em Baarle, a fronteira corta casas ao meio e deixa 22 pedaços da Bélgica dentro da Holanda, alguns com pedaços da Holanda dentro. Na Primeira Guerra, os alemães não podiam entrar ali sem cruzar a Holanda.",
+        "explicacao": (
+            "Baarle é na prática uma cidade só, dividida em dois municípios: Baarle-Hertog, da Bélgica, e "
+            "Baarle-Nassau, da Holanda. O lado belga é formado por 26 parcelas de terra separadas. Dessas, 22 são "
+            "ilhas belgas cercadas por território holandês, e dentro das duas maiores há sete pedaços da Holanda, "
+            "enclaves dentro de enclaves. O retalho vem da Idade Média, de tratados, trocas e vendas de terras entre "
+            "os senhores de Breda e os duques de Brabante, e foi confirmado num tratado de 1843. Na Primeira Guerra "
+            "Mundial, o exército alemão não conseguia ocupar esses pedaços da Bélgica sem atravessar a Holanda, e o "
+            "governo holandês não deixava. Eles viraram refúgio, e um transmissor de rádio levado às escondidas "
+            "passou a trabalhar com a resistência belga. Hoje, pinos de ferro marcam a linha nas ruas, e o estilo "
+            "do número de cada casa, às vezes com uma bandeirinha ao lado, indica o país a que ela pertence. Quando "
+            "os restaurantes holandeses tinham de fechar mais cedo que os belgas, nos que ficavam bem em cima da "
+            "fronteira bastava o cliente mudar para uma mesa do lado belga."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Baarle-Hertog",
+                "Baarle-Hertog is noted for its complicated borders with Baarle-Nassau, Netherlands. "
+                "The border's complexity results from a number of medieval treaties, agreements, land-swaps and sales between the Lords of Breda and the Dukes of Brabant. [...] "
+                "These distributions were ratified and clarified as a part of the border settlements agreed under the Treaty of Maastricht in 1843. [...] "
+                "In total, the municipality of Baarle-Hertog consists of 26 separate parcels of land. [...] "
+                "In addition to this, there are 22 Belgian exclaves fully within the Netherlands. "
+                "There are also seven Dutch enclaves within the Belgian exclaves (i.e., counter-exclaves) that are part of the territory of the Netherlands. [...] "
+                "During the First World War, this situation meant that the Imperial German Army could not occupy these parts of Belgium without crossing the Netherlands, which the Dutch government did not allow. "
+                "Thus, these pieces of Belgium became a place where refugees could safely stay. "
+                "A clandestine radio transmitter was smuggled in and from there worked with the Belgian resistance. [...] "
+                "Some houses in the town of Baarle-Hertog/Baarle-Nassau are divided between the two countries. "
+                "At one time, differences between laws meant restaurants in the Netherlands had to close earlier than those in Belgium. "
+                "For some restaurants directly on the border, this simply meant that customers had to move to a table on the Belgian side.",
+                nome="Baarle-Hertog"),
+            wiki("Baarle-Nassau",
+                "it encloses 22 small exclaves of the Belgian town Baarle-Hertog, of which the two largest contain seven counter-enclaves of Baarle-Nassau [...] "
+                "For clarification and the interest of tourists, the border is made visible on all streets with iron pins. [...] "
+                "This is also visible on the house numbers: the style of house numbers is different in both countries, and often the Dutch or Belgian flag next to the house number indicates which country it belongs to.",
+                nome="Baarle-Nassau"),
+        ],
+    },
+    # 2 Bir Tawil: a terra que nenhum país quer
+    {
+        "temas_secundarios": ["imperios_coloniais", "paisagens_extremas"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Entre o Egito e o Sudão há um deserto de 2.060 km² que nenhum dos dois reivindica. Para o Egito ou o Sudão, aceitá-lo seria desistir de outra área, maior e com saída para o mar, que os dois disputam.",
+        "explicacao": (
+            "O nó vem de duas linhas traçadas pelos britânicos. Em 1899, um acordo entre o Reino Unido e o Egito "
+            "definiu o Sudão como as terras ao sul do paralelo 22, uma reta. Em 1902, os britânicos desenharam outra "
+            "linha, administrativa, que seguia o uso real da terra pelos povos da região. Bir Tawil, pasto de um povo "
+            "baseado perto de Assuã, ficou sob administração do Cairo; já o Triângulo de Halaib, a nordeste, cujos "
+            "moradores tinham mais laços com Cartum, ficou com o Sudão. Hoje o Egito defende a reta de 1899, que lhe "
+            "dá Halaib e deixa Bir Tawil para o Sudão. O Sudão defende a linha de 1902, que faz o contrário. Assim, "
+            "os dois querem Halaib e nenhum quer Bir Tawil, que tem um décimo do tamanho, nenhum povoado permanente "
+            "e nenhum acesso ao mar. Pelo direito internacional, não há base para um país reivindicar as duas "
+            "áreas ao mesmo tempo. Resultado: Bir Tawil é um dos raros pedaços de terra do planeta que nenhum Estado "
+            "reconhecido reivindica. Várias pessoas já se declararam donas dele, quase sempre pela internet e de "
+            "longe, mas nenhum governo reconheceu essas \"micronações\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Bir_Tawil",
+            "is a 2,060 km2 (795.4 mi2) area of land along the border between Egypt and Sudan which is claimed by neither country. [...] "
+            "On 19 January 1899, an agreement between the United Kingdom and Egypt relating to the administration of Sudan defined \"Soudan\" as the \"territories south of the 22nd parallel of latitude\". [...] "
+            "On 4 November 1902, the UK drew a separate \"administrative boundary\", intended to reflect the actual use of the land by the tribes in the region. "
+            "Bir Tawil was grazing land used by the Ababda tribe based near Aswan, and thus was placed under Egyptian administration from Cairo. "
+            "Similarly, the Hala'ib Triangle to the northeast was placed under the British governor of Sudan, because its inhabitants were culturally closer to Khartoum. "
+            "Egypt claims the original border from 1899, the 22nd parallel, which would place the Hala'ib Triangle within Egypt and the Bir Tawil area within Sudan. "
+            "Sudan, however, claims the administrative border of 1902, which would put Hala'ib within Sudan, and Bir Tawil within Egypt. "
+            "As a result, both states claim Hala'ib and neither claims the much less valuable Bir Tawil area, which is only a tenth the size, and has no permanent settlements or access to the sea. "
+            "There is no basis in international law for either Sudan or Egypt to claim both territories, and neither nation is willing to cede Hala'ib. "
+            "With no recognised third state claiming the neglected area, Bir Tawil is one of the few land areas of the world not claimed by any recognised state. [...] "
+            "a number of individuals and organisations have attempted to claim Bir Tawil as a micronation; because of the remoteness and hostile climate of the region, the vast majority of these claims have been by declarations posted on the internet from other locations. "
+            "None of these claims, or any others, have been recognised, officially or otherwise, by any government or reputable international organisation.",
+            nome="Bir Tawil")],
+    },
+    # 3 Ilha dos Faisões: seis meses francesa, seis meses espanhola
+    {
+        "temas_secundarios": ["imperios_coloniais", "nomes_lugares"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "A ilha dos Faisões, num rio entre França e Espanha, troca de país a cada seis meses: é espanhola de fevereiro a julho e francesa de agosto a janeiro. E não tem faisões.",
+        "explicacao": (
+            "A ilhota fica no rio Bidasoa, tem uns 200 metros de comprimento por 40 de largura e está encolhendo "
+            "com a erosão. Nela foi assinado o Tratado dos Pireneus, de 1659, depois de 24 conferências entre o "
+            "nobre espanhol Luis de Haro e o cardeal Mazarin, primeiro-ministro da França. O tratado "
+            "manteve a ilha como condomínio, isto é, com soberania dos dois países. Hoje ela é considerada o menor "
+            "condomínio do mundo. De 1º de fevereiro a 31 de julho, quem responde por ela é o comandante naval "
+            "espanhol de Hondarribia; de 1º de agosto a 31 de janeiro, um funcionário francês que carrega o título "
+            "de \"vice-rei da ilha dos Faisões\", coisa rara numa república. Um dos que tiveram o cargo foi o "
+            "escritor Pierre Loti. No dia a dia, a ilha é cuidada pelas prefeituras de Irun e Hendaye. A ilha também "
+            "serviu de palco a encontros reais: foi lá que Maria Teresa da Espanha se despediu do pai, Filipe IV da "
+            "Espanha, antes de seguir para a França como esposa de Luís XIV. Faisões não há, e o nome talvez venha "
+            "de um erro de interpretação de uma palavra francesa ligada a \"passagem\" ou \"pedágio\". A entrada é "
+            "proibida, salvo em raros dias de visitação."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Pheasant_Island",
+            "is an uninhabited river island located in the Bidasoa river, located between France and Spain, whose administration alternates between the two nations every six months. [...] "
+            "It is administered by  France from 1 August to 31 January. "
+            "It is administered by  Spain from 1 February to 31 July. [...] "
+            "There are no pheasants on the island. The name could be a misinterpretation of some French word related to \"passing\" or \"toll\". [...] "
+            "The most important historical event to have taken place on the island was the signing of the Treaty of the Pyrenees. "
+            "This was the climax to a series of 24 conferences held between Luis Méndez de Haro, a grandee of Spain, and Cardinal Mazarin, Chief Minister of France, in 1659 [...] "
+            "she said farewell to her father, Philip IV of Spain and much of the Spanish court, before crossing into France to become the consort of Louis XIV. [...] "
+            "According to the terms of the Treaty of the Pyrenees, the island would remain a condominium. [...] "
+            "The island is a condominium, the world's smallest, under joint sovereignty of Spain and France; for alternating periods of six months, it is officially under the governance of the naval commander of Hondarribia, Spain (1 February – 31 July) and of a French viceroy (1 August – 31 January). "
+            "Currently, the French position of \"deputy director for the sea and coast of the Atlantic Pyrenees and Landes departments\" carries the title of \"viceroy of Pheasant Island\", an unusual name in the French Republic. "
+            "One of the French officers with this title was Julien Viaud, better known as the writer Pierre Loti. "
+            "In practice, it is administered in turn by the mayors of Irun (in Gipuzkoa, Spain) and Hendaye (in the Pyrénées-Atlantiques, France). [...] "
+            "As of January 2018, the island was approximately 200 metres (660 ft) long and 40 metres (130 ft) wide, and it was eroding. [...] "
+            "It is uninhabited, and access is forbidden, except very occasionally on heritage open days.",
+            nome="Pheasant Island")],
+    },
+    # 4 Cooch Behar: o enclave de terceira ordem e a troca de 2015
+    {
+        "temas_secundarios": ["imperios_coloniais", "asia_antiga"],
+        "tipos_espanto": ["escala_absurda", "contraintuitivo"],
+        "gancho": "Até 2015, havia um pedaço da Índia dentro de um pedaço de Bangladesh, dentro de um pedaço da Índia, dentro de Bangladesh. Era o único enclave de terceira ordem do mundo: um campo de juta de um agricultor bangladês.",
+        "explicacao": (
+            "Na fronteira entre a Índia e Bangladesh existiam cerca de duzentos enclaves, os chitmahals. Bangladesh "
+            "tinha dentro de si 102 enclaves indianos, que por sua vez continham 21 enclaves de Bangladesh. Dentro "
+            "de um destes ficava Dahala Khagrabari, um terreno indiano de uns 7.000 m², o tamanho aproximado de um "
+            "campo de futebol. A Índia, por sua vez, continha 71 enclaves de Bangladesh. Uma lenda popular diz que "
+            "os pedaços de terra eram apostados em jogos de cartas ou de xadrez entre dois governantes locais. Os "
+            "registros apontam para algo menos pitoresco: um tratado confuso de 1713 entre o reino de Koch Bihar e o "
+            "Império Mogol, que talvez tenha encerrado uma guerra sem fixar a fronteira. Num censo de 2010, 51.549 "
+            "pessoas moravam nos enclaves, onde faltava quase tudo em termos de governo. Um acordo de troca foi "
+            "assinado em 1974, mas a Índia só o ratificou em 2015. À meia-noite de 31 de julho daquele ano, os "
+            "enclaves trocaram de mãos, e cada morador pôde escolher a nacionalidade. Perto de 14 mil pessoas "
+            "viraram indianas e cerca de 36 mil, bangladesas."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("India–Bangladesh_enclaves",
+                "The main body of Bangladesh contained 102 Indian enclaves, which in turn contained 21 Bangladeshi counter-enclaves, one of which contained Dahala Khagrabari, an Indian counter-counter-enclave, the world's only third-order enclave when it existed. "
+                "The Indian mainland contained 71 Bangladeshi enclaves, which in turn contained 3 Indian counter-enclaves. "
+                "A joint census in 2010 found 51,549 people who were residing in these enclaves [...] "
+                "The Prime Ministers of India and Bangladesh signed the Land Boundary Agreement in 1974 to exchange enclaves and simplify their international border. [...] "
+                "According to a popular legend, the enclaves were used as stakes in card or chess games centuries ago between two regional kings, the Raja of Koch Bihar and the Maharaja of Rangpur. "
+                "As far as historical records are concerned, the little territories were apparently the result of a confused outcome of a 1713 treaty between the Kingdom of Koch Bihar and the Mughal Empire. "
+                "Possibly, the Kingdom and the Mughals ended a war without determining a boundary for what territories had been gained or lost. [...] "
+                "Bangladesh quickly ratified the agreement in 1974 but India failed to do so. [...] "
+                "On 6 June 2015, Modi ratified the agreement during his visit to the Bangladesh capital Dhaka. [...] "
+                "The enclaves were to be exchanged at midnight on 31 July 2015 [...] "
+                "Nearly 14,000 people living in the former Bangladeshi enclaves became Indian citizens, while about 36,000 people living in the former Indian enclaves became Bangladeshi citizens. [...] "
+                "It was the site of a jute field, owned by a Bangladeshi farmer living in the Bangladeshi second-order enclave surrounding Dahala Khagrabari.",
+                nome="India–Bangladesh enclaves"),
+            wiki("Dahala_Khagrabari",
+                "This was a piece of India within a piece of Bangladesh within a piece of India within Bangladesh, making it the only third-order enclave (or counter-counter enclave) in the world until 1 August 2015, when it was ceded to Bangladesh. "
+                "At 7,000 square metres (1.7 acres)— approximately the size of an association football field— it was one of the smallest of the India–Bangladesh enclaves: 106 Indian exclaves inside Bangladesh and 92 Bangladeshi exclaves inside India. [...] "
+                "Because of a lack of governance and unfavourable conditions faced by residents of the enclaves, in September 2011 the governments of India and Bangladesh announced their intention to resolve the issue by means of swapping 162 enclaves, giving residents a choice of nationality.",
+                nome="Dahala Khagrabari"),
+        ],
+    },
+    # 5 Llívia: a cidade que escapou por não ser aldeia
+    {
+        "temas_secundarios": ["leis_julgamentos", "roma_antiga"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Llívia é uma cidade espanhola cercada pela França por todos os lados. O tratado de 1659 entregou aos franceses as aldeias da região, e Llívia, que tinha status de vila, ficou de fora.",
+        "explicacao": (
+            "Ao fim da guerra entre França e Espanha, o Tratado dos Pireneus, de 1659, passou à França várias "
+            "comarcas catalãs, entre elas o norte da Cerdanha, e fez dos Pireneus a fronteira. Mas o texto falava em "
+            "ceder apenas aldeias. Llívia, antiga capital da Cerdanha, tinha a condição de vila, e por isso continuou "
+            "espanhola. Um tratado de 1660 confirmou a situação. Os mapas da época eram imprecisos, e no início nem "
+            "estava claro que Llívia viraria um enclave. Hoje a cidade, com 1.562 moradores registrados em 2025, fica separada "
+            "do resto da Espanha por uma faixa de uns 1,6 km de território francês, atravessada por uma estrada. "
+            "Antes do espaço Schengen, de 1995, essa estrada era \"neutra\", livre de alfândega para franceses e "
+            "espanhóis. Nos anos 1980, ela foi palco da \"guerra das placas de pare\": as autoridades francesas "
+            "instalavam as placas, e manifestantes as arrancavam à noite. Os dois países dividem um hospital na "
+            "vizinha Puigcerdà. O nome também é uma relíquia: Llívia homenageia Lívia, a esposa do imperador "
+            "romano Augusto."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Llívia",
+            "It is a Spanish exclave surrounded by the French département of Pyrénées-Orientales. "
+            "It is named after Livia, the wife of Augustus and matriarch of the Julio-Claudian dynasty. "
+            "Because of a technicality in the Treaty of the Pyrenees, signed in 1659, that transferred only \"villages\" in the Pyrenees to France, Llívia, which was a \"town\", remains under Spanish control. [...] "
+            "It has a population of 1,562 (register office, 2025) . "
+            "Llívia is separated from the rest of Spain by a corridor approximately 1.6 km (1.0 mile) wide, which includes the French communes of Ur and Bourg-Madame. "
+            "This corridor is traversed by a road [...] "
+            "Before the implementation of the Schengen Area in 1995, it was considered a \"neutral road\", a custom-free route with access for both French and Spanish people [...] "
+            "The two countries share a hospital in Puigcerdà [...] "
+            "Following the Franco-Spanish War (1635–1659), the Treaty of the Pyrenees in 1659 ceded the comarques of Roussillon, Conflent, Capcir, Vallespir, and northern Cerdanya (\"Cerdagne\") to the Kingdom of France and established the Pyrenees as the border between France and Spain. "
+            "However, the treaty stipulated that only villages were to be ceded to France, and Llívia was considered a town (vila in Catalan), since it had the status of the ancient capital of Cerdanya. "
+            "So Llívia remained a Spanish enclave within France. This situation was confirmed in the Treaty of Llívia, signed in 1660. "
+            "The maps were not accurate and it was originally not obvious that Llívia would be an enclave. [...] "
+            "The road connecting Llívia to the rest of Spain was the location of the war of the stop signs; stop signs were placed by the French authorities and removed overnight by protesters on many instances in the 1980s.",
+            nome="Llívia")],
+    },
+    # 6 Kazungula: a fronteira de 150 metros e o quadriponto que quase existe
+    {
+        "temas_secundarios": ["imperios_coloniais", "grandes_obras"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "No rio Zambeze, Zâmbia e Botsuana dividem uma fronteira de uns 150 metros, espremida entre Namíbia e Zimbábue. A ponte que a cruza, aberta em 2021, foi feita em curva para não invadir os vizinhos.",
+        "explicacao": (
+            "A origem está na partilha colonial. Em 1890, a Alemanha obteve dos britânicos a Faixa de Caprivi, um "
+            "corredor estreito que levava sua colônia do sudoeste africano, a atual Namíbia, até o rio Zambeze. Com "
+            "isso, quatro territórios passaram a quase se tocar na confluência dos rios Chobe e Zambeze. Em 1970, a "
+            "África do Sul, que então ocupava a Namíbia, disse a Botsuana que ali não havia fronteira com a Zâmbia, "
+            "e sim um ponto de quatro países, o que tornaria ilegal a balsa de Kazungula, que ligava os dois. "
+            "Botsuana rejeitou a tese; houve confronto, a balsa foi alvo de tiros e, anos depois, o exército da "
+            "Rodésia a atacou e afundou. Em 1979, um estudioso do caso ainda não descartava o quadriponto. Só no "
+            "período 2006–10 os quatro países concordaram que Zâmbia e Botsuana têm, sim, uma fronteira curtíssima: uns "
+            "150 metros, ou 135, segundo outra fonte. A ponte rodoferroviária, com 923 metros, foi aberta ao tráfego "
+            "em maio de 2021 e é curva justamente para desviar das fronteiras do Zimbábue e da Namíbia. Ainda assim, "
+            "relatou-se em 2014 que a Namíbia concedeu um direito de passagem sobre um trecho que os três "
+            "consideravam namibiano."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Quadripoint",
+                "Some older sources claimed that a quadripoint existed in Africa, where the borders of Namibia, Botswana, Zambia, and Zimbabwe come together at the confluence of the Cuando (also called Chobe) and Zambezi rivers. [...] "
+                "Seeking a more efficient route between these two colonies via the Zambezi River, Germany signed the Heligoland–Zanzibar Treaty with Britain in 1890, thereby gaining control of a narrow salient called the Caprivi Strip. [...] "
+                "In 1970, South Africa (which at the time occupied Namibia) informed Botswana that there was no common border between Botswana and Zambia, claiming that a quadripoint existed. "
+                "As a result, South Africa claimed that the Kazungula Ferry, which links Botswana and Zambia at the quadripoint, was illegal. "
+                "Botswana firmly rejected both claims. "
+                "There was a confrontation and shots were fired at the ferry; some years later, the Rhodesian Army attacked and sank the ferry, maintaining that it was serving military purposes. "
+                "Ian Brownlie, who studied the case, wrote in 1979 that the possibility of a quadripoint could not be definitively ruled out at that time. [...] "
+                "The existence of a short boundary of about 150 metres (490 ft) between Zambia and Botswana was agreed by all four states in the 2006–10 period [...] "
+                "Moreover, it was reported in 2014 that Namibia actually granted Botswana and Zambia an easement to build their bridge across what all three parties concurred was Namibian territory. "
+                "The Kazungula Bridge opened for traffic in May 2021.",
+                nome="Quadripoint"),
+            wiki("Kazungula_Bridge",
+                "Kazungula Bridge is a road and rail bridge over the Zambezi River between the countries of Zambia and Botswana at the town of Kazungula. "
+                "The 923-metre-long (3,028 ft) and 18.5-metre-wide (61 ft) bridge [...] "
+                "The bridge takes advantage of the short 135-metre (440 ft) border the two countries share at the river, and is curved to avoid the nearby borders of Zimbabwe and Namibia.",
+                nome="Kazungula Bridge"),
+        ],
+    },
+    # 7 Diomedes: a 3,8 km e quase um dia de distância
+    {
+        "temas_secundarios": ["guerra_fria", "medidas_padroes"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "No estreito de Bering, duas ilhas a 3,8 km uma da outra ficam em lados opostos da linha de data: a russa está 21 horas à frente da americana. Em 1987, uma nadadora cruzou de uma para a outra.",
+        "explicacao": (
+            "As ilhas Diomedes ficam no meio do estreito de Bering, entre o Alasca e a Sibéria. A Grande Diomedes é "
+            "russa e é o ponto mais a leste da Rússia; a Pequena Diomedes pertence aos Estados Unidos. A fronteira "
+            "entre os dois países passa entre elas e, ali, coincide com a Linha Internacional de Data. Por isso a "
+            "ilha russa está quase um dia adiantada: pelos fusos definidos localmente, 21 horas, ou 20 no verão. Daí "
+            "os apelidos Ilha do Amanhã e Ilha do Ontem. A linha é herança da compra do Alasca, em 1867: o tratado "
+            "usou as duas ilhas para marcar o limite. Na Guerra Fria, esse vão virou a \"Cortina de Gelo\". Em 1987, "
+            "a nadadora americana Lynne Cox atravessou a nado de uma ilha à outra e foi cumprimentada tanto por "
+            "Gorbachev quanto por Reagan. Em invernos favoráveis, uma ponte de gelo une as ilhas. Depois de instalar "
+            "uma base militar em 1948, o governo soviético levou os moradores nativos da ilha grande para o "
+            "continente; já a pequena tem uma vila de população inupiat."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Diomede_Islands",
+            "One is the Russian island of Big Diomede (part of Chukotka). The other is the U.S. island of Little Diomede (part of Alaska). "
+            "The Diomede Islands are located in the middle of the Bering Strait between mainland Alaska and Siberia. "
+            "At their closest points, the two islands are approximately 2.4 miles (3.8 km) away from each other. "
+            "Because they are separated by the International Date Line, Big Diomede is almost a day ahead of Little Diomede; due to locally defined time zones, Big Diomede is 21 hours ahead of Little Diomede (20 in summer). "
+            "Because of this, the islands are sometimes called Tomorrow Island (Big Diomede) and Yesterday Island (Little Diomede). [...] "
+            "The islands are separated by an international border, which also defines the International Date Line in that area [...] "
+            "Big Diomede Island is the easternmost point of Russia. [...] "
+            "Under the right winter conditions, an ice bridge spans the distance between the two islands. [...] "
+            "The text of the 1867 treaty between the United States and Russia, which finalized the Alaska Purchase, uses the islands to designate the boundary between the two nations [...] "
+            "During the Cold War, that gap constituted the border between the United States and the Soviet Union, and became known as the \"Ice Curtain\". "
+            "In 1987, however, Lynne Cox swam from one island to the other and was congratulated by both Mikhail Gorbachev and Ronald Reagan for her feat. [...] "
+            "After establishing a military base there in 1948, the Soviet government relocated the indigenous population of Big Diomede Island to mainland Russia. [...] "
+            "Little Diomede had an Inupiat population of 170",
+            nome="Diomede Islands")],
+    },
+    # 8 Ilha Hans: a "guerra do uísque" que acabou em fronteira
+    {
+        "temas_secundarios": ["costumes_rituais", "bebidas_alcoolicas"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Por décadas, Canadá e Dinamarca disputaram uma ilhota no Ártico deixando nela bandeiras e garrafas de bebida um para o outro. Em 2022, dividiram a ilha ao meio, e os dois países ganharam uma fronteira terrestre.",
+        "explicacao": (
+            "A ilha Hans tem 130 hectares, é árida e desabitada e fica no meio de um estreito de 35 km entre a ilha "
+            "canadense de Ellesmere e a Groenlândia, território dinamarquês. Por isso cai nas águas territoriais dos "
+            "dois países. Quando eles traçaram a divisa marítima, em 1973, ambos reivindicaram a ilha, e o tratado, "
+            "com 127 pontos, simplesmente deixou de ligar dois deles, num vão de 1.370 metros onde a ilha está. Em "
+            "1984, o ministro dinamarquês para a Groenlândia fincou ali a bandeira da Dinamarca e uma mensagem de "
+            "boas-vindas \"à ilha dinamarquesa\"; diz-se que deixou também uma garrafa de aguardente. Os canadenses "
+            "responderam com a própria bandeira e uma garrafa de uísque Canadian Club. A troca se repetiu e deu ao "
+            "caso o apelido de Guerra do Uísque. Em 2005, a briga chegou até a anúncios no Google. Em junho de 2022, "
+            "os dois governos e os da Groenlândia e de Nunavut assinaram a divisão da ilha quase ao meio, ao longo "
+            "de uma fenda natural na rocha, com uma fronteira terrestre de 1.280 metros. O Canadá ganhou o segundo "
+            "vizinho por terra, além dos EUA. E surgiu a terceira fronteira terrestre entre um país europeu e as "
+            "Américas: as outras duas são as da Guiana Francesa com o Brasil e o Suriname."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Hans_Island",
+            "The island itself is barren and uninhabited with an area of 130 ha (320 acres) [...] "
+            "Its location in the strait that separates Ellesmere Island of Canada from northern Greenland was for years a border dispute, the so-called Whisky War between the two sovereign states of Canada and the Danish Realm [...] "
+            "The strait at this point is 35 km (22 mi) wide, placing the island within the territorial waters of both Canada and the Danish Realm (Greenland). "
+            "A 1,280 m (4,200 ft) shared border traverses the island. [...] "
+            "During negotiations between Canada and the Danish Realm on their maritime boundary in 1973, both states claimed Hans Island was part of their territory. [...] "
+            "The treaty lists 127 points (latitude and longitude) from Davis Strait to the end of Robeson Channel [...] "
+            "The treaty does not, however, draw a line from point 122 (80°49′12″N 66°29′00″W) to point 123 (80°49′48″N 66°26′18″W), a distance of 1,370 m (4,490 ft), because Hans Island is situated in between those two points. [...] "
+            "In 1984, the Danish Minister for Greenland planted the Danish flag on the island and left a little message saying \"Velkommen til den danske ø (English: Welcome to the Danish island). "
+            "It is also said he left a bottle of brandy; this seems to have been Schnapps, a traditional Danish spirit. [...] "
+            "The Canadians have reciprocated with their own sign, the flag of Canada and a bottle of Canadian Club. [...] "
+            "\"Google fight\" or \"Google war\" is the name given to a number of advertisements on the Internet search engine Google which promoted either Danish or Canadian sovereignty over Hans Island in 2005. [...] "
+            "On 11 June 2022, the Danish, Greenlandic, Canadian, and Nunavut governments agreed to split Hans Island in half after 17 years of negotiations. "
+            "On 14 June 2022, Canadian Foreign Affairs Minister Mélanie Joly, Danish foreign affairs minister Jeppe Kofod, and prime minister of Greenland Múte Bourup Egede signed an agreement to divide the island nearly in half along a natural fault line. [...] "
+            "and also a second land neighbour for Canada and for the Danish Realm, each of which had only one, with the United States and Germany respectively. "
+            "It also is the northernmost international land border in the world, as well as the third land border between countries of Europe and of the Americas, the other two being between French Guiana and the South American countries Brazil and Suriname.",
+            nome="Hans Island")],
+    },
+    # 9 Märket: o farol do lado errado e a fronteira em S
+    {
+        "temas_secundarios": ["grandes_obras", "geometria_topologia"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Numa ilhota do Báltico, a fronteira entre Suécia e Finlândia tem a forma de um S invertido. Motivo: em 1885 a Finlândia ergueu um farol do lado sueco, e a correção, um século depois, não podia mudar a área de ninguém.",
+        "explicacao": (
+            "Märket é um rochedo de 3,3 hectares entre a Suécia e o arquipélago finlandês de Åland. Desde um tratado "
+            "de 1809, a fronteira passa pelo meio dele, e por muito tempo foi uma linha reta. Antes do farol, o "
+            "rochedo e seus baixios eram um perigo para a navegação: só em 1873, 23 navios encalharam tentando "
+            "evitá-lo, e oito naufragaram. Em 1885, o Grão-Ducado da Finlândia construiu o farol no ponto mais alto "
+            "da ilha, achando que ela era terra de ninguém. O lugar escolhido, porém, ficava na parte sueca. Em "
+            "1985, os dois países ajustaram a fronteira para que o farol ficasse do lado finlandês, com uma "
+            "condição: nenhum dos dois podia ganhar ou perder área, e o litoral de cada um tinha de continuar igual, "
+            "para não mexer nos direitos de pesca. O resultado é uma linha sinuosa de uns 480 metros, que deixa o "
+            "farol ligado ao resto da parte finlandesa só por uma estreita faixa de terra. Como o gelo à deriva "
+            "arrancaria qualquer marco saliente, a fronteira é marcada por furos na rocha, e as autoridades dos dois "
+            "países a medem de novo a cada 25 anos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Märket",
+            "is a 3.3-hectare (8.2-acre) uninhabited skerry in the Baltic Sea shared by Sweden and Finland (in the area of the autonomous region Åland), with a lighthouse as its salient humanmade feature. "
+            "Märket has been divided between the two countries since the Treaty of Fredrikshamn of 1809 defined the border between Sweden and Grand Duchy of Finland as going through the middle of the island. [...] "
+            "The border used to be straight until the Grand Duchy of Finland built the lighthouse on the Swedish side, so that the border had to be changed. [...] "
+            "Before the lighthouse was erected, the island and its shallows were dangerous navigational hazards, which seafarers tried desperately to avoid. "
+            "In 1873, as many as 23 ships were grounded on the Swedish coast and its archipelago trying to avoid Märket, and eight of them were shipwrecked. [...] "
+            "When it was built by the Grand Duchy of Finland in 1885, the island was considered a no-man's land, so the lighthouse was simply built upon the highest point of the island. "
+            "However, the location selected was within the Swedish portion of the island. [...] "
+            "As a result, the border was adjusted in 1985 so that the lighthouse is now located on Finnish territory. "
+            "The adjustment was carried out such that no net transfer of territory occurred, and the ownership of the coastline was unchanged so as not to interfere with each country's fishing rights. "
+            "This resulted in an unusual shape for the international border to satisfy both Finnish and Swedish interests. "
+            "The adjusted border takes the form of an inverted 'S', and the lighthouse is connected to the rest of Finland only by a short stretch of land. "
+            "The border on the island is around 480 metres (1,570 ft) long. "
+            "The border is regularly resurveyed every 25 years by officials representing both countries. [...] "
+            "The border is marked by holes drilled into the rock, because the seasonal drift ice would shear off any protruding markers.",
+            nome="Märket")],
+    },
+    # 10 Lago de Constança: um lago sem fronteira acertada
+    {
+        "temas_secundarios": ["agua_doce_gelo", "leis_julgamentos"],
+        "tipos_espanto": ["contraintuitivo", "misterio_aberto"],
+        "gancho": "No lago de Constança, entre Alemanha, Suíça e Áustria, não há acordo sobre onde passa a fronteira longe das margens. A Suíça diz que é no meio; a Áustria, que a área é de todos; e a Alemanha não se define.",
+        "explicacao": (
+            "O lago, um dos maiores da Europa Central, tem cerca de 536 km² e margens nos três países: 173 km na "
+            "Alemanha, 72 km na Suíça e 28 km na Áustria. As águas rasas junto da costa, com menos de 25 metros de "
+            "profundidade, são consideradas de quem está mais perto. Para o resto do lago, não existe nenhum acordo "
+            "com força jurídica dizendo onde ficam as fronteiras. Cada país tem a sua opinião. A Suíça sustenta que "
+            "a divisa corre pelo meio do lago. A Áustria entende que a parte em disputa pertence em conjunto a todos "
+            "os países ribeirinhos, o que no direito internacional se chama condomínio. A Alemanha mantém uma posição "
+            "ambígua. Na prática, o lago funciona porque as questões do dia a dia, como a navegação e a pesca, são "
+            "reguladas por tratados à parte. Mesmo assim, às vezes surgem disputas: uma envolveu uma casa flutuante "
+            "atracada em dois países ao mesmo tempo, e outra, uma família austríaca que se dizia dona exclusiva do "
+            "direito de pescar em boa parte da baía de Bregenz, tese que nenhum tribunal aceitou."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Lake_Constance",
+            "The actual location of the country borders within the lake has never been cleared by Austria, Germany and Switzerland. [...] "
+            "It covers about 536 km2 (207 sq mi) [...] "
+            "Of this, 173 kilometres (107 mi) are located in Germany (Baden-Württemberg 155 kilometres or 96 miles, Bavaria 18 kilometres or 11 miles), 28 kilometres (17 mi) run through Austria and 72 kilometres (45 mi) through Switzerland. [...] "
+            "the third largest lake in Central Europe by area [...] "
+            "The lake lies where the countries of Austria, Germany, and Switzerland meet. "
+            "Beyond areas less than 25 m (82 ft) deep, considered to be under the jurisdiction of the nearest country, there is no legally binding agreement as to where the borders lie between the three countries. "
+            "However, Switzerland holds the view that the border runs through the middle of the lake, Austria is of the opinion that the contentious area belongs to all the states on its banks, which is known as a \"condominium\", and Germany holds an ambiguous opinion. "
+            "Legal questions pertaining to ship transport and fishing are regulated in separate treaties. "
+            "Disputes occasionally arise. One concerns a houseboat which was moored in two states (ECJ c. 224/97 Erich Ciola); another concerns the rights to fish in the Bay of Bregenz. "
+            "In relation to the latter, an Austrian family was of the opinion that it alone had the right to fish in broad portions of the bay. "
+            "However, this was accepted neither by the Austrian courts nor by the organs and courts of the other states.",
+            nome="Lake Constance")],
+    },
+    # 11 Guerra do Porco
+    {
+        "temas_secundarios": ["revolucoes_politicas", "imperios_coloniais"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1859, EUA e Reino Unido puseram frente a frente centenas de soldados, canhões e navios de guerra por causa de um porco morto numa ilha de fronteira. A única baixa do confronto foi o porco.",
+        "explicacao": (
+            "O tratado de 1846 que dividiu o noroeste da América do Norte pôs a fronteira \"no meio do canal\" que "
+            "separa o continente da ilha de Vancouver. Só que havia dois canais possíveis, um de cada lado das ilhas "
+            "San Juan, e os dois países reivindicaram o arquipélago. Na ilha San Juan conviviam uma fazenda da "
+            "britânica Companhia da Baía de Hudson e colonos americanos. Em junho de 1859, o fazendeiro americano "
+            "Lyman Cutlar encontrou um porco comendo os tubérculos da sua horta e o matou. O dono, um irlandês que "
+            "trabalhava para a companhia, recusou os 10 dólares oferecidos e pediu 100. Quando os britânicos "
+            "ameaçaram prender Cutlar, os colonos chamaram o exército americano. Em agosto, eram 461 americanos com "
+            "14 canhões diante de cinco navios britânicos com 70 canhões e 2.140 homens. O almirante britânico Robert "
+            "Baynes se recusou a começar uma guerra entre duas grandes nações \"por uma briga por causa de um porco\". "
+            "Os dois lados aceitaram ocupar a ilha juntos, com no máximo 100 homens cada, e por 12 anos as tropas "
+            "conviveram em paz, com festas e competições esportivas. Em 1872, uma comissão indicada pelo imperador "
+            "alemão Guilherme I deu a razão aos americanos. Até hoje, guardas-parques dos EUA hasteiam todo dia a "
+            "bandeira britânica no antigo acampamento inglês, em memória do episódio."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Pig_War_(1859)",
+            "Despite being referred to as a \"war\", there were no human casualties on either side, only a pig. [...] "
+            "The Oregon Treaty of June 15, 1846, resolved the Oregon boundary dispute by dividing the Oregon Country/Columbia District between the United States and Britain (future Canada) "
+            "\"along the 49th parallel of north latitude to the middle of the channel which separates the continent from off-shore Vancouver Island, and thence southerly through the middle of the said channel, and of the Strait of Juan de Fuca, to the Pacific Ocean.\" "
+            "However, two straits could be called the middle of the channel: Haro Strait, along the west side of the off-shore San Juan Islands; and Rosario Strait, along the east side. [...] "
+            "Because of this ambiguity, both the United States and Britain claimed sovereignty over the San Juan Islands. "
+            "During this period of disputed sovereignty, Britain's Hudson's Bay Company established operations on San Juan and turned the island into a sheep ranch. [...] "
+            "Lyman Cutlar, an American farmer from Kentucky who had moved onto San Juan Island [...] found a pig rooting in his garden and eating his tubers. "
+            "This was not the first occurrence and as a result, Cutlar, tired of the intrusion, shot and killed the pig. "
+            "It turned out that the pig was owned by an Irishman, Charles Griffin, who was employed by the Hudson's Bay Company to run their sheep ranch on the island. [...] "
+            "Cutlar offered $10 (equivalent to $360 in 2025) to Griffin to compensate for the pig, but Griffin was unsatisfied with this offer and demanded $100 [...] "
+            "When British authorities threatened to arrest Cutlar, nearby American settlers called for military protection [...] "
+            "By August 10, 1859, the enlarged detachment of 461 Americans with 14 cannons under Colonel Silas Casey were opposed by a flotilla of five British Royal Navy warships mounting 70 guns and carrying 2,140 men. [...] "
+            "When Baynes came and took stock of the situation, he told Douglas that he would not escalate the conflict into a war between two great nations \"over a squabble about a pig\". [...] "
+            "both sides agreed to retain joint military occupation of the island until a final diplomatic settlement was reached, reducing their presence to a token force of no more than 100 men. [...] "
+            "Today the Union Jack flag still flies above the former British Royal Marines camp site, being raised and lowered daily by American National Park Service rangers [...] "
+            "though this is only for commemorative historical purposes. "
+            "During the following years of joint military occupation, the small British and American units on San Juan Island had an amicable mutual social life, visiting one another's camps to celebrate their respective national holidays and holding various athletic competitions. [...] "
+            "This state of affairs continued for the next 12 years. [...] "
+            "with German Emperor Wilhelm I chosen to act as arbitrator. [...] "
+            "Wilhelm I referred the issue to a three-man arbitration commission which met in Geneva for nearly a year. "
+            "Finally on October 21, 1872, the commission decided in favor of the United States' offer.",
+            nome="Pig War (1859)")],
+    },
+    # 12 Fort Blunder: a fronteira que ficou onde o agrimensor errou
+    {
+        "temas_secundarios": ["medidas_padroes", "falhas_engenharia"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Os EUA ergueram um forte na divisa com o Canadá, no paralelo 45, e só depois descobriram que ele estava no lado canadense. A solução, em 1842, foi manter a fronteira na linha errada dos agrimensores.",
+        "explicacao": (
+            "O paralelo 45 foi fixado em 1763 como divisa entre as colônias britânicas de Quebec e Nova York, e foi "
+            "medido e demarcado entre 1771 e 1773. Depois da guerra de 1812, a linha foi medida de novo, e os EUA começaram a "
+            "erguer fortificações em Rouses Point, no lago Champlain, logo ao sul da linha. Com boa parte da obra "
+            "pronta, novas medições mostraram que o verdadeiro paralelo 45 passava 1,2 km mais ao sul do que a linha "
+            "demarcada. O forte, que ganhou o apelido de Fort Blunder, \"forte da mancada\", estava no Canadá. O "
+            "impasse só se resolveu com o Tratado Webster-Ashburton, de 1842, que deixou a fronteira sobre a linha "
+            "sinuosa traçada pelos agrimensores, e não sobre o paralelo verdadeiro. Erros assim se repetem mais a "
+            "oeste: em teoria, a faixa da fronteira segue o paralelo 49, mas, na prática, os marcos instalados no "
+            "século 19 se afastam dele em várias centenas de pés em alguns pontos. Hoje uma comissão "
+            "binacional mantém limpa uma faixa de 6 metros de largura ao longo da divisa, e quem mora ao lado não "
+            "pode construir nela sem autorização."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Canada–United_States_border",
+            "The parallel had been established in 1763 by King George III as the boundary between the provinces of Quebec and New York [...] "
+            "It was surveyed and marked by John Collins and Thomas Valentine from 1771 to 1773. [...] "
+            "The border vista theoretically follows the 49th parallel, but in practice, the 19th-century surveyed border markers vary by several hundred feet in spots. [...] "
+            "Disputes over the interpretation of the border treaties and mistakes in surveying required additional negotiations, which resulted in the Webster–Ashburton Treaty of 1842. [...] "
+            "It was surveyed again after the War of 1812. "
+            "The U.S. federal government began to construct fortifications just south of the border at Rouses Point, New York, on Lake Champlain. "
+            "After a significant portion of the construction was completed, measurements revealed that at that point, the actual 45th parallel was three-quarters of a mile (1.2 km) south of the surveyed line. "
+            "The fort, which became known as \"Fort Blunder\", was in Canada, which created a dilemma for the U.S. that was not resolved until a provision of the treaty left the border on the meandering line as surveyed. [...] "
+            "keeping the border clear of brush and vegetation for 6 m (20 ft), establishing a \"border vista\" extending for 3 m (10 ft) on each side of the line. [...] "
+            "Residents of both nations who own property adjacent to the border are forbidden to build within the 6-meter-wide (20 ft) boundary vista without permission from the International Boundary Commission.",
+            nome="Canada–United States border")],
+    },
+    # 13 Point Roberts: as crianças que cruzam a fronteira quatro vezes por dia
+    {
+        "temas_secundarios": ["cidades", "imperios_coloniais"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Point Roberts, ponta de terra dos EUA colada ao Canadá, não tem ligação por terra com o resto do país. A partir do 4º ano, as crianças cruzam a fronteira quatro vezes por dia para ir à escola e voltar.",
+        "explicacao": (
+            "Em 1846, americanos e britânicos decidiram que o paralelo 49 dividiria seus territórios no noroeste da "
+            "América do Norte, sem saber direito o efeito disso no terreno. A ponta sul da península de Tsawwassen, "
+            "logo abaixo de Vancouver, ficou ao sul do paralelo e, portanto, americana, mas cercada pelo Canadá e "
+            "pelo mar. Para chegar por terra ao resto dos EUA, é preciso rodar uns 40 km pelo Canadá. A pequena "
+            "escola local, com cerca de 15 alunos e um único professor em tempo integral, só vai até o terceiro ano. Daí em "
+            "diante, as crianças americanas fazem 40 minutos de ônibus pela Colúmbia Britânica até Blaine, já nos "
+            "EUA, cruzando a fronteira duas vezes na ida e duas na volta. A geografia também moldou a economia: há "
+            "40 vezes mais canadenses com caixa postal em Point Roberts do que moradores, porque é um jeito rápido de "
+            "receber encomendas dos EUA. Quando o Canadá fechou a fronteira na pandemia, em 2020, o lugar perdeu 80% "
+            "do movimento do comércio, e um barco provisório passou a ligá-lo ao continente americano."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Point_Roberts,_Washington",
+            "Point Roberts is a pene-exclave of the US state of Washington on the southernmost tip of the Tsawwassen peninsula, south of Vancouver, British Columbia, Canada. [...] "
+            "is reached from the rest of the United States by traveling 25 mi (40 km) through Canada, or without passing through Canada by boat or private airplane. [...] "
+            "The two parties agreed that the 49th parallel would define the boundary between their respective territories, and the small area that incorporates Point Roberts is south of the 49th parallel. [...] "
+            "Point Roberts assumed its present political status in 1846, when the Oregon Treaty extended the 49th parallel as the boundary between U.S. and British territory from the Rocky Mountains to Georgia Strait. [...] "
+            "The acceptance of the 49th parallel as the international boundary was concluded without precise knowledge of its effects. [...] "
+            "The Canadian border was closed to non-essential travel in March 2020 due to the COVID-19 pandemic [...] "
+            "In 2020, a study found that Point Roberts had lost 80 percent of its business and hundreds of seasonal residents as a result of the pandemic and border shutdown. [...] "
+            "A temporary ferry was set up by the Port of Bellingham in August 2020 to connect Point Roberts to the mainland [...] "
+            "Forty times more Canadians have mailboxes in Point Roberts than the number of residents. [...] "
+            "Point Roberts Primary School, the sole school in the exclave, is part of the Blaine School District and provides teaching for kindergarten as well as first through third grades. "
+            "It is classified as a remote and necessary school by the state government and is the smallest school in Whatcom County, with approximately 15 students and one full-time teacher. "
+            "The three-room schoolhouse opened in 1993 and began offering third grade lessons in 1999. "
+            "From 4th grade onward, American children must take a 40-minute ride through British Columbia, crossing back into the United States at Blaine, Washington. "
+            "Students therefore cross the US–Canada border four times, two on the trip to Blaine and two on the trip back.",
+            nome="Point Roberts, Washington")],
+    },
+    # 14 Jungholz: a vila presa ao próprio país por um único ponto
+    {
+        "temas_secundarios": ["geometria_topologia", "dinheiro"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "A vila austríaca de Jungholz se liga ao resto da Áustria por um único ponto: o cume de uma montanha. Sem estrada para o próprio país, usou o marco alemão, e não o xelim austríaco, até a chegada do euro.",
+        "explicacao": (
+            "Jungholz fica no Tirol, mas só se chega a ela passando pela Alemanha. A fronteira que contorna a vila "
+            "começa e termina no topo do monte Sorgschrofen, a 1.636 metros. Ali se encontram quatro municípios, dois "
+            "austríacos e dois alemães, alternados, formando um quadriponto: o território austríaco de um lado toca "
+            "o do outro só nesse ponto. A história começa em 1342, quando um agricultor de uma aldeia alemã vendeu a "
+            "área a um coletor de impostos austríaco, que a juntou às suas terras no Tirol. Um tratado de 1844 "
+            "confirmou Jungholz como austríaca, e outro, de 1868, criou uma união aduaneira com a Alemanha. Até a "
+            "Áustria entrar na União Europeia, em 1995, a vila fazia parte da área alfandegária alemã, e usou o "
+            "marco alemão até a chegada do euro, em 2002. Cartas para lá podem levar o código postal alemão ou o "
+            "austríaco. Com menos de 300 habitantes, Jungholz teve até 2015 três agências de bancos austríacos, a "
+            "maior densidade bancária do país, porque o sigilo bancário da Áustria atraía dinheiro alemão."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Jungholz",
+            "is a village in the district of Reutte in the Austrian state of Tyrol that is only accessible via Germany. "
+            "The lack of a road connection to anywhere else in Austria led to Jungholz being included in the German customs area before Austria joined the EU in 1995. "
+            "It also used the Deutsche Mark instead of the Austrian schilling as currency until 2002, when the euro took over. "
+            "Letters to Jungholz can be addressed with either a German or an Austrian postal code. [...] "
+            "Jungholz forms a pene-exclave of Austria that is connected to the rest of Austria by a single point, which is the summit of the mountain Sorgschrofen (1,636 m, 5,367 ft). "
+            "As well as housing border post number 110 on the normal international border between Tyrol and Bavaria, a second border starts and, having gone round Jungholz, ends there. "
+            "There are thus borders extending in four directions from the summit, called a quadripoint. "
+            "Two Austrian (Tyrolean, Reutte) and two German (Bavarian, Oberallgäu) municipalities meet at that point [...] "
+            "On 24 June 1342, Hermann Häselin, a farmer from Wertach in Germany, sold the area to Heinz Lochpyler, an Austrian taxman from nearby Tannheim. "
+            "The buyer had the area incorporated with his other possession of Tyrol. "
+            "In the Bavarian–Austrian border treaty of 1844 Jungholz went to Austria. "
+            "Its customs union with Germany dates to a Treaty signed in 1868. [...] "
+            "Despite having fewer than 300 inhabitants, the village had three branches of Austrian banks until 2015, making Jungholz the municipality with the highest bank density in Austria. "
+            "Despite customs and monetary union and the removal of border controls under the Schengen Agreement, Austrian banking secrecy laws continued to apply, which is why funds from Germany are still invested in Jungholz.",
+            nome="Jungholz")],
+    },
+    # 15 Sealand: o "país" numa plataforma de guerra
+    {
+        "temas_secundarios": ["segunda_guerra", "leis_julgamentos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1967, um radialista pirata tomou uma plataforma militar abandonada no mar do Norte e a declarou país: Sealand. Em 1968, um tribunal inglês se declarou sem jurisdição: a plataforma ficava fora das águas britânicas.",
+        "explicacao": (
+            "A plataforma Roughs Tower foi construída pelos britânicos em 1943, durante a Segunda Guerra, para "
+            "proteger rotas de navegação contra aviões alemães que lançavam minas. Ficava a cerca de 7 milhas "
+            "náuticas da costa, fora do limite de 3 milhas das águas territoriais do Reino Unido na época. Em 1967, "
+            "Paddy Roy Bates, dono de uma rádio pirata, expulsou dali um grupo rival e declarou independência. Em "
+            "1968, o filho dele deu tiros de advertência contra trabalhadores que faziam a manutenção de uma boia. "
+            "Processado por porte de armas, Bates se livrou porque o tribunal concluiu que a plataforma estava fora "
+            "da jurisdição britânica. Em 1975 vieram constituição, bandeira, hino, moeda e passaportes. Em 1978, um "
+            "advogado alemão que se apresentava como primeiro-ministro de Sealand contratou mercenários, tomou a "
+            "plataforma e fez o filho de Bates de refém; este retomou o lugar e prendeu os invasores, e a Alemanha "
+            "mandou um diplomata para negociar a libertação do advogado. Bates disse que isso era um reconhecimento "
+            "de fato. Em 1987, porém, o Reino Unido ampliou suas águas para 12 milhas, o que pôs Sealand em "
+            "território britânico. Nenhum país reconhece Sealand."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Principality_of_Sealand",
+            "In 1943, during World War II, Roughs Tower was constructed by the United Kingdom as one of the Maunsell Forts, primarily to defend the vital shipping lanes in nearby estuaries against German mine-laying aircraft. [...] "
+            "This is approximately 7 nautical miles (13 km) from the coast of Suffolk, outside the then 3 nmi (6 km) claim of the United Kingdom and, therefore, in international waters at the time. [...] "
+            "On 2 September 1967, the fort was occupied by Paddy Roy Bates, a British citizen and the owner of a pirate radio station, who ejected the competing group of pirate broadcasters. [...] "
+            "Bates declared the independence of Roughs Tower and deemed it the Principality of Sealand. "
+            "In 1968, British workmen entered what Bates claimed to be his territorial waters to service a navigational buoy near the platform. "
+            "Michael Bates (son of Paddy Roy Bates) tried to scare the workmen off by firing warning shots from the fort. "
+            "As Bates was a British subject at the time, he was summoned to court in England on firearms charges following the incident. "
+            "The court ruled that the platform (which Bates was now calling Sealand) was outside British territorial limits, being beyond the three-nautical-mile (6 km) limit which then applied to the country's waters. "
+            "As a result, the case could not proceed, as it was not within British jurisdiction. [...] "
+            "In 1975, Bates introduced a constitution for Sealand, followed by a national flag, a national anthem entitled E Mare Libertas, a currency, passports, and an immigration stamp. [...] "
+            "In August 1978, Alexander Achenbach, who described himself as the Prime Minister of Sealand, hired several German and Dutch mercenaries to lead an attack on Sealand [...] "
+            "They stormed the platform and took Bates's son, Michael Bates, hostage. "
+            "Michael was able to retake Sealand and capture Achenbach and the mercenaries. "
+            "Achenbach, a German lawyer who held a Sealand passport [...] "
+            "Germany then sent a diplomat from its London embassy to Sealand to negotiate for Achenbach's release. "
+            "Roy Bates relented after several weeks of negotiations and subsequently claimed that the diplomat's visit constituted de facto recognition of Sealand by Germany. [...] "
+            "In 1987, the United Kingdom extended its territorial waters to 12 nautical miles, which put Sealand in waters internationally recognised as British. [...] "
+            "Sealand is not officially recognised by any established sovereign state.",
+            nome="Principality of Sealand")],
+    },
+    # 16 Acre: a república desfeita pelo próprio Brasil (e a lenda do cavalo)
+    {
+        "temas_secundarios": ["brasil_republica", "amazonia"],
+        "tipos_espanto": ["historia_humana", "mito_desmentido"],
+        "gancho": "Em 1899, um espanhol proclamou a República do Acre em terras bolivianas. Quem a desfez, em 1900, foi uma flotilha de guerra brasileira: o governo do Brasil ainda considerava o Acre território da Bolívia.",
+        "explicacao": (
+            "O Tratado de Ayacucho, de 1867, deixou o Acre com a Bolívia. Com a alta da borracha no fim do século "
+            "19, porém, entre 15 mil e 60 mil seringueiros e aventureiros, a maioria brasileiros, foram para lá. Em "
+            "1899, a Bolívia instalou uma alfândega em Puerto Alonso, e um advogado liderou uma revolta dos colonos. O governador do "
+            "Amazonas montou então uma expedição chefiada pelo espanhol Luis Gálvez, que tinha sido cônsul boliviano "
+            "em Belém. Em 14 de julho de 1899, Gálvez proclamou a República do Acre, com apoio discreto de "
+            "autoridades amazonenses. O governo federal pensava diferente: em 15 de março de 1900, uma flotilha de guerra "
+            "brasileira chegou a Puerto Alonso, prendeu Gálvez e dissolveu a república. Só depois de novas revoltas, "
+            "lideradas por Plácido de Castro, o Brasil incorporou o Acre, pelo Tratado de Petrópolis, de 1903, em "
+            "troca de terras, de 2 milhões de libras e de uma ferrovia. Daí a fragilidade de uma história famosa: "
+            "conta-se que o ditador boliviano Mariano Melgarejo deu ao Brasil uma enorme área em troca de um cavalo "
+            "branco, marcando o mapa com o casco do animal. O tratado de limites assinado no governo dele, porém, "
+            "foi justamente o de 1867, que deu terras ao Brasil, mas deixou o Acre com a Bolívia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Acre_War",
+                "The border between Brazil and Bolivia was delimited by the Treaty of Ayacucho. "
+                "The province of Acre, a territory about five times the size of Belgium, belonged to Bolivia. [...] "
+                "When the price of rubber rose significantly in the late 19th century, between 15,000 and 60,000 adventurers and settlers, most from Brazil, went to Acre to exploit the rubber trees. [...] "
+                "On January 2, 1899, Bolivia set up a customs office in Puerto Alonso (today Porto Acre), which upset the Brazilian settlers, who wanted to oust the Bolivian authorities. [...] "
+                "A lawyer, Dr. José de Carvalho, led a revolt against the Bolivians on April 30, 1899. [...] "
+                "To prevent their return, the governor of Amazonas, José Cardoso Ramalho Junior, organized a team to enter Acre, commanded by Spaniard Luis Gálvez Rodríguez de Arias, who served as a Bolivian consul in Belém. "
+                "Gálvez left Manaus on June 4, 1899, and came to the Bolivian town of Puerto Alonso, which had its name changed to Porto Acre, where he proclaimed the Republic of Acre on July 14, 1899, discreetly supported by willing amazonense officialdom, imposing his authority on the lands that the Treaty of Ayacucho (1867) had entrusted to Bolivia. [...] "
+                "On March 15, 1900, a Brazilian war flotilla reached Puerto Alonso, arrested Galvez, and dissolved the Republic of Acre, as the Brazilian government, based on the Treaty of Ayacucho, considered Acre as Bolivian territory. [...] "
+                "In 1902, rubber tappers made a deal with Castro. [...] "
+                "Other battles, almost all won by the forces of Plácido, occurred in Bom Destino, Santa Rosa, and other coastal cities. [...] "
+                "By said treaty Bolivia gave up Acre in exchange for Brazilian territory from the State of Mato Grosso, the payment of 2 million pounds (~ 640 million réis) and the promise to construct the Madeira-Mamoré Railroad [...] "
+                "In 1867, the \"Treaty of Peace and Friendship\", or the Ayacucho Bolivia Treaty, had yielded 164,242 square kilometers of area, which Brazil annexed to the then-province and present state of Amazonas. "
+                "The Treaty of Petrópolis is a peace treaty signed between Bolivia and Brazil in the Brazilian city of Petrópolis on November 17, 1903.",
+                nome="Acre War"),
+            wiki("Mariano_Melgarejo",
+                "Melgarejo was said to have given an immense amount of land to Brazil in exchange for what he described as a \"magnificent white horse\". "
+                "The stories say that a Brazilian minister appeared before Melgarejo with a white horse and other gifts. "
+                "To show his appreciation, Melgarejo took a map of Bolivia, marked it with the horse's hoof, and gave that land, hotly contested by indigenous Bolivians, as a gift to the Brazilian government.",
+                nome="Mariano Melgarejo"),
+            wiki("Mariano_Melgarejo",
+                "Em 1867, recebeu uma missão diplomática do Brasil, presidida por Felipe Lopes Netto, que em poucos meses de negociação assinou um Tratado de Amizade, Limites, Navegação, Comércio e Extradição em 27 de março de 1867. "
+                "Esse tratado, o primeiro assinado entre o Brasil e a Bolívia, representou um aumento de 150 mil quilômetros quadrados para o território brasileiro.",
+                nome="Mariano Melgarejo", idioma="pt"),
+        ],
+    },
+    # 17 Rivera e Livramento: a rua que é fronteira e o voo "doméstico" que pousa no Uruguai
+    {
+        "temas_secundarios": ["cidades", "brasil_republica"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Santana do Livramento (RS) e Rivera, no Uruguai, são separadas só por uma rua, sem barreira. E desde 2023 o aeroporto de Rivera é binacional: o voo que sai do Brasil pousa no Uruguai como voo doméstico.",
+        "explicacao": (
+            "As duas cidades formam, na prática, uma só área urbana, com fronteira aberta. Os moradores circulam "
+            "livremente pelos dois lados, e é fácil, nos bairros, não saber se se está no Brasil ou no Uruguai. A "
+            "livre circulação vem de 1851. Em 1943, as duas cidades ganharam a Praça Internacional, erguida como "
+            "aposta na integração e apresentada como a única praça internacional do mundo. Em "
+            "1912, Livramento inaugurou a primeira estação de trem do Brasil com tráfego internacional, ligando a "
+            "rede brasileira a Montevidéu e Buenos Aires; a linha hoje está desativada. Quem segue viagem para dentro "
+            "do outro país faz os trâmites num posto integrado das duas imigrações e alfândegas, aberto em 2016 "
+            "dentro de um shopping de Rivera. Há até um cassino numa das avenidas por onde passa a fronteira. A "
+            "novidade mais curiosa é de 2023: um acordo internacionalizou o aeroporto de Rivera. Desde agosto "
+            "daquele ano, os voos regulares para Livramento pousam ali, e os que saem do Brasil são tratados como "
+            "domésticos, mesmo descendo em território uruguaio."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Rivera,_Uruguay",
+                "The border with Brazil joins it with the Brazilian city of Santana do Livramento, which is only a block away from it [...] "
+                "In 1943, the Plaza Internacional Rivera-Livramento (see photo) was built to celebrate the Fifth Conference of the Commission Mixta for Mixed Limits and as a hope for the future integration of the two towns, claimed to be the only international square in the world. "
+                "From 1851 to this day, inhabitants of both communities are free to move in both sides. [...] "
+                "The two cities of Rivera (Uruguay) and Santana do Livramento (Brazil) maintain an open border without any physical border barriers or checkpoints. [...] "
+                "Travellers crossing the border here and proceeding further into the other country are required to complete border formalities at an integrated border control post located at Siñeriz Shopping in Rivera. "
+                "The integrated border control post housing the immigration and customs offices of both countries was inaugurated on 28 December 2016. [...] "
+                "There is also a casino, located on one of the avenues where the border between the two countries runs. [...] "
+                "On August 14, 2023 Uruguay and Brazil signed an agreement to internationalize the airport. "
+                "According to this agreement, as a binational facility, flights originated in Brazil are treated as domestic, even though the facility is in Uruguayan territory.",
+                nome="Rivera, Uruguay"),
+            wiki("Santana_do_Livramento",
+                "In 1912, the city started the first train station in Brazil with international traffic, between Santana do Livramento and Rivera, Uruguay, with trains connecting Rio de Janeiro and São Paulo to Montevideo and Buenos Aires. "
+                "Currently, the international train route is disabled. [...] "
+                "On the other side of the land divide (an urban street), is the Uruguayan city of Rivera. [...] "
+                "Inhabitants from both Livramento (Brazil) and Rivera (Uruguay) are free to move anywhere throughout the twin city community. "
+                "It is easy for one to get lost in the suburbs and not know whether they are in Brazil or Uruguay. [...] "
+                "Even though Santana do Livramento has an aerodrome, since 14 August 2023, scheduled flights to Santana do Livramento operate at Pres. Gral. Óscar D. Gestido International Airport in neighboring Rivera, Uruguay.",
+                nome="Santana do Livramento"),
+        ],
+    },
+]

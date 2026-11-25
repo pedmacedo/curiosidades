@@ -1,0 +1,152 @@
+{
+ "lote": "2026-11-25-comida_brasileira-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "comida_brasileira-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Afirmações têm apoio; mas o texto só mostra o lado que contesta, e as próprias fontes registram o outro (consenso de mistura de tradições; feijão e porco alimentavam os escravizados).",
+    "correcao": "1) Depois de 'Vários estudiosos questionam essa origem e veem no prato mais uma construção europeia ampliada no Brasil do que uma contribuição africana.', inserir: 'A questão não está fechada: outros historiadores veem a feijoada brasileira como fruto da mistura de tradições portuguesas, africanas e indígenas no período colonial, e é certo que feijão e partes do porco alimentavam os escravizados.' 2) Trocar 'Ensopados de carne cozidos em panela de barro existem por toda a Europa, como o cozido português, e as feijoadas de Portugal já misturavam' por 'As feijoadas de Portugal já misturavam'. 3) Acrescentar ao trecho da en.wiki: 'During slavery, it combined Portuguese, African, and indigenous culinary traditions, according to historical consensus from the University of Sao Paulo (2015).' e ao da Southern Cultures: 'Pig parts and Brazilian beans undoubtedly provided sustenance for the enslaved.' Manter consenso_parcial."
+   },
+   {
+    "id": "comida_brasileira-0002",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: a origem do nome brigadeiro é trivia muito repetida; a parte nova (o 'negrinho' gaúcho) se apoia só nas memórias de um político, sem confirmação."
+   },
+   {
+    "id": "comida_brasileira-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Mochi donut, Pão de queijo e fontes japonesas (pon de ring nomeado a partir do pão de queijo; polvilho sem fermento)."
+   },
+   {
+    "id": "comida_brasileira-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A lista de fraudes de 2009 era do Better Business Bureau, não da FTC (e o 1º lugar não se confirma); os 80 milhões conferem; a dieta 'até 42%' é de um único estudo; nota 3.",
+    "correcao": "1) Trocar 'e até hoje é a planta mais importante da dieta de populações tradicionais: num estudo com três comunidades caboclas, ele somava até 42% de tudo o que se comia, em peso.' por 'e num estudo com três comunidades caboclas foi descrito como a planta mais importante da dieta, somando até 42% de tudo o que se comia, em peso.' 2) Trocar 'e as promessas exageradas atraíram golpistas: em 2009, os golpes com açaí lideraram a lista de fraudes da Comissão Federal de Comércio americana, que em 2012 impôs uma condenação de 80 milhões de dólares a cinco empresas que prometiam emagrecimento.' por 'e as promessas exageradas atraíram golpistas: em 2012, a Comissão Federal de Comércio americana obteve uma sentença de 80 milhões de dólares contra cinco empresas que vendiam cápsulas de açaí prometendo emagrecimento e prevenção de câncer de cólon.' 3) Retirar do trecho a frase do 'No. 1'."
+   },
+   {
+    "id": "comida_brasileira-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com o CDC; mas o mecanismo de contaminação é suposição ('believed'), e faltam as limitações declaradas pelos autores.",
+    "correcao": "1) No gancho, trocar 'o suspeito era o açaí, contaminado por barbeiros na hora de fazer a polpa.' por 'o suspeito era o açaí, provavelmente contaminado por barbeiros.' 2) Antes de 'Nenhum barbeiro foi achado nos locais vistoriados', inserir: 'Os próprios autores apontam limites: pode ter havido viés de memória, pela demora entre a doença e a investigação, e nenhuma amostra do alimento foi coletada para teste.' 3) Retirar 'Os investigadores compararam quem adoeceu com quem não adoeceu.' 4) No trecho, antes de '[...] Studies are needed', incluir: 'Limitations of this study are possible recall bias caused by delay between illness and investigation and failure to collect food samples for testing.' Manter consenso_parcial."
+   },
+   {
+    "id": "comida_brasileira-0006",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "fonte_fraca: a origem japonesa do pastel e o disfarce de chineses só aparecem como lenda e 'folclore', sem referências que funcionem; só matérias de 'você sabia'."
+   },
+   {
+    "id": "comida_brasileira-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "História central confere; mas '475 lojas' é dado velho, Saraiva era dono de padaria (estudante de medicina), e a fonte fala da comida árabe em geral, não da esfiha.",
+    "correcao": "1) No gancho e na explicação, trocar 'padeiro nascido em Portugal' por 'dono de padaria nascido em Portugal'. 2) Trocar 'A rede cresceu, passou de 475 lojas e ficou conhecida pelos preços muito baixos.' por 'A rede cresceu depressa e ficou conhecida pelos preços muito baixos.' 3) Trocar 'Era popular, mas pouco acessível e costumava ser cara.' por 'A comida árabe era popular, mas pouco acessível e costumava ser cara.'"
+   },
+   {
+    "id": "comida_brasileira-0008",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "mito: a ideia de que os conventos usavam claras para engomar hábitos e por isso criaram os doces de gema é contestada como 'mito construído' (tese de Coimbra, 2023); o verbete do quindim não tem referências."
+   },
+   {
+    "id": "comida_brasileira-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Brazil nut (abelhas grandes de floresta intacta, cutias, Bolívia com 54% do valor exportado)."
+   },
+   {
+    "id": "comida_brasileira-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com o artigo de 2023 (domesticação do cupuí há 5.000–8.000 anos) e com IPS e Migalhas (marca cancelada no Japão em 2004)."
+   },
+   {
+    "id": "comida_brasileira-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere (Ponto Chic, lei municipal de Bauru); mas o ano de 1934 é contestado (1936, 1937, anos 20); nota 3.",
+    "correcao": "No gancho, trocar 'foi pedido em 1934, num restaurante de São Paulo,' por 'foi pedido num restaurante de São Paulo'. Na explicação, trocar 'Em 1934, Casemiro Pinto Neto estudava' por 'Casemiro Pinto Neto estudava'."
+   },
+   {
+    "id": "comida_brasileira-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere e não repete povos_indigenas-0006; mas 'nativa do Norte e do Nordeste' contradiz outro fato do acervo (domesticação no centro-oeste); nota 3.",
+    "correcao": "Trocar 'planta nativa do Norte e do Nordeste do Brasil que hoje cresce também' por 'planta nativa do Brasil que hoje cresce também'."
+   },
+   {
+    "id": "comida_brasileira-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas a expulsão dos jesuítas dos domínios espanhóis foi em 1767, não 'nos anos 1770'.",
+    "correcao": "No gancho, trocar 'Com a expulsão deles, nos anos 1770,' por 'Com a expulsão deles, no século XVIII,'. Na explicação, trocar 'Com a expulsão da ordem, nos anos 1770,' por 'Com a expulsão da ordem, no século XVIII,'."
+   },
+   {
+    "id": "comida_brasileira-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Caryocar brasiliense (polinização por morcegos, espinhos); nota 3."
+   },
+   {
+    "id": "comida_brasileira-0015",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "duplicado: repete palavras_viajantes-0003 (Thevet, tupinambás, 'nanas', mesma fonte); o que sobra é dado solto e conhecido."
+   }
+  ],
+  "2": [
+   {
+    "id": "comida_brasileira-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: os dois lados do debate da feijoada."
+   },
+   {
+    "id": "comida_brasileira-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas; retoque: as comunidades caboclas são da Amazônia, não necessariamente da foz.",
+    "correcao": "'três comunidades caboclas estudadas' virou 'três comunidades caboclas da Amazônia'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "comida_brasileira-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'provavelmente contaminado'; limites dos autores."
+   },
+   {
+    "id": "comida_brasileira-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: 'dono de padaria'; sem 475 lojas."
+   },
+   {
+    "id": "comida_brasileira-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: sem 1934."
+   },
+   {
+    "id": "comida_brasileira-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correção aplicada; retoques: 'dessas regiões' ficou sem referente, e boba é nome do Leste Asiático.",
+    "correcao": "'dessas regiões brasileiras' virou 'do Norte e do Nordeste do Brasil'; 'Na Ásia' virou 'No Leste Asiático'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "comida_brasileira-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'no século XVIII'."
+   }
+  ]
+ }
+}

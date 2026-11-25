@@ -1,0 +1,155 @@
+{
+ "lote": "2026-11-25-personagens_esquecidos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "personagens_esquecidos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Clair Patterson (4,55 bilhões de anos, sala limpa, gelo polar, 700 a 1.200 vezes, proibição de 1996); complementa atmosfera-0001."
+   },
+   {
+    "id": "personagens_esquecidos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Parte histórica confere; mas as '14 vacinas de rotina' são a contagem de meados dos anos 2000, e o presente deixa o gancho datado.",
+    "correcao": "No gancho, trocar 'Das 14 vacinas de rotina do calendário dos EUA, oito saíram' por 'Das 14 vacinas de rotina do calendário americano dos anos 2000, oito saíram'. Na explicação, trocar 'Das 14 vacinas recomendadas de rotina no calendário americano, a equipe dele criou oito' por 'Das 14 vacinas recomendadas de rotina no calendário americano na época da morte dele, a equipe dele criou oito'."
+   },
+   {
+    "id": "personagens_esquecidos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Benjamin Jesty (1774, 22 anos antes de Jenner, hostilidade dos vizinhos; precedente de 1769 citado)."
+   },
+   {
+    "id": "personagens_esquecidos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Nicholas Winton (669 crianças, último trem, álbum de 1988, That's Life!); popularizado pelo filme de 2023, nota 3."
+   },
+   {
+    "id": "personagens_esquecidos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Aristides de Sousa Mendes (Circular 14, punição, morte na pobreza, Salazar levou o crédito; consulados no Brasil)."
+   },
+   {
+    "id": "personagens_esquecidos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas 'avaliado mais de 2 mil delas' de um conjunto de 640 é erro lógico, e o crédito exclusivo de 'primeira cobaia' é contestado (ela e colegas se ofereceram).",
+    "correcao": "Na explicação, trocar 'reuniu 640 receitas, e até 1971 a equipe tinha avaliado mais de 2 mil delas e preparado 380 extratos de ervas' por 'reuniu 640 receitas num caderno, e até 1971 a equipe tinha avaliado mais de 2 mil receitas tradicionais e preparado 380 extratos de ervas'. No gancho, trocar 'e ela foi a primeira pessoa a testar o remédio em si mesma' por 'e ela se ofereceu como cobaia antes dos testes em pacientes'. Na explicação, trocar 'Tu se ofereceu como primeira cobaia humana' por 'Tu se ofereceu como cobaia humana antes dos testes com pacientes'."
+   },
+   {
+    "id": "personagens_esquecidos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere (inclusive o 'primeiro'); mas 'vice-governador' passa ideia errada do cargo, e 'a maior associação' não está na fonte.",
+    "correcao": "Na explicação, trocar 'passaram pelo corpo do vice-governador' por 'passaram pelo corpo do governador da província de Bengala'. No gancho, trocar 'o corpo de um governador' por 'o corpo do governador de Bengala'. Trocar 'pelo IEEE, a maior associação de engenheiros eletricistas, o primeiro desses na Índia' por 'pelo IEEE, a associação internacional de engenheiros eletricistas e eletrônicos, o primeiro reconhecimento desse tipo a uma descoberta feita na Índia'."
+   },
+   {
+    "id": "personagens_esquecidos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O disfarce e o capuz se sustentam; mas o próprio Carnegie Hero Fund diz que Morgan foi indicado e recusado porque o capuz reduzia o risco, sem prova de motivo racial; chegou descalço, não de pijama; e entrou com outros dois voluntários.",
+    "correcao": "1) Gancho: 'Garrett Morgan, inventor negro, vendia seu capuz antifumaça disfarçado de \"Big Chief Mason\", um falso chefe indígena. Em 1916, usou o capuz para tirar operários de um túnel cheio de gás sob o lago Erie.' 2) Trocar 'Morgan chegou com o irmão Frank, ainda de pijama, trazendo quatro capuzes' por 'Morgan chegou às pressas com o irmão Frank, trazendo quatro capuzes'. 3) Trocar 'os dois entraram e voltaram carregando homens nas costas; depois outros os seguiram' por 'os dois entraram com outros dois voluntários e ajudaram a tirar sobreviventes; depois outros os seguiram'. 4) Trocar 'A prefeitura pediu medalhas para outros participantes e o excluiu, o que ele atribuiu ao racismo.' por 'Morgan não recebeu a medalha de heroísmo do Carnegie Hero Fund e atribuiu isso ao racismo. Revendo seus arquivos, o fundo diz que ele foi indicado e recusado porque o capuz reduzia o risco que corria, e que não há prova de motivo racial.' 5) Fonte nova: https://www.carnegiehero.org/behind-the-scenes-shedding-light-on-the-complicated-case-of-black-inventor-garrett-morgan/ com trechos literais. 6) confianca 'consenso_parcial'."
+   },
+   {
+    "id": "personagens_esquecidos-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas a lei alemã de 1932 mirava servidoras casadas, não todas as mulheres casadas.",
+    "correcao": "Trocar 'Uma lei alemã de 1932 obrigava mulheres casadas a deixar o emprego; ela escapou por trabalhar como \"colaboradora não remunerada\".' por 'Uma lei alemã de 1932 pressionava mulheres casadas a deixar seus cargos; ela seguiu trabalhando graças ao status de \"colaboradora não remunerada\".'"
+   },
+   {
+    "id": "personagens_esquecidos-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere e desmente bem o mito; mas a saída 'em protesto' em 1942 é disputada (pode ter sido em abril de 1941, antes da regra).",
+    "correcao": "No gancho, trocar 'e saiu da Cruz Vermelha por separarem o sangue de doadores negros' por 'e criticou a separação do sangue de doadores negros'. Na explicação, trocar 'Drew protestou contra a regra, que não tinha base científica, e pediu demissão em 1942.' por 'Drew criticou a regra, que não tinha base científica, e deixou o cargo. A saída costuma ser contada como protesto, mas as fontes divergem sobre a data: abril de 1941 ou 1942.' Fonte nova: https://www.nationalww2museum.org/war/articles/medical-innovations-blood-banking com o trecho 'made his decision in April 1941, resigning from his post with the National Blood Bank, but making no public statement about it at the time'."
+   },
+   {
+    "id": "personagens_esquecidos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Nettie Stevens (1905, McClung refutado, nota de rodapé de Wilson, crédito a Morgan)."
+   },
+   {
+    "id": "personagens_esquecidos-0012",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "exagero: ésteres etílicos do óleo de chaulmugra já tinham sido produzidos e lançados para uso parenteral pela Bayer em 1906–1907 (Antileprol), então Alice Ball não 'tornou injetável' o óleo; 'se misturam à água' também não tem apoio; e é o 5º fato do lote com o mesmo roteiro."
+   },
+   {
+    "id": "personagens_esquecidos-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas 'a primeira a ver um embrião humano feito em laboratório se dividindo' é falso no absoluto (Menkin e Rock, 1944); a primazia é sobre o embrião de Louise Brown.",
+    "correcao": "1) Gancho: 'A enfermeira Jean Purdy foi a primeira a ver se dividir o embrião que viraria Louise Brown, o primeiro bebê de proveta. Em 1980, uma placa sobre a fertilização in vitro omitiu o nome dela, apesar dos protestos de Robert Edwards.' 2) Trocar 'Purdy foi a primeira a ver um óvulo fecundado se dividindo e,' por 'Purdy foi a primeira a ver se dividir o óvulo fecundado que daria origem a Louise Brown e,'."
+   },
+   {
+    "id": "personagens_esquecidos-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Equilibrado; mas o empréstimo foi para a vidraria, e 'o primeiro laboratório de cultura de células da França' é duvidoso (o Pasteur já cultivava células nos anos 1950); nota 3.",
+    "correcao": "1) Gancho: 'Com poucos recursos e pagando a vidraria com um empréstimo pessoal, a médica Marthe Gautier montou um laboratório de cultura de células e viu, em 1958, o cromossomo a mais da síndrome de Down. A autoria ainda é disputada.' 2) Trocar 'montou o primeiro laboratório de cultura de células in vitro do país' por 'montou do zero um laboratório de cultura de células in vitro'."
+   },
+   {
+    "id": "personagens_esquecidos-0015",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "exagero: a melhoria de filamentos 'para Edison' não tem apoio (para Edison ele foi desenhista e perito em patentes), os desenhos da patente do telefone vêm só das lembranças dele (sem prova nos arquivos, segundo o Edison Papers), e o 'primeiro livro' era revisão de um livro de 1881."
+   }
+  ],
+  "2": [
+   {
+    "id": "personagens_esquecidos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 14 vacinas na época da morte (2005)."
+   },
+   {
+    "id": "personagens_esquecidos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 2 mil receitas; cobaia antes dos testes em pacientes."
+   },
+   {
+    "id": "personagens_esquecidos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: governador de Bengala; IEEE."
+   },
+   {
+    "id": "personagens_esquecidos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: versão do Carnegie Hero Fund; consenso_parcial."
+   },
+   {
+    "id": "personagens_esquecidos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: lei de 1932 'pressionava'."
+   },
+   {
+    "id": "personagens_esquecidos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: criticou a separação; datas divergentes."
+   },
+   {
+    "id": "personagens_esquecidos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: primazia sobre o embrião de Louise Brown."
+   },
+   {
+    "id": "personagens_esquecidos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: empréstimo para a vidraria; 'montou do zero'."
+   }
+  ]
+ }
+}

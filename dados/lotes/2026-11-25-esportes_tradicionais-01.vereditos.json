@@ -1,0 +1,165 @@
+{
+ "lote": "2026-11-25-esportes_tradicionais-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "esportes_tradicionais-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a fonte diz que as partidas tradicionais 'às vezes' eram grandes acontecimentos.",
+    "correcao": "Trocar 'As partidas tradicionais eram grandes acontecimentos, que podiam durar vários dias.' por 'Algumas partidas tradicionais eram grandes acontecimentos, que podiam durar vários dias.'"
+   },
+   {
+    "id": "esportes_tradicionais-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Datas conferem (passaportes desde os anos 1920, viagem de 1985, ILF 1988, Manchester 2010, bronze 2018)."
+   },
+   {
+    "id": "esportes_tradicionais-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas há três formas de ulama (só a de quadril usa a bola de 3 a 4 kg), 'maciça' não está na fonte, e quem marca ponto é o adversário.",
+    "correcao": "Gancho: trocar 'uma bola maciça de borracha de 3 a 4 kg só pode ser rebatida com o quadril.' por 'na versão mais tradicional, uma bola de borracha de 3 a 4 kg só pode ser rebatida com o quadril.' Explicação: trocar 'Na versão de quadril, cada time tem' por 'Das três formas atuais (de quadril, de antebraço e com taco), a mais tradicional é a de quadril: cada time tem'; e trocar 'perde ponto o time que a deixa sair, que a toca com outra parte do corpo ou até que se esquece de anunciar o placar' por 'o adversário marca ponto quando um time deixa a bola sair, a toca com outra parte do corpo ou até quando se esquece de anunciar o próprio placar'."
+   },
+   {
+    "id": "esportes_tradicionais-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com o ISA e a Revista Historiar (jogo só acaba quando as duas equipes vencem; partida nas Laranjeiras em 26/11/1922)."
+   },
+   {
+    "id": "esportes_tradicionais-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A matéria é anterior aos Jogos, e há relato de medalhas de cores distintas aos campeões; o gancho precisa dizer que era a regra anunciada; nota 3.",
+    "correcao": "Gancho: trocar 'O regulamento previa o mesmo prêmio para os quatro melhores de cada prova.' por 'As regras anunciadas antes do evento previam o mesmo prêmio para os quatro melhores de cada prova.' Explicação: trocar 'mas, em vez de medalhas de valores diferentes para os três primeiros, os quatro melhores receberiam o mesmo prêmio.' por 'mas, segundo o que a organização anunciou dias antes da abertura, em vez de medalhas de valores diferentes para os três primeiros, os quatro melhores receberiam o mesmo prêmio.'"
+   },
+   {
+    "id": "esportes_tradicionais-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e etnias conferem com o ISA; mas o par de toras krahô é feito quando a disputa começa fora da aldeia, não 'a cada disputa'.",
+    "correcao": "Trocar 'é feito com cuidado a cada disputa' por 'é feito com cuidado sempre que a disputa começa fora da aldeia'."
+   },
+   {
+    "id": "esportes_tradicionais-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com as Wikipedias alemã e inglesa (Karlhans Krohn em Copacabana, 1936; indiaca; Antuérpia 1920)."
+   },
+   {
+    "id": "esportes_tradicionais-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Calcio Fiorentino (partida de 17/2/1530 no cerco, reorganização em 1930, regras atuais)."
+   },
+   {
+    "id": "esportes_tradicionais-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Buzkashi (origem túrquica, proibição pelo Talibã, kok-boru com ressalva); nota 3."
+   },
+   {
+    "id": "esportes_tradicionais-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Kabaddi (o 'cant' prova o fôlego único; opinião de Alter atribuída)."
+   },
+   {
+    "id": "esportes_tradicionais-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Etimologia e episódio dos Anais Malaios conferem; mas em 1960 a Malásia ainda não existia (era a Malaia).",
+    "correcao": "Trocar 'quando dirigentes da Malásia, de Singapura, da Tailândia e de Mianmar padronizaram as regras' por 'quando dirigentes da Malaia (atual Malásia), de Singapura, da Tailândia e de Mianmar padronizaram as regras'."
+   },
+   {
+    "id": "esportes_tradicionais-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com GAA e Douglas Hyde (Regra 27 de 1901 a 1971; Hyde removido de patrono em 1938)."
+   },
+   {
+    "id": "esportes_tradicionais-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Caber toss (pontuação pelo relógio, 12 horas; distância não conta)."
+   },
+   {
+    "id": "esportes_tradicionais-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Origem inventada bem atribuída; mas o recorde de 66 m é contestado por relatos maiores, e os 500 g valem só para júnior e média.",
+    "correcao": "Trocar 'Hoje há regras: o haggis esportivo padrão pesa 500 gramas' por 'Hoje há regras: nas categorias júnior e média, o haggis esportivo pesa 500 gramas'. Trocar 'O recorde mundial, de 66 metros, foi registrado em 2011' por 'O recorde mais citado, de 66 metros, foi registrado em 2011, embora haja relatos de arremessos mais longos'."
+   },
+   {
+    "id": "esportes_tradicionais-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere, sem instrução perigosa; mas 'só o futebol move uma indústria maior' é afirmação vaga e contradita pela própria fonte.",
+    "correcao": "Remover a frase 'No país, só o futebol move uma indústria maior.'"
+   },
+   {
+    "id": "esportes_tradicionais-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas o gancho sugere sumô feminino desde 1914, e a fonte não fala em discurso da prefeita.",
+    "correcao": "No gancho, trocar 'Já o Brasil, com torneios desde 1914, é um centro do sumô feminino.' por 'Já o Brasil, onde há sumô desde 1914, é um centro do sumô feminino.' Na explicação, trocar 'a prefeita de Takarazuka teve de discursar ao lado do ringue, e não dentro dele' por 'a prefeita de Takarazuka teve de ficar ao lado do ringue, e não dentro dele, numa exibição'."
+   }
+  ],
+  "2": [
+   {
+    "id": "esportes_tradicionais-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'Algumas partidas'."
+   },
+   {
+    "id": "esportes_tradicionais-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: a fonte diz 'most widespread', não 'mais tradicional'.",
+    "correcao": "'mais tradicional' virou 'mais difundida' no gancho e na explicação.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "esportes_tradicionais-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: regras anunciadas antes do evento."
+   },
+   {
+    "id": "esportes_tradicionais-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: toras krahô fora da aldeia."
+   },
+   {
+    "id": "esportes_tradicionais-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Malaia (atual Malásia)."
+   },
+   {
+    "id": "esportes_tradicionais-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 500 g só júnior e média; recorde com ressalva."
+   },
+   {
+    "id": "esportes_tradicionais-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase da indústria removida; retoques: 'popular' sem 'muito'; as mechas ficam no aro de metal.",
+    "correcao": "'muito popular' virou 'popular'; 'na borda do alvo' virou 'na borda do aro de metal que serve de alvo, no meio da argila'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "esportes_tradicionais-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sumô desde 1914; prefeita ao lado do ringue."
+   }
+  ]
+ }
+}
