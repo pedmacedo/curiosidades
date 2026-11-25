@@ -9,7 +9,7 @@
 >
 > **Produção em paralelo (desde 2026-11-18, ideia do Pedro):** o orquestrador (a sessão principal) lança 4 subagentes produtores, um por tema da fila, com as regras de `pipeline/instrucoes_produtor.md`. Cada produtor só escreve, baixa (`pipeline/baixar_fontes.py`), monta e checa o seu lote, e depois faz o r2 com os vereditos. A verificação continua com o subagente `verificador` independente, de 4 a 5 fatos por chamada, e quem grava vereditos, aplica e mexe no PROGRESSO é só o orquestrador, um lote por vez, para não haver escrita simultânea em `dados/fatos`. Duplicatas entre lotes paralelos: o orquestrador mantém um e descarta o outro como `duplicado`.
 >
-> **Onde parou (2026-11-24):** 23 levas paralelas fechadas (96 temas, mais o lote de IA). A 23ª leva fez Desenvolvimento humano, Paleontologia, Exploração espacial, Elementos químicos e Padrões e fractais, sem nenhum lote pela metade. Próximos da fila do `situacao.py`: Medidas e padrões, Europa medieval...
+> **Onde parou (2026-11-24):** 24 levas paralelas fechadas (101 temas, mais o lote de IA). A 24ª leva fez Medidas e padrões, Europa medieval, Espionagem, Cultura popular brasileira e Gramáticas surpreendentes, sem nenhum lote pela metade. Dois fatos de Europa medieval (DNA da bactéria da peste) foram descartados por precaução porque as salvaguardas do modelo barraram a verificação; os produtores agora evitam genômica de patógenos. A 25ª leva (Teatro e dança, Cidades, História dos pratos, Aprendizagem e inteligência, Cartas, dados e azar) está em andamento.
 >
 > **Para retomar:** rode `python pipeline/situacao.py`. Ele mostra o lote pela metade (e o próximo passo), se é hora de amostra de revisão humana e os próximos temas da fila. Siga o "Fluxo de um lote" (seção da Fase 2) e, ao fim de cada tema, atualize a tabela da Fase 4 e as estatísticas.
 
@@ -152,6 +152,11 @@
 | Exploração espacial | 2026-11-24-exploracao_espacial-01 | 16 | 16 | 0 | 23ª leva paralela. Rodada 1: 10 aprovados, 6 ajustar. Destaques: o radar da Apollo 11 roubava ciclos do computador, não gerava interrupções; o erro de 4% explica a queda do Skylab em terra, e a área quase desabitada foi sorte; a história dos Beatles no Disco de Ouro é contestada e saiu; o VLS-1 foi o maior acidente do programa espacial brasileiro (o ranking mundial era frágil); o "98%" sobre o Snoopy é da equipe de Nick Howes, não da Royal Astronomical Society, e só o estágio de subida foi para a órbita solar. Os 6 aprovados na 2ª (2 com ajuste pontual) |
 | Paleontologia | 2026-11-24-paleontologia-01 | 16 | 16 | 0 | 23ª leva paralela. Rodada 1: 9 aprovados, 7 ajustar. Destaques: Leidy já tinha notado o Elasmosaurus de cabeça na cauda, e o desafio do cérebro de Cope é a versão mais contada; Stromer descreveu o Spinosaurus, quem o achou foi Markgraf; a fama de "fóssil vivo" do celacanto é discutida, não desmentida; a lente dupla dos trilobitas é interpretação com debate; a saída do Ubirajara em 2006 não está confirmada; a frase de Holtz sobre Schweitzer era elogio. Os 7 aprovados na 2ª |
 | Desenvolvimento humano | 2026-11-24-desenvolvimento_humano-01 | 15 | 14 | 1 | 23ª leva paralela. Rodada 1: 4 aprovados, 10 ajustar, 1 reprovado (o problema de Molyneux duplicava consciencia-0015). Destaques: o crescimento aos saltos vem de um só estudo contestado (consenso_parcial); a ligação entre o cérebro faminto e o crescimento lento aos 5 anos é debatida (carta de Skoyles); o "cérebro pronto aos 25" nasceu de um palpite de Jay Giedd à Time; a poda pelo complemento foi vista em camundongos e o C4 eleva pouco o risco de esquizofrenia; o original de Robinson (1891) fala em mais de 60 bebês num dedo ou bastão, não numa barra. Os 10 aprovados na 2ª (2 com ajuste pontual) |
+| Espionagem | 2026-11-24-espionagem-01 | 15 | 15 | 0 | 24ª leva paralela. Rodada 1: 6 aprovados, 9 ajustar. Destaques: a CIA abriu uma produtora de fachada, não um estúdio, na operação Argo; o código quebrado da Mata Hari e o bode expiatório são argumentos distintos; Townsend, da rede Culper, foi identificado por volta de 1930 (as fontes variam); a Wikipedia ligava sem razão a queda da rede de Becker ao rompimento de Argentina, Bolívia e Chile com o Eixo; a estimativa de 10 a 25 mísseis soviéticos é de setembro de 1961, não de um mês após o Corona; o papel de Julia Child no repelente de tubarão é incerto; a 'data exata' de Sorge é posição de Prange (consenso_parcial). Os 9 aprovados na 2ª (1 com ajuste pontual). |
+| Europa medieval | 2026-11-24-europa_medieval-01 | 13 | 11 | 2 | 24ª leva paralela. Rodada 1: 4 aprovados, 7 ajustar, 2 reprovados (os dois fatos sobre o DNA da bactéria da peste foram descartados por precaução: a verificação deles foi barrada pelas salvaguardas do modelo, sem conclusão sobre o conteúdo). Destaques: os '68 anos' do Estatuto dos Trabalhadores eram erro de digitalização da fonte (o original diz 60); em 536 houve uma nova erupção em 539–540, e a peste acompanhou a época sem ser consequência comprovada do clima; Frederico II duvidou dos gansos-cracas, não os desmentiu; o '64 anos' do homem medieval de 21 anos valia só para nobres do século XIII; a donzela de ferro surge no fim do século XVIII. Os 7 aprovados na 2ª (2 com ajuste pontual). |
+| Cultura popular brasileira | 2026-11-24-cultura_popular-01 | 13 | 12 | 1 | 24ª leva paralela (tema novo). Rodada 1: 2 aprovados, 10 ajustar, 1 reprovado (a origem francesa do 'anarriê' da quadrilha é batida e a fonte era fraca). Destaques: a lista de marcas que viram vermelho em Parintins vinha de texto promocional (ficou a Azul, confirmada pela CNN Brasil); o Círio só fixou o segundo domingo de outubro em 1901; o fogo-fátuo é explicação proposta, não certeza; a sombrinha do frevo como arma é a versão mais contada, não fato fechado; a data em que 'cordel' virou nome geral é discutida; a Cuca de jacaré foi obra de Lobato, ilustradores e TV. Os 10 aprovados na 2ª (2 com ajuste pontual). |
+| Gramáticas surpreendentes | 2026-11-24-estruturas_linguisticas-01 | 15 | 15 | 0 | 24ª leva paralela. Rodada 1: 4 aprovados, 11 ajustar. Destaques: a 'pureza' do sistema de pontos cardeais do guugu yimithirr é discutida; o exemplo da 'ponte' feminina e masculina é o próprio estudo de Boroditsky de 2003, nunca publicado na íntegra e não replicado; a frase de Whorf sobre o tempo hopi é de 1936; a ideia de que Homero não via o azul não é 'mito desmentido', e o gancho passou a Geiger; 'ao' é palavra japonesa nativa, só o caractere é chinês; o hindi padrão não tem 'nós' inclusivo; no estudo de 2015 com Keith Chen, a correlação entre futuro gramatical e poupança deixou de ser significativa nos testes mais rigorosos. Os 11 aprovados na 2ª (1 com ajuste pontual). |
+| Medidas e padrões | 2026-11-24-medidas_padroes-01 | 14 | 14 | 0 | 24ª leva paralela. Rodada 1: 5 aprovados, 9 ajustar. Destaques: a campanha de 2014 não confirmou que o Grand K seguisse se afastando das cópias, e a suspeita de contaminação por mercúrio entrou no texto; o dia aumentou cerca de 1,72 ms por século nos registros de eclipses (não 2,3), porque a crosta ainda se recupera das geleiras; foram Mersenne e outros que notaram a falha do pêndulo, não Huygens; a candela herdou o valor da 'nova vela' de 1937; o fato do incêndio de 1834 passou a focar nos padrões perdidos, já que Europa medieval ficou com as varetas; as ferrovias americanas quiseram evitar que o governo impusesse um sistema, não 'uma lei'. Os 9 aprovados na 2ª (4 com ajuste pontual). |
 
 ## Fase 2: piloto (2026-11-17)
 
@@ -379,20 +384,25 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-24):
 | 2026-11-24-biomas_brasileiros-01 | biomas_brasileiros | 13 | 13 | 0 | 0% | 5/8/0 | — | 3.8 |
 | 2026-11-24-cinema_fotografia-01 | cinema_fotografia | 16 | 16 | 0 | 0% | 5/11/0 | — | 3.9 |
 | 2026-11-24-contabilidade_brasileira-01 | contabilidade_brasileira | 15 | 11 | 4 | 27% | 5/6/4 | reprovado_verificador 2, pouco_interessante 2 | 3.7 |
+| 2026-11-24-cultura_popular-01 | cultura_popular | 13 | 12 | 1 | 8% | 2/10/1 | pouco_interessante 1 | 3.5 |
 | 2026-11-24-desenvolvimento_humano-01 | desenvolvimento_humano | 15 | 14 | 1 | 7% | 4/10/1 | duplicado 1 | 3.9 |
 | 2026-11-24-elementos_quimicos-01 | elementos_quimicos | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.8 |
+| 2026-11-24-espionagem-01 | espionagem | 15 | 15 | 0 | 0% | 6/9/0 | — | 3.9 |
+| 2026-11-24-estruturas_linguisticas-01 | estruturas_linguisticas | 15 | 15 | 0 | 0% | 4/11/0 | — | 4.0 |
+| 2026-11-24-europa_medieval-01 | europa_medieval | 13 | 11 | 2 | 15% | 4/7/2 | reprovado_verificador 2 | 3.8 |
 | 2026-11-24-experimentos_psicologia-01 | experimentos_psicologia | 14 | 14 | 0 | 0% | 3/11/0 | — | 4.2 |
 | 2026-11-24-exploracao_espacial-01 | exploracao_espacial | 16 | 16 | 0 | 0% | 10/6/0 | — | 3.8 |
 | 2026-11-24-genetica-01 | genetica | 15 | 15 | 0 | 0% | 8/7/0 | — | 3.9 |
 | 2026-11-24-gravidez-01 | gravidez | 14 | 14 | 0 | 0% | 7/7/0 | — | 4.0 |
 | 2026-11-24-linguas_mundo-01 | linguas_mundo | 16 | 16 | 0 | 0% | 8/8/0 | — | 3.9 |
+| 2026-11-24-medidas_padroes-01 | medidas_padroes | 14 | 14 | 0 | 0% | 5/9/0 | — | 3.7 |
 | 2026-11-24-moda-01 | moda | 14 | 12 | 2 | 14% | 7/5/2 | pouco_interessante 1, mito 1 | 3.8 |
 | 2026-11-24-padroes_fractais-01 | padroes_fractais | 15 | 15 | 0 | 0% | 8/7/0 | — | 4.0 |
 | 2026-11-24-paleontologia-01 | paleontologia | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.9 |
 | 2026-11-24-videogames-01 | videogames | 18 | 16 | 2 | 11% | 6/10/2 | pouco_interessante 2 | 3.9 |
-| **Total** | | 1683 | 1632 | 51 | 3% | | | |
+| **Total** | | 1753 | 1699 | 54 | 3% | | | |
 
-Cobertura: 120 de 163 temas com pelo menos um fato aprovado.
+Cobertura: 125 de 163 temas com pelo menos um fato aprovado.
 
 ## Revisões humanas
 

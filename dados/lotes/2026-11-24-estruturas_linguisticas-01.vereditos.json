@@ -1,0 +1,178 @@
+{
+ "lote": "2026-11-24-estruturas_linguisticas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "estruturas_linguisticas-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fontes confirmam Hope Vale, o sistema de pontos cardeais e Levinson, mas o gancho é absoluto demais: a própria fonte diz que a 'pureza' do sistema é discutida, e Haviland (1998) diz que o vocabulário distingue mão esquerda e direita.",
+    "correcao": "No gancho, trocar 'nada fica \"à esquerda\" ou \"na frente\" de nada: tudo é situado por norte, sul, leste e oeste.' por 'as posições são dadas por norte, sul, leste e oeste, e não por \"esquerda\" ou \"na frente\".' O gancho completo fica: 'Em guugu yimithirr, língua aborígene da Austrália, as posições são dadas por norte, sul, leste e oeste, e não por \"esquerda\" ou \"na frente\". E os falantes teriam um senso de direção fora do comum.' Manter confianca consenso_parcial."
+   },
+   {
+    "id": "estruturas_linguisticas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com o resumo de Boroditsky e Gaby (2010), os quatro casos e os números de falantes; a explicação não vai além do resumo. Distinto do 0001 (tempo, não espaço)."
+   },
+   {
+    "id": "estruturas_linguisticas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Fiel à Wikipedia (qhipa uru, gestos para trás) e aos resumos de Núñez e Sweetser (2006) e Núñez et al. (2012, yupno, futuro morro acima). Sem contestação séria."
+   },
+   {
+    "id": "estruturas_linguisticas-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Cinco marcas do tuyuca, um quarto das línguas (Aikhenvald), geldi/gelmiş, Boas em 1911 e o 'teria' do português conferem. Exagero: a fonte não sustenta que o quíchua e o aimará 'exigem' a marca.",
+    "correcao": "Na explicação, trocar 'O quíchua e o aimará, nos Andes, também exigem a marca.' por 'O quíchua e o aimará, nos Andes, também marcam na gramática a fonte da informação.'"
+   },
+   {
+    "id": "estruturas_linguisticas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Classes do dyirbal fiéis a Dixon (classe II: mulheres, água, fogo, violência e animais excepcionais); Lakoff 1987, Rosch e os números de falantes conferem."
+   },
+   {
+    "id": "estruturas_linguisticas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada afirmação tem apoio em Dyirbal_language e Avoidance_speech (parentes proibidos, mesma gramática com outro léxico, quatro palavras em comum, fim do tabu por volta de 1930); tempo verbal no passado, coerente com a língua quase extinta."
+   },
+   {
+    "id": "estruturas_linguisticas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Resumos confirmam Winawer et al. (PNAS 2007) e o estudo de 2020; consenso_parcial adequado. Mas os autores de 2020 são de três instituições (Aberdeen, Liverpool Hope, HSE Moscou).",
+    "correcao": "Na explicação, troque \"Em 2020, porém, pesquisadores da Universidade de Aberdeen refizeram as mesmas tarefas\" por \"Em 2020, porém, pesquisadores de universidades do Reino Unido e da Rússia, liderados por uma equipe da Universidade de Aberdeen, refizeram as mesmas tarefas\"."
+   },
+   {
+    "id": "estruturas_linguisticas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O texto separa em dois estudos o que é um só: o exemplo da ponte vem do experimento de Boroditsky e colegas de 2003, nunca publicado na íntegra, que Mickan et al. (2014) não conseguiram reproduzir. O gancho esconde que foi o próprio estudo da ponte que não se repetiu.",
+    "correcao": "1) Acrescente uma fonte que ligue a ponte a Boroditsky 2003, por exemplo https://arxiv.org/pdf/2005.01204 (Williams et al., 'On the Relationships Between the Grammatical Genders of Inanimate Nouns and Their Co-Occurring Adjectives and Verbs'), com o trecho literal que cita Boroditsky e as pontes, e rode o checar_citacoes. 2) Gancho: troque por \"'Ponte' é feminino em alemão e masculino em espanhol. Um estudo famoso de 2003 relatou que alemães a descreviam como bela e elegante, e espanhóis, como forte e robusta. Testes independentes não repetiram o resultado.\" 3) Explicação: troque \"Num estudo, falantes de alemão\" por \"No estudo mais citado dessa linha, de Lera Boroditsky e colegas, em 2003, falantes de alemão\" e apague a frase \"Em 2003, Boroditsky e colegas relataram um resultado parecido, com falantes de alemão e espanhol descrevendo objetos de acordo com o gênero da palavra na própria língua.\". Na frase seguinte, troque \"O trabalho foi citado inúmeras vezes\" por \"O trabalho, nunca publicado na íntegra, foi citado inúmeras vezes\". 4) Em tipos_espanto, troque 'historia_humana' por 'mito_desmentido'."
+   },
+   {
+    "id": "estruturas_linguisticas-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e o episódio dos tambores conferem. Pequeno exagero: as ideias de Whorf não 'só' ganharam fama depois da morte (ele publicava em vida); 'insight' de Pinker fica melhor como 'discernimento'.",
+    "correcao": "Na explicação, troque \"e suas ideias só ganharam fama depois, quando colegas reuniram e divulgaram os seus manuscritos\" por \"e suas ideias ganharam muito mais alcance depois, quando colegas reuniram e divulgaram os seus manuscritos\". Troque também \"como uma falha de percepção humana, não de linguagem\" por \"como uma falha de discernimento humano, não de linguagem\"."
+   },
+   {
+    "id": "estruturas_linguisticas-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A frase de Whorf sobre o hopi é de um texto de 1936, publicado postumamente (não 'anos 1940'); e a distinção futuro/não futuro de Malotki é contestada (Comrie a achou discutível).",
+    "correcao": "Na explicação, troque \"Nos anos 1940, Benjamin Whorf escreveu que\" por \"Num texto de 1936, publicado só depois da sua morte, Benjamin Whorf escreveu que\". Troque também \"Ele também mostrou que o verbo hopi distingue futuro de não futuro.\" por \"Ele também defendeu que o verbo hopi distingue futuro de não futuro, ponto que outros linguistas, inclusive Comrie, acharam discutível.\""
+   },
+   {
+    "id": "estruturas_linguisticas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "1973 e o 'verde mais azulado possível' conferem; Heian, midori e a separação escolar pós-guerra também. Mas 'ao' é palavra nativa do japonês: a fonte só diz que se escreve com o mesmo caractere do chinês qīng.",
+    "correcao": "Na explicação, trocar 'É a mesma palavra, escrita com o mesmo caractere, que o chinês \"qīng\", capaz de designar tanto o azul quanto a maior parte dos verdes.' por 'Escreve-se com o mesmo caractere do chinês \"qīng\" e pode designar tanto o azul quanto a maior parte dos verdes.'"
+   },
+   {
+    "id": "estruturas_linguisticas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e a negativa de Gladstone conferem, mas a moldura de mito desmentido não se sustenta: em 1877 Gladstone apoiou a teoria de Magnus sobre a evolução do senso de cor; e kyanós aparece em Homero. A parte menos conhecida, de Geiger, deve sustentar o gancho.",
+    "correcao": "1) Trocar o gancho por: 'Homero chama o mar de \"cor de vinho\" e não tem palavra clara para azul. Nos anos 1860, um filólogo viu o mesmo na Bíblia, nos Vedas e no Alcorão e propôs que o azul é sempre a última cor a ganhar nome.' 2) Em tipos_espanto, trocar 'mito_desmentido' por 'conexao_inesperada' (fica ['conexao_inesperada', 'historia_humana']). 3) No fim da explicação, trocar 'ideia que antecipou o famoso estudo de Berlin e Kay de 1969 sobre os termos básicos de cor.' por 'ideia que antecipou o famoso estudo de Berlin e Kay de 1969 sobre os termos básicos de cor, até hoje debatido.'"
+   },
+   {
+    "id": "estruturas_linguisticas-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "'Cerca de metade' pode ficar (Holmberg 2016). Latim, irlandês, tailandês, letão e o inglês antigo conferem. Exagero: em finlandês falado, 'joo' é um pouco mais comum que a resposta-eco.",
+    "correcao": "Na explicação, trocar 'a resposta normal é \"Tulemme\", \"Estamos vindo\".' por 'a resposta pode ser simplesmente \"Tulemme\", \"Estamos vindo\", embora na fala um \"joo\" (sim) seja hoje um pouco mais comum.'"
+   },
+   {
+    "id": "estruturas_linguisticas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Formas do tupi (oré, îandé) e do tok pisin (yu-mi) conferem. Mas o hindi padrão não tem a distinção (só certos dialetos do hindustani).",
+    "correcao": "Na explicação, trocar 'aparece em várias línguas da Índia, inclusive no hindi,' por 'aparece em várias línguas da Índia, como o marati e o guzerate,'."
+   },
+   {
+    "id": "estruturas_linguisticas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Coautoria de Chen e a surpresa dos coautores conferem; explicação fiel. Mas o gancho esconde que nos testes mais rigorosos a correlação não foi significativa.",
+    "correcao": "No gancho, trocar 'a correlação enfraqueceu, mas não sumiu.' por 'a correlação enfraqueceu e, nos testes mais rigorosos, deixou de ser significativa.' Manter confianca 'consenso_parcial'."
+   }
+  ],
+  "2": [
+   {
+    "id": "estruturas_linguisticas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho corrigido e apoiado; a ressalva da pureza está na explicação; consenso_parcial adequado."
+   },
+   {
+    "id": "estruturas_linguisticas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada; a fonte até sustenta mais; o resto confere."
+   },
+   {
+    "id": "estruturas_linguisticas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Afiliações de 2020 conferem com o resumo; os dois estudos conferem."
+   },
+   {
+    "id": "estruturas_linguisticas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fonte do arXiv liga a ponte a Boroditsky 2003 e cita as duas replicações fracassadas de Mickan et al.; \"nunca publicado na íntegra\" é preciso (o capítulo de 2003 não traz o experimento detalhado)."
+   },
+   {
+    "id": "estruturas_linguisticas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As duas trocas aplicadas; datas e o episódio dos tambores conferem."
+   },
+   {
+    "id": "estruturas_linguisticas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Texto de 1936 aplicado; retoque: a fonte só cita Comrie como crítico do ponto do futuro (descrições posteriores mantiveram a distinção de Malotki).",
+    "correcao": "\"ponto que outros linguistas, inclusive Comrie, acharam discutível. Para o linguista Bernard Comrie, a argumentação de Malotki foi devastadora\" virou \"Para o linguista Bernard Comrie, a argumentação de Malotki foi devastadora para as teses fortes de Whorf, embora esse ponto do futuro lhe parecesse discutível\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "estruturas_linguisticas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada ('escreve-se com o mesmo caractere'); 1973, Heian e midori conferem."
+   },
+   {
+    "id": "estruturas_linguisticas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho centrado em Geiger, tipos trocados e 'até hoje debatido'; números conferem."
+   },
+   {
+    "id": "estruturas_linguisticas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Ressalva do finlandês aplicada e fiel; o resto confere."
+   },
+   {
+    "id": "estruturas_linguisticas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Marati e guzerate constam da fonte; formas do tupi e do tok pisin conferem."
+   },
+   {
+    "id": "estruturas_linguisticas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho reescrito (220 caracteres) fiel à correção; explicação e consenso_parcial conferem."
+   }
+  ]
+ }
+}

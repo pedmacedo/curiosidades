@@ -1,0 +1,161 @@
+{
+ "lote": "2026-11-24-cultura_popular-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "cultura_popular-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números e datas conferem (1965, festa da JAC; 1966; 1970; Bumbódromo; galera como quesito). A Coca-Cola azul tem apoio da CNN Brasil; mas 'Nestlé e Visa' só aparece em seção promocional da pt.wikipedia. O fato circula muito, por isso nota 3.",
+    "correcao": "1) Acrescente a fonte https://www.cnnbrasil.com.br/pop/caprichoso-e-garantido-veja-marcas-que-mudaram-de-cor-por-rivalidade-entre-os-bois/ com o trecho literal 'lançou a lata azul como forma de ativação'. Rode o checar_citacoes de novo para essa fonte. 2) Na explicação, troque 'e marcas azuis, como Nestlé e Visa, adotam o vermelho do Garantido' por 'e marcas azuis, como a companhia aérea Azul, já pintaram o logo de vermelho para o Garantido'. 3) Mude nota_surpresa para 3."
+   },
+   {
+    "id": "cultura_popular-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere (corda em 1855 pela berlinda atolada, oficializada em 1868, suspensa de 1926 a 1930, 400 m, Iphan 2004, UNESCO 2013). Mas o segundo domingo de outubro só virou data oficial em 1901.",
+    "correcao": "Na explicação, troque 'O Círio acontece em Belém desde 1793, no segundo domingo de outubro, e reúne hoje cerca de dois milhões de pessoas.' por 'O Círio acontece em Belém desde 1793 (no segundo domingo de outubro desde 1901) e reúne hoje cerca de dois milhões de pessoas.'"
+   },
+   {
+    "id": "cultura_popular-0003",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: a origem francesa do 'anarriê' e da quadrilha é a curiosidade mais repetida das festas juninas; a fonte dos comandos é um PDF de divulgação adaptado de site de curso de francês, com cronologia sem sentido."
+   },
+   {
+    "id": "cultura_popular-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A carta de Anchieta (30/5/1560), Cardim (1584), a passagem a trapaceiro e a tese atribuída a Sérgio Buarque conferem. Mas a fonte não diz que 'pele áspera' é a etimologia mais citada.",
+    "correcao": "Na explicação, troque 'O nome, segundo a etimologia mais citada, quer dizer algo como \"pele áspera\", ou \"coberto de feridas\".' por 'Uma das etimologias propostas para o nome é \"coberto de feridas\" ou \"pele áspera\".'"
+   },
+   {
+    "id": "cultura_popular-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Etimologia, Anchieta (1560) e nomes regionais conferem, mas o mecanismo do fogo-fátuo é hipótese, não certeza; falta a influência de mboi, 'cobra', que explica a passagem a cobra de fogo; o 'Jean de la foice' rende pouco no gancho.",
+    "correcao": "1) Na explicação, trocar 'A origem do mito é associada ao fogo-fátuo: a matéria orgânica em decomposição solta gases que se inflamam ao contato com o ar, e a corrente de ar de alguém passando pode mover as chamas, que parecem perseguir a pessoa.' por 'A origem do mito é associada ao fogo-fátuo. A explicação que costuma ser dada é que gases da matéria orgânica em decomposição se inflamariam ao contato com o ar e que a corrente de ar de alguém passando moveria as chamas, que pareceriam persegui-lo.' 2) Logo depois de 'O nome junta as palavras tupis mba'e, \"coisa\", e tatá, \"fogo\".', acrescentar: 'A forma boitatá sofreu influência de mboi, \"cobra\".' (inclua no trecho da fonte en a frase \"Boitatá (var. baitatá, batatá) derives from Tupi-Guaraní: mba'e 'thing' or 'agent, cause' + taʼta/tatá 'fire', influenced by mbói 'snake, serpent'.\"). 3) Trocar o gancho por: 'Boitatá vem do tupi \"coisa de fogo\", com influência de mboi, \"cobra\". Anchieta registrou em 1560 o baetatá, um facho brilhante que atacava indígenas; mais tarde ele virou a cobra de fogo do folclore.'"
+   },
+   {
+    "id": "cultura_popular-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio (Iara surgida no século XIX, sem referência nos textos coloniais; Cascudo; Gonçalves Dias; ipupiara; Barbosa Rodrigues 1881). consenso_parcial correto."
+   },
+   {
+    "id": "cultura_popular-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Sorteio do Imperador e cavalhadas desde 1826 confirmados fora da Wikipedia (Iphan, guia de 2026). Mas as cavalhadas são parte da festa, não 'depois' dela; 'qualquer morador' amplia a fonte; a frase sobre os jesuítas vem de verbete sem referência.",
+    "correcao": "1) No gancho, trocar 'Depois da festa, dois exércitos' por 'Na festa, dois exércitos'. 2) Na explicação, trocar 'Qualquer morador pode se inscrever no sorteio' por 'Pode se inscrever no sorteio qualquer morador que se julgue em condições de bancar a festa'. 3) Remover a frase 'No Brasil, esse tipo de encenação foi trazido pelos jesuítas, com autorização da Coroa, para catequizar.' e tirar a parte correspondente do trecho da fonte Cavalhadas. 4) Opcional, mas recomendado: acrescentar como fonte https://curtamais.com.br/pirenopolis/2026/04/17/pirenopolis-celebra-200/ com o trecho 'A escolha do Imperador é feita por sorteio.' (rodar o checar_citacoes.py nela)."
+   },
+   {
+    "id": "cultura_popular-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Capoeiristas à frente dos blocos, cabos de guarda-chuva, 1907, UNESCO 2012 e 'frever' conferem. Mas a troca de facas por guarda-chuvas é a versão mais difundida, não fato fechado; 'Espanha e 14º Regimento' vem de texto sem referência e choca com outras fontes; a etimologia falta na explicação.",
+    "correcao": "1) Trocar o gancho por: 'Segundo a versão mais contada, a sombrinha do frevo nasceu como arma: capoeiristas que abriam os blocos do Recife usavam cabos de guarda-chuva contra rivais e disfarçavam golpes como passos de dança.' 2) Na explicação, trocar 'As mais famosas, a Espanha e a do 14º Regimento de Infantaria, passaram a competir' por 'As bandas rivais passaram a competir' (e tirar do trecho da fonte en a frase sobre Espanha e 14). 3) Trocar 'Quando a polícia passou a persegui-los, os capoeiras' por 'Segundo a versão mais difundida, quando a polícia passou a persegui-los, os capoeiras'. 4) Acrescentar no fim da explicação: 'O nome frevo vem de \"frever\", corruptela popular de \"ferver\".' Manter confianca 'consenso_parcial'."
+   },
+   {
+    "id": "cultura_popular-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (origem nas coroações dos reis do Congo, coroações no Recife em 1674 confirmadas em literatura acadêmica, números e grupos no exterior)."
+   },
+   {
+    "id": "cultura_popular-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Trechos conferem no parecer de Ulpiano (Revista do IEB) e na Wikipedia. Mas a data do nome é discutida (Márcia Abreu põe nos anos 1970), a frase de Ulpiano é ambígua, e ele mesmo diz não ser especialista ('examinou a fundo' exagera).",
+    "correcao": "1) Trocar o gancho por: \"Apesar do nome, o cordel nordestino não era, por regra, vendido pendurado em cordões, costume de Portugal. Aqui se falava em folheto; \\\"cordel\\\" virou o nome geral no século XX, por influência de estudiosos.\" 2) Na explicação, trocar \"Quem examinou o caso a fundo foi o historiador Ulpiano Bezerra de Meneses, da USP, relator do pedido...\" por \"O historiador Ulpiano Bezerra de Meneses, da USP, foi o relator do pedido...\". Trocar também \"No parecer, ele observa que a exposição em cordinhas não está atestada como norma, e que o nome só virou a denominação geral a partir dos anos 1950, por influência do pesquisador Raymond Cantel.\" por \"No parecer, apoiado no dossiê de pesquisa, ele observa que a exposição em cordinhas não está atestada como norma e situa nos anos 1950, por influência do pesquisador Raymond Cantel, o momento em que o nome virou a denominação geral; outros estudiosos datam essa adoção um pouco mais tarde.\" 3) Manter a confiança alta."
+   },
+   {
+    "id": "cultura_popular-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A citação de Machado ('A Semana', 12/02/1893) confere no artigo da UFU, assim como os limões de cera e a charge de Agostini. Erro de leitura: as multas eram penalidades; a gorjeta ia para quem levasse o menino.",
+    "correcao": "Na explicação, trocar \"Editais da polícia fixavam multas e até gorjetas para quem levasse à polícia, \\\"pelo cós das calças\\\", um menino negro vendedor de limões de cera.\" por \"Editais da polícia fixavam multas e chegavam a prometer gorjeta a qualquer cidadão que levasse à polícia, \\\"pelo cós das calças\\\", um menino negro vendedor de limões de cera.\""
+   },
+   {
+    "id": "cultura_popular-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Coca do Minho, dragoa de Monção e abóboras com vela conferem. Mas a frase final toma partido numa disputa sobre a origem do visual de jacaré (as fontes se contradizem, e Lobato já dava 'cara de jacaré').",
+    "correcao": "Trocar a última frase da explicação (\"No livro \\\"O Saci\\\", de 1921, Monteiro Lobato descreve a Cuca apenas com \\\"cara de jacaré\\\" e dedos em garra; foram as adaptações e os ilustradores que a transformaram num jacaré com forma humana.\") por: \"No livro \\\"O Saci\\\", de 1921, Monteiro Lobato lhe deu \\\"cara de jacaré\\\" e dedos em garra; os ilustradores e as adaptações para a TV completaram a imagem do jacaré humanoide que o Brasil conhece.\""
+   },
+   {
+    "id": "cultura_popular-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Trechos conferem e a paráfrase de Cardim é fiel (confirmada pelo Brasil de Fato). Mas a festa em si não 'vem' do solstício (vários aspectos, como a fogueira, vêm); e 'a primeira menção' é absoluto demais.",
+    "correcao": "1) Trocar o gancho por: \"A festa junina herdou das festas europeias do solstício de verão a fogueira, mas no Brasil cai em pleno inverno. No século XVI, o jesuíta Fernão Cardim já via indígenas da Bahia pulando as fogueiras de São João.\" 2) Na explicação, trocar \"A primeira menção à festa no Brasil é do jesuíta Fernão Cardim\" por \"Um dos registros mais antigos da festa no Brasil é do jesuíta Fernão Cardim\"."
+   }
+  ],
+  "2": [
+   {
+    "id": "cultura_popular-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correção aplicada; a companhia Azul em vermelho e a lata azul da Coca-Cola confirmadas pela CNN Brasil."
+   },
+   {
+    "id": "cultura_popular-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Data de 1901 aplicada e sustentada; o resto confere."
+   },
+   {
+    "id": "cultura_popular-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Etimologia como 'uma das propostas'; carta de Anchieta, Cardim e Sérgio Buarque conferem."
+   },
+   {
+    "id": "cultura_popular-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "As três correções aplicadas; mboi e o facho de Anchieta sustentados; fogo-fátuo no condicional."
+   },
+   {
+    "id": "cultura_popular-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas e a fonte nova confirma sorteio e cavalhadas dentro da festa; retoque: os 'doze dias' da Wikipedia conflitam com a programação de mais de um mês.",
+    "correcao": "'Em Pirenópolis, a festa dura doze dias e culmina no Domingo do Divino, cinquenta dias depois da Páscoa.' virou 'Em Pirenópolis, a festa culmina no Domingo do Divino, cinquenta dias depois da Páscoa.'",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "cultura_popular-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "As 4 correções aplicadas (versão mais contada, bandas rivais, frever); afirmações com apoio; a ressalva enfraquece um pouco o gancho, nota 3."
+   },
+   {
+    "id": "cultura_popular-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas e números conferem; retoque: o \"antes\" e a atribuição a poetas e leitores não estão na fonte.",
+    "correcao": "\"Antes, poetas e leitores usavam muitos nomes: folheto,\" virou \"Os nomes, aliás, variam muito: folheto,\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "cultura_popular-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gorjeta a qualquer cidadão aplicada; Machado, limões de cera e o entrudo conferem."
+   },
+   {
+    "id": "cultura_popular-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase neutra sobre Lobato, ilustradores e TV aplicada e sustentada."
+   },
+   {
+    "id": "cultura_popular-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Fogueira herdada do solstício e Cardim como um dos registros mais antigos aplicados."
+   }
+  ]
+ }
+}

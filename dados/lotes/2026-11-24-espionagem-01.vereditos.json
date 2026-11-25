@@ -1,0 +1,164 @@
+{
+ "lote": "2026-11-24-espionagem-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "espionagem-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Pigeon_photography: patente pedida em 1907, recusada como 'impossível' e concedida em dezembro de 1908; 75 g, 100 km, prêmios em Dresden e Paris, câmera da CIA com uso ainda sigiloso. Liga fotografia, farmácia e espionagem."
+   },
+   {
+    "id": "espionagem-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Virginia_Hall: amputação em 1933, 'Cuthbert', regra do Departamento de Estado em 1937, SOE, fuga pelos Pireneus, 'If Cuthbert troublesome, eliminate him', DSC único a uma civil. A anedota é contada de modo consistente por biógrafos e fontes institucionais."
+   },
+   {
+    "id": "espionagem-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere com Josephine_Baker; mas 'escritas nas mãos e nos braços, em tinta invisível' sugere tinta invisível na pele: a fonte separa anotações nas mãos, bilhetes na roupa e tinta invisível nas partituras.",
+    "correcao": "Na explicação, trocar 'As informações iam escritas nas mãos e nos braços, em tinta invisível, ou em bilhetes presos por dentro da roupa, até na roupa de baixo.' por 'As informações iam anotadas nas mãos e nos braços, escritas em tinta invisível nas partituras que ela levava, ou em bilhetes presos por dentro da roupa, até na roupa de baixo.' E acrescentar ao trecho da fonte: '[...] Notes were written in invisible ink on Baker's sheet music.' (está na fonte, na seção World War II)."
+   },
+   {
+    "id": "espionagem-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Detalhes conferem com Canadian_Caper (Studio Six, Lord of Light com arte de Jack Kirby, erro dos vistos pelo calendário iraniano, papel da CIA revelado em 1997). Mas a CIA abriu um escritório de produtora num estúdio existente, não um estúdio; e vale citar o filme Argo para o leitor ligar as pontas.",
+    "correcao": "No gancho, trocar 'a CIA abriu em Hollywood um estúdio de fachada' por 'a CIA abriu em Hollywood uma produtora de fachada'. Ao fim da explicação, acrescentar a frase: 'A operação inspirou, com muitas liberdades, o filme Argo, de 2012.' E incluir no trecho da fonte: '[...] The article was used loosely—alongside a memoir Mendez wrote—by Chris Terrio as the basis of the 2012 film Argo.' (está no 3º parágrafo da fonte)."
+   },
+   {
+    "id": "espionagem-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Interpretação atribuída corretamente; números conferem; consenso_parcial adequado. Mas o gancho, com dois-pontos, apresenta o código quebrado como prova de que ela foi bode expiatório da França; são argumentos diferentes (o do código é sobre a Alemanha querer entregá-la).",
+    "correcao": "No gancho, trocar 'foi um bode expiatório: as mensagens que a denunciaram usavam' por 'foi um bode expiatório, e as mensagens que a denunciaram usavam' (o gancho fica com cerca de 214 caracteres). Opcional, na explicação: depois de 'o que sugere uma armadilha para entregá-la', acrescentar 'montada pelos próprios alemães, insatisfeitos com as fofocas que ela lhes vendia'. Se aceitar, incluir no trecho: '[...] General Walter Nicolai, the chief intelligence officer of the German Imperial Army, had grown annoyed that Mata Hari had provided no real intelligence, instead selling the Germans mere Paris gossip [...] and decided to terminate her employment by exposing her as a German spy to the French.'"
+   },
+   {
+    "id": "espionagem-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo tem apoio no artigo da Operação Mincemeat: inspiração no Trout memo de Godfrey e Fleming; registro de Dönitz de 14/5/1943; reforços para Grécia e Sardenha e nenhum para a Sicília. O debate entre historiadores é sobre o impacto na campanha, que o fato não afirma."
+   },
+   {
+    "id": "espionagem-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: o artigo Culper Ring diz 1929, mas o de Robert Townsend diz 1930, e a apresentação de Pennypacker foi em 27/9/1930. A frase sobre a rede ter descoberto Benedict Arnold é frágil e dispensável.",
+    "correcao": "1) No gancho, trocar 'só foi identificado em 1929, quando um historiador' por 'só foi identificado por volta de 1930, quando um historiador'. 2) Na fonte Robert Townsend (spy), acrescentar ao trecho a frase literal 'The identity of Samuel Culper, Jr. was discovered only in 1930 by the New York historian Morton Pennypacker.' 3) Na explicação, trocar 'O historiador Morton Pennypacker notou' por 'Por volta de 1930 (as fontes variam entre 1929 e 1930), o historiador Morton Pennypacker notou'. 4) Apagar a frase 'Em 1780, a rede descobriu que um oficial americano de alta patente, depois identificado como Benedict Arnold, tramava entregar aos britânicos o forte de West Point.'"
+   },
+   {
+    "id": "espionagem-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere com a página de Elizebeth Smith Friedman. Mas 'Depois que a rede caiu, Argentina, Bolívia e Chile romperam com o Eixo' está cronologicamente errado (Bolívia em 1942, Chile em 1943, Argentina em janeiro de 1944; a rede de Becker caiu em 1944) e sugere causa.",
+    "correcao": "Apagar a frase 'Depois que a rede caiu, Argentina, Bolívia e Chile romperam com o Eixo.' da explicação, e o trecho correspondente na fonte ('After the spy ring was broken, Argentina, Bolivia and Chile broke with the Axis powers and supported the Allies.'). O resto fica como está."
+   },
+   {
+    "id": "espionagem-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "numero_divergente: a estimativa de 10 a 25 é da NIE 11-8/1-61, de setembro de 1961, não de um mês depois do voo (em junho de 1961 ainda eram 50 a 100). O gancho precisa de 'anteriores' na comparação com o U-2.",
+    "correcao": "1) No gancho, trocar 'mais imagens da URSS que todos os voos do avião espião U-2' por 'mais imagens da URSS que todos os voos anteriores do avião espião U-2' (fica com menos de 220 caracteres). 2) Na explicação, trocar 'um mês depois do voo, a conta caiu para 10 a 25' por 'em setembro de 1961, depois de mais um ano de fotos do Corona e de outras fontes, a estimativa oficial caiu para 10 a 25'. 3) Acrescentar a fonte https://history.state.gov/historicaldocuments/frus1961-63v08/d45 (NIE 11-8/1-61, 21/9/1961), com o trecho 'We now estimate that the present Soviet ICBM strength is in the range of 10-25 launchers', e tirar do trecho da Wikipedia a frase 'A month after the flight of Discoverer 14, that estimate was refined to just 10–25.' Se a nova fonte não passar no checar_citacoes, apagar a frase dos 10 a 25 e deixar só a de 140 a 200."
+   },
+   {
+    "id": "espionagem-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "O 'primeira operadora de rádio' está apoiado ('the first woman to be sent over in such a capacity, as all the woman agents before her had been sent as couriers'); datas e detalhes conferem; a ressalva dos cadernos está na explicação."
+   },
+   {
+    "id": "espionagem-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas conferem (confissão em 23/04/1964 com imunidade, Private Eye em 08/11/1979, Thatcher em 15/11/1979). Mas 'A rainha só foi informada oficialmente em 1973' contradiz outra passagem do mesmo artigo, que diz que a rainha foi plenamente informada em 1964.",
+    "correcao": "Na explicação, trocar 'A rainha só foi informada oficialmente em 1973.' por 'O secretário particular da rainha foi avisado logo depois.' (apoio: 'The Private Secretary to the Sovereign was informed shortly thereafter')."
+   },
+   {
+    "id": "espionagem-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada detalhe confere (plano de 1978, sacola da Safeway, Mars, Harrods, 19/07/1985, porta-malas do Ford Sierra, a fralda que afastou os cães, condenação à revelia). A fralda está na fonte e em relatos jornalísticos."
+   },
+   {
+    "id": "espionagem-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere; a ordem condicional de atirar em Heisenberg é confirmada de forma independente pela Atomic Heritage Foundation. O ceticismo encontrado é sobre Heisenberg revelar algo, não sobre a ordem."
+   },
+   {
+    "id": "espionagem-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Dados conferem com a CIA e a Wikipedia, mas as fontes divergem sobre o papel de Julia e nenhuma desmente a versão popular: mito_desmentido não se justifica. Extratos de tubarão e sais de cobre eram os candidatos promissores, não os extremos da faixa.",
+    "correcao": "1) Em tipos_espanto, trocar 'mito_desmentido' por 'engenhosidade'. 2) Na explicação, trocar 'A versão popular de que Julia inventou o repelente cozinhando é exagero: segundo a CIA, ela trabalhava perto dos oficiais que desenvolveram a fórmula.' por 'O tamanho do papel dela é incerto: há relatos de que ela mesma cozinhava misturas de teste, mas a CIA diz apenas que ela trabalhava perto dos oficiais que criaram a fórmula, embora Julia falasse no repelente \"que desenvolvemos\".' 3) Trocar 'Os pesquisadores testaram mais de 100 substâncias, de extratos de carne de tubarão podre a sais de cobre.' por 'Os pesquisadores testaram mais de 100 substâncias; entre as mais promissoras estavam extratos de carne de tubarão podre e sais de cobre.' 4) nota_surpresa = 3."
+   },
+   {
+    "id": "espionagem-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Biografia confere e as divisões siberianas estão bem ressalvadas. Mas chamar de 'mito' a data exata é posição de historiador (Prange), não fato comprovado: a imprensa soviética citou em 1964 uma mensagem de 15 de junho com o dia 22, e Prange não teve acesso ao material russo dos anos 1990.",
+    "correcao": "1) Gancho: trocar 'Que ele deu a data exata é mito.' por 'Já a data exata, ele provavelmente nunca deu.' 2) Na explicação, trocar 'Mas, segundo o historiador Gordon Prange, Sorge nunca chegou a dar a data certa, 22 de junho: o mais perto foi 20 de junho.' por 'Diz a lenda que ele cravou o dia, 22 de junho. Em 1964, a imprensa soviética chegou a citar uma mensagem dele de 15 de junho com essa data, mas o historiador Gordon Prange não aceitou essa versão: para ele, o mais perto que Sorge chegou foi 20 de junho, e o próprio espião nunca disse ter sabido a data certa.' 3) confianca = 'consenso_parcial'."
+   }
+  ],
+  "2": [
+   {
+    "id": "espionagem-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correção aplicada: anotações nas mãos, tinta invisível nas partituras e bilhetes na roupa, com o trecho da fonte."
+   },
+   {
+    "id": "espionagem-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Produtora de fachada' e a menção ao filme Argo aplicadas e sustentadas."
+   },
+   {
+    "id": "espionagem-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho corrigido e acréscimo sobre a armadilha montada pelos alemães sustentado pela seção Espionage da fonte."
+   },
+   {
+    "id": "espionagem-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque mínimo: 'Washington' sozinho soa como o governo dos EUA.",
+    "correcao": "No gancho, 'A rede de espiões de Washington era' virou 'A rede de espiões de George Washington era' e 'Um dos líderes só foi identificado' virou 'Um líder só foi identificado'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "espionagem-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase sobre Argentina, Bolívia e Chile retirada; o resto confere."
+   },
+   {
+    "id": "espionagem-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções aplicadas; a fonte nova (NIE 11-8/1-61, 21/9/1961) confere; 'do Corona e de outras fontes' é prudente."
+   },
+   {
+    "id": "espionagem-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase contraditória retirada; 'o secretário particular da rainha foi avisado logo depois' tem apoio; datas conferem."
+   },
+   {
+    "id": "espionagem-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "As quatro correções aplicadas; a incerteza sobre o papel de Julia ficou equilibrada."
+   },
+   {
+    "id": "espionagem-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; sem a frase sobre a imprensa soviética o texto segue equilibrado; busca própria em fontes russas apoia o 'provavelmente', e consenso_parcial é o correto."
+   }
+  ]
+ }
+}

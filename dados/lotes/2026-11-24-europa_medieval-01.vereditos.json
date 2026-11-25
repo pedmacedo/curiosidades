@@ -1,0 +1,140 @@
+{
+ "lote": "2026-11-24-europa_medieval-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "europa_medieval-0001",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "verificacao_interrompida: a verificação deste fato (genômica da bactéria da peste) foi barrada pelas salvaguardas do modelo; descartado por precaução, sem conclusão sobre o conteúdo."
+   },
+   {
+    "id": "europa_medieval-0002",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "verificacao_interrompida: a verificação deste fato (seleção de genes imunes pela peste) foi barrada pelas salvaguardas do modelo; descartado por precaução, sem conclusão sobre o conteúdo."
+   },
+   {
+    "id": "europa_medieval-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Datas e números conferem, e a ressalva sobre salários reais também. Mas o '68 anos' é erro de digitalização da fonte (o estatuto diz 'sixty'); e a fonte diz que o estatuto foi uma das causas 'among others' da revolta de 1381.",
+    "correcao": "1) Na explicação, trocar 'Quem tivesse corpo capaz, menos de 68 anos e nada de que viver era obrigado a servir a quem o chamasse, sob pena de prisão.' por 'Quem tivesse corpo capaz e nada de que viver era obrigado a servir a quem o chamasse, sob pena de prisão.' 2) No trecho, retirar o pedaço 'under the age of 68 years,' usando elisão: 'That every person, able in body [...] not having enough to live upon, being required, shall be bound to serve him that doth require him, or else be committed to gaol'. 3) Trocar 'O estatuto foi uma das causas da Revolta dos Camponeses de 1381.' por 'O estatuto foi uma das causas, entre outras, da Revolta dos Camponeses de 1381.' 4) Em tipos_espanto, trocar 'conexao_inesperada' por 'contraintuitivo', ou simplesmente retirá-lo."
+   },
+   {
+    "id": "europa_medieval-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere, e a frase é de Michael McCormick à Science (2018). Mas a fonte fala de uma erupção em 539–540, não de 'novas erupções'; e o texto sugere que a Peste de Justiniano foi consequência do clima, tese sem aceitação geral.",
+    "correcao": "1) Trocar 'Novas erupções, em 539 e 540, esfriaram o verão europeu em até 2,7 °C.' por 'Uma nova erupção, em 539–540, esfriou o verão europeu em até 2,7 °C.' 2) Trocar 'Vieram quebras de safra, fome e a Peste de Justiniano, com milhões de mortes, e começou um período frio que durou de 536 a 660.' por 'As erupções provocaram quebras de safra, e a época também teve fome, a Peste de Justiniano e milhões de mortes; começou ali um período frio que durou de 536 a 660.'"
+   },
+   {
+    "id": "europa_medieval-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem e o vínculo com a Notre-Dame existe, mas o gancho soa como se a reconstrução inteira viesse de Guédelon (o canteiro usou sobretudo ferramentas modernas), e a explicação não menciona a Notre-Dame.",
+    "correcao": "1) No gancho, trocar 'O que se reaprendeu nessa obra foi usado para reconstruir a Notre-Dame de Paris após o incêndio de 2019.' por 'Técnicas reaprendidas nessa obra ajudaram na reconstrução da Notre-Dame de Paris após o incêndio de 2019.' 2) Na explicação, antes de 'Em 2014, o canteiro recebia...', acrescentar: 'Técnicas redesenvolvidas em Guédelon foram aproveitadas na reconstrução da Notre-Dame de Paris, depois do incêndio de 2019.'"
+   },
+   {
+    "id": "europa_medieval-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada passo confere (Himmler cobiçava a peça; Louvre em 27/06/1944; mensagem de 18/08 interceptada em Bletchley; SS em 22/08 com o Louvre já em mãos francesas); números conferem."
+   },
+   {
+    "id": "europa_medieval-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fiel: preocupação em 2002 com a ilegibilidade dos discos, resgate pelo CAMiLEON, origem do nome em FitzNeal ('unalterable, like those of the Last Judgment')."
+   },
+   {
+    "id": "europa_medieval-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Atribuição a Frederico II certa, mas ele duvidou da lenda, não a deu por encerrada; e 'só no fim do século XIX se mostrou' é contestável (Gerrit de Veer, 1596).",
+    "correcao": "1) No gancho, trocar 'para examinar e concluiu que era lenda.' por 'para examinar e não viu nelas nada parecido com uma ave.' 2) Na explicação, trocar 'Só no fim do século XIX se mostrou que eles migram para se reproduzir na Groenlândia ou no norte da Escandinávia.' por 'Hoje se sabe que esses gansos migram para se reproduzir no extremo norte, como na Groenlândia e no norte da Escandinávia.'"
+   },
+   {
+    "id": "europa_medieval-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e causa conferem, mas 'Em 1697, ajudaram a formar o Banco da Inglaterra' sugere fundação em 1697 (foi em 1694; em 1697 houve emissão de ações); e a fonte diz 'most of the building', não 'quase todo'.",
+    "correcao": "1) Na explicação, trocar 'Em 1697, ajudaram a formar o Banco da Inglaterra, que trocou ações por varetas da dívida da Coroa.' por 'Em 1697, o recém-criado Banco da Inglaterra emitiu ações em troca de varetas da dívida da Coroa.' 2) No gancho, trocar 'destruiu quase todo o prédio' por 'destruiu a maior parte do prédio'."
+   },
+   {
+    "id": "europa_medieval-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com 'Anchorite': voto de clausura permanente, rito parecido com o funeral, Ofício dos Mortos e selo do bispo (no condicional, como na fonte); números conferem."
+   },
+   {
+    "id": "europa_medieval-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Etimologia de 'clocca' e o vínculo com o som dos sinos conferem; relógios sem mostrador nas horas canônicas; Salisbury c. 1386 com a ressalva das dúvidas sobre a data. Sem duplicata."
+   },
+   {
+    "id": "europa_medieval-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "exagero: o 64 vale só para nobres ingleses do século XIII, com amostra pequena, e cai para 45 no século seguinte. O ponto central (mortalidade infantil puxa a média) está correto; a medida robusta da fonte é morte média por volta de 50–60 para quem passava dos 20 e poucos anos.",
+    "correcao": "1) Trocar o gancho por: \"Expectativa de vida de uns 30 anos na Idade Média não significa que adultos morriam aos 30: as mortes de bebês puxavam a média para baixo, e quem passava dos 20 e poucos anos chegava, em média, à casa dos 50.\" 2) Na explicação, trocar a última frase (\"No caso medieval, a conta para quem já era adulto era bem maior, como mostra o exemplo do homem inglês de 21 anos.\") por: \"Na Inglaterra, estimativas para os séculos XIII a XIX indicam que quem passava dos 20 e poucos anos morria, em média, entre os 50 e os 60 anos.\" Não usar o 64. 3) No trecho da fonte Life expectancy, acrescentar as passagens literais: \"In England in the 13th–19th centuries with life expectancy at birth rising from perhaps 25 years to over 40, expectation of life at age 30 has been estimated at 20–30 years, giving an average age at death of about 50–60 for those (a minority at the start of the period but two-thirds at its end) surviving beyond their twenties.\" e \"The table above gives the life expectancy at birth among 13th-century English nobles as 30–33\". 4) Rodar de novo o checar_citacoes.py. Nota 3."
+   },
+   {
+    "id": "europa_medieval-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "exagero: a donzela de ferro aparece com Siebenkees, no fim do século XVIII (a fonte se contradiz ao dizer 'século XIX'); e 'não são da Idade Média' é forte demais para o cinto (Bellifortis, 1405; a origem medieval é 'disputed').",
+    "correcao": "1) Trocar o gancho por: \"Dois símbolos da \\\"Idade Média cruel\\\" não têm prova medieval: a donzela de ferro surge só no fim do século XVIII, e muitos cintos de castidade de museus são tidos como falsificações do século XIX.\" 2) Na explicação, depois de \"com uma suposta execução de um falsificador de moedas em 1515\", acrescentar \"(Siebenkees morreu em 1796)\". 3) Acrescentar como fonte a List of common misconceptions about history (https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_history), com o trecho literal: \"There is no evidence that iron maidens were used for torture, or even yet invented, in the Middle Ages. Instead they were pieced together in the 18th century from several artifacts found in museums, arsenals and the like to create spectacular objects intended for commercial exhibition.\" 4) Rodar de novo o checar_citacoes.py."
+   }
+  ],
+  "2": [
+   {
+    "id": "europa_medieval-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas ('68 anos' retirado, 'entre outras', contraintuitivo); tudo confere."
+   },
+   {
+    "id": "europa_medieval-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Uma erupção em 539–540 e a peste como algo que acompanhou a época, não consequência; números e citações conferem."
+   },
+   {
+    "id": "europa_medieval-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com 'ajudaram' e a frase sobre a Notre-Dame na explicação; números conferem."
+   },
+   {
+    "id": "europa_medieval-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque de tradução: 'fir-wood' é abeto, não pinheiro.",
+    "correcao": "'nasciam em madeira de pinheiro à deriva' virou 'nasciam em madeira de abeto à deriva'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "europa_medieval-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "'A maior parte do prédio' e a emissão de ações de 1697 aplicadas; tudo confere."
+   },
+   {
+    "id": "europa_medieval-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "O 64 saiu e 'uns 30 anos' segue sustentado; retoque: a média de 50–60 vale para quem chegava aos 30, não para quem passava dos 20 e poucos.",
+    "correcao": "No gancho, 'e quem passava dos 20 e poucos anos chegava, em média, à casa dos 50.' virou 'e quem chegava aos 30 morria, em média, entre os 50 e os 60.'; na explicação, 'quem passava dos 20 e poucos anos morria' virou 'quem chegava aos 30 anos morria'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "europa_medieval-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho corrigido (fim do século XVIII; cintos tidos como falsificações do século XIX), com a lista de equívocos como fonte."
+   }
+  ]
+ }
+}

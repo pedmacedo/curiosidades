@@ -1,0 +1,164 @@
+{
+ "lote": "2026-11-24-medidas_padroes-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "medidas_padroes-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O núcleo se sustenta (IPK perdeu cerca de 50 μg em relação às cópias, ou as cópias ganharam; não dava para saber quem mudou; redefinição de 2019). Mas 'só três comparações em 1889, 1948 e 1989' é impreciso; 'nenhum mecanismo plausível' é contradito pela suspeita do mercúrio (2013); e a campanha de 2014 não confirmou a continuação do afastamento.",
+    "correcao": "(a) Trocar 'e as comparações com o original foram raras: só três, em 1889, 1948 e 1989.' por 'e as comparações com o original foram raras, feitas em grandes campanhas separadas por décadas.' (fonte: 'These were compared to the IPK roughly every 40 years'; incluir esse trecho e retirar 'The only three verifications occurred in 1889, 1948, and 1989' do trecho). (b) Trocar 'Nenhum mecanismo plausível foi proposto para explicar a deriva.' por 'A causa da deriva nunca foi esclarecida; uma das suspeitas é a contaminação da superfície, inclusive por mercúrio de instrumentos guardados perto.' e acrescentar ao trecho da fonte IPK: 'suggested that one source of the divergence between the various prototypes could be traced to mercury'. (c) Depois de 'as primeiras cópias ganharam, em média, cerca de 25 microgramas.', acrescentar 'Uma campanha extra de calibração em 2014 não confirmou que esse afastamento tivesse continuado depois de 1992.' e incluir a fonte https://iopscience.iop.org/article/10.1088/0026-1394/52/2/310 (Metrologia, 2015) com o trecho 'These results do not confirm the trend for the masses of the six official copies to diverge from the mass of the IPK'. Se essa fonte não passar no checar_citacoes, não incluir a frase e trocar 'Ficou claro que as massas iam se afastando lentamente umas das outras.' por 'As verificações do século XX mostraram as massas se afastando lentamente umas das outras.'"
+   },
+   {
+    "id": "medidas_padroes-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A cadeia de raciocínio confere (Newcomb, 1750–1892, segundo das efemérides, césio comparado com a Lua por Markowitz et al.). Mas a última frase fala do segundo solar médio 'da época em que foi adotado', o que as fontes não dizem (dizem 'atual'), e termina sem a consequência (segundos bissextos em 1972).",
+    "correcao": "Trocar a última frase 'Como o dia ficou um pouco mais longo desde o século XIX, por causa do atrito das marés, o segundo do SI já nasceu um pouco mais curto que o segundo solar médio da época em que foi adotado.' por 'Como o dia ficou um pouco mais longo desde o século XIX, por causa do atrito das marés, o segundo do SI já nasceu um pouco mais curto que o segundo solar médio atual, e esse descompasso levou à criação dos segundos bissextos, em 1972.' e acrescentar ao trecho da fonte Tidal acceleration a frase 'This led to the introduction of the leap second in 1972 to compensate for differences in the bases for time standardization.'"
+   },
+   {
+    "id": "medidas_padroes-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem. Mas as 8.750 libras de 1773 não foram tudo o que Harrison recebeu (£23.065 no total); o projeto foi conferido e ajustado antes do teste; e a data final do teste diverge entre fontes (16 ou 17 de abril).",
+    "correcao": "(a) Trocar 'e ele só recebeu 8.750 libras do Parlamento em 1773, aos 80 anos, depois que o rei Jorge III testou um dos seus relógios e tomou o seu partido.' por 'e só em 1773, aos 80 anos, depois que o rei Jorge III testou um dos seus relógios e tomou o seu partido, o Parlamento lhe pagou 8.750 libras, somadas a pagamentos parciais que ele já recebera.' (b) Trocar 'De 6 de janeiro a 17 de abril de 2015, ela funcionou numa caixa transparente no Observatório Real, sem ser tocada além da corda, e perdeu só 5/8 de segundo.' por 'Lá, o projeto foi conferido e ajustado e, por 100 dias a partir de 6 de janeiro de 2015, o relógio funcionou numa caixa transparente no Observatório Real, sem ser tocado além da corda, e perdeu só 5/8 de segundo.' Incluir no trecho: 'so the clock's design was carefully checked and adjusted'."
+   },
+   {
+    "id": "medidas_padroes-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere: abstenção de França e Brasil em 1884; lei de 9/3/1911 sem citar Greenwich, 'heure de Paris' menos 9 min 21 s, diferença real de 9 min 20,921 s; decreto de 1978."
+   },
+   {
+    "id": "medidas_padroes-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O essencial confere (Ordem Mendenhall de 5/4/1893, jarda de 3600/3937 m, acordo de 1959, diferença de cerca de 3 mm por milha). Mas a libra americana seguia o padrão da Casa da Moeda, não um padrão inglês; e o NIST diz que o pé de agrimensura ficou obsoleto em 1/1/2023 (31/12/2022 foi o último dia de uso).",
+    "correcao": "(a) Trocar 'Os padrões de referência das unidades tradicionais eram uma jarda e uma libra vindas da Inglaterra, mas a jarda imperial de 1855 se mostrou instável' por 'Os padrões de referência das unidades tradicionais eram baseados nos ingleses, mas a jarda imperial de 1855, que os EUA usavam como padrão, se mostrou instável'. (b) Trocar 'Só em 31 de dezembro de 2022 o NIST e outros órgãos federais declararam obsoleto o pé de agrimensura.' por 'Só no fim de 2022 o NIST e outros órgãos federais aposentaram de vez o pé de agrimensura.'"
+   },
+   {
+    "id": "medidas_padroes-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com 'Smoot' (1958, 364,4 smoots, marcas a cada dez, ANSI 2001–2002 e ISO 2003–2004)."
+   },
+   {
+    "id": "medidas_padroes-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Números e cronologia conferem (1960, 1967, 1972 no NBS, 1975, 1983); a virada 'medir c agora calibra o metro' tem mecanismo."
+   },
+   {
+    "id": "medidas_padroes-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem, mas foram Mersenne e outros que notaram que os pêndulos não são isócronos (não Huygens); e a fonte diz que os pêndulos 'often' entravam em sincronia.",
+    "correcao": "No gancho, trocar 'acabavam balançando em sincronia' por 'muitas vezes entravam em sincronia'. Na explicação, trocar 'Huygens também percebeu que a regra de Galileu não é perfeita: balanços largos demoram um pouco mais que os estreitos. Mostrou, com geometria,' por 'Mersenne e outros já tinham notado que a regra de Galileu não é perfeita: balanços largos demoram um pouco mais que os estreitos. Huygens mostrou, com geometria,'."
+   },
+   {
+    "id": "medidas_padroes-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem, mas a cadeia que sustenta o 'ancestral' ficou incompleta (a 'nova vela' de 1937, com valor próximo da antiga, ratificada em 1948 como candela); e 'cada país tinha o seu padrão' exagera.",
+    "correcao": "(1) Trocar 'Antes de 1948, cada país tinha o seu padrão de intensidade luminosa' por 'Antes de 1948, vários países usavam padrões próprios de intensidade luminosa'. (2) Logo depois da frase sobre as impurezas da platina, inserir: 'A solução veio décadas depois, com a platina derretida servindo de radiador ideal, e em 1948 essa \"nova vela\", com valor escolhido para ficar próximo da antiga unidade de vela, foi oficializada com o nome de candela.' (3) Acrescentar ao trecho da fonte Candela: 'In 1937, the Commission Internationale de l'Éclairage (International Commission on Illumination) and the CIPM proposed a \"new candle\" based on this concept, with value chosen to make it similar to the earlier unit candlepower. [...] It was then ratified in 1948 by the 9th CGPM which adopted a new name for this unit, the candela.' (4) Para não passar de 250 palavras, retirar a frase 'Alemanha, Áustria e países escandinavos preferiam a lâmpada de Hefner.'"
+   },
+   {
+    "id": "medidas_padroes-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: os registros históricos dos últimos 2.700 anos dão +1,72 ms por século (a Lua sozinha daria 2,4; o soerguimento pós-glacial compensa), não 2,3. O resto confere.",
+    "correcao": "Na explicação, trocar 'Esses registros indicam que o dia aumentou cerca de 2,3 milissegundos por século desde então.' por 'Esses registros indicam que, nos últimos 2.700 anos, o dia aumentou em média cerca de 1,7 milissegundo por século, um pouco menos do que a Lua sozinha faria (2,4), porque a crosta ainda se recupera do peso das geleiras da última era do gelo, o que acelera um pouco a rotação.' Acrescentar ao trecho da fonte Tidal acceleration: 'From the observed change in the Moon's orbit, the corresponding change in the length of the day can be computed [...] +2.4 ms/d/century [...] However, from historical records over the past 2700 years the following average value is found: +1.72 ± 0.03 ms/d/century'. No trecho de Earth's rotation, remover a frase 'the length of a day has increased by about 2.3 milliseconds per century since the 8th century BCE'. Se passar de 250 palavras, retirar a frase dos sedimentos de 620 milhões de anos."
+   },
+   {
+    "id": "medidas_padroes-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os fatos conferem (jarda e libra perdidas no incêndio; lei de 1824 com o plano B do pêndulo e da água; impossível refazê-los; lei de 1855). Mas o gancho e metade da explicação contam a história das varetas de contagem, núcleo de europa_medieval-0009: o fato precisa se centrar nos padrões perdidos.",
+    "correcao": "1) Trocar o gancho por: \"Uma lei inglesa de 1824 tinha um plano B: se a jarda e a libra-padrão se perdessem, seriam refeitas com um pêndulo e a massa de água. Em 1834, um incêndio no Parlamento as destruiu, e o plano B não funcionou.\" 2) Na explicação, apagar as três primeiras frases (varetas desde a Idade Média, uso até 1826, os dois operários) e também as frases sobre a fornalha feita para carvão e sobre o cobre derretido. No lugar delas, abrir com uma só frase, por exemplo: \"Em 16 de outubro de 1834, a queima de velhas varetas de contabilidade do Tesouro numa fornalha sob a Câmara dos Lordes provocou o incêndio que destruiu a maior parte do Palácio de Westminster.\" Manter o restante. 3) Se quiser incluir os números da definição (39,1393 polegadas; 252,458 grãos por polegada cúbica de água), amplie o trecho da fonte Imperial units para cobrir a frase inteira 'For the yard, ... 7,000 grains per pound.'; senão, deixe-os de fora. Não acrescentar explicação da falha que não esteja no trecho. 4) Tirar 'dinheiro' dos temas_secundarios."
+   },
+   {
+    "id": "medidas_padroes-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com 'Ruth Belville' e, de forma independente, com o Royal Museums Greenwich (1836, 1856, Maria até 1892, Ruth até 1940, relógio Arnold)."
+   },
+   {
+    "id": "medidas_padroes-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (horas romanas de 45 a 75 minutos; wadokei com seis períodos de dia e seis de noite, Xavier em 1551, relógio de dois reguladores c. 1780, horas iguais em 1873)."
+   },
+   {
+    "id": "medidas_padroes-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem com 'Standard time' (Dowd, 11/10/1883, 18/11/1883, lei de 1918). Mas 'justamente para evitar uma lei' vai além da fonte ('to avoid government action'). Não repete revolucao_industrial-0003.",
+    "correcao": "No gancho, trocar \"justamente para evitar uma lei\" por \"para evitar que o governo impusesse um sistema\". Se passar de 220 caracteres, trocar \"Antes, uma só ferrovia tinha sete zonas de horário na linha.\" por \"Antes, uma só ferrovia usava sete horários na linha.\" O resto fica como está."
+   }
+  ],
+  "2": [
+   {
+    "id": "medidas_padroes-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas; a fonte da Metrologia (2015) confirma que a campanha de 2014 não confirmou a tendência; mercúrio e campanhas a cada ~40 anos sustentados."
+   },
+   {
+    "id": "medidas_padroes-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Segundo solar médio atual' e os segundos bissextos de 1972 aplicados e sustentados."
+   },
+   {
+    "id": "medidas_padroes-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Pagamentos parciais e 'checked and adjusted' conferem; retoque de concordância após a troca de 'ela' por 'o relógio'.",
+    "correcao": "'O Guinness a declarou' virou 'O Guinness o declarou'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "medidas_padroes-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas e datas conferem; retoque: os EUA usavam uma das cópias da jarda de 1855.",
+    "correcao": "'a jarda imperial de 1855, que os EUA usavam como padrão,' virou 'a jarda imperial de 1855, da qual os EUA usavam uma cópia como padrão,'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "medidas_padroes-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "'Muitas vezes entravam em sincronia' e a atribuição a Mersenne aplicadas; números conferem."
+   },
+   {
+    "id": "medidas_padroes-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas e números conferem; retoques: quem servia de corpo negro era a cavidade imersa em platina, concordância de \"baseados\" e cortes para caber em 250 palavras.",
+    "correcao": "\"com a platina derretida servindo de radiador ideal\" virou \"com uma cavidade imersa em platina derretida servindo de corpo negro\"; \"baseado\" virou \"baseados\"; \"mais ou menos\" virou \"cerca de\"; saiu \"justamente\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "medidas_padroes-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1,72 ms por século nos últimos 2.700 anos contra 2,4 da Lua, explicado pela crosta que se recupera; números conferem."
+   },
+   {
+    "id": "medidas_padroes-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Foco nos padrões perdidos aplicado; acréscimos conferem; retoque: a libra-padrão de 1824 era troy (5.760 grãos), então os 7.000 grãos saem.",
+    "correcao": "\"fixada em 252,458 grãos, sendo 7.000 grãos uma libra.\" virou \"fixada em 252,458 grãos.\"",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "medidas_padroes-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho corrigido (216 caracteres); números conferem."
+   }
+  ]
+ }
+}

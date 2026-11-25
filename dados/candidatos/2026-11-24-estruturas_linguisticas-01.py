@@ -1,0 +1,629 @@
+LOTE = "2026-11-24-estruturas_linguisticas-01"
+AREA = "linguas"
+TEMA = "estruturas_linguisticas"
+W = "https://en.wikipedia.org/wiki/"
+EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+def resumo(pmid, titulo, trecho):
+    """Resumo de artigo científico pelo Europe PMC (PubMed)."""
+    return {"url": EPMC + "search?query=EXT_ID:" + pmid + "%20AND%20SRC:MED&resultType=core&format=json",
+            "titulo": titulo, "idioma": "en", "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 guugu yimithirr: sem esquerda nem direita
+    {
+        "temas_secundarios": ["aprendizagem_inteligencia", "povos_indigenas"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Em guugu yimithirr, língua aborígene da Austrália, nada fica \"à esquerda\" ou \"na frente\" de nada: tudo é situado por norte, sul, leste e oeste. E os falantes teriam um senso de direção fora do comum.",
+        "explicacao": (
+            "A língua é falada no extremo norte de Queensland, e a maior parte dos falantes vive hoje na "
+            "comunidade de Hope Vale. Quem fala português localiza as coisas a partir do próprio corpo: "
+            "\"na frente da casa\", \"à esquerda da casa\". O guugu yimithirr usa outra lógica, a dos "
+            "pontos cardeais, e diria algo como \"ao norte da casa\". O pesquisador Levinson e colegas "
+            "descreveram três maneiras básicas de as línguas organizarem o espaço, e essa é um exemplo de "
+            "língua que se apoia só na referência absoluta, como uma bússola. Levinson relatou que homens "
+            "falantes da língua davam instruções de navegação precisas com esse sistema, acompanhadas de um "
+            "gesto que apontava a direção de partida. Os falantes teriam memória do ambiente e senso de "
+            "orientação muito desenvolvidos, e por isso o caso virou um dos argumentos a favor da relatividade "
+            "linguística, a ideia de que a língua que falamos influencia como pensamos. Há ressalvas: a "
+            "\"pureza\" do sistema, isto é, a ausência total de termos relativos ao corpo, é contestada por "
+            "outros pesquisadores."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Guugu_Yimithirr_language",
+                "is an Australian Aboriginal language, the traditional language of the Guugu Yimithirr people of Far North Queensland. [...] "
+                "Most of the speakers today live at the community of Hope Vale [...] "
+                "The language is notable for its use of pure geographic directions (north, south, east, west) rather than egocentric directions (left, right, forward, backward), though such \"purity\" is disputed. "
+                "Speakers of Guugu Yimithirr are claimed to have a highly developed memory of their environment and sense of direction, which has been cited for evidence of linguistic relativity.",
+                nome="Guugu Yimithirr language"),
+            wiki("Linguistic_relativity",
+                "Levinson documented significant linguistic relativity effects in the different linguistic conceptualization of spatial categories in different languages. "
+                "For example, men speaking the Guugu Yimithirr language in Queensland gave accurate navigation instructions using a compass-like system of north, south, east and west, along with a hand gesture pointing to the starting direction. [...] "
+                "Levinson and others reported three basic spatial categorizations. [...] "
+                "For example, Yimithirr only uses absolute directions when describing spatial relations—the position of everything is described by using the cardinal directions. "
+                "Speakers define a location as \"north of the house\", while an English speaker may use relative positions, saying \"in front of the house\" or \"to the left of the house\".",
+                nome="Linguistic relativity"),
+        ],
+    },
+    # 2 Pormpuraaw: o tempo corre de leste para oeste
+    {
+        "temas_secundarios": ["povos_indigenas", "aprendizagem_inteligencia"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Peça a um morador de Pormpuraaw, na Austrália, que ordene imagens de uma história: ele as alinha de leste para oeste. Virado para o sul, a sequência vai da esquerda para a direita; para o norte, ao contrário.",
+        "explicacao": (
+            "Pormpuraaw é uma comunidade aborígene no oeste da península do Cabo York, onde se fala o kuuk "
+            "thaayorre. Em 2006, 250 dos 350 thaayorre falavam a língua, que ainda é aprendida pelas crianças. "
+            "Como muitas línguas da Austrália, ela usa pontos cardeais em vez de palavras como \"esquerda\" ou "
+            "\"à frente\", e tem dezesseis palavras para direções. Num estudo publicado em 2010, "
+            "Boroditsky e Gaby descreveram como os moradores ordenam no tempo uma sequência de imagens. Pesquisas "
+            "anteriores tinham achado pessoas que dispõem o tempo da esquerda para a direita, da direita para a "
+            "esquerda, de frente para trás ou de trás para a frente, sempre tomando o próprio corpo como "
+            "referência. Os moradores de Pormpuraaw ignoraram o corpo e seguiram os pontos cardeais: o tempo "
+            "anda de leste para oeste. Assim, para quem olha para o sul, ele corre da esquerda para a direita; "
+            "para quem olha para o norte, da direita para a esquerda; para quem olha para leste, vem em direção "
+            "ao corpo; e para quem olha para oeste, se afasta dele. Segundo o estudo, nem uma noção tão "
+            "básica quanto o tempo é organizada do mesmo jeito em todas as culturas."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            resumo("20959511", "Remembrances of times East: absolute spatial representations of time in an Australian aboriginal community (Psychological Science, 2010)",
+                "Boroditsky L, Gaby A. [...] "
+                "Here we describe representations of time in Pormpuraaw, a remote Australian Aboriginal community. [...] "
+                "Previously, people have been shown to represent time spatially from left to right or right to left, or from front to back or back to front. "
+                "All of these representations are with respect to the body. "
+                "Pormpuraawans instead arrange time according to cardinal directions: east to west. "
+                "That is, time flows from left to right when one is facing south, from right to left when one is facing north, toward the body when one is facing east, and away from the body when one is facing west. [...] "
+                "The results demonstrate that conceptions of even such fundamental domains as time can differ dramatically across cultures. [...] "
+                "2010"),
+            wiki("Kuuk_Thaayorre_language",
+                "is a Paman language spoken in the settlement Pormpuraaw on the western part of the Cape York Peninsula, Queensland in Australia by the Thaayorre people. "
+                "As of 2006, 250 of the 350 ethnic Thaayorre spoke the language. "
+                "It is in a robust position compared to many indigenous Australian languages, as it is still being acquired by children [...] "
+                "Kuuk Thaayorre is similar to most Australian languages for its thoroughgoing use of absolute cardinal directions instead of words with relative senses (ahead, left, etc.) [...] "
+                "There are sixteen words for directions in Kuuk Thaayorre. [...] "
+                "When asked to arrange a sequence of pictures in temporal order, speakers consistently arrange them so that time runs east to west, regardless of their own bodily orientation.",
+                nome="Kuuk Thaayorre language"),
+        ],
+    },
+    # 3 aimará: o futuro fica atrás; yupno: morro acima
+    {
+        "temas_secundarios": ["americas_pre_colombianas", "aprendizagem_inteligencia"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Para os aimarás, dos Andes, o passado fica à frente e o futuro, atrás: ao falar do que virá, eles chegam a apontar para as costas. Já os yupnos, nas montanhas da Papua-Nova Guiné, situam o futuro morro acima.",
+        "explicacao": (
+            "Na maior parte das línguas, inclusive o português, a pessoa caminha em direção ao futuro: \"temos "
+            "um longo caminho pela frente\", \"isso ficou para trás\". O aimará, falado nos Andes, inverte a "
+            "imagem. Os dias que virão são \"qhipa uru\", literalmente \"dias de trás\", e a expressão às vezes "
+            "vem com um gesto para trás de quem fala. O quíchua tem uma expressão equivalente. Núñez e "
+            "Sweetser analisaram a fala e os gestos de falantes de aimará num estudo publicado em 2006 e "
+            "concluíram que os gestos confirmam com força esse padrão raro. Uma explicação possível, ainda sem "
+            "prova, é que o passado é visível, como o que está diante dos olhos, e o futuro não. Núñez estudou "
+            "depois os yupnos, povo das montanhas da Papua-Nova Guiné cuja língua descreve o espaço em termos "
+            "de morro acima e morro abaixo. Medindo para onde eles apontavam ao explicar expressões ligadas ao "
+            "tempo, a equipe viu que o passado fica morro abaixo, o presente junto de quem fala e o futuro "
+            "morro acima. E a linha do tempo deles não é reta: parece acompanhar o relevo do lugar."
+        ),
+        "nivel": 1, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("Aymara_language",
+                "Linguistic and gestural analysis by Núñez and Sweetser also asserts that the Aymara have an apparently unique (or at least very rare) understanding of time. [...] "
+                "languages in which speakers seem to represent the past as in front of them and the future as behind them. [...] "
+                "Most languages conceptualize the ego as moving forward into the future, with ego's back to the past. [...] "
+                "Parallel Aymara examples describe future days as qhipa uru, literally 'back days', and they are sometimes accompanied by gestures to behind the speaker. "
+                "The same applies to Quechua-speakers, whose expression qhipa pʼunchaw corresponds directly to Aymara qhipa uru. "
+                "Possibly, the metaphor is from the fact that the past is visible (in front of one's eyes), but the future is not.",
+                nome="Aymara language"),
+            resumo("21702821", "With the future behind them: convergent evidence from Aymara language and gesture (Cognitive Science, 2006)",
+                "The Aymara language instead has a major static model of time wherein FUTURE IS BEHIND EGO and PAST IS IN FRONT OF EGO; "
+                "linguistic and gestural data give strong confirmation of this unusual culture-specific cognitive pattern. [...] "
+                "2006"),
+            resumo("22542697", "Contours of time: topographic construals of past, present, and future in the Yupno valley of Papua New Guinea (Cognition, 2012)",
+                "we studied the construal of deictic time among the Yupno, an indigenous group from the mountains of Papua New Guinea, whose language makes extensive use of allocentric topographic (uphill/downhill) terms for describing spatial relations. "
+                "We measured the pointing direction of Yupno speakers' gestures-produced naturally and without prompting-as they explained common expressions related to the past, present, and future. "
+                "Results show that the Yupno spontaneously construe deictic time spatially in terms of allocentric topography: the past is construed as downhill, the present as co-located with the speaker, and the future as uphill. "
+                "Moreover, the Yupno construal is not linear, but exhibits a particular geometry that appears to reflect the local terrain. [...] "
+                "Núñez R"),
+        ],
+    },
+    # 4 evidenciais: a gramática exige dizer como você sabe
+    {
+        "temas_secundarios": ["povos_indigenas", "historia_portugues"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Em tuyuca, língua falada no Amazonas e na Colômbia, a gramática obriga a dizer como você sabe o que diz: se viu, se percebeu de outro modo, se deduziu, se ouviu dizer ou se supõe. O português tem um eco disso no \"teria\".",
+        "explicacao": (
+            "Esse recurso se chama evidencialidade. Em português ele é opcional: dá para acrescentar \"pelo que "
+            "vi\" ou \"dizem que\", mas a frase fica completa sem isso. Em várias línguas, porém, a fonte da "
+            "informação faz parte da gramática e precisa ser marcada sempre. Segundo a linguista Alexandra "
+            "Aikhenvald, cerca de um quarto das línguas do mundo tem algum tipo de evidencialidade gramatical. "
+            "O tuyuca, do ramo tukano oriental, falado na bacia dos rios Papuri, Inambu e Tiquié, tem um "
+            "sistema de cinco marcas obrigatórias, para o que foi visto, percebido por outro sentido, "
+            "aparente, contado por terceiros ou presumido. O quíchua e o aimará, nos Andes, também exigem a "
+            "marca. O turco tem uma versão mais simples: \"geldi\" é \"veio\", dito de forma neutra, enquanto "
+            "\"gelmiş\" também está no passado, mas indica informação indireta, algo como \"pelo jeito, veio\". "
+            "O português chega perto no estilo jornalístico: \"ele reconheceu a culpa\" afirma o fato, e \"ele "
+            "teria reconhecido a culpa\" sinaliza que a informação veio de outros. A ideia de evidencialidade "
+            "como informação gramatical obrigatória foi apontada em 1911 por Franz Boas, ao "
+            "descrever línguas indígenas da América do Norte."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Evidentiality",
+                "Some languages have a distinct grammatical category of evidentiality that is required to be expressed at all times. "
+                "In contrast, the elements in European languages indicating the information source are optional [...] "
+                "Alexandra Aikhenvald (2004) reports that about a quarter of the world's languages have some type of grammatical evidentiality. [...] "
+                "Thus in journalistic French, there is frequently a distinction between [...] "
+                "and in Portuguese (Ele reconheceu sua culpa vs. Ele teria reconhecido sua culpa). [...] "
+                "In the word geldi, the unmarked suffix -di indicates past tense. "
+                "In the second word gelmiş, the suffix -miş also indicates past tense but indirectly. "
+                "It may be translated into English with the added phrases 'obviously', 'apparently' or 'as far as I understand'. [...] "
+                "visual sensory, nonvisual sensory, inferential, reportative, assumed (e.g. Tuyuca, Tucano) [...] "
+                "In contrast, many other languages (including Quechua, Aymara, and Yukaghir) require the speaker to mark the main verb or the sentence as a whole for evidentiality [...] "
+                "The notion of evidentiality as obligatory grammatical information was first made apparent in 1911 by Franz Boas in his introduction to The Handbook of American Indian Languages",
+                nome="Evidentiality"),
+            wiki("Tuyuca_language",
+                "is an Eastern Tucanoan language (similar to Tucano). "
+                "Tuyuca is spoken by the Tuyuca, an indigenous ethnic group of some 500–1000 people, who inhabit the watershed of the Papuri River, the Inambú River, and the Tiquié River in Vaupés Department, Colombia, and Amazonas State, Brazil. [...] "
+                "Tuyuca has mandatory type II evidentiality. "
+                "Five evidentiality paradigms are used: visual, nonvisual, apparent, second-hand, and assumed",
+                nome="Tuyuca language"),
+        ],
+    },
+    # 5 dyirbal: mulheres, fogo e coisas perigosas
+    {
+        "temas_secundarios": ["aprendizagem_inteligencia", "povos_indigenas"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Em dyirbal, língua aborígene da Austrália, uma mesma classe gramatical junta mulheres, água, fogo, violência e alguns animais. A lista deu título a um livro famoso sobre a mente: \"Mulheres, fogo e coisas perigosas\".",
+        "explicacao": (
+            "Muitas línguas dividem os substantivos em classes: no português, são o masculino e o feminino. "
+            "O dyirbal, do nordeste de Queensland, tem quatro, divididas por linhas de sentido. A primeira reúne a "
+            "maioria dos seres animados e os homens. A segunda, a mais famosa, junta mulheres, água, fogo, "
+            "violência e animais excepcionais. A terceira fica com frutas e vegetais comestíveis, e a quarta "
+            "abriga o que não cabe nas outras. A segunda classe inspirou o título do livro \"Women, Fire, and "
+            "Dangerous Things\", publicado em 1987 pelo linguista cognitivo americano George Lakoff. O livro "
+            "ataca a visão clássica de categoria, em que todos os membros partilham traços que os definem e as "
+            "fronteiras são nítidas. Lakoff se apoiou nos estudos da psicóloga Eleanor Rosch, que nos anos 1970 "
+            "mostrou que reconhecemos alguns membros de uma categoria como mais típicos: um tordo parece mais "
+            "\"pássaro\" que um pinguim. Para ele, as categorias têm um centro e se estendem a partir dele, com "
+            "bordas difusas. Restam poucos falantes: o censo australiano contou oito falantes em 2016 e 24 em 2021."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Dyirbal_language",
+                "Dyirbal ( JUR-bəl; also Djirubal) is an Australian Aboriginal language and dialect spoken in northeast Queensland [...] "
+                "According to the Australian Bureau of Statistics there were eight speakers of the language in 2016  and 24 speakers in 2021. [...] "
+                "The language is best known for its system of noun classes, numbering four in total. "
+                "They tend to be divided among the following semantic lines: "
+                "I – most animate objects, men "
+                "II – women, water, fire, violence, and exceptional animals "
+                "III – edible fruit and vegetables "
+                "IV – miscellaneous (includes things not classifiable in the first three) "
+                "The class usually labelled \"feminine\" (II) inspired the title of George Lakoff's book Women, Fire, and Dangerous Things.",
+                nome="Dyirbal language"),
+            wiki("Women,_Fire,_and_Dangerous_Things",
+                "Women, Fire, and Dangerous Things: What Categories Reveal about the Mind is a 1987 non-fiction book by George Lakoff, an American cognitive linguist. [...] "
+                "The book builds on earlier work in prototype theory by psychologist Eleanor Rosch in the 1970s, which showed that people tend to recognize certain members of a category as more \"typical\" than others (e.g., a robin is a more prototypical bird than a penguin). "
+                "Lakoff applies these insights to linguistic semantics,  arguing that categories are often structured around central prototypes with radial extensions. [...] "
+                "Lakoff critiques the classical theory of categorization, which assumes that all category members share a set of defining features, that category boundaries are strict, and that membership is all-or-none. "
+                "Instead, he argues that categories exhibit typicality effects, with some members more central than others, and that their boundaries are often fuzzy.",
+                nome="Women, Fire, and Dangerous Things"),
+        ],
+    },
+    # 6 a língua da sogra
+    {
+        "temas_secundarios": ["povos_indigenas", "costumes_rituais"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Entre os dyirbal, da Austrália, quem estivesse ao alcance dos ouvidos da sogra tinha de mudar de vocabulário: a gramática e os sons eram os mesmos, mas só quatro palavras eram comuns às duas maneiras de falar.",
+        "explicacao": (
+            "Os linguistas chamam o fenômeno de \"língua da sogra\". Não se trata de outra língua, e sim de um "
+            "vocabulário à parte, usado na presença de certos parentes considerados tabu. No dyirbal, era "
+            "proibido falar com a sogra, o genro ou a nora, e com alguns primos, e até se aproximar deles ou "
+            "olhá-los de frente. Um homem e a sogra não podiam se encarar nem conversar diretamente: dirigiam a "
+            "palavra a uma terceira pessoa, ou mesmo a um objeto próximo. Quando um parente tabu estava perto o "
+            "bastante para ouvir, era obrigatório usar a fala especial, que só partilhava com a comum as quatro "
+            "palavras para os avós. Esse vocabulário costuma ser menor e mais genérico: o dyirbal de respeito "
+            "tinha uma só palavra, \"jijan\", para todos os lagartos, que a fala do dia a dia distinguia em "
+            "várias espécies. Em guugu yimithirr, um único verbo, \"viajar\", cobria \"ir\", \"andar\", "
+            "\"engatinhar\", \"remar\", \"boiar\" e \"mancar\". As crianças provavelmente aprendiam a fala especial "
+            "anos depois da comum e a dominavam até a puberdade. No caso do dyirbal, o costume durou até por "
+            "volta de 1930, quando o sistema de tabus caiu em desuso. Entre os umpila, o tabu era ainda mais "
+            "radical: um homem e a sogra não podiam falar nada na presença um do outro."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Dyirbal_language",
+                "A speaker was completely forbidden from speaking with his/her mother-in-law, child-in-law, father's sister's child or mother's brother's child, and from approaching or looking directly at these people. [...] "
+                "In addition, when within hearing range of taboo relatives a person was required to use a specialized and complex form of the language with essentially the same phonemes and grammar, but with a lexicon that shared no words with the standard language except for four lexical items referring to grandparents on the mother and father's side. [...] "
+                "It is hypothesized that children of Dyirbal tribes were expected to acquire the [...] "
+                "speech style years following their acquisition of the everyday speech style [...] "
+                "By the onset of puberty, the child probably spoke [...] "
+                "This phenomenon, commonly called mother-in-law languages, was common in indigenous Australian languages. "
+                "It existed until about 1930, when the taboo system fell out of use.",
+                nome="Dyirbal language"),
+            wiki("Avoidance_speech",
+                "Avoidance speech styles used with taboo relatives are often called mother-in-law languages, although they are not actually separate languages but separate vocabularies with the same grammar and phonology. [...] "
+                "For example, in Dyirbal the avoidance style has one word, jijan, for all lizards, while the everyday style differentiates many varieties. "
+                "In Guugu Yimidhirr the avoidance speech verb bali-l \"travel\" covers several everyday verbs meaning \"go\", \"walk\", \"crawl\", \"paddle\", \"float, sail, drift\", and \"limp along\". [...] "
+                "For the Dyirbal people, a man and his mother-in-law may not make eye contact, face one another or directly talk to each other. "
+                "Rather, they must address a third person or even a nearby object. [...] "
+                "An extreme case of avoidance behavior is found in the Umpila, in which a man and his mother-in-law may not speak at all in each other's presence.",
+                nome="Avoidance speech"),
+        ],
+    },
+    # 7 os dois azuis do russo
+    {
+        "temas_secundarios": ["luz_cores", "sentidos"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "O russo trata o azul-claro (goluboy) e o azul-escuro (siniy) como cores diferentes. Num estudo de 2007, isso tornou os russos mais rápidos em distinguir tons entre os dois. Em 2020, um novo teste não viu a vantagem.",
+        "explicacao": (
+            "Em português, azul-claro e azul-escuro são tons da mesma cor. Em russo, \"goluboy\" e \"siniy\" "
+            "funcionam como cores básicas distintas, assim como verde e azul para nós, e a distinção é "
+            "obrigatória. Winawer e colegas, do MIT, testaram falantes de "
+            "russo e de inglês numa tarefa de discriminação rápida de cores, com tons de azul dos dois lados da "
+            "fronteira entre \"siniy\" e \"goluboy\". Os russos foram mais "
+            "rápidos quando as duas cores caíam em categorias diferentes da sua língua, um \"goluboy\" e um "
+            "\"siniy\", do que quando eram da mesma categoria, sobretudo com tons muito parecidos. Os falantes de "
+            "inglês não mostraram essa vantagem. O detalhe mais curioso: o efeito sumia quando os russos faziam "
+            "ao mesmo tempo uma tarefa verbal, mas não com uma tarefa espacial, sinal de que a língua agia ali, "
+            "na hora. O estudo, publicado em 2007, virou exemplo clássico de como a língua mexe na percepção. "
+            "Em 2020, porém, pesquisadores da Universidade de Aberdeen refizeram as mesmas tarefas e não "
+            "encontraram a vantagem de velocidade na fronteira entre os dois azuis, embora a tenham visto na "
+            "fronteira entre azul-claro e verde. Para eles, os \"azuis russos\" são menos bem definidos do que "
+            "se pensava."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            resumo("17470790", "Russian blues reveal effects of language on color discrimination (PNAS, 2007)",
+                "Winawer J [...] "
+                "English and Russian color terms divide the color spectrum differently. "
+                "Unlike English, Russian makes an obligatory distinction between lighter blues [...] and darker blues [...] "
+                "We tested English and Russian speakers in a speeded color discrimination task using blue stimuli that spanned the siniy/goluboy border. "
+                "We found that Russian speakers were faster to discriminate two colors when they fell into different linguistic categories in Russian (one siniy and the other goluboy) than when they were from the same linguistic category (both siniy or both goluboy). "
+                "Moreover, this category advantage was eliminated by a verbal, but not a spatial, dual task. "
+                "These effects were stronger for difficult discriminations (i.e., when the colors were perceptually close) than for easy discriminations [...] "
+                "English speakers tested on the identical stimuli did not show a category advantage in any of the conditions. [...] "
+                "the effect of language is online (and can be disrupted by verbal interference). [...] "
+                "Massachusetts Institute of Technology [...] "
+                "2007"),
+            resumo("32276236", "Russian blues reveal the limits of language influencing colour discrimination (Cognition, 2020)",
+                "Russian has two BCCs for blue, sinij 'dark blue' and goluboj 'light blue'. [...] "
+                "We re-evaluated this finding in two experiments that employed identical tasks as in the cited study. [...] "
+                "We observed a boundary response speed advantage for goluboj/zelënyj but not for sinij/goluboj. [...] "
+                "Contrary to previous research, our results show that in Russian, stimulus discrimination at the lightness-defined blue BCC boundary is not reflected in processing speed. [...] "
+                "are less well-structured than previously thought. [...] "
+                "University of Aberdeen [...] "
+                "2020"),
+            wiki("Blue–green_distinction_in_language",
+                "It traditionally treats light blue (голубой, goluboy) as a separate color independent from plain or dark blue (синий, siniy)",
+                nome="Blue–green distinction in language"),
+        ],
+    },
+    # 8 a ponte feminina e o efeito que não se repetiu
+    {
+        "temas_secundarios": ["psicologia_social", "aprendizagem_inteligencia"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "\"Ponte\" é feminino em alemão e masculino em espanhol. Um estudo relatou que alemães a descreviam como bela e elegante, e espanhóis, como forte e robusta. Mas um experimento famoso dessa linha não se repetiu.",
+        "explicacao": (
+            "A pergunta por trás é se o gênero gramatical, que em muitas línguas é quase arbitrário, faz as "
+            "pessoas imaginarem os objetos como masculinos ou femininos. Uma forma de testar é pedir que "
+            "descrevam um substantivo. Num estudo, falantes de alemão, em que \"Brücke\" é feminino, usaram "
+            "com mais frequência palavras como \"bonita\", \"elegante\", \"graciosa\" e \"esguia\" para "
+            "descrever uma ponte. Falantes de espanhol, em que \"puente\" é masculino, preferiram \"grande\", "
+            "\"perigosa\", \"forte\" e \"sólida\". Em 2003, Boroditsky e colegas relataram um resultado "
+            "parecido, com falantes de alemão e espanhol descrevendo objetos de acordo com o gênero da palavra "
+            "na própria língua. O trabalho foi citado inúmeras vezes, mas passou a ser criticado quando testes "
+            "independentes não conseguiram reproduzir os efeitos. Estudos desse tipo receberam críticas por "
+            "vários motivos, e o conjunto dos resultados é pouco claro. As análises de textos também divergem: "
+            "uma, com modelos de linguagem em grande escala, não achou relação entre adjetivos e o gênero de "
+            "substantivos inanimados; outra, com grandes coleções de textos, achou uma relação pequena. A ideia "
+            "de que o gênero gramatical molda como vemos as coisas segue em aberto, e mais fraca do que parecia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Grammatical_gender",
+                "Another kind of test, the semantic differential, asks people to describe a noun, and attempts to measure whether it takes on gender-specific connotations depending on the speaker's native language. "
+                "For example, one study found that German speakers describing a bridge (German: Brücke, f.) more often used the words 'beautiful', 'elegant', 'pretty', and 'slender', while Spanish speakers, whose word for 'bridge' is masculine (puente, m.), used 'big', 'dangerous', 'strong', and 'sturdy' more often. "
+                "However, studies of this kind have been criticized on various grounds and yield an unclear pattern of results overall.",
+                nome="Grammatical gender"),
+            wiki("Linguistic_relativity",
+                "An unpublished study by Boroditsky et al. in 2003 reported finding empirical evidence favoring the hypothesis and demonstrating that differences in languages' systems of grammatical gender can affect the way speakers of those languages think about objects. "
+                "Speakers of Spanish and German (which have different gender systems) were asked to use adjectives to describe various objects designated by words that were either masculine or feminine in their respective languages. "
+                "Speakers tended to describe objects in ways that were consistent with the gender of the noun in their language [...] "
+                "Despite numerous citations, the experiment was criticised after the reported effects could not be replicated by independent trials. "
+                "Additionally, a large-scale data analysis using word embeddings of language models found no correlation between adjectives and inanimate noun genders, while another study using large text corpora found a slight correlation",
+                nome="Linguistic relativity"),
+        ],
+    },
+    # 9 Whorf, o inspetor de incêndios
+    {
+        "temas_secundarios": ["personagens_esquecidos", "aprendizagem_inteligencia"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Benjamin Whorf, nome ligado à ideia de que a língua molda o pensamento, era inspetor de uma seguradora contra incêndios. Um de seus exemplos: operários fumavam perto de tambores de gasolina \"vazios\", os mais perigosos.",
+        "explicacao": (
+            "Whorf, que viveu de 1897 a 1941, formou-se em engenharia química no MIT em 1918 e foi trabalhar "
+            "como engenheiro de prevenção de incêndios na Hartford Fire Insurance Company, onde ganhou fama de "
+            "inspetor minucioso. A linguística começou como interesse paralelo: autodidata, estudou o náuatle e "
+            "outras línguas indígenas da Mesoamérica e depois estudou em Yale com o linguista Edward Sapir, sem "
+            "nunca tentar tirar o doutorado. Do trabalho de inspetor veio um dos seus exemplos mais famosos. Numa "
+            "fábrica, os tambores de gasolina cheios ficavam numa sala e os vazios em outra. Os vazios eram os "
+            "mais perigosos, por causa do vapor inflamável que restava neles, mas era justamente na sala deles "
+            "que os operários fumavam. Para Whorf, o hábito de chamá-los de \"vazios\", palavra que sugere algo "
+            "inerte, fazia os trabalhadores esquecerem o risco. O exemplo apanhou bastante: o linguista Eric "
+            "Lenneberg disse que ele não demonstrava que a palavra causava o comportamento, e Pinker o "
+            "ridicularizou como uma falha de percepção humana, não de linguagem. Whorf morreu de câncer em 1941, "
+            "e suas ideias só ganharam fama depois, quando colegas reuniram e divulgaram os seus manuscritos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Benjamin_Lee_Whorf",
+                "(; April 24, 1897 – July 26, 1941) was an American linguist and fire prevention engineer best known for his advocacy of linguistic relativity. [...] "
+                "After Whorf's premature death from cancer in 1941, his colleagues curated his manuscripts and promoted his ideas regarding language, culture, and cognition. [...] "
+                "Whorf initially pursued chemical engineering but developed an interest in linguistics, particularly Biblical Hebrew and indigenous Mesoamerican languages. [...] "
+                "Whorf later studied linguistics with Edward Sapir at Yale University while working as a fire prevention engineer. [...] "
+                "In 1918, Whorf graduated from the Massachusetts Institute of Technology, where his academic performance was of average quality, with a degree in chemical engineering. [...] "
+                "Around the same time he began work as a fire prevention engineer (an inspector) for the Hartford Fire Insurance Company. "
+                "He was particularly good at the job and was highly commended by his employers. [...] "
+                "they favored his thorough inspections and recommendations. [...] "
+                "Although Whorf had been entirely an autodidact in linguistic theory and field methodology up to this point [...] "
+                "He began studying the Nahuatl language in 1925 [...] "
+                "He enrolled in a program of graduate studies, nominally working towards a PhD in linguistics, but he never actually attempted to obtain a degree, satisfying himself with participating in the intellectual community around Sapir.",
+                nome="Benjamin Lee Whorf"),
+            wiki("Linguistic_relativity",
+                "Another example is from Whorf's experience as a chemical engineer working for an insurance company as a fire inspector. "
+                "While inspecting a chemical plant he observed that the plant had two storage rooms for gasoline barrels, one for the full barrels and one for the empty ones. "
+                "He further noticed that while no employees smoked cigarettes in the room for full barrels, no-one minded smoking in the room with empty barrels, although this was potentially much more dangerous because of the flammable vapors still in the barrels. "
+                "He concluded that the use of the word empty in association to the barrels had resulted in the workers unconsciously regarding them as harmless [...] "
+                "Eric Lenneberg [...] "
+                "This example was later criticized by Lenneberg as not actually demonstrating causality between the use of the word empty and the action of smoking, but instead was an example of circular reasoning. "
+                "Pinker in The Language Instinct ridiculed this example, claiming that this was a failing of human insight rather than language.",
+                nome="Linguistic relativity"),
+        ],
+    },
+    # 10 os hopis e o tempo
+    {
+        "temas_secundarios": ["povos_indigenas", "calendarios"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Ainda circula a ideia de que os hopis, do Arizona, não têm noção de tempo, herança de uma tese de Whorf. Em 1983, um linguista publicou 600 páginas sobre como o hopi fala de dias, calendários e futuro.",
+        "explicacao": (
+            "Nos anos 1940, Benjamin Whorf escreveu que o hopi não tinha palavras, formas gramaticais ou "
+            "expressões que se referissem diretamente ao que chamamos de tempo, e que seus falantes não "
+            "pensariam o tempo como um fluxo contínuo. A tese caiu em desgraça na linguística nos anos 1960, mas "
+            "sobreviveu fora da academia como lenda urbana: \"os hopis não têm conceito de tempo\". O linguista "
+            "Ekkehart Malotki passou quatro anos pesquisando na chamada Terceira Mesa e em 1983 "
+            "publicou \"Hopi Time\". O livro reúne centenas de exemplos: palavras como \"ep\", que quer dizer "
+            "tanto \"lá\" quanto \"então\"; a contagem de dias nas cerimônias, como \"payistala\", \"o terceiro "
+            "dia\"; a marcação do tempo pelo Sol no horizonte, pelas estrelas e por cordões com nós. Ele também "
+            "mostrou que o verbo hopi distingue futuro de não futuro. Para o linguista Bernard Comrie, a "
+            "argumentação de Malotki foi \"devastadora\". Mas a briga não acabou ali: estudiosos como John Lucy "
+            "dizem que Whorf nunca afirmou que os hopis não tinham noção de tempo, e sim que a gramática deles "
+            "organiza o tempo de outra forma. Mesmo assim, a lenda seguiu viva na literatura popular e no "
+            "pensamento Nova Era."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Hopi_time_controversy",
+                "The debate originated in the 1940s when American linguist Benjamin Lee Whorf argued [...] "
+                "Whorf argued that Hopi has \"no words, grammatical forms, construction or expressions that refer directly to what we call 'time'\" [...] "
+                "Whorf's relativist views fell out of favor in linguistics and anthropology in the 1960s, but Whorf's statement lived on in the popular literature often in the form of an urban myth that \"the Hopi have no concept of time.\" "
+                "In 1983, linguist Ekkehart Malotki published a 600-page study of the grammar of time in the Hopi language [...] "
+                "Malotki's treatise gave hundreds of examples of Hopi words and grammatical forms referring to temporal relations. [...] "
+                "He also demonstrated that the Hopi language grammaticalizes tense using a distinction between future and non-future tenses [...] "
+                "Bernard Comrie, a linguist and specialist in the linguistic typology of tense, concluded that \"Malotki's presentation and argumentation are devastating.\" [...] "
+                "The Hopi language, spoken by some 5,000 Hopi people in the Hopi Reservation in Northeastern Arizona [...] "
+                "Malotki conducted four years of research on the Third Mesa, studying Hopi spatial and temporal reference. [...] "
+                "such as the word ep that means both \"there\" and \"then.\" [...] "
+                "using compound words such as payistala \"the third day (of a ceremony)\" [...] "
+                "Hopi time-keeping practices using the sun relative to the horizon, using the stars, the ceremonial calendar and the use of time-keeping devices such as knotted strings or notched sticks [...] "
+                "In spite of Malotki's refutation, the myth that \"the Hopi have no concept of time\" lived on in the popular literature. [...] "
+                "And the myth continues to be an integral part of New Age thinking [...] "
+                "John A. Lucy argues that Malotki's critique misses the fact that Whorf's point was exactly that the way in which the Hopi language grammatically structurates the representation of time leads to a different conception of time than the English one, not that they do not have one.",
+                nome="Hopi time controversy"),
+        ],
+    },
+    # 11 o semáforo azul do Japão
+    {
+        "temas_secundarios": ["luz_cores", "percepcao_ilusoes"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "No Japão, a luz verde do semáforo é chamada de \"ao\", palavra que hoje quer dizer azul. Para aproximar a cor do nome sem violar a regra internacional, o governo decretou em 1973 o verde mais azulado possível.",
+        "explicacao": (
+            "Por muito tempo, o japonês tratou vários tons de verde como variações de \"ao\", que costuma ser "
+            "traduzido como azul. É a mesma palavra, escrita com o mesmo caractere, que o chinês \"qīng\", capaz "
+            "de designar tanto o azul quanto a maior parte dos verdes. A palavra mais usada hoje só para o verde, "
+            "\"midori\", surgiu no período Heian, entre os séculos IX e XII, e por muito tempo ainda foi vista "
+            "como um tom de \"ao\". Materiais escolares que separam o verde do azul só se espalharam depois da "
+            "Segunda Guerra Mundial. O resultado é que \"ao\" segue sendo o nome comum para a cor de plantas e "
+            "verduras e para a luz de \"siga\" do semáforo, enquanto um carro ou uma roupa verde são chamados de "
+            "\"midori\". O descompasso entre nome e cor do semáforo levou as autoridades japonesas, em 1973, a "
+            "determinar que a luz de \"siga\" passasse a usar o tom de verde mais azulado possível. Assim, o "
+            "nome ficou mais coerente com a cor sem que o Japão desrespeitasse a convenção internacional de "
+            "que verde quer dizer \"siga\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Traffic_light",
+                "Japanese traffic signals mostly follow the same rule except that the green \"go\" signals are referred to as 青 (ao), typically translated as \"blue\", reflecting a historical change in the Japanese language. "
+                "As a result, Japanese officials decreed in 1973 that the \"go\" light should be changed to the bluest possible shade of green, bringing the name more in line with the color without violating the international \"green means go\" rule.",
+                nome="Traffic light"),
+            wiki("Blue–green_distinction_in_language",
+                "In the Japanese language the various shades of green were traditionally regarded as shades of blue or, to a lesser extent, yellow. "
+                "The color-words 青 (ao; n.) or 青い (aoi; adj.)—the same kanji character as the Chinese qīng—can refer to either blue or most shades of green. "
+                "In Japan, ao is still the main noun used to describe the color of vegetation and plant material (such as edible vegetables), as well as the lamp indicating \"go\" on traffic lights. [...] "
+                "the word now most often used only for green, midori (緑), came into use only in the Heian period (circa 9th to 12th centuries) and, for a long time thereafter, midori was considered a shade of ao. "
+                "Educational materials distinguishing between green and blue came into use only after World War II. "
+                "Other objects—e.g. a green car or green clothing—are generally called midori.",
+                nome="Blue–green distinction in language"),
+        ],
+    },
+    # 12 Homero sem azul
+    {
+        "temas_secundarios": ["luz_cores", "grecia_antiga"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Nos poemas de Homero, o mar é \"cor de vinho\" e o azul não aparece. Em 1858, o britânico Gladstone notou isso, e muitos leram que ele achava os gregos daltônicos. Ele negou: falava de como Homero usava as cores.",
+        "explicacao": (
+            "O epíteto grego \"oînops póntos\", traduzido como \"mar cor de vinho\", aparece cinco vezes na "
+            "Ilíada e doze na Odisseia, muitas vezes para mares agitados. William Gladstone, político britânico, "
+            "analisou o mundo de Homero num livro de 1858 e não encontrou o azul nas descrições da paisagem "
+            "grega. A palavra \"kyanós\", que mais tarde significaria azul, aparece pouco e, em Homero, quase "
+            "certamente queria dizer \"escuro\": descrevia as sobrancelhas de Zeus. Gladstone propôs que Homero "
+            "usava as cores pensando mais no claro e no escuro do que no matiz. Uma frase dele, a de que \"o "
+            "órgão da cor\" era pouco desenvolvido entre os gregos da era heroica, foi lida como diagnóstico de "
+            "daltonismo, mas ele negou essa intenção e disse que Homero operava numa escala de claro a escuro. "
+            "Na década de 1860, o filólogo alemão Lazarus Geiger estendeu a busca aos Vedas, ao Alcorão, à "
+            "Bíblia hebraica e a textos islandeses e chineses antigos, e também não achou o azul. Ele propôs que "
+            "as palavras de cor surgem numa ordem universal, com o azul por último, ideia que antecipou o famoso "
+            "estudo de Berlin e Kay de 1969 sobre os termos básicos de cor."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Wine-dark_sea",
+                "Wine-dark sea is a traditional English translation of oînops póntos [...] "
+                "It is attested five times in the Iliad and twelve times in the Odyssey  often to describe rough, stormy seas. [...] "
+                "One of the first to observe Homer's description of colours was British statesman William Gladstone. "
+                "In his 1858 book Studies on Homer and the Homeric Age, Gladstone analysed all aspects of Homer's mythical world, to discover a total absence of blue from the poet's descriptions of the Greek natural scenery. "
+                "The word kyanós (κυανός), which in later stages of Greek meant blue, does make a limited appearance, but in Homer it almost certainly meant \"dark\", as it was used to describe the eyebrows of Zeus. "
+                "Gladstone proposed that the Homeric usage of colour-terms focused not on hue, as contemporary usage does, but primarily on how light or dark the object being described was. "
+                "Many readers, however, have read Gladstone's explanation of Homer's colour terms as a suggestion that he and the other ancient Greeks were colourblind. "
+                "The most controversial line is his claim that \"the organ of colour and its impressions were but partially developed among the Greeks of the heroic age\" [...] "
+                "After his book was published, Gladstone himself denied that he suggested here the Greeks suffered from colourblindness, and explained: [...] "
+                "Building on Gladstone's findings, the German philologist Lazarus Geiger extended the analysis beyond Greek in the 1860s, examining ancient texts including the Vedas, the Koran, the Hebrew Bible, and early Icelandic and Chinese sources. "
+                "He found that blue was absent from all of them. "
+                "Geiger further proposed that colour terminology develops in a universal sequence across languages: beginning with words for dark and light, followed by red, then yellow and green, with blue consistently appearing last. "
+                "This hierarchy directly anticipated the framework later formalized by Berlin and Kay in 1969.",
+                nome="Wine-dark sea"),
+        ],
+    },
+    # 13 línguas sem "sim" e "não"
+    {
+        "temas_secundarios": ["historia_portugues", "linguas_mundo"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "Quando alguém pergunta \"Você vem?\" e você responde \"Venho\", está usando a resposta-eco, comum em cerca de metade das línguas do mundo. Latim, irlandês e tailandês nem têm palavras próprias para \"sim\" e \"não\".",
+        "explicacao": (
+            "Responder a uma pergunta com uma palavra que signifique \"sim\" ou \"não\" está longe de ser "
+            "universal. Cerca de metade das línguas costuma repetir o verbo da pergunta, na forma afirmativa ou "
+            "negativa. Algumas, como o húngaro, o russo e o português, têm também palavras opcionais para sim e "
+            "não; outras, como o irlandês, o latim e o tailandês, não têm palavras específicas. O latim usava "
+            "advérbios como \"certe\" (certamente), \"sane\" ou \"minime\" (de modo algum), além do próprio eco. "
+            "Em finlandês, à pergunta \"Vocês estão vindo da cidade?\" a resposta normal é \"Tulemme\", \"Estamos "
+            "vindo\". O letão, até o século XVI, também não tinha palavra para sim e respondia repetindo o verbo. "
+            "O atual \"jā\" veio do alto-alemão médio \"ja\" e apareceu primeiro em textos religiosos daquele "
+            "século, sobretudo catecismos, traduzidos do alemão por pessoas que tinham aprendido letão como "
+            "língua estrangeira. A resposta-eco tem uma vantagem: evita a ambiguidade de um \"sim\" seco diante "
+            "de uma pergunta negativa, como \"Você não vem?\". E o próprio inglês já teve quatro palavras para "
+            "isso até o início do inglês médio."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Yes_and_no",
+                "English originally used a four-form system up to and including Early Middle English. [...] "
+                "Answering a \"yes or no\" question with single words meaning yes or no is by no means universal. "
+                "About half the world's languages typically employ an echo response: repeating the verb in the question in an affirmative or a negative form. "
+                "Some of these also have optional words for yes and no, like Hungarian, Russian, and Portuguese. "
+                "Others simply do not have designated yes and no words, like Welsh, Irish, Latin, Thai, and Chinese. "
+                "Echo responses avoid the issue of what an unadorned yes means in response to a negative question. [...] "
+                "The answer to Tuletteko kaupungista? (\"Are you coming from town?\") is the verb form itself, Tulemme. (\"We are coming.\") [...] "
+                "Up until the 16th century Latvian did not have a word for yes and the common way of responding affirmatively to a question was by repeating the question's verb, just as in Finnish. "
+                "The modern day jā was borrowed from Middle High German ja and first appeared in 16th-century religious texts, especially catechisms, in answers to questions about faith. "
+                "At that time such works were usually translated from German by non-Latvians that had learned Latvian as a foreign language. [...] "
+                "Latin has no single words for yes and no. [...] "
+                "including certe, fortasse, nimirum, plane, vero, etiam, sane, videlicet, and minime (negative). [...] "
+                "Latin also employs echo responses.",
+                nome="Yes and no"),
+        ],
+    },
+    # 14 os dois "nós" do tupi
+    {
+        "temas_secundarios": ["povos_indigenas", "linguas_mundo"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "O tupi antigo tinha dois \"nós\": îandé, que inclui quem ouve, e oré, que o deixa de fora. Muitas línguas fazem isso; no tok pisin, da Papua-Nova Guiné, o \"nós com você\" é \"yumi\", de \"you\" e \"me\".",
+        "explicacao": (
+            "Quando alguém diz \"nós vamos ao cinema\", o português não informa se quem ouve está incluído no "
+            "programa. Muitas línguas não deixam essa dúvida: têm um \"nós inclusivo\", que abrange o ouvinte, e "
+            "um \"nós exclusivo\", que o deixa de fora, e o falante é obrigado a escolher um deles. O tupi antigo, "
+            "falado no litoral do Brasil nos séculos XVI e XVII e registrado sobretudo por padres jesuítas, era assim: \"oré rambuer\", \"nós "
+            "falhamos\", deixa o ouvinte de fora, enquanto \"îandé nhyrõ\", \"nós perdoamos\", o inclui. No tok "
+            "pisin, crioulo de base inglesa da Papua-Nova Guiné, as formas são transparentes: \"mi\" é eu, "
+            "\"mipela\" é nós sem você, e \"yumi\", junção de \"yu\" e \"mi\", é nós com você. A distinção é quase "
+            "universal nas línguas austronésias e nas do norte da Austrália, aparece em várias línguas da Índia, "
+            "inclusive no hindi, e em cerca de metade das línguas indígenas das Américas, sem padrão geográfico "
+            "ou de parentesco claro. A primeira descrição publicada por um europeu saiu em 1560, numa gramática "
+            "de línguas do Peru escrita pelo frei Domingo de Santo Tomás."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Língua_tupi_antiga",
+                "Língua tupi, ou tupi antigo, foi a língua falada pelos povos tupis e por grande parte dos colonizadores que povoavam o litoral do Brasil nos séculos XVI e XVII. [...] "
+                "Seu registro foi feito sobretudo por padres jesuítas [...] "
+                "Os pronomes pessoas em tupi se destacam por ter duas formas de falar \"nós\". "
+                "Oré, é um nós exclusivo, que exclui o(s) ouvinte(s), e îandé, que o(s) inclui. [...] "
+                "oré rambuer (nós falhamos) (exclusivo) [...] "
+                "îandé nhyrõ (nós perdoamos) (inclusivo)",
+                nome="Língua tupi antiga", idioma="pt"),
+            wiki("Clusivity",
+                "Inclusive \"we\" specifically includes the addressee, while exclusive \"we\" specifically excludes the addressee [...] "
+                "The first published description of the inclusive-exclusive distinction by a European linguist was in a description of languages of Peru in 1560 by Domingo de Santo Tomás [...] "
+                "as in Tok Pisin, an English creole spoken in Papua New Guinea, which has singular mi, exclusive mi-pela, and inclusive yu-mi (a compound of mi with yu \"you\") or yu-mi-pela. [...] "
+                "The inclusive–exclusive distinction occurs nearly universally among the Austronesian languages and the languages of northern Australia [...] "
+                "It is widespread in India, featuring in the Dravidian, Kiranti, and Munda languages, as well as in several Indo-European languages of India such as [...] Hindustani (Hindi-Urdu) [...] "
+                "In indigenous languages of the Americas, it is found in about half the languages, with no clear geographic or genealogical pattern. [...] "
+                "rather, speakers are forced to specify by the choice of pronoun or inflexion whether they are including the addressee or not.",
+                nome="Clusivity"),
+        ],
+    },
+    # 15 tempo futuro e poupança
+    {
+        "temas_secundarios": ["decisoes_economia", "aprendizagem_inteligencia"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "Um economista achou que falantes de línguas que não exigem tempo futuro, como o finlandês e o mandarim, poupam mais. Depois ajudou dois pesquisadores céticos a testar a ideia: a correlação enfraqueceu, mas não sumiu.",
+        "explicacao": (
+            "Em inglês e em espanhol, falar do futuro obriga a mudar a estrutura da frase: em inglês, \"it is\" "
+            "vira \"it will be\". Em finlandês e em mandarim, dá para usar o presente. O economista Keith Chen, da Universidade "
+            "da Califórnia em Los Angeles, cruzou esse traço com uma grande pesquisa internacional e, num estudo "
+            "publicado em 2013, relatou que falantes de línguas sem marca gramatical de futuro poupam mais, "
+            "chegam à aposentadoria com mais patrimônio, fumam menos, fazem sexo mais seguro e são menos obesos. "
+            "A ideia, de que separar o futuro na gramática o tornaria psicologicamente mais distante, recebeu "
+            "muitas críticas. Uma das mais sérias: línguas aparentadas ou vizinhas herdam traços em comum, então "
+            "não são casos independentes, e isso pode inflar correlações. Em 2015, Chen assinou com dois "
+            "pesquisadores da evolução da linguagem um estudo que refez as contas controlando esse parentesco. A correlação ficou mais fraca "
+            "e, nos testes mais rigorosos, deixou de ser significativa, embora tenha resistido a vários outros. "
+            "Os dois parceiros esperavam que ela fosse um artefato e se surpreenderam. A conclusão do trio foi "
+            "que experimentos e estudos de caso seriam o caminho mais promissor, e não novos cruzamentos de "
+            "dados em grande escala."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Linguistic_relativity",
+                "A 2013 study found that those who speak \"futureless\" languages with no grammatical marking of the future tense save more, retire with more wealth, smoke less, practice safer sex, and are less obese than those who do not.",
+                nome="Linguistic relativity"),
+            {"url": EPMC + "PMC4506144/fullTextXML",
+             "titulo": "Future Tense and Economic Decisions: Controlling for Cultural Evolution (PLoS One, 2015)",
+             "idioma": "en",
+             "trecho": (
+                "UCLA Anderson School of Management [...] "
+                "Conceived and designed the experiments: SR JW KC. [...] "
+                "A previous study by Chen demonstrates a correlation between languages that grammatically mark future events and their speakers' propensity to save, even after controlling for numerous economic and demographic factors. "
+                "The implication is that languages which grammatically distinguish the present and the future may bias their speakers to distinguish them psychologically, leading to less future-oriented decision making. "
+                "However, Chen's original analysis assumed languages are independent. "
+                "This neglects the fact that languages are related, causing correlations to appear stronger than is warranted (Galton's problem). [...] "
+                "In general, the statistical correlation between the two variables is weaker when controlling for relatedness. "
+                "When applying the strictest tests for relatedness, and when data is not aggregated across individuals, the correlation is not significant. "
+                "However, the correlation did remain reasonably robust under a number of tests. [...] "
+                "However, experiments or case-studies would be more fruitful avenues for future research on this specific topic, rather than further large-scale cross-cultural correlational studies. [...] "
+                "For example, in English and Spanish a speaker is forced to make changes to the structure of a sentence when talking about the future as opposed to the present [...] "
+                "Finnish and Mandarin, in contrast, can use the present tense when talking about events in the future. [...] "
+                "a survey of hundreds of thousands of individuals who indicated what language they spoke and whether they saved money in the last year (the World Values Survey, [...] "
+                "Chen’s hypothesis has been criticised on a number of grounds [...] "
+                "The robustness of the correlation was surprising, especially to two of the authors (SR and JW), who expected the correlation to be a spurious artefact [...] "
+                "Keith Chen, Whorfian economist [...] "
+                "Language and Cognition department, Max Planck Institute for Psycholinguistics [...] "
+                "Language Evolution and Computation Research Unit, University of Edinburgh [...] "
+                "2015")},
+        ],
+    },
+]
