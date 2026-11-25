@@ -1,0 +1,141 @@
+{
+ "lote": "2026-11-24-quimica_cotidiano-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "quimica_cotidiano-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Soap (romanos sem sabão até o século I, estrígil, Plínio e os gauleses, monte Sapo como mito)."
+   },
+   {
+    "id": "quimica_cotidiano-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Causalidade e datas conferem (Detergent, Britannica); mas a fonte diz 'largely replaced', não substituição completa.",
+    "correcao": "Na explicação, trocar 'nos anos 1950 os detergentes já tinham substituído o sabão na lavagem de roupa nos países desenvolvidos' por 'nos anos 1950 os detergentes já tinham substituído, em grande parte, o sabão na lavagem de roupa nos países desenvolvidos'."
+   },
+   {
+    "id": "quimica_cotidiano-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (5 a 400 ppt), estudo de 2020 dos colêmbolos com 'parece servir'; distinto do 0004."
+   },
+   {
+    "id": "quimica_cotidiano-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e nomes conferem; mas a fonte trata o mecanismo do MIT como 'possible', não 'provável'.",
+    "correcao": "No gancho, trocar 'É um mecanismo provável do cheiro de terra molhada' por 'É um mecanismo possível do cheiro de terra molhada'."
+   },
+   {
+    "id": "quimica_cotidiano-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo está no parágrafo de Chloramine, inclusive 'often misattributed to elemental chlorine by the public'; mito_desmentido adequado."
+   },
+   {
+    "id": "quimica_cotidiano-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e datas conferem; mas o 'só' é absoluto demais: o próprio neon também é usado com revestimento fluorescente ou vidro colorido.",
+    "correcao": "Trocar o gancho por: \"Num letreiro \\\"de neon\\\", o gás neon puro dá um brilho vermelho-alaranjado. A maioria das outras cores vem de outros gases, como argônio com mercúrio, cuja luz ultravioleta faz brilhar um revestimento por dentro do tubo.\" Na explicação, trocar \"Mesmo assim, o nome \\\"neon\\\" ficou para todas.\" por \"Mesmo assim, o nome \\\"neon\\\" ficou para todos os letreiros, qualquer que seja o gás.\""
+   },
+   {
+    "id": "quimica_cotidiano-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo está na seção 'Reputed flow' de Glass (estudo de 2017, 1 nm por bilhão de anos); desmentido conhecido, nota 3."
+   },
+   {
+    "id": "quimica_cotidiano-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Mecanismo fiel; mas o relatório famoso de Barrow é de 1959, não dos anos 1930, e o papel sem ácido 'pode ser' tratado com bicarbonato.",
+    "correcao": "Na explicação, trocar \"Nos anos 1930, o químico e bibliotecário William Barrow publicou um relatório\" por \"O químico e bibliotecário americano William Barrow publicou um relatório\". Trocar \"A resposta foi o papel sem ácido, tratado com bicarbonato de cálcio ou de magnésio, que deixa\" por \"A resposta foi o papel sem ácido, que pode ser tratado com bicarbonato de cálcio ou de magnésio, que deixa\"."
+   },
+   {
+    "id": "quimica_cotidiano-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Datas conferem; mas a 'alergia' da esposa e o jantar vêm de tradição familiar, sem documento de época.",
+    "correcao": "Trocar o gancho por: \"Em 1843, o farmacêutico inglês Alfred Bird criou um fermento químico em pó para a esposa, que, segundo a história da família, não tolerava ovo nem levedura. Antes, fizera para ela um creme sem ovo, que virou marca.\" (confira o limite de 220). Na explicação, trocar \"Em casa, os convidados recebiam o creme de verdade, até que\" por \"Segundo a história contada na família, os convidados recebiam o creme de verdade, até que\". Mudar confianca para \"consenso_parcial\"."
+   },
+   {
+    "id": "quimica_cotidiano-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Bakelite (1907, substituto da goma-laca de Kerria lacca, Velox, Baeyer 1872)."
+   },
+   {
+    "id": "quimica_cotidiano-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mecanismo confere (oxidação exotérmica do ferro, sal como catalisador); Matoba e o aquecedor reutilizável conferem."
+   },
+   {
+    "id": "quimica_cotidiano-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Datas e nomes conferem (McKay, Black, Churchill da Alcoa em 1931, Dean, Grand Rapids em 1945)."
+   },
+   {
+    "id": "quimica_cotidiano-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem e o estudo original (Glindemann et al., 2006) confirma; mas a molécula não é 'criada pela pele', e sim sobre ela, por íons de ferro.",
+    "correcao": "No gancho, trocar 'uma molécula criada na hora pela pele: o ferro reage com gorduras oxidadas dela.' por 'uma molécula criada na hora sobre a própria pele: íons de ferro reagem com gorduras oxidadas dela.'"
+   },
+   {
+    "id": "quimica_cotidiano-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'Pode ajudar' e 'em estudo' respeitam o 'may play a role' da fonte; consenso_parcial correto."
+   },
+   {
+    "id": "quimica_cotidiano-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As duas fontes confirmam tudo; o consumo é atribuído a Chesebrough, sem recomendação nem dose."
+   }
+  ],
+  "2": [
+   {
+    "id": "quimica_cotidiano-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "\"Em grande parte\" aplicado; o resto confere."
+   },
+   {
+    "id": "quimica_cotidiano-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Mecanismo possível\" aplicado; datas conferem."
+   },
+   {
+    "id": "quimica_cotidiano-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sem o \"só\", com argônio e mercúrio sustentados pela fonte."
+   },
+   {
+    "id": "quimica_cotidiano-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Data de Barrow retirada e \"pode ser tratado\" aplicado."
+   },
+   {
+    "id": "quimica_cotidiano-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Ressalva da história da família aplicada; consenso_parcial."
+   },
+   {
+    "id": "quimica_cotidiano-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Sobre a própria pele: íons de ferro\" aplicado."
+   }
+  ]
+ }
+}

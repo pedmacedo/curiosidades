@@ -1,0 +1,193 @@
+{
+ "lote": "2026-11-24-asteroides_cometas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "asteroides_cometas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com a NASA (32 minutos, meta de 73 segundos, 25 vezes mais); o recuo dos detritos tem apoio."
+   },
+   {
+    "id": "asteroides_cometas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere, mas falta o porquê das árvores de pé no epicentro (está na fonte), e 'rocha' toma partido num debate asteroide/cometa.",
+    "correcao": "1) Depois de 'esse desenho indicava uma origem aérea.', inserir: 'O padrão se explica pela geometria da explosão: logo abaixo dela, a onda de choque desceu quase na vertical, arrancou os galhos e deixou os troncos em pé; mais longe, chegou quase na horizontal e deitou as árvores.' Acrescentar ao trecho da fonte Wikipedia (Tunguska_event): 'The trees directly below the explosion are stripped as the blast wave moves vertically downward, but remain standing upright, while trees farther away are knocked over because the blast wave is travelling closer to horizontal when it reaches them.' 2) Trocar 'A hipótese preferida é a de uma rocha de 50 a 60 metros' por 'A hipótese preferida é a de um corpo de 50 a 60 metros (se asteroide ou cometa, ainda se discute)'."
+   },
+   {
+    "id": "asteroides_cometas-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a fonte diz que não foi detectado 'in part' por vir do lado do Sol, e 'a explosão não feriu ninguém diretamente' contradiz as queimaduras pelo clarão.",
+    "correcao": "1) No gancho, trocar 'outro, que ninguém viu chegar porque vinha da direção do Sol, explodiu' por 'outro, que ninguém viu chegar, vindo do lado do Sol, explodiu'. 2) Na explicação, trocar 'A explosão no ar não feriu ninguém diretamente.' por 'Nenhum pedaço do meteoro atingiu alguém.'"
+   },
+   {
+    "id": "asteroides_cometas-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos observados conferem; mas a lista de hipóteses omite a proposta de 2023 (hidrogênio formado em gelo de água, cometa interestelar) e os 'cometas escuros' de 2024; 'primeiro objeto' é mais amplo que a fonte; escala_absurda não se aplica.",
+    "correcao": "1) No gancho, trocar 'O primeiro objeto vindo de fora do Sistema Solar' por 'O primeiro visitante confirmado de fora do Sistema Solar'. 2) Na explicação, trocar 'As propostas se multiplicaram: gelo de nitrogênio, como um pedaço de um planeta parecido com Plutão, ou gelo de hidrogênio, depois considerado incapaz de sobreviver à viagem. A composição dele continua desconhecida' por 'As propostas se multiplicaram: gelo de nitrogênio, como um pedaço de um planeta parecido com Plutão; gelo de hidrogênio puro, depois considerado incapaz de sobreviver à viagem; e, em 2023, hidrogênio formado por radiação dentro de um corpo rico em gelo de água e liberado perto do Sol, o que faria dele um cometa interestelar parecido com os nossos. Em 2024 já se conheciam 14 asteroides com o mesmo comportamento estranho, hoje chamados de \"cometas escuros\". Mesmo assim, a composição dele continua desconhecida'. Acrescentar ao trecho: 'On 22 March 2023, astronomers proposed the observed acceleration was \"due to the release of entrapped molecular hydrogen that formed through energetic processing of an H2O-rich icy body\", consistent with ʻOumuamua being an interstellar comet' e 'But by 2024, astronomers had identified 14 asteroids with the same unusual behavior. This makes ʻOumuamua the first member of another new class of objects called dark comets.' 3) Em tipos_espanto, trocar 'escala_absurda' por 'contraintuitivo'. Respeite 250 palavras na explicação (corte o que for preciso)."
+   },
+   {
+    "id": "asteroides_cometas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com a NASA (14 de 20 aminoácidos, as cinco bases confirmadas pelo artigo original, mistura racêmica); a Wikipedia erra ao dizer quatro bases."
+   },
+   {
+    "id": "asteroides_cometas-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; a frase do afundamento é da NASA, e 'segundo a descrição citada pela Wikipedia' esconde isso.",
+    "correcao": "Na explicação, trocar 'Segundo a descrição citada pela Wikipedia, a sonda teria afundado' por 'Segundo a NASA, a sonda teria afundado'. Acrescentar a fonte https://www.nasa.gov/missions/surprise-again-asteroid-bennu-reveals-its-surface-is-like-a-plastic-ball-pit (título 'Surprise Again: Asteroid Bennu Reveals Its Surface Is Like a Plastic Ball Pit') com um trecho literal que contenha 'would have sunk into Bennu had it not fired its thrusters', e rodar de novo o checar_citacoes.py. Se a fonte não passar, manter 'segundo a NASA' apoiado no trecho da Wikipedia que atribui a frase à NASA."
+   },
+   {
+    "id": "asteroides_cometas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os fatos conferem; mas a velocidade de escape é 'around 1 m/s' e o mesmo artigo dá ~44 cm/s.",
+    "correcao": "Na explicação, trocar 'Como a velocidade de escape do cometa é de só 1 metro por segundo' por 'Como a velocidade de escape do cometa é de cerca de 1 metro por segundo, ou menos'."
+   },
+   {
+    "id": "asteroides_cometas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Valores conferem; mas os registros falam em doação ao museu em 1956, e a venda por 25 dólares é lembrança do marido; 'enquanto ela estava na base' é ambíguo.",
+    "correcao": "Na explicação, trocar 'Em 1956, Ann o vendeu ao museu de história natural do Alabama, contra a vontade do marido, que lembrava de um valor de uns 25 dólares.' por 'Em 1956, a pedra foi parar no museu de história natural do Alabama: os registros falam em doação, e o marido lembrava de uma venda, contra a vontade dele, por uns 25 dólares.' Trocar também 'Enquanto ela estava na base,' por 'Enquanto a pedra estava na base aérea,'."
+   },
+   {
+    "id": "asteroides_cometas-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a fonte diz que o impacto 'strongly implied' a explicação das cadeias de crateras, e a mancha tinha 'quase' o diâmetro da Terra.",
+    "correcao": "Substituir o gancho por: 'Em 1994, os pedaços de um cometa despedaçado bateram em Júpiter e deixaram manchas quase do tamanho da Terra. A cena também ajudou a explicar um enigma: as fileiras de crateras em duas luas do planeta.' Na explicação, trocar 'O Shoemaker-Levy 9 indicou a explicação: trens de fragmentos' por 'O Shoemaker-Levy 9 tornou muito provável a explicação: trens de fragmentos'."
+   },
+   {
+    "id": "asteroides_cometas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Leonids (1833, mais de cem mil por hora por estimativa, calendário lakota, Olmsted, Tempel-Tuttle, 1966)."
+   },
+   {
+    "id": "asteroides_cometas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'passaram sem fotografar um asteroide' não prova o vazio (as sondas não estavam apontadas); a fonte tem um dado melhor (menos de 1 em 1 bilhão de chance de colisão).",
+    "correcao": "Substituir o gancho por: 'Na imagem popular, naves desviam de pedras num cinturão de asteroides apinhado. O de verdade é quase vazio: a chance de uma sonda que o atravessa bater num asteroide é estimada em menos de 1 em 1 bilhão.' Acrescentar ao trecho da fonte Asteroid belt a frase literal: 'Due to the low density of materials within the belt, the odds of a probe running into an asteroid are estimated at less than 1 in 1 billion.' Rodar de novo o checar_citacoes.py."
+   },
+   {
+    "id": "asteroides_cometas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (NASA e Wikipedia); mas o gancho sugere que 2,7% foi a maior probabilidade já registrada, superada em 2025 pelo 2024 YR4 (3,1%); o recorde vigente é o nível 4 na escala de Torino.",
+    "correcao": "No gancho, trocar o texto inteiro por: \"Em dezembro de 2004, o asteroide Apophis chegou a 2,7% de chance de bater na Terra em 2029 e ao nível 4 de 10 na escala de risco, recorde até hoje. O choque foi descartado, mas passará mais perto que muitos satélites.\" Na explicação, manter 'a mais alta classificação já dada a um objeto'. Não escrever em nenhum lugar que 2,7% foi a maior probabilidade já registrada."
+   },
+   {
+    "id": "asteroides_cometas-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere (cianogênio, máscaras de gás, pílulas anticometa, Eta Aquáridas e Oriônidas); mas a Terra cruza a trilha de detritos do Halley, não o cometa, todo ano.",
+    "correcao": "Na explicação, trocar \"Curiosamente, o encontro com o Halley se repete todo ano, de forma inofensiva.\" por \"Curiosamente, a Terra cruza restos do Halley todo ano, de forma inofensiva.\""
+   },
+   {
+    "id": "asteroides_cometas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O artigo original (Heck et al., PNAS 2020) dá ~3 ± 2 bilhões de anos a mais só para o grão mais velho; o texto fala em 'os mais velhos', usa '2,5 bilhões' e distorce a frase dos autores sobre modelos teóricos.",
+    "correcao": "(1) No gancho, trocar \"Os mais velhos têm cerca de 7 bilhões de anos: são o material mais antigo já achado na Terra.\" por \"O mais velho tem cerca de 7 bilhões de anos: é o material mais antigo já achado na Terra.\" (2) Na explicação, trocar \"Os mais antigos têm cerca de 7 bilhões de anos, uns 2,5 bilhões a mais que a Terra e o Sol, de 4,54 bilhões.\" por \"O mais antigo deles teria uns 3 bilhões de anos a mais que a Terra e o Sistema Solar, de 4,54 bilhões, ou seja, perto de 7 bilhões, com margem de erro de 2 bilhões para mais ou para menos.\" (3) Apagar a frase \"Os próprios autores lembram que as estimativas de quanto tempo a poeira sobrevive no espaço dependem muito de modelos teóricos, com grandes incertezas.\" (4) Trocar \"Tem mais de 100 kg\" por \"Os fragmentos recolhidos somam mais de 100 kg\". (5) Acrescentar ao trecho da fonte da Wikipedia (Murchison_meteorite) a frase literal \"The oldest of these grains was found to be 3 ± 2 billion years older than the 4.54 billion years age of the Earth and Solar System, making it the oldest material found on Earth to date.\""
+   },
+   {
+    "id": "asteroides_cometas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (40 mil t/ano, ~50 vezes os meteoritos, telhados em 2016); não repete o equívoco do atrito."
+   },
+   {
+    "id": "asteroides_cometas-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dactyl foi fotografada em 1993, mas só notada nas imagens em fevereiro de 1994; Dinkinesh confere; 'duas pedras grudadas' simplifica lobos de 220 m.",
+    "correcao": "(1) No gancho, trocar \"A primeira foi achada em 1993, em fotos de uma sonda.\" por \"A primeira foi fotografada por uma sonda em 1993 e notada nas imagens em 1994.\" e trocar \"é feita de duas pedras grudadas\" por \"é feita de dois blocos grudados\". (2) Na explicação, trocar \"Nas imagens, uma integrante da missão, Ann Harch, achou um corpo pequeno ao lado dele\" por \"Nas imagens, que por uma falha na antena só chegaram em parte em fevereiro de 1994, uma integrante da missão, Ann Harch, achou um corpo pequeno ao lado dele\". (3) Acrescentar ao trecho da fonte 243 Ida a frase literal \"The remaining images were sent in February 1994, when the spacecraft's proximity to the Earth allowed higher speed transmissions.\""
+   }
+  ],
+  "2": [
+   {
+    "id": "asteroides_cometas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Porquê das árvores de pé e \"corpo de 50 a 60 metros\" aplicados."
+   },
+   {
+    "id": "asteroides_cometas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Vindo do lado do Sol\" e \"nenhum pedaço atingiu alguém\" aplicados."
+   },
+   {
+    "id": "asteroides_cometas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "\"Primeiro visitante confirmado\", hipótese de 2023 e cometas escuros aplicados e sustentados."
+   },
+   {
+    "id": "asteroides_cometas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fonte da NASA passou; \"segundo a NASA\" correto."
+   },
+   {
+    "id": "asteroides_cometas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Cerca de 1 metro por segundo, ou menos\" aplicado."
+   },
+   {
+    "id": "asteroides_cometas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Doação nos registros e lembrança do marido aplicadas; ambiguidade desfeita."
+   },
+   {
+    "id": "asteroides_cometas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Quase do tamanho da Terra\" e \"tornou muito provável\" aplicados."
+   },
+   {
+    "id": "asteroides_cometas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com a chance de menos de 1 em 1 bilhão, sustentada."
+   },
+   {
+    "id": "asteroides_cometas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Recorde ligado ao nível 4 de Torino; nada sugere que 2,7% foi a maior probabilidade."
+   },
+   {
+    "id": "asteroides_cometas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "\"A Terra cruza restos do Halley\" aplicado."
+   },
+   {
+    "id": "asteroides_cometas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cinco correções aplicadas; retoque: a troca deixou \"e foi visto caindo\" sem sujeito.",
+    "correcao": "\"somam mais de 100 kg e foi visto caindo\" virou \"somam mais de 100 kg, e o meteorito foi visto caindo\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "asteroides_cometas-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções e trocas do produtor conferem; retoque: \"só chegaram em parte\" sugeria imagens incompletas.",
+    "correcao": "\"que por uma falha na antena só chegaram em parte em fevereiro de 1994\" virou \"das quais uma parte, por uma falha na antena, só chegou em fevereiro de 1994\".",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

@@ -2,14 +2,14 @@
 
 > Estado atual do projeto. Atualize ao fim de cada sessão de trabalho. A referência permanente é o `CLAUDE.md`.
 
-**Última atualização:** 2026-11-24
+**Última atualização:** 2026-11-25
 **Fase atual:** 4 (produção de lotes), iniciada em 2026-11-17 a pedido do Pedro.
 
 > **Retomado em 2026-11-18 (sem amostragem):** o Pedro dispensou a revisão humana por amostragem ("estou concordando quase 100%"). A produção segue direto pela fila do `situacao.py`, sem pausas.
 >
 > **Produção em paralelo (desde 2026-11-18, ideia do Pedro):** o orquestrador (a sessão principal) lança 4 subagentes produtores, um por tema da fila, com as regras de `pipeline/instrucoes_produtor.md`. Cada produtor só escreve, baixa (`pipeline/baixar_fontes.py`), monta e checa o seu lote, e depois faz o r2 com os vereditos. A verificação continua com o subagente `verificador` independente, de 4 a 5 fatos por chamada, e quem grava vereditos, aplica e mexe no PROGRESSO é só o orquestrador, um lote por vez, para não haver escrita simultânea em `dados/fatos`. Duplicatas entre lotes paralelos: o orquestrador mantém um e descarta o outro como `duplicado`.
 >
-> **Onde parou (2026-11-24):** 25 levas paralelas fechadas (106 temas, mais o lote de IA). A 25ª leva fez Teatro e dança, Cidades, História dos pratos, Aprendizagem e inteligência e Cartas, dados e azar, sem nenhum lote pela metade. A 26ª leva (Comportamento animal, Paisagens extremas, Asteroides e cometas, Química do cotidiano e Teoria dos jogos) está em andamento.
+> **Onde parou (2026-11-25):** 26 levas paralelas abertas (110 temas fechados, mais o lote de IA). A 26ª leva fechou Paisagens extremas, Asteroides e cometas, Química do cotidiano e Teoria dos jogos; Comportamento animal ainda está na rodada 1 (o produtor parou no limite de uso e foi retomado). A 27ª leva (Biomimética, Mundo islâmico medieval, Impérios coloniais, Música brasileira e Línguas inventadas) está em andamento.
 >
 > **Para retomar:** rode `python pipeline/situacao.py`. Ele mostra o lote pela metade (e o próximo passo), se é hora de amostra de revisão humana e os próximos temas da fila. Siga o "Fluxo de um lote" (seção da Fase 2) e, ao fim de cada tema, atualize a tabela da Fase 4 e as estatísticas.
 
@@ -162,6 +162,10 @@
 | Teatro e dança | 2026-11-24-teatro_danca-01 | 15 | 15 | 0 | 25ª leva paralela. Rodada 1: 3 aprovados, 12 ajustar. Destaques: em laboratório, a máscara do nô inclinada para baixo pareceu alegre, o contrário da convenção do palco (Kawai et al. 2013); Luís XIV estreou na dança aos 12 anos, não aos 14; Carl Prinzler, o da barra antipânico, não estava no teatro Iroquois; a 'proibição de 1910 pela Presidência de Madras' não se confirma; atrizes subiram aos palcos ingleses em 1660, e 1662 só formalizou; o 'aye' do Hamlet de 1603 é 'sim'. Os 12 aprovados na 2ª (1 com ajuste pontual). |
 | Cartas, dados e azar | 2026-11-24-jogos_azar-01 | 16 | 15 | 1 | 25ª leva paralela. Rodada 1: 4 aprovados, 11 ajustar, 1 reprovado (por que o inglês chama os naipes de clubs e spades: sem graça para quem já diz paus e espadas). Destaques: o astrágalo tem dois lados largos (~38% cada) e dois estreitos (~12%); os dados etruscos sustentam śa=4 e huθ=6 porque 3 e 4 ficam em faces opostas; 'naipe' deve vir do árabe nā'ib, mas a origem é discutida, e nosso baralho tem desenhos franceses com nomes portugueses; o tarô divinatório tem registro de ~1750, mas só se difundiu no fim do século XVIII; a proibição de monegascos no cassino não é de Carolina 'por razões morais'; a comparação do pachinko com Macau, Las Vegas e Singapura confundia total apostado com receita. Os 11 aprovados na 2ª. |
 | Aprendizagem e inteligência | 2026-11-24-aprendizagem_inteligencia-01 | 14 | 13 | 1 | 25ª leva paralela. Rodada 1: 6 aprovados, 7 ajustar, 1 reprovado (o acordo da Lumosity com a FTC era notícia jurídica sem mecanismo). Destaques: o apelido 'Termites' do estudo de Terman não estava nas fontes; no estudo dos pintores, cada voluntário passou pelas duas condições; a meta-análise de 2015 e o teste holandês sobre ameaça do estereótipo tratam de meninas em matemática; as '1.200 apresentações' dos Beatles em Hamburgo deturpavam Gladwell; o caso Polgár é de uma família só; a herdabilidade de 20% vale para a primeira infância e só 'tenderia' a 100%; o estudo de 2017 sobre aprender dormindo teve 20 voluntários e mostrou bloqueio, não apagamento. Os 7 aprovados na 2ª (2 com ajuste pontual). |
+| Química do cotidiano | 2026-11-24-quimica_cotidiano-01 | 15 | 15 | 0 | 26ª leva paralela. Rodada 1: 9 aprovados, 6 ajustar. Destaques: o mecanismo do petricor (MIT, 2015) é 'possível', não 'provável'; nos letreiros, o neon puro dá o vermelho-alaranjado, mas o 'só' era absoluto demais; o relatório famoso de William Barrow sobre o papel ácido é de 1959, não dos anos 1930; a esposa de Alfred Bird que não tolerava ovo é história de família, sem documento de época; o 'cheiro de metal' se forma sobre a pele, não pela pele. Os 6 aprovados na 2ª. |
+| Paisagens extremas | 2026-11-24-paisagens_extremas-01 | 15 | 14 | 1 | 26ª leva paralela (retomada depois do limite de uso). Rodada 1: 3 aprovados, 11 ajustar, 1 reprovado (os Lençóis Maranhenses 'deserto que chove' são trivia conhecida no Brasil). Destaques: 'sem chuva de 1570 a 1971' no Atacama é alegação de lista; Dallol é hoje quase uma cidade-fantasma; University Valley não tem 'ausência de organismos', e sim atividade microbiana indetectável (Goordial et al. 2016); o Lut divide com o deserto de Sonora os 80,8 °C de superfície; o estudo que contesta os 56,7 °C do Vale da Morte saiu no BAMS em janeiro de 2026; a calibração de satélites no Salar de Uyuni vinha de seção pouco confiável; a idade de 5,5 milhões de anos da caverna Movile é estimativa. Os 11 aprovados na 2ª (3 com ajuste pontual). |
+| Teoria dos jogos | 2026-11-24-teoria_jogos-01 | 16 | 16 | 0 | 26ª leva paralela. Rodada 1: 8 aprovados, 8 ajustar. Destaques: o 'isso é trivial' de von Neumann para Nash vem só da biografia de Sylvia Nasar; nas trincheiras houve também tréguas combinadas abertamente; os números 16 de 22 do cara ou coroa de Schelling não eram do jogo simples; no concurso do Politiken (2005), o vencedor foi 21,6, e não 'a média foi 33'; no Golden Balls, quem tocava o rival tinha menos chance de dividir, sem 'tender a roubar'; os pastos da Mongólia mais conservados eram de meados dos anos 1990. Os 8 aprovados na 2ª (1 com ajuste pontual). |
+| Asteroides e cometas | 2026-11-24-asteroides_cometas-01 | 16 | 16 | 0 | 26ª leva paralela (retomada depois do limite de uso). Rodada 1: 4 aprovados, 12 ajustar. Destaques: em Tunguska, as árvores do epicentro ficaram de pé porque a onda de choque desceu na vertical; o meteoro de Chelyabinsk passou despercebido 'em parte' por vir do lado do Sol; o ʻOumuamua ganhou a hipótese de 2023 e os 'cometas escuros'; a frase da sonda que afundaria em Bennu é da NASA; o Apophis tem o recorde do nível 4 em Torino, mas não o da maior probabilidade (o 2024 YR4 chegou a 3,1%); só o grão mais velho de Murchison tem ~7 bilhões de anos (±2); Dactyl foi notada nas imagens só em 1994; a pedra de Ann Hodges foi doada ao museu, segundo os registros. Os 12 aprovados na 2ª (2 com ajuste pontual). |
 
 ## Fase 2: piloto (2026-11-17)
 
@@ -276,7 +280,7 @@ Opcional: a variável de ambiente `CURIOSIDADES_CONTATO` acrescenta um contato a
 
 ## Estatísticas de conteúdo
 
-Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-24):
+Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-25):
 
 | Lote | Tema | Candidatos | Aprovados | Descartados | Descarte | Rodada 1 (apr/ajus/repr) | Motivos | Nota média |
 |---|---|---|---|---|---|---|---|---|
@@ -387,6 +391,7 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-24):
 | 2026-11-23-telecomunicacoes-01 | telecomunicacoes | 15 | 14 | 1 | 7% | 7/7/1 | pouco_interessante 1 | 3.8 |
 | 2026-11-24-alimentos_perigosos-01 | alimentos_perigosos | 14 | 14 | 0 | 0% | 1/13/0 | — | 3.9 |
 | 2026-11-24-aprendizagem_inteligencia-01 | aprendizagem_inteligencia | 14 | 13 | 1 | 7% | 6/7/1 | pouco_interessante 1 | 3.8 |
+| 2026-11-24-asteroides_cometas-01 | asteroides_cometas | 16 | 16 | 0 | 0% | 4/12/0 | — | 4.0 |
 | 2026-11-24-biomas_brasileiros-01 | biomas_brasileiros | 13 | 13 | 0 | 0% | 5/8/0 | — | 3.8 |
 | 2026-11-24-cidades-01 | cidades | 14 | 13 | 1 | 7% | 5/8/1 | pouco_interessante 1 | 3.6 |
 | 2026-11-24-cinema_fotografia-01 | cinema_fotografia | 16 | 16 | 0 | 0% | 5/11/0 | — | 3.9 |
@@ -407,12 +412,15 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-24):
 | 2026-11-24-medidas_padroes-01 | medidas_padroes | 14 | 14 | 0 | 0% | 5/9/0 | — | 3.7 |
 | 2026-11-24-moda-01 | moda | 14 | 12 | 2 | 14% | 7/5/2 | pouco_interessante 1, mito 1 | 3.8 |
 | 2026-11-24-padroes_fractais-01 | padroes_fractais | 15 | 15 | 0 | 0% | 8/7/0 | — | 4.0 |
+| 2026-11-24-paisagens_extremas-01 | paisagens_extremas | 15 | 14 | 1 | 7% | 3/11/1 | pouco_interessante 1 | 3.7 |
 | 2026-11-24-paleontologia-01 | paleontologia | 16 | 16 | 0 | 0% | 9/7/0 | — | 3.9 |
+| 2026-11-24-quimica_cotidiano-01 | quimica_cotidiano | 15 | 15 | 0 | 0% | 9/6/0 | — | 3.7 |
 | 2026-11-24-teatro_danca-01 | teatro_danca | 15 | 15 | 0 | 0% | 3/12/0 | — | 3.7 |
+| 2026-11-24-teoria_jogos-01 | teoria_jogos | 16 | 16 | 0 | 0% | 8/8/0 | — | 4.0 |
 | 2026-11-24-videogames-01 | videogames | 18 | 16 | 2 | 11% | 6/10/2 | pouco_interessante 2 | 3.9 |
-| **Total** | | 1826 | 1769 | 57 | 3% | | | |
+| **Total** | | 1888 | 1830 | 58 | 3% | | | |
 
-Cobertura: 130 de 163 temas com pelo menos um fato aprovado.
+Cobertura: 134 de 163 temas com pelo menos um fato aprovado.
 
 ## Revisões humanas
 

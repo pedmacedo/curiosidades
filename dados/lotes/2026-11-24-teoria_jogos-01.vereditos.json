@@ -1,0 +1,163 @@
+{
+ "lote": "2026-11-24-teoria_jogos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "teoria_jogos-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere (dois torneios por volta de 1980, olho por olho a mais simples e mais bem-sucedida, 200 rodadas); mas Hamilton escreveu com Axelrod o artigo, não os torneios.",
+    "correcao": "Na explicação, trocar 'O trabalho, feito também com o biólogo W. D. Hamilton, virou referência para explicar a cooperação entre seres vivos, de bactérias a primatas.' por 'Num artigo escrito com o biólogo W. D. Hamilton, Axelrod levou essas ideias para a cooperação entre seres vivos, de bactérias a primatas, e o trabalho virou referência.'"
+   },
+   {
+    "id": "teoria_jogos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada atribuição confere (Flood e Dresher na RAND, 1950; Alchian e Williams, cem rodadas; Tucker dá o nome)."
+   },
+   {
+    "id": "teoria_jogos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números e afirmações conferem (60 programas, senha de 5 a 10 jogadas, três primeiros lugares em 2004); complementa o 0001."
+   },
+   {
+    "id": "teoria_jogos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem, mas a frase 'That's trivial...' vem de uma só fonte (Nasar, 1998, p. 94), com base em entrevista de Kuhn; Nash lembrou o encontro com outras palavras. É relato de biografia.",
+    "correcao": "1) Gancho: trocar por 'John Nash ganhou o Nobel de Economia de 1994 por ideias de uma tese de doutorado de 28 páginas. Segundo sua biógrafa, ao mostrar o resultado a von Neumann, ouviu: \"Isso é trivial. É só um teorema do ponto fixo.\"' 2) Explicação: trocar 'Em 1949, ao ouvir a ideia, von Neumann a despachou com a frase famosa.' por 'Segundo a biografia escrita por Sylvia Nasar (Uma Mente Brilhante), foi em 1949, ao ouvir a ideia, que von Neumann a despachou com essa frase.' 3) No trecho da fonte Nash equilibrium, acrescentar ao fim da citação de von Neumann o literal ' (See Nasar, 1998, p. 94.)'."
+   },
+   {
+    "id": "teoria_jogos-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fenômeno e disputa (Gowa, Gelman) conferem; mas houve também tréguas combinadas abertamente, os comandantes só 'às vezes' analisavam as baixas, e 'se desfazia com qualquer morte' exagera.",
+    "correcao": "1) Gancho: trocar por 'Nas trincheiras da Primeira Guerra, inimigos paravam de atirar, às vezes sem combinar nada, ou disparavam de um jeito ritual, sem intenção de matar. Alguns generais chegavam a analisar as baixas para flagrar isso.' 2) Explicação: trocar 'e o sistema, frágil, se desfazia com qualquer morte' por 'e o sistema, frágil, se desfazia facilmente quando havia mortes'."
+   },
+   {
+    "id": "teoria_jogos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com 'Dollar auction' (lances, perdas, custo afundado, Shubik 1971)."
+   },
+   {
+    "id": "teoria_jogos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e biografia conferem e o modo do suicídio não é descrito; mas foram dois artigos numa só revista (Science), o artigo com Maynard Smith foi 'pioneiro', não 'o que levou' a teoria dos jogos à biologia, e a leitura de Hamilton não é situada em Londres pela fonte.",
+    "correcao": "Na explicação: (1) Trocar 'escreveu em revistas científicas contra a percepção extrassensorial' por 'escreveu na revista Science contra a percepção extrassensorial'. (2) Trocar 'Lá, tinha lido os trabalhos de W. D. Hamilton sobre seleção de parentesco e, sem treino' por 'Depois de ler os trabalhos de W. D. Hamilton sobre seleção de parentesco, e sem treino'. (3) Trocar 'assinou com John Maynard Smith o artigo que levou a teoria dos jogos para a biologia' por 'assinou com John Maynard Smith um artigo pioneiro na aplicação da teoria dos jogos à biologia evolutiva'."
+   },
+   {
+    "id": "teoria_jogos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a página do Nobel de 2020 (julho de 1994, 10 licenças, 47 rodadas, 617 milhões; mais de 120 bilhões na FCC e 200 bilhões no mundo)."
+   },
+   {
+    "id": "teoria_jogos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a página do Nobel de 2012 (NRMP no início dos anos 1950, Gale e Shapley em 1962, Roth em 1984 e 1995–1997)."
+   },
+   {
+    "id": "teoria_jogos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com a página do Nobel de 2005; o texto não exagera a conclusão ('podem')."
+   },
+   {
+    "id": "teoria_jogos-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A origem do exemplo (Sneath 1998, citado na página do Nobel de 2009) confere, mas o gancho no presente engana (a comparação é de meados dos anos 1990, e os pastos mongóis se degradaram depois) e só a China privatizou; 'costumam' é mais forte que 'often surprisingly'.",
+    "correcao": "Trocar o gancho inteiro por: 'Nos anos 1990, satélites mostraram pastos nômades da Mongólia mais conservados que os vizinhos da China e da Rússia, onde houve coletivização (e, na China, privatização). Elinor Ostrom ajudou a entender por quê.' Na explicação, trocar 'concluiu que eles costumam ser bem administrados pelos próprios usuários' por 'concluiu que eles muitas vezes são surpreendentemente bem administrados pelos próprios usuários'."
+   },
+   {
+    "id": "teoria_jogos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo consta da fonte; o estudo de Henrich et al. (AER 2001) confirma as 15 sociedades, e a Science News confirma os Au e Gnau rejeitando ofertas generosas."
+   },
+   {
+    "id": "teoria_jogos-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Origem em Schelling confere; mas os números 16 de 22 e 15 de 22 parecem vir de uma variante com prêmios desiguais, não do jogo simples (no artigo de 1957, 36 escolheram cara e 6 coroa); e 'a mesma' no gancho fica sem referente.",
+    "correcao": "1) Na explicação, trocar 'Schelling testou outros casos: com dois jogadores escolhendo \"cara\" ou \"coroa\" e ganhando se coincidissem, 16 de 22 de um grupo e 15 de 22 do outro escolheram cara.' por 'Schelling testou outros casos: quando dois jogadores ganhavam se dissessem a mesma coisa entre \"cara\" e \"coroa\", a maioria escolheu cara.' Remover também do trecho a parte sobre 16 de 22 e 15 de 22. 2) No gancho, trocar 'A resposta mais comum foi a mesma: meio-dia, na estação Grand Central.' por 'A resposta mais comum: meio-dia, na estação Grand Central.'"
+   },
+   {
+    "id": "teoria_jogos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Atribuições conferem (volante, manifestante algemado, máquina do Dr. Fantástico, Russell, Schelling e o valor de limitar as próprias alternativas)."
+   },
+   {
+    "id": "teoria_jogos-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Participantes, prêmio e Ledoux conferem; mas 'a média foi 33' é contradito por outras fontes (vencedor 21,6, média ~32,4); escala_absurda não se aplica.",
+    "correcao": "1) No gancho, trocar 'a média dos palpites foi 33.' por 'o número vencedor foi 21,6.' 2) Acrescentar uma fonte com esse número e trecho literal conferido pelo checar_citacoes.py, por exemplo https://aperiodical.com/2015/08/new-york-times-puzzle-is-pure-game-theory/ ('a winning value of 21.6') ou https://theincidentaleconomist.com/wordpress/analysis-of-whats-23-of-the-average/ ('21.6 was the winning number in such a game with 19,196 participants organized by a Danish newspaper'). Tirar do trecho da Wikipedia a parte 'the average value was found to be 33'. 3) Opcional: depois de 'quem dá um passo além aposta 22', dizer que o vencedor do Politiken ficou perto desse segundo degrau. 4) Em tipos_espanto, remover 'escala_absurda' e deixar só 'contraintuitivo'."
+   },
+   {
+    "id": "teoria_jogos-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "exagero: 'menos provável dividir' não é 'tendia a roubar' (a taxa média de divisão era 53%); a fonte diz 'variant' do dilema do prisioneiro.",
+    "correcao": "1) No gancho, trocar 'quem tocava fisicamente o rival tendia a roubar, e quem puxava o riso tendia a dividir.' por 'quem tocava fisicamente o rival tinha menos chance de dividir, e quem puxava o riso, mais.' 2) Na explicação, trocar 'notaram que tomar a iniciativa do contato físico, ou ser tocado, se associava a roubar, e que puxar o riso se associava a dividir.' por 'notaram que tomar a iniciativa do contato físico, ou ser tocado, se associava a uma chance menor de dividir, e que puxar o riso se associava a uma chance maior.' 3) Trocar 'a final é um dilema do prisioneiro com dinheiro de verdade' por 'a final é uma variante do dilema do prisioneiro com dinheiro de verdade'."
+   }
+  ],
+  "2": [
+   {
+    "id": "teoria_jogos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Hamilton como coautor do artigo; o resto confere."
+   },
+   {
+    "id": "teoria_jogos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase de von Neumann atribuída à biógrafa, com \"See Nasar, 1998, p. 94\"."
+   },
+   {
+    "id": "teoria_jogos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho e explicação corrigidos (às vezes, alguns generais, facilmente)."
+   },
+   {
+    "id": "teoria_jogos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Science, leitura de Hamilton e \"artigo pioneiro\" aplicados."
+   },
+   {
+    "id": "teoria_jogos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho nos anos 1990 e privatização só na China aplicados."
+   },
+   {
+    "id": "teoria_jogos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: \"a maioria escolheu cara\" ficou sem apoio no trecho e saiu.",
+    "correcao": "A frase do cara ou coroa foi apagada; fica só o exemplo do ABC.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "teoria_jogos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fonte nova (Aperiodical) confirma 21,6, 2005 e cinco ganhadores."
+   },
+   {
+    "id": "teoria_jogos-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Menos chance de dividir\" e \"variante\" aplicados."
+   }
+  ]
+ }
+}

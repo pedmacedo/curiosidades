@@ -1,0 +1,182 @@
+{
+ "lote": "2026-11-24-paisagens_extremas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "paisagens_extremas-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere ('some weather stations ... never received rain'; estudo de 2003 com os testes da Viking). Mas 'sem chuva de 1570 a 1971' é alegação de lista sem estudo de origem.",
+    "correcao": "Remover da explicação a frase 'Há indícios de que talvez não tenha caído chuva significativa entre 1570 e 1971.' e tirar a parte correspondente do trecho ('Evidence suggests that the Atacama may not have had any significant rainfall from 1570 to 1971. [...]'). Opcional: no fim da frase sobre Yungay, acrescentar 'o que mostra mais os limites dos testes do que um solo totalmente estéril'."
+   },
+   {
+    "id": "paisagens_extremas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem, mas a fonte diz que Dallol é hoje cidade-fantasma; o recorde de lugar 'habitado' vale para a medição de 1960–1966.",
+    "correcao": "Trocar o gancho por: 'Dallol, na Etiópia, tem o recorde de maior temperatura média anual de um lugar habitado: cerca de 35 °C, medida entre 1960 e 1966. Hoje o povoado de prédios de sal está quase abandonado, mas caravanas de camelos ainda vão lá buscar sal.' (se passar de 220, corte 'de prédios de sal'). Na explicação, trocar 'o recorde para um lugar habitado' por 'o recorde para um lugar habitado na época da medição'."
+   },
+   {
+    "id": "paisagens_extremas-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (afastamento das placas, oceanização segundo a IUGS, quatro invasões do mar Vermelho, 500 m de sal); mas o posto de 'corpo d'água mais salgado' é disputado com a lagoa Don Juan.",
+    "correcao": "Na explicação, trocar 'a lagoa Gaet'ale, com 43% de sal, é o corpo d'água mais salgado da Terra;' por 'a lagoa Gaet'ale, com 43% de sal, é apontada como o corpo d'água mais salgado da Terra;'."
+   },
+   {
+    "id": "paisagens_extremas-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'primeiro lugar visitado sem vida microbiana ativa' não aparece no estudo (Goordial et al., ISME J, 2016), que achou biomassa baixíssima e atividade indetectável; a neve evapora em horas no verão; 'o deserto mais frio e seco' exagera.",
+    "correcao": "Gancho: trocar 'fazem a neve evaporar em poucas horas' por 'podem fazer a neve evaporar em poucas horas no verão'. Explicação: (a) trocar 'formam o deserto mais frio e seco do mundo' por 'estão entre os desertos mais frios e secos do mundo'; (b) trocar 'Não acharam organismos vivos, o que fez do vale o primeiro lugar visitado por humanos sem vida microbiana ativa detectada.' por 'Não detectaram nenhuma atividade microbiana no permafrost; a biomassa era baixíssima, e o estudo, publicado em 2016, sugere que ali se chega perto do limite frio e seco da vida.'; (c) acrescentar a fonte https://phys.org/news/2016-01-nearing-limits-life-earth.html com um trecho literal que contenha 'We couldn't detect any microbial activity within these samples' e rodar o checar_citacoes.py; (d) tirar do trecho da Wikipedia a oração 'making University Valley the first location on the planet visited by humans with no detected active microbial life'."
+   },
+   {
+    "id": "paisagens_extremas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem e a distinção chão/ar está certa; mas o Lut divide o posto de chão mais quente com o deserto de Sonora (80,8 °C em ambos, NASA), e 'até 2020 nem havia estação' sugere que depois passou a haver.",
+    "correcao": "Trocar o gancho por: 'Satélites da NASA mediram no deserto de Lut, no Irã, até 80,8 °C na superfície, um dos chãos mais quentes da Terra. O ar sobre ele, porém, pode estar 30 °C mais frio, e por isso esses números não valem como recorde.' (se passar de 220, encurte a segunda frase). Na explicação, trocar 'Em 2019, um estudo com dados mais novos do mesmo sensor relatou 80,83 °C na superfície.' por 'Em 2019, um estudo com dados mais novos do mesmo sensor relatou 80,83 °C na superfície; outra análise do MODIS achou os mesmos 80,8 °C também no deserto de Sonora, no México.' e acrescentar a fonte https://science.nasa.gov/earth/earth-observatory/irans-lut-desert-153634 com o trecho 'MODIS recorded the hottest temperatures of 80.8°C (177.4°F) in both the Sonoran and Lut deserts' (se não passar, remova a menção a Sonora e mantenha 'um dos chãos mais quentes'). Trocar também 'até 2020 não havia estações meteorológicas permanentes ali' por 'em 2020 ainda não havia estações meteorológicas permanentes ali'."
+   },
+   {
+    "id": "paisagens_extremas-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem e o estudo existe (Spencer, Christy e Reid, BAMS, edição de janeiro de 2026). Mas 'a OMM só abrirá investigação se surgirem novos materiais' é declaração anterior ao estudo; depois dele, o caso iria ao comitê dos EUA.",
+    "correcao": "Na explicação, troque 'A OMM mantém o recorde e diz que só abrirá investigação se surgirem novos materiais.' por 'Por enquanto, a OMM mantém o recorde oficial.' Opcional: troque 'um estudo publicado em 2026 no Bulletin of the American Meteorological Society' por 'um estudo publicado no Bulletin of the American Meteorological Society (edição de janeiro de 2026)'."
+   },
+   {
+    "id": "paisagens_extremas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Hồ Khanh em 1990, reencontro em 2008, expedição de 2009, muralha vencida em 2010, maior galeria por volume)."
+   },
+   {
+    "id": "paisagens_extremas-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números do gancho conferem; mas a seção de calibração de satélites da Wikipedia é pouco confiável, e a frase do Sentinel-1A 'para calibrar medições de relevo' não se sustenta (a ESA só mostra uma imagem de radar).",
+    "correcao": "Na explicação, remova a frase 'Em 2014, poucas semanas depois do lançamento, o satélite europeu Sentinel-1A sobrevoou o salar para calibrar medições de relevo feitas por radar.' Remova também 'o instrumento do Landsat-5 foi calibrado em voo usando o salar como alvo estável'. Fica assim: 'Como ele reflete a maior parte da luz do sol que recebe, também serve de alvo estável para ajustar sensores ópticos.'"
+   },
+   {
+    "id": "paisagens_extremas-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e o cachorreo conferem (a OIT o descreve como exploração). Mas 'o maior povoado permanente mais alto do mundo' é confuso.",
+    "correcao": "No gancho, troque 'o maior povoado permanente mais alto do mundo, a até 5.100 m' por 'o povoado permanente de grande porte mais alto do mundo, a até 5.100 m'."
+   },
+   {
+    "id": "paisagens_extremas-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: 'o deserto que chove' é trivia conhecida no Brasil e depende de definição; o único elemento novo (o peixe que dorme na lama) só aparece em divulgação, sem estudo."
+   },
+   {
+    "id": "paisagens_extremas-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (vento nos anos 1950, escavação desde 1984, 25/5/1986, 244,8 km, dissolução de baixo para cima). Mas o gancho sugere 30 anos de escavação e que pessoas escavaram as galerias; o melhor achado (ácido sulfúrico) não aparece.",
+    "correcao": "Trocar o gancho por: \"Nos anos 1950, exploradores ouviram vento rugindo sob o entulho de uma caverna no Novo México. Em 1986, uma escavação revelou a Lechuguilla: 244,8 km de galerias dissolvidas de baixo para cima por ácido sulfúrico.\" A explicação fica como está."
+   },
+   {
+    "id": "paisagens_extremas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (1915, 20/12/2013, mais de 60 pedras, gelo de poucos mm, até 5 m/min); estudo de Norris et al. (PLOS ONE, 2014) confirmado."
+   },
+   {
+    "id": "paisagens_extremas-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Fatos conferem e as versões da origem estão como versões; mas a 'Porta do Inferno' é figurinha de listas, e o dado novo (o fogo minguando em 2025) fica escondido. A fonte não diz que os poços causaram a redução.",
+    "correcao": "Trocar o gancho por: \"A 'Porta do Inferno', cratera de gás em chamas no Turcomenistão, tem origem mal documentada e está minguando: em 2025, o governo disse que o fogo caiu a um terço, enquanto poços em volta passaram a captar metano.\" Na explicação, opcionalmente, acrescentar ao fim: 'Segundo a Capterio, empresa que monitora a queima de gás, a intensidade do calor caiu mais de 75% em três anos.' (o trecho precisaria incluir 'The intensity of heat from the flames has diminished by more than 75 percent over the last three years'). Não escrever que os poços causaram a redução. Manter os tipos misterio_aberto e historia_humana."
+   },
+   {
+    "id": "paisagens_extremas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (−89,2 °C em 1983; −92 °C em 2010; ~−98 °C de superfície); a distinção ar/superfície é a da fonte."
+   },
+   {
+    "id": "paisagens_extremas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (1986, 57 espécies, 37 endêmicas, quimiossíntese). Mas a idade de 5,5 milhões de anos é inferência repetida sem datação original e há tensão com os ~2 milhões de anos do caracol.",
+    "correcao": "No gancho, trocar \"Selada há cerca de 5,5 milhões de anos, tem uma cadeia alimentar\" por \"Isolada há talvez 5,5 milhões de anos, tem uma cadeia alimentar\". Na explicação, trocar \"A caverna está isolada da superfície há cerca de 5,5 milhões de anos, e a vida ali\" por \"Estima-se que a caverna esteja isolada da superfície há cerca de 5,5 milhões de anos, e a vida ali\"."
+   }
+  ],
+  "2": [
+   {
+    "id": "paisagens_extremas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase de 1570–1971 retirada; ressalva sobre os testes aplicada."
+   },
+   {
+    "id": "paisagens_extremas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho novo (quase abandonado) e \"na época da medição\" aplicados."
+   },
+   {
+    "id": "paisagens_extremas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"É apontada como\" aplicado; números conferem."
+   },
+   {
+    "id": "paisagens_extremas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: o estudo achou biomassa baixíssima e nenhuma atividade microbiana, não ausência de organismos.",
+    "correcao": "\"não acharam organismos vivos\" virou \"não detectaram vida microbiana ativa\" no gancho e na explicação.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "paisagens_extremas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas, Sonora sustentada pela NASA; retoque: \"30 °C mais frio\" confundia a temperatura do ar com a diferença.",
+    "correcao": "\"pode estar 30 °C mais frio\" virou \"pode estar bem mais frio\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "paisagens_extremas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Por enquanto, a OMM mantém o recorde\" e a edição de janeiro de 2026 aplicados."
+   },
+   {
+    "id": "paisagens_extremas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Frases do Sentinel-1A e do Landsat-5 retiradas; albedo sustentado."
+   },
+   {
+    "id": "paisagens_extremas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"De grande porte\" confere; retoque: sem \"muitos\" o gancho generalizava o cachorreo.",
+    "correcao": "Gancho reescrito com \"muitos mineiros de ouro\" (218 caracteres).",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "paisagens_extremas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com a dissolução por ácido sulfúrico aplicado."
+   },
+   {
+    "id": "paisagens_extremas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho do fogo minguando aplicado, sem causalidade dos poços; Capterio confere."
+   },
+   {
+    "id": "paisagens_extremas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Isolada há talvez\" e \"Estima-se\" aplicados."
+   }
+  ]
+ }
+}

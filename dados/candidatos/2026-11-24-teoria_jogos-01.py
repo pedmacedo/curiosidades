@@ -1,0 +1,610 @@
+LOTE = "2026-11-24-teoria_jogos-01"
+AREA = "matematica"
+TEMA = "teoria_jogos"
+W = "https://en.wikipedia.org/wiki/"
+NOBEL = "https://www.nobelprize.org/prizes/economic-sciences/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+def nobel(caminho, titulo, trecho):
+    return {"url": NOBEL + caminho, "titulo": titulo, "idioma": "en", "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 o torneio de Axelrod e o "olho por olho"
+    {
+        "temas_secundarios": ["evolucao", "algoritmos"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Nos torneios de computador de Robert Axelrod, por volta de 1980, a estratégia mais simples venceu duas vezes: cooperar na primeira jogada e, dali em diante, só repetir o que o rival fez na anterior.",
+        "explicacao": (
+            "Axelrod pediu a outros teóricos dos jogos que mandassem estratégias para o dilema do prisioneiro "
+            "repetido, em que cada lado escolhe cooperar ou trair a cada rodada. Cada programa enfrentou todos os "
+            "outros em partidas de 200 rodadas, somando pontos. Venceu o \"olho por olho\" (tit for tat), inscrito "
+            "pelo matemático Anatol Rapoport. Os resultados foram publicados e um segundo torneio foi organizado "
+            "para ver se alguém conseguia superá-lo. Ninguém conseguiu. O curioso é que o olho por olho nunca faz "
+            "mais pontos que o adversário da vez: no melhor caso, empata. Ganhou acumulando bons segundos lugares "
+            "contra todo tipo de rival, porque provocava cooperação em vez de tentar explorar. Já as estratégias "
+            "ardilosas, que faziam deduções complicadas sobre o outro e traíam de vez em quando para ganhar uns "
+            "pontos a mais, costumavam errar nas deduções e se saíam mal. Axelrod tirou daí algumas lições: nunca "
+            "ser o primeiro a trair, revidar a traição, voltar a cooperar assim que o outro voltar, não ter inveja "
+            "do placar alheio e não tentar ser esperto demais. O trabalho, feito também com o biólogo W. D. "
+            "Hamilton, virou referência para explicar a cooperação entre seres vivos, de bactérias a primatas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("The_Evolution_of_Cooperation",
+                "The Evolution of Cooperation is a 1984 book written by political scientist Robert Axelrod that expands upon a paper of the same name written by Axelrod and evolutionary biologist W.D. Hamilton. "
+                "The article's summary addresses the issue in terms of \"cooperation in organisms, whether bacteria or primates\". [...] "
+                "Axelrod initially solicited strategies from other game theorists to compete in the first tournament. "
+                "Each strategy was paired with each other strategy for 200 iterations of a Prisoner's Dilemma game and scored on the total points accumulated through the tournament. "
+                "The winner was a very simple strategy submitted by Anatol Rapoport called \"tit for tat\" (TFT) that cooperates on the first move, and subsequently echoes (reciprocates) what the other player did on the previous move. "
+                "The results of the first tournament were analyzed and published, and a second tournament was held to see if anyone could find a better strategy. TFT won again. [...] "
+                "In fact, TFT cannot score higher than its partner; at best it can only do \"as good as\". "
+                "Yet it won the tournaments by consistently scoring a strong second-place with a variety of partners. [...] "
+                "\"A common problem with these rules is that they used complex methods of making inferences about the other player [strategy] – and these inferences were wrong.\" [...] "
+                "Be nice: cooperate, never be the first to defect. "
+                "Be provocable: return defection for defection, cooperation for cooperation. "
+                "Don't be envious: focus on maximizing your own 'score', as opposed to ensuring your score is higher than your 'partner's'. "
+                "Don't be too clever: or, don't try to be tricky.",
+                nome="The Evolution of Cooperation"),
+            wiki("Tit_for_tat",
+                "The strategy was first introduced by Anatol Rapoport in Robert Axelrod's two tournaments, held around 1980. "
+                "Notably, it was (on both occasions) both the simplest strategy and the most successful in direct competition.",
+                nome="Tit for tat"),
+        ],
+    },
+    # 2 o dilema do prisioneiro nasceu sem prisioneiros
+    {
+        "temas_secundarios": ["guerra_fria", "historia_matematica"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O dilema do prisioneiro nasceu sem prisioneiros: em 1950, dois matemáticos da RAND puseram dois colegas para jogá-lo cem vezes, e eles cooperaram com frequência. A história da cadeia só veio depois.",
+        "explicacao": (
+            "No jogo, cada participante escolhe cooperar ou trair. Para cada um, isoladamente, trair é a escolha "
+            "racional, mas, se os dois cooperam, ambos ganham mais. Quem montou o quebra-cabeça foram Merrill Flood "
+            "e Melvin Dresher, que trabalhavam na RAND Corporation, em 1950. Para testá-lo, convidaram o economista "
+            "Armen Alchian e o matemático John Williams a disputar cem rodadas, e os dois escolheram cooperar com "
+            "frequência. Consultado sobre o resultado, John Nash comentou que, quando o jogo se repete, o "
+            "comportamento racional pode ser diferente do de uma rodada só. A observação antecipou uma ideia "
+            "central da teoria dos jogos: a cooperação pode surgir em interações repetidas mesmo quando não seria "
+            "racional num encontro único. O nome e a versão com dois presos interrogados, que tornaram o jogo "
+            "famoso, vieram mais tarde, com Albert W. Tucker, que expressou as recompensas em anos de prisão. "
+            "Tucker, aliás, foi o orientador da tese de doutorado do próprio Nash."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Prisoner%27s_dilemma",
+                "each of whom can either cooperate for mutual benefit or betray their partner (\"defect\") for individual gain. "
+                "The dilemma arises from the fact that while defecting is rational for each agent, cooperation yields a higher payoff for each. "
+                "The puzzle was designed by Merrill Flood and Melvin Dresher in 1950 during their work at the RAND Corporation. "
+                "They invited economist Armen Alchian and mathematician John Williams to play a hundred rounds of the game, observing that Alchian and Williams often chose to cooperate. "
+                "When asked about the results, John Nash remarked that rational behavior in the iterated version of the game can differ from that in a single-round version. "
+                "This insight anticipated a key result in game theory: cooperation can emerge in repeated interactions, even in situations where it is not rational in a one-off interaction. "
+                "Albert W. Tucker later named the game the \"prisoner's dilemma\" by framing the rewards in terms of prison sentences.",
+                nome="Prisoner's dilemma"),
+            wiki("John_Forbes_Nash_Jr.",
+                "The thesis, written under the supervision of doctoral advisor Albert W. Tucker",
+                nome="John Forbes Nash Jr."),
+        ],
+    },
+    # 3 o conluio de Southampton em 2004
+    {
+        "temas_secundarios": ["algoritmos", "evolucao"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Num torneio de dilema do prisioneiro em 2004, uma universidade inscreveu 60 programas que se reconheciam por uma \"senha\" de jogadas. Uns se deixavam explorar pelos outros, e os três primeiros lugares foram dela.",
+        "explicacao": (
+            "A competição comemorava 20 anos e permitia várias inscrições por equipe, que era avaliada pelo seu "
+            "melhor jogador. A Universidade de Southampton, na Inglaterra, explorou essas regras. Seus programas "
+            "usavam as primeiras cinco a dez jogadas de cada partida como uma espécie de aperto de mão secreto. "
+            "Quando dois deles se reconheciam, um passava a cooperar sempre e o outro a trair sempre, o que dava ao "
+            "traidor o máximo de pontos possível. Quando o adversário era de fora, o programa de Southampton traía "
+            "sem parar, só para baixar a pontuação do rival. Resultado: estratégias da universidade ficaram nos três "
+            "primeiros lugares, e várias outras perto do fim da tabela, embora as vencedoras tivessem menos vitórias "
+            "e muito mais derrotas que a estratégia GRIM. Anos antes, Richard Dawkins já tinha apontado, no livro O "
+            "Gene Egoísta, que estratégias assim poderiam vencer se fossem permitidas várias inscrições. A \"dança "
+            "de dez jogadas\" também driblava a proibição de comunicação entre os jogadores, e mostrou quanto a "
+            "comunicação pode mudar o equilíbrio de um jogo."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Prisoner%27s_dilemma",
+            "a team from Southampton University in England introduced a more successful strategy at the 20th-anniversary iterated prisoner's dilemma competition. "
+            "It relied on collusion between programs to achieve the highest number of points for a single program. "
+            "The university submitted 60 programs to the competition, which were designed to recognize each other through a series of five to ten moves at the start. "
+            "Once this recognition was made, one program would always cooperate and the other would always defect, assuring the maximum number of points for the defector. "
+            "If the program realized that it was playing a non-Southampton player, it would continuously defect in an attempt to minimize the competing program's score. "
+            "As a result, the 2004 Prisoners' Dilemma Tournament results show University of Southampton's strategies in the first three places (and a number of positions towards the bottom), despite having fewer wins and many more losses than the GRIM strategy. "
+            "The Southampton strategy takes advantage of the fact that multiple entries were allowed in this particular competition and that a team's performance was measured by that of the highest-scoring player [...] "
+            "Richard Dawkins, in his book The Selfish Gene, pointed out the possibility of such strategies winning if multiple entries were allowed [...] "
+            "Such strategies also circumvent the rule against communication between players: the Southampton programs' \"ten-move dance\" allowed them to recognize one another, reinforcing how valuable communication can be in shifting the balance of the game.",
+            nome="Prisoner's dilemma")],
+    },
+    # 4 a tese de 28 páginas e o "isso é trivial" de von Neumann
+    {
+        "temas_secundarios": ["historia_matematica", "decisoes_economia"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "John Nash ganhou o Nobel de Economia de 1994 por ideias de uma tese de doutorado de 28 páginas. Quando apresentou o resultado central a John von Neumann, ouviu: \"Isso é trivial. É só um teorema do ponto fixo.\"",
+        "explicacao": (
+            "A tese, de 1950, foi orientada por Albert W. Tucker, em Princeton, e trazia a definição do que hoje se "
+            "chama equilíbrio de Nash: uma situação em que nenhum jogador ganha mais mudando sozinho de estratégia, "
+            "com as dos outros fixas. Von Neumann e Oskar Morgenstern, no livro de 1944 que deu forma à teoria dos "
+            "jogos, já tinham mostrado que existe equilíbrio em estratégias mistas (sortear entre opções com certas "
+            "probabilidades), mas só para jogos de soma zero, em que o ganho de um é a perda do outro. Nash foi "
+            "muito além: provou que todo jogo com um número finito de ações tem pelo menos um equilíbrio, talvez "
+            "em estratégias mistas. Para isso, usou teoremas do ponto fixo, os de Brouwer e de Kakutani. Em 1949, "
+            "ao ouvir a ideia, von Neumann a despachou com a frase famosa. A ideia de equilíbrio já tinha aparecido "
+            "num caso particular em 1838, quando Antoine Augustin Cournot analisou empresas que escolhem quanto "
+            "produzir, mas sem uma definição geral. O Nobel de 1994, dividido com John Harsanyi e Reinhard Selten, "
+            "premiou o trabalho que Nash fez como aluno de pós-graduação."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("John_Forbes_Nash_Jr.",
+                "Nash earned a PhD in 1950 with a 28-page dissertation on noncooperative games. "
+                "The thesis, written under the supervision of doctoral advisor Albert W. Tucker, contained the definition and properties of the Nash equilibrium, a crucial concept in noncooperative games. [...] "
+                "In 1994, he received the Nobel Memorial Prize in Economic Sciences (along with John Harsanyi and Reinhard Selten) for his game theory work as a Princeton graduate student.",
+                nome="John Forbes Nash Jr."),
+            wiki("Nash_equilibrium",
+                "In game theory, a Nash equilibrium is a situation where no player could gain more by changing their own strategy (holding all other players' strategies fixed) in a game. [...] "
+                "The same idea was used in a particular application in 1838 by Antoine Augustin Cournot in his theory of oligopoly. "
+                "In Cournot's theory, each of several firms choose how much output to produce to maximize its profit. [...] "
+                "Cournot did not use the idea in any other applications, however, or define it generally. [...] "
+                "The concept of a mixed-strategy equilibrium was introduced by John von Neumann and Oskar Morgenstern in their 1944 book The Theory of Games and Economic Behavior, but their analysis was restricted to the special case of zero-sum games. [...] "
+                "The contribution of Nash in his 1951 article \"Non-Cooperative Games\" was to define a mixed-strategy Nash equilibrium for any game with a finite set of actions and prove that at least one (mixed-strategy) Nash equilibrium must exist in such a game. [...] "
+                "allowed Nash to employ the Kakutani fixed-point theorem in his 1950 paper to prove existence of equilibria. "
+                "His 1951 paper used the simpler Brouwer fixed-point theorem for the same purpose. [...] "
+                "When Nash made this point to John von Neumann in 1949, von Neumann famously dismissed it with the words, \"That's trivial, you know. That's just a fixed-point theorem.\"",
+                nome="Nash equilibrium"),
+        ],
+    },
+    # 5 "viva e deixe viver" nas trincheiras
+    {
+        "temas_secundarios": ["primeira_guerra", "psicologia_social"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Nas trincheiras da Primeira Guerra, inimigos faziam tréguas sem combinar nada: paravam de atirar ou disparavam de um jeito ritual, sem intenção de matar. Generais analisavam as baixas para flagrar isso.",
+        "explicacao": (
+            "O fenômeno ganhou o nome de \"viva e deixe viver\" e surgiu espontaneamente, sobretudo nos longos "
+            "períodos de guerra de trincheiras na Frente Ocidental. Às vezes eram pactos explícitos, combinados "
+            "entre os próprios soldados. Em outras, era um acordo mudo: os dois lados evitavam disparar, ou "
+            "atiravam sempre do mesmo jeito rotineiro, como sinal de que não havia intenção letal. Acontecia entre "
+            "pequenas unidades, de sentinelas que se recusavam a atirar em inimigos expostos até atiradores de "
+            "elite, metralhadoras e baterias de artilharia. O exemplo mais famoso é a trégua de Natal de 1914. Os "
+            "comandos superiores sabiam dessa tendência e, às vezes, analisavam os números de baixas para "
+            "detectá-la. Para manter o \"espírito ofensivo\", mandavam fazer incursões e patrulhas, e o sistema, "
+            "frágil, se desfazia com qualquer morte. O cientista político Robert Axelrod descreveu o caso como um "
+            "dilema do prisioneiro repetido: os mesmos soldados se enfrentavam dia após dia, e a cooperação era "
+            "sustentada pela ameaça de revide, como na estratégia do olho por olho. A leitura é contestada: os "
+            "cientistas políticos Joanne Gowa e Andrew Gelman argumentaram que as premissas do dilema não valem "
+            "nesse caso."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Live_and_let_live_(World_War_I)",
+            "Live and let live is the non-aggressive co-operative behavior that developed spontaneously during the First World War, particularly during prolonged periods of trench warfare on the Western Front. "
+            "Perhaps one of the most famous examples of this is the Christmas truce of 1914. [...] "
+            "Sometimes it can take the form of overt truces or pacts negotiated locally by soldiers. "
+            "At other times it can be a tacit behaviour—sometimes characterised as \"letting sleeping dogs lie\"—whereby both sides refrain from firing or using their weapons, or deliberately discharge them in a ritualistic or routine way that signals their non-lethal intent. [...] "
+            "This behaviour was found at the small-unit level, sections, platoons or companies [...] "
+            "Examples were found from the lone soldier standing sentry duty, refusing to fire on exposed enemy soldiers, up to snipers, machine-guns teams and even field-artillery batteries. "
+            "Upper echelon commanders—those of divisions, corps and armies—and their staffs were aware of this tendency towards non-aggression, and would sometimes analyse casualty statistics to detect it. "
+            "Raids or patrols were often ordered to foster the correct \"offensive spirit\" in the troops. "
+            "The Live and Let Live system was fragile at best and was easily broken by occurrences of lethal force [...] "
+            "Some scholars of game theory, like Robert Axelrod, have characterised Live and Let Live as an iterated variant of the prisoner's dilemma. "
+            "Axelrod linked Live and Let Live to the co-operative strategy referred to as Tit for Tat. "
+            "Axelrod's interpretation of \"Live and Let Live\" as a prisoner's dilemma has been disputed by political scientists Joanne Gowa and Andrew Gelman, who (separately) argue that the assumptions underlying the prisoner's dilemma do not hold in this example.",
+            nome="Live and let live (World War I)")],
+    },
+    # 6 o leilão do dólar
+    {
+        "temas_secundarios": ["decisoes_economia", "economia_curiosa"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "No leilão do dólar, criado pelo economista Martin Shubik, uma nota de 1 dólar vai para o maior lance, mas o segundo colocado também paga o que ofereceu. Lance a lance, os rivais acabam passando de 1 dólar.",
+        "explicacao": (
+            "O jogo mostra como uma sequência de decisões que parecem sensatas no curto prazo leva a um resultado "
+            "irracional. Quem abre com 5 centavos espera lucrar 95. Mas outro pode oferecer 10 e ainda lucrar 90, e "
+            "assim por diante. O detalhe cruel é que o segundo colocado perde o que ofereceu, então, a cada lance, "
+            "quem está atrás prefere subir 5 centavos a pagar por nada. Quando um oferece 95 centavos e o outro "
+            "chega a 1 dólar, o de 95 tem duas opções: desistir e perder 95 centavos, ou oferecer 1,05 dólar e "
+            "perder só 5. Subir parece racional, e o processo continua acima do valor da nota, sempre com o "
+            "segundo colocado perdendo mais que o primeiro. A partir de 1 dólar, só o leiloeiro sai ganhando. Na "
+            "análise matemática, o que já foi gasto é custo afundado e não deveria pesar na decisão, e o jogo "
+            "tem parentesco com a \"guerra de atrito\". Shubik publicou o jogo em 1971 como um paradoxo do "
+            "comportamento não cooperativo e da escalada."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Dollar_auction",
+            "The dollar auction is a non-zero sum sequential game explored by economist Martin Shubik to illustrate how a short-sighted approach to rational choice can lead to decisions that are, in the long-run, irrational. [...] "
+            "The setup involves an auctioneer who volunteers to auction off a dollar bill with the following rule: the bill goes to the winner; however, the second-highest bidder also loses the amount that they bid, making them the biggest loser in the auction. "
+            "The winner can get a dollar for a mere 5 cents (the minimum bid), but only if no one else enters into the bidding war. [...] "
+            "For instance, a player might begin by bidding 5 cents, hoping to make a 95-cent profit. "
+            "They can be outbid by another player bidding 10 cents, as a 90-cent profit is still desirable. [...] "
+            "Every player has a choice of either paying for nothing or bidding 5 cents more on the dollar. "
+            "A series of short-term rational bids will reach and ultimately surpass one dollar as the bidders seek to minimize their losses. "
+            "If the first bidder bids 95 cents, and the second bidder bids one dollar (for no net gain or loss), the first bidder stands to lose 95 cents unless they bid $1.05, in which case bidding more than the value of the dollar would reduce their losses to only 5 cents. "
+            "Bidding continues with the second highest bidder always losing more than the highest bidder and therefore always trying to become the high bidder. "
+            "Once the highest bid reaches one dollar, only the auctioneer will profit in the end. [...] "
+            "a discrete version of the war of attrition. [...] "
+            "this follows from the fact that past bids are a sunk cost. [...] "
+            "Shubik, Martin (1971). \"The Dollar Auction Game: A Paradox in Noncooperative Behavior and Escalation\"",
+            nome="Dollar auction")],
+    },
+    # 7 George Price
+    {
+        "temas_secundarios": ["evolucao", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "George Price, químico do Projeto Manhattan, criou sem formação em genética uma equação central para entender a evolução do altruísmo. Depois passou a abrigar sem-teto em casa e morreu na pobreza.",
+        "explicacao": (
+            "Price teve uma carreira errante: foi químico no Projeto Manhattan, trabalhou na Bell Labs, escreveu "
+            "em revistas científicas contra a percepção extrassensorial e foi consultor da IBM. Em 1967, depois de "
+            "um câncer de tireoide, usou o dinheiro do seguro médico para recomeçar a vida em Londres. Lá, tinha "
+            "lido os trabalhos de W. D. Hamilton sobre seleção de parentesco e, sem treino em genética de "
+            "populações nem em estatística, chegou à equação de Price, que descreve como a frequência de um gene "
+            "muda numa população. Em 1973, assinou com John Maynard Smith o artigo que levou a teoria dos jogos "
+            "para a biologia, com a ideia de estratégia evolutivamente estável e o jogo do falcão e da pomba, um "
+            "modelo de disputas entre animais. Em 1970, depois de uma experiência religiosa, converteu-se ao "
+            "cristianismo, doou o que tinha aos pobres e passou a abrigar sem-teto e a ajudar alcoólatras, que "
+            "chegaram a roubar seus pertences. Deprimido e doente, tirou a própria vida em 1975. Do meio "
+            "acadêmico, só Hamilton e Maynard Smith foram à cerimônia em sua memória."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("George_R._Price",
+                "Price converted to Christianity and gave all his possessions to the poor. "
+                "Struggling with a thyroid condition in conditions of great poverty, he grew increasingly depressed and committed suicide. [...] "
+                "Price was a member of the Manhattan Project as a chemist looking into the characteristics of plutonium-235. [...] "
+                "Later, he took a position at Bell Laboratories to work on the chemistry of transistors. [...] "
+                "In 1955 and 1956, he published two papers in the journal Science criticizing the pseudoscientific claims of extrasensory perception. [...] "
+                "From 1961 to 1967, Price was employed by IBM as a consultant on graphic data processing. "
+                "In 1966, he was treated for thyroid cancer [...] "
+                "With the money from his medical insurance, he moved to the United Kingdom to start a new life in November 1967. [...] "
+                "Price had read Hamilton's 1964 papers on kin selection, and with no training in population genetics or statistics devised the Price equation, a covariance equation that generated the change in allele frequency of a population. [...] "
+                "On 6 June 1970, Price had a religious experience [...] "
+                "He also pioneered the application of game theory to evolutionary biology, in a co-authored 1973 paper with John Maynard Smith. [...] "
+                "he dedicated the latter part of his life to helping the homeless, often inviting homeless people to live in his house. [...] "
+                "He also gave up everything to help alcoholics; yet as he helped them steal his belongings, he increasingly fell into depression. [...] "
+                "Price died by suicide on January 6, 1975 [...] "
+                "A memorial service was held for Price in Euston. "
+                "The only persons present from academia were Hamilton and Maynard Smith",
+                nome="George R. Price"),
+            wiki("Chicken_(game)",
+                "The earliest presentation of a form of the Hawk–Dove game was by John Maynard Smith and George Price in their paper, \"The logic of animal conflict\". [...] "
+                "The hawk–dove version of the game imagines two players (animals) contesting an indivisible resource",
+                nome="Chicken (game)"),
+            wiki("George_R._Price",
+                "second, introducing (with John Maynard Smith) the concept of the evolutionarily stable strategy (ESS), a central concept in game theory",
+                nome="George R. Price"),
+        ],
+    },
+    # 8 o leilão de frequências de celular
+    {
+        "temas_secundarios": ["telecomunicacoes", "economia_curiosa"],
+        "tipos_espanto": ["engenhosidade", "escala_absurda"],
+        "gancho": "Os EUA já distribuíram frequências de celular por sorteio. Em 1994, um leilão inventado por teóricos dos jogos vendeu 10 licenças por 617 milhões de dólares. O formato depois rendeu mais de 200 bilhões no mundo.",
+        "explicacao": (
+            "No começo, as licenças de rádio eram dadas em \"concursos de beleza\": as empresas tinham de "
+            "argumentar por que mereciam a frequência, gastavam fortunas com lobby e o governo arrecadava pouco. "
+            "Com a explosão da telefonia móvel, o Congresso americano permitiu sorteios, que também rendiam pouco e "
+            "davam às operadoras redes retalhadas. Especuladores revendiam as licenças por bilhões de dólares, "
+            "dinheiro que não ia para o Tesouro. Em 1993, decidiu-se leiloar. O problema é que o valor de uma "
+            "frequência numa região depende das que a empresa conseguir nas outras, e quem leiloa uma por vez "
+            "deixa os compradores no escuro, com medo de pagar caro demais. É a \"maldição do vencedor\": quem "
+            "ganha costuma ser o mais otimista, e o otimismo vira prejuízo. Paul Milgrom e Robert Wilson, em parte "
+            "com Preston McAfee, criaram o leilão simultâneo de múltiplas rodadas: todas as licenças são vendidas "
+            "ao mesmo tempo, começando com preços baixos e permitindo lances repetidos. Na estreia, em julho de "
+            "1994, foram 47 rodadas. Só nos leilões da agência americana FCC com esse formato, foram mais de 120 "
+            "bilhões de dólares entre 1994 e 2014. A dupla ganhou o Nobel de Economia de 2020."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [nobel("2020/popular-information/", "The Prize in Economic Sciences 2020 - Popular science background",
+            "The most optimistic bidder often overestimates the common value of an auctioned object, so that ‘winning’ the auction turns out to cause a loss – the winner’s curse. [...] "
+            "This was initially done through a process known as a beauty contest, in which companies had to provide arguments for why they, in particular, should receive a licence. "
+            "This process meant that telecom and media companies spent huge amounts of money on lobbying. "
+            "The revenue generated by the process was limited, however. [...] "
+            "After pressure from the FCC, the US Congress permitted the use of lotteries for allocating frequency bands. "
+            "The beauty contest was thus replaced by an entirely random allocation of licences, which likewise generated only limited income for the government. [...] "
+            "national mobile operators would typically get entirely discontinuous networks with different frequency bands in different regions. [...] "
+            "The market value of the licences was many billions of dollars – money that ended up in the hands of frequency speculators instead of in the US Treasury [...] "
+            "Finally, in 1993, it was decided that frequency bands would be distributed using auctions. [...] "
+            "Also, the value of a specific frequency band in a specific region depends on the other frequency bands owned by a specific operator. [...] "
+            "To tackle these problems, Milgrom and Wilson – partly with Preston McAfee – invented an entirely new auction format, the Simultaneous Multiple Round Auction (SMRA). "
+            "This auction offers all objects (radio frequency bands in different geographic areas) simultaneously. "
+            "By starting with low prices and allowing repeated bids, the auction reduces the problems caused by uncertainty and the winner’s curse. "
+            "When the FCC first used an SMRA in July 1994, it sold 10 licences in 47 bidding rounds for a total of 617 million dollars – objects which the American government had previously allocated practically for free. [...] "
+            "The FCC’s auctions alone, using this format, have brought more than 120 billion dollars over twenty years (1994–2014) and, globally, this mechanism has generated more than 200 billion dollars from spectrum sales."),
+            nobel("2020/popular-information/", "The Prize in Economic Sciences 2020 - Popular science background",
+            "The Prize in Economic Sciences 2020 [...] Paul R. Milgrom [...] Robert B. Wilson [...] “for improvements to auction theory and inventions of new auction formats”"),
+        ],
+    },
+    # 9 o algoritmo que os hospitais já usavam antes de ser inventado
+    {
+        "temas_secundarios": ["algoritmos", "historia_medicina"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "Desde os anos 1950, os EUA distribuem recém-formados em medicina pelos hospitais com um método muito parecido com o que dois matemáticos só publicariam em 1962. A semelhança foi descoberta em 1984.",
+        "explicacao": (
+            "Nos anos 1940, a disputa por estudantes de medicina levava hospitais a oferecer vagas de residência "
+            "cada vez mais cedo, às vezes anos antes da formatura, com prazos curtos de resposta. A saída, no "
+            "início dos anos 1950, foi uma central, o National Resident Matching Program (NRMP). Em 1962, David Gale "
+            "e Lloyd Shapley publicaram, usando casamentos como exemplo, um procedimento de \"aceitação adiada\": "
+            "um lado faz propostas, o outro guarda a melhor sem aceitar de vez e rejeita as demais, e os rejeitados "
+            "tentam a próxima opção. Eles provaram que o método sempre leva a pares estáveis, em que ninguém tem "
+            "motivo para desfazer o par e formar outro. Num estudo de 1984, Alvin Roth descobriu que o algoritmo da "
+            "central médica era muito próximo desse. Há um detalhe: o lado que propõe sai favorecido. No NRMP, "
+            "quem propunha eram os hospitais. Em 1995, Roth foi chamado para redesenhar o sistema. O novo "
+            "algoritmo, com as propostas feitas pelos candidatos e capaz de acomodar casais de médicos, foi adotado "
+            "em 1997 e passou a preencher mais de 20 mil vagas por ano. Shapley e Roth dividiram o Nobel de "
+            "Economia de 2012."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [nobel("2012/popular-information/", "The Prize in Economic Sciences 2012 - Popular information",
+            "In 1962, Shapley applied the idea of stability to a special case. "
+            "In a short paper, joint with David Gale, he examined the case of pairwise matching [...] "
+            "They used marriage as one of their illustrative examples. [...] "
+            "The solution – the Gale-Shapley “deferred acceptance” algorithm – was a set of simple rules that always led straight to a stable matching. [...] "
+            "Each man then looks at the different proposals he has received (if any), retains what he regards as the most attractive proposal (but defers from accepting it) and rejects the others. "
+            "The women who were rejected in the first round then propose to their second-best choices [...] "
+            "During the 1940s, competition for scarce medical students forced hospitals to offer residencies (internships) increasingly early, sometimes several years before graduation. [...] "
+            "In order to make more offers quickly, hospitals imposed strict deadlines for responding to offers. [...] "
+            "In response to these problems, a centralized “clearinghouse”, called the National Resident Matching Program (NRMP), was introduced in the early 1950s. "
+            "In a paper from 1984, Alvin Roth studied the algorithm used by this clearinghouse and discovered that it was closely related to the Gale-Shapley algorithm. [...] "
+            "The NRMP – where the hospitals offered positions to students – was also criticized for systematically favoring hospitals over students. "
+            "Indeed, as Gale and Shapley had shown theoretically, the proposing side of the market (in this case, the hospitals) is systematically favored. "
+            "In 1995, Roth was asked to help design an improved algorithm that would eliminate these problems. "
+            "Along with Elliott Peranson, he formulated an algorithm, built on applicant proposals and designed to accommodate couples. "
+            "The new algorithm, adopted by the NRMP in 1997, has worked well and over 20,000 positions per year have since been matched with applicants."),
+            nobel("2012/popular-information/", "The Prize in Economic Sciences 2012 - Popular information",
+            "The Prize in Economic Sciences 2012 [...] This year’s Prize to Lloyd Shapley and Alvin Roth extends from abstract theory developed in the 1960s"),
+        ],
+    },
+    # 10 a segregação de Schelling
+    {
+        "temas_secundarios": ["cidades", "psicologia_social"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Thomas Schelling mostrou com um modelo simples que bairros podem ficar fortemente segregados mesmo quando todos aceitam vizinhos diferentes e só querem que alguns poucos sejam parecidos consigo.",
+        "explicacao": (
+            "No modelo, ninguém é intolerante: todos aceitam de bom grado morar perto de pessoas de outra cultura, "
+            "religião ou cor de pele. A única exigência é ter pelo menos alguns vizinhos com as mesmas "
+            "características. Quem não tem se muda para onde haja mais gente parecida. Cada mudança altera a "
+            "vizinhança de outros, que por sua vez podem se mudar, e o efeito se acumula. Schelling mostrou que "
+            "preferências bem fracas sobre a proporção de vizinhos semelhantes bastam para produzir padrões de "
+            "moradia fortemente segregados. Ou seja, um problema social pode surgir sem que ninguém tenha "
+            "preferências extremas. A ideia é um exemplo do tema que atravessa a obra dele, resumido no título do "
+            "livro Micromotivos e Macrocomportamento, de 1978: o que acontece quando planos individuais se "
+            "encontram no espaço social. Schelling, que também aplicou a teoria dos jogos à corrida armamentista da "
+            "Guerra Fria, dividiu o Nobel de Economia de 2005 com Robert Aumann."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [nobel("2005/popular-information/", "The Prize in Economic Sciences 2005 - Popular information",
+            "The Prize in Economic Sciences 2005 [...] Robert Aumann and Thomas Schelling have contributed to enhancing our understanding of conflict and cooperation. [...] "
+            "In the mid-1950s, Thomas Schelling began to apply game-theory methods to one of the era’s most vital issues – global security and the arms race. [...] "
+            "A recurring theme in Thomas Schelling’s research is: what happens when individual plans and patterns of behavior are confronted in the social arena? "
+            "The title of one of his most widely read books, Micromotives and Macrobehavior (1978), reveals the overall theme. [...] "
+            "Schelling formulated a simple model where he assumed that all individuals are tolerant in the sense that they willingly live in the proximity of people with a different culture, religion or skin color, but that they want to have at least a few neighbors that share their own characteristics. "
+            "If not, then they move to a neighborhood where they can [...] more people like themselves. "
+            "Schelling showed that even rather weak preferences regarding the share of like persons in a neighborhood can result in strongly segregated living patterns. "
+            "In other words, no extreme preferences on the part of individuals are required in order for a social problem to arise.")],
+    },
+    # 11 Ostrom e os pastos da Mongólia
+    {
+        "temas_secundarios": ["economia_curiosa", "ecologia"],
+        "tipos_espanto": ["mito_desmentido", "conexao_inesperada"],
+        "gancho": "Satélites mostram pastos da Mongólia, geridos pelo costume nômade, mais conservados que os vizinhos na China e na Rússia, que passaram por coletivização e privatização. Elinor Ostrom ajudou a entender por quê.",
+        "explicacao": (
+            "O argumento clássico contra os bens comuns, como pastos, pesqueiros e florestas, é simples: cada "
+            "usuário pesa só o próprio ganho e ignora o dano aos outros, e o recurso acaba esgotado. A receita "
+            "seria o governo regular ou privatizar. Ostrom juntou estudos de recursos comuns no mundo todo e "
+            "concluiu que eles costumam ser bem administrados pelos próprios usuários, que criam e fiscalizam suas "
+            "regras. Nas estepes da Ásia, rebanhos pastam há séculos. Na Mongólia, a tradição nômade seguia quase "
+            "intacta nos anos 1990. Nas áreas vizinhas, com condições parecidas, os governos impuseram coletivos "
+            "estatais com moradia fixa, e a terra se degradou. No início dos anos 1980, a China tentou reverter "
+            "isso privatizando boa parte dos pastos da Mongólia Interior, o que também fixou as famílias e piorou a "
+            "degradação. A lição não é que a gestão comunitária sempre vence: há casos em que privatizar ou regular "
+            "funciona melhor. Mas regras criadas pelos próprios usuários, e fiscalizadas por eles, tendem a ser "
+            "mais respeitadas que as impostas de fora. Em 2009, Ostrom se tornou a primeira mulher a ganhar o Nobel "
+            "de Economia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            nobel("2009/popular-information/", "The Prize in Economic Sciences 2009 - Popular information",
+                "Many natural resources, such as fish stocks, pastures, woods, lakes, and groundwater basins are managed as common property. [...] "
+                "It has frequently been suggested that common ownership entails excessive resource utilization, and that it is advisable to reduce utilization either by imposing government regulations, such as taxes or quotas, or by privatizing the resource. "
+                "The theoretical argument is simple: each user weighs private benefits against private costs, thereby neglecting the negative impact on others. "
+                "However, based on numerous empirical studies of natural-resource management, Elinor Ostrom has concluded that common property is often surprisingly well managed. [...] "
+                "It neglects the fact that users themselves can both create and enforce rules that mitigate overexploitation. [...] "
+                "Scientists have studied satellite images of Mongolia and neighboring areas in China and Russia, where livestock has been feeding on large grassland areas for centuries. [...] "
+                "In Mongolia, these traditions were largely intact in the mid-1990s, while neighboring areas in China and Russia – with closely similar initial conditions – had been exposed to radically different governance regimes. "
+                "There, central government imposed state-owned agricultural collectives, where most users settled permanently. "
+                "As a result, the land was heavily degraded in both China and Russia. "
+                "In the early 1980s, in an attempt to reverse the degradation, China dissolved the People’s Communes and privatized much of the grassland of Inner Mongolia. [...] "
+                "this policy encouraged permanent settlement rather than pastoral wandering, with further land degradation as a result. "
+                "As satellite images clearly reveal, both socialism and privatization are associated with worse long-term outcomes than those observed in traditional group-based governance. [...] "
+                "The lesson is not that user-management is always preferable to all other solutions. "
+                "There are many cases in which privatization or public regulation yield better outcomes than user management. [...] "
+                "Rules that are imposed from the outside or unilaterally dictated by powerful insiders have less legitimacy and are more likely to be violated. "
+                "Likewise, monitoring and enforcement work better when conducted by insiders than by outsiders."),
+            wiki("Elinor_Ostrom",
+                "In 2009, Ostrom became the first woman to receive the Nobel Memorial Prize in Economic Sciences.",
+                nome="Elinor Ostrom"),
+        ],
+    },
+    # 12 o jogo do ultimato pelo mundo
+    {
+        "temas_secundarios": ["decisoes_economia", "costumes_rituais"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "No jogo do ultimato, recusar uma oferta deixa os dois sem nada, e mesmo assim ofertas baixas são recusadas. Num estudo em 15 sociedades de pequena escala, nas culturas de dar presentes, até ofertas altas eram rejeitadas.",
+        "explicacao": (
+            "Um jogador recebe uma quantia e propõe como dividi-la. O outro aceita, e cada um leva sua parte, ou "
+            "recusa, e ninguém leva nada. Pela teoria, o segundo deveria aceitar qualquer valor acima de zero, já "
+            "que algo é melhor que nada, e o primeiro, sabendo disso, ofereceria quase nada. Desde o primeiro "
+            "experimento, de Werner Güth e colegas, em 1982, as pessoas fazem outra coisa. Uma revisão de 37 "
+            "estudos achou ofertas típicas em torno de 40% do total. Entre membros de um mesmo grupo social, a "
+            "divisão meio a meio é comum, e ofertas abaixo de 30% costumam ser recusadas. Mesmo em rodadas únicas e "
+            "anônimas, mais de 80% dos jogadores fogem do resultado previsto. Mas o padrão varia entre culturas. "
+            "Numa pesquisa com 15 sociedades de pequena escala, nas culturas em que dar presentes é central, quem "
+            "propunha oferecia mais, e quem recebia recusava ofertas altas com mais frequência, mesmo sem saber "
+            "quem oferecia. Em outras sociedades, ofertas baixas eram esperadas e aceitas. Os autores ligaram as "
+            "diferenças ao modo como dar e receber afetam o status social em cada grupo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ultimatum_game",
+            "the best-known article is the 1982 experimental analysis of Güth, Schmittberger, and Schwarze. [...] "
+            "When carried out between members of a shared social group (e.g., a village, a tribe, a nation, humanity) people offer \"fair\" (i.e., 50:50) splits, and offers of less than 30% are often rejected. [...] "
+            "Oosterbeek et al. (2004) reviewed 37 studies and found that the first player typically offers around 40% of the \"pie,\" [...] "
+            "In one study of 15 small-scale societies, proposers in gift-giving cultures were more likely to make high offers and responders were more likely to reject high offers despite anonymity, while low offers were expected and accepted in other societies, which the authors suggested were related to the ways that giving and receiving were connected to social status in each group. [...] "
+            "Since an individual who rejects a positive offer is choosing to get nothing rather than something [...] "
+            "Even in anonymous one-shot settings, the economic-theory suggested outcome of minimum money transfer and acceptance is rejected by over 80% of the players.",
+            nome="Ultimatum game")],
+    },
+    # 13 o ponto focal: meio-dia na Grand Central
+    {
+        "temas_secundarios": ["psicologia_social", "cidades"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Thomas Schelling perguntou a estudantes onde e quando encontrariam um desconhecido em Nova York, sem poder combinar nada antes. A resposta mais comum foi a mesma: meio-dia, na estação Grand Central.",
+        "explicacao": (
+            "É um jogo de coordenação: qualquer lugar e horário serviriam, desde que os dois escolhessem o mesmo. "
+            "Pela teoria, há infinitas soluções igualmente boas, e acertar seria questão de sorte. Mas as pessoas "
+            "acertam com muito mais frequência do que isso faria supor, porque convergem para o que Schelling "
+            "chamou de ponto focal: uma opção que se destaca para todos. Nada torna a Grand Central um ponto de "
+            "encontro melhor que um bar ou uma biblioteca, mas sua tradição como lugar de encontro a deixa em "
+            "evidência. Schelling testou outros casos: com dois jogadores escolhendo \"cara\" ou \"coroa\" e "
+            "ganhando se coincidissem, 16 de 22 de um grupo e 15 de 22 do outro escolheram cara. Ao ordenar as "
+            "letras A, B e C, a grande maioria escreveu \"ABC\". Os experimentos informais de Schelling, publicados "
+            "no livro A Estratégia do Conflito, de 1960, foram depois repetidos em condições controladas, com "
+            "prêmios em dinheiro, por Judith Mehta. A ideia ajuda a explicar por que normas sociais funcionam como "
+            "solução para coordenar pessoas e por que é difícil mudá-las."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Focal_point_(game_theory)",
+                "In game theory, a focal point (or Schelling point) is a solution that people tend to choose by default in the absence of communication in order to avoid coordination failure. "
+                "The concept was introduced by the American economist Thomas Schelling in his book The Strategy of Conflict (1960). [...] "
+                "to determine the time and place to meet a stranger in New York City, but without being able to communicate in person beforehand. "
+                "In this coordination game, any place and time in the city could be an equilibrium solution. "
+                "Schelling asked a group of students this question and found that the most common answer was \"noon at (the information booth at) Grand Central Terminal\". "
+                "There is nothing that makes Grand Central Terminal a location with a higher payoff because people could just as easily meet at another public location, such as a bar or a library, but its tradition as a meeting place raises its salience and therefore makes it a natural \"focal point\". "
+                "Later, Schelling's informal experiments have been replicated under controlled conditions with monetary incentives by Judith Mehta. "
+                "The existence of focal points can help explain the use of social norms, including traditional gender roles, in order to ensure coordination, and why changing said norms can be difficult. [...] "
+                "Head-tail game: Name \"heads\" or \"tails\". If the two players name the same, they win an award, otherwise, they get nothing. "
+                "Letter order game: Give an order to letters A, B, and C. [...] "
+                "For the two players, A and B, in head-tail game. 16 out of 22 A and 15 out of 22 B chose \"heads\". "
+                "For the three players, A, B, and C, in letter order game. 9 out of 12 A, 10 out of 12 B, and 14 out of 16 C wrote \"ABC\".",
+                nome="Focal point (game theory)"),
+            nobel("2005/popular-information/", "The Prize in Economic Sciences 2005 - Popular information",
+                "In his research, including classroom experiments with his students, Schelling found that coordinative solutions – which he called focal points – could be arrived at more often than predicted by theory."),
+        ],
+    },
+    # 14 jogo da galinha: arrancar o próprio volante
+    {
+        "temas_secundarios": ["guerra_fria", "evolucao"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "No jogo da galinha, dois carros correm um contra o outro e perde quem desviar. Uma tática vencedora é arrancar o próprio volante à vista do rival: às vezes, ter menos opções é uma vantagem.",
+        "explicacao": (
+            "No jogo, o melhor para cada um é que o outro ceda, e o pior de tudo é ninguém ceder. Tentando o "
+            "melhor resultado, cada lado arrisca o pior. Se um dos motoristas desativa o volante de forma bem "
+            "visível antes da largada, o outro fica obrigado a desviar. Thomas Schelling, Nobel de Economia de "
+            "2005, explicou por que pode ser vantajoso limitar as próprias alternativas ou piorar as próprias "
+            "opções, ao pé da letra queimar as pontes. Um exemplo real é o manifestante que se algema a um objeto: "
+            "nenhuma ameaça consegue fazê-lo sair, porque ele não pode sair. Na ficção, o filme Dr. Fantástico, de "
+            "Stanley Kubrick, leva a ideia ao extremo com a \"máquina do juízo final\" soviética, que destruiria o "
+            "mundo se os EUA atacassem. O filósofo Bertrand Russell comparou a política nuclear da Guerra Fria a "
+            "esse jogo de jovens imprudentes e previu que, um dia, nenhum dos lados aguentaria ser chamado de "
+            "\"galinha\". Na biologia, o mesmo jogo é chamado de falcão e pomba e modela animais disputando um "
+            "recurso."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Chicken_(game)",
+                "The game of chicken, also known as the hawk-dove game or snowdrift game, is a model of conflict for two players in game theory. "
+                "The principle of the game is that while the ideal outcome is for one player to yield (to avoid the worst outcome if neither yields), individuals try to avoid it out of pride, not wanting to look like \"chickens\". "
+                "[...] "
+                "This yields a situation where each player, in attempting to secure their best outcome, risks the worst. [...] "
+                "Bertrand Russell famously compared the game of Chicken to nuclear brinkmanship [...] "
+                "This is a policy adapted from a sport that, I am told, is practiced by some youthful degenerates. [...] "
+                "The moment will come when neither side can face the derisive cry of 'Chicken!' from the other side. [...] "
+                "The name \"hawk–dove\" refers to a situation in which there is a competition for a shared resource and the contestants can choose either conciliation or conflict; this terminology is most commonly used in biology and evolutionary game theory. [...] "
+                "For example, if one party were to ostentatiously disable their steering wheel just before the match, the other party would be compelled to swerve. "
+                "This shows that, in some circumstances, reducing one's own options can be a good strategy. "
+                "One real-world example is a protester who handcuffs themselves to an object, so that no threat can be made which would compel them to move (since they cannot move). "
+                "Another example, taken from fiction, is found in Stanley Kubrick's Dr. Strangelove. "
+                "In that film, the Russians sought to deter American attack by building a \"doomsday machine\", a device that would trigger world annihilation",
+                nome="Chicken (game)"),
+            nobel("2005/popular-information/", "The Prize in Economic Sciences 2005 - Popular information",
+                "The Prize in Economic Sciences 2005 [...] why it could be advantageous to limit one’s own alternatives or worsen one’s own options – literally to burn one’s bridges."),
+        ],
+    },
+    # 15 adivinhe 2/3 da média
+    {
+        "temas_secundarios": ["decisoes_economia", "paradoxos_logica"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "Num jogo, cada um escolhe um número de 0 a 100 e vence quem chegar mais perto de 2/3 da média. A lógica perfeita leva a 0, mas num concurso de jornal com 19.196 participantes a média dos palpites foi 33.",
+        "explicacao": (
+            "O raciocínio vai em degraus. Mesmo que todos chutem 100, o alvo não passa de 66 e dois terços, então não faz "
+            "sentido chutar acima disso. Sabendo que ninguém passará desse valor, o alvo máximo cai de novo, e "
+            "assim por diante, até que só sobra o 0, o único equilíbrio de Nash do jogo. Para chegar lá, porém, não "
+            "basta ser racional: é preciso que todos saibam que todos são racionais, e que todos saibam que todos "
+            "sabem, indefinidamente. Na prática, as pessoas param poucos degraus antes. Quem supõe que os outros "
+            "chutam ao acaso, com média 50, aposta 33; quem dá um passo além aposta 22. As evidências indicam que "
+            "a maioria raciocina entre zero e três degraus, e seriam precisos cerca de 21 para chegar a 0. Até "
+            "alunos de pós-graduação em economia não chutam 0. No concurso online do jornal dinamarquês Politiken, "
+            "o prêmio era de 5 mil coroas. Quem jogaria 0 só faria bem se soubesse que todos os outros são "
+            "perfeitamente racionais. A versão de 1981, criada por Alain Ledoux numa revista francesa de jogos, "
+            "pedia números de 1 a 1 bilhão."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Guess_2/3_of_the_average",
+            "is a game where players simultaneously select a real number between 0 and 100, inclusive. "
+            "The winner of the game is the player(s) who select a number closest to [...] of the average of numbers chosen by all players. [...] "
+            "In 1981, Ledoux used this game as a tiebreaker in his French magazine Jeux et Stratégie. "
+            "He asked about 4,000 readers, who reached the same number of points in previous puzzles, to state an integer between 1 and 1,000,000,000. [...] "
+            "There is a unique pure strategy, Nash equilibrium. [...] "
+            "The highest possible average that would occur if everyone guessed 100 is [...] 100, that is, 66 + [...] "
+            "Therefore, choosing a number that lies above [...] 100 is strictly dominated for every player, and can thus be eliminated. [...] "
+            "If the same group of people play the game consistently, this process of the highest possible logical answer repeatedly getting smaller will continue for each step as the logic is continually applied. [...] "
+            "To achieve its Nash equilibrium of 0, this game requires all players to be perfectly rational, rationality to be common knowledge, and all players to expect everyone else to behave accordingly. "
+            "Common knowledge means that every player has the same information, and they also know that everyone else knows that, and that everyone else knows that everyone else knows that, and so on, indefinitely. [...] "
+            "Level 1 players would assume that everyone else was playing at level 0, responding to an assumed average of 50 in relation to naive play, and thus their guess would be 33 (2/3 of 50). "
+            "At k-level 2, a player would play more sophisticatedly and assume that all other players are playing at k-level 1, so they would choose 22 (2/3 of 33). [...] "
+            "It would take approximately 21 k-levels to reach 0, the Nash equilibrium of the game. [...] "
+            "Evidence suggests that most people play at k-levels 0 to 3 [...] "
+            "This means that perfectly rational players playing in such a game should not guess 0 unless they know that all other players are perfectly rational as well [...] "
+            "It has been demonstrated that even economics graduate students do not guess 0. "
+            "When performed among ordinary people it is usually found that the winner's guess is much higher than 0: the average value was found to be 33 in a large online competition organized by the Danish newspaper Politiken. "
+            "19,196 people participated and the prize was 5000 Danish kroner.",
+            nome="Guess 2/3 of the average")],
+    },
+    # 16 "Split or Steal": o dilema do prisioneiro na TV
+    {
+        "temas_secundarios": ["psicologia_social", "cultura_popular"],
+        "tipos_espanto": ["contraintuitivo", "conexao_inesperada"],
+        "gancho": "Num programa de TV britânico, os finalistas escolhiam em segredo \"dividir\" ou \"roubar\" o prêmio. Pesquisadores notaram que quem tocava fisicamente o rival tendia a roubar, e quem puxava o riso tendia a dividir.",
+        "explicacao": (
+            "No Golden Balls, a final é um dilema do prisioneiro com dinheiro de verdade. Se os dois escolhem "
+            "\"Split\", dividem o prêmio. Se um escolhe \"Steal\" e o outro \"Split\", quem roubou leva tudo. Se "
+            "os dois roubam, ninguém ganha nada. Antes da escolha, eles podem conversar e prometer o que "
+            "quiserem. Em média, os jogadores escolheram dividir em 53% das vezes. Economistas, entre eles Richard Thaler, viram que quem prometia dividir tinha mais chance de "
+            "cumprir, e que a cooperação era surpreendentemente alta em quantias que seriam importantes fora dali, "
+            "mas pareciam pequenas no contexto do programa. Biólogos evolutivos, entre eles Stuart West, notaram "
+            "que tomar a iniciativa do contato físico, ou ser tocado, se associava a roubar, e que puxar o riso "
+            "se associava a dividir. Outro estudo analisou as falas: quem dizia \"vou dividir\" cooperava mais do "
+            "que quem dizia \"quero dividir\", \"vim aqui para dividir\" ou \"divido se você dividir\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Golden_Balls",
+            "Each contestant is given a set of two balls, one each marked \"Split\" and \"Steal\", and must secretly choose one to indicate their intentions after looking inside to confirm which is which. "
+            "The contestants may speak to each other and ask Carrott for advice before making their decision. "
+            "If both choose Split, they each receive half the jackpot. "
+            "If one chooses Steal and the other chooses Split, the Steal contestant wins the entire jackpot and the Split contestant leaves with nothing. "
+            "If both choose Steal, neither contestant wins any money. [...] "
+            "A team of economists, including Richard Thaler, has analysed the decisions of the final contestants and found, among other things, the following: "
+            "Individual players on average choose split (to cooperate) 53 percent of the time. "
+            "Contestants' propensity to cooperate is surprisingly high for amounts that would normally be considered consequential but look tiny in their current context [...] "
+            "Contestants that promised to split were more likely to split. "
+            "Two evolutionary biologists, including Stuart West, have also analysed the correlates of decisions of the final contestants [...] "
+            "Contestants that initiated laughter were more likely to split. "
+            "In contrast, contestants that initiated physical contact were less likely to split, and being touched was also correlated with being less likely to split. "
+            "Another study focuses on whether it is possible to predict the behaviour of contestants by carefully analyzing what they say. "
+            "They find that contestants who make statements that carry an element of conditionality (\"I will split if you split\") or implicitness (\"I want to split\", \"I came here to split\") are less likely to cooperate than contestants who make more explicit promises (\"I will split\"). [...] "
+            "The \"Split or Steal?\" game element, essentially a variant of the prisoner's dilemma",
+            nome="Golden Balls")],
+    },
+]
