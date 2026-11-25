@@ -17,12 +17,12 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+# Dois jobs, como no modelo oficial do GitHub Pages: com tudo num job só, o deploy-pages
+# às vezes procurava o pacote 1 s depois do envio e não o achava ("No artifacts named
+# github-pages"). A troca de job dá tempo para o pacote ficar visível.
 jobs:
-  publicar:
+  montar:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.publicacao.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
 
@@ -51,5 +51,12 @@ jobs:
         with:
           path: app
 
+  publicar:
+    needs: montar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacao.outputs.page_url }}
+    steps:
       - id: publicacao
         uses: actions/deploy-pages@v5
