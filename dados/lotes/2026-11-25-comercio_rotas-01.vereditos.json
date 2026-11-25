@@ -1,0 +1,141 @@
+{
+ "lote": "2026-11-25-comercio_rotas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "comercio_rotas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Silk Road (Richthofen popularizou em 1877, sete expedições 1868–1872; Ball chama de 'mito'; atribuições corretas)."
+   },
+   {
+    "id": "comercio_rotas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hanseatic League (sem data de fundação, saque de Copenhague, Stralsund 1370, dissolução silenciosa)."
+   },
+   {
+    "id": "comercio_rotas-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Heródoto confere; mas a parte da África Ocidental (tambores, ouro por sal) vem de frases sem referência e é contestada (Moraes Farias), e o relato de Heródoto envolve só ouro.",
+    "correcao": "Na explicação, trocar 'A prática ganhou o nome de comércio silencioso ou escambo mudo, e há registros dela em várias partes da África. Na África Ocidental, o ouro extraído ao sul do Sahel era trocado pelo sal do deserto, e a comunicação era feita com tambores. O método resolvia dois problemas: permitia negociar sem falar a mesma língua e talvez ajudasse a guardar o segredo de onde vinham o ouro e o sal.' por 'A prática ganhou o nome de comércio silencioso ou escambo mudo. A ideia por trás dela é engenhosa: permitia negociar sem falar a mesma língua e talvez ajudasse a guardar o segredo de onde vinha o ouro.' Manter o gancho."
+   },
+   {
+    "id": "comercio_rotas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Taghaza (al-Qazwini, Ibn Battuta 1352, valor quadruplicado, al-Mansur e Tondibi 1591)."
+   },
+   {
+    "id": "comercio_rotas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'muitas' com motivos persas não é quantificado na fonte, e 'feita às pressas e com fins comerciais' é acusação dos críticos.",
+    "correcao": "No gancho, trocar 'Muitas tinham motivos persas e inscrições do Corão, pensadas para outros mercados.' por 'Parte delas trazia motivos persas e inscrições do Corão, pensadas para outros mercados.' (gancho ≤ 220). Na explicação, trocar 'A escavação, feita às pressas e com fins comerciais, foi criticada por arqueólogos, e o Smithsonian adiou em 2011 uma exposição do tesouro.' por 'Arqueólogos criticaram a escavação como comercial e apressada demais, e o Smithsonian adiou em 2011 uma exposição do tesouro.'"
+   },
+   {
+    "id": "comercio_rotas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Uluburun shipwreck (354 lingotes, ~10 t de cobre, ~1 t de estanho, ~30% da Ásia Central, Powell et al. 2022)."
+   },
+   {
+    "id": "comercio_rotas-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere; mas 'chegavam em março ou abril' contradiz os 'pelo menos quatro meses', a guerra de independência começou em 1810, e faltam as ressalvas sobre o Havaí (carta de 1743, tradições orais).",
+    "correcao": "(a) Trocar 'Os galeões saíam de Cavite, na baía de Manila, no fim de junho ou começo de julho e chegavam a Acapulco em março ou abril do ano seguinte; a travessia levava pelo menos quatro meses.' por 'Os galeões saíam de Cavite, na baía de Manila, no fim de junho ou começo de julho, e a travessia até Acapulco levava pelo menos quatro meses.' (b) Trocar 'A rota durou até 1815, quando estourou a guerra de independência mexicana.' por 'A rota durou até 1815, em meio à guerra de independência mexicana.' (c) Depois da frase sobre Henry Kamen, acrescentar: 'Há pontas soltas: uma carta náutica espanhola capturada pelos ingleses em 1743 mostra ilhas na latitude do Havaí, e tradições orais havaianas falam de estrangeiros chegados antes de Cook, mas os historiadores não as consideram provas confiáveis.' e incluir no trecho 'A Spanish chart captured by the British in 1743 depicts islands in the latitude of Hawaii' e 'Scholars have dismissed these claims as lacking credibility.' (respeitando 250 palavras)."
+   },
+   {
+    "id": "comercio_rotas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Spanish dollar (fó e o rei como Buda, yuan e iene, curso legal até 1857, oitavos na bolsa até 1997/2001); não repete dinheiro-0006."
+   },
+   {
+    "id": "comercio_rotas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Frederic Tudor e Ice trade (Tuscany 1833, 180 e 100 t, Calcutá, Brasil em 1834)."
+   },
+   {
+    "id": "comercio_rotas-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Shell money; mas 'comprar' e 'preço' perderam o búzio na escrita simplificada; 'riqueza' (財/财) e 'gastar' (費/费) o mantêm.",
+    "correcao": "No gancho, trocar 'e em chinês \"comprar\" e \"preço\" levam o desenho de um búzio.' por 'e em chinês \"riqueza\" e \"gastar\" levam o desenho de um búzio.' Na explicação, trocar 'como os de preço, gastar, comprar e riqueza.' por 'como os de gastar e riqueza.'"
+   },
+   {
+    "id": "comercio_rotas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Radhanite (Ibn Khordadbeh c. 870, seis línguas, quatro rotas do Ródano à China, 'otherwise not attested')."
+   },
+   {
+    "id": "comercio_rotas-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte data só a fabricação do Buda de Helgö (século VI); ele deve ter chegado na Era Viking; e as datas da descoberta em Berenice se contradizem no verbete.",
+    "correcao": "1) No gancho, trocar 'E, no século VI, uma estatueta de Buda do norte da Índia foi parar numa ilha da Suécia.' por 'E uma estatueta de Buda feita no norte da Índia no século VI foi parar numa ilha da Suécia.' 2) Na explicação, trocar 'A estátua egípcia foi achada em partes, em 2018 e 2022, no pátio' por 'A estátua egípcia foi achada em partes, em escavações recentes, no pátio'. 3) Trocar 'uma concha de batismo do Egito, ambas do século VI.' por 'uma concha de batismo do Egito, ambas feitas no século VI.' (ou, com a fonte Helgö Buddha, acrescentar que o Buda deve ter chegado à ilha só na Era Viking)."
+   },
+   {
+    "id": "comercio_rotas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Spillings Hoard (14.295 moedas, 27 e 40 kg, raio X em branco, 69 casas da moeda)."
+   },
+   {
+    "id": "comercio_rotas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Conteúdo confere (Hermapollon, 9 milhões de sestércios, Pattanam com controvérsia); 'sempre ligado' exagera ('especially').",
+    "correcao": "Na explicação, trocar 'sempre ligado ao comércio de especiarias' por 'sobretudo ligado ao comércio de especiarias'."
+   },
+   {
+    "id": "comercio_rotas-0015",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o encalhe do Ever Given em 2021 é amplamente conhecido; e a explicação dá o efeito vela como mecanismo do acidente, causalidade que a fonte não afirma."
+   }
+  ],
+  "2": [
+   {
+    "id": "comercio_rotas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas; texto confere com as fontes."
+   },
+   {
+    "id": "comercio_rotas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas; texto confere com as fontes."
+   },
+   {
+    "id": "comercio_rotas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas; texto confere com as fontes."
+   },
+   {
+    "id": "comercio_rotas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções da rodada 1 aplicadas; texto confere com as fontes."
+   },
+   {
+    "id": "comercio_rotas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções da rodada 1 aplicadas; texto confere com as fontes."
+   },
+   {
+    "id": "comercio_rotas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções da rodada 1 aplicadas; texto confere com as fontes."
+   }
+  ]
+ }
+}

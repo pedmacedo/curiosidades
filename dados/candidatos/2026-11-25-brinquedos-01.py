@@ -1,0 +1,589 @@
+LOTE = "2026-11-25-brinquedos-01"
+AREA = "esportes_jogos"
+TEMA = "brinquedos"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+def web(url, titulo, trecho, idioma="en"):
+    return {"url": url, "titulo": titulo, "idioma": idioma, "trecho": trecho}
+
+
+AIP_SLINKY = "https://www.aip.org/inside-science/secrets-of-the-levitating-slinky"
+SMITHSONIAN_TEDDY = "https://www.smithsonianmag.com/history/the-history-of-the-teddy-bear-from-wet-and-angry-to-soft-and-cuddly-170275899/"
+
+
+CANDIDATOS = [
+    # 1 o Slinky: a mola que caiu da prateleira e virou antena no Vietnã
+    {
+        "temas_secundarios": ["invencoes", "telecomunicacoes"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O Slinky nasceu em 1943, quando um engenheiro naval viu uma mola derrubada da prateleira descer \"andando\". Anos depois, molas como aquela serviram de antena de rádio a soldados na Guerra do Vietnã.",
+        "explicacao": (
+            "Richard T. James, engenheiro mecânico da Marinha dos EUA, viu uma mola cair de uma prateleira, descer "
+            "como quem dá passos e parar em pé. Segundo a mulher dele, Betty, ele chegou em casa dizendo que, com o "
+            "aço e a tensão certos, conseguiria fazer uma mola andar. Passou o ano seguinte testando tipos de fio de "
+            "aço até achar o certo. As lojas de brinquedo resistiram, mas em 1945 o casal montou uma rampa na seção "
+            "de brinquedos da loja Gimbels, na Filadélfia, e as primeiras 400 unidades acabaram em 90 minutos. Numa "
+            "escada, a mola passa energia ao longo do corpo numa onda longitudinal e desce de ponta-cabeça, um degrau "
+            "por vez. O Slinky de metal também ressoa entre 7 e 8 MHz e, na Guerra do Vietnã, foi usado como antena "
+            "portátil para comunicação local: pequeno, reutilizável e rápido e silencioso de instalar, ao contrário "
+            "de um fio comprido lançado com um lança-granadas. A família teve outra reviravolta: em 1960, Richard "
+            "anunciou que iria para a Bolívia como missionário evangélico. Betty ficou, se divorciou, assumiu a "
+            "empresa e a presidiu até 1998."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Slinky",
+            "In 1943, Richard T. James, a naval mechanical engineer, observed a spring \"stepping\" downward after being knocked off a shelf, then coming to rest in a vertical position. "
+            "James's wife Betty later recalled, \"He came home and said, 'I think if I got the right property of steel and the right tension, I could make it walk.'\" "
+            "James experimented with different types of steel wire over the next year, and finally found a spring that would \"walk\". [...] "
+            "They initially had difficulty selling Slinky to toy stores, but in 1945, they were granted permission to set up an inclined plane in the toy section of Gimbels Department Store in Philadelphia to demonstrate it on the Tuesday after Thanksgiving. "
+            "It was an instant hit; the first 400 units were sold in 90 minutes. [...] "
+            "In 1960, he told Betty that he was going to become an evangelical missionary in Bolivia with Wycliffe Bible Translators. [...] "
+            "Betty decided to remain, divorce Richard, and take over the company. [...] "
+            "after serving as James Industries' president from 1960 to 1998. [...] "
+            "When set in motion on a stepped platform such as a stairway, the Slinky transfers energy along its length in a longitudinal wave. "
+            "The whole spring descends end over end in a periodic motion as if it were \"walking\" down one step at a time. [...] "
+            "Metal Slinkys can be used as an antenna; it resonates between 7 and 8 MHz. "
+            "During the Vietnam War, it was used as a portable antenna for local HF communication. "
+            "This setup had many advantages over a long wire shot from M79 grenade launcher: small dimensions, fast and quiet installation, reusability",
+            nome="Slinky")],
+    },
+    # 2 o Slinky que levita (e levitaria igual na Lua ou em Júpiter)
+    {
+        "temas_secundarios": ["acustica", "estados_materia"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Solte um Slinky pendurado e a ponta de baixo fica parada no ar por cerca de 0,3 segundo, até o resto da mola desabar sobre ela. Segundo um físico, esse tempo seria o mesmo na Lua ou em Júpiter.",
+        "explicacao": (
+            "Pendurado pelo topo, o Slinky se estica até um equilíbrio em que a gravidade, em cada ponto, é compensada "
+            "pela tensão das espiras de cima. Quando o topo é solto, ele desaba e as espiras se chocam umas contra as "
+            "outras; esse colapso desce pela mola como uma onda. As espiras de baixo ficam em repouso até a parte de "
+            "cima bater nelas: é o tempo que a onda leva para \"avisar\" a base de que a mola foi solta, em torno de "
+            "0,3 segundo nos Slinkys reais. Shimon Kolkowitz, então estudante de física em Harvard, percebeu que esse "
+            "tempo não depende da gravidade. Na Lua, a mola ficaria menos esticada e se comprimiria com mais suavidade; "
+            "em Júpiter, ficaria mais esticada, mas o topo voltaria mais depressa. Só a massa e a rigidez da mola mudam "
+            "a duração. Nenhuma lei de Newton é violada: o centro de massa do brinquedo cai com a aceleração da "
+            "gravidade desde o instante em que é solto. O efeito acontece com qualquer objeto elástico, e nenhum é "
+            "totalmente rígido; o Slinky só torna isso fácil de ver. O físico Bill Unruh, especialista em radiação de "
+            "buracos negros, mostrou ainda que a queda forma uma onda de choque, parecida com um estrondo sônico."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            web(AIP_SLINKY, "Secrets of the 'Levitating' Slinky (Inside Science, AIP)",
+                "Shimon Kolkowitz, a physics graduate student at Harvard University [...] "
+                "in which the downward force of gravity is balanced by the upward tension of the coils above it. "
+                "When the top is released, the bottom stays suspended. The top of the Slinky collapses, so that the coils slam into each other. "
+                "That collapse travels down as a wave through the Slinky. The bottom coils remain at rest until the top crashes into them. [...] "
+                "approximately 0.3 seconds for Kolkowitz [...] "
+                "would be the same on any planet or moon. [...] "
+                "the weaker gravitational field wouldn [...] "
+                "stretch the Slinky as much, so the spring would compress more gently towards the bottom when dropped [...] "
+                "On Jupiter, the stronger gravitational field would stretch the suspended Slinky to a greater degree, so that the spring would have a larger distance to compress. "
+                "But the more stretched-out top would snap back faster toward the bottom, resulting in the same levitation time. [...] "
+                "still accelerates according to gravity all the way down to the ground from the moment it [...] "
+                "mass and stiffness, Kolkowitz said, are the only two factors that affect the duration of levitation. "
+                "Kolkowitz pointed out this levitation effect would occur when any other spring or other elastic, nonrigid object is dropped [...] "
+                "and no object is completely rigid. [...] "
+                "the Slinky is an especially easy system [...] "
+                "a world expert in black hole radiation [...] "
+                "Unruh found that the falling Slinky creates a shock wave through the toy, analogous to the blast wave of a bomb or a sonic boom created by aircraft."),
+            web("https://arxiv.org/abs/1208.4629", "Modeling a falling slinky (Cross e Wheatland, arXiv)",
+                "the bottom of the slinky does not begin to fall until the top section of the slinky, which collapses turn by turn from the top, collides with the bottom. [...] "
+                "typically ~0.3 s for real slinkies [...] "
+                "corresponds to the time required for a wave front to propagate down the slinky to communicate the release of the top end."),
+        ],
+    },
+    # 3 a Play-Doh era limpador de papel de parede
+    {
+        "temas_secundarios": ["quimica_cotidiano", "invencoes"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "A massinha Play-Doh começou como produto de limpeza: uma massa para tirar do papel de parede a fuligem do aquecimento a carvão. Quando esse mercado sumiu, uma professora teve a ideia de usá-la com crianças.",
+        "explicacao": (
+            "A massa foi criada por Noah McVicker, da Kutol Products, uma fábrica de sabão de Cincinnati, a pedido da "
+            "rede de mercados Kroger, que queria algo para limpar das paredes o resíduo do carvão usado para aquecer "
+            "as casas. Depois da Segunda Guerra, a procura despencou. O gás natural tomou o lugar do carvão nos "
+            "aquecedores, a fuligem dentro das casas diminuiu, e o papel de parede de vinil, lavável, dispensava "
+            "produtos desse tipo. Joe McVicker, sobrinho de Noah, entrou na empresa com a missão de salvá-la da "
+            "falência. A saída veio da cunhada dele, Kay Zufall, professora de pré-escola, que tinha lido no jornal "
+            "sobre trabalhos de arte feitos com a massa de limpar papel de parede. Os alunos dela adoraram, e ela "
+            "convenceu tio e sobrinho a fabricá-la como brinquedo. Foram Kay e o marido que inventaram o nome "
+            "Play-Doh; os McVicker queriam chamá-la de Rainbow Modeling Compound. Em 1956, a família abriu uma empresa "
+            "só para a massinha, e, entre 1955 e 2005, mais de dois bilhões de potes foram vendidos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Play-Doh",
+            "concocted by Noah McVicker of Cincinnati-based soap manufacturer Kutol Products. "
+            "It was devised at the request of Kroger Grocery, which wanted a product that could clean coal residue from wallpaper from coal fired homes. "
+            "Following World War II, the demand for wallpaper cleaning putty shrank substantially. "
+            "The increasing popularity of natural gas in heating applications and corresponding reduction of coal use resulted in a decrease of indoor soot build-up in homes and businesses. "
+            "The introduction of washable vinyl-based wallpaper further rendered many such specialized cleaning products unnecessary. "
+            "McVicker's nephew, Joe McVicker, joined Kutol with the remit to save the company from bankruptcy. "
+            "Joe McVicker was the brother-in-law of nursery school teacher Kay Zufall, who had seen a newspaper article about making art projects with the wallpaper cleaning putty. "
+            "Her students enjoyed it, and she persuaded Noah McVicker (who also sold the putty) and Joe McVicker to manufacture it as a child's toy. "
+            "Zufall and her husband came up with the name Play-Doh; Joe McVicker and his uncle Noah had wanted to call it Rainbow Modeling Compound. [...] "
+            "In 1956, the McVickers formed the Rainbow Crafts Company to make and sell Play-Doh. [...] "
+            "More than two billion cans of Play-Doh were sold between 1955 and 2005",
+            nome="Play-Doh")],
+    },
+    # 4 o tijolinho do Lego veio da Kiddicraft, de Hilary Page
+    {
+        "temas_secundarios": ["invencoes", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "origem_inesperada"],
+        "gancho": "O tijolinho do Lego nasceu de uma cópia: a de uma peça de encaixe que o inglês Hilary Page patenteou na década de 1940. Page morreu em 1957 e, segundo a viúva, nem sabia do Lego.",
+        "explicacao": (
+            "Page fundou a Kiddicraft em 1932 e foi um dos primeiros a defender o plástico como material seguro e "
+            "higiênico para brinquedos. Em 1939, pediu a patente dos Self-Locking Building Bricks, tijolos presos uns "
+            "aos outros por pinos no topo, com as proporções de um tijolo britânico reduzido na escala de 1:7. Eles "
+            "chegaram às lojas em 1947. Na Dinamarca, o carpinteiro Ole Kirk Christiansen e o filho, Godtfred, "
+            "conheceram a peça por uma amostra que o fornecedor britânico da máquina de injeção de plástico da "
+            "empresa lhes deu. Ole copiou o tijolo e, em 1949, lançou sua versão, o Automatic Binding Brick, que em "
+            "1953 virou o tijolo Lego. O encaixe ainda era fraco; o desenho moderno surgiu em 1958, e peças daquele "
+            "ano ainda se encaixam nas atuais. Page, pressionado pelos problemas da empresa e temendo sua quebra, se "
+            "matou em 1957. Em 1987, a viúva disse que ele morreu antes de o Lego lançar o produto na Grã-Bretanha e "
+            "que não sabia dele. A Lego reconhece a Kiddicraft como origem dos tijolos de plástico e, em 1981, antes "
+            "de processar concorrentes como a Tyco, comprou os direitos restantes dos projetos da Kiddicraft."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Kiddicraft",
+                "Page became an early advocate of plastic as a safe and hygienic alternative. [...] "
+                "In 1939 Page filed the patent for the Kiddicraft \"Self-Locking Building Bricks\" (British patent no. 529,580), which was granted in 1940. [...] "
+                "The bricks' dimensions corresponded to a British standard brick scaled down 1:7. The plastic bricks reached the market in 1947. [...] "
+                "The bricks could be stacked and were held in place by studs on top [...] "
+                "Ole Kirk Christiansen and his son Godtfred became aware of the Kiddicraft brick after examining a sample, and possibly drawings, given to them by the British supplier of the first injection moulding machine they had purchased. "
+                "Ole copied the Kiddicraft brick and in 1949 marketed his own version, the Automatic Binding Brick, which became the Lego brick in 1953. "
+                "Lego acknowledges Kiddicraft as the origin of the plastic bricks on its history website [...] "
+                "Lego eventually purchased the residual rights to the Kiddicraft designs from Hilary Page's descendants in 1981, ahead of legal suits it filed against other plastic building toy makers such as Tyco.",
+                nome="Kiddicraft"),
+            wiki("Hilary_Page",
+                "founded the toy company Kiddicraft in 1932 [...] "
+                "Troubled by pressures on the business and fearing a collapse of his company, Page died by suicide on 24 June 1957. "
+                "In 1987, his widow stated, \"He died before Lego brought out the product in Britain. He didn't know about it.\"",
+                nome="Hilary Page"),
+            wiki("Lego",
+                "Their locking ability was still limited, and they were not yet versatile. "
+                "In 1958, the modern brick design was developed [...] "
+                "Lego bricks from 1958 still interlock with those made presently",
+                nome="Lego"),
+        ],
+    },
+    # 5 o cubo de Rubik não nasceu como quebra-cabeça
+    {
+        "temas_secundarios": ["algoritmos", "invencoes"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Ernő Rubik não queria criar um quebra-cabeça: buscava uma estrutura de peças que girassem sem o conjunto desmontar. Só viu o desafio ao embaralhar o cubo pela primeira vez, e levou cerca de um mês para resolvê-lo.",
+        "explicacao": (
+            "Em meados dos anos 1970, Rubik ensinava design e arquitetura na Academia de Artes Aplicadas de Budapeste e "
+            "fazia experiências com estruturas tridimensionais. Costuma-se dizer que o cubo foi feito para ajudar os "
+            "alunos a entender objetos em três dimensões, mas o objetivo real era mecânico: fazer muitas peças "
+            "pequenas se moverem sozinhas sem deixarem de formar um único sistema estável. Ele não percebeu de "
+            "imediato que tinha um quebra-cabeça nas mãos. Isso só ficou claro quando embaralhou o cubo recém-montado "
+            "e tentou voltar ao estado original; segundo lembranças posteriores, levou cerca de um mês de tentativa e "
+            "erro, e foi aí que notou a complexidade da coisa. Ele pediu a patente húngara do \"Cubo Mágico\" em 1975. "
+            "A complexidade é enorme: o cubo clássico tem cerca de 43 quintilhões de posições alcançáveis. Mesmo "
+            "assim, em 2010, uma equipe com computadores cedidos pelo Google provou que qualquer uma delas pode ser "
+            "resolvida em 20 movimentos ou menos, o chamado \"número de Deus\". Estima-se que cerca de 200 milhões de "
+            "cubos tenham sido vendidos só entre 1980 e 1983."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Rubik's_Cube",
+            "In the mid-1970s, Ernő Rubik worked at the Department of Interior Design at the Academy of Applied Arts and Crafts in Budapest, where he taught courses on design and architecture and experimented with three-dimensional structures and models. "
+            "Although it is widely reported that the Cube was initially built as a teaching tool to help his students understand 3D objects and spatial relationships, his actual purpose was solving the structural problem of allowing many small parts to move independently while still remaining part of a single, coherent mechanical system. [...] "
+            "He did not immediately realise that he had created a puzzle: this only became apparent after he scrambled his newly constructed Cube for the first time and then attempted to restore it to its original ordered state. "
+            "According to later recollections, it took him about a month of trial and error to solve his own creation, during which time he became aware of the Cube's combinatorial complexity and potential as a recreational object. "
+            "Rubik applied for a patent in Hungary for his \"Magic Cube\" (Hungarian: bűvös kocka) on 30 January 1975. [...] "
+            "it is estimated that in the period from 1980 to 1983 around 200 million Rubik's Cubes were sold worldwide. [...] "
+            "or about 43 quintillion. [...] "
+            "in July 2010, a team of researchers including Rokicki, working with computers provided by Google, proved that the so-called \"God's number\" for Rubik's Cube is 20. "
+            "This means that all initial configurations can be solved in 20 moves or less",
+            nome="Rubik's Cube")],
+    },
+    # 6 o ioiô como arma é mito; o truque filipino era o laço na corda
+    {
+        "temas_secundarios": ["palavras_viajantes", "personagens_esquecidos"],
+        "tipos_espanto": ["mito_desmentido", "engenhosidade"],
+        "gancho": "Não há indício histórico sólido de que o ioiô tenha sido usado como arma: a ideia teria nascido como marketing. A grande inovação veio de um filipino nos EUA, um laço na corda que deixa o ioiô girar parado.",
+        "explicacao": (
+            "O brinquedo é antiquíssimo: aparece em pinturas de vasos da Grécia Antiga, e restam exemplares de bronze "
+            "e de terracota. A palavra ioiô provavelmente vem do ilocano, língua das Filipinas, ou de um termo "
+            "aparentado de lá. Em 1928, o imigrante filipino Pedro Flores abriu na Califórnia a Yo-yo Manufacturing "
+            "Company; em novembro de 1929, suas fábricas somavam 600 empregados e produziam 300 mil unidades por dia. "
+            "A diferença estava no jeito de prender a corda. Nos ioiôs antigos, ela era amarrada ao eixo com um nó: o "
+            "brinquedo vai e volta com facilidade, mas não consegue \"dormir\", isto é, ficar girando na ponta do fio. "
+            "Flores usava um fio contínuo, com o dobro do comprimento, torcido para formar um laço solto em volta do "
+            "eixo, o que dá estabilidade e permite truques bem mais variados. Pouco depois, o empresário Donald F. "
+            "Duncan comprou a empresa de Flores. Já a história do ioiô como arma não tem base histórica sólida; "
+            "acredita-se que tenha sido um truque de marketing espalhado pelos demonstradores da Duncan nos primeiros "
+            "anos da companhia. Mesmo assim, ela persiste na cultura pop, de videogames a um filme de James Bond."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Yo-yo",
+            "Yo-yos were known to the Ancient Greeks, and they appear in several Ancient Greek vase paintings, though the Ancient Greek word for them is unknown. "
+            "Surviving examples from the period exist made of bronze and terracotta (fired clay) [...] "
+            "The word yo-yo probably comes from the Ilocano term yóyo, or a cognate word from the Philippines. [...] "
+            "In 1928, Pedro Flores, a Filipino immigrant to the United States, opened the Yo-yo Manufacturing Company in Santa Barbara, California. "
+            "The business started with a dozen handmade toys; by November 1929, Flores was operating two additional factories in Los Angeles and Hollywood, which all together employed 600 workers and produced 300,000 units daily. "
+            "The principal distinction between the Filipino design popularized by Flores and the more traditional yo-yos is in the way the yo-yo is strung. "
+            "In older (and some remaining inexpensive) yo-yo designs, the string is tied to the axle using a knot. "
+            "With this technique, the yo-yo just goes back and forth; it returns easily, but it is impossible to make it sleep. "
+            "In Flores's design, one continuous piece of string, double the desired length, is twisted around something to produce a loop at one end which is fitted around the axle. "
+            "Also termed a looped slip-string, this seemingly minor modification allows for a far greater variety and sophistication of motion, thanks to increased stability and suspension of movement during free spin. "
+            "Shortly thereafter (c. 1929), entrepreneur Donald F. Duncan recognized the potential of this new fad and purchased the Flores Yo-yo Corporation [...] "
+            "One of the most basic tricks is called the sleeper, where the yo-yo spins at the end of the string for a noticeable amount of time before returning to the hand. [...] "
+            "There is no sound historical evidence that yo-yos were ever used as weapons; the notion is believed to have been a marketing gimmick disseminated by Duncan yo-yo demonstrators in the early years of the company. "
+            "Regardless, the notion that yo-yos can be used as weapons persists to this day in pop culture [...] "
+            "The video games EarthBound and Terraria feature many yo-yo weapons. "
+            "The yo-yo weapon depicted in the 1983 James Bond film Octopussy",
+            nome="Yo-yo")],
+    },
+    # 7 a Barbie e a Bild Lilli, boneca-piada para adultos
+    {
+        "temas_secundarios": ["moda", "economia_curiosa"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "A Barbie foi baseada numa boneca alemã que não era para crianças: a Bild Lilli, personagem de tirinhas de um jornal popular, vendida em tabacarias e bancas como presente de brincadeira para adultos, sobretudo homens.",
+        "explicacao": (
+            "Lilli era uma personagem de quadrinhos criada por Reinhard Beuthien para o tabloide alemão Bild. Em 1953, "
+            "o jornal decidiu vender uma boneca dela, que chegou ao mercado em 1955. A versão grande, de 30 cm, custava "
+            "12 marcos, numa época em que o salário mensal líquido médio ficava entre 200 e 400 marcos. O preço já "
+            "indica o público: adultos, principalmente homens, que a compravam como piada em tabacarias e bancas de "
+            "jornal. Um folheto dos anos 1950 dizia que, graças ao guarda-roupa, Lilli era \"a estrela de qualquer "
+            "bar\", e cada boneca vinha com um exemplar em miniatura do jornal. Com o tempo, as crianças também "
+            "passaram a gostar dela, e fábricas alemãs fizeram casinhas e móveis na sua escala. Ruth Handler, "
+            "cofundadora da Mattel, comprou bonecas Lilli em Hamburgo, e a Barbie, lançada em março de 1959, foi "
+            "baseada nelas. As mudanças foram poucas: vinil no lugar do plástico duro, cabelo implantado em vez de "
+            "peruca e sapatos e brincos separados, não moldados no corpo. Em 1964, a Mattel comprou os direitos da "
+            "Lilli, e a produção alemã acabou."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Bild_Lilli_doll",
+            "Lilli was a German cartoon character created by Reinhard Beuthien for the German tabloid Bild. "
+            "In 1953, the newspaper decided to market a Lilli doll [...] "
+            "was sold from 1955 to 1964; that year, Mattel acquired the rights to the doll and German production stopped. "
+            "Bild Lilli was available in two sizes: 30 and 19 cm [...] "
+            "Each Lilli doll carried a miniature copy of Bild [...] "
+            "Originally the tall dolls cost DM 12, the small DM 7.50 at a time when average monthly take-home pay was DM 200 to DM 400. "
+            "As this price suggests, the dolls were marketed to adults, mainly men, as a joke or gag gift at tobacconists, kiosks, and newsagents [...] "
+            "A German brochure from the 1950s states that Lilli was \"always discreet\", and that her wardrobe made her \"the star of every bar\" [...] "
+            "The doll eventually became popular with children as well. "
+            "Dollhouses, room settings, furniture, and other toy accessories to scale with the small Lilli were produced by German toy factories [...] "
+            "Mattel's Barbie doll, which appeared in March 1959, was based on Bild Lilli dolls that co-founder Ruth Handler had acquired in Hamburg. "
+            "The first Barbie doll was made of vinyl instead of hard plastic, had rooted hair with curly bangs rather than a wig-cap, and included separate shoes and earrings which were not molded on as Lilli's were.",
+            nome="Bild Lilli doll")],
+    },
+    # 8 o Etch A Sketch: pó de alumínio e eletricidade estática
+    {
+        "temas_secundarios": ["eletromagnetismo", "invencoes"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "O Etch A Sketch não pinta linha nenhuma: o vidro é coberto por dentro com pó de alumínio, preso por eletricidade estática, e uma ponta raspa esse pó. O traço escuro é o interior do brinquedo aparecendo.",
+        "explicacao": (
+            "Por trás da tela cinza há dez polias, seis cabos, dois trilhos e uma ponta metálica. Um botão move a "
+            "ponta na vertical e o outro na horizontal; girando os dois ao mesmo tempo, sai uma diagonal. No fundo, "
+            "o brinquedo é uma espécie de plotter. Onde a ponta passa, o pó de alumínio sai do vidro e deixa ver a "
+            "escuridão de dentro; raspando áreas grandes, passa luz suficiente para enxergar partes do mecanismo. "
+            "Para apagar, basta virar o brinquedo de cabeça para baixo e sacudir: bolinhas de poliestireno espalham "
+            "de novo o pó sobre o vidro. O inventor foi o eletricista francês André Cassagnes, que no fim dos anos "
+            "1950 chamou o aparelho de L'Écran Magique, \"a tela mágica\", e o levou em 1959 à feira internacional de "
+            "brinquedos de Nuremberg. A americana Ohio Art viu o brinquedo e não se interessou; só na segunda vez "
+            "resolveu apostar nele. Lançado com o novo nome em 1960, vendeu 600 mil unidades naquele ano. A tela "
+            "original era de vidro comum, criticada por quebrar fácil e ser um perigo para as crianças."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Etch_A_Sketch",
+            "The device has ten pulleys, six cables, two rails, and a stylus. [...] "
+            "The toy is a kind of plotter. "
+            "The inside surface of the glass screen is coated with aluminum powder, which is then scraped off by a movable stylus, leaving a dark line on the light gray screen. "
+            "The stylus is controlled by the two large knobs, one of which moves it vertically and the other horizontally. "
+            "Turning both knobs simultaneously makes diagonal lines. "
+            "To erase the picture, the user turns the toy upside down and shakes it. "
+            "Doing this causes polystyrene beads to smooth out and re-coat the inside surface of the screen with aluminum powder. "
+            "The aluminum sticks to the screen due to electrostatic charges. "
+            "The \"black\" line merely exposes the darkness inside the toy. "
+            "Scraping out large \"black\" areas allows enough light through to expose parts of the interior. [...] "
+            "Cassagnes of France. [...] "
+            "The Etch A Sketch toy was invented in the late 1950s by [...] "
+            "Cassagnes, an electrician with Lincrusta Co, who named the toy [...] "
+            "cran Magique lit. 'the magic screen'. "
+            "In 1959, he took his drawing toy to the International Toy Fair in Nuremberg, Germany. "
+            "The Ohio Art Company saw it but had no interest in the toy. "
+            "When Ohio Art saw the toy a second time, they decided to take a chance on the product. [...] "
+            "The Etch A Sketch was introduced near the peak of the Baby Boom on July 12, 1960 [...] "
+            "It went on to sell 600,000 units that year [...] "
+            "Originally, the toy used a plate glass screen, which was criticized by safety advocates for being easily broken and a danger to children.",
+            nome="Etch A Sketch")],
+    },
+    # 9 a Super Ball deu nome ao Super Bowl
+    {
+        "temas_secundarios": ["historia_esportes", "quimica_cotidiano"],
+        "tipos_espanto": ["conexao_inesperada", "origem_inesperada"],
+        "gancho": "O nome Super Bowl, a final do futebol americano, veio de um brinquedo: o fundador de uma liga viu os filhos brincando com uma Super Ball, a bolinha superelástica da moda, e passou a chamar o jogo assim, de brincadeira.",
+        "explicacao": (
+            "A Super Ball é feita de Zectron, uma borracha sintética à base de polibutadieno inventada em 1964 pelo "
+            "químico Norman Stingley e vulcanizada com enxofre a 165 °C. Solta da altura do ombro num piso duro, ela "
+            "volta quase até a mão; atirada com força por um adulto, pode passar por cima de um prédio de três "
+            "andares. A empresa onde Stingley trabalhava recusou a ideia, porque o material era pouco durável, e a "
+            "Wham-O levou quase dois anos para impedir que as bolas se despedaçassem. Até dezembro de 1965, mais de "
+            "seis milhões tinham sido vendidas. Um executivo da empresa brincava que cada quique subia 92% do "
+            "anterior e que, se as vendas não caíssem mais depressa que isso, eles estavam feitos. Lamar Hunt, "
+            "fundador da American Football League, viu os filhos com uma dessas bolas e, numa carta de 1966 ao "
+            "comissário da NFL, escreveu que vinha chamando a final, de brincadeira, de \"Super Bowl\". Os donos dos "
+            "times tinham escolhido um nome formal, mas a imprensa adotou o apelido, que virou oficial a partir da "
+            "terceira edição, em 1969. A bola tem ainda outra esquisitice: inverte o sentido do giro a cada quique."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Super_Ball",
+            "A Super Ball or Superball is a toy bouncy ball based on a type of synthetic rubber invented in 1964 by chemist Norman Stingley. "
+            "It is an extremely elastic ball made of Zectron, which contains the synthetic polymer polybutadiene [...] "
+            "This compound is vulcanized with sulfur at a temperature of 165 °C [...] "
+            "if dropped from shoulder level on a hard surface, a Super Ball bounces nearly all the way back; thrown down onto a hard surface by an average adult, it can fly over a three-story building. [...] "
+            "He first offered his invention to the Bettis Rubber Company, for whom he worked at the time, but they turned it down because the material was not very durable. [...] "
+            "\"It took us nearly two years to iron the kinks out of Super Ball before we produced it,\" [...] "
+            "But it had a tendency to fly apart. [...] "
+            "By December 1965, over six million had been sold [...] "
+            "\"Each Super Ball bounce is 92% as high as the last,\" he once said. \"If our sales don't come down any faster than that, we've got it made.\" [...] "
+            "Lamar Hunt, founder of the American Football League (AFL) and owner of the Kansas City Chiefs, watched his children play with a Super Ball and then coined the term Super Bowl. "
+            "He wrote a letter to National Football League (NFL) commissioner Pete Rozelle dated July 25, 1966: \"I have kiddingly called it the 'Super Bowl,' which obviously can be improved upon.\" "
+            "The league's franchise owners had decided on the name AFL–NFL World Championship Game, but the media immediately picked up on Hunt's Super Bowl name, which became official beginning with the third annual game in 1969. [...] "
+            "A Super Ball is observed to reverse the direction of spin on each bounce.",
+            nome="Super Ball")],
+    },
+    # 10 o frisbee: fôrma de bolo, fio invisível e as tortas de Yale
+    {
+        "temas_secundarios": ["invencoes", "ciencia_esporte"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O frisbee começou com uma fôrma de bolo: um casal que a atirava numa praia perto de Los Angeles recebeu uma oferta de 25 centavos por ela. O nome veio das fôrmas de torta que universitários de Yale jogavam.",
+        "explicacao": (
+            "Walter Frederick Morrison e a futura mulher, Lucile, já se divertiam jogando a tampa de uma lata de "
+            "pipoca depois de um jantar de Ação de Graças, em 1937. Quando alguém lhes ofereceu 25 centavos por uma "
+            "fôrma que custava cinco centavos, Morrison viu ali um negócio. Depois da Segunda Guerra, em que pilotou caças e foi "
+            "prisioneiro de guerra, ele desenhou um disco com aerodinâmica melhor, e em 1948 ele e um sócio já faziam "
+            "discos de plástico, rebatizados de Flyin-Saucer na onda dos relatos de discos voadores. Numa feira, "
+            "ouviram alguém dizer que eles usavam fios para fazer os discos flutuarem, e criaram um bordão de venda: "
+            "o disco sai de graça, e o fio invisível custa 1 dólar. Em 1957, Morrison vendeu à Wham-O os direitos do "
+            "Pluto Platter, um modelo seu de 1955. A empresa adotou o nome Frisbee ao saber que universitários "
+            "chamavam o disco assim, por causa da Frisbie Pie Company, que vendia tortas para a Universidade Yale, "
+            "onde estudantes tinham criado a moda de atirar as fôrmas vazias. O voo tem física: o perfil do disco "
+            "funciona como uma asa, e o giro o estabiliza como um giroscópio."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Frisbee",
+            "The shape of the disc is an airfoil in cross-section which allows it to fly by reducing the drag and increasing lift as it moves through the air, compared to a flat plate. "
+            "Spinning the disc imparts a stabilizing gyroscopic force [...] "
+            "Morrison and his future wife Lucile had fun tossing a popcorn can lid after a Thanksgiving Day dinner in 1937. "
+            "They soon discovered a market for a light-duty flying disc when they were offered 25 cents (equivalent to $6 in 2025) for a cake pan that they were tossing back and forth on a beach near Los Angeles. [...] "
+            "\"That got the wheels turning, because you could buy a cake pan for five cents, and if people on the beach were willing to pay a quarter for it, well—there was a business.\" "
+            "The Morrisons continued their business until World War II, when Walter served in the Army Air Force flying P-47s, and then was a prisoner of war. "
+            "After the war, Morrison sketched a design for an aerodynamically improved flying disc [...] "
+            "He and business partner Warren Franscioni began producing the first plastic discs by 1948 [...] "
+            "They renamed them the \"Flyin-Saucer\" in the wake of reported unidentified flying object sightings. [...] "
+            "The two once overheard someone say that the pair were using wires to make the discs hover, so they developed a sales pitch: \"The Flyin' Saucer is free, but the invisible wire is $1.00.\" [...] "
+            "he designed a new model in 1955 called the Pluto Platter, the archetype of all modern flying discs. "
+            "He sold the rights to Wham-O on January 23, 1957. "
+            "In June 1957, Wham-O co-founders Richard Knerr and Arthur \"Spud\" Melin gave the disc the brand name \"Frisbee\" after learning college students were calling the Pluto Platter by that term, which was derived from the Connecticut-based pie manufacturer Frisbie Pie Company, a supplier of pies to Yale University, where students started a campus craze tossing empty pie tins stamped with the company's logo",
+            nome="Frisbee")],
+    },
+    # 11 o urso do Teddy Roosevelt não foi poupado
+    {
+        "temas_secundarios": ["personagens_esquecidos", "comportamento_animal"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "O ursinho de pelúcia homenageia Theodore Roosevelt, que em 1902 se recusou a atirar num urso amarrado a uma árvore. Mas o urso de verdade não escapou: foi morto a faca logo depois, segundo o relato da Smithsonian.",
+        "explicacao": (
+            "A caçada, no Mississippi, em novembro de 1902, tinha como guia Holt Collier, um ex-escravizado que, "
+            "segundo Roosevelt, matou mais de 3 mil ursos na vida. Os cães de Collier encurralaram um urso-negro "
+            "velho e gordo num charco, e o animal matou um deles. Collier acertou a cabeça do urso com o rifle e o "
+            "amarrou a uma árvore à espera do presidente. Quando Roosevelt chegou, havia gente gritando para ele "
+            "atirar, mas Collier lhe disse que não atirasse num urso amarrado, e Roosevelt se recusou, por achar a "
+            "morte indigna de um caçador. Segundo a revista Smithsonian, Collier e outro caçador então mataram o "
+            "urso com uma faca, depois de uma luta terrível dentro da água; outro relato diz que Roosevelt mandou "
+            "matá-lo para acabar com o sofrimento. O cartunista Clifford Berryman desenhou a cena no Washington Post, "
+            "mas com um filhote dócil no lugar do urso velho. Em Nova York, Morris e Rose Michtom fizeram um urso de "
+            "pelúcia, puseram na vitrine como \"Teddy's bear\" e pediram a Roosevelt permissão para usar o nome. O "
+            "sucesso foi tanto que os dois largaram a venda de doces e fundaram a Ideal Novelty and Toy Company."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            web(SMITHSONIAN_TEDDY, "The History of the Teddy Bear: From Wet and Angry to Soft and Cuddly (Smithsonian Magazine)",
+                "a former slave named Holt Collier as their guide. [...] "
+                "He had also killed more than 3,000 bears over his lifetime. [...] "
+                "Collier's dogs had chased an old, fat, 235-pound black bear into a watering hole. "
+                "Cornered by the barking hounds, the bear swiped several with its paws, then crushed one to death. [...] "
+                "Collier swung his rifle and smashed the bear in the skull. He then tied it to a nearby tree and waited for Roosevelt. [...] "
+                "a crowd of hunters shouting, [...] "
+                "But he refused to draw his gun, believing such a kill would be unsportsmanlike. "
+                "Collier then approached the bear with another hunter and, after a terrible struggle in the water, killed it with his knife. [...] "
+                "Clifford K. Berryman [...] "
+                "with his back to a corralled, frightened and very docile bear cub, refusing to shoot. [...] "
+                "Morris and Rose Michtom [...] "
+                "the Michtoms had [...] "
+                "displayed in their store window. [...] "
+                "asked if he'd mind if they used his name on the bear. [...] "
+                "Teddy's bear became so popular the Michtoms left the candy business and devoted themselves to the manufacture of stuffed bears. [...] "
+                "Ideal Novelty and Toy Company."),
+            wiki("Teddy_bear",
+                "The name originated from an incident on a bear-hunting trip in the U.S. state of Mississippi in November 1902 [...] "
+                "although Collier told Roosevelt not to shoot the bear while it was tied. "
+                "Roosevelt refused to shoot the bear himself, deeming this unsportsmanlike, but instructed that the bear be killed to put it out of its misery [...] "
+                "He created a small soft bear cub and put it in his candy-shop window at 404 Tompkins Avenue in New York City with a sign reading \"Teddy's bear\".",
+                nome="Teddy bear"),
+            wiki("Holt_Collier",
+                "Collier was born circa 1848 as a slave in Mississippi [...] "
+                "According to Roosevelt, Collier killed more than three thousand bears during his lifetime.",
+                nome="Holt Collier"),
+        ],
+    },
+    # 12 o Sr. Cabeça de Batata vinha sem batata
+    {
+        "temas_secundarios": ["telecomunicacoes", "economia_curiosa"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O Sr. Cabeça de Batata vinha sem a batata: as peças do rosto tinham pinos para espetar num legume de verdade. Em 1952, ele foi tido como o primeiro brinquedo anunciado na TV, num comercial feito para as crianças.",
+        "explicacao": (
+            "O inventor, George Lerner, teve a ideia de espetar peças de rosto em frutas e legumes, mas, quando "
+            "terminou o protótipo, em 1951, as empresas achavam que os consumidores resistiriam a desperdiçar comida "
+            "tão pouco tempo depois do racionamento da Segunda Guerra. A Post Cereals comprou os direitos para pôr os "
+            "kits em caixas de cereal, mas, meses depois, a Hassenfeld Brothers, hoje Hasbro, os recomprou junto com "
+            "Lerner. A versão da Hasbro trazia uma cabeça de isopor, mas, como ela durava pouco, a embalagem ainda "
+            "recomendava usar batatas ou outros legumes. Em 30 de abril de 1952, o brinquedo estreou na televisão, "
+            "numa campanha que também foi a primeira dirigida diretamente às crianças; até então, os comerciais "
+            "falavam sobretudo com os adultos. A tática de fazer a criança convencer os pais ganhou até nome em "
+            "inglês, \"nag factor\", algo como \"fator amolação\". Ajudaram a disparada na venda de televisores e um "
+            "grande surto de pólio em 1952, que deixou as crianças mais tempo em casa. Mais de um milhão de kits foram "
+            "vendidos no primeiro ano. Só em 1964 a caixa passou a trazer um corpo de plástico, em parte por causa "
+            "das queixas de pais que encontravam comida estragada em casa."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Mr._Potato_Head",
+            "It was the first toy advertised on television and has remained in production since. "
+            "In its original form, Mr. Potato Head was offered as separate plastic parts with pushpins to be affixed to a real potato or other vegetable. [...] "
+            "toymaker George Lerner came up with the idea of inserting small, pronged body and face parts into fruits and vegetables [...] "
+            "In 1951, Lerner completed a prototype for Funny Face Man. "
+            "Finding a buyer was initially a challenge because companies thought consumers would be hesitant to waste food so soon after the rationing that was widespread during World War II. "
+            "However, Post Cereals purchased the rights to Funny Face Man that same year, with plans to include the kits in breakfast cereal boxes. "
+            "Just a few months later, the toy company Hassenfeld Brothers (now known as Hasbro) and Lerner bought back the rights to Funny Face Man kits from Post. "
+            "In Hasbro's version, the kits included a styrofoam head. "
+            "However, because the styrofoam head had limited reusability, the packaging still recommended that the accessories be affixed to potatoes or other produce. "
+            "On April 30, 1952, Mr. Potato Head became the first toy advertised on television. "
+            "The campaign was also the first to be aimed directly at children; before this, television commercials were mostly targeted at adults. "
+            "The commercial revolutionized marketing by focusing on children as a target audience and encouraging them to convince their parents to buy the product (a concept that came to be known as the \"nag factor\"). "
+            "Additionally, between 1949 and 1952, television sales had increased exponentially, and a massive polio outbreak in 1952 resulted in children spending even more time indoors. "
+            "Over one million kits were sold in the first year. [...] "
+            "in 1964, Hasbro began to include a separate plastic head and body in each box [...] "
+            "These changes were due, in part, to parental complaints about finding spoiled food in their homes",
+            nome="Mr. Potato Head")],
+    },
+    # 13 a Silly Putty, borracha que falhou e virou brinquedo
+    {
+        "temas_secundarios": ["estados_materia", "segunda_guerra"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "A massa Silly Putty saiu de uma pesquisa da Segunda Guerra por um substituto da borracha. Falhou nisso e virou brinquedo: quica como bola, se parte num puxão rápido e, deixada parada, escorre e vira poça.",
+        "explicacao": (
+            "Com o Japão ocupando países produtores de borracha, os EUA racionaram todos os produtos feitos com ela, e "
+            "o governo financiou pesquisas de borrachas sintéticas. A autoria da massa é disputada: Earl Warrick, da "
+            "Dow Corning, e James Wright, da General Electric, descobriram de forma independente que a reação de "
+            "ácido bórico com óleo de silicone gerava uma massa grudenta e saltitante. Ela quicava, esticava mais que "
+            "a borracha comum e não mofava, mas não tinha todas as propriedades necessárias para substituí-la. O "
+            "comportamento estranho vem do polidimetilsiloxano, um material viscoelástico: em intervalos longos age "
+            "como líquido viscoso, e em intervalos curtos, como sólido elástico. Num choque rápido, é sólido e quica; "
+            "com tempo, forma uma poça. Depois que a massa chegou a uma loja de brinquedos, em 1949, o consultor "
+            "Peter Hodgson, já com 12 mil dólares em dívidas, pegou 147 dólares emprestados para comprar um lote e "
+            "vendê-lo em ovinhos de plástico. As vendas começaram fracas, mas, depois de uma menção na revista The "
+            "New Yorker, ele vendeu mais de 250 mil ovos em três dias. Em 1968, a massa foi até a órbita da Lua com "
+            "os astronautas da Apollo 8."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Silly_Putty",
+            "It contains viscoelastic liquid silicones, a type of non-Newtonian fluid, which makes it act as a viscous liquid over a long period of time but as an elastic solid over a short time period. "
+            "It was originally created during research into a potential rubber substitute for use by the United States in World War II. [...] "
+            "It bounces when dropped from a height, but breaks when struck or stretched sharply; it can also float in a liquid and will form a puddle given enough time. [...] "
+            "Silly Putty's unusual flow characteristics are due to the ingredient polydimethylsiloxane (PDMS), a viscoelastic substance. [...] "
+            "During World War II, Japan invaded rubber-producing countries as it expanded its sphere of influence in the Pacific Rim. [...] "
+            "In the US, all rubber products were rationed [...] "
+            "Meanwhile, the government funded research into synthetic rubber compounds to attempt to solve this shortage. "
+            "Credit for the invention of Silly Putty is disputed and has been attributed variously to Earl Warrick of the then newly formed Dow Corning; Harvey Chin; and James Wright, a Scottish-born inventor working for General Electric [...] "
+            "Both researchers independently discovered that reacting boric acid with silicone oil would produce a gooey, bouncy material with several unique properties. "
+            "The non-toxic putty would bounce when dropped, could stretch farther than regular rubber, would not go moldy, and had a very high melting temperature. "
+            "However, the substance did not have all the properties needed to replace rubber. "
+            "In 1949, toy store owner Ruth Fallgatter came across the putty. [...] "
+            "Already US$12,000 in debt, Hodgson borrowed $147 to buy a batch of the putty to pack 1 oz (28 g) portions into plastic eggs for $1, calling it Silly Putty. "
+            "Initial sales were poor, but after a New Yorker article mentioned it, Hodgson sold over 250,000 eggs of silly putty in three days. [...] "
+            "In 1968, it was taken into lunar orbit by the Apollo 8 astronauts.",
+            nome="Silly Putty")],
+    },
+    # 14 o pião que se vira de cabeça para baixo
+    {
+        "temas_secundarios": ["termodinamica", "invencoes"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "Existe um pião que vira de cabeça para baixo sozinho: girado sobre a parte redonda, ele tomba aos poucos até subir e girar sobre a própria haste. Parece ganhar energia do nada, mas quem faz a virada é o atrito.",
+        "explicacao": (
+            "O tippe top tem corpo de esfera cortada e uma haste curta no centro da face plana, que também serve para "
+            "pegá-lo e girá-lo. Lançado com bastante rotação, ele vai inclinando a haste para baixo até que, de "
+            "repente, ela ergue o corpo do pião do chão e passa a ser o ponto de apoio. Quando o giro enfraquece, ele "
+            "perde a estabilidade e tomba como um pião comum. À primeira vista, a virada parece um ganho de energia "
+            "do nada, porque o centro de massa sobe e a energia potencial aumenta. O que provoca a inversão é um "
+            "torque do atrito com a superfície, que ao mesmo tempo reduz a energia cinética do pião; a energia total "
+            "não aumenta. Outro detalhe curioso: depois de virado, ele segue girando no mesmo sentido em que foi "
+            "lançado, visto de cima, por conservação do momento angular. Descrever o movimento direito exige levar "
+            "em conta o atrito seco no ponto de contato, e o brinquedo já virou problema teórico da Olimpíada "
+            "Asiática de Física, em 2019. O pião foi inventado por uma enfermeira alemã, Helene Sperl, em 1891."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Tippe_top",
+            "A tippe top is a kind of top that when spun, will spontaneously invert itself to spin on its narrow stem. "
+            "It was invented by a German nurse, Helene Sperl in 1891. [...] "
+            "A tippe top usually has a body shaped like a truncated sphere, with a short narrow stem attached perpendicular to the center of the flat circular surface of truncation. "
+            "The stem may be used as a handle to pick up the top, and is also used to spin the top into motion. "
+            "When a tippe top is spun at a high angular velocity, its stem slowly tilts downwards more and more until it suddenly lifts the body of the spinning top off the ground, with the stem now pointing downward. "
+            "Eventually, as the top's spinning rate slows, it loses stability and eventually topples over, like an ordinary top. "
+            "At first glance the top's inversion may mistakenly seem to be a situation where the object spontaneously gains overall energy. "
+            "This is because the inversion of the top raises the object's center of mass, which means the potential energy has in fact increased. "
+            "What causes the inversion (and the increase in potential energy) is a torque due to surface friction, which also decreases the kinetic energy of the top, so the total energy does not actually increase. "
+            "Once the top is spinning on its stem, it does not spin in the opposite direction to which its spin was initiated. [...] "
+            "This constant spin direction is due to conservation of angular momentum. [...] "
+            "The unusual behavior of the top can be fully described by considering dry friction forces at the contact point. [...] "
+            "The top was the subject of a theoretical problem at the 2019 Asian Physics Olympiad.",
+            nome="Tippe top")],
+    },
+    # 15 o kit atômico de brinquedo com urânio de verdade
+    {
+        "temas_secundarios": ["fisica_particulas", "guerra_fria", "elementos_quimicos"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1950, um kit de ciências para crianças trazia minério de urânio de verdade, fontes radioativas e um contador Geiger, além de um gibi feito com ajuda do diretor do Projeto Manhattan. Vendeu menos de 5 mil.",
+        "explicacao": (
+            "O Gilbert U-238 Atomic Energy Lab foi criado por Alfred Carlton Gilbert, o inventor do brinquedo de "
+            "montar Erector Set. Segundo ele, o governo dos EUA incentivou o projeto por achar que ajudaria o público "
+            "a entender a energia atômica e a ver seu lado construtivo. A caixa tinha uma câmara de nuvens, em que se "
+            "viam os rastros de partículas alfa, um espintariscópio, que mostra numa tela fluorescente os efeitos da "
+            "desintegração radioativa, um eletroscópio, quatro frascos com minérios de urânio, fontes de baixa "
+            "radiação e um manual de 60 páginas. Um gibi, Learn How Dagwood Split the Atom, foi escrito com ajuda do "
+            "general Leslie Groves, diretor do Projeto Manhattan. O kit sugeria até brincar de esconde-esconde com a "
+            "fonte de raios gama, usando o contador Geiger para achá-la. O catálogo garantia que todo o material "
+            "radioativo fora certificado como seguro pelo laboratório de Oak Ridge. Em 2020, a revista IEEE Spectrum "
+            "avaliou a exposição como mínima, comparável a um dia de raios UV do sol, desde que as amostras ficassem "
+            "nos frascos. Custava 49,50 dólares e só foi vendido em 1950 e 1951. Para uma curadora do Museu de "
+            "Ciência e Indústria de Chicago, o fracasso se deveu ao preço alto, e não ao medo da radiação."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Gilbert_U-238_Atomic_Energy_Laboratory",
+            "The Gilbert U-238 Atomic Energy Lab is a toy lab set designed to allow children to create and watch nuclear and chemical reactions using radioactive material. "
+            "The Atomic Energy Lab was released by the A. C. Gilbert Company in 1950. [...] "
+            "The kit was created by Alfred Carlton Gilbert, who was an American athlete, magician, toy-maker, businessman, and inventor of the well-known Erector Set. [...] "
+            "Gilbert wrote that the government encouraged the set's development because it believed the lab would aid public understanding of atomic energy and emphasize its constructive aspects. [...] "
+            "The lab contained a cloud chamber allowing the viewer to watch alpha particles traveling at 12,000 miles per second (19,000,000 m/s), a spinthariscope showing the results of radioactive disintegration on a fluorescent screen, and an electroscope measuring the radioactivity of different substances in the set. [...] "
+            "\"All radioactive materials included with the Atomic Energy Lab have been certified as completely safe by Oak-Ridge Laboratories, part of the Atomic Energy Commission.\" "
+            "The set originally sold for $49.50 [...] "
+            "Battery-powered Geiger–Müller counter [...] "
+            "Four glass jars containing natural uranium-bearing (U-238) ore samples [...] "
+            "Low-level radiation sources: [...] "
+            "Gilbert Atomic Energy Manual — a 60-page instruction book [...] "
+            "Learn How Dagwood Split the Atom — comic book introduction to radioactivity, written with the help of General Leslie Groves (director of the Manhattan Project) [...] "
+            "Among other activities, the kit suggested \"playing hide and seek with the gamma ray source\", challenging players to use the Geiger counter to locate a radioactive sample hidden in a room. [...] "
+            "The professional journal IEEE Spectrum published a more-detailed review in 2020 [...] "
+            "It described the likely radiation exposure as \"minimal, about the equivalent to a day's UV exposure from the sun\", provided that the radioactive samples were not removed from their containers [...] "
+            "a curator at the Museum of Science and Industry (Chicago) [...] "
+            "She concluded by saying that the kit failed to sell because of its high price, and not due to any safety concerns at the time. [...] "
+            "Fewer than 5,000 kits were sold, and the product was only offered in 1950 and 1951.",
+            nome="Gilbert U-238 Atomic Energy Laboratory")],
+    },
+]

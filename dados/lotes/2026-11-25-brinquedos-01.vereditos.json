@@ -1,0 +1,176 @@
+{
+ "lote": "2026-11-25-brinquedos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "brinquedos-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas o episódio da mola caindo é relato da família, a antena era o próprio brinquedo, o leitor conhece como 'mola maluca' e 'naval mechanical engineer' não diz que era da Marinha.",
+    "correcao": "Trocar o gancho por: 'O Slinky, a mola maluca, nasceu em 1943 quando, segundo a família, um engenheiro naval viu uma mola cair da prateleira e descer \"andando\". Anos depois, o brinquedo serviu de antena de rádio a soldados no Vietnã.' Na explicação, trocar 'Richard T. James, engenheiro mecânico da Marinha dos EUA, viu uma mola cair de uma prateleira' por 'Segundo o relato da família, Richard T. James, engenheiro mecânico naval, viu uma mola cair de uma prateleira'."
+   },
+   {
+    "id": "brinquedos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Mecanismo e números conferem (AIP/Inside Science, arXiv); o leitor conhece como 'mola maluca'; efeito viralizou desde 2011, nota 4.",
+    "correcao": "No gancho, trocar 'Solte um Slinky pendurado' por 'Solte uma mola maluca (Slinky) pendurada' (ajustando a concordância do resto da frase, se preciso). Nota 4."
+   },
+   {
+    "id": "brinquedos-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Explicação confere; mas 'o mercado sumiu' exagera ('shrank substantially') e a ideia de Kay Zufall veio de um artigo de jornal; curiosidade muito circulada, nota 3.",
+    "correcao": "Trocar a segunda frase do gancho, 'Quando esse mercado sumiu, uma professora teve a ideia de usá-la com crianças.', por 'Quando a demanda caiu, uma professora a levou para a sala de aula e ela virou brinquedo.'. Nota 3."
+   },
+   {
+    "id": "brinquedos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas a frase sobre a morte de Page dá causa simples ao suicídio, o que as boas práticas desaconselham e o fato não precisa.",
+    "correcao": "Na explicação, trocar 'Page, pressionado pelos problemas da empresa e temendo sua quebra, se matou em 1957.' por 'Page morreu por suicídio em 1957.'"
+   },
+   {
+    "id": "brinquedos-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas o 'cerca de um mês' vem da lembrança do próprio Rubik, e 'se moverem sozinhas' traduz mal 'move independently'.",
+    "correcao": "Trocar o gancho por: 'Ernő Rubik não queria criar um quebra-cabeça: buscava peças que girassem sem o conjunto desmontar. Só viu o desafio ao embaralhar o cubo pela primeira vez e, segundo ele, levou cerca de um mês para resolvê-lo.' Na explicação, trocar 'fazer muitas peças pequenas se moverem sozinhas' por 'fazer muitas peças pequenas se moverem de forma independente'."
+   },
+   {
+    "id": "brinquedos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere e o mito da arma é justo; mas Flores popularizou o desenho filipino, não o inventou.",
+    "correcao": "No gancho, trocar 'A grande inovação veio de um filipino nos EUA, um laço na corda que deixa o ioiô girar parado.' por 'A grande inovação foi popularizada por um filipino nos EUA: um laço na corda que deixa o ioiô girar parado.'. Na explicação, trocar 'Flores usava um fio contínuo' por 'O modelo filipino que Flores popularizou usava um fio contínuo'."
+   },
+   {
+    "id": "brinquedos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas 'não era para crianças' é absoluto: a Lilli acabou popular com crianças e foi vendida como brinquedo fora da Alemanha.",
+    "correcao": "No gancho, trocar 'numa boneca alemã que não era para crianças:' por 'numa boneca alemã que não foi lançada para crianças:'."
+   },
+   {
+    "id": "brinquedos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Mecanismo e história conferem; mas o vidro foi trocado por plástico, e o gancho precisa dizer que brinquedo é esse.",
+    "correcao": "Trocar o gancho por: 'O Etch A Sketch, a tela mágica de dois botões, não pinta linha nenhuma: o visor é coberto por dentro com pó de alumínio preso por eletricidade estática, e uma ponta raspa esse pó, revelando o escuro lá dentro.' Na explicação, trocar 'o pó de alumínio sai do vidro' por 'o pó de alumínio sai do visor' e 'espalham de novo o pó sobre o vidro' por 'espalham de novo o pó sobre o visor'. Trocar também a última frase por 'A tela original era de vidro comum, criticada por quebrar fácil e ser um perigo para as crianças, e depois foi trocada por plástico.'."
+   },
+   {
+    "id": "brinquedos-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem e a carta de 1966 documenta o apelido; mas o vínculo com a bola vem da lembrança do próprio Hunt (e jornais já usavam 'Super Bowl' em 1966).",
+    "correcao": "Trocar o gancho por: 'O nome Super Bowl, final do futebol americano, veio de um brinquedo, segundo o próprio criador do termo: ele viu os filhos brincando com uma Super Ball, a bolinha superelástica da moda.' Na explicação, trocar 'Lamar Hunt, fundador da American Football League, viu os filhos com uma dessas bolas e, numa carta de 1966' por 'Lamar Hunt, fundador da American Football League, contou que se inspirou nos filhos brincando com uma dessas bolas; numa carta de 1966'."
+   },
+   {
+    "id": "brinquedos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Frisbee; separa bem Morrison e a origem do nome; nota 3."
+   },
+   {
+    "id": "brinquedos-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O núcleo confere; mas o primeiro desenho de Berryman era de um urso adulto (foi encolhendo depois), e o pedido de permissão a Roosevelt é relato da família.",
+    "correcao": "Na explicação, troque 'O cartunista Clifford Berryman desenhou a cena no Washington Post, mas com um filhote dócil no lugar do urso velho.' por 'O cartunista Clifford Berryman desenhou a cena no Washington Post, e, de um desenho para outro, o urso foi ficando menor e mais fofo, até virar um filhote dócil, bem longe do animal velho e ferido da caçada.' Troque também 'e pediram a Roosevelt permissão para usar o nome.' por 'e, segundo a família, pediram a Roosevelt permissão para usar o nome.'"
+   },
+   {
+    "id": "brinquedos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Dados conferem; mas 'a primeira campanha dirigida às crianças' é discutível, e 'ajudaram a disparada' cria causalidade que a fonte não afirma; fato conhecido, nota 3.",
+    "correcao": "Na explicação, troque 'numa campanha que também foi a primeira dirigida diretamente às crianças;' por 'numa campanha também apontada como a primeira dirigida diretamente às crianças;'. Troque também 'Ajudaram a disparada na venda de televisores e um grande surto de pólio em 1952, que deixou as crianças mais tempo em casa.' por 'O momento era propício: a venda de televisores tinha disparado, e um grande surto de pólio em 1952 deixou as crianças mais tempo em casa.'"
+   },
+   {
+    "id": "brinquedos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Silly Putty (substituto da borracha, autoria disputada, viscoelasticidade, Apollo 8)."
+   },
+   {
+    "id": "brinquedos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "1891 e Helene Sperl (patente DE 63261); mecanismo bem dito (o atrito, sem 'ganhar energia')."
+   },
+   {
+    "id": "brinquedos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (1950, US$ 49,50, menos de 5 mil kits); afirmações sensíveis atribuídas; nada que soe como instrução."
+   }
+  ],
+  "2": [
+   {
+    "id": "brinquedos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas (mola maluca, relato da família, engenheiro naval); números conferem."
+   },
+   {
+    "id": "brinquedos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada; mecanismo e ~0,3 s conferem (Inside Science, arXiv)."
+   },
+   {
+    "id": "brinquedos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correção aplicada ('Quando a demanda caiu…'), fiel a 'shrank substantially'."
+   },
+   {
+    "id": "brinquedos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada ('Page morreu por suicídio em 1957.'); datas conferem."
+   },
+   {
+    "id": "brinquedos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas ('segundo ele', 'de forma independente'); números conferem."
+   },
+   {
+    "id": "brinquedos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: popularizou aplicado."
+   },
+   {
+    "id": "brinquedos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: lançada para crianças; piada para adultos sustentado."
+   },
+   {
+    "id": "brinquedos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: visor e troca por plástico com trecho novo."
+   },
+   {
+    "id": "brinquedos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: segundo o criador do termo."
+   },
+   {
+    "id": "brinquedos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: urso menor e mais fofo; segundo a família."
+   },
+   {
+    "id": "brinquedos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: apontada como a primeira; momento propício."
+   }
+  ]
+ }
+}

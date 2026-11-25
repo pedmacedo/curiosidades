@@ -1,0 +1,157 @@
+{
+ "lote": "2026-11-25-decisoes_economia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "decisoes_economia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Iyengar e Lepper (2000) e a meta-análise de 2010 (N = 5.036, efeito médio quase nulo); consenso_parcial adequado."
+   },
+   {
+    "id": "decisoes_economia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e ressalvas conferem; mas 'o exemplo mais conhecido' é superlativo sem apoio.",
+    "correcao": "Na explicação, trocar 'É o exemplo mais conhecido do \"efeito padrão\"' por 'É um exemplo do \"efeito padrão\"'."
+   },
+   {
+    "id": "decisoes_economia-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas 'cerca do dobro' contradiz 7 contra 3, 'só inércia' exagera Gal, e Shogren aceitou o efeito para bens sem substitutos.",
+    "correcao": "1) No gancho, trocar 'pediam para vendê-la cerca do dobro do que outros aceitavam pagar por ela' por 'pediam para vendê-la mais que o dobro do que outros aceitavam pagar por ela'. 2) Na explicação, trocar 'E David Gal propôs que é só inércia:' por 'E David Gal propôs que é inércia:'. 3) Trocar 'achou pouca evidência do efeito em bens com substitutos.' por 'achou pouca evidência do efeito em bens com substitutos, embora o tenha aceitado para bens sem substitutos.'"
+   },
+   {
+    "id": "decisoes_economia-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "História confere; mas os 80%/8% são estimativas por observação nunca confirmadas (The Decision Lab), as abelhas eram desenhos, como alvo e piada, e o trocadilho com Apis fica opaco; caso conhecido, nota 3.",
+    "correcao": "1) Gancho: trocar 'já se punham abelhas nas privadas, por piada.' por 'já se pintavam abelhas em privadas, como alvo e como piada.' 2) Explicação: trocar 'num trocadilho com a pronúncia de Apis, o gênero da abelha' por 'num trocadilho com Apis, o gênero da abelha, que em inglês soa como \"a piss\" (\"uma mijada\")'. 3) Trocar 'Segundo testes feitos por funcionários de Schiphol, os respingos caíram 80% e o custo de limpeza, uns 8%.' por 'Funcionários de Schiphol relataram, em testes internos, queda de 80% nos respingos e de uns 8% no custo de limpeza, números muito repetidos mas baseados em estimativas por observação, nunca confirmados por um estudo controlado.' Incluir a fonte https://thedecisionlab.com/intervention/how-a-picture-of-a-fly-reduced-washroom-cleaning-costs-by-8 com o trecho 'no studies have been conducted to corroborate these results'."
+   },
+   {
+    "id": "decisoes_economia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere (600 pessoas, 72% e 78%); mas 'decisões médicas reais' vai além da fonte, que fala de estudos sobre descrições de tratamentos de câncer.",
+    "correcao": "Na explicação, trocar 'O efeito aparece também em decisões médicas reais: idosos aceitam mais' por 'O efeito aparece também em escolhas sobre tratamentos médicos: em estudos sobre câncer, idosos aceitam mais'."
+   },
+   {
+    "id": "decisoes_economia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas falta a crítica de Silberberg et al. (2008) ao teste dos macacos (o pedaço único chegava antes) e a meta-análise de 2024 (607 estimativas, ~1,96) que a reanálise de 2025 contesta.",
+    "correcao": "1) Gancho: trocar 'Mas se a aversão à perda é tão geral ainda se discute.' por 'Mas há outra leitura, e a própria aversão à perda está em debate.' 2) Explicação: depois de 'como se o pedaço retirado fosse uma perda.', inserir: 'Em 2008, Silberberg e colegas propuseram outra leitura: pelo desenho do teste, o pedaço único chegava mais depressa, e os macacos podiam estar só preferindo a recompensa mais rápida.' Fonte nova: https://pmc.ncbi.nlm.nih.gov/articles/PMC2251327/ (trecho literal, por exemplo 'their design caused the single-apple reinforcer to be delivered sooner'). 3) Trocar a última frase (a da meta-análise de 2025) por: 'Em 2024, uma meta-análise de 607 estimativas achou perdas pesando, em média, quase o dobro dos ganhos. Em 2025, uma reanálise desses dados concluiu, já no título, que a aversão à perda \"não é robusta\": quando ganhos e perdas tinham o mesmo tamanho, o peso ficou perto de 1.' Fontes: https://ideas.repec.org/a/aea/jeclit/v62y2024i2p485-516.html (607 estimativas, 1,955) e https://ideas.repec.org/a/eee/joepsy/v107y2025ics0167487025000133.html ('approximately 1.07'). 4) Para caber em 250 palavras, cortar a frase sobre os macacos-prego treinados em 2005 como meio de troca e encurtar a frase de Gal e Rucker."
+   },
+   {
+    "id": "decisoes_economia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hungry judge effect (65% e quase zero, críticas da ordem dos casos e de Lakens bem representadas); consenso_parcial adequado."
+   },
+   {
+    "id": "decisoes_economia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Henry Ford e Efficiency wage (300 para 100 vagas, US$ 2,34 para 5, Departamento Social com 50 investigadores); evita o mito de 'para comprarem os carros'."
+   },
+   {
+    "id": "decisoes_economia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Daniel Kahneman (nunca fez curso de economia, Nobel de 2002, parceria com Tversky); já é conhecido de parte dos leitores, nota 3."
+   },
+   {
+    "id": "decisoes_economia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Ellsberg paradox e Daniel Ellsberg (urnas, 1961, RAND, Papéis do Pentágono, 115 anos, acusações extintas em 1973)."
+   },
+   {
+    "id": "decisoes_economia-0011",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o gancho depende de conhecer a teoria da utilidade esperada, a explicação é uma conta abstrata com quatro loterias, cobre o terreno do 0010 e do 0005, e omite que estudos recentes acharam o efeito certeza insignificante."
+   },
+   {
+    "id": "decisoes_economia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'o dinheiro vale cada vez menos' soa como inflação, e falta dizer que Bernoulli descreveu o jogo com aposta inicial de 1 ducado.",
+    "correcao": "1) Trocar o gancho por: 'Num cara ou coroa em que o prêmio dobra a cada coroa, o ganho esperado é infinito, mas quase ninguém pagaria caro para jogar. O enigma, de 1713, inspirou a ideia de que cada moeda extra vale menos a quem tem muito.' 2) Na explicação, trocar 'escreveu em 1738 que qualquer homem razoável venderia sua chance, com prazer, por 20 ducados.' por 'descrevendo o jogo com aposta inicial de 1 ducado, escreveu em 1738 que qualquer homem razoável venderia sua chance, com prazer, por 20 ducados.' 3) Acrescentar ao trecho da fonte 'Daniel Bernoulli, after describing the game with an initial stake of one ducat, stated'."
+   },
+   {
+    "id": "decisoes_economia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Núcleo confere; mas 'Pague o suficiente ou não pague nada' sugere que todo incentivo piora (só o pequeno piorou), a última frase ignora a revisão de 2020 que contesta, e o resultado vem de um experimento só; caso conhecido, nota 3.",
+    "correcao": "1) Remover a frase 'Em outro trabalho, Gneezy e Rustichini mostraram experimentos em que quem recebia incentivo em dinheiro se saía pior do que quem não recebia nada; o título era \"Pague o suficiente ou não pague nada\".' 2) Trocar a última frase por: 'Estudos seguintes de Gneezy e colegas indicam que o dinheiro pode motivar em tarefas vistas como chatas, mas sair pela culatra nas que já são interessantes por si. O tema segue em debate: uma revisão de 2020, com mais de 100 testes, concluiu que pagar por tarefas prazerosas melhora o desempenho, e que o problema aparece quando se retira um pagamento que já era esperado.' 3) Acrescentar ao trecho de Motivation_crowding_theory: 'A 2020 study which reviewed more than 100 tests of motivation crowding theory and conducted its own field experiments found that paying individuals for intrinsically enjoyable tasks boosts their performance, but that taking payment away after it is expected may lead individuals to perform worse than if they were not paid at first.' 4) Mudar confianca para 'consenso_parcial'."
+   },
+   {
+    "id": "decisoes_economia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'muito mais dispostos a voltar' exagera (o artigo de 2003 dá taxas só 'slightly higher', OR 1,41), e 'as pessoas preferiram' generaliza.",
+    "correcao": "1) Na explicação, trocar 'Esses pacientes lembraram o exame como menos desagradável e se mostraram muito mais dispostos a voltar.' por 'Esses pacientes lembraram o exame como um pouco menos desagradável e, nos anos seguintes, voltaram para repetir a colonoscopia com frequência ligeiramente maior.', com a fonte https://yorkspace.library.yorku.ca/items/1237abd1-7e5a-4a48-bb27-c6e37bac1c34/full (trecho com 'slightly higher (odds'); se a fonte não confirmar, usar só 'Esses pacientes lembraram o exame como menos desagradável.' 2) No gancho, trocar 'as pessoas preferiram repetir' por 'a maioria preferiu repetir'."
+   },
+   {
+    "id": "decisoes_economia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Winner's curse (artigo de 1971 da Atlantic Richfield; anos 1950 só como contexto); não duplica teoria_jogos-0008."
+   }
+  ],
+  "2": [
+   {
+    "id": "decisoes_economia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada ('um exemplo do efeito padrão'); números e ressalvas conferem."
+   },
+   {
+    "id": "decisoes_economia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas ('mais que o dobro', Gal sem 'só', Shogren para bens sem substitutos)."
+   },
+   {
+    "id": "decisoes_economia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas (abelhas pintadas como alvo e piada; trocadilho com fonte Mediamatic; 80%/8% como estimativas nunca confirmadas); caso conhecido, nota 3."
+   },
+   {
+    "id": "decisoes_economia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada ('em estudos sobre câncer'); números conferem."
+   },
+   {
+    "id": "decisoes_economia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas (Silberberg 2008 pelo resumo, meta-análise de 2024 e reanálise de 2025); retoque: 'em ordem de tamanho'.",
+    "correcao": "'não eram apresentados em ordem' virou 'não eram apresentados em ordem de tamanho'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "decisoes_economia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas (gancho novo; aposta inicial de 1 ducado)."
+   },
+   {
+    "id": "decisoes_economia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas (sem 'Pague o suficiente'; revisão de 2020; consenso_parcial)."
+   },
+   {
+    "id": "decisoes_economia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas ('a maioria preferiu'; retorno ligeiramente maior, YorkSpace)."
+   }
+  ]
+ }
+}

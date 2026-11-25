@@ -1,0 +1,162 @@
+{
+ "lote": "2026-11-25-conservacao-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "conservacao-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas Appert não criou a técnica: foi o primeiro a usá-la em escala industrial (a fonte diz que donas de casa talvez já a usassem); história conhecida, nota 3.",
+    "correcao": "No gancho, trocar 'O confeiteiro francês que criou a conserva em vidro fervido' por 'O confeiteiro francês que levou à indústria a conserva em vidro fervido'. Na explicação, depois de 'fechava com rolha e cera e fervia tudo em água.', acrescentar: 'Donas de casa talvez já fizessem algo parecido, mas ele foi o primeiro a fazer isso em escala industrial.'"
+   },
+   {
+    "id": "conservacao-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Datas conferem; mas a instrução do martelo e talhadeira é das primeiras latas, não de todas até 1855, e 'o que facilitou a invenção' inventa causalidade.",
+    "correcao": "No gancho, trocar 'Até lá, as latas traziam a instrução de abrir a tampa com martelo e talhadeira.' por 'As primeiras latas traziam a instrução de abrir a tampa com martelo e talhadeira.' Na explicação, trocar 'As latas também foram ficando mais finas com o tempo, o que facilitou a invenção.' por 'As latas foram ficando mais finas com o tempo, mas nem assim surgiu logo um abridor de uso geral.'"
+   },
+   {
+    "id": "conservacao-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Debate bem representado e números conferem; mas as críticas vieram depois ('Subsequent research'), não 'sempre'.",
+    "correcao": "Na explicação, trocar 'Ela sempre teve críticos:' por 'Depois vieram as críticas:'."
+   },
+   {
+    "id": "conservacao-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Pemmican e Pemmican War (proclamação de 1814, Seven Oaks com 21 mortos, fusão em 1821); não sobrepõe comercio_rotas."
+   },
+   {
+    "id": "conservacao-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Afirmações conferem com Wikipedia e collectSPACE; mas a revista Air & Space, do Smithsonian, afirma que ele voou na Apollo 7, então a confiança não pode ser alta.",
+    "correcao": "Trocar 'confianca' de 'alta' para 'consenso_parcial'. Opcionalmente, ao fim da frase sobre Cunningham, acrescentar: 'Há quem, como a revista do Museu do Ar e do Espaço Smithsonian, afirme que ele voou.'"
+   },
+   {
+    "id": "conservacao-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com o artigo de Leek (Bee World, 1975) e com a seção Preservation de Honey ('no edible honey has been found in Egyptian tombs'); o mito está bem delimitado."
+   },
+   {
+    "id": "conservacao-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere; mas o '4 MeV' está errado (EUA: 10 MeV elétrons, 5–7,5 MeV raios X), 'em qualquer dose' afirma demais sobre a RDC 21/2001, 'irradiam' troca 'permitem', e 'em geral já embalada' generaliza; nota 3.",
+    "correcao": "1) Trocar o gancho por: 'Já em 1906, uma patente britânica propunha conservar comida com radiação, dez anos após a descoberta da radioatividade. Hoje mais de 60 países permitem a técnica, e no Brasil qualquer alimento pode ser irradiado.' 2) Na explicação, trocar 'a energia usada é limitada, nos EUA a 4 MeV nos feixes de elétrons e de raios X, baixa demais para alterar o núcleo dos átomos do alimento' por 'a energia das fontes usadas é limitada por lei, baixa demais para alterar o núcleo dos átomos do alimento'. 3) Trocar 'no Brasil, qualquer alimento, em qualquer dose' por 'no Brasil, qualquer alimento pode ser tratado'. 4) Trocar 'em geral já embalada' por 'muitas vezes já embalada'."
+   },
+   {
+    "id": "conservacao-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas conferem; mas a última frase inverte o mérito do método (não era preciso ferver; bastava aquecer pouco).",
+    "correcao": "Trocar 'O que Pasteur trouxe foi a explicação: os culpados eram micro-organismos, e não bastava ferver tudo para afastá-los.' por 'O que Pasteur trouxe foi a explicação: os culpados eram micro-organismos, e para eliminá-los não era preciso ferver o vinho; um aquecimento curto e moderado bastava.'"
+   },
+   {
+    "id": "conservacao-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fatos e números conferem; mas o parágrafo dos cristais é quase tradução literal da Wikipedia e impreciso (no congelamento lento, cristais grandes, sobretudo fora das células).",
+    "correcao": "Trocar o trecho de 'Quando a comida congela devagar' até 'os cristais têm menos tempo para crescer e estragam menos.' por: 'Congelar devagar dá tempo para a água formar cristais de gelo grandes, que rasgam os tecidos; no degelo, o suco das células escorre e a comida fica mole ou ressecada. Num frio intenso, o congelamento é tão rápido que só se formam cristais pequenos, e o estrago é bem menor.'"
+   },
+   {
+    "id": "conservacao-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Surströmming (lata estufada pela fermentação, cerca de mil latas no incêndio de 2014, proibições de 2006)."
+   },
+   {
+    "id": "conservacao-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Century egg (pasta alcalina, pH 9–12, mito da urina de cavalo desmentido pela fonte); nota 3."
+   },
+   {
+    "id": "conservacao-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Motivação atribuída como na fonte (notícia da família de Berlim); 45 patentes, Electrolux, bomba para reatores conferem."
+   },
+   {
+    "id": "conservacao-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os 27 dias vêm só da Time (lista baseada no material do prêmio), e avaliações posteriores acharam ganhos menores; o gancho os dá sem atribuição.",
+    "correcao": "No gancho, trocar 'Sem eletricidade, berinjelas passaram a durar 27 dias, em vez de três.' por 'Sem eletricidade, berinjelas duravam 27 dias em vez de três, segundo a revista Time.' Na explicação, trocar 'Segundo a revista Time, os tomates e pimentões passaram a durar até três semanas.' por 'Segundo a revista Time, que listou a invenção entre as melhores de 2001, as berinjelas duravam 27 dias em vez de três, e os tomates e pimentões, até três semanas.'"
+   },
+   {
+    "id": "conservacao-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A data de 400 a.C. tem apoio fraco (registros não nomeados; os yakhchāls datados são safávidas ou cajares), e os muros têm 'muitas vezes 10 m, às vezes 15 m'; não repete o qanat de Gonabad.",
+    "correcao": "No gancho, trocar 'Desde pelo menos 400 a.C., os persas já faziam e guardavam gelo no deserto, sem eletricidade.' por 'Há séculos, os persas faziam e guardavam gelo no deserto, sem eletricidade.' Na explicação, trocar 'registros indicam construções desde 400 a.C., e muitas seguem de pé.' por 'muitas, erguidas há séculos, seguem de pé.' e 'muros de até 10 m, no sentido leste-oeste,' por 'muros de 10 m, às vezes 15 m, no sentido leste-oeste,'."
+   },
+   {
+    "id": "conservacao-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Bertrand (steamboat) e Canning (1865, teste de 1974, sem crescimento microbiano, 109 anos)."
+   }
+  ],
+  "2": [
+   {
+    "id": "conservacao-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas ('levou à indústria', donas de casa); números conferem."
+   },
+   {
+    "id": "conservacao-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas ('as primeiras latas'; sem causalidade inventada); datas conferem."
+   },
+   {
+    "id": "conservacao-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada ('Depois vieram as críticas'); números conferem."
+   },
+   {
+    "id": "conservacao-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confiança consenso_parcial; nova fonte do Smithsonian confirma a versão da Apollo 7; dúvida apresentada com equilíbrio."
+   },
+   {
+    "id": "conservacao-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas (permitem a técnica; sem 4 MeV e 'em qualquer dose')."
+   },
+   {
+    "id": "conservacao-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Última frase corrigida: bastava aquecimento curto a 50–60 °C."
+   },
+   {
+    "id": "conservacao-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Parágrafo dos cristais com texto próprio e fiel à fonte."
+   },
+   {
+    "id": "conservacao-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "27 dias atribuídos à Time."
+   },
+   {
+    "id": "conservacao-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem 400 a.C.; muros de 10 m, às vezes 15 m."
+   }
+  ]
+ }
+}

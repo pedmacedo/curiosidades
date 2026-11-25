@@ -1,0 +1,143 @@
+{
+ "lote": "2026-11-25-crimes_arte-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "crimes_arte-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Han van Meegeren (Göring, pintura diante de testemunhas, baquelite, condenação e morte em 1947); não repete pintura-0009."
+   },
+   {
+    "id": "crimes_arte-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Gardner Museum theft (13 obras, sem solução, molduras vazias pelo testamento, recompensa de US$ 10 milhões)."
+   },
+   {
+    "id": "crimes_arte-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Hitler Diaries (amostras de comparação também forjadas por Kujau, 'FH', poliéster pós-1953)."
+   },
+   {
+    "id": "crimes_arte-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Detalhes conferem; mas o branco de titânio 'ainda não estava à venda' em 1914 (o composto já era conhecido), e o quadro foi vendido, não revendido.",
+    "correcao": "1) Trocar o gancho por: 'O falsário Wolfgang Beltracchi passou anos vendendo \"obras perdidas\" de pintores modernos. Caiu quando, uma única vez, usou tinta pronta: o tubo tinha branco de titânio, pigmento ainda não vendido em 1914.' 2) Na explicação, trocar 'atribuído a Campendonk e revendido por 2,88 milhões de euros' por 'atribuído a Campendonk e vendido por 2,88 milhões de euros'."
+   },
+   {
+    "id": "crimes_arte-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Data e bilhete conferem com The Scream (12/02/1994, 'Thanks for the poor security'); não repete pintura-0003/0004."
+   },
+   {
+    "id": "crimes_arte-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Tom Keating (glicerina, mensagens em branco de chumbo, mais de 2.000 pinturas, liberado sem acusação por saúde frágil)."
+   },
+   {
+    "id": "crimes_arte-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com The Just Judges (roubo em 10/04/1934, 11 cartas, Goedertier no leito de morte, polícia concluiu que era o ladrão; painel nunca achado)."
+   },
+   {
+    "id": "crimes_arte-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Getty kouros (US$ 10 milhões, etiqueta 'or modern forgery', procedência falsa, retirada em 2018)."
+   },
+   {
+    "id": "crimes_arte-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere; mas o anatásio é mineral natural (o indício é a forma em cristais arredondados), e a análise iniciada em 1972 concluiu em 1974.",
+    "correcao": "Na explicação, trocar 'Em 1972, análises acharam nas linhas amareladas da tinta anatásio, uma forma de dióxido de titânio fabricada para pigmentos claros só a partir dos anos 1920.' por 'Em análises iniciadas em 1972, a equipe do químico forense Walter McCrone achou nas linhas amareladas da tinta anatásio (dióxido de titânio) em cristais arredondados, exatamente a forma fabricada para pigmentos claros só a partir dos anos 1920.'"
+   },
+   {
+    "id": "crimes_arte-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas o episódio vem dos primeiros biógrafos (Condivi e Giovio, com versões diferentes; Vasari não o conta) e o texto o dá como fato certo; fonte única.",
+    "correcao": "(1) Trocar o gancho por: 'Segundo biógrafos da época, o jovem Michelangelo envelheceu de propósito um Cupido que esculpiu, para vendê-lo como antiguidade. O cardeal que o comprou descobriu a farsa, mas a obra lhe abriu as portas de Roma.' (2) Na explicação, acrescentar: 'O episódio chegou até nós pelos primeiros biógrafos, Ascanio Condivi, que escreveu com a colaboração do próprio Michelangelo, e Paolo Giovio. As versões variam sobre quem teve a ideia, e Vasari não o menciona nas Vidas.' (3) Incluir como segunda fonte https://www.theartnewspaper.com/2015/06/26/lost-art-michelangelos-sleeping-eros com trecho literal que cite Giovio e Condivi. (4) Opcional: trocar o tema secundário 'pintura' por um mais adequado (é escultura)."
+   },
+   {
+    "id": "crimes_arte-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Versões dos delatores atribuídas e conferem; mas a data de 1609 e a pintura na Sicília são tradicionais e estão em debate (contrato de Roma de 1600).",
+    "correcao": "Na explicação, trocar 'O quadro, de 1609, tem cerca de 2,7 metros de altura e foi pintado na Sicília, um ano antes da morte do artista.' por 'O quadro, tradicionalmente datado de 1609, tem cerca de 2,7 metros de altura; por muito tempo se acreditou que foi pintado na Sicília, um ano antes da morte do artista.'"
+   },
+   {
+    "id": "crimes_arte-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Valores conferem; mas 'não distorce nada' exagera (Kemp vê dupla refração na mão), falta quem nega a autoria (Charles Hope), e 'After Leonardo' foi mal traduzido.",
+    "correcao": "1) Trocar 'com o título \"Segundo Leonardo da Vinci\"' por 'com o título \"A partir de Leonardo da Vinci\"'. 2) Trocar 'alguns especialistas, porém, acham que ele fez só partes dela.' por 'alguns especialistas, porém, acham que ele fez só partes dela, e outros negam a autoria.' 3) Trocar 'mas a do quadro não distorce nada. Para o biógrafo Walter Isaacson, foi uma escolha consciente de Leonardo.' por 'mas no quadro o tecido atrás dela aparece quase sem distorção. Para o biógrafo Walter Isaacson, foi uma escolha consciente de Leonardo; para o historiador Charles Hope, que nega a autoria, é um indício contra ela.' 4) Acrescentar ao trecho da fonte (mesmo extrato): 'He doubted that Leonardo would have painted a work where the eyes were not level and the drapery undistorted by a crystal orb.'"
+   },
+   {
+    "id": "crimes_arte-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Dresden Green Vault burglary (incêndio na caixa de energia, barras recolocadas, condenações em 2023)."
+   },
+   {
+    "id": "crimes_arte-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fontes jornalísticas sólidas conferem (data, obras, restos queimados, prescrição em fev/2026); ótimo para o leitor brasileiro."
+   },
+   {
+    "id": "crimes_arte-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere; mas a biga do Museu Britânico foi intermediada por Fuschini, e os Riccardi só a 'limparam'; não há fonte que a dê como falsificação deles.",
+    "correcao": "Remover da explicação a frase 'Antes, a família já tinha vendido ao Museu Britânico uma biga de bronze supostamente achada perto de Orvieto.' Se o gancho passar de 220 caracteres, trocar 'mostrou o polegar que faltava numa estátua: guardara de lembrança.' por 'mostrou o polegar que faltava numa estátua, guardado de lembrança.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "crimes_arte-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas ('ainda não vendido em 1914'; 'vendido')."
+   },
+   {
+    "id": "crimes_arte-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada (cristais arredondados, equipe de McCrone)."
+   },
+   {
+    "id": "crimes_arte-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque de redação: 'Ele havia estudado' soava como Vasari.",
+    "correcao": "'Ele havia estudado' virou 'Michelangelo havia estudado'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "crimes_arte-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correção aplicada ('tradicionalmente datado de 1609')."
+   },
+   {
+    "id": "crimes_arte-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas (A partir de Leonardo; Hope; tecido quase sem distorção)."
+   },
+   {
+    "id": "crimes_arte-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase da biga removida; o resto confere."
+   }
+  ]
+ }
+}
