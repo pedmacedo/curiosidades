@@ -1,0 +1,144 @@
+{
+ "lote": "2026-11-25-biomimetica-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "biomimetica-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Velcro (1941, tesoura, dez anos, patente 1951/1955, NASA creditada incorretamente); mito listado; nota 3."
+   },
+   {
+    "id": "biomimetica-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Estrondo de túnel e bico do martim-pescador conferem; mas os 10%/15% não vêm de documento da JR-West, e sim de divulgação, e valem para o redesenho inteiro.",
+    "correcao": "Na explicação, trocar 'Segundo as descrições do projeto, o novo nariz reduziu o ruído e permitiu andar 10% mais rápido gastando 15% menos energia.' por 'Segundo os relatos mais divulgados do caso, o redesenho reduziu o ruído e permitiu andar 10% mais rápido gastando 15% menos energia.'"
+   },
+   {
+    "id": "biomimetica-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Não duplica; mas o 0,6% é da gota, não da folha; e o nome 'efeito lótus' é de 1997, não de 1977.",
+    "correcao": "No gancho, trocar 'fazem a gota encostar em só 0,6% da superfície' por 'fazem só 0,6% da superfície da gota tocar a folha'. Na explicação, trocar 'o descreveu com Ehler em 1977 e o chamou de \"efeito lótus\"' por 'começou a descrevê-lo com Ehler em 1977 e depois o batizou de \"efeito lótus\"'."
+   },
+   {
+    "id": "biomimetica-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Texto equilibrado; mas o Eastgate usa ventiladores; o que a fonte sustenta é que dispensa ar-condicionado.",
+    "correcao": "No gancho, trocar 'foi projetado para se refrescar só com ventilação natural, imitando cupinzeiros' por 'foi projetado para se refrescar sem ar-condicionado, imitando cupinzeiros'. Manter 'consenso_parcial'."
+   },
+   {
+    "id": "biomimetica-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas o estudo de 2015 contradiz trabalhos anteriores (Bartol et al.), então a confiança não pode ser alta.",
+    "correcao": "Trocar 'confianca' de 'alta' para 'consenso_parcial'. Nenhuma mudança de texto."
+   },
+   {
+    "id": "biomimetica-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'e não de água' é forte demais (a umidade aumenta a adesão, Huber et al. 2005), e 'a exceção é o Teflon' parece exceção à limpeza.",
+    "correcao": "Na explicação, trocar 'e não de água ou de química especial' por 'e não de cola, sucção ou química especial'. Apagar a frase 'A exceção é o Teflon.' e trocar a primeira frase por 'Como os geckos aderem a quase qualquer material (o Teflon é exceção) foi assunto de estudo por mais de um século.'"
+   },
+   {
+    "id": "biomimetica-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fontes sustentam e o tom é equilibrado; mas 'só Onymacris unguicularis assumiu a postura' generaliza: o estudo testou apenas quatro espécies.",
+    "correcao": "Na explicação, trocar 'Num estudo de 2010 em câmara de neblina, só Onymacris unguicularis assumiu a postura' por 'Num estudo de 2010 em câmara de neblina, das quatro espécies testadas, só Onymacris unguicularis assumiu a postura'. Opcional: depois de 'calombos que atraem água', acrescentar que o estudo de 2010 não achou áreas que atraem água nas carapaças testadas ('no hydrophilic areas could be identified ... in any of our four model species including P. cribripes')."
+   },
+   {
+    "id": "biomimetica-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo está em Anti-reflective coating (protuberâncias de ~200 nm a cada 300 nm, gradiente de índice, SWC da Canon)."
+   },
+   {
+    "id": "biomimetica-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Separa bem lenda de documento; mas o gancho generaliza: no Brasil, 'olho de gato' é a tacha fixa, que não se limpa; a autolimpeza vale para o modelo britânico original.",
+    "correcao": "Trocar o gancho por: 'As tachas refletivas \"olho de gato\" originais, criadas na Inglaterra em 1934, se limpam sozinhas: quando um carro passa, a borracha afunda e um limpador esfrega os refletores. Já o gato que teria inspirado a ideia é incerto.' (se passar de 220, corte 'que teria inspirado a ideia' para 'da história'). Na explicação, depois da frase sobre a água de chuva, acrescentar: 'Nem toda tacha faz isso: as fixas, comuns em outros países, não têm o mecanismo de autolimpeza.'"
+   },
+   {
+    "id": "biomimetica-0010",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: já existe descartado quase idêntico (amazonia, pouco_interessante); além disso, a inspiração na vitória-régia é contestada (Julian Vincent a chama de 'fairy story'; o telhado em ziguezague vinha de Loudon, antes de 1849)."
+   },
+   {
+    "id": "biomimetica-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas Watts e Fish estimaram por simulação, não mediram; e falta o custo (os tubérculos podem baixar a sustentação máxima).",
+    "correcao": "Trocar 'Em testes, os pesquisadores Watts e Fish mediram 4,8% a mais de sustentação num perfil com tubérculos.' por 'Num dos primeiros estudos, com modelagem em computador, os pesquisadores Watts e Fish estimaram 4,8% a mais de sustentação num perfil com tubérculos. Outros trabalhos mostraram um custo: os tubérculos podem baixar a sustentação máxima, em troca de uma perda mais suave depois do estol.'"
+   },
+   {
+    "id": "biomimetica-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Não repete luz_cores e os números conferem; mas o azul da Morpho é iridescente, muda com o ângulo (não é invariável).",
+    "correcao": "Na explicação, trocar 'e o resultado é um azul vibrante que não muda com o ângulo de visão' por 'e o resultado é um azul vibrante'. Opcional: trocar 'A pista é antiga:' por 'O fenômeno é conhecido há séculos:'."
+   }
+  ],
+  "2": [
+   {
+    "id": "biomimetica-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Atribuição dos 10%/15% à divulgação aplicada."
+   },
+   {
+    "id": "biomimetica-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "0,6% da gota e o batismo posterior aplicados."
+   },
+   {
+    "id": "biomimetica-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Sem ar-condicionado\" aplicado; consenso_parcial."
+   },
+   {
+    "id": "biomimetica-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confiança consenso_parcial."
+   },
+   {
+    "id": "biomimetica-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cola, sucção e Teflon como exceção aplicados."
+   },
+   {
+    "id": "biomimetica-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Das quatro espécies testadas\" e a ausência de áreas hidrofílicas sustentados."
+   },
+   {
+    "id": "biomimetica-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho restrito às tachas originais; fixas dos EUA sem autolimpeza."
+   },
+   {
+    "id": "biomimetica-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Modelagem em computador e o custo na sustentação máxima aplicados."
+   },
+   {
+    "id": "biomimetica-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "\"Não muda com o ângulo\" retirado."
+   }
+  ]
+ }
+}

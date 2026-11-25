@@ -1,0 +1,178 @@
+{
+ "lote": "2026-11-25-musica_brasileira-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "musica_brasileira-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Processo de 2001 e vitória de Helô Pinheiro conferem; distinto do 0002."
+   },
+   {
+    "id": "musica_brasileira-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Stan Getz também estava no grupo (era a única dos brasileiros); 'nunca recebeu crédito' é contestado (crédito no compacto).",
+    "correcao": "No gancho, trocar 'por ser a única do grupo que falava bem inglês' por 'por ser a única dos brasileiros do grupo que falava bem inglês' (se passar de 220, troque 'Foi escolhida por ser' por 'Escolhida por ser'). Na explicação, trocar 'Mesmo assim, Astrud nunca recebeu crédito nem direitos e ganhou apenas 120 dólares.' por 'Mesmo assim, Astrud não recebeu direitos sobre a gravação: ganhou um cachê fixo de 120 dólares.'"
+   },
+   {
+    "id": "musica_brasileira-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere quase tudo; mas a vaia de 1940 é contestada por Ruy Castro (recepção gelada), e o 'americanizada' veio da imprensa no dia seguinte.",
+    "correcao": "Gancho: trocar 'Em 1940, vaiada no Rio por parecer \"americanizada\", respondeu com um samba e ficou 14 anos sem voltar.' por 'Em 1940, recebida com frieza no Rio e chamada de \"americanizada\", respondeu com um samba e ficou 14 anos sem voltar.' Explicação: trocar 'Foi vaiada até desistir e chorou no camarim.' por 'A saudação foi recebida em silêncio e, segundo o relato mais difundido, ela foi vaiada até desistir e chorou no camarim (o biógrafo Ruy Castro contesta a vaia e fala em recepção gelada).' Acrescentar como fonte https://www.opovo.com.br/vidaearte/2025/08/06/70-anos-sem-carmen-miranda-por-que-a-quotpequena-notavel-quot-ganhou-fama-internacional.html com o trecho literal sobre o mal-entendido da vaia; se não passar, retirar o parêntese."
+   },
+   {
+    "id": "musica_brasileira-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a fonte só diz que a canção demorou a pegar e que a versão de Araci Cortes não fez sucesso, não que a de Francisco Alves fracassou.",
+    "correcao": "Gancho: trocar '\"Aquarela do Brasil\" não fez sucesso no início' por '\"Aquarela do Brasil\" demorou a estourar'. Explicação: trocar 'e nem ela nem a de Araci Cortes emplacaram.' por 'e a de Araci Cortes, apesar da fama da cantora, não fez sucesso: a canção demorou a pegar.'"
+   },
+   {
+    "id": "musica_brasileira-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere; exagero pontual: a fonte diz 'some of' as histórias, não 'muitas'.",
+    "correcao": "Na explicação, trocar 'Das histórias que ele contou sobre essa década de viagens, muitas são postas em dúvida' por 'Das histórias que ele contou sobre essa década de viagens, algumas são postas em séria dúvida'."
+   },
+   {
+    "id": "musica_brasileira-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem (Corrêa do Lago, 2002); mas o título como 'dança folclórica' é só a versão de Milhaud, e há outras explicações (provavelmente o tango 'O boi no telhado' de 1918); a ponta brasileira não está no gancho.",
+    "correcao": "1) Na explicação, trocar 'O próprio Milhaud disse que o título, \"o boi no telhado\", era o nome de uma dança folclórica brasileira.' por 'Milhaud dizia que o título, \"o boi no telhado\", era o nome de uma dança folclórica brasileira, mas há outras explicações para ele.' 2) Reescrever o gancho pondo a ponta brasileira em primeiro plano, por exemplo: 'Uma obra famosa do compositor francês Darius Milhaud, \"O boi no telhado\", é uma colagem de mais de 20 músicas brasileiras, de 14 compositores, entre eles Ernesto Nazareth. Ele as ouviu como diplomata no Brasil.' (≤ 220 caracteres)."
+   },
+   {
+    "id": "musica_brasileira-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Pontos centrais conferem; mas a data de 'Carinhoso' diverge (1928/1930), a reprovação da elite era a negros em casas populares, e as partes de flauta foram escritas por Pixinguinha para ele mesmo.",
+    "correcao": "1) Trocar 'e \"Lamentos\", de 1928, e \"Carinhoso\", de 1930, foram atacados por excesso de jazz' por 'e \"Lamentos\" e \"Carinhoso\" foram atacados por excesso de jazz quando saíram'. 2) Trocar 'O grupo tinha músicos brancos e negros e tocava em casas de elite onde artistas negros antes eram barrados, o que desagradava parte da elite branca do Rio.' por 'O grupo tinha músicos brancos e negros e tocava em casas de elite onde artistas negros antes eram barrados. Mesmo assim, enfrentou a reprovação de parte da elite branca do Rio, que não aceitava negros se apresentando em casas populares.' 3) Trocar 'Lacerda tocava as partes de flauta escritas para Pixinguinha' por 'Lacerda tocava as partes de flauta que Pixinguinha tinha escrito para ele mesmo tocar'."
+   },
+   {
+    "id": "musica_brasileira-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com o verbete Choro (música rápida e alegre 'often', as três hipóteses, Calado nos anos 1870)."
+   },
+   {
+    "id": "musica_brasileira-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Lambada (song) (Los Kjarkas 1981, Kaoma, 'Chico de Oliveira', ações de 1990 e 1991). Opcional: o Le Monde revelou em 1989 que 'Chico de Oliveira' era pseudônimo do produtor Olivier Lorsac."
+   },
+   {
+    "id": "musica_brasileira-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas conferem; mas a eliminatória de setembro de 1968 foi em São Paulo, no TUCA, não no Rio (erro herdado da Wikipedia).",
+    "correcao": "Na explicação, trocar 'no terceiro Festival Internacional da Canção, no auditório da universidade católica do Rio.' por 'numa eliminatória do terceiro Festival Internacional da Canção, no auditório da Universidade Católica.' Se quiser citar 'no TUCA, em São Paulo', acrescentar fonte que diga isso, por exemplo https://anppom.org.br/anais/anaiscongresso_anppom_2014/2948/public/2948-9931-1-PB.pdf."
+   },
+   {
+    "id": "musica_brasileira-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Pseudônimo, canções, entrevista e 'Calabar' conferem; mas a 'carteira de identidade' não tem apoio (relato documentado indica o contrário), a data de 20/10/1974 diverge de outra fonte, e há paráfrases próximas demais.",
+    "correcao": "1) Gancho: trocar por 'Para driblar a censura, que barrava as músicas com seu nome, Chico Buarque inventou outro compositor, Julinho da Adelaide, que assinou três canções e chegou a dar entrevista a um jornal.' 2) Explicação: trocar 'Não era um simples pseudônimo: para dar ares de verdade à farsa, o compositor fictício ganhou cédula de identidade e até concedeu uma entrevista a um jornal da época.' por 'Não era um simples pseudônimo: o compositor fictício chegou a conceder entrevista a um jornal da época.' 3) Trocar 'E, em 20 de outubro de 1974, um general da Polícia Federal proibiu' por 'E, em 1974, um general da Polícia Federal proibiu'. 4) Reescrever com palavras próprias a primeira frase da explicação, que segue de perto 'driblar a censura, então implacável ao perceber seu nome nos créditos'."
+   },
+   {
+    "id": "musica_brasileira-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas conferem; mas 'vulgarização dos costumes' entre aspas é paráfrase do verbete, não citação do discurso de Rui Barbosa; há frases quase copiadas da fonte.",
+    "correcao": "1) Trocar 'e o senador Rui Barbosa classificou a música como exemplo da \"vulgarização dos costumes\"' por 'e o senador Rui Barbosa condenou a execução em discurso, como sinal de rebaixamento dos costumes' (sem aspas). 2) Reescrever com palavras próprias 'setores conservadores viram ali uma afronta às convenções', 'Quando ela contratou um garoto para vender suas partituras pela cidade' e 'causando embaraço num meio dominado por homens'."
+   },
+   {
+    "id": "musica_brasileira-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Explicação bem atribuída ao estudo da Unicamp; mas o gancho dá '25 mil cópias' como fato, e outros relatos falam em seis discos e 30 mil.",
+    "correcao": "1) Gancho: trocar 'e distribuiu ele mesmo as 25 mil cópias' por 'e saiu ele mesmo vendendo os discos pelo interior'. Opcional, se couber: terminar com 'O sucesso atraiu as gravadoras e abriu caminho para o sertanejo.' 2) Explicação: depois de 'com 25 mil cópias que o próprio Cornélio distribuiu pelo interior de São Paulo', acrescentar '(os números variam entre os relatos)'."
+   },
+   {
+    "id": "musica_brasileira-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os dois microfones conferem (inclusive em Ruy Castro); mas a causalidade está invertida (o canto baixo vinha de Diamantina), e 'até então gravava-se com um só' generaliza.",
+    "correcao": "1) Gancho: trocar por 'Ao gravar \"Chega de Saudade\", em 1958, João Gilberto pediu um microfone para a voz e outro para o violão, o que chocou os produtores. Com o violão captado à parte, o canto quase falado deixava o instrumento aparecer.' 2) Explicação: trocar 'Até então, gravava-se com um só, que privilegiava a voz e deixava o violão em segundo plano, já que o instrumento tem volume modesto.' por 'O costume era não dar ao violão acompanhante um microfone próprio, o que privilegiava a voz e deixava o instrumento, de volume modesto, em segundo plano.' 3) Trocar 'Daí o canto contido, sem vibrato e sem fortíssimos, que virou marca do gênero.' por 'O canto contido, sem vibrato e sem fortíssimos, que ele vinha lapidando desde Diamantina, casou com essa solução técnica e virou marca do gênero.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "musica_brasileira-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: o gancho ficou ambíguo (\"falava inglês e recebeu\").",
+    "correcao": "\"falava bem inglês e recebeu só 120 dólares\" virou \"falava bem inglês, ganhou só 120 dólares\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "musica_brasileira-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fonte do O Povo confere; \"recebida com frieza\" e \"símbolo do Brasil nos EUA\" sem erro novo."
+   },
+   {
+    "id": "musica_brasileira-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Demorou a estourar\" e Araci Cortes aplicados."
+   },
+   {
+    "id": "musica_brasileira-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "\"Algumas são postas em séria dúvida\" aplicado."
+   },
+   {
+    "id": "musica_brasileira-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas; retoque: o \"Ele\" podia ser lido como Nazareth.",
+    "correcao": "\"Ele as ouviu\" virou \"Milhaud as ouviu\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "musica_brasileira-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Três correções aplicadas; retoque: a frase final ficou truncada.",
+    "correcao": "\"escrito para ele mesmo tocar, que fazia o acompanhamento\" virou \"escrito para si mesmo, enquanto Pixinguinha fazia o acompanhamento\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "musica_brasileira-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sem o Rio; datas conferem."
+   },
+   {
+    "id": "musica_brasileira-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Quatro correções aplicadas; reescrita sustentada."
+   },
+   {
+    "id": "musica_brasileira-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Rui Barbosa sem aspas e reescritas sustentadas."
+   },
+   {
+    "id": "musica_brasileira-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho sem os 25 mil e \"o sucesso atraiu as gravadoras\" sustentado."
+   },
+   {
+    "id": "musica_brasileira-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Três correções aplicadas; retoque: ele já tinha ido ao Rio em 1950.",
+    "correcao": "\"chegou ao Rio\" virou \"voltou ao Rio\".",
+    "ajuste_pontual": true
+   }
+  ]
+ }
+}

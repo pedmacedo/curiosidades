@@ -1,0 +1,187 @@
+{
+ "lote": "2026-11-25-linguas_construidas-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "linguas_construidas-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas o texto generaliza (as crianças eslovacas usavam o acusativo em ~100%), a redução de vogais era rara (~5%), e omite a ressalva de Lindstedt na mesma fonte.",
+    "correcao": "1) No gancho, troque 'E elas não falam como os pais: largam regras da gramática que eles seguem.' por 'Num estudo com oito delas, várias largavam regras de gramática que os próprios pais seguiam.' 2) Na explicação, troque 'As crianças também reduziam vogais' por 'Às vezes, as crianças também reduziam vogais'. 3) No fim da explicação, acrescente: 'O linguista Jouko Lindstedt, revendo o mesmo estudo, pondera que essas diferenças parecem vir sobretudo da outra língua materna, das diferenças entre fala e escrita e da aquisição incompleta, e não de uma \"nativização\" do esperanto; algumas crianças nativas usam o acusativo normalmente.' Inclua no trecho o literal 'Lindstedt, on the other hand, referencing Bergen's study, contends that \"it is difficult to find convincing examples of changes introduced by the process of nativisation.' e '...such as the attrition of the accusative, are completely absent from the speech of some native-speaking children.' Corte cerca de 40 palavras (por exemplo, a frase sobre Petr Ginz e Bovet) para caber em 250."
+   },
+   {
+    "id": "linguas_construidas-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; pequeno exagero: Schleyer queria a maioria das palavras monossílabas, não todas.",
+    "correcao": "Na explicação, troque 'mas deformado para ficar com uma sílaba só' por 'mas deformado, porque Schleyer queria que a maioria das palavras tivesse uma sílaba só'."
+   },
+   {
+    "id": "linguas_construidas-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas a explicação termina com a especulação de Kozlovsky ('cinco ou seis vezes mais rápido') e omite a refutação na mesma fonte (Sapir-Whorf forte rejeitado; o próprio Quijada não acredita).",
+    "correcao": "No fim da explicação, depois da frase sobre Sapir-Whorf, acrescente: 'A linguística atual rejeita as versões fortes dessa hipótese, e o próprio Quijada diz não acreditar que um falante pensaria mais rápido: cada palavra do Ithkuil exige muito mais reflexão antes de ser dita.' Inclua no trecho o literal 'However, strong forms of the hypothesis, which postulate that language determines thought and not only influences it, have been rejected by mainstream linguistics. Moreover, in line with this, Quijada has stated he does not believe a speaker would think necessarily any faster'. Corte 'Ao todo, já são quatro versões publicadas.' se for preciso."
+   },
+   {
+    "id": "linguas_construidas-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas 'vieram depois' afirma cronologia sem fonte, e o gancho omite o melhor (a fala aludia ao mito alemão de que Shakespeare era alemão).",
+    "correcao": "1) Troque o gancho por: 'Em Jornada nas Estrelas VI, um líder klingon diz que só se conhece Shakespeare \"no original klingon\", alusão ao mito alemão de que ele era alemão. Fãs levaram a sério e traduziram Hamlet.' 2) Na explicação, troque 'Vieram depois Muito Barulho por Nada' por 'Há também traduções de Muito Barulho por Nada'. 3) Troque 'Para o terceiro filme, os produtores quiseram' por 'Para o terceiro filme, o diretor Leonard Nimoy e o produtor Harve Bennett quiseram'."
+   },
+   {
+    "id": "linguas_construidas-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem; mas a idade de cinco anos diverge entre fontes (outras falam em cerca de três anos de klingon), e ele falava 'quase só' em klingon.",
+    "correcao": "1) No gancho, troque 'Um pai falou só em klingon com o filho' por 'Um pai falou com o filho quase só em klingon' e troque 'Depois dos cinco anos, o menino parou de responder e o pai desistiu.' por 'Com o tempo, o menino parou de responder, e o pai desistiu.' 2) Na explicação, troque 'Depois do quinto aniversário do menino, Speers contou que o filho passou a não responder' por 'Com o tempo, Speers contou que o filho passou a não responder'."
+   },
+   {
+    "id": "linguas_construidas-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Afirmações conferem, mas o texto repete como verdade a autodescrição de Tolkien, contestada na mesma fonte por Dimitra Fimi (a mitologia de 1914 é anterior ao qenya de 1915).",
+    "correcao": "1) Troque o gancho por: 'Tolkien dizia que as histórias da Terra-média foram feitas para dar um mundo às línguas élficas. Os manuscritos contam outra história: a mitologia começou antes da primeira língua.' 2) Na explicação, depois de '(...) muitos queriam mais.', acrescente: 'A estudiosa Dimitra Fimi contesta essa versão: o poema The Voyage of Earendel, de setembro de 1914, já esboçava a mitologia antes do primeiro rascunho do qenya, de março de 1915. Para ela, língua e mito passaram a andar juntos nos anos de faculdade de Tolkien.' 3) Inclua no trecho o literal 'The Tolkien scholar and folklorist Dimitra Fimi questions this claim. In particular, his September 1914 The Voyage of Earendel the Evening Star, based on the Old English poem Crist 1, shows that he was starting to think about a mythology before he started to sketch his first invented Middle-earth language, Qenya, in March 1915.' 4) Para caber no limite de palavras, corte a frase final sobre quenya, latim, finlandês e sindarin. 5) Acrescente 'contraintuitivo' aos tipos_espanto."
+   },
+   {
+    "id": "linguas_construidas-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "23 letras e 1.011 palavras conferem; \"uma das mais antigas\" e misterio_aberto adequados."
+   },
+   {
+    "id": "linguas_construidas-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Depressão da criadora e números conferem com Toki Pona."
+   },
+   {
+    "id": "linguas_construidas-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Loglan, Sapir-Whorf, briga autoral e raízes por algoritmo conferem."
+   },
+   {
+    "id": "linguas_construidas-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Pode dar o oposto\" com contraexemplo; números conferem."
+   },
+   {
+    "id": "linguas_construidas-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Bliss, Xangai, OCCC e o acordo de 160 mil (Okrent) conferem."
+   },
+   {
+    "id": "linguas_construidas-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Segundo Trótski\" e a perseguição conferem."
+   },
+   {
+    "id": "linguas_construidas-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Neutral Moresnet; o texto diz 'propôs' e não que o Estado existiu."
+   },
+   {
+    "id": "linguas_construidas-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Números e exemplos conferem; mas a fonte diz que a origem é incerta e traz duas visões rivais (Evans: anciãos yangkaal; Fleming 2017: surgiu sem planejamento) que a explicação omite.",
+    "correcao": "Na explicação, troque 'Hale e colegas acreditam que foi inventado por anciãos lardil e notam que ele tem recursos típicos de jogos de linguagem do mundo todo, como trocar m e n por cliques nasais.' por 'A origem real é incerta. Hale e colegas acreditam que foi inventado por anciãos lardil, porque ele tem recursos típicos de jogos de linguagem do mundo todo, como trocar m e n por cliques nasais. Evans e colegas sugerem que os inventores foram anciãos yangkaal, e Fleming (2017) defende que ele surgiu aos poucos, sem planejamento.' Acrescente ao trecho da fonte as frases 'The origin of Damin is unclear.', 'Evans and colleagues, after studying the mythology of both tribes, speculate that it was the Yangkaal elders who invented Damin and passed it to the Lardil.' e 'According to Fleming (2017), \"the eccentric features of Damin developed in an emergent and unplanned manner'. Se passar de 250 palavras, encurte a frase sobre a sessão da warama."
+   },
+   {
+    "id": "linguas_construidas-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Exemplos e datas conferem; mas 'Borges respondeu' sugere réplica da época, e o ensaio é de 1942.",
+    "correcao": "No gancho, troque 'Borges respondeu com uma enciclopédia chinesa inventada.' por 'Em 1942, Borges a comparou a uma enciclopédia chinesa inventada.'"
+   },
+   {
+    "id": "linguas_construidas-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; exagero: o casal conversava em esperanto, não 'só se falava esperanto' na casa.",
+    "correcao": "No gancho, troque 'e sofria nas visitas a uma tia em Paris, em cuja casa só se falava esperanto.' por 'e, nas visitas a uma tia em Paris, sofria porque ela e o marido conversavam em esperanto.' Opcional: acrescentar que Orwell defendeu o Basic English entre 1942 e 1944, com o trecho 'From 1942 to 1944, George Orwell was a proponent of Basic English, but in 1945, he became critical of universal languages. Basic English later inspired his use of Newspeak in Nineteen Eighty-Four.'"
+   },
+   {
+    "id": "linguas_construidas-0017",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Afirmações conferem (1996 sustentado por outra fonte); mas o fato gasta espaço no enredo e omite o episódio que dá graça: os esperantistas riram da pronúncia na estreia.",
+    "correcao": "Na explicação, troque o trecho 'A história se passa num vilarejo chamado Nomen Tuum, \"teu nome\" em latim, onde um poço cura doentes e deixa as pessoas mais bonitas, o que atrai gente vaidosa e corrupta. Súcubos seduzem essas almas e as levam à morte.' por 'Os atores decoraram as falas foneticamente em 10 dias de ensaio, sem ninguém no set para corrigir a pronúncia. Na estreia, no Festival de São Francisco, em outubro de 1966, um grupo de 50 a 100 esperantistas gritou e riu da pronúncia do elenco. Em parte pelo diálogo em esperanto, o filme só conseguiu distribuição na França.' Acrescente ao trecho da fonte: 'the actors rehearsed for 10 days to learn their lines phonetically, but no one was present on the set to correct their pronunciation during shooting' e 'The premiere of Incubus took place at the San Francisco Film Festival on October 26, 1966, where, according to producer Taylor, a group of 50 to 100 Esperanto enthusiasts \"screamed and laughed\" at the actors' poor pronunciation of the language. Partly because of its Esperanto dialogue, and partly because of the scandal [...] Taylor and Stevens were unable to find any distribution for the film except in France'."
+   }
+  ],
+  "2": [
+   {
+    "id": "linguas_construidas-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As três correções aplicadas, com a ressalva de Lindstedt."
+   },
+   {
+    "id": "linguas_construidas-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"A maioria das palavras\" aplicado."
+   },
+   {
+    "id": "linguas_construidas-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Refutação de Sapir-Whorf forte e posição de Quijada aplicadas."
+   },
+   {
+    "id": "linguas_construidas-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mito alemão no gancho, Nimoy e Bennett, \"há também traduções\"."
+   },
+   {
+    "id": "linguas_construidas-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Quase só\" e \"com o tempo\" aplicados."
+   },
+   {
+    "id": "linguas_construidas-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fimi aplicada; retoque: \"primeira língua\" contradizia as línguas da adolescência.",
+    "correcao": "\"a mitologia começou antes da primeira língua\" virou \"o esboço da mitologia veio antes da primeira língua élfica\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "linguas_construidas-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Três visões sobre a origem aplicadas; retoque: Fleming fala dos traços estranhos, não da língua inteira.",
+    "correcao": "\"ele surgiu aos poucos\" virou \"seus traços mais estranhos surgiram aos poucos\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "linguas_construidas-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Em 1942, Borges a comparou\" aplicado."
+   },
+   {
+    "id": "linguas_construidas-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: foi enquanto trabalhava na BBC, não depois.",
+    "correcao": "\"depois de trabalhar\" virou \"enquanto trabalhava\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "linguas_construidas-0017",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Episódio da estreia aplicado e sustentado; nota sobe para 4."
+   }
+  ]
+ }
+}

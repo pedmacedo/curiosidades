@@ -1,0 +1,171 @@
+{
+ "lote": "2026-11-25-imperios_coloniais-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "imperios_coloniais-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a fonte diz 'mais de 150' navios, e o 'Nela' do gancho é ambíguo.",
+    "correcao": "1) Na explicação, trocar 'mantinha cerca de 150 navios mercantes' por 'mantinha mais de 150 navios mercantes'. 2) No gancho, trocar 'Nela, o capital ficava preso' por 'Na VOC, o capital ficava preso'."
+   },
+   {
+    "id": "imperios_coloniais-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (260 mil soldados, o dobro do exército britânico 'at certain times'); Plassey e diwani conferem."
+   },
+   {
+    "id": "imperios_coloniais-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "exagero: Morel não foi o primeiro a expor o Congo (denúncias desde George Washington Williams); trouxe os números do comércio; o gancho não diz o que ele descobriu.",
+    "correcao": "1) Gancho novo: 'Um funcionário de uma companhia de navegação de Liverpool percebeu o trabalho forçado no Congo de Leopoldo II pelas cargas: os navios voltavam com borracha e marfim e iam com armas, correntes e explosivos.' 2) Na explicação, logo depois de 'o que saía do Congo valia cinco vezes o que entrava.', inserir: 'Denúncias já circulavam havia uma década, desde o americano George Washington Williams, mas faltavam números; Morel trouxe os dados do comércio.'"
+   },
+   {
+    "id": "imperios_coloniais-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere (ilha 'in perpetuity', Kowloon em 1860, Novos Territórios por 99 anos, inviabilidade de devolver só uma parte)."
+   },
+   {
+    "id": "imperios_coloniais-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Estudo de 2024 bem atribuído (Paine, Qiu e Ricart-Huguet); mas a frase da ocupação efetiva exagera: valia só para o litoral e bastava uma base costeira.",
+    "correcao": "Na explicação, trocar 'e estabeleceu o princípio da ocupação efetiva: para ter uma colônia reconhecida, uma potência precisava exercer autoridade real no território.' por 'e fixou o princípio da ocupação efetiva: para ter reconhecida uma posse no litoral africano, a potência precisava notificar as demais e mostrar presença ali. Na versão final, bastava uma base costeira, sem controle real do interior.'"
+   },
+   {
+    "id": "imperios_coloniais-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Treaty of Zaragoza (Portugal pagou 350 mil ducados; anedota atribuída a Pedro Mártir)."
+   },
+   {
+    "id": "imperios_coloniais-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; exagero: o exército etíope estava 'mostly' armado com fuzis modernos.",
+    "correcao": "Na explicação, trocar 'armado com fuzis modernos comprados da França e da Rússia' por 'em grande parte armado com fuzis modernos comprados da França e da Rússia'."
+   },
+   {
+    "id": "imperios_coloniais-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere (proposta de 1974 recusada; 1557–1999; 'first and longest lasting')."
+   },
+   {
+    "id": "imperios_coloniais-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere; mas a ironia se perde: o gancho não diz que Bloemfontein fica na África do Sul nem que ela é vista como heroína lá.",
+    "correcao": "Trocar o gancho por: 'Depois de denunciar os campos de concentração britânicos na Guerra dos Bôeres, a inglesa Emily Hobhouse foi impedida de desembarcar na África do Sul. Hoje, suas cinzas estão lá, num monumento, e ela é vista como heroína.' A explicação fica como está."
+   },
+   {
+    "id": "imperios_coloniais-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas em 1869 o governo mandou ligar os trechos, não que a linha ficou ligada naquele ano.",
+    "correcao": "Na explicação, trocar 'Em 1869, ela foi ligada de ponta a ponta, do Himalaia até perto da baía de Bengala' por 'Em 1869, o governo mandou ligá-la de ponta a ponta, do Himalaia até perto da baía de Bengala'."
+   },
+   {
+    "id": "imperios_coloniais-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'um quinto da riqueza' é a estimativa mais frágil (as fontes vão de 15% a 40% do capital; ~20% do dinheiro em circulação), e o desastre foi 'um fator' para a união, não a causa.",
+    "correcao": "Trocar o gancho por: 'No fim do século XVII, a Escócia apostou cerca de um quinto do dinheiro que circulava no país numa colônia no Panamá. O fracasso deixou o país na ruína e ajudou a enfraquecer a resistência à união com a Inglaterra, em 1707.' Na explicação, logo depois de '400 mil libras em poucas semanas, de gente de todas as classes', acrescentar: '(as estimativas da fatia do capital escocês envolvida vão de 15% a 40%)'. Antes da frase sobre o Ato de União, acrescentar: 'Historiadores apontam o desastre como um dos fatores que levaram a elite escocesa a aceitar a união.'"
+   },
+   {
+    "id": "imperios_coloniais-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tobago e Gâmbia conferem; mas a proposta de conquistar a Austrália (40 navios, 24 mil homens) não tem sustentação: a NDB fala só num projeto de colonização dos 'mares do Sul' negociado com o papa.",
+    "correcao": "No gancho, apagar a frase 'O duque chegou a propor ao papa conquistar terras na Austrália.'; se quiser um fecho, usar 'O duque chegou a negociar com o papa um plano de colonizar os \"mares do Sul\".' Na explicação, trocar 'No mesmo período, ofereceu ao papa Inocêncio X 40 navios de guerra e 24 mil homens para conquistar terras na Austrália, com o papa entrando com o dinheiro. O plano morreu com o papa, em 1655.' por 'Chegou ainda a negociar com o papa Inocêncio X um projeto de colonização nos \"mares do Sul\", abandonado com a morte do papa, em 1655.' Se mencionar o papa, acrescentar a fonte NDB (https://www.deutsche-biographie.de/ppn118775812.html, idioma de) com o trecho 'Mit dem Papst wurde ein Projekt zur Südseekolonisation verhandelt' e rodar o checar_citacoes.py; se não passar, retire a menção ao papa."
+   },
+   {
+    "id": "imperios_coloniais-0013",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "duplicado: o espanto (tratado colonial em duas línguas que dizem coisas diferentes sobre soberania) é o mesmo do imperios_coloniais-0007, que tem narrativa mais forte."
+   },
+   {
+    "id": "imperios_coloniais-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a fonte diz 'a primary catalyst' (não 'levou'), e a ligação do 26 de junho da ONU com Lin não aparece nos documentos da ONU.",
+    "correcao": "Trocar o gancho por: 'Em 1839, o mandarim Lin Zexu escreveu à rainha Vitória pedindo o fim do tráfico de ópio, destruiu 1,2 milhão de kg da droga e pediu perdão aos deuses do mar por poluí-lo. Foi o estopim da Guerra do Ópio.' Na explicação, trocar 'Hoje é visto na China como herói da luta contra as drogas, e o Dia Internacional contra o Abuso e o Tráfico de Drogas, 26 de junho, homenageia o seu trabalho.' por 'Hoje é visto na China como herói da luta contra as drogas, e em Taiwan o 3 de junho, dia em que começou a destruição, é lembrado informalmente como Dia do Movimento de Supressão do Ópio.' Atualizar o trecho: tirar 'June 26 is recognized as the International Day against Drug Abuse and Illicit Trafficking in honour of Lin's work.' e pôr 'June 3—the day when Lin confiscated the chests of opium—is unofficially celebrated as Opium Suppression Movement Day in Taiwan'."
+   },
+   {
+    "id": "imperios_coloniais-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas Cinchona ledgeriana é hoje sinônimo de C. calisaya, não 'nova espécie'.",
+    "correcao": "Na explicação, trocar 'Ali, a nova espécie, batizada Cinchona ledgeriana, rendeu de 8% a 13% de quinino na casca' por 'Ali, a planta, batizada Cinchona ledgeriana (hoje vista como uma forma da espécie C. calisaya), rendeu de 8% a 13% de quinino na casca'."
+   }
+  ],
+  "2": [
+   {
+    "id": "imperios_coloniais-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Mais de 150\" e \"Na VOC\" aplicados."
+   },
+   {
+    "id": "imperios_coloniais-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho das cargas e George Washington Williams aplicados."
+   },
+   {
+    "id": "imperios_coloniais-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ocupação efetiva no litoral, base costeira, aplicado."
+   },
+   {
+    "id": "imperios_coloniais-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Em grande parte armado\" aplicado."
+   },
+   {
+    "id": "imperios_coloniais-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho com a ironia da heroína aplicado."
+   },
+   {
+    "id": "imperios_coloniais-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "\"O governo mandou ligá-la\" aplicado."
+   },
+   {
+    "id": "imperios_coloniais-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Faixa de 15% a 40% e \"um dos fatores\" aplicados; retoque: \"arruinou o país\" ampliava a fonte (Terras Baixas).",
+    "correcao": "\"O fracasso arruinou o país\" virou \"O fracasso foi ruinoso\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "imperios_coloniais-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Austrália retirada; NDB sustenta o projeto dos \"mares do Sul\" com o papa."
+   },
+   {
+    "id": "imperios_coloniais-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Estopim, 3 de junho em Taiwan; 26 de junho da ONU retirado."
+   },
+   {
+    "id": "imperios_coloniais-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Forma da espécie C. calisaya\" aplicado."
+   }
+  ]
+ }
+}

@@ -1,0 +1,199 @@
+{
+ "lote": "2026-11-24-comportamento_animal-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "comportamento_animal-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com a Wikipedia, mas omite a reinterpretação de Rutz et al. (2016): dobrar ferramentas faz parte do repertório natural da espécie, e Betty era selvagem.",
+    "correcao": "1) Na explicação, troque a última frase (a dos galhinhos encaixados da Max Planck), para não passar de 250 palavras, por algo como: \"Em 2016, uma equipe liderada por Christian Rutz mostrou que dobrar ferramentas faz parte do comportamento natural da espécie na natureza, e Betty tinha sido capturada na natureza. Isso não apaga o feito, mas sugere que ela pode ter levado ao arame um movimento que a espécie já conhecia.\" 2) Acrescente como fonte o resumo do artigo (https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC5108972&resultType=core&format=json), com trecho literal contendo 'tool bending is part of the species' natural behavioural repertoire', e rode o checar_citacoes de novo."
+   },
+   {
+    "id": "comportamento_animal-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas o comportamento medido é 'scolding' (gritos de repreensão), não ataque.",
+    "correcao": "Na explicação, troque \"passaram a atacar a máscara com gritos assim que a viam\" por \"passaram a repreender a máscara com gritos assim que a viam\"; troque \"também aprenderam a atacar a máscara\" por \"também aprenderam a repreender a máscara aos gritos\"; troque \"a frequência dos ataques à máscara dobrou\" por \"a frequência dos gritos contra a máscara dobrou\"."
+   },
+   {
+    "id": "comportamento_animal-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dança, Nobel e debate conferem; mas o 93% (Grüter et al. 2008) vale para campeiras experientes, não para todas as que seguiram a dança.",
+    "correcao": "No gancho, troque \"93% das que seguiram a dança foram a lugares que já conheciam\" por \"93% das veteranas que seguiram a dança foram a lugares já conhecidos\". Na explicação, troque \"a maioria das que acompanharam a dança com atenção ignorou direção e distância\" por \"a maioria das campeiras experientes, que já conheciam uma fonte de comida, ignorou direção e distância mesmo depois de acompanhar a dança com atenção\"."
+   },
+   {
+    "id": "comportamento_animal-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: 'de 20 a 50 batedoras' contradiz Seeley e Visscher ('several hundred scouts'); o quórum relatado pela Cornell é de 15 ou mais.",
+    "correcao": "No gancho, troque \"de 20 a 50 batedoras visitam ocos\" por \"centenas de batedoras visitam ocos\". Na explicação, troque \"enquanto de 20 a 50 batedoras procuram ocos adequados\" por \"enquanto algumas centenas de batedoras procuram ocos adequados\", e troque \"um quórum de 20 a 30 batedoras num mesmo local\" por \"um quórum de cerca de 15 a 30 batedoras num mesmo local\". Acrescente como fonte https://www.news.cornell.edu/stories/2006/04/honeybee-decision-making-ability-rivals-any-department-committee com trechos literais contendo 'several hundred scouts go house hunting' e 'As soon as 15 or more bees are at any one site', e rode o checar_citacoes de novo. Se a fonte não passar, troque os números do gancho e da explicação por formulações sem número que a Wikipedia sustente."
+   },
+   {
+    "id": "comportamento_animal-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Osvath & Karvonen (2012); mas os 46 itens de 2010 eram projéteis, em geral concreto, e as críticas (Shettleworth; Suddendorf & Corballis) eram ao relato de 2009.",
+    "correcao": "No gancho, troque \"Mais tarde, passou a escondê-las sob montes de feno.\" por \"Mais tarde, passou a esconder seus projéteis sob montes de feno.\" Na explicação, troque \"Das 46 pedras recolhidas no período, 35 estavam escondidas.\" por \"Dos 46 projéteis recolhidos no período, em geral pedaços de concreto, 35 estavam escondidos.\" Troque \"Há quem questione como interpretar esses dados.\" por \"Críticos do primeiro relato, de 2009, lembraram que ninguém registrou como surgiram os primeiros montes de pedras, o que deixa aberta a interpretação.\""
+   },
+   {
+    "id": "comportamento_animal-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "exagero: 'pode ser o primeiro caso de ferramenta em invertebrados' não se sustenta (vespas Ammophila, formigas), e a classificação como ferramenta é contestada.",
+    "correcao": "Gancho novo: \"Um polvo da Indonésia recolhe metades de casca de coco jogadas fora por humanos, carrega-as por até 20 metros e depois as monta em volta do corpo como um abrigo portátil.\" Na explicação, depois de \"o que o museu chamou de 'uso verdadeiro de ferramenta'.\", acrescente: \"Nem todos concordam: para outros biólogos, a casca é só uma proteção contínua contra predadores, e não uma ferramenta.\" Não diga em lugar nenhum que é o primeiro caso de ferramenta em invertebrados. Acrescente como fonte https://en.wikipedia.org/wiki/Tool_use_by_animals com trecho literal: \"The authors of the research article claimed this behaviour falls under the definition of tool use because the shells are carried for later use. However, this argument remains contested by a number of other biologists who state that the shells actually provide continuous protection from abundant bottom-dwelling predators in their home range.\" Mantenha a confiança em consenso_parcial."
+   },
+   {
+    "id": "comportamento_animal-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere (fama exagerada, duas das três aves de Attenborough eram de cativeiro, segundo Hollis Taylor); mas 'gambás' traduz mal 'possums', o começo da explicação é tradução quase literal, e a fonte registra indícios dos dois lados sobre a flauta.",
+    "correcao": "1) Trocar 'além de sons de gambás, coalas e dingos' por 'além de sons de possuns (marsupiais australianos), coalas e dingos'. 2) Reescrever com palavras próprias as duas primeiras frases da explicação. Sugestão: 'Os pássaros-lira da Austrália estão entre os maiores imitadores do mundo animal: copiam o canto de dezenas de aves, o burburinho de bandos inteiros e até chamados de coalas e dingos. Já foram gravados reproduzindo serrote, motosserra, alarme de carro, tiro, obturador de câmera, choro de bebê, toque de celular e voz humana.' 3) No fim, trocar 'nunca foi comprovada: um grupo de pesquisa não conseguiu provar que a ave tinha sido de estimação' por 'nunca foi comprovada: um grupo de pesquisa não conseguiu provar que a ave tinha sido de estimação, embora tenha reconhecido indícios dos dois lados'."
+   },
+   {
+    "id": "comportamento_animal-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada afirmação tem apoio nos resumos de 2011 e 2014 e na Wikipedia; não duplica nada."
+   },
+   {
+    "id": "comportamento_animal-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A explicação confere; mas o gancho dá a entender que 59 eram os macacos que lavavam batata, quando era o total da colônia em 1962.",
+    "correcao": "No gancho, trocar 'Os macacos japoneses que lavavam batata aprenderam devagar, e eram só 59 em 1962.' por 'Os macacos japoneses que lavavam batata aprenderam devagar, e a colônia inteira tinha só 59 em 1962.'"
+   },
+   {
+    "id": "comportamento_animal-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com Greater honeyguide (Borana, Hadza 560%, chamado 'brrrr-hmm' dos yao, cera escondida pelos hadzas)."
+   },
+   {
+    "id": "comportamento_animal-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e números conferem; mas 'muitos cientistas não acreditaram' exagera 'not universally believed'; 'logo o perderam' vai além de 'much of'; e falta a ressalva de Ferguson (fuga e leopardo).",
+    "correcao": "1) No gancho, trocar 'Muitos cientistas não acreditaram nela.' por 'Nem todos os cientistas acreditaram nela.' 2) Na explicação, trocar 'mas logo o perderam para comunidades vizinhas mais numerosas' por 'mas logo perderam boa parte dele para comunidades vizinhas mais numerosas'. 3) Depois de 'em quatro anos todos os machos Kahama foram mortos ou desapareceram', acrescentar: 'O antropólogo Brian Ferguson pondera que alguns desaparecidos podem ter fugido para outra comunidade, e um leopardo que rondava Gombe na época pode ter levado parte deles.' Incluir no trecho da fonte as frases 'Ferguson argued that at least some of the missing Kahama may have survived the war by escaping the Gombe area' e 'some research has suggested that the casualties of the war may have been smaller than initially reported, as a leopard had been active in Gombe at the time of the war and might have taken some of the missing chimpanzees.' Manter até 250 palavras; se precisar, encurtar a frase sobre o estudo de 2018."
+   },
+   {
+    "id": "comportamento_animal-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo correto, mas as cinco primeiras frases da explicação traduzem frase a frase a Wikipedia.",
+    "correcao": "Reescrever a explicação com palavras próprias. Sugestão: 'Em 1995, Shigeru Watanabe, Junko Sakamoto e Masumi Wakita, da Universidade Keio, no Japão, publicaram o experimento. O treino era simples: diante de um quadro de Picasso, o pombo que bicava ganhava comida; diante de um Monet, bicar era inútil. Depois de praticar com um punhado de telas, as aves passaram a bicar só os Picasso. O teste de verdade veio com quadros novos: os pombos continuaram acertando o autor e conseguiram até separar outros pintores cubistas, a escola de Picasso, de impressionistas, a de Monet. Virar as telas de ponta-cabeça atrapalhou a classificação dos Monet, mas não a das obras cubistas. Num trabalho posterior, Watanabe deu o mesmo treino a pombos e a universitários para distinguir Van Gogh de Chagall, e o desempenho dos dois grupos foi parecido. O estudo rendeu aos autores o Ig Nobel de Psicologia de 1995, paródia do Nobel que premia pesquisas que \"primeiro fazem rir e depois fazem pensar\".' Se usar a frase de Van Gogh e Chagall, acrescentar ao trecho da fonte Pigeon intelligence: 'In a later paper, Watanabe showed that if pigeons and human college students undergo the same training, their performance in distinguishing between Van Gogh and Chagall paintings is comparable.'"
+   },
+   {
+    "id": "comportamento_animal-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo consta de 'Signature whistle' ('most name-like signal', mais de 20 anos, mães de Sarasota)."
+   },
+   {
+    "id": "comportamento_animal-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo sustentado por 'Tool use by animals' e confirmado por Kopps et al. 2014 (mesma linhagem materna)."
+   },
+   {
+    "id": "comportamento_animal-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Afirmações conferem e estão atribuídas a Slobodchikoff, mas a explicação não registra a contestação (linguistas como Geoffrey Pullum; variações como subproduto da fisiologia vocal).",
+    "correcao": "Acrescentar ao fim da explicação uma frase de equilíbrio, por exemplo: 'Já a leitura de que isso seria uma linguagem, com algo parecido com gramática, é contestada: vários pesquisadores, sobretudo linguistas, acham que a ideia vai além do que os dados mostram, e a discussão segue aberta.' De preferência, apoiar essa frase numa segunda fonte com trecho literal (por exemplo, https://languagelog.ldc.upenn.edu/nll/?p=32716, ou outra fonte confiável que registre a crítica). Se nenhuma fonte passar, apoie a ressalva em algo que a fonte da Wikipedia já diga, sem afirmar além dela."
+   },
+   {
+    "id": "comportamento_animal-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo fica no resumo de McComb et al. (PNAS 2014), mas o gancho transforma probabilidade em certeza, 'bem mais' acrescenta intensidade, e falta o porquê da ameaça (disputa com pastores masais).",
+    "correcao": "Gancho: trocar 'eles se agrupam em defesa e farejam o ar' por 'ficam mais propensos a se agrupar em defesa e farejar o ar' e trocar 'os assustam bem menos' por 'provocam isso com menos frequência', mantendo o limite de 220 caracteres. Explicação: trocar 'bem mais propensos' por 'significativamente mais propensos' e 'com frequência bem menor' por 'com frequência significativamente menor'. Recomendado: acrescentar a fonte com o texto completo (https://pmc.ncbi.nlm.nih.gov/articles/PMC3986134/ ou a Europe PMC) e uma frase explicando a ameaça, com trecho literal, por exemplo: 'this sometimes results in elephants being speared, particularly in retaliation when Maasai lives have been lost' e 'Kamba men, with more agricultural lifestyles, do not typically pose a significant threat to elephants'."
+   },
+   {
+    "id": "comportamento_animal-0017",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Os dois resumos (Bartal et al. 2011; Hachiga et al. 2018) sustentam tudo; explicação equilibrada."
+   }
+  ],
+  "2": [
+   {
+    "id": "comportamento_animal-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Reinterpretação de Rutz (2016) com fonte nova; não exagera."
+   },
+   {
+    "id": "comportamento_animal-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Repreender aos gritos\" aplicado; números conferem."
+   },
+   {
+    "id": "comportamento_animal-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Veteranas\" e \"campeiras experientes\" aplicados."
+   },
+   {
+    "id": "comportamento_animal-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Centenas de batedoras\" e quórum de 15 a 30 sustentados pela Cornell e pela Wikipedia."
+   },
+   {
+    "id": "comportamento_animal-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções aplicadas; retoque: a fonte sustenta \"muitos\", não \"em geral\", pedaços de concreto.",
+    "correcao": "\"em geral pedaços de concreto\" virou \"muitos deles pedaços de concreto\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "comportamento_animal-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Exagero do \"primeiro caso\" removido; contestação sustentada."
+   },
+   {
+    "id": "comportamento_animal-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Possuns, abertura reescrita e \"indícios dos dois lados\" aplicados e sustentados."
+   },
+   {
+    "id": "comportamento_animal-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "\"A colônia inteira tinha só 59\" aplicado; gancho fiel."
+   },
+   {
+    "id": "comportamento_animal-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: a hipótese do leopardo não é de Ferguson, e sim de outros estudos.",
+    "correcao": "\"e um leopardo que rondava Gombe\" virou \"e outros estudos lembram que um leopardo que rondava Gombe\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "comportamento_animal-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Explicação reescrita com palavras próprias; Van Gogh e Chagall com trecho."
+   },
+   {
+    "id": "comportamento_animal-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Ressalva de Pullum (Language Log, 2017) sustentada; consenso_parcial adequado."
+   },
+   {
+    "id": "comportamento_animal-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Mais propensos\", \"menos frequência\" e \"significativamente\" aplicados; tudo no resumo da PNAS."
+   }
+  ]
+ }
+}

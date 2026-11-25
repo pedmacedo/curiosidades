@@ -1,0 +1,151 @@
+{
+ "lote": "2026-11-25-mundo_islamico_medieval-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "mundo_islamico_medieval-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Relato bem separado do documento ('segundo a tradição', 'teria'); datas e influência sobre Kepler conferem."
+   },
+   {
+    "id": "mundo_islamico_medieval-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Atribuições conferem (historiador do século XVI, Biran); mas 'outra crônica' não tem apoio: a frase da ponte é de al-Nahrawali, e não se sabe se a do rio preto é de outra crônica.",
+    "correcao": "Na explicação, troque 'Outra crônica do mesmo século fala em livros jogados no Eufrates' por 'Uma crônica do mesmo século, de Qutb al-Din al-Nahrawali, fala em livros jogados no Eufrates'."
+   },
+   {
+    "id": "mundo_islamico_medieval-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a fonte diz que Fatima foi mencionada pela primeira vez séculos depois, não que só aparece em Ibn Abi Zar'.",
+    "correcao": "Na explicação, troque 'E a história de Fatima só aparece num cronista do século XIV, Ibn Abi Zar',' por 'E a história de Fatima aparece pela primeira vez séculos depois, num cronista do século XIV, Ibn Abi Zar','."
+   },
+   {
+    "id": "mundo_islamico_medieval-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Datas e etimologia conferem (papel antes de Talas, Bloom, Du Huan, rizma); nota 3."
+   },
+   {
+    "id": "mundo_islamico_medieval-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tom de relato mantido; Hallion e Anderson como leituras opostas; dados conferem."
+   },
+   {
+    "id": "mundo_islamico_medieval-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a fonte diz que o al-Mansuri ainda funcionava no século XV (não que fechou), e a música como terapia é atribuída ao al-Mansuri, não ao de Fustat.",
+    "correcao": "1) Trocar 'O al-Mansuri funcionou até o século XV, e o prédio ainda existe no Cairo.' por 'O al-Mansuri ainda funcionava no século XV, e o prédio continua de pé no Cairo.' 2) Trocar 'Como o hospital de Fustat antes dele, tratava doentes mentais e usava música como terapia.' por 'Assim como o hospital de Fustat antes dele, tratava doentes mentais, e introduziu a música como forma de terapia.'"
+   },
+   {
+    "id": "mundo_islamico_medieval-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas ele voltou a Tânger em 1349 e só depois fez as viagens que completam o total, que vem do próprio relato (com dúvidas modernas).",
+    "correcao": "No gancho, trocar 'Só voltou ao Marrocos 24 anos depois, após somar cerca de 117 mil km de viagens, bem mais que Marco Polo.' por 'Só voltou ao Marrocos 24 anos depois e, contando as viagens seguintes, teria somado uns 117 mil km, bem mais que Marco Polo.' (se passar de 220, troque 'para uma peregrinação a Meca' por 'rumo a Meca')."
+   },
+   {
+    "id": "mundo_islamico_medieval-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com The Canon of Medicine (1025, sete regras em parte de Galeno, Pádua até 1715)."
+   },
+   {
+    "id": "mundo_islamico_medieval-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O método confere; mas os números de conversão que a fonte repete de Sparavigna estão errados (o raio real é ~3.959 milhas; 22 polegadas dariam ~4.450 milhas); 'sem viajar' é impreciso.",
+    "correcao": "1) Na explicação, trocar 'Uma análise citada o converte em 3.928,77 milhas, 2% acima do raio médio real, mas tudo depende do tamanho do côvado, que não se sabe ao certo: com 18 polegadas seriam 3.600 milhas; com 22, 4.200.' por 'Quão perto ele chegou do valor moderno depende de quanto media o côvado que usou, e isso não se sabe ao certo: conforme a conversão escolhida, a estimativa fica mais ou menos próxima do raio real.' 2) No gancho, trocar 'calculou o raio da Terra sem viajar:' por 'calculou o raio da Terra sem medir distâncias entre cidades:'."
+   },
+   {
+    "id": "mundo_islamico_medieval-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada atribuição confere; pioneirismo atenuado ('possível'), consenso_parcial adequado."
+   },
+   {
+    "id": "mundo_islamico_medieval-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas o gancho repete os dois elementos de revolucao_cientifica-0008 (poros negados e Berlim/1924), e o novo (circulação pulmonar e previsão dos capilares) fica de fora.",
+    "correcao": "Trocar o gancho por: \"No século XIII, o médico Ibn al-Nafis descreveu o sangue indo do coração aos pulmões e de volta, e previu passagens minúsculas entre a artéria e a veia pulmonar, mais de 400 anos antes da descoberta dos capilares.\" Manter a explicação. Opcional: incluir revolucao_cientifica nos temas_secundarios."
+   },
+   {
+    "id": "mundo_islamico_medieval-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere; mas '1925' contrasta com galaxias-0001 (1923); as duas datas se defendem, convém harmonizar.",
+    "correcao": "No gancho, trocar \"mas só em 1925 Hubble mostrou que ela fica fora da Via Láctea\" por \"mas só nos anos 1920 Hubble mostrou que ela fica fora da Via Láctea\". Na explicação, trocar \"A questão foi resolvida em 1925, quando Edwin Hubble encontrou\" por \"A questão foi considerada resolvida em 1925, depois que Edwin Hubble encontrou\"."
+   },
+   {
+    "id": "mundo_islamico_medieval-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números e fatos conferem e o episódio cabe no tema; mas mito_desmentido não corresponde (a contestação de Schultz é argumento de um historiador). A lenda é viral; nota 3.",
+    "correcao": "Em tipos_espanto, trocar [\"contraintuitivo\", \"mito_desmentido\"] por [\"historia_humana\", \"contraintuitivo\"]. Opcional: no gancho, trocar \"que o metal teria se desvalorizado no Egito por anos\" por \"que se diz ter desvalorizado o metal no Egito por anos\". Manter confianca consenso_parcial."
+   },
+   {
+    "id": "mundo_islamico_medieval-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Relato marcado; a comparação da meningite sem 'primeiro ensaio clínico'; datas conferem."
+   }
+  ],
+  "2": [
+   {
+    "id": "mundo_islamico_medieval-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Atribuição a al-Nahrawali aplicada e sustentada."
+   },
+   {
+    "id": "mundo_islamico_medieval-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Aparece pela primeira vez séculos depois\" aplicado."
+   },
+   {
+    "id": "mundo_islamico_medieval-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Século XV e música no al-Mansuri corrigidos."
+   },
+   {
+    "id": "mundo_islamico_medieval-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Conteúdo confere; retoque: a troca deixou o gancho dizendo que Meca levava 16 meses.",
+    "correcao": "\"rumo a Meca que costumava levar dezesseis meses\" virou \"rumo a Meca, viagem que costumava levar 16 meses\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "mundo_islamico_medieval-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Conversões erradas retiradas; \"sem medir distâncias entre cidades\" aplicado."
+   },
+   {
+    "id": "mundo_islamico_medieval-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho novo da circulação pulmonar e dos capilares aplicado."
+   },
+   {
+    "id": "mundo_islamico_medieval-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Nos anos 1920\" e \"considerada resolvida em 1925\" aplicados."
+   },
+   {
+    "id": "mundo_islamico_medieval-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tipos trocados e ressalva no gancho; nota 3."
+   }
+  ]
+ }
+}

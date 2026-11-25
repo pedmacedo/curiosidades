@@ -1,0 +1,570 @@
+LOTE = "2026-11-25-mundo_islamico_medieval-01"
+AREA = "historia_antiga"
+TEMA = "mundo_islamico_medieval"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 Ibn al-Haytham, a loucura fingida e o Livro da Óptica
+    {
+        "temas_secundarios": ["luz_cores", "revolucao_cientifica"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "Segundo a tradição, Ibn al-Haytham fingiu loucura para escapar da ira de um califa do Cairo e, confinado em casa, escreveu o Livro da Óptica, obra que mais tarde seria lida por Kepler e Galileu.",
+        "explicacao": (
+            "Nascido em Basra por volta de 965 e conhecido na Europa como Alhazen, Ibn al-Haytham ficou famoso pela "
+            "matemática aplicada. Um relato conta que o califa fatímida al-Hakim o chamou ao Egito para controlar as "
+            "cheias do Nilo. Ele estudou a inundação anual e chegou a desenhar uma barragem no lugar da atual represa de "
+            "Assuã, mas o trabalho de campo o convenceu de que o plano era inviável. Para não ser castigado, teria fingido "
+            "loucura. Segundo a lenda, ficou em prisão domiciliar até a morte do califa, em 1021, e nesse período "
+            "escreveu o Kitab al-Manazir, o Livro da Óptica, datado de 1011 a 1021. Ali ele sustenta que enxergamos "
+            "porque a luz refletida pelos objetos entra nos olhos, e não porque o olho lança raios, como defendiam "
+            "Euclides e Ptolomeu, e que a visão acontece no cérebro. Também mostrou com experimentos que a luz anda em "
+            "linha reta. Para o historiador A. I. Sabra, nessa obra surge pela primeira vez um conceito distinto de "
+            "experimento. Traduzido para o latim no fim do século XII ou começo do XIII, o livro foi lido por Roger "
+            "Bacon, Leonardo da Vinci, Galileu, Descartes e Kepler, cuja teoria da imagem na retina partiu diretamente "
+            "das ideias de Alhazen."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Ibn_al-Haytham",
+            "Ibn al-Haytham, Latinized as Alhazen (c. 965 – c. 1040), was a mathematician, astronomer, and physicist of the Islamic Golden Age from Iraq. [...] "
+            "written during 1011–1021, which survived in a Latin edition. The works of Alhazen were frequently cited during the Scientific Revolution by Galileo Galilei, René Descartes, Johannes Kepler, and Christiaan Huygens. [...] "
+            "According to historian of science A.I Sabra, in Ibn al-Haytham's Optics, \"there appeared for the first time a distinct concept of experiment\" [...] "
+            "Born in Basra [...] "
+            "became famous for his knowledge of applied mathematics, as evidenced by his attempt to regulate the flooding of the Nile. [...] "
+            "is said to have been forced into hiding until the caliph's death in 1021, after which his confiscated possessions were returned to him. "
+            "Legend has it that Alhazen feigned madness and was kept under house arrest during this period. During this time, he wrote his influential Book of Optics. [...] "
+            "In it, Ibn al-Haytham was the first to explain that vision occurs when light reflects from an object and then passes to one's eyes, and to argue that vision occurs in the brain [...] "
+            "Optics was translated into Latin by an unknown scholar at the end of the 12th century or the beginning of the 13th century. [...] "
+            "The first theory, the emission theory, was supported by such thinkers as Euclid and Ptolemy, who believed that sight worked by the eye emitting rays of light. [...] "
+            "Kepler's later theory of the retinal image (which resolved the problem of the correspondence of points on an object and points in the eye) built directly on the conceptual framework of Alhazen. "
+            "Alhazen showed through experiment that light travels in straight lines [...] "
+            "This translation was read by and greatly influenced a number of scholars in Christian Europe including: Roger Bacon, Robert Grosseteste, Witelo, Giambattista della Porta, Leonardo da Vinci, Galileo Galilei, Christiaan Huygens, René Descartes, and Johannes Kepler. [...] "
+            "one account of his career as a civil engineer has him summoned to Egypt by the Fatimid Caliph, Al-Hakim bi-Amr Allah, to regulate the flooding of the Nile River. "
+            "He carried out a detailed scientific study of the annual inundation of the Nile River, and he drew plans for building a dam, at the site of the modern-day Aswan Dam. "
+            "His field work, however, later made him aware of the impracticality of this scheme, and he soon feigned madness so he could avoid punishment from the Caliph.",
+            nome="Ibn al-Haytham")],
+    },
+    # 2 o Tigre preto de tinta em 1258
+    {
+        "temas_secundarios": ["europa_medieval", "literatura"],
+        "tipos_espanto": ["mito_desmentido", "historia_humana"],
+        "gancho": "Conta-se que, no saque mongol de Bagdá em 1258, tantos livros foram jogados no Tigre que o rio ficou preto de tinta. A frase mais citada é de um historiador do século XVI, e grandes bibliotecas reabriram em dois anos.",
+        "explicacao": (
+            "Em 13 de fevereiro de 1258, o exército mongol de Hulagu entrou em Bagdá, a cidade dos califas abássidas, e a "
+            "pilhagem durou uma semana. Entre o que se perdeu estava a Casa da Sabedoria, biblioteca e centro de "
+            "tradução onde se copiavam obras gregas de filosofia e ciência. Daí nasceu a imagem do Tigre escurecido pela "
+            "tinta dos livros. A descrição mais repetida vem de um historiador do século XVI, que escreveu que a cor do "
+            "rio mudou para preto por causa da quantidade de volumes. Outra crônica do mesmo século fala em livros "
+            "jogados no Eufrates em número suficiente para formar uma ponte capaz de sustentar um cavaleiro. A "
+            "historiadora Michal Biran vê nessa frase um recurso literário ligado ao cerco, que ampliava a barbárie "
+            "mongol, e mostrou que grandes bibliotecas voltaram a funcionar para ensino e estudo até dois anos depois. "
+            "Bagdá até prosperou sob o domínio de Hulagu, embora tenha perdido peso para a nova capital, Tabriz. A ideia "
+            "de que esse único episódio encerrou a Era de Ouro islâmica é criticada por historiadores modernos como "
+            "simplista. E até a imagem da Casa da Sabedoria como uma espécie de universidade é contestada por alguns "
+            "estudiosos, para quem ela foi construída nos séculos XIX e XX."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Siege_of_Baghdad_(1258)",
+                "In contrast to the exaggerations of later Muslim historians, Baghdad prospered under Hulegu's Ilkhanate, although it did decline in comparison to the new capital, Tabriz. [...] "
+                "Muslim writers have traditionally ascribed the decline of the Islamic Golden Age, and consequently the subsequent rise of the Western world, to this one event; "
+                "however, such an argument has been criticized by modern historians as simplistic and lazy. "
+                "Whereas an oft-quoted description from a 16th-century historian details that so many books from Baghdad's libraries were thrown into the Tigris that "
+                "\"the colour of the river changed into black from their multitude,\" the historian Michal Biran has shown that large libraries reopened for learning and teaching within two years of the siege.",
+                nome="Siege of Baghdad (1258)"),
+            wiki("House_of_Wisdom",
+                "It was destroyed in 1258 during the Mongol siege of Baghdad. [...] "
+                "More recently, the narrative of the Abbasid House of Wisdom as a major academic institution akin to a university, with specialised departments and organised scholarly debate, "
+                "has been challenged by some historians, who argue this image was constructed over the course of the nineteenth and early twentieth centuries [...] "
+                "On February 13, 1258, the Mongols entered the city of the caliphs, starting a full week of pillage and destruction. [...] "
+                "Along with all other libraries in Baghdad, the House of Wisdom was destroyed by Hulagu's army during the Siege of Baghdad. "
+                "The books from Baghdad's libraries were thrown into the Tigris River in such quantities that the river was said to have run black with the ink from their pages. "
+                "According to a 16th-century chronicle about the siege from Qu [...] "
+                "\"So many books were thrown into the Eufrates River that they formed a bridge that would support a man on horseback.\" "
+                "According to historian Michal Biran, this quote was a literary trope associated with the siege of Baghdad and magnifying Mongol barbarity. [...] "
+                "The House of Wisdom included a society of scientists and academics, a translation department, and a library [...] "
+                "the academy encouraged the transcription of Greek philosophical and scientific efforts.",
+                nome="House of Wisdom"),
+        ],
+    },
+    # 3 al-Qarawiyyin e a fundadora que talvez não tenha existido
+    {
+        "temas_secundarios": ["personagens_esquecidos", "africa_antiga"],
+        "tipos_espanto": ["mito_desmentido", "misterio_aberto"],
+        "gancho": "A Universidade de al-Qarawiyyin, no Marrocos, é citada como a mais antiga do mundo em funcionamento, fundada no século IX por uma mulher, Fatima al-Fihri. Mas há historiadores que duvidam que ela tenha existido.",
+        "explicacao": (
+            "Segundo a tradição, Fatima nasceu em Kairouan, na atual Tunísia, filha de um comerciante rico. Herdou a "
+            "fortuna do pai e quis gastá-la numa obra piedosa: uma mesquita em Fez, cujos alicerces teriam sido lançados "
+            "no primeiro dia do Ramadã de 859. A mesquita virou um dos grandes centros intelectuais do Norte da África "
+            "islâmico, e a UNESCO e o Guinness a apontam como a universidade ou instituição de ensino superior mais "
+            "antiga em funcionamento contínuo. Há duas ressalvas. Muitos estudiosos consideram que ela funcionou como "
+            "madraça, escola religiosa, e só se tornou universidade com a reforma de 1963. E a história de Fatima só "
+            "aparece num cronista do século XIV, Ibn Abi Zar', visto pelos historiadores como fonte relativamente pouco "
+            "confiável. Ele conta que a irmã dela fundou na mesma época a outra grande mesquita de Fez, paralelo que o "
+            "historiador Roger Le Tourneau achou perfeito demais para ser verdade. Numa reforma do século XX, surgiu sob "
+            "camadas de gesso uma inscrição de fundação em painéis de cedro, que atribui \"esta mesquita\" a Dawud ibn "
+            "Idris, filho de Idris II e governante da região, em 877. Com base nela e nas dúvidas sobre o cronista, o "
+            "estudioso Chafik Benchekroun acha bem possível que Fatima seja uma figura lendária."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("University_of_al-Qarawiyyin",
+                "UNESCO and Guinness World Records have cited al-Qarawiyyin as the oldest university or oldest continually operating higher learning institution in the world. "
+                "Scholars consider al-Qarawiyyin to have been effectively run as a madrasa until after World War II. "
+                "Many scholars distinguish this status from the status of \"university\", which they view as a distinctly European invention. "
+                "They date al-Qarawiyyin's transformation from a madrasa into a university to its modern reorganization in 1963.",
+                nome="University of al-Qarawiyyin"),
+            wiki("Fatima_al-Fihri",
+                "Her story is told by Ibn Abi Zar' (d. between 1310 and 1320) in The Garden of Pages (Rawd al-Qirtas) as founder of the mosque. "
+                "Since she was first mentioned many centuries after her death, her story has been hard to substantiate and some modern historians doubt her existence. [...] "
+                "Fatima was born in the town of Kairouan, in present-day Tunisia, possibly around 800 CE. She is said to have been the daughter of a wealthy merchant. [...] "
+                "When Muhammad al-Fihri died, his daughter Fatima inherited his wealth. [...] "
+                "The mosque went on to become the most important congregational mosque in Fez and one of the foremost intellectual centers in Islamic North Africa. [...] "
+                "Fatima did not participate in commerce herself and wished to devote the fortune she inherited from her father to a pious act. "
+                "She therefore purchased a property in the center of Fez at high cost, where she laid the foundations for the mosque on the first day of Ramadan in the year 245 of the Islamic calendar (859 CE). [...] "
+                "According to the same tradition, Fatima's sister, Mariam, also founded a similar mosque in the district across the river around the same time [...] "
+                "Ibn Abi Zar' is also judged by contemporary historians to be a relatively unreliable source. "
+                "Historian Roger Le Tourneau doubts the truth of the traditional account of Fatima building the Qarawiyyin mosque and her sister Maryam building the Andalusiyyin Mosque. "
+                "He notes that the perfect parallelism of two sisters and two mosques is too good to be true, and likely a pious legend. [...] "
+                "One of the biggest challenges to the traditional story is a foundation inscription that was rediscovered during renovations to the mosque in the 20th century, previously hidden under layers of plaster for centuries. "
+                "This inscription, carved onto cedar wood panels [...] "
+                "by Dawud ibn Idris (a son of Idris II who governed this region of Morocco at the time) in Dhu al-Qadah 263 AH (July–August of 877 CE). [...] "
+                "Based on this evidence and on the many doubts about Ibn Abi Zar's narrative, he argues that Fatima al-Fihriya is quite possibly a legendary figure rather than a historical one.",
+                nome="Fatima al-Fihri"),
+        ],
+    },
+    # 4 o papel de Talas: uma história bonita demais
+    {
+        "temas_secundarios": ["asia_antiga", "comercio_rotas"],
+        "tipos_espanto": ["mito_desmentido", "origem_inesperada"],
+        "gancho": "Uma história famosa diz que o papel chegou ao mundo islâmico por chineses capturados na batalha de Talas, em 751. Mas já se usava papel em Samarcanda décadas antes, e nenhuma fonte chinesa registra a transferência.",
+        "explicacao": (
+            "Em 751, às margens do rio Talas, na Ásia Central, o exército abássida venceu as tropas da dinastia chinesa "
+            "Tang. Um historiador persa do século XI, al-Tha'alibi, escreveu que prisioneiros chineses tomados ali "
+            "teriam levado a fabricação de papel a Samarcanda. Para Jonathan Bloom, especialista em arte islâmica e na "
+            "história do papel, a ligação é improvável. Há fragmentos de papel dos séculos IV e V em Turpan e Gaochang, "
+            "e cartas em sogdiano dos séculos IV a VI achadas em Dunhuang e Loulan, uma delas trocada com Samarcanda. "
+            "Segundo Bloom, a cidade usava papel, e provavelmente o produzia, várias décadas antes da batalha. Du Huan, "
+            "um chinês capturado em Talas que depois voltou para casa, citou tecelões, pintores, ourives e prateiros "
+            "entre os prisioneiros, mas nenhum papeleiro. Há ainda uma diferença técnica: no século VIII, o papel chinês "
+            "era feito sobretudo de fibras de casca de plantas, e o islâmico, de trapos, o que sugere uma tradição local "
+            "mais antiga. Seja como for, o papel se espalhou depressa pelo mundo islâmico: há registros de fabricação em "
+            "Bagdá em 793 e no Egito em 900. Ficou até uma marca na língua: a palavra inglesa ream, a resma de papel, "
+            "vem do árabe rizma, fardo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Battle_of_Talas",
+                "was an armed confrontation between the Abbasid Caliphate along with the Tibetan Empire against the Tang dynasty and its allies in 751. [...] "
+                "Chinese prisoners captured at the Battle of Talas in 751 introduced paper manufacturing to Samarkand. "
+                "They engaged in the craft of papermaking while living on land occupied by the Abbasids following Talas. However, this account is unlikely to be factual. "
+                "Paper was already in use throughout Central Asia by the 8th century; paper fragments dating to the 4th and 5th centuries have been found in the areas of Turpan and Gaochang, "
+                "and letters written in the Sogdian language between the 4th and 6th centuries have been found in Dunhuang and Loulan. One such letter was a communication with Samarkand. "
+                "According to Jonathan Bloom, paper was used in Samarkand, and probably produced there, several decades before the battle. [...] "
+                "By the 8th century, Chinese paper was mostly made of bast fibers while Islamic papers were mostly made of rag fibers. "
+                "Bloom suggests that papermakers were already active in Central Asia for quite some time and had learned to use rag fibers rather than bast fibers as their primary papermaking material. "
+                "No historic Chinese source records this transfer of technology through prisoners of war and no contemporary Arabic accounts of the transfer of paper exist.",
+                nome="Battle of Talas"),
+            wiki("History_of_paper",
+                "According to the 11th century Persian historian, Al-Tha [...] Chinese prisoners captured at the Battle of Talas in 751 introduced paper manufacturing to Samarkand. However, there are no contemporary Arab sources for this battle. "
+                "A Chinese prisoner, Du Huan, who later returned to China reported weavers, painters, goldsmiths, and silversmiths among the prisoners taken, but no papermakers. [...] "
+                "According to Jonathan Bloom, a scholar of Islamic and Asian art with a focus on paper and printing, the connection between Chinese prisoners and the introduction of paper in Central Asia is \"unlikely to be factual\". [...] "
+                "There are records of paper being made at Gilgit in Pakistan by the sixth century, in Samarkand by 751, in Baghdad by 793, in Egypt by 900 [...] "
+                "the continued use of the word \"ream\" to count bundles of paper, a word derived from Arabic rizma (bundle, bale).",
+                nome="History of paper"),
+        ],
+    },
+    # 5 Abbas ibn Firnas e o voo sem cauda
+    {
+        "temas_secundarios": ["transportes", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Num relato antigo, o sábio Abbas ibn Firnas, de Córdoba, cobriu-se de penas, prendeu duas asas ao corpo, subiu no ar e pousou longe. Feriu o cóccix: teria esquecido que as aves pousam sobre a cauda.",
+        "explicacao": (
+            "Ibn Firnas, que viveu de cerca de 809 a 887 na Córdoba muçulmana, foi inventor, astrônomo, médico, químico, "
+            "músico e poeta. A ele se atribuem um método para fazer vidro incolor, lentes de leitura e uma técnica de "
+            "cortar cristal de rocha que dispensou mandar o quartzo para ser lapidado no Egito. O relato mais antigo da "
+            "tentativa de voo está num manuscrito único de uma crônica da corte de Córdoba, atribuída ao historiador Ibn "
+            "Hayyan, nascido por volta de 987, e guardado em Madri. Segundo ele, Ibn Firnas vestiu penas presas em seda, "
+            "com duas asas, subiu no ar perto de Rusafa, deu uma volta e pousou longe do ponto de partida, mas machucou "
+            "o cóccix por não ter levado em conta como as aves pousam. A pesquisadora Anderson vê nas duas asas sinal de "
+            "uma asa fixa, capaz de um breve planeio. Já o historiador Richard Hallion acha que ele provavelmente não "
+            "voou de verdade, mas fez uma espécie de salto de paraquedas com uma capa. Uma versão do século XVII, do "
+            "historiador al-Maqqari, conta que ele machucou as costas por não ter feito uma cauda. Em 1976, a União "
+            "Astronômica Internacional deu o nome dele a uma cratera da Lua."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Abbas_ibn_Firnas",
+            "809/810 – 887 CE) [...] "
+            "was an Andalusi polymath: an inventor, astronomer, physician, chemist, engineer, musician, and poet. He was reported to have experimented with unpowered flight. [...] "
+            "he lived in Córdoba [...] "
+            "Abbas ibn Firnas devised a means of manufacturing colourless glass. He invented various glass planispheres, and he made corrective lenses (\"reading stones\"). [...] "
+            "he developed a process for cutting rock crystal that enabled Al-Andalus to cease exporting quartz to Egypt to be cut. [...] "
+            "The earliest known account of Ibn Firnas's flight attempt appears in a unique manuscript of the Cordoban court chronicle al-Muqtabis II, attributed to the historian Ibn Hayyan (born 987/8), "
+            "now preserved in the Royal Academy of History in Madrid. "
+            "According to this account, Ibn Firnas covered himself in feathers fastened to silk and fitted himself with two wings, with which he rose into the air; "
+            "he flew from the vicinity of Rusafa, circled, and landed far from his starting point, but injured his tailbone because he had not accounted for the way birds land on their tails. [...] "
+            "She argues that the reference to two wings, together with the description of rising and moving through the air, suggests a fixed-wing device, rather than one with flapping wings, capable of lift and a brief sustained glide. "
+            "By contrast, Richard Hallion proposed that Ibn Firnas probably did not achieve true flight, but rather a kind of medieval parachute drop using a cloak. "
+            "Some seven centuries after the death of Firnas, the Algerian historian Ahmad al-Maqqari (d. 1632) wrote a description of Ibn Firnas [...] "
+            "his back was very much hurt, for not knowing that birds when they alight come down upon their tails, he forgot to provide himself with one. [...] "
+            "In 1976, the International Astronomical Union (IAU) approved the naming of a crater on the moon after Ibn Firas",
+            nome="Abbas ibn Firnas")],
+    },
+    # 6 o hospital que pagava o paciente na alta
+    {
+        "temas_secundarios": ["historia_medicina", "historia_musica"],
+        "tipos_espanto": ["contraintuitivo", "engenhosidade"],
+        "gancho": "No Cairo do século XIII, o hospital al-Mansuri tratava ricos e pobres de graça, usava música como terapia e, na alta, dava ao paciente comida e dinheiro para compensar o salário perdido.",
+        "explicacao": (
+            "Os bimaristãs, hospitais do mundo islâmico medieval, eram sustentados por doações perpétuas chamadas waqf, "
+            "cujos documentos fixavam as regras: ninguém podia ser recusado por raça, religião, cidadania ou sexo, nem "
+            "mesmo quem tinha doença mental, e não havia prazo de internação, pois o hospital devia cuidar do paciente "
+            "até a cura completa. O al-Mansuri, concluído em 1284, foi obra do sultão mameluco al-Mansur Qalawun, que "
+            "teve a ideia depois de ficar internado num hospital de Damasco, o al-Nuri. O tratamento era gratuito, e o "
+            "hospital recebia pessoas de todas as origens sociais e religiosas, com mesquita e também capela para "
+            "cristãos. Como o hospital de Fustat antes dele, tratava doentes mentais e usava música como terapia. Em "
+            "Aleppo, o hospital Arghun cuidava desses pacientes com luz abundante, ar fresco, água corrente e música. "
+            "Nesses hospitais, alas masculinas e femininas eram separadas, mas igualmente equipadas, e cada paciente era "
+            "atendido por pessoal do mesmo sexo. O al-Mansuri funcionou até o século XV, e o prédio ainda existe no "
+            "Cairo. O al-Nuri, que operou por uns 700 anos, também formou médicos: um de seus alunos foi Ibn al-Nafis, "
+            "o primeiro a descrever como o sangue passa pelos pulmões."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Bimaristan",
+            "Bimaristans served people regardless of their race, religion, citizenship, or gender. "
+            "The waqf documents instructed that nobody should be turned away; this included those with mental illnesses or disorders. "
+            "In Aleppo's Arghun Hospital, for example, care for mental illness included abundant light, fresh air, running water, and music. [...] "
+            "Inpatients were not given a time limit. Instead, waqf documents stated that the hospital was required to care for patients until full recovery. "
+            "Male and female wards were separate but equally equipped. [...] "
+            "Patients were treated by nurses and staff of their same gender. [...] "
+            "Islamic hospitals attained their endowment through charitable donations or bequests, called a waqf. [...] "
+            "The Al-Mansuri Hospital was another hospital located in Cairo, and was completed in 1284 CE. "
+            "Its founder, Al-Mansur Qalawun, was inspired to establish a hospital after his own experience being hospitalized in Damascus. "
+            "Because of Al-Mansur's vision for the hospital, treatment was free to make the hospital accessible to both the rich and the poor. "
+            "Furthermore, \"...upon discharge the patient was given food and money as a compensation for the wages he lost during his stay in the hospital.\" "
+            "The hospital also accepted patient of all social and religious background, having both the chapel for Christians and the mosque. [...] "
+            "Like the Al-Fustat Hospital before it, the Al-Mansuri Hospital also treated mental patients and introduced music as a form of therapy. [...] "
+            "The Al-Mansuri Hospital remained operational through the 15th century CE and still stands in Cairo today [...] "
+            "The Al-Nuri Hospital, which operated for some 700 years, was the same hospital where Al-Mansur Qalawun was treated and inspired to establish his own hospital in Cairo. [...] "
+            "The Al-Nuri Hospital was also a prestigious medical school, with one of its most noteworthy students being Ibn al-Nafis, who would later pioneer the theory of pulmonary circulation.",
+            nome="Bimaristan")],
+    },
+    # 7 Ibn Battuta: 117 mil km e trechos copiados
+    {
+        "temas_secundarios": ["grandes_navegacoes", "literatura"],
+        "tipos_espanto": ["escala_absurda", "historia_humana"],
+        "gancho": "Ibn Battuta saiu de Tânger aos 21 anos para uma peregrinação a Meca que costumava levar dezesseis meses. Só voltou ao Marrocos 24 anos depois, após somar cerca de 117 mil km de viagens, bem mais que Marco Polo.",
+        "explicacao": (
+            "Ibn Battuta partiu em 14 de junho de 1325, filho de uma família de juristas. O nome dele significa \"filho do "
+            "patinho\". Pelas estimativas, percorreu uns 117 mil km, contra uns 50 mil do almirante chinês Zheng He e 24 "
+            "mil de Marco Polo. Nas Maldivas, recém-convertidas ao islã, os chefes locais precisavam de um juiz que "
+            "soubesse árabe e o Alcorão. Deram-lhe pérolas, joias de ouro e escravos e, ao mesmo tempo, tornaram "
+            "impossível que ele partisse de navio. Ele virou juiz-chefe, casou-se na família real e acabou deixando o "
+            "cargo depois de sentenças duras e intrigas políticas. De volta em 1354, ditou suas memórias ao estudioso "
+            "Ibn Juzayy, por sugestão do sultão do Marrocos. Nada indica que tenha tomado notas nos vinte e nove anos de viagem: "
+            "dependeu da memória e de relatos de viajantes anteriores. Ibn Juzayy copiou, sem dar crédito, trechos do "
+            "andaluz Ibn Jubayr, escritos mais de 150 anos antes, sobre Damasco, Meca e Medina, e estudiosos modernos "
+            "acham que Ibn Battuta não visitou todos os lugares que descreve; há quem duvide até que tenha ido à China. "
+            "O livro, conhecido como Rihla, ficou desconhecido fora do mundo muçulmano até o começo do século XIX."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ibn_Battuta",
+            "Ibn Battuta travelled more than any other explorer in pre-modern history, totalling around 117,000 km (73,000 mi), "
+            "surpassing Zheng He with about 50,000 km (31,000 mi) and Marco Polo with 24,000 km (15,000 mi). [...] "
+            "\"Ibn Battuta\" is a patronymic, literally meaning 'son of a duckling'. [...] "
+            "born into a family of Islamic legal scholars [...] in Tangier [...] "
+            "On 2 Rajab 725 AH (14 June 1325 AD), Ibn Battuta set off from his home town at the age of 21 to perform a hajj (pilgrimage) to Mecca, a journey that would ordinarily take sixteen months. [...] "
+            "He would not return to Morocco again for 24 years. [...] "
+            "However, the leaders of the formerly Buddhist nation that had recently converted to Islam were looking for a chief judge, someone who knew Arabic and the Qur'an. "
+            "To convince him to stay they gave him pearls, gold jewellery, and slaves, while at the same time making it impossible for him to leave by ship. "
+            "Compelled into staying, he became a chief judge and married into the royal family of Omar I. [...] "
+            "these and other strict judgements began to antagonise the island nation's rulers, and involved him in power struggles and political intrigues. "
+            "Ibn Battuta resigned from his job as chief qadi [...] "
+            "After returning home from his travels in 1354, and at the suggestion of the Marinid ruler of Morocco, Abu Inan Faris, Ibn Battuta dictated an account in Arabic of his journeys to Ibn Juzayy [...] "
+            "There is no indication that Ibn Battuta made any notes or had any journal during his twenty-nine years of travelling. "
+            "When he came to dictate an account of his experiences, he had to rely on memory and manuscripts produced by earlier travellers. "
+            "Ibn Juzayy did not acknowledge his sources and presented some of the earlier descriptions as Ibn Battuta's own observations. "
+            "When describing Damascus, Mecca, Medina, and some other places in the Middle East, he clearly copied passages from the account by the Andalusian Ibn Jubayr which had been written more than 150 years earlier. [...] "
+            "Modern scholars do not believe that Ibn Battuta visited all the places he described [...] "
+            "Some scholars have also questioned whether he actually visited China. [...] "
+            "Ibn Battuta's work was unknown outside the Muslim world until the beginning of the 19th century",
+            nome="Ibn Battuta")],
+    },
+    # 8 as sete regras de Avicena para testar remédios
+    {
+        "temas_secundarios": ["historia_medicina", "farmacos"],
+        "tipos_espanto": ["engenhosidade", "conexao_inesperada"],
+        "gancho": "No Cânone da Medicina, concluído em 1025, Avicena listou sete regras para testar remédios, como começar pela dose mais fraca e testar no corpo humano, não só em animais. O livro foi ensinado na Europa por séculos.",
+        "explicacao": (
+            "O Cânone, de Ibn Sina, conhecido no Ocidente como Avicena, é uma enciclopédia médica em cinco livros que "
+            "reunia o saber do mundo islâmico, herdeiro de tradições gregas, persas, chinesas e indianas. O segundo livro "
+            "lista cerca de 800 substâncias medicinais simples e traz as sete regras, tiradas em parte de Galeno. O "
+            "remédio deve estar livre de qualidades adquiridas, como calor, frio ou contato com outras substâncias. Deve "
+            "ser testado numa doença isolada, e não em paciente com vários males, e em duas condições contrárias. A dose "
+            "deve começar pela mais fraca e subir aos poucos, até não restar dúvida sobre a potência. É preciso observar "
+            "o tempo que o efeito leva para aparecer. O efeito tem de se repetir em todos os casos, ou na maioria; se "
+            "não, é acidental. E o teste deve ser feito no corpo humano, porque o remédio pode agir nele de forma "
+            "diferente do que age num animal. Traduzido para o latim em Toledo no século XII, o Cânone virou livro-texto "
+            "das universidades europeias. A primeira edição impressa em latim saiu em 1472, e em Pádua ele ainda era "
+            "ensinado como leitura de apoio em 1715. O médico William Osler o chamou de \"o livro de medicina mais "
+            "famoso já escrito\"."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("The_Canon_of_Medicine",
+            "is an encyclopedia of medicine in five books compiled by Ibn Sina [...] and completed in 1025. [...] "
+            "It presents an overview of the contemporary medical knowledge of the Islamic world, which had been influenced by earlier traditions including Greco-Roman medicine (particularly Galen), Persian medicine, Chinese medicine and Indian medicine. "
+            "Its translation from Arabic to Latin in 12th century Toledo greatly influenced the development of medieval medicine. "
+            "It became the standard textbook for teaching in European universities into the early modern period. [...] "
+            "Book 2 (the Materia Medica) of the Canon alphabetically lists about 800 \"simple\" medical substances that were used at the time. [...] "
+            "The Canon contains seven rules for experimenting with new drugs, taken partly from Galen. "
+            "\"The drug must be free from any acquired quality\"; for example from being exposed to heat or cold or stored in close proximity to other substances. "
+            "\"The experiment must done on a single, not a composite condition\"; in other words it should not be tested on a patient who has complex or multiple illnesses. "
+            "\"The drug must be tested on two contrary conditions\" [...] "
+            "it is best to experiment first using the weakest [dosage] and then increase it gradually until you know the potency of the drug, leaving no room for doubt.\" "
+            "\"One should consider the time needed for the drug to take effect. [...] "
+            "\"The effect of the drug should be the same in all cases or, at least, in most. If that is not the case, the effect is then accidental [...] "
+            "\"Experiments should be carried out on the human body [...] the quality of the medicine might mean that it would affect the human body differently from the animal body...\" [...] "
+            "although it was still being taught as background literature as late as 1715 in Padua. [...] "
+            "The earliest printed edition of the Latin Canon appeared in 1472 [...] "
+            "William Osler described the Canon as \"the most famous medical textbook ever written,\"",
+            nome="The Canon of Medicine")],
+    },
+    # 9 al-Biruni mede a Terra do alto de um morro
+    {
+        "temas_secundarios": ["historia_matematica", "geometria_topologia"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "No século XI, al-Biruni calculou o raio da Terra sem viajar: mediu a altura de um morro no atual Paquistão e, do topo, quanto o horizonte parecia abaixo da linha horizontal. O resto foi trigonometria.",
+        "explicacao": (
+            "Al-Biruni, que viveu de cerca de 973 a 1050, nasceu em Kath, na Corásmia, e se destacou em física, "
+            "matemática, astronomia, história e linguística. Para medir a Terra, ele criou um método que pedia só um "
+            "lugar alto: em Nandana, na região de Pind Dadan Khan, mediu a altura de um morro e depois, do alto dele, o "
+            "ângulo em que o horizonte aparece rebaixado, a chamada depressão do horizonte. Quanto menor a Terra, mais o "
+            "horizonte \"cai\", e a trigonometria liga as duas medidas ao raio. O valor que ele deu foi de 12.803.337 "
+            "côvados. Uma análise citada o converte em 3.928,77 milhas, 2% acima do raio médio real, mas tudo depende do "
+            "tamanho do côvado, que não se sabe ao certo: com 18 polegadas seriam 3.600 milhas; com 22, 4.200. Há um "
+            "problema mais sério. Al-Biruni não conhecia a refração atmosférica, que curva a luz rasante, e não a "
+            "corrigiu. Ele usou um ângulo de 34 minutos de arco, e a refração pode alterar esse ângulo em cerca de um "
+            "sexto, o que deixa o cálculo com precisão de uns 20%. O método engenhoso tinha, portanto, um ponto fraco "
+            "invisível para a física da época."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Al-Biruni",
+            "c. 973 – c. 1050), known as Biruni [...] "
+            "Well versed in physics, mathematics, astronomy and the natural sciences, he also distinguished himself as a historian, chronologist and linguist [...] "
+            "Born in Kath in Khwarazm [...] "
+            "Bīrūnī devised a novel method of determining the Earth's radius by means of the observation of the height of a mountain. "
+            "He carried it out at Nandana in Pind Dadan Khan (present-day Pakistan). "
+            "He used trigonometry to calculate the radius of the Earth using measurements of the height of a hill and measurement of the dip in the horizon from the top of that hill. "
+            "Sparavigna writes that his calculated radius for the Earth of 3928.77 miles was 2% higher than the actual mean radius of 3847.80 miles. "
+            "His estimate was given as 12,803,337 cubits, so the accuracy of his estimate compared to the modern value depends on what conversion is used for cubits. "
+            "The exact length of a cubit is not clear; with an 18-inch cubit his estimate would be 3,600 miles, whereas with a 22-inch cubit his estimate would be 4,200 miles. "
+            "One significant problem with this approach is that Al-Biruni was not aware of atmospheric refraction and made no allowance for it. "
+            "He used a dip angle of 34 arc minutes in his calculations, but refraction can typically alter the measured dip angle by about 1/6, making his calculation only accurate to within about 20% of the true value.",
+            nome="Al-Biruni")],
+    },
+    # 10 Banu Musa: o flautista programável e a surra em al-Kindi
+    {
+        "temas_secundarios": ["ia_robotica", "historia_computacao"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "No século IX, em Bagdá, três irmãos filhos de um ex-salteador descreveram um flautista automático apontado como possível primeira máquina programável. Os mesmos irmãos levaram o califa a mandar surrar um sábio rival.",
+        "explicacao": (
+            "Os Banu Musa, Muhammad, Ahmad e al-Hasan, eram filhos de Musa ibn Shakir, que na juventude foi salteador de "
+            "estradas e astrônomo em Khorasan e depois serviu ao futuro califa al-Ma'mun. Órfãos, os meninos foram "
+            "criados na corte, e al-Ma'mun os pôs na Casa da Sabedoria, onde estudaram geometria, mecânica, música e "
+            "astronomia. Em 850, publicaram o Livro dos Dispositivos Engenhosos, com cerca de cem aparelhos. Muitos eram "
+            "jarros de truque para divertir convidados: uma mesma bica podia servir vinho, depois água, depois a mistura. "
+            "Por trás das brincadeiras havia válvulas automáticas, memórias mecânicas, controle por realimentação e até "
+            "um sistema à prova de falhas. Eles descreveram ainda um órgão movido a água que tocava com cilindros "
+            "trocáveis cheios de pinos e um flautista automático, considerado por alguns o primeiro sequenciador musical "
+            "programável. Ricos e influentes, os irmãos viraram inimigos do filósofo al-Kindi: ridicularizaram seu "
+            "tratado sobre o astrolábio e levaram o califa al-Mutawakkil a mandar espancá-lo, expulsá-lo da corte e "
+            "confiscar sua biblioteca. Os livros só voltaram ao dono com a ajuda do estudioso Sanad ibn Ali."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Banū_Mūsā",
+                "One of those inventions includes an automatic flute player that may have been the first programmable machine or computer. [...] "
+                "who earlier in life had been a highwayman and astronomer in Khorasan of unknown pedigree. "
+                "After befriending al-Ma'mun, who was then a governor of Khorasan and staying in Merv, Musa was employed as an astrologer and astronomer. "
+                "After Musa's death, the three orphaned children were cared for at the court of al-Ma [...] "
+                "Al-Ma’mun recognized their abilities, and enrolled them in the House of Wisdom [...] "
+                "the three brothers studied geometry, mechanics, music, mathematics and astronomy [...] "
+                "The inventions employ innovative engineering ideas, such as automatic one-way and two-way valves, mechanical memories, devices capable of responding to feedback, and delay mechanisms. [...] "
+                "The Banū Mūsā became enemies of al-Kindi, and assisted in his persecution by al-Mutawakkil. "
+                "They criticized and ridiculed his treatise on the astrolabe, and caused al-Mutawakkil to have him beaten, removed from court, and his library confiscated. "
+                "The library was returned back to him at a later date with the help of the Persian Jewish scholar Sanad ibn Ali",
+                nome="Banū Mūsā"),
+            wiki("Book_of_Ingenious_Devices",
+                "is a large illustrated work on mechanical devices, including automata, published in 850 by the three brothers of Persian descent, the Banū Mūsā brothers (Ahmad, Muhammad and Hasan ibn Musa ibn Shakir) "
+                "working at the House of Wisdom (Bayt al-Hikma) in Baghdad [...] The book described about one hundred devices and how to use them. [...] "
+                "For example, a single outlet pipe in a vessel might pour out first wine, then water and finally a mixture of the two. [...] "
+                "In modern terms, one would call the method used to achieve this result a fail-safe system.",
+                nome="Book of Ingenious Devices"),
+            wiki("Music_sequencer",
+                "As early as the 9th century, the Persian (Iranian) Banū Mūsā brothers invented a hydropowered organ using exchangeable cylinders with pins, "
+                "and also an automatic flute-playing machine using steam power, as described in their Book of Ingenious Devices. "
+                "The Banu Musa brothers' automatic flute player was the first programmable music sequencer device",
+                nome="Music sequencer"),
+        ],
+    },
+    # 11 Ibn al-Nafis e o sangue que passa pelos pulmões
+    {
+        "temas_secundarios": ["historia_medicina", "anatomia"],
+        "tipos_espanto": ["historia_humana", "conexao_inesperada"],
+        "gancho": "No século XIII, séculos antes de William Harvey, o médico Ibn al-Nafis negou os poros invisíveis de Galeno no coração e descreveu o sangue indo aos pulmões. O texto foi redescoberto em 1924, numa biblioteca de Berlim.",
+        "explicacao": (
+            "Ibn al-Nafis, que viveu de cerca de 1210 a 1288, passou a maior parte da vida no Egito e foi médico pessoal "
+            "do sultão Baibars. Até ele, prevalecia a teoria de Galeno, médico grego do século II: o sangue passaria do "
+            "lado direito do coração para o esquerdo por poros na parede que separa as cavidades, poros que Galeno nunca "
+            "viu e supôs pequenos demais. Num comentário à anatomia do Cânone de Avicena, Ibn al-Nafis afirmou que essa "
+            "parede é espessa e não tem passagem visível nem invisível. O sangue do lado direito, escreveu, segue pela "
+            "artéria pulmonar até os pulmões, mistura-se ao ar e volta pela veia pulmonar ao lado esquerdo. Ele previu "
+            "também pequenas comunicações entre a artéria e a veia pulmonar, antecipando em mais de 400 anos a descoberta "
+            "dos capilares. O manuscrito foi achado em 1924 pelo médico egípcio Muhyo Al-Deen Altawi na Biblioteca "
+            "Estatal Prussiana, em Berlim. Harvey só publicou seu livro sobre a circulação em 1628. Se a ideia chegou à "
+            "Europa, ainda se discute: Andrea Alpago, que estudou em Damasco, publicou em Veneza, em 1547, a tradução "
+            "latina de parte de outro comentário de Ibn al-Nafis, e Harvey chegou a Pádua em 1597. Pode ser só "
+            "coincidência."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ibn_al-Nafis",
+            "1210/1211 - 1288/1289 CE), known as Ibn al-Nafīs [...] "
+            "He is known for being the first to describe the pulmonary circulation of the blood. "
+            "The work of Ibn al-Nafis regarding the right sided (pulmonary) circulation pre-dates the later work (1628) of William Harvey's De motu cordis. [...] "
+            "Ibn al-Nafis lived most of his life in Egypt [...] "
+            "He even became the personal physician of the sultan Baibars [...] "
+            "In 1924, Egyptian physician, Muhyo Al-Deen Altawi, discovered a manuscript entitled, Sharh tashrih al-qanun li’ Ibn Sina, or \"Commentary on Anatomy in Avicenna's Canon\" in the Prussian State Library in Berlin [...] "
+            "The most commonly accepted theory of cardiac function prior to Ibn al-Nafis was that of Galen. "
+            "Galen taught that the blood reaching the right side of the heart went through invisible pores in the cardiac septum, to the left side of the heart [...] "
+            "However, he could not observe these pores and so thought they were too small to see. [...] "
+            "The thick septum of the heart is not perforated and does not have visible pores as some people thought or invisible pores as Galen thought. "
+            "The blood from the right chamber must flow through the vena arteriosa (pulmonary artery) to the lungs, spread through its substances, be mingled there with air, "
+            "pass through the arteria venosa (pulmonary vein) to reach the left chamber of the heart [...] "
+            "He stated that \"there must be small communications or pores (manafidh in Arabic) between the pulmonary artery and vein,\" a prediction that preceded the discovery of the capillary system by more than 400 years. [...] "
+            "In AD 1500, Andrea Alpago returned to Italy after studying in Damascus. "
+            "In Alpago's 1547 A.D. publication [...] there is a Latin translation containing part of Ibn al-Nafis' commentary on pharmacopeia. This was published in Venice during its rule over Padua. "
+            "Harvey arrived in Padua in AD 1597. The debate currently turns on whether these events are causally connected or are historical coincidences. [...] "
+            "The 2nd century Greek physician Galen's theory about the physiology of the circulatory system remained unchallenged until the works of Ibn al-Nafis",
+            nome="Ibn al-Nafis")],
+    },
+    # 12 al-Sufi e a "pequena nuvem" de Andrômeda
+    {
+        "temas_secundarios": ["galaxias", "historia_astronomia"],
+        "tipos_espanto": ["conexao_inesperada", "escala_absurda"],
+        "gancho": "Em 964, o astrônomo persa al-Sufi anotou uma \"pequena nuvem\" na constelação de Andrômeda. Era a primeira menção escrita conhecida a outra galáxia, mas só em 1925 Hubble mostrou que ela fica fora da Via Láctea.",
+        "explicacao": (
+            "Abd al-Rahman al-Sufi, que viveu de 903 a 986, trabalhava na corte buída de Isfahan, no atual Irã. Seu "
+            "Livro das Estrelas Fixas, concluído em 964, descreve 48 constelações e compara as estrelas do Almagesto de "
+            "Ptolomeu com os nomes árabes tradicionais, que pouco tinham a ver com os gregos. Ali aparece a mancha "
+            "difusa que hoje chamamos de Galáxia de Andrômeda, visível a olho nu em céus escuros; mapas celestes da "
+            "época a chamavam de Pequena Nuvem. Durante séculos, ninguém soube o que ela era. Em 1920, o chamado Grande "
+            "Debate, entre os astrônomos Harlow Shapley e Heber Curtis, discutiu se nebulosas espirais como essa eram "
+            "galáxias independentes. A questão foi resolvida em 1925, quando Edwin Hubble encontrou estrelas variáveis "
+            "cefeidas em fotos de Andrômeda feitas com o telescópio Hooker, de 2,5 metros, e com elas calculou a "
+            "distância. Estimativas atuais põem a galáxia a cerca de 2,5 milhões de anos-luz. Já a ideia de que ele também teria "
+            "registrado a Grande Nuvem de Magalhães parece ser um mal-entendido."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Abd_al-Rahman_al-Sufi",
+                "7 December 903 – 25 May 986) was a Persian astronomer. [...] "
+                "Al-Ṣūfī lived at the Buyid court in Isfahan. [...] "
+                "It has been claimed that he identified the Large Magellanic Cloud, but this appears to be a misunderstanding of a reference to some stars south of Canopus, which he admits he did not observe. "
+                "He also made the earliest recorded observation of the Andromeda Galaxy in 964, describing it as a \"small cloud\". "
+                "This was the first galaxy other than the Milky Way to be mentioned in writing. [...] "
+                "This book describes 48 constellations and the stars within them. "
+                "Al-Ṣūfī compared Greek constellations and stars as described in Ptolemy’s Almagest with Arabic ones, linking those that were the same. [...] "
+                "to relate Greek star names with the traditional Arabic names and constellations, which were largely unrelated and overlapped in complex ways.",
+                nome="Abd al-Rahman al-Sufi"),
+            wiki("Andromeda_Galaxy",
+                "The Andromeda Galaxy is visible to the naked eye in dark skies. "
+                "Around the year 964 CE, the Persian astronomer Abd al-Rahman al-Sufi described the Andromeda Galaxy in his Book of Fixed Stars as a \"nebulous smear\" or \"small cloud\". "
+                "This was the first historical reference to the Andromeda Galaxy and the earliest known reference to a galaxy other than the Milky Way. "
+                "Star charts of that period labeled it as the Little Cloud. [...] "
+                "which place the distance around 2.5 million light-years). "
+                "Curtis became a proponent of the so-called \"island universes\" hypothesis: that spiral nebulae were actually independent galaxies. "
+                "In 1920, the Great Debate between Harlow Shapley and Curtis took place concerning the nature of the Milky Way, spiral nebulae, and the dimensions of the universe. [...] "
+                "Edwin Hubble settled the debate in 1925 when he identified extragalactic Cepheid variable stars for the first time on astronomical photos of Andromeda. "
+                "These were made using the 100-inch (2.5 m) Hooker telescope, and they enabled the distance of the Great Andromeda Nebula to be determined.",
+                nome="Andromeda Galaxy"),
+        ],
+    },
+    # 13 Mansa Musa: o ouro no Cairo e o empréstimo na volta
+    {
+        "temas_secundarios": ["economia_curiosa", "dinheiro"],
+        "tipos_espanto": ["contraintuitivo", "mito_desmentido"],
+        "gancho": "Mansa Musa, rei do Mali, distribuiu tanto ouro no Cairo, a caminho de Meca em 1324, que o metal teria se desvalorizado no Egito por anos. Na volta, sem dinheiro, ele teve de pedir emprestado a juros altos.",
+        "explicacao": (
+            "Musa governou o Império do Mali no auge, com terras nos atuais Mali, Guiné, Senegal, Mauritânia e Gâmbia. "
+            "Sua peregrinação, o hajj de 1324, o tornou famoso em todo o mundo islâmico. A caravana acampou três dias "
+            "junto às pirâmides de Gizé e entrou no Cairo em 19 de julho. Crônicas árabes posteriores falam em milhares "
+            "de escravos carregando barras de ouro, números que os historiadores tratam como retórica, não como "
+            "estatística. O dado mais citado vem de al-Umari, que esteve no Cairo pouco depois: antes da visita, um "
+            "mithqal de ouro valia 25 dirhams de prata; depois, caiu para menos de 22 e não passou disso por pelo menos "
+            "12 anos. Há quem diga que isso arruinou a economia do Egito, mas o historiador Warren Schultz argumenta que "
+            "a variação ficou dentro das flutuações normais do ouro no Egito mameluco. A volta foi menos gloriosa. No "
+            "caminho de Meca ao Cairo, muitos peregrinos morreram de frio, fome ou ataques de bandidos, e Musa teve de "
+            "vender bens e tomar empréstimos de mercadores egípcios a juros altos. Segundo al-Umari e Ibn Khaldun, os "
+            "credores nunca foram pagos ou só receberam parte; outras fontes discordam."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Mansa_Musa",
+            "was the ninth Mansa of the Mali Empire, which reached its territorial peak during his reign. [...] "
+            "The Mali Empire comprised land that is now part of Guinea, Senegal, Mauritania, the Gambia, and the modern state of Mali [...] "
+            "Musa went on Hajj to Mecca in 1324 [...] "
+            "his hajj, or pilgrimage to Mecca, made him well known across North Africa and the Middle East. [...] "
+            "Arabic chroniclers writing after the event give widely varying figures for the size of Musa's caravan and the quantity of gold it transported, "
+            "and modern historians treat these numbers as rhetorical rather than statistical. "
+            "According to figures preserved in the later Arabic accounts, his procession included upwards of 12,000 slaves, all wearing brocade and Yemeni silk and each said to have carried 1.8 kg (4 lb) of gold bars [...] "
+            "Shihab al-Din al-'Umari, who visited Cairo shortly after the pilgrimage [...] "
+            "They camped for three days by the Pyramids of Giza before crossing the Nile into Cairo on 19 July. [...] "
+            "By the time they reached Suez, many of the Malian pilgrims had died of cold, starvation, or bandit raids, and they had lost much of their supplies. [...] "
+            "Al-Umari said that before Musa's arrival a mithqal of gold was worth 25 silver dirhams, but that it dropped to less than 22 dirhams afterward and did not go above that number for at least twelve years. "
+            "Though this has been described as having \"wrecked\" Egypt's economy, the historian Warren Schultz has argued that this was well within normal fluctuations in the value of gold in Mamluk Egypt. [...] "
+            "Mansa Musa ran out of money during his journey to Mecca and had to sell property and borrow from Egyptian merchants at a high rate of interest on his return journey. "
+            "Al-Umari and Ibn Khaldun state that the moneylenders were either never repaid or only partly repaid. "
+            "Other sources disagree as to whether they were eventually and fully compensated.",
+            nome="Mansa Musa")],
+    },
+    # 14 al-Razi, a carne pendurada e a sangria comparada
+    {
+        "temas_secundarios": ["historia_medicina", "cidades"],
+        "tipos_espanto": ["engenhosidade", "historia_humana"],
+        "gancho": "Conta-se que, para escolher onde erguer um grande hospital em Bagdá, o médico al-Razi mandou pendurar carne fresca em vários pontos da cidade e indicou o lugar onde ela demorou mais a apodrecer.",
+        "explicacao": (
+            "Abu Bakr al-Razi, médico persa nascido em Rey, perto da atual Teerã, por volta de 864, estudou em Bagdá e "
+            "chefiou hospitais ali e na cidade natal. Sob o califa al-Muktafi, que reinou de 902 a 908, recebeu a "
+            "tarefa de construir um novo hospital, que deveria ser o maior do califado abássida. A escolha do terreno "
+            "pela carne pendurada é o relato tradicional, hoje às vezes apresentado como uma abordagem baseada em "
+            "evidências. A preferência por comparar aparece em outros pontos da obra dele. Al-Razi comparou pacientes de "
+            "meningite tratados com sangria com outros tratados sem ela, para ver se o procedimento ajudava. Também "
+            "contestou Galeno: as descrições gregas de doenças urinárias, dizia, vinham de só três casos, enquanto ele "
+            "examinara centenas nos hospitais de Bagdá e Rey. Escreveu ainda um manual de medicina para quem não tinha "
+            "médico por perto, dedicado aos pobres e aos viajantes. No fim da vida ficou cego. Segundo um relato, "
+            "recusou a pomada de um médico que não soube dizer quantas camadas tem o olho: seus olhos, disse, não seriam "
+            "tratados por quem não conhece o básico da anatomia."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "consenso_parcial",
+        "fontes": [wiki("Abu_Bakr_al-Razi",
+            "864 or 865 – 925 or 935 CE), was a Persian Muslim physician [...] "
+            "Al-Rāzī studied medicine in Baghdad, where he spent much of his career, and became a successful physician who served as chief physician of hospitals in Baghdad and Ray. [...] "
+            "It is located on the southern slopes of the Alborz mountain range situated near Tehran, Iran. [...] "
+            "Under the reign of Al-Mutadid's son, Al-Muktafi (r. 902–908) al-Razi was commissioned to build a new hospital, which should be the largest of the Abbasid Caliphate. "
+            "To pick the future hospital's location, al-Razi adopted what is nowadays known as an evidence-based approach suggesting having fresh meat hung in various places throughout the city "
+            "and to build the hospital where meat took longest to rot. [...] "
+            "His eye affliction started with cataracts and ended in total blindness. [...] "
+            "Allegedly, he was approached by a physician offering an ointment to cure his blindness. "
+            "Al-Razi then asked him how many layers does the eye contain and when he was unable to receive an answer, he declined the treatment stating "
+            "\"my eyes will not be treated by one who does not know the basics of its anatomy\". [...] "
+            "For example, he stated that Galen's descriptions of urinary ailments were inaccurate as he had only seen three cases, while al-Razi had studied hundreds of such cases in hospitals of Baghdad and Rey. [...] "
+            "Al-Razi was possibly the first Persian doctor to deliberately write a home medical manual (remedial) directed at the general public. "
+            "He dedicated it to the poor, the traveller, and the ordinary citizen who could cons [...] "
+            "Al-Razi compared the outcome of patients with meningitis treated with blood-letting with the outcome of those treated without it to see if blood-letting could help.",
+            nome="Abu Bakr al-Razi")],
+    },
+]
