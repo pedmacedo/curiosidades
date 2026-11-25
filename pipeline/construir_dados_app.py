@@ -54,7 +54,9 @@ def _json(obj) -> str:
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":"), sort_keys=False)
 
 
-ARQUIVOS_APP = ["index.html", "estilo.css", "app.js", "recomendador.js", "armazenamento.js", "sw.js", "manifest.json"]
+ARQUIVOS_APP = ["index.html", "estilo.css", "app.js", "recomendador.js", "armazenamento.js", "fundos.js",
+                "sw.js", "manifest.json", "icones/icone.svg", "icones/icone-192.png", "icones/icone-512.png",
+                "icones/icone-180.png", "icones/icone-maskable-512.png"]
 
 
 def versao_app(pasta_app: Path) -> str:

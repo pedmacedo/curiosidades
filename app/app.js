@@ -5,6 +5,7 @@ import * as R from "./recomendador.js";
 import {
   criarArmazenamento, novoPerfil, exportarPerfil, lerPerfilImportado,
 } from "./armazenamento.js";
+import { FUNDOS } from "./fundos.js";
 
 const store = criarArmazenamento();
 const tela = document.getElementById("tela");
@@ -35,6 +36,11 @@ let rolagemTemas = 0; // posição da lista de temas, para voltar ao mesmo ponto
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const urlSegura = (u) => (/^https?:\/\//i.test(u) ? esc(u) : "#");
 const agora = () => new Date().toISOString();
+
+// Ilustração da área (fundos.js), decorativa: a cor sai do matiz da área no CSS.
+const estiloArea = (area) => (FUNDOS[area] ? `style="--matiz:${FUNDOS[area].matiz}"` : "");
+const capa = (area, classe = "capa") =>
+  FUNDOS[area] ? `<div class="${classe}" ${estiloArea(area)} aria-hidden="true">${FUNDOS[area].svg}</div>` : "";
 
 function hashTexto(s) {
   let h = 2166136261;
@@ -222,8 +228,8 @@ function etapa1(p) {
       <p class="leve">Marque como você se sente sobre cada área. Isso é só o ponto de partida: o app aprende com as suas reações.</p>
       <form id="form-areas">
         ${acervo.taxonomia.areas.map((a) => `
-          <fieldset class="area-escolha">
-            <legend>${esc(a.nome)}</legend>
+          <fieldset class="area-escolha" ${estiloArea(a.id)}>
+            <legend>${capa(a.id, "capa-mini")}<span>${esc(a.nome)}</span></legend>
             <div class="segmentado">
               ${OPCOES_AREA.map((o) => `
                 <label><input type="radio" name="${esc(a.id)}" value="${o.id}" ${(respostas[a.id] || "tanto_faz") === o.id ? "checked" : ""}><span>${o.nome}</span></label>`).join("")}
@@ -263,7 +269,8 @@ function etapa2(p) {
       <p class="passo">Etapa 2 de 2 · ${passoQuestionario + 1} de ${amostra.length}</p>
       <div class="progresso" aria-hidden="true"><span style="width:${(100 * passoQuestionario) / amostra.length}%"></span></div>
       <p class="leve">Qual a sua reação a esta curiosidade?</p>
-      <article class="cartao">
+      <article class="cartao" ${estiloArea(acervo.indice.temas.get(f.tema).area)}>
+        ${capa(acervo.indice.temas.get(f.tema).area)}
         <p class="rotulo">${esc(nomeArea(acervo.indice.temas.get(f.tema).area))} · ${esc(nomeTema(f.tema))}</p>
         <h1 class="gancho">${esc(f.gancho)}</h1>
       </article>
@@ -336,7 +343,8 @@ function htmlCartao(f, { favorito, aberto, rotulo = true }) {
   const area = acervo.indice.temas.get(f.tema).area;
   const paragrafos = f.explicacao.split(/\n{2,}/).map((t) => `<p>${esc(t)}</p>`).join("");
   return `
-    <article class="cartao" data-fato="${esc(f.id)}">
+    <article class="cartao" data-fato="${esc(f.id)}" ${estiloArea(area)}>
+      ${rotulo ? capa(area) : ""}
       ${rotulo ? `<p class="rotulo">${esc(nomeArea(area))} · ${esc(nomeTema(f.tema))}</p>` : ""}
       <h1 class="gancho">${esc(f.gancho)}</h1>
       <p class="etiquetas">
@@ -427,6 +435,7 @@ function telaTemas(param) {
   const porNome = (a, b) => a.nome.localeCompare(b.nome, "pt-BR");
   const areas = acervo.taxonomia.areas
     .map((a) => ({
+      id: a.id,
       nome: a.nome,
       temas: a.temas
         .filter((t) => acervo.indice.fatosPorTema.has(t.id))
@@ -448,7 +457,7 @@ function telaTemas(param) {
       <p class="leve" id="sem-temas" hidden>Nenhum tema com esse nome.</p>
       ${areas.map((a) => `
         <div class="area-temas" data-area="${esc(normalizar(a.nome))}">
-          <h2>${esc(a.nome)}</h2>
+          <h2 class="faixa-area" ${estiloArea(a.id)}>${capa(a.id, "capa-faixa")}<span>${esc(a.nome)}</span></h2>
           <ul class="lista-temas">
             ${a.temas.map((t) => `<li data-nome="${esc(normalizar(t.nome))}"><a href="#/temas/${encodeURIComponent(t.id)}">
               <span>${esc(t.nome)}</span>
@@ -497,8 +506,11 @@ function telaTema(id) {
   tela.innerHTML = `
     <section class="bloco">
       <a class="voltar" href="#/temas">← Todos os temas</a>
-      <p class="rotulo">${esc(nomeArea(tema.area))}</p>
-      <h1>${esc(tema.nome)}</h1>
+      <header class="topo-tema" ${estiloArea(tema.area)}>
+        ${capa(tema.area)}
+        <p class="rotulo">${esc(nomeArea(tema.area))}</p>
+        <h1>${esc(tema.nome)}</h1>
+      </header>
       ${descricao ? `<p class="leve">${esc(descricao)}</p>` : ""}
       <p class="leve pequeno">${fatos.length} curiosidade${fatos.length === 1 ? "" : "s"}. Ler aqui não muda as recomendações do feed.</p>
       <div class="lista-cartoes">${ordenados.map((f) => htmlCartao(f, { favorito: p.favoritos.includes(f.id), aberto: false, rotulo: false })).join("")}</div>

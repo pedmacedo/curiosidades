@@ -13,6 +13,7 @@ const ARQUIVOS = [
   "app.js",
   "recomendador.js",
   "armazenamento.js",
+  "fundos.js",
   "manifest.json",
   "icones/icone.svg",
   "icones/icone-180.png",

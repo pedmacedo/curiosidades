@@ -159,6 +159,51 @@ textarea { width: 100%; resize: vertical; }
 .acoes-cartao { display: flex; justify-content: space-between; margin-top: 6px; border-top: 1px solid var(--borda); }
 .lista-cartoes .cartao { margin-bottom: 12px; }
 
+/* ---------- ilustrações das áreas (fundos.js, gerado por pipeline/gerar_arte.py) ----------
+   Cada área tem um matiz (--matiz). O traço é discreto e some em degradê para não
+   competir com o texto. */
+.capa, .capa-mini, .capa-faixa {
+  --tinta: hsl(var(--matiz) 40% 34% / 0.5);
+  --fundo-a: hsl(var(--matiz) 60% 94%);
+  --fundo-b: hsl(calc(var(--matiz) + 26) 50% 88%);
+  color: var(--tinta);
+  background: linear-gradient(135deg, var(--fundo-a), var(--fundo-b));
+  overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  .capa, .capa-mini, .capa-faixa {
+    --tinta: hsl(var(--matiz) 55% 74% / 0.42);
+    --fundo-a: hsl(var(--matiz) 32% 21%);
+    --fundo-b: hsl(calc(var(--matiz) + 26) 30% 15%);
+  }
+}
+.capa svg, .capa-mini svg, .capa-faixa svg { display: block; width: 100%; height: 100%; }
+.cartao > .capa {
+  height: 104px; margin: -20px -18px 14px;
+  border-radius: calc(var(--raio) - 1px) calc(var(--raio) - 1px) 0 0;
+  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent);
+  mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+[style*="--matiz"] > .rotulo { color: hsl(var(--matiz) 50% 32%); }
+@media (prefers-color-scheme: dark) {
+  [style*="--matiz"] > .rotulo { color: hsl(var(--matiz) 60% 72%); }
+}
+.topo-tema > .capa { height: 120px; border-radius: var(--raio); margin-bottom: 14px; }
+.area-temas h2.faixa-area {
+  position: relative; display: flex; align-items: center;
+  min-height: 54px; padding: 0 14px; border-radius: 12px; overflow: hidden;
+  color: hsl(var(--matiz) 50% 26%);
+}
+@media (prefers-color-scheme: dark) { .area-temas h2.faixa-area { color: hsl(var(--matiz) 60% 80%); } }
+.capa-faixa { position: absolute; inset: 0; }
+.capa-faixa svg {
+  -webkit-mask-image: linear-gradient(to right, rgb(0 0 0 / 0.35) 10%, #000 60%);
+  mask-image: linear-gradient(to right, rgb(0 0 0 / 0.35) 10%, #000 60%);
+}
+.faixa-area > span { position: relative; }
+.area-escolha legend { display: flex; align-items: center; gap: 10px; }
+.capa-mini { flex: none; width: 64px; height: 36px; border-radius: 8px; }
+
 /* ---------- reações (perto do polegar) ---------- */
 .reacoes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .reacao {

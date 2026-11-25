@@ -22,7 +22,7 @@
 | 2. Piloto de conteúdo | ✅ Concluída em 2026-11-17 (Pedro revisou os 40: 39 ok, 1 chato; 39 fatos aprovados) |
 | 3. App MVP | ✅ Publicado em 2026-11-17 (https://pedmacedo.github.io/curiosidades/); o Pedro liberou a Fase 4 |
 | 4. Produção | ✅ Concluída em 2026-11-25: 163 de 163 temas cobertos, 2.258 fatos aprovados, `validar.py` sem erros (ver seção da Fase 4) |
-| 5. Polimento | — |
+| 5. Polimento | Em andamento. 2026-11-25: ilustração de fundo por área (16, em `app/fundos.js`) no cartão, na lista e na página de temas e no questionário, e ícone novo (lupa com planeta). Tudo gerado por `python pipeline/gerar_arte.py` (os PNGs do ícone saem do Edge/Chrome headless) |
 
 ## Fase 4: produção (desde 2026-11-17)
 
