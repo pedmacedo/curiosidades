@@ -9,7 +9,7 @@
 >
 > **Produção em paralelo (desde 2026-11-18, ideia do Pedro):** o orquestrador (a sessão principal) lança 4 subagentes produtores, um por tema da fila, com as regras de `pipeline/instrucoes_produtor.md`. Cada produtor só escreve, baixa (`pipeline/baixar_fontes.py`), monta e checa o seu lote, e depois faz o r2 com os vereditos. A verificação continua com o subagente `verificador` independente, de 4 a 5 fatos por chamada, e quem grava vereditos, aplica e mexe no PROGRESSO é só o orquestrador, um lote por vez, para não haver escrita simultânea em `dados/fatos`. Duplicatas entre lotes paralelos: o orquestrador mantém um e descarta o outro como `duplicado`.
 >
-> **Onde parou (2026-11-25):** 28 levas paralelas fechadas (121 temas, mais o lote de IA). A 28ª leva fez Crimes e mistérios da arte, Comércio e rotas, Conservação de alimentos, Decisões e Brinquedos e brincadeiras. A 29ª leva (Ecologia, Sono e relógio biológico, Atmosfera, História da astronomia e Estados da matéria) está em andamento; faltam 18 temas.
+> **Onde parou (2026-11-25):** 29 levas paralelas fechadas (126 temas, mais o lote de IA). A 29ª leva fez Ecologia, Sono e relógio biológico, Atmosfera, História da astronomia e Estados da matéria. A 30ª leva (Algoritmos, Falhas de engenharia, África antiga e medieval, Nomes de lugares e Pigmentos) está em andamento; faltam 13 temas.
 >
 > **Para retomar:** rode `python pipeline/situacao.py`. Ele mostra o lote pela metade (e o próximo passo), se é hora de amostra de revisão humana e os próximos temas da fila. Siga o "Fluxo de um lote" (seção da Fase 2) e, ao fim de cada tema, atualize a tabela da Fase 4 e as estatísticas.
 
@@ -177,6 +177,11 @@
 | Crimes da arte | 2026-11-25-crimes_arte-01 | 15 | 15 | 0 | 28ª leva paralela. Rodada 1: 9 aprovados, 6 ajustar. Destaques: o branco de titânio que pegou Beltracchi ainda não era vendido em 1914 (o composto já existia); o anatásio do Mapa de Vinlândia é mineral natural, e o indício é a forma em cristais arredondados; o Cupido envelhecido de Michelangelo vem dos biógrafos Condivi e Giovio, e Vasari não o conta; a data de 1609 da Natividade de Caravaggio é tradicional e está em debate; no Salvator Mundi entrou Charles Hope, que nega a autoria; a biga do Museu Britânico saiu do caso dos guerreiros etruscos. Os 6 aprovados na 2ª (1 com ajuste pontual). |
 | Conservação de alimentos | 2026-11-25-conservacao-01 | 15 | 15 | 0 | 28ª leva paralela (tema novo). Rodada 1: 6 aprovados, 9 ajustar. Destaques: Appert levou a conserva à indústria, mas donas de casa talvez já fizessem algo parecido; a instrução de abrir com martelo e talhadeira era das primeiras latas; a tese do chumbo na expedição Franklin ganhou críticas depois; o sorvete de astronauta ficou como dúvida (o Smithsonian diz que voou na Apollo 7); o '4 MeV' da irradiação estava errado na fonte e saiu; a pasteurização dispensava a fervura; os 27 dias do pote-em-pote vêm da revista Time; a data de 400 a.C. dos yakhchāls tem apoio fraco e saiu. Os 9 aprovados na 2ª. |
 | Decisões | 2026-11-25-decisoes_economia-01 | 15 | 14 | 1 | 28ª leva paralela (tema novo). Rodada 1: 6 aprovados, 8 ajustar, 1 reprovado (o paradoxo de Allais pedia conhecer a teoria da utilidade esperada e repetia o terreno de Ellsberg). Destaques: os 80% de redução dos respingos da mosca de Schiphol são estimativas nunca confirmadas por estudo controlado; no teste dos macacos-prego entrou a crítica de Silberberg (o tempo de espera pela recompensa) e o debate entre a meta-análise de 2024 e a reanálise de 2025; os pacientes da colonoscopia prolongada voltaram só um pouco mais; a multa das creches ficou com a revisão de 2020, que contesta a ideia de que pagar estraga tarefas prazerosas. Os 8 aprovados na 2ª (1 com ajuste pontual). |
+| Estados da matéria | 2026-11-25-estados_materia-01 | 15 | 13 | 2 | 29ª leva paralela (tema novo). Rodada 1: 5 aprovados, 8 ajustar, 2 reprovados (o gelo que escorrega e a bolsa térmica de clique repetiam fatos do acervo). Destaques: o gelo amorfo é 'provavelmente' a forma mais comum de água no universo, mas o gelo cristalino não é raro no espaço (anéis de Saturno); a data de agosto de 1911 para Onnes e o hélio superfluido não se sustenta; os cristais do tempo foram relatados em 2016–2017; Kistler abriu caminho para o Gorilla Glass, sem tê-lo proposto; o nome 'colestérico' não é de Lehmann em 1904; o mecanismo da expansão do gálio entrou no texto. Os 8 aprovados na 2ª (1 com ajuste pontual). |
+| Ecologia | 2026-11-25-ecologia-01 | 16 | 16 | 0 | 29ª leva paralela (tema novo). Rodada 1: 8 aprovados, 8 ajustar. Destaques: a análise de 21 anos que minimiza o 'medo dos lobos' em Yellowstone vale para os álamos da região norte; a mixomatose ajudou, mas não sozinha, a levar o lince-ibérico à beira da extinção; a culpa pelo sumiço dos ciclídeos do lago Vitória é dividida entre a perca-do-nilo, a eutrofização e a pesca (Ngoepe et al. 2024); nem todas as ilhotas de Simberloff voltaram ao equilíbrio em um ano; o mutualismo dos búfagos não foi desmentido; a Sacculina não faz o caranguejo macho 'dançar como fêmea'; o mecanismo das aranhas de Guam é suposto, não medido. Os 8 aprovados na 2ª. |
+| Atmosfera | 2026-11-25-atmosfera-01 | 16 | 14 | 2 | 29ª leva paralela (tema novo). Rodada 1: 5 aprovados, 9 ajustar, 2 reprovados (um quarto fato de ozônio, redundante e com a frase da DuPont de atribuição frágil; e os hemisférios de Magdeburgo, cuja cena de 1654 é contestada). Destaques: Midgley não criou o primeiro CFC (Swarts, anos 1890); os dados de satélite do buraco de ozônio foram marcados como prováveis erros, não descartados, e o '1976' era impossível para o Nimbus 7; a data da Grande Oxidação e as cianobactérias de 3,5 bilhões de anos são debatidas; o mar profundo seguiu sem oxigênio até ~580 milhões de anos; só 11% do potássio-40 vira argônio; os insetos respiram ativamente; Tateno fica perto de Tóquio, não do Fuji. Os 9 aprovados na 2ª. |
+| Sono e relógio biológico | 2026-11-25-sono_ritmos-01 | 16 | 16 | 0 | 29ª leva paralela (tema novo). Rodada 1: 9 aprovados, 7 ajustar. Destaques: o sono em dois turnos é tese de Ekirch sobre o Ocidente, com cerca de uma hora acordado no meio; a duração da estadia de Siffre na caverna diverge entre as fontes (ficou 'quase dois meses'); o ritmo do assistente de Kleitman só começou a se ajustar ao dia de 28 horas; as fragatas voam semanas sem pousar na água, não só 10 dias; o 'gene do sono curto' sugere, mas não prova, outra base; as células com melanopsina contribuem um pouco para a visão consciente; a descoberta do REM foi reescrita com texto próprio. Os 7 aprovados na 2ª (1 com ajuste pontual). |
+| História da astronomia | 2026-11-25-historia_astronomia-01 | 16 | 16 | 0 | 29ª leva paralela (tema novo). Rodada 1: 7 aprovados, 9 ajustar. Destaques: a datação do disco de Nebra foi contestada em 2020 e defendida no mesmo ano; Annie Cannon manteve O, B, A, F, G, K, M e N; Kepler, se tivesse matado Tycho, queria o laboratório, não os dados; a história de que Le Gentil foi dado como morto e teve a mulher recasada é duvidosa e saiu; Urano foi visto mais de 20 vezes antes de Herschel; o sextante de Ulugh Beg tinha ~40 m, não 36; a queda linear da velocidade de Júpiter é o modelo das tabuinhas babilônicas; na ema guarani só a cabeça e o pescoço são manchas escuras. Os 9 aprovados na 2ª. |
 
 ## Fase 2: piloto (2026-11-17)
 
@@ -430,19 +435,24 @@ Gerado por `python pipeline/estatisticas.py --markdown` (2026-11-25):
 | 2026-11-24-teatro_danca-01 | teatro_danca | 15 | 15 | 0 | 0% | 3/12/0 | — | 3.7 |
 | 2026-11-24-teoria_jogos-01 | teoria_jogos | 16 | 16 | 0 | 0% | 8/8/0 | — | 4.0 |
 | 2026-11-24-videogames-01 | videogames | 18 | 16 | 2 | 11% | 6/10/2 | pouco_interessante 2 | 3.9 |
+| 2026-11-25-atmosfera-01 | atmosfera | 16 | 14 | 2 | 12% | 5/9/2 | pouco_interessante 1, numero_divergente 1 | 3.6 |
 | 2026-11-25-biomimetica-01 | biomimetica | 12 | 11 | 1 | 8% | 2/9/1 | pouco_interessante 1 | 3.7 |
 | 2026-11-25-brinquedos-01 | brinquedos | 15 | 15 | 0 | 0% | 4/11/0 | — | 3.7 |
 | 2026-11-25-comercio_rotas-01 | comercio_rotas | 15 | 14 | 1 | 7% | 8/6/1 | pouco_interessante 1 | 4.0 |
 | 2026-11-25-conservacao-01 | conservacao | 15 | 15 | 0 | 0% | 6/9/0 | — | 3.7 |
 | 2026-11-25-crimes_arte-01 | crimes_arte | 15 | 15 | 0 | 0% | 9/6/0 | — | 4.0 |
 | 2026-11-25-decisoes_economia-01 | decisoes_economia | 15 | 14 | 1 | 7% | 6/8/1 | pouco_interessante 1 | 3.7 |
+| 2026-11-25-ecologia-01 | ecologia | 16 | 16 | 0 | 0% | 8/8/0 | — | 4.0 |
+| 2026-11-25-estados_materia-01 | estados_materia | 15 | 13 | 2 | 13% | 5/8/2 | duplicado 2 | 3.9 |
+| 2026-11-25-historia_astronomia-01 | historia_astronomia | 16 | 16 | 0 | 0% | 7/9/0 | — | 4.0 |
 | 2026-11-25-imperios_coloniais-01 | imperios_coloniais | 15 | 14 | 1 | 7% | 4/10/1 | duplicado 1 | 4.0 |
 | 2026-11-25-linguas_construidas-01 | linguas_construidas | 17 | 17 | 0 | 0% | 7/10/0 | — | 4.1 |
 | 2026-11-25-mundo_islamico_medieval-01 | mundo_islamico_medieval | 14 | 14 | 0 | 0% | 6/8/0 | — | 3.8 |
 | 2026-11-25-musica_brasileira-01 | musica_brasileira | 14 | 14 | 0 | 0% | 3/11/0 | — | 3.8 |
-| **Total** | | 2052 | 1990 | 62 | 3% | | | |
+| 2026-11-25-sono_ritmos-01 | sono_ritmos | 16 | 16 | 0 | 0% | 9/7/0 | — | 4.1 |
+| **Total** | | 2131 | 2065 | 66 | 3% | | | |
 
-Cobertura: 145 de 163 temas com pelo menos um fato aprovado.
+Cobertura: 150 de 163 temas com pelo menos um fato aprovado.
 
 ## Revisões humanas
 

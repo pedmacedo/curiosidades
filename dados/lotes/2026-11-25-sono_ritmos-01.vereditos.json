@@ -1,0 +1,156 @@
+{
+ "lote": "2026-11-25-sono_ritmos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "sono_ritmos-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem e consenso_parcial está certo; mas o gancho afirma como fato universal uma tese de Ekirch restrita ao Ocidente, e 'pagar a dívida de sono' é suposição da fonte.",
+    "correcao": "1) Trocar o gancho por: 'Um historiador reuniu mais de 500 registros de que, antes da luz elétrica, era comum no Ocidente dormir em dois turnos: um \"primeiro sono\", uma hora ou mais acordado no meio da noite e um \"segundo sono\".' 2) Trocar 'Depois de pagar a dívida de sono, eles passaram' por 'Depois de, ao que parece, pagar a dívida de sono, eles passaram'."
+   },
+   {
+    "id": "sono_ritmos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas conferem; mas '63 dias' é incompatível com 16/17 de julho a 14 de setembro (~60 dias), e as fontes divergem.",
+    "correcao": "Trocar 'Saiu depois de 63 dias convencido de que era 20 de agosto. Foi um choque.' por 'Quando a equipe anunciou o fim, depois de quase dois meses, ele estava convencido de que era 20 de agosto. Foi um choque.'"
+   },
+   {
+    "id": "sono_ritmos-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com a Springer; mas o ritmo de Richardson 'moved towards' o novo horário, não se adaptou por completo.",
+    "correcao": "No gancho, trocar 'O corpo do assistente se adaptou. O dele, não.' por 'O ritmo do assistente começou a se ajustar. O dele, não.'"
+   },
+   {
+    "id": "sono_ritmos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Números conferem (0,69 h/dia, 11,64 s); mas 'até 10 dias' transforma a duração dos voos registrados num limite (elas passam semanas sem pousar na água).",
+    "correcao": "Trocar 'Aves-fragata passam até 10 dias voando sobre o mar sem pousar.' por 'Aves-fragata voam dias seguidos sobre o mar sem pousar.'"
+   },
+   {
+    "id": "sono_ritmos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com PLOS ONE 2017 (2 h/dia, até 46 h sem dormir, sem rebote); ressalvas de amostra e sensor estão no texto."
+   },
+   {
+    "id": "sono_ritmos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com PNAS 2025 e Wikipédia (três critérios de sono, sem sistema nervoso central)."
+   },
+   {
+    "id": "sono_ritmos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Ronald J. Konopka (per0, perS 19 h, perL 29 h; efetivação negada duas vezes; base do Nobel de 2017)."
+   },
+   {
+    "id": "sono_ritmos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com FASPS (19h30 às 4h30, Ptáček 1999, PER2 em 2001); complementa o 0007."
+   },
+   {
+    "id": "sono_ritmos-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere (Weedon et al. 2022); mas o PAX8 muda 2,44 ou 3,24 minutos, e a outra base deve ser sugerida, não afirmada.",
+    "correcao": "1) Trocar 'muda o sono em pouco mais de 3 minutos' por 'muda a duração do sono em apenas 2 a 3 minutos'. 2) Trocar 'Isso indica que o sono curto das famílias estudadas tinha outra base, ainda não identificada.' por 'Isso sugere que o sono curto das famílias estudadas pode ter outra base, ainda não identificada.' 3) Trocar 'mostraram que outras pessoas com essas mutações' por 'mostraram que, em geral, outras pessoas com essas mutações'. 4) Trocar 'e a explicação se espalhou' por 'e a ideia de um \"gene do sono curto\" ficou famosa'."
+   },
+   {
+    "id": "sono_ritmos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com De Mairan e Circadian rhythm (1729, planta no escuro, Candolle 1823 com 22–23 h)."
+   },
+   {
+    "id": "sono_ritmos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Nightmare, Sleep paralysis e Pisadeira (pt.wikipedia); paralelo entre as línguas sustenta a nota."
+   },
+   {
+    "id": "sono_ritmos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Números conferem; mas a fonte diz que essas células contribuem um pouco para a visão consciente (Zaidi 2007), então 'não serve para enxergar' é falso.",
+    "correcao": "No gancho, trocar 'que não serve para enxergar.' por 'que quase não participa da visão: serve para acertar o relógio.' (se passar de 220, 'que não forma imagens.'). Opcional: depois de 'mantinham as respostas normais à luz que não dependem da visão', acrescentar ', e até percebiam vagamente uma luz azul intensa'."
+   },
+   {
+    "id": "sono_ritmos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Narcolepsy, Orexin e Emmanuel Mignot (dobermanns, 1998, receptor 2, hipótese autoimune com cautela)."
+   },
+   {
+    "id": "sono_ritmos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Timekeeping on Mars (24 h 39 min 35 s, deslize de ~40 min por dia, relógios marcianos nas missões)."
+   },
+   {
+    "id": "sono_ritmos-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Equilibrado e apoiado no artigo de 2024 e na réplica de 2025; disputa segue aberta."
+   },
+   {
+    "id": "sono_ritmos-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Fatos conferem e a morte está ressalvada; mas o trecho da descoberta do REM é tradução frase a frase do verbete Nathaniel Kleitman.",
+    "correcao": "Reescrever com palavras e ordem próprias o trecho de 'Ligou voluntários adormecidos' até 'e a mais atividade no cérebro.'. Exemplo: 'Para registrar a noite inteira, ele usava um eletroencefalógrafo antigo que gastava uns 800 metros de papel por noite. Nos traçados, apareciam várias fases em que os olhos dos voluntários se mexiam depressa sob as pálpebras fechadas. Desconfiado, Kleitman pediu uma nova rodada de testes, agora com a filha, Esther, como voluntária. O resultado se confirmou, e em 1953 os dois publicaram a descoberta do sono REM, associando essas fases aos sonhos e a um cérebro mais ativo.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "sono_ritmos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas (Ocidente; 'ao que parece'); retoque: a fonte diz 'about an hour'.",
+    "correcao": "'uma hora ou mais acordado' virou 'cerca de uma hora acordado'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "sono_ritmos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem 63 dias; 'quase dois meses'."
+   },
+   {
+    "id": "sono_ritmos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'começou a se ajustar'."
+   },
+   {
+    "id": "sono_ritmos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções aplicadas: 'voam dias seguidos'."
+   },
+   {
+    "id": "sono_ritmos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: PAX8 2 a 3 minutos; 'sugere'; 'em geral'."
+   },
+   {
+    "id": "sono_ritmos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções aplicadas: 'quase não participa da visão'; luz azul com trecho."
+   },
+   {
+    "id": "sono_ritmos-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: descoberta do REM com texto próprio; morte com sobriedade."
+   }
+  ]
+ }
+}

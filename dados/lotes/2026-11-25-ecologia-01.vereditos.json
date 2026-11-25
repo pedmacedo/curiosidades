@@ -1,0 +1,161 @@
+{
+ "lote": "2026-11-25-ecologia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "ecologia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere e o debate é real (consenso_parcial); mas a análise de 21 anos (Brice et al. 2025) trata só dos álamos da região norte, e a fonte fala do Northern Range, não do parque todo.",
+    "correcao": "Na explicação: (1) trocar 'Uma análise de 21 anos de dados concluiu que a mudança de comportamento dos elks provocada pelos lobos pode ser deixada de lado para entender a cascata local.' por 'Uma análise de 21 anos de dados sobre lobos, elks e álamos na região norte do parque concluiu que, ao menos para os álamos, a mudança de comportamento dos elks provocada pelo medo dos lobos pode ser deixada de lado para entender a cascata local.' (2) trocar 'E o parque não voltou ao estado anterior:' por 'E boa parte da região norte do parque não voltou ao estado anterior:'. Opcional: 'mito_desmentido' no lugar de 'conexao_inesperada'."
+   },
+   {
+    "id": "ecologia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Keystone species (Paine 1966/1969, 15 para 8 espécies, Menge); ideia já circula, nota 3."
+   },
+   {
+    "id": "ecologia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Roman e McCarthy 2010 (2,3×10^4 t de N, mais que os rios; ferro no Antártico citado no próprio artigo); consenso_parcial adequado."
+   },
+   {
+    "id": "ecologia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Mathewson et al. 2003 (10% a 60%, com a ressalva de que 60% pode estar inflado)."
+   },
+   {
+    "id": "ecologia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Números conferem com Graham et al. 2018 (760 vezes, 48%, pastejo 3,2 e 3,8 vezes) e Lancaster."
+   },
+   {
+    "id": "ecologia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Confere com Sato et al. 2011 (20 vezes mais chance de entrar no riacho, 60% da energia anual das trutas); manipulação dita com cautela."
+   },
+   {
+    "id": "ecologia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com o comunicado da University of Victoria (ninhos protegidos, 40% menos filhotes)."
+   },
+   {
+    "id": "ecologia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Cane toads in Australia (102 sapos em 1935, mais de 200 milhões em 2011, pernas e artrite, cobra adaptada)."
+   },
+   {
+    "id": "ecologia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "História e populações conferem; mas o declínio do lince e da águia ibéricos tem várias causas, e a mixomatose foi uma contribuição.",
+    "correcao": "Trocar 'O efeito subiu a cadeia alimentar: predadores especializados em coelhos, como o lince-ibérico e a águia-imperial-ibérica, ficaram à beira da extinção.' por 'O efeito subiu a cadeia alimentar: a queda dos coelhos ajudou a levar predadores especializados neles, como o lince-ibérico e a águia-imperial-ibérica, à beira da extinção.' Opcional: mencionar que a cepa veio do tapiti sul-americano (Sylvilagus brasiliensis), se estiver no trecho."
+   },
+   {
+    "id": "ecologia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas a culpa das extinções é dividida com a eutrofização e a pesca, e o declínio dos ciclídeos começou antes da perca (Ngoepe et al. 2024); a contagem é ~200 espécies.",
+    "correcao": "1) Gancho: trocar 'é apontada como causa do sumiço de centenas de espécies nativas.' por 'levou boa parte da culpa pelo sumiço de cerca de 200 espécies de peixes nativos, culpa hoje dividida com a poluição por nutrientes.' (≤ 220; se passar, encurte o trecho da lenha). 2) Depois de 'várias centenas de espécies nativas', acrescentar: 'Estudos mais recentes, porém, dividem a culpa: a eutrofização do lago (excesso de nutrientes, que turva a água e reduz o oxigênio) e a pesca também pesam, e dentes de peixes preservados no fundo do lago indicam que o declínio dos ciclídeos começou antes de a perca se multiplicar. O peso de cada causa ainda é debatido.' 3) Fonte nova: https://pmc.ncbi.nlm.nih.gov/articles/PMC10950456/ com trechos 'Suggested causal factors include anthropogenic eutrophication, fishing, and introduced non-native species', 'their relative importance remains unresolved' e 'began long before the arrival of Nile perch'. 4) confianca 'consenso_parcial'."
+   },
+   {
+    "id": "ecologia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mas nem todas as ilhas voltaram ao equilíbrio em um ano (a mais distante não), e 'sempre protege mais' não está na fonte; nota 3.",
+    "correcao": "No gancho, trocar 'Em um ano, o número de espécies voltou ao de antes, e mais rápido nas ilhas perto do continente.' por 'Em cerca de um ano, a maioria voltou ao número de espécies de antes, e as ilhas perto do continente se recuperaram mais rápido.' Na explicação, trocar 'Em um ano, as ilhas tinham voltado aos níveis anteriores' por 'Em cerca de um ano, as ilhas tinham, em geral, voltado aos níveis anteriores' e 'uma reserva grande sempre protege mais espécies que várias pequenas' por 'uma reserva grande abrigaria mais espécies que várias pequenas'."
+   },
+   {
+    "id": "ecologia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fonte sustenta; mas o mutualismo não foi desmentido (há estudos a favor), então mito_desmentido não cabe e 'não se demonstrou' é forte demais.",
+    "correcao": "Em tipos_espanto, deixar só ['contraintuitivo']. No gancho, trocar 'e não se demonstrou que reduzam os parasitas do hospedeiro.' por 'e há estudos em que não reduziram os parasitas do hospedeiro.' Na explicação, trocar 'e não se demonstrou relação estatisticamente significativa entre a presença das aves e uma carga menor de parasitas' por 'e há estudos que não acharam relação estatisticamente significativa entre a presença das aves e uma carga menor de parasitas'."
+   },
+   {
+    "id": "ecologia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números e datas conferem; mas a gralha-preta é a principal predadora na população estudada por Soler, não em geral.",
+    "correcao": "Trocar 'e que a gralha-preta, a principal predadora de ninhos de pega, é a menos sensível a ela.' por 'e que a gralha-preta, principal predadora de ninhos de pega na região estudada por Soler, é a menos sensível a ela.'"
+   },
+   {
+    "id": "ecologia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Kuris et al. 2008 e UCSB (biomassa de parasitas acima dos predadores de topo em três estuários)."
+   },
+   {
+    "id": "ecologia-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Núcleo confere; mas as 'danças de acasalamento das fêmeas' não têm apoio, e nem todo macho infectado é feminizado.",
+    "correcao": "No gancho, trocar 'Se o caranguejo é macho, o corpo dele ganha formato de fêmea, e ele chega a fazer as danças de acasalamento das fêmeas.' por 'Se o caranguejo é macho, o corpo dele costuma ganhar formato de fêmea, e ele passa a agir como uma.' Na explicação, trocar 'o abdômen alarga e achata como o de uma fêmea' por 'o abdômen costuma alargar e achatar como o de uma fêmea'."
+   },
+   {
+    "id": "ecologia-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem; mas 'sem quem as comesse' afirma mecanismo que o artigo só supõe, e as doze espécies sumiram da ilha (não necessariamente extintas no mundo).",
+    "correcao": "No gancho, trocar 'Sem quem as comesse, as aranhas se multiplicaram:' por 'Sem as aves, as aranhas se multiplicaram:'. Na explicação, trocar 'doze espécies desapareceram' por 'doze espécies de aves nativas sumiram da ilha'."
+   }
+  ],
+  "2": [
+   {
+    "id": "ecologia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Análise de 21 anos restrita aos álamos da região norte."
+   },
+   {
+    "id": "ecologia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'Ajudou a levar'; tapiti com trecho."
+   },
+   {
+    "id": "ecologia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Culpa dividida; fonte Ngoepe et al. 2024; consenso_parcial."
+   },
+   {
+    "id": "ecologia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: 'Em cerca de um ano, a maioria'; 'abrigaria mais'."
+   },
+   {
+    "id": "ecologia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Só contraintuitivo; 'há estudos que não acharam'."
+   },
+   {
+    "id": "ecologia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Gralha-preta na população estudada por Soler."
+   },
+   {
+    "id": "ecologia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Sem danças; 'costuma ganhar formato de fêmea'."
+   },
+   {
+    "id": "ecologia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'Sem as aves'; aves nativas sumiram da ilha."
+   }
+  ]
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "lote": "2026-11-25-atmosfera-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "atmosfera-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e a frase de McNeill conferem; mas 'o primeiro CFC' é falso (Swarts sintetizou nos anos 1890), e a morte deve ficar sóbria, sem método.",
+    "correcao": "GANCHO: trocar por 'O mesmo engenheiro americano criou a gasolina com chumbo e levou os CFCs para as geladeiras; esses gases depois corroeram a camada de ozônio. Um historiador disse que nenhum ser vivo prejudicou tanto a atmosfera.' EXPLICAÇÃO: trocar 'Com Albert Henne, Midgley sintetizou o diclorodifluorometano, o primeiro clorofluorocarboneto, vendido como Freon.' por 'Com Albert Henne, Midgley chegou ao diclorodifluorometano, um clorofluorocarboneto, que foi vendido como Freon e se espalhou também pelos aerossóis.' Trocar todo o trecho de 'O fim também virou lenda: ...' até '... o legista declarou suicídio.' por 'Paralisado pela pólio desde 1940, Midgley morreu em casa em 1944, aos 55 anos; o legista registrou a morte como suicídio.' TRECHO: retirar as passagens que descrevem o método (a do dispositivo e a das cordas e polias), manter '[...] his death was declared by the coroner to be a suicide.' e acrescentar 'On November 2, 1944, at the age of 55, he was found dead at his home in Worthington, Ohio.' e, para os aerossóis, 'their use as a propellant in aerosol products'."
+   },
+   {
+    "id": "atmosfera-0002",
+    "veredito": "reprovado",
+    "nota_surpresa": 3,
+    "motivo": "pouco_interessante: redundante com os outros três fatos de ozônio do lote (0001, 0003, 0004), e a frase da DuPont que sustenta o gancho tem atribuição frágil (citação de segunda mão, com versões diferentes)."
+   },
+   {
+    "id": "atmosfera-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas os dados do satélite foram marcados como prováveis erros (não rejeitados como irreais), o '1976' é impossível para o Nimbus 7 (lançado em 1978), e Farman começou em Halley em 1957.",
+    "correcao": "GANCHO: trocar 'eram marcados como erro pelo controle de qualidade dos dados' por 'eram marcados como prováveis erros pelo controle de qualidade dos dados'. EXPLICAÇÃO: trocar 'trabalhava desde 1957 na estação de Halley' por 'começou a trabalhar em 1957 na estação de Halley'. Trocar 'mas os algoritmos de controle de qualidade as rejeitaram de início como irreais, por serem baixas demais. Quando o programa rodou de novo sem essas marcas, o buraco apareceu nos dados desde 1976.' por 'mas os algoritmos de controle de qualidade marcavam esses valores, baixos demais, como prováveis erros, e eles ficaram fora das análises. Quando os dados brutos foram reprocessados sem essas marcas, o buraco apareceu também nos anos anteriores.' Retirar do trecho a frase do 1976."
+   },
+   {
+    "id": "atmosfera-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Bem apresentado como projeção e números conferem; mas a fonte não diz 'verão' na queimadura de cinco minutos, e o resfriamento tropical tem duas causas.",
+    "correcao": "GANCHO: trocar 'e o sol do verão em Washington queimaria a pele em cinco minutos' por 'e o sol em cidades como Washington queimaria a pele em cinco minutos'. EXPLICAÇÃO: trocar 'porque a própria perda de ozônio esfriaria a estratosfera a ponto de formar ali as nuvens que hoje só existem perto dos polos' por 'porque a perda de ozônio esfriaria a estratosfera e intensificaria a circulação de ar lá em cima, resfriando-a ainda mais, a ponto de formar ali as nuvens que hoje só existem perto dos polos' (apoio: 'the temperature change intensified the stratosphere's large-scale, slow-moving circulation pattern')."
+   },
+   {
+    "id": "atmosfera-0005",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "numero_divergente: a cena central é contestada (Guericke não teria mostrado os hemisférios com cavalos em Regensburg em 1654; o primeiro ensaio seria de 1657; as contagens de cavalos variam), e os hemisférios de Magdeburgo são conteúdo escolar conhecido."
+   },
+   {
+    "id": "atmosfera-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Fonte sustenta; mas a data de 2,46–2,426 é só uma estimativa (publicações divergem em ~500 milhões de anos), e as cianobactérias de 3,5 bilhões de anos são tema muito controverso.",
+    "correcao": "Na explicação: (1) trocar 'e só começou a se acumular entre 2,46 e 2,426 bilhões de anos atrás' por 'e só começou a se acumular há cerca de 2,4 bilhões de anos (a data exata é debatida; uma estimativa muito citada fica entre 2,46 e 2,426 bilhões de anos)'; (2) trocar 'As cianobactérias, que podem ter surgido até 3,5 bilhões de anos atrás,' por 'As cianobactérias, que segundo algumas estimativas, ainda contestadas, já existiriam há 3,5 bilhões de anos,'."
+   },
+   {
+    "id": "atmosfera-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Confere; mas a leitura de que o fim das formações bandadas marca o oxigênio no fundo do mar está superada (mar profundo anóxico até ~580 Ma, segundo a mesma fonte).",
+    "correcao": "Trocar 'o que se interpreta como o momento em que o oxigênio chegou ao fundo dos oceanos.' por 'o que por muito tempo foi lido como o momento em que o oxigênio chegou ao fundo dos oceanos; evidências mais recentes, porém, sugerem que o mar profundo continuou sem oxigênio por muito mais tempo.' Acrescentar ao trecho: 'The available evidence suggests that the deep ocean remained anoxic and ferruginous as late as 580 Ma, well after the Great Oxygenation Event'."
+   },
+   {
+    "id": "atmosfera-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com a ESA (630 mil km, SOHO, Apollo 16) e Atmospheric escape (3 kg/s); viralizou em 2019, nota 4."
+   },
+   {
+    "id": "atmosfera-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere; mas só 11,2% dos decaimentos do K-40 viram argônio (88,8% viram cálcio).",
+    "correcao": "Trocar 'presente no potássio natural, que ao decair se transforma em argônio.' por 'presente no potássio natural; numa parte dos decaimentos ele vira argônio (na maioria, vira cálcio).'"
+   },
+   {
+    "id": "atmosfera-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas o texto dá como fato que a respiração dos insetos é passiva, e a fonte diz que eles respiram ativamente.",
+    "correcao": "Trocar 'Insetos não têm pulmões: o oxigênio chega aos tecidos por um sistema respiratório em boa parte passivo, que funciona mal em corpos grandes.' por 'Insetos não têm pulmões: o oxigênio chega aos tecidos por uma rede de tubos, e a ideia era que esse sistema, tido como passivo, funcionaria mal em corpos grandes.' E trocar 'Por isso há outras hipóteses,' por 'Além disso, pesquisas mostraram que os insetos respiram ativamente, comprimindo e expandindo esses tubos. Por isso há outras hipóteses,'."
+   },
+   {
+    "id": "atmosfera-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com James Glaisher (1862, desmaio a ~8.800 m, estimativas de 9.500–10.900 m, Coxwell soltou a válvula, filme omite Coxwell)."
+   },
+   {
+    "id": "atmosfera-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere (esperanto, 1926, 19 relatórios); mas Tateno fica perto de Tóquio, não do monte Fuji, e Post recebe só parte do crédito.",
+    "correcao": "Na explicação, trocar 'dirigia o observatório aerológico de Tateno, perto do monte Fuji.' por 'dirigia o observatório aerológico de Tateno, no Japão.'. No gancho, trocar 'e o crédito muitas vezes vai para um aviador americano.' por 'e parte do crédito costuma ir para um aviador americano.'."
+   },
+   {
+    "id": "atmosfera-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Noctilucent cloud (76–85 km, mesosfera mais fria no verão por ascensão adiabática, ressalvas mantidas)."
+   },
+   {
+    "id": "atmosfera-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Núcleo confere; mas '2.500 °C perto do topo' não tem apoio, e a separação dos gases começa acima da turbopausa (~90 km), não aos 160 km.",
+    "correcao": "Trocar 'chegando a 2.000 °C ou mais conforme a atividade do Sol, e a 2.500 °C perto do topo.' por 'chegando a 2.000 °C ou mais conforme a atividade do Sol.'. Trocar 'Nessa altitude, os gases deixam até de se misturar' por 'Na termosfera, os gases deixam até de se misturar'."
+   },
+   {
+    "id": "atmosfera-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Scheele (oxigênio c. 1771, livro na gráfica de 1775 a 1777, crédito dividido)."
+   },
+   {
+    "id": "atmosfera-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem com a National Geographic (saldo perto de zero, 16%, 9%, CO2 abaixo de 0,5%); mito listado; correção já circulou, nota 3."
+   }
+  ],
+  "2": [
+   {
+    "id": "atmosfera-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem 'o primeiro CFC'; morte só com a declaração do legista, sem método."
+   },
+   {
+    "id": "atmosfera-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'prováveis erros'; sem 1976."
+   },
+   {
+    "id": "atmosfera-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem 'verão'; duas causas do resfriamento."
+   },
+   {
+    "id": "atmosfera-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: data debatida; cianobactérias contestadas."
+   },
+   {
+    "id": "atmosfera-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: mar profundo anóxico até 580 Ma."
+   },
+   {
+    "id": "atmosfera-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: só parte do K-40 vira argônio."
+   },
+   {
+    "id": "atmosfera-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: insetos respiram ativamente."
+   },
+   {
+    "id": "atmosfera-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: Tateno no Japão; parte do crédito."
+   },
+   {
+    "id": "atmosfera-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas: sem 2.500 °C; 'Na termosfera'."
+   }
+  ]
+ }
+}

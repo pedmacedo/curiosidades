@@ -1,0 +1,168 @@
+{
+ "lote": "2026-11-25-historia_astronomia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "historia_astronomia-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem e o mês extra está ressalvado; mas falta a contestação de 2020 da datação (rebatida no mesmo ano), e 'exatamente o ângulo' exagera 'correctly indicating'.",
+    "correcao": "1) Trocar 'Eles abrangem 82°, exatamente o ângulo entre' por 'Eles abrangem 82°, o ângulo entre'. 2) Depois de '...lido como as Plêiades.', inserir: 'A data vem dos objetos enterrados com ele e de análises do próprio disco e do local. Em 2020, dois arqueólogos propuseram uma data bem mais recente, da Idade do Ferro, mas outra equipe rebateu a proposta no mesmo ano, e as análises seguem confirmando a Idade do Bronze.' 3) Acrescentar ao trecho: 'A paper published in 2020 by Rupert Gebhard and Rudiger Krause questioned the Early Bronze Age dating of the Nebra disc and proposed a later Iron Age date instead. A response paper was published in the same year by Ernst Pernicka and colleagues, rejecting the arguments of Gebhard and Krause.'"
+   },
+   {
+    "id": "historia_astronomia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com SN 1054 (23 dias de dia, 642 no total) e Messier (lista para evitar confusão com cometas)."
+   },
+   {
+    "id": "historia_astronomia-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Biografia confere; mas Cannon manteve O, B, A, F, G, K, M e N (mais P e Q), não só sete letras.",
+    "correcao": "Trocar 'descartou quase todas as letras e ficou com O, B, A, F, G, K e M, nessa ordem.' por 'descartou a maioria das letras e pôs as que restaram na ordem O, B, A, F, G, K, M e N, além de P e Q para casos especiais.'"
+   },
+   {
+    "id": "historia_astronomia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Henrietta Swan Leavitt (estrelas da mesma nuvem à mesma distância, artigo de 1912, Mittag-Leffler em 1924); complementa galaxias-0001."
+   },
+   {
+    "id": "historia_astronomia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere (latão, exumação de 2010, sem veneno letal); mas o motivo atribuído a Kepler na fonte é o laboratório e os produtos químicos, não os dados.",
+    "correcao": "Trocar 'interessado no laboratório e nos dados do mestre' por 'que ganharia acesso ao laboratório e aos produtos químicos do mestre'."
+   },
+   {
+    "id": "historia_astronomia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Stellar parallax e James Bradley (objeção de Tycho, aberração anunciada em 1729, paralaxe medida em 1832–1838)."
+   },
+   {
+    "id": "historia_astronomia-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A trajetória confere; mas a declaração de morte, o novo casamento e o saque dos bens estão marcados como duvidosos na Wikipedia (versão popularizada por Bryson; as memórias não os citam).",
+    "correcao": "1) Trocar o gancho por: 'Um astrônomo francês passou 11 anos fora para ver dois trânsitos de Vênus e perdeu os dois, um por causa da guerra e outro por céu nublado. Na volta, sua vaga na Academia já era de outro.' 2) Não incluir no gancho nem na explicação a declaração de morte, o novo casamento ou o saque dos bens. 3) No trecho, cortar 'His wife had remarried, and all his relatives had \"enthusiastically plundered his estate\".', mantendo a substituição na Academia e as cartas perdidas."
+   },
+   {
+    "id": "historia_astronomia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas 'dezenas de vezes' só passa de 20 somando Flamsteed e Mayer, que não estão no trecho, e 'retribuiu' insinua troca pela pensão.",
+    "correcao": "1) No gancho, trocar 'dezenas de vezes antes' por 'mais de 20 vezes antes'. 2) Na explicação, trocar 'James Bradley o viu três vezes, e o francês Pierre Le Monnier, pelo menos doze, entre 1750 e 1769' por 'John Flamsteed o observou pelo menos seis vezes em 1690 e o catalogou como a estrela 34 Tauri; James Bradley o viu três vezes, Tobias Mayer uma, e o francês Pierre Le Monnier pelo menos doze, entre 1750 e 1769'. 3) Acrescentar ao trecho: 'The earliest definite sighting was in 1690, when John Flamsteed observed it at least six times, cataloguing it as 34 Tauri. James Bradley observed it three times, in 1748, 1750, and 1753. Tobias Mayer observed it once in 1756.' 4) Trocar 'Herschel retribuiu com o nome Georgium Sidus' por 'Herschel homenageou o novo patrono com o nome Georgium Sidus'."
+   },
+   {
+    "id": "historia_astronomia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Discovery of Neptune (1612–1613, estrela fixa, retrógrado naquele dia, sem prova de que o identificou como planeta); não repete sistema_solar-0010."
+   },
+   {
+    "id": "historia_astronomia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: o raio do sextante é ~40 m (página do observatório e outras fontes), não 36 m; '994 estrelas' convive com ~1.000; 'o maior entre Ptolomeu e Tycho' traduz mal (é temporal).",
+    "correcao": "1) No gancho, trocar 'um sextante com raio de uns 36 metros' por 'um sextante com raio de cerca de 40 metros'. 2) Na explicação, trocar 'tinha raio de cerca de 36 metros' por 'tinha raio de cerca de 40 metros, o maior instrumento astronômico do mundo na época'. 3) Na fonte Ulugh_Beg, tirar do trecho a frase dos 36 m; na fonte Ulugh_Beg_Observatory, acrescentar 'The radius of the sextant was 40.04 meters, which made it the largest astronomical instrument in the world at the time.' 4) Trocar 'catálogo de 994 estrelas tido como o maior entre os de Ptolomeu e de Tycho Brahe' por 'catálogo de cerca de mil estrelas, considerado o melhor feito no intervalo entre Ptolomeu e Tycho Brahe', e acrescentar ao trecho 'listed around 1,000 stars'."
+   },
+   {
+    "id": "historia_astronomia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Axial precession e Astrological sign (Hiparco e Espiga, ~26.000 anos, Thuban e Kochab); signos desalinhados já circulam, nota 3."
+   },
+   {
+    "id": "historia_astronomia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 5,
+    "motivo": "Tudo confere com a Universidade Humboldt; mas a queda linear da velocidade é o modelo das tabuinhas, não lei física.",
+    "correcao": "Trocar 'Nos 60 dias depois de reaparecer como estrela da manhã, a velocidade diária de Júpiter cai de forma linear.' por 'Nas tabuinhas, nos 60 dias depois de Júpiter reaparecer como estrela da manhã, a velocidade diária do planeta cai de forma linear.'"
+   },
+   {
+    "id": "historia_astronomia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Chankillo (século III a.C., 300 m, erro de um ou dois dias, Unesco 2021); gancho cauteloso."
+   },
+   {
+    "id": "historia_astronomia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "exagero: só a cabeça e o pescoço da ema guarani são manchas escuras; o corpo e a cauda são estrelas (só o emu australiano é todo de nebulosas escuras).",
+    "correcao": "1) Gancho: 'No Brasil e na Austrália, indígenas veem no céu uma grande ave cuja cabeça não é estrela, mas uma mancha escura da Via Láctea junto ao Cruzeiro do Sul: a ema dos guaranis e o emu dos aborígenes.' 2) Trocar 'A da Ema, Guyra Nhandu em guarani, usa o contrário: as faixas escuras da Via Láctea, que são nuvens de poeira.' por 'A da Ema, Guyra Nhandu em guarani, mistura as duas coisas: a cabeça e o pescoço são manchas escuras da Via Láctea, nuvens de poeira, e o corpo e a cauda são estrelas do Escorpião, do Lobo, do Triângulo Austral e do Altar.' 3) Trocar 'também é feito de nebulosas escuras contra o fundo da Via Láctea' por 'é feito inteiramente de nebulosas escuras contra o fundo da Via Láctea'."
+   },
+   {
+    "id": "historia_astronomia-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Relato atribuído a d'Abbeville; frase de Galileu confere (Discorso de 1616, 'vane chimere di moti di Luna')."
+   },
+   {
+    "id": "historia_astronomia-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Atribuições conferem ('supostamente' mantido); mas o 'delas' do gancho fica sem referente.",
+    "correcao": "No gancho, trocar 'Uma delas, Nicole-Reine Lepaute, foi apagada do livro.' por 'A mulher do trio, Nicole-Reine Lepaute, sumiu do livro.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "historia_astronomia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: sem 'exatamente'; contestação de 2020 rebatida."
+   },
+   {
+    "id": "historia_astronomia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: O B A F G K M N, P e Q."
+   },
+   {
+    "id": "historia_astronomia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: laboratório e produtos químicos."
+   },
+   {
+    "id": "historia_astronomia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: gancho novo, sem declaração de morte, casamento ou saque."
+   },
+   {
+    "id": "historia_astronomia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: mais de 20 vezes; Flamsteed e Mayer; 'homenageou'."
+   },
+   {
+    "id": "historia_astronomia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: ~40 m; cerca de mil estrelas."
+   },
+   {
+    "id": "historia_astronomia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 5,
+    "motivo": "Correções aplicadas: queda linear como modelo das tabuinhas."
+   },
+   {
+    "id": "historia_astronomia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: só cabeça e pescoço escuros na ema."
+   },
+   {
+    "id": "historia_astronomia-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas: 'A mulher do trio'."
+   }
+  ]
+ }
+}

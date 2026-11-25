@@ -1,0 +1,564 @@
+LOTE = "2026-11-25-estados_materia-01"
+AREA = "fisica_quimica"
+TEMA = "estados_materia"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 a gota de piche de Queensland
+    {
+        "temas_secundarios": ["minerais_rochas", "personagens_esquecidos"],
+        "tipos_espanto": ["historia_humana", "escala_absurda"],
+        "gancho": "Na Austrália, um funil de piche goteja desde 1930, cerca de uma gota por década. Em 1988, ao que parece, ninguém viu a gota cair: o responsável saíra para buscar uma bebida. Em 2000, a câmera falhou.",
+        "explicacao": (
+            "O experimento foi montado em 1927 por Thomas Parnell, da Universidade de Queensland, em Brisbane, para "
+            "mostrar aos alunos que certas substâncias com cara de sólido são, na verdade, fluidos muito viscosos. "
+            "Ele despejou piche aquecido num funil fechado, esperou três anos e, em 1930, cortou o lacre do gargalo. "
+            "Desde então, cada gota leva cerca de uma década para se formar e cair. Com a oitava, de novembro de "
+            "2000, calculou-se que o piche é umas 230 bilhões de vezes mais viscoso que a água. O Guinness o registra "
+            "como o experimento de laboratório mais longo em funcionamento contínuo, e deve haver piche para pelo "
+            "menos mais cem anos. John Mainstone cuidou dele de 1961 a 2013. Na queda de 1988, ao que parece, ele "
+            "tinha saído por um instante; na de 2000, problemas técnicos impediram a webcam de gravar. Ele morreu em agosto de 2013, "
+            "meses antes de a nona gota encostar na oitava, em abril de 2014. A primeira queda de uma gota de piche "
+            "filmada aconteceu em outro experimento, no Trinity College de Dublin, em julho de 2013. Em 2005, "
+            "Parnell e Mainstone receberam o Ig Nobel de física."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Pitch_drop_experiment",
+            "The best-known version of the experiment was started in 1927 by Thomas Parnell of the University of Queensland in Brisbane, Australia, to demonstrate to students that some substances which appear solid are highly viscous fluids. "
+            "Parnell poured a heated sample of the pitch into a sealed funnel and allowed it to settle for three years. "
+            "In 1930, the seal at the neck of the funnel was cut, allowing the pitch to start flowing. [...] "
+            "Each droplet forms and falls over a period of about a decade. "
+            "Between 1961 and 2013, the experiment was supervised by John Mainstone. "
+            "The seventh drop fell at approximately 4:45 p.m. on 3 July 1988, while the experiment was on display at Brisbane's World Expo 88. "
+            "However, apparently no one witnessed the drop fall itself; Mainstone had stepped out to get a drink at the moment it occurred. "
+            "The eighth drop fell on 28 November 2000, allowing experimenters to calculate the pitch as having a viscosity of approximately 230 billion times that of water. "
+            "This experiment is recorded in Guinness World Records as the \"world's longest continuously running laboratory experiment\", and it is expected there is enough pitch in the funnel to allow it to continue for at least another hundred years. [...] "
+            "In October 2005, Mainstone and Parnell were awarded the Ig Nobel Prize in physics [...] "
+            "The experiment is monitored by a webcam but technical problems prevented the November 2000 drop from being recorded. [...] "
+            "John Mainstone died on 13 August 2013, aged 78, following a stroke. [...] "
+            "The ninth drop touched the eighth drop on 12 April 2014 [...] "
+            "The pitch dripped around 17:00 IST on 11 July 2013, marking the first time that a pitch drop was successfully recorded on camera.",
+            nome="Pitch drop experiment")],
+    },
+    # 2 gelo VII dentro de diamantes
+    {
+        "temas_secundarios": ["minerais_rochas", "geologia_profunda"],
+        "tipos_espanto": ["conexao_inesperada", "contraintuitivo"],
+        "gancho": "Já se achou gelo dentro de diamantes: o gelo VII, uma das mais de vinte formas cristalinas da água, sólido à temperatura ambiente sob pressão imensa. O diamante, rígido, teria guardado a pressão do manto.",
+        "explicacao": (
+            "O gelo do freezer é só uma das fases sólidas da água. Mudando pressão e temperatura, já foram observadas "
+            "vinte e duas fases cristalinas diferentes, que diferem na estrutura do cristal, na ordem dos hidrogênios e na "
+            "densidade. Na Terra, quase todo o gelo é do tipo hexagonal, chamado Ih. O gelo VII aparece sob pressões "
+            "altíssimas: em laboratório, ao espremer água entre peças de diamante a 2.500 megapascals, ela vira gelo "
+            "VII, uma forma sólida à temperatura ambiente. Ele é também a fase molecular do gelo com o maior campo de "
+            "estabilidade, que vai de pressão alta a temperatura baixa. Em 2018, esse gelo foi identificado entre as "
+            "inclusões de diamantes naturais. A explicação provável: água ficou presa no diamante lá no fundo do "
+            "manto, e a rede rígida do cristal conservou a alta pressão enquanto o diamante subia e esfriava até a "
+            "temperatura da superfície. Assim se juntaram pressão alta e calor baixo, a receita do gelo VII. Como "
+            "essa descoberta mostrou que ele existe na natureza, a Associação Mineralógica Internacional o "
+            "classificou como um mineral à parte."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Ice_VII",
+            "Currently, twenty-two crystalline phases have been observed, including ice Ih, Ic, ..., XXI. [...] "
+            "On Earth, most ice is found in the hexagonal Ice Ih phase. [...] "
+            "The types are differentiated by their crystalline structure, proton ordering, and density. [...] "
+            "Thus, ice VII has the largest stability field of all of the molecular phases of ice. [...] "
+            "To create the required pressure, LLNL researchers compressed small amounts of water between pieces of diamond. "
+            "At 2500 MPa (360000 psi), the water became ice VII, a form that is solid at room temperature. [...] "
+            "In 2018, ice VII was identified among inclusions found in natural diamonds.  "
+            "Due to this demonstration that ice VII exists in nature, the International Mineralogical Association duly classified ice VII as a distinct mineral. "
+            "The ice VII was presumably formed when water trapped inside the diamonds retained the high pressure of the deep mantle due to the strength and rigidity of the diamond lattice, but cooled down to surface temperatures, producing the required environment of high pressure without high temperature.",
+            nome="Phases of ice")],
+    },
+    # 3 o gelo mais comum do universo é amorfo
+    {
+        "temas_secundarios": ["asteroides_cometas", "astrobiologia"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "O gelo de cristais hexagonais, o da Terra, é raríssimo no espaço. Lá predomina um gelo sem cristais, desordenado como um vidro, que provavelmente é a forma mais comum de água no universo.",
+        "explicacao": (
+            "No gelo comum, as moléculas de água se encaixam numa rede regular. No gelo amorfo, ou vítreo, não há "
+            "essa ordem de longo alcance: ele está para o gelo como o vidro está para um cristal. Uma forma de obtê-lo "
+            "é resfriar água líquida até cerca de 136 kelvin em milésimos de segundo, sem tempo para os cristais se "
+            "formarem. Outra é deixar o vapor de água se depositar devagar sobre uma superfície muito fria, abaixo de "
+            "120 kelvin. No espaço, espera-se que ele se forme assim, sobre grãos de poeira gelados. Por isso, o gelo "
+            "do meio interestelar é dominado pela forma amorfa, enquanto o gelo cristalino hexagonal, que predomina "
+            "na Terra, é raríssimo lá fora, e os exemplos conhecidos costumam estar ligados a vulcanismo. Esse gelo "
+            "desordenado pode ter papel nos cometas: a passagem dele para a forma cristalina, que libera energia, "
+            "foi proposta como mecanismo das explosões de atividade de alguns cometas, observadas longe demais do Sol "
+            "para que a sublimação do gelo comum explique o fenômeno."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Amorphous_ice",
+            "Such ice is an amorphous solid form of water, which lacks long-range order in its molecular arrangement. "
+            "Amorphous ice is produced either by rapid cooling of liquid water to its glass transition temperature (about 136 K or −137 °C) in milliseconds (so the molecules do not have enough time to form a crystal lattice), or by compressing ordinary ice at low temperatures. "
+            "The most common form on Earth, low-density ice, is usually formed in the laboratory by a slow accumulation of water vapor molecules (physical vapor deposition) onto a very smooth metal crystal surface under 120 K. "
+            "In outer space it is expected to be formed in a similar manner on a variety of cold substrates, such as dust particles. [...] "
+            "In outer space, hexagonal crystalline ice (the predominant form found on Earth) is extremely rare. "
+            "Known examples are typically associated with volcanic action. "
+            "Water in the interstellar medium is instead dominated by amorphous ice, making it likely the most common form of water in the universe. [...] "
+            "The possibility of the presence of amorphous water ice in comets and the release of energy during the phase transition to a crystalline state was first proposed as a mechanism for comet outbursts. "
+            "Evidence of amorphous ice in comets is found in the high levels of activity observed in long-period, Centaur, and Jupiter Family comets at heliocentric distances beyond ~6 AU. "
+            "These objects are too cold for the sublimation of water ice, which drives comet activity closer to the Sun, to have much of an effect.",
+            nome="Phases of ice")],
+    },
+    # 4 por que o gelo escorrega
+    {
+        "temas_secundarios": ["ciencia_esporte", "agua_doce_gelo"],
+        "tipos_espanto": ["mito_desmentido", "misterio_aberto"],
+        "gancho": "O patim não desliza porque a pressão da lâmina derrete o gelo, explicação do século XIX: por ela, patinar abaixo de uns −4 °C seria impossível. Por que o gelo escorrega ainda é estudado.",
+        "explicacao": (
+            "A ideia do \"derretimento por pressão\" foi a preferida quando o tema começou a ser estudado, no século "
+            "XIX: o peso concentrado na lâmina derreteria uma camada fina de gelo, que lubrificaria o deslize. Em "
+            "1939, Frank Bowden e T. P. Hughes mostraram que, se fosse só isso, os patinadores sentiriam muito mais "
+            "atrito do que sentem. Há outro problema: a temperatura ideal para a patinação artística é de −5,5 °C e, "
+            "para o hóquei, de −9 °C, mas pela teoria da pressão seria impossível patinar abaixo de −4 °C. Bowden e "
+            "Hughes propuseram que o calor do próprio atrito derrete a camada de gelo. Só que isso não explica por "
+            "que o gelo é escorregadio até para quem está parado. Outra hipótese diz que as moléculas da superfície "
+            "não conseguem se ligar direito às de baixo e ficam num estado semilíquido, que lubrifica "
+            "independentemente da pressão. Experimentos com microscopia de força atômica, porém, mediram atrito alto "
+            "no gelo e puseram essa hipótese em dúvida. Uma pesquisa de 2014 indica que o aquecimento por atrito é o "
+            "processo mais importante na maioria das situações comuns, mas o mecanismo segue em estudo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Ice",
+            "This subject was first scientifically investigated in the 19th century. "
+            "The preferred explanation at the time was \"pressure melting\" – i.e. the blade of an ice skate, upon exerting pressure on the ice, would melt a thin layer, providing sufficient lubrication for the blade to glide across the ice. "
+            "Yet, research in 1939 by Frank P. Bowden and T. P. Hughes found that skaters would experience a lot more friction than they actually do if it were the only explanation. "
+            "Further, the optimum temperature for figure skating is −5.5 °C (22 °F; 268 K) and −9 °C (16 °F; 264 K) for ice hockey; yet, according to pressure melting theory, skating below −4 °C (25 °F; 269 K) would be outright impossible. "
+            "Instead, Bowden and Hughes argued that heating and melting of the ice layer is caused by friction. "
+            "However, this theory does not sufficiently explain why ice is slippery when standing still even at below-zero temperatures. "
+            "Subsequent research suggested that ice molecules at the interface cannot properly bond with the molecules of the mass of ice beneath (and thus are free to move like molecules of liquid water). "
+            "These molecules remain in a semi-liquid state, providing lubrication regardless of pressure against the ice exerted by any object. "
+            "However, the significance of this hypothesis is disputed by experiments showing a high coefficient of friction for ice using atomic force microscopy. "
+            "Thus, the mechanism controlling the frictional properties of ice is still an active area of scientific study. [...] "
+            "Research in 2014 suggests that frictional heating is the most important process under most typical conditions.",
+            nome="Ice")],
+    },
+    # 5 hélio superfluido foge do copo
+    {
+        "temas_secundarios": ["mecanica_quantica", "termodinamica"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Abaixo de 2,17 kelvin, o hélio líquido flui sem atrito: passa por frestas que barrariam até um gás, sobe pelas paredes numa película finíssima e se esvazia sozinho de qualquer recipiente aberto.",
+        "explicacao": (
+            "Esse estado se chama superfluidez: um fluido com viscosidade zero, que escoa sem perder energia. Se for "
+            "mexido, forma redemoinhos que giram indefinidamente. No hélio-4, ele surge abaixo de 2,17 kelvin, o "
+            "chamado ponto lambda. Sem atrito, as forças de van der Waals passam a dominar: o líquido sobe contra a "
+            "gravidade e cria um sifão que drena qualquer recipiente aberto. A película que escala as paredes, a "
+            "\"película de Rollin\", tem cerca de 30 nanômetros de espessura. O hélio superfluido também pode correr "
+            "por tubos circulares por tempo arbitrariamente longo sem bomba nenhuma. A descoberta foi feita em 1937 "
+            "por Pyotr Kapitsa e, de forma independente, por John Allen e Don Misener, mas só Kapitsa levou o Nobel "
+            "por ela. E é possível que o holandês Heike Kamerlingh Onnes já tivesse visto essa transição em 2 de "
+            "agosto de 1911, sem perceber, no mesmo dia em que observou a supercondutividade no mercúrio. A "
+            "capacidade dos superfluidos de vencer obstáculos mais altos que eles leva hoje o nome dele: efeito Onnes."
+        ),
+        "nivel": 2, "nota_surpresa": 5, "confianca": "alta",
+        "fontes": [
+            wiki("Superfluid_helium-4",
+                "it exhibits frictionless flow, which permits it to pass through openings and passages that would restrict liquid helium I (that is, liquid helium above the lambda point, 2.17 K) and even other materials in a gaseous state. "
+                "Frictionless flow also allows Van der Waals forces to dominate its bulk behavior, such that the liquid will rise against gravity and then create a siphon that drains all liquid from any open container that holds it, alongside continuous flow (checked only by its own inertia) through circular pipes for arbitrarily long periods of time without pumping or other external applications of work. [...] "
+                "Onnes unknowingly observed the superfluid phase transition on August 2, 1911, the same day that he observed superconductivity in mercury.",
+                nome="Superfluid helium-4"),
+            wiki("Superfluidity",
+                "Superfluidity is the characteristic property of a fluid with zero viscosity which therefore flows without any loss of kinetic energy. "
+                "When stirred, a superfluid forms vortices that continue to rotate indefinitely. [...] "
+                "Superfluidity was discovered in helium-4 by Pyotr Kapitsa and independently by John F. Allen and Don Misener in 1937. "
+                "Onnes possibly observed the superfluid phase transition on August 2 1911, the same day that he observed superconductivity in mercury. [...] "
+                "Only Kapitza received the Nobel Prize for this discovery.",
+                nome="Superfluidity"),
+            wiki("Rollin_film",
+                "A Rollin film, named after Bernard V. Rollin, is a 30 nm-thick liquid film of helium in the helium II state. [...] "
+                "The ability of superfluid liquids to cross obstacles that lie at a higher level is often referred to as the Onnes effect, named after Heike Kamerlingh Onnes.",
+                nome="Rollin film"),
+        ],
+    },
+    # 6 cristais do tempo
+    {
+        "temas_secundarios": ["mecanica_quantica", "historia_computacao"],
+        "tipos_espanto": ["contraintuitivo", "historia_humana"],
+        "gancho": "Em 2012, um ganhador do Nobel propôs o \"cristal do tempo\", que se repetiria no tempo como um cristal comum se repete no espaço. Colegas publicaram que era impossível. Em 2017, duas equipes criaram uma versão dele.",
+        "explicacao": (
+            "Num cristal, os átomos formam um padrão que se repete no espaço. Em 2012, Alfred Shapere e Frank "
+            "Wilczek, professor do MIT e ganhador do Nobel, propuseram um análogo no tempo: um sistema cujo estado de "
+            "menor energia já seria de movimento repetitivo, sem parar nunca, porque não teria energia a perder. A "
+            "reação veio rápida: Patrick Bruno e Masaki Oshikawa publicaram artigos dizendo que cristais de "
+            "espaço-tempo eram impossíveis, e chegou-se a um teorema de \"não existência\" para sistemas em "
+            "equilíbrio. A brecha estava fora do equilíbrio. Nos chamados cristais do tempo discretos, o sistema "
+            "recebe pulsos periódicos e responde oscilando com um período maior que o dos pulsos, como se marcasse "
+            "o próprio compasso. Em março de 2017, a revista Nature publicou, na mesma edição, dois experimentos "
+            "independentes que os realizaram, um em Harvard e outro na Universidade de Maryland. Em 2021, a Google e "
+            "universidades relataram um cristal do tempo num processador quântico. Não se trata de moto-perpétuo: "
+            "esses cristais não violam a termodinâmica nem servem de reserva de trabalho. Um uso talvez futuro é "
+            "como memória de computadores quânticos."
+        ),
+        "nivel": 3, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Time_crystal",
+            "a time crystal is a quantum system of particles whose lowest-energy state is one in which the particles are in repetitive motion. "
+            "The system cannot lose energy to the environment and come to rest because it is already in its quantum ground state. "
+            "Time crystals were first proposed theoretically by Alfred Shapere and Frank Wilczek in 2012 as a time-based analogue to common crystals – whereas the atoms in crystals are arranged periodically in space, the atoms in a time crystal are arranged periodically in both space and time. [...] "
+            "In terms of practical use, time crystals may one day be used as quantum computer memory. [...] "
+            "the system shows oscillations with a period longer than the driving force [...] "
+            "Time crystals do not violate the laws of thermodynamics: energy in the overall system is conserved, such a crystal does not spontaneously convert thermal energy into mechanical work, and it cannot serve as a perpetual store of work. [...] "
+            "The idea of a quantized time crystal was theorized in 2012 by Alfred Shapere and Frank Wilczek, a Nobel laureate and professor at MIT. [...] "
+            "Patrick Bruno (European Synchrotron Radiation Facility) and Masaki Oshikawa (University of Tokyo) published several articles stating that space–time crystals were impossible. "
+            "Subsequent work developed more precise definitions of time-translation symmetry-breaking, which ultimately led to the Watanabe–Oshikawa \"no-go\" statement that quantum space–time crystals in equilibrium are not possible. [...] "
+            "These ideas were successful and independently realized by two experimental teams: a group led by Harvard's Mikhail Lukin and a group led by Christopher Monroe at University of Maryland. "
+            "Both experiments were published in the same issue of Nature in March 2017. [...] "
+            "In November 2021, a collaboration between Google and physicists from multiple universities reported the observation of a discrete time crystal on Google's Sycamore processor, a quantum computing device.",
+            nome="Time crystal")],
+    },
+    # 7 Cagniard de la Tour e o canhão que parou de chacoalhar
+    {
+        "temas_secundarios": ["acustica", "sistema_solar"],
+        "tipos_espanto": ["historia_humana", "engenhosidade"],
+        "gancho": "Em 1822, um barão francês descobriu o ponto em que líquido e gás viram uma coisa só pelo ouvido: girava uma bola de pederneira num cano de arma lacrado e aquecido. Acima de certa temperatura, o barulho do líquido sumia.",
+        "explicacao": (
+            "Charles Cagniard de la Tour, engenheiro e físico, punha líquidos num cano de arma fechado com uma bola "
+            "de pederneira dentro e o girava para ouvir o barulho da bola batendo na superfície do líquido. A partir "
+            "de certa temperatura, não havia mais barulho nenhum. É que, acima dela, as densidades do líquido e do "
+            "gás se igualam e a diferença entre os dois desaparece: resta uma única fase, o fluido supercrítico. Ele "
+            "mediu esse ponto em várias substâncias e, para a água, chegou a 362 °C; o valor moderno é 373,946 °C. O "
+            "fenômeno ganhou o nome de ponto crítico com Mendeleev, em 1860, e Thomas Andrews, em 1869. Fluidos "
+            "assim não são raridade de laboratório: na superfície de Vênus, a 462 °C e 9,3 megapascals, a atmosfera "
+            "de gás carbônico e nitrogênio está acima do ponto crítico dos dois, e a água que jorra das chaminés "
+            "hidrotermais do fundo do mar pode ser supercrítica. O gás carbônico supercrítico é usado para "
+            "descafeinar café. Curiosamente, apesar de alegações em contrário, não existe nenhum retrato conhecido "
+            "do barão."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Charles_Cagniard_de_la_Tour",
+                "was a French engineer and physicist. [...] "
+                "In 1822, he discovered the critical point of a substance in his gun barrel experiments. "
+                "He sealed a flint ball in a sealed gun barrel filled with fluids at various temperatures, and rotated it to hear the splashing sound as it hit the liquid surface. "
+                "He observed that above a certain temperature, there is no splashing sound. "
+                "Above this temperature, the densities of the liquid and gas phases become equal and the distinction between them disappears, resulting in a single supercritical fluid phase. "
+                "After this discovery, he performed quantitative measurements of the critical point of several substances such as water, alcohol, ether and carbon bisulphide. [...] "
+                "Despite several claims to the contrary, no portraits of Baron Cagniard de la Tour exist. [...] "
+                "in the case of water he determined this critical temperature to be 362 °C (modern figure is 373.946 °C).",
+                nome="Charles Cagniard de la Tour"),
+            wiki("Critical_point_(thermodynamics)",
+                "The existence of a critical point was first discovered by Charles Cagniard de la Tour in 1822 and named by Dmitri Mendeleev in 1860 and Thomas Andrews in 1869.",
+                nome="Critical point (thermodynamics)"),
+            wiki("Supercritical_fluid",
+                "Supercritical water is found on Earth, such as the water issuing from black smokers, a type of hydrothermal vent. "
+                "SCFs are used as a substitute for organic solvents in a range of industrial and laboratory processes, most commonly carbon dioxide for decaffeination [...] "
+                "The atmosphere of Venus is 96.5% carbon dioxide and 3.5% nitrogen. "
+                "The surface pressure is 9.3 megapascals (1,350 psi) and the surface temperature is 735 K (462 °C; 863 °F), above the critical points of both major constituents and making the surface atmosphere a supercritical fluid.",
+                nome="Supercritical fluid"),
+        ],
+    },
+    # 8 aerogel: a aposta e o vidro reforçado
+    {
+        "temas_secundarios": ["invencoes", "exploracao_espacial"],
+        "tipos_espanto": ["origem_inesperada", "engenhosidade"],
+        "gancho": "O aerogel, sólido que pode ter até 99,98% de ar, nasceu, diz a história mais contada, de uma disputa: trocar o líquido de uma geleia por gás sem que ela encolhesse. O inventor também propôs o reforço do Gorilla Glass.",
+        "explicacao": (
+            "Em 1931, o químico americano Samuel Kistler publicou na Nature o artigo \"Aerogéis e geleias "
+            "expandidos coerentes\". As circunstâncias exatas não ficaram bem registradas, mas a versão popular é a "
+            "de uma competição com um certo Charles Learned para ver quem substituía o líquido de um pote de geleia "
+            "sem fazê-la encolher. O truque foi não deixar o líquido evaporar, o que faria a estrutura desabar por "
+            "capilaridade: Kistler subia temperatura e pressão até o líquido virar fluido supercrítico e então "
+            "baixava a pressão, transformando-o em gás de uma vez. O resultado é um sólido rígido e seco que, em "
+            "geral, tem de 90% a 99,8% de ar. A sílica forma só uma trama tênue, e o ar fica preso em poros "
+            "minúsculos, o que faz dele um isolante térmico notável. A estrutura nanométrica espalha a luz azul e o "
+            "deixa com aspecto de fumaça azulada; um dos apelidos é \"fumaça congelada\". A NASA o usou na sonda "
+            "Stardust para capturar poeira do espaço e como isolante nos jipes de Marte. Em 1962, Kistler publicou "
+            "um método de reforçar vidro trocando íons de sódio por íons maiores de potássio; a Corning desenvolveu a "
+            "técnica, hoje usada no Gorilla Glass e similares."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Samuel_Stephens_Kistler",
+                "The exact circumstances of the creation of the first aerogels are not well recorded. "
+                "A popular story is that they resulted from a competition between Kistler and one Charles Learned \"to see if they could replace the liquid inside of a jelly jar without causing any shrinkage\". [...] "
+                "in 1931 Kistler published a paper in Nature (vol. 127, p. 741) titled \"Coherent Expanded Aerogels and Jellies\". [...] "
+                "In 1962 Kistler published an innovative paper on a new way of chemical strengthening of the glass by replacing the smaller sodium ions with larger potassium ones by ion exchange. "
+                "The technology was further developed and soon commercialized by Corning, and it's now used in Gorilla Glass and similar products.",
+                nome="Samuel Stephens Kistler"),
+            wiki("Aerogel",
+                "This allows the liquid to be slowly dried off without causing the solid matrix in the gel to collapse from capillary action, as would happen with conventional evaporation. [...] "
+                "In 1931, to develop the first aerogels, Kistler used a process known as supercritical drying which avoids a direct phase change. "
+                "By increasing the temperature and pressure he forced the liquid into a supercritical fluid state where by dropping the pressure he could instantly gasify and remove the liquid inside the aerogel [...] "
+                "Despite the name, aerogels are solid, rigid, and dry materials [...] "
+                "An aerogel material can range from 50% to 99.98% air by volume, but in practice most aerogels exhibit somewhere between 90 and 99.8% porosity. [...] "
+                "The slight color it does have is due to Rayleigh scattering of the shorter wavelengths of visible light by the nano-sized dendritic structure. "
+                "This causes it to appear smoky blue against dark backgrounds [...] "
+                "Nicknames include frozen smoke, solid smoke, solid air, solid cloud, and blue smoke [...] "
+                "NASA used aerogel to trap space dust particles aboard the Stardust spacecraft. [...] "
+                "NASA also used aerogel for thermal insulation for the Mars rovers.",
+                nome="Aerogel"),
+        ],
+    },
+    # 9 metal com estrutura de vidro
+    {
+        "temas_secundarios": ["invencoes", "ciencia_esporte"],
+        "tipos_espanto": ["engenhosidade", "contraintuitivo"],
+        "gancho": "Existe metal com estrutura de vidro. Em 1960, na Caltech, uma liga de ouro e silício foi resfriada a cerca de um milhão de graus por segundo, rápido demais para os átomos se arrumarem em cristais.",
+        "explicacao": (
+            "Metais comuns são cristalinos: seus átomos formam redes regulares, cheias de pequenos defeitos. Num "
+            "metal amorfo, ou vidro metálico, os átomos ficam desordenados como num vidro. O primeiro relatado foi "
+            "uma liga de ouro e silício feita em 1960 na Caltech. Essas primeiras ligas exigiam resfriamento da "
+            "ordem de um megakelvin por segundo, e por isso só saíam em formas com uma dimensão pequena, como fitas, "
+            "folhas e fios, que perdem calor depressa. Depois vieram ligas que formam vidro mesmo em camadas de "
+            "mais de 1 milímetro. Uma delas, a Vitreloy 1, foi criada em 1992 na Caltech, em pesquisas de "
+            "materiais aeroespaciais para a NASA e o Departamento de Energia dos EUA. Sem os defeitos "
+            "que limitam a resistência dos cristais, esses metais tendem a ser mais fortes que ligas cristalinas de "
+            "composição parecida: a Vitreloy tem resistência à tração quase o dobro da do titânio de alta qualidade. "
+            "E, por serem vidros de verdade, amolecem e fluem quando aquecidos, o que permite moldá-los por injeção, "
+            "como plástico. Já entraram em equipamentos esportivos, dispositivos médicos e carcaças de eletrônicos, "
+            "além de núcleos de transformadores com pouca perda. O ponto fraco: à temperatura ambiente, costumam "
+            "quebrar de repente quando tracionados."
+        ),
+        "nivel": 2, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Amorphous_metal",
+            "The first reported metallic glass was Au75Si25, produced at Caltech by Klement, Willens, and Duwez in 1960. "
+            "This and other early glass-forming alloys had to be rapidly cooled (on the order of one megakelvin per second, 106 K/s) to avoid crystallization. "
+            "An important consequence of this was that metallic glasses could be produced in a few forms (typically ribbons, foils, or wires) in which one dimension was small so that heat could be extracted quickly enough to achieve the required cooling rate. [...] "
+            "Alloys with cooling rates low enough to allow formation of amorphous structure in thick layers (i.e., over 1 millimetre or 0.039 inches) have been produced and are known as bulk metallic glasses. [...] "
+            "In 1992, the commercial amorphous alloy, Vitreloy 1 (41.2% Zr, 13.8% Ti, 12.5% Cu, 10% Ni, and 22.5% Be), was developed at Caltech, as a part of Department of Energy and NASA research of new aerospace materials. [...] "
+            "In particular, they tend to be stronger than crystalline alloys of similar chemical composition [...] "
+            "Amorphous metals derive their strength directly from their non-crystalline structure, which does not have defects (such as dislocations) that limit their strength. "
+            "Vitreloy is an amorphous metal with a tensile strength almost double that of high-grade titanium. "
+            "However, metallic glasses at room temperature are not ductile and tend to fail suddenly and surprisingly when loaded in tension [...] "
+            "they are true glasses, which means that they soften and flow upon heating. "
+            "This allows for easy processing, such as by injection molding, in much the same way as polymers. "
+            "As a result, amorphous alloys have been commercialized for use in sports equipment, medical devices, and as cases for electronic equipment. [...] "
+            "became used for low-loss power distribution transformers",
+            nome="Amorphous metal")],
+    },
+    # 10 o plasma tem nome de sangue
+    {
+        "temas_secundarios": ["estrelas", "anatomia"],
+        "tipos_espanto": ["origem_inesperada", "escala_absurda"],
+        "gancho": "O quarto estado da matéria tem nome tirado do sangue: em 1928, Irving Langmuir chamou o gás ionizado de \"plasma\" lembrando o plasma sanguíneo. E estima-se que 99,9% da matéria comum do universo seja plasma.",
+        "explicacao": (
+            "Plasma é o estado que surge quando um gás, em geral, tem boa parte dos átomos ionizados, e passa a ser "
+            "feito de uma quantidade grande de partículas com carga, como íons e elétrons. A ideia de um \"quarto "
+            "estado da matéria\" é anterior ao nome: o britânico William Crookes a apresentou em 1879, estudando "
+            "descargas elétricas em gases rarefeitos. O nome veio em 1928, com o americano Irving Langmuir, para "
+            "descrever a região de um gás ionizado em que íons e elétrons aparecem em números quase iguais. Segundo "
+            "dois colegas que trabalharam com ele, Lewi Tonks e Harold Mott-Smith, a inspiração foi o plasma do "
+            "sangue: o transporte de elétrons a partir de filamentos aquecidos lembrava a Langmuir o jeito como o "
+            "plasma sanguíneo carrega glóbulos vermelhos, glóbulos brancos e germes. Na Terra, o plasma é pouco "
+            "comum, mas no cosmo é a regra: as estrelas são bolas quase puras de plasma, o meio entre as galáxias "
+            "também é dominado por ele, e o espaço entre os planetas é preenchido pelo plasma do vento solar. Acima "
+            "das nossas cabeças, a ionosfera também é um plasma."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Plasma_(physics)",
+            "Irving Langmuir introduced the term plasma as a description of ionized gas in 1928: [...] "
+            "the ionized gas contains ions and electrons in about equal numbers so that the resultant space charge is very small. "
+            "We shall use the name plasma to describe this region containing balanced charges of ions and electrons. "
+            "Lewi Tonks and Harold Mott-Smith, both of whom worked with Langmuir in the 1920s, recall that Langmuir first used the term by analogy with the blood plasma. "
+            "Mott-Smith recalls, in particular, that the transport of electrons from thermionic filaments reminded Langmuir of \"the way blood plasma carries red and white corpuscles and germs.\" [...] "
+            "Sir William Crookes, investigating low-pressure discharges, suggested a different model, presenting the idea of a fourth state of matter in a well-known paper in 1879. [...] "
+            "Plasma is a state of matter that results from one of the other three classical states (often, the gaseous one) having undergone an appreciable degree of ionization. "
+            "It thus consists of a significant portion of charged particles (ions and/or electrons). "
+            "While rarely encountered on Earth, it is estimated that 99.9% of all ordinary matter in the universe is plasma. "
+            "Stars are almost pure balls of plasma, and plasma dominates the rarefied intracluster medium and intergalactic medium. [...] "
+            "Above the Earth's surface, the ionosphere is a plasma, and the magnetosphere contains plasma. "
+            "Within the Solar System, interplanetary space is filled with the plasma expelled via the solar wind",
+            nome="Plasma (physics)")],
+    },
+    # 11 a substância que derretia duas vezes
+    {
+        "temas_secundarios": ["telecomunicacoes", "anatomia"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "Em 1888, um botânico austríaco viu um derivado do colesterol derreter duas vezes: a 145,5 °C virava um líquido turvo, e a 178,5 °C ficava límpido. Era um cristal líquido, o material das telas de LCD.",
+        "explicacao": (
+            "Friedrich Reinitzer estudava derivados do colesterol em Praga. Outros pesquisadores já tinham notado "
+            "efeitos de cor nessas substâncias, sem ver ali um fenômeno novo. Reinitzer percebeu que o mais estranho "
+            "no benzoato de colesterila não eram as cores, e sim o jeito de derreter: o composto tinha dois pontos "
+            "de fusão, e o processo era reversível. Em 14 de março de 1888, ele escreveu ao físico Otto Lehmann, em "
+            "Aachen, e os dois trocaram cartas e amostras. Lehmann examinou o líquido turvo intermediário e relatou "
+            "ver pequenos cristais nele. Reinitzer apresentou os resultados em Viena em maio, dando crédito aos "
+            "colegas, e depois largou o assunto. A descoberta chamou atenção na época, mas sem uso prático aparente, "
+            "o interesse logo caiu. Lehmann seguiu estudando e, em 1904, cunhou o nome dos cristais líquidos "
+            "colestéricos. Hoje eles estão nas telas de cristal líquido, e o estado não é só coisa de laboratório: "
+            "muitas proteínas e membranas de células são cristais líquidos, assim como o vírus do mosaico do tabaco "
+            "e soluções de sabão."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Liquid_crystal",
+                "Lyotropic LCs abound in living systems; many proteins and cell membranes are LCs, as well as the tobacco mosaic virus. "
+                "LCs in the mineral world include solutions of soap and various related detergents, and some clays. "
+                "Widespread liquid-crystal displays (LCD) use liquid crystals. [...] "
+                "In 1888, Austrian botanical physiologist Friedrich Reinitzer, working at the Karl-Ferdinands-Universität, examined the physico-chemical properties of various derivatives of cholesterol [...] "
+                "Previously, other researchers had observed distinct color effects when cooling cholesterol derivatives just above the freezing point, but had not associated it with a new phenomenon. "
+                "Reinitzer perceived that color changes in a derivative cholesteryl benzoate were not the most peculiar feature. "
+                "He found that cholesteryl benzoate does not melt in the same manner as other compounds, but has two melting points. "
+                "At 145.5 °C (293.9 °F) it melts into a cloudy liquid, and at 178.5 °C (353.3 °F) it melts again and the cloudy liquid becomes clear. "
+                "The phenomenon is reversible. "
+                "Seeking help from a physicist, on March 14, 1888, he wrote to Otto Lehmann, at that time a Privatdozent in Aachen. "
+                "They exchanged letters and samples. "
+                "Lehmann examined the intermediate cloudy fluid, and reported seeing crystallites. [...] "
+                "Reinitzer presented his results, with credits to Lehmann and von Zepharovich, at a meeting of the Vienna Chemical Society on May 3, 1888. [...] "
+                "(the name coined by Otto Lehmann in 1904) [...] "
+                "After his accidental discovery, Reinitzer did not pursue studying liquid crystals further.",
+                nome="Liquid crystal"),
+            wiki("Friedrich_Reinitzer",
+                "The discovery received plenty of attention at the time but no practical uses were apparent and the interest soon dropped.",
+                nome="Friedrich Reinitzer"),
+        ],
+    },
+    # 12 areia movediça não engole ninguém
+    {
+        "temas_secundarios": ["cinema_fotografia", "paisagens_extremas"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "Areia movediça não engole ninguém: ela é cerca de duas vezes mais densa que o corpo humano, que afunda no máximo até a cintura. O perigo é ficar preso: puxar um pé exige a força de levantar um carro.",
+        "explicacao": (
+            "A areia movediça é uma mistura de grãos finos, como areia, silte ou argila, com água. Parada, parece "
+            "sólida, mas é um fluido não newtoniano: uma mudança de menos de 1% na tensão sobre ela derruba de "
+            "repente sua viscosidade. Quando alguém pisa, a água e a areia se separam, regiões de sedimento "
+            "compactado se formam e a pessoa começa a afundar. Só que o princípio de Arquimedes vale ali também: a "
+            "mistura tem densidade de uns 2 gramas por centímetro cúbico, contra cerca de 1 do corpo humano, então "
+            "não há como passar muito da cintura. Até um pedaço de alumínio, mais denso que ela, flutua se ficar "
+            "parado. O difícil é sair: para mover algo lá dentro, é preciso reintroduzir água na areia compactada, "
+            "e tirar um pé a 1 centímetro por segundo exige a força necessária para levantar um carro. O risco real "
+            "vem de ficar preso, exposto a sol, desidratação, frio ou maré subindo. A saída recomendada é mexer as "
+            "pernas devagar e deitar de costas para flutuar. A imagem do afogamento é do cinema: segundo a revista "
+            "Slate, nos anos 1960 quase 3% dos filmes mostravam alguém afundando em barro, lama ou areia."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Quicksand",
+            "is a colloid consisting of fine granular material (such as sand, silt or clay) and water. [...] "
+            "Quicksand is a shear thinning non-Newtonian fluid: when undisturbed, it often appears to be solid (\"gel\" form), but a less than 1% change in the stress on the quicksand will cause a sudden decrease in its viscosity (\"sol\" form). "
+            "After an initial disturbance—such as a person attempting to walk on it—the water and sand in the quicksand separate and dense regions of sand sediment form [...] "
+            "Someone stepping on it will start to sink. "
+            "To move within the quicksand, a person or object must apply sufficient pressure on the compacted sand to re-introduce enough water to liquefy it. "
+            "The forces required to do this are quite large: to remove a foot from quicksand at a speed of 1 cm/s would require the same amount of force as that needed to lift a car. "
+            "It is impossible for a human to sink entirely into quicksand, due to the higher density of the fluid. "
+            "Quicksand has a density of about 2 grams per cubic centimeter, whereas the density of the human body is only about 1 gram per cubic centimeter. "
+            "At that level of density, sinking beyond about waist height in quicksand is impossible. "
+            "Even objects with a higher density than quicksand will float on it if stationary. [...] "
+            "it can lead to a situation where other factors such as exposure (i.e., sun stroke, dehydration and hypothermia), drowning in a rising tide or attacks by predatory or otherwise aggressive animals may harm a trapped person should they not be rescued. "
+            "Quicksand may be escaped by slow movement of the legs in order to increase viscosity of the fluid, and rotation of the body so as to float in the supine position [...] "
+            "According to a 2010 article by Slate, this gimmick had its heyday in the 1960s, when almost 3% of all films showed characters sinking in clay, mud, or sand. [...] "
+            "In accordance with Archimedes' principle",
+            nome="Quicksand")],
+    },
+    # 13 a peste do estanho e os botões de Napoleão
+    {
+        "temas_secundarios": ["revolucoes_politicas", "musica_ciencia"],
+        "tipos_espanto": ["mito_desmentido", "contraintuitivo"],
+        "gancho": "Abaixo de 13,2 °C, o estanho puro pode virar, aos poucos, um pó cinzento. Diz a lenda que isso desfez os botões dos soldados de Napoleão na Rússia, mas nenhum relato de sobrevivente menciona o problema.",
+        "explicacao": (
+            "O estanho tem duas formas sólidas. Acima de 13,2 °C, é o estanho branco, metálico e maleável. Abaixo "
+            "disso, pode se converter no estanho cinzento, quebradiço e não metálico, com a mesma estrutura cristalina "
+            "do diamante. A mudança custa a começar, mas, uma vez iniciada, se acelera sozinha, e o volume aumenta "
+            "cerca de 27%, o que esfarela o objeto. O fenômeno, chamado peste do estanho, aparece em relatos sobre "
+            "tubos de órgãos de igrejas desde 1467, em Lübeck, e foi descrito numa revista de química em 1851. A "
+            "história dos botões de Napoleão, porém, parece lenda urbana. Os botões da época eram em geral de osso "
+            "ou latão, embora alguns regimentos usassem estanho; o estanho da época seria impuro e, por isso, mais "
+            "resistente ao frio; e testes de laboratório mostram que o estanho puro leva uns 18 meses para sofrer "
+            "estrago sério, mais que o dobro da duração da campanha. O problema voltou no século XXI: desde 2003, "
+            "regras que baniram o chumbo das soldas levaram a componentes eletrônicos revestidos de estanho quase "
+            "puro, que no frio pode se soltar em pó não condutor e causar curtos-circuitos."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Tin_pest",
+            "It was first documented in the scientific literature in 1851, having been observed in the pipes of pipe organs in medieval churches that had experienced cool climates. [...] "
+            "At 13.2 °C (55.8 °F) and below, pure tin transforms from the silvery, ductile metallic allotrope of β-form white tin to the brittle, nonmetallic, α-form grey tin with a diamond cubic structure. "
+            "The transformation is slow to initiate due to a high activation energy [...] "
+            "There is also a large volume increase of about 27% associated with the phase change to the nonmetallic low temperature allotrope. "
+            "This frequently makes tin objects (such as buttons) decompose into powder during the transformation, hence the name tin pest. "
+            "The decomposition will catalyze itself, which is why the reaction accelerates once it starts. [...] "
+            "Reports of tin pest in organ pipes in churches appeared as early as 1467 in St James' Church, Lübeck, Germany. [...] "
+            "The story is often told of Napoleon's men freezing in the bitter Russian Winter, their clothes falling apart as tin pest destroyed the buttons. "
+            "Although uniform buttons of that era were generally bone for enlisted, and brass for officers, some of the regiments in the campaign had tin buttons [...] "
+            "However, the story appears to be an urban legend, as none of the many survivors' tales mention any problems with tin buttons. "
+            "Critics of the theory also point out that any tin that might have been used would have been quite impure, and thus more tolerant of low temperatures. "
+            "Laboratory tests of the time required for unalloyed tin to develop significant tin pest damage at lowered temperatures is about 18 months, which is more than twice the length of the invasion. [...] "
+            "With the 2003 adoption of the Restriction of Hazardous Substances Directive (RoHS) regulations in the European Union, the banning of most uses of lead in California, and similar regulations elsewhere, the problem of tin pest has returned [...] "
+            "the leads of some electrical and electronic components are plated with pure tin. "
+            "In cold environments, this can change to α-modification grey tin, which is not electrically conductive, and falls off the leads. [...] "
+            "This cycle can cause electrical short circuits and failure of equipment.",
+            nome="Tin pest")],
+    },
+    # 14 o gálio que derrete na mão e não quer congelar
+    {
+        "temas_secundarios": ["elementos_quimicos", "minerais_rochas"],
+        "tipos_espanto": ["contraintuitivo", "escala_absurda"],
+        "gancho": "O gálio derrete na palma da mão, com o calor do corpo. Mas, uma vez líquido, resiste a voltar: gotículas dele seguem líquidas a 150 kelvin, bem abaixo de zero, e, como a água, ele se expande ao solidificar.",
+        "explicacao": (
+            "O ponto de fusão do gálio, 29,7646 °C, é tão bem definido que serve de referência oficial na escala "
+            "internacional de temperatura. Ele é um dos quatro elementos metálicos líquidos à temperatura ambiente "
+            "ou perto dela. O motivo do ponto de fusão baixo está no cristal: os átomos se agrupam em pares unidos "
+            "por ligação covalente, e esses pares são as peças básicas da estrutura. Depois de derretido, o gálio "
+            "tende ao super-resfriamento, isto é, continua líquido abaixo da temperatura em que deveria solidificar: "
+            "gotículas micrométricas já foram mantidas assim a 150 kelvin. Isso complica até as medições: o ponto "
+            "de congelamento de −19 °C atribuído ao galinstan, liga de gálio, índio e estanho, pode ser efeito do "
+            "super-resfriamento. Outra esquisitice é que o gálio aumenta 3,10% de volume ao solidificar, como a "
+            "água, por isso é vendido em sacos plásticos, e não em frascos que podem rachar. Ao contrário do "
+            "mercúrio, o gálio líquido molha o vidro e a pele, e pintado no vidro vira um espelho brilhante. Ele "
+            "também se infiltra nos contornos dos grãos do alumínio e de alguns aços e faz o metal perder quase toda "
+            "a resistência."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Gallium",
+            "It readily diffuses into cracks or grain boundaries of some metals such as aluminium, aluminium–zinc alloys and steel, causing extreme loss of strength and ductility called liquid metal embrittlement. [...] "
+            "The bonding between the two nearest neighbors is covalent; hence Ga2 dimers are seen as the fundamental building blocks of the crystal. "
+            "This explains the low melting point relative to the neighbor elements, aluminium and indium. [...] "
+            "The melting point of gallium, 29.7646 °C (85.5763 °F; 302.9146 K), is used as a temperature reference point. "
+            "One of only four metal elements that is liquid at, or near, normal room temperature, gallium will melt in a person's hands at normal human body temperature of 37 °C (99 °F). [...] "
+            "A melting point of −19 °C (−2 °F), well below the freezing point of water, is claimed for the alloy galinstan (62–⁠95% gallium, 5–⁠22% indium, and 0–⁠16% tin by weight), but that may be the freezing point with the effect of supercooling. [...] "
+            "Unlike mercury, liquid gallium metal wets glass and skin [...] "
+            "Gallium painted onto glass is a brilliant mirror. "
+            "For this reason as well as the metal contamination and freezing-expansion problems, samples of gallium metal are usually supplied in polyethylene packets within other containers. "
+            "Gallium's volume expands by 3.10% when it changes from a liquid to a solid [...] "
+            "Gallium shares the higher-density liquid state with a short list of other materials that includes wa [...] "
+            "Liquid Ga is known to show extreme supercooling properties, that is to say it can remain liquid below its standard solidification temperature. "
+            "Micrometric Ga droplets can be undercooled at temperatures as lower as 150 K. [...] "
+            "This melting point (mp) is one of the formal temperature reference points in the International",
+            nome="Gallium")],
+    },
+    # 15 a bolsa térmica de clique
+    {
+        "temas_secundarios": ["quimica_cotidiano", "termodinamica"],
+        "tipos_espanto": ["engenhosidade", "misterio_aberto"],
+        "gancho": "Nas bolsas térmicas de clique, o líquido está abaixo do ponto de fusão, só esperando. Dobrar o disquinho de metal o faz cristalizar e esquentar. Por que o clique dispara tudo rendeu muitas explicações.",
+        "explicacao": (
+            "O recheio é acetato de sódio tri-hidratado, cujos cristais derretem a cerca de 58 °C e se dissolvem na "
+            "própria água de cristalização. Aquecida acima desse ponto e deixada esfriar com calma, a solução fica "
+            "supersaturada e chega à temperatura ambiente ainda líquida, sem formar cristais. Ao dobrar o disco de "
+            "metal, surge um ponto de partida para a cristalização, que se espalha pela bolsa toda. Cristalizar "
+            "libera calor: cerca de 264 a 289 quilojoules por quilo. Para reusar, basta pôr a bolsa em água fervente "
+            "por alguns minutos, até os cristais se dissolverem, e deixá-la esfriar devagar. Ao contrário das bolsas "
+            "descartáveis, não há reação química irreversível. O curioso é o gatilho: muitos mecanismos foram "
+            "propostos para explicar por que dobrar o disco faz surgir cristais. Um artigo de 2008 no American "
+            "Journal of Physics descreveu um experimento indicando que o disco guarda sementes de cristal presas "
+            "entre superfícies de metal que se apertam. Elas sobreviveriam, segundo o autor, porque as pressões "
+            "locais altíssimas elevam o ponto de fusão. Esse material também é vendido como \"gelo quente\"."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "consenso_parcial",
+        "fontes": [
+            wiki("Sodium_acetate",
+                "Sodium acetate is also used in heating pads, hand warmers, and \"hot ice\". "
+                "A supersaturated solution of sodium acetate in water is supplied with a device to initiate crystallization, a process that releases substantial heat. "
+                "Sodium acetate trihydrate crystals melt at 58–58.4 °C (136.4–137.1 °F), and the liquid sodium acetate dissolves in the released water of crystallization. "
+                "When heated past the melting point and subsequently allowed to cool, the aqueous solution becomes supersaturated. "
+                "This solution is capable of cooling to room temperature without forming crystals. "
+                "By pressing on a metal disc within the heating pad, a nucleation center is formed, causing the solution to crystallize back into solid sodium acetate trihydrate. "
+                "The process of crystallization is exothermic. "
+                "The latent heat of fusion is about 264–289 kJ/kg. "
+                "Unlike some types of heat packs, such as those dependent upon irreversible chemical reactions, a sodium acetate heat pack can be easily reused by immersing the pack in boiling water for a few minutes, until the crystals are completely dissolved, and allowing the pack to slowly cool to room temperature.",
+                nome="Sodium acetate"),
+            {"url": "https://researchers.mq.edu.au/en/publications/the-physics-and-the-chemistry-of-the-heat-pad/",
+             "titulo": "The physics and the chemistry of the heat pad (Sandnes, American Journal of Physics, 2008)",
+             "idioma": "en",
+             "trecho": "Flexing a metallic disk triggers the crystallization of the supercooled sodium acetate solution contained in commercial heat pads. "
+                       "Many mechanisms have been proposed to explain the apparent nucleation of crystalline material. "
+                       "In this paper a simple experiment is described that demonstrates that nucleation is triggered by preserving seed crystals clamped between opposing metal surfaces. "
+                       "An explanation for the retention of the crystalline particles is the elevated melting point caused by very high local pressures. [...] "
+                       "Published - Jun 2008"},
+        ],
+    },
+]

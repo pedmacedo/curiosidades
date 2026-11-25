@@ -1,0 +1,157 @@
+{
+ "lote": "2026-11-25-estados_materia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "estados_materia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Pitch drop experiment (1927/1930, ~uma gota por década, 1988 e a bebida, falha técnica em 2000, Ig Nobel 2005)."
+   },
+   {
+    "id": "estados_materia-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Essencial confere (gelo VII em diamantes, IMA, 22 fases); não repete geologia_profunda-0004; mas a frase do maior campo de estabilidade deforma a fonte.",
+    "correcao": "Na explicação, apagar a frase 'Ele é também a fase molecular do gelo com o maior campo de estabilidade, que vai de pressão alta a temperatura baixa.' (ou trocar por 'Entre as fases moleculares do gelo, é a que se mantém estável na faixa mais ampla de condições.')."
+   },
+   {
+    "id": "estados_materia-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A afirmação central confere ('likely'); mas 'o gelo cristalino é raríssimo no espaço' é contradito por observações (anéis de Saturno, Cinturão de Kuiper); confiança deve ser consenso_parcial.",
+    "correcao": "1) Trocar o gancho por: 'Nas nuvens geladas entre as estrelas, a água congela sem formar cristais, num gelo desordenado como vidro. Por isso, esse gelo amorfo é provavelmente a forma mais comum de água no universo.' 2) Na explicação, trocar 'Por isso, o gelo do meio interestelar é dominado pela forma amorfa, enquanto o gelo cristalino hexagonal, que predomina na Terra, é raríssimo lá fora, e os exemplos conhecidos costumam estar ligados a vulcanismo.' por 'Por isso, a água do meio interestelar está sobretudo na forma amorfa, ao contrário da Terra, onde predomina o gelo cristalino hexagonal.' 3) confianca 'consenso_parcial'. 4) Opcional: trocar 'escala_absurda' por 'conexao_inesperada'."
+   },
+   {
+    "id": "estados_materia-0004",
+    "veredito": "reprovado",
+    "nota_surpresa": 4,
+    "motivo": "duplicado: ciencia_esporte-0001 já traz o mesmo fato (o derretimento pela pressão da lâmina não explica o patim; mecanismo ainda estudado), com a mesma fonte."
+   },
+   {
+    "id": "estados_materia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "numero_divergente: tudo confere, mas a data de 2 de agosto de 1911 não se sustenta (o caderno de laboratório indica 8 de abril de 1911, segundo van Delft e Kes).",
+    "correcao": "Na explicação, trocar 'já tivesse visto essa transição em 2 de agosto de 1911, sem perceber,' por 'já tivesse visto essa transição em 1911, sem perceber,'. Opcional: no gancho, 'o hélio líquido comum flui sem atrito'."
+   },
+   {
+    "id": "estados_materia-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere e separa bem a proposta original dos cristais discretos; mas os experimentos foram anunciados em 2016 e publicados na Nature em 2017.",
+    "correcao": "No gancho, trocar 'Em 2017, duas equipes criaram uma versão dele.' por 'Em 2017, duas equipes relataram uma versão dele.'"
+   },
+   {
+    "id": "estados_materia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere (Cagniard de la Tour em 1822, bola no cano de arma, 362 °C contra 373,946 °C, Vênus supercrítico)."
+   },
+   {
+    "id": "estados_materia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O resto confere; mas Kistler não 'propôs o reforço do Gorilla Glass': publicou trabalho pioneiro em 1962 (a Corning já tinha projeto próprio, e Acloque e Tochon chegaram ao mesmo resultado).",
+    "correcao": "No gancho, trocar 'O inventor também propôs o reforço do Gorilla Glass.' por 'Ele também abriu caminho para o Gorilla Glass.' Na explicação, trocar 'Em 1962, Kistler publicou um método de reforçar vidro trocando íons de sódio por íons maiores de potássio; a Corning desenvolveu a técnica, hoje usada no Gorilla Glass e similares.' por 'Em 1962, Kistler publicou um trabalho pioneiro sobre reforçar vidro trocando íons de sódio por íons maiores de potássio; a técnica, desenvolvida depois e comercializada pela Corning, hoje é usada no Gorilla Glass e similares.'"
+   },
+   {
+    "id": "estados_materia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Amorphous metal (Au75Si25 em 1960, 10^6 K/s, Vitreloy com quase o dobro da resistência do titânio, fragilidade sob tração)."
+   },
+   {
+    "id": "estados_materia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Etimologia atribuída à lembrança dos colegas de Langmuir; 99,9% da matéria comum como estimativa."
+   },
+   {
+    "id": "estados_materia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere (1888, dois pontos de fusão, Lehmann); mas 'em 1904, cunhou o nome dos colestéricos' vem de um parêntese ambíguo e não se confirma (a classificação é atribuída a Friedel, 1922).",
+    "correcao": "Na explicação, trocar 'Lehmann seguiu estudando e, em 1904, cunhou o nome dos cristais líquidos colestéricos.' por 'Lehmann seguiu estudando o fenômeno e foi quem deu nome aos cristais líquidos.' (página Friedrich Reinitzer: 'liquid crystals (named later by Otto Lehmann)'). Opcional: acrescentar que o material continuou uma curiosidade científica por cerca de 80 anos ('remained a pure scientific curiosity for about 80 years'), com o trecho na fonte."
+   },
+   {
+    "id": "estados_materia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Quicksand (força de levantar um carro, ~3% dos filmes segundo a Slate); mito listado nas common misconceptions; não repete o Silly Putty."
+   },
+   {
+    "id": "estados_materia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Confere e o desmentido se sustenta; mas a frase das soldas junta duas etapas e soa contraditória (o pó não conduz; reaquecido, volta a conduzir).",
+    "correcao": "Na explicação, trocar 'que no frio pode se soltar em pó não condutor e causar curtos-circuitos.' por 'que no frio vira pó não condutor e se solta; reaquecido, esse pó volta a ser estanho metálico, que conduz, e o ciclo pode causar curtos-circuitos.' (trecho: 'After reheating, it changes back to β-modification white tin, which is electrically conductive. This cycle can cause electrical short circuits')."
+   },
+   {
+    "id": "estados_materia-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem; mas os sacos de polietileno têm três motivos, falta o mecanismo da expansão e 'gotículas' pode enganar; interesse no limite, nota 3.",
+    "correcao": "1) Trocar 'por isso é vendido em sacos plásticos, e não em frascos que podem rachar' por 'por isso, e também porque molha o vidro, costuma ser vendido em sacos de polietileno'. 2) Depois de 'aumenta 3,10% de volume ao solidificar, como a água', inserir: 'O motivo está nos mesmos pares de átomos: no sólido, eles ocupam mais espaço; ao derreter, as ligações dos pares se rompem e o líquido fica mais compacto.' e acrescentar ao trecho: 'In gallium, this anomalous behaviour is a result of the breaking of the Ga2 dimeric bonds present in the solid.' 3) No gancho, trocar 'gotículas dele' por 'gotículas microscópicas dele'. 4) Em tipos_espanto, deixar só 'contraintuitivo'."
+   },
+   {
+    "id": "estados_materia-0015",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "duplicado: quimica_cotidiano-0011 já explica a bolsa térmica de acetato de sódio e o disquinho de metal; o 'mistério' do gatilho é fraco e a fonte apresenta uma explicação demonstrada."
+   }
+  ],
+  "2": [
+   {
+    "id": "estados_materia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Frase do maior campo de estabilidade removida."
+   },
+   {
+    "id": "estados_materia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho novo, consenso_parcial e tipos aplicados."
+   },
+   {
+    "id": "estados_materia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Só 'em 1911'."
+   },
+   {
+    "id": "estados_materia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "'relataram'."
+   },
+   {
+    "id": "estados_materia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Explicação corrigida; retoque: o 'Ele' do gancho tinha o aerogel como sujeito.",
+    "correcao": "'Ele também abriu caminho' virou 'O inventor também abriu caminho'.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "estados_materia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Lehmann deu nome aos cristais líquidos; ~80 anos com trecho."
+   },
+   {
+    "id": "estados_materia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Duas etapas do estanho nas soldas."
+   },
+   {
+    "id": "estados_materia-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Mecanismo Ga2, gotículas microscópicas, sacos de polietileno; 'molha também a pele' tem apoio."
+   }
+  ]
+ }
+}
