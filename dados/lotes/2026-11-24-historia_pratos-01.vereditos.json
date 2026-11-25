@@ -1,0 +1,151 @@
+{
+ "lote": "2026-11-24-historia_pratos-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "historia_pratos-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Kipferl em 1227 confirmado também pelo ministério austríaco; croissant moderno do século XX; desmentido justo."
+   },
+   {
+    "id": "historia_pratos-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A visita real a Nápoles em 1889 aconteceu; o que não tem registro é o episódio da pizzaria. E Rocco (1849) cita os ingredientes, não necessariamente juntos.",
+    "correcao": "No gancho, trocar 'Mas nenhum jornal da época noticiou a visita' por 'Mas nenhum jornal da época registrou o episódio'. Na explicação, trocar 'nenhum veículo de imprensa da época registrou a suposta visita' por 'nenhum veículo de imprensa da época registrou o suposto episódio' e 'Além disso, a combinação já circulava em Nápoles décadas antes.' por 'Além disso, os mesmos ingredientes já apareciam em pizzas de Nápoles décadas antes.'"
+   },
+   {
+    "id": "historia_pratos-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Montagu, as ilhas Sandwich, a anedota como boato e a alternativa de Rodger conferem."
+   },
+   {
+    "id": "historia_pratos-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Datas e a origem da lenda conferem; mas o gancho funde duas frases de al-Idrisi (os moinhos não faziam a massa) e 'seca' não está no relato dele.",
+    "correcao": "No gancho, trocar 'um geógrafo árabe já descrevia na Sicília moinhos que faziam massa seca aos montes e a exportavam em navios.' por 'um geógrafo árabe já descrevia na Sicília uma produção enorme de massa em fios, exportada em muitos navios.'"
+   },
+   {
+    "id": "historia_pratos-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (arroz descartado, Mekong, Muromachi, nigiri dos anos 1820–30, cerca de três vezes maior)."
+   },
+   {
+    "id": "historia_pratos-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A fonte sustenta a origem portuguesa; mas o gancho só cita 'tempora', e 'tempero' tem peso igual ou maior (o OED dá 'probably < Portuguese tempêro').",
+    "correcao": "No gancho, trocar 'O nome viria do latim \"tempora\", os dias de jejum católico.' por 'O nome talvez venha de \"tempora\", os dias de jejum católico, ou de \"tempero\".' Na explicação, trocar 'Outra possibilidade é o português \"tempero\".' por 'Outra possibilidade, tão plausível quanto, é o português \"tempero\"; a questão segue em aberto.'"
+   },
+   {
+    "id": "historia_pratos-0007",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Quase tudo confere; mas a primeira viagem de Colombo (1492) não chegou à América Central (só em 1502).",
+    "correcao": "Na explicação, trocar 'Colombo encontrou a pimenta na viagem de 1492 à América Central, e no máximo em 1528' por 'Colombo encontrou a pimenta na primeira viagem à América, iniciada em 1492, e no máximo em 1528'."
+   },
+   {
+    "id": "historia_pratos-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Citação de Robin Cook (2001) e a incerteza bem tratadas. Mas 'carne seca' deturpa 'the dry chicken tikka meat'; e 'chanceler' pode confundir.",
+    "correcao": "Na explicação, trocar 'para um cliente que queria algo para acompanhar a carne seca' por 'para um cliente que achou o frango tikka seco demais e pediu um molho'. Trocar 'provavelmente por um cozinheiro bengali' por 'provavelmente por um cozinheiro de Bangladesh'. Recomendado: no gancho, trocar 'um chanceler britânico' por 'o chanceler Robin Cook', se couber em 220 caracteres."
+   },
+   {
+    "id": "historia_pratos-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Separa bem relato e documento (Rosa Cardini, versões rivais, ausência de anchova); corrige um equívoco listado."
+   },
+   {
+    "id": "historia_pratos-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (extrato de 1847, quase sem proteína, cães que morriam, Fray Bentos, Oxo em cubos em 1911); não duplica ciencia_cozinha-0001."
+   },
+   {
+    "id": "historia_pratos-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Confere com Fortune cookie (tsujiura senbei, Hagiwara, tribunal de 1983, passagem aos sino-americanos por volta da Segunda Guerra, internação como 'uma explicação'); consenso_parcial correto; tema conhecido, nota 3."
+   },
+   {
+    "id": "historia_pratos-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A ligação com o pescado frito é 'crença geral', contestada por historiadores; os judeus estavam proibidos na Inglaterra até os anos 1650 (o 'século XVI' deve sair); o local da primeira loja é incerto.",
+    "correcao": "1) Trocar 'confianca' para 'consenso_parcial'. 2) Gancho novo: 'O peixe frito do fish and chips, símbolo da Inglaterra, teria chegado ao país com judeus de origem portuguesa e espanhola vindos da Holanda. Frito na sexta, o peixe podia ser comido frio no Shabat.' 3) Na explicação, trocar 'Segundo o verbete sobre o prato, esse costume chegou à Grã-Bretanha com judeus espanhóis e portugueses que viviam na Holanda, alguns já no século XVI; a grande leva para Londres veio nos anos 1850.' por 'A versão mais repetida é que esse costume chegou à Inglaterra com judeus espanhóis e portugueses que viviam na Holanda, a partir dos anos 1650, quando a proibição à presença de judeus foi suspensa; a maior leva para Londres veio nos anos 1850. Ainda assim, a ligação direta com o fish and chips é tratada como crença difundida, não como fato provado.' Acrescentar ao trecho da fonte Pescado frito: 'There is a general belief that pescado frito was possibly an inspiration for the English fish and chips, brought to England by Spanish Jews; Sephardim began to settle in England in small numbers after Oliver Cromwell lifted the formal ban in the 1650s.' 4) Trocar 'A primeira loja registrada a vender os dois foi aberta por volta de 1860' por 'Uma das primeiras lojas registradas a vender os dois foi aberta por volta de 1860'."
+   },
+   {
+    "id": "historia_pratos-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Dados conferem (1939, 1950, Chicago 1952, 1954 com alho e gruyère). Mas o gancho junta a menção de 1939 e a tese dos soldados aliados (1944) sem apontar a contradição; omite o cacio e uova (1839); e a tese dos Aliados perdeu força em 2026 (Il Post).",
+    "correcao": "1) Gancho novo: 'A carbonara, ícone de Roma, não tem receita impressa conhecida antes de 1952, e essa receita saiu num livro de Chicago. A primeira italiana, de 1954, ainda levava alho e queijo gruyère.' 2) Na explicação, trocar 'Para o escritor Alan Davidson e os historiadores Luca Cesari e Eleonora Cozzella, o prato surgiu depois que os Aliados tomaram Roma, em 1944.' por 'Uma tese difundida, defendida pelo escritor Alan Davidson e pelos historiadores Luca Cesari e Eleonora Cozzella, diz que o prato surgiu depois que os Aliados tomaram Roma, em 1944. Mas a menção de 1939 é anterior à chegada deles.' 3) Antes da frase final sobre o nome, acrescentar: 'Outra corrente liga a carbonara ao cacio e uova, massa com ovos e queijo documentada desde 1839, que alguns italianos nascidos antes da guerra associam a esse nome.' Incluir no trecho: 'Cacio e uova is documented as far back as 1839 and, according to some researchers, anecdotal evidence indicates that some Italians born before World War II associate that name with the dish now known as \"carbonara\".' 4) Opcional: acrescentar como fonte https://www.ilpost.it/2026/02/16/carbonara-attestazione-americani/ e mencionar que, em 2026, o próprio Cesari disse que a história do prato precisa ser reescrita. Manter consenso_parcial."
+   },
+   {
+    "id": "historia_pratos-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Relato e atribuições conferem (Zuo Zongtang, Peng e Wang, restaurante em Hunan fechado). Erro de termo: a fonte diz 'spicy rather than sweet and spicy', não 'agridoce'.",
+    "correcao": "Na explicação, trocar 'No começo, o prato era picante, não agridoce, e foi adaptado ao gosto americano.' por 'No começo, o prato era só picante, sem o lado doce, e foi adaptado ao gosto americano.' Opcional: trocar 'estadista e chefe militar da província de Hunan' por 'estadista e chefe militar natural da província de Hunan'."
+   }
+  ],
+  "2": [
+   {
+    "id": "historia_pratos-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Três correções aplicadas; o episódio, não a visita, é que não tem registro."
+   },
+   {
+    "id": "historia_pratos-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho corrigido (massa em fios exportada em navios); datas conferem."
+   },
+   {
+    "id": "historia_pratos-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com as duas etimologias; origem portuguesa confere."
+   },
+   {
+    "id": "historia_pratos-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Primeira viagem de Colombo corrigida; o resto confere."
+   },
+   {
+    "id": "historia_pratos-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Frango tikka seco, cozinheiro de Bangladesh e Robin Cook aplicados."
+   },
+   {
+    "id": "historia_pratos-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Quatro correções aplicadas; ligação tratada como crença difundida."
+   },
+   {
+    "id": "historia_pratos-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "A versão com o Il Post confere (Fabrizi em Lille, abril de 1952; Chicago em dezembro); retoque: a receita de Fabrizi já levava pecorino, e o \"ainda\" do gancho sugeria herança.",
+    "correcao": "\"O guanciale e o pecorino entraram\" virou \"foram se firmando nas receitas\"; no gancho saiu \"ainda\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "historia_pratos-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "\"Só picante\" e \"natural de Hunan\" aplicados; relato confere."
+   }
+  ]
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "lote": "2026-11-24-aprendizagem_inteligencia-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "aprendizagem_inteligencia-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com 'Flynn effect' (Neisser: QI de 1932 seria 80 pelas normas de 1997; cerca de 3 pontos por década; cachorro e coelho). Distinto do 0002."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Nada vai além do resumo da PNAS (coortes de 1962 a 1991, variação dentro das famílias) e da Wikipedia; consenso_parcial adequado."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com o resumo do NBER w19233 (1924, cerca de um desvio-padrão no quarto mais carente, mortes ligadas à tireoide); efeito não exagerado."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Cada atribuição confere (Binet e Simon, 1905/1908, inteligência maleável; Goddard, ilha de Ellis, 'moron'); a explicação não generaliza o grupo pequeno."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O núcleo confere (Shockley com QI 129 e Alvarez recusados; nenhum selecionado com Nobel); mas o apelido 'Termites' não aparece nas fontes citadas.",
+    "correcao": "Na explicação, trocar 'e o grupo chegou a 1.528 participantes, apelidados de \"Termites\".' por 'e o grupo chegou a 1.528 participantes.' (ou acrescentar uma fonte que sustente o apelido)."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com 'Learning styles' (71 modelos, painel de Pashler, revisão de 2015, quase 400 alunos); a meta-análise de 2024 não mostra a interação exigida; desmentido conhecido, nota 3."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com Dekker et al. 2012 (242 professores, 49% de crença, mitos acima de 80%); o padrão se repetiu na Espanha e na América Latina; relação fraca, consenso_parcial adequado."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem com Verkoeijen e Bouwmeester (2014); mas cada voluntário passou pelas duas condições, e 'quem tinha visto tudo misturado' sugere grupos separados.",
+    "correcao": "Na explicação, trocar 'No teste, com quadros novos dos mesmos pintores, quem tinha visto tudo misturado reconheceu melhor os estilos.' por 'Cada voluntário passou pelas duas condições, com pintores diferentes em cada uma. No teste, com quadros novos, os pintores vistos de forma misturada foram reconhecidos com mais acerto.' Opcional (fonte: 'the vast majority of the participants in Kornell and Bjork's (2008) experiment (i.e., 80%) reported that massing had led to better learning'): acrescentar, depois dos 12%, 'No estudo original, 80% também tinham preferido o agrupado.'"
+   },
+   {
+    "id": "aprendizagem_inteligencia-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere e o texto é equilibrado; mas a meta-análise de 2015 e o teste holandês tratam de meninas em provas de matemática, não do efeito em geral.",
+    "correcao": "Na explicação, trocar 'Uma meta-análise de 2015 concluiu' por 'Uma meta-análise de 2015, com estudos sobre meninas em idade escolar, concluiu'. Trocar 'O maior teste experimental, com 2.064 estudantes holandeses do ensino médio, não achou efeito' por 'O maior teste experimental, com 2.064 estudantes holandeses do ensino médio em provas de matemática, não achou efeito'."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Ericsson, a meta-análise de 2014 e os percentuais conferem; mas 'mais de 1.200 vezes em Hamburgo entre 1960 e 1964' deturpa Gladwell e é contestado (Lewisohn).",
+    "correcao": "Na explicação, trocar 'com exemplos como os Beatles, que tocaram ao vivo mais de 1.200 vezes em Hamburgo entre 1960 e 1964.' por 'com exemplos como os Beatles e suas longas temporadas de shows em Hamburgo.'. Remover a fonte 'Outliers (book)' ou manter só como contexto, sem o número."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com a fonte, mas o caso é contado como promessa cumprida, sem dizer que é uma família só, sem grupo de comparação, com genes e treino dos mesmos pais; e falta Sofia, que largou o xadrez.",
+    "correcao": "Na explicacao, apague a frase 'Em 1965, cortejou por cartas Klara, uma professora de línguas ucraniana, e nelas expôs o projeto pedagógico que tinha em mente.' (para continuar com no máximo 250 palavras) e acrescente no fim: 'A filha do meio, Sofia, chegou a sexta melhor jogadora do mundo e depois largou o xadrez. E é o caso de uma única família, sem grupo de comparação: como as meninas herdaram os genes dos mesmos pais que as treinaram, não dá para separar talento de treino, e o experimento não prova que qualquer criança viraria gênio.' O gancho pode ficar como está."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Atribuições corretas e ressalvas de replicação presentes; mas 'infancy' é primeira infância, e '100%' é simplificação (o ambiente não compartilhado inclui erro de medida e acaso do desenvolvimento).",
+    "correcao": "Gancho: 'O peso dos genes nas diferenças de QI parece crescer com a idade: cerca de 20% em bebês e 60% em adultos, segundo uma revisão. E, se todos vivessem no mesmo ambiente, esse peso tenderia a 100%.' Na explicacao: trocar 'se todos tivessem o mesmo ambiente, ela seria de 100%' por 'se todos tivessem o mesmo ambiente, ela tenderia a 100%', e trocar 'de cerca de 20% na infância para 60% na vida adulta' por 'de cerca de 20% na primeira infância para 60% na vida adulta'."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e atribuições conferem; mas o estudo de 2017 mostrou bloqueio do aprendizado no sono profundo, não 'apagar' memórias; e é um estudo único e pequeno (20 voluntários).",
+    "correcao": "Na explicacao, trocar 'Em 2017, uma equipe de pesquisadores tocou amostras de ruído para pessoas adormecidas.' por 'Em 2017, uma equipe francesa tocou amostras de ruído para 20 voluntários adormecidos.' e trocar 'mas o estudo mostra que o cérebro adormecido pode tanto gravar quanto apagar.' por 'mas o estudo sugere que o cérebro adormecido pode tanto gravar algo novo quanto bloquear esse aprendizado, conforme a fase do sono.'"
+   },
+   {
+    "id": "aprendizagem_inteligencia-0014",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o gancho é uma notícia jurídica (acordo da Lumosity com a FTC), sem mecanismo nem espanto; o único 'como' (melhora só em tarefas parecidas) fica escondido."
+   }
+  ],
+  "2": [
+   {
+    "id": "aprendizagem_inteligencia-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Termites\" retirado; o resto confere."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Desenho dentro dos sujeitos aplicado; 80% e 71% conferem."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Restrições a meninas e a provas de matemática aplicadas e sustentadas."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Número dos Beatles retirado; Ericsson e a meta-análise conferem."
+   },
+   {
+    "id": "aprendizagem_inteligencia-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Sofia confere; retoque: a ressalva metodológica não tinha apoio na fonte e virou a menção ao livro \"Training or Genius?\" (1992), que está na fonte.",
+    "correcao": "A frase sobre grupo de comparação e genes virou \"Mas é o caso de uma única família, e a dúvida segue de pé: um livro sobre as irmãs se chama justamente Treino ou gênio?\", com o trecho correspondente.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "aprendizagem_inteligencia-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Correções aplicadas; retoque: a fonte diz \"menores\", não \"bem menores\".",
+    "correcao": "\"bem menores\" virou \"menores\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "aprendizagem_inteligencia-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Equipe francesa, 20 voluntários e o bloqueio conforme a fase do sono aplicados."
+   }
+  ]
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "lote": "2026-11-24-cidades-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "cidades-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Great Stink, citação do Times, lei de 2/8/1858, 82 e 1.100 milhas, 93% das mortes de 1866 na área não ligada, premissa do miasma errada). Não repete o acervo."
+   },
+   {
+    "id": "cidades-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "numero_divergente: no século I havia nove aquedutos, não onze. O gancho atual é conhecido; o mais surpreendente (Fórum sobre pântano aterrado) fica escondido.",
+    "correcao": "1) Na explicação, troque 'No século I d.C., os onze aquedutos que abasteciam a cidade desaguavam nela depois de passar por termas, fontes e casas' por 'Com o tempo, a água dos aquedutos que abasteciam a cidade passou a desaguar nela, depois de correr por termas, fontes e casas'. 2) Recomendado: troque o gancho por 'O Fórum Romano, coração da Roma antiga, foi erguido sobre um pântano aterrado e drenado pela Cloaca Máxima, um dos esgotos mais antigos do mundo. Ela ainda escoa a água da chuva do centro de Roma.'"
+   },
+   {
+    "id": "cidades-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A tese militar é debatida, não desmentida (Haussmann comemorou ter rasgado o bairro das barricadas); a negação dele vale só para os trechos que acrescentou; a frase da cólera e a hierarquia das causas da Comuna vão além da fonte.",
+    "correcao": "1) Em tipos_espanto, troque 'mito_desmentido' por 'contraintuitivo' (fica ['contraintuitivo','historia_humana']). Mantenha confianca 'consenso_parcial'. 2) No gancho, troque 'Haussmann usou esse argumento para tirar verba do Estado, mas negou que fosse o motivo.' por 'Haussmann usou o argumento para tirar verba do Estado, mas escreveu que nunca pensou nisso.' 3) Na explicação, troque 'Mas escreveu que nunca pensou no valor estratégico delas.' por 'Mas escreveu que, ao acrescentar ao plano os trechos que ele mesmo propôs, nunca pensou no valor estratégico deles, embora nas mesmas memórias comemorasse ter rasgado com o Boulevard de Sébastopol o bairro dos motins e das barricadas.' Acrescente ao trecho a frase literal: 'In his memoirs, he wrote that his new Boulevard Sébastopol resulted in the \"gutting of old Paris, of the quarter of riots and barricades\".' 4) Troque 'O historiador Patrice de Moncan aponta outros motivos: a reforma incluiu esgotos, aquedutos, parques, hospitais e escolas, e os bairros abertos estavam entre os mais atingidos pela cólera.' por 'O historiador Patrice de Moncan lembra que boa parte da reforma (esgotos, aquedutos, parques, hospitais e escolas) não tinha valor militar. E os primeiros grandes eixos cortaram justamente os bairros onde a cólera tinha sido pior.' 5) Troque 'e os rebeldes perderam sobretudo por estarem em minoria de cinco para um' por 'e os rebeldes perderam por estarem em minoria de cinco para um, com menos armas, sem comando único e sem plano de defesa'."
+   },
+   {
+    "id": "cidades-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere com a fonte, mas a explicação só apresenta um lado; a principal contestação é Mokhtarian e Chen (2004): o tempo de viagem só parece constante nas médias agregadas.",
+    "correcao": "Acrescente à explicação, antes da frase sobre Cervero: 'A regularidade tem críticos. Uma revisão da literatura empírica publicada em 2004 por Patricia Mokhtarian e Cynthia Chen concluiu que o tempo de viagem só parece constante, se tanto, nas médias de populações inteiras. De pessoa para pessoa, ele varia com renda, emprego, posse de carro e densidade do bairro.' Acrescente a fonte https://ideas.repec.org/a/eee/transa/v38y2004i9-10p643-675.html (ou o PDF em https://escholarship.org/content/qt3kr185ts/qt3kr185ts.pdf) com o trecho literal 'travel time expenditures are not constant except, perhaps, at the most aggregate level' e rode de novo o checar_citacoes.py. Opcional: no gancho, troque 'A média fica em torno de uma hora por dia' por 'Na média geral, o total fica perto de uma hora por dia'."
+   },
+   {
+    "id": "cidades-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (33 mil em 2,6 ha, Kai Tak, até 14 andares, demolição em 1993–94)."
+   },
+   {
+    "id": "cidades-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo tem apoio, mas a prática finlandesa que sustenta o gancho é anedota repetida, sem fonte primária ('a story often told'); e 'proibir costuma funcionar mal' vai além da fonte.",
+    "correcao": "1) No gancho, trocar 'Na Finlândia, há planejadores que visitam os parques' por 'Conta-se que, na Finlândia, planejadores visitam os parques'. 2) Na explicação, depois de 'A neve facilita o trabalho, porque esconde as trilhas antigas e deixa à mostra só as pegadas novas.', acrescentar: 'O relato finlandês circula muito em textos de urbanismo, mas não há estudo que documente a prática.' 3) Trocar 'Proibir costuma funcionar mal:' por 'Bloquear com cercas ou placas nem sempre resolve:'. 4) Mudar confianca para 'consenso_parcial'."
+   },
+   {
+    "id": "cidades-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (comissão de 1807, plano de 1811, Randel aos 20 anos preso pelo xerife, 1.549 marcos, cães, Central Park só nos anos 1850)."
+   },
+   {
+    "id": "cidades-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A história confere com a pt.wikipedia, mas o 214.529 do Plano Piloto não tem data nem pesquisa identificada (PDAD 2021: 224.848; Censo 2022: ~198.697); e quem demarcou os lotes foi a Novacap.",
+    "correcao": "1) Trocar 'o Plano Piloto nunca chegou aos 500 mil moradores previstos e tem 214.529, enquanto Ceilândia sozinha tinha 350.347 em 2021.' por 'o Plano Piloto nunca chegou aos 500 mil moradores previstos e tem pouco mais de 200 mil, enquanto Ceilândia sozinha tinha 350.347 em 2021.' 2) Trocar 'e a campanha, presidida pela primeira-dama, demarcou mais de 17 mil lotes' por 'criou-se uma campanha, presidida pela primeira-dama, e foram demarcados mais de 17 mil lotes'. 3) No trecho da fonte do Brasília, a parte com '214,529' pode ficar, mas o número sai do texto."
+   },
+   {
+    "id": "cidades-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Números conferem e o equilíbrio é bom, mas 'tem um lado confirmado' exagera (replicações acharam efeitos menores e dependentes do contexto); e mito_desmentido não cabe para algo 'contestado'.",
+    "correcao": "1) No gancho, trocar 'tem um lado confirmado:' por 'tem um lado com apoio experimental:'. 2) Na explicação, depois de '...resultado publicado na revista Science.', acrescentar: 'Replicações posteriores acharam efeitos menores e dependentes do contexto.' Se possível, acrescentar como fonte o artigo de Beate Volker na Sociological Science (2017); se não, manter a frase sem números. 3) Em tipos_espanto, trocar 'mito_desmentido' por 'conexao_inesperada' ou deixar só 'contraintuitivo'."
+   },
+   {
+    "id": "cidades-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Causas, números e a atribuição a Jencks conferem; mas o gancho não diz que Pruitt-Igoe era um conjunto habitacional popular, e sem isso a virada perde força para o leitor brasileiro.",
+    "correcao": "No gancho, trocar 'A implosão do conjunto Pruitt-Igoe, nos EUA, em 1972,' por 'A implosão do conjunto habitacional popular Pruitt-Igoe (EUA), em 1972,'. Se passar de 220 caracteres, use 'conjunto habitacional Pruitt-Igoe (EUA)'."
+   },
+   {
+    "id": "cidades-0011",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: o BRT de Curitiba com estações-tubo é exemplo clássico, bem conhecido de brasileiros; além disso o gancho mistura datas (as estações-tubo são de 1991, não de 1974)."
+   },
+   {
+    "id": "cidades-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com 'Insula (building)': até nove andares, limites de Augusto (~70 pés) e Trajano (60 pés), andares de cima mais baratos; números de população e de ínsulas conferem."
+   },
+   {
+    "id": "cidades-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "A causalidade (redefinir títulos de propriedade, indenizações inviáveis) tem apoio na fonte e em busca própria; números conferem."
+   },
+   {
+    "id": "cidades-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Mecanismo noturno confere; não duplica clima_tempo-0009. Mas a chuva a sotavento é 'em parte' pela ilha de calor, a baixa pressão é diurna, e 'a favor do vento das cidades' é confuso.",
+    "correcao": "Na explicação: (a) trocar 'e a baixa pressão criada sobre a cidade atrai ar úmido das áreas rurais' por 'e, durante o dia, a baixa pressão criada sobre a cidade atrai ar úmido das áreas rurais'; (b) trocar 'A chuva mensal costuma ser maior a favor do vento das cidades.' por 'Em parte por isso, a chuva mensal costuma ser maior do lado para onde o vento leva o ar da cidade do que do lado de onde ele vem.'"
+   }
+  ],
+  "2": [
+   {
+    "id": "cidades-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções aplicadas; gancho novo (Fórum sobre pântano aterrado) sustentado; números conferem."
+   },
+   {
+    "id": "cidades-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "As cinco correções aplicadas; negação de Haussmann restrita aos trechos que acrescentou; Moncan, cólera e causas da derrota da Comuna fiéis."
+   },
+   {
+    "id": "cidades-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Fonte nova (Mokhtarian e Chen, 2004) passou e sustenta a crítica; consenso_parcial adequado."
+   },
+   {
+    "id": "cidades-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "As quatro correções aplicadas; o relato finlandês ficou como anedota; números conferem."
+   },
+   {
+    "id": "cidades-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "214.529 retirado (\"pouco mais de 200 mil\"), demarcação na voz passiva; o resto confere."
+   },
+   {
+    "id": "cidades-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Correções 1 e 3 aplicadas; retoque: a frase sobre replicações não tinha apoio em nenhuma fonte e saiu.",
+    "correcao": "Apagada a frase \"Replicações posteriores acharam efeitos menores e dependentes do contexto.\"; nota 3.",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "cidades-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com \"conjunto habitacional\" e trocas para caber mantêm o sentido; retoque: o condenado era o empreendimento sem verba, não o desenho.",
+    "correcao": "\"o projeto estava condenado desde o início\" virou \"o conjunto, sem verba suficiente, estava condenado desde o início\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "cidades-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Baixa pressão diurna e chuva \"em parte\" pela ilha de calor aplicadas."
+   }
+  ]
+ }
+}

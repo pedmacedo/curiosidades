@@ -1,0 +1,185 @@
+{
+ "lote": "2026-11-24-teatro_danca-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "teatro_danca-0001",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Okuni, trupe só de mulheres e a proibição de 1629 conferem; mas a fonte avisa que 'few concrete details are known about her life', e a explicação apresenta a biografia como segura.",
+    "correcao": "Na explicação, troque o início 'Okuni nasceu por volta de 1578 perto do grande santuário de Izumo, onde serviu como miko' por 'Pouco se sabe com certeza sobre a vida dela, mas, segundo os relatos, Okuni nasceu por volta de 1578 perto do grande santuário de Izumo, onde serviu como miko'. O resto fica como está."
+   },
+   {
+    "id": "teatro_danca-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "O desmentido não exagera: a palavra 'motim' é de 1924, a polícia não é confirmada, a apresentação foi até o fim; a explicação admite o barulho real. Datas e citações conferem."
+   },
+   {
+    "id": "teatro_danca-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Datas conferem (Didelot 1796, Camargo, Taglioni, Legnani). Mas mulheres da corte já dançavam balé antes de 1681; 1681 marca as bailarinas profissionais no palco da Ópera.",
+    "correcao": "Na explicação, troque 'Quando as mulheres começaram a dançar balé, em 1681, os sapatos de dança femininos tinham salto.' por 'Em 1681, quando as bailarinas passaram a se apresentar nos palcos de balé, os sapatos de dança femininos tinham salto.'"
+   },
+   {
+    "id": "teatro_danca-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Incêndio de 1613, calças apagadas com cerveja, réplica de 1997 e a ressalva 'claimed' conferem; mas a data de demolição '1644' é justamente a que a fonte contesta (1644–45).",
+    "correcao": "Na explicação, troque 'fechado na guerra civil inglesa e demolido em 1644' por 'fechado na guerra civil inglesa e demolido por volta de 1644–45'."
+   },
+   {
+    "id": "teatro_danca-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e números conferem e misterio_aberto é adequado; mas 'aye' é 'sim', e 'ah, eis o ponto' fica quase igual a 'eis a questão', apagando a estranheza do texto de 1603.",
+    "correcao": "Troque o gancho por: 'Na primeira edição impressa de \"Hamlet\", de 1603, o monólogo famoso diz: \"Ser ou não ser, sim, eis o ponto. Morrer, dormir, é só isso? Sim, só isso\". Esse texto só veio à tona em 1823, e sua origem ainda é discutida.' (confira o limite de 220). Na explicação, nada muda."
+   },
+   {
+    "id": "teatro_danca-0006",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A técnica de 'iluminar/nublar' certas máscaras confere com a fonte, mas (1) a fonte fala em 'some masks'; (2) estudos de percepção (Lyons et al.; Miyata et al. 2012; Kawai et al., PLoS ONE 2013) acharam o efeito oposto em laboratório, e os autores atribuem a diferença às condições do palco.",
+    "correcao": "Reescrever como convenção do palco com a reviravolta experimental. 1) Gancho, por exemplo: 'No nô japonês, os atores aprendem que erguer a máscara a deixa alegre e baixá-la a deixa triste. Em laboratório, porém, voluntários viram o contrário, e a explicação parece estar na penumbra do palco.' (conferir ≤ 220 caracteres). 2) Trocar 'a mesma máscara' por 'certas máscaras' em qualquer menção à técnica. 3) Explicação: manter a técnica 'iluminar/nublar' (fonte Noh) e acrescentar o resultado dos estudos (Lyons et al.; Miyata et al. 2012; Kawai et al. 2013) e a hipótese dos autores sobre distância, pouca luz e boca pouco visível no teatro. Cortar parte das estatísticas de máscaras para caber em 250 palavras. 4) Adicionar como fonte o artigo de Kawai et al. 2013 (https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0071389; ou a Europe PMC, PMC3737093), com trecho literal, e rodar o checar_citacoes.py de novo. 5) Tipos: ['contraintuitivo', 'engenhosidade']. confianca: 'consenso_parcial'. Se o artigo não passar na checagem, o fato deve ser descartado."
+   },
+   {
+    "id": "teatro_danca-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Tudo confere com Zeami Motokiyo; o 'sebo' de Tóquio é confirmado pela introdução de Rimer à tradução de Princeton."
+   },
+   {
+    "id": "teatro_danca-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Etimologia do batacchio confere; mas a frase sobre Chaplin é avaliação do texto da fonte, não declaração dele.",
+    "correcao": "Na explicação, trocar 'onde Charlie Chaplin e Stan Laurel aprenderam o ofício; para Chaplin, essa escola inspirou a comédia de todos os seus filmes.' por 'onde Charlie Chaplin e Stan Laurel aprenderam o ofício; os quinze anos de Chaplin no music hall marcaram a comédia de todos os seus filmes.'"
+   },
+   {
+    "id": "teatro_danca-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Cada ponto confere com The Mousetrap, mas 'a pandemia apenas suspendeu' esconde que a pausa durou 14 meses, mais que os seis meses da cláusula do filme.",
+    "correcao": "Na explicação, trocar 'A pandemia apenas suspendeu as sessões entre 2020 e 2021.' por 'Nem a pandemia encerrou oficialmente a temporada: as sessões ficaram suspensas por 14 meses, de março de 2020 a maio de 2021, e a mesma montagem voltou ao palco do St Martin's.' Não acrescentar nada sobre a cláusula do filme ter sido ou não acionada pela pausa."
+   },
+   {
+    "id": "teatro_danca-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Mecanismo e datas conferem com Limelight (Gurney, Drummond 1825–1826, Herne Bay 1836, Covent Garden 1837)."
+   },
+   {
+    "id": "teatro_danca-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem (1653, 13 horas, 80 papéis, Academia de 1661, Beauchamp). Mas a estreia de Luís XIV na dança foi em 1651, aos 12 anos (Ballet de Cassandre), não aos 14; e quem publicou o sistema em 1700 foi Feuillet.",
+    "correcao": "No gancho, trocar 'Luís XIV estreou como bailarino aos catorze anos, no papel do Sol nascente, num balé que durava 13 horas.' por 'Aos catorze anos, Luís XIV dançou o papel do Sol nascente num balé que durava 13 horas.' Se quiser, troque 'mandou seu professor, Pierre Beauchamp, criar um sistema para registrar as coreografias no papel, publicado em 1700' por '... um sistema para registrar as coreografias no papel, publicado por Feuillet em 1700'."
+   },
+   {
+    "id": "teatro_danca-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A causalidade está na fonte, mas o gancho sugere que os londrinos criaram o nome (é francês) e que o drible valeu desde 1660; e o salão de péla não virou o teatro de Covent Garden: a companhia se mudou de lá em 1720.",
+    "correcao": "No gancho, trocar 'Os outros driblavam a lei pondo música sob as falas, e chamaram isso de melodrama.' por 'Os outros acabaram driblando a lei pondo música sob as falas, e adotaram para isso um nome francês: melodrama.' Na explicação, trocar 'e num antigo salão de jogo de péla que depois deu origem ao teatro de Covent Garden, hoje a Royal Opera House' por 'e num antigo salão de jogo de péla, de onde a segunda companhia se mudou em 1720 para o teatro de Covent Garden, hoje a Royal Opera House'."
+   },
+   {
+    "id": "teatro_danca-0013",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Números conferem. Mas Carl Prinzler não foi sobrevivente (não estava no teatro), e o que ele criou com o arquiteto foi uma barra que destrava a porta, não 'portas'.",
+    "correcao": "Na explicação, trocar 'Um sobrevivente, Carl Prinzler, desenvolveu com um arquiteto portas que se abrem com uma simples pressão numa barra.' por 'Carl Prinzler, um vendedor de ferragens que por acaso escapou de estar entre as vítimas, desenvolveu com o arquiteto Henry H. Dupont uma barra que destrava a porta trancada com uma simples pressão por dentro.' Acrescentar como fonte https://en.wikipedia.org/wiki/Carl_Prinzler (trecho: 'by some fortunate twist of fate, escaped becoming a victim of the tragic Iroquois Theatre Fire'). Opcional: trocar 'por causa de trincos difíceis de abrir' por 'em boa parte por causa de trincos difíceis de abrir'."
+   },
+   {
+    "id": "teatro_danca-0014",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A ligação com Pavlova está bem apoiada; mas a 'proibição de 1910 pela Presidência de Madras' não se confirma (a lei de Madras é de 1947; a de 1909/1910 foi em Mysore, estado principesco), e 'restrita aos templos' contradiz a corte de Thanjavur.",
+    "correcao": "Trocar o gancho por: 'A dança indiana Bharatanatyam, condenada por missionários e autoridades coloniais, foi revivida nos anos 1930 por Rukmini Devi, e o empurrão veio de uma bailarina russa: Anna Pavlova.' Na explicação, remover a frase 'Em 1910, a Presidência de Madras, sob domínio britânico, proibiu a dança nos templos.' e trocar 'A proibição provocou protestos, e a arte foi levada para fora dos templos.' por 'A campanha e as restrições provocaram protestos, e a arte foi levada para fora dos templos.' Trocar também 'ficou restrita aos templos hindus tâmeis até o século XIX' por 'era ligada sobretudo aos templos hindus tâmeis até o século XIX'."
+   },
+   {
+    "id": "teatro_danca-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "A parte italiana confere; mas atrizes já subiam aos palcos ingleses em dezembro de 1660; 1662 é a formalização nas cartas-patentes.",
+    "correcao": "No gancho, trocar 'Na Inglaterra, as mulheres só foram autorizadas a atuar em 1662.' por 'Na Inglaterra, elas só chegaram aos palcos profissionais cerca de um século depois, nos anos 1660.' Na explicação, trocar 'as licenças das companhias foram reeditadas em 1662 permitindo, pela primeira vez, que atrizes se apresentassem' por 'as licenças das companhias, reeditadas em 1662, passaram a permitir formalmente que atrizes se apresentassem'."
+   }
+  ],
+  "2": [
+   {
+    "id": "teatro_danca-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Pouco se sabe com certeza\" aplicado; o resto confere."
+   },
+   {
+    "id": "teatro_danca-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Frase de 1681 corrigida; datas conferem."
+   },
+   {
+    "id": "teatro_danca-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Demolição por volta de 1644–45; o resto confere."
+   },
+   {
+    "id": "teatro_danca-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho com \"sim, eis o ponto... Sim, só isso\"; datas conferem."
+   },
+   {
+    "id": "teatro_danca-0006",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Reescrito como convenção contrariada em laboratório; Lyons 2000, Kawai 2013 e Miyata conferem com o artigo inteiro; consenso_parcial adequado."
+   },
+   {
+    "id": "teatro_danca-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Frase de Chaplin corrigida."
+   },
+   {
+    "id": "teatro_danca-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Pausa de 14 meses aplicada; o resto confere."
+   },
+   {
+    "id": "teatro_danca-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Aos catorze anos, dançou\" e Feuillet aplicados."
+   },
+   {
+    "id": "teatro_danca-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Nome francês e mudança de 1720 aplicados."
+   },
+   {
+    "id": "teatro_danca-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Prinzler e a barra corrigidos; retoque: em 1903 ele era gerente de departamento, não vendedor.",
+    "correcao": "\"um vendedor de ferragens\" virou \"gerente de um setor de ferragens numa loja de Indianápolis\".",
+    "ajuste_pontual": true
+   },
+   {
+    "id": "teatro_danca-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Proibição de 1910 retirada; \"anos 1930\" sustentado (1932, 1935, 1936)."
+   },
+   {
+    "id": "teatro_danca-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Gancho encurtado fiel; \"anos 1660\" sustentado."
+   }
+  ]
+ }
+}

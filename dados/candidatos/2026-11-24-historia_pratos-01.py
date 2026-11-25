@@ -1,0 +1,552 @@
+LOTE = "2026-11-24-historia_pratos-01"
+AREA = "comida"
+TEMA = "historia_pratos"
+W = "https://en.wikipedia.org/wiki/"
+
+
+def wiki(titulo, trecho, nome=None, idioma="en"):
+    base = {"en": W, "pt": "https://pt.wikipedia.org/wiki/"}[idioma]
+    return {"url": base + titulo, "titulo": nome or titulo.replace("_", " "), "idioma": idioma, "trecho": trecho}
+
+
+CANDIDATOS = [
+    # 1 o croissant e a lenda do cerco de Viena
+    {
+        "temas_secundarios": ["europa_medieval", "palavras_viajantes"],
+        "tipos_espanto": ["mito_desmentido", "origem_inesperada"],
+        "gancho": "Conta-se que o croissant nasceu em Viena em 1683, para festejar a derrota dos turcos. Não há registro da época disso: pães em meia-lua já existiam em Viena em 1227, e o croissant folhado é do século XX.",
+        "explicacao": (
+            "O croissant descende do kipferl, pão austríaco em forma de meia-lua documentado em Viena pelo menos "
+            "desde 1227, quando aparece com o nome chipfen. Em 1838 ou 1839, o oficial de artilharia austríaco "
+            "August Zang abriu em Paris uma padaria vienense que vendia kipferl, e o sucesso inspirou imitadores "
+            "franceses. A versão francesa ganhou o nome do formato: croissant quer dizer crescente. A massa folhada "
+            "com fermento, que hoje define o croissant, só entrou no início do século XX, quando padeiros franceses "
+            "trocaram por ela a massa de brioche do kipferl. As lendas de origem, por sua vez, são muitas e nenhuma "
+            "tem fonte da época: o pão teria celebrado a batalha de Tours, em 732, a retomada de Buda aos otomanos, "
+            "em 1686, ou o cerco de Viena, em 1683, quando padeiros acordados de madrugada teriam ouvido os turcos "
+            "cavando túneis e dado o alarme. O formato seria uma alusão às meias-luas das bandeiras otomanas. Mas um "
+            "escritor aristocrata que em 1799 fez uma longa lista de comidas de café da manhã nem cita o kipferl. "
+            "A difusão da lenda é atribuída a Alfred Gottschalk, que a contou na primeira edição do Larousse "
+            "Gastronomique, em 1938, na versão de Budapeste, e depois, num livro de 1948, preferiu a de Viena."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Croissant",
+                "It is buttery and flaky, inspired by the shape of the Austrian kipferl [...] "
+                "Croissants are named for their crescent shape. [...] "
+                "The modern croissant was developed in the early 20th century, when French bakers replaced the brioche dough of the kipferl with a yeast-leavened laminated dough. [...] "
+                "In either 1838 or 1839, an Austrian artillery officer, August Zang, founded a Viennese bakery (Boulangerie Viennoise) at 92, rue de Richelieu in Paris. "
+                "This bakery, which served Viennese specialties including the kipferl and the Vienna loaf, quickly became popular and inspired French imitators [...] "
+                "However, there are no contemporary sources for any of these stories, and an aristocratic writer, writing in 1799, does not mention the kipferl in a long and extensive list of breakfast foods. "
+                "The legends include tales that it was invented in Europe to celebrate the defeat of the Umayyad forces by the Franks at the Battle of Tours in 732, with the shape representing the Islamic crescent; that it was invented in Buda; "
+                "or, according to other sources, in Vienna in 1683 to celebrate the defeat of the Ottomans by Christian forces in the siege of the city, as a reference to the crescents on the Ottoman flags, when bakers staying up all night heard the tunneling operation and gave the alarm. [...] "
+                "The story seems to owe its origin, or at least its wide diffusion, to Alfred Gottschalk, who wrote about the croissant for the first edition of the Larousse Gastronomique (1938) and there gave the legend in the 'Turkish attack on Budapest in 1686' version; "
+                "but who subsequently, in his own book (1948) on the history of food, opted for the 'siege of Vienna in 1683' version.",
+                nome="Croissant"),
+            wiki("Kipferl",
+                "The Kipferl has been documented in Austria to at least 1227 when they were recorded in Babenberg-ruled Vienna as chipfen [...] "
+                "Another story claims when Christian forces freed Buda from Ottoman occupation in 1686, the bakers of the town celebrated the victory the next day by selling freshly baked bread rolls made into a crescent shape.",
+                nome="Kipferl"),
+        ],
+    },
+    # 2 a pizza Margherita e a rainha
+    {
+        "temas_secundarios": ["costumes_rituais"],
+        "tipos_espanto": ["mito_desmentido", "origem_inesperada"],
+        "gancho": "Diz a lenda que a pizza Margherita foi criada em 1889 para a rainha Margarida, nas cores da bandeira italiana. Mas nenhum jornal da época noticiou a visita, e a história só passou a ser divulgada nos anos 1930.",
+        "explicacao": (
+            "Na versão famosa, em 10 de junho de 1889 o palácio real de Capodimonte encomendou ao pizzaiolo "
+            "napolitano Raffaele Esposito uma pizza em homenagem à rainha Margarida, que estava de visita. Das três "
+            "que ele preparou, a rainha teria preferido a que exibia as cores da bandeira italiana: o vermelho do "
+            "tomate, o branco da mussarela e o verde do manjericão. A pizza teria então ganhado o nome dela, e uma "
+            "carta de reconhecimento assinada pelo chefe de serviço da rainha continua exposta na antiga casa de "
+            "Esposito, hoje Pizzeria Brandi. Pesquisas posteriores puseram a história em dúvida: a autenticidade da "
+            "carta foi contestada, nenhum veículo de imprensa da época registrou a suposta visita, e tanto o relato "
+            "quanto o nome Margherita só começaram a ser promovidos nos anos 1930 e 1940. Além disso, a combinação "
+            "já circulava em Nápoles décadas antes. Em 1849, Emanuele Rocco registrou coberturas de pizza com "
+            "manjericão, tomate e fatias finas de mussarela. Em 1866, Francesco De Bourcard, ao descrever as "
+            "tradições da cidade, citou pizzas cobertas de queijo e folhas de manjericão, às vezes com fatias de "
+            "mussarela ou tomate."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Pizza_Margherita",
+            "In 1849 Emanuele Rocco recorded different pizza toppings including basil, tomatoes, and thin slices of mozzarella [...] "
+            "In 1866, Francesco De Bourcard, writing about the traditions of Naples, described the most commonly used pizza toppings at that time [...] "
+            "Others can be covered in grated cheese and dressed with lard, and then they put on a few leaves of basil. [...] "
+            "on the latter some thin slices of mozzarella. Sometimes they use slices of prosciutto, tomato, arselle, etc. [...] "
+            "A popular legend holds that the archetypal pizza Margherita was invented on 10 June 1889, when the Royal Palace of Capodimonte commissioned the Neapolitan pizzaiolo Raffaele Esposito to create a pizza in honor of the visiting Queen Margherita. "
+            "Of the three different pizzas he created, the queen strongly preferred a pizza swathed in the colours of the national flag of Italy—red (tomato), white (mozzarella), and green (basil). "
+            "Supposedly, this type of pizza was then named after the queen, with an official letter of recognition from the queen's \"head of service\" remaining to this day on display in Esposito's shop, now called Pizzeria Brandi. "
+            "Later research cast doubt on this legend, undermining the authenticity of the letter of recognition, pointing out that no media of the period reported the supposed visit and that both the story and name Margherita were first promoted in the 1930s–1940s.",
+            nome="Pizza Margherita")],
+    },
+    # 3 o sanduíche e o Havaí têm o mesmo padrinho
+    {
+        "temas_secundarios": ["grandes_navegacoes", "nomes_lugares", "jogos_azar"],
+        "tipos_espanto": ["conexao_inesperada", "historia_humana"],
+        "gancho": "O sanduíche e as ilhas Sandwich, antigo nome do Havaí, homenageiam o mesmo homem: o 4º conde de Sandwich. Já a história de que ele inventou o lanche para não largar o jogo de cartas pode ser só boato.",
+        "explicacao": (
+            "John Montagu, o 4º conde de Sandwich, viveu de 1718 a 1792 e chefiou o Almirantado britânico. Nesse "
+            "cargo, aprovou verbas para comprar e equipar os navios da segunda e da terceira expedições de James Cook "
+            "ao Pacífico, e Cook retribuiu dando o nome dele às ilhas Sandwich, o Havaí, e às ilhas Sandwich do Sul, "
+            "no Atlântico. A ligação com o lanche é mais nebulosa. A versão popular diz que o conde passava horas "
+            "apostando nas cartas e pedia ao criado carne entre duas fatias de pão, para comer sem garfo, sem largar "
+            "o jogo e sem engordurar as cartas; os parceiros passaram a pedir \"o mesmo que Sandwich\". Esse boato "
+            "aparece num livro de viagem do francês Pierre-Jean Grosley, publicado em 1770 e baseado num ano que ele "
+            "passou em Londres, em 1765, e pode ter sido criado depois do fato. O biógrafo do conde, N. A. M. Rodger, "
+            "acha mais provável que o primeiro sanduíche tenha sido comido na mesa de trabalho, dadas as obrigações "
+            "dele com a Marinha, a política e as artes. A comida em si era bem mais velha: no teatro inglês dos "
+            "séculos XVI e XVII, falava-se em \"pão e carne\" ou \"pão e queijo\", e na Holanda do século XVII o "
+            "naturalista John Ray viu fatias finas de carne servidas sobre pão com manteiga nas tabernas."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("John_Montagu,_4th_Earl_of_Sandwich",
+                "John Montagu, 4th Earl of Sandwich, PC, FRS (13 November 1718 – 30 April 1792) [...] "
+                "The modern sandwich is named after Lord Sandwich, but the circumstances of its invention and original use are the subject of debate. "
+                "A rumour in a contemporaneous travel book by Pierre-Jean Grosley, Tour to London (published 1772), formed the popular myth that bread and meat sustained Lord Sandwich at the gambling table, "
+                "but Sandwich had many habits, including the Hellfire Club, and any story may be a creation after the fact. [...] "
+                "Other people, according to this account, began to order \"the same as Sandwich!\", and thus the \"sandwich\" was born. "
+                "The sober alternative to this account is provided by Sandwich's biographer N. A. M. Rodger, who suggests that Sandwich's commitments to the navy, to politics, and to the arts mean that the first sandwich was more likely to have been consumed at his work desk. [...] "
+                "As First Lord of the Admiralty, Sandwich approved Admiralty funds for the purchase and fit-out of the Resolution, Adventure and Discovery for Cook's second and third expeditions of exploration in the Pacific Ocean. [...] "
+                "In honour of Sandwich, Cook named the Sandwich Islands (Hawaii) after him, as well as the South Sandwich Islands in the Southern Atlantic Ocean",
+                nome="John Montagu, 4th Earl of Sandwich"),
+            wiki("Sandwich",
+                "Before being known as a \"sandwich\", this food combination seems to have been known as \"bread and meat\" or \"bread and cheese\". "
+                "These two phrases are found throughout English drama from the 16th and 17th centuries. [...] "
+                "The immediate culinary precursor with a direct connection to the English sandwich was to be found in the Netherlands of the seventeenth century, where the naturalist John Ray observed that in the taverns beef hung from the rafters \"which they cut into thin slices and eat with bread and butter laying the slices upon the butter\" [...] "
+                "It is commonly said that Lord Sandwich, during long sessions of cribbage and other card games at public gambling houses, would order his valet to bring him roast beef between two pieces of toasted bread. "
+                "He was fond of this form of food because it allowed him to continue gambling while eating, without the need for a fork, and without getting his cards greasy from eating meat with his bare hands. [...] "
+                "The rumour in its familiar form appeared in Pierre-Jean Grosley's Londres (Neuchâtel, 1770), translated as A Tour to London in 1772; Grosley's impressions had been formed during a year in London in 1765.",
+                nome="Sandwich"),
+        ],
+    },
+    # 4 Marco Polo não trouxe o macarrão
+    {
+        "temas_secundarios": ["mundo_islamico_medieval", "comercio_rotas", "europa_medieval"],
+        "tipos_espanto": ["mito_desmentido", "conexao_inesperada"],
+        "gancho": "Marco Polo não trouxe o macarrão da China. Em 1154, um século antes de ele nascer, um geógrafo árabe já descrevia na Sicília moinhos que faziam massa seca aos montes e a exportavam em navios.",
+        "explicacao": (
+            "Marco Polo nasceu por volta de 1254 e voltou da Ásia a Veneza em 1295. Muito antes disso, o geógrafo "
+            "Muhammad al-Idrisi, numa obra preparada em 1154 para Rogério II, rei normando da Sicília, contou que em "
+            "Trabia, a leste de Palermo, riachos moviam moinhos e grandes construções produziam itriyya em quantidade "
+            "enorme, embarcada em muitos navios para a Calábria e para países muçulmanos e cristãos. Itriyya era o "
+            "nome árabe de uma massa em fios, feita de sêmola e seca antes do cozimento, segundo um dicionário do "
+            "século IX. O termo tem parentes mais antigos: o Talmude de Jerusalém fala do itrium, massa cozida comum "
+            "na Palestina entre os séculos III e V. A lenda de que o viajante levou a massa para a Itália é tida "
+            "como mito por muitos historiadores, e tudo indica que nasceu como propaganda na América do Norte: uma "
+            "explicação aponta o Macaroni Journal, de uma associação da indústria que queria vender mais massa nos "
+            "Estados Unidos, e a escritora Jane Grigson pensava num anúncio de uma fábrica canadense de espaguete. "
+            "No livro dele, Marco Polo descreve uma comida parecida com lasanha, usando uma palavra que já conhecia. "
+            "A China não sai totalmente da história, porém: para o historiador Gil Marks, a tradição do macarrão "
+            "saiu de lá pela Rota da Seda, chegou à Pérsia e alcançou a Sicília e a Espanha pela influência árabe."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [
+            wiki("Pasta",
+                "Marks wrote that noodle-making traditions spread from China along the Silk Road to Central Asia and reached Persia by the fourth or fifth century. [...] "
+                "This food later reached Sicily and Spain through Arab influence, where noodles were known as itriya. [...] "
+                "The Jerusalem Talmud records that itrium, a kind of boiled dough, was common in Palestine from the 3rd to 5th centuries. "
+                "A dictionary compiled by the 9th-century Arab physician and lexicographer Isho bar Ali defines itriyya, the Arabic cognate, as string-like shapes made of semolina and dried before cooking. "
+                "The geographical text of Muhammad al-Idrisi, compiled for the Norman king of Sicily Roger II in 1154, mentions itriyya manufactured and exported from Norman Sicily: [...] "
+                "West of Termini there is a delightful settlement called Trabia [along the Sicilian coast east of Palermo]. "
+                "Its ever-flowing streams propel a number of mills. "
+                "Here there are huge buildings in the countryside where they make vast quantities of itriyya which is exported everywhere: to Calabria, to Muslim and Christian countries. "
+                "Very many shiploads are sent. [...] "
+                "The popular belief that Marco Polo introduced pasta to Italy from China to Italy is considered a myth by many historians. [...] "
+                "Jane Grigson believed the Marco Polo story to have originated in the 1920s or 1930s in an advertisement for a Canadian spaghetti company.",
+                nome="Pasta"),
+            wiki("Marco_Polo",
+                "Marco Polo was born around 1254 in Venice [...] "
+                "Marco Polo returned to Venice in 1295 [...] "
+                "There is a legend about Marco Polo importing pasta from China; however, it is actually a popular misconception, originating with the Macaroni Journal, published by a food industry association with the goal of promoting the use of pasta in the United States. "
+                "Marco Polo describes in his book a food similar to \"lasagna\", but he uses a term with which he was already familiar.",
+                nome="Marco Polo"),
+        ],
+    },
+    # 5 o sushi nasceu como conserva de peixe fermentado
+    {
+        "temas_secundarios": ["fermentacao", "asia_antiga"],
+        "tipos_espanto": ["origem_inesperada", "contraintuitivo"],
+        "gancho": "O sushi nasceu como conserva: o peixe fermentava no arroz por meses, e o arroz era jogado fora. O nome vem de uma palavra para \"azedo\", e o nigiri do século XIX era comida rápida, com o triplo de arroz.",
+        "explicacao": (
+            "O antepassado do sushi é o narezushi, \"peixe maturado\". O peixe salgado era guardado no arroz cozido, "
+            "que fermentava com ácido láctico e impedia o peixe de estragar, possivelmente por meses; no fim, o arroz "
+            "era descartado. A técnica surgiu no Sudeste Asiático para conservar peixe de água doce, talvez na bacia "
+            "do rio Mekong, e a primeira menção a algo parecido está num dicionário chinês provavelmente do século IV. "
+            "No Japão, o nome veio do sabor: sushi deriva de uma forma antiga de um adjetivo que significa \"azedo\". "
+            "A mudança foi lenta. No período Muromachi (1336–1573) apareceu um sushi de fermentação mais curta, em "
+            "que o arroz também era comido. No período Edo, passou-se a misturar vinagre ao arroz, a fermentação foi "
+            "abandonada e o sushi virou comida rápida. O nigiri, a fatia de peixe sobre um bolinho de arroz, se "
+            "popularizou em Edo, a atual Tóquio, nos anos 1820 ou 1830; uma história comum o atribui ao cozinheiro "
+            "Hanaya Yohei, em 1824. O bolinho da época tinha cerca de três vezes o tamanho do atual. O jeito antigo "
+            "não sumiu: o narezushi ainda é feito como especialidade regional, como o funa-zushi da província de Shiga."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Sushi",
+            "This refers to the taste of the original dish, made from fish fermented in rice. [...] "
+            "A dish known as narezushi (馴れ寿司, 熟寿司), \"matured fish\", stored in fermented rice for possibly months at a time, has been cited as one of the early influences for the Japanese practice of applying rice on raw fish. "
+            "The fish was fermented with rice vinegar, salt, and rice, after which the rice was discarded. [...] "
+            "Fermented fish using rice, such as narezushi, originated in Southeast Asia, where it was made to preserve freshwater fish, possibly in the Mekong River basin [...] "
+            "The first mention of a narezushi-like food is in a Chinese dictionary thought to be from the fourth century, in this instance referring to salted fish that had been placed in cooked or steamed rice, which caused it to undergo a fermentation process via lactic acid. [...] "
+            "The lacto-fermentation of the rice prevents the fish from spoiling. [...] "
+            "The term sushi literally means \"sour-tasting\" [...] "
+            "Narezushi still exists as a regional specialty, notably as funa-zushi from Shiga Prefecture. [...] "
+            "During the Muromachi period (1336–1573), the Japanese invented a style of sushi called namanare [...] "
+            "The fermentation period of namanare was shorter than that of the earlier narezushi, and the rice used for fermentation was also eaten with the fish. [...] "
+            "the fermentation process was eliminated and sushi became a fast food. [...] "
+            "Today's style of nigirizushi (握り寿司, \"hand-pressed sushi\"), consisting of an oblong mound of rice with a slice of fish draped over it, became popular in Edo (contemporary Tokyo) in the 1820s or 1830s. "
+            "One common story of the origin of nigirizushi is of the chef Hanaya Yohei (1799–1858), who invented or perfected the technique in 1824 at his shop in Ryōgoku. "
+            "The nigirizushi of this period was somewhat different from modern nigirizushi. "
+            "The sushi rice of this period was about three times the size of today's nigirizushi.",
+            nome="Sushi")],
+    },
+    # 6 a tempura veio dos portugueses
+    {
+        "temas_secundarios": ["grandes_navegacoes", "palavras_viajantes", "religioes"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "A tempura japonesa tem raiz portuguesa: a fritura em massa de farinha e ovos foi aprendida com missionários em Nagasaki no século XVI. O nome viria do latim \"tempora\", os dias de jejum católico.",
+        "explicacao": (
+            "Antes, as frituras japonesas eram feitas sem cobertura ou com farinha de arroz. No fim do século XVI, "
+            "por meio do comércio com os portugueses, chamado no Japão de comércio Nanban, a técnica de empanar em "
+            "massa de farinha e ovos foi aprendida em Nagasaki com missionários. Em Portugal, existe até hoje um "
+            "prato muito parecido, os peixinhos da horta: vagens passadas numa massa de farinha de trigo e fritas. "
+            "Era comida de Quaresma e das Têmporas, dias em que os católicos deviam jejuar e evitar carne, comendo "
+            "peixe ou legumes. A explicação mais citada para o nome é o latim tempora, \"tempos\", termo que os "
+            "missionários usavam para esses períodos. Outra possibilidade é o português \"tempero\". A tempura "
+            "dos primeiros tempos era diferente da atual: a massa grossa levava açúcar e saquê, a fritura era em "
+            "banha, e, como já vinha temperada, dispensava molho. No início do século XVII, na região da baía de "
+            "Tóquio, a moda das barraquinhas de comida mudou o prato: para valorizar o frescor dos frutos do mar, a "
+            "massa passou a levar só farinha, ovos e água, sem tempero, misturada pouco e com água fria, o que evita "
+            "o glúten pegajoso e dá a crocância típica de hoje."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Tempura",
+                "Tempura originated in the 16th century, when Portuguese Jesuits brought the Western-style cooking method of coating foods with flour and frying, via Nanban trade. [...] "
+                "Earlier Japanese deep-fried food was either simply fried without breading or batter or fried with rice flour. "
+                "However, toward the end of the 16th century, the technique of fritter-cooking with a batter of flour and eggs was acquired in Nagasaki from Portuguese missionaries. "
+                "Peixinhos da horta was a dish often eaten during Lent or Ember days to fulfill the fasting and abstinence rules for Catholics. [...] "
+                "In those days, the ingredients were covered in thick batter containing flour, sugar and sake, and then fried in lard. "
+                "As the batter already contained seasoning, it was eaten without dipping sauce. "
+                "In the early 17th century, around the Tokyo Bay area, tempura ingredients and preparation changed as the yatai (food cart) culture gained popularity. "
+                "Making the best use of fresh seafood while preserving its delicate taste, tempura used only flour, eggs, and water as ingredients, and the batter was not flavored. "
+                "As the batter was mixed minimally in cold water, it avoided the dough-like stickiness caused by the activation of wheat gluten, resulting in the crispy texture now characteristic of tempura. [...] "
+                "comes from the word tempora, a Latin word meaning \"times\", \"time period\" used by Portuguese missionaries to refer to the Lenten period or Ember Days (ad tempora quadragesima), Fridays, and other Christian holy days. "
+                "Ember Days, or quatuor anni tempora in Latin, refer to holy days when Catholics avoid meat and eat fish or vegetables instead. "
+                "The idea that the word \"tempura\" may have been derived from the Portuguese noun tempero, meaning a condiment or seasoning of any kind [...] is also possible [...] "
+                "There is still today a dish in Portugal very similar to tempura called peixinhos da horta, \"garden fishes\", which consists of green beans dipped in a batter and fried.",
+                nome="Tempura"),
+            wiki("Peixinhos_da_horta",
+                "Peixinhos da horta is usually prepared with green beans in a wheat-flour-based batter that are then deep-fried.",
+                nome="Peixinhos da horta"),
+        ],
+    },
+    # 7 o vindaloo é a "vinha d'alhos" portuguesa
+    {
+        "temas_secundarios": ["especiarias", "grandes_navegacoes", "palavras_viajantes"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O vindaloo, curry famoso na Grã-Bretanha por arder muito, tem nome português: vem da \"carne de vinha d'alhos\" levada a Goa. E a pimenta que o faz arder veio da América, também em mãos portuguesas.",
+        "explicacao": (
+            "Os portugueses fundaram o Estado da Índia em 1501, e Goa virou sua capital em 1530. Lá, a carne de "
+            "vinha d'alhos, temperada com vinho e alho, foi adaptada pelos cozinheiros locais, que trocaram o vinho "
+            "por vinagre de palmeira e acrescentaram especiarias. Nasceu o vindalho, um prato de porco. Segundo o "
+            "chef Raghavan Iyer, os goeses podiam usar essa carne, evitada por hindus e muçulmanos, porque tinham "
+            "sido convertidos ao cristianismo. A historiadora Lizzie Collingham conta que os portugueses gostavam de "
+            "comida muito picante, com até 20 pimentas numa receita. Colombo encontrou a pimenta na viagem de 1492 à "
+            "América Central, e no máximo em 1528 os portugueses já a tinham levado à costa do Malabar, de onde o uso "
+            "se espalhou pela Índia. Os britânicos valorizavam os cozinheiros goeses e adotaram o \"curry "
+            "português\": um livro de cozinha de 1888 ensina o \"Vindaloo ou Bindaloo\", com carne de vaca, porco ou "
+            "pato. Com os restaurantes indianos do pós-guerra, o nome passou a significar, no Reino Unido, apenas um "
+            "curry extremamente apimentado, pedido como prova de valentia depois do pub. Algumas versões indianas "
+            "chegam a levar batata, por confusão com aloo, \"batata\" em hindi."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("Vindaloo",
+            "Vindaloo's name derives from the famous Portuguese Goan dish carne de vinha d'alhos (meat with garlic vinegar) or vindalho, made with pork. [...] "
+            "The British highly prized Goan cooks, and acquired \"Portuguese curry\". [...] "
+            "The Portuguese founded their State of India in 1501; Goa became its capital in 1530. "
+            "A standard element of Goan cuisine derived from the Portuguese carne de vinha d'alhos (\"meat in garlic wine\"), vindalho is a dish of pork marinated in vinegar and garlic. "
+            "This was adapted by the local Goan cooks with the substitution of palm vinegar for the wine, and the addition of spices. "
+            "According to the chef Raghavan Iyer, cooks in Goa were free to use pork, a meat avoided by Hindus and Muslims in India, because they had been converted to Christianity by the Portuguese. [...] "
+            "In addition, she states that the Portuguese liked their food extremely spicy, with up to 20 chili peppers in a recipe. "
+            "Christopher Columbus found chili pepper when he sailed to Central America in 1492, and it was soon planted in the Iberian Peninsula. "
+            "By 1528 at the latest, the Portuguese had introduced it to the Malabar Coast, and several varieties of it were being grown in Goa; their use quickly spread across India. [...] "
+            "Traditional Goan vindalho does not include potatoes; some Indian versions add them due to the confusion with the Hindi आलू aloo, \"potato\". [...] "
+            "W. H. Dawe's 1888 cookery book, The Wife's Help to Indian Cookery, gave a recipe for \"Vindaloo or Bindaloo—A Portuguese Kárhí\", suggesting beef, pork, or duck as the meat. [...] "
+            "The name \"vindaloo\" was effectively redefined in postwar British usage to mean simply an extremely hot curry, contrasting with a mild korma. [...] "
+            "the \"lager-loutish tradition of rolling, uproariously drunk, into an Indian restaurant and proving one's machismo by ordering the hottest vindaloo or phaal possible\".",
+            nome="Vindaloo")],
+    },
+    # 8 o tikka masala, prato nacional britânico
+    {
+        "temas_secundarios": ["especiarias", "imperios_coloniais"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O frango tikka masala, que um chanceler britânico chamou em 2001 de \"verdadeiro prato nacional britânico\", provavelmente foi criado no Reino Unido. Quem o inventou é disputado, e uma das versões teria sido forjada.",
+        "explicacao": (
+            "O frango tikka em si é antigo: pedaços de frango marinados em iogurte e especiarias e assados no forno "
+            "tandoor, criação atribuída ao reinado do imperador mogol Babur, entre 1526 e 1530. Já o molho cremoso "
+            "do tikka masala parece ter nascido na Grã-Bretanha. A versão mais repetida diz que Ali Ahmed Aslam, dono "
+            "do restaurante Shish Mahal, em Glasgow, improvisou um molho com uma lata de sopa de tomate condensada e "
+            "especiarias para um cliente que queria algo para acompanhar a carne seca. O historiador Peter Grove "
+            "contesta: o prato existia anos antes de o restaurante abrir, e outro dono de restaurante de Glasgow, "
+            "Sultan Ahmed Ansari, disse tê-lo criado nos anos 1950. O restaurateur londrino Iqbal Wahhab vai além e "
+            "afirma que ele e Grove inventaram a história da sopa de tomate para divertir jornalistas. Peter e "
+            "Colleen Grove concluem que o prato foi \"com certeza\" inventado na Grã-Bretanha, provavelmente por um "
+            "cozinheiro bengali; outros o derivam do frango na manteiga do norte da Índia. Receita padrão não há: "
+            "uma pesquisa britânica de 1998 comparou 48 receitas, e o único ingrediente comum a todas era o frango. "
+            "Em 2001, o ministro Robin Cook usou o prato como exemplo de como o país absorve e adapta influências "
+            "de fora."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Chicken_tikka_masala",
+            "It is one of the most popular dishes in Britain, and in 2001 was described by the British Foreign Secretary Robin Cook as \"a true British national dish\". [...] "
+            "A tomato and coriander leaf sauce is common, but there is no standard recipe: a 1998 survey in Britain found that among 48 recipes, the only common ingredient was chicken. [...] "
+            "Chicken tikka (without a sauce) was created in the reign of the Mughal Emperor Babur (r. 1526–1530) by marinating pieces of chicken meat in yoghurt and spices, and then grilling them in a tandoor oven. [...] "
+            "This version recounts how a British Pakistani chef, Ali Ahmed Aslam, proprietor of the Shish Mahal restaurant in Glasgow from the 1960s, invented the dish by improvising a sauce made from a tin of condensed tomato soup, and spices, to please a customer who wanted a sauce to accompany the dry chicken tikka meat. "
+            "The historian of ethnic food Peter Grove challenges the claim that Aslam had created the dish, on the grounds that the dish existed several years before his restaurant opened. "
+            "Specifically, Sultan Ahmed Ansari, owner of Glasgow's Taj Mahal restaurant, stated that he had created the dish in the 1950s. "
+            "The London restaurant owner Iqbal Wahhab claims that he and Peter Grove fabricated the story of a chef using Campbell's tomato soup to create chicken tikka masala \"to entertain journalists\", and that in particular the use of the soup was \"completely made up\". [...] "
+            "Peter and Colleen Grove conclude that the dish \"was most certainly invented in Britain, probably by a Bangladeshi chef.\" [...] "
+            "It has been suggested that the dish is derived from butter chicken, a popular dish in the northern Indian subcontinent. [...] "
+            "Chicken tikka masala is now a true British national dish, not only because it is the most popular, but because it is a perfect illustration of the way Britain absorbs and adapts external influences.",
+            nome="Chicken tikka masala")],
+    },
+    # 9 a salada Caesar nasceu em Tijuana
+    {
+        "temas_secundarios": ["bebidas_alcoolicas", "leis_julgamentos"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "A salada Caesar não tem nada a ver com Júlio César: leva o nome de Caesar Cardini, imigrante italiano que, segundo a filha, a criou em 1924 em Tijuana, no México, num restaurante para americanos fugindo da Lei Seca.",
+        "explicacao": (
+            "Cardini morava em San Diego, nos Estados Unidos, mas mantinha um restaurante em Tijuana, do outro lado "
+            "da fronteira, para atrair americanos que queriam escapar das restrições da Lei Seca. Segundo a filha, "
+            "Rosa, o movimento do feriado da Independência americana, em julho de 1924, esvaziou a despensa, e o pai improvisou com o que "
+            "havia, acrescentando um toque de espetáculo: o próprio cozinheiro misturava a salada ao lado da mesa, "
+            "como ainda se faz no restaurante original. Há versões rivais. Alguns relatos atribuem a receita ao "
+            "irmão, Alex Cardini, que a teria chamado de \"salada do aviador\", e vários funcionários disseram ser "
+            "os inventores; um livro de 2024 deu razão a Caesar. A receita original também surpreende: a filha e "
+            "outras fontes afirmam que não levava anchova, só molho inglês, porque Cardini achava a anchova forte "
+            "demais. Julia Child, que provou a salada ali na juventude, nos anos 1920, lembrava de folhas inteiras de "
+            "alface romana, para pegar pelo talo e comer com os dedos, com ovos levemente cozidos, parmesão e "
+            "croutons feitos com óleo de alho. Segundo Cardini, a salada ficou famosa em 1937, quando um editor da "
+            "Paramount Pictures passou a receita para restaurantes de Hollywood."
+        ),
+        "nivel": 1, "nota_surpresa": 3, "confianca": "alta",
+        "fontes": [wiki("Caesar_salad",
+            "It was originally prepared tableside, and it is still prepared tableside at the original venue. [...] "
+            "The salad's creation is generally attributed to the restaurateur Caesar Cardini, an Italian immigrant who operated restaurants in Mexico and the United States. "
+            "Cardini lived in San Diego, but ran one of his restaurants, Caesar's, in Tijuana, Mexico, to attract American customers seeking to circumvent the restrictions of Prohibition. "
+            "His daughter, Rosa, recounted that her father invented the salad at the Tijuana restaurant when a Fourth of July rush in 1924 depleted the kitchen's supplies. "
+            "Cardini made do with what he had, adding the dramatic flair of table-side tossing by the chef. "
+            "Some other accounts of the history state that Alex Cardini, Caesar Cardini's brother, made the salad, and that the salad was previously named the \"Aviator Salad\" [...] "
+            "A number of Cardini's staff have also said that they invented the dish. "
+            "A popular myth attributes its invention to Julius Caesar. "
+            "A 2024 book confirmed the claim that Caesar Cardini originated the recipe. [...] "
+            "The American chef and writer Julia Child said that she had eaten a Caesar salad at Cardini's restaurant in her youth during the 1920s, made with whole romaine lettuce leaves, which were meant to be lifted by the stem and eaten with the fingers, "
+            "tossed with olive oil, salt, pepper, lemon juice, Worcestershire sauce, coddled eggs, Parmesan, and croutons made with garlic-infused oil. [...] "
+            "In a 1952 interview, Cardini said the salad became well known in 1937, when Manny Wolf, story editor and Paramount Pictures writer's department head, provided the recipe to Hollywood restaurants. [...] "
+            "Cardini's daughter and several other sources have testified that the original recipe used only Worcestershire sauce, not anchovies, mustard, or herbs, which Cardini considered too bold in flavor.",
+            nome="Caesar salad")],
+    },
+    # 10 o extrato de carne de Liebig e os cães
+    {
+        "temas_secundarios": ["ciencia_cozinha", "historia_medicina", "comercio_rotas"],
+        "tipos_espanto": ["historia_humana", "contraintuitivo"],
+        "gancho": "O extrato de carne de Liebig, de onde saiu o caldo em cubo Oxo, foi vendido como substituto barato e nutritivo da carne. Mas quase não tinha proteína, e cães alimentados só com ele morreram.",
+        "explicacao": (
+            "Em 1847, o químico alemão Justus von Liebig criou um extrato concentrado de carne para dar aos pobres "
+            "uma alternativa barata a ela, e publicou o método para que muitos o fabricassem e o preço caísse. A "
+            "carne sem gordura era picada, fervida em água e reduzida em fogo baixo até virar uma pasta; costuma-se "
+            "dizer que eram precisos 30 kg de carne para 1 kg de extrato. Na Europa, com a carne cara, a conta não "
+            "fechava. A solução veio do Uruguai, onde gado era abatido só pelo couro: o engenheiro George "
+            "Giebert montou uma fábrica em Fray Bentos, e em 1865 nasceu em Londres a Liebig's Extract of Meat "
+            "Company, com o químico como fiscal da qualidade. Logo a fama nutritiva desabou. Dezenas de análises "
+            "mostraram que o produto quase não tinha gordura, gelatina nem proteína, e um fisiologista alemão viu "
+            "que cães alimentados só com o extrato morriam. A empresa passou a vender sabor, praticidade e efeito "
+            "estimulante, e o sucesso foi enorme: no fim dos anos 1860, um hospital de Londres usava, segundo "
+            "relatos, 12 mil potes por ano. Depois da morte de Liebig, a empresa lançou um extrato mais barato com a "
+            "marca Oxo, líquido de início e vendido em cubos a partir de 1911."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Liebig's_Extract_of_Meat_Company",
+                "In 1847, Justus Freiherr von Liebig developed a concentrated beef extract in hopes of providing a cheap and nutritious meat substitute, Extractum carnis Liebig, for those unable to afford the real thing. "
+                "His method was to trim the fat from the meat, break the meat into small particles, boil it with water to form a liquid of 6-8% solids, and then stir it over low heat, until it was reduced to a paste of 80% solids. "
+                "However, in Europe meat was too expensive to profitably supply the necessary raw materials to create the extract. [...] "
+                "Using the flesh of cattle that, before the popularity of canning or freezing meat, would otherwise have been killed for their hides alone [...] "
+                "With Liebig's agreement, and the backing of a group of entrepreneurs and ranchers, Giebert established the Societé de Fray Bentos Giebert & Cie., and built a test extraction plant at Villa Independencia, Uruguay, later called Fray Bentos. [...] "
+                "The Liebig Extract of Meat Company was established on 4 December 1865 in London with a capital of £150,000. "
+                "Liebig performed and supervised quality control testing on the product arriving to Europe [...] "
+                "The ratio of meat to meat extract is generally reported to be about 30 to 1: it takes 30 kg of meat to make 1 kg of extract. [...] "
+                "Dozens of articles and analyses were published on the issue [...] "
+                "In fact, most studies proved that Liebig's meat extract contained virtually no trace of fats, gelatines and proteins; in brief, it lacked the very basis of meat's nutritive value. [...] "
+                "A German physiologist found that dogs died if fed exclusively on extract of meat. "
+                "As research brought its nutritional value into question, its convenience and flavourfulness were emphasized, and it was marketed as a comfort food. [...] "
+                "In a change of marketing strategy, it was promoted as a stimulant. "
+                "The product enjoyed immense popularity and became a staple in middle-class European households. "
+                "By the late 1860s, St. Thomas's Hospital in London reportedly used 12,000 pots per year of the easily digestible substance. [...] "
+                "The company also worked with English chemist Henry Enfield Roscoe to develop a cheaper meat extract product which it commercialized some years after Liebig's death. [...] "
+                "Originally a liquid, Oxo was released as a bouillon cube in 1911.",
+                nome="Liebig's Extract of Meat Company"),
+            wiki("Justus_von_Liebig",
+                "The details were published in 1847 so that \"the benefit of it should ... be placed at the command of as large a number of persons as possible by the extension of the manufacture, and consequently a reduction in the cost\".",
+                nome="Justus von Liebig"),
+        ],
+    },
+    # 11 o biscoito da sorte é japonês
+    {
+        "temas_secundarios": ["costumes_rituais", "segunda_guerra", "religioes"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O biscoito da sorte dos restaurantes chineses nos EUA não é chinês: o mais provável é que descenda de um biscoito japonês. Até a Segunda Guerra, quem dominava o negócio eram os nipo-americanos.",
+        "explicacao": (
+            "Já no século XIX, em Kyoto, fazia-se um biscoito muito parecido, o tsujiura senbei, e no Japão há a "
+            "tradição dos omikuji, papeizinhos de sorte tirados nos templos. A versão japonesa é um pouco maior, de "
+            "massa mais escura, com gergelim e missô, e o papel fica preso na dobra, não no oco. Ainda é vendida em "
+            "Kanazawa e perto do santuário Fushimi Inari, em Kyoto. Nos EUA, quem primeiro serviu a versão moderna "
+            "teria sido Makoto Hagiwara, do Jardim de Chá Japonês de São Francisco, no início dos anos 1900. Los "
+            "Angeles defendia outro inventor, David Jung, que dizia tê-lo criado em 1918, e em 1983 o \"Tribunal de "
+            "Revisão Histórica\" de São Francisco decidiu a favor de Hagiwara; Los Angeles condenou a decisão. Até "
+            "perto da Segunda Guerra, o biscoito se chamava \"bolinho de chá da sorte\", e por volta da guerra o "
+            "negócio passou dos nipo-americanos para os sino-americanos. Uma explicação é a internação forçada de "
+            "mais de 100 mil nipo-americanos em campos, entre eles os fabricantes de biscoitos, o que abriu espaço "
+            "para os concorrentes. Em chinês, nem há um nome consagrado para o biscoito: os vários em uso são "
+            "traduções mais ou menos literais do inglês."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Fortune_cookie",
+            "Fortune cookies are often served as a dessert in Chinese restaurants in the United States, Canada, Australia, and other countries, but they are not Chinese in origin. [...] "
+            "They most likely originated from cookies made by Japanese immigrants to the United States in the late 19th or early 20th century. [...] "
+            "There is no single accepted Chinese name for the cookies, with a large variety of translations being used to describe them in the Chinese, all of which being more-or-less literal translations of the English \"fortune cookie\". [...] "
+            "As far back as the 19th century, a cookie very similar in appearance to the modern fortune cookie was made in Kyoto, Japan, and there is a Japanese temple tradition of random fortunes, called omikuji. "
+            "The Japanese version of the cookie differs in several ways: they are a little bit larger; are made of darker dough; and their batter contains sesame and miso. "
+            "They contain a fortune; however, the small slip of paper was wedged into the bend of the cookie rather than placed inside the hollow portion. "
+            "This kind of cookie is called tsujiura senbei (辻占煎餅) and is still sold in some regions of Japan, especially in Kanazawa, Ishikawa. "
+            "It is also sold in the neighborhood of Fushimi Inari-taisha shrine in Kyoto. "
+            "Makoto Hagiwara of Golden Gate Park's Japanese Tea Garden in San Francisco is reported to have been the first person in the U.S. to have served the modern version of the cookie when he did so at the tea garden in the early 1900s. [...] "
+            "David Jung, founder of the Hong Kong Noodle Company in Los Angeles, made a competing claim that he invented the cookie in 1918. "
+            "San Francisco's Court of Historical Review attempted to settle the dispute in 1983. [...] "
+            "determined that the cookie originated with Hagiwara and the court ruled in favor of San Francisco. "
+            "The city of Los Angeles condemned the decision. [...] "
+            "Up to around World War II, fortune cookies were known as \"fortune tea cakes\"—likely reflecting their origins in Japanese tea cakes. "
+            "Fortune cookies moved from being a confection dominated by Japanese-Americans to one dominated by Chinese-Americans sometime around World War II. "
+            "One theory for why this occurred is because of the Japanese American internment during World War II, which forcibly put over 100,000 Japanese-Americans in internment camps, including those who had produced fortune cookies. "
+            "This gave an opportunity for Chinese manufacturers.",
+            nome="Fortune cookie")],
+    },
+    # 12 o peixe do fish and chips veio de judeus sefarditas
+    {
+        "temas_secundarios": ["religioes", "costumes_rituais"],
+        "tipos_espanto": ["origem_inesperada", "conexao_inesperada"],
+        "gancho": "O peixe frito do fish and chips, prato-símbolo da Inglaterra, chegou ao país com judeus vindos da Holanda, muitos de origem espanhola e portuguesa. Frito na sexta, o peixe podia ser comido frio no Shabat.",
+        "explicacao": (
+            "Os judeus sefarditas da Espanha e de Portugal tinham o costume de fritar peixe, em geral bacalhau, "
+            "para o Shabat, num estilo parecido com o pescado frito andaluz: passado na farinha e frito em óleo. O "
+            "peixe do jantar de sexta-feira podia ser comido frio na tarde seguinte, e continuava saboroso porque era "
+            "frito em azeite, não em gordura sólida como a manteiga. Segundo o verbete sobre o prato, esse costume "
+            "chegou à Grã-Bretanha com judeus espanhóis e portugueses que viviam na Holanda, alguns já no século XVI; "
+            "a grande leva para Londres veio nos anos 1850. O peixe frito virou comida popular: Charles Dickens cita "
+            "um \"armazém de peixe frito\" em Oliver Twist, de 1838, e em 1845 o cozinheiro Alexis Soyer publicou uma "
+            "receita de \"peixe frito à moda judaica\", passado numa massa de farinha e água. A batata frita seguiu "
+            "outro caminho, com um comércio próprio no norte da Inglaterra, e não se sabe ao certo quando e onde os "
+            "dois se juntaram. A primeira loja registrada a vender os dois foi aberta por volta de 1860, no leste de "
+            "Londres, por Joseph Malin, imigrante judeu do Leste Europeu. Em 1910, já havia mais de 25 mil lojas no "
+            "Reino Unido, e na Segunda Guerra o prato foi um dos poucos alimentos que escaparam do racionamento."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [
+            wiki("Fish_and_chips",
+                "Fish-and-chip shops first appeared in the UK in the 1860s, and by 1910 there were over 25,000 of them across the UK. [...] "
+                "It was one of the few foods in the UK not subject to rationing during the wars, which further contributed to its popularity. [...] "
+                "The British tradition of eating fish battered and fried in oil was introduced to the country by the Chuts and Spanish and Portuguese Jews who lived in the Netherlands before settling in the UK. "
+                "These immigrants arrived as early as the 16th century, the main immigration to London being during the 1850s. "
+                "They prepared fried fish in a manner similar to pescado frito, which is coated in flour then fried in oil. "
+                "Fish fried for Shabbat for dinner on Friday evenings could be eaten cold the following afternoon for shalosh seudot, palatable this way as olive oil was used rather than a hard fat, such as butter. "
+                "Charles Dickens mentions \"fried fish warehouses\" in Oliver Twist (1838), and in 1845 Alexis Soyer in his first edition of A Shilling Cookery for the People, gives a recipe for \"fried fish, Jewish fashion\", which is dipped in a batter mix of flour and water before frying. [...] "
+                "while in the north of England a trade in deep-fried chipped potatoes developed. "
+                "It remains unclear exactly when and where these two trades combined to become the modern fish and chip shop industry. "
+                "A Jewish immigrant, Joseph Malin, opened the first recorded combined fish-and-chip shop in Bow, East London, circa 1860 [...] "
+                "During the Second World War, fish and chips—a staple of the working class—remained one of the few foods in the United Kingdom not subject to rationing.",
+                nome="Fish and chips"),
+            wiki("Pescado_frito",
+                "It was also a traditional Shabbat fish dish (usually cod) for the 16th century Andalusian Jews of Spain and Portugal. "
+                "The deep-frying of the fish in vegetable oil makes it crisp and light even when eaten cold",
+                nome="Pescado frito"),
+        ],
+    },
+    # 13 a carbonara é do pós-guerra (e a 1ª receita é de Chicago)
+    {
+        "temas_secundarios": ["segunda_guerra"],
+        "tipos_espanto": ["contraintuitivo", "origem_inesperada"],
+        "gancho": "A carbonara, ícone de Roma, só aparece impressa em 1939, e a primeira receita conhecida saiu num livro de Chicago, em 1952. Para vários historiadores, ela nasceu do bacon com ovos dos soldados aliados.",
+        "explicacao": (
+            "As origens do prato são obscuras. O nome spaghetti alla carbonara surge pela primeira vez em 1939, num "
+            "jornal das Índias Orientais Holandesas, que cita um restaurante do Trastevere, em Roma, sem descrever o "
+            "prato. Em 1950, o jornal La Stampa contou que oficiais americanos procuravam a carbonara nos "
+            "restaurantes do Trastevere havia anos. No mesmo ano, um grande livro de cozinha italiano, Il cucchiaio "
+            "d'argento, nem a menciona. A primeira receita conhecida saiu em 1952, num livro ilustrado publicado em "
+            "Chicago por Patricia Bronté. A primeira italiana, de 1954, levava pancetta, alho e queijo gruyère. O "
+            "guanciale e o pecorino foram entrando aos poucos no fim dos anos 1950 e nos anos 1960, e o creme de "
+            "leite só saiu da maioria das receitas nos anos 1990. Para o escritor Alan Davidson e os historiadores "
+            "Luca Cesari e Eleonora Cozzella, o prato surgiu depois que os Aliados tomaram Roma, em 1944. Segundo "
+            "Cozzella, a origem é um \"spaghetti breakfast\" pedido pelos soldados nas cantinas: bacon com ovos sobre "
+            "o espaguete, combinação que, para Cesari, era mais familiar a americanos e britânicos do que aos "
+            "italianos da época. O nome segue sem explicação certa: há quem pense em carvoeiros e quem pense na "
+            "sociedade secreta dos Carbonari."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "consenso_parcial",
+        "fontes": [wiki("Carbonara",
+            "As with many recipes, the origins of the dish and its name are obscure [...] "
+            "The name spaghetti alla carbonara first appears in print in a 1939 Dutch East Indies newspaper (De Koerier), which mentions a restaurant in the Trastevere region of Rome that was known for a dish by that name, but does not describe the dish itself. "
+            "In 1950, the Italian newspaper La Stampa said that American officers had been seeking out \"spaghetti alla carbonara\" in Trastevere restaurants for years, but similarly didn't describe it. "
+            "The first attested recipe is in an illustrated cookbook published in Chicago in 1952 by Patricia Bronté. "
+            "It should also be noted that a major Italian cookbook published in 1950, Il cucchiaio d'argento, has no mention of this dish. "
+            "In 1954, the first recipe for carbonara published in Italy appeared in La Cucina Italiana magazine, although the recipe featured pancetta, garlic, and Gruyère cheese. [...] "
+            "Since the name is derived from carbonaro, some people presume the dish was first made as a hearty meal for Italian charcoal workers. [...] "
+            "some people think it was created as a tribute to the Carbonari (lit. 'charcoal burners') secret society [...] "
+            "supports a post-World War II origin of this dish after the Allied liberation of Rome in 1944. "
+            "This is the opinion of the food writer Alan Davidson, the food blogger and historian Luca Cesari, and the historian Eleonora Cozzella. [...] "
+            "According to interviews and archival research by Eleonora Cozzella, the dish was born out of a dish called \"spaghetti breakfast\" that would be requested by Allied personnel when they visit Italian cook shops: a kind of bacon and eggs served on top of spaghetti. "
+            "The British historian Luca Cesari concurs, saying that bacon and eggs as a combination was more familiar to Americans and British than it was to Italians at that time. [...] "
+            "Pecorino and guanciale slowly made their way into carbonara recipes in the late 1950s and the 1960s. "
+            "Recipes from that time still featured cream: in fact, the widespread removal of cream only happened in the 1990s.",
+            nome="Carbonara")],
+    },
+    # 14 o frango do General Tso, reprovado em Hunan
+    {
+        "temas_secundarios": ["personagens_esquecidos"],
+        "tipos_espanto": ["origem_inesperada", "historia_humana"],
+        "gancho": "O frango do General Tso, clássico dos restaurantes chineses dos EUA, leva o nome de um general do século XIX, mas é do século XX. Levado a Hunan, terra do general, por um dos supostos criadores, foi achado doce demais.",
+        "explicacao": (
+            "O nome homenageia, a posteriori, Zuo Zongtang, estadista e chefe militar da província de Hunan que "
+            "viveu de 1812 a 1885, no fim da dinastia Qing. O prato, porém, é bem mais novo, e dois cozinheiros "
+            "chineses disputam a autoria em Nova York. Peng Chang-kuei, nascido em Hunan e radicado depois em "
+            "Chongqing e Taipei, abriu por volta de 1973 um restaurante na rua 44 Leste e fez do prato a "
+            "especialidade da casa. Segundo o próprio Peng, ele o servira antes em Taiwan, num banquete oficial "
+            "para o almirante americano Arthur Radford; outra versão diz que o improvisou para Chiang Ching-kuo, "
+            "filho de Chiang Kai-shek, numa noite em que faltavam ingredientes. Já o restaurante Shun Lee Palace "
+            "atribui o prato ao cozinheiro T. T. Wang, em 1972. As duas histórias podem se encaixar: a receita "
+            "atual, de frango crocante, teria sido lançada por Wang com o nome de \"frango do General Ching\", e o "
+            "nome General Tso vem de Peng, que o fazia de outro jeito. No começo, o prato era picante, não "
+            "agridoce, e foi adaptado ao gosto americano. Quando Peng abriu um restaurante em Hunan "
+            "nos anos 1990, os moradores acharam o prato doce demais, e a casa fechou logo."
+        ),
+        "nivel": 1, "nota_surpresa": 4, "confianca": "alta",
+        "fontes": [wiki("General_Tso's_chicken",
+            "General Tso's chicken (Mandarin: [tswò]; simplified Chinese: 左宗棠鸡; traditional Chinese: 左宗棠雞; pinyin: Zuǒ Zōngtáng jī) is a Chinese-American sweet and spicy deep-fried chicken dish. [...] "
+            "Although General Tso's chicken was invented in the 1970s, the dish was retroactively named for Zuo Zongtang (Tso Tsung-t'ang) (1812–1885), a Chinese statesman and military leader from Hunan Province during the late Qing dynasty. [...] "
+            "Two Chinese chefs, Peng Chang-kuei and T. T. Wang, each claimed to have invented General Tso's chicken in New York City. "
+            "The two claims may be somewhat reconciled in that the current General Tso's chicken recipe – where the meat is crispy fried – was introduced by Wang under the name \"General Ching's chicken\" [...] "
+            "whereas the name \"General Tso's chicken\" can be traced to Peng, who cooked it in a different way. [...] "
+            "Peng Chang-kuei, a chef from Hunan who was later based in Chongqing and Taipei, rolled out the new dish circa 1973 when he opened the restaurant \"Uncle Peng's Hunan Yuan\" on East 44th Street, New York City. [...] "
+            "Since the dish was new, Peng made it the house specialty in spite of the dish's commonplace ingredients. [...] "
+            "When Peng opened a restaurant in Hunan in the 1990s introducing Tso's chicken, the locals found the dish too sweet. "
+            "His restaurant quickly closed in Hunan. [...] "
+            "In the documentary, Peng recalled in 1952 he was invited by the Republic of China Navy to be in charge of a three-day state banquet during Admiral Arthur W. Radford's visit of Taiwan. [...] "
+            "said Chiang Ching-kuo, the son of President Chiang Kai-shek, paid a late visit to Peng's restaurant when Peng ran out of ingredients. "
+            "Peng served Chiang an improvised dish, General Tso's chicken. [...] "
+            "also claims that it was the first restaurant to serve General Tso's chicken and that it was invented by a Chinese immigrant chef named T. T. Wang in 1972. [...] "
+            "Tso's chicken was spicy rather than sweet and spicy. "
+            "It was altered to suit the tastes of Americans.",
+            nome="General Tso's chicken")],
+    },
+]

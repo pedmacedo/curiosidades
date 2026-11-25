@@ -1,0 +1,182 @@
+{
+ "lote": "2026-11-24-jogos_azar-01",
+ "rodadas": {
+  "1": [
+   {
+    "id": "jogos_azar-0001",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Liber de ludo aleae escrito por volta de 1564, publicado em 1663; MacTutor); não duplica probabilidade-0011."
+   },
+   {
+    "id": "jogos_azar-0002",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Os números 0,38/0,12 estão na fonte, mas o gancho os lê de um jeito impossível (um lado de 38% e três de 12% não somam 100%): são dois lados largos e dois estreitos; números são estimativas.",
+    "correcao": "No gancho, troque 'o lado largo sai em cerca de 38% das vezes; os outros, uns 12%.' por 'cada um dos dois lados largos sai em cerca de 38% das vezes; cada um dos dois estreitos, uns 12%.' Na explicação, depois de 'só consegue parar sobre quatro lados', acrescente: 'dois largos e dois estreitos, e os largos caem para cima bem mais vezes (cerca de 38% cada, contra uns 12% de cada estreito, segundo estimativas)'. Se possível, inclua uma fonte que descreva os dois lados largos e os dois estreitos."
+   },
+   {
+    "id": "jogos_azar-0003",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e a dedução śa=4 / huθ=6 conferem; mas o argumento usou 3 e 4 em faces opostas nos dois padrões, não a mudança; e a proposta de base 12 é de 2006, anterior ao estudo.",
+    "correcao": "No gancho, troque 'Essa mudança foi usada para propor' por 'Esses dados foram usados para propor'. Na explicação, troque 'A questão não está fechada: outra proposta, que supõe uma contagem de base 12, devolve a huθ o valor 4.' por 'A questão não está fechada: uma proposta de 2006, que supõe uma contagem de base 12, dá a huθ o valor 4.'"
+   },
+   {
+    "id": "jogos_azar-0004",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Atribuição e números conferem com Eerkens e de Voogt (2022); mas de Voogt não é arqueólogo, e o 6 ia para a face maior também pela ordem de marcação.",
+    "correcao": "No gancho, troque 'Para dois arqueólogos' por 'Para dois pesquisadores'. Na explicação, troque 'tendiam a pôr o 6 na face maior, por falta de espaço, não para favorecer jogadas' por 'tendiam a pôr o 6 na face maior, por falta de espaço ou pela ordem em que marcavam os pontos, não para favorecer jogadas'."
+   },
+   {
+    "id": "jogos_azar-0005",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Tacos de polo, baralho de Topkapı e 1371 conferem; mas a etimologia de nā'ib é provável, não certa; 'a partir do século XI chegaram ao Egito' distorce a fonte; e o nosso ♣ é desenho francês (trevo) com nome português.",
+    "correcao": "No gancho, troque 'Até \"naipe\" vem do árabe.' por 'Até \"naipe\" deve vir do árabe.' Na explicação: (a) troque 'Espalharam-se pela Ásia e, a partir do século XI, chegaram ao Egito.' por 'Por volta do século XI já se espalhavam pela Ásia e, depois, chegaram ao Egito.'; (b) troque 'O título nā'ib passou ao francês, ao italiano e ao espanhol, e o português naipe veio do catalão naip.' por 'O português naipe veio do catalão naip, que provavelmente vem do título nā'ib, embora a origem exata ainda seja discutida.'; (c) troque a última frase por 'São esses os naipes dos baralhos tradicionais italiano, espanhol e português. O baralho que usamos hoje tem os desenhos franceses (o ♣ é um trevo), mas manteve os nomes do antigo baralho português: paus, ouros, espadas e copas.'"
+   },
+   {
+    "id": "jogos_azar-0006",
+    "veredito": "reprovado",
+    "nota_surpresa": 2,
+    "motivo": "pouco_interessante: para o leitor brasileiro, que já diz paus e espadas, saber que o inglês usa os nomes latinos não surpreende; metade da explicação repete o jogos_azar-0005; e a fonte traz como dedução de Parlett ('must have') o que o gancho afirma."
+   },
+   {
+    "id": "jogos_azar-0007",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (imposto de 1711 a 1960, ás oficial em 1765, Richard Harding enforcado em 13/11/1805, confirmado em busca própria); a ligação com a 'carta da morte' vem com ressalva."
+   },
+   {
+    "id": "jogos_azar-0008",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Datas conferem e 'meados do século XIX' evita a contradição da fonte; mas a etimologia de Jucker é 'believed' e debatida, e Hart 'is credited', não comprovadamente imprimiu.",
+    "correcao": "No gancho, trocar 'E o nome Joker provavelmente vem de Jucker' por 'E o nome Joker talvez venha de Jucker'. Na explicação, trocar 'O fabricante Samuel Hart imprimiu em 1863 a primeira carta ilustrada desse tipo' por 'Atribui-se ao fabricante Samuel Hart a primeira carta ilustrada desse tipo, de 1863'."
+   },
+   {
+    "id": "jogos_azar-0009",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas conferem (1440–1450, Court de Gébelin em 1781); mas há um manuscrito de ~1750 com sentidos divinatórios (o uso se difundiu no fim do século XVIII, não começou), e o tarô egípcio de Etteilla é de ~1789, não de 1783.",
+    "correcao": "Gancho: 'O tarô nasceu na Itália do século XV como jogo de cartas, e ainda é jogado em boa parte da Europa. O uso para ler a sorte só se difundiu no fim do século XVIII, com a tese, sem provas, de que ele vinha do Egito antigo.' Na explicação, trocar 'Pouco depois, o cartomante Etteilla criou, em 1783, um método de adivinhação com o tarô, e também o primeiro tarô \"egípcio\" feito só para esse fim.' por 'Pouco depois, em 1783, o cartomante Etteilla criou um método de adivinhação com o tarô e, alguns anos mais tarde, o primeiro tarô \"egípcio\" feito só para esse fim.'"
+   },
+   {
+    "id": "jogos_azar-0010",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "O lotto genovês (5 de 90) confere e é confirmado por fontes italianas; mas 'A ideia viajou: Francisco I... 1539' é anacrônico (a Loterie Royale foi anterior ao lotto de números e de outro tipo).",
+    "correcao": "Na explicação, trocar 'A ideia viajou: o rei Francisco I conheceu as loterias nas campanhas militares na Itália' por 'Antes disso, as loterias italianas em geral já tinham inspirado outros reinos: o rei Francisco I as conheceu nas campanhas militares na Itália'."
+   },
+   {
+    "id": "jogos_azar-0011",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Os pontos centrais conferem e a divergência meio milhão/um milhão está explícita; mas 'nem particularmente famoso' vem de site de curiosidades e é falso (La Henriade foi sucesso em 1723).",
+    "correcao": "Na explicação, trocar 'O dinheiro, bem investido, deixou o escritor rico e independente, aos 30 e poucos anos, quando ainda não era nem rico nem particularmente famoso.' por 'O dinheiro, bem investido, deixou o escritor, então com 30 e poucos anos e ainda sem fortuna, rico e independente.'"
+   },
+   {
+    "id": "jogos_azar-0012",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "Datas e o papel de Casanova conferem; mas o encontro com Frederico 'bore no fruit' (não 'não se interessou'), e a loteria não nasceu de Casanova ou de Bernis: ele se juntou ao projeto.",
+    "correcao": "No gancho, trocar 'Frederico, o Grande, não se interessou' por 'nada conseguiu com Frederico, o Grande'. Na explicação, trocar 'A ideia foi uma loteria para financiar a Escola Militar.' por 'O caminho foi um projeto de loteria, nascido de iniciativas para financiar a Escola Militar.'"
+   },
+   {
+    "id": "jogos_azar-0013",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Tudo confere (Thorp e Shannon, 1960–61, teste em junho de 1961, lei de Nevada de 1985); o título de 'primeiro computador vestível' vem com a ressalva certa; sem técnica de jogo."
+   },
+   {
+    "id": "jogos_azar-0014",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Confere com 'Slot machine' (Fey, Mills 1907, Bell-Fruit Gum e o símbolo BAR, prêmios em comida para driblar as leis)."
+   },
+   {
+    "id": "jogos_azar-0015",
+    "veredito": "ajustar",
+    "nota_surpresa": 3,
+    "motivo": "Quase tudo confere; mas a atribuição da proibição a Carolina 'por razões morais' só aparece na Wikipedia e cópias; o governo de Mônaco a atribui a Carlos III. A proibição em si é certa.",
+    "correcao": "Na explicação, trocar 'Por iniciativa da própria Carolina, e por razões morais, os cidadãos de Mônaco não podem entrar nas salas de jogo.' por 'E, até hoje, os cidadãos de Mônaco não podem entrar nas salas de jogo do cassino.'"
+   },
+   {
+    "id": "jogos_azar-0016",
+    "veredito": "ajustar",
+    "nota_surpresa": 4,
+    "motivo": "A brecha legal e os números conferem; mas a comparação de 2015 com Macau, Las Vegas e Singapura juntas compara total apostado com receita líquida e é contestada.",
+    "correcao": "No gancho, trocar 'que se \"vendem\" num guichê separado. Em 2015, faturou mais que Macau, Las Vegas e Singapura juntas.' por 'que se \"vendem\" num guichê separado, muitas vezes do próprio dono do salão.' Manter a explicação como está."
+   }
+  ],
+  "2": [
+   {
+    "id": "jogos_azar-0002",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Dois lados largos (~38%) e dois estreitos (~12%) aplicados; \"devem descender\" fiel às fontes."
+   },
+   {
+    "id": "jogos_azar-0003",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Esses dados foram usados\" e a proposta de 2006 aplicados; datas conferem."
+   },
+   {
+    "id": "jogos_azar-0004",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Dois pesquisadores\" e a ordem de marcação aplicados; números conferem."
+   },
+   {
+    "id": "jogos_azar-0005",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Etimologia provável, cronologia e o baralho francês com nomes portugueses aplicados e sustentados."
+   },
+   {
+    "id": "jogos_azar-0008",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "\"Talvez venha de Jucker\" e \"Atribui-se a Samuel Hart\" aplicados."
+   },
+   {
+    "id": "jogos_azar-0009",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Gancho novo (uso divinatório só se difundiu no fim do século XVIII) e Etteilla corrigidos."
+   },
+   {
+    "id": "jogos_azar-0010",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Anacronismo de Francisco I corrigido; 5 de 90 e datas conferem."
+   },
+   {
+    "id": "jogos_azar-0011",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Nem particularmente famoso\" retirado; números conferem."
+   },
+   {
+    "id": "jogos_azar-0012",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "\"Nada conseguiu com Frederico\" e o projeto de loteria aplicados."
+   },
+   {
+    "id": "jogos_azar-0015",
+    "veredito": "aprovado",
+    "nota_surpresa": 3,
+    "motivo": "Proibição sem autoria de Carolina; o resto confere."
+   },
+   {
+    "id": "jogos_azar-0016",
+    "veredito": "aprovado",
+    "nota_surpresa": 4,
+    "motivo": "Comparação de 2015 fora do gancho e da explicação; números conferem."
+   }
+  ]
+ }
+}
